@@ -13,16 +13,18 @@
     "maximum_display_languages": 6,
     "prefer_profile_languages": true,
     "fallback_language_tags": ["en"],
-    "requires_at_least_one_non_anchor_multi_language": true,
+    "requires_at_least_one_non_anchor_multi_language": false,
     "language_selection_is_session_only": true,
-    "display_modes": ["scroll", "pages"]
+    "display_modes": ["scroll", "pages"],
+    "practice_mode": "only_when_selected_languages_have_meaningful_choice",
+    "comparison_only_mode": true
   },
   "rules": [],
   "triggers": [
     {
       "trigger_id": "TRG.mul.multiple_for.profile",
       "trigger_type": "manual",
-      "notes": "Offer in Lessons when at least one active profile language is confirmed_multi and lesson_ready in GRAMSET.mul.for_equivalents. Candidate-only availability obeys the user's content trust preference."
+      "notes": "Offer from structured lesson/profile applicability rather than a hardcoded Spanish-style split. Profiles without a practice-worthy distinction may receive the shorter comparison-only form. Language-specific records still obey the user's content trust threshold."
     }
   ],
   "practice_modules": [
@@ -32,7 +34,8 @@
       "constraints": {
         "resolve_rule_pool_from_selected_languages": true,
         "require_unique_defensible_answer": true,
-        "feedback_source": "grammar_rule_tips"
+        "feedback_source": "grammar_rule_tips",
+        "omit_when_no_meaningful_choice": true
       }
     },
     {
@@ -40,7 +43,8 @@
       "eligible_rule_ids": [],
       "constraints": {
         "resolve_rule_pool_from_selected_languages": true,
-        "feedback_source": "grammar_rule_tips"
+        "feedback_source": "grammar_rule_tips",
+        "omit_when_no_meaningful_choice": true
       }
     },
     {
@@ -49,7 +53,8 @@
       "constraints": {
         "selected_languages_only": true,
         "open_reader_mode": "lesson-quest",
-        "teacher_policy": ["hidden", "optional", "required"]
+        "teacher_policy": ["hidden", "optional", "required"],
+        "omit_when_no_meaningful_choice": true
       }
     }
   ],
