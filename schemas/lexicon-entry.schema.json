@@ -2,370 +2,116 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/lexicon-entry.schema.json",
   "title": "Lexicon Entry (Lexeme & Senses)",
-  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, typed distractor/quiz graph relationships, and analysis-specific pronunciation.",
+  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
   "type": "object",
-  "required": [
-    "schema_version",
-    "language_code",
-    "lexemes"
-  ],
+  "required": ["schema_version", "language_code", "lexemes"],
   "properties": {
-    "schema_version": {
-      "type": "integer",
-      "const": 1
-    },
-    "language_code": {
-      "type": "string"
-    },
-    "work_id": {
-      "type": "string"
-    },
-    "lexemes": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/lexeme"
-      }
-    }
+    "schema_version": {"type": "integer", "const": 1},
+    "language_code": {"type": "string"},
+    "work_id": {"type": "string"},
+    "lexemes": {"type": "array", "items": {"$ref": "#/definitions/lexeme"}}
   },
   "definitions": {
     "lexeme": {
       "type": "object",
-      "required": [
-        "lexeme_id",
-        "lemma_nfc",
-        "upos",
-        "review_state",
-        "senses"
-      ],
+      "required": ["lexeme_id", "lemma_nfc", "upos", "review_state", "senses"],
       "properties": {
-        "lexeme_id": {
-          "type": "string"
-        },
-        "lemma_nfc": {
-          "type": "string"
-        },
-        "upos": {
-          "type": "string",
-          "enum": [
-            "NOUN",
-            "VERB",
-            "ADJ",
-            "ADV",
-            "PRON",
-            "DET",
-            "ADP",
-            "NUM",
-            "CONJ",
-            "CCONJ",
-            "SCONJ",
-            "PART",
-            "INTJ",
-            "PROPN",
-            "PUNCT",
-            "SYM",
-            "X"
-          ]
-        },
-        "language_pos": {
-          "type": "string"
-        },
-        "lexical_features": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "proper_noun": {
-          "type": "boolean",
-          "default": false
-        },
-        "review_state": {
-          "type": "string",
-          "enum": [
-            "candidate",
-            "approved",
-            "superseded",
-            "rejected"
-          ]
-        },
-        "senses": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "$ref": "#/definitions/sense"
-          }
-        },
-        "forms": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "$ref": "#/definitions/wordForm"
-          }
-        }
+        "lexeme_id": {"type": "string"},
+        "lemma_nfc": {"type": "string"},
+        "upos": {"type": "string", "enum": ["NOUN", "VERB", "ADJ", "ADV", "PRON", "DET", "ADP", "NUM", "CONJ", "CCONJ", "SCONJ", "PART", "INTJ", "PROPN", "PUNCT", "SYM", "X"]},
+        "language_pos": {"type": "string"},
+        "lexical_features": {"type": "object", "additionalProperties": {"type": "string"}},
+        "proper_noun": {"type": "boolean", "default": false},
+        "name_id": {"type": ["string", "null"], "description": "Optional reusable name-family identity for a proper-name lexeme."},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+        "senses": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/sense"}},
+        "forms": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/wordForm"}}
       }
     },
     "sense": {
       "type": "object",
-      "required": [
-        "sense_id",
-        "sense_key",
-        "definitions"
-      ],
+      "required": ["sense_id", "sense_key", "definitions"],
       "properties": {
-        "sense_id": {
-          "type": "string"
-        },
-        "sense_key": {
-          "type": "string"
-        },
-        "primary_concept_id": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "definitions": {
-          "type": "object",
-          "minProperties": 1,
-          "additionalProperties": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "sense_hint": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "cefr_level": {
-          "type": "string",
-          "enum": [
-            "A1",
-            "A2",
-            "B1",
-            "B2",
-            "C1",
-            "C2"
-          ]
-        },
-        "register_label": {
-          "type": "string"
-        },
-        "homophones": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/typedRelation"
-          }
-        },
-        "homonyms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/typedRelation"
-          }
-        },
-        "synonyms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/typedRelation"
-          }
-        },
-        "antonyms": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/typedRelation"
-          }
-        },
-        "confusable_senses": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/typedRelation"
-          }
-        }
+        "sense_id": {"type": "string"},
+        "sense_key": {"type": "string"},
+        "primary_concept_id": {"type": ["string", "null"]},
+        "entity_id": {"type": ["string", "null"], "description": "Optional link to the particular person, character, place, or other named entity represented by this contextual proper-name sense."},
+        "definitions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
+        "sense_hint": {"type": "object", "additionalProperties": {"type": "string"}},
+        "cefr_level": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+        "register_label": {"type": "string"},
+        "homophones": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "homonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "synonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "antonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "confusable_senses": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}}
       }
     },
     "typedRelation": {
       "type": "object",
-      "required": [
-        "target_id",
-        "target_type"
-      ],
+      "required": ["target_id", "target_type"],
       "properties": {
-        "target_id": {
-          "type": "string"
-        },
-        "target_type": {
-          "type": "string",
-          "enum": [
-            "sense",
-            "lexeme",
-            "form",
-            "expression",
-            "concept"
-          ]
-        },
-        "note": {
-          "type": "string"
-        }
+        "target_id": {"type": "string"},
+        "target_type": {"type": "string", "enum": ["sense", "lexeme", "form", "expression", "concept"]},
+        "note": {"type": "string"}
       }
     },
     "wordForm": {
       "type": "object",
-      "required": [
-        "form_id",
-        "surface_nfc",
-        "analyses"
-      ],
+      "required": ["form_id", "surface_nfc", "analyses"],
       "properties": {
-        "form_id": {
-          "type": "string"
-        },
-        "surface_nfc": {
-          "type": "string"
-        },
-        "normalized_lookup": {
-          "type": "string"
-        },
-        "attested_in_text": {
-          "type": "boolean",
-          "default": false
-        },
-        "analyses": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "$ref": "#/definitions/formAnalysis"
-          }
-        }
+        "form_id": {"type": "string"},
+        "surface_nfc": {"type": "string"},
+        "normalized_lookup": {"type": "string"},
+        "attested_in_text": {"type": "boolean", "default": false},
+        "analyses": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/formAnalysis"}}
       }
     },
     "formAnalysis": {
       "type": "object",
-      "required": [
-        "analysis_id",
-        "features"
-      ],
+      "required": ["analysis_id", "features"],
       "properties": {
-        "analysis_id": {
-          "type": "string"
-        },
+        "analysis_id": {"type": "string"},
         "features": {
           "type": "object",
-          "required": [
-            "base"
-          ],
+          "required": ["base"],
           "properties": {
             "base": {
               "type": "object",
               "properties": {
-                "tense": {
-                  "type": "string"
-                },
-                "aspect": {
-                  "type": "string"
-                },
-                "mood": {
-                  "type": "string"
-                },
-                "voice": {
-                  "type": "string"
-                },
-                "person": {
-                  "type": "string"
-                },
-                "number": {
-                  "type": "string"
-                },
-                "gender": {
-                  "type": "string"
-                },
-                "case": {
-                  "type": "string"
-                },
-                "degree": {
-                  "type": "string"
-                },
-                "definiteness": {
-                  "type": "string"
-                },
-                "non_finite": {
-                  "type": "string"
-                },
-                "politeness": {
-                  "type": "string",
-                  "enum": [
-                    "plain",
-                    "polite",
-                    "formal",
-                    "honorific",
-                    "humble"
-                  ]
-                }
+                "tense": {"type": "string"},
+                "aspect": {"type": "string"},
+                "mood": {"type": "string"},
+                "voice": {"type": "string"},
+                "person": {"type": "string"},
+                "number": {"type": "string"},
+                "gender": {"type": "string"},
+                "case": {"type": "string"},
+                "degree": {"type": "string"},
+                "definiteness": {"type": "string"},
+                "non_finite": {"type": "string"},
+                "politeness": {"type": "string", "enum": ["plain", "polite", "formal", "honorific", "humble"]}
               },
-              "additionalProperties": {
-                "type": "string"
-              }
+              "additionalProperties": {"type": "string"}
             },
-            "possessor": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            },
-            "subject": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            },
-            "object": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            },
-            "clitic": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "string"
-              }
-            }
+            "possessor": {"type": "object", "additionalProperties": {"type": "string"}},
+            "subject": {"type": "object", "additionalProperties": {"type": "string"}},
+            "object": {"type": "object", "additionalProperties": {"type": "string"}},
+            "clitic": {"type": "object", "additionalProperties": {"type": "string"}}
           },
-          "additionalProperties": {
-            "type": "object"
-          }
+          "additionalProperties": {"type": "object"}
         },
-        "display_label_key": {
-          "type": "string"
-        },
-        "pronunciations": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/pronunciation"
-          }
-        }
+        "display_label_key": {"type": "string"},
+        "pronunciations": {"type": "array", "items": {"$ref": "#/definitions/pronunciation"}}
       }
     },
     "pronunciation": {
       "type": "object",
-      "required": [
-        "ipa"
-      ],
+      "required": ["ipa"],
       "properties": {
-        "ipa": {
-          "type": "string",
-          "minLength": 1
-        },
-        "locale": {
-          "type": "string"
-        },
-        "notation": {
-          "type": "string",
-          "enum": [
-            "phonemic",
-            "phonetic"
-          ]
-        }
+        "ipa": {"type": "string", "minLength": 1},
+        "locale": {"type": "string"},
+        "notation": {"type": "string", "enum": ["phonemic", "phonetic"]}
       }
     }
   }
