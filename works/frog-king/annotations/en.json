@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "work_id": "frog-king",
+  "language_code": "en",
+  "offset_unit": "unicode_codepoint_nfc",
+  "annotations": [
+    {"annotation_id":"ann_frog_037_faithful_henry","segment_id":"frog-a-037","start_char":26,"end_char":40,"surface":"Faithful Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000111","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_037_henry_2","segment_id":"frog-a-037","start_char":96,"end_char":101,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_038_henry","segment_id":"frog-a-038","start_char":3,"end_char":8,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_038_iron","segment_id":"frog-a-038","start_char":20,"end_char":24,"surface":"iron","target":{"target_type":"sense","target_id":"02000000-0000-7000-8001-000000000001"},"analysis_id":"02000000-0000-7000-8003-000000000002","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_039_henry","segment_id":"frog-a-039","start_char":55,"end_char":60,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_041_henry_1","segment_id":"frog-a-041","start_char":1,"end_char":6,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_041_henry_2","segment_id":"frog-a-041","start_char":48,"end_char":53,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_042_henry","segment_id":"frog-a-042","start_char":35,"end_char":40,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_042_iron","segment_id":"frog-a-042","start_char":52,"end_char":56,"surface":"iron","target":{"target_type":"sense","target_id":"02000000-0000-7000-8001-000000000001"},"analysis_id":"02000000-0000-7000-8003-000000000002","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_043_iron","segment_id":"frog-a-043","start_char":40,"end_char":44,"surface":"iron","target":{"target_type":"sense","target_id":"02000000-0000-7000-8001-000000000001"},"analysis_id":"02000000-0000-7000-8003-000000000002","confidence":1,"annotation_source":"human"},
+    {"annotation_id":"ann_frog_044_henry","segment_id":"frog-a-044","start_char":0,"end_char":5,"surface":"Henry","target":{"target_type":"entity","target_id":"ent_frog_king_iron_henry"},"analysis_id":"02000000-0000-7000-8003-000000000101","confidence":1,"annotation_source":"human"}
+  ]
+}
