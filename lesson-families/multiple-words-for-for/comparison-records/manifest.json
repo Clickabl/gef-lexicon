@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "expected_total": 104,
+  "expected_tier_counts": {
+    "1": 6,
+    "2": 15,
+    "3": 30,
+    "4": 53
+  },
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json",
+    "4": "tier4.json"
+  },
+  "record_contract": {
+    "forms": "Representative words, case markers, particles, affixes, or constructions used in this lesson's semantic territory. This is not a promise of exhaustive grammar coverage.",
+    "comparison_blurb": "Short explanation written in the language itself. It must describe how that language handles this semantic territory rather than repeat the generic lesson intro.",
+    "review_state": "Generated/research-required records are candidates. Promotion to reviewed/verified follows the normal Gef trust ladder."
+  },
+  "review_state": "generated"
+}
