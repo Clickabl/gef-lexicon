@@ -20,9 +20,32 @@
     "quest_title": "lesson.multipleFor.questTitle",
     "completion_title": "lesson.multipleFor.completionTitle"
   },
+  "runtime_copy": {
+    "language_heading": "Languages in this lesson",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "correct_fallback": "Nice — that fits here.",
+    "retry_fallback": "Not quite. Use the rule and tip below, then try again.",
+    "correct_score_label": "Correct",
+    "attempted_score_label": "Tried",
+    "done_label": "Done",
+    "rules_heading_template": "When to use {form}",
+    "form_kind_labels": {
+      "word": "Word",
+      "preposition": "Preposition",
+      "postposition": "Postposition",
+      "case_marker": "Case marker",
+      "particle": "Particle",
+      "prepositional_phrase": "Prepositional phrase",
+      "construction": "Construction",
+      "clause_marker": "Clause marker",
+      "other": "Grammar form"
+    }
+  },
   "blocks": [
     {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
-    {"block_id":"grammar-primer","group_id":"concept","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true},
+    {"block_id":"grammar-primer","group_id":"concept","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"A quick grammar note","description":"Before we compare the forms, here is what kind of grammar each selected language is using."},
     {"block_id":"intro-single","group_id":"concept","type":"explanation","text":"One language may use a common form for several relationships that another language divides differently."},
     {"block_id":"single-forms","group_id":"concept","type":"word_form_matrix","source":"selected_anchor_or_single_languages","minimum_languages":1,"maximum_languages":6,"prefer_profile_languages":true,"allow_anchor_fallback":true},
     {"block_id":"intro-split","group_id":"split","type":"explanation","text":"Other languages may divide those relationships among several words, endings, particles, cases, or constructions."},
@@ -33,8 +56,8 @@
     {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":6},
     {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Ready to try a few?","requires_session_mode":"practice"},
     {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice"},
-    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice"},
-    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti"}
+    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Quest","description":"Find every lesson form in this book.","begin_label":"Begin","decline_label":"Not now"},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Nice work","description":"You have seen how different languages divide the same meaning in different ways.","action_label":"Done"}
   ],
   "rule_explanations": {},
   "review_state": "candidate",
