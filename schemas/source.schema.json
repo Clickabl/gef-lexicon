@@ -12,14 +12,31 @@
     "source": {
       "type": "object",
       "required": ["source_id", "source_type", "title"],
+      "additionalProperties": false,
       "properties": {
         "source_id": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"},
-        "source_type": {"type": "string", "enum": ["internal_work", "book", "article", "dataset", "website", "wikipedia", "wikidata", "archive", "other"]},
+        "source_type": {"type": "string", "enum": ["internal_work","book","article","dataset","website","wikipedia","wikidata","archive","film","tv_series","tv_episode","song","poem","play","video_game","speech","advertisement","internet_meme","social_media","release_variant","other"]},
         "title": {"type": "string"},
         "author": {"type": "string"},
+        "creator": {"type": "string"},
+        "publisher": {"type": "string"},
         "year": {"type": ["integer", "null"]},
+        "release_date": {"type": "string"},
+        "language": {"type": "string"},
+        "region": {"type": "string"},
         "url": {"type": "string"},
+        "official_url": {"type": "string"},
         "license": {"type": "string"},
+        "parent_source_id": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"},
+        "edition_context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "locale": {"type": "string"},
+            "channel": {"type": "string", "enum": ["original_text","original_dialogue","script","transcript","subtitle","dub","published_translation","caption","other"]},
+            "platform_or_release": {"type": "string"}
+          }
+        },
         "external_ids": {"type": "object", "additionalProperties": {"type": "string"}},
         "note": {"type": "string"}
       }
