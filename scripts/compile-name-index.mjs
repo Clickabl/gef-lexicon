@@ -245,12 +245,10 @@ function main() {
   `);
 
   const familyFormsById = new Map();
-  const families = [];
   const familyDir = join(ROOT, 'name-families');
   for (const filename of listJson(familyDir)) {
     const family = readJson(join(familyDir, filename));
     if (!included(family.review_state)) continue;
-    families.push(family);
     insertFamily.run(
       family.family_id,
       family.family_key,
@@ -270,14 +268,13 @@ function main() {
     }
   }
 
-  const names = [];
+  const pendingMemberships = [];
   const namesRoot = join(ROOT, 'names');
   for (const language of listDirs(namesRoot).sort()) {
     for (const filename of listJson(join(namesRoot, language))) {
       const doc = readJson(join(namesRoot, language, filename));
       for (const name of doc.names ?? []) {
         if (!included(name.review_state)) continue;
-        names.push({ language, name });
         insertName.run(
           name.name_id,
           language,
@@ -325,13 +322,7 @@ function main() {
         }
 
         for (const ref of name.family_refs ?? []) {
-          insertMembership.run(
-            name.name_id,
-            ref.family_id,
-            ref.equivalence_set_id,
-            ref.form_id ?? null,
-            ref.note ?? null,
-          );
+          pendingMemberships.push({ nameId: name.name_id, ref });
         }
 
         for (const [index, usage] of (name.gender_usage ?? []).entries()) {
@@ -359,7 +350,6 @@ function main() {
     }
   }
 
-  // Insert family forms after names so optional `name_id` foreign keys resolve.
   for (const { family, set, form } of [...familyFormsById.values()].sort((a, b) => a.form.form_id.localeCompare(b.form.form_id))) {
     const linkedNameId = form.name_id && db.prepare('SELECT 1 FROM names WHERE name_id = ?').get(form.name_id)
       ? form.name_id
@@ -396,9 +386,21 @@ function main() {
     );
   }
 
-  // A source family form may reference a language-local name whose membership
-  // has not yet been explicitly authored. Do not synthesize that membership;
-  // the family form is still independently searchable.
+  for (const { nameId, ref } of pendingMemberships) {
+    const familyExists = db.prepare('SELECT 1 FROM name_families WHERE family_id = ?').get(ref.family_id);
+    const setExists = db.prepare('SELECT 1 FROM name_equivalence_sets WHERE equivalence_set_id = ?').get(ref.equivalence_set_id);
+    if (!familyExists || !setExists) {
+      if (PRODUCTION) continue;
+      throw new Error(`${nameId}: family reference ${ref.family_id}/${ref.equivalence_set_id} missing from development build`);
+    }
+    const formId = ref.form_id && db.prepare('SELECT 1 FROM name_family_forms WHERE form_id = ?').get(ref.form_id)
+      ? ref.form_id
+      : null;
+    if (ref.form_id && formId === null && !PRODUCTION) {
+      throw new Error(`${nameId}: name-family form ${ref.form_id} missing from development build`);
+    }
+    insertMembership.run(nameId, ref.family_id, ref.equivalence_set_id, formId, ref.note ?? null);
+  }
 
   const foreignKeyErrors = db.prepare('PRAGMA foreign_key_check').all();
   if (foreignKeyErrors.length > 0) {
