@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "work_id": "frog-king",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_frog_king_iron_henry",
+      "entity_type": "fictional_character",
+      "display_name": "Iron Henry",
+      "name_refs": [
+        {
+          "name_id": "name_en_henry",
+          "role": "given_name",
+          "surface": "Henry"
+        }
+      ],
+      "aliases": ["Henry"],
+      "work_id": "frog-king",
+      "summary": {
+        "en": "the faithful servant of the young prince in The Frog King"
+      },
+      "known_gender": null,
+      "external_ids": {},
+      "source_refs": ["src_work_frog_king"],
+      "referenced_in_works": ["frog-king"],
+      "review_state": "candidate"
+    }
+  ]
+}
