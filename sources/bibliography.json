@@ -1,109 +1,50 @@
 {
   "schema_version": 1,
   "sources": [
-    {
-      "source_id": "src_work_gef_intro",
-      "source_type": "internal_work",
-      "title": "GEF Intro",
-      "external_ids": {"work_id": "gef-intro"},
-      "note": "Canonical GEF content-repository work used as the source for book-local character facts."
-    },
-    {
-      "source_id": "src_work_frog_king",
-      "source_type": "internal_work",
-      "title": "The Frog King",
-      "external_ids": {"work_id": "frog-king"},
-      "note": "Canonical GEF content-repository work used as the source for book-local character facts."
-    },
-    {
-      "source_id": "src_wikidata_q13258171_alex",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alex (Q13258171)",
-      "url": "https://www.wikidata.org/wiki/Q13258171",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q13258171"},
-      "note": "Candidate evidence for Alex as a multilingual/unisex given-name item and associated aliases/equivalences."
-    },
-    {
-      "source_id": "src_wikidata_q923_alexander",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alexander (Q923)",
-      "url": "https://www.wikidata.org/wiki/Q923",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q923"},
-      "note": "Candidate evidence for the Alexander given-name identity and cross-language same-as links."
-    },
-    {
-      "source_id": "src_wikidata_q1707169_alejandro",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alejandro (Q1707169)",
-      "url": "https://www.wikidata.org/wiki/Q1707169",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q1707169"},
-      "note": "Candidate evidence for Spanish Alejandro."
-    },
-    {
-      "source_id": "src_wikidata_q19828977_alexandros",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alexandros (Q19828977)",
-      "url": "https://www.wikidata.org/wiki/Q19828977",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q19828977"},
-      "note": "Candidate evidence for Greek Αλέξανδρος / Alexandros."
-    },
-    {
-      "source_id": "src_wikidata_q16002466_alexandre",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alexandre (Q16002466)",
-      "url": "https://www.wikidata.org/wiki/Q16002466",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q16002466"},
-      "note": "Candidate evidence for Alexandre in French/Portuguese and related languages."
-    },
-    {
-      "source_id": "src_wikidata_q17501723_alessandro",
-      "source_type": "wikidata",
-      "title": "Wikidata: Alessandro (Q17501723)",
-      "url": "https://www.wikidata.org/wiki/Q17501723",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q17501723"},
-      "note": "Candidate evidence for Italian Alessandro."
-    },
-    {
-      "source_id": "src_wikidata_q17501806_aleksandr",
-      "source_type": "wikidata",
-      "title": "Wikidata: Aleksandr (Q17501806)",
-      "url": "https://www.wikidata.org/wiki/Q17501806",
-      "license": "CC0-1.0 structured data",
-      "external_ids": {"wikidata": "Q17501806"},
-      "note": "Candidate evidence for Russian Александр / Aleksandr."
-    },
-    {
-      "source_id": "src_openlearn_foreign_names_chinese",
-      "source_type": "website",
-      "title": "OpenLearn Beginners’ Chinese: Translating foreign names",
-      "author": "The Open University",
-      "url": "https://www.open.edu/openlearn/languages/beginners-chinese-taster-course/content-section-5",
-      "note": "Cultural/linguistic evidence for multiple Chinese strategies for foreign names: sound-based character choices, meaning-based choices, mixed strategies, and Chinese name order when a Chinese family-name equivalent is adopted. Use as authored lesson evidence, not copied instructional text."
-    },
-    {
-      "source_id": "src_lifeprint_asl_name_signs",
-      "source_type": "website",
-      "title": "Lifeprint: Name Signs in American Sign Language",
-      "author": "William Vicars",
-      "url": "https://www.lifeprint.com/asl101/topics/name-signs.htm",
-      "note": "Cultural evidence that ASL names may be fingerspelled and that community name signs are generally assigned through participation in the Deaf community rather than self-invented by outsiders."
-    },
-    {
-      "source_id": "src_gutenberg_52930_names_meaning",
-      "source_type": "book",
-      "title": "Names: and Their Meaning; A Book for the Curious",
-      "author": "Leopold Wagner",
-      "year": 1893,
-      "url": "https://www.gutenberg.org/ebooks/52930",
-      "license": "Public domain in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files",
-      "external_ids": {"project_gutenberg": "52930"},
-      "note": "Candidate public-domain source work for a names-themed Gef edition and contextual trigger into the names-around-the-world lesson. Rights must still be represented by the content repo's edition-specific rights gate before publication."
-    }
+    {"source_id":"src_work_gef_intro","source_type":"internal_work","title":"GEF Intro","external_ids":{"work_id":"gef-intro"},"note":"Canonical GEF content-repository work used as the source for book-local character facts."},
+    {"source_id":"src_work_frog_king","source_type":"internal_work","title":"The Frog King","external_ids":{"work_id":"frog-king"},"note":"Canonical GEF content-repository work used as the source for book-local character facts."},
+    {"source_id":"src_wikidata_q13258171_alex","source_type":"wikidata","title":"Wikidata: Alex (Q13258171)","url":"https://www.wikidata.org/wiki/Q13258171","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q13258171"},"note":"Candidate evidence for Alex as a multilingual/unisex given-name item and associated aliases/equivalences."},
+    {"source_id":"src_wikidata_q923_alexander","source_type":"wikidata","title":"Wikidata: Alexander (Q923)","url":"https://www.wikidata.org/wiki/Q923","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q923"},"note":"Candidate evidence for the Alexander given-name identity and cross-language same-as links."},
+    {"source_id":"src_wikidata_q1707169_alejandro","source_type":"wikidata","title":"Wikidata: Alejandro (Q1707169)","url":"https://www.wikidata.org/wiki/Q1707169","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q1707169"},"note":"Candidate evidence for Spanish Alejandro."},
+    {"source_id":"src_wikidata_q19828977_alexandros","source_type":"wikidata","title":"Wikidata: Alexandros (Q19828977)","url":"https://www.wikidata.org/wiki/Q19828977","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q19828977"},"note":"Candidate evidence for Greek Αλέξανδρος / Alexandros."},
+    {"source_id":"src_wikidata_q16002466_alexandre","source_type":"wikidata","title":"Wikidata: Alexandre (Q16002466)","url":"https://www.wikidata.org/wiki/Q16002466","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q16002466"},"note":"Candidate evidence for Alexandre in French/Portuguese and related languages."},
+    {"source_id":"src_wikidata_q17501723_alessandro","source_type":"wikidata","title":"Wikidata: Alessandro (Q17501723)","url":"https://www.wikidata.org/wiki/Q17501723","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q17501723"},"note":"Candidate evidence for Italian Alessandro."},
+    {"source_id":"src_wikidata_q17501806_aleksandr","source_type":"wikidata","title":"Wikidata: Aleksandr (Q17501806)","url":"https://www.wikidata.org/wiki/Q17501806","license":"CC0-1.0 structured data","external_ids":{"wikidata":"Q17501806"},"note":"Candidate evidence for Russian Александр / Aleksandr."},
+    {"source_id":"src_openlearn_foreign_names_chinese","source_type":"website","title":"OpenLearn Beginners’ Chinese: Translating foreign names","author":"The Open University","url":"https://www.open.edu/openlearn/languages/beginners-chinese-taster-course/content-section-5","note":"Cultural/linguistic evidence for multiple Chinese strategies for foreign names: sound-based character choices, meaning-based choices, mixed strategies, and Chinese name order when a Chinese family-name equivalent is adopted. Use as authored lesson evidence, not copied instructional text."},
+    {"source_id":"src_lifeprint_asl_name_signs","source_type":"website","title":"Lifeprint: Name Signs in American Sign Language","author":"William Vicars","url":"https://www.lifeprint.com/asl101/topics/name-signs.htm","note":"Cultural evidence that ASL names may be fingerspelled and that community name signs are generally assigned through participation in the Deaf community rather than self-invented by outsiders."},
+    {"source_id":"src_gutenberg_52930_names_meaning","source_type":"book","title":"Names: and Their Meaning; A Book for the Curious","author":"Leopold Wagner","year":1893,"url":"https://www.gutenberg.org/ebooks/52930","license":"Public domain in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files","external_ids":{"project_gutenberg":"52930"},"note":"Candidate public-domain source work for a names-themed Gef edition and contextual trigger into the names-around-the-world lesson. Rights must still be represented by the content repo's edition-specific rights gate before publication."},
+
+    {"source_id":"src_afi_100_movie_quotes","source_type":"website","title":"AFI's 100 Years...100 Movie Quotes","author":"American Film Institute","url":"https://www.afi.com/afis-100-years-100-movie-quotes/","note":"Independent wording/title/year verification source for the initial movie-quote seed. It is not the originating work and does not grant reuse rights."},
+    {"source_id":"src_starwars_empire_mark_hamill_2020","source_type":"website","title":"Empire at 40: Mark Hamill on Star Wars: The Empire Strikes Back","author":"StarWars.com","year":2020,"url":"https://www.starwars.com/news/mark-hamill-interview-empire-strikes-back-40th","note":"Official Star Wars source verifying the on-screen wording 'No, I am your father.'"},
+    {"source_id":"src_starwars_empire_george_lucas_2020","source_type":"website","title":"Empire at 40: George Lucas on The Empire Strikes Back","author":"StarWars.com","year":2020,"url":"https://www.starwars.com/news/empire-at-40-george-lucas-interview","note":"Official Star Wars source independently describing the recorded Vader line."},
+
+    {"source_id":"src_film_empire_strikes_back_1980","source_type":"film","title":"Star Wars: The Empire Strikes Back","year":1980},
+    {"source_id":"src_film_star_wars_1977","source_type":"film","title":"Star Wars","year":1977},
+    {"source_id":"src_film_wizard_of_oz_1939","source_type":"film","title":"The Wizard of Oz","year":1939},
+    {"source_id":"src_film_casablanca_1942","source_type":"film","title":"Casablanca","year":1942},
+    {"source_id":"src_film_et_1982","source_type":"film","title":"E.T.: The Extra-Terrestrial","year":1982},
+    {"source_id":"src_film_dr_no_1963","source_type":"film","title":"Dr. No","year":1963},
+    {"source_id":"src_film_jerry_maguire_1996","source_type":"film","title":"Jerry Maguire","year":1996},
+    {"source_id":"src_film_a_few_good_men_1992","source_type":"film","title":"A Few Good Men","year":1992},
+    {"source_id":"src_film_jaws_1975","source_type":"film","title":"Jaws","year":1975},
+    {"source_id":"src_film_terminator_1984","source_type":"film","title":"The Terminator","year":1984},
+    {"source_id":"src_film_sixth_sense_1999","source_type":"film","title":"The Sixth Sense","year":1999},
+    {"source_id":"src_film_some_like_it_hot_1959","source_type":"film","title":"Some Like It Hot","year":1959},
+    {"source_id":"src_film_apollo_13_1995","source_type":"film","title":"Apollo 13","year":1995},
+    {"source_id":"src_film_a_league_of_their_own_1992","source_type":"film","title":"A League of Their Own","year":1992},
+    {"source_id":"src_film_godfather_part_ii_1974","source_type":"film","title":"The Godfather Part II","year":1974},
+    {"source_id":"src_film_dr_strangelove_1964","source_type":"film","title":"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb","year":1964},
+    {"source_id":"src_film_streetcar_named_desire_1951","source_type":"film","title":"A Streetcar Named Desire","year":1951},
+    {"source_id":"src_film_terminator_2_1991","source_type":"film","title":"Terminator 2: Judgment Day","year":1991},
+    {"source_id":"src_film_top_gun_1986","source_type":"film","title":"Top Gun","year":1986},
+    {"source_id":"src_film_dead_poets_society_1989","source_type":"film","title":"Dead Poets Society","year":1989},
+    {"source_id":"src_film_titanic_1997","source_type":"film","title":"Titanic","year":1997},
+
+    {"source_id":"src_game_legend_of_zelda_1986","source_type":"video_game","title":"The Legend of Zelda","year":1986,"official_url":"https://zelda.nintendo.com/","note":"The official Zelda site currently uses the source phrase selected for the seed; retain exact release-level provenance if a later full dialogue source is added."},
+
+    {"source_id":"src_book_hamlet_shakespeare","source_type":"play","title":"Hamlet","author":"William Shakespeare","url":"https://www.gutenberg.org/ebooks/1524","license":"Public domain underlying work in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files","external_ids":{"project_gutenberg":"1524"}},
+    {"source_id":"src_book_moby_dick_melville","source_type":"book","title":"Moby-Dick; Or, The Whale","author":"Herman Melville","year":1851,"url":"https://www.gutenberg.org/ebooks/2701","license":"Public domain underlying work in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files","external_ids":{"project_gutenberg":"2701"}},
+    {"source_id":"src_book_tale_two_cities_dickens","source_type":"book","title":"A Tale of Two Cities","author":"Charles Dickens","year":1859,"url":"https://www.gutenberg.org/ebooks/98","license":"Public domain underlying work in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files","external_ids":{"project_gutenberg":"98"}},
+    {"source_id":"src_book_oliver_twist_dickens","source_type":"book","title":"Oliver Twist","author":"Charles Dickens","year":1838,"url":"https://www.gutenberg.org/ebooks/730","license":"Public domain underlying work in the USA; Project Gutenberg source wrapper/trademark terms apply to redistributed PG files","external_ids":{"project_gutenberg":"730"}}
   ]
 }
