@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "semantic_functions": [
+    {"semantic_function_id":"SEM.PURPOSE","key":"purpose","family":"purpose_cause_goal","description":"an intended aim, function, or reason for doing something","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CAUSE_REASON","key":"cause_reason","family":"purpose_cause_goal","description":"a cause, motivation, explanation, or reason","review_state":"candidate"},
+    {"semantic_function_id":"SEM.BENEFICIARY","key":"beneficiary","family":"participant_role","description":"the person or entity for whose benefit something is intended or done","review_state":"candidate"},
+    {"semantic_function_id":"SEM.DESTINATION_GOAL","key":"destination_goal","family":"space_goal","description":"a destination, endpoint, or goal toward which motion or action is directed","review_state":"candidate"},
+    {"semantic_function_id":"SEM.EXCHANGE_SUBSTITUTION","key":"exchange_substitution","family":"relation","description":"an exchange, price, replacement, or substitution relation","review_state":"candidate"},
+    {"semantic_function_id":"SEM.PATH_ROUTE","key":"path_route","family":"space_path","description":"a path, route, area traversed, or movement through/along a place","review_state":"candidate"},
+    {"semantic_function_id":"SEM.MEANS_CHANNEL","key":"means_channel","family":"means","description":"a means, method, channel, or medium by which something happens","review_state":"candidate"},
+    {"semantic_function_id":"SEM.DEADLINE_TARGET_TIME","key":"deadline_target_time","family":"time_goal","description":"a target time, deadline, or temporal endpoint","review_state":"candidate"},
+    {"semantic_function_id":"SEM.DISTRIBUTIVE_SEQUENCE","key":"distributive_sequence","family":"quantity_distribution","description":"distribution or progression one unit at a time, as in one by one","review_state":"candidate"},
+    {"semantic_function_id":"SEM.INTERROGATIVE_REASON","key":"interrogative_reason","family":"question","description":"a question asking for a cause or reason","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CONSEQUENCE_LINK","key":"consequence_link","family":"discourse_relation","description":"a discourse relation presenting a result or consequence of prior information","review_state":"candidate"}
+  ]
+}
