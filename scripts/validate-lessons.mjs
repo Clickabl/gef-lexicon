@@ -22,6 +22,7 @@ const lexical = {
 const semanticFunctions = new Set();
 const constructions = new Set();
 const lessons = new Map();
+const grammarSetRuleIds = new Map();
 
 function listDirs(path) {
   if (!existsSync(path)) return [];
@@ -126,6 +127,33 @@ function loadConstructions() {
   }
 }
 
+function loadGrammarSets() {
+  const grammarDir = join(ROOT, 'grammar');
+  if (!existsSync(grammarDir)) return;
+  for (const file of readdirSync(grammarDir).filter((entry) => entry.endsWith('.json'))) {
+    const path = join(grammarDir, file);
+    const doc = readJson(path);
+    if (typeof doc.grammar_set_id !== 'string') continue;
+    if (grammarSetRuleIds.has(doc.grammar_set_id)) {
+      fail(`${path}: duplicate grammar_set_id ${doc.grammar_set_id}`);
+      continue;
+    }
+    const ruleIds = new Set();
+    for (const language of doc.languages ?? []) {
+      for (const form of language.forms ?? []) {
+        for (const rule of form.rules ?? []) {
+          if (ruleIds.has(rule.rule_id)) fail(`${doc.grammar_set_id}: duplicate rule ${rule.rule_id}`);
+          ruleIds.add(rule.rule_id);
+          for (const semanticId of rule.semantic_function_ids ?? []) {
+            if (!semanticFunctions.has(semanticId)) fail(`${rule.rule_id}: unknown semantic function ${semanticId}`);
+          }
+        }
+      }
+    }
+    grammarSetRuleIds.set(doc.grammar_set_id, ruleIds);
+  }
+}
+
 function walkLessons() {
   const root = join(ROOT, 'lessons');
   if (!existsSync(root)) return;
@@ -148,31 +176,40 @@ function walkLessons() {
         for (const id of rule.construction_ids ?? []) if (!constructions.has(id)) fail(`${rule.rule_id}: unknown construction ${id}`);
         for (const ref of rule.match_refs ?? []) checkTypedRef(ref, rule.rule_id);
       }
+      const grammarRuleIds = lesson.grammar_set_id ? grammarSetRuleIds.get(lesson.grammar_set_id) : undefined;
+      if (lesson.grammar_set_id && !grammarRuleIds) fail(`${lesson.lesson_id}: unknown grammar_set_id ${lesson.grammar_set_id}`);
       for (const trigger of lesson.triggers ?? []) {
         if (triggerIds.has(trigger.trigger_id)) fail(`${lesson.lesson_id}: duplicate trigger ${trigger.trigger_id}`);
         triggerIds.add(trigger.trigger_id);
         for (const ref of trigger.match_any ?? []) checkTypedRef(ref, trigger.trigger_id);
       }
       for (const module of lesson.practice_modules ?? []) {
-        for (const ruleId of module.eligible_rule_ids ?? []) if (!ruleIds.has(ruleId)) fail(`${lesson.lesson_id}/${module.module}: unknown rule ${ruleId}`);
+        for (const ruleId of module.eligible_rule_ids ?? []) {
+          if (!ruleIds.has(ruleId) && !grammarRuleIds?.has(ruleId)) {
+            fail(`${lesson.lesson_id}/${module.module}: unknown rule ${ruleId}`);
+          }
+        }
         for (const ref of module.choice_refs ?? []) checkTypedRef(ref, `${lesson.lesson_id}/${module.module}`);
       }
-      lessons.set(lesson.lesson_id, { lessonDir, ruleIds });
+      lessons.set(lesson.lesson_id, { lessonDir, ruleIds, grammarRuleIds: grammarRuleIds ?? new Set() });
     }
   }
 }
 
 function validateRenderings() {
-  for (const [lessonId, { lessonDir, ruleIds }] of lessons) {
+  for (const [lessonId, { lessonDir, ruleIds, grammarRuleIds }] of lessons) {
+    const allowedRuleIds = new Set([...ruleIds, ...grammarRuleIds]);
     const dir = join(lessonDir, 'renderings');
     if (!existsSync(dir)) continue;
     for (const file of readdirSync(dir).filter((x) => x.endsWith('.json'))) {
       const rendering = readJson(join(dir, file));
       if (rendering.lesson_id !== lessonId) fail(`${file}: rendering lesson_id ${rendering.lesson_id} does not match ${lessonId}`);
       for (const block of rendering.blocks ?? []) {
-        if (block.rule_id && !ruleIds.has(block.rule_id)) fail(`${lessonId}/${file}: block ${block.block_id} references unknown rule ${block.rule_id}`);
+        if (block.rule_id && !allowedRuleIds.has(block.rule_id)) fail(`${lessonId}/${file}: block ${block.block_id} references unknown rule ${block.rule_id}`);
       }
-      for (const ruleId of Object.keys(rendering.rule_explanations ?? {})) if (!ruleIds.has(ruleId)) fail(`${lessonId}/${file}: unknown rule_explanations key ${ruleId}`);
+      for (const ruleId of Object.keys(rendering.rule_explanations ?? {})) {
+        if (!allowedRuleIds.has(ruleId)) fail(`${lessonId}/${file}: unknown rule_explanations key ${ruleId}`);
+      }
     }
   }
 }
@@ -180,6 +217,7 @@ function validateRenderings() {
 loadLexicalIds();
 loadSemanticFunctions();
 loadConstructions();
+loadGrammarSets();
 walkLessons();
 validateRenderings();
 
@@ -187,4 +225,4 @@ if (errors) {
   console.error(`\n${errors} lesson-graph validation error(s).`);
   process.exit(1);
 }
-console.log(`OK — ${semanticFunctions.size} semantic functions, ${constructions.size} constructions, ${lessons.size} lesson(s), 0 lesson-graph errors.`);
+console.log(`OK — ${semanticFunctions.size} semantic functions, ${constructions.size} constructions, ${grammarSetRuleIds.size} grammar set(s), ${lessons.size} lesson(s), 0 lesson-graph errors.`);
