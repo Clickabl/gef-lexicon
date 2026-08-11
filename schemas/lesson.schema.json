@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson.schema.json",
+  "title": "GEF Reusable Lesson",
+  "type": "object",
+  "required": ["schema_version", "lesson_id", "lesson_key", "target_language", "rules", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+    "lesson_key": {"type": "string", "minLength": 1},
+    "target_language": {"type": "string", "minLength": 1},
+    "curriculum_concept_ids": {"type": "array", "items": {"type": "string"}},
+    "construction_ids": {"type": "array", "items": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"}},
+    "prerequisite_lesson_ids": {"type": "array", "items": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"}},
+    "difficulty_band": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+    "rules": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/rule"}},
+    "triggers": {"type": "array", "items": {"$ref": "#/definitions/trigger"}},
+    "practice_modules": {"type": "array", "items": {"$ref": "#/definitions/practiceModule"}},
+    "example_query": {"$ref": "#/definitions/exampleQuery"},
+    "interaction_defaults": {
+      "type": "object",
+      "properties": {
+        "offer_mode": {"type": "string", "enum": ["tap_sheet", "manual_lessons_tab", "learning_mode_preflight", "restrained_contextual_offer"]},
+        "dismissal_behavior": {"type": "string"},
+        "cooldown_policy": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "typedRef": {
+      "type": "object",
+      "required": ["target_type", "target_id"],
+      "properties": {
+        "target_type": {"type": "string", "enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept"]},
+        "target_id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "rule": {
+      "type": "object",
+      "required": ["rule_id", "rule_key", "order", "match_refs"],
+      "properties": {
+        "rule_id": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"},
+        "rule_key": {"type": "string", "minLength": 1},
+        "order": {"type": "integer", "minimum": 1},
+        "semantic_function_ids": {"type": "array", "items": {"type": "string", "pattern": "^SEM\\.[A-Z0-9._-]+$"}},
+        "construction_ids": {"type": "array", "items": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"}},
+        "match_refs": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
+        "practice_eligible_by_default": {"type": "boolean"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "trigger": {
+      "type": "object",
+      "required": ["trigger_id", "trigger_type"],
+      "properties": {
+        "trigger_id": {"type": "string", "pattern": "^TRG\\.[A-Za-z0-9._-]+$"},
+        "trigger_type": {"type": "string", "enum": ["tap", "repeated_encounter", "passage", "pattern", "morphology", "manual", "learning_mode_preflight"]},
+        "match_any": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
+        "feature_bundle": {"type": "object"},
+        "minimum_encounters": {"type": "integer", "minimum": 1},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "practiceModule": {
+      "type": "object",
+      "required": ["module", "eligible_rule_ids"],
+      "properties": {
+        "module": {"type": "string", "enum": ["inline_choice_cloze", "typed_cloze", "meaning_here", "find_in_sentence", "why_this", "form_to_features", "features_to_form", "conjugation_slot", "pattern_hunt", "compare_realizations"]},
+        "eligible_rule_ids": {"type": "array", "items": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"}},
+        "choice_refs": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
+        "constraints": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "exampleQuery": {
+      "type": "object",
+      "properties": {
+        "prefer_current_book": {"type": "boolean"},
+        "max_book_examples": {"type": "integer", "minimum": 0},
+        "spoiler_policy": {"type": "string", "enum": ["current_then_read", "read_only", "reviewed_generic"]},
+        "minimum_quality": {"type": "string", "enum": ["usable", "good", "excellent"]},
+        "require_reviewed_occurrence": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
