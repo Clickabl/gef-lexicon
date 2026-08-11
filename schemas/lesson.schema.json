@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["schema_version", "lesson_id", "lesson_key", "target_language", "rules", "review_state", "version"],
   "properties": {
-    "schema_version": {"type": "integer", "const": 1},
+    "schema_version": {"type": "integer", "enum": [1, 2]},
     "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
     "lesson_key": {"type": "string", "minLength": 1},
     "target_language": {"type": "string", "minLength": 1},
@@ -14,6 +14,7 @@
     "prerequisite_lesson_ids": {"type": "array", "items": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"}},
     "difficulty_band": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
     "grammar_set_id": {"type": "string", "pattern": "^GRAMSET\\.[A-Za-z0-9._-]+$"},
+    "language_capabilities_manifest": {"type": "string", "minLength": 1},
     "session_policy": {"$ref": "#/definitions/sessionPolicy"},
     "rules": {"type": "array", "items": {"$ref": "#/definitions/rule"}},
     "triggers": {"type": "array", "items": {"$ref": "#/definitions/trigger"}},
@@ -50,13 +51,17 @@
       "properties": {
         "minimum_display_languages": {"type": "integer", "minimum": 1},
         "maximum_display_languages": {"type": "integer", "minimum": 1},
+        "fixed_comparison_language_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
         "prefer_profile_languages": {"type": "boolean"},
         "fallback_language_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
         "requires_at_least_one_non_anchor_multi_language": {"type": "boolean"},
         "language_selection_is_session_only": {"type": "boolean"},
+        "language_roles_are_distinct": {"type": "boolean"},
+        "dedupe_display_without_losing_roles": {"type": "boolean"},
         "display_modes": {"type": "array", "items": {"enum": ["scroll", "pages", "presentation"]}, "uniqueItems": true},
-        "practice_mode": {"enum": ["always", "only_when_selected_languages_have_meaningful_choice", "none"]},
-        "comparison_only_mode": {"type": "boolean"}
+        "practice_mode": {"enum": ["always", "only_when_selected_languages_have_meaningful_choice", "learning_languages_with_full_lesson_support_only", "none"]},
+        "comparison_only_mode": {"type": "boolean"},
+        "notes": {"type": "string"}
       },
       "additionalProperties": false
     },
