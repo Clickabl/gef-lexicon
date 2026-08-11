@@ -2,6 +2,13 @@
 
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
 
+## Work-item terminology
+
+- **TASK** = AI/human research, review, evidence gathering, linguistic analysis, or candidate-data work. Research Tasks belong in the canonical Agent Review Queue flow.
+- **TODO** = coding/implementation work: schemas, validators, compilers, CI, migrations, runtime/package tooling, or other repository engineering.
+- A Task may discover a TODO, and a TODO may be gated on a Task, but do not mix unrelated research and implementation into one ambiguous work item.
+- Until the human inbox is implemented, GitHub issues prefixed `TASK —` are durable Task seeds. Do not use `TODO` issues for research work.
+
 ## Agent Review Queue
 
 Cross-product review/research work is coordinated by the canonical queue contract in `Clickabl/gef-expo`:
@@ -10,9 +17,9 @@ Cross-product review/research work is coordinated by the canonical queue contrac
 - `docs/product/schemas/agent-review-task-v1.schema.json`
 - `docs/product/schemas/agent-review-queue-v1.postgres.sql`
 - `docs/product/examples/name-unknown-task-template.md`
-- `gef-expo` issue #9 tracks the human inbox and future agent executor.
+- `gef-expo` issue #9, prefixed `TODO —`, tracks implementation of the human inbox and future agent executor.
 
-If lexicon/name work needs later review or research, emit/propose a structured queue task or signal compatible with that contract instead of inventing a local TODO queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue results may create **candidate** lexicon/name artifacts or PRs, but they may never mark their own output approved. Large evidence/logs should be attached/referenced as artifacts rather than embedded in canonical lexicon rows.
+If lexicon/name work needs later review or research, emit/propose a structured queue Task or signal compatible with that contract instead of inventing a local research queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue results may create **candidate** lexicon/name artifacts or PRs, but they may never mark their own output approved. Large evidence/logs should be attached/referenced as artifacts rather than embedded in canonical lexicon rows.
 
 ## Hard Rules
 
