@@ -22,44 +22,12 @@
             "el": "επικοινωνώ χρησιμοποιώντας τον προφορικό λόγο"
           },
           "cefr_level": "A1",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
         }
       ],
       "forms": [
-        {
-          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000203",
-          "surface_nfc": "hablar",
-          "normalized_lookup": "hablar",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000204",
-              "features": {
-                "base": { "non_finite": "infinitive" }
-              },
-              "display_label_key": "infinitivo"
-            }
-          ]
-        },
-        {
-          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000205",
-          "surface_nfc": "habla",
-          "normalized_lookup": "habla",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000206",
-              "features": {
-                "base": { "tense": "present", "mood": "indicative", "person": "3", "number": "singular" }
-              },
-              "display_label_key": "3ª persona singular presente"
-            }
-          ]
-        }
+        {"form_id":"018f2c3a-7b1e-7a4d-9c2e-000000000203","surface_nfc":"hablar","normalized_lookup":"hablar","attested_in_text":true,"analyses":[{"analysis_id":"018f2c3a-7b1e-7a4d-9c2e-000000000204","features":{"base":{"non_finite":"infinitive"}},"display_label_key":"infinitivo"}]},
+        {"form_id":"018f2c3a-7b1e-7a4d-9c2e-000000000205","surface_nfc":"habla","normalized_lookup":"habla","attested_in_text":true,"analyses":[{"analysis_id":"018f2c3a-7b1e-7a4d-9c2e-000000000206","features":{"base":{"tense":"present","mood":"indicative","person":"3","number":"singular"}},"display_label_key":"3ª persona singular presente"}]}
       ]
     },
     {
@@ -82,29 +50,47 @@
             "el": "αμφίβιο χωρίς ουρά με πίσω πόδια προσαρμοσμένα για πηδήματα"
           },
           "cefr_level": "A1",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
         }
       ],
       "forms": [
-        {
-          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000209",
-          "surface_nfc": "rana",
-          "normalized_lookup": "rana",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000210",
-              "features": {
-                "base": { "gender": "feminine", "number": "singular" }
-              },
-              "display_label_key": "singular femenino"
-            }
-          ]
-        }
+        {"form_id":"018f2c3a-7b1e-7a4d-9c2e-000000000209","surface_nfc":"rana","normalized_lookup":"rana","attested_in_text":true,"analyses":[{"analysis_id":"018f2c3a-7b1e-7a4d-9c2e-000000000210","features":{"base":{"gender":"feminine","number":"singular"}},"display_label_key":"singular femenino"}]}
+      ]
+    },
+    {
+      "lexeme_id": "02000000-0000-7000-8200-000000000301",
+      "lemma_nfc": "por",
+      "upos": "ADP",
+      "language_pos": "preposition",
+      "lexical_features": {"inflection_class":"invariant"},
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {"sense_id":"02000000-0000-7000-8201-000000000301","sense_key":"por-path-route","primary_concept_id":null,"definitions":{"en":"marks a path, route, or area through which movement occurs","es":"marca el camino, recorrido o zona por donde ocurre un movimiento","fr":"marque le chemin, le trajet ou la zone par laquelle se fait un déplacement","pt":"marca o caminho, percurso ou área por onde ocorre um movimento","it":"indica il percorso, la via o l'area attraverso cui avviene un movimento","el":"δηλώνει τη διαδρομή, την πορεία ή την περιοχή μέσα από την οποία γίνεται κίνηση"},"cefr_level":"A1","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000302","sense_key":"por-cause-reason","primary_concept_id":null,"definitions":{"en":"marks a cause, reason, or motivation","es":"marca una causa, razón o motivo","fr":"marque une cause, une raison ou un motif","pt":"marca uma causa, razão ou motivo","it":"indica una causa, una ragione o un motivo","el":"δηλώνει αιτία, λόγο ή κίνητρο"},"cefr_level":"A1","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000303","sense_key":"por-means-channel","primary_concept_id":null,"definitions":{"en":"marks a means, method, channel, or medium","es":"marca un medio, método, canal o vía","fr":"marque un moyen, une méthode, un canal ou un intermédiaire","pt":"marca um meio, método, canal ou via","it":"indica un mezzo, metodo, canale o tramite","el":"δηλώνει μέσο, μέθοδο, κανάλι ή τρόπο"},"cefr_level":"A2","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000304","sense_key":"por-exchange-substitution","primary_concept_id":null,"definitions":{"en":"marks an exchange, price, replacement, or substitution","es":"marca intercambio, precio, reemplazo o sustitución","fr":"marque un échange, un prix, un remplacement ou une substitution","pt":"marca troca, preço, substituição ou reposição","it":"indica scambio, prezzo, sostituzione o rimpiazzo","el":"δηλώνει ανταλλαγή, τίμημα, αντικατάσταση ή υποκατάσταση"},"cefr_level":"A2","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]}
+      ],
+      "forms": [
+        {"form_id":"02000000-0000-7000-8202-000000000301","surface_nfc":"por","normalized_lookup":"por","attested_in_text":true,"analyses":[{"analysis_id":"02000000-0000-7000-8203-000000000301","features":{"base":{"invariant":"true"}},"display_label_key":"preposición invariable"}]}
+      ]
+    },
+    {
+      "lexeme_id": "02000000-0000-7000-8200-000000000302",
+      "lemma_nfc": "para",
+      "upos": "ADP",
+      "language_pos": "preposition",
+      "lexical_features": {"inflection_class":"invariant"},
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {"sense_id":"02000000-0000-7000-8201-000000000305","sense_key":"para-purpose","primary_concept_id":null,"definitions":{"en":"marks an intended purpose or aim","es":"marca una finalidad, propósito u objetivo previsto","fr":"marque un but, une finalité ou un objectif visé","pt":"marca uma finalidade, propósito ou objetivo pretendido","it":"indica una finalità, uno scopo o un obiettivo previsto","el":"δηλώνει σκοπό, επιδίωξη ή επιθυμητό στόχο"},"cefr_level":"A1","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000306","sense_key":"para-destination-goal","primary_concept_id":null,"definitions":{"en":"marks a destination, endpoint, or goal","es":"marca un destino, punto final u objetivo","fr":"marque une destination, un point d'arrivée ou un objectif","pt":"marca um destino, ponto final ou objetivo","it":"indica una destinazione, un punto d'arrivo o un obiettivo","el":"δηλώνει προορισμό, τελικό σημείο ή στόχο"},"cefr_level":"A1","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000307","sense_key":"para-beneficiary-recipient","primary_concept_id":null,"definitions":{"en":"marks the intended beneficiary or recipient","es":"marca el beneficiario o destinatario previsto","fr":"marque le bénéficiaire ou destinataire prévu","pt":"marca o beneficiário ou destinatário pretendido","it":"indica il beneficiario o destinatario previsto","el":"δηλώνει τον προβλεπόμενο ωφελούμενο ή παραλήπτη"},"cefr_level":"A1","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]},
+        {"sense_id":"02000000-0000-7000-8201-000000000308","sense_key":"para-deadline-target-time","primary_concept_id":null,"definitions":{"en":"marks a deadline or target time","es":"marca un plazo o momento objetivo","fr":"marque une échéance ou un moment cible","pt":"marca um prazo ou momento-alvo","it":"indica una scadenza o un momento obiettivo","el":"δηλώνει προθεσμία ή χρονικό στόχο"},"cefr_level":"A2","register_label":"standard","homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]}
+      ],
+      "forms": [
+        {"form_id":"02000000-0000-7000-8202-000000000302","surface_nfc":"para","normalized_lookup":"para","attested_in_text":true,"analyses":[{"analysis_id":"02000000-0000-7000-8203-000000000302","features":{"base":{"invariant":"true"}},"display_label_key":"preposición invariable"}]}
       ]
     }
   ]
