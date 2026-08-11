@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "lesson_key": "multiple-words-for-for",
+  "title_key": "lesson.multiple_for.title",
+  "fallback_title_en": "Multiple words for ‘for’",
+  "summary_key": "lesson.multiple_for.summary",
+  "fallback_summary_en": "Some languages use one common form where another language divides the same idea across several words, cases, particles, or constructions. Compare the forms, learn each language’s own rules, then practice them in real text.",
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "curriculum_concept_ids": ["CURR.PREPOSITIONS", "CURR.PURPOSE_CAUSE_GOAL", "CURR.PATH_ROUTE", "CURR.BENEFICIARY", "CURR.TIME_GOAL"],
+  "eligibility": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 6,
+    "require_non_anchor_multi_form_language": true,
+    "prefer_profile_languages": true,
+    "fill_with_anchor_language_when_needed": true
+  },
+  "block_plan": [
+    {
+      "block_id": "facts",
+      "block_type": "lesson_facts",
+      "repeat": "once",
+      "notes": "Explain the lesson in the interface language and let the learner temporarily include/exclude eligible profile languages without changing reader settings."
+    },
+    {
+      "block_id": "one-form-intro",
+      "block_type": "localized_text",
+      "group_id": "comparison-intro",
+      "repeat": "once",
+      "notes": "Localized explanation that some profile languages may use one common comparison form for the anchor concept."
+    },
+    {
+      "block_id": "one-form-examples",
+      "block_type": "word_examples",
+      "group_id": "comparison-intro",
+      "repeat": "per_single_form_language",
+      "notes": "Render 2..6 language bricks total where useful. Each brick may contain 1..N displayed forms."
+    },
+    {
+      "block_id": "multi-form-intro",
+      "block_type": "localized_text",
+      "repeat": "once",
+      "notes": "Localized explanation that other languages divide the anchor concept across multiple forms/constructions and that each language has its own rules."
+    },
+    {
+      "block_id": "language-rules",
+      "block_type": "language_rules",
+      "repeat": "per_multi_form_language",
+      "notes": "For each selected lesson language, render one rule section per form and arbitrary rule/tip arrays from the grammar set. Never import another language’s rule boundary."
+    },
+    {
+      "block_id": "curated-examples",
+      "block_type": "curated_examples",
+      "repeat": "per_selected_language",
+      "notes": "Prefer exact approved handles from the current compatible text or the lesson-safe default corpus. Example resolution is content-owned."
+    },
+    {
+      "block_id": "practice-intro",
+      "block_type": "practice_intro",
+      "repeat": "once",
+      "notes": "Friendly localized transition such as ‘Ready to try a few?’"
+    },
+    {
+      "block_id": "practice",
+      "block_type": "practice",
+      "repeat": "per_selected_language",
+      "notes": "Use shared practice primitives. Wrong answers reveal the rule and rotate through reviewed rule tips; no punitive streak or harsh failure language."
+    },
+    {
+      "block_id": "quest",
+      "block_type": "quest_offer",
+      "repeat": "once",
+      "notes": "Teacher/session policy may hide, offer, or require a reader quest such as finding every eligible form in the selected book/languages."
+    },
+    {
+      "block_id": "completion",
+      "block_type": "completion",
+      "repeat": "once",
+      "notes": "Localized wrap-up, scorecard, and optional celebration/confetti presentation."
+    }
+  ],
+  "presentation_modes": ["scroll", "paged"],
+  "learning_path_policy": {
+    "placements_are_language_specific": true,
+    "placement_registry": "curriculum/learning-path-placements.json",
+    "notes": "The same multilingual lesson family may appear at different positions in different language paths. For example, the Spanish por/para implementation is already A2, while Greek placement should be decided from Greek-specific prerequisites rather than copied from Spanish."
+  },
+  "review_state": "candidate",
+  "version": 1
+}
