@@ -6,14 +6,7 @@
       "name_id": "name_en_alex",
       "canonical_form": "Alex",
       "name_type": "given",
-      "spellings": [
-        {
-          "text": "Alex",
-          "status": "canonical",
-          "script": "Latn",
-          "locale": "en"
-        }
-      ],
+      "spellings": [{"text": "Alex", "status": "canonical", "script": "Latn", "locale": "en"}],
       "related_names": [],
       "gender_usage": [],
       "source_refs": ["src_work_gef_intro"],
@@ -23,17 +16,30 @@
       "name_id": "name_en_henry",
       "canonical_form": "Henry",
       "name_type": "given",
-      "spellings": [
-        {
-          "text": "Henry",
-          "status": "canonical",
-          "script": "Latn",
-          "locale": "en"
-        }
-      ],
+      "spellings": [{"text": "Henry", "status": "canonical", "script": "Latn", "locale": "en"}],
       "related_names": [],
       "gender_usage": [],
       "source_refs": ["src_work_frog_king"],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_gef",
+      "canonical_form": "Gef",
+      "name_type": "mononym",
+      "spellings": [{"text": "Gef", "status": "canonical", "script": "Latn", "locale": "en", "note": "pronounced like Jeff in the Gef Intro source text"}],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": ["src_work_gef_intro"],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_jeff",
+      "canonical_form": "Jeff",
+      "name_type": "given",
+      "spellings": [{"text": "Jeff", "status": "canonical", "script": "Latn", "locale": "en"}],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": ["src_work_gef_intro"],
       "review_state": "candidate"
     }
   ]
