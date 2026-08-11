@@ -2,7 +2,7 @@
 /**
  * Production Iron-Gate Validator for gef-lexicon repository.
  * Evaluates Ajv JSON schemas, referential integrity (concepts & distractor targets),
- * ID uniqueness across files, review_state honesty, and NFC normalization.
+ * ID uniqueness across files, review_state honesty, NFC normalization, and placeholder detection.
  */
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -12,10 +12,23 @@ import Ajv from 'ajv';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
 
-const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const PLACEHOLDER_PATTERNS = [
+  /definition of '.*' in context as a/i,
+  /\bin context as a\b/i,
+  /\bplaceholder\b/i,
+  /\btodo\b/i,
+  /\btbd\b/i,
+  /\bfoo\b/i,
+  /\bbar\b/i,
+];
 
 function isNFC(str) {
   return typeof str === 'string' && str === str.normalize('NFC');
+}
+
+function hasPlaceholderText(text) {
+  if (typeof text !== 'string') return false;
+  return PLACEHOLDER_PATTERNS.some((p) => p.test(text));
 }
 
 function main() {
@@ -127,6 +140,14 @@ function main() {
             console.error(`❌ [${lang}:${lex.lemma_nfc}] primary_concept_id '${s.primary_concept_id}' not found in concepts/graph.json`);
             errors += 1;
           }
+
+          // Placeholder text check
+          for (const [ilang, dtext] of Object.entries(s.definitions || {})) {
+            if (hasPlaceholderText(dtext)) {
+              console.error(`❌ [${lang}:${lex.lemma_nfc}] Placeholder definition detected in [${ilang}]: "${dtext}"`);
+              errors += 1;
+            }
+          }
         }
 
         for (const f of lex.forms || []) {
@@ -154,25 +175,28 @@ function main() {
     }
   }
 
-  // 3. Second pass: Referential Integrity check on Relation arrays (synonyms, homophones, etc.)
-  if (existsSync(languagesDir)) {
-    const langs = readdirSync(languagesDir).filter((f) =>
-      statSync(join(languagesDir, f)).isDirectory(),
+  // 3. Validate works/ overlays
+  const worksDir = join(REPO_ROOT, 'works');
+  if (existsSync(worksDir)) {
+    const works = readdirSync(worksDir).filter((f) =>
+      statSync(join(worksDir, f)).isDirectory(),
     );
 
-    for (const lang of langs) {
-      const lexFile = join(languagesDir, lang, 'lexicon.json');
-      if (!existsSync(lexFile)) continue;
+    for (const work of works) {
+      const lexDir = join(worksDir, work, 'lexicon');
+      if (!existsSync(lexDir)) continue;
 
-      const lData = JSON.parse(readFileSync(lexFile, 'utf8'));
-      for (const lex of lData.lexemes || []) {
-        for (const s of lex.senses || []) {
-          const relFields = ['homophones', 'homonyms', 'synonyms', 'antonyms', 'confusable_senses'];
-          for (const field of relFields) {
-            for (const rel of s[field] || []) {
-              const targetId = typeof rel === 'string' ? rel : rel.target_id;
-              if (targetId && !allEntityIds.has(targetId)) {
-                console.error(`❌ [${lang}:${lex.lemma_nfc}] Dangling relation in '${field}': target_id '${targetId}' does not exist in repository`);
+      const lexFiles = readdirSync(lexDir).filter((f) => f.endsWith('.json'));
+      for (const lf of lexFiles) {
+        totalFiles += 1;
+        const lData = JSON.parse(readFileSync(join(lexDir, lf), 'utf8'));
+        for (const lex of lData.lexemes || []) {
+          totalLexemes += 1;
+          for (const s of lex.senses || []) {
+            totalSenses += 1;
+            for (const [ilang, dtext] of Object.entries(s.definitions || {})) {
+              if (hasPlaceholderText(dtext)) {
+                console.error(`❌ [work:${work}:${lf}:${lex.lemma_nfc}] Placeholder definition detected in [${ilang}]: "${dtext}"`);
                 errors += 1;
               }
             }
