@@ -1,22 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.prep.multiple_for",
   "support_language_tag": "es",
   "proficiency_band": "all",
   "register": "plain",
-  "title": "Mismos significados, distintas formas",
-  "invitation": "Las lenguas no dividen el significado exactamente en los mismos lugares. ¿Quieres ver cómo el idioma que estás aprendiendo expresa estas relaciones?",
-  "summary": "Las lenguas reparten de maneras distintas relaciones como la finalidad, el motivo, el destino, el destinatario, el intercambio y los plazos. Esta lección muestra cómo las expresa el idioma que estás aprendiendo.",
+  "title": "Cómo expresan otras lenguas lo que el inglés dice con «for»",
+  "invitation": "Mira cómo el idioma que estás leyendo reparte los trabajos que el inglés suele dar a «for».",
+  "summary": "El inglés suele usar la preposición «for» para relaciones como finalidad, destinatario, motivo, intercambio, destino y tiempo objetivo. Otras lenguas pueden repartir esos trabajos entre palabras, casos, partículas, terminaciones o construcciones distintas.",
   "localization_keys": {
     "title": "lesson.multipleFor.title",
     "invitation": "lesson.multipleFor.invitation",
     "summary": "lesson.multipleFor.summary",
-    "topic_intro": "lesson.multipleFor.topicIntro",
-    "english_bridge": "lesson.multipleFor.englishBridge",
-    "support_context": "lesson.multipleFor.supportContext",
     "grammar_primer": "lesson.multipleFor.grammarPrimer",
-    "single_intro": "lesson.multipleFor.singleIntro",
-    "split_intro": "lesson.multipleFor.splitIntro",
     "rules_intro": "lesson.multipleFor.rulesIntro",
     "example_intro": "lesson.multipleFor.exampleIntro",
     "practice_intro": "lesson.multipleFor.practiceIntro",
@@ -48,22 +43,16 @@
   },
   "blocks": [
     {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
-    {"block_id":"topic-intro","group_id":"facts","type":"explanation","title":"Las lenguas trazan fronteras distintas","text":"Las lenguas dividen el significado de maneras distintas. Relaciones como la finalidad, el motivo, el destino, quién recibe algo, el intercambio y los plazos pueden expresarse con una sola forma en un idioma y con varias en otro."},
-    {"block_id":"english-bridge","group_id":"facts","type":"explanation","title":"El inglés suele agruparlas bajo ‘for’","text":"El inglés usa la pequeña palabra ‘for’ en muchas de estas relaciones. En esta lección, úsala como una pista de comparación, no como la respuesta: primero identifica la relación y después aprende cómo la expresa el idioma que estudias."},
-    {"block_id":"support-context","group_id":"facts","type":"explanation","title":"Y en español ya conoces otra división","text":"En español, varias de estas relaciones se reparten entre por, para y otras construcciones. Por suele aparecer con causas, recorridos, medios o intercambios; para suele aparecer con finalidades, destinos, destinatarios o plazos. Esa división española es una comparación útil, pero no se copia a otros idiomas."},
-    {"block_id":"grammar-primer","group_id":"concept","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"Una nota rápida de gramática","description":"Antes de comparar las formas, veamos qué tipo de recurso gramatical utiliza cada idioma seleccionado."},
-    {"block_id":"intro-single","group_id":"concept","type":"explanation","text":"Un idioma puede usar una misma forma común para varias relaciones que otro idioma divide de otra manera."},
-    {"block_id":"single-forms","group_id":"concept","type":"word_form_matrix","source":"selected_anchor_or_single_languages","minimum_languages":1,"maximum_languages":6,"prefer_profile_languages":true,"allow_anchor_fallback":true},
-    {"block_id":"intro-split","group_id":"split","type":"explanation","text":"Otros idiomas pueden repartir esas relaciones entre distintas palabras, terminaciones, partículas, casos o construcciones."},
-    {"block_id":"multi-forms","group_id":"split","type":"word_form_matrix","source":"selected_multi_languages","minimum_languages":0,"maximum_languages":6,"omit_when_empty":true},
-    {"block_id":"rules-intro","group_id":"rules","type":"explanation","text":"Cada idioma traza las fronteras de forma distinta. Aprende las reglas propias de cada idioma en vez de copiar las reglas de uno al otro."},
-    {"block_id":"language-rules","group_id":"rules","type":"language_rule_groups","source":"selected_languages_with_rule_data","one_block_per_form":true,"include_tips":true},
-    {"block_id":"examples-intro","group_id":"examples","type":"explanation","text":"Veamos algunos ejemplos seguros de los textos de Gef y de las citas aptas de Quotes Across the World."},
-    {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":6},
-    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"¿Probamos unos cuantos?","requires_session_mode":"practice"},
+    {"block_id":"language-comparisons","group_id":"comparison-intro","type":"language_comparison_loop","source":"fixed_then_selected_language_roles","omit_when_empty":false},
+    {"block_id":"grammar-primer","group_id":"rules","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"¿Qué tipo de gramática hace el trabajo?","description":"La respuesta no siempre es una preposición. Un idioma puede usar una preposición, posposición, caso, partícula, terminación o una construcción más grande."},
+    {"block_id":"rules-intro","group_id":"rules","type":"explanation","text":"Si Gef tiene reglas completas para un idioma en esta lección, usa esas reglas. Si solo tiene compatibilidad de comparación, se queda en la comparación en vez de inventar reglas."},
+    {"block_id":"language-rules","group_id":"rules","type":"language_rule_groups","source":"selected_languages_with_rule_data","one_block_per_form":true,"include_tips":true,"omit_when_empty":true},
+    {"block_id":"examples-intro","group_id":"examples","type":"explanation","text":"Ahora mira esas mismas relaciones dentro de frases reales."},
+    {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":12},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Prueba unos cuantos.","requires_session_mode":"practice"},
     {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice","title":"Elige la forma que encaja."},
-    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Misión","description":"Encuentra en este libro todas las formas de esta lección.","begin_label":"Empezar","decline_label":"Ahora no"},
-    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Muy bien","description":"Ya has visto cómo distintos idiomas reparten de maneras diferentes unas mismas relaciones de significado.","action_label":"Listo"}
+    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Encuéntralas en el libro","description":"Detecta estas formas mientras lees.","begin_label":"Empezar","decline_label":"Ahora no"},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Ya está","description":"En vez de traducir una palabra aislada, busca la relación que expresa la frase.","action_label":"Listo"}
   ],
   "rule_explanations": {
     "RULE.en.for.anchor": {"summary":"El inglés usa «for» para varias relaciones distintas, entre ellas destinatario, motivo, duración, intercambio, uso previsto y expresiones de destino o meta.","tips":["Trata «for» como la pregunta, no como la respuesta.","Antes de traducir, pregúntate qué relación expresa «for» en esa frase."]},
@@ -86,5 +75,5 @@
     "RULE.el.for.yper_support": {"summary":"υπέρ expresa apoyo o postura favorable: estar a favor de una persona, propuesta o lado.","tips":["Piensa en «a favor de», no en el «para» de destinatario.","El apoyo o la defensa de una postura es una relación distinta de la finalidad."]}
   },
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
