@@ -54,3 +54,9 @@ jobs:
         run: npm run compile:concepts
       - name: Require generated concept index to be current
         run: git diff --exit-code -- concepts/compiled-concept-index.json
+      - name: Compile development lexical SQLite fixtures
+        run: npm run compile:sqlite
+      - name: Compile development shared name index
+        run: npm run compile:names
+      - name: Compile production name index review gate
+        run: npm run compile:names -- --production
