@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.prep.multiple_for",
+  "lesson_key": "multiple-words-for",
+  "target_language": "mul",
+  "curriculum_concept_ids": ["CURR.PREPOSITIONS", "CURR.PURPOSE_CAUSE_GOAL", "CURR.PATH_ROUTE", "CURR.BENEFICIARY", "CURR.TIME_GOAL"],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A2",
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 6,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en"],
+    "requires_at_least_one_non_anchor_multi_language": true,
+    "language_selection_is_session_only": true,
+    "display_modes": ["scroll", "pages"]
+  },
+  "rules": [],
+  "triggers": [
+    {
+      "trigger_id": "TRG.mul.multiple_for.profile",
+      "trigger_type": "manual",
+      "notes": "Offer in Lessons when at least one active profile language is confirmed_multi and lesson_ready in GRAMSET.mul.for_equivalents. Candidate-only availability obeys the user's content trust preference."
+    }
+  ],
+  "practice_modules": [
+    {
+      "module": "inline_choice_cloze",
+      "eligible_rule_ids": [],
+      "constraints": {
+        "resolve_rule_pool_from_selected_languages": true,
+        "require_unique_defensible_answer": true,
+        "feedback_source": "grammar_rule_tips"
+      }
+    },
+    {
+      "module": "why_this",
+      "eligible_rule_ids": [],
+      "constraints": {
+        "resolve_rule_pool_from_selected_languages": true,
+        "feedback_source": "grammar_rule_tips"
+      }
+    },
+    {
+      "module": "reader_quest",
+      "eligible_rule_ids": [],
+      "constraints": {
+        "selected_languages_only": true,
+        "open_reader_mode": "lesson-quest",
+        "teacher_policy": ["hidden", "optional", "required"]
+      }
+    }
+  ],
+  "example_query": {
+    "prefer_current_book_weight": 0.5,
+    "prefer_quotes_across_world_weight": 0.5,
+    "fallback_to_global_lesson_safe_pool": true,
+    "maximum_intro_examples_per_rule": 1,
+    "practice_avoids_previously_shown_examples": true,
+    "require_lesson_safe": true,
+    "require_spoiler_safe": true,
+    "allow_teacher_pinned_examples": true,
+    "teacher_pins_win_over_random_selection": true
+  },
+  "presentation": {
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "concept", "split", "rules", "examples", "practice", "quest", "completion"],
+    "scroll_mode": "render groups in one vertical lesson surface",
+    "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
+    "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 6,
+    "teacher_quest_default": "optional"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
