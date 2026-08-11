@@ -34,7 +34,7 @@
         "required": ["block_id", "block_type"],
         "properties": {
           "block_id": {"type": "string", "minLength": 1},
-          "block_type": {"enum": ["lesson_facts", "localized_text", "word_examples", "language_rules", "curated_examples", "practice_intro", "practice", "quest_offer", "completion"]},
+          "block_type": {"enum": ["lesson_facts", "grammar_primer", "localized_text", "word_examples", "language_rules", "curated_examples", "practice_intro", "practice", "quest_offer", "completion"]},
           "group_id": {"type": "string"},
           "repeat": {"enum": ["once", "per_single_form_language", "per_multi_form_language", "per_selected_language", "per_form", "per_rule"]},
           "notes": {"type": "string"}
