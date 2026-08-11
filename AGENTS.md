@@ -6,11 +6,21 @@ Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/L
 
 Gef now has exactly three active product repositories:
 
-1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration.
+1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration, and the product-wide language-support registry.
 2. **`Clickabl/gef-content`** — canonical books/stories, editions, semantic anchors, work-specific metadata/questions/audio/assets, corpus occurrence evidence, and content packaging.
 3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, curriculum graph, lessons, and reusable lesson renderings.
 
 **Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. New linguistic, dictionary, and curriculum decisions belong in this repository. Historical references to `gef-locales` are migration residue, not current architecture.
+
+### Product-wide language source of truth
+
+Before changing language coverage, lesson-rendering support languages, language counts, scripts, transliterations, reading aids, regions, or support-tier assumptions, read:
+
+`Clickabl/gef-expo/registry/language-support.json`
+
+Human explanation: `Clickabl/gef-expo/docs/product/LANGUAGE_SUPPORT.md`.
+
+`gef-lexicon` owns reusable linguistic/lesson truth, **not** the product-wide language-support list. A `languages/{lang}` directory, lesson rendering, dictionary record, or incidental piece of content never promotes that language's product support level. Do not maintain another strategic language list or count in this repo.
 
 ## Hard Rules
 

@@ -17,6 +17,23 @@ This repository owns language knowledge that should survive any one book:
 Exact story sentences and passage-specific lesson evidence belong in
 `Clickabl/gef-content`, not here.
 
+## Product-wide language support
+
+This repository does **not** decide which languages are Golden, Partial,
+Learner, App Translation Only, or otherwise supported.
+
+Canonical product-wide authority:
+
+`Clickabl/gef-expo/registry/language-support.json`
+
+Human explanation:
+
+`Clickabl/gef-expo/docs/product/LANGUAGE_SUPPORT.md`
+
+A `languages/{lang}` profile, lexicon entry, lesson rendering, or incidental
+piece of linguistic data does not promote that language's product support
+level. Do not copy a strategic language list or count into this repository.
+
 ## Architecture
 
 ```text
