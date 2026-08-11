@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/source.schema.json",
+  "title": "GEF Bibliography / Evidence Source Database",
+  "type": "object",
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "sources": {"type": "array", "items": {"$ref": "#/definitions/source"}}
+  },
+  "definitions": {
+    "source": {
+      "type": "object",
+      "required": ["source_id", "source_type", "title"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"},
+        "source_type": {"type": "string", "enum": ["internal_work", "book", "article", "dataset", "website", "wikipedia", "wikidata", "archive", "other"]},
+        "title": {"type": "string"},
+        "author": {"type": "string"},
+        "year": {"type": ["integer", "null"]},
+        "url": {"type": "string"},
+        "license": {"type": "string"},
+        "external_ids": {"type": "object", "additionalProperties": {"type": "string"}},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}
