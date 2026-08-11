@@ -1,0 +1,1989 @@
+{
+  "schema_version": 1,
+  "work_id": "frog-king",
+  "language_code": "mn",
+  "lexemes": [
+    {
+      "lexeme_id": "58cc1105-a112-4023-b076-e6fec6874b4a",
+      "lemma_nfc": "Эрт",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "99bd706c-f098-4dd2-bd96-c03b1b42d687",
+          "sense_key": "эрт-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Эрт' in context as a propn",
+            "es": "definición de 'Эрт' en contexto como propn",
+            "fr": "définition de 'Эрт' en contexte comme propn",
+            "pt": "definição de 'Эрт' em contexto como propn",
+            "it": "definizione di 'Эрт' in contesto come propn",
+            "el": "ορισμός του 'Эрт' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Эрт')",
+            "es": "como se usa en el contexto ('Эрт')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Эрт_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Эрт_distractor_a",
+            "Эрт_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5fef7b1f-4fa0-4adc-af34-2dfeb8dfcdde",
+          "surface_nfc": "Эрт",
+          "normalized_lookup": "эрт",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "35ed730a-46ee-43ff-9ac6-6cfab1d1cedb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a0e5ab67-d54d-4e9e-8096-9f0dc694f43c",
+      "lemma_nfc": "Түүний",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4ec457e9-82e6-4ac5-94d8-5ef296dd70df",
+          "sense_key": "түүний-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Түүний' in context as a propn",
+            "es": "definición de 'Түүний' en contexto como propn",
+            "fr": "définition de 'Түүний' en contexte comme propn",
+            "pt": "definição de 'Түүний' em contexto como propn",
+            "it": "definizione di 'Түүний' in contesto come propn",
+            "el": "ορισμός του 'Түүний' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Түүний')",
+            "es": "como se usa en el contexto ('Түүний')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Түүний_hp1"
+          ],
+          "homonyms": [
+            "Түүний_hm1"
+          ],
+          "synonyms": [
+            "Түүний_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Түүний_distractor_a",
+            "Түүний_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "63ee64ea-edf5-404a-87c8-674f2010ba31",
+          "surface_nfc": "Түүний",
+          "normalized_lookup": "түүний",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "08ebbd43-ed1d-435c-b4b8-91cc8f3a63e6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4590dd65-6c09-4962-b33f-a17fd8407b29",
+      "lemma_nfc": "Ойн",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "854cbecb-1d53-4541-80ff-d56c46e1a65d",
+          "sense_key": "ойн-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ойн' in context as a propn",
+            "es": "definición de 'Ойн' en contexto como propn",
+            "fr": "définition de 'Ойн' en contexte comme propn",
+            "pt": "definição de 'Ойн' em contexto como propn",
+            "it": "definizione di 'Ойн' in contesto come propn",
+            "el": "ορισμός του 'Ойн' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ойн')",
+            "es": "como se usa en el contexto ('Ойн')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ойн_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ойн_distractor_a",
+            "Ойн_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "484a03ba-6ef3-4e69-9a15-541cc9d64b99",
+          "surface_nfc": "Ойн",
+          "normalized_lookup": "ойн",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2ff1b2bd-174d-48ca-a003-571350a2c6a1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0a888d2a-8e8f-436a-9cf2-4474fffad166",
+      "lemma_nfc": "Тэр",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "21df42f9-36fd-4fc6-8712-018e2bc7c363",
+          "sense_key": "тэр-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Тэр' in context as a propn",
+            "es": "definición de 'Тэр' en contexto como propn",
+            "fr": "définition de 'Тэр' en contexte comme propn",
+            "pt": "definição de 'Тэр' em contexto como propn",
+            "it": "definizione di 'Тэр' in contesto come propn",
+            "el": "ορισμός του 'Тэр' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Тэр')",
+            "es": "como se usa en el contexto ('Тэр')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Тэр_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Тэр_distractor_a",
+            "Тэр_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6aaefcec-f73a-4317-a8da-3d6e531d3d0f",
+          "surface_nfc": "Тэр",
+          "normalized_lookup": "тэр",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a6c7174b-aea2-45da-966c-48c1e47889d8",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4c0145b4-a600-46d2-8ecb-9b50d65d58a1",
+      "lemma_nfc": "Бөмбөг",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e997acc1-1176-453e-aba9-f66c1339c9f2",
+          "sense_key": "бөмбөг-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Бөмбөг' in context as a propn",
+            "es": "definición de 'Бөмбөг' en contexto como propn",
+            "fr": "définition de 'Бөмбөг' en contexte comme propn",
+            "pt": "definição de 'Бөмбөг' em contexto como propn",
+            "it": "definizione di 'Бөмбөг' in contesto come propn",
+            "el": "ορισμός του 'Бөмбөг' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Бөмбөг')",
+            "es": "como se usa en el contexto ('Бөмбөг')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Бөмбөг_hp1"
+          ],
+          "homonyms": [
+            "Бөмбөг_hm1"
+          ],
+          "synonyms": [
+            "Бөмбөг_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Бөмбөг_distractor_a",
+            "Бөмбөг_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "cf4767a6-b0d0-4b64-b0b0-3385202e3a3e",
+          "surface_nfc": "Бөмбөг",
+          "normalized_lookup": "бөмбөг",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5aaacb4f-778b-4789-a444-842c2b22e885",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d6cfb0a6-9ed8-4357-9154-24c026c2da1d",
+      "lemma_nfc": "Ус",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d3bf2265-9f9a-4c3a-95b9-393a497ffa8f",
+          "sense_key": "ус-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ус' in context as a propn",
+            "es": "definición de 'Ус' en contexto como propn",
+            "fr": "définition de 'Ус' en contexte comme propn",
+            "pt": "definição de 'Ус' em contexto como propn",
+            "it": "definizione di 'Ус' in contesto come propn",
+            "el": "ορισμός του 'Ус' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ус')",
+            "es": "como se usa en el contexto ('Ус')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ус_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ус_distractor_a",
+            "Ус_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6b89aa58-ecd9-4d2d-8d56-8f1186139ed4",
+          "surface_nfc": "Ус",
+          "normalized_lookup": "ус",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "12e3e32c-3999-4876-ba4a-cdd4cfe2b3f2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "7f0c1c8b-1151-461e-9bad-d9ec7d2c0fd9",
+      "lemma_nfc": "Бөмбөгөө",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "bfe523c9-6915-446b-9d95-941d6795d36b",
+          "sense_key": "бөмбөгөө-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Бөмбөгөө' in context as a propn",
+            "es": "definición de 'Бөмбөгөө' en contexto como propn",
+            "fr": "définition de 'Бөмбөгөө' en contexte comme propn",
+            "pt": "definição de 'Бөмбөгөө' em contexto como propn",
+            "it": "definizione di 'Бөмбөгөө' in contesto come propn",
+            "el": "ορισμός του 'Бөмбөгөө' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Бөмбөгөө')",
+            "es": "como se usa en el contexto ('Бөмбөгөө')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Бөмбөгөө_hp1"
+          ],
+          "homonyms": [
+            "Бөмбөгөө_hm1"
+          ],
+          "synonyms": [
+            "Бөмбөгөө_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Бөмбөгөө_distractor_a",
+            "Бөмбөгөө_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "129f0eed-5ade-41d7-ba83-ca54d843cadc",
+          "surface_nfc": "Бөмбөгөө",
+          "normalized_lookup": "бөмбөгөө",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7be51383-a075-4109-95ed-9ef07fb41371",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ed317c86-0352-4949-94b0-d28d24f45e67",
+      "lemma_nfc": "Уснаас",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5275d9fe-f387-4173-997c-c74ed9978b45",
+          "sense_key": "уснаас-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Уснаас' in context as a propn",
+            "es": "definición de 'Уснаас' en contexto como propn",
+            "fr": "définition de 'Уснаас' en contexte comme propn",
+            "pt": "definição de 'Уснаас' em contexto como propn",
+            "it": "definizione di 'Уснаас' in contesto come propn",
+            "el": "ορισμός του 'Уснаас' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Уснаас')",
+            "es": "como se usa en el contexto ('Уснаас')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Уснаас_hp1"
+          ],
+          "homonyms": [
+            "Уснаас_hm1"
+          ],
+          "synonyms": [
+            "Уснаас_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Уснаас_distractor_a",
+            "Уснаас_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "17c93e57-b28c-4a5d-9361-fe01c03dae57",
+          "surface_nfc": "Уснаас",
+          "normalized_lookup": "уснаас",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9e03f4b5-5c70-4892-beed-6a51e122c408",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "cd3eb059-abf5-4b8d-a3e0-cf44f7d467e0",
+      "lemma_nfc": "Мэлхий",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "454d3ff3-b546-4055-af47-4f00222241e2",
+          "sense_key": "мэлхий-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Мэлхий' in context as a propn",
+            "es": "definición de 'Мэлхий' en contexto como propn",
+            "fr": "définition de 'Мэлхий' en contexte comme propn",
+            "pt": "definição de 'Мэлхий' em contexto como propn",
+            "it": "definizione di 'Мэлхий' in contesto come propn",
+            "el": "ορισμός του 'Мэлхий' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Мэлхий')",
+            "es": "como se usa en el contexto ('Мэлхий')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Мэлхий_hp1"
+          ],
+          "homonyms": [
+            "Мэлхий_hm1"
+          ],
+          "synonyms": [
+            "Мэлхий_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Мэлхий_distractor_a",
+            "Мэлхий_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a6f2b483-c8ef-4f3a-9a48-7743493aedd6",
+          "surface_nfc": "Мэлхий",
+          "normalized_lookup": "мэлхий",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c5b8ca7b-eeb3-4c7c-9878-ae1109b26220",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9688e4cb-da49-4ea1-a6b7-8ae4d1545ac8",
+      "lemma_nfc": "Гүнж",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "369aaddc-03d1-4ae4-a325-3ec5172715d1",
+          "sense_key": "гүнж-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Гүнж' in context as a propn",
+            "es": "definición de 'Гүнж' en contexto como propn",
+            "fr": "définition de 'Гүнж' en contexte comme propn",
+            "pt": "definição de 'Гүнж' em contexto como propn",
+            "it": "definizione di 'Гүнж' in contesto come propn",
+            "el": "ορισμός του 'Гүнж' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Гүнж')",
+            "es": "como se usa en el contexto ('Гүнж')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Гүнж_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Гүнж_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Гүнж_distractor_a",
+            "Гүнж_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6d082493-884f-4d01-8531-6d2f1cdc92c8",
+          "surface_nfc": "Гүнж",
+          "normalized_lookup": "гүнж",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b71555b3-99b7-4e62-bf60-9e6ab5f4070a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f4e39454-142b-40e1-9b51-bd9ab97b4791",
+      "lemma_nfc": "Гүнжид",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "59995934-5f3e-4810-ba59-ad34cefc4e73",
+          "sense_key": "гүнжид-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Гүнжид' in context as a propn",
+            "es": "definición de 'Гүнжид' en contexto como propn",
+            "fr": "définition de 'Гүнжид' en contexte comme propn",
+            "pt": "definição de 'Гүнжид' em contexto como propn",
+            "it": "definizione di 'Гүнжид' in contesto come propn",
+            "el": "ορισμός του 'Гүнжид' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Гүнжид')",
+            "es": "como se usa en el contexto ('Гүнжид')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Гүнжид_hp1"
+          ],
+          "homonyms": [
+            "Гүнжид_hm1"
+          ],
+          "synonyms": [
+            "Гүнжид_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Гүнжид_distractor_a",
+            "Гүнжид_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0c5e3cc0-502f-4b8d-a828-40a0590000fe",
+          "surface_nfc": "Гүнжид",
+          "normalized_lookup": "гүнжид",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "74499e19-b84e-47b5-b8cd-2d5b3a51c727",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "714f7a55-4b2d-49c8-a980-4e219cbb1db9",
+      "lemma_nfc": "Удалгүй",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a144a734-b250-4b69-8ab2-e86681234ed8",
+          "sense_key": "удалгүй-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Удалгүй' in context as a propn",
+            "es": "definición de 'Удалгүй' en contexto como propn",
+            "fr": "définition de 'Удалгүй' en contexte comme propn",
+            "pt": "definição de 'Удалгүй' em contexto como propn",
+            "it": "definizione di 'Удалгүй' in contesto come propn",
+            "el": "ορισμός του 'Удалгүй' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Удалгүй')",
+            "es": "como se usa en el contexto ('Удалгүй')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Удалгүй_hp1"
+          ],
+          "homonyms": [
+            "Удалгүй_hm1"
+          ],
+          "synonyms": [
+            "Удалгүй_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Удалгүй_distractor_a",
+            "Удалгүй_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9d4e0c63-3d64-45d4-983b-7a378496a5ce",
+          "surface_nfc": "Удалгүй",
+          "normalized_lookup": "удалгүй",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "143adda2-a16e-436c-acb2-4973da154bd0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0fae3d58-a675-4bb9-8f9e-307e53f04cd7",
+      "lemma_nfc": "Гадаах",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f403bcef-4220-4582-a4b9-8706460a4eb5",
+          "sense_key": "гадаах-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Гадаах' in context as a propn",
+            "es": "definición de 'Гадаах' en contexto como propn",
+            "fr": "définition de 'Гадаах' en contexte comme propn",
+            "pt": "definição de 'Гадаах' em contexto como propn",
+            "it": "definizione di 'Гадаах' in contesto come propn",
+            "el": "ορισμός του 'Гадаах' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Гадаах')",
+            "es": "como se usa en el contexto ('Гадаах')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Гадаах_hp1"
+          ],
+          "homonyms": [
+            "Гадаах_hm1"
+          ],
+          "synonyms": [
+            "Гадаах_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Гадаах_distractor_a",
+            "Гадаах_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "516e80f8-d720-4fd1-a9df-5936616b0402",
+          "surface_nfc": "Гадаах",
+          "normalized_lookup": "гадаах",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "88638e29-b4b7-4802-b226-038cdef874fa",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "43a7bc2e-9271-4178-bbad-1cf49e0732df",
+      "lemma_nfc": "Түр",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f2461390-287f-44f9-a484-503eda203cf8",
+          "sense_key": "түр-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Түр' in context as a propn",
+            "es": "definición de 'Түр' en contexto como propn",
+            "fr": "définition de 'Түр' en contexte comme propn",
+            "pt": "definição de 'Түр' em contexto como propn",
+            "it": "definizione di 'Түр' in contesto come propn",
+            "el": "ορισμός του 'Түр' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Түр')",
+            "es": "como se usa en el contexto ('Түр')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Түр_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Түр_distractor_a",
+            "Түр_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "97f35961-4c27-4a6f-bd0e-194b29085b11",
+          "surface_nfc": "Түр",
+          "normalized_lookup": "түр",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "04a7b07c-7a11-43da-8ef0-c7fcd907c9e9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "80c5957a-1ea6-4e1c-84af-54d4dbb4976c",
+      "lemma_nfc": "Ямар",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f0a444d7-b86e-48e1-84a6-34f2ff29ea36",
+          "sense_key": "ямар-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ямар' in context as a propn",
+            "es": "definición de 'Ямар' en contexto como propn",
+            "fr": "définition de 'Ямар' en contexte comme propn",
+            "pt": "definição de 'Ямар' em contexto como propn",
+            "it": "definizione di 'Ямар' in contesto come propn",
+            "el": "ορισμός του 'Ямар' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ямар')",
+            "es": "como se usa en el contexto ('Ямар')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Ямар_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Ямар_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ямар_distractor_a",
+            "Ямар_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2061ddfb-f46d-4f67-b1d0-2bb8ac545d7d",
+          "surface_nfc": "Ямар",
+          "normalized_lookup": "ямар",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f4dde7ce-1f18-429d-9dc0-b7a74ccf22b1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "cf3f7946-d77d-43e2-a599-25f32226ec78",
+      "lemma_nfc": "Хаан",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d88c01eb-9354-4369-b930-c5d35b9deb5a",
+          "sense_key": "хаан-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Хаан' in context as a propn",
+            "es": "definición de 'Хаан' en contexto como propn",
+            "fr": "définition de 'Хаан' en contexte comme propn",
+            "pt": "definição de 'Хаан' em contexto como propn",
+            "it": "definizione di 'Хаан' in contesto come propn",
+            "el": "ορισμός του 'Хаан' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Хаан')",
+            "es": "como se usa en el contexto ('Хаан')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Хаан_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Хаан_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Хаан_distractor_a",
+            "Хаан_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "587b9a73-ff7f-4ddf-9ba7-dc7783f7d580",
+          "surface_nfc": "Хаан",
+          "normalized_lookup": "хаан",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2efa99ef-d24b-4596-9f8d-3f0d96359030",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "27f6feae-1ea5-4e78-8d46-62aed7b742ba",
+      "lemma_nfc": "Дараа",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1ee7c1df-6ee1-4621-a794-8e31bb273d36",
+          "sense_key": "дараа-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Дараа' in context as a propn",
+            "es": "definición de 'Дараа' en contexto como propn",
+            "fr": "définition de 'Дараа' en contexte comme propn",
+            "pt": "definição de 'Дараа' em contexto como propn",
+            "it": "definizione di 'Дараа' in contesto come propn",
+            "el": "ορισμός του 'Дараа' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Дараа')",
+            "es": "como se usa en el contexto ('Дараа')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Дараа_hp1"
+          ],
+          "homonyms": [
+            "Дараа_hm1"
+          ],
+          "synonyms": [
+            "Дараа_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Дараа_distractor_a",
+            "Дараа_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "afa04168-87dd-4bcd-a72e-06aca5ce4376",
+          "surface_nfc": "Дараа",
+          "normalized_lookup": "дараа",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "49fb9ce0-25ab-4992-8036-458c1412a25e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f01ab221-511f-43e2-9529-a0fa67c38320",
+      "lemma_nfc": "Оройн",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "daed1c10-aaa8-4849-8628-e324a21509ba",
+          "sense_key": "оройн-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Оройн' in context as a propn",
+            "es": "definición de 'Оройн' en contexto como propn",
+            "fr": "définition de 'Оройн' en contexte comme propn",
+            "pt": "definição de 'Оройн' em contexto como propn",
+            "it": "definizione di 'Оройн' in contesto come propn",
+            "el": "ορισμός του 'Оройн' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Оройн')",
+            "es": "como se usa en el contexto ('Оройн')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Оройн_hp1"
+          ],
+          "homonyms": [
+            "Оройн_hm1"
+          ],
+          "synonyms": [
+            "Оройн_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Оройн_distractor_a",
+            "Оройн_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ba25479e-2d24-45de-8928-11359b9e0ab1",
+          "surface_nfc": "Оройн",
+          "normalized_lookup": "оройн",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "67073840-a63c-409e-9693-06ada48e091c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5bcd48de-f1e2-432a-86b1-9714654cb83f",
+      "lemma_nfc": "Хангалттай",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e62b1593-1883-45f8-ab4b-b177bfb9b1c9",
+          "sense_key": "хангалттай-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Хангалттай' in context as a propn",
+            "es": "definición de 'Хангалттай' en contexto como propn",
+            "fr": "définition de 'Хангалттай' en contexte comme propn",
+            "pt": "definição de 'Хангалттай' em contexto como propn",
+            "it": "definizione di 'Хангалттай' in contesto come propn",
+            "el": "ορισμός του 'Хангалттай' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Хангалттай')",
+            "es": "como se usa en el contexto ('Хангалттай')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Хангалттай_hp1"
+          ],
+          "homonyms": [
+            "Хангалттай_hm1"
+          ],
+          "synonyms": [
+            "Хангалттай_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Хангалттай_distractor_a",
+            "Хангалттай_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "98eaf392-6d33-4e34-9e43-187983bd0c14",
+          "surface_nfc": "Хангалттай",
+          "normalized_lookup": "хангалттай",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f70d21c0-5e0f-49d6-bdf0-96abf22dbbd0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "249d39f5-1c99-4f08-92aa-d27383feed79",
+      "lemma_nfc": "Шаланд",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "425fb87f-ec74-41d6-b914-eefcd7690cfe",
+          "sense_key": "шаланд-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Шаланд' in context as a propn",
+            "es": "definición de 'Шаланд' en contexto como propn",
+            "fr": "définition de 'Шаланд' en contexte comme propn",
+            "pt": "definição de 'Шаланд' em contexto como propn",
+            "it": "definizione di 'Шаланд' in contesto come propn",
+            "el": "ορισμός του 'Шаланд' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Шаланд')",
+            "es": "como se usa en el contexto ('Шаланд')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Шаланд_hp1"
+          ],
+          "homonyms": [
+            "Шаланд_hm1"
+          ],
+          "synonyms": [
+            "Шаланд_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Шаланд_distractor_a",
+            "Шаланд_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "95d6fa28-949a-4c30-ad14-3876afe42e7c",
+          "surface_nfc": "Шаланд",
+          "normalized_lookup": "шаланд",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "069c54d8-f77f-4b95-ade5-5cb5c59ae22c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c576ee15-a318-4583-939b-69c6482ee809",
+      "lemma_nfc": "Ханхүү",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "fc40e538-2a64-48bf-b90f-b996fec58b3d",
+          "sense_key": "ханхүү-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ханхүү' in context as a propn",
+            "es": "definición de 'Ханхүү' en contexto como propn",
+            "fr": "définition de 'Ханхүү' en contexte comme propn",
+            "pt": "definição de 'Ханхүү' em contexto como propn",
+            "it": "definizione di 'Ханхүү' in contesto come propn",
+            "el": "ορισμός του 'Ханхүү' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ханхүү')",
+            "es": "como se usa en el contexto ('Ханхүү')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ханхүү_hp1"
+          ],
+          "homonyms": [
+            "Ханхүү_hm1"
+          ],
+          "synonyms": [
+            "Ханхүү_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ханхүү_distractor_a",
+            "Ханхүү_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "17c8fc39-1f87-4f93-a681-050e37138dd3",
+          "surface_nfc": "Ханхүү",
+          "normalized_lookup": "ханхүү",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "94fca407-a3f9-4ec9-97fe-55185c4c85e6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2f740e14-a132-4a60-b8ec-3f226a6c904e",
+      "lemma_nfc": "Маргааш",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "77a1fe43-94ff-4ce2-b2c2-baebfba730df",
+          "sense_key": "маргааш-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Маргааш' in context as a propn",
+            "es": "definición de 'Маргааш' en contexto como propn",
+            "fr": "définition de 'Маргааш' en contexte comme propn",
+            "pt": "definição de 'Маргааш' em contexto como propn",
+            "it": "definizione di 'Маргааш' in contesto come propn",
+            "el": "ορισμός του 'Маргааш' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Маргааш')",
+            "es": "como se usa en el contexto ('Маргааш')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Маргааш_hp1"
+          ],
+          "homonyms": [
+            "Маргааш_hm1"
+          ],
+          "synonyms": [
+            "Маргааш_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Маргааш_distractor_a",
+            "Маргааш_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "31707161-356b-419d-a271-3eda71b6a179",
+          "surface_nfc": "Маргааш",
+          "normalized_lookup": "маргааш",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "525dd67b-cda1-4d37-acaf-e80579a2d8f2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4d2dc0be-74d2-4f81-b2f7-6112ed7b8c27",
+      "lemma_nfc": "Араас",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4d955717-2825-4b30-8112-74e12de1ac44",
+          "sense_key": "араас-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Араас' in context as a propn",
+            "es": "definición de 'Араас' en contexto como propn",
+            "fr": "définition de 'Араас' en contexte comme propn",
+            "pt": "definição de 'Араас' em contexto como propn",
+            "it": "definizione di 'Араас' in contesto come propn",
+            "el": "ορισμός του 'Араас' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Араас')",
+            "es": "como se usa en el contexto ('Араас')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Араас_hp1"
+          ],
+          "homonyms": [
+            "Араас_hm1"
+          ],
+          "synonyms": [
+            "Араас_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Араас_distractor_a",
+            "Араас_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c8358bcc-2782-4b97-aabc-06ab786c34a8",
+          "surface_nfc": "Араас",
+          "normalized_lookup": "араас",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2d223aee-89b2-4a68-8747-646b07b61476",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ac67cf4a-a733-4b45-a449-b382c7258c09",
+      "lemma_nfc": "Үнэнч",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "2dd40a36-7402-4dd5-94af-5c80d46671d4",
+          "sense_key": "үнэнч-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Үнэнч' in context as a propn",
+            "es": "definición de 'Үнэнч' en contexto como propn",
+            "fr": "définition de 'Үнэнч' en contexte comme propn",
+            "pt": "definição de 'Үнэнч' em contexto como propn",
+            "it": "definizione di 'Үнэнч' in contesto come propn",
+            "el": "ορισμός του 'Үнэнч' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Үнэнч')",
+            "es": "como se usa en el contexto ('Үнэнч')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Үнэнч_hp1"
+          ],
+          "homonyms": [
+            "Үнэнч_hm1"
+          ],
+          "synonyms": [
+            "Үнэнч_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Үнэнч_distractor_a",
+            "Үнэнч_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4078539b-81dc-4fbb-91c2-c0c66bc230b6",
+          "surface_nfc": "Үнэнч",
+          "normalized_lookup": "үнэнч",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2fb312a7-da68-4174-b600-fc540473c392",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2fc8af7c-ec8d-4ea1-aedd-53f298f5e38c",
+      "lemma_nfc": "Хенри",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "12b058a7-b2f5-4587-ad5e-9158cf023a7d",
+          "sense_key": "хенри-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Хенри' in context as a propn",
+            "es": "definición de 'Хенри' en contexto como propn",
+            "fr": "définition de 'Хенри' en contexte comme propn",
+            "pt": "definição de 'Хенри' em contexto como propn",
+            "it": "definizione di 'Хенри' in contesto come propn",
+            "el": "ορισμός του 'Хенри' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Хенри')",
+            "es": "como se usa en el contexto ('Хенри')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Хенри_hp1"
+          ],
+          "homonyms": [
+            "Хенри_hm1"
+          ],
+          "synonyms": [
+            "Хенри_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Хенри_distractor_a",
+            "Хенри_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "57d7497d-699d-45f0-8e1d-ef9692e91353",
+          "surface_nfc": "Хенри",
+          "normalized_lookup": "хенри",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ea96d3e3-8725-4ef1-b18b-3899f106f291",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8f785dbc-07a4-4ef5-8df6-4b56cbdefff6",
+      "lemma_nfc": "Одоо",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "995c15ff-7324-4b0c-8046-e92c051a3745",
+          "sense_key": "одоо-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Одоо' in context as a propn",
+            "es": "definición de 'Одоо' en contexto como propn",
+            "fr": "définition de 'Одоо' en contexte comme propn",
+            "pt": "definição de 'Одоо' em contexto como propn",
+            "it": "definizione di 'Одоо' in contesto come propn",
+            "el": "ορισμός του 'Одоо' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Одоо')",
+            "es": "como se usa en el contexto ('Одоо')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Одоо_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Одоо_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Одоо_distractor_a",
+            "Одоо_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a1b0cfd2-5e95-47bc-b48b-bbea8969e5b3",
+          "surface_nfc": "Одоо",
+          "normalized_lookup": "одоо",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ca2afee7-298b-48ea-a910-734a18a197ae",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e6ab5e1e-e710-41b9-90a6-70bca5e785fc",
+      "lemma_nfc": "Хэсэг",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1ea957d7-efa0-4794-aff0-bc05f015653d",
+          "sense_key": "хэсэг-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Хэсэг' in context as a propn",
+            "es": "definición de 'Хэсэг' en contexto como propn",
+            "fr": "définition de 'Хэсэг' en contexte comme propn",
+            "pt": "definição de 'Хэсэг' em contexto como propn",
+            "it": "definizione di 'Хэсэг' in contesto come propn",
+            "el": "ορισμός του 'Хэсэг' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Хэсэг')",
+            "es": "como se usa en el contexto ('Хэсэг')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Хэсэг_hp1"
+          ],
+          "homonyms": [
+            "Хэсэг_hm1"
+          ],
+          "synonyms": [
+            "Хэсэг_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Хэсэг_distractor_a",
+            "Хэсэг_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d8242b8f-ee10-44c0-adba-410835812abc",
+          "surface_nfc": "Хэсэг",
+          "normalized_lookup": "хэсэг",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "aa900dd8-dfac-4522-84d8-d0ca803bb2ec",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e63cbd7b-7ac5-4841-a471-add393affeb4",
+      "lemma_nfc": "Баярласандаа",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "eb489bd4-9495-47d2-bde5-646f18657c91",
+          "sense_key": "баярласандаа-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Баярласандаа' in context as a propn",
+            "es": "definición de 'Баярласандаа' en contexto como propn",
+            "fr": "définition de 'Баярласандаа' en contexte comme propn",
+            "pt": "definição de 'Баярласандаа' em contexto como propn",
+            "it": "definizione di 'Баярласандаа' in contesto come propn",
+            "el": "ορισμός του 'Баярласандаа' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Баярласандаа')",
+            "es": "como se usa en el contexto ('Баярласандаа')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Баярласандаа_hp1"
+          ],
+          "homonyms": [
+            "Баярласандаа_hm1"
+          ],
+          "synonyms": [
+            "Баярласандаа_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Баярласандаа_distractor_a",
+            "Баярласандаа_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "bb2b7644-0a0b-40df-aa4b-0f3ba9b95439",
+          "surface_nfc": "Баярласандаа",
+          "normalized_lookup": "баярласандаа",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b836236a-abfd-4fde-b378-9a6a145d0738",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6e55a9fe-cc78-41d1-bc5b-910543b106d3",
+      "lemma_nfc": "Төмөр",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "699de7ea-d7d3-4096-8968-5976e8caccce",
+          "sense_key": "төмөр-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Төмөр' in context as a propn",
+            "es": "definición de 'Төмөр' en contexto como propn",
+            "fr": "définition de 'Төмөр' en contexte comme propn",
+            "pt": "definição de 'Төмөр' em contexto como propn",
+            "it": "definizione di 'Төмөр' in contesto come propn",
+            "el": "ορισμός του 'Төмөр' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Төмөр')",
+            "es": "como se usa en el contexto ('Төмөр')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Төмөр_hp1"
+          ],
+          "homonyms": [
+            "Төмөр_hm1"
+          ],
+          "synonyms": [
+            "Төмөр_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Төмөр_distractor_a",
+            "Төмөр_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4cb21a8c-ec1d-4903-9ad3-1a3bce9985fc",
+          "surface_nfc": "Төмөр",
+          "normalized_lookup": "төмөр",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0e0d3493-8ccd-4d2b-9d32-057b05f2de72",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "53d8c06d-a5c8-4efd-8263-8d48112c076a",
+      "lemma_nfc": "Хенрид",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ee9c2a0e-325c-4baf-b75d-0633b4e54709",
+          "sense_key": "хенрид-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Хенрид' in context as a propn",
+            "es": "definición de 'Хенрид' en contexto como propn",
+            "fr": "définition de 'Хенрид' en contexte comme propn",
+            "pt": "definição de 'Хенрид' em contexto como propn",
+            "it": "definizione di 'Хенрид' in contesto come propn",
+            "el": "ορισμός του 'Хенрид' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Хенрид')",
+            "es": "como se usa en el contexto ('Хенрид')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Хенрид_hp1"
+          ],
+          "homonyms": [
+            "Хенрид_hm1"
+          ],
+          "synonyms": [
+            "Хенрид_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Хенрид_distractor_a",
+            "Хенрид_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2652af82-d591-450b-ab44-c2a905836fa8",
+          "surface_nfc": "Хенрид",
+          "normalized_lookup": "хенрид",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b5a3951f-9b6c-405d-a034-46c6ad65433e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

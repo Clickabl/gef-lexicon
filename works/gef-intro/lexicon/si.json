@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "si",
+  "lexemes": [
+    {
+      "lexeme_id": "40cbc432-e281-4aeb-92bc-94c7e06786ad",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f8e9822d-46a9-4f6e-b377-e3831cac09b8",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "11ddacc3-ea7f-4c07-9c77-b7ff227a7a68",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b2c45db7-d1b5-4527-91af-00248ee24984",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2cc0af65-5593-4686-aa79-c33c1232396f",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0c3ed323-d512-4bb5-b22f-5b0fbc0451f0",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9d412037-c318-424a-a7d4-1f895201efe9",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "27d6070e-591b-4329-8102-660b3b6b3415",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

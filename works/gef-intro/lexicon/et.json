@@ -1,0 +1,2554 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "et",
+  "lexemes": [
+    {
+      "lexeme_id": "b816058e-d78c-4213-8570-62781889fb51",
+      "lemma_nfc": "Alex",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7d3af411-c85a-4a55-a965-45952c09d5e1",
+          "sense_key": "alex-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alex' in context as a propn",
+            "es": "definición de 'Alex' en contexto como propn",
+            "fr": "définition de 'Alex' en contexte comme propn",
+            "pt": "definição de 'Alex' em contexto como propn",
+            "it": "definizione di 'Alex' in contesto come propn",
+            "el": "ορισμός του 'Alex' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alex')",
+            "es": "como se usa en el contexto ('Alex')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Alex_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Alex_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alex_distractor_a",
+            "Alex_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f6d778cb-b85e-40ed-a4a8-0ae81d5c079c",
+          "surface_nfc": "Alex",
+          "normalized_lookup": "alex",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9a73f717-be94-49db-bc64-7ee354bdfc32",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0b577110-3197-4111-9fc8-f5caa49e2022",
+      "lemma_nfc": "Mõnikord",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "01954d38-455c-40f5-8826-88f6152cbc5b",
+          "sense_key": "mõnikord-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Mõnikord' in context as a propn",
+            "es": "definición de 'Mõnikord' en contexto como propn",
+            "fr": "définition de 'Mõnikord' en contexte comme propn",
+            "pt": "definição de 'Mõnikord' em contexto como propn",
+            "it": "definizione di 'Mõnikord' in contesto come propn",
+            "el": "ορισμός του 'Mõnikord' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Mõnikord')",
+            "es": "como se usa en el contexto ('Mõnikord')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Mõnikord_hp1"
+          ],
+          "homonyms": [
+            "Mõnikord_hm1"
+          ],
+          "synonyms": [
+            "Mõnikord_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Mõnikord_distractor_a",
+            "Mõnikord_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c3346fa7-fe5b-4646-b8f2-aa593c5eba58",
+          "surface_nfc": "Mõnikord",
+          "normalized_lookup": "mõnikord",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3a7dacb5-3c1f-462e-b7d5-8789455c9031",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fd9e5674-4193-4b3f-b00e-42e935b240ae",
+      "lemma_nfc": "Täna",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d4f8cd29-b2bb-46a9-9e74-5c66086c9215",
+          "sense_key": "täna-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Täna' in context as a propn",
+            "es": "definición de 'Täna' en contexto como propn",
+            "fr": "définition de 'Täna' en contexte comme propn",
+            "pt": "definição de 'Täna' em contexto como propn",
+            "it": "definizione di 'Täna' in contesto come propn",
+            "el": "ορισμός του 'Täna' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Täna')",
+            "es": "como se usa en el contexto ('Täna')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Täna_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Täna_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Täna_distractor_a",
+            "Täna_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f49d9dca-79c1-492c-9ad1-2d10844ac98c",
+          "surface_nfc": "Täna",
+          "normalized_lookup": "täna",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "820ba46c-9e49-4ad7-9f3d-33403a6ec51f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "b01c337f-2f39-4a47-a981-5a0501a092f1",
+      "lemma_nfc": "Lugu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0c549fdb-3c13-4a6d-be3d-389e6a0f1cd6",
+          "sense_key": "lugu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Lugu' in context as a propn",
+            "es": "definición de 'Lugu' en contexto como propn",
+            "fr": "définition de 'Lugu' en contexte comme propn",
+            "pt": "definição de 'Lugu' em contexto como propn",
+            "it": "definizione di 'Lugu' in contesto come propn",
+            "el": "ορισμός του 'Lugu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Lugu')",
+            "es": "como se usa en el contexto ('Lugu')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Lugu_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Lugu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Lugu_distractor_a",
+            "Lugu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4c80e2f3-935a-474f-916a-803919919d6f",
+          "surface_nfc": "Lugu",
+          "normalized_lookup": "lugu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7513757b-0099-4f46-9cfe-03f48f6fca3e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "10db4b62-bdea-454e-b3ee-8f46985688ce",
+      "lemma_nfc": "Printsess",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e41adafb-3f6e-44dd-a9c4-1b084f37d866",
+          "sense_key": "printsess-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Printsess' in context as a propn",
+            "es": "definición de 'Printsess' en contexto como propn",
+            "fr": "définition de 'Printsess' en contexte comme propn",
+            "pt": "definição de 'Printsess' em contexto como propn",
+            "it": "definizione di 'Printsess' in contesto come propn",
+            "el": "ορισμός του 'Printsess' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Printsess')",
+            "es": "como se usa en el contexto ('Printsess')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Printsess_hp1"
+          ],
+          "homonyms": [
+            "Printsess_hm1"
+          ],
+          "synonyms": [
+            "Printsess_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Printsess_distractor_a",
+            "Printsess_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4ef598ff-7521-4fd4-aad0-9295806f66ae",
+          "surface_nfc": "Printsess",
+          "normalized_lookup": "printsess",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "88508a43-91f0-408a-ac06-7a752f5c8204",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d7453743-d0cc-4d51-b2f1-f160b17e7d3a",
+      "lemma_nfc": "Midagi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c613ae96-750b-45da-86b3-880d74b53155",
+          "sense_key": "midagi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Midagi' in context as a propn",
+            "es": "definición de 'Midagi' en contexto como propn",
+            "fr": "définition de 'Midagi' en contexte comme propn",
+            "pt": "definição de 'Midagi' em contexto como propn",
+            "it": "definizione di 'Midagi' in contesto come propn",
+            "el": "ορισμός του 'Midagi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Midagi')",
+            "es": "como se usa en el contexto ('Midagi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Midagi_hp1"
+          ],
+          "homonyms": [
+            "Midagi_hm1"
+          ],
+          "synonyms": [
+            "Midagi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Midagi_distractor_a",
+            "Midagi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "645a31ed-6acf-4d41-9550-29b462a35829",
+          "surface_nfc": "Midagi",
+          "normalized_lookup": "midagi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0e0e0de9-fe98-4106-bfa7-c1bfc605bc95",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "21d26152-1a68-4b4e-8b55-4cfe416f8b00",
+      "lemma_nfc": "Kraapimine",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "41b18221-82c8-4277-876a-620b9d903260",
+          "sense_key": "kraapimine-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kraapimine' in context as a propn",
+            "es": "definición de 'Kraapimine' en contexto como propn",
+            "fr": "définition de 'Kraapimine' en contexte comme propn",
+            "pt": "definição de 'Kraapimine' em contexto como propn",
+            "it": "definizione di 'Kraapimine' in contesto come propn",
+            "el": "ορισμός του 'Kraapimine' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kraapimine')",
+            "es": "como se usa en el contexto ('Kraapimine')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kraapimine_hp1"
+          ],
+          "homonyms": [
+            "Kraapimine_hm1"
+          ],
+          "synonyms": [
+            "Kraapimine_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kraapimine_distractor_a",
+            "Kraapimine_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1c093515-0d49-4d48-9a9e-9f3fa4b14d29",
+          "surface_nfc": "Kraapimine",
+          "normalized_lookup": "kraapimine",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7eb4e422-3192-4c16-a0a9-c15e2c8bf241",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f269de22-a6e4-4d61-9460-c120c12a4cf0",
+      "lemma_nfc": "Ta",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4232aa58-cbaa-4a9f-9cc5-cd8dd3d2939a",
+          "sense_key": "ta-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ta' in context as a propn",
+            "es": "definición de 'Ta' en contexto como propn",
+            "fr": "définition de 'Ta' en contexte comme propn",
+            "pt": "definição de 'Ta' em contexto como propn",
+            "it": "definizione di 'Ta' in contesto come propn",
+            "el": "ορισμός του 'Ta' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ta')",
+            "es": "como se usa en el contexto ('Ta')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ta_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ta_distractor_a",
+            "Ta_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "8cfe070b-fd29-473c-aa8f-48e2565b2613",
+          "surface_nfc": "Ta",
+          "normalized_lookup": "ta",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2dd59cf6-0490-4a84-9273-a38ac4ffc550",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "430a6bc9-d015-4333-89cf-c2147a39395e",
+      "lemma_nfc": "Vastu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5b6a56f1-7d88-4e6e-8f64-8128a12eff56",
+          "sense_key": "vastu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Vastu' in context as a propn",
+            "es": "definición de 'Vastu' en contexto como propn",
+            "fr": "définition de 'Vastu' en contexte comme propn",
+            "pt": "definição de 'Vastu' em contexto como propn",
+            "it": "definizione di 'Vastu' in contesto come propn",
+            "el": "ορισμός του 'Vastu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Vastu')",
+            "es": "como se usa en el contexto ('Vastu')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Vastu_hp1"
+          ],
+          "homonyms": [
+            "Vastu_hm1"
+          ],
+          "synonyms": [
+            "Vastu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Vastu_distractor_a",
+            "Vastu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2b496345-90f5-484b-9081-ac3851bf6236",
+          "surface_nfc": "Vastu",
+          "normalized_lookup": "vastu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "700bbaf5-e6e9-4422-be90-02ebeeb9c897",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "1f5cb7ea-1ed3-4906-9cc6-628385b460d0",
+      "lemma_nfc": "Väga",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a2045d1d-419c-4d36-9b82-ed2ecdbecb0c",
+          "sense_key": "väga-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Väga' in context as a propn",
+            "es": "definición de 'Väga' en contexto como propn",
+            "fr": "définition de 'Väga' en contexte comme propn",
+            "pt": "definição de 'Väga' em contexto como propn",
+            "it": "definizione di 'Väga' in contesto come propn",
+            "el": "ορισμός του 'Väga' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Väga')",
+            "es": "como se usa en el contexto ('Väga')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Väga_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Väga_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Väga_distractor_a",
+            "Väga_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ec1068a6-2541-4fc0-9a9d-299aa81f75b7",
+          "surface_nfc": "Väga",
+          "normalized_lookup": "väga",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3d381ff2-17d8-42d8-98d7-6a240e778c11",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "7be484de-1c4e-4ef9-b513-ca98e42e489a",
+      "lemma_nfc": "Kes",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "64a76928-a4ee-4655-bef8-c73c0b3f3d78",
+          "sense_key": "kes-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kes' in context as a propn",
+            "es": "definición de 'Kes' en contexto como propn",
+            "fr": "définition de 'Kes' en contexte comme propn",
+            "pt": "definição de 'Kes' em contexto como propn",
+            "it": "definizione di 'Kes' in contesto come propn",
+            "el": "ορισμός του 'Kes' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kes')",
+            "es": "como se usa en el contexto ('Kes')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Kes_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kes_distractor_a",
+            "Kes_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "94224174-b70c-4866-a631-9ef42ae9fde1",
+          "surface_nfc": "Kes",
+          "normalized_lookup": "kes",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ee53b006-1be4-4f18-b011-381b1d8524d9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0ef558e2-b821-4507-af26-09df2a035347",
+      "lemma_nfc": "Hääl",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "08cd3105-4cc0-419c-ba7c-617c408095fc",
+          "sense_key": "hääl-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Hääl' in context as a propn",
+            "es": "definición de 'Hääl' en contexto como propn",
+            "fr": "définition de 'Hääl' en contexte comme propn",
+            "pt": "definição de 'Hääl' em contexto como propn",
+            "it": "definizione di 'Hääl' in contesto come propn",
+            "el": "ορισμός του 'Hääl' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Hääl')",
+            "es": "como se usa en el contexto ('Hääl')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Hääl_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Hääl_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Hääl_distractor_a",
+            "Hääl_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "19e69021-d18e-4056-811f-9c4e79f052a1",
+          "surface_nfc": "Hääl",
+          "normalized_lookup": "hääl",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9901fe82-be69-42b6-971a-ffdbaa08edac",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f56d3a10-d40c-4a74-bce6-2af8fc0f724a",
+      "lemma_nfc": "Selle",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c41266b4-7b5b-4c35-a745-e8162b1b5499",
+          "sense_key": "selle-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Selle' in context as a propn",
+            "es": "definición de 'Selle' en contexto como propn",
+            "fr": "définition de 'Selle' en contexte comme propn",
+            "pt": "definição de 'Selle' em contexto como propn",
+            "it": "definizione di 'Selle' in contesto come propn",
+            "el": "ορισμός του 'Selle' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Selle')",
+            "es": "como se usa en el contexto ('Selle')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Selle_hp1"
+          ],
+          "homonyms": [
+            "Selle_hm1"
+          ],
+          "synonyms": [
+            "Selle_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Selle_distractor_a",
+            "Selle_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2a3833e1-b66e-4d54-a531-3add63287a3c",
+          "surface_nfc": "Selle",
+          "normalized_lookup": "selle",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ff608c1c-9fc3-48f3-aa2c-7d45ec9ef99d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "7106305d-f401-4298-8c9b-af184308ad8d",
+      "lemma_nfc": "See",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9ddf160c-75eb-4c45-ba2d-1314bd4e0f5f",
+          "sense_key": "see-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'See' in context as a propn",
+            "es": "definición de 'See' en contexto como propn",
+            "fr": "définition de 'See' en contexte comme propn",
+            "pt": "definição de 'See' em contexto como propn",
+            "it": "definizione di 'See' in contesto come propn",
+            "el": "ορισμός του 'See' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('See')",
+            "es": "como se usa en el contexto ('See')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "See_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "See_distractor_a",
+            "See_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "60263e2f-2b44-4a2a-b968-0ad61b53a2e2",
+          "surface_nfc": "See",
+          "normalized_lookup": "see",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a4b09a9c-d6ad-4eae-b8be-803eb02b16a9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "129a5c9f-c969-4e0d-ba38-e8ed8df1f3f2",
+      "lemma_nfc": "Kaks",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "39c91b7e-db52-4022-bff0-3fe5ac25635b",
+          "sense_key": "kaks-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kaks' in context as a propn",
+            "es": "definición de 'Kaks' en contexto como propn",
+            "fr": "définition de 'Kaks' en contexte comme propn",
+            "pt": "definição de 'Kaks' em contexto como propn",
+            "it": "definizione di 'Kaks' in contesto come propn",
+            "el": "ορισμός του 'Kaks' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kaks')",
+            "es": "como se usa en el contexto ('Kaks')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Kaks_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Kaks_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kaks_distractor_a",
+            "Kaks_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "3a9b2001-68df-4832-9bd1-2630d8f31d1a",
+          "surface_nfc": "Kaks",
+          "normalized_lookup": "kaks",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "86514bbe-27a9-40db-80b6-55777575e14d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "648e11e2-772f-4106-9f40-4fe6b3159b57",
+      "lemma_nfc": "Siis",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e0cdb82e-4d92-423e-a3bb-b0eef86668d1",
+          "sense_key": "siis-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Siis' in context as a propn",
+            "es": "definición de 'Siis' en contexto como propn",
+            "fr": "définition de 'Siis' en contexte comme propn",
+            "pt": "definição de 'Siis' em contexto como propn",
+            "it": "definizione di 'Siis' in contesto come propn",
+            "el": "ορισμός του 'Siis' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Siis')",
+            "es": "como se usa en el contexto ('Siis')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Siis_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Siis_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Siis_distractor_a",
+            "Siis_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "7ca35e8a-ce0d-465c-929b-5dfb12706cad",
+          "surface_nfc": "Siis",
+          "normalized_lookup": "siis",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1c61d7bc-55f1-4f51-8f65-a4350ebc96ef",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "89de46fd-f937-4dca-85ad-394f8b3652bb",
+      "lemma_nfc": "Järgmisena",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "27e857c3-bb5d-442e-bcc6-0b86541293c8",
+          "sense_key": "järgmisena-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Järgmisena' in context as a propn",
+            "es": "definición de 'Järgmisena' en contexto como propn",
+            "fr": "définition de 'Järgmisena' en contexte comme propn",
+            "pt": "definição de 'Järgmisena' em contexto como propn",
+            "it": "definizione di 'Järgmisena' in contesto come propn",
+            "el": "ορισμός του 'Järgmisena' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Järgmisena')",
+            "es": "como se usa en el contexto ('Järgmisena')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Järgmisena_hp1"
+          ],
+          "homonyms": [
+            "Järgmisena_hm1"
+          ],
+          "synonyms": [
+            "Järgmisena_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Järgmisena_distractor_a",
+            "Järgmisena_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "68308e43-5764-40f5-bb7a-a72d1fd183fa",
+          "surface_nfc": "Järgmisena",
+          "normalized_lookup": "järgmisena",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "50d59bea-03d6-4a06-9c65-ea169b7cf813",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3d1fafa1-cfc0-48fc-848e-62b0527b4e51",
+      "lemma_nfc": "Ava",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "49ac3dbc-0cca-4220-a87f-f6147063f56a",
+          "sense_key": "ava-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ava' in context as a propn",
+            "es": "definición de 'Ava' en contexto como propn",
+            "fr": "définition de 'Ava' en contexte comme propn",
+            "pt": "definição de 'Ava' em contexto como propn",
+            "it": "definizione di 'Ava' in contesto come propn",
+            "el": "ορισμός του 'Ava' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ava')",
+            "es": "como se usa en el contexto ('Ava')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ava_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ava_distractor_a",
+            "Ava_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "80c0366b-8cfd-4d07-9364-9e86d91b6c4b",
+          "surface_nfc": "Ava",
+          "normalized_lookup": "ava",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "73f89563-992a-46d2-b130-ed6e525a5943",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "524643ea-e9d2-4cde-8521-3001d3c011de",
+      "lemma_nfc": "Alexi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b05a5393-99ee-4c41-b268-1d01b5f3bcd4",
+          "sense_key": "alexi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexi' in context as a propn",
+            "es": "definición de 'Alexi' en contexto como propn",
+            "fr": "définition de 'Alexi' en contexte comme propn",
+            "pt": "definição de 'Alexi' em contexto como propn",
+            "it": "definizione di 'Alexi' in contesto come propn",
+            "el": "ορισμός του 'Alexi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexi')",
+            "es": "como se usa en el contexto ('Alexi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexi_hp1"
+          ],
+          "homonyms": [
+            "Alexi_hm1"
+          ],
+          "synonyms": [
+            "Alexi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexi_distractor_a",
+            "Alexi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e57d6bdb-ff7e-4e9e-9988-8fbf5d803807",
+          "surface_nfc": "Alexi",
+          "normalized_lookup": "alexi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a42173c9-f594-4b17-a159-5ee094286612",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3ce89f9d-6392-4391-81a7-6cb7f3e36720",
+      "lemma_nfc": "Ometi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e7587b82-7ae0-4514-bde6-87a577c0af51",
+          "sense_key": "ometi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ometi' in context as a propn",
+            "es": "definición de 'Ometi' en contexto como propn",
+            "fr": "définition de 'Ometi' en contexte comme propn",
+            "pt": "definição de 'Ometi' em contexto como propn",
+            "it": "definizione di 'Ometi' in contesto come propn",
+            "el": "ορισμός του 'Ometi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ometi')",
+            "es": "como se usa en el contexto ('Ometi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ometi_hp1"
+          ],
+          "homonyms": [
+            "Ometi_hm1"
+          ],
+          "synonyms": [
+            "Ometi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ometi_distractor_a",
+            "Ometi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1aa35caa-1fa9-4443-907c-94876ff1dc30",
+          "surface_nfc": "Ometi",
+          "normalized_lookup": "ometi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "97ae8d0d-a245-4fe7-8e7a-2e8a72f26562",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ccbb337b-53ac-4206-b2fd-1d147ae99c65",
+      "lemma_nfc": "Tema",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4d078b33-22d7-4985-af76-c0c1a2b53b60",
+          "sense_key": "tema-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Tema' in context as a propn",
+            "es": "definición de 'Tema' en contexto como propn",
+            "fr": "définition de 'Tema' en contexte comme propn",
+            "pt": "definição de 'Tema' em contexto como propn",
+            "it": "definizione di 'Tema' in contesto come propn",
+            "el": "ορισμός του 'Tema' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Tema')",
+            "es": "como se usa en el contexto ('Tema')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Tema_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Tema_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Tema_distractor_a",
+            "Tema_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "55317b42-53f3-41ca-8de9-ce5a9f63f270",
+          "surface_nfc": "Tema",
+          "normalized_lookup": "tema",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5036801d-cbeb-4419-9658-11d80ef3639f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6f066875-08e4-48f6-ba95-361b2d6c9bd0",
+      "lemma_nfc": "Pikk",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1d2ec5e9-7251-47ee-bd5c-2c844b9ed9cf",
+          "sense_key": "pikk-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pikk' in context as a propn",
+            "es": "definición de 'Pikk' en contexto como propn",
+            "fr": "définition de 'Pikk' en contexte comme propn",
+            "pt": "definição de 'Pikk' em contexto como propn",
+            "it": "definizione di 'Pikk' in contesto come propn",
+            "el": "ορισμός του 'Pikk' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pikk')",
+            "es": "como se usa en el contexto ('Pikk')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Pikk_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Pikk_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pikk_distractor_a",
+            "Pikk_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e92a0c64-ec34-4c4d-b461-b43a2de1eaca",
+          "surface_nfc": "Pikk",
+          "normalized_lookup": "pikk",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "530f9877-c0ea-4954-840c-1cd902121a07",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "de7b795c-79cb-44b7-a6a1-393a82ea61e8",
+      "lemma_nfc": "Mangust",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9dff7ba1-b977-4e19-ac2e-fdba566336ba",
+          "sense_key": "mangust-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Mangust' in context as a propn",
+            "es": "definición de 'Mangust' en contexto como propn",
+            "fr": "définition de 'Mangust' en contexte comme propn",
+            "pt": "definição de 'Mangust' em contexto como propn",
+            "it": "definizione di 'Mangust' in contesto come propn",
+            "el": "ορισμός του 'Mangust' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Mangust')",
+            "es": "como se usa en el contexto ('Mangust')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Mangust_hp1"
+          ],
+          "homonyms": [
+            "Mangust_hm1"
+          ],
+          "synonyms": [
+            "Mangust_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Mangust_distractor_a",
+            "Mangust_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "908e3e59-9794-422a-aa8c-d9885a512952",
+          "surface_nfc": "Mangust",
+          "normalized_lookup": "mangust",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b808ce3b-b61c-4fd9-b1a6-f26f06818797",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "40cf8191-4a6e-4462-b5d7-79f7a8a3640c",
+      "lemma_nfc": "Minu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e0da8d8d-2b58-4004-960f-43387e422ef9",
+          "sense_key": "minu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Minu' in context as a propn",
+            "es": "definición de 'Minu' en contexto como propn",
+            "fr": "définition de 'Minu' en contexte comme propn",
+            "pt": "definição de 'Minu' em contexto como propn",
+            "it": "definizione di 'Minu' in contesto come propn",
+            "el": "ορισμός του 'Minu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Minu')",
+            "es": "como se usa en el contexto ('Minu')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Minu_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Minu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Minu_distractor_a",
+            "Minu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "cf2e9ccc-4b57-4ccc-97ff-3b40ea57df6f",
+          "surface_nfc": "Minu",
+          "normalized_lookup": "minu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f0feef5f-c722-4bfa-9a0f-b88a9af5fed4",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "64b22916-a607-4358-8a6f-c06ba27f7522",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4d60c74e-7730-49cf-84df-caec81160fc5",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a3f4dcc5-4ea5-48b9-be35-22e9e3445473",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9333bb01-90b6-41c6-adea-c337a93247bd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "27a3b629-a4ea-404b-9111-f8c3af9d0205",
+      "lemma_nfc": "Seda",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "69dc3ea8-1516-4944-b1a4-1c2ca1de8a5c",
+          "sense_key": "seda-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Seda' in context as a propn",
+            "es": "definición de 'Seda' en contexto como propn",
+            "fr": "définition de 'Seda' en contexte comme propn",
+            "pt": "definição de 'Seda' em contexto como propn",
+            "it": "definizione di 'Seda' in contesto come propn",
+            "el": "ορισμός του 'Seda' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Seda')",
+            "es": "como se usa en el contexto ('Seda')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Seda_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Seda_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Seda_distractor_a",
+            "Seda_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9eb541d4-5239-4738-9368-8a541deae7dc",
+          "surface_nfc": "Seda",
+          "normalized_lookup": "seda",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "4bc4fb55-b07c-49f7-8ab1-55d4d2336ce8",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9cc8fcfc-8723-4a7a-b192-920c82e08e21",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "49ff90d9-9fdd-4317-8cda-f484f788b814",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "55288221-92b4-4c67-8eb9-3e09462309ab",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1bc31d91-0fa7-4e33-8924-a3851db20cb5",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "92fd2f7b-2409-4b21-a04d-c61ded401838",
+      "lemma_nfc": "Kuidas",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "98fb1b6d-1ea8-403d-9dfb-e7379f5eee25",
+          "sense_key": "kuidas-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kuidas' in context as a propn",
+            "es": "definición de 'Kuidas' en contexto como propn",
+            "fr": "définition de 'Kuidas' en contexte comme propn",
+            "pt": "definição de 'Kuidas' em contexto como propn",
+            "it": "definizione di 'Kuidas' in contesto come propn",
+            "el": "ορισμός του 'Kuidas' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kuidas')",
+            "es": "como se usa en el contexto ('Kuidas')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kuidas_hp1"
+          ],
+          "homonyms": [
+            "Kuidas_hm1"
+          ],
+          "synonyms": [
+            "Kuidas_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kuidas_distractor_a",
+            "Kuidas_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "45c0b8a0-7e93-4ec5-841b-9e14012016c9",
+          "surface_nfc": "Kuidas",
+          "normalized_lookup": "kuidas",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5b196ad4-da21-4403-b418-5eba04e454c6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4f469dac-2e57-46ba-92bc-6e6d4c1135d3",
+      "lemma_nfc": "Ma",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ee4b747c-03b3-4290-bd7f-aaacd622bdcd",
+          "sense_key": "ma-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ma' in context as a propn",
+            "es": "definición de 'Ma' en contexto como propn",
+            "fr": "définition de 'Ma' en contexte comme propn",
+            "pt": "definição de 'Ma' em contexto como propn",
+            "it": "definizione di 'Ma' in contesto come propn",
+            "el": "ορισμός του 'Ma' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ma')",
+            "es": "como se usa en el contexto ('Ma')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ma_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ma_distractor_a",
+            "Ma_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1c2d893a-7879-41e6-87cc-2c2a80e09c17",
+          "surface_nfc": "Ma",
+          "normalized_lookup": "ma",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2ca79d5f-d938-4b1c-aa64-83a86a0dcf22",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c1d3f3b7-b651-4b2f-9df9-abd41be5d817",
+      "lemma_nfc": "Saksamaal",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "40838674-6fd7-4a68-bbc2-654673cf328e",
+          "sense_key": "saksamaal-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Saksamaal' in context as a propn",
+            "es": "definición de 'Saksamaal' en contexto como propn",
+            "fr": "définition de 'Saksamaal' en contexte comme propn",
+            "pt": "definição de 'Saksamaal' em contexto como propn",
+            "it": "definizione di 'Saksamaal' in contesto come propn",
+            "el": "ορισμός του 'Saksamaal' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Saksamaal')",
+            "es": "como se usa en el contexto ('Saksamaal')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Saksamaal_hp1"
+          ],
+          "homonyms": [
+            "Saksamaal_hm1"
+          ],
+          "synonyms": [
+            "Saksamaal_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Saksamaal_distractor_a",
+            "Saksamaal_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "58440e27-a860-4103-b1a6-bd1571842c23",
+          "surface_nfc": "Saksamaal",
+          "normalized_lookup": "saksamaal",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e78b76d7-3122-490b-b170-5ce36aea50ba",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "49f4a10d-1e60-4e39-9a88-b0dbc341f1d1",
+      "lemma_nfc": "Olin",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3dcff09e-40cc-463a-b363-134b5d2f77a9",
+          "sense_key": "olin-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Olin' in context as a propn",
+            "es": "definición de 'Olin' en contexto como propn",
+            "fr": "définition de 'Olin' en contexte comme propn",
+            "pt": "definição de 'Olin' em contexto como propn",
+            "it": "definizione di 'Olin' in contesto come propn",
+            "el": "ορισμός του 'Olin' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Olin')",
+            "es": "como se usa en el contexto ('Olin')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Olin_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Olin_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Olin_distractor_a",
+            "Olin_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9c8ae538-e4db-4661-af74-b720011476e8",
+          "surface_nfc": "Olin",
+          "normalized_lookup": "olin",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "757e2d41-9ff6-46bd-8f8d-53b6e4cdb1bf",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f9b49627-193d-4793-9454-f188cc595ae3",
+      "lemma_nfc": "Kui",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d36416f2-c76e-4c3d-acbb-e4e43a4d16e0",
+          "sense_key": "kui-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kui' in context as a propn",
+            "es": "definición de 'Kui' en contexto como propn",
+            "fr": "définition de 'Kui' en contexte comme propn",
+            "pt": "definição de 'Kui' em contexto como propn",
+            "it": "definizione di 'Kui' in contesto come propn",
+            "el": "ορισμός του 'Kui' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kui')",
+            "es": "como se usa en el contexto ('Kui')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Kui_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kui_distractor_a",
+            "Kui_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d90aa83a-6781-4ac2-9dd6-726c24dab6d3",
+          "surface_nfc": "Kui",
+          "normalized_lookup": "kui",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a08a891b-8314-4cfe-a5ac-60574bf48492",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "29368d9a-2c7c-44da-95c7-6b1d24f24a7a",
+      "lemma_nfc": "Sada",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a0b76e6d-bf13-4a3d-b4c6-1f5c05c30597",
+          "sense_key": "sada-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Sada' in context as a propn",
+            "es": "definición de 'Sada' en contexto como propn",
+            "fr": "définition de 'Sada' en contexte comme propn",
+            "pt": "definição de 'Sada' em contexto como propn",
+            "it": "definizione di 'Sada' in contesto come propn",
+            "el": "ορισμός του 'Sada' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Sada')",
+            "es": "como se usa en el contexto ('Sada')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Sada_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Sada_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Sada_distractor_a",
+            "Sada_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "437bf3fc-c7b3-41e4-9ef9-65ced95f4628",
+          "surface_nfc": "Sada",
+          "normalized_lookup": "sada",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6a1ced5a-8583-4346-8ffc-2885aa237efb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a4c1efbf-7f7a-4024-b693-5346577a243f",
+      "lemma_nfc": "Ikka",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d4e5b1eb-92b7-4992-a6dd-bb273f8fce25",
+          "sense_key": "ikka-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ikka' in context as a propn",
+            "es": "definición de 'Ikka' en contexto como propn",
+            "fr": "définition de 'Ikka' en contexte comme propn",
+            "pt": "definição de 'Ikka' em contexto como propn",
+            "it": "definizione di 'Ikka' in contesto come propn",
+            "el": "ορισμός του 'Ikka' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ikka')",
+            "es": "como se usa en el contexto ('Ikka')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Ikka_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Ikka_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ikka_distractor_a",
+            "Ikka_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d93b27de-817d-46a7-a26e-556d92faeaa9",
+          "surface_nfc": "Ikka",
+          "normalized_lookup": "ikka",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "dc11b508-cca6-481a-a5eb-1938e0765b04",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6cc152d3-3d27-4a94-a183-dccdf626a21a",
+      "lemma_nfc": "Sõnad",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "38dc729b-f4ed-4a77-9cfe-20264fb2c51e",
+          "sense_key": "sõnad-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Sõnad' in context as a propn",
+            "es": "definición de 'Sõnad' en contexto como propn",
+            "fr": "définition de 'Sõnad' en contexte comme propn",
+            "pt": "definição de 'Sõnad' em contexto como propn",
+            "it": "definizione di 'Sõnad' in contesto come propn",
+            "el": "ορισμός του 'Sõnad' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Sõnad')",
+            "es": "como se usa en el contexto ('Sõnad')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Sõnad_hp1"
+          ],
+          "homonyms": [
+            "Sõnad_hm1"
+          ],
+          "synonyms": [
+            "Sõnad_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Sõnad_distractor_a",
+            "Sõnad_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b1fb45a7-23db-41b6-81f7-d1daa7ba99d3",
+          "surface_nfc": "Sõnad",
+          "normalized_lookup": "sõnad",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "8c13b57e-2f23-4c24-a9d0-b384591c37af",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fbff8172-ff6b-43b8-9437-e6544af13f63",
+      "lemma_nfc": "Lambi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6cb4480c-c822-48cd-93a9-169cd4a63de5",
+          "sense_key": "lambi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Lambi' in context as a propn",
+            "es": "definición de 'Lambi' en contexto como propn",
+            "fr": "définition de 'Lambi' en contexte comme propn",
+            "pt": "definição de 'Lambi' em contexto como propn",
+            "it": "definizione di 'Lambi' in contesto come propn",
+            "el": "ορισμός του 'Lambi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Lambi')",
+            "es": "como se usa en el contexto ('Lambi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Lambi_hp1"
+          ],
+          "homonyms": [
+            "Lambi_hm1"
+          ],
+          "synonyms": [
+            "Lambi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Lambi_distractor_a",
+            "Lambi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "be56f899-83cd-4c98-8de8-8b306f64ecf3",
+          "surface_nfc": "Lambi",
+          "normalized_lookup": "lambi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7e147115-c600-43bb-81ee-6befd1697ccb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "51367471-ddcb-434a-978d-3dce19d0fc07",
+      "lemma_nfc": "Kas",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9235c81b-0236-4db5-bc25-31f368a787c7",
+          "sense_key": "kas-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kas' in context as a propn",
+            "es": "definición de 'Kas' en contexto como propn",
+            "fr": "définition de 'Kas' en contexte comme propn",
+            "pt": "definição de 'Kas' em contexto como propn",
+            "it": "definizione di 'Kas' in contesto come propn",
+            "el": "ορισμός του 'Kas' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kas')",
+            "es": "como se usa en el contexto ('Kas')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Kas_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kas_distractor_a",
+            "Kas_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "276a9844-e197-4099-90a9-f76217f0423b",
+          "surface_nfc": "Kas",
+          "normalized_lookup": "kas",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "8cf1fc5a-88aa-4ed1-a775-588082b362ee",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "84dce3f3-5d9c-4262-8665-d6860dab26bc",
+      "lemma_nfc": "Alexile",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a66e28bf-a7d3-48b0-96fd-70fa3c285765",
+          "sense_key": "alexile-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexile' in context as a propn",
+            "es": "definición de 'Alexile' en contexto como propn",
+            "fr": "définition de 'Alexile' en contexte comme propn",
+            "pt": "definição de 'Alexile' em contexto como propn",
+            "it": "definizione di 'Alexile' in contesto come propn",
+            "el": "ορισμός του 'Alexile' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexile')",
+            "es": "como se usa en el contexto ('Alexile')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexile_hp1"
+          ],
+          "homonyms": [
+            "Alexile_hm1"
+          ],
+          "synonyms": [
+            "Alexile_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexile_distractor_a",
+            "Alexile_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c84e18ce-7e13-43a0-9514-4ce8131593dc",
+          "surface_nfc": "Alexile",
+          "normalized_lookup": "alexile",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d71e4468-2af6-4591-9eb2-b9ef7079ffe4",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "508bdd92-a553-4a0b-afa2-d936df55fb29",
+      "lemma_nfc": "Või",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "566758bf-4a53-4ecb-abc0-66364ea99ac2",
+          "sense_key": "või-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Või' in context as a propn",
+            "es": "definición de 'Või' en contexto como propn",
+            "fr": "définition de 'Või' en contexte comme propn",
+            "pt": "definição de 'Või' em contexto como propn",
+            "it": "definizione di 'Või' in contesto come propn",
+            "el": "ορισμός του 'Või' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Või')",
+            "es": "como se usa en el contexto ('Või')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Või_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Või_distractor_a",
+            "Või_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "410ce4e3-a634-4da0-98c2-a2daad97360f",
+          "surface_nfc": "Või",
+          "normalized_lookup": "või",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a778c322-65e4-4fbf-9926-11f727b45c68",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

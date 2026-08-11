@@ -1,0 +1,2639 @@
+{
+  "schema_version": 1,
+  "work_id": "frog-king",
+  "language_code": "cy",
+  "lexemes": [
+    {
+      "lexeme_id": "83c95073-1385-4faa-99c9-061a1356e6cf",
+      "lemma_nfc": "Amser",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5dbbfa7b-d714-4cf2-a562-39ea7abbcc34",
+          "sense_key": "amser-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Amser' in context as a propn",
+            "es": "definición de 'Amser' en contexto como propn",
+            "fr": "définition de 'Amser' en contexte comme propn",
+            "pt": "definição de 'Amser' em contexto como propn",
+            "it": "definizione di 'Amser' in contesto come propn",
+            "el": "ορισμός του 'Amser' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Amser')",
+            "es": "como se usa en el contexto ('Amser')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Amser_hp1"
+          ],
+          "homonyms": [
+            "Amser_hm1"
+          ],
+          "synonyms": [
+            "Amser_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Amser_distractor_a",
+            "Amser_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "412fafa3-046b-44eb-9fed-c49aaf04f243",
+          "surface_nfc": "Amser",
+          "normalized_lookup": "amser",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7cd56836-0164-46a8-bee9-b2a609fa98a4",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e569d5aa-f563-4ddf-9c52-40037a61e839",
+      "lemma_nfc": "Yn",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "dc1364b8-b898-4d37-9739-6736edd76a5c",
+          "sense_key": "yn-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Yn' in context as a propn",
+            "es": "definición de 'Yn' en contexto como propn",
+            "fr": "définition de 'Yn' en contexte comme propn",
+            "pt": "definição de 'Yn' em contexto como propn",
+            "it": "definizione di 'Yn' in contesto come propn",
+            "el": "ορισμός του 'Yn' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Yn')",
+            "es": "como se usa en el contexto ('Yn')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Yn_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Yn_distractor_a",
+            "Yn_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a502c686-cfb1-429e-91d9-18abc3a09379",
+          "surface_nfc": "Yn",
+          "normalized_lookup": "yn",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6d4f6612-1122-4e32-939c-1dc2fd7a5d75",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6b817536-5db7-406b-8f16-6d98299050dd",
+      "lemma_nfc": "Roedd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "504ac642-7938-48d2-a794-c75f2ed81cc5",
+          "sense_key": "roedd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Roedd' in context as a propn",
+            "es": "definición de 'Roedd' en contexto como propn",
+            "fr": "définition de 'Roedd' en contexte comme propn",
+            "pt": "definição de 'Roedd' em contexto como propn",
+            "it": "definizione di 'Roedd' in contesto come propn",
+            "el": "ορισμός του 'Roedd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Roedd')",
+            "es": "como se usa en el contexto ('Roedd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Roedd_hp1"
+          ],
+          "homonyms": [
+            "Roedd_hm1"
+          ],
+          "synonyms": [
+            "Roedd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Roedd_distractor_a",
+            "Roedd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "79d27163-0c55-49c5-89ff-e18b5a9e7a31",
+          "surface_nfc": "Roedd",
+          "normalized_lookup": "roedd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "480fd9cc-32c1-49a6-9a13-10a6875868e9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8f9b1afa-bb98-472d-a535-201d1138ff7a",
+      "lemma_nfc": "Rholiodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3d07bbbe-723c-4d5f-8b2d-0020d12297d3",
+          "sense_key": "rholiodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Rholiodd' in context as a propn",
+            "es": "definición de 'Rholiodd' en contexto como propn",
+            "fr": "définition de 'Rholiodd' en contexte comme propn",
+            "pt": "definição de 'Rholiodd' em contexto como propn",
+            "it": "definizione di 'Rholiodd' in contesto come propn",
+            "el": "ορισμός του 'Rholiodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Rholiodd')",
+            "es": "como se usa en el contexto ('Rholiodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Rholiodd_hp1"
+          ],
+          "homonyms": [
+            "Rholiodd_hm1"
+          ],
+          "synonyms": [
+            "Rholiodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Rholiodd_distractor_a",
+            "Rholiodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9ae8a0ff-775c-4f2c-854c-f2ff750c8516",
+          "surface_nfc": "Rholiodd",
+          "normalized_lookup": "rholiodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3533522c-2e71-48b5-9ab3-caf816ff6fbd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "aa9f7fad-f502-4d80-b40a-a9f49e3e1ace",
+      "lemma_nfc": "Ni",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "574fe78e-32fc-4c7f-bf6b-077ed97ceb90",
+          "sense_key": "ni-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ni' in context as a propn",
+            "es": "definición de 'Ni' en contexto como propn",
+            "fr": "définition de 'Ni' en contexte comme propn",
+            "pt": "definição de 'Ni' em contexto como propn",
+            "it": "definizione di 'Ni' in contesto come propn",
+            "el": "ορισμός του 'Ni' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ni')",
+            "es": "como se usa en el contexto ('Ni')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ni_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ni_distractor_a",
+            "Ni_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "559abe26-ae23-4a21-b3d0-56ec67fcad69",
+          "surface_nfc": "Ni",
+          "normalized_lookup": "ni",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b51731fa-1b81-4143-8d5b-0b570f35ec81",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "84d35e50-edb0-4079-bb32-17d486b5c046",
+      "lemma_nfc": "Daeth",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0a5519c9-2f5c-4186-99b2-f59ff245fc27",
+          "sense_key": "daeth-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Daeth' in context as a propn",
+            "es": "definición de 'Daeth' en contexto como propn",
+            "fr": "définition de 'Daeth' en contexte comme propn",
+            "pt": "definição de 'Daeth' em contexto como propn",
+            "it": "definizione di 'Daeth' in contesto come propn",
+            "el": "ορισμός του 'Daeth' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Daeth')",
+            "es": "como se usa en el contexto ('Daeth')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Daeth_hp1"
+          ],
+          "homonyms": [
+            "Daeth_hm1"
+          ],
+          "synonyms": [
+            "Daeth_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Daeth_distractor_a",
+            "Daeth_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "50146450-65c7-435b-a8d1-78114aa23179",
+          "surface_nfc": "Daeth",
+          "normalized_lookup": "daeth",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d0d625f8-f451-45ac-b2cc-3699d962f19c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d2ee32c1-0d95-43d4-9c2a-069acdd74e37",
+      "lemma_nfc": "Gofynnodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "add4051d-c99e-4aad-ade8-ca0143fb8955",
+          "sense_key": "gofynnodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gofynnodd' in context as a propn",
+            "es": "definición de 'Gofynnodd' en contexto como propn",
+            "fr": "définition de 'Gofynnodd' en contexte comme propn",
+            "pt": "definição de 'Gofynnodd' em contexto como propn",
+            "it": "definizione di 'Gofynnodd' in contesto come propn",
+            "el": "ορισμός του 'Gofynnodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gofynnodd')",
+            "es": "como se usa en el contexto ('Gofynnodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gofynnodd_hp1"
+          ],
+          "homonyms": [
+            "Gofynnodd_hm1"
+          ],
+          "synonyms": [
+            "Gofynnodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gofynnodd_distractor_a",
+            "Gofynnodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "60eaea22-d501-4311-a6d2-4e147752b5d3",
+          "surface_nfc": "Gofynnodd",
+          "normalized_lookup": "gofynnodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2181cbe5-03c2-4f39-9d3b-b475c1f87a5d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "7385d1dd-7a96-4dba-9523-a9d66bcddd16",
+      "lemma_nfc": "Gwelodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4a15d530-fb5b-4bed-8058-50565d330512",
+          "sense_key": "gwelodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gwelodd' in context as a propn",
+            "es": "definición de 'Gwelodd' en contexto como propn",
+            "fr": "définition de 'Gwelodd' en contexte comme propn",
+            "pt": "definição de 'Gwelodd' em contexto como propn",
+            "it": "definizione di 'Gwelodd' in contesto come propn",
+            "el": "ορισμός του 'Gwelodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gwelodd')",
+            "es": "como se usa en el contexto ('Gwelodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gwelodd_hp1"
+          ],
+          "homonyms": [
+            "Gwelodd_hm1"
+          ],
+          "synonyms": [
+            "Gwelodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gwelodd_distractor_a",
+            "Gwelodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "047dd9d7-561d-446b-acf8-79fa8edc16f6",
+          "surface_nfc": "Gwelodd",
+          "normalized_lookup": "gwelodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "38261a4d-038b-485e-94fc-945f2c958ff1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "59a5ffca-2642-4012-b5df-fc01106f2b40",
+      "lemma_nfc": "Cynigiodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ea120236-27db-4411-84da-7b8ef5290eb3",
+          "sense_key": "cynigiodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cynigiodd' in context as a propn",
+            "es": "definición de 'Cynigiodd' en contexto como propn",
+            "fr": "définition de 'Cynigiodd' en contexte comme propn",
+            "pt": "definição de 'Cynigiodd' em contexto como propn",
+            "it": "definizione di 'Cynigiodd' in contesto come propn",
+            "el": "ορισμός του 'Cynigiodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cynigiodd')",
+            "es": "como se usa en el contexto ('Cynigiodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Cynigiodd_hp1"
+          ],
+          "homonyms": [
+            "Cynigiodd_hm1"
+          ],
+          "synonyms": [
+            "Cynigiodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cynigiodd_distractor_a",
+            "Cynigiodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "27f3ee4d-1012-4d43-b52a-079929e4f816",
+          "surface_nfc": "Cynigiodd",
+          "normalized_lookup": "cynigiodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "51438611-4cd4-4c80-8a7f-d4cd3e975033",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "49ac8943-5e77-4a46-b09a-a23f915e2db6",
+      "lemma_nfc": "Nid",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "021c491f-8696-408e-801d-52783e412bf0",
+          "sense_key": "nid-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Nid' in context as a propn",
+            "es": "definición de 'Nid' en contexto como propn",
+            "fr": "définition de 'Nid' en contexte comme propn",
+            "pt": "definição de 'Nid' em contexto como propn",
+            "it": "definizione di 'Nid' in contesto come propn",
+            "el": "ορισμός του 'Nid' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Nid')",
+            "es": "como se usa en el contexto ('Nid')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Nid_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Nid_distractor_a",
+            "Nid_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d0b25176-5594-48a9-a721-36c06e6cbe86",
+          "surface_nfc": "Nid",
+          "normalized_lookup": "nid",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c1811a11-eea6-40ca-8e48-ce37f5fd4536",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9c628460-d8dc-4fbe-9f76-8027b71e907f",
+      "lemma_nfc": "Addawodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "586c87ed-5a63-4bd8-afd5-2a1d28c79cca",
+          "sense_key": "addawodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Addawodd' in context as a propn",
+            "es": "definición de 'Addawodd' en contexto como propn",
+            "fr": "définition de 'Addawodd' en contexte comme propn",
+            "pt": "definição de 'Addawodd' em contexto como propn",
+            "it": "definizione di 'Addawodd' in contesto come propn",
+            "el": "ορισμός του 'Addawodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Addawodd')",
+            "es": "como se usa en el contexto ('Addawodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Addawodd_hp1"
+          ],
+          "homonyms": [
+            "Addawodd_hm1"
+          ],
+          "synonyms": [
+            "Addawodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Addawodd_distractor_a",
+            "Addawodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "3705c1d0-f647-4b22-9167-09ed7dcd0e39",
+          "surface_nfc": "Addawodd",
+          "normalized_lookup": "addawodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b0b4e50b-3ae8-4a1b-83cb-26fded844b9a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "bc02a2c1-f40b-4d3f-8790-b4bf044d8240",
+      "lemma_nfc": "Cymerodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a0ec1abd-ae89-472a-aafb-e0f485b1cd4d",
+          "sense_key": "cymerodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cymerodd' in context as a propn",
+            "es": "definición de 'Cymerodd' en contexto como propn",
+            "fr": "définition de 'Cymerodd' en contexte comme propn",
+            "pt": "definição de 'Cymerodd' em contexto como propn",
+            "it": "definizione di 'Cymerodd' in contesto come propn",
+            "el": "ορισμός του 'Cymerodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cymerodd')",
+            "es": "como se usa en el contexto ('Cymerodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Cymerodd_hp1"
+          ],
+          "homonyms": [
+            "Cymerodd_hm1"
+          ],
+          "synonyms": [
+            "Cymerodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cymerodd_distractor_a",
+            "Cymerodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d5ead469-3fde-45ca-8589-cfa111d1e526",
+          "surface_nfc": "Cymerodd",
+          "normalized_lookup": "cymerodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5f7dcfbd-fb73-44d9-8e06-e8a3d9e55445",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "19fd076d-ae89-4329-aeaa-305d518df9c4",
+      "lemma_nfc": "Galwodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "8d9c8b5e-e174-4843-9251-dc2b856ef4e6",
+          "sense_key": "galwodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Galwodd' in context as a propn",
+            "es": "definición de 'Galwodd' en contexto como propn",
+            "fr": "définition de 'Galwodd' en contexte comme propn",
+            "pt": "definição de 'Galwodd' em contexto como propn",
+            "it": "definizione di 'Galwodd' in contesto come propn",
+            "el": "ορισμός του 'Galwodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Galwodd')",
+            "es": "como se usa en el contexto ('Galwodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Galwodd_hp1"
+          ],
+          "homonyms": [
+            "Galwodd_hm1"
+          ],
+          "synonyms": [
+            "Galwodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Galwodd_distractor_a",
+            "Galwodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f1bd5ee6-e1c8-4378-b9e6-ae6e0afba8af",
+          "surface_nfc": "Galwodd",
+          "normalized_lookup": "galwodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5a91b553-2edb-42c4-81b7-42dcb341390b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2f4a3a7f-6035-42d0-b5fe-34dffa749957",
+      "lemma_nfc": "Clywodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "58ee4c7b-db24-4dad-bb92-3ee0811e7308",
+          "sense_key": "clywodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Clywodd' in context as a propn",
+            "es": "definición de 'Clywodd' en contexto como propn",
+            "fr": "définition de 'Clywodd' en contexte comme propn",
+            "pt": "definição de 'Clywodd' em contexto como propn",
+            "it": "definizione di 'Clywodd' in contesto come propn",
+            "el": "ορισμός του 'Clywodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Clywodd')",
+            "es": "como se usa en el contexto ('Clywodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Clywodd_hp1"
+          ],
+          "homonyms": [
+            "Clywodd_hm1"
+          ],
+          "synonyms": [
+            "Clywodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Clywodd_distractor_a",
+            "Clywodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5237b2b4-af93-49c0-b428-fd5ad47afe49",
+          "surface_nfc": "Clywodd",
+          "normalized_lookup": "clywodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "08354521-61c1-4898-ac67-9a7fc0e8cb6c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3cee42ab-e301-48d0-b913-e65e892c4a7f",
+      "lemma_nfc": "Bu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "30b313f6-de9d-42a0-a967-834f1544c7ee",
+          "sense_key": "bu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Bu' in context as a propn",
+            "es": "definición de 'Bu' en contexto como propn",
+            "fr": "définition de 'Bu' en contexte comme propn",
+            "pt": "definição de 'Bu' em contexto como propn",
+            "it": "definizione di 'Bu' in contesto come propn",
+            "el": "ορισμός του 'Bu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Bu')",
+            "es": "como se usa en el contexto ('Bu')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Bu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Bu_distractor_a",
+            "Bu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ff84e8b2-f28f-4237-809b-dc5086d9710c",
+          "surface_nfc": "Bu",
+          "normalized_lookup": "bu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "753c4990-ff39-42d8-ac9e-38ef4ee173dc",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "00ae94a8-8198-4542-a937-860d28659d63",
+      "lemma_nfc": "Agorodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "fcbd3884-2a3b-48b8-a63e-c5dd7cdbcc47",
+          "sense_key": "agorodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Agorodd' in context as a propn",
+            "es": "definición de 'Agorodd' en contexto como propn",
+            "fr": "définition de 'Agorodd' en contexte comme propn",
+            "pt": "definição de 'Agorodd' em contexto como propn",
+            "it": "definizione di 'Agorodd' in contesto come propn",
+            "el": "ορισμός του 'Agorodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Agorodd')",
+            "es": "como se usa en el contexto ('Agorodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Agorodd_hp1"
+          ],
+          "homonyms": [
+            "Agorodd_hm1"
+          ],
+          "synonyms": [
+            "Agorodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Agorodd_distractor_a",
+            "Agorodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4d93bddd-686a-422d-99d2-f1c670d458af",
+          "surface_nfc": "Agorodd",
+          "normalized_lookup": "agorodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "efa58b79-682a-424b-8932-317422f338b5",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "23e338bb-19be-4656-8575-e0af51b4a297",
+      "lemma_nfc": "Caeodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0995df5b-4293-46ec-a71e-98066d7e9111",
+          "sense_key": "caeodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Caeodd' in context as a propn",
+            "es": "definición de 'Caeodd' en contexto como propn",
+            "fr": "définition de 'Caeodd' en contexte comme propn",
+            "pt": "definição de 'Caeodd' em contexto como propn",
+            "it": "definizione di 'Caeodd' in contesto come propn",
+            "el": "ορισμός του 'Caeodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Caeodd')",
+            "es": "como se usa en el contexto ('Caeodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Caeodd_hp1"
+          ],
+          "homonyms": [
+            "Caeodd_hm1"
+          ],
+          "synonyms": [
+            "Caeodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Caeodd_distractor_a",
+            "Caeodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "979c8702-7d58-43aa-bbde-e49ead0b8938",
+          "surface_nfc": "Caeodd",
+          "normalized_lookup": "caeodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9203ee22-6f6b-4346-89f2-0b0b2022f9f2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f82335b1-e530-4a0f-a154-b76e2a8ca1cd",
+      "lemma_nfc": "Dywedodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d0c501c3-2a7c-4bca-ad4b-c385e85405a2",
+          "sense_key": "dywedodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Dywedodd' in context as a propn",
+            "es": "definición de 'Dywedodd' en contexto como propn",
+            "fr": "définition de 'Dywedodd' en contexte comme propn",
+            "pt": "definição de 'Dywedodd' em contexto como propn",
+            "it": "definizione di 'Dywedodd' in contesto come propn",
+            "el": "ορισμός του 'Dywedodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Dywedodd')",
+            "es": "como se usa en el contexto ('Dywedodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Dywedodd_hp1"
+          ],
+          "homonyms": [
+            "Dywedodd_hm1"
+          ],
+          "synonyms": [
+            "Dywedodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Dywedodd_distractor_a",
+            "Dywedodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a84408e0-b313-4af2-ac13-fd62cf959475",
+          "surface_nfc": "Dywedodd",
+          "normalized_lookup": "dywedodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5cedbe96-db91-417b-beb0-bd25f9a37cb1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "b1cc469c-195e-46a3-abe8-f3fc33dd0974",
+      "lemma_nfc": "Yna",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1a34f9da-9ae3-4dc8-9798-7c8580fa4a30",
+          "sense_key": "yna-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Yna' in context as a propn",
+            "es": "definición de 'Yna' en contexto como propn",
+            "fr": "définition de 'Yna' en contexte comme propn",
+            "pt": "definição de 'Yna' em contexto como propn",
+            "it": "definizione di 'Yna' in contesto come propn",
+            "el": "ορισμός του 'Yna' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Yna')",
+            "es": "como se usa en el contexto ('Yna')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Yna_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Yna_distractor_a",
+            "Yna_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "709b7992-a145-495b-b232-9643ef7e302d",
+          "surface_nfc": "Yna",
+          "normalized_lookup": "yna",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9a9edb72-41ae-466f-8317-728a7bcdac56",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "968e624a-282a-412f-9484-236e4e0709d6",
+      "lemma_nfc": "Tynnodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "42dd1a45-689d-4979-8eb6-00af44e2587e",
+          "sense_key": "tynnodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Tynnodd' in context as a propn",
+            "es": "definición de 'Tynnodd' en contexto como propn",
+            "fr": "définition de 'Tynnodd' en contexte comme propn",
+            "pt": "definição de 'Tynnodd' em contexto como propn",
+            "it": "definizione di 'Tynnodd' in contesto come propn",
+            "el": "ορισμός του 'Tynnodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Tynnodd')",
+            "es": "como se usa en el contexto ('Tynnodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Tynnodd_hp1"
+          ],
+          "homonyms": [
+            "Tynnodd_hm1"
+          ],
+          "synonyms": [
+            "Tynnodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Tynnodd_distractor_a",
+            "Tynnodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c6385d4f-eba6-4cc5-893c-cd38fdc50a2c",
+          "surface_nfc": "Tynnodd",
+          "normalized_lookup": "tynnodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6261fa44-525c-40a1-be4c-6224e5d09662",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "73c58bc8-c743-4871-bb8e-a562753e61bc",
+      "lemma_nfc": "Gadawodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "18f7170a-81a8-4b8e-a9f6-15734348ce28",
+          "sense_key": "gadawodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gadawodd' in context as a propn",
+            "es": "definición de 'Gadawodd' en contexto como propn",
+            "fr": "définition de 'Gadawodd' en contexte comme propn",
+            "pt": "definição de 'Gadawodd' em contexto como propn",
+            "it": "definizione di 'Gadawodd' in contesto come propn",
+            "el": "ορισμός του 'Gadawodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gadawodd')",
+            "es": "como se usa en el contexto ('Gadawodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gadawodd_hp1"
+          ],
+          "homonyms": [
+            "Gadawodd_hm1"
+          ],
+          "synonyms": [
+            "Gadawodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gadawodd_distractor_a",
+            "Gadawodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "585164cc-c830-4954-a3ac-e0362bd99e55",
+          "surface_nfc": "Gadawodd",
+          "normalized_lookup": "gadawodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7d8c91d1-949e-4d0f-802b-1a92ed1319ad",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "02ea8ece-9057-4113-a379-870ef9ac1227",
+      "lemma_nfc": "Ar",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "72da14a5-a51d-4714-9ecf-a70985c36e3d",
+          "sense_key": "ar-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ar' in context as a propn",
+            "es": "definición de 'Ar' en contexto como propn",
+            "fr": "définition de 'Ar' en contexte comme propn",
+            "pt": "definição de 'Ar' em contexto como propn",
+            "it": "definizione di 'Ar' in contesto come propn",
+            "el": "ορισμός του 'Ar' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ar')",
+            "es": "como se usa en el contexto ('Ar')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ar_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ar_distractor_a",
+            "Ar_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "8a87ec0a-7f87-44dc-9cf7-71986a86ba59",
+          "surface_nfc": "Ar",
+          "normalized_lookup": "ar",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "62ae2748-1577-4aeb-a694-288b86990943",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d1f02baf-7827-47be-9ba1-72b112376e43",
+      "lemma_nfc": "Edrychodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1d8e9647-9aa6-4d89-9ce9-2ebbfcf02588",
+          "sense_key": "edrychodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Edrychodd' in context as a propn",
+            "es": "definición de 'Edrychodd' en contexto como propn",
+            "fr": "définition de 'Edrychodd' en contexte comme propn",
+            "pt": "definição de 'Edrychodd' em contexto como propn",
+            "it": "definizione di 'Edrychodd' in contesto come propn",
+            "el": "ορισμός του 'Edrychodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Edrychodd')",
+            "es": "como se usa en el contexto ('Edrychodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Edrychodd_hp1"
+          ],
+          "homonyms": [
+            "Edrychodd_hm1"
+          ],
+          "synonyms": [
+            "Edrychodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Edrychodd_distractor_a",
+            "Edrychodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "518f7958-0029-412b-a5f4-3c6d25576b1a",
+          "surface_nfc": "Edrychodd",
+          "normalized_lookup": "edrychodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e32d0e59-922f-4320-b4f2-7af4c57ae9e0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "df18451b-7002-4785-a71c-458ba04daf8d",
+      "lemma_nfc": "Cariodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "8bd34821-2d58-4596-85d1-145406489182",
+          "sense_key": "cariodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cariodd' in context as a propn",
+            "es": "definición de 'Cariodd' en contexto como propn",
+            "fr": "définition de 'Cariodd' en contexte comme propn",
+            "pt": "definição de 'Cariodd' em contexto como propn",
+            "it": "definizione di 'Cariodd' in contesto come propn",
+            "el": "ορισμός του 'Cariodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cariodd')",
+            "es": "como se usa en el contexto ('Cariodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Cariodd_hp1"
+          ],
+          "homonyms": [
+            "Cariodd_hm1"
+          ],
+          "synonyms": [
+            "Cariodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cariodd_distractor_a",
+            "Cariodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "cb45e212-943d-47ca-bfc9-47fd0bd38485",
+          "surface_nfc": "Cariodd",
+          "normalized_lookup": "cariodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c6f66671-35f2-466a-9cbb-c3b5e0516ff7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "776f7b43-a58a-480e-aef2-851ffe7dd8ba",
+      "lemma_nfc": "Arhosodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5dc4cdce-7fb2-4dae-846c-7ecc9ad5a378",
+          "sense_key": "arhosodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Arhosodd' in context as a propn",
+            "es": "definición de 'Arhosodd' en contexto como propn",
+            "fr": "définition de 'Arhosodd' en contexte comme propn",
+            "pt": "definição de 'Arhosodd' em contexto como propn",
+            "it": "definizione di 'Arhosodd' in contesto come propn",
+            "el": "ορισμός του 'Arhosodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Arhosodd')",
+            "es": "como se usa en el contexto ('Arhosodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Arhosodd_hp1"
+          ],
+          "homonyms": [
+            "Arhosodd_hm1"
+          ],
+          "synonyms": [
+            "Arhosodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Arhosodd_distractor_a",
+            "Arhosodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b049864e-75a4-4d55-aae7-27e67919fc41",
+          "surface_nfc": "Arhosodd",
+          "normalized_lookup": "arhosodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7dead42c-4504-4ec7-ba5f-0ce58d33fc8a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c545f2ef-642c-448d-b0e6-26e28f23291c",
+      "lemma_nfc": "Syllodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7999aabf-02d8-4938-aaa4-236e25bb5cb2",
+          "sense_key": "syllodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Syllodd' in context as a propn",
+            "es": "definición de 'Syllodd' en contexto como propn",
+            "fr": "définition de 'Syllodd' en contexte comme propn",
+            "pt": "definição de 'Syllodd' em contexto como propn",
+            "it": "definizione di 'Syllodd' in contesto come propn",
+            "el": "ορισμός του 'Syllodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Syllodd')",
+            "es": "como se usa en el contexto ('Syllodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Syllodd_hp1"
+          ],
+          "homonyms": [
+            "Syllodd_hm1"
+          ],
+          "synonyms": [
+            "Syllodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Syllodd_distractor_a",
+            "Syllodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4096a82d-8827-4c46-b828-7f390475c230",
+          "surface_nfc": "Syllodd",
+          "normalized_lookup": "syllodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "20e20772-dd32-444e-99bb-7a203a48296f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2c140fe5-7387-4b55-b80d-d4227d4a0c06",
+      "lemma_nfc": "Cododd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "73667197-82d5-4519-ae80-7fce57ac42cb",
+          "sense_key": "cododd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cododd' in context as a propn",
+            "es": "definición de 'Cododd' en contexto como propn",
+            "fr": "définition de 'Cododd' en contexte comme propn",
+            "pt": "definição de 'Cododd' em contexto como propn",
+            "it": "definizione di 'Cododd' in contesto come propn",
+            "el": "ορισμός του 'Cododd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cododd')",
+            "es": "como se usa en el contexto ('Cododd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Cododd_hp1"
+          ],
+          "homonyms": [
+            "Cododd_hm1"
+          ],
+          "synonyms": [
+            "Cododd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cododd_distractor_a",
+            "Cododd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e2e68a1e-1a4a-4ac9-9806-6ec5d6472a32",
+          "surface_nfc": "Cododd",
+          "normalized_lookup": "cododd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "4e8f2dae-30a2-4181-af0c-53d5196d334b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e7220ff4-1b71-490c-a50e-6514276f84f3",
+      "lemma_nfc": "Digon",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ea506bfa-71b7-450b-8060-08b39fe9a7ae",
+          "sense_key": "digon-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Digon' in context as a propn",
+            "es": "definición de 'Digon' en contexto como propn",
+            "fr": "définition de 'Digon' en contexte comme propn",
+            "pt": "definição de 'Digon' em contexto como propn",
+            "it": "definizione di 'Digon' in contesto come propn",
+            "el": "ορισμός του 'Digon' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Digon')",
+            "es": "como se usa en el contexto ('Digon')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Digon_hp1"
+          ],
+          "homonyms": [
+            "Digon_hm1"
+          ],
+          "synonyms": [
+            "Digon_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Digon_distractor_a",
+            "Digon_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b108d493-45c2-4cd8-afa4-f1f4b176bdd9",
+          "surface_nfc": "Digon",
+          "normalized_lookup": "digon",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "951419ef-e860-4caf-b5b1-c4fbb4d7dabf",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e435fcef-eab0-440e-bdb8-674c192f89f2",
+      "lemma_nfc": "Taflodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "837e487e-c5b1-4cfb-bd12-059c5d03bb0f",
+          "sense_key": "taflodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Taflodd' in context as a propn",
+            "es": "definición de 'Taflodd' en contexto como propn",
+            "fr": "définition de 'Taflodd' en contexte comme propn",
+            "pt": "definição de 'Taflodd' em contexto como propn",
+            "it": "definizione di 'Taflodd' in contesto come propn",
+            "el": "ορισμός του 'Taflodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Taflodd')",
+            "es": "como se usa en el contexto ('Taflodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Taflodd_hp1"
+          ],
+          "homonyms": [
+            "Taflodd_hm1"
+          ],
+          "synonyms": [
+            "Taflodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Taflodd_distractor_a",
+            "Taflodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "61f95841-dbae-4d2b-b4e8-969f4e3e33eb",
+          "surface_nfc": "Taflodd",
+          "normalized_lookup": "taflodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a0ab102c-029a-41e8-8318-0d3be6deeb2c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4ffcd9a5-7eff-47d4-ae04-9a4acd705ae3",
+      "lemma_nfc": "Tarodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "24b5e29f-6283-4e74-9688-14514abae0e7",
+          "sense_key": "tarodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Tarodd' in context as a propn",
+            "es": "definición de 'Tarodd' en contexto como propn",
+            "fr": "définition de 'Tarodd' en contexte comme propn",
+            "pt": "definição de 'Tarodd' em contexto como propn",
+            "it": "definizione di 'Tarodd' in contesto come propn",
+            "el": "ορισμός του 'Tarodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Tarodd')",
+            "es": "como se usa en el contexto ('Tarodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Tarodd_hp1"
+          ],
+          "homonyms": [
+            "Tarodd_hm1"
+          ],
+          "synonyms": [
+            "Tarodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Tarodd_distractor_a",
+            "Tarodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6dc5b0db-e108-416c-bd0f-50d727f21f2e",
+          "surface_nfc": "Tarodd",
+          "normalized_lookup": "tarodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ac6b9bb6-c739-44d6-823f-472034f1a29e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5c3bfa62-3399-41a2-a0fa-3af5d4b43cae",
+      "lemma_nfc": "Cyn",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "876cb7ca-0ba1-40cc-8095-75f239000269",
+          "sense_key": "cyn-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cyn' in context as a propn",
+            "es": "definición de 'Cyn' en contexto como propn",
+            "fr": "définition de 'Cyn' en contexte comme propn",
+            "pt": "definição de 'Cyn' em contexto como propn",
+            "it": "definizione di 'Cyn' in contesto come propn",
+            "el": "ορισμός του 'Cyn' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cyn')",
+            "es": "como se usa en el contexto ('Cyn')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Cyn_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cyn_distractor_a",
+            "Cyn_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2012e157-cc0c-4960-8774-83cabc464667",
+          "surface_nfc": "Cyn",
+          "normalized_lookup": "cyn",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6f3ab661-7133-472f-a88c-648b2416437c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2f742347-09d2-4b98-add2-b1ae3f08d316",
+      "lemma_nfc": "Dim",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c0469e48-c2c6-412c-8de8-dfa7d3453db5",
+          "sense_key": "dim-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Dim' in context as a propn",
+            "es": "definición de 'Dim' en contexto como propn",
+            "fr": "définition de 'Dim' en contexte comme propn",
+            "pt": "definição de 'Dim' em contexto como propn",
+            "it": "definizione di 'Dim' in contesto come propn",
+            "el": "ορισμός του 'Dim' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Dim')",
+            "es": "como se usa en el contexto ('Dim')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Dim_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Dim_distractor_a",
+            "Dim_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "850d0fee-10e8-47bb-acbc-9ef22b301d60",
+          "surface_nfc": "Dim",
+          "normalized_lookup": "dim",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fad861da-b4bd-4682-b2fd-c0c2f8f12966",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2da9ac01-2860-4924-acc2-1decdebdc2a1",
+      "lemma_nfc": "Y",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ba951c2e-6472-47e0-9930-b8a3584bd4f5",
+          "sense_key": "y-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Y' in context as a propn",
+            "es": "definición de 'Y' en contexto como propn",
+            "fr": "définition de 'Y' en contexte comme propn",
+            "pt": "definição de 'Y' em contexto como propn",
+            "it": "definizione di 'Y' in contesto come propn",
+            "el": "ορισμός του 'Y' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Y')",
+            "es": "como se usa en el contexto ('Y')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Y_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Y_distractor_a",
+            "Y_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2faeff6d-e275-4cef-a4f8-7cc60b7b9c66",
+          "surface_nfc": "Y",
+          "normalized_lookup": "y",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a7325286-a390-4d1a-a3c8-538b50aee41f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a4a3f65e-9b71-43dc-985c-2adaac0baae7",
+      "lemma_nfc": "Harri",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "446034a5-7630-41ed-99cc-9a25c41c077d",
+          "sense_key": "harri-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Harri' in context as a propn",
+            "es": "definición de 'Harri' en contexto como propn",
+            "fr": "définition de 'Harri' en contexte comme propn",
+            "pt": "definição de 'Harri' em contexto como propn",
+            "it": "definizione di 'Harri' in contesto come propn",
+            "el": "ορισμός του 'Harri' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Harri')",
+            "es": "como se usa en el contexto ('Harri')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Harri_hp1"
+          ],
+          "homonyms": [
+            "Harri_hm1"
+          ],
+          "synonyms": [
+            "Harri_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Harri_distractor_a",
+            "Harri_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "32a41883-a45c-4734-866a-676998657c3c",
+          "surface_nfc": "Harri",
+          "normalized_lookup": "harri",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "840e145e-ae63-4d04-bf26-a6815797e6ed",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0f51bc5c-1cfd-4fb5-89bc-c1a5169058e5",
+      "lemma_nfc": "Ffyddlon",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "698afacc-2bea-4e3d-a045-c4ffa5dc8ffe",
+          "sense_key": "ffyddlon-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ffyddlon' in context as a propn",
+            "es": "definición de 'Ffyddlon' en contexto como propn",
+            "fr": "définition de 'Ffyddlon' en contexte comme propn",
+            "pt": "definição de 'Ffyddlon' em contexto como propn",
+            "it": "definizione di 'Ffyddlon' in contesto come propn",
+            "el": "ορισμός του 'Ffyddlon' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ffyddlon')",
+            "es": "como se usa en el contexto ('Ffyddlon')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ffyddlon_hp1"
+          ],
+          "homonyms": [
+            "Ffyddlon_hm1"
+          ],
+          "synonyms": [
+            "Ffyddlon_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ffyddlon_distractor_a",
+            "Ffyddlon_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "03c92814-e859-4987-a5c3-079c179ddeca",
+          "surface_nfc": "Ffyddlon",
+          "normalized_lookup": "ffyddlon",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5df769e3-adcc-46c5-8b72-7cb63d4a487b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d053d00b-0172-4c33-9768-deb230d50185",
+      "lemma_nfc": "Pan",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7674ed00-8659-4132-b238-da44b02b5ff5",
+          "sense_key": "pan-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pan' in context as a propn",
+            "es": "definición de 'Pan' en contexto como propn",
+            "fr": "définition de 'Pan' en contexte comme propn",
+            "pt": "definição de 'Pan' em contexto como propn",
+            "it": "definizione di 'Pan' in contesto come propn",
+            "el": "ορισμός του 'Pan' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pan')",
+            "es": "como se usa en el contexto ('Pan')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Pan_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pan_distractor_a",
+            "Pan_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4c0c29e6-9848-4a06-bde6-2c606849d8f3",
+          "surface_nfc": "Pan",
+          "normalized_lookup": "pan",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "585cd771-8805-490d-8bb9-12c19ccb8ecb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "bf27d1a2-61fa-4d9e-87b9-1acf81c99c32",
+      "lemma_nfc": "Nawr",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "92155ea7-9cf4-4a8c-b7f5-24569e9f7004",
+          "sense_key": "nawr-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Nawr' in context as a propn",
+            "es": "definición de 'Nawr' en contexto como propn",
+            "fr": "définition de 'Nawr' en contexte comme propn",
+            "pt": "definição de 'Nawr' em contexto como propn",
+            "it": "definizione di 'Nawr' in contesto come propn",
+            "el": "ορισμός του 'Nawr' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Nawr')",
+            "es": "como se usa en el contexto ('Nawr')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Nawr_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Nawr_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Nawr_distractor_a",
+            "Nawr_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1680b04f-dd4b-4b0f-9c31-1bd779aa54d8",
+          "surface_nfc": "Nawr",
+          "normalized_lookup": "nawr",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6c613fbc-1e83-4891-b4b4-63582e07d814",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "890b90c7-5a7e-41f1-a072-76dbc9bf9e3f",
+      "lemma_nfc": "Aeth",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "8d42ab66-f185-4a4b-8eda-6269f6b27282",
+          "sense_key": "aeth-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Aeth' in context as a propn",
+            "es": "definición de 'Aeth' en contexto como propn",
+            "fr": "définition de 'Aeth' en contexte comme propn",
+            "pt": "definição de 'Aeth' em contexto como propn",
+            "it": "definizione di 'Aeth' in contesto come propn",
+            "el": "ορισμός του 'Aeth' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Aeth')",
+            "es": "como se usa en el contexto ('Aeth')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Aeth_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Aeth_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Aeth_distractor_a",
+            "Aeth_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "77388840-f0c1-40c4-bf79-72f4dad433a1",
+          "surface_nfc": "Aeth",
+          "normalized_lookup": "aeth",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7036c75c-5049-481b-95ce-b9032c6f1cb7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f121cdb6-4929-4561-8868-ca86a6935759",
+      "lemma_nfc": "Meddyliodd",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9fed6923-fa7c-454c-8265-6797e05934c6",
+          "sense_key": "meddyliodd-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Meddyliodd' in context as a propn",
+            "es": "definición de 'Meddyliodd' en contexto como propn",
+            "fr": "définition de 'Meddyliodd' en contexte comme propn",
+            "pt": "definição de 'Meddyliodd' em contexto como propn",
+            "it": "definizione di 'Meddyliodd' in contesto come propn",
+            "el": "ορισμός του 'Meddyliodd' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Meddyliodd')",
+            "es": "como se usa en el contexto ('Meddyliodd')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Meddyliodd_hp1"
+          ],
+          "homonyms": [
+            "Meddyliodd_hm1"
+          ],
+          "synonyms": [
+            "Meddyliodd_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Meddyliodd_distractor_a",
+            "Meddyliodd_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c69cb008-02ab-45f0-ad5b-4b243f7c126a",
+          "surface_nfc": "Meddyliodd",
+          "normalized_lookup": "meddyliodd",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f46d2184-c7b9-44d5-a043-9c09e31640b7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4a1fa4b0-2737-4d47-9101-33e291b4e75d",
+      "lemma_nfc": "Un",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6da074a0-19e5-4ded-8030-0b1f8c1844a7",
+          "sense_key": "un-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Un' in context as a propn",
+            "es": "definición de 'Un' en contexto como propn",
+            "fr": "définition de 'Un' en contexte comme propn",
+            "pt": "definição de 'Un' em contexto como propn",
+            "it": "definizione di 'Un' in contesto come propn",
+            "el": "ορισμός του 'Un' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Un')",
+            "es": "como se usa en el contexto ('Un')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Un_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Un_distractor_a",
+            "Un_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ad3747cc-eff8-4d03-87ab-2b0e72cbc84d",
+          "surface_nfc": "Un",
+          "normalized_lookup": "un",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5dcee321-c6dc-4439-b88c-27fb5d3506bd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

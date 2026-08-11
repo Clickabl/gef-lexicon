@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/language-profile.schema.json",
+  "title": "Language Lexicon Profile",
+  "type": "object",
+  "required": ["language_code", "language_name_en", "morphology_strategy", "default_script"],
+  "properties": {
+    "language_code": { "type": "string" },
+    "language_name_en": { "type": "string" },
+    "morphology_strategy": {
+      "type": "string",
+      "enum": ["enumerated", "generated", "mixed", "invariant"]
+    },
+    "default_script": { "type": "string" },
+    "supported_feature_layers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supported_cases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supported_genders_or_classes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "te-Latn",
+  "lexemes": [
+    {
+      "lexeme_id": "85dd2643-20a6-4a4a-a4aa-69a69c90920a",
+      "lemma_nfc": "I",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e0fa6b57-a5d5-4c27-b66d-e81694395e40",
+          "sense_key": "i-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'I' in context as a propn",
+            "es": "definición de 'I' en contexto como propn",
+            "fr": "définition de 'I' en contexte comme propn",
+            "pt": "definição de 'I' em contexto como propn",
+            "it": "definizione di 'I' in contesto come propn",
+            "el": "ορισμός του 'I' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('I')",
+            "es": "como se usa en el contexto ('I')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "I_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "I_distractor_a",
+            "I_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1eb1805e-29c1-4e52-a6d5-3521ad334c07",
+          "surface_nfc": "I",
+          "normalized_lookup": "i",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "8b19eeca-3c8f-4953-ab61-d87480f32ab1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "b40873bc-339d-4cce-bf49-24fbe625d0c3",
+      "lemma_nfc": "Amènu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "35a28503-1050-4dfa-9c1c-142ef9e5dfd3",
+          "sense_key": "amènu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Amènu' in context as a propn",
+            "es": "definición de 'Amènu' en contexto como propn",
+            "fr": "définition de 'Amènu' en contexte comme propn",
+            "pt": "definição de 'Amènu' em contexto como propn",
+            "it": "definizione di 'Amènu' in contesto come propn",
+            "el": "ορισμός του 'Amènu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Amènu')",
+            "es": "como se usa en el contexto ('Amènu')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Amènu_hp1"
+          ],
+          "homonyms": [
+            "Amènu_hm1"
+          ],
+          "synonyms": [
+            "Amènu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Amènu_distractor_a",
+            "Amènu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e539a7ff-558b-4842-acd7-a8dc7b7e03a4",
+          "surface_nfc": "Amènu",
+          "normalized_lookup": "amènu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "899b64a2-1a49-487f-a267-d3402dddcdeb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0d837d6a-3af2-4a21-8d75-050617706608",
+      "lemma_nfc": "Agi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4406fd95-4e98-4b55-8144-5ab92d41c0f0",
+          "sense_key": "agi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Agi' in context as a propn",
+            "es": "definición de 'Agi' en contexto como propn",
+            "fr": "définition de 'Agi' en contexte comme propn",
+            "pt": "definição de 'Agi' em contexto como propn",
+            "it": "definizione di 'Agi' in contesto come propn",
+            "el": "ορισμός του 'Agi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Agi')",
+            "es": "como se usa en el contexto ('Agi')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Agi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Agi_distractor_a",
+            "Agi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f311f03d-09cd-484a-937b-5edfa5fc3198",
+          "surface_nfc": "Agi",
+          "normalized_lookup": "agi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fb1d6fc0-725b-4fd1-86f9-d3d0418195fe",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5a1e8378-96a1-4f59-851e-edf1c9169126",
+      "lemma_nfc": "AgipotuMdi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d7d85f06-b8d4-497a-9aa9-650f0fffaf44",
+          "sense_key": "agipotumdi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'AgipotuMdi' in context as a propn",
+            "es": "definición de 'AgipotuMdi' en contexto como propn",
+            "fr": "définition de 'AgipotuMdi' en contexte comme propn",
+            "pt": "definição de 'AgipotuMdi' em contexto como propn",
+            "it": "definizione di 'AgipotuMdi' in contesto come propn",
+            "el": "ορισμός του 'AgipotuMdi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('AgipotuMdi')",
+            "es": "como se usa en el contexto ('AgipotuMdi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "AgipotuMdi_hp1"
+          ],
+          "homonyms": [
+            "AgipotuMdi_hm1"
+          ],
+          "synonyms": [
+            "AgipotuMdi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "AgipotuMdi_distractor_a",
+            "AgipotuMdi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b373ad99-e861-41c0-9732-3ddbfaab17e0",
+          "surface_nfc": "AgipotuMdi",
+          "normalized_lookup": "agipotumdi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "22c74abd-9d27-47c0-bccd-9ab7bcab624e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "44561288-dca5-4c34-9ef6-723d43daf2e1",
+      "lemma_nfc": "Amè",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "164e3c10-2da7-4c98-bbfe-f7d1b4baa69c",
+          "sense_key": "amè-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Amè' in context as a propn",
+            "es": "definición de 'Amè' en contexto como propn",
+            "fr": "définition de 'Amè' en contexte comme propn",
+            "pt": "definição de 'Amè' em contexto como propn",
+            "it": "definizione di 'Amè' in contesto come propn",
+            "el": "ορισμός του 'Amè' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Amè')",
+            "es": "como se usa en el contexto ('Amè')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Amè_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Amè_distractor_a",
+            "Amè_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e5b98268-54b5-44c2-a8de-baeef6533410",
+          "surface_nfc": "Amè",
+          "normalized_lookup": "amè",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "661c7267-defa-4d47-a3d4-af13e6dd4356",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3f2321dc-8a15-43b3-a2e0-2214a32d8eb6",
+      "lemma_nfc": "A",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6917c53a-ece9-4291-95d1-382585ef8572",
+          "sense_key": "a-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'A' in context as a propn",
+            "es": "definición de 'A' en contexto como propn",
+            "fr": "définition de 'A' en contexte comme propn",
+            "pt": "definição de 'A' em contexto como propn",
+            "it": "definizione di 'A' in contesto come propn",
+            "el": "ορισμός του 'A' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('A')",
+            "es": "como se usa en el contexto ('A')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "A_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "A_distractor_a",
+            "A_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "16a7e163-cb56-422d-aa3f-5939ccb1ff9c",
+          "surface_nfc": "A",
+          "normalized_lookup": "a",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1164fdbb-ccd9-44b3-84cd-cb2385fcb907",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ff400d95-d99f-4981-b756-ea5fbe70bf14",
+      "lemma_nfc": "Apai",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "2240ff46-75e7-4e77-85dd-e282e624dbad",
+          "sense_key": "apai-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Apai' in context as a propn",
+            "es": "definición de 'Apai' en contexto como propn",
+            "fr": "définition de 'Apai' en contexte comme propn",
+            "pt": "definição de 'Apai' em contexto como propn",
+            "it": "definizione di 'Apai' in contesto come propn",
+            "el": "ορισμός του 'Apai' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Apai')",
+            "es": "como se usa en el contexto ('Apai')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Apai_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Apai_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Apai_distractor_a",
+            "Apai_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "42ce15ba-ec97-49a7-8203-d57fcac9ac5c",
+          "surface_nfc": "Apai",
+          "normalized_lookup": "apai",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e6233d1b-60d9-4588-944d-a4f73b7f6af0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4cdbbf7b-bd4f-4d3b-8743-2c356c8be4a9",
+      "lemma_nfc": "UdA",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "51005a7d-d30d-43cf-b58e-0da56ce87810",
+          "sense_key": "uda-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'UdA' in context as a propn",
+            "es": "definición de 'UdA' en contexto como propn",
+            "fr": "définition de 'UdA' en contexte comme propn",
+            "pt": "definição de 'UdA' em contexto como propn",
+            "it": "definizione di 'UdA' in contesto come propn",
+            "el": "ορισμός του 'UdA' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('UdA')",
+            "es": "como se usa en el contexto ('UdA')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "UdA_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "UdA_distractor_a",
+            "UdA_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "99535500-1b8e-40d0-bb6b-2dc4c68449e5",
+          "surface_nfc": "UdA",
+          "normalized_lookup": "uda",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3a4268ca-84ea-4579-81fc-d7d8c843042f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ae835b12-fa69-4c28-a538-646826d1564b",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "bc8ee281-6adc-4785-9273-a62fbbf66e57",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b6810ae5-cb34-473e-8759-dd6a974ec4c5",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "569f2d6e-b2b7-41ff-9ee9-22242ec1eabb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fd2ddc52-55c4-418e-966c-2f314ef7102a",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b464fcd0-83a5-4a74-9921-c289496ee592",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "af16a4c3-7e12-46a7-bc5e-5b1550a5af44",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d92f5f62-1ea9-497c-a6c1-52fa103fe0d1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "701d9662-2fbd-4f45-b3ce-d21ade38598b",
+      "lemma_nfc": "AlochistuMdi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3a3e5824-4402-42ec-afdc-1eb6f9dae503",
+          "sense_key": "alochistumdi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'AlochistuMdi' in context as a propn",
+            "es": "definición de 'AlochistuMdi' en contexto como propn",
+            "fr": "définition de 'AlochistuMdi' en contexte comme propn",
+            "pt": "definição de 'AlochistuMdi' em contexto como propn",
+            "it": "definizione di 'AlochistuMdi' in contesto come propn",
+            "el": "ορισμός του 'AlochistuMdi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('AlochistuMdi')",
+            "es": "como se usa en el contexto ('AlochistuMdi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "AlochistuMdi_hp1"
+          ],
+          "homonyms": [
+            "AlochistuMdi_hm1"
+          ],
+          "synonyms": [
+            "AlochistuMdi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "AlochistuMdi_distractor_a",
+            "AlochistuMdi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a45ae385-e340-49c4-9175-1360c0f9dfb9",
+          "surface_nfc": "AlochistuMdi",
+          "normalized_lookup": "alochistumdi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "4e0df3d6-4f50-4221-b80a-6382289fc7d9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6411c935-a7d1-47c3-bd48-36faababfeb8",
+      "lemma_nfc": "Dèbbai",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "dc8a70e5-cc02-44fd-a3b4-8c29fdcd5550",
+          "sense_key": "dèbbai-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Dèbbai' in context as a propn",
+            "es": "definición de 'Dèbbai' en contexto como propn",
+            "fr": "définition de 'Dèbbai' en contexte comme propn",
+            "pt": "definição de 'Dèbbai' em contexto como propn",
+            "it": "definizione di 'Dèbbai' in contesto come propn",
+            "el": "ορισμός του 'Dèbbai' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Dèbbai')",
+            "es": "como se usa en el contexto ('Dèbbai')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Dèbbai_hp1"
+          ],
+          "homonyms": [
+            "Dèbbai_hm1"
+          ],
+          "synonyms": [
+            "Dèbbai_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Dèbbai_distractor_a",
+            "Dèbbai_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6803e790-0225-4587-a294-92afc15215fb",
+          "surface_nfc": "Dèbbai",
+          "normalized_lookup": "dèbbai",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3506a3ae-c07e-4794-9f75-ce9c49b3dfce",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

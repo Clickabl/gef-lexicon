@@ -1,0 +1,2970 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "sk",
+  "lexemes": [
+    {
+      "lexeme_id": "6e021bd4-5ff6-4ac8-ad2d-25f029cb2c79",
+      "lemma_nfc": "Alex",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7bde2e17-e399-4f05-9b7e-9b66368590ae",
+          "sense_key": "alex-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alex' in context as a propn",
+            "es": "definición de 'Alex' en contexto como propn",
+            "fr": "définition de 'Alex' en contexte comme propn",
+            "pt": "definição de 'Alex' em contexto como propn",
+            "it": "definizione di 'Alex' in contesto come propn",
+            "el": "ορισμός του 'Alex' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alex')",
+            "es": "como se usa en el contexto ('Alex')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Alex_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Alex_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alex_distractor_a",
+            "Alex_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5bb0183b-93e6-4b4c-bfb1-c1f5a11e5447",
+          "surface_nfc": "Alex",
+          "normalized_lookup": "alex",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "60dac661-6c07-439f-9c66-e2ff9aa302cd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "7fba2950-7bc9-4c69-bdf5-f0368244290b",
+      "lemma_nfc": "Niekedy",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e12377bc-1109-43bd-9ef9-2217360ed2a4",
+          "sense_key": "niekedy-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Niekedy' in context as a propn",
+            "es": "definición de 'Niekedy' en contexto como propn",
+            "fr": "définition de 'Niekedy' en contexte comme propn",
+            "pt": "definição de 'Niekedy' em contexto como propn",
+            "it": "definizione di 'Niekedy' in contesto come propn",
+            "el": "ορισμός του 'Niekedy' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Niekedy')",
+            "es": "como se usa en el contexto ('Niekedy')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Niekedy_hp1"
+          ],
+          "homonyms": [
+            "Niekedy_hm1"
+          ],
+          "synonyms": [
+            "Niekedy_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Niekedy_distractor_a",
+            "Niekedy_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0b2589f9-30ad-4d91-9034-ffa6f65eee05",
+          "surface_nfc": "Niekedy",
+          "normalized_lookup": "niekedy",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6f366730-9838-49cf-bcee-062a0aec07c6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "92890fcc-1c6e-4f25-8939-6888e0c608c8",
+      "lemma_nfc": "Dnes",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e29fbb95-855d-48d8-b26e-4b174d6f2a68",
+          "sense_key": "dnes-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Dnes' in context as a propn",
+            "es": "definición de 'Dnes' en contexto como propn",
+            "fr": "définition de 'Dnes' en contexte comme propn",
+            "pt": "definição de 'Dnes' em contexto como propn",
+            "it": "definizione di 'Dnes' in contesto come propn",
+            "el": "ορισμός του 'Dnes' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Dnes')",
+            "es": "como se usa en el contexto ('Dnes')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Dnes_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Dnes_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Dnes_distractor_a",
+            "Dnes_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "753ccbfa-0696-49cd-af6e-f94fc50ff9b7",
+          "surface_nfc": "Dnes",
+          "normalized_lookup": "dnes",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b5577547-067b-419d-9841-320ccffa775d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0d8abe28-cf49-42e6-a78e-23b70d4bd951",
+      "lemma_nfc": "Príbeh",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e313c52f-4556-4a91-a7b6-ad159ad68ab1",
+          "sense_key": "príbeh-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Príbeh' in context as a propn",
+            "es": "definición de 'Príbeh' en contexto como propn",
+            "fr": "définition de 'Príbeh' en contexte comme propn",
+            "pt": "definição de 'Príbeh' em contexto como propn",
+            "it": "definizione di 'Príbeh' in contesto come propn",
+            "el": "ορισμός του 'Príbeh' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Príbeh')",
+            "es": "como se usa en el contexto ('Príbeh')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Príbeh_hp1"
+          ],
+          "homonyms": [
+            "Príbeh_hm1"
+          ],
+          "synonyms": [
+            "Príbeh_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Príbeh_distractor_a",
+            "Príbeh_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "912adbb3-335f-42bc-b4be-f70b546c3df0",
+          "surface_nfc": "Príbeh",
+          "normalized_lookup": "príbeh",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7a816f49-db37-444c-a100-e04c6600cc2e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c77ce64b-0656-483c-9d00-454e1d3d3ccf",
+      "lemma_nfc": "Princezná",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "21864e5e-8464-4c41-9ad3-ff9123deaf32",
+          "sense_key": "princezná-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Princezná' in context as a propn",
+            "es": "definición de 'Princezná' en contexto como propn",
+            "fr": "définition de 'Princezná' en contexte comme propn",
+            "pt": "definição de 'Princezná' em contexto como propn",
+            "it": "definizione di 'Princezná' in contesto come propn",
+            "el": "ορισμός του 'Princezná' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Princezná')",
+            "es": "como se usa en el contexto ('Princezná')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Princezná_hp1"
+          ],
+          "homonyms": [
+            "Princezná_hm1"
+          ],
+          "synonyms": [
+            "Princezná_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Princezná_distractor_a",
+            "Princezná_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a6e96a4a-50d8-4724-8c87-8227049e7cca",
+          "surface_nfc": "Princezná",
+          "normalized_lookup": "princezná",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1305e267-24c3-482e-80e1-ca0c2b3f3d10",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a70aeb6b-2bac-4bd0-90cd-24a44668e352",
+      "lemma_nfc": "Niečo",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0c0ce5f1-24eb-4453-bb4a-5147f2f72a40",
+          "sense_key": "niečo-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Niečo' in context as a propn",
+            "es": "definición de 'Niečo' en contexto como propn",
+            "fr": "définition de 'Niečo' en contexte comme propn",
+            "pt": "definição de 'Niečo' em contexto como propn",
+            "it": "definizione di 'Niečo' in contesto come propn",
+            "el": "ορισμός του 'Niečo' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Niečo')",
+            "es": "como se usa en el contexto ('Niečo')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Niečo_hp1"
+          ],
+          "homonyms": [
+            "Niečo_hm1"
+          ],
+          "synonyms": [
+            "Niečo_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Niečo_distractor_a",
+            "Niečo_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4dd226eb-e98b-4b57-860a-24bc92ae4e7a",
+          "surface_nfc": "Niečo",
+          "normalized_lookup": "niečo",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ff40c770-5b36-4caf-89bb-35655d2d934b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "cab1b57e-5b3a-4b8c-a53b-ac1f6f7a76e0",
+      "lemma_nfc": "Škriabanie",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ffbd6025-a3f1-4acb-95f7-43b01daf5449",
+          "sense_key": "škriabanie-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Škriabanie' in context as a propn",
+            "es": "definición de 'Škriabanie' en contexto como propn",
+            "fr": "définition de 'Škriabanie' en contexte comme propn",
+            "pt": "definição de 'Škriabanie' em contexto como propn",
+            "it": "definizione di 'Škriabanie' in contesto come propn",
+            "el": "ορισμός του 'Škriabanie' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Škriabanie')",
+            "es": "como se usa en el contexto ('Škriabanie')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Škriabanie_hp1"
+          ],
+          "homonyms": [
+            "Škriabanie_hm1"
+          ],
+          "synonyms": [
+            "Škriabanie_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Škriabanie_distractor_a",
+            "Škriabanie_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b3b60c2d-28cd-42d7-b6d3-b666a0994c81",
+          "surface_nfc": "Škriabanie",
+          "normalized_lookup": "škriabanie",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fd9362c5-2f45-435e-8545-0b55eaa9db7a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2a9ae8ef-bdca-40a6-b3ad-f6e2c26634ac",
+      "lemma_nfc": "Ona",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f8a88701-adf8-4ca1-a986-a3463837b36b",
+          "sense_key": "ona-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ona' in context as a propn",
+            "es": "definición de 'Ona' en contexto como propn",
+            "fr": "définition de 'Ona' en contexte comme propn",
+            "pt": "definição de 'Ona' em contexto como propn",
+            "it": "definizione di 'Ona' in contesto come propn",
+            "el": "ορισμός του 'Ona' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ona')",
+            "es": "como se usa en el contexto ('Ona')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ona_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ona_distractor_a",
+            "Ona_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "625d6ff5-94b8-46c2-9c3b-55b2658cd51f",
+          "surface_nfc": "Ona",
+          "normalized_lookup": "ona",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "db7881f5-e9ff-416d-b393-ee306f253802",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "95bcbb9d-6ba3-4f46-b6d4-4dfd8bf15762",
+      "lemma_nfc": "O",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d27e49e3-6ce0-4699-a483-d388682d8ba1",
+          "sense_key": "o-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'O' in context as a propn",
+            "es": "definición de 'O' en contexto como propn",
+            "fr": "définition de 'O' en contexte comme propn",
+            "pt": "definição de 'O' em contexto como propn",
+            "it": "definizione di 'O' in contesto come propn",
+            "el": "ορισμός του 'O' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('O')",
+            "es": "como se usa en el contexto ('O')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "O_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "O_distractor_a",
+            "O_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5a0db22b-b0cd-4197-ae98-17cdad5a8858",
+          "surface_nfc": "O",
+          "normalized_lookup": "o",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5ef096a8-7c80-4a5c-b023-2b0dde8b8252",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "095e3dd3-0648-40b5-a138-6c3075ed3eb7",
+      "lemma_nfc": "Veľmi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f0274abd-dc91-4a5b-86fa-861df373a2af",
+          "sense_key": "veľmi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Veľmi' in context as a propn",
+            "es": "definición de 'Veľmi' en contexto como propn",
+            "fr": "définition de 'Veľmi' en contexte comme propn",
+            "pt": "definição de 'Veľmi' em contexto como propn",
+            "it": "definizione di 'Veľmi' in contesto come propn",
+            "el": "ορισμός του 'Veľmi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Veľmi')",
+            "es": "como se usa en el contexto ('Veľmi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Veľmi_hp1"
+          ],
+          "homonyms": [
+            "Veľmi_hm1"
+          ],
+          "synonyms": [
+            "Veľmi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Veľmi_distractor_a",
+            "Veľmi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "362f7eca-4056-46a4-bba9-4b3e6f1b3337",
+          "surface_nfc": "Veľmi",
+          "normalized_lookup": "veľmi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d4ed4de7-fc07-4e6f-9392-9f29b33b3166",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "01ae33dd-4cf4-48d8-93c2-b671d643dd01",
+      "lemma_nfc": "Kto",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "731ae2c5-cd08-4d37-a575-823c2a300faa",
+          "sense_key": "kto-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kto' in context as a propn",
+            "es": "definición de 'Kto' en contexto como propn",
+            "fr": "définition de 'Kto' en contexte comme propn",
+            "pt": "definição de 'Kto' em contexto como propn",
+            "it": "definizione di 'Kto' in contesto come propn",
+            "el": "ορισμός του 'Kto' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kto')",
+            "es": "como se usa en el contexto ('Kto')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Kto_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kto_distractor_a",
+            "Kto_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d8f49e57-d625-4a5f-97f5-0fe4b23179e6",
+          "surface_nfc": "Kto",
+          "normalized_lookup": "kto",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "15c00026-5209-4c45-b67d-29bddb7a6450",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "51017acb-d9e0-490b-972b-c508250e28d2",
+      "lemma_nfc": "Hlas",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "00b6c7e8-4163-406a-a0d4-ab828ea20838",
+          "sense_key": "hlas-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Hlas' in context as a propn",
+            "es": "definición de 'Hlas' en contexto como propn",
+            "fr": "définition de 'Hlas' en contexte comme propn",
+            "pt": "definição de 'Hlas' em contexto como propn",
+            "it": "definizione di 'Hlas' in contesto come propn",
+            "el": "ορισμός του 'Hlas' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Hlas')",
+            "es": "como se usa en el contexto ('Hlas')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Hlas_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Hlas_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Hlas_distractor_a",
+            "Hlas_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "eec91f06-e3cb-4fe4-9846-cfb782d6196a",
+          "surface_nfc": "Hlas",
+          "normalized_lookup": "hlas",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7b7194c6-7c86-421c-a8bd-6f4f5df919b0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5ffdcbbf-faf0-4253-8df4-43ab2f826f72",
+      "lemma_nfc": "Namiesto",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1e88fa16-3d19-4b1a-892c-23ec2d14e347",
+          "sense_key": "namiesto-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Namiesto' in context as a propn",
+            "es": "definición de 'Namiesto' en contexto como propn",
+            "fr": "définition de 'Namiesto' en contexte comme propn",
+            "pt": "definição de 'Namiesto' em contexto como propn",
+            "it": "definizione di 'Namiesto' in contesto come propn",
+            "el": "ορισμός του 'Namiesto' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Namiesto')",
+            "es": "como se usa en el contexto ('Namiesto')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Namiesto_hp1"
+          ],
+          "homonyms": [
+            "Namiesto_hm1"
+          ],
+          "synonyms": [
+            "Namiesto_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Namiesto_distractor_a",
+            "Namiesto_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ea1c1561-0de9-475b-9cf8-e4bb7fc65a89",
+          "surface_nfc": "Namiesto",
+          "normalized_lookup": "namiesto",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7369618b-c526-405e-8e31-610cb92bd110",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "43155e00-c416-476a-b10e-b3a80ab0501b",
+      "lemma_nfc": "Otočí",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "25dba660-0c5d-4da8-9689-08e86c840e82",
+          "sense_key": "otočí-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Otočí' in context as a propn",
+            "es": "definición de 'Otočí' en contexto como propn",
+            "fr": "définition de 'Otočí' en contexte comme propn",
+            "pt": "definição de 'Otočí' em contexto como propn",
+            "it": "definizione di 'Otočí' in contesto come propn",
+            "el": "ορισμός του 'Otočí' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Otočí')",
+            "es": "como se usa en el contexto ('Otočí')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Otočí_hp1"
+          ],
+          "homonyms": [
+            "Otočí_hm1"
+          ],
+          "synonyms": [
+            "Otočí_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Otočí_distractor_a",
+            "Otočí_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f42a8a92-c9f8-4b89-97fa-11f5ae403f69",
+          "surface_nfc": "Otočí",
+          "normalized_lookup": "otočí",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "78a8c187-e384-446f-a18d-aef4ac8ad6d4",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0c5a7f97-4efc-499d-acfc-b8b3e0e0bfa4",
+      "lemma_nfc": "Okolo",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "55247032-78c6-49df-abf9-176a0cd6fc70",
+          "sense_key": "okolo-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Okolo' in context as a propn",
+            "es": "definición de 'Okolo' en contexto como propn",
+            "fr": "définition de 'Okolo' en contexte comme propn",
+            "pt": "definição de 'Okolo' em contexto como propn",
+            "it": "definizione di 'Okolo' in contesto come propn",
+            "el": "ορισμός του 'Okolo' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Okolo')",
+            "es": "como se usa en el contexto ('Okolo')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Okolo_hp1"
+          ],
+          "homonyms": [
+            "Okolo_hm1"
+          ],
+          "synonyms": [
+            "Okolo_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Okolo_distractor_a",
+            "Okolo_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c6e5444f-352c-4185-9f67-06b19638ddeb",
+          "surface_nfc": "Okolo",
+          "normalized_lookup": "okolo",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2101dca8-d083-4302-96d0-250ff02edabe",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4ec229ff-6171-4131-bf4f-335e2b36b37a",
+      "lemma_nfc": "Cez",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7d7e12b1-0f6c-4ec2-843d-df041378f1da",
+          "sense_key": "cez-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Cez' in context as a propn",
+            "es": "definición de 'Cez' en contexto como propn",
+            "fr": "définition de 'Cez' en contexte comme propn",
+            "pt": "definição de 'Cez' em contexto como propn",
+            "it": "definizione di 'Cez' in contesto come propn",
+            "el": "ορισμός του 'Cez' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Cez')",
+            "es": "como se usa en el contexto ('Cez')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Cez_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Cez_distractor_a",
+            "Cez_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1a86ec4c-380c-411d-b2cc-c761ca604a0c",
+          "surface_nfc": "Cez",
+          "normalized_lookup": "cez",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "60f0ca19-a7f2-44d3-8926-3dff724c79be",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f2b7ab08-f94a-49e1-aa5f-594fb68fc3a5",
+      "lemma_nfc": "Potom",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "282524fa-1ae0-492b-ba49-56a5b569ef9f",
+          "sense_key": "potom-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Potom' in context as a propn",
+            "es": "definición de 'Potom' en contexto como propn",
+            "fr": "définition de 'Potom' en contexte comme propn",
+            "pt": "definição de 'Potom' em contexto como propn",
+            "it": "definizione di 'Potom' in contesto come propn",
+            "el": "ορισμός του 'Potom' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Potom')",
+            "es": "como se usa en el contexto ('Potom')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Potom_hp1"
+          ],
+          "homonyms": [
+            "Potom_hm1"
+          ],
+          "synonyms": [
+            "Potom_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Potom_distractor_a",
+            "Potom_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ddf3a648-b97e-4547-8fb5-45157363bc9f",
+          "surface_nfc": "Potom",
+          "normalized_lookup": "potom",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d330ca15-e4d9-4c68-873f-7d49123f6e2f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "36f468f4-cc05-4fe0-842a-cac62f9ca036",
+      "lemma_nfc": "Nasledujú",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f147c44c-a293-496e-be6b-f50ed47b56bf",
+          "sense_key": "nasledujú-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Nasledujú' in context as a propn",
+            "es": "definición de 'Nasledujú' en contexto como propn",
+            "fr": "définition de 'Nasledujú' en contexte comme propn",
+            "pt": "definição de 'Nasledujú' em contexto como propn",
+            "it": "definizione di 'Nasledujú' in contesto come propn",
+            "el": "ορισμός του 'Nasledujú' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Nasledujú')",
+            "es": "como se usa en el contexto ('Nasledujú')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Nasledujú_hp1"
+          ],
+          "homonyms": [
+            "Nasledujú_hm1"
+          ],
+          "synonyms": [
+            "Nasledujú_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Nasledujú_distractor_a",
+            "Nasledujú_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2f231d2b-b823-4b7f-942a-f7a4680a17ae",
+          "surface_nfc": "Nasledujú",
+          "normalized_lookup": "nasledujú",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e0f9bf26-8c44-481c-9eba-6482852a9771",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c3026fb6-45ab-4a38-a3dd-dfdb8571035c",
+      "lemma_nfc": "Otvor",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "094fbc0c-43f6-4683-ae5c-a10873c2b6a4",
+          "sense_key": "otvor-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Otvor' in context as a propn",
+            "es": "definición de 'Otvor' en contexto como propn",
+            "fr": "définition de 'Otvor' en contexte comme propn",
+            "pt": "definição de 'Otvor' em contexto como propn",
+            "it": "definizione di 'Otvor' in contesto come propn",
+            "el": "ορισμός του 'Otvor' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Otvor')",
+            "es": "como se usa en el contexto ('Otvor')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Otvor_hp1"
+          ],
+          "homonyms": [
+            "Otvor_hm1"
+          ],
+          "synonyms": [
+            "Otvor_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Otvor_distractor_a",
+            "Otvor_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "10df8dca-bb38-4f22-9596-734c40ab4379",
+          "surface_nfc": "Otvor",
+          "normalized_lookup": "otvor",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "65e9c03f-e31e-4243-af9a-4a89a81bbde9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "cb0751fb-784b-4a18-89bf-b76621530605",
+      "lemma_nfc": "Alexova",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3597a0c1-9a60-4c05-b57d-ea8a8a3a3b16",
+          "sense_key": "alexova-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexova' in context as a propn",
+            "es": "definición de 'Alexova' en contexto como propn",
+            "fr": "définition de 'Alexova' en contexte comme propn",
+            "pt": "definição de 'Alexova' em contexto como propn",
+            "it": "definizione di 'Alexova' in contesto come propn",
+            "el": "ορισμός του 'Alexova' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexova')",
+            "es": "como se usa en el contexto ('Alexova')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexova_hp1"
+          ],
+          "homonyms": [
+            "Alexova_hm1"
+          ],
+          "synonyms": [
+            "Alexova_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexova_distractor_a",
+            "Alexova_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9521a982-f85c-4928-86c3-fce9f0ddac04",
+          "surface_nfc": "Alexova",
+          "normalized_lookup": "alexova",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3139e76e-c7a6-4708-879f-2c9138152e27",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4af9a721-8a37-4b3c-b387-98c396c866fb",
+      "lemma_nfc": "Napriek",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "95fb28cd-572a-4194-97d2-7bdfacf4b37f",
+          "sense_key": "napriek-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Napriek' in context as a propn",
+            "es": "definición de 'Napriek' en contexto como propn",
+            "fr": "définition de 'Napriek' en contexte comme propn",
+            "pt": "definição de 'Napriek' em contexto como propn",
+            "it": "definizione di 'Napriek' in contesto come propn",
+            "el": "ορισμός του 'Napriek' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Napriek')",
+            "es": "como se usa en el contexto ('Napriek')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Napriek_hp1"
+          ],
+          "homonyms": [
+            "Napriek_hm1"
+          ],
+          "synonyms": [
+            "Napriek_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Napriek_distractor_a",
+            "Napriek_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c00b4cb3-6cea-413c-a243-ea8cad94ba37",
+          "surface_nfc": "Napriek",
+          "normalized_lookup": "napriek",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "99152714-3599-471a-9bc4-017caf62705f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c191168d-7721-4c6c-8e58-869e9b050002",
+      "lemma_nfc": "Jeho",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "67442d02-02c0-4be4-9aa2-ff9a8c804245",
+          "sense_key": "jeho-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeho' in context as a propn",
+            "es": "definición de 'Jeho' en contexto como propn",
+            "fr": "définition de 'Jeho' en contexte comme propn",
+            "pt": "definição de 'Jeho' em contexto como propn",
+            "it": "definizione di 'Jeho' in contesto come propn",
+            "el": "ορισμός του 'Jeho' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeho')",
+            "es": "como se usa en el contexto ('Jeho')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeho_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeho_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeho_distractor_a",
+            "Jeho_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "32a0b2f9-deec-4113-aa81-4af25596e6ae",
+          "surface_nfc": "Jeho",
+          "normalized_lookup": "jeho",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5242196e-7e5d-467e-909b-25c998c3911b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "917155ed-e1f2-4141-acb2-a3af9c1fedac",
+      "lemma_nfc": "Dlhý",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d008be22-080d-4199-b5d0-505143c16e31",
+          "sense_key": "dlhý-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Dlhý' in context as a propn",
+            "es": "definición de 'Dlhý' en contexto como propn",
+            "fr": "définition de 'Dlhý' en contexte comme propn",
+            "pt": "definição de 'Dlhý' em contexto como propn",
+            "it": "definizione di 'Dlhý' in contesto come propn",
+            "el": "ορισμός του 'Dlhý' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Dlhý')",
+            "es": "como se usa en el contexto ('Dlhý')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Dlhý_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Dlhý_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Dlhý_distractor_a",
+            "Dlhý_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2dcf98f1-cd33-45c7-bf36-c35f4c167b51",
+          "surface_nfc": "Dlhý",
+          "normalized_lookup": "dlhý",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "01fc0e74-7d40-4309-bc60-03e58dbc7c11",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ea856dbd-f628-4134-88f4-6510bbea77c6",
+      "lemma_nfc": "Mangusta",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7e656d56-2954-4961-a6b9-e30a1e066011",
+          "sense_key": "mangusta-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Mangusta' in context as a propn",
+            "es": "definición de 'Mangusta' en contexto como propn",
+            "fr": "définition de 'Mangusta' en contexte comme propn",
+            "pt": "definição de 'Mangusta' em contexto como propn",
+            "it": "definizione di 'Mangusta' in contesto come propn",
+            "el": "ορισμός του 'Mangusta' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Mangusta')",
+            "es": "como se usa en el contexto ('Mangusta')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Mangusta_hp1"
+          ],
+          "homonyms": [
+            "Mangusta_hm1"
+          ],
+          "synonyms": [
+            "Mangusta_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Mangusta_distractor_a",
+            "Mangusta_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "16b9bf08-e2dd-4d9d-8783-1d121c8c5957",
+          "surface_nfc": "Mangusta",
+          "normalized_lookup": "mangusta",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3948e0c2-8b54-4142-a50b-c1413695d571",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "54cb4875-4916-4bb7-aee2-daa78888c63f",
+      "lemma_nfc": "Volám",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "76890550-c85f-4d79-8c1d-28976c7f647b",
+          "sense_key": "volám-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Volám' in context as a propn",
+            "es": "definición de 'Volám' en contexto como propn",
+            "fr": "définition de 'Volám' en contexte comme propn",
+            "pt": "definição de 'Volám' em contexto como propn",
+            "it": "definizione di 'Volám' in contesto come propn",
+            "el": "ορισμός του 'Volám' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Volám')",
+            "es": "como se usa en el contexto ('Volám')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Volám_hp1"
+          ],
+          "homonyms": [
+            "Volám_hm1"
+          ],
+          "synonyms": [
+            "Volám_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Volám_distractor_a",
+            "Volám_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "30dba80b-7120-463c-8d59-bd254f45dce6",
+          "surface_nfc": "Volám",
+          "normalized_lookup": "volám",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5267bcda-62e9-4553-8ad4-ac5ba5bee282",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d24255da-1bc3-40f5-9f95-56b3d9433525",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "90560fb1-3376-4722-b71c-84f43639380d",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6c6d5a55-d504-4376-bc63-7084c412877d",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e091a419-8250-4b9a-b0e0-08bf8529f1aa",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "56a417af-84da-4dc7-9698-b260efb8548a",
+      "lemma_nfc": "Vyslovuje",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d63b9216-9c8a-4bda-8b04-00b2322d618c",
+          "sense_key": "vyslovuje-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Vyslovuje' in context as a propn",
+            "es": "definición de 'Vyslovuje' en contexto como propn",
+            "fr": "définition de 'Vyslovuje' en contexte comme propn",
+            "pt": "definição de 'Vyslovuje' em contexto como propn",
+            "it": "definizione di 'Vyslovuje' in contesto come propn",
+            "el": "ορισμός του 'Vyslovuje' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Vyslovuje')",
+            "es": "como se usa en el contexto ('Vyslovuje')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Vyslovuje_hp1"
+          ],
+          "homonyms": [
+            "Vyslovuje_hm1"
+          ],
+          "synonyms": [
+            "Vyslovuje_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Vyslovuje_distractor_a",
+            "Vyslovuje_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d671e7c4-b142-495c-bd7d-13637e0c3887",
+          "surface_nfc": "Vyslovuje",
+          "normalized_lookup": "vyslovuje",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "52dae1af-64ee-4124-b8ff-250131dfbd52",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9657b4df-2a44-461c-b10c-526257644d20",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a66cf8da-4618-4780-8e15-dd9c43b6a90d",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a66516fb-c34b-4dcf-ba4d-198c482d4f4c",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "24271d0e-afd2-4431-93d0-5b460e696542",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ebceca2d-4077-4932-aef8-c09150df74b9",
+      "lemma_nfc": "Ako",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "401b63d5-63e8-4e9e-841b-4a6dc3010f8e",
+          "sense_key": "ako-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ako' in context as a propn",
+            "es": "definición de 'Ako' en contexto como propn",
+            "fr": "définition de 'Ako' en contexte comme propn",
+            "pt": "definição de 'Ako' em contexto como propn",
+            "it": "definizione di 'Ako' in contesto come propn",
+            "el": "ορισμός του 'Ako' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ako')",
+            "es": "como se usa en el contexto ('Ako')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Ako_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ako_distractor_a",
+            "Ako_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d402e441-a04e-43e5-b73a-5f335b673b9a",
+          "surface_nfc": "Ako",
+          "normalized_lookup": "ako",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "004516bb-fd2e-4236-9660-8446e0af08c9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "744e3aff-2beb-4a54-b8d4-5050a95ef073",
+      "lemma_nfc": "Počul",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e15a6da8-f590-4f4c-8ecf-15ba5739728d",
+          "sense_key": "počul-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Počul' in context as a propn",
+            "es": "definición de 'Počul' en contexto como propn",
+            "fr": "définition de 'Počul' en contexte comme propn",
+            "pt": "definição de 'Počul' em contexto como propn",
+            "it": "definizione di 'Počul' in contesto come propn",
+            "el": "ορισμός του 'Počul' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Počul')",
+            "es": "como se usa en el contexto ('Počul')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Počul_hp1"
+          ],
+          "homonyms": [
+            "Počul_hm1"
+          ],
+          "synonyms": [
+            "Počul_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Počul_distractor_a",
+            "Počul_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "dbfc7491-5f51-413b-a1dc-73cf31cfb4d2",
+          "surface_nfc": "Počul",
+          "normalized_lookup": "počul",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f9cf9d37-342d-48d7-a302-1b1bd0d64c49",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e20a07cd-259a-4ecf-8510-ac8246d4ff62",
+      "lemma_nfc": "Nemecku",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6db1f29e-5d2c-474f-9f15-f22ffe6409fb",
+          "sense_key": "nemecku-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Nemecku' in context as a propn",
+            "es": "definición de 'Nemecku' en contexto como propn",
+            "fr": "définition de 'Nemecku' en contexte comme propn",
+            "pt": "definição de 'Nemecku' em contexto como propn",
+            "it": "definizione di 'Nemecku' in contesto come propn",
+            "el": "ορισμός του 'Nemecku' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Nemecku')",
+            "es": "como se usa en el contexto ('Nemecku')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Nemecku_hp1"
+          ],
+          "homonyms": [
+            "Nemecku_hm1"
+          ],
+          "synonyms": [
+            "Nemecku_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Nemecku_distractor_a",
+            "Nemecku_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5ed80e72-0ec1-469d-bb71-9ce4d2101413",
+          "surface_nfc": "Nemecku",
+          "normalized_lookup": "nemecku",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9772a3fc-495e-4b8f-aaeb-6e78534a94dd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2b73ddfc-23a8-4d54-8b17-ca0f742f4017",
+      "lemma_nfc": "Mal",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "bbb0849f-1cd0-494e-bb67-e555fb253f65",
+          "sense_key": "mal-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Mal' in context as a propn",
+            "es": "definición de 'Mal' en contexto como propn",
+            "fr": "définition de 'Mal' en contexte comme propn",
+            "pt": "definição de 'Mal' em contexto como propn",
+            "it": "definizione di 'Mal' in contesto come propn",
+            "el": "ορισμός του 'Mal' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Mal')",
+            "es": "como se usa en el contexto ('Mal')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Mal_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Mal_distractor_a",
+            "Mal_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "733bbf5d-b06a-4211-8cbf-c64d8d2cb5f3",
+          "surface_nfc": "Mal",
+          "normalized_lookup": "mal",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "51658232-8bb1-42d6-84df-69aa7164940f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "2a8d4133-9557-4c1e-8493-a6cea0fbb15a",
+      "lemma_nfc": "Koľko",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e4cd1d1a-fe17-4f37-a5c9-1fd968acc031",
+          "sense_key": "koľko-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Koľko' in context as a propn",
+            "es": "definición de 'Koľko' en contexto como propn",
+            "fr": "définition de 'Koľko' en contexte comme propn",
+            "pt": "definição de 'Koľko' em contexto como propn",
+            "it": "definizione di 'Koľko' in contesto come propn",
+            "el": "ορισμός του 'Koľko' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Koľko')",
+            "es": "como se usa en el contexto ('Koľko')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Koľko_hp1"
+          ],
+          "homonyms": [
+            "Koľko_hm1"
+          ],
+          "synonyms": [
+            "Koľko_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Koľko_distractor_a",
+            "Koľko_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b65a48bc-8b2c-463e-8fcc-5cd7cefc11f6",
+          "surface_nfc": "Koľko",
+          "normalized_lookup": "koľko",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "36c4d485-65ee-4ea9-96af-712960b86dc8",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a1affa26-81d9-44d2-8598-2ebc2fc0c626",
+      "lemma_nfc": "Sto",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "30397eb4-0a32-4a3b-9533-7c0cf32e3484",
+          "sense_key": "sto-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Sto' in context as a propn",
+            "es": "definición de 'Sto' en contexto como propn",
+            "fr": "définition de 'Sto' en contexte comme propn",
+            "pt": "definição de 'Sto' em contexto como propn",
+            "it": "definizione di 'Sto' in contesto come propn",
+            "el": "ορισμός του 'Sto' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Sto')",
+            "es": "como se usa en el contexto ('Sto')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Sto_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Sto_distractor_a",
+            "Sto_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "dd7ce194-b843-43be-b368-9627beb3f2fa",
+          "surface_nfc": "Sto",
+          "normalized_lookup": "sto",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "63bca2ad-1023-40d0-b8ce-f5e2933cb21f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "27695d73-49a1-4776-9188-e905c6507527",
+      "lemma_nfc": "Stále",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "50965244-6e59-4b68-910d-40ea781bd94e",
+          "sense_key": "stále-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Stále' in context as a propn",
+            "es": "definición de 'Stále' en contexto como propn",
+            "fr": "définition de 'Stále' en contexte comme propn",
+            "pt": "definição de 'Stále' em contexto como propn",
+            "it": "definizione di 'Stále' in contesto come propn",
+            "el": "ορισμός του 'Stále' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Stále')",
+            "es": "como se usa en el contexto ('Stále')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Stále_hp1"
+          ],
+          "homonyms": [
+            "Stále_hm1"
+          ],
+          "synonyms": [
+            "Stále_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Stále_distractor_a",
+            "Stále_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d5f86478-f4e1-41cb-9810-af032182e014",
+          "surface_nfc": "Stále",
+          "normalized_lookup": "stále",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1c884ed9-def8-470f-aa2f-c625ae89955d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fa5697cc-51ce-47dc-80bd-c77820a1a16b",
+      "lemma_nfc": "Tento",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9b951ac6-2461-4582-b3b0-261ddd519d25",
+          "sense_key": "tento-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Tento' in context as a propn",
+            "es": "definición de 'Tento' en contexto como propn",
+            "fr": "définition de 'Tento' en contexte comme propn",
+            "pt": "definição de 'Tento' em contexto como propn",
+            "it": "definizione di 'Tento' in contesto come propn",
+            "el": "ορισμός του 'Tento' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Tento')",
+            "es": "como se usa en el contexto ('Tento')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Tento_hp1"
+          ],
+          "homonyms": [
+            "Tento_hm1"
+          ],
+          "synonyms": [
+            "Tento_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Tento_distractor_a",
+            "Tento_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "014359d7-d51e-4568-95a1-1d59b6fe6ae1",
+          "surface_nfc": "Tento",
+          "normalized_lookup": "tento",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6d067855-b7f2-4f35-acb0-7feda2f48598",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3a857a82-e6be-4408-b430-94a80d429642",
+      "lemma_nfc": "Slová",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b5102e6b-5453-49c6-9d2d-b3d365bb3290",
+          "sense_key": "slová-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Slová' in context as a propn",
+            "es": "definición de 'Slová' en contexto como propn",
+            "fr": "définition de 'Slová' en contexte comme propn",
+            "pt": "definição de 'Slová' em contexto como propn",
+            "it": "definizione di 'Slová' in contesto come propn",
+            "el": "ορισμός του 'Slová' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Slová')",
+            "es": "como se usa en el contexto ('Slová')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Slová_hp1"
+          ],
+          "homonyms": [
+            "Slová_hm1"
+          ],
+          "synonyms": [
+            "Slová_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Slová_distractor_a",
+            "Slová_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e730d644-17f5-4b93-bfff-df7c4a10b968",
+          "surface_nfc": "Slová",
+          "normalized_lookup": "slová",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "cfcdc9ef-5b6a-4d3f-b547-6cf3c36dba56",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c46beffb-77a3-4199-9e24-2cefe387587f",
+      "lemma_nfc": "Vedľa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "63c120b6-eacf-4036-91d3-c0f2d1b387c0",
+          "sense_key": "vedľa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Vedľa' in context as a propn",
+            "es": "definición de 'Vedľa' en contexto como propn",
+            "fr": "définition de 'Vedľa' en contexte comme propn",
+            "pt": "definição de 'Vedľa' em contexto como propn",
+            "it": "definizione di 'Vedľa' in contesto come propn",
+            "el": "ορισμός του 'Vedľa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Vedľa')",
+            "es": "como se usa en el contexto ('Vedľa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Vedľa_hp1"
+          ],
+          "homonyms": [
+            "Vedľa_hm1"
+          ],
+          "synonyms": [
+            "Vedľa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Vedľa_distractor_a",
+            "Vedľa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "74ce8532-3047-4722-a9d1-7d3e51388314",
+          "surface_nfc": "Vedľa",
+          "normalized_lookup": "vedľa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0b0d42e8-43de-4f9c-8a41-991a563f15a8",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6c419cc5-de51-4f17-84b4-d1f450696c2d",
+      "lemma_nfc": "Z",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1bd6e146-cf1b-4eb6-ae77-e4f78dade54e",
+          "sense_key": "z-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Z' in context as a propn",
+            "es": "definición de 'Z' en contexto como propn",
+            "fr": "définition de 'Z' en contexte comme propn",
+            "pt": "definição de 'Z' em contexto como propn",
+            "it": "definizione di 'Z' in contesto come propn",
+            "el": "ορισμός του 'Z' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Z')",
+            "es": "como se usa en el contexto ('Z')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Z_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Z_distractor_a",
+            "Z_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "647af8de-375c-43eb-8e5a-212529fa7085",
+          "surface_nfc": "Z",
+          "normalized_lookup": "z",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "218314c5-7cc5-43af-a458-46e109cf29ca",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9dcabb3d-722c-44a7-918a-0677f669ae99",
+      "lemma_nfc": "Alexovho",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0ae20992-0a23-4c03-b034-27a48d7510da",
+          "sense_key": "alexovho-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexovho' in context as a propn",
+            "es": "definición de 'Alexovho' en contexto como propn",
+            "fr": "définition de 'Alexovho' en contexte comme propn",
+            "pt": "definição de 'Alexovho' em contexto como propn",
+            "it": "definizione di 'Alexovho' in contesto come propn",
+            "el": "ορισμός του 'Alexovho' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexovho')",
+            "es": "como se usa en el contexto ('Alexovho')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexovho_hp1"
+          ],
+          "homonyms": [
+            "Alexovho_hm1"
+          ],
+          "synonyms": [
+            "Alexovho_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexovho_distractor_a",
+            "Alexovho_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6162fece-d41a-4726-9580-dce151c47c7d",
+          "surface_nfc": "Alexovho",
+          "normalized_lookup": "alexovho",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "482092b9-e78a-4a6e-be15-013c704c3f6a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "aa017862-ec85-4db3-ae77-2b7f94d1ca90",
+      "lemma_nfc": "Chceš",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3681f9b6-7f5c-4189-8042-46863b841177",
+          "sense_key": "chceš-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Chceš' in context as a propn",
+            "es": "definición de 'Chceš' en contexto como propn",
+            "fr": "définition de 'Chceš' en contexte comme propn",
+            "pt": "definição de 'Chceš' em contexto como propn",
+            "it": "definizione di 'Chceš' in contesto come propn",
+            "el": "ορισμός του 'Chceš' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Chceš')",
+            "es": "como se usa en el contexto ('Chceš')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Chceš_hp1"
+          ],
+          "homonyms": [
+            "Chceš_hm1"
+          ],
+          "synonyms": [
+            "Chceš_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Chceš_distractor_a",
+            "Chceš_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "cc8c9bff-0721-4693-9bbe-212df1dd1db5",
+          "surface_nfc": "Chceš",
+          "normalized_lookup": "chceš",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "236cc912-bfa4-48e7-b40e-36a3c807c812",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "19567a88-6d29-49d3-a959-8bc093403c35",
+      "lemma_nfc": "Alexe",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3d27ef3f-6042-4a26-a8fb-ee5cacb9626e",
+          "sense_key": "alexe-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexe' in context as a propn",
+            "es": "definición de 'Alexe' en contexto como propn",
+            "fr": "définition de 'Alexe' en contexte comme propn",
+            "pt": "definição de 'Alexe' em contexto como propn",
+            "it": "definizione di 'Alexe' in contesto come propn",
+            "el": "ορισμός του 'Alexe' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexe')",
+            "es": "como se usa en el contexto ('Alexe')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexe_hp1"
+          ],
+          "homonyms": [
+            "Alexe_hm1"
+          ],
+          "synonyms": [
+            "Alexe_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexe_distractor_a",
+            "Alexe_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "dfae332d-a093-4b53-9c8e-9c567f42f898",
+          "surface_nfc": "Alexe",
+          "normalized_lookup": "alexe",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9bf36eeb-8f2e-4b43-83fc-821d77d88b2b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3046642c-55ad-4140-bf07-d9ad5b81f021",
+      "lemma_nfc": "Je",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1a250bf9-d23b-43ff-bba2-829dee0a77f7",
+          "sense_key": "je-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Je' in context as a propn",
+            "es": "definición de 'Je' en contexto como propn",
+            "fr": "définition de 'Je' en contexte comme propn",
+            "pt": "definição de 'Je' em contexto como propn",
+            "it": "definizione di 'Je' in contesto come propn",
+            "el": "ορισμός του 'Je' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Je')",
+            "es": "como se usa en el contexto ('Je')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Je_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Je_distractor_a",
+            "Je_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ad42daaa-62d8-4a98-9e5c-90ca3b11e00a",
+          "surface_nfc": "Je",
+          "normalized_lookup": "je",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "45b5ee6e-b5a7-43bf-a0f3-f2b187636ad1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c48ee743-813d-45c3-aeed-8a09dade7a74",
+      "lemma_nfc": "Zavrie",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3547840f-de88-4848-b3e4-7e98e5a48f4d",
+          "sense_key": "zavrie-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Zavrie' in context as a propn",
+            "es": "definición de 'Zavrie' en contexto como propn",
+            "fr": "définition de 'Zavrie' en contexte comme propn",
+            "pt": "definição de 'Zavrie' em contexto como propn",
+            "it": "definizione di 'Zavrie' in contesto come propn",
+            "el": "ορισμός του 'Zavrie' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Zavrie')",
+            "es": "como se usa en el contexto ('Zavrie')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Zavrie_hp1"
+          ],
+          "homonyms": [
+            "Zavrie_hm1"
+          ],
+          "synonyms": [
+            "Zavrie_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Zavrie_distractor_a",
+            "Zavrie_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f23d8ccc-0647-4291-a915-d9703ed3ea8d",
+          "surface_nfc": "Zavrie",
+          "normalized_lookup": "zavrie",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "16c53705-246d-472c-9a5d-800381556c42",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d0b703a3-fa1b-4695-a91e-1cd6a5088094",
+      "lemma_nfc": "Alebo",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "add7b7b8-e86d-4561-992a-23cfd501fbf5",
+          "sense_key": "alebo-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alebo' in context as a propn",
+            "es": "definición de 'Alebo' en contexto como propn",
+            "fr": "définition de 'Alebo' en contexte comme propn",
+            "pt": "definição de 'Alebo' em contexto como propn",
+            "it": "definizione di 'Alebo' in contesto come propn",
+            "el": "ορισμός του 'Alebo' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alebo')",
+            "es": "como se usa en el contexto ('Alebo')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alebo_hp1"
+          ],
+          "homonyms": [
+            "Alebo_hm1"
+          ],
+          "synonyms": [
+            "Alebo_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alebo_distractor_a",
+            "Alebo_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "14f1830d-a056-4a6d-a734-16d989632b09",
+          "surface_nfc": "Alebo",
+          "normalized_lookup": "alebo",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1cc65a82-7a67-4a7b-aa3f-680e4dab659e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

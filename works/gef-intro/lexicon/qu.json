@@ -1,0 +1,2866 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "qu",
+  "lexemes": [
+    {
+      "lexeme_id": "83ed0d5f-77dd-429a-bdb1-c4ca76620622",
+      "lemma_nfc": "Alex",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c3e186f5-e5bd-4115-b27d-7d2db18d8acf",
+          "sense_key": "alex-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alex' in context as a propn",
+            "es": "definición de 'Alex' en contexto como propn",
+            "fr": "définition de 'Alex' en contexte comme propn",
+            "pt": "definição de 'Alex' em contexto como propn",
+            "it": "definizione di 'Alex' in contesto come propn",
+            "el": "ορισμός του 'Alex' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alex')",
+            "es": "como se usa en el contexto ('Alex')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Alex_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Alex_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alex_distractor_a",
+            "Alex_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9be755fa-3c97-43b6-b0ff-317ccb0fe207",
+          "surface_nfc": "Alex",
+          "normalized_lookup": "alex",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "72356878-afa0-4e03-a93c-e70316b6ec6e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "66acfc43-9271-4777-99d9-5580f78ef7eb",
+      "lemma_nfc": "Wakin",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f5c9889c-2989-4db3-9e7c-211c3c32b823",
+          "sense_key": "wakin-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Wakin' in context as a propn",
+            "es": "definición de 'Wakin' en contexto como propn",
+            "fr": "définition de 'Wakin' en contexte comme propn",
+            "pt": "definição de 'Wakin' em contexto como propn",
+            "it": "definizione di 'Wakin' in contesto come propn",
+            "el": "ορισμός του 'Wakin' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Wakin')",
+            "es": "como se usa en el contexto ('Wakin')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Wakin_hp1"
+          ],
+          "homonyms": [
+            "Wakin_hm1"
+          ],
+          "synonyms": [
+            "Wakin_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Wakin_distractor_a",
+            "Wakin_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2f8e00af-ea7c-4576-aa4a-c5c427cde88d",
+          "surface_nfc": "Wakin",
+          "normalized_lookup": "wakin",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9f6c20cf-2eb3-428f-a8e7-dd426cff7243",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "322d47f1-e44e-4293-85ae-214cf642eb1e",
+      "lemma_nfc": "Kunan",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0816afb7-1530-4a59-abf2-25c8f820b3fb",
+          "sense_key": "kunan-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kunan' in context as a propn",
+            "es": "definición de 'Kunan' en contexto como propn",
+            "fr": "définition de 'Kunan' en contexte comme propn",
+            "pt": "definição de 'Kunan' em contexto como propn",
+            "it": "definizione di 'Kunan' in contesto come propn",
+            "el": "ορισμός του 'Kunan' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kunan')",
+            "es": "como se usa en el contexto ('Kunan')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kunan_hp1"
+          ],
+          "homonyms": [
+            "Kunan_hm1"
+          ],
+          "synonyms": [
+            "Kunan_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kunan_distractor_a",
+            "Kunan_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "63b888ef-9e81-44b3-80f6-ff5e1895eb21",
+          "surface_nfc": "Kunan",
+          "normalized_lookup": "kunan",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6abf8baa-c0eb-4c98-92c5-872d43f5b624",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "714bc88c-b915-4b28-acf9-99c21081681d",
+      "lemma_nfc": "Willakuyqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "58747fe0-e16f-42dc-b044-237cd6af455f",
+          "sense_key": "willakuyqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Willakuyqa' in context as a propn",
+            "es": "definición de 'Willakuyqa' en contexto como propn",
+            "fr": "définition de 'Willakuyqa' en contexte comme propn",
+            "pt": "definição de 'Willakuyqa' em contexto como propn",
+            "it": "definizione di 'Willakuyqa' in contesto come propn",
+            "el": "ορισμός του 'Willakuyqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Willakuyqa')",
+            "es": "como se usa en el contexto ('Willakuyqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Willakuyqa_hp1"
+          ],
+          "homonyms": [
+            "Willakuyqa_hm1"
+          ],
+          "synonyms": [
+            "Willakuyqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Willakuyqa_distractor_a",
+            "Willakuyqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1052943b-703e-418c-8fd3-232e67c69247",
+          "surface_nfc": "Willakuyqa",
+          "normalized_lookup": "willakuyqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "93c57d69-fdd2-4422-9ecb-8e5c6e2258b3",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "b02f6d4f-0b04-4d39-af16-624942e74e96",
+      "lemma_nfc": "Ñustaqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d387badc-1b9a-4973-bb81-8e3764773ccb",
+          "sense_key": "ñustaqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ñustaqa' in context as a propn",
+            "es": "definición de 'Ñustaqa' en contexto como propn",
+            "fr": "définition de 'Ñustaqa' en contexte comme propn",
+            "pt": "definição de 'Ñustaqa' em contexto como propn",
+            "it": "definizione di 'Ñustaqa' in contesto come propn",
+            "el": "ορισμός του 'Ñustaqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ñustaqa')",
+            "es": "como se usa en el contexto ('Ñustaqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ñustaqa_hp1"
+          ],
+          "homonyms": [
+            "Ñustaqa_hm1"
+          ],
+          "synonyms": [
+            "Ñustaqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ñustaqa_distractor_a",
+            "Ñustaqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e1589477-9d78-4c42-9601-6201ff708fbe",
+          "surface_nfc": "Ñustaqa",
+          "normalized_lookup": "ñustaqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d680c55c-dd44-4d9f-9a4e-82099fccf2f6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8b33d851-b99b-44bd-b126-e578a21e8f82",
+      "lemma_nfc": "Pirqapa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "70a0938f-f325-4df1-94ff-30573b7a9cf4",
+          "sense_key": "pirqapa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pirqapa' in context as a propn",
+            "es": "definición de 'Pirqapa' en contexto como propn",
+            "fr": "définition de 'Pirqapa' en contexte comme propn",
+            "pt": "definição de 'Pirqapa' em contexto como propn",
+            "it": "definizione di 'Pirqapa' in contesto come propn",
+            "el": "ορισμός του 'Pirqapa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pirqapa')",
+            "es": "como se usa en el contexto ('Pirqapa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Pirqapa_hp1"
+          ],
+          "homonyms": [
+            "Pirqapa_hm1"
+          ],
+          "synonyms": [
+            "Pirqapa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pirqapa_distractor_a",
+            "Pirqapa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "95c497f1-7803-47e9-9039-a431557e3fc3",
+          "surface_nfc": "Pirqapa",
+          "normalized_lookup": "pirqapa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d3c27d14-858b-47e5-be7d-81ae94a4a25e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "bd806b0e-0182-41ad-b050-3b0b8cda7a53",
+      "lemma_nfc": "Qhasuykuyqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "eef4720b-dbdf-4ac3-946e-69855c2ded97",
+          "sense_key": "qhasuykuyqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Qhasuykuyqa' in context as a propn",
+            "es": "definición de 'Qhasuykuyqa' en contexto como propn",
+            "fr": "définition de 'Qhasuykuyqa' en contexte comme propn",
+            "pt": "definição de 'Qhasuykuyqa' em contexto como propn",
+            "it": "definizione di 'Qhasuykuyqa' in contesto come propn",
+            "el": "ορισμός του 'Qhasuykuyqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Qhasuykuyqa')",
+            "es": "como se usa en el contexto ('Qhasuykuyqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Qhasuykuyqa_hp1"
+          ],
+          "homonyms": [
+            "Qhasuykuyqa_hm1"
+          ],
+          "synonyms": [
+            "Qhasuykuyqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Qhasuykuyqa_distractor_a",
+            "Qhasuykuyqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a717d93e-533b-4dbf-8bf3-bc394c1ab1b6",
+          "surface_nfc": "Qhasuykuyqa",
+          "normalized_lookup": "qhasuykuyqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "25254998-2b59-4223-aa00-4bf3606105b5",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "21fd11bb-39d6-4fc8-b085-3a060c11b0ce",
+      "lemma_nfc": "Payqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6366be38-b6fa-40bd-a063-dcebaf3feb5b",
+          "sense_key": "payqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Payqa' in context as a propn",
+            "es": "definición de 'Payqa' en contexto como propn",
+            "fr": "définition de 'Payqa' en contexte comme propn",
+            "pt": "definição de 'Payqa' em contexto como propn",
+            "it": "definizione di 'Payqa' in contesto come propn",
+            "el": "ορισμός του 'Payqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Payqa')",
+            "es": "como se usa en el contexto ('Payqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Payqa_hp1"
+          ],
+          "homonyms": [
+            "Payqa_hm1"
+          ],
+          "synonyms": [
+            "Payqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Payqa_distractor_a",
+            "Payqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a8050158-6e02-4ba2-a13a-8011692a4663",
+          "surface_nfc": "Payqa",
+          "normalized_lookup": "payqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0dc2276c-506c-48a8-93b8-02cd5d887e62",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "85431884-67b1-4045-be66-48b7c920b169",
+      "lemma_nfc": "Pirqaman",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c574b9a6-1fd9-4bdf-8636-4ff6d3f7cf39",
+          "sense_key": "pirqaman-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pirqaman' in context as a propn",
+            "es": "definición de 'Pirqaman' en contexto como propn",
+            "fr": "définition de 'Pirqaman' en contexte comme propn",
+            "pt": "definição de 'Pirqaman' em contexto como propn",
+            "it": "definizione di 'Pirqaman' in contesto come propn",
+            "el": "ορισμός του 'Pirqaman' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pirqaman')",
+            "es": "como se usa en el contexto ('Pirqaman')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Pirqaman_hp1"
+          ],
+          "homonyms": [
+            "Pirqaman_hm1"
+          ],
+          "synonyms": [
+            "Pirqaman_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pirqaman_distractor_a",
+            "Pirqaman_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "207cfed6-ac4e-409f-bf05-a8ee2e56badc",
+          "surface_nfc": "Pirqaman",
+          "normalized_lookup": "pirqaman",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d6273a4f-7ed7-4342-b8a4-4f665d440de7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5b71c0b4-f26e-4cd0-b2d9-196859fcb915",
+      "lemma_nfc": "Ancha",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e2f80a9c-22e1-475c-a52b-8b2bad61004d",
+          "sense_key": "ancha-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ancha' in context as a propn",
+            "es": "definición de 'Ancha' en contexto como propn",
+            "fr": "définition de 'Ancha' en contexte comme propn",
+            "pt": "definição de 'Ancha' em contexto como propn",
+            "it": "definizione di 'Ancha' in contesto come propn",
+            "el": "ορισμός του 'Ancha' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ancha')",
+            "es": "como se usa en el contexto ('Ancha')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ancha_hp1"
+          ],
+          "homonyms": [
+            "Ancha_hm1"
+          ],
+          "synonyms": [
+            "Ancha_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ancha_distractor_a",
+            "Ancha_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "5f6471e6-ea9e-4bd5-ad39-016cbe9c5bd5",
+          "surface_nfc": "Ancha",
+          "normalized_lookup": "ancha",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e9ea2c14-5fc8-4130-9830-680b873e567b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c21d9036-63b5-4ab4-992a-cd6af01e61af",
+      "lemma_nfc": "Alexqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c9f65417-780a-419c-b72c-27a9d32c8f44",
+          "sense_key": "alexqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexqa' in context as a propn",
+            "es": "definición de 'Alexqa' en contexto como propn",
+            "fr": "définition de 'Alexqa' en contexte comme propn",
+            "pt": "definição de 'Alexqa' em contexto como propn",
+            "it": "definizione di 'Alexqa' in contesto come propn",
+            "el": "ορισμός του 'Alexqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexqa')",
+            "es": "como se usa en el contexto ('Alexqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexqa_hp1"
+          ],
+          "homonyms": [
+            "Alexqa_hm1"
+          ],
+          "synonyms": [
+            "Alexqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexqa_distractor_a",
+            "Alexqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d345c20d-386d-4bfd-b88e-108d13c0cd53",
+          "surface_nfc": "Alexqa",
+          "normalized_lookup": "alexqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "de89642e-c484-4747-92bd-c6f489b8144d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "105797bb-901b-4604-8568-6ccc8e9d8446",
+      "lemma_nfc": "Pitaq",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e5eaaa81-b1e7-411d-98db-3c50840d2215",
+          "sense_key": "pitaq-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pitaq' in context as a propn",
+            "es": "definición de 'Pitaq' en contexto como propn",
+            "fr": "définition de 'Pitaq' en contexte comme propn",
+            "pt": "definição de 'Pitaq' em contexto como propn",
+            "it": "definizione di 'Pitaq' in contesto come propn",
+            "el": "ορισμός του 'Pitaq' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pitaq')",
+            "es": "como se usa en el contexto ('Pitaq')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Pitaq_hp1"
+          ],
+          "homonyms": [
+            "Pitaq_hm1"
+          ],
+          "synonyms": [
+            "Pitaq_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pitaq_distractor_a",
+            "Pitaq_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c6910dee-6eb7-4aec-a0fa-780ca632572b",
+          "surface_nfc": "Pitaq",
+          "normalized_lookup": "pitaq",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "53ee6a2a-16a4-419f-bd91-733c2a42aae7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "625f888f-6b1d-4165-be47-5357ab11d6ac",
+      "lemma_nfc": "Kunkacha",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "15b4d315-d8e2-4d55-b3a5-8ad41abd3732",
+          "sense_key": "kunkacha-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kunkacha' in context as a propn",
+            "es": "definición de 'Kunkacha' en contexto como propn",
+            "fr": "définition de 'Kunkacha' en contexte comme propn",
+            "pt": "definição de 'Kunkacha' em contexto como propn",
+            "it": "definizione di 'Kunkacha' in contesto come propn",
+            "el": "ορισμός του 'Kunkacha' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kunkacha')",
+            "es": "como se usa en el contexto ('Kunkacha')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kunkacha_hp1"
+          ],
+          "homonyms": [
+            "Kunkacha_hm1"
+          ],
+          "synonyms": [
+            "Kunkacha_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kunkacha_distractor_a",
+            "Kunkacha_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "eac782e2-5ff8-422d-8df9-f700b97a8c48",
+          "surface_nfc": "Kunkacha",
+          "normalized_lookup": "kunkacha",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a3c59ad5-a676-4a2e-b4fd-cdb3d89623d2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fd440b62-0de2-4ad9-afa6-be734db77d40",
+      "lemma_nfc": "Chaypa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "bf4e2d31-6b61-4621-a473-365626a5bc8d",
+          "sense_key": "chaypa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Chaypa' in context as a propn",
+            "es": "definición de 'Chaypa' en contexto como propn",
+            "fr": "définition de 'Chaypa' en contexte comme propn",
+            "pt": "definição de 'Chaypa' em contexto como propn",
+            "it": "definizione di 'Chaypa' in contesto come propn",
+            "el": "ορισμός του 'Chaypa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Chaypa')",
+            "es": "como se usa en el contexto ('Chaypa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Chaypa_hp1"
+          ],
+          "homonyms": [
+            "Chaypa_hm1"
+          ],
+          "synonyms": [
+            "Chaypa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Chaypa_distractor_a",
+            "Chaypa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "366feccb-db9b-4c60-beb1-1bc08d52db91",
+          "surface_nfc": "Chaypa",
+          "normalized_lookup": "chaypa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "797b6572-2ea1-4a5d-aee4-d922f4579f57",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "628e7d35-ea01-4501-a9d4-899da4268768",
+      "lemma_nfc": "Huk",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0b1a15d4-1ada-41d7-b3f4-bd983d1a969f",
+          "sense_key": "huk-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Huk' in context as a propn",
+            "es": "definición de 'Huk' en contexto como propn",
+            "fr": "définition de 'Huk' en contexte comme propn",
+            "pt": "definição de 'Huk' em contexto como propn",
+            "it": "definizione di 'Huk' in contesto come propn",
+            "el": "ορισμός του 'Huk' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Huk')",
+            "es": "como se usa en el contexto ('Huk')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Huk_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Huk_distractor_a",
+            "Huk_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ed9d0bb0-b224-4071-94fc-b1b494c9fc12",
+          "surface_nfc": "Huk",
+          "normalized_lookup": "huk",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7a23b144-6482-4f89-a28a-2f917408e0bc",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "1778d4a5-8940-4006-9467-6921d2147e7d",
+      "lemma_nfc": "Muyuriqninta",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "de18ac0f-50ea-4ce7-ac9c-23552210e0f6",
+          "sense_key": "muyuriqninta-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Muyuriqninta' in context as a propn",
+            "es": "definición de 'Muyuriqninta' en contexto como propn",
+            "fr": "définition de 'Muyuriqninta' en contexte comme propn",
+            "pt": "definição de 'Muyuriqninta' em contexto como propn",
+            "it": "definizione di 'Muyuriqninta' in contesto come propn",
+            "el": "ορισμός του 'Muyuriqninta' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Muyuriqninta')",
+            "es": "como se usa en el contexto ('Muyuriqninta')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Muyuriqninta_hp1"
+          ],
+          "homonyms": [
+            "Muyuriqninta_hm1"
+          ],
+          "synonyms": [
+            "Muyuriqninta_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Muyuriqninta_distractor_a",
+            "Muyuriqninta_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "51049cc4-a6c6-4ae9-84fd-863aae2d8164",
+          "surface_nfc": "Muyuriqninta",
+          "normalized_lookup": "muyuriqninta",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0c7d86e0-5648-455c-bea9-9cb8af6060b2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c7d351a2-6603-4fc1-9ac4-fbd84f5846fd",
+      "lemma_nfc": "Iskay",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "30f9cf8a-68c8-4f12-bea6-f8ef82a5ee4e",
+          "sense_key": "iskay-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Iskay' in context as a propn",
+            "es": "definición de 'Iskay' en contexto como propn",
+            "fr": "définition de 'Iskay' en contexte comme propn",
+            "pt": "definição de 'Iskay' em contexto como propn",
+            "it": "definizione di 'Iskay' in contesto come propn",
+            "el": "ορισμός του 'Iskay' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Iskay')",
+            "es": "como se usa en el contexto ('Iskay')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Iskay_hp1"
+          ],
+          "homonyms": [
+            "Iskay_hm1"
+          ],
+          "synonyms": [
+            "Iskay_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Iskay_distractor_a",
+            "Iskay_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "30531db3-89a0-49f6-aae0-9c0e2e94b4bf",
+          "surface_nfc": "Iskay",
+          "normalized_lookup": "iskay",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "baf0ff77-269a-4f7b-8400-8f6616cd1762",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8ca3a074-c572-45a9-b6bf-fb7ea6466138",
+      "lemma_nfc": "Chaymanta",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "608f2939-aacb-4e5d-97b1-e66a326b71d8",
+          "sense_key": "chaymanta-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Chaymanta' in context as a propn",
+            "es": "definición de 'Chaymanta' en contexto como propn",
+            "fr": "définition de 'Chaymanta' en contexte comme propn",
+            "pt": "definição de 'Chaymanta' em contexto como propn",
+            "it": "definizione di 'Chaymanta' in contesto come propn",
+            "el": "ορισμός του 'Chaymanta' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Chaymanta')",
+            "es": "como se usa en el contexto ('Chaymanta')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Chaymanta_hp1"
+          ],
+          "homonyms": [
+            "Chaymanta_hm1"
+          ],
+          "synonyms": [
+            "Chaymanta_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Chaymanta_distractor_a",
+            "Chaymanta_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "275ee6f2-c280-49d3-af7b-48a35f3c4551",
+          "surface_nfc": "Chaymanta",
+          "normalized_lookup": "chaymanta",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1aa0ab1c-d6cd-49f2-89a4-425bdb6b1923",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "424919c2-b53f-48f2-abd2-e7aa0129d3e1",
+      "lemma_nfc": "Qullqi",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1adc6f6e-9cc3-4cfd-bdc5-12b8643da18b",
+          "sense_key": "qullqi-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Qullqi' in context as a propn",
+            "es": "definición de 'Qullqi' en contexto como propn",
+            "fr": "définition de 'Qullqi' en contexte comme propn",
+            "pt": "definição de 'Qullqi' em contexto como propn",
+            "it": "definizione di 'Qullqi' in contesto come propn",
+            "el": "ορισμός του 'Qullqi' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Qullqi')",
+            "es": "como se usa en el contexto ('Qullqi')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Qullqi_hp1"
+          ],
+          "homonyms": [
+            "Qullqi_hm1"
+          ],
+          "synonyms": [
+            "Qullqi_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Qullqi_distractor_a",
+            "Qullqi_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "7c045668-749d-40b0-9558-4098c65c86fc",
+          "surface_nfc": "Qullqi",
+          "normalized_lookup": "qullqi",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f67d11e9-6720-490e-8943-06a27a273076",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "503e2ad4-a11e-4365-8792-89bcc3203227",
+      "lemma_nfc": "Kichasqaqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "818518c6-aec6-4ad4-bdd9-bca8067748c5",
+          "sense_key": "kichasqaqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kichasqaqa' in context as a propn",
+            "es": "definición de 'Kichasqaqa' en contexto como propn",
+            "fr": "définition de 'Kichasqaqa' en contexte comme propn",
+            "pt": "definição de 'Kichasqaqa' em contexto como propn",
+            "it": "definizione di 'Kichasqaqa' in contesto come propn",
+            "el": "ορισμός του 'Kichasqaqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kichasqaqa')",
+            "es": "como se usa en el contexto ('Kichasqaqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kichasqaqa_hp1"
+          ],
+          "homonyms": [
+            "Kichasqaqa_hm1"
+          ],
+          "synonyms": [
+            "Kichasqaqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kichasqaqa_distractor_a",
+            "Kichasqaqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b360dd16-8fce-4a52-86a8-c9f90b9e569e",
+          "surface_nfc": "Kichasqaqa",
+          "normalized_lookup": "kichasqaqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "f4718c7f-8e3c-4aea-9b4b-6f104cee7812",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c4fc3432-b860-404a-a34a-45798e7af66c",
+      "lemma_nfc": "Alexpa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "98513bfb-9d01-48fb-aa08-e5b8a285f226",
+          "sense_key": "alexpa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexpa' in context as a propn",
+            "es": "definición de 'Alexpa' en contexto como propn",
+            "fr": "définition de 'Alexpa' en contexte comme propn",
+            "pt": "definição de 'Alexpa' em contexto como propn",
+            "it": "definizione di 'Alexpa' in contesto come propn",
+            "el": "ορισμός του 'Alexpa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexpa')",
+            "es": "como se usa en el contexto ('Alexpa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexpa_hp1"
+          ],
+          "homonyms": [
+            "Alexpa_hm1"
+          ],
+          "synonyms": [
+            "Alexpa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexpa_distractor_a",
+            "Alexpa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "8573489d-6700-4fa6-a63f-06ee18f06395",
+          "surface_nfc": "Alexpa",
+          "normalized_lookup": "alexpa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "8a8bbe10-3890-4763-bb5e-f813d32ed867",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "59ecc393-377d-4ae1-813f-fb043e71c723",
+      "lemma_nfc": "Chaywanpas",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ee508d28-eccf-4f1d-98fd-23c3e8bcce09",
+          "sense_key": "chaywanpas-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Chaywanpas' in context as a propn",
+            "es": "definición de 'Chaywanpas' en contexto como propn",
+            "fr": "définition de 'Chaywanpas' en contexte comme propn",
+            "pt": "definição de 'Chaywanpas' em contexto como propn",
+            "it": "definizione di 'Chaywanpas' in contesto come propn",
+            "el": "ορισμός του 'Chaywanpas' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Chaywanpas')",
+            "es": "como se usa en el contexto ('Chaywanpas')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Chaywanpas_hp1"
+          ],
+          "homonyms": [
+            "Chaywanpas_hm1"
+          ],
+          "synonyms": [
+            "Chaywanpas_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Chaywanpas_distractor_a",
+            "Chaywanpas_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "59c309a6-e81d-4558-a131-8fd4a042a216",
+          "surface_nfc": "Chaywanpas",
+          "normalized_lookup": "chaywanpas",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c5d764ef-a076-4809-a448-548c4aa31cfe",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e9056011-dbeb-4c0b-b2e7-36da8ea428b0",
+      "lemma_nfc": "Anqas",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4be45a30-5bdc-4be8-8acd-cc01cd5eeb4a",
+          "sense_key": "anqas-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Anqas' in context as a propn",
+            "es": "definición de 'Anqas' en contexto como propn",
+            "fr": "définition de 'Anqas' en contexte comme propn",
+            "pt": "definição de 'Anqas' em contexto como propn",
+            "it": "definizione di 'Anqas' in contesto come propn",
+            "el": "ορισμός του 'Anqas' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Anqas')",
+            "es": "como se usa en el contexto ('Anqas')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Anqas_hp1"
+          ],
+          "homonyms": [
+            "Anqas_hm1"
+          ],
+          "synonyms": [
+            "Anqas_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Anqas_distractor_a",
+            "Anqas_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "018b212b-3241-4478-b90b-6af323d9c6e9",
+          "surface_nfc": "Anqas",
+          "normalized_lookup": "anqas",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "cf9ca023-8f14-4e3e-9fe1-7b3a7cfb2ca0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a130307e-8480-408e-962f-0195609e6a26",
+      "lemma_nfc": "Unay",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "748a02af-d416-45b9-99d7-a130920b4af3",
+          "sense_key": "unay-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Unay' in context as a propn",
+            "es": "definición de 'Unay' en contexto como propn",
+            "fr": "définition de 'Unay' en contexte comme propn",
+            "pt": "definição de 'Unay' em contexto como propn",
+            "it": "definizione di 'Unay' in contesto come propn",
+            "el": "ορισμός του 'Unay' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Unay')",
+            "es": "como se usa en el contexto ('Unay')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Unay_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Unay_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Unay_distractor_a",
+            "Unay_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a310265c-93c6-4202-813a-af8b732d53ee",
+          "surface_nfc": "Unay",
+          "normalized_lookup": "unay",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "6793fe31-b3c0-40c2-b3e6-a5c059323008",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "109b3725-9761-40e5-9ffc-b5944ba71842",
+      "lemma_nfc": "Mangostaqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e95823a4-086d-47e6-b130-6139d8393fa8",
+          "sense_key": "mangostaqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Mangostaqa' in context as a propn",
+            "es": "definición de 'Mangostaqa' en contexto como propn",
+            "fr": "définition de 'Mangostaqa' en contexte comme propn",
+            "pt": "definição de 'Mangostaqa' em contexto como propn",
+            "it": "definizione di 'Mangostaqa' in contesto come propn",
+            "el": "ορισμός του 'Mangostaqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Mangostaqa')",
+            "es": "como se usa en el contexto ('Mangostaqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Mangostaqa_hp1"
+          ],
+          "homonyms": [
+            "Mangostaqa_hm1"
+          ],
+          "synonyms": [
+            "Mangostaqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Mangostaqa_distractor_a",
+            "Mangostaqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d82c58a1-63f9-4f49-8857-2419d7c2396a",
+          "surface_nfc": "Mangostaqa",
+          "normalized_lookup": "mangostaqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "60d37d32-2668-4462-969b-d40137bfda90",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0ca341fa-ff17-4ed6-910e-d030ee7dc501",
+      "lemma_nfc": "Sutiyqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a9df99a9-b6f8-4a76-947c-1281576ea8fb",
+          "sense_key": "sutiyqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Sutiyqa' in context as a propn",
+            "es": "definición de 'Sutiyqa' en contexto como propn",
+            "fr": "définition de 'Sutiyqa' en contexte comme propn",
+            "pt": "definição de 'Sutiyqa' em contexto como propn",
+            "it": "definizione di 'Sutiyqa' in contesto come propn",
+            "el": "ορισμός του 'Sutiyqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Sutiyqa')",
+            "es": "como se usa en el contexto ('Sutiyqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Sutiyqa_hp1"
+          ],
+          "homonyms": [
+            "Sutiyqa_hm1"
+          ],
+          "synonyms": [
+            "Sutiyqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Sutiyqa_distractor_a",
+            "Sutiyqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "62bc81f6-7076-4c10-9f3d-ad03aa1b6b52",
+          "surface_nfc": "Sutiyqa",
+          "normalized_lookup": "sutiyqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "2d1962b9-66f1-488e-843b-93ffd8d5b90e",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "6a468af4-b70b-4663-be52-7f47a40ccb0c",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0c54fdc0-32fd-4e38-b0ae-cddd11764ae1",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2cae735f-d553-49f0-ac74-b14b6cb6c2d7",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d894b483-c062-4c34-b8df-16615cd6938c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "51fd4b3c-00cb-4c89-bbf4-e7b084030af2",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "81036811-1a0b-4ab8-880c-cc4d2b8f760a",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "36045164-d496-4115-aa3d-7cd532cd3616",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "89b3dbdb-eb14-43ca-a3d2-bf7c3b4186e0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8225a342-2763-4ebd-aa31-3dd1ddc4686a",
+      "lemma_nfc": "Imaynataq",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d41ecd20-1c10-4123-8217-03f1fd59342b",
+          "sense_key": "imaynataq-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Imaynataq' in context as a propn",
+            "es": "definición de 'Imaynataq' en contexto como propn",
+            "fr": "définition de 'Imaynataq' en contexte comme propn",
+            "pt": "definição de 'Imaynataq' em contexto como propn",
+            "it": "definizione di 'Imaynataq' in contesto come propn",
+            "el": "ορισμός του 'Imaynataq' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Imaynataq')",
+            "es": "como se usa en el contexto ('Imaynataq')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Imaynataq_hp1"
+          ],
+          "homonyms": [
+            "Imaynataq_hm1"
+          ],
+          "synonyms": [
+            "Imaynataq_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Imaynataq_distractor_a",
+            "Imaynataq_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4ae42fd4-8da2-48c5-b4bb-9718521d1ca6",
+          "surface_nfc": "Imaynataq",
+          "normalized_lookup": "imaynataq",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "16498aee-da29-4d5e-8526-95988b4f5b1b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "36c3031f-3bb4-4b3f-b66a-e67898ef6408",
+      "lemma_nfc": "Alemania",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3f15bf10-aae1-4b5c-b0a6-2a148bcaafd8",
+          "sense_key": "alemania-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alemania' in context as a propn",
+            "es": "definición de 'Alemania' en contexto como propn",
+            "fr": "définition de 'Alemania' en contexte comme propn",
+            "pt": "definição de 'Alemania' em contexto como propn",
+            "it": "definizione di 'Alemania' in contesto come propn",
+            "el": "ορισμός του 'Alemania' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alemania')",
+            "es": "como se usa en el contexto ('Alemania')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alemania_hp1"
+          ],
+          "homonyms": [
+            "Alemania_hm1"
+          ],
+          "synonyms": [
+            "Alemania_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alemania_distractor_a",
+            "Alemania_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d6c70521-0481-4c78-b1bc-2b61d9e49751",
+          "surface_nfc": "Alemania",
+          "normalized_lookup": "alemania",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "62f5b0b9-5a4c-4546-8da5-e2b76a800477",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d763ba2d-656b-4a04-8539-738ac93e9c37",
+      "lemma_nfc": "Chay",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "88b19cf4-e56d-4e03-bef7-bb5322878c41",
+          "sense_key": "chay-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Chay' in context as a propn",
+            "es": "definición de 'Chay' en contexto como propn",
+            "fr": "définition de 'Chay' en contexte comme propn",
+            "pt": "definição de 'Chay' em contexto como propn",
+            "it": "definizione di 'Chay' in contesto come propn",
+            "el": "ορισμός του 'Chay' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Chay')",
+            "es": "como se usa en el contexto ('Chay')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Chay_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Chay_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Chay_distractor_a",
+            "Chay_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e6ab4d92-dc70-417a-b4e3-69b776316843",
+          "surface_nfc": "Chay",
+          "normalized_lookup": "chay",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3eeb2b6d-3460-475c-8c45-a2ed6bdc67b1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c88995d2-8c36-4cd9-add5-1998f92d7431",
+      "lemma_nfc": "Kunanqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ff7be7a8-518e-410f-8813-469684173574",
+          "sense_key": "kunanqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kunanqa' in context as a propn",
+            "es": "definición de 'Kunanqa' en contexto como propn",
+            "fr": "définition de 'Kunanqa' en contexte comme propn",
+            "pt": "definição de 'Kunanqa' em contexto como propn",
+            "it": "definizione di 'Kunanqa' in contesto come propn",
+            "el": "ορισμός του 'Kunanqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kunanqa')",
+            "es": "como se usa en el contexto ('Kunanqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Kunanqa_hp1"
+          ],
+          "homonyms": [
+            "Kunanqa_hm1"
+          ],
+          "synonyms": [
+            "Kunanqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kunanqa_distractor_a",
+            "Kunanqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d224ecd3-9147-4e89-a07b-d33e0b97974c",
+          "surface_nfc": "Kunanqa",
+          "normalized_lookup": "kunanqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "359844f3-f002-4c59-867f-1a75515c8fef",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9e32af7b-0a9a-4f95-9286-1c7c767a07b2",
+      "lemma_nfc": "Pachak",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "fa7a3b28-d336-405c-bf6f-61180ddfc1f7",
+          "sense_key": "pachak-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Pachak' in context as a propn",
+            "es": "definición de 'Pachak' en contexto como propn",
+            "fr": "définition de 'Pachak' en contexte comme propn",
+            "pt": "definição de 'Pachak' em contexto como propn",
+            "it": "definizione di 'Pachak' in contesto come propn",
+            "el": "ορισμός του 'Pachak' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Pachak')",
+            "es": "como se usa en el contexto ('Pachak')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Pachak_hp1"
+          ],
+          "homonyms": [
+            "Pachak_hm1"
+          ],
+          "synonyms": [
+            "Pachak_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Pachak_distractor_a",
+            "Pachak_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6e133a67-0908-4bad-b488-a9293f0f6d42",
+          "surface_nfc": "Pachak",
+          "normalized_lookup": "pachak",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c00fac2e-48bb-4eaa-a222-fb78ef41c5c1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ba58245b-2961-4e7d-9ea5-c590d858e0b5",
+      "lemma_nfc": "Hinallataq",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9f5fb5db-b9d3-4ac3-9eea-308770feb895",
+          "sense_key": "hinallataq-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Hinallataq' in context as a propn",
+            "es": "definición de 'Hinallataq' en contexto como propn",
+            "fr": "définition de 'Hinallataq' en contexte comme propn",
+            "pt": "definição de 'Hinallataq' em contexto como propn",
+            "it": "definizione di 'Hinallataq' in contesto come propn",
+            "el": "ορισμός του 'Hinallataq' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Hinallataq')",
+            "es": "como se usa en el contexto ('Hinallataq')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Hinallataq_hp1"
+          ],
+          "homonyms": [
+            "Hinallataq_hm1"
+          ],
+          "synonyms": [
+            "Hinallataq_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Hinallataq_distractor_a",
+            "Hinallataq_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "37e8735b-9af2-4ef6-9a67-42b9ba2e2e8a",
+          "surface_nfc": "Hinallataq",
+          "normalized_lookup": "hinallataq",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fd6642f6-e257-4d61-9088-0f56d23aa8c6",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0f192102-7a68-40c1-b0d0-a894b590b575",
+      "lemma_nfc": "Kay",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "acf6da38-b7bd-4213-92ea-64e438dac482",
+          "sense_key": "kay-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Kay' in context as a propn",
+            "es": "definición de 'Kay' en contexto como propn",
+            "fr": "définition de 'Kay' en contexte comme propn",
+            "pt": "definição de 'Kay' em contexto como propn",
+            "it": "definizione di 'Kay' in contesto come propn",
+            "el": "ορισμός του 'Kay' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Kay')",
+            "es": "como se usa en el contexto ('Kay')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Kay_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Kay_distractor_a",
+            "Kay_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b4bb25fe-edea-474c-af4a-fd32e58fe462",
+          "surface_nfc": "Kay",
+          "normalized_lookup": "kay",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d9c0724c-c229-4bf0-a7b8-80a081d128c7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "af763ece-f3f0-4da9-acfd-63870f1f67dc",
+      "lemma_nfc": "Willakuy",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "72d74425-47ea-4090-a66d-7178e4b28a45",
+          "sense_key": "willakuy-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Willakuy' in context as a propn",
+            "es": "definición de 'Willakuy' en contexto como propn",
+            "fr": "définition de 'Willakuy' en contexte comme propn",
+            "pt": "definição de 'Willakuy' em contexto como propn",
+            "it": "definizione di 'Willakuy' in contesto come propn",
+            "el": "ορισμός του 'Willakuy' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Willakuy')",
+            "es": "como se usa en el contexto ('Willakuy')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Willakuy_hp1"
+          ],
+          "homonyms": [
+            "Willakuy_hm1"
+          ],
+          "synonyms": [
+            "Willakuy_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Willakuy_distractor_a",
+            "Willakuy_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0b5132ed-a05b-41a5-9e2f-48d67b6b3fda",
+          "surface_nfc": "Willakuy",
+          "normalized_lookup": "willakuy",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7431a7be-e3c7-4fa4-bbb8-03cc9c5270da",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "92244b1d-f44e-4d78-a9f9-e223c99286ae",
+      "lemma_nfc": "Lampapa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "61eb7286-c545-4046-a5f5-00af6cae3579",
+          "sense_key": "lampapa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Lampapa' in context as a propn",
+            "es": "definición de 'Lampapa' en contexto como propn",
+            "fr": "définition de 'Lampapa' en contexte comme propn",
+            "pt": "definição de 'Lampapa' em contexto como propn",
+            "it": "definizione di 'Lampapa' in contesto come propn",
+            "el": "ορισμός του 'Lampapa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Lampapa')",
+            "es": "como se usa en el contexto ('Lampapa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Lampapa_hp1"
+          ],
+          "homonyms": [
+            "Lampapa_hm1"
+          ],
+          "synonyms": [
+            "Lampapa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Lampapa_distractor_a",
+            "Lampapa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d05bdc4c-88ee-48d2-a8c3-3b237370d9e2",
+          "surface_nfc": "Lampapa",
+          "normalized_lookup": "lampapa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "949d90cd-34a9-4897-82b0-0d24e7ad0c80",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "443b3bf3-1d4f-4ef3-8285-22b5170414db",
+      "lemma_nfc": "Munankichu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a585557b-1803-43fb-a050-6b2e519bfa27",
+          "sense_key": "munankichu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Munankichu' in context as a propn",
+            "es": "definición de 'Munankichu' en contexto como propn",
+            "fr": "définition de 'Munankichu' en contexte comme propn",
+            "pt": "definição de 'Munankichu' em contexto como propn",
+            "it": "definizione di 'Munankichu' in contesto come propn",
+            "el": "ορισμός του 'Munankichu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Munankichu')",
+            "es": "como se usa en el contexto ('Munankichu')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Munankichu_hp1"
+          ],
+          "homonyms": [
+            "Munankichu_hm1"
+          ],
+          "synonyms": [
+            "Munankichu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Munankichu_distractor_a",
+            "Munankichu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "46f6f39d-9cab-468e-99d5-877aaa5c6ad3",
+          "surface_nfc": "Munankichu",
+          "normalized_lookup": "munankichu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "bac7f030-ff74-4574-bef7-6c8b013d7096",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "1691ea56-3b37-4878-936a-e451efe6cdba",
+      "lemma_nfc": "Alexman",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "75044268-8909-468d-8f74-0c834fb50d78",
+          "sense_key": "alexman-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Alexman' in context as a propn",
+            "es": "definición de 'Alexman' en contexto como propn",
+            "fr": "définition de 'Alexman' en contexte comme propn",
+            "pt": "definição de 'Alexman' em contexto como propn",
+            "it": "definizione di 'Alexman' in contesto come propn",
+            "el": "ορισμός του 'Alexman' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Alexman')",
+            "es": "como se usa en el contexto ('Alexman')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Alexman_hp1"
+          ],
+          "homonyms": [
+            "Alexman_hm1"
+          ],
+          "synonyms": [
+            "Alexman_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Alexman_distractor_a",
+            "Alexman_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4ed643a3-347a-439f-a2b5-b488545c78e4",
+          "surface_nfc": "Alexman",
+          "normalized_lookup": "alexman",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1653fc51-78d8-40e8-a56e-3e54790f07a7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d1970e4e-ab65-421c-9435-23741886ef4f",
+      "lemma_nfc": "Ñuqapaqchu",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "de1eaea7-178d-47e1-910b-a948cbc6c2bc",
+          "sense_key": "ñuqapaqchu-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ñuqapaqchu' in context as a propn",
+            "es": "definición de 'Ñuqapaqchu' en contexto como propn",
+            "fr": "définition de 'Ñuqapaqchu' en contexte comme propn",
+            "pt": "definição de 'Ñuqapaqchu' em contexto como propn",
+            "it": "definizione di 'Ñuqapaqchu' in contesto come propn",
+            "el": "ορισμός του 'Ñuqapaqchu' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ñuqapaqchu')",
+            "es": "como se usa en el contexto ('Ñuqapaqchu')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ñuqapaqchu_hp1"
+          ],
+          "homonyms": [
+            "Ñuqapaqchu_hm1"
+          ],
+          "synonyms": [
+            "Ñuqapaqchu_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ñuqapaqchu_distractor_a",
+            "Ñuqapaqchu_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "695c4d44-8271-44a0-bd75-38e29108dbdb",
+          "surface_nfc": "Ñuqapaqchu",
+          "normalized_lookup": "ñuqapaqchu",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e5dd826e-2cc8-41e6-9bf7-640ad53d79dc",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "e7e789af-658b-417d-89a5-08f24b9a4cea",
+      "lemma_nfc": "Ñawinta",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "291e1612-71e9-4c4c-8a63-b32e4c3b7019",
+          "sense_key": "ñawinta-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ñawinta' in context as a propn",
+            "es": "definición de 'Ñawinta' en contexto como propn",
+            "fr": "définition de 'Ñawinta' en contexte comme propn",
+            "pt": "definição de 'Ñawinta' em contexto como propn",
+            "it": "definizione di 'Ñawinta' in contesto come propn",
+            "el": "ορισμός του 'Ñawinta' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ñawinta')",
+            "es": "como se usa en el contexto ('Ñawinta')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ñawinta_hp1"
+          ],
+          "homonyms": [
+            "Ñawinta_hm1"
+          ],
+          "synonyms": [
+            "Ñawinta_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ñawinta_distractor_a",
+            "Ñawinta_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "3fa9513d-8a31-43f0-aedb-1de52233fbdf",
+          "surface_nfc": "Ñawinta",
+          "normalized_lookup": "ñawinta",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "193f00ec-cec5-495a-a76d-126ca3d6ae09",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "02ebfd4d-13c2-4eb7-9bf0-d00c094b9790",
+      "lemma_nfc": "Ñuqaqa",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "51751206-f35a-4de4-b272-11f1ea118471",
+          "sense_key": "ñuqaqa-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Ñuqaqa' in context as a propn",
+            "es": "definición de 'Ñuqaqa' en contexto como propn",
+            "fr": "définition de 'Ñuqaqa' en contexte comme propn",
+            "pt": "definição de 'Ñuqaqa' em contexto como propn",
+            "it": "definizione di 'Ñuqaqa' in contesto come propn",
+            "el": "ορισμός του 'Ñuqaqa' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Ñuqaqa')",
+            "es": "como se usa en el contexto ('Ñuqaqa')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Ñuqaqa_hp1"
+          ],
+          "homonyms": [
+            "Ñuqaqa_hm1"
+          ],
+          "synonyms": [
+            "Ñuqaqa_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Ñuqaqa_distractor_a",
+            "Ñuqaqa_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d5c968a8-0bdd-4e21-b1c3-5898ae90eac2",
+          "surface_nfc": "Ñuqaqa",
+          "normalized_lookup": "ñuqaqa",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9335f27b-f580-4b45-92e2-3c22e2129b53",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5e5e832d-ca21-4e68-91a3-2af14b601bbe",
+      "lemma_nfc": "Icha",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "7bd67e1e-338d-4c0c-9939-deda1decc8ad",
+          "sense_key": "icha-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Icha' in context as a propn",
+            "es": "definición de 'Icha' en contexto como propn",
+            "fr": "définition de 'Icha' en contexte comme propn",
+            "pt": "definição de 'Icha' em contexto como propn",
+            "it": "definizione di 'Icha' in contesto come propn",
+            "el": "ορισμός του 'Icha' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Icha')",
+            "es": "como se usa en el contexto ('Icha')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Icha_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Icha_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Icha_distractor_a",
+            "Icha_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4a3d99ed-b2d3-406a-88a0-df28b43d882a",
+          "surface_nfc": "Icha",
+          "normalized_lookup": "icha",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "935a34b5-7a88-4975-b0c8-e8a9507e3a41",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

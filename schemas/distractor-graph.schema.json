@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/distractor-graph.schema.json",
+  "title": "Distractor & Quiz Graph Network",
+  "type": "object",
+  "required": ["language_code", "relationships"],
+  "properties": {
+    "language_code": { "type": "string" },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_sense_id", "target_sense_id", "type", "difficulty_weight"],
+        "properties": {
+          "source_sense_id": { "type": "string" },
+          "target_sense_id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["homophone", "homonym", "near_synonym", "antonym", "semantic_confusable", "orthographic_confusable", "grammatical_distractor"]
+          },
+          "difficulty_weight": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

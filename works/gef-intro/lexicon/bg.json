@@ -1,0 +1,2759 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "bg",
+  "lexemes": [
+    {
+      "lexeme_id": "16145ad7-0146-4a2e-934b-5caf36bd60ec",
+      "lemma_nfc": "Алекс",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "256c20c0-ddb8-4e81-a6c9-19e2bee32f89",
+          "sense_key": "алекс-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Алекс' in context as a propn",
+            "es": "definición de 'Алекс' en contexto como propn",
+            "fr": "définition de 'Алекс' en contexte comme propn",
+            "pt": "definição de 'Алекс' em contexto como propn",
+            "it": "definizione di 'Алекс' in contesto come propn",
+            "el": "ορισμός του 'Алекс' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Алекс')",
+            "es": "como se usa en el contexto ('Алекс')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Алекс_hp1"
+          ],
+          "homonyms": [
+            "Алекс_hm1"
+          ],
+          "synonyms": [
+            "Алекс_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Алекс_distractor_a",
+            "Алекс_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "7126dc99-5ed5-4467-a569-2d8eabce6a9f",
+          "surface_nfc": "Алекс",
+          "normalized_lookup": "алекс",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "02eda5bf-078b-4c7c-b841-3a41cd73d1f4",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "b032bc09-06ee-462a-92a1-f9ac773608e0",
+      "lemma_nfc": "Понякога",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "46d25702-efe0-4afb-9db2-c5330620d42e",
+          "sense_key": "понякога-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Понякога' in context as a propn",
+            "es": "definición de 'Понякога' en contexto como propn",
+            "fr": "définition de 'Понякога' en contexte comme propn",
+            "pt": "definição de 'Понякога' em contexto como propn",
+            "it": "definizione di 'Понякога' in contesto come propn",
+            "el": "ορισμός του 'Понякога' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Понякога')",
+            "es": "como se usa en el contexto ('Понякога')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Понякога_hp1"
+          ],
+          "homonyms": [
+            "Понякога_hm1"
+          ],
+          "synonyms": [
+            "Понякога_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Понякога_distractor_a",
+            "Понякога_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6bec9a80-674d-46a1-960e-075cfec08484",
+          "surface_nfc": "Понякога",
+          "normalized_lookup": "понякога",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "29dbe2ac-9f3a-4a68-b4b5-3eb19aa89385",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a0f679ed-5084-463e-a157-7324984970b2",
+      "lemma_nfc": "Тази",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "96f1cd83-ec33-447e-a336-d3ff55bc07bd",
+          "sense_key": "тази-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Тази' in context as a propn",
+            "es": "definición de 'Тази' en contexto como propn",
+            "fr": "définition de 'Тази' en contexte comme propn",
+            "pt": "definição de 'Тази' em contexto como propn",
+            "it": "definizione di 'Тази' in contesto come propn",
+            "el": "ορισμός του 'Тази' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Тази')",
+            "es": "como se usa en el contexto ('Тази')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Тази_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Тази_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Тази_distractor_a",
+            "Тази_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4e4ad0f6-4d98-4c57-8297-120f595d8a5a",
+          "surface_nfc": "Тази",
+          "normalized_lookup": "тази",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c1c0f6cd-96ef-4041-b801-c6c50120a609",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "dfde39bb-700f-4c03-9cb1-15650565e28c",
+      "lemma_nfc": "Историята",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "dd3cc08f-a867-4945-8215-942227e2c8dc",
+          "sense_key": "историята-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Историята' in context as a propn",
+            "es": "definición de 'Историята' en contexto como propn",
+            "fr": "définition de 'Историята' en contexte comme propn",
+            "pt": "definição de 'Историята' em contexto como propn",
+            "it": "definizione di 'Историята' in contesto come propn",
+            "el": "ορισμός του 'Историята' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Историята')",
+            "es": "como se usa en el contexto ('Историята')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Историята_hp1"
+          ],
+          "homonyms": [
+            "Историята_hm1"
+          ],
+          "synonyms": [
+            "Историята_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Историята_distractor_a",
+            "Историята_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "fe087a28-468c-44eb-824a-53524d568502",
+          "surface_nfc": "Историята",
+          "normalized_lookup": "историята",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "153c87df-389e-49eb-884d-e63651543a97",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "84a58be9-963f-4d90-8931-9a965db851fb",
+      "lemma_nfc": "Принцесата",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "426b9c0c-26d8-4c39-92d1-99cfd8bd5524",
+          "sense_key": "принцесата-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Принцесата' in context as a propn",
+            "es": "definición de 'Принцесата' en contexto como propn",
+            "fr": "définition de 'Принцесата' en contexte comme propn",
+            "pt": "definição de 'Принцесата' em contexto como propn",
+            "it": "definizione di 'Принцесата' in contesto come propn",
+            "el": "ορισμός του 'Принцесата' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Принцесата')",
+            "es": "como se usa en el contexto ('Принцесата')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Принцесата_hp1"
+          ],
+          "homonyms": [
+            "Принцесата_hm1"
+          ],
+          "synonyms": [
+            "Принцесата_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Принцесата_distractor_a",
+            "Принцесата_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "47f89793-773d-4564-a21c-338315492c06",
+          "surface_nfc": "Принцесата",
+          "normalized_lookup": "принцесата",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7a9e677d-ef4b-42a8-be45-f49e5dc5028c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "28b77f97-28b3-4e57-9e26-0a94276748e7",
+      "lemma_nfc": "Нещо",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "18b6a06f-880f-4289-a741-3d5606c4cd5d",
+          "sense_key": "нещо-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Нещо' in context as a propn",
+            "es": "definición de 'Нещо' en contexto como propn",
+            "fr": "définition de 'Нещо' en contexte comme propn",
+            "pt": "definição de 'Нещо' em contexto como propn",
+            "it": "definizione di 'Нещо' in contesto come propn",
+            "el": "ορισμός του 'Нещо' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Нещо')",
+            "es": "como se usa en el contexto ('Нещо')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Нещо_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Нещо_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Нещо_distractor_a",
+            "Нещо_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "195abe57-4a58-452f-baa7-93f811cd5eeb",
+          "surface_nfc": "Нещо",
+          "normalized_lookup": "нещо",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5bc4b8ef-1b4a-4adf-9622-fd2f9d2568a1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "21ede5f5-7e84-4fe9-9da5-3693a883f7c4",
+      "lemma_nfc": "Драскането",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "75dd8430-3014-4343-8961-2c4a2f8e456c",
+          "sense_key": "драскането-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Драскането' in context as a propn",
+            "es": "definición de 'Драскането' en contexto como propn",
+            "fr": "définition de 'Драскането' en contexte comme propn",
+            "pt": "definição de 'Драскането' em contexto como propn",
+            "it": "definizione di 'Драскането' in contesto come propn",
+            "el": "ορισμός του 'Драскането' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Драскането')",
+            "es": "como se usa en el contexto ('Драскането')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Драскането_hp1"
+          ],
+          "homonyms": [
+            "Драскането_hm1"
+          ],
+          "synonyms": [
+            "Драскането_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Драскането_distractor_a",
+            "Драскането_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9d5efbf9-83f9-40e0-a460-1e06daa149b4",
+          "surface_nfc": "Драскането",
+          "normalized_lookup": "драскането",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9b600afc-1faf-4bf5-b615-1a90ff5ada02",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "eed7c3a2-12d3-430c-95a9-66875d45bfea",
+      "lemma_nfc": "Тя",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f5c522aa-24b4-4657-b845-3e52f6f192ef",
+          "sense_key": "тя-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Тя' in context as a propn",
+            "es": "definición de 'Тя' en contexto como propn",
+            "fr": "définition de 'Тя' en contexte comme propn",
+            "pt": "definição de 'Тя' em contexto como propn",
+            "it": "definizione di 'Тя' in contesto come propn",
+            "el": "ορισμός του 'Тя' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Тя')",
+            "es": "como se usa en el contexto ('Тя')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Тя_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Тя_distractor_a",
+            "Тя_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "363da360-d1ae-4b22-831e-eaebfb16af4b",
+          "surface_nfc": "Тя",
+          "normalized_lookup": "тя",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "e2e61922-5578-46b0-9156-4b759dc32fbd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "688a1798-7125-4fe1-b465-5578b77238fc",
+      "lemma_nfc": "В",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4ee251b8-8e6f-4374-81d8-447cd8040d36",
+          "sense_key": "в-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'В' in context as a propn",
+            "es": "definición de 'В' en contexto como propn",
+            "fr": "définition de 'В' en contexte comme propn",
+            "pt": "definição de 'В' em contexto como propn",
+            "it": "definizione di 'В' in contesto come propn",
+            "el": "ορισμός του 'В' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('В')",
+            "es": "como se usa en el contexto ('В')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "В_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "В_distractor_a",
+            "В_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "1484becc-9e79-488f-8985-a11212fc319a",
+          "surface_nfc": "В",
+          "normalized_lookup": "в",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3e17d978-3d84-4dad-884e-f4c077951d87",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9abd402f-45b5-4a62-9242-54acfa25cb81",
+      "lemma_nfc": "Много",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5e58653d-dd95-4a60-9032-b7ad8c742246",
+          "sense_key": "много-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Много' in context as a propn",
+            "es": "definición de 'Много' en contexto como propn",
+            "fr": "définition de 'Много' en contexte comme propn",
+            "pt": "definição de 'Много' em contexto como propn",
+            "it": "definizione di 'Много' in contesto come propn",
+            "el": "ορισμός του 'Много' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Много')",
+            "es": "como se usa en el contexto ('Много')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Много_hp1"
+          ],
+          "homonyms": [
+            "Много_hm1"
+          ],
+          "synonyms": [
+            "Много_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Много_distractor_a",
+            "Много_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d61f5090-0c81-46e3-879e-771f5ebe87ab",
+          "surface_nfc": "Много",
+          "normalized_lookup": "много",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c54e3511-9fed-4be2-a8f4-c4eaa05a2ab2",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "076c5116-6b60-4b12-bde9-e2ada0be199a",
+      "lemma_nfc": "Кой",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "beeede5d-a4b3-4808-889f-4f19440881fe",
+          "sense_key": "кой-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Кой' in context as a propn",
+            "es": "definición de 'Кой' en contexto como propn",
+            "fr": "définition de 'Кой' en contexte comme propn",
+            "pt": "definição de 'Кой' em contexto como propn",
+            "it": "definizione di 'Кой' in contesto come propn",
+            "el": "ορισμός του 'Кой' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Кой')",
+            "es": "como se usa en el contexto ('Кой')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Кой_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Кой_distractor_a",
+            "Кой_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0ab8c251-cebb-49fc-ae3f-9439c0f97931",
+          "surface_nfc": "Кой",
+          "normalized_lookup": "кой",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9752a4b7-b0f5-48e8-bec2-777cf81e37c3",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "1457bd5f-f3b5-4f15-bb31-45db8a7c5046",
+      "lemma_nfc": "Гласът",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "bd64b0cd-6ba4-41ab-b69c-febe093a0691",
+          "sense_key": "гласът-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Гласът' in context as a propn",
+            "es": "definición de 'Гласът' en contexto como propn",
+            "fr": "définition de 'Гласът' en contexte comme propn",
+            "pt": "definição de 'Гласът' em contexto como propn",
+            "it": "definizione di 'Гласът' in contesto come propn",
+            "el": "ορισμός του 'Гласът' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Гласът')",
+            "es": "como se usa en el contexto ('Гласът')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Гласът_hp1"
+          ],
+          "homonyms": [
+            "Гласът_hm1"
+          ],
+          "synonyms": [
+            "Гласът_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Гласът_distractor_a",
+            "Гласът_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "20b7a112-e9c6-4d03-8f55-4addffae1bba",
+          "surface_nfc": "Гласът",
+          "normalized_lookup": "гласът",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "55195bdc-28f1-4cda-9467-d0f56126a330",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "dcd60198-4956-491c-894f-e31e3ecfec90",
+      "lemma_nfc": "Вместо",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f170f260-11c4-407e-8d47-5de3a5429eb4",
+          "sense_key": "вместо-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Вместо' in context as a propn",
+            "es": "definición de 'Вместо' en contexto como propn",
+            "fr": "définition de 'Вместо' en contexte comme propn",
+            "pt": "definição de 'Вместо' em contexto como propn",
+            "it": "definizione di 'Вместо' in contesto come propn",
+            "el": "ορισμός του 'Вместо' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Вместо')",
+            "es": "como se usa en el contexto ('Вместо')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Вместо_hp1"
+          ],
+          "homonyms": [
+            "Вместо_hm1"
+          ],
+          "synonyms": [
+            "Вместо_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Вместо_distractor_a",
+            "Вместо_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "db2fab57-72f4-4e57-903e-62921f0c4275",
+          "surface_nfc": "Вместо",
+          "normalized_lookup": "вместо",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "93e9302b-9b75-41b0-a224-00cd5089155d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a8a997ad-88cf-4241-9f17-0d1eaa496c52",
+      "lemma_nfc": "Завърта",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "aa288c17-a040-45fb-ba4d-152604449e2e",
+          "sense_key": "завърта-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Завърта' in context as a propn",
+            "es": "definición de 'Завърта' en contexto como propn",
+            "fr": "définition de 'Завърта' en contexte comme propn",
+            "pt": "definição de 'Завърта' em contexto como propn",
+            "it": "definizione di 'Завърта' in contesto come propn",
+            "el": "ορισμός του 'Завърта' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Завърта')",
+            "es": "como se usa en el contexto ('Завърта')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Завърта_hp1"
+          ],
+          "homonyms": [
+            "Завърта_hm1"
+          ],
+          "synonyms": [
+            "Завърта_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Завърта_distractor_a",
+            "Завърта_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a623a352-0e24-4ac9-a5ba-ea690a490c78",
+          "surface_nfc": "Завърта",
+          "normalized_lookup": "завърта",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "79266021-576c-456d-9558-c5f5c04cbecd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "92b05190-c378-488e-b7ac-0afbb153adf6",
+      "lemma_nfc": "Около",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "27d5f4e1-554d-4dac-8962-e6b81b3a45df",
+          "sense_key": "около-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Около' in context as a propn",
+            "es": "definición de 'Около' en contexto como propn",
+            "fr": "définition de 'Около' en contexte comme propn",
+            "pt": "definição de 'Около' em contexto como propn",
+            "it": "definizione di 'Около' in contesto come propn",
+            "el": "ορισμός του 'Около' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Около')",
+            "es": "como se usa en el contexto ('Около')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Около_hp1"
+          ],
+          "homonyms": [
+            "Около_hm1"
+          ],
+          "synonyms": [
+            "Около_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Около_distractor_a",
+            "Около_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6a00a545-681d-4e90-b8cc-c6089334667c",
+          "surface_nfc": "Около",
+          "normalized_lookup": "около",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "68a47169-1602-473c-a48b-c26d18fc071b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0bf10557-0f80-42cb-aa58-dba564ec8ee6",
+      "lemma_nfc": "Две",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "9d42c8d5-0453-4137-abe5-3320318e7f81",
+          "sense_key": "две-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Две' in context as a propn",
+            "es": "definición de 'Две' en contexto como propn",
+            "fr": "définition de 'Две' en contexte comme propn",
+            "pt": "definição de 'Две' em contexto como propn",
+            "it": "definizione di 'Две' in contesto come propn",
+            "el": "ορισμός του 'Две' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Две')",
+            "es": "como se usa en el contexto ('Две')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Две_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Две_distractor_a",
+            "Две_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a847fe66-ed8d-47e6-a0ae-cb599cd74d76",
+          "surface_nfc": "Две",
+          "normalized_lookup": "две",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9938ba26-2a1a-4ecb-be91-50a05a14782c",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "765f208a-077e-4ae1-8f1c-ca04daf06bb8",
+      "lemma_nfc": "После",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "40807b13-26ec-48b9-974f-16cd28bb2384",
+          "sense_key": "после-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'После' in context as a propn",
+            "es": "definición de 'После' en contexto como propn",
+            "fr": "définition de 'После' en contexte comme propn",
+            "pt": "definição de 'После' em contexto como propn",
+            "it": "definizione di 'После' in contesto come propn",
+            "el": "ορισμός του 'После' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('После')",
+            "es": "como se usa en el contexto ('После')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "После_hp1"
+          ],
+          "homonyms": [
+            "После_hm1"
+          ],
+          "synonyms": [
+            "После_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "После_distractor_a",
+            "После_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f5a5c039-d0d7-4f7c-a914-613ab113a33f",
+          "surface_nfc": "После",
+          "normalized_lookup": "после",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "743fb82f-5219-4051-9797-64a152379ce9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a338bbd2-bc41-4bf8-b900-233583e84efb",
+      "lemma_nfc": "Следват",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ebab23c3-3507-45a5-b88f-9dbe988ed61f",
+          "sense_key": "следват-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Следват' in context as a propn",
+            "es": "definición de 'Следват' en contexto como propn",
+            "fr": "définition de 'Следват' en contexte comme propn",
+            "pt": "definição de 'Следват' em contexto como propn",
+            "it": "definizione di 'Следват' in contesto come propn",
+            "el": "ορισμός του 'Следват' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Следват')",
+            "es": "como se usa en el contexto ('Следват')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Следват_hp1"
+          ],
+          "homonyms": [
+            "Следват_hm1"
+          ],
+          "synonyms": [
+            "Следват_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Следват_distractor_a",
+            "Следват_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "8f0bea79-7f93-457f-8fa5-1e00cf7de44c",
+          "surface_nfc": "Следват",
+          "normalized_lookup": "следват",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "d3a09dba-dfb6-4ab0-926c-93e1c7ea450f",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "68d86649-8dd8-4752-be1a-530f36a5ea67",
+      "lemma_nfc": "Отворът",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4556c2ed-cb7f-4126-84dd-73fd43fcfc2e",
+          "sense_key": "отворът-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Отворът' in context as a propn",
+            "es": "definición de 'Отворът' en contexto como propn",
+            "fr": "définition de 'Отворът' en contexte comme propn",
+            "pt": "definição de 'Отворът' em contexto como propn",
+            "it": "definizione di 'Отворът' in contesto come propn",
+            "el": "ορισμός του 'Отворът' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Отворът')",
+            "es": "como se usa en el contexto ('Отворът')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Отворът_hp1"
+          ],
+          "homonyms": [
+            "Отворът_hm1"
+          ],
+          "synonyms": [
+            "Отворът_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Отворът_distractor_a",
+            "Отворът_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "e2ca0e70-9e5e-4177-9c19-6006a84c0dc7",
+          "surface_nfc": "Отворът",
+          "normalized_lookup": "отворът",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "5d62df62-0e0e-4b82-8b0e-90a561c3f638",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fa0dd3dc-0bf8-4ba4-9b69-49cfc5f1ccd5",
+      "lemma_nfc": "Въпреки",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "864051c9-60d2-41c0-ac92-4fbead5d9730",
+          "sense_key": "въпреки-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Въпреки' in context as a propn",
+            "es": "definición de 'Въпреки' en contexto como propn",
+            "fr": "définition de 'Въпреки' en contexte comme propn",
+            "pt": "definição de 'Въпреки' em contexto como propn",
+            "it": "definizione di 'Въпреки' in contesto come propn",
+            "el": "ορισμός του 'Въпреки' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Въпреки')",
+            "es": "como se usa en el contexto ('Въпреки')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Въпреки_hp1"
+          ],
+          "homonyms": [
+            "Въпреки_hm1"
+          ],
+          "synonyms": [
+            "Въпреки_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Въпреки_distractor_a",
+            "Въпреки_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "dbaaae94-88e6-421f-bb00-055e7cf1c3c6",
+          "surface_nfc": "Въпреки",
+          "normalized_lookup": "въпреки",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3327633d-d91d-4b7c-bb28-20bf1099bd11",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "f8fbed10-fb4a-41c9-b4b4-a3221f91d67b",
+      "lemma_nfc": "Малки",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "dfaabedc-5105-452c-baa2-d40a0f452445",
+          "sense_key": "малки-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Малки' in context as a propn",
+            "es": "definición de 'Малки' en contexto como propn",
+            "fr": "définition de 'Малки' en contexte comme propn",
+            "pt": "definição de 'Малки' em contexto como propn",
+            "it": "definizione di 'Малки' in contesto come propn",
+            "el": "ορισμός του 'Малки' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Малки')",
+            "es": "como se usa en el contexto ('Малки')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Малки_hp1"
+          ],
+          "homonyms": [
+            "Малки_hm1"
+          ],
+          "synonyms": [
+            "Малки_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Малки_distractor_a",
+            "Малки_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "c1a2b9e9-6a25-468f-9798-991425090c5c",
+          "surface_nfc": "Малки",
+          "normalized_lookup": "малки",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "660fe240-f304-4ad0-8583-db85c840e074",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "0f20af1c-53c7-410b-bfee-0cce5bb19b21",
+      "lemma_nfc": "Дългата",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "dfe82cc8-ba14-4157-9003-6d1e63bbc9b6",
+          "sense_key": "дългата-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Дългата' in context as a propn",
+            "es": "definición de 'Дългата' en contexto como propn",
+            "fr": "définition de 'Дългата' en contexte comme propn",
+            "pt": "definição de 'Дългата' em contexto como propn",
+            "it": "definizione di 'Дългата' in contesto come propn",
+            "el": "ορισμός του 'Дългата' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Дългата')",
+            "es": "como se usa en el contexto ('Дългата')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Дългата_hp1"
+          ],
+          "homonyms": [
+            "Дългата_hm1"
+          ],
+          "synonyms": [
+            "Дългата_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Дългата_distractor_a",
+            "Дългата_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "71137f0d-ac80-495f-835a-04099cfdb730",
+          "surface_nfc": "Дългата",
+          "normalized_lookup": "дългата",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "4adb5754-6df5-472f-be79-0dc47358698a",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4e1f1483-90fe-4abe-af28-50ceb19a5e3b",
+      "lemma_nfc": "Мангустата",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d5b4c7a3-dfd4-40bb-a0c9-34790273d3bb",
+          "sense_key": "мангустата-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Мангустата' in context as a propn",
+            "es": "definición de 'Мангустата' en contexto como propn",
+            "fr": "définition de 'Мангустата' en contexte comme propn",
+            "pt": "definição de 'Мангустата' em contexto como propn",
+            "it": "definizione di 'Мангустата' in contesto come propn",
+            "el": "ορισμός του 'Мангустата' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Мангустата')",
+            "es": "como se usa en el contexto ('Мангустата')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Мангустата_hp1"
+          ],
+          "homonyms": [
+            "Мангустата_hm1"
+          ],
+          "synonyms": [
+            "Мангустата_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Мангустата_distractor_a",
+            "Мангустата_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0fb94df1-161d-4944-a4bb-f7499b313177",
+          "surface_nfc": "Мангустата",
+          "normalized_lookup": "мангустата",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "7d2591b1-b62f-4169-b03b-dfbb3d0b7819",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "3649ff2f-5929-4737-bbc8-2a7e00a1957c",
+      "lemma_nfc": "Казвам",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "2fbe1260-1c59-47e5-9062-32a384bff8c7",
+          "sense_key": "казвам-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Казвам' in context as a propn",
+            "es": "definición de 'Казвам' en contexto como propn",
+            "fr": "définition de 'Казвам' en contexte comme propn",
+            "pt": "definição de 'Казвам' em contexto como propn",
+            "it": "definizione di 'Казвам' in contesto come propn",
+            "el": "ορισμός του 'Казвам' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Казвам')",
+            "es": "como se usa en el contexto ('Казвам')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Казвам_hp1"
+          ],
+          "homonyms": [
+            "Казвам_hm1"
+          ],
+          "synonyms": [
+            "Казвам_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Казвам_distractor_a",
+            "Казвам_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "7b810977-07d7-4e1e-af58-420bcf950d40",
+          "surface_nfc": "Казвам",
+          "normalized_lookup": "казвам",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "92e748c2-5199-4672-b371-ee26d0cb18fd",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "10c7d328-d079-41c1-95e4-cdb68573ce20",
+      "lemma_nfc": "Gef",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5ae24dd9-7481-4810-b6ab-533d3187aa1d",
+          "sense_key": "gef-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gef' in context as a propn",
+            "es": "definición de 'Gef' en contexto como propn",
+            "fr": "définition de 'Gef' en contexte comme propn",
+            "pt": "definição de 'Gef' em contexto como propn",
+            "it": "definizione di 'Gef' in contesto come propn",
+            "el": "ορισμός του 'Gef' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gef')",
+            "es": "como se usa en el contexto ('Gef')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Gef_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gef_distractor_a",
+            "Gef_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d15d9e26-1b8b-4028-a56b-74bdf1f24132",
+          "surface_nfc": "Gef",
+          "normalized_lookup": "gef",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "1afd4735-b9c3-42cb-9577-f3318d168ddc",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "67527275-1f08-42d4-8251-1d55ac85c542",
+      "lemma_nfc": "Произнася",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b565e2d9-cfd4-4613-8965-82625cb074b3",
+          "sense_key": "произнася-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Произнася' in context as a propn",
+            "es": "definición de 'Произнася' en contexto como propn",
+            "fr": "définition de 'Произнася' en contexte comme propn",
+            "pt": "definição de 'Произнася' em contexto como propn",
+            "it": "definizione di 'Произнася' in contesto come propn",
+            "el": "ορισμός του 'Произнася' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Произнася')",
+            "es": "como se usa en el contexto ('Произнася')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Произнася_hp1"
+          ],
+          "homonyms": [
+            "Произнася_hm1"
+          ],
+          "synonyms": [
+            "Произнася_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Произнася_distractor_a",
+            "Произнася_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "70628400-9633-45d7-8615-e893a9830862",
+          "surface_nfc": "Произнася",
+          "normalized_lookup": "произнася",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "549db8ef-af3c-4d6e-9d83-8ad1d14e9efe",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "76f3bbb0-f73b-4aa3-b39d-ac9584cdcdf2",
+      "lemma_nfc": "Jeff",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3c4f82b2-6033-4c49-9900-be399527ea31",
+          "sense_key": "jeff-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeff' in context as a propn",
+            "es": "definición de 'Jeff' en contexto como propn",
+            "fr": "définition de 'Jeff' en contexte comme propn",
+            "pt": "definição de 'Jeff' em contexto como propn",
+            "it": "definizione di 'Jeff' in contesto come propn",
+            "el": "ορισμός του 'Jeff' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeff')",
+            "es": "como se usa en el contexto ('Jeff')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Jeff_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Jeff_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeff_distractor_a",
+            "Jeff_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "05a923d7-3658-4ba9-99c7-a1d47040c270",
+          "surface_nfc": "Jeff",
+          "normalized_lookup": "jeff",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fb0c06fa-b96a-4f4e-923e-3bc1ef642fcb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "32c1f5a4-15e9-4399-a28e-851cbed3427d",
+      "lemma_nfc": "Откъде",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c689b7aa-1454-4d22-94ea-2aac9ae7fb9e",
+          "sense_key": "откъде-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Откъде' in context as a propn",
+            "es": "definición de 'Откъде' en contexto como propn",
+            "fr": "définition de 'Откъде' en contexte comme propn",
+            "pt": "definição de 'Откъде' em contexto como propn",
+            "it": "definizione di 'Откъде' in contesto come propn",
+            "el": "ορισμός του 'Откъде' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Откъде')",
+            "es": "como se usa en el contexto ('Откъде')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Откъде_hp1"
+          ],
+          "homonyms": [
+            "Откъде_hm1"
+          ],
+          "synonyms": [
+            "Откъде_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Откъде_distractor_a",
+            "Откъде_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "aca3e158-b91f-454a-bca6-3da49a039fa6",
+          "surface_nfc": "Откъде",
+          "normalized_lookup": "откъде",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b7423d03-7b31-4023-a78b-ccc93db21c80",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "d80e81c3-f3d0-4ad8-b758-c2a26c10e7f6",
+      "lemma_nfc": "Чух",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e972e619-f2b5-4677-8c92-ae8ae0144b55",
+          "sense_key": "чух-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Чух' in context as a propn",
+            "es": "definición de 'Чух' en contexto como propn",
+            "fr": "définition de 'Чух' en contexte comme propn",
+            "pt": "definição de 'Чух' em contexto como propn",
+            "it": "definizione di 'Чух' in contesto come propn",
+            "el": "ορισμός του 'Чух' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Чух')",
+            "es": "como se usa en el contexto ('Чух')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Чух_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Чух_distractor_a",
+            "Чух_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "66e877a5-2383-41e6-ad3a-337b4a0ddddd",
+          "surface_nfc": "Чух",
+          "normalized_lookup": "чух",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "dc18db8b-a527-494f-90aa-6ed2cfadc129",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "81fefdd5-e349-4f9f-82c3-f521ea2f53b5",
+      "lemma_nfc": "Германия",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c43682e6-2261-4756-ad93-d118d78e3582",
+          "sense_key": "германия-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Германия' in context as a propn",
+            "es": "definición de 'Германия' en contexto como propn",
+            "fr": "définition de 'Германия' en contexte comme propn",
+            "pt": "definição de 'Германия' em contexto como propn",
+            "it": "definizione di 'Германия' in contesto come propn",
+            "el": "ορισμός του 'Германия' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Германия')",
+            "es": "como se usa en el contexto ('Германия')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Германия_hp1"
+          ],
+          "homonyms": [
+            "Германия_hm1"
+          ],
+          "synonyms": [
+            "Германия_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Германия_distractor_a",
+            "Германия_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "babd37b2-cd37-4840-b127-6fc1ceed2ff1",
+          "surface_nfc": "Германия",
+          "normalized_lookup": "германия",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fc781175-34ca-4779-b576-439a94e544fb",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "79a09ef8-0244-4273-9315-b7d675ab88bb",
+      "lemma_nfc": "Бях",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "2d5f8a94-5c57-4300-ae75-9fff9ba47e59",
+          "sense_key": "бях-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Бях' in context as a propn",
+            "es": "definición de 'Бях' en contexto como propn",
+            "fr": "définition de 'Бях' en contexte comme propn",
+            "pt": "definição de 'Бях' em contexto como propn",
+            "it": "definizione di 'Бях' in contesto come propn",
+            "el": "ορισμός του 'Бях' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Бях')",
+            "es": "como se usa en el contexto ('Бях')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Бях_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Бях_distractor_a",
+            "Бях_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "9b5d3a3a-be9f-4c71-8260-2d569affad7a",
+          "surface_nfc": "Бях",
+          "normalized_lookup": "бях",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "161fa928-3d19-4c1a-9d93-00714f69d09b",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "219c3346-7bff-45f7-b06e-632aa81b6079",
+      "lemma_nfc": "На",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0193c1e4-a644-48e2-958c-497d982cd3fd",
+          "sense_key": "на-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'На' in context as a propn",
+            "es": "definición de 'На' en contexto como propn",
+            "fr": "définition de 'На' en contexte comme propn",
+            "pt": "definição de 'На' em contexto como propn",
+            "it": "definizione di 'На' in contesto come propn",
+            "el": "ορισμός του 'На' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('На')",
+            "es": "como se usa en el contexto ('На')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "На_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "На_distractor_a",
+            "На_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "37042517-ab94-4c5d-8474-03d1ad82837b",
+          "surface_nfc": "На",
+          "normalized_lookup": "на",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "701bcc8a-407b-436b-affc-e0708b938fa1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "c183f6c0-3249-441d-addc-62d501b58d0b",
+      "lemma_nfc": "Сто",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "8b7b021b-1bf0-41ec-b446-a648a30f27ac",
+          "sense_key": "сто-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Сто' in context as a propn",
+            "es": "definición de 'Сто' en contexto como propn",
+            "fr": "définition de 'Сто' en contexte comme propn",
+            "pt": "definição de 'Сто' em contexto como propn",
+            "it": "definizione di 'Сто' in contesto come propn",
+            "el": "ορισμός του 'Сто' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Сто')",
+            "es": "como se usa en el contexto ('Сто')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Сто_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Сто_distractor_a",
+            "Сто_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "ffc5cb88-708b-4e82-adc9-64cf836905b1",
+          "surface_nfc": "Сто",
+          "normalized_lookup": "сто",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "713d900a-7256-4a6b-9656-7845eb189f16",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "8dd53876-17e6-42ad-94be-4d2a4d405f83",
+      "lemma_nfc": "Още",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "39e1d684-6dce-4487-81c1-33deaa56734a",
+          "sense_key": "още-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Още' in context as a propn",
+            "es": "definición de 'Още' en contexto como propn",
+            "fr": "définition de 'Още' en contexte comme propn",
+            "pt": "definição de 'Още' em contexto como propn",
+            "it": "definizione di 'Още' in contesto come propn",
+            "el": "ορισμός του 'Още' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Още')",
+            "es": "como se usa en el contexto ('Още')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Още_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Още_distractor_a",
+            "Още_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d83908f1-f760-4c88-aab8-0f09c704e806",
+          "surface_nfc": "Още",
+          "normalized_lookup": "още",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "3fc4bfd0-3eea-420b-88c8-d3b96702ad10",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "4d210373-8207-4e81-9d39-903f2b8f0a67",
+      "lemma_nfc": "Чувам",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "f839e513-c426-4879-8ca9-d61c00b916ad",
+          "sense_key": "чувам-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Чувам' in context as a propn",
+            "es": "definición de 'Чувам' en contexto como propn",
+            "fr": "définition de 'Чувам' en contexte comme propn",
+            "pt": "definição de 'Чувам' em contexto como propn",
+            "it": "definizione di 'Чувам' in contesto come propn",
+            "el": "ορισμός του 'Чувам' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Чувам')",
+            "es": "como se usa en el contexto ('Чувам')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Чувам_hp1"
+          ],
+          "homonyms": [
+            "Чувам_hm1"
+          ],
+          "synonyms": [
+            "Чувам_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Чувам_distractor_a",
+            "Чувам_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "fec6b2aa-8a7f-4514-96c8-6b9fb2a0304b",
+          "surface_nfc": "Чувам",
+          "normalized_lookup": "чувам",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a24d3cbc-a847-4ec4-8712-9192e477a4f9",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "63e2d324-a999-4d54-a3fb-92da31e44c32",
+      "lemma_nfc": "Думите",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "cba24bd0-6f43-4be6-9338-24624383a238",
+          "sense_key": "думите-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Думите' in context as a propn",
+            "es": "definición de 'Думите' en contexto como propn",
+            "fr": "définition de 'Думите' en contexte comme propn",
+            "pt": "definição de 'Думите' em contexto como propn",
+            "it": "definizione di 'Думите' in contesto come propn",
+            "el": "ορισμός του 'Думите' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Думите')",
+            "es": "como se usa en el contexto ('Думите')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Думите_hp1"
+          ],
+          "homonyms": [
+            "Думите_hm1"
+          ],
+          "synonyms": [
+            "Думите_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Думите_distractor_a",
+            "Думите_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "8dd1de4a-5795-4110-b026-a34ebb69881d",
+          "surface_nfc": "Думите",
+          "normalized_lookup": "думите",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0eb972b0-59ad-4f5f-afa8-656633c1cda7",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "9b314bf3-1955-48e7-bcc0-38bcbe4aa51b",
+      "lemma_nfc": "До",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "d0f29e96-e023-4dd2-953b-6744fa5295fb",
+          "sense_key": "до-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'До' in context as a propn",
+            "es": "definición de 'До' en contexto como propn",
+            "fr": "définition de 'До' en contexte comme propn",
+            "pt": "definição de 'До' em contexto como propn",
+            "it": "definizione di 'До' in contesto come propn",
+            "el": "ορισμός του 'До' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('До')",
+            "es": "como se usa en el contexto ('До')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "До_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "До_distractor_a",
+            "До_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "65b8abd4-30b4-46d6-a9f0-ee40ab91916f",
+          "surface_nfc": "До",
+          "normalized_lookup": "до",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "0d4df08c-550e-47ea-aeb7-4e8dbac8a698",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "bc96fa63-ff0d-4ea3-a12c-7b98da2fea91",
+      "lemma_nfc": "От",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "e30d5986-79d8-40af-bb9e-b2f63c34ffd1",
+          "sense_key": "от-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'От' in context as a propn",
+            "es": "definición de 'От' en contexto como propn",
+            "fr": "définition de 'От' en contexte comme propn",
+            "pt": "definição de 'От' em contexto como propn",
+            "it": "definizione di 'От' in contesto come propn",
+            "el": "ορισμός του 'От' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('От')",
+            "es": "como se usa en el contexto ('От')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "От_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "От_distractor_a",
+            "От_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "2533d073-64b5-49a4-bb47-0ac419cac70b",
+          "surface_nfc": "От",
+          "normalized_lookup": "от",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "bcf17bd3-9c71-45e5-b00a-a45a6c1103fc",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "1d17b4b0-d5f7-42ff-a3a2-cdb5ab3cbf7d",
+      "lemma_nfc": "Искаш",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "296c0305-3197-4a76-b60d-7e7bcb887c3e",
+          "sense_key": "искаш-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Искаш' in context as a propn",
+            "es": "definición de 'Искаш' en contexto como propn",
+            "fr": "définition de 'Искаш' en contexte comme propn",
+            "pt": "definição de 'Искаш' em contexto como propn",
+            "it": "definizione di 'Искаш' in contesto come propn",
+            "el": "ορισμός του 'Искаш' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Искаш')",
+            "es": "como se usa en el contexto ('Искаш')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Искаш_hp1"
+          ],
+          "homonyms": [
+            "Искаш_hm1"
+          ],
+          "synonyms": [
+            "Искаш_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Искаш_distractor_a",
+            "Искаш_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "b258d34c-f8f7-4c1b-92a4-d9a74ec65171",
+          "surface_nfc": "Искаш",
+          "normalized_lookup": "искаш",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "17bae0bf-b45e-4dea-9da6-ca61a03a6f22",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "479a0d26-4156-454b-a1db-c86e7ebb1fa3",
+      "lemma_nfc": "За",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "6416ce8e-168e-4532-873b-18cc793f4e89",
+          "sense_key": "за-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'За' in context as a propn",
+            "es": "definición de 'За' en contexto como propn",
+            "fr": "définition de 'За' en contexte comme propn",
+            "pt": "definição de 'За' em contexto como propn",
+            "it": "definizione di 'За' in contesto come propn",
+            "el": "ορισμός του 'За' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('За')",
+            "es": "como se usa en el contexto ('За')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "За_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "За_distractor_a",
+            "За_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "27c2bdc5-63cd-4083-945c-130b305ff6d5",
+          "surface_nfc": "За",
+          "normalized_lookup": "за",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a271c5a2-a4d0-474b-9fe3-9f0affc89825",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "ea74f256-788c-44b2-8e28-5c7e9a934cf5",
+      "lemma_nfc": "Очите",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "96083276-e0af-4656-812e-386412f66c88",
+          "sense_key": "очите-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Очите' in context as a propn",
+            "es": "definición de 'Очите' en contexto como propn",
+            "fr": "définition de 'Очите' en contexte comme propn",
+            "pt": "definição de 'Очите' em contexto como propn",
+            "it": "definizione di 'Очите' in contesto come propn",
+            "el": "ορισμός του 'Очите' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Очите')",
+            "es": "como se usa en el contexto ('Очите')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Очите_hp1"
+          ],
+          "homonyms": [
+            "Очите_hm1"
+          ],
+          "synonyms": [
+            "Очите_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Очите_distractor_a",
+            "Очите_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "dcbf6cba-6a1a-4dc0-b487-3d045a1601c9",
+          "surface_nfc": "Очите",
+          "normalized_lookup": "очите",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "12830505-8ce0-44d1-8a5b-609bfc033cab",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "fdc7df68-7a0b-449e-9e8f-59d17ccac673",
+      "lemma_nfc": "Или",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c743a871-4c19-43f5-9683-02022fcb5c21",
+          "sense_key": "или-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Или' in context as a propn",
+            "es": "definición de 'Или' en contexto como propn",
+            "fr": "définition de 'Или' en contexte comme propn",
+            "pt": "definição de 'Или' em contexto como propn",
+            "it": "definizione di 'Или' in contesto come propn",
+            "el": "ορισμός του 'Или' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Или')",
+            "es": "como se usa en el contexto ('Или')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [
+            "Или_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Или_distractor_a",
+            "Или_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0c2e8f34-8379-426b-ac0f-99af03fb06e1",
+          "surface_nfc": "Или",
+          "normalized_lookup": "или",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "fd0f5358-c0af-4b91-a706-4d9b9d20e8da",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}

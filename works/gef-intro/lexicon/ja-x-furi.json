@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "ja-x-furi",
+  "lexemes": [
+    {
+      "lexeme_id": "34d661be-bdbd-45d7-993f-866c32a4e98b",
+      "lemma_nfc": "Jeffみたいに発音",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "ee96692b-66cb-4908-862f-d63e39ae8337",
+          "sense_key": "jeffみたいに発音-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Jeffみたいに発音' in context as a propn",
+            "es": "definición de 'Jeffみたいに発音' en contexto como propn",
+            "fr": "définition de 'Jeffみたいに発音' en contexte comme propn",
+            "pt": "definição de 'Jeffみたいに発音' em contexto como propn",
+            "it": "definizione di 'Jeffみたいに発音' in contesto come propn",
+            "el": "ορισμός του 'Jeffみたいに発音' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Jeffみたいに発音')",
+            "es": "como se usa en el contexto ('Jeffみたいに発音')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Jeffみたいに発音_hp1"
+          ],
+          "homonyms": [
+            "Jeffみたいに発音_hm1"
+          ],
+          "synonyms": [
+            "Jeffみたいに発音_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Jeffみたいに発音_distractor_a",
+            "Jeffみたいに発音_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "486f4f38-8a6b-455a-b5eb-7f1c8cf13e7e",
+          "surface_nfc": "Jeffみたいに発音",
+          "normalized_lookup": "jeffみたいに発音",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "15c7f9b1-5963-4224-8d16-7be866cb26ee",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "5a484e70-daac-4447-9cf0-39fc66b96424",
+      "lemma_nfc": "Gefは少",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "4e104c81-d8ee-4c7f-adc6-860846c9e26c",
+          "sense_key": "gefは少-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefは少' in context as a propn",
+            "es": "definición de 'Gefは少' en contexto como propn",
+            "fr": "définition de 'Gefは少' en contexte comme propn",
+            "pt": "definição de 'Gefは少' em contexto como propn",
+            "it": "definizione di 'Gefは少' in contesto come propn",
+            "el": "ορισμός του 'Gefは少' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefは少')",
+            "es": "como se usa en el contexto ('Gefは少')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gefは少_hp1"
+          ],
+          "homonyms": [
+            "Gefは少_hm1"
+          ],
+          "synonyms": [
+            "Gefは少_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefは少_distractor_a",
+            "Gefは少_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "a1173914-1fe2-4ef2-8885-4d8e2e8abe07",
+          "surface_nfc": "Gefは少",
+          "normalized_lookup": "gefは少",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9ea72429-df64-4a52-97cd-60949c6043c1",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "45b8dfe7-47b7-42d8-b634-f34fea26e4b0",
+      "lemma_nfc": "Gefは",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b031d96e-3daa-4964-91d8-6650be185264",
+          "sense_key": "gefは-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefは' in context as a propn",
+            "es": "definición de 'Gefは' en contexto como propn",
+            "fr": "définition de 'Gefは' en contexte comme propn",
+            "pt": "definição de 'Gefは' em contexto como propn",
+            "it": "definizione di 'Gefは' in contesto come propn",
+            "el": "ορισμός του 'Gefは' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefは')",
+            "es": "como se usa en el contexto ('Gefは')"
+          },
+          "cefr_level": "A1",
+          "register_label": "literary",
+          "homophones": [
+            "Gefは_hp1"
+          ],
+          "homonyms": [],
+          "synonyms": [
+            "Gefは_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefは_distractor_a",
+            "Gefは_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "7bb915cf-2993-43f6-aa85-72184eca1a80",
+          "surface_nfc": "Gefは",
+          "normalized_lookup": "gefは",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "4a754b1d-8576-4ef5-b2e1-206803289c7d",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "a1a6f9f3-0be1-4303-888d-398385f4e9ab",
+      "lemma_nfc": "Gefは本",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "a489c774-d3e3-41ac-b894-3afdd2317cf4",
+          "sense_key": "gefは本-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefは本' in context as a propn",
+            "es": "definición de 'Gefは本' en contexto como propn",
+            "fr": "définition de 'Gefは本' en contexte comme propn",
+            "pt": "definição de 'Gefは本' em contexto como propn",
+            "it": "definizione di 'Gefは本' in contesto come propn",
+            "el": "ορισμός του 'Gefは本' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefは本')",
+            "es": "como se usa en el contexto ('Gefは本')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gefは本_hp1"
+          ],
+          "homonyms": [
+            "Gefは本_hm1"
+          ],
+          "synonyms": [
+            "Gefは本_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefは本_distractor_a",
+            "Gefは本_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "d45330a1-d38a-4854-9084-677a424b9238",
+          "surface_nfc": "Gefは本",
+          "normalized_lookup": "gefは本",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "01ce35ec-add3-4d78-9e72-3ee43e9f7632",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "69738f8d-5417-4615-957a-b820f2ebf797",
+      "lemma_nfc": "Gefはアレックスを見",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "b8e953be-3b53-4b8d-b1b0-f2040948754c",
+          "sense_key": "gefはアレックスを見-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefはアレックスを見' in context as a propn",
+            "es": "definición de 'Gefはアレックスを見' en contexto como propn",
+            "fr": "définition de 'Gefはアレックスを見' en contexte comme propn",
+            "pt": "definição de 'Gefはアレックスを見' em contexto como propn",
+            "it": "definizione di 'Gefはアレックスを見' in contesto come propn",
+            "el": "ορισμός του 'Gefはアレックスを見' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefはアレックスを見')",
+            "es": "como se usa en el contexto ('Gefはアレックスを見')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gefはアレックスを見_hp1"
+          ],
+          "homonyms": [
+            "Gefはアレックスを見_hm1"
+          ],
+          "synonyms": [
+            "Gefはアレックスを見_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefはアレックスを見_distractor_a",
+            "Gefはアレックスを見_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "86d6b58c-98f4-48e0-9790-124b5e510929",
+          "surface_nfc": "Gefはアレックスを見",
+          "normalized_lookup": "gefはアレックスを見",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "657b3a58-fcb5-4d3a-9955-1083bb26ace0",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "dfb15de6-c0a2-4245-accd-feab47b6c462",
+      "lemma_nfc": "Gefは両方",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "cf79342e-c58e-470e-ae25-51c194a2b930",
+          "sense_key": "gefは両方-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefは両方' in context as a propn",
+            "es": "definición de 'Gefは両方' en contexto como propn",
+            "fr": "définition de 'Gefは両方' en contexte comme propn",
+            "pt": "definição de 'Gefは両方' em contexto como propn",
+            "it": "definizione di 'Gefは両方' in contesto come propn",
+            "el": "ορισμός του 'Gefは両方' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefは両方')",
+            "es": "como se usa en el contexto ('Gefは両方')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gefは両方_hp1"
+          ],
+          "homonyms": [
+            "Gefは両方_hm1"
+          ],
+          "synonyms": [
+            "Gefは両方_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefは両方_distractor_a",
+            "Gefは両方_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "fbf74a0a-84f3-47b0-8594-2fe8a22e2fce",
+          "surface_nfc": "Gefは両方",
+          "normalized_lookup": "gefは両方",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "9a450998-9729-497a-be14-7bc741d26255",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    },
+    {
+      "lexeme_id": "acb596cc-5f2e-4f15-a9b4-ae28b6c9b7f8",
+      "lemma_nfc": "Gefはビスケットを本",
+      "upos": "PROPN",
+      "proper_noun": true,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1a4d2ad0-7b04-47d4-b3fc-38cbc79b4bbc",
+          "sense_key": "gefはビスケットを本-propn-sense1",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "definition of 'Gefはビスケットを本' in context as a propn",
+            "es": "definición de 'Gefはビスケットを本' en contexto como propn",
+            "fr": "définition de 'Gefはビスケットを本' en contexte comme propn",
+            "pt": "definição de 'Gefはビスケットを本' em contexto como propn",
+            "it": "definizione di 'Gefはビスケットを本' in contesto come propn",
+            "el": "ορισμός του 'Gefはビスケットを本' στο πλαίσιο ως propn"
+          },
+          "sense_hint": {
+            "en": "as used in story context ('Gefはビスケットを本')",
+            "es": "como se usa en el contexto ('Gefはビスケットを本')"
+          },
+          "cefr_level": "A2",
+          "register_label": "literary",
+          "homophones": [
+            "Gefはビスケットを本_hp1"
+          ],
+          "homonyms": [
+            "Gefはビスケットを本_hm1"
+          ],
+          "synonyms": [
+            "Gefはビスケットを本_syn1"
+          ],
+          "antonyms": [],
+          "confusable_senses": [
+            "Gefはビスケットを本_distractor_a",
+            "Gefはビスケットを本_distractor_b"
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "3d7332dd-1ed3-4cc9-af57-39b7114e6644",
+          "surface_nfc": "Gefはビスケットを本",
+          "normalized_lookup": "gefはビスケットを本",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "54affb7f-ff37-4786-94e1-a5a720201c80",
+              "features": {
+                "base": {
+                  "number": "singular",
+                  "gender": "common"
+                },
+                "possessor": {},
+                "subject": {},
+                "object": {},
+                "clitic": {}
+              },
+              "display_label_key": "propn form"
+            }
+          ]
+        }
+      ],
+      "language_pos": "proper-name"
+    }
+  ]
+}
