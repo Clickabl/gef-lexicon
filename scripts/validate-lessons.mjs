@@ -9,19 +9,33 @@ const fail = (message) => { console.error(`FAIL: ${message}`); errors += 1; };
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 
 const lexical = {
-  lexeme: new Set(), sense: new Set(), form: new Set(), analysis: new Set(), concept: new Set(),
+  lexeme: new Set(),
+  sense: new Set(),
+  form: new Set(),
+  analysis: new Set(),
+  concept: new Set(),
+  name: new Set(),
+  name_family: new Set(),
+  name_form: new Set(),
+  entity: new Set(),
 };
 const semanticFunctions = new Set();
 const constructions = new Set();
 const lessons = new Map();
+
+function listDirs(path) {
+  if (!existsSync(path)) return [];
+  return readdirSync(path).filter((entry) => statSync(join(path, entry)).isDirectory());
+}
 
 function loadLexicalIds() {
   const conceptsPath = join(ROOT, 'concepts', 'graph.json');
   if (existsSync(conceptsPath)) {
     for (const c of readJson(conceptsPath).concepts ?? []) lexical.concept.add(c.concept_id);
   }
+
   const languagesDir = join(ROOT, 'languages');
-  for (const lang of readdirSync(languagesDir)) {
+  for (const lang of listDirs(languagesDir)) {
     const path = join(languagesDir, lang, 'lexicon.json');
     if (!existsSync(path)) continue;
     const doc = readJson(path);
@@ -32,6 +46,33 @@ function loadLexicalIds() {
         lexical.form.add(form.form_id);
         for (const analysis of form.analyses ?? []) lexical.analysis.add(analysis.analysis_id);
       }
+    }
+  }
+
+  const namesDir = join(ROOT, 'names');
+  for (const lang of listDirs(namesDir)) {
+    for (const file of readdirSync(join(namesDir, lang)).filter((entry) => entry.endsWith('.json'))) {
+      for (const name of readJson(join(namesDir, lang, file)).names ?? []) lexical.name.add(name.name_id);
+    }
+  }
+
+  const familiesDir = join(ROOT, 'name-families');
+  if (existsSync(familiesDir)) {
+    for (const file of readdirSync(familiesDir).filter((entry) => entry.endsWith('.json'))) {
+      const family = readJson(join(familiesDir, file));
+      lexical.name_family.add(family.family_id);
+      for (const set of family.equivalence_sets ?? []) {
+        for (const form of set.forms ?? []) lexical.name_form.add(form.form_id);
+      }
+    }
+  }
+
+  const worksDir = join(ROOT, 'works');
+  for (const work of listDirs(worksDir)) {
+    const entityDir = join(worksDir, work, 'entities');
+    if (!existsSync(entityDir)) continue;
+    for (const file of readdirSync(entityDir).filter((entry) => entry.endsWith('.json'))) {
+      for (const entity of readJson(join(entityDir, file)).entities ?? []) lexical.entity.add(entity.entity_id);
     }
   }
 }
@@ -54,7 +95,8 @@ function checkTypedRef(ref, where) {
   }
   if (type === 'phrase_pattern') return; // Phrase-pattern registry is not yet centralized in this repo.
   const set = lexical[type];
-  if (set && !set.has(id)) fail(`${where}: unknown ${type} ${id}`);
+  if (!set) return fail(`${where}: unsupported typed-ref target_type ${type}`);
+  if (!set.has(id)) fail(`${where}: unknown ${type} ${id}`);
 }
 
 function loadSemanticFunctions() {
@@ -65,7 +107,7 @@ function loadSemanticFunctions() {
 
 function loadConstructions() {
   const languagesDir = join(ROOT, 'languages');
-  for (const lang of readdirSync(languagesDir)) {
+  for (const lang of listDirs(languagesDir)) {
     const path = join(languagesDir, lang, 'constructions.json');
     if (!existsSync(path)) continue;
     const doc = readJson(path);
@@ -73,7 +115,7 @@ function loadConstructions() {
     for (const c of doc.constructions ?? []) registerUnique(constructions, c.construction_id, 'construction');
   }
   // Second pass so constructions may safely reference constructions declared later.
-  for (const lang of readdirSync(languagesDir)) {
+  for (const lang of listDirs(languagesDir)) {
     const path = join(languagesDir, lang, 'constructions.json');
     if (!existsSync(path)) continue;
     const doc = readJson(path);
@@ -87,12 +129,10 @@ function loadConstructions() {
 function walkLessons() {
   const root = join(ROOT, 'lessons');
   if (!existsSync(root)) return;
-  for (const lang of readdirSync(root)) {
+  for (const lang of listDirs(root)) {
     const langDir = join(root, lang);
-    if (!statSync(langDir).isDirectory()) continue;
-    for (const slug of readdirSync(langDir)) {
+    for (const slug of listDirs(langDir)) {
       const lessonDir = join(langDir, slug);
-      if (!statSync(lessonDir).isDirectory()) continue;
       const path = join(lessonDir, 'lesson.json');
       if (!existsSync(path)) continue;
       const lesson = readJson(path);
