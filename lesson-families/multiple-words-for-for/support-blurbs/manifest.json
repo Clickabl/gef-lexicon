@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 2,
+  "source_summary_en": "Languages divide meaning differently. Ideas like purpose, reason, destination, recipient, exchange, and deadlines may use one form in one language and several in another. This lesson shows how the language you are learning handles them.",
+  "source_tooltip_en": "Learn how the language you are learning expresses these relationships.",
+  "opening_sequence": [
+    "generic_topic_intro",
+    "english_for_bridge",
+    "support_language_context",
+    "target_language_rules_and_examples"
+  ],
+  "localization_rules": [
+    "The generic topic intro must not assume English, the support language, or the target language.",
+    "Do not mention English or the word 'for' in the generic blurb or tooltip.",
+    "English 'for' is introduced only in the following comparison bridge.",
+    "The support/native-language block follows the English bridge and uses that language's reviewed grammar facts when available.",
+    "Do not invent a one-word equivalent where the language uses several words, cases, particles, endings, or constructions.",
+    "Translations are generated candidates until reviewed; later review may improve wording without changing the source meaning."
+  ],
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json",
+    "4": "tier4.json"
+  },
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 30, "4": 53},
+  "expected_total": 104,
+  "review_state": "generated"
+}
