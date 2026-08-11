@@ -3,7 +3,14 @@
   "$id": "gef-lexicon/language-profile.schema.json",
   "title": "Language Lexicon Profile",
   "type": "object",
-  "required": ["language_code", "language_name_en", "morphology_strategy", "default_script"],
+  "required": [
+    "language_code",
+    "language_name_en",
+    "morphology_strategy",
+    "default_script",
+    "writing_direction",
+    "word_segmentation_behavior"
+  ],
   "properties": {
     "language_code": { "type": "string" },
     "language_name_en": { "type": "string" },
@@ -12,6 +19,20 @@
       "enum": ["enumerated", "generated", "mixed", "invariant"]
     },
     "default_script": { "type": "string" },
+    "writing_direction": {
+      "type": "string",
+      "enum": ["ltr", "rtl"]
+    },
+    "word_segmentation_behavior": {
+      "type": "string",
+      "enum": ["space_separated", "character_script_unsegmented", "morphological_compounded"]
+    },
+    "tokenizer_type": { "type": "string" },
+    "politeness_system_supported": { "type": "boolean", "default": false },
+    "classifier_behavior": {
+      "type": "string",
+      "enum": ["none", "required_with_numerals", "optional"]
+    },
     "supported_feature_layers": {
       "type": "array",
       "items": { "type": "string" }

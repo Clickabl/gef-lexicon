@@ -1,0 +1,14 @@
+{
+  "language_code": "el",
+  "language_name_en": "Greek",
+  "morphology_strategy": "mixed",
+  "default_script": "Grek",
+  "writing_direction": "ltr",
+  "word_segmentation_behavior": "space_separated",
+  "tokenizer_type": "icu",
+  "politeness_system_supported": true,
+  "classifier_behavior": "none",
+  "supported_feature_layers": ["base", "possessor", "clitic"],
+  "supported_cases": ["nominative", "genitive", "accusative", "vocative"],
+  "supported_genders_or_classes": ["masculine", "feminine", "neuter"]
+}

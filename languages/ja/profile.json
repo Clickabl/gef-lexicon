@@ -1,0 +1,14 @@
+{
+  "language_code": "ja",
+  "language_name_en": "Japanese",
+  "morphology_strategy": "mixed",
+  "default_script": "Jpan",
+  "writing_direction": "ltr",
+  "word_segmentation_behavior": "character_script_unsegmented",
+  "tokenizer_type": "sudachi",
+  "politeness_system_supported": true,
+  "classifier_behavior": "required_with_numerals",
+  "supported_feature_layers": ["base", "clitic"],
+  "supported_cases": ["ga", "o", "ni", "e", "de", "no", "kara", "made", "to"],
+  "supported_genders_or_classes": []
+}

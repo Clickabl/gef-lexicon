@@ -1,0 +1,14 @@
+{
+  "language_code": "en",
+  "language_name_en": "English",
+  "morphology_strategy": "mixed",
+  "default_script": "Latn",
+  "writing_direction": "ltr",
+  "word_segmentation_behavior": "space_separated",
+  "tokenizer_type": "whitespace_punct",
+  "politeness_system_supported": false,
+  "classifier_behavior": "none",
+  "supported_feature_layers": ["base", "possessor", "clitic"],
+  "supported_cases": ["nominative", "accusative", "genitive"],
+  "supported_genders_or_classes": []
+}
