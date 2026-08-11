@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson-rendering.schema.json",
+  "title": "GEF Lesson Support-Language Rendering",
+  "type": "object",
+  "required": ["schema_version", "lesson_id", "support_language_tag", "title", "invitation", "blocks", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+    "support_language_tag": {"type": "string", "minLength": 1},
+    "proficiency_band": {"type": "string", "enum": ["beginner", "intermediate", "advanced", "all"]},
+    "register": {"type": "string"},
+    "title": {"type": "string", "minLength": 1},
+    "invitation": {"type": "string", "minLength": 1},
+    "summary": {"type": "string"},
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["block_id", "type"],
+        "properties": {
+          "block_id": {"type": "string", "minLength": 1},
+          "type": {"type": "string", "enum": ["explanation", "rule", "comparison", "question", "answer_explanation", "cultural_note", "dynamic_example_slot"]},
+          "text": {"type": "string"},
+          "rule_id": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"},
+          "slot": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "rule_explanations": {"type": "object", "additionalProperties": {"type": "string"}},
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": false
+}
