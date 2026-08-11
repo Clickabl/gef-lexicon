@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/construction.schema.json",
+  "title": "GEF Language Construction Registry",
+  "type": "object",
+  "required": ["schema_version", "language_code", "constructions"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "language_code": {"type": "string", "minLength": 1},
+    "constructions": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/construction"}
+    }
+  },
+  "definitions": {
+    "typedRef": {
+      "type": "object",
+      "required": ["target_type", "target_id"],
+      "properties": {
+        "target_type": {"type": "string", "enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept"]},
+        "target_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "construction": {
+      "type": "object",
+      "required": ["construction_id", "construction_key", "kind", "review_state"],
+      "properties": {
+        "construction_id": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"},
+        "construction_key": {"type": "string", "minLength": 1},
+        "kind": {"type": "string", "enum": ["lexical_contrast", "multiword_expression", "syntax", "morphosyntax", "discourse", "derivation", "orthography", "other"]},
+        "members": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
+        "semantic_function_ids": {"type": "array", "items": {"type": "string", "pattern": "^SEM\\.[A-Z0-9._-]+$"}},
+        "feature_constraints": {"type": "object"},
+        "notes": {"type": "string"},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
