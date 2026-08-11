@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "family_id": "NF.alexander",
+  "family_key": "alexander-family",
+  "origin_languages": ["grc", "el"],
+  "origin_note": "Candidate family grouping for names historically treated as forms/equivalents of Alexander/Alexandros. The family preserves distinct forms and does not imply that people using them share one identity.",
+  "etymology_note": "Detailed etymology remains candidate until reviewed against an onomastic source; Wikidata is used here only to seed identity/equivalence candidates.",
+  "meaning_note": "Do not display a single name meaning as verified until the etymology record has separate source review.",
+  "equivalence_sets": [
+    {
+      "equivalence_set_id": "NFEQ.alexander.short-unisex",
+      "role": "short_unisex",
+      "note": "Short forms/adaptations associated with the Alexander family. Gender association remains locale/time dependent and is stored separately as sourced usage data.",
+      "forms": [
+        {
+          "form_id": "NFF.alexander.en.alex",
+          "text": "Alex",
+          "language_tag": "en",
+          "locale_tags": ["en"],
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "common",
+          "name_id": "name_en_alex",
+          "external_ids": {"wikidata": "Q13258171"},
+          "source_refs": ["src_wikidata_q13258171_alex"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.es.alex-accented",
+          "text": "Álex",
+          "language_tag": "es",
+          "locale_tags": ["es"],
+          "script": "Latn",
+          "relation_type": "traditional_adaptation",
+          "usage": "available",
+          "source_refs": ["src_wikidata_q13258171_alex"],
+          "note": "Candidate Spanish-form association. Requires Spanish native/onomastic review before automatic user-name localization.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ca.alex",
+          "text": "Àlex",
+          "language_tag": "ca",
+          "locale_tags": ["ca"],
+          "script": "Latn",
+          "relation_type": "traditional_adaptation",
+          "usage": "available",
+          "source_refs": ["src_wikidata_q13258171_alex"],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.alexander.full-masculine",
+      "role": "full_masculine",
+      "note": "Full masculine equivalents/cognates kept distinct from short/unisex Alex forms so the app never changes gendered form automatically without a compatible user/book policy.",
+      "forms": [
+        {
+          "form_id": "NFF.alexander.en.alexander",
+          "text": "Alexander",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q923"},
+          "source_refs": ["src_wikidata_q923_alexander"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.es.alejandro",
+          "text": "Alejandro",
+          "language_tag": "es",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q1707169"},
+          "source_refs": ["src_wikidata_q1707169_alejandro"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.el.alexandros",
+          "text": "Αλέξανδρος",
+          "language_tag": "el",
+          "script": "Grek",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q19828977"},
+          "source_refs": ["src_wikidata_q19828977_alexandros"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.it.alessandro",
+          "text": "Alessandro",
+          "language_tag": "it",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q17501723"},
+          "source_refs": ["src_wikidata_q17501723_alessandro"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.fr.alexandre",
+          "text": "Alexandre",
+          "language_tag": "fr",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q16002466"},
+          "source_refs": ["src_wikidata_q16002466_alexandre"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.pt.alexandre",
+          "text": "Alexandre",
+          "language_tag": "pt",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q16002466"},
+          "source_refs": ["src_wikidata_q16002466_alexandre"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ru.aleksandr",
+          "text": "Александр",
+          "language_tag": "ru",
+          "script": "Cyrl",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "external_ids": {"wikidata": "Q17501806"},
+          "source_refs": ["src_wikidata_q17501806_aleksandr"],
+          "review_state": "candidate"
+        }
+      ]
+    }
+  ],
+  "localization_policy": {
+    "fallback_order": ["reviewed_local_equivalent", "reviewed_traditional_adaptation", "reviewed_transliteration", "preserve_entered_form"],
+    "never_cross_equivalence_sets_automatically": true,
+    "book_override_allowed": true,
+    "user_override_allowed": true
+  },
+  "source_refs": [
+    "src_wikidata_q13258171_alex",
+    "src_wikidata_q923_alexander",
+    "src_wikidata_q1707169_alejandro",
+    "src_wikidata_q19828977_alexandros",
+    "src_wikidata_q17501723_alessandro",
+    "src_wikidata_q16002466_alexandre",
+    "src_wikidata_q17501806_aleksandr"
+  ],
+  "review_state": "candidate"
+}
