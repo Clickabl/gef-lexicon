@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "canonicalSource": "Clickabl/gef-expo/registry/language-support.json",
+  "canonicalSourceSchemaVersion": 3,
+  "canonicalUiOnlySource": "Clickabl/gef-expo/registry/ui-only-languages.json",
+  "reviewed": "2026-08-11",
+  "learnFromLanguages": ["en","es","fr","pt","it","el","zh","hi","ar","bn","ru","id","ur","de","ja","pcm","mr","vi","te","ha","tr","pa","sw","fil","ta","yue","fa","ko","th","jv","af","ak","am","as","az","ba","be","bg","bs","ca","cs","cv","cy","da","dsb","et","eu","fi","ga","gd","gl","gu","he","hr","hsb","hu","hy","ig","is","ka","kk","km","kn","kok","ky","lo","lt","lv","mk","ml","mn","ms","my","nb","ne","nl","nn","or","pl","ps","qu","rm","ro","sd","shn","si","sk","sl","so","sq","sr","sv","ti","tk","uk","uz","yo","zu","haw","bho","om","ht","ku","ckb"],
+  "activeUiOnlyProductLanguages": ["chr","pirate"],
+  "rules": {
+    "lexiconLanguageDirectoriesMustBeLearnFromIdentities": true,
+    "uiOnlyLanguagesCannotHaveLexiconLanguageTrees": true,
+    "localeAndScriptVariantsAreNotLanguageIdentities": true,
+    "refreshWhenCanonicalLanguageIdentitySetChanges": true
+  }
+}
