@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.es.prep.por_para.core",
+  "lesson_key": "spanish-por-vs-para-core",
+  "target_language": "es",
+  "curriculum_concept_ids": ["prepositions", "purpose_cause_goal", "path_route", "beneficiary", "time_goal"],
+  "construction_ids": [
+    "CTR.es.prep.por_path_route",
+    "CTR.es.prep.por_cause_reason",
+    "CTR.es.prep.por_que_question",
+    "CTR.es.discourse.por_eso",
+    "CTR.es.prep.por_means_channel",
+    "CTR.es.prep.por_exchange_substitution",
+    "CTR.es.prep.por_distributive",
+    "CTR.es.prep.para_purpose_infinitive",
+    "CTR.es.prep.para_destination_goal",
+    "CTR.es.prep.para_beneficiary",
+    "CTR.es.prep.para_deadline"
+  ],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A2",
+  "rules": [
+    {"rule_id":"RULE.es.por_para.por_path_route","rule_key":"por-path-route","order":1,"semantic_function_ids":["SEM.PATH_ROUTE"],"construction_ids":["CTR.es.prep.por_path_route"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_path_route"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.por_cause_reason","rule_key":"por-cause-reason","order":2,"semantic_function_ids":["SEM.CAUSE_REASON"],"construction_ids":["CTR.es.prep.por_cause_reason"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_cause_reason"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.por_reason_question","rule_key":"por-que-question","order":3,"semantic_function_ids":["SEM.INTERROGATIVE_REASON","SEM.CAUSE_REASON"],"construction_ids":["CTR.es.prep.por_que_question"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_que_question"}],"practice_eligible_by_default":false,"notes":"Teach as the interrogative expression por qué, not as an isolated token substitution."},
+    {"rule_id":"RULE.es.por_para.por_consequence","rule_key":"por-eso-consequence","order":4,"semantic_function_ids":["SEM.CONSEQUENCE_LINK","SEM.CAUSE_REASON"],"construction_ids":["CTR.es.discourse.por_eso"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.discourse.por_eso"}],"practice_eligible_by_default":false},
+    {"rule_id":"RULE.es.por_para.por_means_channel","rule_key":"por-means-channel","order":5,"semantic_function_ids":["SEM.MEANS_CHANNEL"],"construction_ids":["CTR.es.prep.por_means_channel"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_means_channel"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.por_exchange_substitution","rule_key":"por-exchange-substitution","order":6,"semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"construction_ids":["CTR.es.prep.por_exchange_substitution"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_exchange_substitution"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.por_distributive","rule_key":"por-distributive-sequence","order":7,"semantic_function_ids":["SEM.DISTRIBUTIVE_SEQUENCE"],"construction_ids":["CTR.es.prep.por_distributive"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.por_distributive"}],"practice_eligible_by_default":false},
+    {"rule_id":"RULE.es.por_para.para_purpose","rule_key":"para-purpose","order":8,"semantic_function_ids":["SEM.PURPOSE"],"construction_ids":["CTR.es.prep.para_purpose_infinitive"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.para_purpose_infinitive"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.para_destination_goal","rule_key":"para-destination-goal","order":9,"semantic_function_ids":["SEM.DESTINATION_GOAL"],"construction_ids":["CTR.es.prep.para_destination_goal"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.para_destination_goal"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.para_beneficiary","rule_key":"para-beneficiary","order":10,"semantic_function_ids":["SEM.BENEFICIARY"],"construction_ids":["CTR.es.prep.para_beneficiary"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.para_beneficiary"}],"practice_eligible_by_default":true},
+    {"rule_id":"RULE.es.por_para.para_deadline","rule_key":"para-deadline-target-time","order":11,"semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"construction_ids":["CTR.es.prep.para_deadline"],"match_refs":[{"target_type":"construction","target_id":"CTR.es.prep.para_deadline"}],"practice_eligible_by_default":true}
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.es.por_para.tap","trigger_type":"tap","match_any":[{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000301"},{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000302"}],"notes":"Expose a lesson link in the tap sheet when the occurrence has reviewed/candidate lesson evidence."},
+    {"trigger_id":"TRG.es.por_para.repeated","trigger_type":"repeated_encounter","match_any":[{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000301"},{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000302"}],"minimum_encounters":3},
+    {"trigger_id":"TRG.es.por_para.preflight","trigger_type":"learning_mode_preflight","match_any":[{"target_type":"construction","target_id":"CTR.es.prep.por_path_route"},{"target_type":"construction","target_id":"CTR.es.prep.para_purpose_infinitive"}],"notes":"Rank only when the chapter has sufficient reviewed/candidate lesson coverage and the learner profile permits it."}
+  ],
+  "practice_modules": [
+    {"module":"inline_choice_cloze","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"],"choice_refs":[{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000301"},{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000302"}],"constraints":{"require_unique_defensible_answer":true}},
+    {"module":"why_this","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_reason_question","RULE.es.por_para.por_consequence","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.por_distributive","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"]}
+  ],
+  "example_query": {"prefer_current_book":true,"max_book_examples":5,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
+  "interaction_defaults": {"offer_mode":"tap_sheet","dismissal_behavior":"Suppress repeated contextual invitations after explicit dismissal; manual Lessons access remains available.","cooldown_policy":"Reader-owned learner-state policy; lesson data does not hard-code a wall-clock cadence."},
+  "review_state": "candidate",
+  "version": 1
+}
