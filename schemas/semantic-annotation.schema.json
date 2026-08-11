@@ -2,37 +2,80 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/semantic-annotation.schema.json",
   "title": "GEF Passage Semantic Annotation",
+  "description": "Standoff passage analysis. This schema stores semantic/linguistic resolution, never visual styling.",
   "type": "object",
   "required": ["schema_version", "work_id", "language_code", "offset_unit", "annotations"],
   "properties": {
-    "schema_version": {"type": "integer", "const": 1},
+    "schema_version": {"type": "integer", "const": 2},
     "work_id": {"type": "string"},
+    "edition_id": {"type": "string"},
     "language_code": {"type": "string"},
     "offset_unit": {"type": "string", "const": "unicode_codepoint_nfc", "description": "Offsets are zero-based, end-exclusive Unicode code-point indices measured after NFC normalization of the exact segment text."},
     "annotations": {"type": "array", "items": {"$ref": "#/definitions/annotation"}}
   },
   "definitions": {
+    "typedRef": {
+      "type": "object",
+      "required": ["target_type", "target_id"],
+      "properties": {
+        "target_type": {"type": "string", "enum": ["entity", "name", "expression", "construction", "sense", "lexeme", "form", "analysis", "concept", "semantic_function"]},
+        "target_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string"},
+        "display_priority": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "lessonMatch": {
+      "type": "object",
+      "required": ["lesson_id", "example_quality", "practice_eligible", "review_state"],
+      "properties": {
+        "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+        "rule_id": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"},
+        "trigger_id": {"type": "string", "pattern": "^TRG\\.[A-Za-z0-9._-]+$"},
+        "example_quality": {"type": "string", "enum": ["avoid", "usable", "good", "excellent"]},
+        "practice_eligible": {"type": "boolean"},
+        "quality_flags": {"type": "array", "items": {"type": "string", "enum": ["clean_example", "ambiguous_subject", "ambiguous_sense", "unusual_word_order", "archaic", "dialect_sensitive", "spoiler_risk", "requires_prior_lesson", "multi_answer"]}},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+        "reviewer": {"type": "string"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "ambiguity": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string", "enum": ["resolved", "candidate", "unresolved"]},
+        "candidate_targets": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
     "annotation": {
       "type": "object",
-      "required": ["annotation_id", "segment_id", "start_char", "end_char", "surface", "target"],
+      "required": ["annotation_id", "segment_id", "start_char", "end_char", "surface", "span_kind", "resolution_chain", "ambiguity", "annotation_source", "review_state"],
       "properties": {
         "annotation_id": {"type": "string", "pattern": "^ann_[A-Za-z0-9._:-]+$"},
         "segment_id": {"type": "string"},
         "start_char": {"type": "integer", "minimum": 0},
         "end_char": {"type": "integer", "minimum": 0},
         "surface": {"type": "string"},
-        "target": {
-          "type": "object",
-          "required": ["target_type", "target_id"],
-          "properties": {
-            "target_type": {"type": "string", "enum": ["sense", "entity", "name", "concept"]},
-            "target_id": {"type": "string"}
-          }
+        "span_kind": {"type": "string", "enum": ["token", "phrase", "named_entity", "construction", "clause", "other"]},
+        "resolution_chain": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Progressive semantic/linguistic disclosure for the exact occurrence. Higher-level/longer-span objects normally appear before lower lexical/morphological objects.",
+          "items": {"$ref": "#/definitions/typedRef"}
         },
-        "analysis_id": {"type": "string"},
+        "lesson_matches": {"type": "array", "items": {"$ref": "#/definitions/lessonMatch"}},
+        "ambiguity": {"$ref": "#/definitions/ambiguity"},
         "confidence": {"type": "number", "minimum": 0, "maximum": 1},
-        "annotation_source": {"type": "string", "enum": ["human", "machine", "imported"]}
-      }
+        "annotation_source": {"type": "string", "enum": ["human", "machine", "imported"]},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+        "provenance_refs": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
     }
-  }
+  },
+  "additionalProperties": false
 }
