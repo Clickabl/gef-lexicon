@@ -3,7 +3,8 @@
     "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs",
     "validate:english": "node scripts/validate-english-coverage.mjs",
     "compile:concepts": "node scripts/compile-concept-index.mjs",
-    "compile:sqlite": "node scripts/compile-sqlite.mjs"
+    "compile:sqlite": "node scripts/compile-sqlite.mjs",
+    "compile:names": "node scripts/compile-name-index.mjs"
   },
   "dependencies": {
     "ajv": "^8.20.0",
