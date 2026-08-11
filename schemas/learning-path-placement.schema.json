@@ -6,6 +6,8 @@
   "required": ["schema_version", "placements"],
   "properties": {
     "schema_version": {"type": "integer", "const": 1},
+    "source_registry": {"type": "string", "minLength": 1},
+    "source_program": {"type": "string", "minLength": 1},
     "placements": {
       "type": "array",
       "items": {
