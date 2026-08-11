@@ -1,0 +1,21 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "$id":"gef-lexicon/curriculum-taxonomy.schema.json",
+  "title":"GEF Universal Curriculum Taxonomy",
+  "type":"object",
+  "required":["schema_version","concepts"],
+  "properties":{
+    "schema_version":{"type":"integer","const":1},
+    "concepts":{"type":"array","items":{
+      "type":"object",
+      "required":["curriculum_concept_id","key","family"],
+      "properties":{
+        "curriculum_concept_id":{"type":"string","pattern":"^CURR\\.[A-Z0-9._-]+$"},
+        "key":{"type":"string","minLength":1},
+        "family":{"type":"string","minLength":1}
+      },
+      "additionalProperties":false
+    }}
+  },
+  "additionalProperties":false
+}
