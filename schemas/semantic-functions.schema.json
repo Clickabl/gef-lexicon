@@ -1,0 +1,23 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "$id":"gef-lexicon/semantic-functions.schema.json",
+  "title":"GEF Language-Neutral Semantic Functions",
+  "type":"object",
+  "required":["schema_version","semantic_functions"],
+  "properties":{
+    "schema_version":{"type":"integer","const":1},
+    "semantic_functions":{"type":"array","items":{
+      "type":"object",
+      "required":["semantic_function_id","key","family","description","review_state"],
+      "properties":{
+        "semantic_function_id":{"type":"string","pattern":"^SEM\\.[A-Z0-9._-]+$"},
+        "key":{"type":"string","minLength":1},
+        "family":{"type":"string","minLength":1},
+        "description":{"type":"string","minLength":1},
+        "review_state":{"type":"string","enum":["candidate","approved","superseded","rejected"]}
+      },
+      "additionalProperties":false
+    }}
+  },
+  "additionalProperties":false
+}
