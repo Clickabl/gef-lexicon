@@ -2,6 +2,18 @@
 
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
 
+## Agent Review Queue
+
+Cross-product review/research work is coordinated by the canonical queue contract in `Clickabl/gef-expo`:
+
+- `docs/product/AGENT_REVIEW_QUEUE.md`
+- `docs/product/schemas/agent-review-task-v1.schema.json`
+- `docs/product/schemas/agent-review-queue-v1.postgres.sql`
+- `docs/product/examples/name-unknown-task-template.md`
+- `gef-expo` issue #9 tracks the human inbox and future agent executor.
+
+If lexicon/name work needs later review or research, emit/propose a structured queue task or signal compatible with that contract instead of inventing a local TODO queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue results may create **candidate** lexicon/name artifacts or PRs, but they may never mark their own output approved. Large evidence/logs should be attached/referenced as artifacts rather than embedded in canonical lexicon rows.
+
 ## Hard Rules
 
 1. **First-Party Licensing**: Never copy definitions or example rows from Wiktionary, FreeDict, or copyrighted dictionaries. Write new definitions natively. External data may only be imported when its license and provenance are explicitly compatible with the project.
