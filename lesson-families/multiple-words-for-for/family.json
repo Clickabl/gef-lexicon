@@ -23,6 +23,20 @@
       "notes": "Explain the lesson in the interface language and let the learner temporarily include/exclude eligible profile languages without changing reader settings."
     },
     {
+      "block_id": "support-language-context",
+      "block_type": "localized_text",
+      "group_id": "facts",
+      "repeat": "once",
+      "notes": "Open from the learner's support/native language. Explain how that language handles the lesson's semantic territory using its own reviewed forms/constructions when available. This is the personalized doorway and may also feed the lesson catalog/tooltip copy. Do not pretend a language has one literal equivalent of English 'for'."
+    },
+    {
+      "block_id": "english-anchor-bridge",
+      "block_type": "localized_text",
+      "group_id": "facts",
+      "repeat": "once",
+      "notes": "In the learner's interface language, explain that English commonly bundles many of these relationships into the word 'for'. English is a comparison bridge, not the ontology and not a required support language. When English itself is the support language, merge/rephrase this with the support-language context to avoid pointless repetition."
+    },
+    {
       "block_id": "grammar-primer",
       "block_type": "grammar_primer",
       "group_id": "comparison-intro",
@@ -86,12 +100,12 @@
       "notes": "Localized wrap-up and optional scorecard/celebration. Must also work for comparison-only sessions with no quiz score."
     }
   ],
-  "presentation_modes": ["scroll", "paged"],
+  "presentation_modes": ["scroll", "paged", "presentation"],
   "learning_path_policy": {
     "placements_are_language_specific": true,
     "placement_registry": "curriculum/learning-path-placements.json",
     "notes": "The same multilingual lesson family may appear at different positions in different language paths. Spanish por/para may be relatively early, while Greek or another language may place the comparison only after its own prerequisites. Learner-tier languages may participate in the family without implying a full dedicated curriculum."
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
