@@ -59,7 +59,80 @@
     {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Misión","description":"Encuentra en este libro todas las formas de esta lección.","begin_label":"Empezar","decline_label":"Ahora no"},
     {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Muy bien","description":"Ya has visto cómo distintos idiomas reparten de maneras diferentes unas mismas relaciones de significado.","action_label":"Listo"}
   ],
-  "rule_explanations": {},
+  "rule_explanations": {
+    "RULE.en.for.anchor": {
+      "summary": "El inglés usa «for» para varias relaciones distintas, entre ellas destinatario, motivo, duración, intercambio, uso previsto y expresiones de destino o meta.",
+      "tips": ["Trata «for» como la pregunta, no como la respuesta.", "Antes de traducir, pregúntate qué relación expresa «for» en esa frase."]
+    },
+    "RULE.es.por_para.por_path_route": {
+      "summary": "Ruta, recorrido o zona por la que se pasa o se desplaza algo.",
+      "tips": ["Imagina movimiento por dentro o a través de un lugar.", "Si la frase responde «¿por dónde?», comprueba si corresponde por."]
+    },
+    "RULE.es.por_para.por_cause_reason": {
+      "summary": "Causa, motivo o razón.",
+      "tips": ["Mira hacia atrás: ¿qué provocó la acción?", "Si «a causa de» encaja de forma natural, comprueba por."]
+    },
+    "RULE.es.por_para.por_reason_question": {
+      "summary": "La expresión «por qué» pregunta por una razón.",
+      "tips": ["Aprende «por qué» como una expresión completa.", "Si la respuesta da un motivo, «por qué» es la forma interrogativa."]
+    },
+    "RULE.es.por_para.por_consequence": {
+      "summary": "«Por eso» conecta una razón anterior con su consecuencia.",
+      "tips": ["«Por eso» apunta a lo que se acaba de explicar.", "Piensa en «debido a eso» o «por esa razón», no en traducir por de forma aislada."]
+    },
+    "RULE.es.por_para.por_means_channel": {
+      "summary": "Medio, método, vía, canal o forma de transmisión.",
+      "tips": ["Pregunta cómo o por qué medio ocurrió algo.", "Los significados de método, vía, correo y otros canales suelen llevar por."]
+    },
+    "RULE.es.por_para.por_exchange_substitution": {
+      "summary": "Intercambio, precio, sustitución o reemplazo.",
+      "tips": ["Piensa en una cosa a cambio de otra.", "Los precios y las sustituciones suelen estar del lado de por."]
+    },
+    "RULE.es.por_para.por_distributive": {
+      "summary": "Patrones distributivos como «uno por uno».",
+      "tips": ["Busca una unidad que se repite: uno por uno, persona por persona.", "Una relación por unidad es una buena pista para por."]
+    },
+    "RULE.es.por_para.para_purpose": {
+      "summary": "Finalidad, propósito u objetivo previsto, especialmente en «para + infinitivo».",
+      "tips": ["Mira hacia delante: ¿qué se intenta conseguir?", "Si «con el fin de» encaja, comprueba para."]
+    },
+    "RULE.es.por_para.para_destination_goal": {
+      "summary": "Destino, punto final o meta.",
+      "tips": ["Imagina una flecha que apunta hacia un destino.", "Un destino previsto suele apuntar a para."]
+    },
+    "RULE.es.por_para.para_beneficiary": {
+      "summary": "Destinatario o beneficiario previsto.",
+      "tips": ["Pregunta para quién está destinado algo.", "El destinatario o beneficiario suele apuntar a para."]
+    },
+    "RULE.es.por_para.para_deadline": {
+      "summary": "Plazo, fecha límite o momento objetivo.",
+      "tips": ["Piensa en el momento como un objetivo hacia el que se avanza.", "Una fecha de entrega suele estar del lado de para."]
+    },
+    "RULE.el.for.gia_destination": {
+      "summary": "En muchas expresiones, για marca dirección o destino.",
+      "tips": ["Piensa en movimiento u orientación hacia un punto final.", "El propio για cubre varias relaciones que el inglés expresa con «for», así que el contexto sigue importando."]
+    },
+    "RULE.el.for.gia_cause": {
+      "summary": "En algunas construcciones, για puede expresar causa o motivo.",
+      "tips": ["Pregunta si la frase explica por qué ocurrió algo.", "El griego no necesita cambiar de palabra siguiendo exactamente la división española por/para."]
+    },
+    "RULE.el.for.gia_purpose": {
+      "summary": "En muchas construcciones con un sintagma nominal, για expresa finalidad, uso previsto, destinatario o adecuación.",
+      "tips": ["Pregunta para qué o para quién está destinado algo.", "Cuando hay una oración explícita de finalidad, el griego suele usar για να."]
+    },
+    "RULE.el.for.gia_na_purpose": {
+      "summary": "για να introduce una oración explícita de finalidad, aproximadamente «para» o «con el fin de» + verbo.",
+      "tips": ["Si en español aparece naturalmente «para + infinitivo», comprueba si la estructura griega necesita για να.", "Aprende για να como una construcción completa, no como un rompecabezas palabra por palabra."]
+    },
+    "RULE.el.for.logo_cause": {
+      "summary": "λόγω expresa de manera explícita causa o motivo, a menudo con el sentido de «debido a».",
+      "tips": ["Usa la relación de causa como pista.", "λόγω es una opción causal más explícita que el για genérico."]
+    },
+    "RULE.el.for.yper_support": {
+      "summary": "υπέρ expresa apoyo o postura favorable: estar a favor de una persona, propuesta o lado.",
+      "tips": ["Piensa en «a favor de», no en el «para» de destinatario.", "El apoyo o la defensa de una postura es una relación distinta de la finalidad."]
+    }
+  },
   "review_state": "candidate",
   "version": 1
 }
