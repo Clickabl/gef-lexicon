@@ -7,21 +7,21 @@
       "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000601",
       "lemma_nfc": "Iron Henry",
       "upos": "PROPN",
-      "language_pos": "proper-name",
+      "language_pos": "character-label",
       "proper_noun": true,
+      "name_id": null,
       "review_state": "candidate",
       "senses": [
         {
           "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000602",
           "sense_key": "iron-henry-character",
           "primary_concept_id": null,
+          "entity_id": "ent_frog_king_iron_henry",
           "definitions": {
-            "en": "faithful servant of the young prince in the Frog King story",
-            "es": "servidor fiel del joven príncipe en la historia del Rey Rana",
-            "fr": "serviteur fidèle du jeune prince dans l'histoire du Roi Grenouille",
-            "pt": "servidor fiel do jovem príncipe na história do Rei Sapo",
-            "it": "servitore fedele del giovane principe nella storia del Re Ranocchio",
-            "el": "πιστός υπηρέτης του νεαρού πρίγκιπα στην ιστορία του Βασιλιά Βατράχου"
+            "en": "the prince's faithful servant, called Faithful Henry in the story text and Iron Henry in the traditional subtitle"
+          },
+          "sense_hint": {
+            "en": "a character identity, not the ordinary meanings of iron or Henry"
           },
           "cefr_level": "A2",
           "homophones": [],
@@ -36,14 +36,38 @@
           "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000603",
           "surface_nfc": "Iron Henry",
           "normalized_lookup": "iron henry",
-          "attested_in_text": true,
+          "attested_in_text": false,
           "analyses": [
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000604",
-              "features": {
-                "base": { "number": "singular" }
-              },
-              "display_label_key": "proper noun"
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "character label"
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-iron-henry-faithful-0000000001",
+          "surface_nfc": "Faithful Henry",
+          "normalized_lookup": "faithful henry",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-iron-henry-faithful-0000000002",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "source-attested character label"
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-iron-henry-henry-000000000001",
+          "surface_nfc": "Henry",
+          "normalized_lookup": "henry",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-iron-henry-henry-000000000002",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "short character reference"
             }
           ]
         }
