@@ -1,32 +1,27 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/lesson-support-blurb-catalog.schema.json",
-  "title": "Gef lesson support-language blurb catalog",
+  "title": "Gef lesson support-language blurb tier shard",
   "type": "object",
-  "required": ["schema_version", "lesson_family_id", "coverage_program", "registry_source", "expected_language_count", "source_meaning_en", "tooltip_source_meaning_en", "localization_policy", "entries"],
+  "required": ["schema_version", "lesson_family_id", "coverage_program", "tier", "registry_source", "registry_schema_version", "review_state", "entries"],
   "properties": {
     "schema_version": {"type": "integer", "const": 1},
     "lesson_family_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
     "coverage_program": {"type": "string", "const": "learnFromLanguages"},
+    "tier": {"type": "integer", "minimum": 1, "maximum": 4},
     "registry_source": {"type": "string", "minLength": 1},
     "registry_schema_version": {"type": "integer", "minimum": 1},
-    "registry_snapshot_date": {"type": "string", "minLength": 1},
-    "expected_language_count": {"type": "integer", "minimum": 1},
-    "source_meaning_en": {"type": "string", "minLength": 1},
-    "tooltip_source_meaning_en": {"type": "string", "minLength": 1},
-    "localization_policy": {"type": "object"},
+    "review_state": {"type": "string", "enum": ["generated", "community_verified", "professional_verified", "rejected"]},
     "entries": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["language_tag", "lesson_tier", "summary", "tooltip", "review_state"],
+        "required": ["language_tag", "summary", "tooltip"],
         "properties": {
           "language_tag": {"type": "string", "minLength": 1},
-          "lesson_tier": {"type": "integer", "minimum": 1, "maximum": 4},
           "summary": {"type": "string", "minLength": 1},
-          "tooltip": {"type": "string", "minLength": 1},
-          "review_state": {"type": "string", "enum": ["generated", "community_verified", "professional_verified", "rejected"]}
+          "tooltip": {"type": "string", "minLength": 1}
         },
         "additionalProperties": false
       }
