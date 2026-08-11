@@ -11,6 +11,8 @@
     "title": "lesson.multipleFor.title",
     "invitation": "lesson.multipleFor.invitation",
     "summary": "lesson.multipleFor.summary",
+    "support_context": "lesson.multipleFor.supportContext",
+    "english_bridge": "lesson.multipleFor.englishBridge",
     "grammar_primer": "lesson.multipleFor.grammarPrimer",
     "single_intro": "lesson.multipleFor.singleIntro",
     "split_intro": "lesson.multipleFor.splitIntro",
@@ -45,6 +47,8 @@
   },
   "blocks": [
     {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"support-context","group_id":"facts","type":"explanation","title":"Start with what you already know","text":"In English, one very common word — ‘for’ — can do several different jobs. It can point to a recipient, a reason, a purpose, a destination, an exchange, a target time, and other relationships. Other languages do not have to bundle those jobs together."},
+    {"block_id":"english-bridge","group_id":"facts","type":"explanation","text":"For this lesson, treat English ‘for’ as the clue, not the answer. First ask what relationship the sentence means; then learn how the language you are studying expresses that relationship."},
     {"block_id":"grammar-primer","group_id":"concept","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"A quick grammar note","description":"Before we compare the forms, here is what kind of grammar each selected language is using."},
     {"block_id":"intro-single","group_id":"concept","type":"explanation","text":"One language may use a common form for several relationships that another language divides differently."},
     {"block_id":"single-forms","group_id":"concept","type":"word_form_matrix","source":"selected_anchor_or_single_languages","minimum_languages":1,"maximum_languages":6,"prefer_profile_languages":true,"allow_anchor_fallback":true},
