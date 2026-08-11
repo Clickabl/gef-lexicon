@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "work_id": "gef-intro",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_gef_intro_alex",
+      "entity_type": "fictional_character",
+      "display_name": "Alex",
+      "name_refs": [
+        {
+          "name_id": "name_en_alex",
+          "role": "given_name",
+          "surface": "Alex"
+        }
+      ],
+      "aliases": [],
+      "work_id": "gef-intro",
+      "summary": {
+        "en": "the main character and narrator of the Gef intro story"
+      },
+      "known_gender": null,
+      "external_ids": {},
+      "source_refs": ["src_work_gef_intro"],
+      "referenced_in_works": ["gef-intro"],
+      "review_state": "candidate"
+    }
+  ]
+}
