@@ -11,6 +11,8 @@
     "title": "lesson.multipleFor.title",
     "invitation": "lesson.multipleFor.invitation",
     "summary": "lesson.multipleFor.summary",
+    "support_context": "lesson.multipleFor.supportContext",
+    "english_bridge": "lesson.multipleFor.englishBridge",
     "grammar_primer": "lesson.multipleFor.grammarPrimer",
     "single_intro": "lesson.multipleFor.singleIntro",
     "split_intro": "lesson.multipleFor.splitIntro",
@@ -45,6 +47,8 @@
   },
   "blocks": [
     {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"support-context","group_id":"facts","type":"explanation","title":"Empieza por lo que ya conoces","text":"En español, varias de estas relaciones se reparten entre por, para y otras construcciones. Por suele aparecer en relaciones como causa, recorrido, medio o intercambio; para suele aparecer en finalidad, destino, destinatario o momento objetivo. Otros idiomas trazan esas fronteras de otra manera."},
+    {"block_id":"english-bridge","group_id":"facts","type":"explanation","title":"El puente con el inglés","text":"En inglés, una sola palabra muy común — ‘for’ — cubre muchas de estas relaciones. En esta lección, usa ‘for’ como pista, no como respuesta: primero identifica la relación y después aprende cómo la expresa el idioma que estudias."},
     {"block_id":"grammar-primer","group_id":"concept","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"Una nota rápida de gramática","description":"Antes de comparar las formas, veamos qué tipo de recurso gramatical utiliza cada idioma seleccionado."},
     {"block_id":"intro-single","group_id":"concept","type":"explanation","text":"Un idioma puede usar una misma forma común para varias relaciones que otro idioma divide de otra manera."},
     {"block_id":"single-forms","group_id":"concept","type":"word_form_matrix","source":"selected_anchor_or_single_languages","minimum_languages":1,"maximum_languages":6,"prefer_profile_languages":true,"allow_anchor_fallback":true},
