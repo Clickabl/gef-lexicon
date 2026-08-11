@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/semantic-annotation.schema.json",
+  "title": "GEF Passage Semantic Annotation",
+  "type": "object",
+  "required": ["schema_version", "work_id", "language_code", "annotations"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "work_id": {"type": "string"},
+    "language_code": {"type": "string"},
+    "annotations": {"type": "array", "items": {"$ref": "#/definitions/annotation"}}
+  },
+  "definitions": {
+    "annotation": {
+      "type": "object",
+      "required": ["annotation_id", "segment_id", "start_char", "end_char", "surface", "target"],
+      "properties": {
+        "annotation_id": {"type": "string", "pattern": "^ann_[A-Za-z0-9._:-]+$"},
+        "segment_id": {"type": "string"},
+        "start_char": {"type": "integer", "minimum": 0},
+        "end_char": {"type": "integer", "minimum": 0},
+        "surface": {"type": "string"},
+        "target": {
+          "type": "object",
+          "required": ["target_type", "target_id"],
+          "properties": {
+            "target_type": {"type": "string", "enum": ["sense", "entity", "name", "concept"]},
+            "target_id": {"type": "string"}
+          }
+        },
+        "analysis_id": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "annotation_source": {"type": "string", "enum": ["human", "machine", "imported"]}
+      }
+    }
+  }
+}
