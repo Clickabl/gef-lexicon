@@ -4,6 +4,49 @@
   "language_code": "en",
   "lexemes": [
     {
+      "lexeme_id": "02000000-0000-7000-8000-000000000101",
+      "lemma_nfc": "Henry",
+      "upos": "PROPN",
+      "language_pos": "given-name",
+      "proper_noun": true,
+      "name_id": "name_en_henry",
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "02000000-0000-7000-8001-000000000101",
+          "sense_key": "henry-frog-king-character",
+          "primary_concept_id": null,
+          "entity_id": "ent_frog_king_iron_henry",
+          "definitions": {
+            "en": "the given name used for the prince's faithful servant in The Frog King"
+          },
+          "sense_hint": {
+            "en": "the name Henry referring specifically to the character also known as Faithful Henry or Iron Henry"
+          },
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "02000000-0000-7000-8002-000000000101",
+          "surface_nfc": "Henry",
+          "normalized_lookup": "henry",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "02000000-0000-7000-8003-000000000101",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "given name"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000601",
       "lemma_nfc": "Iron Henry",
       "upos": "PROPN",
@@ -21,7 +64,7 @@
             "en": "the prince's faithful servant, called Faithful Henry in the story text and Iron Henry in the traditional subtitle"
           },
           "sense_hint": {
-            "en": "a character identity, not the ordinary meanings of iron or Henry"
+            "en": "a character label composed from ordinary lexical material plus the personal name Henry"
           },
           "cefr_level": "A2",
           "homophones": [],
@@ -41,33 +84,20 @@
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000604",
               "features": {"base": {"number": "singular"}},
-              "display_label_key": "character label"
+              "display_label_key": "traditional character label"
             }
           ]
         },
         {
-          "form_id": "019fee67-iron-henry-faithful-0000000001",
+          "form_id": "02000000-0000-7000-8002-000000000111",
           "surface_nfc": "Faithful Henry",
           "normalized_lookup": "faithful henry",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "019fee67-iron-henry-faithful-0000000002",
+              "analysis_id": "02000000-0000-7000-8003-000000000111",
               "features": {"base": {"number": "singular"}},
               "display_label_key": "source-attested character label"
-            }
-          ]
-        },
-        {
-          "form_id": "019fee67-iron-henry-henry-000000000001",
-          "surface_nfc": "Henry",
-          "normalized_lookup": "henry",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "019fee67-iron-henry-henry-000000000002",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "short character reference"
             }
           ]
         }
