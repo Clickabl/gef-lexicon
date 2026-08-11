@@ -11,32 +11,18 @@
       "proper_noun": true,
       "name_id": "name_en_alex",
       "review_state": "candidate",
-      "senses": [
-        {
-          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000502",
-          "sense_key": "alex-character",
-          "primary_concept_id": null,
-          "entity_id": "ent_gef_intro_alex",
-          "definitions": {"en": "the main character and narrator of the Gef intro story"},
-          "cefr_level": "A1",
-          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
-        }
-      ],
+      "senses": [{
+        "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000502",
+        "sense_key": "alex-character",
+        "primary_concept_id": null,
+        "entity_id": "ent_gef_intro_alex",
+        "definitions": {"en": "the main character and narrator of the Gef intro story"},
+        "cefr_level": "A1",
+        "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+      }],
       "forms": [
-        {
-          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000503",
-          "surface_nfc": "Alex",
-          "normalized_lookup": "alex",
-          "attested_in_text": true,
-          "analyses": [{"analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000504", "features": {"base": {"number": "singular"}}, "display_label_key": "given name"}]
-        },
-        {
-          "form_id": "02000000-0000-7000-8002-000000000201",
-          "surface_nfc": "Alex's",
-          "normalized_lookup": "alex's",
-          "attested_in_text": true,
-          "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000201", "features": {"base": {"number": "singular"}, "clitic": {"function": "possessive", "surface": "'s"}}, "display_label_key": "possessive given name"}]
-        }
+        {"form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000503", "surface_nfc": "Alex", "normalized_lookup": "alex", "attested_in_text": true, "analyses": [{"analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000504", "features": {"base": {"number": "singular"}}, "display_label_key": "given name"}]},
+        {"form_id": "02000000-0000-7000-8002-000000000201", "surface_nfc": "Alex’s", "normalized_lookup": "alex's", "attested_in_text": true, "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000201", "features": {"base": {"number": "singular"}, "clitic": {"function": "possessive", "surface": "’s"}}, "display_label_key": "possessive given name"}]}
       ]
     },
     {
@@ -47,26 +33,16 @@
       "proper_noun": true,
       "name_id": "name_en_gef",
       "review_state": "candidate",
-      "senses": [
-        {
-          "sense_id": "02000000-0000-7000-8001-000000000202",
-          "sense_key": "gef-intro-character",
-          "primary_concept_id": null,
-          "entity_id": "ent_gef_intro_gef",
-          "definitions": {"en": "the talking mongoose who introduces himself as Gef in the Gef Intro story"},
-          "sense_hint": {"en": "pronounced like the English given name Jeff in this source text"},
-          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
-        }
-      ],
-      "forms": [
-        {
-          "form_id": "02000000-0000-7000-8002-000000000202",
-          "surface_nfc": "Gef",
-          "normalized_lookup": "gef",
-          "attested_in_text": true,
-          "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000202", "features": {"base": {"number": "singular"}}, "display_label_key": "character mononym", "pronunciations": [{"ipa": "dʒɛf", "locale": "en", "notation": "phonemic"}]}]
-        }
-      ]
+      "senses": [{
+        "sense_id": "02000000-0000-7000-8001-000000000202",
+        "sense_key": "gef-intro-character",
+        "primary_concept_id": null,
+        "entity_id": "ent_gef_intro_gef",
+        "definitions": {"en": "the talking mongoose who introduces himself as Gef in the Gef Intro story"},
+        "sense_hint": {"en": "pronounced like the English given name Jeff in this source text"},
+        "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+      }],
+      "forms": [{"form_id": "02000000-0000-7000-8002-000000000202", "surface_nfc": "Gef", "normalized_lookup": "gef", "attested_in_text": true, "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000202", "features": {"base": {"number": "singular"}}, "display_label_key": "character mononym", "pronunciations": [{"ipa": "dʒɛf", "locale": "en", "notation": "phonemic"}]}]}]
     },
     {
       "lexeme_id": "02000000-0000-7000-8000-000000000203",
@@ -76,25 +52,15 @@
       "proper_noun": true,
       "name_id": "name_en_jeff",
       "review_state": "candidate",
-      "senses": [
-        {
-          "sense_id": "02000000-0000-7000-8001-000000000203",
-          "sense_key": "jeff-given-name-pronunciation-example",
-          "primary_concept_id": null,
-          "entity_id": null,
-          "definitions": {"en": "an English given name used in the Gef Intro passage only as a pronunciation comparison for Gef"},
-          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
-        }
-      ],
-      "forms": [
-        {
-          "form_id": "02000000-0000-7000-8002-000000000203",
-          "surface_nfc": "Jeff",
-          "normalized_lookup": "jeff",
-          "attested_in_text": true,
-          "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000203", "features": {"base": {"number": "singular"}}, "display_label_key": "given name", "pronunciations": [{"ipa": "dʒɛf", "locale": "en", "notation": "phonemic"}]}]
-        }
-      ]
+      "senses": [{
+        "sense_id": "02000000-0000-7000-8001-000000000203",
+        "sense_key": "jeff-given-name-pronunciation-example",
+        "primary_concept_id": null,
+        "entity_id": null,
+        "definitions": {"en": "an English given name used in the Gef Intro passage only as a pronunciation comparison for Gef"},
+        "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+      }],
+      "forms": [{"form_id": "02000000-0000-7000-8002-000000000203", "surface_nfc": "Jeff", "normalized_lookup": "jeff", "attested_in_text": true, "analyses": [{"analysis_id": "02000000-0000-7000-8003-000000000203", "features": {"base": {"number": "singular"}}, "display_label_key": "given name", "pronunciations": [{"ipa": "dʒɛf", "locale": "en", "notation": "phonemic"}]}]}]
     }
   ]
 }
