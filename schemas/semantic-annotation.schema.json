@@ -3,11 +3,12 @@
   "$id": "gef-lexicon/semantic-annotation.schema.json",
   "title": "GEF Passage Semantic Annotation",
   "type": "object",
-  "required": ["schema_version", "work_id", "language_code", "annotations"],
+  "required": ["schema_version", "work_id", "language_code", "offset_unit", "annotations"],
   "properties": {
     "schema_version": {"type": "integer", "const": 1},
     "work_id": {"type": "string"},
     "language_code": {"type": "string"},
+    "offset_unit": {"type": "string", "const": "unicode_codepoint_nfc", "description": "Offsets are zero-based, end-exclusive Unicode code-point indices measured after NFC normalization of the exact segment text."},
     "annotations": {"type": "array", "items": {"$ref": "#/definitions/annotation"}}
   },
   "definitions": {
