@@ -15,8 +15,12 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - name: Validate lexicon and lesson graph
-        run: npm run validate
+      - name: Validate core lexicon integrity
+        run: node scripts/validate-lexicon.mjs
+      - name: Validate curriculum taxonomy
+        run: node scripts/validate-curriculum.mjs
+      - name: Validate lesson and construction graph
+        run: node scripts/validate-lessons.mjs
       - name: Validate English source coverage
         run: npm run validate:english
       - name: Regenerate concept index
