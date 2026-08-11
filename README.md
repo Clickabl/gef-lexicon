@@ -1,4 +1,4 @@
-# GEF / Clickabl Lexicon Repository (`Clickabl/gef-lexicon`)
+# Gef / Clickabl Lexicon Repository (`Clickabl/gef-lexicon`)
 
 The reusable Clickabl-wide linguistic and curriculum graph for Gef and future
 Clickabl language products.
