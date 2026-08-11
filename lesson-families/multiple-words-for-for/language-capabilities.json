@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "capability_model": "lesson_specific",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "fixed_comparison_language_tags": ["en", "es"],
+  "support_levels": {
+    "full": {
+      "description": "The lesson has structured grammar forms/rules for this language and may render GrammarRuleBlock/practice from Lexicon data.",
+      "language_tags": ["en", "es", "pt", "ca", "gl", "el"]
+    },
+    "comparison_only": {
+      "description": "The lesson may render the language comparison/example block, but must not imply complete rule coverage or generate rule-driven practice for this language.",
+      "default_for_registered_languages_not_in_full": true
+    },
+    "unavailable": {
+      "description": "No defensible lesson comparison data exists yet. Omit the language from this lesson rather than inventing data.",
+      "language_tags": []
+    }
+  },
+  "expected_full_support_language_tags": [
+    "en", "es", "fr", "pt", "it", "el",
+    "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"
+  ],
+  "pending_full_support_research": [
+    {
+      "language_tags": ["fr", "it", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "mk"],
+      "reason": "Tier 1/2 expectation only. These languages remain comparison_only for this lesson until structured grammar records for this concept are researched, added to the grammar set, and the full-support flag is deliberately promoted."
+    }
+  ],
+  "promotion_rules": [
+    "Global language tier never grants lesson-level full support automatically.",
+    "Any registered language, including Tier 3 or Tier 4, may be promoted to full for this lesson when this lesson's structured grammar records are ready.",
+    "A full-support language must exist in the referenced grammar set, be lesson_ready, contain at least one form and at least one structured rule, and be explicitly listed in support_levels.full.language_tags.",
+    "A comparison_only language may use a native-language comparison blurb without having full grammar rules.",
+    "Removing or downgrading a language must be explicit; do not infer capability from global tier changes."
+  ],
+  "comparison_blurb_catalog": "support-blurbs/manifest.json",
+  "automation_ids": ["GEF-AUTO-LANG-001", "GEF-AUTO-LANG-002", "GEF-AUTO-LESSON-GRAMMAR-001"],
+  "review_state": "candidate"
+}
