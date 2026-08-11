@@ -8,12 +8,13 @@ Every externally quoted passage should reference a stable `source_id` from `sour
 
 Quoted-media source types include films, television series/episodes, songs, poems, plays, video games, speeches, advertisements, internet memes, social-media posts, and release-specific translation sources.
 
-A `release_variant` source may point to a parent work with `parent_source_id` and describe a locale/channel such as an official subtitle, dub, published translation, caption track, transcript, or script. This is important because an official dub and an official subtitle can legitimately use different wording.
+A `release_variant` source may point to a parent work with `parent_source_id` and describe a locale/channel such as an original text, official subtitle, dub, published translation, caption track, transcript, or script. This is important because an official dub and an official subtitle can legitimately use different wording.
 
 ## Translation provenance
 
-Content editions must distinguish how translated quotation wording was obtained. The content repository's edition/quote schemas support methods such as:
+Content editions must distinguish how quotation wording was obtained. The content repository's edition/quote schemas support methods such as:
 
+- `original_text`
 - `original_dialogue`
 - `official_subtitle`
 - `official_dub`
@@ -26,6 +27,10 @@ Content editions must distinguish how translated quotation wording was obtained.
 Verification is independent from method. A machine translation can be reviewed; an alleged official subtitle can still be unverified. Never infer `official` from fluency or familiarity.
 
 When multiple official variants exist, retain them as distinct evidence rather than collapsing them. One variant may be selected as preferred for a particular content edition while alternatives remain available for linguistic comparison.
+
+## Origin vs verification
+
+The `source_id` attached to a quote identifies the originating work whenever possible. Exact-wording verification may come from a different reusable source, such as an official studio article, transcript, subtitle release, archive, or a curated reference. `gef-content` records those separately as `verification_source_ids` so provenance does not accidentally redefine the quote's origin.
 
 ## Quotations and lesson evidence
 
