@@ -20,7 +20,7 @@
     "interaction_defaults": {
       "type": "object",
       "properties": {
-        "offer_mode": {"type": "string", "enum": ["tap_sheet", "manual_lessons_tab", "learning_mode_preflight", "restrained_contextual_offer"]},
+        "offer_mode": {"type": "string", "enum": ["tap_sheet", "manual_lessons_tab", "learning_mode_preflight", "restrained_contextual_offer", "queued_story_knot"]},
         "dismissal_behavior": {"type": "string"},
         "cooldown_policy": {"type": "string"}
       },
@@ -34,7 +34,7 @@
       "type": "object",
       "required": ["target_type", "target_id"],
       "properties": {
-        "target_type": {"type": "string", "enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept"]},
+        "target_type": {"type": "string", "enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"]},
         "target_id": {"type": "string", "minLength": 1}
       },
       "additionalProperties": false
@@ -59,7 +59,7 @@
       "required": ["trigger_id", "trigger_type"],
       "properties": {
         "trigger_id": {"type": "string", "pattern": "^TRG\\.[A-Za-z0-9._-]+$"},
-        "trigger_type": {"type": "string", "enum": ["tap", "repeated_encounter", "passage", "pattern", "morphology", "manual", "learning_mode_preflight"]},
+        "trigger_type": {"type": "string", "enum": ["tap", "repeated_encounter", "passage", "pattern", "morphology", "manual", "learning_mode_preflight", "profile_event", "catalog_topic"]},
         "match_any": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
         "feature_bundle": {"type": "object"},
         "minimum_encounters": {"type": "integer", "minimum": 1},
@@ -71,7 +71,7 @@
       "type": "object",
       "required": ["module", "eligible_rule_ids"],
       "properties": {
-        "module": {"type": "string", "enum": ["inline_choice_cloze", "typed_cloze", "meaning_here", "find_in_sentence", "why_this", "form_to_features", "features_to_form", "conjugation_slot", "pattern_hunt", "compare_realizations"]},
+        "module": {"type": "string", "enum": ["inline_choice_cloze", "typed_cloze", "meaning_here", "find_in_sentence", "why_this", "form_to_features", "features_to_form", "conjugation_slot", "pattern_hunt", "compare_realizations", "name_family_map", "name_form_match", "personal_name_explorer"]},
         "eligible_rule_ids": {"type": "array", "items": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"}},
         "choice_refs": {"type": "array", "items": {"$ref": "#/definitions/typedRef"}},
         "constraints": {"type": "object"}
