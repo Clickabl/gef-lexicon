@@ -14,10 +14,67 @@
           "surface": "Henry"
         }
       ],
-      "aliases": ["Henry"],
+      "labels": [
+        {
+          "surface": "Iron Henry",
+          "label_type": "canonical",
+          "language_code": "en",
+          "work_id": "frog-king",
+          "components": [
+            {
+              "surface": "Iron",
+              "role": "descriptor",
+              "target_type": "sense",
+              "target_id": "02000000-0000-7000-8001-000000000001",
+              "note": "links to the ordinary English metal sense; the epithet refers to Henry's iron bands"
+            },
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
+          ]
+        },
+        {
+          "surface": "Faithful Henry",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "frog-king",
+          "components": [
+            {
+              "surface": "Faithful",
+              "role": "descriptor",
+              "target_type": "sense",
+              "target_id": "02000000-0000-7000-8001-000000000002"
+            },
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
+          ]
+        },
+        {
+          "surface": "Henry",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "frog-king",
+          "components": [
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
+          ]
+        }
+      ],
+      "aliases": ["Faithful Henry", "Henry"],
       "work_id": "frog-king",
       "summary": {
-        "en": "the faithful servant of the young prince in The Frog King"
+        "en": "the prince's faithful servant; in this adaptation he wears three iron bands around his chest because he fears his heart will break while the prince is under the spell"
       },
       "known_gender": null,
       "external_ids": {},
