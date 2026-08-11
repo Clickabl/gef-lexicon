@@ -5,13 +5,13 @@
   "title_key": "lesson.multiple_for.title",
   "fallback_title_en": "Multiple words for ‘for’",
   "summary_key": "lesson.multiple_for.summary",
-  "fallback_summary_en": "Some languages use one common form where another language divides the same idea across several words, cases, particles, or constructions. Compare the forms, learn each language’s own rules, then practice them in real text.",
+  "fallback_summary_en": "Languages do not divide meaning in the same places. Compare how your languages express relationships that English often bundles into ‘for’, learn each language’s own forms and rules, and practice only where a real choice exists.",
   "grammar_set_id": "GRAMSET.mul.for_equivalents",
   "curriculum_concept_ids": ["CURR.PREPOSITIONS", "CURR.PURPOSE_CAUSE_GOAL", "CURR.PATH_ROUTE", "CURR.BENEFICIARY", "CURR.TIME_GOAL"],
   "eligibility": {
     "minimum_display_languages": 2,
     "maximum_display_languages": 6,
-    "require_non_anchor_multi_form_language": true,
+    "require_non_anchor_multi_form_language": false,
     "prefer_profile_languages": true,
     "fill_with_anchor_language_when_needed": true
   },
@@ -23,24 +23,31 @@
       "notes": "Explain the lesson in the interface language and let the learner temporarily include/exclude eligible profile languages without changing reader settings."
     },
     {
+      "block_id": "grammar-primer",
+      "block_type": "grammar_primer",
+      "group_id": "comparison-intro",
+      "repeat": "once",
+      "notes": "Explain the relevant grammatical category once in the interface language using selected-language form metadata. Do not call every form a preposition or conjunction; forms may be prepositions, postpositions, particles, case markers, clause markers, or larger constructions."
+    },
+    {
       "block_id": "one-form-intro",
       "block_type": "localized_text",
       "group_id": "comparison-intro",
       "repeat": "once",
-      "notes": "Localized explanation that some profile languages may use one common comparison form for the anchor concept."
+      "notes": "Localized explanation that one selected language may use a common form across relationships that another selected language divides differently."
     },
     {
       "block_id": "one-form-examples",
       "block_type": "word_examples",
       "group_id": "comparison-intro",
       "repeat": "per_single_form_language",
-      "notes": "Render 2..6 language bricks total where useful. Each brick may contain 1..N displayed forms."
+      "notes": "Render profile-preferred comparison bricks within the lesson-wide 2..6 language cap. Each brick may contain 1..N displayed forms."
     },
     {
       "block_id": "multi-form-intro",
       "block_type": "localized_text",
       "repeat": "once",
-      "notes": "Localized explanation that other languages divide the anchor concept across multiple forms/constructions and that each language has its own rules."
+      "notes": "Localized explanation that other languages divide the comparison territory across multiple forms/constructions and that every language owns its own rule boundaries."
     },
     {
       "block_id": "language-rules",
@@ -58,32 +65,32 @@
       "block_id": "practice-intro",
       "block_type": "practice_intro",
       "repeat": "once",
-      "notes": "Friendly localized transition such as ‘Ready to try a few?’"
+      "notes": "Friendly localized transition such as ‘Ready to try a few?’ Omit when the selected direction has no meaningful choice to practice."
     },
     {
       "block_id": "practice",
       "block_type": "practice",
       "repeat": "per_selected_language",
-      "notes": "Use shared practice primitives. Wrong answers reveal the rule and rotate through reviewed rule tips; no punitive streak or harsh failure language."
+      "notes": "Use shared practice primitives only for selected languages with a meaningful practice decision. Wrong answers reveal the rule and rotate through reviewed rule tips; no punitive streak or harsh failure language."
     },
     {
       "block_id": "quest",
       "block_type": "quest_offer",
       "repeat": "once",
-      "notes": "Teacher/session policy may hide, offer, or require a reader quest such as finding every eligible form in the selected book/languages."
+      "notes": "Teacher/session policy may hide, offer, or require a reader quest. Omit the quest when the selected lesson direction has no meaningful target distinction."
     },
     {
       "block_id": "completion",
       "block_type": "completion",
       "repeat": "once",
-      "notes": "Localized wrap-up, scorecard, and optional celebration/confetti presentation."
+      "notes": "Localized wrap-up and optional scorecard/celebration. Must also work for comparison-only sessions with no quiz score."
     }
   ],
   "presentation_modes": ["scroll", "paged"],
   "learning_path_policy": {
     "placements_are_language_specific": true,
     "placement_registry": "curriculum/learning-path-placements.json",
-    "notes": "The same multilingual lesson family may appear at different positions in different language paths. For example, the Spanish por/para implementation is already A2, while Greek placement should be decided from Greek-specific prerequisites rather than copied from Spanish."
+    "notes": "The same multilingual lesson family may appear at different positions in different language paths. Spanish por/para may be relatively early, while Greek or another language may place the comparison only after its own prerequisites. Learner-tier languages may participate in the family without implying a full dedicated curriculum."
   },
   "review_state": "candidate",
   "version": 1
