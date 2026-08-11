@@ -52,6 +52,7 @@ function main() {
   const validateConcepts = compile('concept.schema.json');
   const validateProfile = compile('language-profile.schema.json');
   const validateNames = compile('name.schema.json');
+  const validateNameFamilies = compile('name-family.schema.json');
   const validateEntities = compile('entity.schema.json');
   const validateSources = compile('source.schema.json');
   const validateAnnotations = compile('semantic-annotation.schema.json');
@@ -63,16 +64,22 @@ function main() {
   let totalForms = 0;
   let totalAnalyses = 0;
   let totalNames = 0;
+  let totalNameFamilies = 0;
+  let totalNameForms = 0;
   let totalNamedEntities = 0;
   let totalAnnotations = 0;
 
   const ids = new Map();
   const concepts = new Set();
   const names = new Set();
+  const nameFamilies = new Set();
+  const nameEquivalenceSets = new Set();
+  const nameForms = new Set();
   const entities = new Set();
   const sources = new Set();
   const pendingConceptRefs = [];
   const pendingNameRefs = [];
+  const pendingNameFamilyRefs = [];
   const pendingEntityRefs = [];
   const pendingSourceRefs = [];
   const pendingRelations = [];
@@ -115,6 +122,29 @@ function main() {
     }
   }
 
+  const familyRoot = join(REPO_ROOT, 'name-families');
+  for (const filename of listJson(familyRoot)) {
+    const rel = `name-families/${filename}`;
+    const data = readJson(join(familyRoot, filename));
+    schemaCheck(validateNameFamilies, data, rel);
+    totalNameFamilies += 1;
+    register(data.family_id, 'name_family', rel);
+    nameFamilies.add(data.family_id);
+    for (const src of data.source_refs ?? []) pendingSourceRefs.push({ id: src, file: rel, owner: data.family_id });
+    for (const set of data.equivalence_sets ?? []) {
+      register(set.equivalence_set_id, 'name_equivalence_set', rel);
+      nameEquivalenceSets.add(set.equivalence_set_id);
+      for (const form of set.forms ?? []) {
+        totalNameForms += 1;
+        register(form.form_id, 'name_form', rel);
+        nameForms.add(form.form_id);
+        if (!isNFC(form.text)) fail(`${rel}: name-family form '${form.text}' is not NFC`);
+        if (form.name_id) pendingNameRefs.push({ id: form.name_id, file: rel, owner: form.form_id });
+        for (const src of form.source_refs ?? []) pendingSourceRefs.push({ id: src, file: rel, owner: form.form_id });
+      }
+    }
+  }
+
   const namesRoot = join(REPO_ROOT, 'names');
   for (const lang of listDirs(namesRoot)) {
     for (const filename of listJson(join(namesRoot, lang))) {
@@ -130,6 +160,7 @@ function main() {
         for (const src of n.source_refs ?? []) pendingSourceRefs.push({ id: src, file: rel, owner: n.name_id });
         for (const usage of n.gender_usage ?? []) pendingSourceRefs.push({ id: usage.source_id, file: rel, owner: n.name_id });
         for (const relation of n.related_names ?? []) pendingNameRefs.push({ id: relation.target_name_id, file: rel, owner: n.name_id });
+        for (const familyRef of n.family_refs ?? []) pendingNameFamilyRefs.push({ ...familyRef, file: rel, owner: n.name_id });
       }
     }
   }
@@ -212,6 +243,11 @@ function main() {
 
   for (const ref of pendingConceptRefs) if (!concepts.has(ref.id)) fail(`${ref.file}:${ref.owner}: concept '${ref.id}' does not exist`);
   for (const ref of pendingNameRefs) if (!names.has(ref.id)) fail(`${ref.file}:${ref.owner}: name '${ref.id}' does not exist`);
+  for (const ref of pendingNameFamilyRefs) {
+    if (!nameFamilies.has(ref.family_id)) fail(`${ref.file}:${ref.owner}: name family '${ref.family_id}' does not exist`);
+    if (!nameEquivalenceSets.has(ref.equivalence_set_id)) fail(`${ref.file}:${ref.owner}: name equivalence set '${ref.equivalence_set_id}' does not exist`);
+    if (ref.form_id && !nameForms.has(ref.form_id)) fail(`${ref.file}:${ref.owner}: name-family form '${ref.form_id}' does not exist`);
+  }
   for (const ref of pendingEntityRefs) if (!entities.has(ref.id)) fail(`${ref.file}:${ref.owner}: entity '${ref.id}' does not exist`);
   for (const ref of pendingSourceRefs) if (!sources.has(ref.id)) fail(`${ref.file}:${ref.owner}: source '${ref.id}' does not exist`);
 
@@ -242,6 +278,8 @@ function main() {
   console.log(`  Files validated: ${totalFiles}`);
   console.log(`  Concepts: ${concepts.size}`);
   console.log(`  Names: ${totalNames}`);
+  console.log(`  Name families: ${totalNameFamilies}`);
+  console.log(`  Name-family forms: ${totalNameForms}`);
   console.log(`  Named entities: ${totalNamedEntities}`);
   console.log(`  Lexemes: ${totalLexemes}`);
   console.log(`  Senses: ${totalSenses}`);
