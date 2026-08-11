@@ -1,0 +1,25 @@
+name: Lexicon integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Validate lexicon and lesson graph
+        run: npm run validate
+      - name: Validate English source coverage
+        run: npm run validate:english
+      - name: Regenerate concept index
+        run: npm run compile:concepts
+      - name: Require generated concept index to be current
+        run: git diff --exit-code -- concepts/compiled-concept-index.json
