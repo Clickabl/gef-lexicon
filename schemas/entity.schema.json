@@ -27,6 +27,7 @@
             "surface": {"type": "string"}
           }
         }},
+        "label_components": {"type": "array", "items": {"$ref": "#/definitions/labelComponent"}},
         "aliases": {"type": "array", "items": {"type": "string"}},
         "work_id": {"type": "string"},
         "summary": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -37,6 +38,17 @@
         "source_refs": {"type": "array", "items": {"type": "string"}},
         "referenced_in_works": {"type": "array", "items": {"type": "string"}},
         "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      }
+    },
+    "labelComponent": {
+      "type": "object",
+      "required": ["surface", "role", "target_type", "target_id"],
+      "properties": {
+        "surface": {"type": "string"},
+        "role": {"type": "string", "enum": ["given_name", "family_name", "title", "epithet", "descriptor", "particle", "other"]},
+        "target_type": {"type": "string", "enum": ["name", "lexeme", "sense", "literal"]},
+        "target_id": {"type": "string"},
+        "note": {"type": "string"}
       }
     }
   }
