@@ -1,0 +1,29 @@
+{
+  "schema_version":1,
+  "lesson_id":"LES.es.prep.por_para.core",
+  "support_language_tag":"en",
+  "proficiency_band":"all",
+  "register":"plain",
+  "title":"Por vs. para",
+  "invitation":"Want a quick lesson on why Spanish uses por or para here?",
+  "summary":"Both words can correspond to English words such as “for,” but Spanish chooses between them according to the relationship being expressed. Learn the relationship, not an English one-word translation.",
+  "blocks":[
+    {"block_id":"intro","type":"explanation","text":"Instead of memorizing one English translation, notice what the phrase is doing: showing a path or reason, expressing a purpose or destination, naming a beneficiary, setting a deadline, and so on."},
+    {"block_id":"dynamic-current","type":"dynamic_example_slot","slot":"current_occurrence"},
+    {"block_id":"rule-path","type":"rule","rule_id":"RULE.es.por_para.por_path_route","text":"Use por for a path, route, or area something moves through or along."},
+    {"block_id":"rule-reason","type":"rule","rule_id":"RULE.es.por_para.por_cause_reason","text":"Use por when the phrase gives a cause, reason, or motivation."},
+    {"block_id":"rule-question","type":"rule","rule_id":"RULE.es.por_para.por_reason_question","text":"Por qué asks for a reason. Treat the whole interrogative expression as a unit rather than swapping por and para mechanically."},
+    {"block_id":"rule-consequence","type":"rule","rule_id":"RULE.es.por_para.por_consequence","text":"Por eso links a prior reason to its consequence: roughly ‘because of that’ or ‘therefore,’ depending on context."},
+    {"block_id":"rule-means","type":"rule","rule_id":"RULE.es.por_para.por_means_channel","text":"Use por for a means, method, route, channel, or medium in many common constructions."},
+    {"block_id":"rule-exchange","type":"rule","rule_id":"RULE.es.por_para.por_exchange_substitution","text":"Use por in many exchange, price, replacement, and substitution relationships."},
+    {"block_id":"rule-distributive","type":"rule","rule_id":"RULE.es.por_para.por_distributive","text":"Por appears in distributive patterns such as uno por uno: one by one."},
+    {"block_id":"rule-purpose","type":"rule","rule_id":"RULE.es.por_para.para_purpose","text":"Use para to point toward an intended purpose or goal. Para + infinitive is a common way to express what something is done in order to accomplish."},
+    {"block_id":"rule-destination","type":"rule","rule_id":"RULE.es.por_para.para_destination_goal","text":"Use para to point toward a destination, endpoint, or goal."},
+    {"block_id":"rule-beneficiary","type":"rule","rule_id":"RULE.es.por_para.para_beneficiary","text":"Use para to identify an intended recipient or beneficiary in many common contexts."},
+    {"block_id":"rule-deadline","type":"rule","rule_id":"RULE.es.por_para.para_deadline","text":"Use para for many deadlines or target times."},
+    {"block_id":"dynamic-more","type":"dynamic_example_slot","slot":"reviewed_book_examples"}
+  ],
+  "rule_explanations":{},
+  "review_state":"candidate",
+  "version":1
+}
