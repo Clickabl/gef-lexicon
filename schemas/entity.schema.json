@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/entity.schema.json",
+  "title": "GEF Person and Character Entity Database",
+  "type": "object",
+  "required": ["schema_version", "entities"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "work_id": {"type": "string"},
+    "language_code": {"type": "string"},
+    "entities": {"type": "array", "items": {"$ref": "#/definitions/entity"}}
+  },
+  "definitions": {
+    "entity": {
+      "type": "object",
+      "required": ["entity_id", "entity_type", "display_name", "review_state"],
+      "properties": {
+        "entity_id": {"type": "string", "pattern": "^ent_[A-Za-z0-9._:-]+$"},
+        "entity_type": {"type": "string", "enum": ["fictional_character", "historical_person", "real_person", "mythological_figure", "organization", "place", "other"]},
+        "display_name": {"type": "string"},
+        "name_refs": {"type": "array", "items": {
+          "type": "object",
+          "required": ["name_id", "role"],
+          "properties": {
+            "name_id": {"type": "string"},
+            "role": {"type": "string", "enum": ["given_name", "family_name", "epithet", "title", "alias", "full_name", "other"]},
+            "surface": {"type": "string"}
+          }
+        }},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "work_id": {"type": "string"},
+        "summary": {"type": "object", "additionalProperties": {"type": "string"}},
+        "known_gender": {"type": ["string", "null"]},
+        "birth_date": {"type": ["string", "null"]},
+        "death_date": {"type": ["string", "null"]},
+        "external_ids": {"type": "object", "additionalProperties": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"type": "string"}},
+        "referenced_in_works": {"type": "array", "items": {"type": "string"}},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      }
+    }
+  }
+}
