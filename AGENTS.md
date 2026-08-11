@@ -2,6 +2,18 @@
 
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
 
+## Repository ownership and source of truth
+
+Gef now has exactly three active product repositories:
+
+1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration.
+2. **`Clickabl/gef-content`** — canonical books/stories, editions, semantic anchors, work-specific metadata/questions/audio/assets, corpus occurrence evidence, and content packaging.
+3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, curriculum graph, lessons, and reusable lesson renderings.
+
+**Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. New linguistic, dictionary, and curriculum decisions belong in this repository. Historical references to `gef-locales` are migration residue, not current architecture.
+
+For product-wide language support tiers and counts, `Clickabl/gef-expo/registry/language-support.json` is canonical. If it has not landed on the current checkout, inspect the active language-support SSOT work/PR rather than copying an older list into this repository. Scripts may consume that registry from a sibling checkout or explicit path; do not make Lexicon a second language-list authority.
+
 ## Agent Review Queue
 
 Cross-product review/research work is coordinated by the canonical queue contract in `Clickabl/gef-expo`:
@@ -12,7 +24,7 @@ Cross-product review/research work is coordinated by the canonical queue contrac
 - `docs/product/examples/name-unknown-task-template.md`
 - `gef-expo` issue #9 tracks the human inbox and future agent executor.
 
-If lexicon/name work needs later review or research, emit/propose a structured queue task or signal compatible with that contract instead of inventing a local TODO queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue results may create **candidate** lexicon/name artifacts or PRs, but they may never mark their own output approved. Large evidence/logs should be attached/referenced as artifacts rather than embedded in canonical lexicon rows.
+If lexicon/name/grammar/lesson work needs later review or research, emit/propose a structured queue task or signal compatible with that contract instead of inventing a local executable research queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue results may create **candidate** lexicon/name/lesson artifacts or PRs, but they may never mark their own output approved. Large evidence/logs should be attached/referenced as artifacts rather than embedded in canonical lexicon rows.
 
 ## Hard Rules
 
