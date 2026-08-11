@@ -7,19 +7,43 @@
       "entity_id": "ent_gef_intro_alex",
       "entity_type": "fictional_character",
       "display_name": "Alex",
-      "name_refs": [
+      "name_refs": [{"name_id": "name_en_alex", "role": "given_name", "surface": "Alex"}],
+      "labels": [
         {
-          "name_id": "name_en_alex",
-          "role": "given_name",
-          "surface": "Alex"
+          "surface": "Alex",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "gef-intro",
+          "components": [{"surface": "Alex", "role": "given_name", "target_type": "name", "target_id": "name_en_alex"}]
         }
       ],
       "aliases": [],
       "work_id": "gef-intro",
-      "summary": {
-        "en": "the main character and narrator of the Gef intro story"
-      },
+      "summary": {"en": "the main character and narrator of the Gef intro story"},
       "known_gender": null,
+      "external_ids": {},
+      "source_refs": ["src_work_gef_intro"],
+      "referenced_in_works": ["gef-intro"],
+      "review_state": "candidate"
+    },
+    {
+      "entity_id": "ent_gef_intro_gef",
+      "entity_type": "fictional_character",
+      "display_name": "Gef",
+      "name_refs": [{"name_id": "name_en_gef", "role": "full_name", "surface": "Gef"}],
+      "labels": [
+        {
+          "surface": "Gef",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "gef-intro",
+          "components": [{"surface": "Gef", "role": "other", "target_type": "name", "target_id": "name_en_gef"}]
+        }
+      ],
+      "aliases": [],
+      "work_id": "gef-intro",
+      "summary": {"en": "the talking mongoose who emerges from the wall, introduces himself as Gef, and says he has heard stories in many homes and languages"},
+      "known_gender": "male",
       "external_ids": {},
       "source_refs": ["src_work_gef_intro"],
       "referenced_in_works": ["gef-intro"],
