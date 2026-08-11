@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.names.around_world",
+  "support_language_tag": "en",
+  "proficiency_band": "all",
+  "register": "plain",
+  "title": "Your name around the world",
+  "invitation": "Have a minute to see how names travel between languages?",
+  "summary": "Names can be preserved, transliterated into another script, shortened, adapted, or connected to a local historical equivalent. Those relationships can reveal surprising connections without changing who a person is.",
+  "blocks": [
+    {
+      "block_id": "intro",
+      "type": "explanation",
+      "text": "A name is personal, but name forms also have histories. Different languages may write the same person's name differently, use a local form from the same historical family, or keep the original name as closely as their writing system allows."
+    },
+    {"block_id": "dynamic-personal", "type": "dynamic_example_slot", "slot": "learner_name_family"},
+    {
+      "block_id": "rule-person",
+      "type": "rule",
+      "rule_id": "RULE.mul.names.same_person_not_same_form",
+      "text": "The person stays the same even when a language uses a different reviewed form of the name."
+    },
+    {
+      "block_id": "rule-transliteration",
+      "type": "rule",
+      "rule_id": "RULE.mul.names.transliteration_vs_equivalent",
+      "text": "Transliteration tries to carry a name into another writing system. A local equivalent is a culturally established related name, which is a different relationship."
+    },
+    {
+      "block_id": "rule-related",
+      "type": "rule",
+      "rule_id": "RULE.mul.names.related_not_identical",
+      "text": "Related names can share history without being automatically interchangeable. Gef keeps those relationships explicit instead of treating every similar name as identical."
+    },
+    {
+      "block_id": "rule-community",
+      "type": "rule",
+      "rule_id": "RULE.mul.names.community_practices",
+      "text": "Naming practices differ across communities. Cultural notes in Gef are sourced and reviewed so one community's practice is never presented as a universal rule."
+    },
+    {
+      "block_id": "rule-yours",
+      "type": "rule",
+      "rule_id": "RULE.mul.names.your_name",
+      "text": "If Gef already knows your name family, you can explore reviewed forms across languages. If it does not, Gef keeps using the name you entered and can queue the name for future research."
+    },
+    {"block_id": "dynamic-more", "type": "dynamic_example_slot", "slot": "reviewed_name_examples"}
+  ],
+  "rule_explanations": {},
+  "review_state": "candidate",
+  "version": 1
+}
