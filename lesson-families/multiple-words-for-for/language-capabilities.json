@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_family_id": "LES.mul.prep.multiple_for",
   "capability_model": "lesson_specific",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
@@ -11,7 +11,7 @@
       "language_tags": ["en", "es", "pt", "ca", "gl", "el"]
     },
     "comparison_only": {
-      "description": "The lesson may render the language comparison/example block, but must not imply complete rule coverage or generate rule-driven practice for this language.",
+      "description": "The lesson may render the language comparison/example block when a real comparison record exists, but must not imply complete rule coverage or generate rule-driven practice for this language.",
       "default_for_registered_languages_not_in_full": true
     },
     "unavailable": {
@@ -33,10 +33,11 @@
     "Global language tier never grants lesson-level full support automatically.",
     "Any registered language, including Tier 3 or Tier 4, may be promoted to full for this lesson when this lesson's structured grammar records are ready.",
     "A full-support language must exist in the referenced grammar set, be lesson_ready, contain at least one form and at least one structured rule, and be explicitly listed in support_levels.full.language_tags.",
-    "A comparison_only language may use a native-language comparison blurb without having full grammar rules.",
+    "A comparison_only language becomes renderable only when the dedicated comparison-record catalog contains actual forms/constructions plus a native-language comparison blurb. Generic catalog/tooltip copy does not count.",
     "Removing or downgrading a language must be explicit; do not infer capability from global tier changes."
   ],
-  "comparison_blurb_catalog": "support-blurbs/manifest.json",
+  "comparison_record_catalog": "comparison-records/manifest.json",
+  "generic_support_blurb_catalog": "support-blurbs/manifest.json",
   "automation_ids": ["GEF-AUTO-LANG-001", "GEF-AUTO-LANG-002", "GEF-AUTO-LESSON-GRAMMAR-001"],
   "review_state": "candidate"
 }
