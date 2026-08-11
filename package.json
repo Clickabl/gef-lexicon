@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-lessons.mjs",
+    "validate:english": "node scripts/validate-english-coverage.mjs",
+    "compile:concepts": "node scripts/compile-concept-index.mjs",
+    "compile:sqlite": "node scripts/compile-sqlite.mjs"
+  },
   "dependencies": {
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
