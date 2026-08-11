@@ -27,7 +27,7 @@
             "surface": {"type": "string"}
           }
         }},
-        "label_components": {"type": "array", "items": {"$ref": "#/definitions/labelComponent"}},
+        "labels": {"type": "array", "items": {"$ref": "#/definitions/entityLabel"}},
         "aliases": {"type": "array", "items": {"type": "string"}},
         "work_id": {"type": "string"},
         "summary": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -38,6 +38,17 @@
         "source_refs": {"type": "array", "items": {"type": "string"}},
         "referenced_in_works": {"type": "array", "items": {"type": "string"}},
         "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      }
+    },
+    "entityLabel": {
+      "type": "object",
+      "required": ["surface", "label_type", "components"],
+      "properties": {
+        "surface": {"type": "string"},
+        "label_type": {"type": "string", "enum": ["canonical", "source_attested", "alias", "translated", "historical", "other"]},
+        "language_code": {"type": "string"},
+        "work_id": {"type": "string"},
+        "components": {"type": "array", "items": {"$ref": "#/definitions/labelComponent"}}
       }
     },
     "labelComponent": {
