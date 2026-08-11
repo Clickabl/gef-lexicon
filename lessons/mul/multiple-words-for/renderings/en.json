@@ -55,7 +55,7 @@
     {"block_id":"examples-intro","group_id":"examples","type":"explanation","text":"Here are a few safe examples from Gef texts."},
     {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":6},
     {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Ready to try a few?","requires_session_mode":"practice"},
-    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice"},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice","title":"Choose the form that fits."},
     {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_all_lesson_forms_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Quest","description":"Find every lesson form in this book.","begin_label":"Begin","decline_label":"Not now"},
     {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Nice work","description":"You have seen how different languages divide the same meaning in different ways.","action_label":"Done"}
   ],
