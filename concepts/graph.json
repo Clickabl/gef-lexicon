@@ -2,104 +2,22 @@
   "schema_version": 1,
   "concepts": [
     {
-      "concept_id": "30fe5bff-1cd1-496d-b65a-bbdc5620fd49",
+      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
       "concept_key": "speak-communicate",
       "domain": "communication",
-      "cefr_estimate": "A1",
-      "senses_by_language": {
-        "en": [
-          "72f0e05d-fdb2-42a7-8363-d37427962726"
-        ],
-        "es": [
-          "a8350f96-06cb-4e9f-bc5f-853972d70af5"
-        ],
-        "ja": [
-          "bb2be39e-d26a-46c9-80d9-4ab490bc50bf"
-        ],
-        "el": [
-          "cd2d1372-d33a-4b45-b88d-0c3ac682e85f"
-        ]
-      }
+      "planning_difficulty_hint": "A1"
     },
     {
-      "concept_id": "dcd075d1-0538-49cb-b46c-1370921df913",
+      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
       "concept_key": "read-written-words",
       "domain": "education",
-      "cefr_estimate": "A1",
-      "senses_by_language": {
-        "en": [
-          "b8815978-2823-4ad3-982e-0b5941d8f750"
-        ],
-        "es": [
-          "bb112297-77de-4a21-8d53-50a75c273c5f"
-        ],
-        "ja": [
-          "b931f734-73ea-49bf-ae16-1947cad57cc1"
-        ],
-        "el": [
-          "0d40723c-5d0c-406f-83ba-e806193f8f4b"
-        ]
-      }
+      "planning_difficulty_hint": "A1"
     },
     {
-      "concept_id": "942af152-f77c-4518-b103-4095ec062fb3",
+      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
       "concept_key": "frog-amphibian",
       "domain": "nature",
-      "cefr_estimate": "A1",
-      "senses_by_language": {
-        "en": [
-          "cb7057b2-289b-4730-85ae-2257bba50f6e"
-        ],
-        "es": [
-          "77ada859-395a-4869-aed0-2c1e301f566d"
-        ],
-        "ja": [
-          "73a9a2eb-6baa-4021-a4a0-e8907d459112"
-        ],
-        "el": [
-          "2177666f-b91b-4fcc-a784-b2b780100a43"
-        ]
-      }
-    },
-    {
-      "concept_id": "6c7f9858-fd7c-4252-8969-a6417e06bad8",
-      "concept_key": "king-monarch",
-      "domain": "society",
-      "cefr_estimate": "A1",
-      "senses_by_language": {
-        "en": [
-          "196790d1-52e5-4169-b5f1-eb5b7593800c"
-        ],
-        "es": [
-          "09dd6548-e01d-42d4-85a2-5f6b6b4f3913"
-        ],
-        "ja": [
-          "ffcad488-b42d-4965-828e-190f57ba7a80"
-        ],
-        "el": [
-          "4d059255-ff92-4f51-b5e1-091ef09306f5"
-        ]
-      }
-    },
-    {
-      "concept_id": "9d2552cc-7c04-488d-8c23-9c4dea48fe61",
-      "concept_key": "princess-royal",
-      "domain": "society",
-      "cefr_estimate": "A1",
-      "senses_by_language": {
-        "en": [
-          "d39a6e86-2a4f-4edd-bca3-c12d947913c8"
-        ],
-        "es": [
-          "e5bdf516-8419-409d-aa97-76516c4acb3f"
-        ],
-        "ja": [
-          "3d6113ac-7a1d-4209-9534-6bf8ad0c5d40"
-        ],
-        "el": [
-          "20083ea3-679e-4edd-80f6-f7960cb6f503"
-        ]
-      }
+      "planning_difficulty_hint": "A1"
     }
   ]
 }

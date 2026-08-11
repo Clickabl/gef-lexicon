@@ -3,16 +3,16 @@
   "language_code": "es",
   "lexemes": [
     {
-      "lexeme_id": "a1a9b4b9-29e1-4ddf-9217-cdfdb43fa0e2",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000201",
       "lemma_nfc": "hablar",
       "upos": "VERB",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "7b30a738-fa45-41d0-863b-41fc9221f365",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000202",
           "sense_key": "hablar-comunicar",
-          "primary_concept_id": "30fe5bff-1cd1-496d-b65a-bbdc5620fd49",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
           "definitions": {
             "en": "to communicate using spoken language",
             "es": "comunicarse usando el lenguaje hablado",
@@ -22,53 +22,39 @@
             "el": "επικοινωνώ χρησιμοποιώντας τον προφορικό λόγο"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "115f0960-f6e2-4421-a3ef-6a2eefd28eea",
-            "425a80c9-d890-44da-bb1e-0d43860a4160",
-            "b5119bb9-3591-4f93-b4fc-7158a3dc38db"
-          ],
-          "antonyms": [
-            "e0914d59-66ba-4b64-9278-971a988438f3"
-          ],
-          "confusable_senses": [
-            "e3527cee-63af-4e01-b404-7d2c9378d57e",
-            "236f838f-4947-4fae-8e0b-98b76bc94871"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "221eef2a-990f-46ea-8ae8-e9ef90d2a5bc",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000203",
           "surface_nfc": "hablar",
           "normalized_lookup": "hablar",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "1eaefdd3-67ca-4ab0-b3d0-b05efb4e4cd5",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000204",
               "features": {
-                "base": {
-                  "non_finite": "infinitive"
-                }
+                "base": { "non_finite": "infinitive" }
               },
               "display_label_key": "infinitivo"
             }
           ]
         },
         {
-          "form_id": "7503442a-ec6d-4c19-99a8-c685059b9043",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000205",
           "surface_nfc": "habla",
           "normalized_lookup": "habla",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "d70fd648-22d7-4814-a146-f22e9dcb2b17",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000206",
               "features": {
-                "base": {
-                  "tense": "present",
-                  "mood": "indicative",
-                  "person": "3",
-                  "number": "singular"
-                }
+                "base": { "tense": "present", "mood": "indicative", "person": "3", "number": "singular" }
               },
               "display_label_key": "3ª persona singular presente"
             }
@@ -77,16 +63,16 @@
       ]
     },
     {
-      "lexeme_id": "1dc7abbd-ea78-4eb7-a4be-716ed41302a6",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000207",
       "lemma_nfc": "rana",
       "upos": "NOUN",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "14e6b409-1fc8-45ca-9e42-db9ee9f686ff",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000208",
           "sense_key": "rana-anfibio",
-          "primary_concept_id": "942af152-f77c-4518-b103-4095ec062fb3",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "definitions": {
             "en": "a tailless amphibious animal with long hind legs for leaping",
             "es": "anfibio sin cola de patas traseras adaptadas para el salto",
@@ -96,28 +82,24 @@
             "el": "αμφίβιο χωρίς ουρά με πίσω πόδια προσαρμοσμένα για πηδήματα"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "16a6cc64-91cb-420d-b1dc-21bc28696fae"
-          ],
-          "confusable_senses": [
-            "df7b4e5b-a6e9-447f-92a9-d005573886a7"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "62c1e8a3-9f51-4195-9958-bd8d6361477a",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000209",
           "surface_nfc": "rana",
           "normalized_lookup": "rana",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "5a364005-a22d-4732-ba46-feb572be76c9",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000210",
               "features": {
-                "base": {
-                  "gender": "feminine",
-                  "number": "singular"
-                }
+                "base": { "gender": "feminine", "number": "singular" }
               },
               "display_label_key": "singular femenino"
             }

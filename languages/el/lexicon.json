@@ -3,16 +3,16 @@
   "language_code": "el",
   "lexemes": [
     {
-      "lexeme_id": "544fd538-b471-461f-8e6b-a23cc461299e",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000401",
       "lemma_nfc": "μιλάω",
       "upos": "VERB",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "dfa7889b-da32-4e4c-b323-7f0b5826fb30",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000402",
           "sense_key": "milao-speak",
-          "primary_concept_id": "30fe5bff-1cd1-496d-b65a-bbdc5620fd49",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
           "definitions": {
             "en": "to speak or communicate using speech",
             "es": "hablar o comunicarse mediante la palabra",
@@ -22,35 +22,24 @@
             "el": "επικοινωνώ προφέροντας λέξεις"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "76eebc3a-7899-4cc3-ab74-ff08de2c78ed",
-            "e7ba6ce1-78ca-4511-afff-99b9cb800b42"
-          ],
-          "antonyms": [
-            "9f87df6b-9a12-4844-ac11-a2461304ea95"
-          ],
-          "confusable_senses": [
-            "64e146ac-f4e5-4060-83b4-18bf239c1478",
-            "a5d06090-2381-4bc9-9435-461a184370e0"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "f324ea12-8dce-4621-b962-d92a2991221a",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000403",
           "surface_nfc": "μιλάω",
           "normalized_lookup": "μιλαω",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "edd24655-1cf9-4e41-974b-936f57803ef0",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000404",
               "features": {
-                "base": {
-                  "tense": "present",
-                  "mood": "indicative",
-                  "person": "1",
-                  "number": "singular"
-                }
+                "base": { "tense": "present", "mood": "indicative", "person": "1", "number": "singular" }
               },
               "display_label_key": "1ο πρόσωπο ενικού ενεστώτα"
             }
@@ -59,16 +48,16 @@
       ]
     },
     {
-      "lexeme_id": "106b1a73-bcdc-45a0-8308-7f2a068ca848",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000405",
       "lemma_nfc": "βάτραχος",
       "upos": "NOUN",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "fbcae08e-2c8b-4589-8733-95b5ea803f1c",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000406",
           "sense_key": "vatrachos-frog",
-          "primary_concept_id": "942af152-f77c-4518-b103-4095ec062fb3",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "definitions": {
             "en": "a tailless amphibious animal with long hind legs for leaping",
             "es": "anfibio sin cola con patas traseras largas para saltar",
@@ -78,26 +67,24 @@
             "el": "αμφίβιο ζώο χωρίς ουρά με πίσω πόδια προσαρμοσμένα για άλματα"
           },
           "cefr_level": "A1",
-          "confusable_senses": [
-            "3a2b9df4-bbb8-4c76-a92a-d70a24b3f540"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "ed880ea6-4180-4b56-945f-7154b2acdc93",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000407",
           "surface_nfc": "βάτραχος",
           "normalized_lookup": "βατραχος",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "47356c40-f7c3-4e1d-be61-9860bad076fd",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000408",
               "features": {
-                "base": {
-                  "case": "nominative",
-                  "gender": "masculine",
-                  "number": "singular"
-                }
+                "base": { "case": "nominative", "gender": "masculine", "number": "singular" }
               },
               "display_label_key": "ονομαστική ενικού αρσενικό"
             }

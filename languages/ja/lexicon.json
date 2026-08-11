@@ -3,16 +3,16 @@
   "language_code": "ja",
   "lexemes": [
     {
-      "lexeme_id": "7bf6bef2-63d1-443b-93dd-5f13beb460fc",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000301",
       "lemma_nfc": "話す",
       "upos": "VERB",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "33b9eb90-e93d-4b73-972f-603e000c825d",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000302",
           "sense_key": "hanasu-speak",
-          "primary_concept_id": "30fe5bff-1cd1-496d-b65a-bbdc5620fd49",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
           "definitions": {
             "en": "to speak or communicate using words",
             "es": "hablar o comunicarse mediante palabras",
@@ -22,51 +22,39 @@
             "el": "μιλάω ή επικοινωνώ χρησιμοποιώντας λέξεις"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "ee43959a-be87-431a-aba7-24a5eed353b7",
-            "fccff56f-5989-4394-be56-1b2ca94acd0a"
-          ],
-          "antonyms": [
-            "bfd5c6e3-9463-413c-8835-df8152744088"
-          ],
-          "confusable_senses": [
-            "28f9e5ff-4d94-4fc9-be13-8173798461ca",
-            "b1f2d07b-328d-4828-ad1a-94e0487080f2"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "a988af69-9f0b-4a8c-9885-16f4a02ab742",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000303",
           "surface_nfc": "話す",
           "normalized_lookup": "話す",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "9bf36df4-0a02-44d8-9ff7-196a8905f7c7",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000304",
               "features": {
-                "base": {
-                  "tense": "non-past",
-                  "politeness": "plain"
-                }
+                "base": { "tense": "non-past", "politeness": "plain" }
               },
               "display_label_key": "辞書形 (plain non-past)"
             }
           ]
         },
         {
-          "form_id": "aff18c09-2734-4214-a9d3-99946875fbfc",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000305",
           "surface_nfc": "話します",
           "normalized_lookup": "話します",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "24d8cab5-12fe-4a6a-b0a4-9bad54476902",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000306",
               "features": {
-                "base": {
-                  "tense": "non-past",
-                  "politeness": "polite"
-                }
+                "base": { "tense": "non-past", "politeness": "polite" }
               },
               "display_label_key": "丁寧形 (-masu form)"
             }
@@ -75,16 +63,16 @@
       ]
     },
     {
-      "lexeme_id": "1f75a293-6adf-4e34-bc59-1a027c84d61a",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000307",
       "lemma_nfc": "カエル",
       "upos": "NOUN",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "985adea9-537c-451e-b40b-45f82e548c55",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000308",
           "sense_key": "kaeru-frog",
-          "primary_concept_id": "942af152-f77c-4518-b103-4095ec062fb3",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "definitions": {
             "en": "a tailless amphibious animal with long hind legs for leaping",
             "es": "anfibio sin cola de patas traseras para saltar",
@@ -94,28 +82,24 @@
             "el": "αμφίβιο χωρίς ουρά με πίσω πόδια για πηδήματα"
           },
           "cefr_level": "A1",
-          "homophones": [
-            "10ee1649-82b0-42cb-bc81-9d64ceaf2e35",
-            "5177d0d9-e794-4f8c-ad0c-3eec0437c7c5"
-          ],
-          "confusable_senses": [
-            "e2f093b6-688e-4fab-aaf1-c88724f0cdc7"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "35cdc286-b955-4866-93f5-19ecc44ccd97",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000309",
           "surface_nfc": "カエル",
           "normalized_lookup": "カエル",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "d9601584-4e14-449d-8054-3c5d91ce9205",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000310",
               "features": {
-                "base": {
-                  "number": "singular"
-                }
+                "base": { "number": "singular" }
               },
               "display_label_key": "名詞"
             }

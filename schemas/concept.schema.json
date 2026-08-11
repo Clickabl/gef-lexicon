@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/concept.schema.json",
-  "title": "Global Interlingual Concept Graph",
+  "title": "Global Interlingual Concept Manifest",
   "type": "object",
   "required": ["schema_version", "concepts"],
   "properties": {
@@ -10,18 +10,17 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["concept_id", "concept_key", "domain", "senses_by_language"],
+        "required": ["concept_id", "concept_key", "domain"],
         "properties": {
-          "concept_id": { "type": "string" },
+          "concept_id": {
+            "type": "string",
+            "pattern": "^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
           "concept_key": { "type": "string" },
           "domain": { "type": "string" },
-          "cefr_estimate": { "type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
-          "senses_by_language": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "array",
-              "items": { "type": "string" }
-            }
+          "planning_difficulty_hint": {
+            "type": "string",
+            "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]
           }
         }
       }

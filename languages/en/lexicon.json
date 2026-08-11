@@ -3,16 +3,16 @@
   "language_code": "en",
   "lexemes": [
     {
-      "lexeme_id": "f2934954-fb07-4403-ba04-76589f7f342c",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000101",
       "lemma_nfc": "read",
       "upos": "VERB",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "3cd9eb6e-ca4e-467c-a6fa-c51f12e54f32",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000102",
           "sense_key": "read-written-words",
-          "primary_concept_id": "dcd075d1-0538-49cb-b46c-1370921df913",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
           "definitions": {
             "en": "to look at and comprehend written symbols or words",
             "es": "mirar y comprender símbolos o palabras escritas",
@@ -26,103 +26,64 @@
           },
           "cefr_level": "A1",
           "register_label": "standard",
-          "homophones": [
-            "dca0fee2-2dff-4bed-b51c-f1782b740c2f"
-          ],
+          "homophones": [],
           "homonyms": [],
-          "synonyms": [
-            "b070fd07-dda1-4554-81ca-9c3e9ac0f33e",
-            "dc60d4df-5473-4e83-89de-50b9f1e6d43b",
-            "2cca6c7e-4f9e-4551-abed-40379c6d5df7"
-          ],
-          "antonyms": [
-            "ddaf717b-66f8-49c3-92e4-d0b363d484c5"
-          ],
-          "confusable_senses": [
-            "66f4c094-4a75-4c9d-996d-34707342d114",
-            "f18e1bbf-d759-476e-b84b-99ce65f95e77",
-            "e9db942a-b2cd-4830-81c8-c9416d108e80"
-          ]
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "c4d48eee-c3e8-4cf4-b4dc-623b20375c6e",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000103",
           "surface_nfc": "read",
           "normalized_lookup": "read",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "a403ab8e-47fd-418c-b5d7-1de79b0d3d0e",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000104",
               "features": {
-                "base": {
-                  "non_finite": "infinitive"
-                }
+                "base": { "non_finite": "infinitive" }
               },
               "display_label_key": "infinitive"
             },
             {
-              "analysis_id": "87658103-2151-4714-8648-ef6b5cb08986",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000105",
               "features": {
-                "base": {
-                  "tense": "past",
-                  "mood": "indicative"
-                }
+                "base": { "tense": "past", "mood": "indicative" }
               },
               "display_label_key": "past tense"
             }
           ]
         },
         {
-          "form_id": "b898e242-736b-441d-96a5-948e52786e6e",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000106",
           "surface_nfc": "reads",
           "normalized_lookup": "reads",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "9690adbc-372a-4030-9927-3f53fe9cdc23",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000107",
               "features": {
-                "base": {
-                  "tense": "present",
-                  "mood": "indicative",
-                  "person": "3",
-                  "number": "singular"
-                }
+                "base": { "tense": "present", "mood": "indicative", "person": "3", "number": "singular" }
               },
               "display_label_key": "3rd person singular present"
-            }
-          ]
-        },
-        {
-          "form_id": "5857441b-3445-411a-8f3a-57e3518c531f",
-          "surface_nfc": "reading",
-          "normalized_lookup": "reading",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "1f9caa21-16af-412d-bc3a-743860c41faf",
-              "features": {
-                "base": {
-                  "non_finite": "gerund"
-                }
-              },
-              "display_label_key": "present participle / gerund"
             }
           ]
         }
       ]
     },
     {
-      "lexeme_id": "766a3541-7b32-4778-9fef-8de6b0ec6a24",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000108",
       "lemma_nfc": "speak",
       "upos": "VERB",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "6e2c7db3-bbc9-4480-b9b2-ecb68bbe8cf4",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000109",
           "sense_key": "speak-communicate",
-          "primary_concept_id": "30fe5bff-1cd1-496d-b65a-bbdc5620fd49",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
           "definitions": {
             "en": "to utter words using human vocal speech",
             "es": "pronunciar palabras usando el habla humana",
@@ -132,121 +93,71 @@
             "el": "προφέρω λέξεις χρησιμοποιώντας την ανθρώπινη φωνή"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "f934acd1-f3fd-4ea8-a5bd-4822af735e04",
-            "bc8b4670-4482-4aae-8845-0a85032d04f5",
-            "6180b6a3-bc2f-4160-982e-f10a9902aecb"
-          ],
-          "antonyms": [
-            "413152b9-13a0-401a-83a0-ed700d45aeb4"
-          ],
-          "confusable_senses": [
-            "121a8206-da06-42b2-9581-f4080dc6c851",
-            "a0666547-715b-4f58-8f3d-8deb787a7002"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "d6c69d14-344f-4f57-a9c0-9e9a97da61ec",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000110",
           "surface_nfc": "speak",
           "normalized_lookup": "speak",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "60f53490-d3d1-4de1-86f7-cf020548bf2d",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000111",
               "features": {
-                "base": {
-                  "non_finite": "infinitive"
-                }
+                "base": { "non_finite": "infinitive" }
               },
               "display_label_key": "infinitive"
-            }
-          ]
-        },
-        {
-          "form_id": "fa1a8980-ad14-4b74-8b97-6a62110245de",
-          "surface_nfc": "speaks",
-          "normalized_lookup": "speaks",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "5ae93402-ecc5-482d-b6e2-cad211daaebc",
-              "features": {
-                "base": {
-                  "tense": "present",
-                  "mood": "indicative",
-                  "person": "3",
-                  "number": "singular"
-                }
-              },
-              "display_label_key": "3rd person singular present"
             }
           ]
         }
       ]
     },
     {
-      "lexeme_id": "a8beb8e7-251e-463b-8bec-5352218ba99e",
+      "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000112",
       "lemma_nfc": "frog",
       "upos": "NOUN",
       "proper_noun": false,
-      "review_state": "approved",
+      "review_state": "candidate",
       "senses": [
         {
-          "sense_id": "42f05498-3044-443d-9962-382ef8e100ab",
+          "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000113",
           "sense_key": "frog-amphibian",
-          "primary_concept_id": "942af152-f77c-4518-b103-4095ec062fb3",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "definitions": {
             "en": "a tailless amphibious animal with long hind legs for leaping",
             "es": "un animal anfibio sin cola con patas traseras largas para saltar",
-            "fr": "un animal amphibie sans queue avec de longues pattes arrière pour sauter",
+            "fr": "un animal amphibie sans queue aux longues pattes arrière pour sauter",
             "pt": "um animal anfíbio sem cauda com longas patas traseiras para saltar",
             "it": "un animale anfibio senza coda con lunghe zampe posteriori per saltare",
             "el": "ένα αμφίβιο ζώο χωρίς ουρά με μακριά πίσω πόδια για πηδήματα"
           },
           "cefr_level": "A1",
-          "synonyms": [
-            "2f18321a-de4a-4a77-85e8-a60c218a9edc"
-          ],
-          "confusable_senses": [
-            "8206bd29-b062-41dd-bf83-963a91fdedc0",
-            "a7eba513-7b1d-4533-a4cd-15ac9df18da7"
-          ]
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
         }
       ],
       "forms": [
         {
-          "form_id": "0241152e-0af8-4dad-943f-8b19dd865cd9",
+          "form_id": "018f2c3a-7b1e-7a4d-9c2e-000000000114",
           "surface_nfc": "frog",
           "normalized_lookup": "frog",
           "attested_in_text": true,
           "analyses": [
             {
-              "analysis_id": "21095f35-84c1-4449-bb6e-e6c615ac1602",
+              "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000115",
               "features": {
-                "base": {
-                  "number": "singular"
-                }
+                "base": { "number": "singular" }
               },
               "display_label_key": "singular"
-            }
-          ]
-        },
-        {
-          "form_id": "0b2da122-e907-4278-ae46-71ef54977bbb",
-          "surface_nfc": "frogs",
-          "normalized_lookup": "frogs",
-          "attested_in_text": true,
-          "analyses": [
-            {
-              "analysis_id": "e4b959cd-5903-4a83-9269-4ad908318c8e",
-              "features": {
-                "base": {
-                  "number": "plural"
-                }
-              },
-              "display_label_key": "plural"
             }
           ]
         }
