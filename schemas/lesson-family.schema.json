@@ -44,7 +44,7 @@
     },
     "presentation_modes": {
       "type": "array",
-      "items": {"enum": ["scroll", "paged"]},
+      "items": {"enum": ["scroll", "paged", "presentation"]},
       "uniqueItems": true
     },
     "learning_path_policy": {
