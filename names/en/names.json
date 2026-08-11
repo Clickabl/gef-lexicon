@@ -6,10 +6,20 @@
       "name_id": "name_en_alex",
       "canonical_form": "Alex",
       "name_type": "given",
-      "spellings": [{"text": "Alex", "status": "canonical", "script": "Latn", "locale": "en"}],
+      "spellings": [
+        {"text": "Alex", "status": "canonical", "script": "Latn", "locale": "en"}
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.en.alex",
+          "note": "Cross-language family membership is separate from personal identity and from book-specific character identity."
+        }
+      ],
       "related_names": [],
       "gender_usage": [],
-      "source_refs": ["src_work_gef_intro"],
+      "source_refs": ["src_work_gef_intro", "src_wikidata_q13258171_alex"],
       "review_state": "candidate"
     },
     {
@@ -17,6 +27,7 @@
       "canonical_form": "Henry",
       "name_type": "given",
       "spellings": [{"text": "Henry", "status": "canonical", "script": "Latn", "locale": "en"}],
+      "family_refs": [],
       "related_names": [],
       "gender_usage": [],
       "source_refs": ["src_work_frog_king"],
@@ -27,6 +38,7 @@
       "canonical_form": "Gef",
       "name_type": "mononym",
       "spellings": [{"text": "Gef", "status": "canonical", "script": "Latn", "locale": "en", "note": "pronounced like Jeff in the Gef Intro source text"}],
+      "family_refs": [],
       "related_names": [],
       "gender_usage": [],
       "source_refs": ["src_work_gef_intro"],
@@ -37,6 +49,7 @@
       "canonical_form": "Jeff",
       "name_type": "given",
       "spellings": [{"text": "Jeff", "status": "canonical", "script": "Latn", "locale": "en"}],
+      "family_refs": [],
       "related_names": [],
       "gender_usage": [],
       "source_refs": ["src_work_gef_intro"],
