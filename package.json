@@ -4,7 +4,8 @@
     "validate:english": "node scripts/validate-english-coverage.mjs",
     "compile:concepts": "node scripts/compile-concept-index.mjs",
     "compile:sqlite": "node scripts/compile-sqlite.mjs",
-    "compile:names": "node scripts/compile-name-index.mjs"
+    "compile:names": "node scripts/compile-name-index.mjs",
+    "generate:learning-paths": "node scripts/generate-learning-path-placements.mjs"
   },
   "dependencies": {
     "ajv": "^8.20.0",
