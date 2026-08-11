@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "placements": [
+    {
+      "placement_id": "PATH.es.multiple_for",
+      "language_tag": "es",
+      "lesson_family_id": "LES.mul.prep.multiple_for",
+      "implementation_lesson_id": "LES.es.prep.por_para.core",
+      "status": "placed",
+      "difficulty_band": "A2",
+      "order_hint": 20,
+      "prerequisite_lesson_ids": [],
+      "prerequisite_concepts": ["basic Spanish prepositions"],
+      "notes": "Spanish por/para is already modeled as an A2 reusable lesson. Exact path order is candidate and may move as the Spanish curriculum matures.",
+      "review_state": "candidate"
+    },
+    {
+      "placement_id": "PATH.el.multiple_for",
+      "language_tag": "el",
+      "lesson_family_id": "LES.mul.prep.multiple_for",
+      "status": "research_required",
+      "prerequisite_lesson_ids": [],
+      "prerequisite_concepts": ["basic use of για", "basic purpose clauses"],
+      "notes": "Do not copy Spanish placement. Greek may benefit from this comparison only after learners have enough basic για / purpose-clause context; determine the real position from Greek-specific curriculum review.",
+      "review_state": "candidate"
+    }
+  ]
+}
