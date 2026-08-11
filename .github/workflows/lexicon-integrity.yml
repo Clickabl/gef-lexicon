@@ -16,11 +16,38 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Validate core lexicon integrity
-        run: node scripts/validate-lexicon.mjs
+        shell: bash
+        run: |
+          set +e
+          output=$(node scripts/validate-lexicon.mjs 2>&1)
+          status=$?
+          printf '%s\n' "$output"
+          if [ "$status" -ne 0 ]; then
+            while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
+            exit "$status"
+          fi
       - name: Validate curriculum taxonomy
-        run: node scripts/validate-curriculum.mjs
+        shell: bash
+        run: |
+          set +e
+          output=$(node scripts/validate-curriculum.mjs 2>&1)
+          status=$?
+          printf '%s\n' "$output"
+          if [ "$status" -ne 0 ]; then
+            while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
+            exit "$status"
+          fi
       - name: Validate lesson and construction graph
-        run: node scripts/validate-lessons.mjs
+        shell: bash
+        run: |
+          set +e
+          output=$(node scripts/validate-lessons.mjs 2>&1)
+          status=$?
+          printf '%s\n' "$output"
+          if [ "$status" -ne 0 ]; then
+            while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
+            exit "$status"
+          fi
       - name: Validate English source coverage
         run: npm run validate:english
       - name: Regenerate concept index
