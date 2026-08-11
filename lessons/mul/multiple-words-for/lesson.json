@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.prep.multiple_for",
   "lesson_key": "multiple-words-for",
   "target_language": "mul",
@@ -8,16 +8,21 @@
   "prerequisite_lesson_ids": [],
   "difficulty_band": "A2",
   "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "language_capabilities_manifest": "../../../lesson-families/multiple-words-for-for/language-capabilities.json",
   "session_policy": {
     "minimum_display_languages": 2,
-    "maximum_display_languages": 6,
+    "maximum_display_languages": 12,
+    "fixed_comparison_language_tags": ["en", "es"],
     "prefer_profile_languages": true,
-    "fallback_language_tags": ["en"],
+    "fallback_language_tags": ["en", "es"],
     "requires_at_least_one_non_anchor_multi_language": false,
     "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
     "display_modes": ["scroll", "pages", "presentation"],
-    "practice_mode": "only_when_selected_languages_have_meaningful_choice",
-    "comparison_only_mode": true
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "The underlying arrays are not schema-capped. Twelve is the default visual cap for this lesson surface; classroom/projector tooling may raise it."
   },
   "rules": [],
   "triggers": [
@@ -32,7 +37,8 @@
       "module": "inline_choice_cloze",
       "eligible_rule_ids": [],
       "constraints": {
-        "resolve_rule_pool_from_selected_languages": true,
+        "resolve_rule_pool_from_learning_languages": true,
+        "require_full_lesson_support": true,
         "require_unique_defensible_answer": true,
         "feedback_source": "grammar_rule_tips",
         "omit_when_no_meaningful_choice": true
@@ -42,7 +48,8 @@
       "module": "why_this",
       "eligible_rule_ids": [],
       "constraints": {
-        "resolve_rule_pool_from_selected_languages": true,
+        "resolve_rule_pool_from_learning_languages": true,
+        "require_full_lesson_support": true,
         "feedback_source": "grammar_rule_tips",
         "omit_when_no_meaningful_choice": true
       }
@@ -51,7 +58,7 @@
       "module": "reader_quest",
       "eligible_rule_ids": [],
       "constraints": {
-        "selected_languages_only": true,
+        "learning_languages_only": true,
         "open_reader_mode": "lesson-quest",
         "teacher_policy": ["hidden", "optional", "required"],
         "omit_when_no_meaningful_choice": true
@@ -71,16 +78,16 @@
   },
   "presentation": {
     "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "concept", "split", "rules", "examples", "practice", "quest", "completion"],
+    "groups": ["facts", "comparison-intro", "rules", "examples", "practice", "quest", "completion"],
     "scroll_mode": "render groups in one vertical lesson surface",
     "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
     "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
   },
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
-    "language_limit": 6,
+    "language_limit": 12,
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
