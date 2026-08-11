@@ -4,13 +4,41 @@ Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/L
 
 ## Repository ownership and source of truth
 
-Gef now has exactly three active product repositories:
+Gef has exactly three active product repositories:
 
-1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration.
+1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration, and the product-wide language-support registry.
 2. **`Clickabl/gef-content`** — canonical books/stories, editions, semantic anchors, work-specific metadata/questions/audio/assets, corpus occurrence evidence, and content packaging.
 3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, curriculum graph, lessons, and reusable lesson renderings.
 
-**Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. New linguistic, dictionary, and curriculum decisions belong in this repository. Historical references to `gef-locales` are migration residue, not current architecture.
+**Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. Historical references to `gef-locales` are migration residue, not current architecture.
+
+### Product-wide language support
+
+Before changing language coverage, lesson-rendering language assumptions, scripts/regions, or support-count claims, read:
+
+- `Clickabl/gef-expo/registry/language-support.json`
+- `Clickabl/gef-expo/docs/product/LANGUAGE_SUPPORT.md`
+
+A `languages/{lang}` directory, lexicon record, construction, or lesson rendering in this repository does **not** promote that language into a Gef support tier. Never copy a strategic language list/count here as a second authority.
+
+## Work-item terminology
+
+- **TASK** = AI/human research, review, evidence gathering, linguistic analysis, or candidate-data work.
+- **TODO** = coding/implementation work such as schemas, validators, compilers, CI, migrations, package tooling, or runtime integration.
+- A Task may discover a TODO, and a TODO may depend on a Task, but do not mix unrelated research and implementation into one ambiguous work item.
+- Until the human inbox is implemented, GitHub issues prefixed `TASK —` are durable Task seeds.
+
+## Agent Review Queue
+
+Cross-product review/research work uses the canonical queue contract in `Clickabl/gef-expo`:
+
+- `docs/product/AGENT_REVIEW_QUEUE.md`
+- `docs/product/schemas/agent-review-task-v1.schema.json`
+- `docs/product/schemas/agent-review-queue-v1.postgres.sql`
+- `docs/product/examples/name-unknown-task-template.md`
+- Expo issue #9 tracks queue/inbox implementation.
+
+Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue output may propose **candidate** lexicon/name/lesson artifacts or PRs but may never approve its own output.
 
 ## Hard Rules
 
