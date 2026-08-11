@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson-family.schema.json",
+  "title": "Gef multilingual lesson family",
+  "type": "object",
+  "required": ["schema_version", "lesson_family_id", "lesson_key", "grammar_set_id", "eligibility", "block_plan", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "lesson_family_id": {"type": "string", "pattern": "^LES\\.mul\\.[A-Za-z0-9._-]+$"},
+    "lesson_key": {"type": "string", "minLength": 1},
+    "title_key": {"type": "string", "minLength": 1},
+    "fallback_title_en": {"type": "string", "minLength": 1},
+    "summary_key": {"type": "string", "minLength": 1},
+    "fallback_summary_en": {"type": "string", "minLength": 1},
+    "grammar_set_id": {"type": "string", "pattern": "^GRAMSET\\.[A-Za-z0-9._-]+$"},
+    "curriculum_concept_ids": {"type": "array", "items": {"type": "string", "pattern": "^CURR\\.[A-Za-z0-9._-]+$"}, "uniqueItems": true},
+    "eligibility": {
+      "type": "object",
+      "required": ["minimum_display_languages", "maximum_display_languages", "require_non_anchor_multi_form_language", "prefer_profile_languages"],
+      "properties": {
+        "minimum_display_languages": {"type": "integer", "minimum": 1},
+        "maximum_display_languages": {"type": "integer", "minimum": 1},
+        "require_non_anchor_multi_form_language": {"type": "boolean"},
+        "prefer_profile_languages": {"type": "boolean"},
+        "fill_with_anchor_language_when_needed": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "block_plan": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["block_id", "block_type"],
+        "properties": {
+          "block_id": {"type": "string", "minLength": 1},
+          "block_type": {"enum": ["lesson_facts", "localized_text", "word_examples", "language_rules", "curated_examples", "practice_intro", "practice", "quest_offer", "completion"]},
+          "group_id": {"type": "string"},
+          "repeat": {"enum": ["once", "per_single_form_language", "per_multi_form_language", "per_selected_language", "per_form", "per_rule"]},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "presentation_modes": {
+      "type": "array",
+      "items": {"enum": ["scroll", "paged"]},
+      "uniqueItems": true
+    },
+    "learning_path_policy": {
+      "type": "object",
+      "properties": {
+        "placements_are_language_specific": {"type": "boolean"},
+        "placement_registry": {"type": "string"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": false
+}
