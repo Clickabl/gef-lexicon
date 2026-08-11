@@ -17,7 +17,7 @@ Exact story sentences and passage-specific lesson evidence belong in `Clickabl/g
 
 ## Product-wide language support
 
-This repository does **not** decide which languages are Golden, Partial, Learner, App Translation Only, or otherwise product-supported.
+This repository does **not** decide which languages are Tier 1, Tier 2, Tier 3, Tier 4/Learn From, UI-only, experimental, or otherwise product-supported.
 
 Canonical product-wide authority:
 
@@ -27,7 +27,11 @@ Human explanation:
 
 `Clickabl/gef-expo/docs/product/LANGUAGE_SUPPORT.md`
 
-A `languages/{lang}` profile, lexicon entry, lesson rendering, or incidental piece of linguistic data does not promote that language's product support level. Do not copy a strategic language list or count into this repository.
+Standard batch grouping for translation/review:
+
+`Clickabl/gef-expo/registry/standard-translation-groups.json`
+
+A `languages/{lang}` profile, lexicon entry, lesson rendering, or incidental piece of linguistic data does not promote that language's product support level. Likewise, a Tier 4 language does not need a bespoke grammar course to remain learnable: Gef may teach it through leveled books, dictionary support, comprehension, and reusable reading games. Do not copy a strategic language list or count into this repository.
 
 ## Architecture
 
