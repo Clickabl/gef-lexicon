@@ -5,7 +5,7 @@
   "title_key": "lesson.multiple_for.title",
   "fallback_title_en": "How {learning_languages} uses {forms}",
   "summary_key": "lesson.multiple_for.summary",
-  "fallback_summary_en": "Prepositions, particles, cases, and other constructions can divide ideas like purpose, reason, destination, recipient, exchange, route, and time differently across languages.",
+  "fallback_summary_en": "English often uses the preposition 'for' across relationships such as purpose, reason, destination, recipient, exchange, route, and target time. Other languages may divide those jobs among different grammatical forms.",
   "grammar_set_id": "GRAMSET.mul.for_equivalents",
   "language_capabilities_manifest": "language-capabilities.json",
   "comparison_blurb_manifest": "support-blurbs/manifest.json",
@@ -15,9 +15,10 @@
     "fixed_comparison_language_tags": ["en", "es"],
     "language_loop_order": ["fixed", "learning_from", "learning"],
     "dedupe_language_roles": true,
+    "rendering_model": "Build one ordered language array, then render the same universal LanguageSample component for every entry. English and Spanish are fixed data entries at the front; they are not separate component implementations.",
     "support_selection": {
-      "full": "Render the language example/comparison block plus structured GrammarRuleBlock sections and any defensible rule-driven practice.",
-      "comparison_only": "Render only the language example/comparison block. Do not synthesize missing grammar rules or practice.",
+      "full": "Render the language comparison block plus structured GrammarRuleBlock sections and any defensible rule-driven practice.",
+      "comparison_only": "Render the language comparison block only. Do not synthesize missing grammar rules or practice.",
       "unavailable": "Omit the language from this lesson."
     }
   },
@@ -42,45 +43,14 @@
       "block_id": "facts",
       "block_type": "lesson_facts",
       "repeat": "once",
-      "notes": "Show the dynamic title and concise topic-specific description. Do not use a generic 'languages say things differently' lesson intro."
+      "notes": "Show the dynamic target-language title and concise topic-specific description. Do not use a generic 'languages say things differently' lesson intro."
     },
     {
-      "block_id": "english-fixed-example",
-      "block_type": "language_example",
-      "group_id": "comparison-intro",
-      "repeat": "once",
-      "language_tag": "en",
-      "notes": "Hard-coded lesson comparison data: English and the relevant English form(s), including literal `for` where this lesson requires it. The surrounding label is localized by the app shell."
-    },
-    {
-      "block_id": "english-explainer",
-      "block_type": "localized_text",
-      "group_id": "comparison-intro",
-      "repeat": "once",
-      "notes": "Explain the English comparison in the active display/support language. This is lesson-owned copy, not a universal grammar fact."
-    },
-    {
-      "block_id": "spanish-fixed-example",
-      "block_type": "language_example",
-      "group_id": "comparison-intro",
-      "repeat": "once",
-      "language_tag": "es",
-      "notes": "Hard-coded lesson comparison data: Spanish `por` / `para` (and reviewed constructions as needed). The surrounding label is localized by the app shell."
-    },
-    {
-      "block_id": "spanish-explainer",
-      "block_type": "localized_text",
-      "group_id": "comparison-intro",
-      "repeat": "once",
-      "notes": "Explain the Spanish split in the active display/support language."
-    },
-    {
-      "block_id": "remaining-language-comparisons",
+      "block_id": "language-comparisons",
       "block_type": "language_comparison_loop",
       "group_id": "comparison-intro",
       "repeat": "per_relevant_language",
-      "exclude_language_tags": ["en", "es"],
-      "notes": "Build one deduped array from all selected learning-from and learning languages. Each language renders once even if it has multiple roles. Use the richest lesson-specific capability available: full grammar data when flagged full, otherwise the native-language comparison block."
+      "notes": "Create one ordered array: hard-coded English, hard-coded Spanish, then all selected learning-from languages, then all selected learning languages. Deduplicate by language tag while preserving every role. Render each with the universal LanguageSample component. Full support may source forms from Lexicon; comparison-only support uses the lightweight native-language comparison record."
     },
     {
       "block_id": "grammar-primer",
@@ -134,5 +104,5 @@
     "notes": "The same multilingual lesson family may appear at different positions in different language paths. Lesson-specific full support can be added for any global tier without changing that language's global tier."
   },
   "review_state": "candidate",
-  "version": 4
+  "version": 5
 }
