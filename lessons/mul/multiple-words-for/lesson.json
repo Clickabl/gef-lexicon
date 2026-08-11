@@ -15,7 +15,7 @@
     "fallback_language_tags": ["en"],
     "requires_at_least_one_non_anchor_multi_language": false,
     "language_selection_is_session_only": true,
-    "display_modes": ["scroll", "pages"],
+    "display_modes": ["scroll", "pages", "presentation"],
     "practice_mode": "only_when_selected_languages_have_meaningful_choice",
     "comparison_only_mode": true
   },
@@ -82,5 +82,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
