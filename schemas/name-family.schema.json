@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/name-family.schema.json",
+  "title": "GEF Cross-Language Name Family",
+  "type": "object",
+  "required": ["schema_version", "family_id", "family_key", "equivalence_sets", "localization_policy", "review_state"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "family_id": {"type": "string", "pattern": "^NF\\.[A-Za-z0-9._-]+$"},
+    "family_key": {"type": "string", "minLength": 1},
+    "origin_languages": {"type": "array", "items": {"type": "string"}},
+    "origin_note": {"type": "string"},
+    "etymology_note": {"type": "string"},
+    "meaning_note": {"type": "string"},
+    "equivalence_sets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/definitions/equivalenceSet"}
+    },
+    "localization_policy": {"$ref": "#/definitions/localizationPolicy"},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+  },
+  "definitions": {
+    "equivalenceSet": {
+      "type": "object",
+      "required": ["equivalence_set_id", "role", "forms"],
+      "properties": {
+        "equivalence_set_id": {"type": "string", "pattern": "^NFEQ\\.[A-Za-z0-9._-]+$"},
+        "role": {"type": "string", "enum": ["full_masculine", "full_feminine", "short_unisex", "short_masculine", "short_feminine", "other"]},
+        "note": {"type": "string"},
+        "forms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/definitions/form"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "form": {
+      "type": "object",
+      "required": ["form_id", "text", "language_tag", "relation_type", "review_state"],
+      "properties": {
+        "form_id": {"type": "string", "pattern": "^NFF\\.[A-Za-z0-9._-]+$"},
+        "text": {"type": "string", "minLength": 1},
+        "language_tag": {"type": "string", "minLength": 1},
+        "locale_tags": {"type": "array", "items": {"type": "string"}},
+        "script": {"type": "string"},
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "source_form",
+            "local_equivalent",
+            "traditional_adaptation",
+            "borrowed_adaptation",
+            "transliteration",
+            "short_form",
+            "diminutive",
+            "spelling_variant",
+            "historical_form"
+          ]
+        },
+        "usage": {"type": "string", "enum": ["preferred", "common", "available", "historical", "rare", "unknown"]},
+        "name_id": {"type": "string"},
+        "external_ids": {"type": "object", "additionalProperties": {"type": "string"}},
+        "source_refs": {"type": "array", "items": {"type": "string"}},
+        "note": {"type": "string"},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      },
+      "additionalProperties": false
+    },
+    "localizationPolicy": {
+      "type": "object",
+      "required": ["fallback_order", "never_cross_equivalence_sets_automatically"],
+      "properties": {
+        "fallback_order": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["reviewed_local_equivalent", "reviewed_traditional_adaptation", "reviewed_transliteration", "preserve_entered_form"]
+          }
+        },
+        "never_cross_equivalence_sets_automatically": {"type": "boolean", "const": true},
+        "book_override_allowed": {"type": "boolean"},
+        "user_override_allowed": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
