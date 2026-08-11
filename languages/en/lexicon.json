@@ -6,6 +6,10 @@
       "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000101",
       "lemma_nfc": "read",
       "upos": "VERB",
+      "language_pos": "lexical-verb",
+      "lexical_features": {
+        "inflection_class": "irregular"
+      },
       "proper_noun": false,
       "review_state": "candidate",
       "senses": [
@@ -14,7 +18,7 @@
           "sense_key": "read-written-words",
           "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
           "definitions": {
-            "en": "to look at and comprehend written symbols or words",
+            "en": "to look at written symbols or words and understand what they mean",
             "es": "mirar y comprender símbolos o palabras escritas",
             "fr": "regarder et comprendre des symboles ou des mots écrits",
             "pt": "olhar e compreender símbolos ou palavras escritas",
@@ -22,7 +26,7 @@
             "el": "κοιτάζω και κατανοώ γραπτά σύμβολα ή λέξεις"
           },
           "sense_hint": {
-            "en": "as in reading a book or passage"
+            "en": "as in reading a book, message, sign, or passage"
           },
           "cefr_level": "A1",
           "register_label": "standard",
@@ -43,16 +47,87 @@
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000104",
               "features": {
-                "base": { "non_finite": "infinitive" }
+                "base": {
+                  "non_finite": "infinitive"
+                }
               },
-              "display_label_key": "infinitive"
+              "display_label_key": "bare infinitive",
+              "pronunciations": [
+                {
+                  "ipa": "ɹiːd",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-7c6d-984b-2b1d28df7aca",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "present tense, non-3rd-person-singular form",
+              "pronunciations": [
+                {
+                  "ipa": "ɹiːd",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-7d83-b117-ffe201331454",
+              "features": {
+                "base": {
+                  "mood": "imperative",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "imperative",
+              "pronunciations": [
+                {
+                  "ipa": "ɹiːd",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
             },
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000105",
               "features": {
-                "base": { "tense": "past", "mood": "indicative" }
+                "base": {
+                  "tense": "past",
+                  "mood": "indicative",
+                  "verb_form": "finite"
+                }
               },
-              "display_label_key": "past tense"
+              "display_label_key": "past tense",
+              "pronunciations": [
+                {
+                  "ipa": "ɹɛd",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-9739-7929-91df-122b74a26990",
+              "features": {
+                "base": {
+                  "non_finite": "past_participle"
+                }
+              },
+              "display_label_key": "past participle",
+              "pronunciations": [
+                {
+                  "ipa": "ɹɛd",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
             }
           ]
         },
@@ -65,9 +140,62 @@
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000107",
               "features": {
-                "base": { "tense": "present", "mood": "indicative", "person": "3", "number": "singular" }
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "3",
+                  "number": "singular",
+                  "verb_form": "finite"
+                }
               },
-              "display_label_key": "3rd person singular present"
+              "display_label_key": "3rd person singular present",
+              "pronunciations": [
+                {
+                  "ipa": "ɹiːdz",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7203-9ae4-cbf79742de0a",
+          "surface_nfc": "reading",
+          "normalized_lookup": "reading",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-7d7b-97d5-4fbb30fb10a9",
+              "features": {
+                "base": {
+                  "non_finite": "gerund"
+                }
+              },
+              "display_label_key": "gerund",
+              "pronunciations": [
+                {
+                  "ipa": "ˈɹiːdɪŋ",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-73cd-93ac-5c53b824a21b",
+              "features": {
+                "base": {
+                  "non_finite": "present_participle"
+                }
+              },
+              "display_label_key": "present participle",
+              "pronunciations": [
+                {
+                  "ipa": "ˈɹiːdɪŋ",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
             }
           ]
         }
@@ -77,6 +205,10 @@
       "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000108",
       "lemma_nfc": "speak",
       "upos": "VERB",
+      "language_pos": "lexical-verb",
+      "lexical_features": {
+        "inflection_class": "irregular"
+      },
       "proper_noun": false,
       "review_state": "candidate",
       "senses": [
@@ -85,14 +217,18 @@
           "sense_key": "speak-communicate",
           "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
           "definitions": {
-            "en": "to utter words using human vocal speech",
+            "en": "to say words aloud in order to communicate",
             "es": "pronunciar palabras usando el habla humana",
             "fr": "prononcer des mots en utilisant la parole humaine",
             "pt": "pronunciar palavras usando a fala humana",
             "it": "pronunciare parole usando la voce umana",
             "el": "προφέρω λέξεις χρησιμοποιώντας την ανθρώπινη φωνή"
           },
+          "sense_hint": {
+            "en": "as in speaking to another person"
+          },
           "cefr_level": "A1",
+          "register_label": "standard",
           "homophones": [],
           "homonyms": [],
           "synonyms": [],
@@ -110,9 +246,171 @@
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000111",
               "features": {
-                "base": { "non_finite": "infinitive" }
+                "base": {
+                  "non_finite": "infinitive"
+                }
               },
-              "display_label_key": "infinitive"
+              "display_label_key": "bare infinitive",
+              "pronunciations": [
+                {
+                  "ipa": "spiːk",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-7dd7-a4de-c31133cd046f",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "present tense, non-3rd-person-singular form",
+              "pronunciations": [
+                {
+                  "ipa": "spiːk",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-7b5a-b006-51784eb0081e",
+              "features": {
+                "base": {
+                  "mood": "imperative",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "imperative",
+              "pronunciations": [
+                {
+                  "ipa": "spiːk",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7336-bddb-4f541bac3f4b",
+          "surface_nfc": "speaks",
+          "normalized_lookup": "speaks",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-73ce-a08a-86d0d0fa6ea2",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "3",
+                  "number": "singular",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "3rd person singular present",
+              "pronunciations": [
+                {
+                  "ipa": "spiːks",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7859-9b0c-ed5df8353b4d",
+          "surface_nfc": "spoke",
+          "normalized_lookup": "spoke",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-717b-a6fd-2fd2adbcd520",
+              "features": {
+                "base": {
+                  "tense": "past",
+                  "mood": "indicative",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "past tense",
+              "pronunciations": [
+                {
+                  "ipa": "spoʊk",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-784d-94db-d1fe15c178e0",
+          "surface_nfc": "spoken",
+          "normalized_lookup": "spoken",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-7bdb-9e3b-7c2680f8e16e",
+              "features": {
+                "base": {
+                  "non_finite": "past_participle"
+                }
+              },
+              "display_label_key": "past participle",
+              "pronunciations": [
+                {
+                  "ipa": "ˈspoʊkən",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7e43-8fd8-f799022c0a33",
+          "surface_nfc": "speaking",
+          "normalized_lookup": "speaking",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-7fcc-b2c6-fb083caca3fa",
+              "features": {
+                "base": {
+                  "non_finite": "gerund"
+                }
+              },
+              "display_label_key": "gerund",
+              "pronunciations": [
+                {
+                  "ipa": "ˈspiːkɪŋ",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
+            },
+            {
+              "analysis_id": "019fee67-2006-7c46-ae34-7a190189bb08",
+              "features": {
+                "base": {
+                  "non_finite": "present_participle"
+                }
+              },
+              "display_label_key": "present participle",
+              "pronunciations": [
+                {
+                  "ipa": "ˈspiːkɪŋ",
+                  "locale": "en",
+                  "notation": "phonemic"
+                }
+              ]
             }
           ]
         }
@@ -122,6 +420,10 @@
       "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000112",
       "lemma_nfc": "frog",
       "upos": "NOUN",
+      "language_pos": "common-noun",
+      "lexical_features": {
+        "inflection_class": "regular"
+      },
       "proper_noun": false,
       "review_state": "candidate",
       "senses": [
@@ -130,14 +432,18 @@
           "sense_key": "frog-amphibian",
           "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "definitions": {
-            "en": "a tailless amphibious animal with long hind legs for leaping",
+            "en": "a tailless amphibian with long hind legs, usually able to jump and often living near water",
             "es": "un animal anfibio sin cola con patas traseras largas para saltar",
             "fr": "un animal amphibie sans queue aux longues pattes arrière pour sauter",
             "pt": "um animal anfíbio sem cauda com longas patas traseiras para saltar",
             "it": "un animale anfibio senza coda con lunghe zampe posteriori per saltare",
             "el": "ένα αμφίβιο ζώο χωρίς ουρά με μακριά πίσω πόδια για πηδήματα"
           },
+          "sense_hint": {
+            "en": "the animal, as in the Frog King story"
+          },
           "cefr_level": "A1",
+          "register_label": "standard",
           "homophones": [],
           "homonyms": [],
           "synonyms": [],
@@ -155,9 +461,118 @@
             {
               "analysis_id": "018f2c3a-7b1e-7a4d-9c2e-000000000115",
               "features": {
-                "base": { "number": "singular" }
+                "base": {
+                  "number": "singular"
+                }
               },
-              "display_label_key": "singular"
+              "display_label_key": "singular",
+              "pronunciations": [
+                {
+                  "ipa": "fɹɑɡ",
+                  "locale": "en-US",
+                  "notation": "phonemic"
+                },
+                {
+                  "ipa": "fɹɒɡ",
+                  "locale": "en-GB",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7a23-909f-cec59d178ede",
+          "surface_nfc": "frogs",
+          "normalized_lookup": "frogs",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-77c3-ba14-119a405161b0",
+              "features": {
+                "base": {
+                  "number": "plural"
+                }
+              },
+              "display_label_key": "plural",
+              "pronunciations": [
+                {
+                  "ipa": "fɹɑɡz",
+                  "locale": "en-US",
+                  "notation": "phonemic"
+                },
+                {
+                  "ipa": "fɹɒɡz",
+                  "locale": "en-GB",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7ac2-9042-38e7efee0649",
+          "surface_nfc": "frog's",
+          "normalized_lookup": "frog's",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-7681-b2a2-2ddd9a95b475",
+              "features": {
+                "base": {
+                  "number": "singular"
+                },
+                "clitic": {
+                  "function": "possessive",
+                  "surface": "'s"
+                }
+              },
+              "display_label_key": "singular possessive",
+              "pronunciations": [
+                {
+                  "ipa": "fɹɑɡz",
+                  "locale": "en-US",
+                  "notation": "phonemic"
+                },
+                {
+                  "ipa": "fɹɒɡz",
+                  "locale": "en-GB",
+                  "notation": "phonemic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "019fee67-2006-7402-9a1f-30e2bba9c4a4",
+          "surface_nfc": "frogs'",
+          "normalized_lookup": "frogs'",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "019fee67-2006-7396-ac01-d5d7b2f48efe",
+              "features": {
+                "base": {
+                  "number": "plural"
+                },
+                "clitic": {
+                  "function": "possessive",
+                  "surface": "'"
+                }
+              },
+              "display_label_key": "plural possessive",
+              "pronunciations": [
+                {
+                  "ipa": "fɹɑɡz",
+                  "locale": "en-US",
+                  "notation": "phonemic"
+                },
+                {
+                  "ipa": "fɹɒɡz",
+                  "locale": "en-GB",
+                  "notation": "phonemic"
+                }
+              ]
             }
           ]
         }
