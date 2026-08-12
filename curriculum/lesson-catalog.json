@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "universal": [
+    {
+      "lesson_id": "LES.mul.meta.international_language_levels",
+      "priority": 1,
+      "category": "orientation",
+      "path_scope": "universal",
+      "featured": true,
+      "next_policy": "next_language_path_item",
+      "notes": "First ordinary Gef lesson. It teaches the level system used by books, learner profiles, placement, and future Gefstimates. Priority 0 is reserved for a future prerequisite-level orientation such as 'What is a language?' if Gef ever authors one; do not invent a placeholder lesson merely to fill zero.",
+      "review_state": "approved"
+    }
+  ],
+  "path_policy": {
+    "tier1": "Build an ordered curriculum that may interleave lessons and story/chapter recommendations. Full grammar path is expected over time.",
+    "tier2": "Build a selective ordered curriculum that may interleave reviewed lessons and story/chapter recommendations when evidence supports them. Do not imply a complete grammar path.",
+    "tier3": "Reading and games remain the learning path. Universal orientation lessons may still appear, but no bespoke grammar sequence is promised.",
+    "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
+  },
+  "review_state": "approved",
+  "version": 1
+}
