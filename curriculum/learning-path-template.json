@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "path_id": "PATHSET.default_language_learning",
+  "language_registry_ref": "Clickabl/gef-expo/registry/language-support.json",
+  "default_items": [
+    {"item_id":"PATHITEM.meta.language_levels","kind":"lesson_part","ref":"PART.meta.language_levels.orientation","availability":"active","cefr_target":"mixed","prerequisite_refs":[],"notes":"Universal orientation may be shown once per learner rather than repeated for every target language."},
+    {"item_id":"PATHITEM.family.members","kind":"lesson_part","ref":"PART.family.members","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.calendar.days","kind":"lesson_part","ref":"PART.calendar_time.days_of_week","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.names.around_world","kind":"lesson_part","ref":"PART.names.around_world","availability":"active","cefr_target":"mixed","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.family.describe","kind":"lesson_part","ref":"PART.family.describe","availability":"active","cefr_target":"A1","prerequisite_refs":["PART.family.members"]},
+    {"item_id":"PATHITEM.calendar.time_of_day","kind":"lesson_part","ref":"PART.calendar_time.time_of_day","availability":"planned","cefr_target":"A1","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.gender.core","kind":"lesson_part","ref":"PART.grammatical_gender.core","availability":"conditional","cefr_target":"A1","prerequisite_refs":[],"notes":"Runtime eligibility follows the canonical language-support registry and the resolved lesson readiness for the selected learning language."},
+    {"item_id":"PATHITEM.calendar.months_years","kind":"lesson_part","ref":"PART.calendar_time.months_and_years","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.multiple_for.semantic","kind":"lesson_part","ref":"PART.multiple_words_for.semantic_map","availability":"conditional","cefr_target":"A1","prerequisite_refs":[],"notes":"Useful as a cross-language comparison knot when the selected languages split or merge relevant semantic functions."},
+    {"item_id":"PATHITEM.family.extended","kind":"lesson_part","ref":"PART.family.extended","availability":"active","cefr_target":"A1","prerequisite_refs":["PART.family.describe"]},
+    {"item_id":"PATHITEM.calendar.seasons","kind":"lesson_part","ref":"PART.calendar_time.seasons","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.number.core","kind":"lesson_part","ref":"PART.grammatical_number.core","availability":"conditional","cefr_target":"A2","prerequisite_refs":[]},
+    {"item_id":"PATHITEM.family.relationships","kind":"lesson_part","ref":"PART.family.relationships","availability":"active","cefr_target":"A2","prerequisite_refs":["PART.family.extended"]},
+    {"item_id":"PATHITEM.being.core","kind":"lesson_part","ref":"PART.being.core","availability":"conditional","cefr_target":"mixed","prerequisite_refs":[],"notes":"This remains late/conditional until the mixed semantic system is split into CEFR-appropriate parts for a given language."}
+  ],
+  "language_overrides": [
+    {
+      "language":"es",
+      "operations":[
+        {
+          "op":"insert_after",
+          "item_id":"PATHITEM.es.por_para",
+          "relative_to_item_id":"PATHITEM.multiple_for.semantic",
+          "item":{"item_id":"PATHITEM.es.por_para","kind":"lesson_part","ref":"PART.multiple_words_for.spanish_por_para","availability":"active","cefr_target":"A2","prerequisite_refs":["PART.multiple_words_for.semantic_map"]},
+          "reason":"Spanish has a concrete por/para implementation that belongs after the generic semantic-map primer, not in every language path."
+        }
+      ],
+      "review_state":"candidate",
+      "notes":"Language overrides describe learning-target curriculum order. They do not change best/explanation-language eligibility."
+    }
+  ],
+  "compatibility_view":"curriculum/learning-path-placements.json",
+  "review_state":"candidate",
+  "version":1
+}
