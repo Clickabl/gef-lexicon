@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.prep.multiple_for",
   "support_language_tag": "en",
   "proficiency_band": "all",
@@ -7,6 +7,10 @@
   "title": "How languages handle “for”",
   "invitation": "See how the language you are reading handles the jobs English often gives to “for”.",
   "summary": "For can do several different jobs in a sentence. As a preposition, it can show things like purpose, reason, destination, recipient, exchange, or time. Some languages use one form for many of these jobs, while others use several:",
+  "reference_anchor_explainers": {
+    "en": "English uses “for” across many of these relationships.",
+    "es": "Spanish divides many of these relationships between “por” and “para”."
+  },
   "localization_keys": {
     "title": "lesson.multipleFor.title",
     "invitation": "lesson.multipleFor.invitation",
@@ -56,5 +60,6 @@
   ],
   "rule_explanations": {},
   "review_state": "candidate",
-  "version": 3
+  "trust_state": "machine_translated",
+  "version": 4
 }
