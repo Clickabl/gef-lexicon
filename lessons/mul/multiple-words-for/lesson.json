@@ -21,7 +21,7 @@
     "display_modes": ["scroll", "pages", "presentation"],
     "practice_mode": "learning_languages_with_full_lesson_support_only",
     "comparison_only_mode": true,
-    "notes": "Start with relevant profile/session languages. The intro example deck conditionally adds English only when no displayed profile has exactly one form, and Spanish only when no displayed profile has multiple forms. The underlying arrays are not schema-capped. Twelve is the default visual cap for this lesson surface; classroom/projector tooling may raise it."
+    "notes": "The comparison loop always places the learner's native language first, preserves learning-from profile order from best known to worst known, then appends learning languages. English or Spanish may be injected as a display-only contrast anchor when neither is already present; injected anchors do not gain profile status or practice eligibility."
   },
   "rules": [],
   "triggers": [
@@ -78,7 +78,6 @@
   "presentation": {
     "groups_are_semantic_not_visual": true,
     "groups": ["facts", "comparison-intro", "rules", "examples", "practice", "quest", "completion"],
-    "intro_word_examples": "word-examples.json",
     "scroll_mode": "render groups in one vertical lesson surface",
     "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
     "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
@@ -89,5 +88,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 4
+  "version": 5
 }
