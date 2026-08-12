@@ -1,0 +1,30 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "purpose": "Game-safe universal family vocabulary coverage. Every canonical language has the same broad relationship concept inventory here; richer Tier 1 and Tier 2 target profiles separately add culture, usage, distinctions, and examples.",
+  "required_concepts": [
+    "mother", "father", "brother", "sister", "son", "daughter",
+    "grandfather", "grandmother", "uncle", "aunt", "cousin",
+    "niece_nephew", "partner", "spouse"
+  ],
+  "sources": {
+    "tier1": "tier1.json",
+    "tier2": "tier2.json",
+    "tier3": "tier3.json"
+  },
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
+  "expected_total": 104,
+  "safety": {
+    "tier1_tier2": "The universal row is for cross-language games and broad vocabulary display. Production exercises may use the richer target profile only when its structured features prove a unique answer.",
+    "tier3": "Recognition and multi-match only until language-specific review. Slash-separated alternatives may encode age, speaker gender, maternal/paternal side, register, relationship path, or another lexical subdivision and must not be flattened into one fake equivalent.",
+    "all": "A structurally complete row remains Machine created until language-specific review promotes it. Broad concept labels are game pivots, not claims that each language lexicalizes the relationship as one word."
+  },
+  "research_sources": [
+    {"name":"Kinbank v1.2","url":"https://github.com/kinbank/kinbank/tree/v1.2","license":"CC BY 4.0","use":"cross-linguistic kinship terminology research and candidate verification pool"},
+    {"name":"Gef Family Members research notes","path":"docs/FAMILY_MEMBERS_LESSON_RESEARCH.md","use":"editorial safety rails and higher-resource target-profile provenance"}
+  ],
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 3
+}

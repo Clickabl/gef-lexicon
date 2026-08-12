@@ -1,41 +1,49 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "lesson_id": "LES.mul.vocab.family_members",
   "capability_model": "lexical_semantic_profile",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "coverage_program": "learnFromLanguages",
   "source_bridge_manifest": "source-bridges/manifest.json",
   "target_profile_manifest": "target-profiles/manifest.json",
+  "game_vocabulary_manifest": "game-vocabulary/manifest.json",
   "role_requirements": {
     "learning_from": {
-      "description": "The learner's explanation/source language. Every registered learn-from language may participate when its localized bridge copy exists.",
-      "required_assets": ["localized source bridge"],
-      "expected_total": 104
+      "description": "The learner's explanation/best language. Every canonical learn-from language may participate when its localized bridge and reusable fact copy exist.",
+      "required_assets": ["localized source bridge", "localized kinship-fact copy"],
+      "coverage": "all registry.programs.learnFromLanguages"
     },
     "learning_language_full": {
-      "description": "A currently learnable target language with researched family-member distinctions, representative terms, an English canonical explainer, cultural cautions, and practice-ready relation features.",
+      "description": "Tier 1 and Tier 2 target languages with researched family-member distinctions, representative terms, cultural cautions, examples, and practice-ready relation features.",
       "required_assets": ["target profile", "core_terms", "distinctions", "target_explainer_en"],
-      "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
+      "coverage": "registry.lessonTiers.tier1_full + registry.lessonTiers.tier2_selective"
+    },
+    "learning_language_game": {
+      "description": "All 104 canonical learn-from languages have the same 14 broad family relationship concepts in the universal game vocabulary package. Slash-separated forms preserve lexical subdivisions instead of being flattened into one fake equivalent.",
+      "required_assets": ["14 universal family concepts", "candidate/review state", "game safety policy"],
+      "coverage": "all registry.programs.learnFromLanguages"
     },
     "learning_language_comparison": {
-      "description": "A registered language may still be shown as a source-language anchor or future comparison target when only localized bridge copy exists, but the lesson must not invent a target vocabulary system or practice items.",
-      "default_for_registered_languages_not_in_full": true
+      "description": "Every canonical language may participate as a comparison/game target. Tier 3 does not imply a full grammar or culture curriculum path; rich language-and-usage profiles remain Tier 1 and Tier 2 until separately researched.",
+      "default_for_tier3": true
     }
   },
   "runtime_model": {
-    "source_first": "Show a short bridge in the learner's strongest learning-from language before teaching the target system.",
-    "target_second": "Resolve the selected learning language's structured target profile and render a longer explanation, term set, distinctions, cultural note, examples, and practice.",
-    "pair_scaling": "Do not author a 104 x N matrix. Source copy and target facts are independent assets joined at runtime, so English to Spanish, Greek to Portuguese, Chinese to English, and Nepali to Portuguese use the same lesson graph.",
-    "fallback": "If a source localization is below the user's trust threshold, fall back through the normal best-language chain. If the target lacks a full profile, render comparison-only and omit target practice rather than guessing.",
-    "english_spanish_reference": "The approved worked example is English as the source language and Spanish as the learning language."
+    "source_first": "Show the localized source bridge in the learner's best available language before teaching the target system.",
+    "target_second_full": "For Tier 1 and Tier 2, resolve the structured target profile and render its relationship distinctions and cultural-usage cautions through reusable support-language fact templates.",
+    "target_second_tier3": "For Tier 3, expose the 14-concept universal term set to comparison and Games. Do not synthesize a rich cultural profile from the vocabulary row.",
+    "pair_scaling": "Never author a source-by-target matrix. Source copy, reusable localized facts, target profiles, and universal game terms are independent assets joined through stable relationship concepts.",
+    "fallback": "If a support-language localization is below the user's trust threshold, use the normal best-language fallback. If a target lacks a rich profile, use the Tier 3 comparison/game path rather than inventing target prose."
   },
   "trust_contract": {
-    "canonical_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
     "generated_source_bridges": "machine_translated",
     "generated_target_profiles": "machine_translated",
-    "below_threshold_behavior": "visible_disabled_with_badge"
+    "generated_game_terms": "machine_translated",
+    "generated_support_fact_locales": "machine_translated",
+    "review_state_for_generated_assets": "candidate",
+    "structural_validation_is_not_linguistic_approval": true
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 1
+  "version": 3
 }

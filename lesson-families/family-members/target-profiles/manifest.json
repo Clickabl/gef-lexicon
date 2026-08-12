@@ -1,8 +1,8 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.vocab.family_members",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
-  "purpose": "Structured target-language family-member profiles for current Tier 1 and Tier 2 learnable languages. The records separate relationship facts from learner-language rendering so arbitrary source/target pairs do not require pair-specific lesson files.",
+  "purpose": "Structured rich target-language family-member profiles for the current Tier 1 Full Curriculum and Tier 2 Selective Lessons sets. Tier 3 Read + Games languages use the separate game-vocabulary core and must not inherit a fabricated culture profile.",
   "tier_shards": {
     "1": "tier1.json",
     "2": "tier2.json"
@@ -10,12 +10,12 @@
   "expected_tier_counts": {"1": 6, "2": 15},
   "expected_total": 21,
   "record_contract": {
-    "target_explainer_en": "Canonical English editorial explanation of the target language's kinship pattern. Other source-language renderings may localize this structured content without changing the underlying facts.",
+    "target_explainer_en": "Canonical English editorial explanation of the target language's kinship pattern. Other support-language renderings should localize structured facts/templates rather than create independent pair-specific linguistic truth.",
     "distinctions": "Only dimensions that materially affect beginner word choice. Absence from the array is not a claim that the language can never express the distinction.",
-    "core_terms": "Representative neutral beginner terms. This is not an exhaustive kinship dictionary.",
+    "core_terms": "Representative beginner terms with the distinctions needed for safe teaching. This is not an exhaustive kinship dictionary.",
     "cultural_note_en": "Usage/culture caution. Do not turn community tendencies into claims about every family or speaker.",
     "examples": "Short beginner-safe examples that illustrate the profile's actual distinctions.",
-    "source_refs": "Research provenance. Generated records remain candidates until reviewed."
+    "source_refs": "Language-specific research provenance. Candidate records remain machine-created until reviewed."
   },
   "distinction_codes": [
     "gender_in_core_term",
@@ -28,7 +28,12 @@
     "honorific_or_register",
     "kin_terms_as_social_address"
   ],
-  "review_state": "generated",
+  "tier3_contract": {
+    "data_source": "../game-vocabulary/tier3.json",
+    "allowed": ["recognition games", "multi-match games", "comparison display"],
+    "not_implied": ["rich culture profile", "single-answer production safety", "full curriculum support"]
+  },
+  "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 1
+  "version": 2
 }
