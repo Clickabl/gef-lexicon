@@ -1,80 +1,70 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
   "capability_model": "lesson_specific",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "grammar_set_id": "GRAMSET.mul.grammatical_gender",
-  "fixed_comparison_language_tags": [
-    "en",
-    "es",
-    "el"
-  ],
+  "fixed_comparison_language_tags": [],
+  "reference_anchor_language_tags": ["el"],
+  "role_requirements": {
+    "best_language": {
+      "description": "A language Gef can use as one of the learner's strongest explanation/comparison languages for this lesson.",
+      "registry_requirement": "The language tag must exist in registry/language-support.json programs.learnFromLanguages.",
+      "required_assets": ["rendering in that support language", "comparison record forms[]", "comparison record own_grammar_blurb"],
+      "notes": "This initial implementation authors only the English rendering. Other best-language paths remain unavailable until their renderings are authored."
+    },
+    "learning_language_comparison": {
+      "description": "A language that can participate in the comparison portion without rule-driven practice.",
+      "registry_requirement": "The language identity must be recognized by the product registry.",
+      "required_assets": ["comparison record forms[]"],
+      "notes": "Comparison support describes the grammatical system without claiming a complete grammar lesson for that language."
+    },
+    "learning_language_full": {
+      "description": "A language this lesson can actively teach with structured rules and defensible practice.",
+      "registry_requirement": "Grammar lessons are offered only where the product registry permits them.",
+      "required_assets": ["comparison record forms[]", "grammar set language record", "grammar set lesson_ready=true", "structured forms and rules", "explicit support_levels.full membership"],
+      "notes": "Full support never follows automatically from the global language tier."
+    }
+  },
+  "trust_visibility": {
+    "canonical_product_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "effective_language_trust": "Minimum trust state among the required assets for that language in the requested role.",
+    "effective_lesson_trust": "Minimum trust state among all artifacts actually rendered in the current lesson session.",
+    "below_threshold": "visible_disabled_with_badge",
+    "missing_required_assets": "visible_unavailable_when_the_product_registry_knows_the_language"
+  },
   "support_levels": {
     "full": {
       "description": "The lesson has structured grammatical-gender rules for this language and may render rule blocks and practice.",
-      "language_tags": [
-        "en",
-        "es"
-      ]
+      "language_tags": ["en", "es"]
     },
     "comparison_only": {
-      "description": "A reviewed comparison record may be shown, but the app must not synthesize missing agreement rules or practice.",
+      "description": "The lesson may render the language comparison block when a real comparison record exists, but must not invent missing agreement rules or practice.",
       "default_for_registered_languages_not_in_full": false,
-      "language_tags": [
-        "el",
-        "de",
-        "fr",
-        "ru",
-        "tr",
-        "sw"
-      ]
+      "language_tags": ["el", "de", "fr", "ru", "tr", "sw"]
     },
     "unavailable": {
-      "description": "No defensible gender-system comparison record exists yet. Omit the language rather than guessing from language family.",
+      "description": "No defensible lesson comparison data exists yet. Omit lesson data rather than inferring a gender system from language family or missing data.",
       "language_tags": []
     }
   },
-  "expected_full_support_language_tags": [
-    "en",
-    "es",
-    "fr",
-    "pt",
-    "it",
-    "de",
-    "el",
-    "ru",
-    "uk",
-    "pl",
-    "ar",
-    "he",
-    "hi"
-  ],
+  "expected_full_support_language_tags": ["en", "es", "fr", "pt", "it", "de", "el", "ru", "uk", "pl", "ar", "hi"],
   "pending_full_support_research": [
     {
-      "language_tags": [
-        "fr",
-        "pt",
-        "it",
-        "de",
-        "el",
-        "ru",
-        "uk",
-        "pl",
-        "ar",
-        "he",
-        "hi"
-      ],
+      "language_tags": ["fr", "pt", "it", "de", "el", "ru", "uk", "pl", "ar", "hi"],
       "reason": "These languages need independent structured agreement rules, exceptions, and practice constraints before lesson-level full support. Comparison facts do not grant full support."
     }
   ],
   "promotion_rules": [
     "Global language tier never grants lesson-level full support automatically.",
     "Do not infer a gender inventory from genealogical family or article count.",
-    "A full-support language must have explicit structured rules and safe practice constraints in the grammatical-gender grammar set.",
-    "A comparison-only language must have an explicit comparison record; missing data means omit, not 'no gender'.",
-    "Noun-class systems must be represented on their own terms rather than relabeled masculine/feminine/neuter."
+    "A full-support language must exist in the grammar set, be lesson_ready, contain structured rules, and be explicitly listed in support_levels.full.language_tags.",
+    "A comparison-only language becomes renderable only when this lesson has an explicit comparison record with forms[].",
+    "Noun-class systems must be represented on their own terms rather than relabeled masculine/feminine/neuter.",
+    "Greek is a conditional display-only reference anchor because it provides a clear three-gender contrast; it never gains profile or practice status when injected."
   ],
   "comparison_record_catalog": "comparison-records/manifest.json",
   "comparison_blurb_catalog": "comparison-records/manifest.json",
-  "review_state": "candidate"
+  "review_state": "candidate",
+  "trust_state": "machine_translated"
 }
