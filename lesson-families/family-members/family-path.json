@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "path_id": "PATH.mul.family",
+  "topic_id": "TOPIC.family_and_relationships",
+  "language_contract": "language-contract.json",
+  "language_capabilities": "language-capabilities.json",
+  "progression_model": "sequential_with_future_spiral",
+  "canonical_terms": {
+    "family_path_stage": "The stable progression position inside the Family topic. Stages may later recur in a broader learning path without changing lesson IDs.",
+    "session_depth": "The amount of lesson content licensed for the active source-to-target language pair. Values are core or cultural."
+  },
+  "session_depth": {
+    "values": ["core", "cultural"],
+    "resolver": "cultural only when BOTH learning_from and learning language are in full_target_languages; otherwise core",
+    "cultural_requires_both_roles_full": true,
+    "core_if_either_role_comparison_only": true,
+    "core_blocks": ["localized_intro", "term_or_phrase_bank", "concept_term_match", "completion"],
+    "cultural_adds": ["kinship_analysis", "usage_and_register", "cultural_context", "curated_examples", "rich_practice", "reading_discussion"],
+    "tier3_policy": "A Tier 3 language in either role forces core. Do not expose cultural analysis synthesized for only the other side of the pair."
+  },
+  "stages": [
+    {
+      "family_path_stage": 1,
+      "lesson_id": "LES.mul.vocab.family_members",
+      "title_en": "Family 1: Core family",
+      "difficulty_band": "A1",
+      "objective_en": "Recognize and name the people in an immediate family or household while learning that languages divide kin relationships differently.",
+      "core_concepts": ["family", "parent", "mother", "father", "child", "son", "daughter", "sibling", "brother", "sister", "partner", "spouse", "husband", "wife", "stepparent", "stepmother", "stepfather", "stepsibling", "stepbrother", "stepsister", "adoptive_parent", "adopted_child", "foster_parent", "foster_child", "guardian"],
+      "reading": {
+        "current_gef_work_id": "hansel-and-gretel",
+        "current_status": "content_catalog_candidate_not_guaranteed_app_wired",
+        "focus": "siblings and parents/household relationships",
+        "preferred_ingestion_target": {
+          "title": "Brother and Sister",
+          "author": "Josephine Lawrence",
+          "project_gutenberg_ebook": 4784,
+          "public_domain_us": true,
+          "reason": "A child-focused sibling and household story with unusually direct repetition of beginner family relationships."
+        }
+      }
+    },
+    {
+      "family_path_stage": 2,
+      "lesson_id": "LES.mul.vocab.describe_family",
+      "title_en": "Family 2: Describe your family",
+      "difficulty_band": "A1",
+      "objective_en": "Use short, flexible patterns to describe family, household, age relationships, names, and who someone lives with without assuming one family shape.",
+      "core_functions": ["this_is_my", "i_have", "i_live_with", "is_named", "older", "younger", "oldest", "youngest", "only_child", "twin", "half_sibling", "relative", "household", "chosen_family"],
+      "reading": {
+        "current_gef_work_id": "frog-king",
+        "current_status": "content_catalog_candidate_not_guaranteed_app_wired",
+        "focus": "father/daughter roles and simple descriptions of people in a household",
+        "preferred_ingestion_target": {
+          "title": "Little Women",
+          "author": "Louisa May Alcott",
+          "project_gutenberg_ebook": 514,
+          "public_domain_us": true,
+          "reason": "A family-centered story with four sisters, their mother and father, and abundant material for describing relatives and household relationships."
+        }
+      }
+    },
+    {
+      "family_path_stage": 3,
+      "lesson_id": "LES.mul.vocab.extended_family",
+      "title_en": "Family 3: Extended family",
+      "difficulty_band": "A1",
+      "objective_en": "Name grandparents, aunts, uncles, cousins, nieces, nephews, grandchildren, great-relatives, and in-laws while noticing distinctions such as family side, age, gender, and affinity.",
+      "core_concepts": ["grandparent", "grandmother", "grandfather", "grandchild", "granddaughter", "grandson", "aunt", "uncle", "niece", "nephew", "cousin", "great_grandparent", "great_grandchild", "great_aunt", "great_uncle", "in_law", "mother_in_law", "father_in_law", "sister_in_law", "brother_in_law", "daughter_in_law", "son_in_law"],
+      "reading": {
+        "current_gef_work_id": "little-red-cap",
+        "current_status": "content_catalog_candidate_not_guaranteed_app_wired",
+        "focus": "mother and grandmother across generations",
+        "preferred_ingestion_target": {
+          "title": "Eight Cousins",
+          "author": "Louisa May Alcott",
+          "project_gutenberg_ebook": 38567,
+          "public_domain_us": true,
+          "reason": "The story is explicitly built around a large extended family of cousins, aunts, and an uncle/guardian."
+        }
+      }
+    },
+    {
+      "family_path_stage": 4,
+      "lesson_id": "LES.mul.vocab.relationships_family_life",
+      "title_en": "Family 4: Relationships and family life",
+      "difficulty_band": "A2",
+      "objective_en": "Talk neutrally about dating, partners, engagement, marriage, separation, divorce, former partners, widowhood, and being single.",
+      "core_concepts": ["boyfriend", "girlfriend", "romantic_partner", "partner", "date", "dating", "relationship", "engaged", "fiance", "fiancee", "marriage", "married", "spouse", "husband", "wife", "wedding", "separated", "separation", "divorce", "divorced", "ex_partner", "ex_boyfriend", "ex_girlfriend", "ex_husband", "ex_wife", "widow", "widower", "widowed", "single", "remarried", "co_parent"],
+      "reading": {
+        "current_gef_work_id": "fisherman-and-his-wife",
+        "current_status": "content_catalog_candidate_not_guaranteed_app_wired",
+        "focus": "husband/wife relationship vocabulary",
+        "preferred_ingestion_target": {
+          "title": "The Courtship of Susan Bell",
+          "author": "Anthony Trollope",
+          "project_gutenberg_ebook": 3700,
+          "public_domain_us": true,
+          "reason": "A relatively accessible public-domain courtship story with family, engagement, and marriage language."
+        }
+      }
+    }
+  ],
+  "sequencing": {
+    "initial_order": ["LES.mul.vocab.family_members", "LES.mul.vocab.describe_family", "LES.mul.vocab.extended_family", "LES.mul.vocab.relationships_family_life"],
+    "future_policy": "The global curriculum may interleave other lessons or readings between stages later. family_path_stage remains topic progression metadata, not a promise that these four always stay adjacent."
+  },
+  "review_state": "candidate",
+  "version": 1
+}
