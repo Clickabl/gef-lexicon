@@ -30,6 +30,36 @@
       "next_policy": "next_language_path_item",
       "notes": "A1 lexical-semantic family lesson. All 104 learn-from languages have localized source bridges; structured target profiles and practice are enabled for the current Tier 1 and Tier 2 learnable languages. Tier 3/4 languages may participate as source-language anchors without implying a grammar or vocabulary course for them.",
       "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.time.days_of_week",
+      "priority": 40,
+      "category": "vocabulary",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "A1 weekday-cycle lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured weekday systems and practice. Calendar first-day layout remains territory/locale context rather than a language fact.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.time.months_of_year",
+      "priority": 41,
+      "category": "vocabulary",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "A1 month-cycle lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured month systems and practice, including contextual alternate calendars, regional month systems, and grammatical date forms where reviewed data exists.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.time.seasons",
+      "priority": 42,
+      "category": "vocabulary",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "A1 season-vocabulary lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured season systems and practice. Hemisphere, climate, and traditional seasonal systems remain contextual instead of being inferred from a language tag.",
+      "review_state": "candidate"
     }
   ],
   "path_policy": {
@@ -39,5 +69,5 @@
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 3
+  "version": 4
 }
