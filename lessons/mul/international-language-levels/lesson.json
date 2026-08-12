@@ -17,33 +17,52 @@
     {
       "trigger_id": "TRG.mul.language_levels.catalog",
       "trigger_type": "catalog_topic",
-      "notes": "Universal metalinguistic lesson. It explains Gef proficiency labels rather than teaching a grammar construction in one target language."
+      "notes": "Universal orientation lesson. It explains the proficiency coordinates used by Gef before language-specific curriculum paths diverge."
     }
   ],
   "practice_modules": [],
   "presentation": {
+    "catalog_source": "../../../curriculum/lesson-catalog.json",
     "data_source": "../../../proficiency/frameworks.json",
     "gef_scale_source": "../../../proficiency/gef-scale.json",
+    "crosswalk_source": "../../../proficiency/external-crosswalks.json",
     "universal_target_source": "../../../proficiency/universal-level-targets.json",
-    "groups_are_semantic_not_visual": true,
-    "groups": ["intro", "levels", "profile", "world", "gef", "completion"],
-    "scroll_mode": "render groups in one article-like vertical lesson surface",
-    "pages_mode": "render each explanation as one or more readable pages without changing the source lesson content",
-    "teacher_presentation_mode": "use the same source blocks with classroom-sized controls; do not fork the lesson",
+    "groups_are_semantic_not_visual": false,
+    "groups": [
+      "intro",
+      "pre-a1",
+      "a1",
+      "a2",
+      "b1",
+      "b2",
+      "c1",
+      "c2",
+      "fluent-native",
+      "profile",
+      "mediation",
+      "course-progress",
+      "world",
+      "gef",
+      "completion"
+    ],
+    "scroll_mode": "Render all groups as one article-like vertical lesson surface in order.",
+    "pages_mode": "Render each group as a learner page with Back/Next controls; level groups deliberately become separate pages so each level can use a large reusable level glyph.",
+    "teacher_presentation_mode": "Use the same ordered group graph with classroom-sized controls; do not fork lesson content.",
     "badge_deep_link_policy": {
-      "entry": "open the lesson at the tapped level block",
+      "entry": "open the lesson at the tapped level group",
       "preserve_context": true,
       "examples": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "FLUENT_NATIVE"]
     },
     "manual_picker_policy": "The quick self-report picker uses center 0 plus seven outward stops: A1, A2, B1, B2, C1, C2, and Gef-only Fully fluent / Native. Pre-A1 remains an internal first-steps band between zero and A1 rather than a visible manual ring.",
     "content_difficulty_policy": "A level badge on a book describes reading demand unless another scope is explicitly stored.",
-    "learner_level_policy": "Learner proficiency may retain separate Reading, Listening, Speaking, Writing, Interaction, and Mediation values. Current Gef product evidence may update Reading only; the other axes remain self-report-only until a real feature measures them."
+    "learner_level_policy": "Learner proficiency may retain separate Reading, Listening, Speaking, Writing, Interaction, and Mediation values. Current Gef product evidence may update Reading only; the other axes remain self-report-only until a real feature measures them.",
+    "next_policy": "On lesson completion, the app resolves the next explicit item in the active language path; if none exists, it uses the next eligible universal catalog item, then returns to the originating context."
   },
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
     "language_limit": 1,
     "teacher_quest_default": "hidden"
   },
-  "review_state": "candidate",
-  "version": 2
+  "review_state": "approved",
+  "version": 3
 }
