@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_family_id": "LES.mul.prep.multiple_for",
   "coverage_program": "learnFromLanguages",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
@@ -18,9 +18,18 @@
   },
   "record_contract": {
     "forms": "Representative words, case markers, particles, affixes, or constructions used in this lesson's semantic territory. This is not a promise of exhaustive grammar coverage.",
-    "own_grammar_blurb": "Optional learner-facing explanation written in the language itself, describing how that language handles this semantic territory. The lesson may show this only when the language belongs to the learner's own profile; an injected reference anchor can show forms without this paragraph.",
-    "comparison_blurb": "Legacy machine-draft native explanation retained for research and backfill compatibility. New learner-facing teaching copy should use own_grammar_blurb.",
-    "review_state": "Generated/research-required records are candidates. Promotion to reviewed/verified follows the normal Gef trust ladder."
+    "own_grammar_blurb": "Optional learner-facing explanation written in the language itself, describing how that language handles this semantic territory. The lesson shows it only when the language is one of the learner's real profile languages; an injected reference anchor uses a short localized anchor explainer instead.",
+    "comparison_blurb": "Legacy machine-draft same-language explanation retained for research and backfill compatibility. New learner-facing teaching copy should use own_grammar_blurb.",
+    "review_state": "Research/editorial workflow state. Generated or research-required records are candidates and may never self-promote.",
+    "trust_state": "Product confidence stage using the canonical Gef ladder: machine_translated, machine_verified, public, gef_certified. A record may inherit trust_state from its shard or manifest until it has an explicit leaf-level state."
   },
-  "review_state": "generated"
+  "trust_contract": {
+    "canonical_source": "Clickabl/gef-expo/docs/product/CONTENT_FEEDBACK_AND_REVIEW.md",
+    "stages_low_to_high": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "inheritance": "A leaf record's explicit trust_state wins. Otherwise inherit from shard, then manifest. Effective lesson confidence is the minimum trust state among the artifacts actually rendered in the current session.",
+    "below_user_threshold_behavior": "Keep the language discoverable when product support knows it exists, but render it disabled with its trust/status badge rather than silently removing it.",
+    "machine_generated_default": "machine_translated"
+  },
+  "review_state": "generated",
+  "trust_state": "machine_translated"
 }
