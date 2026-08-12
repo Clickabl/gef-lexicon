@@ -11,30 +11,32 @@
   "comparison_blurb_manifest": "comparison-records/manifest.json",
   "curriculum_concept_ids": ["CURR.NOUNS", "CURR.PLURAL_FORMATION", "CURR.AGREEMENT"],
   "transparency_slide": {
-    "description": "The lesson is one declarative multilingual shell layered with language-specific number-system data. The app owns the universal lesson runner; this family never assumes that every language has the same number categories or marks them in the same place.",
+    "description": "The lesson is one declarative multilingual shell layered with language-specific number-system data. It covers grammatical number in noun phrases and agreement, including unmarked/general number, singular, dual, plural, and other language-specific values where relevant. Number may be expressed on nouns, determiners, adjectives, pronouns, classifiers, particles, verbs, or by context. The app owns the universal lesson runner.",
     "fixed_comparison_language_tags": [],
     "language_loop_order": ["learning_from", "learning"],
     "dedupe_language_roles": true,
-    "rendering_model": "Render the learner's best language first using its native comparison record, then the selected learning language. Additional known languages may be added in profile order. Each record owns its number-system forms and own_grammar_blurb; never infer a singular/plural binary from English.",
+    "rendering_model": "Render the learner's best language first using its native comparison record, then the selected learning language. Additional known languages may be added in profile order. Each record owns its number-system forms and own_grammar_blurb; never infer a singular/plural binary from English and never confuse grammatical number with localization plural categories.",
     "support_selection": {
       "full": "Render the native comparison block, structured GrammarRuleBlock sections, curated examples when available, and defensible rule-driven practice.",
       "comparison_only": "Render the native comparison block only. Do not synthesize target-language rules or practice.",
       "unavailable": "Keep a product-known language discoverable but omit unsupported lesson content."
     }
   },
-  "number_system_model": {
-    "topic": "grammatical number in noun phrases and agreement",
-    "possible_values": ["general_number_or_unmarked", "singular", "dual", "trial", "paucal", "plural", "other_language_specific_values"],
-    "marking_locations": ["noun", "determiner_or_article", "adjective", "pronoun", "classifier_or_number_word", "particle_or_clitic", "verb_agreement", "context_only"],
-    "teaching_rule": "Describe the target language's real inventory and obligatoriness. Never force every language into singular versus plural, and never confuse grammatical number with numeric counting or CLDR plural categories."
+  "title_policy": {
+    "default_display_locale": "en",
+    "template_key": "lesson.shell.title.languageUsesForms",
+    "variables": ["learning_languages"],
+    "forms_source": "lesson language grammatical-number data",
+    "language_list_format": "shared locale-aware list formatter",
+    "notes": "The displayed lesson title is target-language specific. Do not hand-concatenate language names or imply that every target uses a singular/plural binary."
   },
   "eligibility": {
-    "source_language_policy": "Every language in programs.learnFromLanguages may be used as a source/comparison language when its native comparison record is present.",
-    "target_language_policy": "Only current Tier 1 and Tier 2 grammar languages may be selected as learning targets for this lesson.",
     "minimum_display_languages": 2,
     "maximum_display_languages": 12,
+    "require_non_anchor_multi_form_language": false,
     "prefer_profile_languages": true,
-    "dedupe_display_without_losing_roles": true
+    "fill_with_anchor_language_when_needed": true,
+    "notes": "Every language in programs.learnFromLanguages may be a source/comparison language when its native comparison record exists. Under the current product registry, only Tier 1 and Tier 2 languages may be grammar-learning targets for this lesson. The data model supports arbitrary language arrays; twelve is only the default visual cap."
   },
   "block_plan": [
     {
@@ -68,7 +70,7 @@
       "block_id": "curated-examples",
       "block_type": "curated_examples",
       "repeat": "per_selected_language",
-      "notes": "Prefer reviewed corpus examples when available. The English-to-Spanish reference lesson may use the structured Spanish worked examples embedded in the rendering until corpus examples are available."
+      "notes": "Prefer reviewed corpus examples when available. Target-specific rule tips may supply compact didactic examples without pretending they are book evidence."
     },
     {
       "block_id": "practice-intro",
@@ -99,14 +101,8 @@
   "learning_path_policy": {
     "placements_are_language_specific": true,
     "placement_registry": "curriculum/learning-path-placements.json",
-    "notes": "Tier 1 may eventually place this in a complete grammar path. Tier 2 may place it selectively. Tier 3 can still explain the learner's source-language system but is not a grammar-learning target."
+    "notes": "Tier 1 may eventually place this in a complete grammar path. Tier 2 may place it selectively. Tier 3 can still explain the learner's source-language system but is not a grammar-learning target. Research baseline: WALS 33A/34A plus target-specific references in grammar/grammatical-number.json."
   },
-  "research_basis": [
-    "WALS Chapter 33A: Coding of Nominal Plurality",
-    "WALS Chapter 34A: Occurrence of Nominal Plurality",
-    "Language-specific target grammar references recorded in grammar/grammatical-number.json"
-  ],
   "review_state": "candidate",
-  "trust_state": "machine_translated",
   "version": 1
 }
