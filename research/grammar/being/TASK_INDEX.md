@@ -6,31 +6,33 @@ Canonical research contract: `research/grammar/being/README.md`
 Reusable agent prompt: `research/grammar/being/TASK_PROMPT.md`
 
 ## Universal
-- Universal Being semantic-domain research — Q3
+- #15 — Universal Being semantic-domain research — Q3 → `UNIVERSAL_MODEL.md`
 
 ## Tier 1 — Q3 deep research
-- English `en` → `en.md`
-- Spanish `es` → `es.md`
-- French `fr` → `fr.md`
-- Portuguese `pt` → `pt.md`
-- Italian `it` → `it.md`
-- Modern Greek `el` → `el.md`
+- #16 — English `en` → `en.md`
+- #17 — Spanish `es` → `es.md`
+- #18 — French `fr` → `fr.md`
+- #19 — Portuguese `pt` → `pt.md`
+- #20 — Italian `it` → `it.md`
+- #21 — Modern Greek `el` → `el.md`
 
 ## Tier 2 — Q2 lesson-scoped research
-- Mandarin Chinese `zh` → `zh.md`
-- Japanese `ja` → `ja.md`
-- German `de` → `de.md`
-- Korean `ko` → `ko.md`
-- Arabic `ar` → `ar.md`
-- Hindi `hi` → `hi.md`
-- Ukrainian `uk` → `uk.md`
-- Russian `ru` → `ru.md`
-- Turkish `tr` → `tr.md`
-- Polish `pl` → `pl.md`
-- Persian/Farsi `fa` → `fa.md`
-- Indonesian `id` → `id.md`
-- Catalan `ca` → `ca.md`
-- Galician `gl` → `gl.md`
-- Macedonian `mk` → `mk.md`
+- #22 — Mandarin Chinese `zh` → `zh.md`
+- #23 — Japanese `ja` → `ja.md`
+- #24 — German `de` → `de.md`
+- #25 — Korean `ko` → `ko.md`
+- #26 — Arabic `ar` → `ar.md`
+- #27 — Hindi `hi` → `hi.md`
+- #28 — Ukrainian `uk` → `uk.md`
+- #29 — Russian `ru` → `ru.md`
+- #30 — Turkish `tr` → `tr.md`
+- #31 — Polish `pl` → `pl.md`
+- #32 — Persian/Farsi `fa` → `fa.md`
+- #33 — Indonesian `id` → `id.md`
+- #34 — Catalan `ca` → `ca.md`
+- #35 — Galician `gl` → `gl.md`
+- #36 — Macedonian `mk` → `mk.md`
 
 Tier 3 Read + Games languages do not receive Being grammar research Tasks under the current product policy.
+
+These GitHub issues are the current durable Task seeds/human inbox. They are ready for future Agent Review Queue execution but do not imply autonomous agents have already run.
