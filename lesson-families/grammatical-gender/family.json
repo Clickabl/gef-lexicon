@@ -16,26 +16,21 @@
     "CURR.PRONOUNS"
   ],
   "transparency_slide": {
-    "description": "The lesson compares grammatical gender systems without assuming every language has gender, articles, or a masculine/feminine/neuter three-way split.",
+    "description": "The lesson is declarative structure layered with language data. It compares grammatical gender systems without assuming every language has gender, articles, or a masculine/feminine/neuter three-way split.",
     "fixed_comparison_language_tags": [],
-    "language_loop_order": [
-      "learning_from",
-      "learning"
-    ],
+    "language_loop_order": ["learning_from", "learning"],
     "dedupe_language_roles": true,
-    "rendering_model": "Build one ordered language array from relevant profile/session languages. If no genderless profile is present, add English. If no two-gender profile is present, add Spanish. If no three-gender profile is present, add Greek. Render the system summary and representative markers with the same universal comparison components. Do not derive gender count from the number of article spellings.",
+    "rendering_model": "Render profile/session languages first using their own comparison records. Comparison records describe the grammatical system and provide representative display forms; they never derive gender count from article count. For an English-to-Spanish session, English supplies the zero-gender contrast and Spanish the two-gender target; Greek is the preferred display-only reference anchor when a three-gender contrast is useful. A reference anchor never gains profile or practice status.",
     "support_selection": {
-      "full": "Render the comparison, structured rules, reviewed examples, and defensible practice for this language.",
-      "comparison_only": "Render only the reviewed gender-system comparison record. Do not invent agreement rules or practice.",
+      "full": "Render the language comparison block plus structured rules, reviewed examples, and defensible practice for this language.",
+      "comparison_only": "Render the language comparison block only. Do not synthesize missing agreement rules or practice.",
       "unavailable": "Omit the language from this lesson until a reviewed comparison record exists."
     }
   },
   "title_policy": {
     "default_display_locale": "en",
-    "template_key": "lesson.shell.title.languageHandlesConcept",
-    "variables": [
-      "learning_languages"
-    ],
+    "template_key": "lesson.grammaticalGender.title",
+    "variables": ["learning_languages"],
     "forms_source": "lesson language gender-system comparison data",
     "language_list_format": "shared locale-aware list formatter",
     "notes": "The title names the grammatical concept, not a guessed article equivalent. Languages without articles or grammatical gender still fit the same lesson family."
@@ -46,7 +41,7 @@
     "require_non_anchor_multi_form_language": false,
     "prefer_profile_languages": true,
     "fill_with_anchor_language_when_needed": true,
-    "notes": "English, Spanish, and Greek are conditional contrast fallbacks for zero-, two-, and three-gender systems. A noun-class language may also appear when selected, but must not be squeezed into masculine/feminine/neuter labels."
+    "notes": "The data model supports no-gender, two-gender, three-gender, and larger noun-class systems. Greek may be used as a display-only three-gender reference anchor when it adds useful contrast."
   },
   "block_plan": [
     {
@@ -56,18 +51,11 @@
       "notes": "Introduce grammatical gender as a noun/agreement system. Explicitly distinguish grammatical gender from a person's gender and from biological sex."
     },
     {
-      "block_id": "intro-gender-examples",
-      "block_type": "word_examples",
-      "group_id": "comparison-intro",
-      "repeat": "per_relevant_language",
-      "notes": "Resolve lessons/mul/grammatical-gender/gender-examples.json. Show gender-system type plus representative article/determiner markers where the language has them. Article spellings are examples, never the definition of the system."
-    },
-    {
       "block_id": "language-comparisons",
       "block_type": "language_comparison_loop",
       "group_id": "comparison-intro",
       "repeat": "per_relevant_language",
-      "notes": "Use the same ordered language set. Explicitly allow no-gender, two-gender, three-gender, and noun-class comparison records."
+      "notes": "For each ordered language, show the language label and representative forms from its comparison record. The comparison blurb explains whether the language has no grammatical noun gender, two genders, three genders, or a broader noun-class system. Article forms are examples, not the definition of gender."
     },
     {
       "block_id": "grammar-primer",
@@ -81,13 +69,13 @@
       "block_type": "language_rules",
       "group_id": "rules",
       "repeat": "per_full_support_learning_language",
-      "notes": "For Spanish, teach two noun genders, article/adjective agreement, reliable-vs-unreliable ending clues, and limited neuter constructions. Never present Spanish neuter forms as a third ordinary noun gender."
+      "notes": "For Spanish, teach two noun genders, article/adjective agreement, useful-but-imperfect ending clues, and limited neuter constructions. Never present Spanish neuter forms as a third ordinary noun gender."
     },
     {
       "block_id": "curated-examples",
       "block_type": "curated_examples",
       "repeat": "per_selected_language",
-      "notes": "Prefer lesson-safe reviewed sentences that make agreement visible. Corpus evidence remains in gef-content."
+      "notes": "Prefer lesson-safe reviewed sentences that make agreement visible. Exact occurrence evidence remains in gef-content."
     },
     {
       "block_id": "practice-intro",
@@ -114,16 +102,12 @@
       "notes": "Reinforce: learn the noun with its agreement pattern; endings are clues, not laws; neuter behavior differs by language."
     }
   ],
-  "presentation_modes": [
-    "scroll",
-    "paged",
-    "presentation"
-  ],
+  "presentation_modes": ["scroll", "paged", "presentation"],
   "learning_path_policy": {
     "placements_are_language_specific": true,
     "placement_registry": "curriculum/learning-path-placements.json",
     "notes": "Spanish can place this early because noun/article agreement is foundational. Other languages need independent placement and may use comparison-only mode."
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }

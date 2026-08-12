@@ -1,24 +1,30 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
-  "catalog_kind": "gender_system_comparison_records",
-  "files": [
-    {
-      "path": "tier1.json",
-      "tier": 1,
-      "language_tags": [
-        "en",
-        "es",
-        "fr",
-        "de",
-        "el",
-        "ru",
-        "tr",
-        "sw"
-      ]
-    }
-  ],
+  "coverage_program": "lesson_specific",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "expected_total": 8,
+  "expected_tier_counts": {
+    "1": 4,
+    "2": 3,
+    "3": 1
+  },
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json"
+  },
+  "record_contract": {
+    "forms": "Representative visible forms or concise system labels for the comparison loop. These make grammatical gender visible where useful but never define gender count by article count.",
+    "system_type": "Lesson-specific classification such as no_grammatical_noun_gender, two_gender, three_gender, or noun_class_system. Missing data must never be interpreted as no gender.",
+    "gender_count": "Count of grammatical noun genders only where that description is appropriate. Use null for systems better represented as broader noun classes.",
+    "own_grammar_blurb": "Optional learner-facing explanation written in the language itself. Display only for a real profile language, not for an injected reference anchor.",
+    "comparison_blurb": "English research/explanation fallback for this initial English-authored lesson. It is candidate copy, not globally localized teaching text.",
+    "review_state": "Research/editorial workflow state. Candidate records may never self-promote.",
+    "trust_state": "Product confidence stage using the canonical Gef ladder: machine_translated, machine_verified, public, gef_certified."
+  },
   "selection_policy": "Only render languages with explicit records. Do not infer gender system from language family, script, article count, or missing data.",
   "review_state": "candidate",
-  "version": 1
+  "trust_state": "machine_translated",
+  "version": 3
 }

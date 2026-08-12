@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.grammatical_gender",
+  "anchor": {
+    "language_tag": "en",
+    "surface": "grammatical gender",
+    "note": "English is the comparison anchor because ordinary English nouns do not belong to grammatical masculine/feminine/neuter classes, even though pronouns can encode gender."
+  },
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "scope_note": "How languages classify nouns and trigger agreement. Article forms are an A1 teaching window into the system, not its definition. A language may have grammatical gender without articles, multiple article allomorphs within one gender, no grammatical noun gender, or a broader noun-class system.",
+  "languages": [
+    {
+      "language_tag": "en",
+      "language_name_en": "English",
+      "classification": "anchor",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.en.gender.invariant",
+          "display": "the",
+          "form_kind": "word",
+          "rules": [
+            {
+              "rule_id": "RULE.en.gender.no_noun_gender",
+              "summary_en": "Ordinary English nouns are not assigned grammatical masculine, feminine, or neuter classes, and the definite article the does not change for noun gender.",
+              "tips_en": [
+                "Do not confuse gendered pronouns such as he and she with a grammatical gender class on every noun.",
+                "English is useful as a zero-gender comparison, not as a universal default."
+              ]
+            }
+          ]
+        }
+      ],
+      "review_state": "candidate",
+      "notes": "English retains limited natural-gender distinctions in pronouns and some lexical pairs; that is different from a grammatical noun-gender agreement system."
+    },
+    {
+      "language_tag": "es",
+      "language_name_en": "Spanish",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.es.gender.el",
+          "display": "el",
+          "form_kind": "word",
+          "rules": [
+            {
+              "rule_id": "RULE.es.gender.masculine_agreement",
+              "summary_en": "El is the ordinary masculine singular definite article. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.",
+              "tips_en": [
+                "Learn a new noun with an article: el libro, el problema.",
+                "Many nouns ending in -o are masculine, but the ending is a clue rather than a guarantee."
+              ]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.es.gender.la",
+          "display": "la",
+          "form_kind": "word",
+          "rules": [
+            {
+              "rule_id": "RULE.es.gender.feminine_agreement",
+              "summary_en": "La is the ordinary feminine singular definite article. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives.",
+              "tips_en": [
+                "Learn a new noun with an article: la casa, la mano.",
+                "Many nouns ending in -a are feminine, but exceptions are normal."
+              ]
+            }
+          ]
+        }
+      ],
+      "review_state": "candidate",
+      "notes": "Spanish has two grammatical genders for ordinary nouns. This A1 grammar set uses el/la as the practiceable surface contrast. The lesson rendering separately teaches ending clues and the limited neuter forms lo/esto/eso/aquello so they are not miscompiled as ordinary noun-gender choices."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 2
+}

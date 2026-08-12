@@ -12,8 +12,18 @@
       "review_state": "approved"
     },
     {
-      "lesson_id": "LES.mul.vocab.family_members",
+      "lesson_id": "LES.mul.grammar.grammatical_gender",
       "priority": 20,
+      "category": "grammar",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Universal grammatical-gender comparison family. Spanish has full candidate rule/practice data; other languages participate only when this lesson has explicit comparison or full-support records. Do not infer capability from global language tier.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.vocab.family_members",
+      "priority": 30,
       "category": "vocabulary",
       "path_scope": "tier1_tier2",
       "featured": false,
@@ -28,6 +38,6 @@
     "tier3": "Reading and games remain the learning path. Universal orientation lessons may still appear, but no bespoke grammar sequence is promised.",
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
-  "review_state": "candidate",
-  "version": 2
+  "review_state": "approved",
+  "version": 3
 }
