@@ -1,24 +1,32 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.vocab.family_members",
+  "family_path": "../family-path.json",
   "language_contract": "../language-contract.json",
-  "purpose": "Learner-facing Family Members lesson copy in every canonical learn-from language. Target-language kinship facts remain structured and relationship-first so the same researched profile can be explained to any source-language learner without a 104 x 21 pair matrix.",
+  "purpose": "Learner-facing Family source copy in every canonical learn-from language. These localizations are the reusable Core-mode doorway for the four-stage Family path; richer stage-specific cultural analysis is a separate capability and must never be inferred from localization coverage alone.",
   "storage_shards": ["tier1.json","tier2.json","mk.json","tier3-01.json","tier3-02.json","tier3-03.json"],
   "semantic_tiers_are_derived_from": "../language-contract.json",
   "expected_tier_counts": {"1":6,"2":15,"3":83},
   "expected_total": 104,
+  "session_depth_policy": {
+    "localized_core_doorway_available_to": 104,
+    "core_when": "either active language role is outside full_target_languages",
+    "cultural_when": "both active language roles are in full_target_languages and the requested stage has the required cultural assets",
+    "important": "A rich localization for one language does not unlock Cultural mode by itself. Depth is resolved from the pair."
+  },
   "formats": {
     "extended_v1": {
+      "description": "Rich reusable Family copy. In a Core session the runtime still renders only the Core block subset; extended copy is not permission to bypass pair-level depth.",
       "required_copy_keys": ["title","invitation","summary","idea_title","idea_text","culture_title","culture_text","practice_title","practice_text","completion_title","completion_text"],
       "required_runtime_keys": ["source_heading","target_heading_template","terms_heading_template","examples_heading","previous_label","next_label","finish_label","done_label","correct_fallback","retry_fallback"]
     },
     "compact_core_v1": {
-      "description": "Tier 3 core lesson uses the already-localized source bridge as its invitation/relationship-first explanation, then adds all remaining visible lesson copy locally. App-wide navigation buttons come from the normal interface localization pack; lesson-specific fallback buttons are included for learn-from languages that do not yet have a production UI pack.",
+      "description": "Compact source localization for Core Family sessions. The already-localized source bridge supplies the generic family introduction; stage-specific Core screens may reuse it until a dedicated stage localization is reviewed.",
       "source_bridge_supplies": ["invitation","summary","relationship_first_explanation"],
       "required_copy_keys": ["title","culture_caution","practice_instruction","completion_text"],
       "required_runtime_keys": ["source_heading","target_heading_template","terms_heading_template","examples_heading","previous_label","next_label","finish_label","done_label"]
     }
   },
-  "review_policy": "Machine-created localization can provide coverage but must stay labeled machine_translated until native/community review promotes it. Language availability and human verification are separate states.",
-  "version": 2
+  "review_policy": "Machine-created localization can provide coverage but must stay labeled machine_translated until native/community review promotes it. Language availability, vocabulary breadth, cultural depth, and human verification are separate states.",
+  "version": 3
 }
