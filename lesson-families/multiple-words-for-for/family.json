@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "lesson_key": "multiple-words-for-for",
+  "title_key": "lesson.multiple_for.title",
+  "fallback_title_en": "How {learning_languages} uses {forms}",
+  "summary_key": "lesson.multiple_for.summary",
+  "fallback_summary_en": "English often uses the preposition 'for' across relationships such as purpose, reason, destination, recipient, exchange, route, and target time. Other languages may divide those jobs among different grammatical forms.",
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "language_capabilities_manifest": "language-capabilities.json",
+  "comparison_blurb_manifest": "support-blurbs/manifest.json",
+  "curriculum_concept_ids": ["CURR.PREPOSITIONS", "CURR.PURPOSE_CAUSE_GOAL", "CURR.PATH_ROUTE", "CURR.BENEFICIARY", "CURR.TIME_GOAL"],
+  "transparency_slide": {
+    "description": "The lesson is declarative structure layered with language data. The app owns one universal lesson runner; lesson packages do not ship bespoke executable runners.",
+    "fixed_comparison_language_tags": ["en", "es"],
+    "language_loop_order": ["fixed", "learning_from", "learning"],
+    "dedupe_language_roles": true,
+    "rendering_model": "Build one ordered language array, then render the same universal LanguageSample component for every entry. English and Spanish are fixed data entries at the front; they are not separate component implementations.",
+    "support_selection": {
+      "full": "Render the language comparison block plus structured GrammarRuleBlock sections and any defensible rule-driven practice.",
+      "comparison_only": "Render the language comparison block only. Do not synthesize missing grammar rules or practice.",
+      "unavailable": "Omit the language from this lesson."
+    }
+  },
+  "title_policy": {
+    "default_display_locale": "en",
+    "template_key": "lesson.shell.title.languageUsesForms",
+    "variables": ["learning_languages", "forms"],
+    "forms_source": "lesson language comparison data",
+    "language_list_format": "shared locale-aware list formatter",
+    "notes": "The title is target/learning-language specific. Do not infer a universal one-word equivalent, and do not hand-concatenate translated words such as 'and' or commas."
+  },
+  "eligibility": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "require_non_anchor_multi_form_language": false,
+    "prefer_profile_languages": true,
+    "fill_with_anchor_language_when_needed": true,
+    "notes": "The data model supports arbitrary language arrays. Twelve is only the default lesson-surface display cap; classroom/projector surfaces may raise it without changing the lesson schema."
+  },
+  "block_plan": [
+    {
+      "block_id": "facts",
+      "block_type": "lesson_facts",
+      "repeat": "once",
+      "notes": "Show the dynamic target-language title and concise topic-specific description. Do not use a generic 'languages say things differently' lesson intro."
+    },
+    {
+      "block_id": "language-comparisons",
+      "block_type": "language_comparison_loop",
+      "group_id": "comparison-intro",
+      "repeat": "per_relevant_language",
+      "notes": "Create one ordered array: hard-coded English, hard-coded Spanish, then all selected learning-from languages, then all selected learning languages. Deduplicate by language tag while preserving every role. Render each with the universal LanguageSample component. Full support may source forms from Lexicon; comparison-only support uses the lightweight native-language comparison record."
+    },
+    {
+      "block_id": "grammar-primer",
+      "block_type": "grammar_primer",
+      "group_id": "rules",
+      "repeat": "once",
+      "notes": "Explain relevant grammatical categories using selected full-support language metadata. Do not call every form a preposition; forms may be prepositions, postpositions, particles, case markers, clause markers, endings, or larger constructions."
+    },
+    {
+      "block_id": "language-rules",
+      "block_type": "language_rules",
+      "group_id": "rules",
+      "repeat": "per_full_support_learning_language",
+      "notes": "Render universal GrammarRuleBlock components from structured Lexicon rule IDs. A global Tier 1/2 label alone never qualifies a language for this block."
+    },
+    {
+      "block_id": "curated-examples",
+      "block_type": "curated_examples",
+      "repeat": "per_selected_language",
+      "notes": "Prefer exact approved handles from the current compatible text or the lesson-safe default corpus, including eligible Quotes Across the World anchors. LanguageSample is the universal presentation component and may also be used by books."
+    },
+    {
+      "block_id": "practice-intro",
+      "block_type": "practice_intro",
+      "repeat": "once",
+      "notes": "Friendly localized transition. Omit when selected learning languages have no defensible rule-driven practice."
+    },
+    {
+      "block_id": "practice",
+      "block_type": "practice",
+      "repeat": "per_full_support_learning_language",
+      "notes": "Use shared practice primitives only where structured grammar records support a real decision. Wrong answers reveal the relevant rule/tips; no punitive streak behavior."
+    },
+    {
+      "block_id": "quest",
+      "block_type": "quest_offer",
+      "repeat": "once",
+      "notes": "Teacher/session policy may hide, offer, or require a reader quest. Omit when selected learning languages have no meaningful target distinction."
+    },
+    {
+      "block_id": "completion",
+      "block_type": "completion",
+      "repeat": "once",
+      "notes": "Localized wrap-up and optional scorecard/celebration. Must work for comparison-only sessions with no quiz score."
+    }
+  ],
+  "presentation_modes": ["scroll", "paged", "presentation"],
+  "learning_path_policy": {
+    "placements_are_language_specific": true,
+    "placement_registry": "curriculum/learning-path-placements.json",
+    "notes": "The same multilingual lesson family may appear at different positions in different language paths. Lesson-specific full support can be added for any global tier without changing that language's global tier."
+  },
+  "review_state": "candidate",
+  "version": 5
+}

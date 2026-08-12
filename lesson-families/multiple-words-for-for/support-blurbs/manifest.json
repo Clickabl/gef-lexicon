@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 3,
+  "purpose": "Generic localized catalog/tooltip copy only. These strings are not the transparency-slide opening and must not be used as a language-specific grammar/comparison explanation.",
+  "source_summary_en": "Prepositions and other grammatical forms can express relationships such as purpose, reason, destination, recipient, exchange, route, and time in different ways.",
+  "source_tooltip_en": "Compare how languages express these grammatical relationships.",
+  "runtime_usage": [
+    "lesson catalog metadata",
+    "lesson discovery tooltip",
+    "generic fallback metadata only"
+  ],
+  "localization_rules": [
+    "Do not use these generic blurbs as the learner-facing language comparison block.",
+    "Actual per-language comparison forms and native-language explanations live in ../comparison-records/.",
+    "Do not invent a one-word equivalent where a language uses several words, cases, particles, endings, or constructions.",
+    "Translations are generated candidates until reviewed; later review may improve wording without changing the source meaning."
+  ],
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json",
+    "4": "tier4.json"
+  },
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 30, "4": 53},
+  "expected_total": 104,
+  "review_state": "generated"
+}

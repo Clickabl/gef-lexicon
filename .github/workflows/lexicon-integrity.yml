@@ -50,6 +50,10 @@ jobs:
             while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
             exit "$status"
           fi
+      - name: Validate multilingual lesson support blurbs
+        run: node scripts/validate-lesson-support-blurbs.mjs
+      - name: Validate lesson language capabilities and comparison records
+        run: node scripts/validate-lesson-language-capabilities.mjs
       - name: Validate English source coverage
         run: npm run validate:english
       - name: Regenerate concept index

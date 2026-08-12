@@ -5,7 +5,7 @@
   "type": "object",
   "required": ["schema_version", "lesson_id", "support_language_tag", "title", "invitation", "blocks", "review_state", "version"],
   "properties": {
-    "schema_version": {"type": "integer", "const": 1},
+    "schema_version": {"type": "integer", "enum": [1, 2]},
     "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
     "support_language_tag": {"type": "string", "minLength": 1},
     "proficiency_band": {"type": "string", "enum": ["beginner", "intermediate", "advanced", "all"]},
@@ -13,24 +13,110 @@
     "title": {"type": "string", "minLength": 1},
     "invitation": {"type": "string", "minLength": 1},
     "summary": {"type": "string"},
+    "localization_keys": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
+    "runtime_copy": {"$ref": "#/definitions/runtimeCopy"},
     "blocks": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["block_id", "type"],
-        "properties": {
-          "block_id": {"type": "string", "minLength": 1},
-          "type": {"type": "string", "enum": ["explanation", "rule", "comparison", "question", "answer_explanation", "cultural_note", "dynamic_example_slot"]},
-          "text": {"type": "string"},
-          "rule_id": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"},
-          "slot": {"type": "string"}
-        },
-        "additionalProperties": false
+      "items": {"$ref": "#/definitions/block"}
+    },
+    "rule_explanations": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "string", "minLength": 1},
+          {"$ref": "#/definitions/ruleExplanation"}
+        ]
       }
     },
-    "rule_explanations": {"type": "object", "additionalProperties": {"type": "string"}},
     "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
     "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "ruleExplanation": {
+      "type": "object",
+      "required": ["summary"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "tips": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "runtimeCopy": {
+      "type": "object",
+      "properties": {
+        "language_heading": {"type": "string", "minLength": 1},
+        "previous_label": {"type": "string", "minLength": 1},
+        "next_label": {"type": "string", "minLength": 1},
+        "finish_label": {"type": "string", "minLength": 1},
+        "correct_fallback": {"type": "string", "minLength": 1},
+        "retry_fallback": {"type": "string", "minLength": 1},
+        "correct_score_label": {"type": "string", "minLength": 1},
+        "attempted_score_label": {"type": "string", "minLength": 1},
+        "done_label": {"type": "string", "minLength": 1},
+        "rules_heading_template": {"type": "string", "minLength": 1},
+        "form_kind_labels": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    },
+    "block": {
+      "type": "object",
+      "required": ["block_id", "type"],
+      "properties": {
+        "block_id": {"type": "string", "minLength": 1},
+        "group_id": {"type": "string", "minLength": 1},
+        "type": {
+          "type": "string",
+          "enum": [
+            "explanation",
+            "rule",
+            "comparison",
+            "question",
+            "answer_explanation",
+            "cultural_note",
+            "dynamic_example_slot",
+            "lesson_facts",
+            "grammar_primer",
+            "word_form_matrix",
+            "language_comparison_loop",
+            "language_rule_groups",
+            "curated_example_group",
+            "practice_slot",
+            "quest_offer",
+            "completion"
+          ]
+        },
+        "title": {"type": "string"},
+        "description": {"type": "string"},
+        "text": {"type": "string"},
+        "action_label": {"type": "string"},
+        "begin_label": {"type": "string"},
+        "decline_label": {"type": "string"},
+        "rule_id": {"type": "string", "pattern": "^RULE\\.[A-Za-z0-9._-]+$"},
+        "slot": {"type": "string"},
+        "source": {"type": "string"},
+        "module": {"type": "string"},
+        "feedback": {"type": "string"},
+        "quest_type": {"type": "string"},
+        "teacher_policy": {"type": "string"},
+        "minimum_languages": {"type": "integer", "minimum": 0},
+        "maximum_languages": {"type": "integer", "minimum": 1},
+        "prefer_profile_languages": {"type": "boolean"},
+        "allow_anchor_fallback": {"type": "boolean"},
+        "one_block_per_form": {"type": "boolean"},
+        "include_tips": {"type": "boolean"},
+        "prefer_current_or_quotes_weighted": {"type": "boolean"},
+        "show_once": {"type": "boolean"},
+        "omit_when_empty": {"type": "boolean"},
+        "requires_session_mode": {"type": "string", "enum": ["practice", "comparison_only"]},
+        "show_scorecard": {"type": "boolean"},
+        "scorecard_optional_when_no_practice": {"type": "boolean"},
+        "celebration": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
   },
   "additionalProperties": false
 }

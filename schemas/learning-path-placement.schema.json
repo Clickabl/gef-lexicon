@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/learning-path-placement.schema.json",
+  "title": "Gef language-specific lesson path placements",
+  "type": "object",
+  "required": ["schema_version", "placements"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "source_registry": {"type": "string", "minLength": 1},
+    "source_program": {"type": "string", "minLength": 1},
+    "placements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["placement_id", "language_tag", "lesson_family_id", "status", "review_state"],
+        "properties": {
+          "placement_id": {"type": "string", "pattern": "^PATH\\.[A-Za-z0-9._-]+$"},
+          "language_tag": {"type": "string", "minLength": 1},
+          "lesson_family_id": {"type": "string", "pattern": "^LES\\.mul\\.[A-Za-z0-9._-]+$"},
+          "implementation_lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+          "status": {"enum": ["placed", "research_required", "not_applicable"]},
+          "difficulty_band": {"type": "string"},
+          "order_hint": {"type": "integer", "minimum": 0},
+          "prerequisite_lesson_ids": {"type": "array", "items": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"}, "uniqueItems": true},
+          "prerequisite_concepts": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+          "notes": {"type": "string"},
+          "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

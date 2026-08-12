@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "tasks": [
+    {
+      "task_id": "TASK-LESSON-FOR-FULL-RULES-TIER12-104",
+      "kind": "grammar_research",
+      "priority": "p0",
+      "status": "ready",
+      "automation_id": "GEF-AUTO-LESSON-GRAMMAR-001",
+      "target_language_tags": ["fr", "it", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "mk"],
+      "goal": "Research and add structured Lexicon grammar records for this semantic lesson family. These languages are globally Tier 1/2 planning priorities but remain lesson-level comparison_only until their actual records are complete.",
+      "per_language_acceptance": [
+        "Identify the real words, particles, case markers, affixes, or constructions used for the semantic functions in this lesson; do not force a preposition model.",
+        "Add independent forms and rule records to grammar/for-equivalents.json with stable form_id/rule_id values and semantic_function_ids.",
+        "Document primary/authoritative sources where available and flag dialect/register/orthography differences rather than flattening them.",
+        "Include enough rule boundaries to support GrammarRuleBlock rendering without importing another language's rules.",
+        "Mark the grammar language record lesson_ready only when its structured data is internally coherent.",
+        "Remove the language from pending_full_support_research and add it to support_levels.full.language_tags only after validation passes.",
+        "Never promote a language merely because its global lesson tier is 1 or 2."
+      ],
+      "promotion_file": "language-capabilities.json"
+    },
+    {
+      "task_id": "TASK-LESSON-FOR-COMPARISON-REVIEW-104",
+      "kind": "linguistic_review",
+      "priority": "p1",
+      "status": "ready",
+      "target_scope": "comparison-records/tier1.json through tier4.json",
+      "goal": "Audit the 104 native-language comparison records. These are intentionally lightweight: representative forms/constructions plus one short native-language explanation, not full rule sets.",
+      "acceptance": [
+        "Every record must describe this lesson's actual semantic territory, not repeat the generic lesson intro.",
+        "Check representative forms for purpose/intended use, recipient/beneficiary, cause/reason, direction/destination, duration/target time, route/means, exchange/support where those distinctions are natural in the language.",
+        "Do not require every language to cover every English sense; explicitly describe morphology, case, zero marking, or larger constructions when those are the natural strategy.",
+        "Review native-language wording for naturalness and script/orthography.",
+        "Promote generated -> audit_passed/community_verified/professional_verified only with evidence appropriate to the Gef trust ladder.",
+        "Prioritize entries currently marked research_required."
+      ],
+      "research_required_language_tags": ["ak", "cv", "dsb", "hsb", "kok", "shn", "bho"]
+    },
+    {
+      "task_id": "TODO-AUTOMATION-TRANSLATION-OUTSIDE-104",
+      "kind": "automation_contract_handoff",
+      "priority": "p1",
+      "status": "handoff_to_automation_work",
+      "automation_id": "GEF-AUTO-LANG-002",
+      "goal": "Warn when a production translation/localization target is introduced outside the canonical programs.learnFromLanguages set (currently 104).",
+      "requirements": [
+        "Derive the allowed set from Clickabl/gef-expo/registry/language-support.json; never copy the number or list into the automation.",
+        "Warning must identify the unexpected language tag and the file/path that introduced it.",
+        "Support explicit exceptions for UI-only localization, source/historical material, experimental/human-first work, and other centrally declared exception classes.",
+        "A representation/script/locale variant of an existing language must not be miscounted as a new learn-from language.",
+        "Coordinate with the central automation registry/action being built elsewhere; do not create a second automation framework for this lesson."
+      ]
+    }
+  ]
+}

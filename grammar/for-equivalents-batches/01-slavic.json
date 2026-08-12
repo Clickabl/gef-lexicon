@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "batch_id": "GRAMBATCH.mul.for.slavic",
+  "research_mode": "native_explainer_plus_structured_rules",
+  "comparison_basis": "semantic_functions",
+  "languages": [
+    {
+      "language_tag": "uk",
+      "language_name_en": "Ukrainian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "uk",
+        "title": "Як українська виражає мету, причину, адресата та інші зв’язки",
+        "body": "В українській різні смислові зв’язки розподіляються між різними прийменниками, відмінками й конструкціями. «Для» + родовий часто позначає призначення, мету, одержувача або того, для чиєї користі щось робиться. Причину можна виразити «через» + знахідний. Тривалість часто передається «протягом» + родовий або часовою групою. Напрямок і кінцева межа залежать від дієслова та типу цілі: уживаються, зокрема, «до» + родовий і конструкції з «у/в» + знахідний. Обмін, ціну, заміну або підтримку часто передають конструкції з «за». Вибір форми залежить від конкретного смислового зв’язку в реченні.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.uk.for.dlia_gen",
+          "display": "для + родовий",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.uk.for.dlia_purpose_beneficiary","summary_en":"Для + genitive commonly marks intended purpose, intended user, beneficiary, or intended recipient.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.RECIPIENT"],"tips_en":["Ask who benefits, who receives something, or what purpose is intended.","Treat для as one common construction among several semantic patterns."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.uk.for.cherez_acc",
+          "display": "через + знахідний",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.uk.for.cherez_cause","summary_en":"Через + accusative can mark a cause or reason, especially an adverse or explanatory cause.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Use a causal construction when the phrase explains why something happened.","The noun after через is accusative in this construction."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.uk.for.protiahom_gen",
+          "display": "протягом + родовий",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.uk.for.protiahom_duration","summary_en":"Протягом + genitive explicitly marks the duration or span during which something continues.","semantic_function_ids":["SEM.DURATION"],"tips_en":["Use this when the relation is elapsed duration or a time span.","Do not confuse elapsed duration with a deadline or target time."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.uk.for.do_gen",
+          "display": "до + родовий",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.uk.for.do_goal_deadline","summary_en":"До + genitive marks reaching a spatial endpoint or a temporal limit; destination wording may also use у/в + accusative depending on the motion construction.","semantic_function_ids":["SEM.DESTINATION_GOAL","SEM.DEADLINE_TARGET_TIME"],"tips_en":["For a destination, learn the motion verb together with the required destination construction.","When до marks time, think endpoint or deadline rather than duration."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.uk.for.za_acc",
+          "display": "за + знахідний",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.uk.for.za_exchange_support","summary_en":"За + accusative occurs in common price, exchange, substitution, payment, and support/favor constructions.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.SUPPORT_FAVOR"],"tips_en":["Check за when the relation is exchange, price, substitution, payment, or support.","Learn the whole construction because за has many unrelated meanings."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://slovnyk.ua/index.php?swrd=%D0%B4%D0%BB%D1%8F",
+        "https://lcorp.ulif.org.ua/dictua/",
+        "https://sum.in.ua/"
+      ],
+      "review_state": "candidate",
+      "notes": "Lesson-focused candidate synthesis. Ukrainian motion/destination and temporal constructions are construction-sensitive; native review is required before stronger trust promotion."
+    },
+    {
+      "language_tag": "ru",
+      "language_name_en": "Russian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "ru",
+        "title": "Как русский выражает цель, причину, адресата и другие отношения",
+        "body": "В русском разные смысловые отношения распределяются между предлогами, падежами и конструкциями. «Для» + родительный часто выражает назначение, цель, предполагаемого получателя или того, в чьих интересах что-то делается. Причину можно явно обозначить «из-за» + родительный или другими причинными конструкциями. Длительность передаётся, например, «в течение» + родительный или временной группой. Направление зависит от типа цели движения: используются «в/на» + винительный, «к» + дательный, «до» + родительный и другие модели. «До» также обозначает временную границу, а «за» + винительный часто встречается при цене, обмене, замене, оплате и поддержке. Форму выбирают по смысловой связи и управлению конкретной конструкции.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.ru.for.dlia_gen",
+          "display": "для + родительный",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.ru.for.dlia_purpose_beneficiary","summary_en":"Для + genitive commonly marks intended recipient, intended use, purpose, or beneficiary.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.RECIPIENT"],"tips_en":["Ask whether the relation is intended use, purpose, recipient, or beneficiary.","Use the construction selected by the semantic role rather than extending для to unrelated roles."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ru.for.iz_za_gen",
+          "display": "из-за + родительный",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.ru.for.iz_za_cause","summary_en":"Из-за + genitive marks cause or reason, commonly with an unwanted, problematic, or explanatory result.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Choose a causal construction when the phrase explains what caused the result.","The governed noun is genitive."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ru.for.v_techenie_gen",
+          "display": "в течение + родительный",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.ru.for.v_techenie_duration","summary_en":"В течение + genitive explicitly marks a span of time during which something happens or remains true.","semantic_function_ids":["SEM.DURATION"],"tips_en":["Use this family for elapsed duration or a bounded time span.","A duration is different from a deadline such as до пятницы."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ru.for.destination_cases",
+          "display": "в/на + винительный; к + дательный; до + родительный",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ru.for.destination_deadline","summary_en":"Russian destination and endpoint meanings are distributed across motion constructions such as в/на + accusative, к + dative, and до + genitive; до also marks a temporal endpoint/deadline.","semantic_function_ids":["SEM.DESTINATION_GOAL","SEM.DEADLINE_TARGET_TIME"],"tips_en":["Learn destination marking with the motion verb and type of destination.","When до is temporal, read it as an endpoint, not as elapsed duration."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ru.for.za_acc",
+          "display": "за + винительный",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.ru.for.za_exchange_support","summary_en":"За + accusative is central in many price, exchange, payment, substitution, voting, and support/favor expressions.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.SUPPORT_FAVOR"],"tips_en":["Check за when the relation is price, exchange, payment, substitution, voting, or support.","Because за has many other meanings, learn the complete phrase rather than the preposition in isolation."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://gramota.ru/meta/dlya",
+        "https://gramota.ru/meta/iz-za",
+        "https://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/predlog",
+        "https://gramota.ru/spravka/vopros/287500",
+        "https://gramota.ru/meta/za"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "pl",
+      "language_name_en": "Polish",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "pl",
+        "title": "Jak polski wyraża cel, przyczynę, odbiorcę i inne relacje",
+        "body": "W polskim różne relacje znaczeniowe są rozdzielone między przyimki, przypadki i całe konstrukcje. «Dla» + dopełniacz często wskazuje beneficjenta, odbiorcę albo przeznaczenie. Cel może też wymagać «na» + biernik albo zdania z «żeby/aby». Przy cenie, wymianie, zastępstwie i poparciu często pojawia się «za» + biernik. Przyczynę wyraża m.in. «z powodu» + dopełniacz, a w części konstrukcji także «przez» + biernik. Czas trwania może być oznaczony przez «przez» + biernik, natomiast termin końcowy przez «do» + dopełniacz. Kierunek zależy od rodzaju miejsca i konstrukcji ruchu, np. «do Warszawy». Najpierw ustalamy relację znaczeniową, a potem wybieramy właściwą formę.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.pl.for.dla_gen",
+          "display": "dla + dopełniacz",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.pl.for.dla_beneficiary_purpose","summary_en":"Dla + genitive commonly marks a beneficiary, intended audience/recipient, or intended purpose/use.","semantic_function_ids":["SEM.BENEFICIARY","SEM.RECIPIENT","SEM.PURPOSE"],"tips_en":["Ask whether the phrase identifies a beneficiary, recipient, intended audience, or use.","Polish purpose is broader than dla; verbal goals often use other constructions."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pl.for.na_acc_or_aby",
+          "display": "na + biernik / żeby, aby",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.pl.for.purpose_constructions","summary_en":"Purpose can be expressed by na + accusative in many noun-goal constructions or by żeby/aby clauses for an explicit intended result.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Choose the construction according to whether the goal is a noun phrase or a clause.","Do not assume one purpose marker covers every grammatical shape."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pl.for.z_powodu_gen",
+          "display": "z powodu + dopełniacz",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.pl.for.z_powodu_cause","summary_en":"Z powodu + genitive is an explicit cause/reason construction; przez + accusative can also mark cause in many contexts.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Use a cause construction when the phrase explains why something happened.","Przez can also be causal, so use the full phrase and context rather than a one-form rule."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pl.for.przez_acc",
+          "display": "przez + biernik",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.pl.for.przez_duration","summary_en":"Przez + accusative commonly marks the duration of an event or state.","semantic_function_ids":["SEM.DURATION"],"tips_en":["Use this construction when the relation is elapsed duration.","Keep duration separate from the deadline/endpoint meaning expressed with do."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pl.for.do_gen",
+          "display": "do + dopełniacz",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.pl.for.do_destination_deadline","summary_en":"Do + genitive commonly marks destination toward many places and a temporal endpoint/deadline.","semantic_function_ids":["SEM.DESTINATION_GOAL","SEM.DEADLINE_TARGET_TIME"],"tips_en":["Destination marking depends on the kind of place, so learn the noun with its construction.","Temporal do means an endpoint, not a span of time."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pl.for.za_acc",
+          "display": "za + biernik",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.pl.for.za_exchange_support","summary_en":"Za + accusative occurs in common price, payment, exchange, substitution, voting, and support/favor constructions.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.SUPPORT_FAVOR"],"tips_en":["Check za for price, exchange, payment, substitution, voting, or support relations.","Learn the entire phrase because za also has unrelated spatial and temporal uses."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://wsjp.pl/",
+        "https://wsjp.pl/haslo/podglad/3470/odbiorca/3893889/literatury",
+        "https://wsjp.pl/haslo/podglad/3470/odbiorca/3893888/towaru"
+      ],
+      "review_state": "candidate",
+      "notes": "WSJP PAN is used as the primary lexical authority; construction-level synthesis remains candidate pending Polish-native review."
+    },
+    {
+      "language_tag": "mk",
+      "language_name_en": "Macedonian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "mk",
+        "title": "Како македонскиот изразува цел, причина, примател и други односи",
+        "body": "Во македонскиот различните смисловни односи се распределуваат меѓу различни предлози и конструкции. «За» често означува намена, нешто наменето за некого, крајна цел или противвредност. «За да» јасно воведува целна реченица. «Поради» најчесто означува причина, додека «заради» може да означува и цел и причина, зависно од контекстот. «До» означува просторна или временска граница, а «во текот на» временско траење. Изборот на формата зависи од смисловниот однос што го изразува конкретната реченица.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.mk.for.za",
+          "display": "за",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.mk.for.za_purpose_recipient_goal","summary_en":"За commonly covers intended purpose/use, intended recipient/beneficiary, and destination/goal relationships in Macedonian.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.RECIPIENT","SEM.DESTINATION_GOAL"],"tips_en":["За is broad, but different semantic roles still depend on the surrounding construction.","Ask whether the phrase points toward an intended person, use, or endpoint."]},
+            {"rule_id":"RULE.mk.for.za_exchange","summary_en":"За also occurs in common price, exchange, substitution, and countervalue constructions.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["Use a за construction when the relation is price, exchange, substitution, or countervalue.","Use the whole construction because за also marks several other relations."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.mk.for.za_da",
+          "display": "за да + реченица",
+          "form_kind": "clause_marker",
+          "rules": [
+            {"rule_id":"RULE.mk.for.za_da_purpose","summary_en":"За да introduces an explicit purpose clause, linking an action to the intended result.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Use this when the purpose itself is expressed as a clause.","The official Macedonian dictionary explicitly describes за да as signaling the goal of the action."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.mk.for.poradi_zaradi",
+          "display": "поради / заради",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.mk.for.poradi_zaradi_cause_purpose","summary_en":"Поради and заради mark cause; the official dictionary also records purpose/intention uses, especially for заради and in some поради contexts.","semantic_function_ids":["SEM.CAUSE_REASON","SEM.PURPOSE"],"tips_en":["Do not force a rigid one-form-per-meaning split here: the official dictionary records overlap.","Use context to distinguish an actual cause from an intended aim."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.mk.for.do",
+          "display": "до",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.mk.for.do_goal_deadline","summary_en":"До marks a spatial limit/endpoint and a temporal limit, covering destination-endpoint and deadline relationships.","semantic_function_ids":["SEM.DESTINATION_GOAL","SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think of до as reaching a boundary.","A temporal boundary is a deadline/endpoint, not elapsed duration."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.mk.for.vo_tekot_na",
+          "display": "во текот на",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.mk.for.vo_tekot_na_duration","summary_en":"Во текот на marks the span during which something happens or continues.","semantic_function_ids":["SEM.DURATION"],"tips_en":["Use this construction for a duration or time span.","Keep duration separate from the temporal endpoint expressed with до."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://makedonski.gov.mk/corpus/l/za-predl",
+        "https://makedonski.gov.mk/corpus/l/poradi-predl",
+        "https://makedonski.gov.mk/corpus/l/zaradi-predl",
+        "https://makedonski.gov.mk/corpus/l/do-predl",
+        "https://makedonski.gov.mk/"
+      ],
+      "review_state": "candidate"
+    }
+  ],
+  "review_state": "candidate",
+  "version": 2
+}

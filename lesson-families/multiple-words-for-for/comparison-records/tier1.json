@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "tier": 1,
+  "review_state": "generated",
+  "entries": [
+    {
+      "language_tag": "en",
+      "forms": [{"form_id":"CMP.en.for","display":"for"}],
+      "comparison_blurb": "English uses “for” for several different relationships, including who something is meant for, why something happened, what something is intended to do, an exchange, and a length of time. Other relationships that feel similar may use words such as “to,” “through,” or “because of” instead.",
+      "source_refs": ["https://dictionary.cambridge.org/dictionary/english/for"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "es",
+      "forms": [{"form_id":"CMP.es.por","display":"por"},{"form_id":"CMP.es.para","display":"para"}],
+      "comparison_blurb": "En español, muchas de estas relaciones se reparten entre «por» y «para». «Para» suele apuntar a finalidad, destino, destinatario o plazo; «por» aparece con frecuencia en causa, recorrido, medio o intercambio. No todas las frases encajan en una regla de dos columnas, así que conviene aprender la construcción completa.",
+      "source_refs": ["gef-lexicon:lessons/es/por-vs-para/lesson.json"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "fr",
+      "forms": [{"form_id":"CMP.fr.pour","display":"pour"},{"form_id":"CMP.fr.cause","display":"à cause de"},{"form_id":"CMP.fr.vers","display":"vers"},{"form_id":"CMP.fr.pendant","display":"pendant"},{"form_id":"CMP.fr.exchange","display":"en échange de"}],
+      "comparison_blurb": "En français, «pour» couvre beaucoup d’emplois liés au but, au destinataire ou à ce qui est prévu pour quelqu’un. D’autres relations de la même famille passent plutôt par des formes comme «à cause de», «vers», «pendant» ou «en échange de». Le choix dépend donc du rôle de l’expression dans la phrase.",
+      "source_refs": ["https://en.wiktionary.org/wiki/for/translations"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "pt",
+      "forms": [{"form_id":"CMP.pt.por","display":"por"},{"form_id":"CMP.pt.para","display":"para"}],
+      "comparison_blurb": "Em português, muitas dessas relações se dividem entre «por» e «para». «Para» costuma marcar finalidade, destino, destinatário ou um ponto-alvo; «por» aparece com frequência em causa, percurso, meio e troca. As fronteiras não são idênticas às do espanhol, por isso a construção portuguesa é que manda.",
+      "source_refs": ["https://www.infopedia.pt/dicionarios/lingua-portuguesa/por", "https://www.infopedia.pt/dicionarios/lingua-portuguesa/para"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "it",
+      "forms": [{"form_id":"CMP.it.per","display":"per"},{"form_id":"CMP.it.cause","display":"a causa di"},{"form_id":"CMP.it.verso","display":"verso"},{"form_id":"CMP.it.durante","display":"durante"},{"form_id":"CMP.it.exchange","display":"in cambio di"}],
+      "comparison_blurb": "In italiano, «per» copre molti usi legati a scopo, destinatario, motivo e durata. Per altre relazioni si usano costruzioni più specifiche, come «a causa di», «verso» o «in cambio di». Non conviene quindi cercare una sola traduzione fissa: conta la relazione espressa nella frase.",
+      "source_refs": ["https://en.wiktionary.org/wiki/for/translations"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "el",
+      "forms": [{"form_id":"CMP.el.gia","display":"για"},{"form_id":"CMP.el.gia_na","display":"για να"},{"form_id":"CMP.el.logo","display":"λόγω"},{"form_id":"CMP.el.yper","display":"υπέρ"}],
+      "comparison_blurb": "Στα ελληνικά, το «για» καλύπτει πολλές σχέσεις, όπως προορισμό, σκοπό, αποδέκτη ή καταλληλότητα. Για ρητό σκοπό χρησιμοποιείται συχνά το «για να», ενώ το «λόγω» δηλώνει καθαρά αιτία και το «υπέρ» υποστήριξη ή θέση υπέρ κάποιου. Η σωστή επιλογή εξαρτάται από τη σχέση που εκφράζει η φράση.",
+      "source_refs": ["gef-lexicon:grammar/for-equivalents.json"],
+      "review_state": "generated"
+    }
+  ]
+}

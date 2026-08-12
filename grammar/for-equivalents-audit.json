@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audit_id": "AUDIT.mul.for_equivalents.learner_capable_2026_08_11",
+  "source_language_registry": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_program": "learnerCapable",
+  "language_count": 98,
+  "criterion": "A language qualifies when semantic relationships commonly expressed with English 'for' require or commonly use more than one pedagogically distinct word, case marker, particle, postposition, preposition, or construction. This is broader than an exact Spanish-style two-preposition split.",
+  "discovery_method": "Candidate discovery uses sense-separated English 'for' translation tables plus language-specific grammar/dictionary checks. Discovery is not human linguistic approval.",
+  "anchor": ["en"],
+  "confirmed_multi": [
+    "af", "ar", "as", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "es", "eu", "fa", "fi", "fil", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "ig", "it", "ja", "km", "ko", "ms", "nb", "nl", "pa", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "th", "uk", "ur", "vi", "yo", "yue", "zh"
+  ],
+  "research_required": [
+    "ak", "am", "az", "ba", "be", "bg", "cv", "dsb", "et", "gd", "hsb", "is", "jv", "ka", "kk", "kn", "kok", "ky", "lo", "lt", "lv", "mk", "ml", "mn", "mr", "my", "ne", "nn", "or", "pcm", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "te", "ti", "tk", "tr", "uz", "zu"
+  ],
+  "lesson_ready": ["en", "es", "pt", "ca", "gl", "el"],
+  "evidence": {
+    "general": [
+      "https://en.wiktionary.org/wiki/for/translations"
+    ],
+    "af": ["https://www.afrikaans.us/afrikaans/woordeskat/grammar-related/prepositions/"],
+    "as": ["https://www.xobdo.org/dic/%E0%A6%95%E0%A6%BE%E0%A7%B0%E0%A6%A3%E0%A7%87"],
+    "bs": ["https://bsen.dict.cc/?s=zbog"],
+    "eu": ["https://www.ehu.eus/en/web/eins/cases-and-postpositions"],
+    "fil": ["https://www.tagaloglang.com/for/"],
+    "gu": ["https://dictionary.cambridge.org/dictionary/english-gujarati/for", "https://dictionary.cambridge.org/dictionary/english-gujarati/because-of"],
+    "ha": ["https://aflang.humanities.ucla.edu/language-materials/chadic-languages/hausa/hausa-online-grammar/verb-tense/", "https://hausadictionary.com/saboda"],
+    "hr": ["https://www.croatiantutor.com/post/zato-jer-zbog"],
+    "ig": ["https://latinum.substack.com/p/lesson-14-igbo-asusu-igbo-a-latinum"],
+    "sr": ["https://learnserbian.org/serbian-grammar"],
+    "ta": ["https://dictionary.cambridge.org/dictionary/english-tamil/because-of"],
+    "yo": ["https://en.wiktionary.org/wiki/nitori"],
+    "yue": ["https://words.hk/zidin/%E7%82%BA", "https://en.wiktionary.org/wiki/%E7%82%BA%E5%92%97"]
+  },
+  "notes": [
+    "confirmed_multi means discovery evidence is sufficient to include the language in the lesson-family research graph; it does not mean its detailed rules are reviewed or lesson-ready.",
+    "research_required languages remain explicit rows in scope. Agents should resolve them rather than silently omitting them.",
+    "The audit must be regenerated from the canonical learnerCapable registry whenever that registry changes."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

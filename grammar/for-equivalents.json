@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "anchor": {
+    "language_tag": "en",
+    "surface": "for",
+    "note": "English 'for' is the comparison anchor. The lesson teaches semantic relationships rather than one-to-one translations."
+  },
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "scope_note": "Common words, case markers, particles, and constructions used for semantic territory that English often expresses with 'for'. Language entries are independent; no language inherits another language's rules.",
+  "languages": [
+    {
+      "language_tag": "en",
+      "language_name_en": "English",
+      "classification": "anchor",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.en.for.for",
+          "display": "for",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.en.for.anchor",
+              "summary_en": "English uses 'for' across several different relationships, including recipient, reason, duration, exchange, intended use, and destination-like expressions.",
+              "semantic_function_ids": ["SEM.BENEFICIARY", "SEM.CAUSE_REASON", "SEM.PURPOSE", "SEM.DESTINATION_GOAL", "SEM.EXCHANGE_SUBSTITUTION", "SEM.DEADLINE_TARGET_TIME"],
+              "tips_en": [
+                "Treat English 'for' as the question, not the answer.",
+                "Before translating, ask what relationship 'for' expresses in this sentence."
+              ]
+            }
+          ]
+        }
+      ],
+      "source_refs": ["https://dictionary.cambridge.org/grammar/british-grammar/for"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "es",
+      "language_name_en": "Spanish",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.es.for.por",
+          "display": "por",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.es.por_para.por_path_route","summary_en":"Path, route, or area moved through or along.","semantic_function_ids":["SEM.PATH_ROUTE"],"tips_en":["Picture movement through the middle of something.","If the phrase answers 'through/by what route?', check por."]},
+            {"rule_id":"RULE.es.por_para.por_cause_reason","summary_en":"Cause, reason, or motivation.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Look backward for what caused the action.","If 'because of' fits naturally, check por."]},
+            {"rule_id":"RULE.es.por_para.por_reason_question","summary_en":"The expression por qué asks for a reason.","semantic_function_ids":["SEM.INTERROGATIVE_REASON","SEM.CAUSE_REASON"],"tips_en":["Treat por qué as a whole expression.","If the answer gives a reason, por qué is the question form."]},
+            {"rule_id":"RULE.es.por_para.por_consequence","summary_en":"Por eso links a prior reason to its consequence.","semantic_function_ids":["SEM.CONSEQUENCE_LINK","SEM.CAUSE_REASON"],"tips_en":["Por eso points backward to what was just explained.","Think 'because of that' rather than translating por alone."]},
+            {"rule_id":"RULE.es.por_para.por_means_channel","summary_en":"Means, method, route, channel, or medium.","semantic_function_ids":["SEM.MEANS_CHANNEL"],"tips_en":["Ask how or by what channel something happened.","Method, route, mail, and similar channel meanings often use por."]},
+            {"rule_id":"RULE.es.por_para.por_exchange_substitution","summary_en":"Exchange, price, replacement, or substitution.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["Think one thing in exchange for another.","Prices and substitutions commonly live on the por side."]},
+            {"rule_id":"RULE.es.por_para.por_distributive","summary_en":"Distributive patterns such as uno por uno.","semantic_function_ids":["SEM.DISTRIBUTIVE_SEQUENCE"],"tips_en":["Look for a repeated unit: one by one, person by person.","A per-unit pattern is a good clue for por."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.es.for.para",
+          "display": "para",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.es.por_para.para_purpose","summary_en":"Intended purpose or goal, especially para + infinitive.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Look forward to what the action is trying to accomplish.","If 'in order to' fits, check para."]},
+            {"rule_id":"RULE.es.por_para.para_destination_goal","summary_en":"Destination, endpoint, or goal.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Picture an arrow pointing toward an endpoint.","An intended destination usually points to para."]},
+            {"rule_id":"RULE.es.por_para.para_beneficiary","summary_en":"Intended recipient or beneficiary.","semantic_function_ids":["SEM.BENEFICIARY"],"tips_en":["Ask who the thing is intended for.","Recipient or beneficiary usually points to para."]},
+            {"rule_id":"RULE.es.por_para.para_deadline","summary_en":"Deadline or target time.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think of the time as a target you are aiming toward.","A due date usually lives on the para side."]}
+          ]
+        }
+      ],
+      "source_refs": ["gef-lexicon:lessons/es/por-vs-para/lesson.json"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "pt",
+      "language_name_en": "Portuguese",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.pt.for.por",
+          "display": "por",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.pt.for.por_cause","summary_en":"Cause, motive, or reason in many common uses.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Look backward for the reason something happened.","Portuguese por overlaps Spanish por here, but do not assume every rule is shared."]},
+            {"rule_id":"RULE.pt.for.por_path","summary_en":"Path, route, or movement through a place.","semantic_function_ids":["SEM.PATH_ROUTE"],"tips_en":["Think movement through or around a place.","Route meanings commonly point to por."]},
+            {"rule_id":"RULE.pt.for.por_means","summary_en":"Means, medium, or channel.","semantic_function_ids":["SEM.MEANS_CHANNEL"],"tips_en":["Ask how something was sent, communicated, or accomplished.","A channel or method often points to por."]},
+            {"rule_id":"RULE.pt.for.por_exchange","summary_en":"Exchange, substitution, price, or per-unit relationship.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.DISTRIBUTIVE_SEQUENCE"],"tips_en":["Look for exchange or per-unit meaning.","Prices and replacement relationships commonly use por."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.pt.for.para",
+          "display": "para",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.pt.for.para_purpose","summary_en":"Intention, purpose, objective, or intended use.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Ask what the action or object is intended to accomplish.","Intended use commonly points to para."]},
+            {"rule_id":"RULE.pt.for.para_destination","summary_en":"Direction or destination.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Picture an endpoint being aimed at.","Destination is a strong para clue."]},
+            {"rule_id":"RULE.pt.for.para_recipient","summary_en":"Recipient or beneficiary.","semantic_function_ids":["SEM.BENEFICIARY"],"tips_en":["Ask who receives or benefits from it.","An intended recipient is a strong para clue."]},
+            {"rule_id":"RULE.pt.for.para_target_time","summary_en":"Target time or deadline in common constructions.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think target date, not elapsed duration.","When time is an endpoint, check para."]}
+          ]
+        }
+      ],
+      "source_refs": ["https://www.infopedia.pt/dicionarios/lingua-portuguesa/por", "https://www.infopedia.pt/dicionarios/lingua-portuguesa/para"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ca",
+      "language_name_en": "Catalan",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.ca.for.per",
+          "display": "per",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.ca.for.per_cause","summary_en":"Cause or motive in the central per/per a contrast.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Look backward for the reason or cause.","Catalan usage is construction- and variety-sensitive, so learn the phrase, not only the label."]},
+            {"rule_id":"RULE.ca.for.per_path_means","summary_en":"Path, means, and several other relationships also use per.","semantic_function_ids":["SEM.PATH_ROUTE","SEM.MEANS_CHANNEL"],"tips_en":["Do not reduce Catalan to only cause versus purpose.","Check the specific construction for route and means uses."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ca.for.per_a",
+          "display": "per a",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.ca.for.per_a_purpose","summary_en":"Purpose or intended use in the constructions that take per a.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Look forward to the intended purpose.","Before an infinitive and in some varieties, the surface choice is more nuanced, so follow the reviewed construction record."]},
+            {"rule_id":"RULE.ca.for.per_a_destination_recipient","summary_en":"Destination, intended recipient, or beneficiary in many uses.","semantic_function_ids":["SEM.DESTINATION_GOAL","SEM.BENEFICIARY"],"tips_en":["Ask what or whom the action is directed toward.","An intended endpoint or recipient often points toward per a."]}
+          ]
+        }
+      ],
+      "source_refs": ["https://aplicacions.llengua.gencat.cat/llc/AppJava/index.html?action=Principal&clickLink=detall&database=FITXES_PUB&idFont=16367&idHit=16367"],
+      "review_state": "candidate",
+      "notes": "Catalan per/per a usage varies by construction and normative/dialect context; these are lesson-family candidate rules, not a claim of a universal binary."
+    },
+    {
+      "language_tag": "gl",
+      "language_name_en": "Galician",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.gl.for.por",
+          "display": "por",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.gl.for.por_path","summary_en":"Path or movement through an area.","semantic_function_ids":["SEM.PATH_ROUTE"],"tips_en":["Think route through a place.","Path meanings commonly point to por."]},
+            {"rule_id":"RULE.gl.for.por_cause","summary_en":"Cause or motive.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Look backward for the cause.","Because-of meanings often use por."]},
+            {"rule_id":"RULE.gl.for.por_purpose","summary_en":"Por can also express purpose/finality in Galician.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["This is where importing the Spanish split can mislead you.","Galician por can carry purpose in constructions where Spanish would push you toward para."]},
+            {"rule_id":"RULE.gl.for.por_exchange_means","summary_en":"Price, means, substitution, or per-unit relationships.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.MEANS_CHANNEL","SEM.DISTRIBUTIVE_SEQUENCE"],"tips_en":["Prices, transmission, replacement, and per-unit patterns often use por.","Use the construction rather than an English gloss to decide."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.gl.for.para",
+          "display": "para",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.gl.for.para_purpose","summary_en":"Purpose, intended use, or suitability.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Ask what something is intended to do or be used for.","Purpose is common with para but is not exclusive to para in Galician."]},
+            {"rule_id":"RULE.gl.for.para_direction","summary_en":"Direction or destination.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Picture movement toward an endpoint.","Direction and destination commonly use para."]},
+            {"rule_id":"RULE.gl.for.para_time","summary_en":"Target or relevant time in common uses.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think of the time as a target point.","Contrast this with por when the meaning is elapsed duration."]},
+            {"rule_id":"RULE.gl.for.para_recipient","summary_en":"Recipient or intended beneficiary.","semantic_function_ids":["SEM.BENEFICIARY"],"tips_en":["Ask who receives or is targeted by the action.","Recipient meanings commonly use para."]}
+          ]
+        }
+      ],
+      "source_refs": ["https://academia.gal/dicionario/-/termo/por", "https://academia.gal/dicionario/-/termo/para"],
+      "review_state": "candidate",
+      "notes": "Galician has meaningful por/para overlap; it must never inherit the Spanish decision boundary."
+    },
+    {
+      "language_tag": "el",
+      "language_name_en": "Greek",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [
+        {
+          "form_id": "GRAMFORM.el.for.gia",
+          "display": "για",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.el.for.gia_destination","summary_en":"Direction or destination in many common expressions.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Think movement or orientation toward an endpoint.","Greek για itself covers several English-for relationships, so context still matters."]},
+            {"rule_id":"RULE.el.for.gia_cause","summary_en":"Cause or reason in some constructions.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Ask whether the phrase explains why something happened.","Greek does not need a Spanish-style word switch for every cause/purpose contrast."]},
+            {"rule_id":"RULE.el.for.gia_purpose","summary_en":"Purpose, intended use, recipient, or suitability in many noun-phrase constructions.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY"],"tips_en":["Ask what or whom something is intended for.","With an explicit purpose clause, Greek often uses για να instead."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.el.for.gia_na",
+          "display": "για να",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.el.for.gia_na_purpose","summary_en":"Introduces an explicit purpose clause, roughly 'in order to'.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["If English can naturally say 'in order to', look for για να.","Treat για να as a construction, not as a word-for-word translation puzzle."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.el.for.logo",
+          "display": "λόγω",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.el.for.logo_cause","summary_en":"Explicit cause or reason, often corresponding to 'because of'.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Use the cause relationship as your clue.","Λόγω is a more explicit causal option than generic για."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.el.for.yper",
+          "display": "υπέρ",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.el.for.yper_support","summary_en":"Support or advocacy: being 'for' a person, proposal, or side.","semantic_function_ids":["SEM.BENEFICIARY"],"tips_en":["Think 'in favor of' rather than recipient-for.","Support/advocacy is a separate relationship from purpose."]}
+          ]
+        }
+      ],
+      "source_refs": ["https://www.greek-language.gr/digitalResources/modern_greek/tools/lexica/glossology_edu/iframe.html?heading=2&id=119", "https://www.greek-language.gr/digitalResources/modern_greek/tools/lexica/glossology_edu/iframe.html?heading=3&id=119", "https://en.wiktionary.org/wiki/for/translations"],
+      "review_state": "candidate",
+      "notes": "Greek qualifies because English 'for' maps across multiple Greek forms/constructions; Greek is not modeled as a two-word por/para analogue."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

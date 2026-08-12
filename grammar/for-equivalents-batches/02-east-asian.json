@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "batch_id": "GRAMBATCH.mul.for.east_asian",
+  "research_mode": "native_explainer_plus_structured_rules",
+  "languages": [
+    {
+      "language_tag": "zh",
+      "language_name_en": "Chinese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "zh",
+        "title": "汉语怎样表达英语 “for” 的不同关系",
+        "body": "英语的 for 把目的、受益者、接受者、目的地、原因、时长、交换和期限等不同关系压在一个词里，汉语通常分开表达。表示目的常用“为了/为”，表示受益者可用“为”，口语中给某人东西或替某人做事常用“给”。原因通常用“因为/由于”，目的地常用“到/去”等结构。持续时间往往直接用时间数量短语，如“两个小时”，不需要一个对应 for 的介词；截止时间可用“到……为止/最晚……”。交换常用“用……换……”或“以……换……”。所以不要给 for 找一个固定汉语词，而要先判断它在句子里的关系。",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.zh.for.wei_weiliao",
+          "display": "为 / 为了",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.zh.for.wei_purpose_beneficiary","summary_en":"为/为了 commonly marks purpose or the person/cause for whose benefit or sake an action is performed.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.SUPPORT_FAVOR"],"tips_en":["Ask whether the phrase means for the purpose/sake/benefit of something.","Mandarin 为 can also participate in causal readings, so use the complete construction and context."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.gei",
+          "display": "给",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.zh.for.gei_recipient","summary_en":"给 commonly marks a recipient or person toward whom a transfer/action is directed in many colloquial and standard constructions.","semantic_function_ids":["SEM.RECIPIENT","SEM.BENEFICIARY"],"tips_en":["If English for identifies who receives something, check a 给 construction.","Recipient marking depends on the verb and word order; do not treat 给 as a universal for-equivalent."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.yinwei_youyu",
+          "display": "因为 / 由于",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.zh.for.cause","summary_en":"因为/由于 explicitly mark cause or reason.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["If English for means because of, use a cause construction rather than 为了.","Keep purpose and cause separate even though 为 can occur in both semantic neighborhoods."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.destination",
+          "display": "到 / 去 / 向 + 目标",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.zh.for.destination","summary_en":"Destination/goal is expressed by motion and directional constructions such as 到, 去, or 向 rather than by one generic equivalent of for.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Choose the construction based on the motion verb and whether the endpoint, direction, or departure is being profiled.","Do not insert 为 merely because English says leave for Shanghai."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.duration",
+          "display": "时间数量短语（如“两小时”）",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.zh.for.duration","summary_en":"Duration is often expressed directly with a time-quantity phrase, without a dedicated preposition corresponding to English for.","semantic_function_ids":["SEM.DURATION"],"tips_en":["When for answers how long, Mandarin may use a bare duration phrase.","This is a useful reminder that absence of a preposition is itself a real grammatical strategy."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.deadline",
+          "display": "到……为止 / 最晚……",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.zh.for.deadline","summary_en":"Deadline/endpoint meanings use constructions such as 到……为止 or 最晚…… rather than a generic for-equivalent.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Distinguish a deadline from a duration.","Use an endpoint construction when the time is the latest target rather than the span of an event."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.zh.for.exchange",
+          "display": "用……换…… / 以……换……",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.zh.for.exchange","summary_en":"Exchange/substitution is commonly expressed with constructions such as 用…换… or 以…换….","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["If for means in exchange for, look for an exchange verb/construction.","The two things being exchanged occupy construction-specific positions; there is no single free-standing for word."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://dict.revised.moe.edu.tw/dictView.jsp?ID=11400&la=0&powerMode=0",
+        "https://dict.revised.moe.edu.tw/dictView.jsp?ID=156202&q=1&word=%E5%9B%A0",
+        "https://dict.revised.moe.edu.tw/dictView.jsp?ID=161320&la=0&powerMode=0"
+      ],
+      "review_state": "candidate",
+      "notes": "Mandarin candidate uses Simplified Chinese learner copy while citing Taiwan MOE dictionary evidence that 為 wèi can mark cause, service target/beneficiary, and purpose. Regional lexical preferences require native review."
+    },
+    {
+      "language_tag": "ja",
+      "language_name_en": "Japanese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "ja",
+        "title": "日本語では英語の「for」をどう表すか",
+        "body": "英語の for は、目的・受益者・受け手・行き先・期間・理由・交換・期限などを一語で表すことがありますが、日本語では関係ごとに形が変わります。意図的な目的は「Vために」、人や物のためなら「Nのために」が基本です。受け手や到着点には「に」、期限には「までに」、継続の終点には「まで」を使います。期間は「2時間」のように助詞なしで置けることも多く、理由の「ため（に）」は目的の「ために」と文脈で区別します。交換や代替は「～と引き換えに／～の代わりに」など別の構文になります。for を一語で訳すのではなく、まず意味関係を見ます。",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.ja.for.tameni",
+          "display": "Vために / Nのために",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ja.for.tameni_purpose_beneficiary","summary_en":"ために expresses intentional purpose with a verb and purpose/benefit/sake relationships with a noun phrase.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY"],"tips_en":["With an intentional action goal, Vために is a core purpose pattern.","Nのために can mean for the sake/benefit of N, so identify whether the noun is a beneficiary or a purpose domain."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.ni",
+          "display": "に",
+          "form_kind": "particle",
+          "rules": [
+            {"rule_id":"RULE.ja.for.ni_recipient_destination","summary_en":"に marks recipients with transfer verbs and destinations/arrival goals with many motion verbs.","semantic_function_ids":["SEM.RECIPIENT","SEM.DESTINATION_GOAL"],"tips_en":["The same particle participates in multiple case roles, so use the verb frame to identify recipient versus destination.","Do not translate English for first; identify the Japanese case role required by the verb."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.tame_cause",
+          "display": "ため（に）",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ja.for.tame_cause","summary_en":"ため/ために can mark cause or reason in causal constructions, distinct from intentional-purpose ために.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Context and the form before ため distinguish reason from an intentional goal.","If the sentence describes what caused a result, read ため causally rather than as in order to."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.duration",
+          "display": "時間数量句（「2時間」など） / ～の間",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ja.for.duration","summary_en":"Japanese often expresses duration with a bare time-quantity phrase; ～の間 can explicitly profile the interval during which something holds.","semantic_function_ids":["SEM.DURATION"],"tips_en":["A bare duration phrase can be grammatical without a particle corresponding to English for.","Use 間 when the interval itself is being framed as during that period."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.made_ni",
+          "display": "までに / まで",
+          "form_kind": "particle",
+          "rules": [
+            {"rule_id":"RULE.ja.for.deadline_endpoint","summary_en":"までに marks a deadline by which an event must occur; まで marks an endpoint up to which a state/action continues.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME","SEM.DURATION"],"tips_en":["までに is a completion deadline, while まで is an endpoint of continuation.","This distinction is exactly why English for/by/until should not be collapsed into one Japanese form."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.exchange_substitution",
+          "display": "～と引き換えに / ～の代わりに",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ja.for.exchange_substitution","summary_en":"Exchange and substitution use constructions such as ～と引き換えに and ～の代わりに.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["Choose 引き換え for an exchange/countervalue and 代わり for replacement/substitution.","Do not try to reuse ために for exchange meanings."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ja.for.support",
+          "display": "～に賛成して / ～を支持して",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ja.for.support","summary_en":"Support/favor is typically expressed lexically with constructions built around 賛成する or 支持する rather than a preposition equivalent to for.","semantic_function_ids":["SEM.SUPPORT_FAVOR"],"tips_en":["When English for means in favor of, switch to a support verb/construction.","Japanese often lexicalizes this relation instead of marking it with a single particle."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://marugoto.jpf.go.jp/",
+        "https://marugoto.jpf.go.jp/teacher/feature/"
+      ],
+      "review_state": "candidate",
+      "notes": "Japan Foundation learning materials support the purpose/reason and まで/までに distinctions used here; full candidate still requires Japanese-native review."
+    },
+    {
+      "language_tag": "ko",
+      "language_name_en": "Korean",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "ko",
+        "title": "한국어에서는 영어 ‘for’를 어떻게 표현할까",
+        "body": "영어의 for는 목적, 수혜자, 받는 이, 목적지, 기간, 이유, 교환, 마감 시점 등을 한 단어로 나타낼 수 있지만 한국어에서는 관계에 따라 표현이 달라집니다. 목적이나 ‘누구를 위해’의 뜻은 보통 ‘-기 위해(서)’ 또는 ‘N을/를 위해(서)’로 나타냅니다. 사람에게 가는 물건이나 행동의 받는 이는 ‘에게/한테/께’, 목적지는 흔히 ‘에’를 씁니다. 이유는 ‘때문에’, 기간은 ‘동안’, 마감·끝점은 ‘까지’가 대표적입니다. 교환·대가는 ‘대가로’, 대체는 ‘대신(에)’처럼 따로 표현합니다. for 자체를 번역하지 말고 문장에서 어떤 관계인지 먼저 판단해야 합니다.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.ko.for.wihaeseo",
+          "display": "-기 위해(서) / N을·를 위해(서)",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ko.for.wihaeseo_purpose_beneficiary","summary_en":"위해(서) constructions mark an intended purpose or acting for the benefit/sake of a person or thing.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY"],"tips_en":["Use -기 위해(서) when the goal is an action.","With a noun, N을/를 위해(서) highlights whose sake or benefit motivates the action."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.recipient",
+          "display": "에게 / 한테 / 께",
+          "form_kind": "particle",
+          "rules": [
+            {"rule_id":"RULE.ko.for.recipient","summary_en":"에게/한테/께 mark an animate recipient or target in common transfer/communication constructions, with 께 honorific.","semantic_function_ids":["SEM.RECIPIENT"],"tips_en":["If English for means the person receiving something, use the Korean recipient particle selected by register.","Do not replace recipient marking with 위해 just because English uses for."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.e_destination",
+          "display": "에",
+          "form_kind": "particle",
+          "rules": [
+            {"rule_id":"RULE.ko.for.destination","summary_en":"에 marks a destination or endpoint with many motion verbs.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["With motion, ask where the movement ends.","The verb and case particle determine the Korean construction, not the English preposition."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.ttaemune",
+          "display": "때문에",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ko.for.cause","summary_en":"때문에 marks cause or reason.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["If English for means because of, a 때문에 construction is a core option.","Keep cause separate from intentional purpose expressed with 위해(서)."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.dongan",
+          "display": "동안",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ko.for.duration","summary_en":"동안 marks the time span during which something continues or occurs.","semantic_function_ids":["SEM.DURATION"],"tips_en":["Use 동안 when for answers how long/during what period.","Do not confuse duration with the endpoint marked by 까지."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.kkaji",
+          "display": "까지",
+          "form_kind": "particle",
+          "rules": [
+            {"rule_id":"RULE.ko.for.deadline","summary_en":"까지 marks an endpoint or limit and is used in deadline expressions depending on the predicate/context.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think up to/as far as an endpoint.","For an explicit by-deadline, combine the endpoint expression with the verb/aspect that requires completion."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.exchange_substitution",
+          "display": "대가로 / 대신(에)",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ko.for.exchange_substitution","summary_en":"대가로 expresses countervalue/payment; 대신(에) expresses replacement or doing something in another's place.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["Separate countervalue from substitution even though English can use for in both.","Use 대가로 for what is received as a price/countervalue and 대신 for replacement."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ko.for.support",
+          "display": "찬성하다 / 지지하다",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.ko.for.support","summary_en":"Support/favor is usually expressed with support verbs such as 찬성하다 or 지지하다 rather than a dedicated for-like particle.","semantic_function_ids":["SEM.SUPPORT_FAVOR"],"tips_en":["When English for means in favor of, switch to a lexical support construction.","The case marking around the supported proposal/person follows the selected verb."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://krdict.korean.go.kr/",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66262"
+      ],
+      "review_state": "candidate",
+      "notes": "Korean learner-dictionary evidence plus construction-level synthesis. Register and particle selection require Korean-native review before stronger trust promotion."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

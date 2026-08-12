@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "batch_id": "GRAMBATCH.mul.for.western_european",
+  "research_mode": "native_explainer_plus_structured_rules",
+  "languages": [
+    {
+      "language_tag": "fr",
+      "language_name_en": "French",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "fr",
+        "title": "Comment le français exprime les différents sens de « for »",
+        "body": "En anglais, for rassemble des relations que le français ne traite pas toujours de la même façon. « Pour » couvre une grande partie du terrain : but, bénéficiaire ou destinataire visé, destination, échange, soutien et date visée. En revanche, une durée se dit normalement avec « pendant », et une cause explicite se marque souvent avec « à cause de » ou « en raison de ». Pour une échéance au sens de « au plus tard », « d’ici » ou « avant » peut être plus exact que « pour ». Il faut donc identifier la relation exprimée, pas remplacer for mot à mot.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.fr.for.pour",
+          "display": "pour",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.fr.for.pour_purpose_beneficiary","summary_en":"Pour covers purpose, intended use, beneficiary/intended recipient, and many destination relationships.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.RECIPIENT","SEM.DESTINATION_GOAL"],"tips_en":["Pour is broad, so identify whether the phrase points to an aim, intended person, use, or destination.","Its breadth still does not make it a universal translation of English for."]},
+            {"rule_id":"RULE.fr.for.pour_exchange_support_time","summary_en":"Pour also appears in exchange/value, support/favor, and target-time expressions.","semantic_function_ids":["SEM.EXCHANGE_SUBSTITUTION","SEM.SUPPORT_FAVOR","SEM.DEADLINE_TARGET_TIME"],"tips_en":["In exchange or support readings, learn the whole phrase around pour.","A date introduced by pour is a planned/target date, which is not identical to every English by-deadline use."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fr.for.pendant",
+          "display": "pendant",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.fr.for.pendant_duration","summary_en":"Pendant explicitly marks a duration or interval during which something occurs.","semantic_function_ids":["SEM.DURATION"],"tips_en":["When English for answers how long, pendant is a core French option.","Do not confuse duration with a target date introduced by pour or a deadline introduced by d’ici/avant."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fr.for.cause",
+          "display": "à cause de / en raison de",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.fr.for.cause","summary_en":"À cause de and en raison de explicitly mark cause/reason; register and evaluative nuance differ.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["If English for means because of, use a causal construction instead of assuming pour.","À cause de often carries a negative/unwanted nuance; en raison de is more neutral/formal."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fr.for.deadline",
+          "display": "d’ici / avant",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.fr.for.deadline","summary_en":"D’ici and avant are common ways to express a latest completion point or deadline where English may use by/for a date.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Ask whether the date is merely scheduled or is the latest allowable endpoint.","Use deadline constructions when completion by the target time matters."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://www.dictionnaire-academie.fr/article/A9P3767",
+        "https://www.cnrtl.fr/definition/academie9/pour"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "it",
+      "language_name_en": "Italian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "it",
+        "title": "Come l’italiano esprime i diversi significati di «for»",
+        "body": "In inglese for copre molti rapporti diversi. In italiano «per» ne copre parecchi: scopo, vantaggio o uso previsto, destinazione con verbi di movimento, durata, causa in certi contesti, prezzo o scambio. Ma non tutto: il destinatario di «dare/spedire» è spesso introdotto da «a»; una causa esplicita può richiedere «a causa di/per via di»; una scadenza ‘entro venerdì’ usa «entro»; il sostegno può essere «a favore di». Quindi si sceglie la costruzione in base al rapporto semantico, non in base alla parola inglese.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.it.for.per",
+          "display": "per",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.it.for.per_purpose_beneficiary_goal","summary_en":"Per commonly marks purpose, intended use/benefit, and destination with many motion constructions.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.DESTINATION_GOAL"],"tips_en":["Per + infinitive is a core implicit-purpose construction when the understood subject is controlled by the main clause.","For destinations, learn per with the particular departure/motion construction rather than treating it as the only Italian direction marker."]},
+            {"rule_id":"RULE.it.for.per_duration_cause_exchange","summary_en":"Per also marks duration, cause in many contexts, and price/exchange relationships.","semantic_function_ids":["SEM.DURATION","SEM.CAUSE_REASON","SEM.EXCHANGE_SUBSTITUTION"],"tips_en":["Italian per is broad enough to overlap several English-for meanings.","Use more explicit cause or exchange phrases when the sentence needs disambiguation or a different register."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.it.for.a_recipient",
+          "display": "a + destinatario",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.it.for.a_recipient","summary_en":"With transfer verbs such as dare, a introduces the recipient; it also serves destination functions with many place nouns.","semantic_function_ids":["SEM.RECIPIENT","SEM.DESTINATION_GOAL"],"tips_en":["If English for identifies the person receiving something, Italian often uses the verb's indirect-object construction with a.","Do not force per into recipient roles selected by the verb."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.it.for.cause_explicit",
+          "display": "a causa di / per via di",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.it.for.explicit_cause","summary_en":"A causa di and per via di explicitly mark cause/reason.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["Use an explicit causal phrase when for means because of and a plain per would be ambiguous or stylistically less suitable.","Cause can also be expressed by per + noun/infinitive in appropriate constructions."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.it.for.entro",
+          "display": "entro",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.it.for.deadline","summary_en":"Entro marks a latest time limit/deadline by which something must happen.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think no later than the named time.","Keep entro deadlines separate from per-duration phrases."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.it.for.a_favore_di",
+          "display": "a favore di",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.it.for.support","summary_en":"A favore di explicitly marks support, alignment, or an action carried out in someone's favor.","semantic_function_ids":["SEM.SUPPORT_FAVOR"],"tips_en":["When English for means in favor of, a favore di is clearer than treating per as automatically equivalent.","This relation is semantic support, not ordinary beneficiary alone."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://www.treccani.it/enciclopedia/proposizioni-finali_%28La-grammatica-italiana%29/",
+        "https://www.treccani.it/enciclopedia/complemento-di-causa_%28La-grammatica-italiana%29/",
+        "https://www.treccani.it/magazine/lingua_italiana/speciali/i-perche-dell-italiano/19_Napoli.html"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "de",
+      "language_name_en": "German",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "de",
+        "title": "Wie Deutsch die Bedeutungen von englischem „for“ ausdrückt",
+        "body": "Englisches for bündelt mehrere Beziehungen. Deutsches «für» + Akkusativ deckt viele davon ab: Zweck, Begünstigten, vorgesehene Verwendung, Unterstützung, Gegenleistung, Dauer und Zielzeit. Richtung und Ziel werden jedoch oft anders ausgedrückt, z. B. «nach Berlin», «zu einer Person» oder «in die Schweiz». Einen Grund markiert häufig «wegen» + Genitiv; einen Endtermin «bis (zu)»; einen verbalen Zweck oft «um … zu». Ein direkter Empfänger steht bei Verben wie «geben» häufig einfach im Dativ. Deshalb entscheidet die Bedeutung und die Rektion im Satz, nicht das englische Wort.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.de.for.fuer_acc",
+          "display": "für + Akkusativ",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.de.for.fuer_core","summary_en":"Für + accusative commonly marks purpose/intended use, beneficiary, support/favor, substitution/representation, exchange/value, duration, and planned target time.","semantic_function_ids":["SEM.PURPOSE","SEM.BENEFICIARY","SEM.SUPPORT_FAVOR","SEM.EXCHANGE_SUBSTITUTION","SEM.DURATION","SEM.DEADLINE_TARGET_TIME"],"tips_en":["Für is broad, but its noun phrase is always accusative in standard German.","Check whether a different construction is selected for cause, destination, recipient, or a strict deadline."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.de.for.um_zu",
+          "display": "um … zu + Infinitiv",
+          "form_kind": "clause_marker",
+          "rules": [
+            {"rule_id":"RULE.de.for.um_zu_purpose","summary_en":"Um … zu + infinitive marks an explicit intended purpose, typically with subject control by the main clause.","semantic_function_ids":["SEM.PURPOSE"],"tips_en":["Use um … zu when the purpose is an action expressed by an infinitive clause.","Do not reduce all German purpose meanings to für + noun."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.de.for.wegen_gen",
+          "display": "wegen + Genitiv",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {"rule_id":"RULE.de.for.wegen_cause","summary_en":"Wegen marks cause/reason and takes genitive in formal written standard German, with dative common in colloquial/regional usage.","semantic_function_ids":["SEM.CAUSE_REASON"],"tips_en":["If English for means because of, wegen is a core causal preposition.","Teach the standard genitive pattern while recognizing common spoken dative variation."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.de.for.destination",
+          "display": "nach + Dativ / zu + Dativ / in + Akkusativ",
+          "form_kind": "construction",
+          "rules": [
+            {"rule_id":"RULE.de.for.destination","summary_en":"German destination marking depends on destination type: nach, zu, or directional in + accusative are common patterns.","semantic_function_ids":["SEM.DESTINATION_GOAL"],"tips_en":["Learn the destination noun together with its normal preposition/case pattern.","English leave for does not license für as a destination marker."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.de.for.recipient_dative",
+          "display": "Dativ ohne Präposition (z. B. jemandem etwas geben)",
+          "form_kind": "case_marker",
+          "rules": [
+            {"rule_id":"RULE.de.for.recipient_dative","summary_en":"With many transfer verbs, the recipient is a bare dative noun phrase rather than a prepositional phrase.","semantic_function_ids":["SEM.RECIPIENT"],"tips_en":["The absence of a preposition is a real grammatical contrast worth teaching.","Let the verb's valency select the dative recipient instead of translating English for word-for-word."]}
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.de.for.bis",
+          "display": "bis / bis zu",
+          "form_kind": "preposition",
+          "rules": [
+            {"rule_id":"RULE.de.for.deadline","summary_en":"Bis/bis zu mark an endpoint or limit and are central to deadline expressions.","semantic_function_ids":["SEM.DEADLINE_TARGET_TIME"],"tips_en":["Think up to/by an endpoint rather than duration.","Für Freitag can name a scheduled target date; bis Freitag means no later than Friday in a deadline context."]}
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://www.duden.de/rechtschreibung/fuer_statt",
+        "https://www.duden.de/sprachwissen/sprachratgeber/Die-Pr%C3%A4position-%E2%80%9Ewegen%E2%80%9C",
+        "https://www.duden.de/sprachwissen/fuer-lernende/wortarten-pr%C3%A4positionen"
+      ],
+      "review_state": "candidate"
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

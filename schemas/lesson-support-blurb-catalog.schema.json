@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson-support-blurb-catalog.schema.json",
+  "title": "Gef lesson support-language blurb tier shard",
+  "type": "object",
+  "required": ["schema_version", "lesson_family_id", "coverage_program", "tier", "registry_source", "registry_schema_version", "review_state", "entries"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "lesson_family_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+    "coverage_program": {"type": "string", "const": "learnFromLanguages"},
+    "tier": {"type": "integer", "minimum": 1, "maximum": 4},
+    "registry_source": {"type": "string", "minLength": 1},
+    "registry_schema_version": {"type": "integer", "minimum": 1},
+    "review_state": {"type": "string", "enum": ["generated", "community_verified", "professional_verified", "rejected"]},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["language_tag", "summary", "tooltip"],
+        "properties": {
+          "language_tag": {"type": "string", "minLength": 1},
+          "summary": {"type": "string", "minLength": 1},
+          "tooltip": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
