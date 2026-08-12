@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.prep.multiple_for",
   "support_language_tag": "es",
   "proficiency_band": "all",
@@ -7,6 +7,10 @@
   "title": "Cómo expresan otras lenguas lo que el inglés dice con «for»",
   "invitation": "Mira cómo el idioma que estás leyendo reparte los trabajos que el inglés suele dar a «for».",
   "summary": "Por y para pueden cumplir varias funciones diferentes en una oración. Como preposiciones, pueden expresar cosas como propósito, razón, destino, destinatario, intercambio o tiempo. El español reparte estas funciones entre dos formas; algunos idiomas usan una sola para muchas de ellas, mientras que otros usan varias:",
+  "reference_anchor_explainers": {
+    "en": "El inglés usa «for» para muchas de estas relaciones.",
+    "es": "El español reparte muchas de estas relaciones entre «por» y «para»."
+  },
   "localization_keys": {
     "title": "lesson.multipleFor.title",
     "invitation": "lesson.multipleFor.invitation",
@@ -75,5 +79,6 @@
     "RULE.el.for.yper_support": {"summary":"υπέρ expresa apoyo o postura favorable: estar a favor de una persona, propuesta o lado.","tips":["Piensa en «a favor de», no en el «para» de destinatario.","El apoyo o la defensa de una postura es una relación distinta de la finalidad."]}
   },
   "review_state": "candidate",
-  "version": 3
+  "trust_state": "machine_translated",
+  "version": 4
 }
