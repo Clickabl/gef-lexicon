@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "primary_concept_prefix": "FAMILY.",
+  "relationship_group_concepts": [
+    {"concept_id":"FAMILY.member","concept_key":"member","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.parent","concept_key":"parent","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.sibling","concept_key":"sibling","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.child","concept_key":"child","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.grandparent","concept_key":"grandparent","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.parent_sibling_or_affinal","concept_key":"parent_sibling_or_affinal","domain":"family_relationship_group"},
+    {"concept_id":"FAMILY.partner_or_spouse","concept_key":"partner_or_spouse","domain":"family_relationship_group"}
+  ],
+  "broader_concepts": {
+    "mother": ["FAMILY.parent", "FAMILY.member"],
+    "father": ["FAMILY.parent", "FAMILY.member"],
+    "brother": ["FAMILY.sibling", "FAMILY.member"],
+    "sister": ["FAMILY.sibling", "FAMILY.member"],
+    "son": ["FAMILY.child", "FAMILY.member"],
+    "daughter": ["FAMILY.child", "FAMILY.member"],
+    "grandfather": ["FAMILY.grandparent", "FAMILY.member"],
+    "grandmother": ["FAMILY.grandparent", "FAMILY.member"],
+    "uncle": ["FAMILY.parent_sibling_or_affinal", "FAMILY.member"],
+    "aunt": ["FAMILY.parent_sibling_or_affinal", "FAMILY.member"],
+    "cousin": ["FAMILY.member"],
+    "niece_nephew": ["FAMILY.member"],
+    "partner": ["FAMILY.partner_or_spouse", "FAMILY.member"],
+    "spouse": ["FAMILY.partner_or_spouse", "FAMILY.member"]
+  },
+  "expression_metadata": {
+    "en": {
+      "mother": {"register_label":"neutral"},
+      "mom": {"register_label":"familiar"},
+      "mum": {"register_label":"familiar"},
+      "father": {"register_label":"neutral"},
+      "dad": {"register_label":"familiar"},
+      "grandfather": {"register_label":"neutral"},
+      "grandpa": {"register_label":"familiar"},
+      "grandmother": {"register_label":"neutral"},
+      "grandma": {"register_label":"familiar"}
+    },
+    "es": {
+      "madre": {"register_label":"neutral"},
+      "mamá": {"register_label":"familiar"},
+      "padre": {"register_label":"neutral"},
+      "papá": {"register_label":"familiar"}
+    }
+  },
+  "relation_policy": {
+    "same_primary_relationship": "related_by_relationship",
+    "assert_synonymy": false,
+    "note": "Expressions sharing a broad relationship pivot are related for thesaurus/navigation purposes. This does not assert that they are exact synonyms; differences may encode register, relative age, maternal/paternal side, speaker gender, address/reference use, or a more specific kin path."
+  },
+  "lesson_offer": {
+    "lesson_id": "LES.mul.vocab.family_members",
+    "relationship": "teaches_concept",
+    "review_state": "candidate"
+  },
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 1
+}
