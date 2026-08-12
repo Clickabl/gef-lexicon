@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "tier": 2,
+  "review_state": "machine_translated",
+  "entries": [
+    {
+      "language_tag":"zh",
+      "forms":[{"form_id":"CMP.zh.number.core","display":"名词通常不强制标记单复数"}],
+      "own_grammar_blurb":"汉语名词通常不需要通过词形变化强制区分单数和复数。数量常由语境、数词和量词表达；“们”主要用于人称代词和表示人的名词，并不是通用复数词尾。",
+      "source_refs":["https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"ja",
+      "forms":[{"form_id":"CMP.ja.number.core","display":"名詞の数は通常は必須標示なし"}],
+      "own_grammar_blurb":"日本語の名詞は、通常、単数と複数を必須の語形変化で区別しません。数は文脈、数詞、助数詞などから分かることが多く、「たち」などは特定の人や集団を表すときに使われます。",
+      "source_refs":["https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"de",
+      "forms":[{"form_id":"CMP.de.number.core","display":"Singular / Plural"}],
+      "own_grammar_blurb":"Im Deutschen unterscheiden Substantive Singular und Plural. Es gibt mehrere Pluralmuster statt einer einzigen Endung, und Numerus zeigt sich zusammen mit Kasus und Genus auch an Artikeln und Adjektiven.",
+      "source_refs":["https://www.duden.de/deklination", "https://wals.info/chapter/33"],
+      "review_state":"machine_verified"
+    },
+    {
+      "language_tag":"ko",
+      "forms":[{"form_id":"CMP.ko.number.core","display":"단수 / 복수, 명사 표지는 대체로 선택적"}],
+      "own_grammar_blurb":"한국어 명사는 보통 단수와 복수를 반드시 형태로 구별하지 않습니다. 수량은 문맥이나 수사·분류사로 드러나는 경우가 많고, ‘들’은 복수를 나타낼 수 있지만 모든 복수 명사에 꼭 붙는 표지는 아닙니다.",
+      "source_refs":["https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"ar",
+      "forms":[{"form_id":"CMP.ar.number.core","display":"المفرد / المثنى / الجمع"}],
+      "own_grammar_blurb":"في العربية، يميّز الاسم بين المفرد والمثنى والجمع. وللجمع أنماط مختلفة، منها جمع سالم وجمع تكسير، كما يظهر العدد في المطابقة، مع قواعد خاصة مهمة خصوصًا في جمع غير العاقل.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"hi",
+      "forms":[{"form_id":"CMP.hi.number.core","display":"एकवचन / बहुवचन"}],
+      "own_grammar_blurb":"हिंदी में संज्ञाएँ एकवचन और बहुवचन रूप रख सकती हैं। रूप इस बात पर निर्भर करता है कि संज्ञा का लिंग और अंत कैसा है, और संख्या का असर विशेषण तथा क्रिया के मेल पर भी पड़ सकता है।",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"uk",
+      "forms":[{"form_id":"CMP.uk.number.core","display":"однина / множина"}],
+      "own_grammar_blurb":"В українській мові іменники розрізняють однину й множину. Число поєднується з відмінком, тому закінчення залежать від відміни та форми речення, а числівники можуть вимагати окремих моделей.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"ru",
+      "forms":[{"form_id":"CMP.ru.number.core","display":"единственное / множественное"}],
+      "own_grammar_blurb":"В русском языке существительные различают единственное и множественное число. Число связано с падежом, поэтому окончания меняются по типу склонения и падежу, а после числительных действуют отдельные модели.",
+      "source_refs":["https://gramota.ru/meta/mnozhestvo", "https://wals.info/chapter/33"],
+      "review_state":"machine_verified"
+    },
+    {
+      "language_tag":"tr",
+      "forms":[{"form_id":"CMP.tr.number.core","display":"tekil / çoğul: -lar / -ler"}],
+      "own_grammar_blurb":"Türkçede adlar tekil ve çoğul olabilir; çoğul eki ünlü uyumuna göre -lar veya -ler olur. Belirli bir sayıdan sonra ad genellikle çoğul eki almaz, çünkü çoğulluk zaten sayıdan anlaşılır.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"pl",
+      "forms":[{"form_id":"CMP.pl.number.core","display":"liczba pojedyncza / mnoga"}],
+      "own_grammar_blurb":"W polskim rzeczowniki rozróżniają liczbę pojedynczą i mnogą. Liczba łączy się z przypadkiem, więc końcówki zależą od deklinacji, a liczebniki uruchamiają kilka ważnych wzorców składniowych.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"fa",
+      "forms":[{"form_id":"CMP.fa.number.core","display":"مفرد / جمع؛ -ها رایج"}],
+      "own_grammar_blurb":"در فارسی، اسم می‌تواند مفرد یا جمع باشد و «ـها» یکی از رایج‌ترین نشانه‌های جمع است؛ «ـان» نیز در بعضی اسم‌ها به کار می‌رود. با این حال، وقتی تعداد از عدد یا بافت روشن باشد، رفتار اسم همیشه مثل زبان‌هایی با جمع اجباری نیست.",
+      "source_refs":["https://wals.info/values/33A-prs", "https://wals.info/chapter/34"],
+      "review_state":"machine_verified"
+    },
+    {
+      "language_tag":"id",
+      "forms":[{"form_id":"CMP.id.number.core","display":"tunggal / jamak; sering tidak wajib"}],
+      "own_grammar_blurb":"Dalam bahasa Indonesia, nomina biasanya tidak wajib berubah untuk membedakan tunggal dan jamak. Jamak dapat dinyatakan dengan pengulangan, kata bilangan, penentu, atau konteks, sehingga pengulangan tidak diperlukan setiap kali maknanya sudah jelas.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_verified"
+    },
+    {
+      "language_tag":"ca",
+      "forms":[{"form_id":"CMP.ca.number.core","display":"singular / plural"}],
+      "own_grammar_blurb":"En català, els noms distingeixen normalment singular i plural. El plural sovint s’expressa amb -s, amb canvis ortogràfics o morfològics segons el mot, i determinants i adjectius també concorden en nombre.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"gl",
+      "forms":[{"form_id":"CMP.gl.number.core","display":"singular / plural"}],
+      "own_grammar_blurb":"En galego, os substantivos distinguen normalmente singular e plural. O plural fórmase con terminacións que dependen da forma da palabra, e determinantes e adxectivos tamén concordan en número.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    },
+    {
+      "language_tag":"mk",
+      "forms":[{"form_id":"CMP.mk.number.core","display":"еднина / множина"}],
+      "own_grammar_blurb":"Во македонскиот јазик именките разликуваат еднина и множина, а множинските форми се градат со повеќе различни наставки. Кај дел од именките има и посебни бројни форми во конструкции со броеви.",
+      "source_refs":["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state":"machine_translated"
+    }
+  ]
+}
