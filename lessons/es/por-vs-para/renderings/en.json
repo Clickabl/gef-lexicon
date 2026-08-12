@@ -13,7 +13,7 @@
     {"block_id":"rule-path","type":"rule","rule_id":"RULE.es.por_para.por_path_route","text":"Use por for a path, route, or area something moves through or along."},
     {"block_id":"rule-reason","type":"rule","rule_id":"RULE.es.por_para.por_cause_reason","text":"Use por when the phrase gives a cause, reason, or motivation."},
     {"block_id":"rule-question","type":"rule","rule_id":"RULE.es.por_para.por_reason_question","text":"Por qué asks for a reason. Treat the whole interrogative expression as a unit rather than swapping por and para mechanically."},
-    {"block_id":"rule-consequence","type":"rule","rule_id":"RULE.es.por_para.por_consequence","text":"Por eso links a prior reason to its consequence: roughly ‘because of that’ or ‘therefore,’ depending on context."},
+    {"block_id":"rule-consequence","type":"rule","rule_id":"RULE.es.por_para.por_consequence","text":"Constructions such as por eso and por lo que connect prior information to a consequence or result."},
     {"block_id":"rule-means","type":"rule","rule_id":"RULE.es.por_para.por_means_channel","text":"Use por for a means, method, route, channel, or medium in many common constructions."},
     {"block_id":"rule-exchange","type":"rule","rule_id":"RULE.es.por_para.por_exchange_substitution","text":"Use por in many exchange, price, replacement, and substitution relationships."},
     {"block_id":"rule-distributive","type":"rule","rule_id":"RULE.es.por_para.por_distributive","text":"Por appears in distributive patterns such as uno por uno: one by one."},
@@ -21,9 +21,25 @@
     {"block_id":"rule-destination","type":"rule","rule_id":"RULE.es.por_para.para_destination_goal","text":"Use para to point toward a destination, endpoint, or goal."},
     {"block_id":"rule-beneficiary","type":"rule","rule_id":"RULE.es.por_para.para_beneficiary","text":"Use para to identify an intended recipient or beneficiary in many common contexts."},
     {"block_id":"rule-deadline","type":"rule","rule_id":"RULE.es.por_para.para_deadline","text":"Use para for many deadlines or target times."},
+    {"block_id":"rule-time-frame","type":"rule","rule_id":"RULE.es.por_para.por_time_frame","text":"Expressions such as por la mañana and por la noche use por to place an event in a time-of-day frame. Learn this as a common time expression, not as a por-versus-para guessing rule."},
+    {"block_id":"rule-por-fin","type":"rule","rule_id":"RULE.es.por_para.por_fin_fixed","text":"Por fin is a fixed expression meaning finally or at last. Treat the whole expression as one chunk."},
     {"block_id":"dynamic-more","type":"dynamic_example_slot","slot":"reviewed_book_examples"}
   ],
-  "rule_explanations":{},
+  "rule_explanations":{
+    "RULE.es.por_para.por_path_route":{"summary":"This is a path or area being moved through or searched through, so Spanish uses por.","tips":["Think: through, along, around, or by way of."]},
+    "RULE.es.por_para.por_cause_reason":{"summary":"This phrase gives the cause or reason something happened, so Spanish uses por.","tips":["If because of fits the meaning, por is a strong clue."]},
+    "RULE.es.por_para.por_reason_question":{"summary":"This is the fixed interrogative expression por qué, which asks for a reason.","tips":["Treat por qué as a whole expression here."]},
+    "RULE.es.por_para.por_consequence":{"summary":"This construction connects what came before to a result or consequence.","tips":["Treat expressions such as por eso or por lo que as units, not as an open por-or-para blank."]},
+    "RULE.es.por_para.por_means_channel":{"summary":"This phrase tells the means, method, route, channel, or medium by which something happens, so Spanish uses por.","tips":["Ask: how or by what channel?"]},
+    "RULE.es.por_para.por_exchange_substitution":{"summary":"This phrase expresses an exchange, price, replacement, or substitution, so Spanish uses por.","tips":["Think: one thing in exchange for another."]},
+    "RULE.es.por_para.por_distributive":{"summary":"This is a distributive pattern, such as uno por uno: one by one.","tips":["Treat the repeated-unit pattern as a chunk rather than a basic por-or-para choice."]},
+    "RULE.es.por_para.para_purpose":{"summary":"This phrase points toward what an action is intended to accomplish, so Spanish uses para.","tips":["If in order to fits, para is a strong clue."]},
+    "RULE.es.por_para.para_destination_goal":{"summary":"This phrase points toward a destination, endpoint, or goal, so Spanish uses para.","tips":["Picture an arrow aimed at the endpoint."]},
+    "RULE.es.por_para.para_beneficiary":{"summary":"This phrase identifies the intended recipient or beneficiary, so Spanish uses para.","tips":["Ask: who is this intended for?"]},
+    "RULE.es.por_para.para_deadline":{"summary":"This phrase treats a time as a deadline or target point, so Spanish uses para.","tips":["Think of the date or time as an endpoint you are aiming toward."]},
+    "RULE.es.por_para.por_time_frame":{"summary":"This is a common time-of-day expression using por, such as por la mañana or por la noche.","tips":["This is an extension pattern. Learn the phrase as a natural time expression rather than forcing it into the beginner cause/path rules."]},
+    "RULE.es.por_para.por_fin_fixed":{"summary":"Por fin is a fixed expression meaning finally or at last.","tips":["The useful unit here is por fin as a whole chunk."]}
+  },
   "review_state":"candidate",
-  "version":1
+  "version":2
 }
