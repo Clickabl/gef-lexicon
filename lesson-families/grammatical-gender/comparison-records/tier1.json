@@ -3,93 +3,43 @@
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
   "tier": 1,
   "review_state": "candidate",
+  "trust_state": "machine_translated",
   "entries": [
     {
       "language_tag": "en",
+      "forms": [{"form_id":"CMP.en.gender.the","display":"the"}],
       "system_type": "no_grammatical_noun_gender",
       "gender_count": 0,
-      "markers": [
-        {"display": "the", "role": "gender-invariant definite article"}
-      ],
-      "comparison_blurb": "English does not assign ordinary nouns to grammatical masculine, feminine, or neuter classes. The article “the” stays the same. Gender can still appear in pronouns and vocabulary, but that is not a noun-gender agreement system.",
+      "own_grammar_blurb": "English does not assign ordinary nouns to grammatical masculine, feminine, or neuter classes. The article “the” stays the same. Gender can still appear in pronouns and vocabulary, but that is different from a noun-gender agreement system.",
+      "comparison_blurb": "English does not assign ordinary nouns to grammatical masculine, feminine, or neuter classes. The article “the” stays the same.",
       "source_refs": ["gef-lexicon:grammar/grammatical-gender.json"],
       "review_state": "candidate"
     },
     {
       "language_tag": "es",
+      "forms": [{"form_id":"CMP.es.gender.el","display":"el"},{"form_id":"CMP.es.gender.la","display":"la"}],
       "system_type": "two_gender",
       "gender_count": 2,
-      "markers": [
-        {"display": "el", "role": "masculine singular definite article"},
-        {"display": "la", "role": "feminine singular definite article"},
-        {"display": "lo", "role": "limited neuter form, not an ordinary noun article"}
-      ],
-      "comparison_blurb": "Spanish ordinary nouns belong to two grammatical genders: masculine and feminine. Articles and many adjectives agree with that gender. Spanish also has neuter forms such as lo, esto, eso, and aquello, but ordinary nouns are not sorted into a third neuter class.",
+      "own_grammar_blurb": "En español, los sustantivos comunes pertenecen a dos géneros gramaticales: masculino y femenino. Los artículos y muchos adjetivos concuerdan con el sustantivo. También existen formas neutras como «lo», «esto», «eso» y «aquello», pero los sustantivos comunes no forman una tercera clase neutra.",
+      "comparison_blurb": "Spanish ordinary nouns belong to two grammatical genders: masculine and feminine. Articles and many adjectives agree with that gender. Spanish also has limited neuter forms, but ordinary nouns are not sorted into a third neuter class.",
       "source_refs": ["gef-lexicon:grammar/grammatical-gender.json"],
       "review_state": "candidate"
     },
     {
       "language_tag": "fr",
+      "forms": [{"form_id":"CMP.fr.gender.le","display":"le"},{"form_id":"CMP.fr.gender.la","display":"la"}],
       "system_type": "two_gender",
       "gender_count": 2,
-      "markers": [
-        {"display": "le", "role": "masculine singular definite article"},
-        {"display": "la", "role": "feminine singular definite article"}
-      ],
-      "comparison_blurb": "French has masculine and feminine grammatical noun gender. Articles and many other words agree with the noun. The contracted form l’ can hide the contrast before a vowel sound, so article spelling alone is not a perfect gender detector.",
-      "source_refs": [],
-      "review_state": "candidate"
-    },
-    {
-      "language_tag": "de",
-      "system_type": "three_gender",
-      "gender_count": 3,
-      "markers": [
-        {"display": "der", "role": "masculine nominative singular definite article"},
-        {"display": "die", "role": "feminine nominative singular definite article"},
-        {"display": "das", "role": "neuter nominative singular definite article"}
-      ],
-      "comparison_blurb": "German has masculine, feminine, and neuter grammatical noun genders. Der, die, and das make the three-way contrast visible in the nominative singular, but article forms also change with case and number.",
+      "comparison_blurb": "French has masculine and feminine grammatical noun gender. The contracted form l’ can hide the contrast before a vowel sound, so article spelling alone is not a perfect gender detector.",
       "source_refs": [],
       "review_state": "candidate"
     },
     {
       "language_tag": "el",
+      "forms": [{"form_id":"CMP.el.gender.o","display":"ο"},{"form_id":"CMP.el.gender.i","display":"η"},{"form_id":"CMP.el.gender.to","display":"το"}],
       "system_type": "three_gender",
       "gender_count": 3,
-      "markers": [
-        {"display": "ο", "role": "masculine nominative singular definite article"},
-        {"display": "η", "role": "feminine nominative singular definite article"},
-        {"display": "το", "role": "neuter nominative singular definite article"}
-      ],
-      "comparison_blurb": "Modern Greek has masculine, feminine, and neuter grammatical noun genders. The nominative singular definite articles ο, η, and το show the contrast clearly, while case and number create additional article forms.",
-      "source_refs": [],
-      "review_state": "candidate"
-    },
-    {
-      "language_tag": "ru",
-      "system_type": "three_gender",
-      "gender_count": 3,
-      "markers": [],
-      "comparison_blurb": "Russian has masculine, feminine, and neuter grammatical noun genders but no articles. Gender is visible through noun forms and agreement, which is a useful reminder that grammatical gender is not a count of words meaning “the.”",
-      "source_refs": [],
-      "review_state": "candidate"
-    },
-    {
-      "language_tag": "tr",
-      "system_type": "no_grammatical_noun_gender",
-      "gender_count": 0,
-      "markers": [],
-      "comparison_blurb": "Turkish does not assign ordinary nouns to masculine, feminine, or neuter grammatical gender classes. Gender distinctions can still be expressed when meaning requires them, but they do not control a noun-gender agreement system.",
-      "source_refs": [],
-      "review_state": "candidate"
-    },
-    {
-      "language_tag": "sw",
-      "system_type": "noun_class_system",
-      "gender_count": null,
-      "markers": [],
-      "comparison_blurb": "Swahili uses a larger noun-class system with agreement across the phrase and sentence. It should not be flattened into a masculine/feminine/neuter count: noun class is the more accurate description.",
+      "comparison_blurb": "Modern Greek has masculine, feminine, and neuter grammatical noun genders. The nominative singular definite articles ο, η, and το show the three-way contrast clearly; case and number create additional forms.",
       "source_refs": [],
       "review_state": "candidate"
     }

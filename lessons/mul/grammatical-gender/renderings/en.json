@@ -1,12 +1,17 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.grammar.grammatical_gender",
   "support_language_tag": "en",
   "proficiency_band": "all",
   "register": "plain",
   "title": "How languages handle grammatical gender",
   "invitation": "See how Spanish sorts nouns into gender classes, and how that compares with languages that use zero, two, three, or larger class systems.",
-  "summary": "Languages do not all give nouns grammatical gender. English usually uses the same “the” regardless of the noun. Spanish gives ordinary nouns one of two grammatical genders, masculine or feminine. German and Greek use three noun genders, including neuter. Other languages have no grammatical gender, while some organize nouns into larger noun-class systems. The important part is not counting words for “the”; it is noticing what grammar has to agree with the noun.",
+  "summary": "Languages do not all give nouns grammatical gender. English usually uses the same “the” regardless of the noun. Spanish gives ordinary nouns one of two grammatical genders, masculine or feminine. Greek and German use three noun genders, including neuter. Other languages have no grammatical noun gender, while some organize nouns into larger noun-class systems. The important part is not counting words for “the”; it is noticing what grammar has to agree with the noun.",
+  "reference_anchor_explainers": {
+    "en": "English ordinary nouns do not belong to grammatical gender classes; “the” stays the same.",
+    "es": "Spanish ordinary nouns belong to two grammatical genders, masculine and feminine.",
+    "el": "Greek ordinary nouns belong to three grammatical genders: masculine, feminine, and neuter."
+  },
   "localization_keys": {
     "title": "lesson.grammaticalGender.title",
     "invitation": "lesson.grammaticalGender.invitation",
@@ -42,122 +47,26 @@
     }
   },
   "blocks": [
-    {
-      "block_id": "facts",
-      "group_id": "facts",
-      "type": "lesson_facts",
-      "source": "lesson_session"
-    },
-    {
-      "block_id": "gender-not-people",
-      "group_id": "facts",
-      "type": "explanation",
-      "text": "Grammatical gender is a property of grammar. It does not tell you a person’s gender, and objects are not literally male or female because a language puts their nouns in a masculine or feminine class."
-    },
-    {
-      "block_id": "language-comparisons",
-      "group_id": "comparison-intro",
-      "type": "language_comparison_loop",
-      "source": "fixed_then_selected_language_roles",
-      "omit_when_empty": false
-    },
-    {
-      "block_id": "article-warning",
-      "group_id": "comparison-intro",
-      "type": "explanation",
-      "text": "Articles make the contrast easy to see in some languages, but they are only a window into the system. Russian has three grammatical noun genders and no articles. Italian has two noun genders but several forms of the definite article. So “number of words for the” is not the same as “number of genders.”"
-    },
-    {
-      "block_id": "grammar-primer",
-      "group_id": "rules",
-      "type": "grammar_primer",
-      "source": "selected_language_form_metadata",
-      "show_once": true,
-      "title": "What changes when a noun has gender?",
-      "description": "Depending on the language, gender can control articles, adjectives, pronouns, numerals, case forms, or other agreement. Some languages do none of this because nouns have no grammatical gender."
-    },
-    {
-      "block_id": "spanish-frame",
-      "group_id": "rules",
-      "type": "explanation",
-      "text": "Spanish ordinary nouns are masculine or feminine. Learn the noun together with an article when you can: el libro, la casa. Endings such as -o and -a are useful clues, not laws. La mano is feminine; el día and el problema are masculine."
-    },
-    {
-      "block_id": "spanish-neuter",
-      "group_id": "rules",
-      "type": "explanation",
-      "text": "Spanish also has neuter forms, but not a third ordinary noun gender. Lo can turn a quality or idea into something abstract, as in lo importante, and esto, eso, and aquello can point to an unspecified thing or idea. You do not put ordinary nouns into a neuter noun class."
-    },
-    {
-      "block_id": "language-rules",
-      "group_id": "rules",
-      "type": "language_rule_groups",
-      "source": "selected_languages_with_rule_data",
-      "one_block_per_form": true,
-      "include_tips": true,
-      "omit_when_empty": true
-    },
-    {
-      "block_id": "examples-intro",
-      "group_id": "examples",
-      "type": "explanation",
-      "text": "Now watch agreement do the work. The noun’s class stays the anchor, and nearby words may change to match it."
-    },
-    {
-      "block_id": "curated-examples",
-      "group_id": "examples",
-      "type": "curated_example_group",
-      "source": "lesson_example_resolver",
-      "prefer_current_or_quotes_weighted": true,
-      "maximum_languages": 12
-    },
-    {
-      "block_id": "practice-intro",
-      "group_id": "practice",
-      "type": "explanation",
-      "text": "Pick the form that agrees with the noun, not the form that merely looks familiar.",
-      "requires_session_mode": "practice"
-    },
-    {
-      "block_id": "practice",
-      "group_id": "practice",
-      "type": "practice_slot",
-      "module": "inline_choice_cloze",
-      "feedback": "gentle_rule_tip_rotation",
-      "requires_session_mode": "practice",
-      "title": "Make the noun phrase agree."
-    },
-    {
-      "block_id": "quest",
-      "group_id": "quest",
-      "type": "quest_offer",
-      "quest_type": "find_gender_agreement_in_book",
-      "teacher_policy": "session",
-      "requires_session_mode": "practice",
-      "title": "Find the agreement clues",
-      "description": "While you read, spot articles or adjectives that reveal a Spanish noun’s gender.",
-      "begin_label": "Begin",
-      "decline_label": "Not now"
-    },
-    {
-      "block_id": "completion",
-      "group_id": "completion",
-      "type": "completion",
-      "show_scorecard": true,
-      "scorecard_optional_when_no_practice": true,
-      "celebration": "confetti",
-      "title": "Got it",
-      "description": "Spanish nouns are masculine or feminine; agreement helps you see the class. Neuter forms exist too, but they do a different job from an ordinary third noun gender.",
-      "action_label": "Done"
-    }
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"gender-not-people","group_id":"facts","type":"explanation","text":"Grammatical gender is a property of grammar. It does not tell you a person’s gender, and objects are not literally male or female because a language puts their nouns in a masculine or feminine class."},
+    {"block_id":"language-comparisons","group_id":"comparison-intro","type":"language_comparison_loop","source":"fixed_then_selected_language_roles","omit_when_empty":false},
+    {"block_id":"article-warning","group_id":"comparison-intro","type":"explanation","text":"Articles make the contrast easy to see in some languages, but they are only a window into the system. Russian has three grammatical noun genders and no articles. Italian has two noun genders but several forms of the definite article. So “number of words for the” is not the same as “number of genders.”"},
+    {"block_id":"grammar-primer","group_id":"rules","type":"grammar_primer","source":"selected_language_form_metadata","show_once":true,"title":"What changes when a noun has gender?","description":"Depending on the language, gender can control articles, adjectives, pronouns, numerals, case forms, or other agreement. Some languages do none of this because nouns have no grammatical gender."},
+    {"block_id":"spanish-frame","group_id":"rules","type":"explanation","text":"Spanish ordinary nouns are masculine or feminine. Learn the noun together with an article when you can: el libro, la casa. Endings such as -o and -a are useful clues, not laws. La mano is feminine; el día and el problema are masculine."},
+    {"block_id":"spanish-neuter","group_id":"rules","type":"explanation","text":"Spanish also has neuter forms, but not a third ordinary noun gender. Lo can turn a quality or idea into something abstract, as in lo importante, and esto, eso, and aquello can point to an unspecified thing or idea. You do not put ordinary nouns into a neuter noun class."},
+    {"block_id":"language-rules","group_id":"rules","type":"language_rule_groups","source":"selected_languages_with_rule_data","one_block_per_form":true,"include_tips":true,"omit_when_empty":true},
+    {"block_id":"examples-intro","group_id":"examples","type":"explanation","text":"Now watch agreement do the work. The noun’s class stays the anchor, and nearby words may change to match it."},
+    {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":12},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Pick the form that agrees with the noun, not the form that merely looks familiar.","requires_session_mode":"practice"},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice","title":"Make the noun phrase agree."},
+    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_gender_agreement_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Find the agreement clues","description":"While you read, spot articles or adjectives that reveal a Spanish noun’s gender.","begin_label":"Begin","decline_label":"Not now"},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Got it","description":"Spanish nouns are masculine or feminine; agreement helps you see the class. Neuter forms exist too, but they do a different job from an ordinary third noun gender.","action_label":"Done"}
   ],
   "rule_explanations": {
-    "RULE.es.gender.masculine_agreement": "Use masculine agreement with masculine nouns: typically el/un in the singular and los/unos in the plural, plus masculine forms of adjectives that vary for gender.",
-    "RULE.es.gender.feminine_agreement": "Use feminine agreement with feminine nouns: typically la/una in the singular and las/unas in the plural, plus feminine forms of adjectives that vary for gender.",
-    "RULE.es.gender.ending_clues": "Common endings can help you predict gender, but lexical exceptions are normal. Treat the article as part of what you learn with a noun.",
-    "RULE.es.gender.neuter_lo": "Lo is a neuter form used with adjectives, participles, adverbs, or similar material to refer to an abstract quality or idea. It is not the definite article for a class of neuter nouns.",
-    "RULE.es.gender.neuter_demonstratives": "Esto, eso, and aquello are neuter demonstratives used when the referent is unspecified or treated as an idea or situation; they do not directly modify an ordinary noun."
+    "RULE.es.gender.masculine_agreement": "Use el with an ordinary masculine singular noun. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.",
+    "RULE.es.gender.feminine_agreement": "Use la with an ordinary feminine singular noun. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives."
   },
   "review_state": "candidate",
-  "version": 1
+  "trust_state": "machine_translated",
+  "version": 3
 }

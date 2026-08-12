@@ -1,0 +1,109 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "lesson_key": "family-members",
+  "target_language": "mul",
+  "curriculum_concept_ids": [],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A1",
+  "language_capabilities_manifest": "../../../lesson-families/family-members/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 4,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "The lesson always begins from the learner's strongest available learning-from language, then teaches the selected learning language. It compares relationships and semantic distinctions rather than assuming dictionary words line up one-to-one."
+  },
+  "rules": [
+    {
+      "rule_id": "RULE.mul.family.relation_first",
+      "rule_key": "identify-the-relationship-before-the-word",
+      "order": 1,
+      "match_refs": [],
+      "practice_eligible_by_default": true,
+      "notes": "Resolve the actual relationship first: parent, child, sibling, grandparent, aunt/uncle, cousin, spouse/partner, in-law, and so on. Then choose the target language's term."
+    },
+    {
+      "rule_id": "RULE.mul.family.distinctions",
+      "rule_key": "languages-package-kinship-dimensions-differently",
+      "order": 2,
+      "match_refs": [],
+      "practice_eligible_by_default": true,
+      "notes": "A target language may lexicalize dimensions that the learner's source language leaves implicit, including relative age, gender, maternal/paternal side, generation, marriage link, or speaker-relative status."
+    },
+    {
+      "rule_id": "RULE.mul.family.usage_context",
+      "rule_key": "kinship-terms-also-have-usage-context",
+      "order": 3,
+      "match_refs": [],
+      "practice_eligible_by_default": true,
+      "notes": "Reference forms, address forms, honorific forms, affectionate forms, and community usage can differ. Teach the neutral beginner form first and label meaningful alternatives instead of flattening them into one translation."
+    }
+  ],
+  "triggers": [
+    {
+      "trigger_id": "TRG.mul.family.manual",
+      "trigger_type": "manual",
+      "notes": "Available from the lesson catalog as an A1 vocabulary-and-culture lesson."
+    },
+    {
+      "trigger_id": "TRG.mul.family.catalog",
+      "trigger_type": "catalog_topic",
+      "feature_bundle": {"topic": "family_and_relationships"},
+      "notes": "May be placed early in language paths where basic personal-description vocabulary is appropriate."
+    }
+  ],
+  "practice_modules": [
+    {
+      "module": "compare_realizations",
+      "eligible_rule_ids": ["RULE.mul.family.relation_first", "RULE.mul.family.distinctions"],
+      "constraints": {
+        "source": "target_profile.core_terms",
+        "compare_against": "source_language_profile",
+        "require_reviewed_relation_features": true
+      }
+    },
+    {
+      "module": "features_to_form",
+      "eligible_rule_ids": ["RULE.mul.family.relation_first", "RULE.mul.family.distinctions"],
+      "constraints": {
+        "source": "target_profile.core_terms",
+        "prompt_features": ["relation", "gender", "relative_age", "family_side", "affinity"],
+        "omit_irrelevant_features": true,
+        "require_unique_defensible_answer": true
+      }
+    },
+    {
+      "module": "form_to_features",
+      "eligible_rule_ids": ["RULE.mul.family.distinctions", "RULE.mul.family.usage_context"],
+      "constraints": {
+        "source": "target_profile.core_terms",
+        "ask_only_features_explicitly_encoded_by_term": true
+      }
+    }
+  ],
+  "presentation": {
+    "source_bridge_manifest": "../../../lesson-families/family-members/source-bridges/manifest.json",
+    "target_profile_manifest": "../../../lesson-families/family-members/target-profiles/manifest.json",
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "idea", "source", "target", "terms", "culture", "examples", "practice", "completion"],
+    "scroll_mode": "Render the groups in one short vertical lesson.",
+    "pages_mode": "Render each semantic group as one or more pages while preserving source-first then target-second order.",
+    "teacher_presentation_mode": "Use the same lesson graph and profile data with classroom-sized controls; do not fork content.",
+    "pairing_policy": "Source bridge and target profile are resolved independently. Never generate a bespoke 104-by-104 lesson file."
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 4,
+    "teacher_quest_default": "optional"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
