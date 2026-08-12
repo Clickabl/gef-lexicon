@@ -17,6 +17,7 @@
     "version"
   ],
   "properties": {
+    "$schema": {"type": "string"},
     "schema_version": {"type": "integer", "minimum": 1},
     "scale_id": {"const": "gef-language-proficiency"},
     "reference_framework": {
