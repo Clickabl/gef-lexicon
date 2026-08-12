@@ -24,6 +24,18 @@ function walkJsonFiles(relativeDir) {
   return results;
 }
 
+function sameArray(left, right) {
+  return Array.isArray(left) && Array.isArray(right) && left.length === right.length && left.every((value, index) => value === right[index]);
+}
+
+function checkLocalRef(ref, label, errors) {
+  if (typeof ref !== 'string' || !ref) return;
+  if (ref.startsWith('Clickabl/')) return;
+  if (!ref.includes('/')) return;
+  const absolute = path.join(root, ref);
+  if (!fs.existsSync(absolute)) errors.push(`${label} references missing local path ${ref}`);
+}
+
 const artifacts = [
   {
     dataPath: 'curriculum/lesson-system-manifest.json',
@@ -36,6 +48,10 @@ const artifacts = [
   {
     dataPath: 'curriculum/related-lessons.json',
     schemaPath: 'schemas/related-lessons.schema.json'
+  },
+  {
+    dataPath: 'curriculum/review-and-release-status.json',
+    schemaPath: 'schemas/review-and-release-status.schema.json'
   }
 ];
 
@@ -57,6 +73,17 @@ for (const { dataPath, schemaPath } of artifacts) {
 const manifest = readJson('curriculum/lesson-system-manifest.json');
 const learningPath = readJson('curriculum/learning-path-template.json');
 const related = readJson('curriculum/related-lessons.json');
+const statusModel = readJson('curriculum/review-and-release-status.json');
+
+if (!sameArray(manifest.status_model.integrity_review_states, statusModel.integrity_review.states)) {
+  errors.push('lesson-system manifest integrity review states drifted from curriculum/review-and-release-status.json');
+}
+if (!sameArray(manifest.status_model.release_order, statusModel.lesson_release.ladder)) {
+  errors.push('lesson-system manifest release order drifted from curriculum/review-and-release-status.json');
+}
+if (manifest.status_model.public_beta_minimum !== statusModel.lesson_release.public_beta_minimum) {
+  errors.push('lesson-system manifest public beta minimum drifted from curriculum/review-and-release-status.json');
+}
 
 const groupIds = new Set();
 const partIds = new Set();
@@ -65,11 +92,14 @@ const referencedLessonIds = new Set();
 for (const group of manifest.lesson_groups) {
   if (groupIds.has(group.group_id)) errors.push(`Duplicate group id: ${group.group_id}`);
   groupIds.add(group.group_id);
+  for (const familyRef of group.family_refs ?? []) checkLocalRef(familyRef, group.group_id, errors);
 
   for (const part of group.parts) {
     if (partIds.has(part.part_id)) errors.push(`Duplicate part id: ${part.part_id}`);
     partIds.add(part.part_id);
     for (const lessonId of part.implementation_lesson_ids ?? []) referencedLessonIds.add(lessonId);
+    for (const conceptRef of part.core_concept_refs ?? []) checkLocalRef(conceptRef, part.part_id, errors);
+    if (part.quest?.ref) checkLocalRef(part.quest.ref, `${part.part_id} quest`, errors);
   }
 }
 
@@ -146,7 +176,7 @@ if (manifest.coverage_policy.language_program_pointer !== '/programs/learnFromLa
   errors.push('Canonical language program pointer must remain /programs/learnFromLanguages');
 }
 if (manifest.coverage_policy.counts_must_be_derived !== true) {
-  errors.push('Language counts must be derived, never hard-coded in the lesson system');
+  errors.push('Language counts must be derived, never hard-coded in the universal lesson system');
 }
 if (manifest.readiness_resolution.pair_matrix_is_materialized !== false) {
   errors.push('Directional pair readiness must resolve from overrides rather than a materialized source×target matrix');
