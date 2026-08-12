@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "lesson_id": "LES.mul.vocab.family_members",
   "lesson_key": "family-members",
   "target_language": "mul",
@@ -18,9 +18,9 @@
     "dedupe_display_without_losing_roles": true,
     "display_modes": ["scroll", "pages", "presentation"],
     "full_lesson_target_policy": "tier1_and_tier2_rich_target_profiles",
-    "tier3_target_policy": "read_and_games_core_only",
+    "tier3_target_policy": "comparison_and_games_14_concept_core",
     "comparison_only_mode": true,
-    "notes": "Begin from the learner's best available explanation language, then teach the selected target. Rich culture/usage teaching requires the researched Tier 1 or Tier 2 target profile. Tier 3 target data is deliberately smaller and powers recognition-safe Games without pretending to be a full curriculum path."
+    "notes": "Begin from the learner's best available explanation language, then teach the selected target. Rich kinship-language culture/usage teaching requires the researched Tier 1 or Tier 2 target profile. Every Tier 3 target still has the same 14 broad relationship concepts for comparison and recognition-safe Games."
   },
   "rules": [
     {
@@ -29,7 +29,7 @@
       "order": 1,
       "match_refs": [],
       "practice_eligible_by_default": true,
-      "notes": "Resolve the actual relationship first: parent, child, sibling, grandparent, aunt/uncle, cousin, spouse/partner, in-law, and so on. Then choose the target language's term."
+      "notes": "Resolve the actual relationship first: parent, child, sibling, grandparent, aunt/uncle, cousin, niece/nephew, partner/spouse, and so on. Then choose the target language's term."
     },
     {
       "rule_id": "RULE.mul.family.distinctions",
@@ -52,7 +52,7 @@
     {
       "trigger_id": "TRG.mul.family.manual",
       "trigger_type": "manual",
-      "notes": "Available from the lesson catalog as an A1 vocabulary-and-culture lesson when the selected target has a rich profile."
+      "notes": "Available from the lesson catalog as an A1 vocabulary-and-kinship-language lesson. Tier 1 and Tier 2 targets expose the rich profile; Tier 3 targets expose the comparison/game core."
     },
     {
       "trigger_id": "TRG.mul.family.catalog",
@@ -94,7 +94,11 @@
     {
       "game": "family_form_to_relation",
       "source": "language_capabilities.learning_language_game",
-      "concepts": ["mother", "father", "brother", "sister", "son", "daughter", "grandfather", "grandmother"],
+      "concepts": [
+        "mother", "father", "brother", "sister", "son", "daughter",
+        "grandfather", "grandmother", "uncle", "aunt", "cousin",
+        "niece_nephew", "partner", "spouse"
+      ],
       "tier3_policy": "recognition_only_until_language_specific_review",
       "allow_multiple_surface_forms": true,
       "require_unique_answer_for_reverse_direction": true
@@ -102,6 +106,11 @@
     {
       "game": "family_pair_match",
       "source": "language_capabilities.learning_language_game",
+      "concepts": [
+        "mother", "father", "brother", "sister", "son", "daughter",
+        "grandfather", "grandmother", "uncle", "aunt", "cousin",
+        "niece_nephew", "partner", "spouse"
+      ],
       "pairing_key": "relationship_concept",
       "allow_cross_tier_pairs": true,
       "notes": "The game pairs relationship concepts, not English words. Multiple target forms may be accepted when the language lexicalizes a distinction the prompt has not specified."
@@ -116,7 +125,7 @@
     "scroll_mode": "Render the groups in one short vertical lesson.",
     "pages_mode": "Render each semantic group as one or more pages while preserving source-first then target-second order.",
     "teacher_presentation_mode": "Use the same lesson graph and profile data with classroom-sized controls; do not fork content.",
-    "pairing_policy": "Source bridge, rich target profile, and game vocabulary are resolved independently. Never generate a source-by-target matrix."
+    "pairing_policy": "Source bridge, reusable support-language facts, rich target profile, and universal game vocabulary are resolved independently. Never generate a source-by-target matrix."
   },
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
@@ -125,5 +134,5 @@
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 2
+  "version": 3
 }
