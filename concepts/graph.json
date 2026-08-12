@@ -1,23 +1,29 @@
 {
   "schema_version": 1,
   "concepts": [
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
-      "concept_key": "speak-communicate",
-      "domain": "communication",
-      "planning_difficulty_hint": "A1"
-    },
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
-      "concept_key": "read-written-words",
-      "domain": "education",
-      "planning_difficulty_hint": "A1"
-    },
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
-      "concept_key": "frog-amphibian",
-      "domain": "nature",
-      "planning_difficulty_hint": "A1"
-    }
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001","concept_key":"speak-communicate","domain":"communication","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002","concept_key":"read-written-words","domain":"education","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003","concept_key":"frog-amphibian","domain":"nature","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000001","concept_key":"family-parent-female","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000002","concept_key":"family-parent-male","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000003","concept_key":"family-sibling-male","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000004","concept_key":"family-sibling-female","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000005","concept_key":"family-child-male","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000006","concept_key":"family-child-female","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000007","concept_key":"family-grandparent-male","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000008","concept_key":"family-grandparent-female","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000009","concept_key":"family-parent-sibling-or-affinal-male","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000a","concept_key":"family-parent-sibling-or-affinal-female","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000b","concept_key":"family-cousin","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000c","concept_key":"family-sibling-child","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000d","concept_key":"family-partner","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000e","concept_key":"family-spouse","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-00000000000f","concept_key":"family-member","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000010","concept_key":"family-parent","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000011","concept_key":"family-sibling","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000012","concept_key":"family-child","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000013","concept_key":"family-grandparent","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000014","concept_key":"family-parent-sibling-or-affinal","domain":"kinship","planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_12000000-0000-7000-8100-000000000015","concept_key":"family-partner-or-spouse","domain":"kinship","planning_difficulty_hint":"A1"}
   ]
 }
