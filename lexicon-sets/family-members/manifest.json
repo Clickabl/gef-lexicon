@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "lexicon_set_id": "LEXSET.family_members",
+  "domain": "kinship",
+  "lesson_id": "LES.mul.vocab.family_members",
+  "vocabulary_manifest": "lesson-families/family-members/game-vocabulary/manifest.json",
+  "concept_map": {
+    "mother": "cpt_12000000-0000-7000-8100-000000000001",
+    "father": "cpt_12000000-0000-7000-8100-000000000002",
+    "brother": "cpt_12000000-0000-7000-8100-000000000003",
+    "sister": "cpt_12000000-0000-7000-8100-000000000004",
+    "son": "cpt_12000000-0000-7000-8100-000000000005",
+    "daughter": "cpt_12000000-0000-7000-8100-000000000006",
+    "grandfather": "cpt_12000000-0000-7000-8100-000000000007",
+    "grandmother": "cpt_12000000-0000-7000-8100-000000000008",
+    "uncle": "cpt_12000000-0000-7000-8100-000000000009",
+    "aunt": "cpt_12000000-0000-7000-8100-00000000000a",
+    "cousin": "cpt_12000000-0000-7000-8100-00000000000b",
+    "niece_nephew": "cpt_12000000-0000-7000-8100-00000000000c",
+    "partner": "cpt_12000000-0000-7000-8100-00000000000d",
+    "spouse": "cpt_12000000-0000-7000-8100-00000000000e"
+  },
+  "broader_concept_map": {
+    "mother": ["cpt_12000000-0000-7000-8100-000000000010", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "father": ["cpt_12000000-0000-7000-8100-000000000010", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "brother": ["cpt_12000000-0000-7000-8100-000000000011", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "sister": ["cpt_12000000-0000-7000-8100-000000000011", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "son": ["cpt_12000000-0000-7000-8100-000000000012", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "daughter": ["cpt_12000000-0000-7000-8100-000000000012", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "grandfather": ["cpt_12000000-0000-7000-8100-000000000013", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "grandmother": ["cpt_12000000-0000-7000-8100-000000000013", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "uncle": ["cpt_12000000-0000-7000-8100-000000000014", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "aunt": ["cpt_12000000-0000-7000-8100-000000000014", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "cousin": ["cpt_12000000-0000-7000-8100-00000000000f"],
+    "niece_nephew": ["cpt_12000000-0000-7000-8100-00000000000f"],
+    "partner": ["cpt_12000000-0000-7000-8100-000000000015", "cpt_12000000-0000-7000-8100-00000000000f"],
+    "spouse": ["cpt_12000000-0000-7000-8100-000000000015", "cpt_12000000-0000-7000-8100-00000000000f"]
+  },
+  "expression_separator": " / ",
+  "expression_metadata": {
+    "en": {
+      "mother": {"register_label":"neutral"}, "mom": {"register_label":"familiar"}, "mum": {"register_label":"familiar"},
+      "father": {"register_label":"neutral"}, "dad": {"register_label":"familiar"},
+      "grandfather": {"register_label":"neutral"}, "grandpa": {"register_label":"familiar"},
+      "grandmother": {"register_label":"neutral"}, "grandma": {"register_label":"familiar"}
+    },
+    "es": {
+      "madre": {"register_label":"neutral"}, "mamá": {"register_label":"familiar"},
+      "padre": {"register_label":"neutral"}, "papá": {"register_label":"familiar"}
+    }
+  },
+  "entry_policy": {
+    "one_expression_per_lexeme": true,
+    "group_same_surface_across_relationships_into_one_lexeme": true,
+    "one_sense_per_broad_relationship_per_expression": true,
+    "preserve_internal_slashes": true,
+    "primary_concept_is_broad_relationship": true,
+    "all_concept_links_are_many_to_many_capable": true,
+    "related_by_relationship_is_not_synonymy": true,
+    "default_review_state": "candidate",
+    "default_cefr_level": "A1"
+  },
+  "lesson_offer": {"lesson_id":"LES.mul.vocab.family_members","role":"teaches_concept","queueable":true},
+  "notes": "This reusable lexical set projects the 104-language Family vocabulary into Lexicon entries. Broad relationship concepts are semantic pivots, not English-word definitions. Slash-separated cells are split only on the exact ' / ' authoring delimiter, so internal slashes remain intact. Distinct expressions become distinct lexemes/senses even when they share a relationship concept. A sense may carry multiple concept_refs. Direct pairwise translation links are intentionally not stored; Lexi resolves equivalents through shared concepts plus any reviewed lexical features.",
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 1
+}
