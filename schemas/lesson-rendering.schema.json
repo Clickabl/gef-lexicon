@@ -121,7 +121,7 @@
         "show_scorecard": {"type": "boolean"},
         "scorecard_optional_when_no_practice": {"type": "boolean"},
         "celebration": {"type": "string"},
-        "visual_kind": {"type": "string", "enum": ["proficiency_scale", "proficiency_level_hero", "proficiency_radar", "mediation_bridge"]},
+        "visual_kind": {"type": "string", "enum": ["proficiency_scale", "proficiency_level_hero", "proficiency_radar", "mediation_bridge", "language_family_atlas"]},
         "level_code": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "FLUENT_NATIVE"]},
         "axis_values": {"$ref": "#/definitions/axisValues"},
         "source_label": {"type": "string"},
