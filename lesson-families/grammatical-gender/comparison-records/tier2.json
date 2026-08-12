@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "tier": 2,
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "entries": [
+    {
+      "language_tag": "de",
+      "forms": [{"form_id":"CMP.de.gender.der","display":"der"},{"form_id":"CMP.de.gender.die","display":"die"},{"form_id":"CMP.de.gender.das","display":"das"}],
+      "system_type": "three_gender",
+      "gender_count": 3,
+      "comparison_blurb": "German has masculine, feminine, and neuter grammatical noun genders. Der, die, and das show the contrast in the nominative singular, while article forms also change with case and number.",
+      "source_refs": [],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ru",
+      "forms": [{"form_id":"CMP.ru.gender.system","display":"masculine · feminine · neuter"}],
+      "system_type": "three_gender",
+      "gender_count": 3,
+      "comparison_blurb": "Russian has masculine, feminine, and neuter grammatical noun genders but no articles. Gender is visible through noun forms and agreement, so grammatical gender cannot be reduced to counting words meaning “the.”",
+      "source_refs": [],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "tr",
+      "forms": [{"form_id":"CMP.tr.gender.system","display":"no grammatical noun gender"}],
+      "system_type": "no_grammatical_noun_gender",
+      "gender_count": 0,
+      "comparison_blurb": "Turkish does not assign ordinary nouns to masculine, feminine, or neuter grammatical gender classes.",
+      "source_refs": [],
+      "review_state": "candidate"
+    }
+  ]
+}
