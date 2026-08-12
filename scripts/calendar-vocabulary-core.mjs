@@ -7,24 +7,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 
 const TOPICS = [
-  {
-    key: 'days_of_week',
-    lessonId: 'LES.mul.time.days_of_week',
-    conceptPrefix: 'CALENDAR.weekday',
-    knowledgePath: join(ROOT, 'knowledge-sets', 'days-of-week.json'),
-  },
-  {
-    key: 'months_of_year',
-    lessonId: 'LES.mul.time.months_of_year',
-    conceptPrefix: 'CALENDAR.month',
-    knowledgePath: join(ROOT, 'knowledge-sets', 'months-of-year.json'),
-  },
-  {
-    key: 'seasons',
-    lessonId: 'LES.mul.time.seasons',
-    conceptPrefix: 'CALENDAR.season',
-    knowledgePath: join(ROOT, 'knowledge-sets', 'seasons.json'),
-  },
+  { key: 'days_of_week', lessonId: 'LES.mul.time.days_of_week', conceptPrefix: 'CALENDAR.weekday', knowledgePath: join(ROOT, 'knowledge-sets', 'days-of-week.json') },
+  { key: 'months_of_year', lessonId: 'LES.mul.time.months_of_year', conceptPrefix: 'CALENDAR.month', knowledgePath: join(ROOT, 'knowledge-sets', 'months-of-year.json') },
+  { key: 'seasons', lessonId: 'LES.mul.time.seasons', conceptPrefix: 'CALENDAR.season', knowledgePath: join(ROOT, 'knowledge-sets', 'seasons.json') },
 ];
 
 const CLDR_OVERRIDES = {
@@ -45,6 +30,20 @@ const CLDR_OVERRIDES = {
 const normalizeLookup = (value) => value.normalize('NFC').trim().toLocaleLowerCase();
 const surfaceToken = (value) => encodeURIComponent(normalizeLookup(value));
 const conceptToken = (value) => encodeURIComponent(value);
+
+function lexicalSurface(value) {
+  if (typeof value === 'string') return value.normalize('NFC');
+  if (value && typeof value === 'object' && typeof value.display === 'string') return value.display.normalize('NFC');
+  return null;
+}
+
+function systemConceptKeys(system, knowledge, record) {
+  if (Array.isArray(system.concept_keys)) return system.concept_keys;
+  if (system.system_id === record.primary_system_id || system.scope !== 'calendar') return knowledge.canonical_concept_keys;
+  // A distinct calendar with no authored semantic keys must not be projected onto
+  // Gregorian Jan-Dec. Preserve its own ordered month concepts until richer IDs land.
+  return (system.terms ?? []).map((_, index) => `${system.system_id}.${index + 1}`);
+}
 
 function cldrWeekdays(languageTag) {
   if (CLDR_OVERRIDES[languageTag]?.days_of_week) return CLDR_OVERRIDES[languageTag].days_of_week;
@@ -69,60 +68,32 @@ function fullLanguageRows(topic) {
   const rows = [];
   for (const record of knowledge.language_records ?? []) {
     for (const system of record.systems ?? []) {
-      const keys = system.concept_keys ?? knowledge.canonical_concept_keys;
+      const keys = systemConceptKeys(system, knowledge, record);
       if (keys.length !== system.terms?.length) continue;
       for (let index = 0; index < keys.length; index += 1) {
         const conceptKey = keys[index];
-        const baseSurface = system.terms[index]?.normalize('NFC');
+        const baseSurface = lexicalSurface(system.terms[index]);
         if (!baseSurface) continue;
-        rows.push({
+        const common = {
           languageTag: record.language_tag,
           conceptKey,
-          surface: baseSurface,
-          formRole: system.system_id === record.primary_system_id ? 'primary_or_first_common' : 'alternate_system',
-          representationKind: null,
           reviewState: record.review_state ?? knowledge.review_state ?? 'candidate',
           trustState: record.trust_state ?? knowledge.trust_state ?? 'machine_translated',
           sourcePath: topic.knowledgePath.slice(ROOT.length + 1),
-        });
+        };
+        rows.push({ ...common, surface: baseSurface, formRole: system.system_id === record.primary_system_id ? 'primary_or_first_common' : 'alternate_system', representationKind: null });
+
         for (const variant of system.variants?.[conceptKey] ?? []) {
-          rows.push({
-            languageTag: record.language_tag,
-            conceptKey,
-            surface: variant.normalize('NFC'),
-            formRole: 'accepted_variant',
-            representationKind: null,
-            reviewState: record.review_state ?? knowledge.review_state ?? 'candidate',
-            trustState: record.trust_state ?? knowledge.trust_state ?? 'machine_translated',
-            sourcePath: topic.knowledgePath.slice(ROOT.length + 1),
-          });
+          const surface = lexicalSurface(variant);
+          if (surface) rows.push({ ...common, surface, formRole: 'accepted_variant', representationKind: null });
         }
         for (const variant of system.format_forms?.[conceptKey] ?? []) {
-          rows.push({
-            languageTag: record.language_tag,
-            conceptKey,
-            surface: variant.normalize('NFC'),
-            formRole: 'contextual_form',
-            representationKind: null,
-            reviewState: record.review_state ?? knowledge.review_state ?? 'candidate',
-            trustState: record.trust_state ?? knowledge.trust_state ?? 'machine_translated',
-            sourcePath: topic.knowledgePath.slice(ROOT.length + 1),
-          });
+          const surface = lexicalSurface(variant);
+          if (surface) rows.push({ ...common, surface, formRole: 'contextual_form', representationKind: null });
         }
         for (const [field, representationKind] of [['readings', 'reading'], ['transliterations', 'transliteration']]) {
-          const representation = system[field]?.[index];
-          if (!representation) continue;
-          rows.push({
-            languageTag: record.language_tag,
-            conceptKey,
-            surface: representation.normalize('NFC'),
-            formRole: representationKind,
-            representationKind,
-            baseSurface,
-            reviewState: record.review_state ?? knowledge.review_state ?? 'candidate',
-            trustState: record.trust_state ?? knowledge.trust_state ?? 'machine_translated',
-            sourcePath: topic.knowledgePath.slice(ROOT.length + 1),
-          });
+          const surface = lexicalSurface(system[field]?.[index]);
+          if (surface) rows.push({ ...common, surface, formRole: representationKind, representationKind, baseSurface });
         }
       }
     }
@@ -146,9 +117,7 @@ function tier3Rows(topic, tier3Tags, seasonsByLanguage) {
       terms = seasonsByLanguage.get(languageTag)?.terms;
       sourcePath = 'lesson-families/calendar-year/tier3-seasons-vocabulary.json';
     }
-    if (!Array.isArray(terms) || terms.length !== canonical.length) {
-      throw new Error(`${topic.key}/${languageTag}: expected ${canonical.length} Tier 3 terms`);
-    }
+    if (!Array.isArray(terms) || terms.length !== canonical.length) throw new Error(`${topic.key}/${languageTag}: expected ${canonical.length} Tier 3 terms`);
     for (let index = 0; index < canonical.length; index += 1) {
       rows.push({
         languageTag,
@@ -173,7 +142,6 @@ export function calendarVocabularyCore() {
   const fullTags = new Set(capability.learning_language_policy.expected_language_tags);
   const tier3Tags = allLanguageTags.filter((tag) => !fullTags.has(tag));
   const seasonsByLanguage = new Map(seasons.entries.map((entry) => [entry.language_tag, entry]));
-
   const concepts = [];
   const senses = [];
   const senseConcepts = [];
@@ -183,13 +151,12 @@ export function calendarVocabularyCore() {
   for (const topic of TOPICS) {
     const { knowledge, rows: richRows } = fullLanguageRows(topic);
     const rows = [...richRows, ...tier3Rows(topic, tier3Tags, seasonsByLanguage)];
-    const knownConceptKeys = new Set();
-    for (const systemRecord of knowledge.language_records ?? []) {
-      for (const system of systemRecord.systems ?? []) {
-        for (const key of system.concept_keys ?? knowledge.canonical_concept_keys) knownConceptKeys.add(key);
+    const knownConceptKeys = new Set(knowledge.canonical_concept_keys);
+    for (const record of knowledge.language_records ?? []) {
+      for (const system of record.systems ?? []) {
+        for (const key of systemConceptKeys(system, knowledge, record)) knownConceptKeys.add(key);
       }
     }
-    for (const key of knowledge.canonical_concept_keys) knownConceptKeys.add(key);
     for (const conceptKey of knownConceptKeys) {
       concepts.push({
         concept_id: `${topic.conceptPrefix}.${conceptKey}`,
@@ -201,6 +168,7 @@ export function calendarVocabularyCore() {
     }
 
     const baseSenseByTuple = new Map();
+    const senseById = new Map();
     for (const row of rows) {
       const conceptId = `${topic.conceptPrefix}.${row.conceptKey}`;
       const normalized = normalizeLookup(row.surface);
@@ -211,7 +179,7 @@ export function calendarVocabularyCore() {
         const lexemeId = `LEXI.calendar.${row.languageTag}.${surfaceToken(senseSurface)}`;
         senseId = `LEXI.calendar.${row.languageTag}.${surfaceToken(senseSurface)}.${conceptToken(row.conceptKey)}`;
         baseSenseByTuple.set(tuple, senseId);
-        senses.push({
+        const sense = {
           sense_id: senseId,
           lexeme_id: lexemeId,
           language_tag: row.languageTag,
@@ -222,11 +190,12 @@ export function calendarVocabularyCore() {
           review_state: row.reviewState,
           trust_state: row.trustState,
           source_path: row.sourcePath,
-        });
+        };
+        senses.push(sense);
+        senseById.set(senseId, sense);
         senseConcepts.push({ sense_id: senseId, concept_id: conceptId, relation: 'primary' });
       }
-      const lexemeId = senses.find((sense) => sense.sense_id === senseId)?.lexeme_id
-        ?? `LEXI.calendar.${row.languageTag}.${surfaceToken(row.baseSurface ?? row.surface)}`;
+      const lexemeId = senseById.get(senseId)?.lexeme_id ?? `LEXI.calendar.${row.languageTag}.${surfaceToken(row.baseSurface ?? row.surface)}`;
       forms.push({
         lexeme_id: lexemeId,
         sense_id: senseId,
