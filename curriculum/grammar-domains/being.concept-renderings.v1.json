@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "domain_id": "GRAM.DOMAIN.BEING",
+  "canonical_english_title": "To be, or not to be",
+  "title_localization_policy": "Do not machine-translate the Shakespeare quotation as though it were a source quote. A localized quotation title requires a reviewed source edition of Hamlet in that language.",
+  "review_state": "machine-candidate",
+  "notes": [
+    "These are reusable human-facing semantic labels and templates, not translations of language-specific grammar rules.",
+    "All renderings require language review before approved Lexi presentation.",
+    "Placeholders in braces are runtime values and must remain intact."
+  ],
+  "renderings": {
+    "en": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identity / equivalence",
+        "SEM.CLASSIFICATION_ROLE": "classification / role",
+        "SEM.CHARACTERISTIC_PROPERTY": "characteristic / property",
+        "SEM.CURRENT_STATE": "current state / condition",
+        "SEM.RESULTANT_STATE": "resultant state",
+        "SEM.ENTITY_LOCATION": "entity location",
+        "SEM.EVENT_LOCATION": "event location",
+        "SEM.EXISTENCE_PRESENCE": "existence / presence",
+        "SEM.ABSENCE_NONEXISTENCE": "absence / nonexistence",
+        "SEM.TIME_DATE_PREDICATION": "time / date predication",
+        "SEM.ORIGIN_AFFILIATION": "origin / affiliation",
+        "SEM.MATERIAL_COMPOSITION": "material / composition",
+        "SEM.POSSESSION_AS_EXISTENCE": "possession expressed through existence"
+      },
+      "templates": {
+        "form_expresses": "{form} expresses {concept}.",
+        "language_uses": "In {language}, this meaning is expressed with {form_or_construction}."
+      }
+    },
+    "es": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identidad / equivalencia",
+        "SEM.CLASSIFICATION_ROLE": "clasificación / función",
+        "SEM.CHARACTERISTIC_PROPERTY": "característica / propiedad",
+        "SEM.CURRENT_STATE": "estado actual / condición",
+        "SEM.RESULTANT_STATE": "estado resultante",
+        "SEM.ENTITY_LOCATION": "ubicación de una entidad",
+        "SEM.EVENT_LOCATION": "ubicación de un evento",
+        "SEM.EXISTENCE_PRESENCE": "existencia / presencia",
+        "SEM.ABSENCE_NONEXISTENCE": "ausencia / inexistencia",
+        "SEM.TIME_DATE_PREDICATION": "expresión de hora / fecha",
+        "SEM.ORIGIN_AFFILIATION": "origen / afiliación",
+        "SEM.MATERIAL_COMPOSITION": "material / composición",
+        "SEM.POSSESSION_AS_EXISTENCE": "posesión expresada mediante existencia"
+      },
+      "templates": {
+        "form_expresses": "{form} expresa {concept}.",
+        "language_uses": "En {language}, este significado se expresa con {form_or_construction}."
+      }
+    },
+    "fr": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identité / équivalence",
+        "SEM.CLASSIFICATION_ROLE": "classification / rôle",
+        "SEM.CHARACTERISTIC_PROPERTY": "caractéristique / propriété",
+        "SEM.CURRENT_STATE": "état actuel / condition",
+        "SEM.RESULTANT_STATE": "état résultant",
+        "SEM.ENTITY_LOCATION": "localisation d’une entité",
+        "SEM.EVENT_LOCATION": "lieu d’un événement",
+        "SEM.EXISTENCE_PRESENCE": "existence / présence",
+        "SEM.ABSENCE_NONEXISTENCE": "absence / non-existence",
+        "SEM.TIME_DATE_PREDICATION": "prédication de l’heure / de la date",
+        "SEM.ORIGIN_AFFILIATION": "origine / affiliation",
+        "SEM.MATERIAL_COMPOSITION": "matière / composition",
+        "SEM.POSSESSION_AS_EXISTENCE": "possession exprimée par l’existence"
+      },
+      "templates": {
+        "form_expresses": "{form} exprime {concept}.",
+        "language_uses": "En {language}, ce sens s’exprime avec {form_or_construction}."
+      }
+    },
+    "pt": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identidade / equivalência",
+        "SEM.CLASSIFICATION_ROLE": "classificação / função",
+        "SEM.CHARACTERISTIC_PROPERTY": "característica / propriedade",
+        "SEM.CURRENT_STATE": "estado atual / condição",
+        "SEM.RESULTANT_STATE": "estado resultante",
+        "SEM.ENTITY_LOCATION": "localização de uma entidade",
+        "SEM.EVENT_LOCATION": "localização de um evento",
+        "SEM.EXISTENCE_PRESENCE": "existência / presença",
+        "SEM.ABSENCE_NONEXISTENCE": "ausência / inexistência",
+        "SEM.TIME_DATE_PREDICATION": "expressão de hora / data",
+        "SEM.ORIGIN_AFFILIATION": "origem / afiliação",
+        "SEM.MATERIAL_COMPOSITION": "material / composição",
+        "SEM.POSSESSION_AS_EXISTENCE": "posse expressa por meio de existência"
+      },
+      "templates": {
+        "form_expresses": "{form} expressa {concept}.",
+        "language_uses": "Em {language}, este significado é expresso com {form_or_construction}."
+      }
+    },
+    "it": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identità / equivalenza",
+        "SEM.CLASSIFICATION_ROLE": "classificazione / ruolo",
+        "SEM.CHARACTERISTIC_PROPERTY": "caratteristica / proprietà",
+        "SEM.CURRENT_STATE": "stato attuale / condizione",
+        "SEM.RESULTANT_STATE": "stato risultante",
+        "SEM.ENTITY_LOCATION": "posizione di un’entità",
+        "SEM.EVENT_LOCATION": "luogo di un evento",
+        "SEM.EXISTENCE_PRESENCE": "esistenza / presenza",
+        "SEM.ABSENCE_NONEXISTENCE": "assenza / non esistenza",
+        "SEM.TIME_DATE_PREDICATION": "predicazione di ora / data",
+        "SEM.ORIGIN_AFFILIATION": "origine / appartenenza",
+        "SEM.MATERIAL_COMPOSITION": "materiale / composizione",
+        "SEM.POSSESSION_AS_EXISTENCE": "possesso espresso tramite esistenza"
+      },
+      "templates": {
+        "form_expresses": "{form} esprime {concept}.",
+        "language_uses": "In {language}, questo significato si esprime con {form_or_construction}."
+      }
+    },
+    "el": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "ταυτότητα / ισοδυναμία",
+        "SEM.CLASSIFICATION_ROLE": "κατηγοριοποίηση / ρόλος",
+        "SEM.CHARACTERISTIC_PROPERTY": "χαρακτηριστικό / ιδιότητα",
+        "SEM.CURRENT_STATE": "τρέχουσα κατάσταση / συνθήκη",
+        "SEM.RESULTANT_STATE": "κατάσταση ως αποτέλεσμα",
+        "SEM.ENTITY_LOCATION": "τοποθεσία οντότητας",
+        "SEM.EVENT_LOCATION": "τοποθεσία γεγονότος",
+        "SEM.EXISTENCE_PRESENCE": "ύπαρξη / παρουσία",
+        "SEM.ABSENCE_NONEXISTENCE": "απουσία / ανυπαρξία",
+        "SEM.TIME_DATE_PREDICATION": "δήλωση ώρας / ημερομηνίας",
+        "SEM.ORIGIN_AFFILIATION": "προέλευση / ένταξη",
+        "SEM.MATERIAL_COMPOSITION": "υλικό / σύνθεση",
+        "SEM.POSSESSION_AS_EXISTENCE": "κατοχή που εκφράζεται μέσω ύπαρξης"
+      },
+      "templates": {
+        "form_expresses": "Το {form} εκφράζει {concept}.",
+        "language_uses": "Στα {language}, αυτή η σημασία εκφράζεται με {form_or_construction}."
+      }
+    },
+    "zh": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "身份 / 等同",
+        "SEM.CLASSIFICATION_ROLE": "分类 / 角色",
+        "SEM.CHARACTERISTIC_PROPERTY": "特征 / 属性",
+        "SEM.CURRENT_STATE": "当前状态 / 情况",
+        "SEM.RESULTANT_STATE": "结果状态",
+        "SEM.ENTITY_LOCATION": "实体位置",
+        "SEM.EVENT_LOCATION": "事件地点",
+        "SEM.EXISTENCE_PRESENCE": "存在 / 在场",
+        "SEM.ABSENCE_NONEXISTENCE": "缺席 / 不存在",
+        "SEM.TIME_DATE_PREDICATION": "时间 / 日期表述",
+        "SEM.ORIGIN_AFFILIATION": "来源 / 归属",
+        "SEM.MATERIAL_COMPOSITION": "材料 / 构成",
+        "SEM.POSSESSION_AS_EXISTENCE": "用存在结构表达领属"
+      },
+      "templates": {
+        "form_expresses": "{form} 表达{concept}。",
+        "language_uses": "在{language}中，这个意义用{form_or_construction}来表达。"
+      }
+    },
+    "ja": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "同一性 / 同定",
+        "SEM.CLASSIFICATION_ROLE": "分類 / 役割",
+        "SEM.CHARACTERISTIC_PROPERTY": "特性 / 属性",
+        "SEM.CURRENT_STATE": "現在の状態 / 状況",
+        "SEM.RESULTANT_STATE": "結果状態",
+        "SEM.ENTITY_LOCATION": "人・物の位置",
+        "SEM.EVENT_LOCATION": "出来事の場所",
+        "SEM.EXISTENCE_PRESENCE": "存在 / 所在",
+        "SEM.ABSENCE_NONEXISTENCE": "不在 / 非存在",
+        "SEM.TIME_DATE_PREDICATION": "時刻 / 日付の述語表現",
+        "SEM.ORIGIN_AFFILIATION": "出身 / 所属",
+        "SEM.MATERIAL_COMPOSITION": "材料 / 構成",
+        "SEM.POSSESSION_AS_EXISTENCE": "存在構文による所有表現"
+      },
+      "templates": {
+        "form_expresses": "{form} は{concept}を表します。",
+        "language_uses": "{language}では、この意味を{form_or_construction}で表します。"
+      }
+    },
+    "de": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "Identität / Gleichsetzung",
+        "SEM.CLASSIFICATION_ROLE": "Klassifikation / Rolle",
+        "SEM.CHARACTERISTIC_PROPERTY": "Eigenschaft / Merkmal",
+        "SEM.CURRENT_STATE": "aktueller Zustand / Verfassung",
+        "SEM.RESULTANT_STATE": "resultierender Zustand",
+        "SEM.ENTITY_LOCATION": "Ort einer Entität",
+        "SEM.EVENT_LOCATION": "Ort eines Ereignisses",
+        "SEM.EXISTENCE_PRESENCE": "Existenz / Vorhandensein",
+        "SEM.ABSENCE_NONEXISTENCE": "Abwesenheit / Nichtexistenz",
+        "SEM.TIME_DATE_PREDICATION": "Zeit- / Datumsprädikation",
+        "SEM.ORIGIN_AFFILIATION": "Herkunft / Zugehörigkeit",
+        "SEM.MATERIAL_COMPOSITION": "Material / Zusammensetzung",
+        "SEM.POSSESSION_AS_EXISTENCE": "Besitz als Existenzkonstruktion"
+      },
+      "templates": {
+        "form_expresses": "{form} drückt {concept} aus.",
+        "language_uses": "Im {language} wird diese Bedeutung mit {form_or_construction} ausgedrückt."
+      }
+    },
+    "ko": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "동일성 / 동격",
+        "SEM.CLASSIFICATION_ROLE": "분류 / 역할",
+        "SEM.CHARACTERISTIC_PROPERTY": "특성 / 속성",
+        "SEM.CURRENT_STATE": "현재 상태 / 조건",
+        "SEM.RESULTANT_STATE": "결과 상태",
+        "SEM.ENTITY_LOCATION": "사람·사물의 위치",
+        "SEM.EVENT_LOCATION": "사건의 장소",
+        "SEM.EXISTENCE_PRESENCE": "존재 / 있음",
+        "SEM.ABSENCE_NONEXISTENCE": "부재 / 비존재",
+        "SEM.TIME_DATE_PREDICATION": "시간 / 날짜 서술",
+        "SEM.ORIGIN_AFFILIATION": "출신 / 소속",
+        "SEM.MATERIAL_COMPOSITION": "재료 / 구성",
+        "SEM.POSSESSION_AS_EXISTENCE": "존재 구문으로 표현하는 소유"
+      },
+      "templates": {
+        "form_expresses": "{form}은(는) {concept}을(를) 나타냅니다.",
+        "language_uses": "{language}에서는 이 의미를 {form_or_construction}(으)로 표현합니다."
+      }
+    },
+    "ar": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "الهوية / المعادلة",
+        "SEM.CLASSIFICATION_ROLE": "التصنيف / الدور",
+        "SEM.CHARACTERISTIC_PROPERTY": "الصفة / الخاصية",
+        "SEM.CURRENT_STATE": "الحالة الحالية / الوضع",
+        "SEM.RESULTANT_STATE": "الحالة الناتجة",
+        "SEM.ENTITY_LOCATION": "موقع الكيان",
+        "SEM.EVENT_LOCATION": "مكان الحدث",
+        "SEM.EXISTENCE_PRESENCE": "الوجود / الحضور",
+        "SEM.ABSENCE_NONEXISTENCE": "الغياب / عدم الوجود",
+        "SEM.TIME_DATE_PREDICATION": "إسناد الوقت / التاريخ",
+        "SEM.ORIGIN_AFFILIATION": "الأصل / الانتماء",
+        "SEM.MATERIAL_COMPOSITION": "المادة / التركيب",
+        "SEM.POSSESSION_AS_EXISTENCE": "التعبير عن الملكية ببنية الوجود"
+      },
+      "templates": {
+        "form_expresses": "يعبّر {form} عن {concept}.",
+        "language_uses": "في {language}، يُعبَّر عن هذا المعنى بـ {form_or_construction}."
+      }
+    },
+    "hi": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "पहचान / समानता",
+        "SEM.CLASSIFICATION_ROLE": "वर्गीकरण / भूमिका",
+        "SEM.CHARACTERISTIC_PROPERTY": "विशेषता / गुण",
+        "SEM.CURRENT_STATE": "वर्तमान अवस्था / स्थिति",
+        "SEM.RESULTANT_STATE": "परिणामी अवस्था",
+        "SEM.ENTITY_LOCATION": "व्यक्ति या वस्तु का स्थान",
+        "SEM.EVENT_LOCATION": "घटना का स्थान",
+        "SEM.EXISTENCE_PRESENCE": "अस्तित्व / उपस्थिति",
+        "SEM.ABSENCE_NONEXISTENCE": "अनुपस्थिति / अनस्तित्व",
+        "SEM.TIME_DATE_PREDICATION": "समय / तारीख का कथन",
+        "SEM.ORIGIN_AFFILIATION": "उत्पत्ति / संबद्धता",
+        "SEM.MATERIAL_COMPOSITION": "सामग्री / संरचना",
+        "SEM.POSSESSION_AS_EXISTENCE": "अस्तित्व-रचना से व्यक्त स्वामित्व"
+      },
+      "templates": {
+        "form_expresses": "{form}, {concept} को व्यक्त करता है।",
+        "language_uses": "{language} में यह अर्थ {form_or_construction} से व्यक्त किया जाता है।"
+      }
+    },
+    "uk": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "ідентичність / тотожність",
+        "SEM.CLASSIFICATION_ROLE": "класифікація / роль",
+        "SEM.CHARACTERISTIC_PROPERTY": "характеристика / властивість",
+        "SEM.CURRENT_STATE": "поточний стан / умова",
+        "SEM.RESULTANT_STATE": "результативний стан",
+        "SEM.ENTITY_LOCATION": "місцезнаходження сутності",
+        "SEM.EVENT_LOCATION": "місце події",
+        "SEM.EXISTENCE_PRESENCE": "існування / наявність",
+        "SEM.ABSENCE_NONEXISTENCE": "відсутність / неіснування",
+        "SEM.TIME_DATE_PREDICATION": "вираження часу / дати",
+        "SEM.ORIGIN_AFFILIATION": "походження / належність",
+        "SEM.MATERIAL_COMPOSITION": "матеріал / склад",
+        "SEM.POSSESSION_AS_EXISTENCE": "володіння, виражене через існування"
+      },
+      "templates": {
+        "form_expresses": "{form} виражає {concept}.",
+        "language_uses": "В {language} це значення виражається за допомогою {form_or_construction}."
+      }
+    },
+    "ru": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "идентичность / тождество",
+        "SEM.CLASSIFICATION_ROLE": "классификация / роль",
+        "SEM.CHARACTERISTIC_PROPERTY": "характеристика / свойство",
+        "SEM.CURRENT_STATE": "текущее состояние / условие",
+        "SEM.RESULTANT_STATE": "результативное состояние",
+        "SEM.ENTITY_LOCATION": "местонахождение сущности",
+        "SEM.EVENT_LOCATION": "место события",
+        "SEM.EXISTENCE_PRESENCE": "существование / наличие",
+        "SEM.ABSENCE_NONEXISTENCE": "отсутствие / несуществование",
+        "SEM.TIME_DATE_PREDICATION": "выражение времени / даты",
+        "SEM.ORIGIN_AFFILIATION": "происхождение / принадлежность",
+        "SEM.MATERIAL_COMPOSITION": "материал / состав",
+        "SEM.POSSESSION_AS_EXISTENCE": "обладание, выраженное через существование"
+      },
+      "templates": {
+        "form_expresses": "{form} выражает {concept}.",
+        "language_uses": "В {language} это значение выражается с помощью {form_or_construction}."
+      }
+    },
+    "tr": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "kimlik / eşitlik",
+        "SEM.CLASSIFICATION_ROLE": "sınıflandırma / rol",
+        "SEM.CHARACTERISTIC_PROPERTY": "özellik / nitelik",
+        "SEM.CURRENT_STATE": "mevcut durum / hâl",
+        "SEM.RESULTANT_STATE": "sonuç durumu",
+        "SEM.ENTITY_LOCATION": "varlığın konumu",
+        "SEM.EVENT_LOCATION": "olayın yeri",
+        "SEM.EXISTENCE_PRESENCE": "varlık / mevcudiyet",
+        "SEM.ABSENCE_NONEXISTENCE": "yokluk / var olmama",
+        "SEM.TIME_DATE_PREDICATION": "zaman / tarih yüklemi",
+        "SEM.ORIGIN_AFFILIATION": "köken / aidiyet",
+        "SEM.MATERIAL_COMPOSITION": "malzeme / bileşim",
+        "SEM.POSSESSION_AS_EXISTENCE": "varlık yapısıyla ifade edilen sahiplik"
+      },
+      "templates": {
+        "form_expresses": "{form}, {concept} anlamını ifade eder.",
+        "language_uses": "{language} dilinde bu anlam {form_or_construction} ile ifade edilir."
+      }
+    },
+    "pl": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "tożsamość / równoważność",
+        "SEM.CLASSIFICATION_ROLE": "klasyfikacja / rola",
+        "SEM.CHARACTERISTIC_PROPERTY": "cecha / właściwość",
+        "SEM.CURRENT_STATE": "aktualny stan / kondycja",
+        "SEM.RESULTANT_STATE": "stan wynikowy",
+        "SEM.ENTITY_LOCATION": "położenie bytu",
+        "SEM.EVENT_LOCATION": "miejsce wydarzenia",
+        "SEM.EXISTENCE_PRESENCE": "istnienie / obecność",
+        "SEM.ABSENCE_NONEXISTENCE": "brak / nieistnienie",
+        "SEM.TIME_DATE_PREDICATION": "orzekanie czasu / daty",
+        "SEM.ORIGIN_AFFILIATION": "pochodzenie / przynależność",
+        "SEM.MATERIAL_COMPOSITION": "materiał / skład",
+        "SEM.POSSESSION_AS_EXISTENCE": "posiadanie wyrażone konstrukcją egzystencjalną"
+      },
+      "templates": {
+        "form_expresses": "{form} wyraża {concept}.",
+        "language_uses": "W języku {language} to znaczenie wyraża się za pomocą {form_or_construction}."
+      }
+    },
+    "fa": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "هویت / هم‌ارزی",
+        "SEM.CLASSIFICATION_ROLE": "دسته‌بندی / نقش",
+        "SEM.CHARACTERISTIC_PROPERTY": "ویژگی / صفت",
+        "SEM.CURRENT_STATE": "حالت کنونی / وضعیت",
+        "SEM.RESULTANT_STATE": "حالت حاصل‌شده",
+        "SEM.ENTITY_LOCATION": "مکانِ موجود",
+        "SEM.EVENT_LOCATION": "محلِ رویداد",
+        "SEM.EXISTENCE_PRESENCE": "وجود / حضور",
+        "SEM.ABSENCE_NONEXISTENCE": "نبود / عدمِ وجود",
+        "SEM.TIME_DATE_PREDICATION": "بیانِ زمان / تاریخ",
+        "SEM.ORIGIN_AFFILIATION": "خاستگاه / وابستگی",
+        "SEM.MATERIAL_COMPOSITION": "جنس / ترکیب",
+        "SEM.POSSESSION_AS_EXISTENCE": "مالکیت با ساختِ وجودی"
+      },
+      "templates": {
+        "form_expresses": "{form} مفهومِ {concept} را بیان می‌کند.",
+        "language_uses": "در {language}، این معنا با {form_or_construction} بیان می‌شود."
+      }
+    },
+    "id": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identitas / kesetaraan",
+        "SEM.CLASSIFICATION_ROLE": "klasifikasi / peran",
+        "SEM.CHARACTERISTIC_PROPERTY": "ciri / sifat",
+        "SEM.CURRENT_STATE": "keadaan saat ini / kondisi",
+        "SEM.RESULTANT_STATE": "keadaan hasil",
+        "SEM.ENTITY_LOCATION": "lokasi entitas",
+        "SEM.EVENT_LOCATION": "lokasi peristiwa",
+        "SEM.EXISTENCE_PRESENCE": "keberadaan / kehadiran",
+        "SEM.ABSENCE_NONEXISTENCE": "ketiadaan / tidak ada",
+        "SEM.TIME_DATE_PREDICATION": "predikasi waktu / tanggal",
+        "SEM.ORIGIN_AFFILIATION": "asal / afiliasi",
+        "SEM.MATERIAL_COMPOSITION": "bahan / komposisi",
+        "SEM.POSSESSION_AS_EXISTENCE": "kepemilikan yang dinyatakan lewat keberadaan"
+      },
+      "templates": {
+        "form_expresses": "{form} menyatakan {concept}.",
+        "language_uses": "Dalam {language}, makna ini dinyatakan dengan {form_or_construction}."
+      }
+    },
+    "ca": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identitat / equivalència",
+        "SEM.CLASSIFICATION_ROLE": "classificació / rol",
+        "SEM.CHARACTERISTIC_PROPERTY": "característica / propietat",
+        "SEM.CURRENT_STATE": "estat actual / condició",
+        "SEM.RESULTANT_STATE": "estat resultant",
+        "SEM.ENTITY_LOCATION": "ubicació d’una entitat",
+        "SEM.EVENT_LOCATION": "lloc d’un esdeveniment",
+        "SEM.EXISTENCE_PRESENCE": "existència / presència",
+        "SEM.ABSENCE_NONEXISTENCE": "absència / inexistència",
+        "SEM.TIME_DATE_PREDICATION": "predicació d’hora / data",
+        "SEM.ORIGIN_AFFILIATION": "origen / afiliació",
+        "SEM.MATERIAL_COMPOSITION": "material / composició",
+        "SEM.POSSESSION_AS_EXISTENCE": "possessió expressada mitjançant existència"
+      },
+      "templates": {
+        "form_expresses": "{form} expressa {concept}.",
+        "language_uses": "En {language}, aquest significat s’expressa amb {form_or_construction}."
+      }
+    },
+    "gl": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "identidade / equivalencia",
+        "SEM.CLASSIFICATION_ROLE": "clasificación / función",
+        "SEM.CHARACTERISTIC_PROPERTY": "característica / propiedade",
+        "SEM.CURRENT_STATE": "estado actual / condición",
+        "SEM.RESULTANT_STATE": "estado resultante",
+        "SEM.ENTITY_LOCATION": "localización dunha entidade",
+        "SEM.EVENT_LOCATION": "lugar dun evento",
+        "SEM.EXISTENCE_PRESENCE": "existencia / presenza",
+        "SEM.ABSENCE_NONEXISTENCE": "ausencia / inexistencia",
+        "SEM.TIME_DATE_PREDICATION": "predicación de hora / data",
+        "SEM.ORIGIN_AFFILIATION": "orixe / afiliación",
+        "SEM.MATERIAL_COMPOSITION": "material / composición",
+        "SEM.POSSESSION_AS_EXISTENCE": "posesión expresada mediante existencia"
+      },
+      "templates": {
+        "form_expresses": "{form} expresa {concept}.",
+        "language_uses": "En {language}, este significado exprésase con {form_or_construction}."
+      }
+    },
+    "mk": {
+      "labels": {
+        "SEM.IDENTITY_EQUIVALENCE": "идентитет / изедначување",
+        "SEM.CLASSIFICATION_ROLE": "класификација / улога",
+        "SEM.CHARACTERISTIC_PROPERTY": "карактеристика / својство",
+        "SEM.CURRENT_STATE": "тековна состојба / услов",
+        "SEM.RESULTANT_STATE": "резултативна состојба",
+        "SEM.ENTITY_LOCATION": "местоположба на ентитет",
+        "SEM.EVENT_LOCATION": "место на настан",
+        "SEM.EXISTENCE_PRESENCE": "постоење / присуство",
+        "SEM.ABSENCE_NONEXISTENCE": "отсуство / непостоење",
+        "SEM.TIME_DATE_PREDICATION": "искажување време / датум",
+        "SEM.ORIGIN_AFFILIATION": "потекло / припадност",
+        "SEM.MATERIAL_COMPOSITION": "материјал / состав",
+        "SEM.POSSESSION_AS_EXISTENCE": "поседување изразено преку егзистенцијална конструкција"
+      },
+      "templates": {
+        "form_expresses": "{form} го изразува значењето {concept}.",
+        "language_uses": "Во {language}, ова значење се изразува со {form_or_construction}."
+      }
+    }
+  }
+}
