@@ -58,6 +58,8 @@ jobs:
         run: node scripts/validate-grammatical-number-lesson.mjs
       - name: Validate family-members multilingual coverage
         run: npm run validate:family-members
+      - name: Validate Family Members Lexi projection
+        run: npm run validate:family-lexicon
       - name: Validate calendar-year multilingual coverage
         run: npm run validate:calendar-year
       - name: Validate English source coverage
