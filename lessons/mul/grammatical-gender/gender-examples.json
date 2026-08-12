@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.grammar.grammatical_gender",
+  "block_id": "intro-gender-examples",
+  "purpose": "Display-ready comparison deck for grammatical gender systems. Canonical full rules live in the grammar set; these profiles are concise contrast examples for the lesson opening.",
+  "comparison_record_manifest": "../../../lesson-families/grammatical-gender/comparison-records/manifest.json",
+  "projection_policy": {
+    "gender_system_not_article_count": true,
+    "article_examples_are_illustrative_only": true,
+    "no_gender_system_is_not_missing_data": true,
+    "noun_class_systems_are_not_forced_into_masculine_feminine_neuter": true
+  },
+  "selection_policy": {
+    "start_with": [
+      "best_language_if_relevant",
+      "learning_from_languages",
+      "learning_languages"
+    ],
+    "dedupe_by": "display profile while preserving language roles",
+    "require_at_least_one_no_gender_profile": true,
+    "no_gender_fallback_profile": "en",
+    "require_at_least_one_two_gender_profile": true,
+    "two_gender_fallback_profile": "es",
+    "require_at_least_one_three_gender_profile": true,
+    "three_gender_fallback_profile": "el",
+    "only_add_fallback_when_needed": true
+  },
+  "profiles": [
+    {
+      "profile_tag": "en",
+      "comparison_record_language_tag": "en",
+      "system_type": "no_grammatical_noun_gender",
+      "gender_count": 0,
+      "markers": [
+        {"display": "the", "label": "definite article, unchanged for gender"}
+      ]
+    },
+    {
+      "profile_tag": "es",
+      "comparison_record_language_tag": "es",
+      "system_type": "two_gender",
+      "gender_count": 2,
+      "markers": [
+        {"display": "el", "label": "masculine singular definite article"},
+        {"display": "la", "label": "feminine singular definite article"}
+      ],
+      "note": "Spanish also has limited neuter forms such as lo, esto, eso, and aquello, but ordinary nouns are not assigned a third neuter gender."
+    },
+    {
+      "profile_tag": "el",
+      "comparison_record_language_tag": "el",
+      "system_type": "three_gender",
+      "gender_count": 3,
+      "markers": [
+        {"display": "ο", "label": "masculine nominative singular definite article"},
+        {"display": "η", "label": "feminine nominative singular definite article"},
+        {"display": "το", "label": "neuter nominative singular definite article"}
+      ],
+      "note": "Article forms also change for case and number."
+    },
+    {
+      "profile_tag": "de",
+      "comparison_record_language_tag": "de",
+      "system_type": "three_gender",
+      "gender_count": 3,
+      "markers": [
+        {"display": "der", "label": "masculine nominative singular definite article"},
+        {"display": "die", "label": "feminine nominative singular definite article"},
+        {"display": "das", "label": "neuter nominative singular definite article"}
+      ],
+      "note": "German articles also change with case and number."
+    },
+    {
+      "profile_tag": "fr",
+      "comparison_record_language_tag": "fr",
+      "system_type": "two_gender",
+      "gender_count": 2,
+      "markers": [
+        {"display": "le", "label": "masculine singular definite article"},
+        {"display": "la", "label": "feminine singular definite article"}
+      ],
+      "note": "Before many vowel sounds both appear as l’, so surface article spelling does not always reveal gender."
+    },
+    {
+      "profile_tag": "ru",
+      "comparison_record_language_tag": "ru",
+      "system_type": "three_gender",
+      "gender_count": 3,
+      "markers": [],
+      "note": "Russian has masculine, feminine, and neuter noun genders but no articles; gender appears through agreement and noun morphology instead."
+    },
+    {
+      "profile_tag": "tr",
+      "comparison_record_language_tag": "tr",
+      "system_type": "no_grammatical_noun_gender",
+      "gender_count": 0,
+      "markers": [],
+      "note": "Turkish does not assign nouns to masculine, feminine, or neuter grammatical genders."
+    },
+    {
+      "profile_tag": "sw",
+      "comparison_record_language_tag": "sw",
+      "system_type": "noun_class_system",
+      "gender_count": null,
+      "markers": [],
+      "note": "Swahili uses a larger noun-class agreement system rather than a masculine/feminine/neuter gender inventory."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
