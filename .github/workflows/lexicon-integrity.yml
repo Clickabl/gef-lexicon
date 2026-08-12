@@ -60,6 +60,8 @@ jobs:
         run: npm run validate:family-members
       - name: Validate calendar-year multilingual coverage
         run: npm run validate:calendar-year
+      - name: Validate Lesson 0 multilingual coverage
+        run: npm run validate:lesson-zero
       - name: Validate English source coverage
         run: npm run validate:english
       - name: Regenerate concept index
