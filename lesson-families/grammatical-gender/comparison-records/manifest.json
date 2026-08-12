@@ -5,10 +5,14 @@
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "expected_total": 8,
   "expected_tier_counts": {
-    "1": 8
+    "1": 4,
+    "2": 3,
+    "3": 1
   },
   "tier_shards": {
-    "1": "tier1.json"
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json"
   },
   "record_contract": {
     "forms": "Representative visible forms or concise system labels for the comparison loop. These make grammatical gender visible where useful but never define gender count by article count.",
@@ -22,5 +26,5 @@
   "selection_policy": "Only render languages with explicit records. Do not infer gender system from language family, script, article count, or missing data.",
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 2
+  "version": 3
 }
