@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "domain_id": "GRAM.DOMAIN.BEING",
+  "canonical_title": "To be, or not to be",
+  "title_source": {
+    "work": "Hamlet",
+    "author": "William Shakespeare",
+    "location": "Act 3, Scene 1",
+    "quote_policy": "Use the exact source-work wording for the canonical English title. Localized quotations require a reviewed source edition; do not machine-invent a fake Shakespeare quotation."
+  },
+  "review_state": "candidate",
+  "semantic_function_ids": [
+    "SEM.IDENTITY_EQUIVALENCE",
+    "SEM.CLASSIFICATION_ROLE",
+    "SEM.CHARACTERISTIC_PROPERTY",
+    "SEM.CURRENT_STATE",
+    "SEM.RESULTANT_STATE",
+    "SEM.ENTITY_LOCATION",
+    "SEM.EVENT_LOCATION",
+    "SEM.EXISTENCE_PRESENCE",
+    "SEM.ABSENCE_NONEXISTENCE",
+    "SEM.TIME_DATE_PREDICATION",
+    "SEM.ORIGIN_AFFILIATION",
+    "SEM.MATERIAL_COMPOSITION",
+    "SEM.POSSESSION_AS_EXISTENCE"
+  ],
+  "architecture_notes": [
+    "These semantic functions are the reusable cross-language comparison layer. They are not English or Spanish grammar rules.",
+    "Each language maps independently onto the semantic territory. Similar-looking copulas do not imply identical boundaries.",
+    "Auxiliary uses of a be-type form for passive, progressive, perfect, modal, or other verbal constructions are related grammar but are not automatically part of this semantic domain.",
+    "Tier 1 mappings are the seed of a complete grammar path. Tier 2 mappings are bounded to this lesson family only.",
+    "All records remain candidate until language-specific review promotes them."
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.en.be.identity_classification","forms":["be"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.ORIGIN_AFFILIATION"],"note":"Main copula for identity, category, role and affiliation."},
+        {"rule_id":"RULE.en.be.property_state","forms":["be"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"English be does not encode the Spanish ser/estar split; both stable and temporary properties/states can use be."},
+        {"rule_id":"RULE.en.be.location","forms":["be"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION"],"note":"Main copula can locate entities and events."},
+        {"rule_id":"RULE.en.there_be.existence","forms":["there is","there are"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential there + be introduces existence/presence; negation expresses absence."},
+        {"rule_id":"RULE.en.be.time_date","forms":["be"],"semantic_functions":["SEM.TIME_DATE_PREDICATION"],"note":"English uses be for clock time/date predication."}
+      ],
+      "source_refs": ["https://dictionary.cambridge.org/grammar/british-grammar/be-expressions-with-be","https://dictionary.cambridge.org/grammar/british-grammar/there-is-there-are"]
+    },
+    {
+      "language": "es",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.es.ser.identity_classification","forms":["ser"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"Ser handles identity/classification and many defining relational predicates; permanent/temporary is not a sufficient rule."},
+        {"rule_id":"RULE.es.ser.characteristic","forms":["ser"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY"],"note":"Ser commonly presents a property as characteristic/identifying rather than merely current circumstance."},
+        {"rule_id":"RULE.es.estar.state_result","forms":["estar"],"semantic_functions":["SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Estar commonly presents conditions and resultant states."},
+        {"rule_id":"RULE.es.estar.entity_location","forms":["estar"],"semantic_functions":["SEM.ENTITY_LOCATION"],"note":"Ordinary location of people/things uses estar."},
+        {"rule_id":"RULE.es.ser.event_location","forms":["ser"],"semantic_functions":["SEM.EVENT_LOCATION"],"note":"Location of an event/occurrence is a distinct pattern and commonly uses ser rather than estar."},
+        {"rule_id":"RULE.es.haber.existence","forms":["hay","haber"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Impersonal haber introduces existence/presence; contrast with estar locating an already identified entity."},
+        {"rule_id":"RULE.es.ser.time_date","forms":["ser"],"semantic_functions":["SEM.TIME_DATE_PREDICATION"],"note":"Clock time/date identification uses ser."}
+      ],
+      "source_refs": ["https://www.rae.es/diccionario-estudiante/estar","https://www.rae.es/diccionario-estudiante/atributo"]
+    },
+    {
+      "language": "fr",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.fr.etre.copular","forms":["être"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE","SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"French broadly uses être where Spanish splits ser/estar; individual complements still impose French-specific syntax."},
+        {"rule_id":"RULE.fr.il_y_a.existence","forms":["il y a"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential presentation is commonly handled by il y a / il n'y a pas."}
+      ],
+      "source_refs": ["https://www.academie-francaise.fr/"]
+    },
+    {
+      "language": "pt",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.pt.ser.identity_characteristic","forms":["ser"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION","SEM.TIME_DATE_PREDICATION"],"note":"Portuguese has a ser/estar distinction analogous to Spanish but boundaries must be researched independently."},
+        {"rule_id":"RULE.pt.estar.state_location","forms":["estar"],"semantic_functions":["SEM.CURRENT_STATE","SEM.RESULTANT_STATE","SEM.ENTITY_LOCATION"],"note":"Estar commonly handles states and entity location."},
+        {"rule_id":"RULE.pt.ser.event_location","forms":["ser"],"semantic_functions":["SEM.EVENT_LOCATION"],"note":"Event location is commonly expressed with ser."},
+        {"rule_id":"RULE.pt.haver_ter.existence","forms":["haver","ter (Brazilian colloquial)"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Haver is standard existential; Brazilian usage frequently also uses impersonal ter. Variety/register must remain explicit."}
+      ],
+      "source_refs": ["https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/os-verbos-ser-estar-e-haver/19960","https://ciberduvidas.iscte-iul.pt/artigos/rubricas/idioma/a-diferenca-entre-a-ver-e-a-haver/6148"]
+    },
+    {
+      "language": "it",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.it.essere.copular","forms":["essere"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"Standard Italian essere covers many contexts split between Spanish ser and estar."},
+        {"rule_id":"RULE.it.stare.state_position","forms":["stare"],"semantic_functions":["SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Stare has genuine state/position uses but Spanish-like substitution for essere is regional/informal and must not define standard Italian."},
+        {"rule_id":"RULE.it.esserci.existence","forms":["c'è","ci sono","esserci"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existence/presence commonly uses esserci."}
+      ],
+      "source_refs": ["https://www.treccani.it/enciclopedia/essere-o-stare_%28La-grammatica-italiana%29/","https://www.treccani.it/vocabolario/essere/"]
+    },
+    {
+      "language": "el",
+      "tier": 1,
+      "coverage": "full-domain-seed",
+      "rules": [
+        {"rule_id":"RULE.el.eimai.copular","forms":["είμαι"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE","SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"Modern Greek broadly uses είμαι across identity/property/state/location predication; no Spanish-style ser/estar split is assumed."},
+        {"rule_id":"RULE.el.yparcho.existence","forms":["υπάρχω","υπάρχει","υπάρχουν"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existence/presence may use υπάρχω/υπάρχει; exact discourse distribution needs continued Tier 1 review."}
+      ],
+      "source_refs": ["https://www.greek-language.gr/"]
+    },
+
+    {
+      "language": "zh",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.zh.shi.identity","forms":["是"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE"],"note":"是 is central for nominal identity/equation; do not insert it automatically before ordinary adjective predicates."},
+        {"rule_id":"RULE.zh.stative.property_state","forms":["stative/adjectival predicate"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE"],"note":"Many adjectival predicates function predicatively without a copular 是."},
+        {"rule_id":"RULE.zh.zai.location","forms":["在"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION"],"note":"在 handles location-related predication/constructions."},
+        {"rule_id":"RULE.zh.you.existence","forms":["有","没有"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"有 expresses existence and possession; 没有 expresses absence/non-possession."}
+      ],
+      "source_refs": ["https://resources.allsetlearning.com/chinese/grammar/Verbs","https://resources.allsetlearning.com/chinese/grammar/HSK_Standard_Course_1"]
+    },
+    {
+      "language": "ja",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.ja.copula.identity","forms":["だ","です"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE"],"note":"Copular forms attach to nouns/na-adjectives; Japanese does not have one verb corresponding to every English be."},
+        {"rule_id":"RULE.ja.adjective.property_state","forms":["い-adjective predicate","な-adjective + copula"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Adjective class affects whether a separate copular form appears."},
+        {"rule_id":"RULE.ja.iru.animate_existence","forms":["いる"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Typically used for animate/volitional beings in existence/location statements."},
+        {"rule_id":"RULE.ja.aru.inanimate_existence","forms":["ある"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Typically used for inanimate entities/abstract availability in existence/location statements."}
+      ],
+      "source_refs": ["https://www.guidetojapanese.org/copula.html","https://guidetojapanese.org/learn/complete/existence"]
+    },
+    {
+      "language": "de",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.de.sein.copular","forms":["sein"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE","SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"Sein is the broad German copula; lesson should contrast semantic jobs rather than invent a Spanish-like split."},
+        {"rule_id":"RULE.de.es_gibt.existence","forms":["es gibt"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential presentation commonly uses es gibt; ordinary location can use sein or more explicit locative verbs."}
+      ],
+      "source_refs": ["https://www.deutschplus.net/en/pages/Verb"]
+    },
+    {
+      "language": "ko",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.ko.ida.identity","forms":["이다","이에요/예요"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE"],"note":"Equational copula attaches to a nominal predicate."},
+        {"rule_id":"RULE.ko.descriptive.property_state","forms":["descriptive predicate"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Many English be + adjective meanings are lexical/descriptive predicates rather than copula + adjective."},
+        {"rule_id":"RULE.ko.itda.existence_location","forms":["있다","없다"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"있다/없다 cover existence/location and possession-related meanings."}
+      ],
+      "source_refs": ["https://korean.arts.ubc.ca/lesson-5-lesson-notes/5-3-the-copula-equational-sentences-2/","https://korean.arts.ubc.ca/lesson-6-lesson-notes/6-1-existence-and-location-with-%EC%9E%88%EC%96%B4%EC%9A%94-and-%EC%97%86%EC%96%B4%EC%9A%94/"]
+    },
+    {
+      "language": "ar",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.ar.zero_copula.present_nominal","forms":["zero copula (present nominal sentence)"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION","SEM.ORIGIN_AFFILIATION"],"note":"In MSA, many present-tense nominal/equational predicates have no overt equivalent of English is/are."},
+        {"rule_id":"RULE.ar.kana.temporal_copula","forms":["كان and inflected forms"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION"],"note":"Overt كان participates in past/temporal copular predication; detailed case/tense behavior remains lesson-scoped research."},
+        {"rule_id":"RULE.ar.existential","forms":["هناك","يوجد"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential presentation can use هناك/يوجد constructions; MSA vs dialect boundaries must remain explicit."}
+      ],
+      "source_refs": ["https://www.arabic.desert-sky.net/g_intro.html"]
+    },
+    {
+      "language": "hi",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.hi.hona.copular","forms":["होना","हूँ","हो","है","हैं"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION"],"note":"होना supplies core copular forms; agreement/tense and predicate structure need Hindi-specific handling."},
+        {"rule_id":"RULE.hi.existence_location","forms":["होना in existential/locative constructions"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Hindi frequently uses locative/existential structures with होना; exact possession patterns require continued source review."}
+      ],
+      "source_refs": ["https://hindi.la.utexas.edu/resources/grammar/"]
+    },
+    {
+      "language": "uk",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.uk.zero_copula.present","forms":["zero copula","є (when expressed)"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION"],"note":"Present-tense бути is commonly omitted; є may be used in marked/existential contexts. Ukrainian requires independent review rather than copying Russian."},
+        {"rule_id":"RULE.uk.buty.overt_nonpresent","forms":["бути and inflected past/future forms"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION"],"note":"Past/future and infinitival predication use overt forms."},
+        {"rule_id":"RULE.uk.existence","forms":["є","немає"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Existence/absence and possession-related patterns need case-sensitive Ukrainian examples."}
+      ],
+      "source_refs": ["https://www.ukrainianlessons.com/ph-essential/","https://www.ukrainianlessons.com/episode152/"]
+    },
+    {
+      "language": "ru",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.ru.zero_copula.present","forms":["zero copula"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION"],"note":"Ordinary present equational/property/location sentences commonly omit быть."},
+        {"rule_id":"RULE.ru.byt.overt_nonpresent","forms":["быть","был/была/были","буду/будет/..."],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION"],"note":"Past/future/infinitive uses overt быть; predicate noun case changes are pedagogically important."},
+        {"rule_id":"RULE.ru.est.existence","forms":["есть","нет"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Есть/нет focus existence/presence/absence and underpin common possession structures."}
+      ],
+      "source_refs": ["https://mezhdunami.org/unit04/4_1/language.shtml","https://mezhdunami.org/unit04/4_2/language.shtml","https://mezhdunami.org/unit07/7_3/language.shtml"]
+    },
+    {
+      "language": "tr",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.tr.nominal_copula.present","forms":["personal copular endings","zero 3rd-person singular in many predicates"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ORIGIN_AFFILIATION"],"note":"Simple present nominal/adjectival predication is typically morphological rather than a standalone verb olmak."},
+        {"rule_id":"RULE.tr.location.copular","forms":["locative -DA + copular/personal marking"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION"],"note":"Location combines locative case with copular morphology."},
+        {"rule_id":"RULE.tr.var_yok.existence","forms":["var","yok"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Var/yok express existence/absence and are central to possession constructions."},
+        {"rule_id":"RULE.tr.olmak.change_become","forms":["olmak"],"semantic_functions":["SEM.RESULTANT_STATE"],"note":"Olmak is a lexical verb used for becoming/coming to be and other verbal uses, not the ordinary present nominal copula."}
+      ],
+      "source_refs": ["https://www.turkishtextbook.com/to-be-or-not-to-be/","https://www.turkishtextbook.com/past-tense-copula/","https://www.turkishtextbook.com/at-in-and-on-da-de/"]
+    },
+    {
+      "language": "pl",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.pl.byc.copular","forms":["być","jest","są"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION","SEM.TIME_DATE_PREDICATION","SEM.ORIGIN_AFFILIATION"],"note":"Polish uses an overt copula broadly; noun predicates commonly interact with instrumental case while adjective predicates agree in nominative."},
+        {"rule_id":"RULE.pl.existence","forms":["jest","są","nie ma"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential use and negative absence require Polish-specific case/syntax handling."}
+      ],
+      "source_refs": ["https://polski.info/grammar/syntax?hl=en"]
+    },
+    {
+      "language": "fa",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.fa.short_copula.predication","forms":["enclitic/personal copulas","است"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ORIGIN_AFFILIATION"],"note":"Short/personal copulas encode person/number and ordinary predication."},
+        {"rule_id":"RULE.fa.hast.existence_emphasis","forms":["هست","هستم/هستی/..."],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ENTITY_LOCATION"],"note":"Long hast forms can carry existential interpretation and emphasis and are also used in location/state contexts."},
+        {"rule_id":"RULE.fa.nist.negative","forms":["نیست","نیستم/نیستی/..."],"semantic_functions":["SEM.ABSENCE_NONEXISTENCE","SEM.CURRENT_STATE"],"note":"Nist is the negative counterpart used across negative predication/existence contexts."}
+      ],
+      "source_refs": ["https://sites.la.utexas.edu/persian_online_resources/verbs/verb-to-be/","https://sites.la.utexas.edu/persian_online_resources/verbs/long-copulas-1/"]
+    },
+    {
+      "language": "id",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.id.zero_copula.adjective","forms":["zero copula"],"semantic_functions":["SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Adjective predicates ordinarily do not use adalah."},
+        {"rule_id":"RULE.id.adalah.nominal_identity","forms":["adalah (often optional)"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE"],"note":"Adalah can link nominal predicates/equations and is often optional; register matters."},
+        {"rule_id":"RULE.id.ada.existence_location","forms":["ada","tidak ada","ada di"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.ENTITY_LOCATION","SEM.POSSESSION_AS_EXISTENCE"],"note":"Ada expresses existence/presence and combines with locative phrases; subject-predicate order changes existential interpretation."}
+      ],
+      "source_refs": ["https://seasite.niu.edu/flin/archive/103_handouts/sentences_and_phrases.htm","https://seasite.niu.edu/indodict/diction2.htm"]
+    },
+    {
+      "language": "ca",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.ca.ser.identity_property","forms":["ser","ésser"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"Catalan ser/estar resembles but does not copy Spanish."},
+        {"rule_id":"RULE.ca.ser.simple_location","forms":["ser"],"semantic_functions":["SEM.ENTITY_LOCATION","SEM.EVENT_LOCATION"],"note":"Simple location can use ser in standard Catalan, a crucial contrast with Spanish."},
+        {"rule_id":"RULE.ca.estar.state_duration","forms":["estar"],"semantic_functions":["SEM.CURRENT_STATE","SEM.RESULTANT_STATE"],"note":"Estar covers many temporary/resultant states and staying/duration contexts; exact boundaries vary by construction."},
+        {"rule_id":"RULE.ca.haver_hi.existence","forms":["haver-hi","hi ha","no hi ha"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"Existential presentation uses haver-hi."}
+      ],
+      "source_refs": ["https://www.cpnl.cat/gramatica/45/28-els-verbs-ser-estar-anar-anar-se-n-i-venir","https://www.cpnl.cat/publicacions/2670/ser-o-estar"]
+    },
+    {
+      "language": "gl",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.gl.ser.identity_property","forms":["ser"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.ORIGIN_AFFILIATION","SEM.MATERIAL_COMPOSITION"],"note":"RAG records ser as existential/copular and for provenance/material/relationship predicates; exact ser/estar contrast remains Galician-specific."},
+        {"rule_id":"RULE.gl.estar.state_location","forms":["estar"],"semantic_functions":["SEM.CURRENT_STATE","SEM.RESULTANT_STATE","SEM.ENTITY_LOCATION"],"note":"RAG defines estar for being in a stated place, situation, circumstance or condition."},
+        {"rule_id":"RULE.gl.haber.existence","forms":["haber","hai","non hai"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE"],"note":"RAG explicitly defines haber for existence/presence and occurrence."}
+      ],
+      "source_refs": ["https://academia.gal/dicionario/-/termo/ser/1","https://academia.gal/dicionario/-/termo/busca/estar","https://academia.gal/dicionario/-/termo/haber"]
+    },
+    {
+      "language": "mk",
+      "tier": 2,
+      "coverage": "lesson-scoped",
+      "rules": [
+        {"rule_id":"RULE.mk.sum.copular","forms":["сум and its inflected forms"],"semantic_functions":["SEM.IDENTITY_EQUIVALENCE","SEM.CLASSIFICATION_ROLE","SEM.CHARACTERISTIC_PROPERTY","SEM.CURRENT_STATE","SEM.ENTITY_LOCATION","SEM.ORIGIN_AFFILIATION"],"note":"Macedonian uses an overt present copula unlike Russian's ordinary zero-copula pattern; details remain bounded research for this lesson."},
+        {"rule_id":"RULE.mk.ima_nema.existence","forms":["има","нема"],"semantic_functions":["SEM.EXISTENCE_PRESENCE","SEM.ABSENCE_NONEXISTENCE","SEM.POSSESSION_AS_EXISTENCE"],"note":"Ima/nema participate in existence/absence and additional Macedonian-specific grammaticalized constructions; do not generalize those extra uses into the universal Being model."}
+      ],
+      "source_refs": ["https://www.makedonskadrzava.com/books/grammar-of-the-macedonian-literary-language","https://makedonskijazik.mk/2018/11/%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%81%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D1%81%D0%BE-%D0%B8%D0%BC%D0%B0-%D0%BD%D0%B5%D0%BC%D0%B0.html"]
+    }
+  ]
+}
