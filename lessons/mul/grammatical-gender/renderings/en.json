@@ -63,13 +63,10 @@
     {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Got it","description":"Spanish nouns are masculine or feminine; agreement helps you see the class. Neuter forms exist too, but they do a different job from an ordinary third noun gender.","action_label":"Done"}
   ],
   "rule_explanations": {
-    "RULE.es.gender.masculine_agreement": "Use masculine agreement with masculine nouns: typically el/un in the singular and los/unos in the plural, plus masculine forms of adjectives that vary for gender.",
-    "RULE.es.gender.feminine_agreement": "Use feminine agreement with feminine nouns: typically la/una in the singular and las/unas in the plural, plus feminine forms of adjectives that vary for gender.",
-    "RULE.es.gender.ending_clues": "Common endings can help you predict gender, but lexical exceptions are normal. Treat the article as part of what you learn with a noun.",
-    "RULE.es.gender.neuter_lo": "Lo is a neuter form used with adjectives, participles, adverbs, or similar material to refer to an abstract quality or idea. It is not the definite article for a class of neuter nouns.",
-    "RULE.es.gender.neuter_demonstratives": "Esto, eso, and aquello are neuter demonstratives used when the referent is unspecified or treated as an idea or situation; they do not directly modify an ordinary noun."
+    "RULE.es.gender.masculine_agreement": "Use el with an ordinary masculine singular noun. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.",
+    "RULE.es.gender.feminine_agreement": "Use la with an ordinary feminine singular noun. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives."
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 2
+  "version": 3
 }
