@@ -9,7 +9,10 @@
     "CURR.AGREEMENT",
     "CURR.PRONOUNS"
   ],
-  "construction_ids": [],
+  "construction_ids": [
+    "CTR.es.gender.masculine_np_agreement",
+    "CTR.es.gender.feminine_np_agreement"
+  ],
   "prerequisite_lesson_ids": [],
   "difficulty_band": "A1",
   "grammar_set_id": "GRAMSET.mul.grammatical_gender",
@@ -103,5 +106,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
