@@ -6,6 +6,10 @@
  *   dist/dictionaries/{lang}/core-v1.sqlite
  *   dist/books/{work_id}/v1/languages/{lang}/content.sqlite
  *
+ * A language may have `lexicon.json` plus supplemental `lexicon-*.json` files.
+ * Supplements are merged into the same core database so lesson-linked forms can
+ * grow without forcing rewrites of a large canonical core file.
+ *
  * Default builds include candidate + approved rows for development fixtures.
  * `--production` includes approved rows only. Compilation is always from a
  * freshly recreated database so removed source rows can never survive.
@@ -74,8 +78,32 @@ function initCoreDb(dbPath) {
       FOREIGN KEY(form_id) REFERENCES forms(form_id)
     );
 
+    CREATE TABLE lexeme_relations (
+      source_lexeme_id TEXT NOT NULL,
+      relation_type TEXT NOT NULL,
+      target_kind TEXT NOT NULL,
+      target_id TEXT NOT NULL,
+      note TEXT,
+      review_state TEXT NOT NULL,
+      PRIMARY KEY(source_lexeme_id, relation_type, target_kind, target_id),
+      FOREIGN KEY(source_lexeme_id) REFERENCES lexemes(lexeme_id)
+    );
+
+    CREATE TABLE sense_lesson_links (
+      sense_id TEXT NOT NULL,
+      lesson_id TEXT NOT NULL,
+      rule_id TEXT,
+      relationship TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      PRIMARY KEY(sense_id, lesson_id, rule_id, relationship),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id)
+    );
+
     CREATE INDEX idx_forms_lookup ON forms(normalized_lookup);
     CREATE INDEX idx_lexemes_lemma ON lexemes(lemma_nfc);
+    CREATE INDEX idx_relations_source ON lexeme_relations(source_lexeme_id);
+    CREATE INDEX idx_lesson_links_sense ON sense_lesson_links(sense_id);
+    CREATE INDEX idx_lesson_links_lesson ON sense_lesson_links(lesson_id);
   `);
   return db;
 }
@@ -102,6 +130,16 @@ function statements(db) {
       INSERT INTO form_analyses
         (analysis_id, form_id, features_json, display_label_key, pronunciation_ipa, pronunciation_note)
       VALUES (?, ?, ?, ?, ?, ?)
+    `),
+    relation: db.prepare(`
+      INSERT INTO lexeme_relations
+        (source_lexeme_id, relation_type, target_kind, target_id, note, review_state)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `),
+    lessonLink: db.prepare(`
+      INSERT INTO sense_lesson_links
+        (sense_id, lesson_id, rule_id, relationship, review_state)
+      VALUES (?, ?, ?, ?, ?)
     `),
   };
 }
@@ -132,6 +170,17 @@ function insertLexiconDocument(db, data) {
         for (const [interfaceLang, definition] of Object.entries(sense.definitions ?? {})) {
           insert.definition.run(sense.sense_id, interfaceLang, definition);
         }
+        for (const link of sense.lesson_links ?? []) {
+          const reviewState = link.review_state ?? lex.review_state;
+          if (!included(reviewState)) continue;
+          insert.lessonLink.run(
+            sense.sense_id,
+            link.lesson_id,
+            link.rule_id ?? null,
+            link.relationship ?? 'related_lesson',
+            reviewState,
+          );
+        }
       }
 
       for (const form of lex.forms ?? []) {
@@ -153,11 +202,33 @@ function insertLexiconDocument(db, data) {
           );
         }
       }
+
+      for (const relation of lex.relations ?? []) {
+        const reviewState = relation.review_state ?? lex.review_state;
+        if (!included(reviewState)) continue;
+        insert.relation.run(
+          lex.lexeme_id,
+          relation.relation_type,
+          relation.target_kind,
+          relation.target_id,
+          relation.note ?? null,
+          reviewState,
+        );
+      }
     }
   })();
+}
 
+function verifyForeignKeys(db, label) {
   const fk = db.prepare('PRAGMA foreign_key_check').all();
-  if (fk.length > 0) throw new Error(`compiled lexical package has foreign-key errors: ${JSON.stringify(fk)}`);
+  if (fk.length > 0) throw new Error(`${label} has foreign-key errors: ${JSON.stringify(fk)}`);
+}
+
+function lexiconSourcesForLanguage(dir) {
+  return readdirSync(dir)
+    .filter((entry) => /^lexicon(?:-[a-z0-9-]+)?\.json$/iu.test(entry))
+    .sort((a, b) => (a === 'lexicon.json' ? -1 : b === 'lexicon.json' ? 1 : a.localeCompare(b)))
+    .map((entry) => join(dir, entry));
 }
 
 function compileCoreLexicons() {
@@ -165,17 +236,25 @@ function compileCoreLexicons() {
   if (!existsSync(languagesDir)) return;
 
   for (const lang of readdirSync(languagesDir).filter((entry) => statSync(join(languagesDir, entry)).isDirectory()).sort()) {
-    const source = join(languagesDir, lang, 'lexicon.json');
-    if (!existsSync(source)) continue;
+    const langDir = join(languagesDir, lang);
+    const sources = lexiconSourcesForLanguage(langDir);
+    if (sources.length === 0) continue;
 
     const outDir = join(DIST_DIR, 'dictionaries', lang);
     mkdirSync(outDir, { recursive: true });
     const dbPath = join(outDir, 'core-v1.sqlite');
     const db = initCoreDb(dbPath);
-    insertLexiconDocument(db, JSON.parse(readFileSync(source, 'utf8')));
+    for (const source of sources) {
+      const data = JSON.parse(readFileSync(source, 'utf8'));
+      if (data.language_code && data.language_code !== lang) {
+        throw new Error(`${source}: language_code=${data.language_code}, expected ${lang}`);
+      }
+      insertLexiconDocument(db, data);
+    }
+    verifyForeignKeys(db, `compiled lexical package ${lang}`);
     db.exec('ANALYZE; VACUUM;');
     db.close();
-    console.log(`📦 ${PRODUCTION ? 'Production' : 'Development'} core: dist/dictionaries/${lang}/core-v1.sqlite`);
+    console.log(`📦 ${PRODUCTION ? 'Production' : 'Development'} core: dist/dictionaries/${lang}/core-v1.sqlite (${sources.length} source file${sources.length === 1 ? '' : 's'})`);
   }
 }
 
@@ -194,6 +273,7 @@ function compileBookOverlays() {
       const dbPath = join(outDir, 'content.sqlite');
       const db = initCoreDb(dbPath);
       insertLexiconDocument(db, JSON.parse(readFileSync(join(lexDir, filename), 'utf8')));
+      verifyForeignKeys(db, `compiled book overlay ${work}/${lang}`);
       db.exec('ANALYZE; VACUUM;');
       db.close();
       console.log(`📦 ${PRODUCTION ? 'Production' : 'Development'} overlay: dist/books/${work}/v1/languages/${lang}/content.sqlite`);
