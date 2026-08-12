@@ -20,12 +20,12 @@
           "sense_key": "el-definite-article-masculine-singular",
           "primary_concept_id": "GRAMMAR.es.definite_article.masculine_singular",
           "definitions": {
-            "en": "the masculine singular definite article used before many masculine singular noun phrases",
-            "es": "artículo definido masculino singular usado ante muchos sintagmas nominales masculinos singulares",
-            "fr": "article défini masculin singulier employé devant de nombreux groupes nominaux masculins singuliers",
-            "pt": "artigo definido masculino singular usado antes de muitos sintagmas nominais masculinos singulares",
-            "it": "articolo determinativo maschile singolare usato davanti a molti sintagmi nominali maschili singolari",
-            "el": "αρσενικό ενικό οριστικό άρθρο που χρησιμοποιείται πριν από πολλές αρσενικές ονοματικές φράσεις"
+            "en": "the ordinary masculine singular definite article",
+            "es": "artículo definido masculino singular ordinario",
+            "fr": "article défini masculin singulier ordinaire",
+            "pt": "artigo definido masculino singular comum",
+            "it": "articolo determinativo maschile singolare ordinario",
+            "el": "το συνηθισμένο αρσενικό ενικό οριστικό άρθρο"
           },
           "cefr_level": "A1",
           "register_label": "standard",
@@ -33,10 +33,38 @@
             {"lesson_id":"LES.mul.grammar.grammatical_gender","rule_id":"RULE.es.gender.masculine_agreement","relationship":"teaches_form_and_agreement","review_state":"candidate"}
           ],
           "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        },
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000009",
+          "sense_key": "el-definite-article-feminine-stressed-a",
+          "primary_concept_id": "GRAMMAR.es.definite_article.feminine_stressed_a",
+          "definitions": {
+            "en": "the surface form el used before many singular feminine nouns beginning with stressed a- or ha-, as in el agua; the noun remains grammatically feminine",
+            "es": "la forma superficial el usada ante muchos sustantivos femeninos singulares que empiezan por a- o ha- tónicas, como el agua; el sustantivo sigue siendo gramaticalmente femenino",
+            "fr": "la forme el employée devant de nombreux noms féminins singuliers commençant par a- ou ha- accentués, comme el agua ; le nom reste grammaticalement féminin",
+            "pt": "a forma el usada antes de muitos substantivos femininos singulares iniciados por a- ou ha- tônicos, como el agua; o substantivo continua gramaticalmente feminino",
+            "it": "la forma el usata davanti a molti nomi femminili singolari che iniziano con a- o ha- toniche, come el agua; il nome resta grammaticalmente femminile",
+            "el": "η μορφή el που χρησιμοποιείται πριν από πολλά θηλυκά ενικά ουσιαστικά που αρχίζουν με τονισμένο a- ή ha-, όπως el agua· το ουσιαστικό παραμένει γραμματικά θηλυκό"
+          },
+          "cefr_level": "A2",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","rule_id":"RULE.es.gender.feminine_agreement","relationship":"phonological_feminine_article_exception","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": ["03000000-0000-7000-8400-000000000001"]
         }
       ],
       "forms": [
-        {"form_id":"03000000-0000-7000-8500-000000000001","surface_nfc":"el","normalized_lookup":"el","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000001","features":{"base":{"part_of_speech":"determiner","definiteness":"definite","gender":"masculine","number":"singular"}},"display_label_key":"artículo definido masculino singular"}]}
+        {
+          "form_id":"03000000-0000-7000-8500-000000000001",
+          "surface_nfc":"el",
+          "normalized_lookup":"el",
+          "attested_in_text":true,
+          "analyses":[
+            {"analysis_id":"03000000-0000-7000-8600-000000000001","features":{"base":{"part_of_speech":"determiner","definiteness":"definite","gender":"masculine","number":"singular"}},"display_label_key":"artículo definido masculino singular"},
+            {"analysis_id":"03000000-0000-7000-8600-000000000009","features":{"base":{"part_of_speech":"determiner","definiteness":"definite","gender":"feminine","number":"singular"},"condition":{"phonological_context":"before stressed initial a- or ha- in many feminine nouns"}},"display_label_key":"artículo definido femenino singular · forma el ante a/ha tónica"}
+          ]
+        }
       ]
     },
     {
@@ -55,12 +83,12 @@
           "sense_key": "la-definite-article-feminine-singular",
           "primary_concept_id": "GRAMMAR.es.definite_article.feminine_singular",
           "definitions": {
-            "en": "the feminine singular definite article used before many feminine singular noun phrases",
-            "es": "artículo definido femenino singular usado ante muchos sintagmas nominales femeninos singulares",
-            "fr": "article défini féminin singulier employé devant de nombreux groupes nominaux féminins singuliers",
-            "pt": "artigo definido feminino singular usado antes de muitos sintagmas nominais femininos singulares",
-            "it": "articolo determinativo femminile singolare usato davanti a molti sintagmi nominali femminili singolari",
-            "el": "θηλυκό ενικό οριστικό άρθρο που χρησιμοποιείται πριν από πολλές θηλυκές ονοματικές φράσεις"
+            "en": "the ordinary feminine singular definite article",
+            "es": "artículo definido femenino singular ordinario",
+            "fr": "article défini féminin singulier ordinaire",
+            "pt": "artigo definido feminino singular comum",
+            "it": "articolo determinativo femminile singolare ordinario",
+            "el": "το συνηθισμένο θηλυκό ενικό οριστικό άρθρο"
           },
           "cefr_level": "A1",
           "register_label": "standard",
