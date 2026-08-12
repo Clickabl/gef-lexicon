@@ -5,8 +5,8 @@
   "proficiency_band": "all",
   "register": "plain",
   "title": "What do A1, A2, B1, B2, C1, and C2 mean?",
-  "invitation": "Those small level codes appear on books, classes, tests, and language profiles around the world. Here is what they are actually trying to tell you, and how Gef uses them.",
-  "summary": "Gef uses CEFR A1 through C2 as a common map for language ability, keeps Pre-A1 for first steps, and adds a clearly labeled Fully fluent / Native self-description above C2 in Gef's own picker. Your real ability can still be different in reading, listening, speaking, writing, interaction, and mediation.",
+  "invitation": "Those little level codes show up on books, classes, tests, apps, and language profiles around the world. Here is what they actually mean, why your level can be uneven, and how Gef uses them.",
+  "summary": "Gef uses CEFR A1 through C2 as a shared map for language ability, keeps Pre-A1 for first steps, and adds a clearly labeled Fully fluent / Native self-description above C2 in Gef's own picker. Your real ability can still be different in reading, listening, speaking, writing, interaction, and mediation.",
   "localization_keys": {
     "title": "lesson.languageLevels.title",
     "invitation": "lesson.languageLevels.invitation",
@@ -27,74 +27,143 @@
       "text": "A1 through C2 come from the Common European Framework of Reference for Languages, usually called CEFR. It gives learners, teachers, schools, tests, and publishers a shared way to talk about language ability. A and B are not school grades. The scale moves from early basic communication through increasingly independent, flexible, and precise language use. Gef uses those coordinates because the same basic map can work across many languages without pretending that every language has the same vocabulary or grammar path."
     },
     {
-      "block_id": "intro-pre-a1",
-      "group_id": "levels",
+      "block_id": "visual-scale",
+      "group_id": "intro",
+      "type": "visual",
+      "visual_kind": "proficiency_scale"
+    },
+    {
+      "block_id": "pre-a1-hero",
+      "group_id": "pre-a1",
       "type": "explanation",
       "title": "Pre-A1 · First steps",
       "text": "Pre-A1 is the space before A1. You may recognize a few words, signs, sounds, names, numbers, or memorized expressions while still needing substantial support. Modern CEFR materials include Pre-A1, so Gef does not need to invent A0 as an official-sounding level. Gef keeps Pre-A1 for lessons, diagnostics, and early progress. In the simple self-rating slider, though, the center means no knowledge and the first outward ring is A1, keeping the visual scale easy to understand."
     },
     {
+      "block_id": "visual-a1",
+      "group_id": "a1",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "A1"
+    },
+    {
       "block_id": "level-a1",
-      "group_id": "levels",
+      "group_id": "a1",
       "type": "explanation",
       "title": "A1 · Beginner",
       "text": "At A1, you can do useful things with a small amount of language. Familiar topics and concrete situations are your strongest territory. You may understand short simple material, exchange basic information, recognize common language in context, and get an immediate need across. Support still matters, and unfamiliar situations can become difficult quickly. Moving toward A2 means making your language less dependent on memorized scripts and becoming comfortable with a wider set of ordinary situations."
     },
     {
+      "block_id": "visual-a2",
+      "group_id": "a2",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "A2"
+    },
+    {
       "block_id": "level-a2",
-      "group_id": "levels",
+      "group_id": "a2",
       "type": "explanation",
       "title": "A2 · Everyday",
       "text": "At A2, routine life starts becoming manageable in the language. You can usually get the main meaning from short straightforward material and communicate basic information about familiar people, places, activities, work or school, shopping, travel, time, and immediate needs. You are still working with limited range, but you can do more than repeat prepared lines. Moving toward B1 means connecting ideas across longer stretches, handling less predictable situations, explaining simple reasons, and relying less on somebody else to carry the exchange."
     },
     {
+      "block_id": "visual-b1",
+      "group_id": "b1",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "B1"
+    },
+    {
       "block_id": "level-b1",
-      "group_id": "levels",
+      "group_id": "b1",
       "type": "explanation",
       "title": "B1 · Independent",
       "text": "B1 is where independent use becomes much more visible. You can manage many ordinary situations without planning every sentence in advance. On familiar subjects, you can follow the central meaning of clear extended language and produce connected communication about experiences, plans, preferences, opinions, and problems. You will still meet gaps and misunderstandings, but they do not end every conversation or text. Moving toward B2 means increasing range, detail, speed, and control so more complex material stays workable."
     },
     {
+      "block_id": "visual-b2",
+      "group_id": "b2",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "B2"
+    },
+    {
       "block_id": "level-b2",
-      "group_id": "levels",
+      "group_id": "b2",
       "type": "explanation",
       "title": "B2 · Strong independent",
       "text": "At B2, you can take part effectively in sustained communication and deal with substantially more complex language. You can follow and discuss ideas that are concrete or abstract, explain a position in detail, and operate in many social, academic, and professional situations without requiring constant simplification. Errors and gaps still exist, but you have enough range to work around many of them. Moving toward C1 means gaining finer control of inference, nuance, register, organization, and style."
     },
     {
+      "block_id": "visual-c1",
+      "group_id": "c1",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "C1"
+    },
+    {
       "block_id": "level-c1",
-      "group_id": "levels",
+      "group_id": "c1",
       "type": "explanation",
       "title": "C1 · Advanced",
       "text": "At C1, the language becomes a flexible tool rather than a constant obstacle. You can handle demanding material, follow meaning that is not always stated directly, and communicate at length with strong organization and precision. You can adapt to many social, academic, and professional settings and make deliberate choices about tone and style. Moving toward C2 is less about collecting one final set of grammar rules and more about depth: subtle distinctions, rapid reformulation, specialized domains, cultural range, and precise control when language becomes unusually complex."
     },
     {
+      "block_id": "visual-c2",
+      "group_id": "c2",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "C2"
+    },
+    {
       "block_id": "level-c2",
-      "group_id": "levels",
+      "group_id": "c2",
       "type": "explanation",
       "title": "C2 · Highly proficient",
       "text": "C2 is the highest common CEFR reference level. A C2 user can handle exceptionally demanding language with very fine control of meaning, structure, implication, and style across a broad range of situations. C2 does not mean knowing every word, never making an error, or changing your identity into a native speaker. Languages are too large for that. Even experts and lifelong speakers meet unfamiliar vocabulary and unfamiliar fields."
     },
     {
+      "block_id": "visual-fluent-native",
+      "group_id": "fluent-native",
+      "type": "visual",
+      "visual_kind": "proficiency_level_hero",
+      "level_code": "FLUENT_NATIVE"
+    },
+    {
       "block_id": "level-fluent-native",
-      "group_id": "levels",
+      "group_id": "fluent-native",
       "type": "explanation",
       "title": "Fully fluent / Native · Gef's top self-description",
-      "text": "Gef adds one more stop above C2 in its own self-rating control: Fully fluent / Native. This is not CEFR C3 and it is not an official external certification. It is a practical choice for someone whose current command in that skill is mature, broad, automatic, and comparable to a fully fluent adult native speaker. Being born into a language does not automatically place a child at the top of every skill, and a non-native speaker can choose this level if the description genuinely fits. Gef is describing ability here, not ancestry."
+      "text": "Gef adds one more stop above C2 in its own self-rating control: Fully fluent / Native. This is not CEFR C3 and it is not an official external certification. It is a practical choice for someone whose current command in that skill is mature, broad, automatic, and comparable to a fully fluent adult native speaker. A non-native speaker can choose this level if the description genuinely fits. Gef is describing ability here, not ancestry."
     },
     {
       "block_id": "profile-skills",
       "group_id": "profile",
       "type": "explanation",
       "title": "Your language ability is a shape, not one letter",
-      "text": "A single level is convenient, but real ability is uneven. Gef can keep six separate axes: Reading, Listening, Speaking, Writing, Interaction, and Mediation. You might read at C1, understand speech at B2, write at B1, and speak at A2. A heritage speaker may understand family conversations easily while finding formal writing difficult. None of that is contradictory. A six-sided radar graph makes those differences visible instead of sanding them down into one fake-perfect number."
+      "text": "A single level is convenient, but real ability is uneven. Gef keeps six possible axes: Reading, Listening, Speaking, Writing, Interaction, and Mediation. You might read at C1, understand speech at B2, write at B1, and speak at A2. None of that is contradictory. A six-sided radar graph makes those differences visible instead of sanding them down into one fake-perfect number."
     },
     {
-      "block_id": "profile-mediation",
+      "block_id": "visual-radar",
+      "group_id": "profile",
+      "type": "visual",
+      "visual_kind": "proficiency_radar",
+      "axis_values": {
+        "reading": 5,
+        "listening": 4,
+        "speaking": 3,
+        "writing": 4,
+        "interaction": 3,
+        "mediation": 5
+      }
+    },
+    {
+      "block_id": "profile-not-a-checklist",
       "group_id": "profile",
       "type": "explanation",
-      "title": "What is mediation?",
-      "text": "Mediation is helping meaning cross a gap. Translation and live interpreting are obvious examples, but it is broader than that. You are mediating when you summarize a difficult text for someone who cannot use the original, explain an idea in simpler language, relay information between people who do not share a language, reframe a disagreement so both sides understand it, or combine information from several sources into something another person can use. It measures how well you can help meaning travel, not merely how many words you can translate."
+      "title": "A level is not a checklist of every earlier lesson",
+      "text": "Language learning is lumpy. You can miss an early grammar principle and still develop advanced abilities somewhere else. You can also know sophisticated vocabulary or handle difficult conversations while having an oddly basic gap. Gef should use levels to describe the overall pattern of what you can do, not to pretend that B2 means every A1 and A2 lesson is perfectly complete. Earlier gaps are things to teach, not reasons to erase stronger abilities you already have."
     },
     {
       "block_id": "profile-current-gef",
@@ -108,28 +177,51 @@
       "group_id": "profile",
       "type": "explanation",
       "title": "An A2 book tells you about the book",
-      "text": "If Gef marks a book A2, that is a reading-difficulty signal. It means the language in the book is intended to be around A2 reading demand. Finishing that book is useful evidence about your reading, but it does not suddenly prove that your speaking, listening, writing, interaction, and mediation are also A2. The same rule applies to tests: always ask what ability was actually measured. A level without its scope can sound more certain than the evidence really is."
+      "text": "If Gef marks a book A2, that is a reading-difficulty signal. It means the language in the book is intended to be around A2 reading demand. Finishing that book is useful evidence about your reading, but it does not suddenly prove that your speaking, listening, writing, interaction, and mediation are also A2. The same rule applies to tests: always ask what ability was actually measured."
+    },
+    {
+      "block_id": "visual-mediation",
+      "group_id": "mediation",
+      "type": "visual",
+      "visual_kind": "mediation_bridge",
+      "source_label": "Meaning here",
+      "bridge_label": "Explain · interpret · summarize · translate",
+      "target_label": "Meaning understood"
+    },
+    {
+      "block_id": "profile-mediation",
+      "group_id": "mediation",
+      "type": "explanation",
+      "title": "What is mediation?",
+      "text": "Mediation is helping meaning cross a gap. Translation and live interpreting are obvious examples, but it is broader than that. You are mediating when you summarize a difficult text for someone who cannot use the original, explain an idea in simpler language, relay information between people who do not share a language, reframe a disagreement so both sides understand it, or combine information from several sources into something another person can use. It measures how well you can help meaning travel, not merely how many words you can translate."
+    },
+    {
+      "block_id": "course-duolingo",
+      "group_id": "course-progress",
+      "type": "explanation",
+      "title": "Course progress can give you a useful clue",
+      "text": "Some learning apps publish their own relationship to CEFR. Duolingo's in-app Score is a good example: scores 0–29 sit in A1 territory, 30–59 in A2, 60–99 in B1, 100–129 in B2, and 130–160 spans C1/C2 on its published course scale. A score inside a band can tell you that you are early or farther along in that course territory. But course progress is not the same thing as an independent test of every skill, especially if you skipped material or learned a lot somewhere else. Gef keeps the original score and treats the relationship as evidence, not destiny."
     },
     {
       "block_id": "world-other-frameworks",
       "group_id": "world",
       "type": "explanation",
       "title": "The world has several language-level systems",
-      "text": "CEFR is not the only scale. ACTFL is widely used in United States language education. The Interagency Language Roundtable, or ILR, uses a 0-to-5 scale in U.S. government contexts. Canada uses the Canadian Language Benchmarks for English and NCLC for French. Japanese learners often meet the Japanese-Language Proficiency Test, or JLPT, with levels N5 through N1. Mandarin Chinese learners may meet HSK, the Chinese Proficiency Test, which is currently transitioning toward a newer nine-level system. These systems were built for different purposes, so Gef keeps them distinct instead of pretending every label has one perfect twin."
+      "text": "CEFR is not the only scale. ACTFL is widely used in United States language education. The Interagency Language Roundtable, or ILR, uses a 0-to-5 scale in U.S. government contexts. Canada uses the Canadian Language Benchmarks for English and NCLC for French. Japanese learners often meet the Japanese-Language Proficiency Test, or JLPT, with levels N5 through N1. Mandarin Chinese learners may meet HSK, the Chinese Proficiency Test. These systems were built for different purposes, so Gef keeps them distinct instead of pretending every label has one perfect twin."
     },
     {
       "block_id": "world-jlpt-example",
       "group_id": "world",
       "type": "explanation",
       "title": "A useful example: the Japanese JLPT",
-      "text": "Beginning with the December 2025 Japanese-Language Proficiency Test, a passing score report can include a CEFR reference level based on the JLPT test level and total score. The important catch is scope: JLPT tests language knowledge, reading, and listening. It does not test speaking, writing, or interaction. So even an official cross-reference should update only what the evidence actually covers. This is exactly why Gef stores skill profiles instead of turning every certificate into one giant global level."
+      "text": "Beginning with the December 2025 Japanese-Language Proficiency Test, a passing score report can include an official CEFR reference level based on the JLPT test level and total score. The important catch is scope: JLPT tests language knowledge, reading, and listening. It does not test speaking, writing, or interaction. So even an official cross-reference should update only what the evidence actually covers."
     },
     {
       "block_id": "world-hsk-example",
       "group_id": "world",
       "type": "explanation",
       "title": "Chinese HSK is changing, so dates matter",
-      "text": "HSK is standardized Mandarin Chinese proficiency testing. A newer HSK 3.0 model is designed around three stages and nine levels, but rollout has been transitional: the January 2026 Levels 1–6 event was announced as a pilot, while the official notice said regular 2026 exam dates would continue under HSK 2.0 until the formal launch is announced. This is why Gef stores framework versions and dates instead of baking a viral conversion chart into permanent app code."
+      "text": "HSK is standardized Mandarin Chinese proficiency testing. The familiar HSK 2.0 system has six levels and has historically published a simple CEFR relationship. A newer HSK 3.0 model is designed around three stages and nine levels, but the 2026 rollout is transitional. Gef therefore stores the HSK version and treats any current nine-level CEFR conversion as an estimate unless the testing authority publishes a formal concordance."
     },
     {
       "block_id": "world-tests-frameworks",
@@ -143,7 +235,7 @@
       "group_id": "world",
       "type": "explanation",
       "title": "There is no universal A2 word count",
-      "text": "Vocabulary matters, but CEFR does not define A1, A2, or B1 by one universal number of words. Language-specific researchers create separate reference inventories because languages organize meaning differently. Even the meaning of one 'word' changes with segmentation, scripts, compounds, and morphology. An English vocabulary estimate cannot simply be copied onto Japanese, Arabic, Turkish, Mandarin, or every other language. Gef researches vocabulary and grammar targets separately by language and treats them as evidence and learning guidance, not as the definition of the level."
+      "text": "Vocabulary matters, but CEFR does not define A1, A2, or B1 by one universal number of words. Language-specific researchers create separate reference inventories because languages organize meaning differently. Even the meaning of one 'word' changes with segmentation, scripts, compounds, and morphology. An English vocabulary estimate cannot simply be copied onto Japanese, Arabic, Turkish, Mandarin, or every other language."
     },
     {
       "block_id": "gef-how-used",
@@ -157,14 +249,14 @@
       "group_id": "gef",
       "type": "explanation",
       "title": "A Gefstimate is an estimate, not a diploma",
-      "text": "When Gef eventually combines repeated evidence into its own estimate, English can call that a Gefstimate. The joke will not be forced into every language: some languages have a wonderfully compatible word for estimate and others do not. Under the joke, the meaning stays serious. A Gefstimate is Gef's best evidence-based estimate of current ability in a particular skill. It is not an official CEFR certificate, and Gef should always be able to explain what evidence contributed to it."
+      "text": "When Gef eventually combines repeated evidence into its own estimate, English can call that a Gefstimate. The joke will not be forced into every language. Under the joke, the meaning stays serious: a Gefstimate is Gef's best evidence-based estimate of current ability in a particular skill. It is not an official CEFR certificate, and Gef should always be able to explain what evidence contributed to it."
     },
     {
       "block_id": "gef-moving-up",
       "group_id": "gef",
       "type": "explanation",
       "title": "How do you move to the next level?",
-      "text": "Not by filling one magic progress bar. Future Gef estimates should look for repeated evidence across different material and situations. Vocabulary growth and grammar knowledge can support that evidence, but neither becomes a single gate. One easy book should not promote you. One difficult day should not demote you. The useful signal is a pattern over time: broader understanding, less assistance, greater range, and more control. Automated placement and adaptive testing are future infrastructure, not something today's reader should pretend it already measures."
+      "text": "Not by filling one magic progress bar. Future Gef estimates can combine repeated evidence across different material and situations: lesson performance, the difficulty of what you read successfully, how much help you need, comprehension results, and other signals that actually belong to the skill being estimated. Vocabulary growth and grammar knowledge can support that evidence, but neither becomes a single gate. One easy book should not promote you. One difficult day should not demote you. Automated placement and adaptive testing are future infrastructure, not something today's reader should pretend it already measures."
     },
     {
       "block_id": "completion",
@@ -178,6 +270,6 @@
     }
   ],
   "rule_explanations": {},
-  "review_state": "candidate",
-  "version": 2
+  "review_state": "approved",
+  "version": 3
 }
