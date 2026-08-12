@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.meta.where_languages_come_from",
+  "classification_basis": "Pedagogical genealogy overview based primarily on Glottolog 5.3, with contact languages separated by formation history. This is not a claim that every subgroup boundary is permanently settled.",
+  "language_count": 104,
+  "families": [
+    {
+      "family_id": "indo_european",
+      "label_en": "Indo-European",
+      "groups": [
+        {"group_id":"germanic","label_en":"Germanic","languages":[{"tag":"en","label_en":"English"},{"tag":"de","label_en":"German"},{"tag":"nl","label_en":"Dutch"},{"tag":"af","label_en":"Afrikaans"},{"tag":"sv","label_en":"Swedish"},{"tag":"nb","label_en":"Norwegian Bokmål"},{"tag":"nn","label_en":"Norwegian Nynorsk"},{"tag":"da","label_en":"Danish"},{"tag":"is","label_en":"Icelandic"}]},
+        {"group_id":"romance","label_en":"Romance","languages":[{"tag":"es","label_en":"Spanish"},{"tag":"fr","label_en":"French"},{"tag":"pt","label_en":"Portuguese"},{"tag":"it","label_en":"Italian"},{"tag":"ro","label_en":"Romanian"},{"tag":"ca","label_en":"Catalan"},{"tag":"gl","label_en":"Galician"},{"tag":"rm","label_en":"Romansh"}]},
+        {"group_id":"slavic","label_en":"Slavic","languages":[{"tag":"uk","label_en":"Ukrainian"},{"tag":"ru","label_en":"Russian"},{"tag":"pl","label_en":"Polish"},{"tag":"mk","label_en":"Macedonian"},{"tag":"sk","label_en":"Slovak"},{"tag":"cs","label_en":"Czech"},{"tag":"bg","label_en":"Bulgarian"},{"tag":"sr","label_en":"Serbian"},{"tag":"hr","label_en":"Croatian"},{"tag":"bs","label_en":"Bosnian"},{"tag":"sl","label_en":"Slovenian"},{"tag":"be","label_en":"Belarusian"},{"tag":"dsb","label_en":"Lower Sorbian"},{"tag":"hsb","label_en":"Upper Sorbian"}]},
+        {"group_id":"baltic","label_en":"Baltic","languages":[{"tag":"lt","label_en":"Lithuanian"},{"tag":"lv","label_en":"Latvian"}]},
+        {"group_id":"indo_aryan","label_en":"Indo-Aryan","languages":[{"tag":"hi","label_en":"Hindi"},{"tag":"ne","label_en":"Nepali"},{"tag":"bn","label_en":"Bengali / Bangla"},{"tag":"ur","label_en":"Urdu"},{"tag":"pa","label_en":"Punjabi"},{"tag":"mr","label_en":"Marathi"},{"tag":"gu","label_en":"Gujarati"},{"tag":"as","label_en":"Assamese"},{"tag":"kok","label_en":"Konkani"},{"tag":"or","label_en":"Odia"},{"tag":"sd","label_en":"Sindhi"},{"tag":"si","label_en":"Sinhala"},{"tag":"bho","label_en":"Bhojpuri"}]},
+        {"group_id":"iranian","label_en":"Iranian","languages":[{"tag":"fa","label_en":"Persian / Farsi"},{"tag":"ps","label_en":"Pashto"},{"tag":"ku","label_en":"Kurmanji Kurdish"},{"tag":"ckb","label_en":"Sorani Kurdish"}]},
+        {"group_id":"celtic","label_en":"Celtic","languages":[{"tag":"cy","label_en":"Welsh"},{"tag":"ga","label_en":"Irish"},{"tag":"gd","label_en":"Scottish Gaelic"}]},
+        {"group_id":"hellenic","label_en":"Hellenic","languages":[{"tag":"el","label_en":"Greek"}]},
+        {"group_id":"armenian","label_en":"Armenian","languages":[{"tag":"hy","label_en":"Armenian"}]},
+        {"group_id":"albanian","label_en":"Albanian","languages":[{"tag":"sq","label_en":"Albanian"}]}
+      ]
+    },
+    {"family_id":"sino_tibetan","label_en":"Sino-Tibetan / Trans-Himalayan","groups":[{"group_id":"sinitic","label_en":"Sinitic","languages":[{"tag":"zh","label_en":"Mandarin Chinese"},{"tag":"yue","label_en":"Cantonese"}]},{"group_id":"burmese","label_en":"Burmese branch","languages":[{"tag":"my","label_en":"Burmese / Myanmar"}]}]},
+    {"family_id":"japonic","label_en":"Japonic","groups":[{"group_id":"japonic","label_en":"Japonic","languages":[{"tag":"ja","label_en":"Japanese"}]}]},
+    {"family_id":"koreanic","label_en":"Koreanic","groups":[{"group_id":"koreanic","label_en":"Koreanic","languages":[{"tag":"ko","label_en":"Korean"}]}]},
+    {"family_id":"afro_asiatic","label_en":"Afro-Asiatic","groups":[{"group_id":"semitic","label_en":"Semitic","languages":[{"tag":"ar","label_en":"Arabic"},{"tag":"he","label_en":"Hebrew"},{"tag":"am","label_en":"Amharic"},{"tag":"ti","label_en":"Tigrinya"}]},{"group_id":"chadic","label_en":"Chadic","languages":[{"tag":"ha","label_en":"Hausa"}]},{"group_id":"cushitic","label_en":"Cushitic","languages":[{"tag":"so","label_en":"Somali"},{"tag":"om","label_en":"Oromo"}]}]},
+    {"family_id":"austronesian","label_en":"Austronesian","groups":[{"group_id":"austronesian","label_en":"Austronesian","languages":[{"tag":"id","label_en":"Indonesian"},{"tag":"fil","label_en":"Filipino"},{"tag":"haw","label_en":"Hawaiian"},{"tag":"jv","label_en":"Javanese"},{"tag":"ms","label_en":"Malay"}]}]},
+    {"family_id":"dravidian","label_en":"Dravidian","groups":[{"group_id":"dravidian","label_en":"Dravidian","languages":[{"tag":"ta","label_en":"Tamil"},{"tag":"te","label_en":"Telugu"},{"tag":"ml","label_en":"Malayalam"},{"tag":"kn","label_en":"Kannada"}]}]},
+    {"family_id":"turkic","label_en":"Turkic","groups":[{"group_id":"turkic","label_en":"Turkic","languages":[{"tag":"tr","label_en":"Turkish"},{"tag":"az","label_en":"Azerbaijani"},{"tag":"ba","label_en":"Bashkir"},{"tag":"cv","label_en":"Chuvash"},{"tag":"kk","label_en":"Kazakh"},{"tag":"ky","label_en":"Kyrgyz"},{"tag":"tk","label_en":"Turkmen"},{"tag":"uz","label_en":"Uzbek"}]}]},
+    {"family_id":"uralic","label_en":"Uralic","groups":[{"group_id":"uralic","label_en":"Uralic","languages":[{"tag":"et","label_en":"Estonian"},{"tag":"fi","label_en":"Finnish"},{"tag":"hu","label_en":"Hungarian"}]}]},
+    {"family_id":"austroasiatic","label_en":"Austroasiatic","groups":[{"group_id":"austroasiatic","label_en":"Austroasiatic","languages":[{"tag":"vi","label_en":"Vietnamese"},{"tag":"km","label_en":"Khmer"}]}]},
+    {"family_id":"kra_dai","label_en":"Kra-Dai / Tai-Kadai","groups":[{"group_id":"tai","label_en":"Tai","languages":[{"tag":"th","label_en":"Thai"},{"tag":"lo","label_en":"Lao"},{"tag":"shn","label_en":"Shan"}]}]},
+    {"family_id":"atlantic_congo","label_en":"Atlantic-Congo","note_en":"Often discussed within broader Niger-Congo classification traditions; Gef uses this cautious current family label for the atlas.","groups":[{"group_id":"atlantic_congo","label_en":"Atlantic-Congo","languages":[{"tag":"sw","label_en":"Swahili"},{"tag":"ak","label_en":"Akan"},{"tag":"ig","label_en":"Igbo"},{"tag":"yo","label_en":"Yoruba"},{"tag":"zu","label_en":"Zulu"}]}]},
+    {"family_id":"kartvelian","label_en":"Kartvelian","groups":[{"group_id":"kartvelian","label_en":"Kartvelian","languages":[{"tag":"ka","label_en":"Georgian"}]}]},
+    {"family_id":"mongolic","label_en":"Mongolic","groups":[{"group_id":"mongolic","label_en":"Mongolic","languages":[{"tag":"mn","label_en":"Mongolian"}]}]},
+    {"family_id":"quechuan","label_en":"Quechuan","groups":[{"group_id":"quechuan","label_en":"Quechuan","languages":[{"tag":"qu","label_en":"Quechua"}]}]},
+    {"family_id":"basque","label_en":"Basque","note_en":"Basque is treated as a language isolate: no larger genealogical family has been demonstrated by the comparative method.","groups":[{"group_id":"isolate","label_en":"Language isolate","languages":[{"tag":"eu","label_en":"Basque"}]}]}
+  ],
+  "contact_languages": {
+    "label_en": "Contact languages",
+    "note_en": "Grouped here by formation history rather than forced into a single-parent family-tree branch. Their vocabularies and structures reflect intense multilingual contact.",
+    "languages": [
+      {"tag":"pcm","label_en":"Nigerian Pidgin"},
+      {"tag":"ht","label_en":"Haitian Creole"}
+    ]
+  },
+  "review_state": "candidate",
+  "version": 1
+}
