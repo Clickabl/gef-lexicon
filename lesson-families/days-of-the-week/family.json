@@ -1,0 +1,59 @@
+{
+  "schema_version": 3,
+  "lesson_family_id": "LES.mul.time.days_of_week",
+  "lesson_key": "days-of-the-week",
+  "title_key": "lesson.days_of_week.title",
+  "fallback_title_en": "Days of the Week",
+  "summary_key": "lesson.days_of_week.summary",
+  "fallback_summary_en": "Learn the weekday cycle, compare how your languages name the days, and notice that calendar layout conventions belong to regions rather than languages.",
+  "knowledge_set_id": "KNOWSET.mul.calendar.days_of_week",
+  "knowledge_set_source": "../../knowledge-sets/days-of-week.json",
+  "language_capabilities_manifest": "../calendar-year/language-capabilities.json",
+  "comparison_blurb_manifest": "../calendar-year/support-blurbs.json",
+  "curriculum_concept_ids": ["CURR.DATES_TIME"],
+  "transparency_slide": {
+    "description": "Show the learner's strongest explanation languages first, then learning languages. Do not invent a fixed English/Spanish comparison pair.",
+    "fixed_comparison_language_tags": [],
+    "language_loop_order": ["learning_from", "learning"],
+    "dedupe_language_roles": true,
+    "rendering_model": "Native-language support blurb plus structured ordered term sets for eligible learning languages.",
+    "support_selection": {
+      "full": "Tier 1 or Tier 2 learning language with a reviewed knowledge-set record.",
+      "comparison_only": "Canonical learn-from language with support copy but no target eligibility.",
+      "unavailable": "No required lesson asset exists at the user's trust threshold."
+    }
+  },
+  "title_policy": {
+    "default_display_locale": "best_language",
+    "template_key": "lesson.days_of_week.title",
+    "variables": ["learning_languages"],
+    "forms_source": "ordered concept set",
+    "language_list_format": "localized conjunction list",
+    "notes": "The title stays topic-first; target-language labels may be appended by the runtime when useful."
+  },
+  "eligibility": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "require_non_anchor_multi_form_language": false,
+    "prefer_profile_languages": true,
+    "fill_with_anchor_language_when_needed": true,
+    "notes": "Tier 3 languages may explain the lesson but may not be selected as learning-language targets."
+  },
+  "block_plan": [
+    {"block_id":"facts","block_type":"lesson_facts","group_id":"facts","repeat":"once"},
+    {"block_id":"intro","block_type":"localized_text","group_id":"comparison-intro","repeat":"once"},
+    {"block_id":"language-cycle","block_type":"ordered_term_set","group_id":"terms","repeat":"per_relevant_language","notes":"Use the primary seven-day term system. The teaching order is stable, but calendar first-day layout is resolved separately from territory/locale."},
+    {"block_id":"culture","block_type":"cultural_context","group_id":"culture","repeat":"per_selected_language"},
+    {"block_id":"practice-intro","block_type":"practice_intro","group_id":"practice","repeat":"once"},
+    {"block_id":"practice","block_type":"practice","group_id":"practice","repeat":"once"},
+    {"block_id":"completion","block_type":"completion","group_id":"completion","repeat":"once"}
+  ],
+  "presentation_modes": ["scroll", "paged", "presentation"],
+  "learning_path_policy": {
+    "placements_are_language_specific": true,
+    "placement_registry": "../../curriculum/learning-path-placements.json",
+    "notes": "Exact ordering can vary by language path; the family itself remains reusable."
+  },
+  "review_state": "candidate",
+  "version": 1
+}
