@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 4,
+  "expected_total": 104,
+  "expected_tier_counts": {"1":6,"2":15,"3":83},
+  "tier_shards": {"1":"tier1.json","2":"tier2.json","3":"tier3.json"},
+  "concept_source": "../core-concepts.json",
+  "entry_contract": {
+    "lesson_copy": "Localized core lesson text. This makes the relationship-first lesson usable from the learner's source language without requiring a bespoke source-target lesson.",
+    "terms": "A localized beginner-facing label for every canonical relationship concept. Labels may be multiword descriptions when the language has no single broad lexeme.",
+    "game_terms": "Target-language candidate forms for recognition/matching games. Rich profiles may replace a broad candidate with conditioned variants.",
+    "translation_state": "Machine translations remain machine_translated until reviewed; structural completeness never self-promotes linguistic trust."
+  },
+  "selection_policy": "Source language and target language are independent. Join source lesson_copy and concept labels with the target language's game terms or rich profile at runtime.",
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "version": 1
+}
