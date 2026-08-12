@@ -1,6 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.vocab.family_members",
+  "lesson_family_path": "family-path.json",
   "capability_model": "lexical_semantic_profile",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "coverage_program": "learnFromLanguages",
@@ -18,16 +19,48 @@
       "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
     },
     "learning_language_comparison": {
-      "description": "A registered language may still be shown as a source-language anchor or future comparison target when only localized bridge copy exists, but the lesson must not invent a target vocabulary system or practice items.",
+      "description": "A registered language outside the full set may participate in Core Family sessions and recognition-safe Games when stage vocabulary exists, but must not receive invented cultural/usage analysis.",
       "default_for_registered_languages_not_in_full": true
     }
   },
+  "session_depth": {
+    "canonical_field": "session_depth",
+    "values": ["core", "cultural"],
+    "resolver": {
+      "cultural_when": "learning_from is full AND learning language is full",
+      "core_when": "either active role is not full",
+      "cultural_requires_both_roles_full": true,
+      "core_if_either_role_comparison_only": true
+    },
+    "core_contract": {
+      "required": ["localized intro/source bridge", "stage-safe term or phrase bank", "recognition or matching practice", "completion"],
+      "forbidden_without_both_roles_full": ["pair-specific cultural synthesis", "unreviewed kinship claims", "rich target practice that depends on missing distinctions"]
+    },
+    "cultural_contract": {
+      "requires": ["full source-language lesson localization", "full target profile", "stage cultural analysis"],
+      "adds": ["kinship analysis", "usage/register", "cultural cautions", "curated examples", "rich practice", "reading discussion"]
+    },
+    "examples": {
+      "en_to_es": "cultural",
+      "el_to_pt": "cultural",
+      "ne_to_pt": "core",
+      "en_to_nl": "core",
+      "ne_to_nl": "core"
+    }
+  },
+  "stage_coverage": {
+    "1": {"core_104":"ready","cultural_21x21":"ready_when_pair_is_full","source":"game-vocabulary + target profiles + core localizations"},
+    "2": {"core_104":"architecture_ready_copy_reuses_family_source_bridge","cultural_en":"ready","other_full_language_cultural":"requires_stage_specific_language review"},
+    "3": {"core_104":"ready_for_existing extended-family concepts in universal game vocabulary","cultural_en":"ready","other_full_language_cultural":"target profiles already contain substantial kinship distinctions; stage-specific review still required"},
+    "4": {"core_104":"partial_partner_spouse_only_until relationship vocabulary expansion","cultural_en":"ready","other_full_language_cultural":"requires relationship vocabulary and usage review"}
+  },
   "runtime_model": {
-    "source_first": "Show a short bridge in the learner's strongest learning-from language before teaching the target system.",
-    "target_second": "Resolve the selected learning language's structured target profile and render a longer explanation, term set, distinctions, cultural note, examples, and practice.",
-    "pair_scaling": "Do not author a 104 x N matrix. Source copy and target facts are independent assets joined at runtime, so English to Spanish, Greek to Portuguese, Chinese to English, and Nepali to Portuguese use the same lesson graph.",
-    "fallback": "If a source localization is below the user's trust threshold, fall back through the normal best-language chain. If the target lacks a full profile, render comparison-only and omit target practice rather than guessing.",
-    "english_spanish_reference": "The approved worked example is English as the source language and Spanish as the learning language."
+    "source_first": "Show a localized bridge in the learner's strongest learning-from language.",
+    "depth_second": "Resolve session_depth from BOTH active language roles before selecting blocks. A Tier 3 source cannot unlock Cultural content merely because the target is Tier 1/2.",
+    "target_third": "Resolve the selected target's stage-safe vocabulary/profile. If session_depth is Core, omit cultural blocks even when the target has a rich profile.",
+    "pair_scaling": "Do not author a 104 x N matrix. Source copy, target facts, stage vocabulary, and cultural analysis are independent assets joined at runtime.",
+    "fallback": "If required Core stage vocabulary is missing, show the localized intro and only the verified concepts available for that stage; never silently substitute English or invent translations.",
+    "english_spanish_reference": "English to Spanish remains the worked reference pair for rich kinship comparison."
   },
   "trust_contract": {
     "canonical_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
@@ -37,5 +70,5 @@
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 1
+  "version": 2
 }
