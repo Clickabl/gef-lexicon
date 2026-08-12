@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "coverage_program": "learnFromLanguages",
+  "purpose": "Game-ready core family vocabulary for every canonical learn-from language. Each semantic slot may have one or several valid realizations; multiple forms preserve distinctions such as age, parental side, speaker gender, or regional/common alternatives instead of forcing a fake one-word equivalence.",
+  "concept_keys": ["family","mother","father","brother","sister","son","daughter","grandfather","grandmother","uncle","aunt","cousin","husband","wife"],
+  "concept_contract": {
+    "family": "the family/household-kin group as a general beginner topic label",
+    "mother": "female parent",
+    "father": "male parent",
+    "brother": "male sibling; languages may split by relative age or speaker gender",
+    "sister": "female sibling; languages may split by relative age or speaker gender",
+    "son": "male child",
+    "daughter": "female child",
+    "grandfather": "male grandparent; languages may split maternal/paternal side",
+    "grandmother": "female grandparent; languages may split maternal/paternal side",
+    "uncle": "a parent's brother / conventional uncle relation; languages may split side and relative age",
+    "aunt": "a parent's sister / conventional aunt relation; languages may split side and relative age",
+    "cousin": "cousin relation; languages may split gender, parental side, or lineage",
+    "husband": "male spouse",
+    "wife": "female spouse"
+  },
+  "realization_policy": [
+    "A forms array is not a synonym list unless the forms really overlap. It may encode a language's required semantic split.",
+    "Games must use relationship clues compatible with the selected form. Do not ask a broad English-style question when the target language requires age, side, speaker gender, or another distinction.",
+    "A conventional or descriptive phrase is valid when the language has no single lexical item for the broad concept.",
+    "Generated forms are machine-draft candidates. Structural game readiness does not equal linguistic review or certification.",
+    "Do not import or copy Wiktionary/KinDiv word rows. External kinship typology research informs the semantic model only."
+  ],
+  "shards": ["tier1.json","tier2.json","tier3-a.json","tier3-b.json","tier3-c.json","tier3-d.json"],
+  "expected_total": 104,
+  "expected_full_lesson_total": 21,
+  "expected_game_core_total": 104,
+  "source_refs": [
+    "Khishigsuren et al. 2022, Using Linguistic Typology to Enrich Multilingual Lexicons: the Case of Lexical Gaps in Kinship",
+    "Gef language-specific target profile research and generated candidate vocabulary"
+  ],
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "version": 1
+}
