@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gef.clickabl.co/schemas/gef-proficiency-scale.schema.json",
+  "title": "Gef proficiency scale",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scale_id",
+    "reference_framework",
+    "manual_picker",
+    "internal_entry_band",
+    "axes",
+    "evidence_policy",
+    "estimate_branding",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "scale_id": {"const": "gef-language-proficiency"},
+    "reference_framework": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework_id", "relationship"],
+      "properties": {
+        "framework_id": {"const": "cefr"},
+        "relationship": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
+    "manual_picker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_value", "max_value", "rings", "top_tier_is_cefr"],
+      "properties": {
+        "min_value": {"const": 0},
+        "max_value": {"const": 7},
+        "top_tier_is_cefr": {"const": false},
+        "rings": {
+          "type": "array",
+          "minItems": 8,
+          "maxItems": 8,
+          "items": {"$ref": "#/$defs/ring"}
+        }
+      }
+    },
+    "internal_entry_band": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "numeric_value", "visible_as_manual_ring", "purpose"],
+      "properties": {
+        "code": {"const": "Pre-A1"},
+        "numeric_value": {"const": 0.5},
+        "visible_as_manual_ring": {"const": false},
+        "purpose": {"type": "string"}
+      }
+    },
+    "axes": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/axis"}
+    },
+    "evidence_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_product_scope", "current_measured_axes", "self_report_axes", "future_assessment"],
+      "properties": {
+        "current_product_scope": {"const": "reading-first"},
+        "current_measured_axes": {
+          "type": "array",
+          "items": {"enum": ["reading", "listening", "speaking", "writing", "interaction", "mediation"]}
+        },
+        "self_report_axes": {
+          "type": "array",
+          "items": {"enum": ["reading", "listening", "speaking", "writing", "interaction", "mediation"]}
+        },
+        "future_assessment": {"type": "object"}
+      }
+    },
+    "estimate_branding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_semantic_term", "english_display_term", "localization_policy"],
+      "properties": {
+        "canonical_semantic_term": {"const": "Gef estimate"},
+        "english_display_term": {"const": "Gefstimate"},
+        "localization_policy": {"type": "string"},
+        "wordplay_registry": {"type": "string"}
+      }
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "$defs": {
+    "ring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "code", "label", "kind", "cefr_level"],
+      "properties": {
+        "value": {"type": "integer", "minimum": 0, "maximum": 7},
+        "code": {"type": "string"},
+        "label": {"type": "string"},
+        "kind": {"enum": ["zero", "cefr", "gef-extension"]},
+        "cefr_level": {"type": ["string", "null"]},
+        "description": {"type": "string"},
+        "selection_guidance": {"type": "string"}
+      }
+    },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["axis_id", "label", "definition", "current_evidence_mode"],
+      "properties": {
+        "axis_id": {"enum": ["reading", "listening", "speaking", "writing", "interaction", "mediation"]},
+        "label": {"type": "string"},
+        "definition": {"type": "string"},
+        "current_evidence_mode": {"enum": ["app-evidence-and-self-report", "self-report-only"]},
+        "future_evidence_examples": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
