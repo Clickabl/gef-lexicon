@@ -9,7 +9,7 @@
   "grammar_set_id": "GRAMSET.mul.grammatical_number",
   "language_capabilities_manifest": "language-capabilities.json",
   "comparison_blurb_manifest": "comparison-records/manifest.json",
-  "curriculum_concept_ids": ["CURR.NOUNS", "CURR.PLURAL_FORMATION", "CURR.AGREEMENT"],
+  "curriculum_concept_ids": ["CURR.GRAMMATICAL_NUMBER", "CURR.PLURAL_FORMATION", "CURR.AGREEMENT"],
   "transparency_slide": {
     "description": "The lesson is one declarative multilingual shell layered with language-specific number-system data. It covers grammatical number in noun phrases and agreement, including unmarked/general number, singular, dual, plural, and other language-specific values where relevant. Number may be expressed on nouns, determiners, adjectives, pronouns, classifiers, particles, verbs, or by context. The app owns the universal lesson runner.",
     "fixed_comparison_language_tags": [],
@@ -39,63 +39,15 @@
     "notes": "Every language in programs.learnFromLanguages may be a source/comparison language when its native comparison record exists. Under the current product registry, only Tier 1 and Tier 2 languages may be grammar-learning targets for this lesson. The data model supports arbitrary language arrays; twelve is only the default visual cap."
   },
   "block_plan": [
-    {
-      "block_id": "facts",
-      "block_type": "lesson_facts",
-      "repeat": "once",
-      "notes": "Introduce grammatical number without assuming a universal binary. Use one/more-than-one as an intuitive starting point, then explicitly allow dual, optional marking, and other systems."
-    },
-    {
-      "block_id": "language-comparisons",
-      "block_type": "language_comparison_loop",
-      "group_id": "comparison-intro",
-      "repeat": "per_relevant_language",
-      "notes": "Show each language's representative number categories or marking strategy and its own_grammar_blurb in that language. The learner's native language comes first, followed by the learning language."
-    },
-    {
-      "block_id": "grammar-primer",
-      "block_type": "grammar_primer",
-      "group_id": "rules",
-      "repeat": "once",
-      "notes": "Explain three separate questions: which number meanings the language distinguishes, whether nouns must mark them, and where agreement or number marking appears."
-    },
-    {
-      "block_id": "language-rules",
-      "block_type": "language_rules",
-      "group_id": "rules",
-      "repeat": "per_full_support_learning_language",
-      "notes": "Render structured target-language rules from GRAMSET.mul.grammatical_number. Tier membership alone is not a rule source."
-    },
-    {
-      "block_id": "curated-examples",
-      "block_type": "curated_examples",
-      "repeat": "per_selected_language",
-      "notes": "Prefer reviewed corpus examples when available. Target-specific rule tips may supply compact didactic examples without pretending they are book evidence."
-    },
-    {
-      "block_id": "practice-intro",
-      "block_type": "practice_intro",
-      "repeat": "once",
-      "notes": "Transition into target-language number choices only when a unique, defensible answer exists."
-    },
-    {
-      "block_id": "practice",
-      "block_type": "practice",
-      "repeat": "per_full_support_learning_language",
-      "notes": "Practice number formation and agreement from structured rules. Do not generate a fake singular/plural choice for languages where the noun can legitimately stay unmarked."
-    },
-    {
-      "block_id": "quest",
-      "block_type": "quest_offer",
-      "repeat": "once",
-      "notes": "Offer a reading quest to notice number marking and agreement in real text when the target language has a meaningful visible distinction."
-    },
-    {
-      "block_id": "completion",
-      "block_type": "completion",
-      "repeat": "once",
-      "notes": "Reinforce that number is a language-specific grammatical system, not a word-for-word translation rule."
-    }
+    {"block_id":"facts","block_type":"lesson_facts","repeat":"once","notes":"Introduce grammatical number without assuming a universal binary. Use one/more-than-one as an intuitive starting point, then explicitly allow dual, optional marking, and other systems."},
+    {"block_id":"language-comparisons","block_type":"language_comparison_loop","group_id":"comparison-intro","repeat":"per_relevant_language","notes":"Show each language's representative number categories or marking strategy and its own_grammar_blurb in that language. The learner's native language comes first, followed by the learning language."},
+    {"block_id":"grammar-primer","block_type":"grammar_primer","group_id":"rules","repeat":"once","notes":"Explain three separate questions: which number meanings the language distinguishes, whether nouns must mark them, and where agreement or number marking appears."},
+    {"block_id":"language-rules","block_type":"language_rules","group_id":"rules","repeat":"per_full_support_learning_language","notes":"Render structured target-language rules from GRAMSET.mul.grammatical_number. Tier membership alone is not a rule source."},
+    {"block_id":"curated-examples","block_type":"curated_examples","repeat":"per_selected_language","notes":"Prefer reviewed corpus examples when available. Target-specific rule tips may supply compact didactic examples without pretending they are book evidence."},
+    {"block_id":"practice-intro","block_type":"practice_intro","repeat":"once","notes":"Transition into target-language number choices only when a unique, defensible answer exists."},
+    {"block_id":"practice","block_type":"practice","repeat":"per_full_support_learning_language","notes":"Practice number formation and agreement from structured rules. Do not generate a fake singular/plural choice for languages where the noun can legitimately stay unmarked."},
+    {"block_id":"quest","block_type":"quest_offer","repeat":"once","notes":"Offer a reading quest to notice number marking and agreement in real text when the target language has a meaningful visible distinction."},
+    {"block_id":"completion","block_type":"completion","repeat":"once","notes":"Reinforce that number is a language-specific grammatical system, not a word-for-word translation rule."}
   ],
   "presentation_modes": ["scroll", "paged", "presentation"],
   "learning_path_policy": {
