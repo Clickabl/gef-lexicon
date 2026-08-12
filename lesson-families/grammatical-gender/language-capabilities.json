@@ -1,70 +1,78 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
   "capability_model": "lesson_specific",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 4,
   "grammar_set_id": "GRAMSET.mul.grammatical_gender",
   "fixed_comparison_language_tags": [],
   "reference_anchor_language_tags": ["el"],
+  "source_language_policy": {
+    "coverage_program": "learnFromLanguages",
+    "expected_language_count": 104,
+    "required_assets": ["source-copy entry", "comparison record forms[]"],
+    "notes": "All 104 canonical learn-from languages can supply the learner-facing core explanation shell. Source-language support is independent from whether that language is offered as a grammar-learning target."
+  },
+  "target_language_policy": {
+    "allowed_registry_tiers": ["tier1_full", "tier2_selective"],
+    "expected_language_count": 21,
+    "required_assets": ["comparison record forms[]", "grammar set language record", "grammar set lesson_ready=true", "at least one structured form", "at least one structured rule"],
+    "notes": "The current core lesson implements every Tier 1 and Tier 2 language as a structured grammar target. Tier 3 remains reading/games plus source/comparison support under the product registry."
+  },
   "role_requirements": {
     "best_language": {
-      "description": "A language Gef can use as one of the learner's strongest explanation/comparison languages for this lesson.",
-      "registry_requirement": "The language tag must exist in registry/language-support.json programs.learnFromLanguages.",
-      "required_assets": ["rendering in that support language", "comparison record forms[]", "comparison record own_grammar_blurb"],
-      "notes": "This initial implementation authors only the English rendering. Other best-language paths remain unavailable until their renderings are authored."
+      "description": "A language Gef can use as one of the learner's strongest explanation languages for this lesson.",
+      "registry_requirement": "The language tag must exist in programs.learnFromLanguages.",
+      "required_assets": ["source-copy entry", "comparison record forms[]"],
+      "notes": "The localized source shell is intentionally independent from target grammar. Do not build 104 × 21 pair-specific lesson files."
     },
     "learning_language_comparison": {
       "description": "A language that can participate in the comparison portion without rule-driven practice.",
-      "registry_requirement": "The language identity must be recognized by the product registry.",
       "required_assets": ["comparison record forms[]"],
-      "notes": "Comparison support describes the grammatical system without claiming a complete grammar lesson for that language."
+      "notes": "Comparison support describes the language's system without inventing a target grammar path."
     },
     "learning_language_full": {
-      "description": "A language this lesson can actively teach with structured rules and defensible practice.",
-      "registry_requirement": "Grammar lessons are offered only where the product registry permits them.",
-      "required_assets": ["comparison record forms[]", "grammar set language record", "grammar set lesson_ready=true", "structured forms and rules", "explicit support_levels.full membership"],
-      "notes": "Full support never follows automatically from the global language tier."
+      "description": "A Tier 1/Tier 2 language the lesson can actively teach using structured rules.",
+      "required_assets": ["comparison record forms[]", "grammar set language record", "lesson_ready=true", "structured rules", "explicit full membership"],
+      "notes": "Spanish has safe el/la cloze data. Other languages may have one structured system form so the generic compiler teaches rules without synthesizing bogus two-choice cloze exercises."
     }
   },
   "trust_visibility": {
     "canonical_product_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
-    "effective_language_trust": "Minimum trust state among the required assets for that language in the requested role.",
-    "effective_lesson_trust": "Minimum trust state among all artifacts actually rendered in the current lesson session.",
+    "effective_language_trust": "Minimum trust state among the assets actually used for that language and role.",
+    "effective_lesson_trust": "Minimum trust state among all artifacts rendered in the current lesson session.",
     "below_threshold": "visible_disabled_with_badge",
     "missing_required_assets": "visible_unavailable_when_the_product_registry_knows_the_language"
   },
   "support_levels": {
     "full": {
-      "description": "The lesson has structured grammatical-gender rules for this language and may render rule blocks and practice.",
-      "language_tags": ["en", "es"]
+      "description": "Structured grammatical-gender or no-gender-system rules exist and the language may be selected as a grammar-learning target.",
+      "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
     },
     "comparison_only": {
-      "description": "The lesson may render the language comparison block when a real comparison record exists, but must not invent missing agreement rules or practice.",
-      "default_for_registered_languages_not_in_full": false,
-      "language_tags": ["el", "de", "fr", "ru", "tr", "sw"]
+      "description": "The language has explicit source/comparison support but is Tier 3 under the current product policy, so this family does not promise a bespoke grammar lesson path for it.",
+      "language_tags": ["sk", "ne", "nl", "he", "vi", "fil", "bn", "ur", "pa", "yue", "th", "ro", "cs", "bg", "sr", "hr", "bs", "sl", "sv", "nb", "da", "sw", "ha", "mr", "gu", "ta", "te", "ml", "kn", "haw", "pcm", "jv", "af", "ak", "am", "as", "az", "ba", "be", "cv", "cy", "dsb", "et", "eu", "fi", "ga", "gd", "hsb", "hu", "hy", "ig", "is", "ka", "kk", "km", "kok", "ky", "lo", "lt", "lv", "mn", "ms", "my", "nn", "or", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "ti", "tk", "uz", "yo", "zu", "bho", "om", "ht", "ku", "ckb"]
     },
     "unavailable": {
-      "description": "No defensible lesson comparison data exists yet. Omit lesson data rather than inferring a gender system from language family or missing data.",
+      "description": "No current canonical learn-from language is missing the core source/comparison layer.",
       "language_tags": []
     }
   },
-  "expected_full_support_language_tags": ["en", "es", "fr", "pt", "it", "de", "el", "ru", "uk", "pl", "ar", "hi"],
-  "pending_full_support_research": [
-    {
-      "language_tags": ["fr", "pt", "it", "de", "el", "ru", "uk", "pl", "ar", "hi"],
-      "reason": "These languages need independent structured agreement rules, exceptions, and practice constraints before lesson-level full support. Comparison facts do not grant full support."
-    }
-  ],
+  "expected_full_support_language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"],
+  "pending_full_support_research": [],
   "promotion_rules": [
-    "Global language tier never grants lesson-level full support automatically.",
-    "Do not infer a gender inventory from genealogical family or article count.",
-    "A full-support language must exist in the grammar set, be lesson_ready, contain structured rules, and be explicitly listed in support_levels.full.language_tags.",
-    "A comparison-only language becomes renderable only when this lesson has an explicit comparison record with forms[].",
+    "Global language tier never grants lesson-level full support by itself; the current full list is explicit because its structured grammar records now exist.",
+    "Tier 3 remains comparison_only under the current product registry even when its comparison record is detailed.",
+    "Do not infer a gender inventory from genealogical family, script, article count, or missing data.",
+    "A full-support language must be lesson_ready and contain at least one structured form and rule.",
     "Noun-class systems must be represented on their own terms rather than relabeled masculine/feminine/neuter.",
-    "Greek is a conditional display-only reference anchor because it provides a clear three-gender contrast; it never gains profile or practice status when injected."
+    "A language with no productive grammatical noun gender can still be a full target: the lesson teaches that absence and how the language expresses related meanings instead.",
+    "Generated source copy and candidate research remain below human-reviewed trust levels until normal review promotion."
   ],
+  "source_copy_catalog": "source-copy/manifest.json",
   "comparison_record_catalog": "comparison-records/manifest.json",
   "comparison_blurb_catalog": "comparison-records/manifest.json",
   "review_state": "candidate",
-  "trust_state": "machine_translated"
+  "trust_state": "machine_translated",
+  "version": 4
 }
