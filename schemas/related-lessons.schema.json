@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/related-lessons.schema.json",
+  "title": "Gef related lesson graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "edges", "review_state", "version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["edge_id", "from_ref", "to_ref", "relationship", "review_state"],
+        "properties": {
+          "edge_id": {"type": "string", "pattern": "^REL\\.[A-Za-z0-9._-]+$"},
+          "from_ref": {"type": "string", "minLength": 1},
+          "to_ref": {"type": "string", "minLength": 1},
+          "relationship": {"enum": ["prerequisite", "next", "reinforces", "contrast", "sibling", "expands", "remediation", "discovery"]},
+          "bidirectional": {"type": "boolean", "default": false},
+          "language": {"type": "string"},
+          "reason": {"type": "string"},
+          "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+        }
+      }
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  }
+}
