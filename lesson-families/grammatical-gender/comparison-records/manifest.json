@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "catalog_kind": "gender_system_comparison_records",
+  "files": [
+    {
+      "path": "tier1.json",
+      "tier": 1,
+      "language_tags": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "el",
+        "ru",
+        "tr",
+        "sw"
+      ]
+    }
+  ],
+  "selection_policy": "Only render languages with explicit records. Do not infer gender system from language family, script, article count, or missing data.",
+  "review_state": "candidate",
+  "version": 1
+}
