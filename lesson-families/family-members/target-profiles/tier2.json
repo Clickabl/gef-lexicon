@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "tier": 2,
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "entries": [
+    {
+      "language_tag":"zh",
+      "target_explainer_en":"Mandarin Chinese packs much more relationship information into ordinary kinship terms than English does. Siblings are normally named by both gender and relative age: 哥哥 is older brother, 弟弟 younger brother, 姐姐 older sister, 妹妹 younger sister. Grandparents and many aunts and uncles also distinguish the father's and mother's sides, and some paternal aunt/uncle terms distinguish whether the relative is older or younger than the parent. Learn these as coordinates on a family tree rather than as a flat list of English translations.",
+      "distinctions":[
+        {"code":"sibling_relative_age","behavior":"lexicalized"},
+        {"code":"maternal_paternal_side","behavior":"strongly_lexicalized"},
+        {"code":"parent_sibling_relative_age","behavior":"partly_lexicalized"},
+        {"code":"kin_terms_as_social_address","behavior":"common_for_some_terms","note_en":"叔叔 and 阿姨 can be respectful social address outside literal kinship."}
+      ],
+      "core_terms":[
+        {"concept":"mother","display":"妈妈","romanization":"māma"},{"concept":"father","display":"爸爸","romanization":"bàba"},
+        {"concept":"older_brother","display":"哥哥","romanization":"gēge"},{"concept":"younger_brother","display":"弟弟","romanization":"dìdi"},
+        {"concept":"older_sister","display":"姐姐","romanization":"jiějie"},{"concept":"younger_sister","display":"妹妹","romanization":"mèimei"},
+        {"concept":"paternal_grandfather","display":"爷爷","romanization":"yéye"},{"concept":"paternal_grandmother","display":"奶奶","romanization":"nǎinai"},
+        {"concept":"maternal_grandfather","display":"外公","romanization":"wàigōng","alternatives":["姥爷 lǎoye"]},{"concept":"maternal_grandmother","display":"外婆","romanization":"wàipó","alternatives":["姥姥 lǎolao"]},
+        {"concept":"fathers_younger_brother","display":"叔叔","romanization":"shūshu"},{"concept":"fathers_older_brother","display":"伯伯","romanization":"bóbo"},
+        {"concept":"fathers_sister","display":"姑姑","romanization":"gūgu"},{"concept":"mothers_brother","display":"舅舅","romanization":"jiùjiu"},{"concept":"mothers_sister","display":"阿姨","romanization":"āyí"}
+      ],
+      "cultural_note_en":"Mandarin kinship terminology varies regionally, especially for grandparents and extended family, and the same kin terms can be used as respectful social address. The profile teaches common Standard Mandarin forms and labels variants instead of treating one regional family tree as universal Chinese usage.",
+      "examples":[
+        {"target":"我有一个哥哥和一个妹妹。","romanization":"Wǒ yǒu yí ge gēge hé yí ge mèimei.","translation_en":"I have an older brother and a younger sister."},
+        {"target":"这是我外婆。","romanization":"Zhè shì wǒ wàipó.","translation_en":"This is my maternal grandmother."},
+        {"target":"我妈妈的哥哥是我舅舅。","romanization":"Wǒ māma de gēge shì wǒ jiùjiu.","translation_en":"My mother's older brother is my maternal uncle."}
+      ],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B","https://www.sciencedirect.com/science/article/pii/S0024384124001724"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"ja",
+      "target_explainer_en":"Japanese distinguishes older and younger siblings in the basic vocabulary: 兄 and 弟 are older and younger brother; 姉 and 妹 are older and younger sister. It also often separates the plain forms used when talking about your own family from respectful/address forms such as お兄さん and お母さん. Uncle and aunt have an additional age distinction in writing: 伯父/伯母 for a parent's older sibling and 叔父/叔母 for a parent's younger sibling, although the pronunciations are the same. Relationship plus social viewpoint both matter.",
+      "distinctions":[
+        {"code":"sibling_relative_age","behavior":"lexicalized"},
+        {"code":"parent_sibling_relative_age","behavior":"lexicalized_in_kanji"},
+        {"code":"address_reference_difference","behavior":"strong"},
+        {"code":"honorific_or_register","behavior":"strong"}
+      ],
+      "core_terms":[
+        {"concept":"mother_own_reference","display":"母","romanization":"haha"},{"concept":"mother_address_or_others","display":"お母さん","romanization":"okāsan"},
+        {"concept":"father_own_reference","display":"父","romanization":"chichi"},{"concept":"father_address_or_others","display":"お父さん","romanization":"otōsan"},
+        {"concept":"older_brother","display":"兄","romanization":"ani"},{"concept":"younger_brother","display":"弟","romanization":"otōto"},
+        {"concept":"older_sister","display":"姉","romanization":"ane"},{"concept":"younger_sister","display":"妹","romanization":"imōto"},
+        {"concept":"grandfather_own_reference","display":"祖父","romanization":"sofu"},{"concept":"grandmother_own_reference","display":"祖母","romanization":"sobo"},
+        {"concept":"parents_older_brother","display":"伯父","romanization":"oji"},{"concept":"parents_younger_brother","display":"叔父","romanization":"oji"},
+        {"concept":"parents_older_sister","display":"伯母","romanization":"oba"},{"concept":"parents_younger_sister","display":"叔母","romanization":"oba"},
+        {"concept":"cousin","display":"いとこ","romanization":"itoko"}
+      ],
+      "cultural_note_en":"Japanese family vocabulary is tightly connected to politeness and viewpoint. The form used to refer to your own parent to an outsider can differ from the form used to address that parent or talk respectfully about someone else's. Beginner lessons should show that contrast without implying every household uses identical address habits.",
+      "examples":[
+        {"target":"兄が一人います。","romanization":"Ani ga hitori imasu.","translation_en":"I have one older brother."},
+        {"target":"母は東京に住んでいます。","romanization":"Haha wa Tōkyō ni sunde imasu.","translation_en":"My mother lives in Tokyo.","focus":"plain own-family reference"},
+        {"target":"お母さん、ありがとう。","romanization":"Okāsan, arigatō.","translation_en":"Mom, thank you.","focus":"address form"}
+      ],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"de",
+      "target_explainer_en":"German family vocabulary is relatively broad in the same places English often is. Bruder and Schwester do not encode older or younger, and Onkel and Tante do not inherently tell you the maternal or paternal side. Add älter/jünger or mütterlicherseits/väterlicherseits when needed. Gender is lexical in many basic pairs, and German has productive in-law compounds beginning with Schwieger- plus separate Schwager/Schwägerin.",
+      "distinctions":[
+        {"code":"gender_in_core_term","behavior":"common"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"added_separately"},{"code":"affinal_specificity","behavior":"productive_compounds"}
+      ],
+      "core_terms":[
+        {"concept":"mother","display":"Mutter","casual":"Mama"},{"concept":"father","display":"Vater","casual":"Papa"},
+        {"concept":"brother","display":"Bruder"},{"concept":"sister","display":"Schwester"},{"concept":"son","display":"Sohn"},{"concept":"daughter","display":"Tochter"},
+        {"concept":"grandfather","display":"Großvater","casual":"Opa"},{"concept":"grandmother","display":"Großmutter","casual":"Oma"},
+        {"concept":"uncle","display":"Onkel"},{"concept":"aunt","display":"Tante"},{"concept":"male_cousin","display":"Cousin"},{"concept":"female_cousin","display":"Cousine"},
+        {"concept":"nephew","display":"Neffe"},{"concept":"niece","display":"Nichte"},{"concept":"parents_in_law","display":"Schwiegervater / Schwiegermutter"}
+      ],
+      "cultural_note_en":"Mama, Papa, Oma, and Opa are widespread everyday forms, but address habits vary. The lesson treats grammatical and lexical distinctions separately from assumptions about how close or formal a family is.",
+      "examples":[{"target":"Das ist meine Schwester.","translation_en":"This is my sister."},{"target":"Mein älterer Bruder wohnt in Berlin.","translation_en":"My older brother lives in Berlin."},{"target":"Meine Tante mütterlicherseits kommt morgen.","translation_en":"My maternal aunt is coming tomorrow."}],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"ko",
+      "target_explainer_en":"Korean makes sibling relationships especially specific. The ordinary word for an older brother or sister depends not only on the relative's gender but also on the speaker's gender: a male speaker uses 형 for an older brother and 누나 for an older sister, while a female speaker uses 오빠 and 언니. Younger siblings can be grouped as 동생 or specified as 남동생 and 여동생. Extended-family vocabulary also distinguishes sides and relationship paths more than English does.",
+      "distinctions":[
+        {"code":"sibling_relative_age","behavior":"strongly_lexicalized"},{"code":"speaker_gender","behavior":"lexicalized_for_older_siblings"},{"code":"maternal_paternal_side","behavior":"common_in_extended_family"},{"code":"honorific_or_register","behavior":"important"},{"code":"kin_terms_as_social_address","behavior":"common_for_some_terms"}
+      ],
+      "core_terms":[
+        {"concept":"mother","display":"어머니","romanization":"eomeoni","casual":"엄마 eomma"},{"concept":"father","display":"아버지","romanization":"abeoji","casual":"아빠 appa"},
+        {"concept":"older_brother_male_speaker","display":"형","romanization":"hyeong"},{"concept":"older_brother_female_speaker","display":"오빠","romanization":"oppa"},
+        {"concept":"older_sister_male_speaker","display":"누나","romanization":"nuna"},{"concept":"older_sister_female_speaker","display":"언니","romanization":"eonni"},
+        {"concept":"younger_sibling","display":"동생","romanization":"dongsaeng"},{"concept":"younger_brother","display":"남동생","romanization":"namdongsaeng"},{"concept":"younger_sister","display":"여동생","romanization":"yeodongsaeng"},
+        {"concept":"grandfather","display":"할아버지","romanization":"harabeoji"},{"concept":"grandmother","display":"할머니","romanization":"halmeoni"},
+        {"concept":"maternal_uncle","display":"외삼촌","romanization":"oesamchon"},{"concept":"fathers_sister","display":"고모","romanization":"gomo"},{"concept":"mothers_sister","display":"이모","romanization":"imo"}
+      ],
+      "cultural_note_en":"Korean kinship terms often function as social address terms too, and honorific choices depend on context. Pop-culture familiarity with words such as 오빠 should not be turned into a simplistic rule: the speaker-relative relationship and actual social context still control usage.",
+      "examples":[{"target":"저는 언니가 한 명 있어요.","romanization":"Jeoneun eonniga han myeong isseoyo.","translation_en":"I have one older sister.","focus":"female speaker form"},{"target":"남동생이 있어요.","romanization":"Namdongsaengi isseoyo.","translation_en":"I have a younger brother."}],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"ar",
+      "target_explainer_en":"Arabic distinguishes the father's and mother's sides in several basic extended-family words. عم and عمة are paternal uncle and aunt; خال and خالة are maternal uncle and aunt. Brother and sister are أخ and أخت, with older/younger normally added when needed rather than built into the noun. Cousin expressions are commonly built from the relevant aunt/uncle relationship, so the exact family path matters. Everyday pronunciation and preferred family address vary substantially across Arabic dialects.",
+      "distinctions":[
+        {"code":"gender_in_core_term","behavior":"common"},{"code":"maternal_paternal_side","behavior":"lexicalized_for_aunts_uncles"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"honorific_or_register","behavior":"dialect_and_context_sensitive"}
+      ],
+      "core_terms":[
+        {"concept":"mother","display":"أم","romanization":"umm"},{"concept":"father","display":"أب","romanization":"ab"},{"concept":"brother","display":"أخ","romanization":"akh"},{"concept":"sister","display":"أخت","romanization":"ukht"},
+        {"concept":"son","display":"ابن","romanization":"ibn"},{"concept":"daughter","display":"ابنة","romanization":"ibna"},{"concept":"grandfather","display":"جد","romanization":"jadd"},{"concept":"grandmother","display":"جدة","romanization":"jadda"},
+        {"concept":"paternal_uncle","display":"عم","romanization":"ʿamm"},{"concept":"paternal_aunt","display":"عمة","romanization":"ʿamma"},{"concept":"maternal_uncle","display":"خال","romanization":"khāl"},{"concept":"maternal_aunt","display":"خالة","romanization":"khāla"},
+        {"concept":"husband","display":"زوج","romanization":"zawj"},{"concept":"wife","display":"زوجة","romanization":"zawja"}
+      ],
+      "cultural_note_en":"Arabic is a large dialect continuum. The relationship distinctions above are broadly recognizable, but everyday address, pronunciation, and some kin terms can differ by region. A learner profile should preserve the user's Arabic variety rather than treating Modern Standard Arabic as the only real family language.",
+      "examples":[{"target":"هذا أخي.","romanization":"Hādhā akhī.","translation_en":"This is my brother."},{"target":"خالي يعيش هنا.","romanization":"Khālī yaʿīshu hunā.","translation_en":"My maternal uncle lives here."},{"target":"عمتي طبيبة.","romanization":"ʿAmmatī ṭabība.","translation_en":"My paternal aunt is a doctor."}],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B","https://arxiv.org/abs/2308.13056"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"hi",
+      "target_explainer_en":"Hindi has a richly differentiated extended-family vocabulary. It commonly distinguishes the father's and mother's sides and can distinguish relative age among a parent's brothers: मामा is a maternal uncle, चाचा a father's younger brother, ताऊ a father's older brother; बुआ is a father's sister and मौसी a mother's sister. Sibling vocabulary itself is broader, with भाई and बहन plus age words when needed. Regional and household usage can vary, so learn the relationship path along with the term.",
+      "distinctions":[
+        {"code":"maternal_paternal_side","behavior":"strongly_lexicalized"},{"code":"parent_sibling_relative_age","behavior":"lexicalized_in_common_terms"},{"code":"sibling_relative_age","behavior":"usually_added_separately"},{"code":"honorific_or_register","behavior":"important"}
+      ],
+      "core_terms":[
+        {"concept":"mother","display":"माँ","romanization":"mā̃"},{"concept":"father","display":"पिता","romanization":"pitā","casual":"पापा pāpā"},{"concept":"brother","display":"भाई","romanization":"bhāī"},{"concept":"sister","display":"बहन","romanization":"bahan"},
+        {"concept":"son","display":"बेटा","romanization":"beṭā"},{"concept":"daughter","display":"बेटी","romanization":"beṭī"},
+        {"concept":"paternal_grandfather","display":"दादा","romanization":"dādā"},{"concept":"paternal_grandmother","display":"दादी","romanization":"dādī"},{"concept":"maternal_grandfather","display":"नाना","romanization":"nānā"},{"concept":"maternal_grandmother","display":"नानी","romanization":"nānī"},
+        {"concept":"maternal_uncle","display":"मामा","romanization":"māmā"},{"concept":"fathers_younger_brother","display":"चाचा","romanization":"cācā"},{"concept":"fathers_older_brother","display":"ताऊ","romanization":"tāū"},{"concept":"fathers_sister","display":"बुआ","romanization":"buā"},{"concept":"mothers_sister","display":"मौसी","romanization":"mausī"}
+      ],
+      "cultural_note_en":"Hindi kinship vocabulary overlaps with many regional languages and varies by region, caste/community, and household. The lesson should teach common modern Hindi forms while keeping variants visible rather than presenting one North Indian family vocabulary as universal.",
+      "examples":[{"target":"यह मेरी बहन है।","romanization":"Yah merī bahan hai.","translation_en":"This is my sister."},{"target":"मेरे मामा दिल्ली में रहते हैं।","romanization":"Mere māmā Dillī mẽ rahte haĩ.","translation_en":"My maternal uncle lives in Delhi."},{"target":"मेरी नानी बहुत अच्छी हैं।","romanization":"Merī nānī bahut acchī haĩ.","translation_en":"My maternal grandmother is very kind."}],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B","https://arxiv.org/abs/2204.05049"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"uk",
+      "target_explainer_en":"Ukrainian uses separate gendered words for many immediate family relationships, but relative sibling age and maternal or paternal side are usually added when needed rather than built into the basic noun. брат and сестра are brother and sister; старший/молодший can specify older or younger. Cousins are commonly expressed as двоюрідний брат and двоюрідна сестра, literally a more specific degree of brother/sister relationship rather than one gender-neutral word like English cousin.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"common"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"added_separately"}],
+      "core_terms":[
+        {"concept":"mother","display":"мати","casual":"мама"},{"concept":"father","display":"батько","casual":"тато"},{"concept":"brother","display":"брат"},{"concept":"sister","display":"сестра"},{"concept":"son","display":"син"},{"concept":"daughter","display":"донька"},
+        {"concept":"grandfather","display":"дідусь"},{"concept":"grandmother","display":"бабуся"},{"concept":"uncle","display":"дядько"},{"concept":"aunt","display":"тітка"},{"concept":"male_cousin","display":"двоюрідний брат"},{"concept":"female_cousin","display":"двоюрідна сестра"}
+      ],
+      "cultural_note_en":"Everyday family address can use affectionate diminutives and variants beyond the neutral labels shown here. Teach the neutral relationship first; affectionate forms are usage layers, not separate biological relationships.",
+      "examples":[{"target":"Це моя сестра.","translation_en":"This is my sister."},{"target":"Мій старший брат живе тут.","translation_en":"My older brother lives here."}],
+      "source_refs":["https://academic.oup.com/book/26758/chapter-abstract/195647377"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"ru",
+      "target_explainer_en":"Russian uses separate gendered words for many close family relationships, while older/younger and maternal/paternal side are usually added separately. брат and сестра do not themselves encode age; use старший or младший. English cousin splits naturally into двоюродный брат and двоюродная сестра, so gender becomes explicit in the ordinary phrase.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"common"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"added_separately"}],
+      "core_terms":[
+        {"concept":"mother","display":"мать","casual":"мама"},{"concept":"father","display":"отец","casual":"папа"},{"concept":"brother","display":"брат"},{"concept":"sister","display":"сестра"},{"concept":"son","display":"сын"},{"concept":"daughter","display":"дочь"},
+        {"concept":"grandfather","display":"дедушка"},{"concept":"grandmother","display":"бабушка"},{"concept":"uncle","display":"дядя"},{"concept":"aunt","display":"тётя"},{"concept":"male_cousin","display":"двоюродный брат"},{"concept":"female_cousin","display":"двоюродная сестра"}
+      ],
+      "cultural_note_en":"Russian has a large system of affectionate and diminutive family forms. They can convey intimacy and register, so the beginner lesson should not treat every diminutive as interchangeable with the neutral dictionary form.",
+      "examples":[{"target":"Это моя сестра.","translation_en":"This is my sister."},{"target":"Мой младший брат учится в школе.","translation_en":"My younger brother is in school."}],
+      "source_refs":["https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"tr",
+      "target_explainer_en":"Turkish lexicalizes several distinctions that English leaves broad. ağabey/abi and abla identify an older brother and older sister; kardeş is a sibling and can be made more specific with erkek or kız when gender matters. Extended-family terms sharply distinguish parental side: amca is a father's brother, dayı a mother's brother, hala a father's sister, teyze a mother's sister. The beginner trick is to locate the relative on the family tree before choosing the word.",
+      "distinctions":[{"code":"sibling_relative_age","behavior":"lexicalized_for_older_siblings"},{"code":"maternal_paternal_side","behavior":"strongly_lexicalized_for_aunts_uncles"},{"code":"gender_in_core_term","behavior":"mixed"},{"code":"kin_terms_as_social_address","behavior":"common_for_some_terms"}],
+      "core_terms":[
+        {"concept":"mother","display":"anne"},{"concept":"father","display":"baba"},{"concept":"older_brother","display":"ağabey","casual":"abi"},{"concept":"older_sister","display":"abla"},{"concept":"sibling","display":"kardeş"},{"concept":"brother","display":"erkek kardeş"},{"concept":"sister","display":"kız kardeş"},
+        {"concept":"grandfather","display":"dede"},{"concept":"grandmother","display":"nine","alternatives":["büyükanne"]},
+        {"concept":"paternal_uncle","display":"amca"},{"concept":"maternal_uncle","display":"dayı"},{"concept":"paternal_aunt","display":"hala"},{"concept":"maternal_aunt","display":"teyze"},{"concept":"cousin","display":"kuzen"}
+      ],
+      "cultural_note_en":"Words such as abi, abla, amca, and teyze can also be used socially as respectful or familiar address beyond literal kinship. That usage depends on age, relationship, and setting, so teach it as a social extension of the kin term rather than as a literal family claim.",
+      "examples":[{"target":"Bir ablam var.","translation_en":"I have an older sister."},{"target":"Dayım Ankara'da yaşıyor.","translation_en":"My maternal uncle lives in Ankara."},{"target":"Halası öğretmen.","translation_en":"His/her paternal aunt is a teacher."}],
+      "source_refs":["https://arxiv.org/abs/2204.05049"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"pl",
+      "target_explainer_en":"Polish marks gender in many kinship terms, including brat/siostra and kuzyn/kuzynka. Older or younger is normally added with starszy/młodszy, and maternal or paternal side can be explained when it matters rather than being required in the core aunt/uncle vocabulary. Modern everyday usage tends to favor wujek and ciocia broadly, while more specific or traditional terms can appear in particular families and regions.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"common"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"usually_added_separately"}],
+      "core_terms":[
+        {"concept":"mother","display":"matka","casual":"mama"},{"concept":"father","display":"ojciec","casual":"tata"},{"concept":"brother","display":"brat"},{"concept":"sister","display":"siostra"},{"concept":"son","display":"syn"},{"concept":"daughter","display":"córka"},
+        {"concept":"grandfather","display":"dziadek"},{"concept":"grandmother","display":"babcia"},{"concept":"uncle","display":"wujek"},{"concept":"aunt","display":"ciocia"},{"concept":"male_cousin","display":"kuzyn"},{"concept":"female_cousin","display":"kuzynka"}
+      ],
+      "cultural_note_en":"Polish has both neutral relationship labels and affectionate family forms. Traditional extended-kin terminology can be more specific than the modern beginner core, so a reviewed regional variant can add detail later without changing the main lesson graph.",
+      "examples":[{"target":"To jest moja siostra.","translation_en":"This is my sister."},{"target":"Mój starszy brat mieszka tutaj.","translation_en":"My older brother lives here."}],
+      "source_refs":["https://academic.oup.com/book/26758/chapter-abstract/195647377"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"fa",
+      "target_explainer_en":"Persian distinguishes maternal and paternal aunts and uncles with separate everyday words: عمو and عمه are on the father's side; دایی and خاله are on the mother's side. برادر and خواهر are brother and sister, with older/younger normally added separately when useful. Cousin relationships can be described through the specific aunt or uncle, so a broad English cousin label can hide information Persian speakers often make explicit.",
+      "distinctions":[{"code":"maternal_paternal_side","behavior":"strongly_lexicalized_for_aunts_uncles"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"gender_in_core_term","behavior":"common"}],
+      "core_terms":[
+        {"concept":"mother","display":"مادر","romanization":"mâdar"},{"concept":"father","display":"پدر","romanization":"pedar"},{"concept":"brother","display":"برادر","romanization":"barâdar"},{"concept":"sister","display":"خواهر","romanization":"khâhar"},
+        {"concept":"son","display":"پسر","romanization":"pesar"},{"concept":"daughter","display":"دختر","romanization":"dokhtar"},{"concept":"grandfather","display":"پدربزرگ","romanization":"pedarbozorg"},{"concept":"grandmother","display":"مادربزرگ","romanization":"mâdarbozorg"},
+        {"concept":"paternal_uncle","display":"عمو","romanization":"amu"},{"concept":"paternal_aunt","display":"عمه","romanization":"amme"},{"concept":"maternal_uncle","display":"دایی","romanization":"dâyi"},{"concept":"maternal_aunt","display":"خاله","romanization":"khâle"}
+      ],
+      "cultural_note_en":"Persian family address has affectionate and honorific variants, and usage differs across Persian-speaking regions. Keep Iranian Persian, Dari, and Tajik identities distinct rather than treating them as one interchangeable vocabulary set.",
+      "examples":[{"target":"این خواهر من است.","romanization":"In khâhar-e man ast.","translation_en":"This is my sister."},{"target":"دایی من در تهران زندگی می‌کند.","romanization":"Dâyi-ye man dar Tehrân zendegi mikonad.","translation_en":"My maternal uncle lives in Tehran."}],
+      "source_refs":["https://arxiv.org/abs/2204.05049"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"id",
+      "target_explainer_en":"Indonesian commonly organizes siblings by relative age rather than requiring gender in the basic term: kakak is an older sibling and adik a younger sibling. Gender can be added when useful, while terms such as saudara can be broader or more formal. Paman/om and bibi/tante are common aunt/uncle vocabulary, but Indonesia's many regional languages and communities contribute additional kinship systems and address forms.",
+      "distinctions":[{"code":"sibling_relative_age","behavior":"lexicalized"},{"code":"gender_in_core_term","behavior":"often_optional_for_siblings"},{"code":"kin_terms_as_social_address","behavior":"common"},{"code":"honorific_or_register","behavior":"regional_and_contextual"}],
+      "core_terms":[
+        {"concept":"mother","display":"ibu"},{"concept":"father","display":"ayah","alternatives":["bapak"]},{"concept":"older_sibling","display":"kakak"},{"concept":"younger_sibling","display":"adik"},{"concept":"son","display":"anak laki-laki"},{"concept":"daughter","display":"anak perempuan"},
+        {"concept":"grandfather","display":"kakek"},{"concept":"grandmother","display":"nenek"},{"concept":"uncle","display":"paman","alternatives":["om"]},{"concept":"aunt","display":"bibi","alternatives":["tante"]},{"concept":"cousin","display":"sepupu"},{"concept":"husband","display":"suami"},{"concept":"wife","display":"istri"}
+      ],
+      "cultural_note_en":"Bahasa Indonesia coexists with hundreds of local languages, many with their own kinship systems. Everyday family address may therefore reflect Javanese, Sundanese, Minangkabau, Batak, Chinese Indonesian, or other community patterns. The Indonesian profile should stay a national-language core, not overwrite local kinship vocabulary.",
+      "examples":[{"target":"Saya punya satu kakak dan satu adik.","translation_en":"I have one older sibling and one younger sibling."},{"target":"Ini ibu saya.","translation_en":"This is my mother."}],
+      "source_refs":["https://arxiv.org/abs/2308.13056","https://arxiv.org/abs/2204.05049"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"ca",
+      "target_explainer_en":"Catalan marks gender in many common family words: germà/germana, fill/filla, oncle/tia, cosí/cosina, nebot/neboda. Relative age and maternal or paternal side are usually added separately when relevant. In-law relationships also have common dedicated terms such as sogre/sogra and cunyat/cunyada.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"systematic_for_many_terms"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"added_separately"},{"code":"affinal_specificity","behavior":"lexicalized"}],
+      "core_terms":[
+        {"concept":"mother","display":"mare"},{"concept":"father","display":"pare"},{"concept":"brother","display":"germà"},{"concept":"sister","display":"germana"},{"concept":"son","display":"fill"},{"concept":"daughter","display":"filla"},
+        {"concept":"grandfather","display":"avi"},{"concept":"grandmother","display":"àvia"},{"concept":"uncle","display":"oncle"},{"concept":"aunt","display":"tia"},{"concept":"male_cousin","display":"cosí"},{"concept":"female_cousin","display":"cosina"},{"concept":"nephew","display":"nebot"},{"concept":"niece","display":"neboda"}
+      ],
+      "cultural_note_en":"Catalan family address varies across Catalan-speaking regions and households. The common core works across varieties, while affectionate or regional alternatives should be layered by locale when reviewed.",
+      "examples":[{"target":"Aquesta és la meva germana.","translation_en":"This is my sister."},{"target":"El meu germà gran viu aquí.","translation_en":"My older brother lives here."}],
+      "source_refs":["https://dlc.iec.cat/"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"gl",
+      "target_explainer_en":"Galician marks gender in many basic family terms, including irmán/irmá, fillo/filla, tío/tía, curmán/curmá and sobriño/sobriña. Relative age and maternal or paternal side are normally added separately when they matter. The system is close to neighboring Romance languages, but the actual Galician forms should be learned directly rather than borrowed from Spanish or Portuguese by assumption.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"systematic_for_many_terms"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"added_separately"}],
+      "core_terms":[
+        {"concept":"mother","display":"nai"},{"concept":"father","display":"pai"},{"concept":"brother","display":"irmán"},{"concept":"sister","display":"irmá"},{"concept":"son","display":"fillo"},{"concept":"daughter","display":"filla"},
+        {"concept":"grandfather","display":"avó"},{"concept":"grandmother","display":"avoa"},{"concept":"uncle","display":"tío"},{"concept":"aunt","display":"tía"},{"concept":"male_cousin","display":"curmán"},{"concept":"female_cousin","display":"curmá"},{"concept":"nephew","display":"sobriño"},{"concept":"niece","display":"sobriña"}
+      ],
+      "cultural_note_en":"Galician and Spanish coexist closely in Galicia, so speakers may know parallel family vocabularies. Gef should preserve Galician forms as Galician rather than treating them as cosmetic Spanish variants.",
+      "examples":[{"target":"Esta é a miña irmá.","translation_en":"This is my sister."},{"target":"O meu irmán maior vive aquí.","translation_en":"My older brother lives here."}],
+      "source_refs":["https://academia.gal/dicionario"],
+      "review_state":"generated"
+    },
+    {
+      "language_tag":"mk",
+      "target_explainer_en":"Macedonian uses separate gendered words for many close family relationships and, in parts of the extended-family vocabulary, can distinguish the family path more specifically than English. брат and сестра are brother and sister, with постар/помлад added for older or younger. чичко commonly refers to a father's brother and вујко to a mother's brother, while тетка is a broad aunt term in common beginner usage. Regional and family variants deserve explicit review rather than being flattened.",
+      "distinctions":[{"code":"gender_in_core_term","behavior":"common"},{"code":"sibling_relative_age","behavior":"added_separately"},{"code":"maternal_paternal_side","behavior":"partly_lexicalized_in_extended_family"}],
+      "core_terms":[
+        {"concept":"mother","display":"мајка","casual":"мама"},{"concept":"father","display":"татко"},{"concept":"brother","display":"брат"},{"concept":"sister","display":"сестра"},{"concept":"son","display":"син"},{"concept":"daughter","display":"ќерка"},
+        {"concept":"grandfather","display":"дедо"},{"concept":"grandmother","display":"баба"},{"concept":"paternal_uncle","display":"чичко"},{"concept":"maternal_uncle","display":"вујко"},{"concept":"aunt","display":"тетка"},{"concept":"male_cousin","display":"братучед"},{"concept":"female_cousin","display":"братучетка"}
+      ],
+      "cultural_note_en":"Macedonian extended-family terminology has regional and household variation, especially around in-laws and aunts/uncles. The lesson should preserve reviewed variants instead of forcing every family into one glossary.",
+      "examples":[{"target":"Ова е мојата сестра.","translation_en":"This is my sister."},{"target":"Мојот постар брат живее тука.","translation_en":"My older brother lives here."}],
+      "source_refs":["https://academic.oup.com/book/26758/chapter-abstract/195647377"],
+      "review_state":"generated"
+    }
+  ]
+}
