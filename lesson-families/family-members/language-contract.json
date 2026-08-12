@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "source_registry": "Clickabl/gef-expo/registry/language-support.json",
+  "source_registry_commit": "5de88e42ccf61cc240b6d26a71fbe024784ab6ba",
+  "total_learn_from": 104,
+  "total_full_targets": 21,
+  "tier_counts": {"1": 6, "2": 15, "3": 83},
+  "tier1": ["en","es","fr","pt","it","el"],
+  "tier2": ["zh","ja","de","ko","ru","ar","hi","tr","fa","pl","uk","id","ca","nl","gl"],
+  "tier3": ["ab","ady","af","ak","am","as","ast","av","az","ba","be","bg","bm","br","bs","bxr","ce","ceb","co","cs","cv","cy","da","dar","el-Pontic","eo","et","eu","fi","fo","fur","ga","gag","gd","gu","gv","ha","haw","he","hr","hu","hy","ia","ig","io","is","ka","kk","krc","kum","ku","ky","la","lb","lez","lt","lv","mg","mt","my","ne","no","oc","pa","ro","sc","se","sl","so","sq","sr","sv","sw","ta","tg","tk","tt","udm","ur","uz","ve","vi","yi","yo","zu"],
+  "learn_from_languages": ["en","es","fr","pt","it","el","zh","ja","de","ko","ru","ar","hi","tr","fa","pl","uk","id","ca","nl","gl","ab","ady","af","ak","am","as","ast","av","az","ba","be","bg","bm","br","bs","bxr","ce","ceb","co","cs","cv","cy","da","dar","el-Pontic","eo","et","eu","fi","fo","fur","ga","gag","gd","gu","gv","ha","haw","he","hr","hu","hy","ia","ig","io","is","ka","kk","krc","kum","ku","ky","la","lb","lez","lt","lv","mg","mt","my","ne","no","oc","pa","ro","sc","se","sl","so","sq","sr","sv","sw","ta","tg","tk","tt","udm","ur","uz","ve","vi","yi","yo","zu"],
+  "full_target_languages": ["en","es","fr","pt","it","el","zh","ja","de","ko","ru","ar","hi","tr","fa","pl","uk","id","ca","nl","gl"],
+  "tier3_policy": "source_localization_and_game_seed_only",
+  "notes": "This local contract prevents Family Members validation from silently skipping when gef-expo is not checked out beside gef-lexicon. When a sibling registry is available, CI must additionally prove exact equality."
+}
