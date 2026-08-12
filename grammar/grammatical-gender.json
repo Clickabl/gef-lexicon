@@ -7,7 +7,7 @@
     "note": "English is the comparison anchor because ordinary English nouns do not belong to grammatical masculine/feminine/neuter classes, even though pronouns can encode gender."
   },
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
-  "scope_note": "How languages classify nouns and trigger agreement. Article examples are illustrative only. A language may have grammatical gender without articles, multiple article allomorphs within one gender, no grammatical noun gender, or a broader noun-class system.",
+  "scope_note": "How languages classify nouns and trigger agreement. Article forms are an A1 teaching window into the system, not its definition. A language may have grammatical gender without articles, multiple article allomorphs within one gender, no grammatical noun gender, or a broader noun-class system.",
   "languages": [
     {
       "language_tag": "en",
@@ -17,8 +17,8 @@
       "forms": [
         {
           "form_id": "GRAMFORM.en.gender.invariant",
-          "display": "no grammatical noun gender",
-          "form_kind": "other",
+          "display": "the",
+          "form_kind": "word",
           "rules": [
             {
               "rule_id": "RULE.en.gender.no_noun_gender",
@@ -41,13 +41,13 @@
       "lesson_ready": true,
       "forms": [
         {
-          "form_id": "GRAMFORM.es.gender.masculine",
-          "display": "masculine",
-          "form_kind": "other",
+          "form_id": "GRAMFORM.es.gender.el",
+          "display": "el",
+          "form_kind": "word",
           "rules": [
             {
               "rule_id": "RULE.es.gender.masculine_agreement",
-              "summary_en": "Masculine nouns take masculine agreement, including el/un in the singular and los/unos in the plural, plus masculine forms of adjectives that vary for gender.",
+              "summary_en": "El is the ordinary masculine singular definite article. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.",
               "tips_en": [
                 "Learn a new noun with an article: el libro, el problema.",
                 "Many nouns ending in -o are masculine, but the ending is a clue rather than a guarantee."
@@ -56,63 +56,25 @@
           ]
         },
         {
-          "form_id": "GRAMFORM.es.gender.feminine",
-          "display": "feminine",
-          "form_kind": "other",
+          "form_id": "GRAMFORM.es.gender.la",
+          "display": "la",
+          "form_kind": "word",
           "rules": [
             {
               "rule_id": "RULE.es.gender.feminine_agreement",
-              "summary_en": "Feminine nouns take feminine agreement, including la/una in the singular and las/unas in the plural, plus feminine forms of adjectives that vary for gender.",
+              "summary_en": "La is the ordinary feminine singular definite article. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives.",
               "tips_en": [
                 "Learn a new noun with an article: la casa, la mano.",
                 "Many nouns ending in -a are feminine, but exceptions are normal."
               ]
             }
           ]
-        },
-        {
-          "form_id": "GRAMFORM.es.gender.clues",
-          "display": "gender clues",
-          "form_kind": "other",
-          "rules": [
-            {
-              "rule_id": "RULE.es.gender.ending_clues",
-              "summary_en": "Word endings often give useful gender clues, but Spanish noun gender is lexical and cannot be determined from -o/-a alone.",
-              "tips_en": [
-                "Use endings as a prediction, then confirm with the noun’s article or dictionary entry.",
-                "Memorize exceptions as whole noun phrases: la mano, el día, el mapa, el problema."
-              ]
-            }
-          ]
-        },
-        {
-          "form_id": "GRAMFORM.es.gender.neuter",
-          "display": "limited neuter forms",
-          "form_kind": "other",
-          "rules": [
-            {
-              "rule_id": "RULE.es.gender.neuter_lo",
-              "summary_en": "Neuter lo can nominalize a quality or idea, as in lo importante, but it is not an article for ordinary neuter nouns.",
-              "tips_en": [
-                "If an ordinary noun follows, lo is not the normal article to choose.",
-                "Think of lo + adjective as an abstract quality or aspect, not as a third noun class."
-              ]
-            },
-            {
-              "rule_id": "RULE.es.gender.neuter_demonstratives",
-              "summary_en": "Esto, eso, and aquello are neuter demonstratives used for unspecified things, situations, or ideas and do not directly modify ordinary nouns.",
-              "tips_en": [
-                "Use este/esta + noun when the noun is stated and has grammatical gender.",
-                "Use esto/eso/aquello when you are pointing to an unspecified thing or whole idea."
-              ]
-            }
-          ]
         }
       ],
       "review_state": "candidate",
-      "notes": "Spanish has two grammatical genders for ordinary nouns. Neuter lo/esto/eso/aquello are real neuter forms but do not establish a third ordinary noun gender."
+      "notes": "Spanish has two grammatical genders for ordinary nouns. This A1 grammar set uses el/la as the practiceable surface contrast. The lesson rendering separately teaches ending clues and the limited neuter forms lo/esto/eso/aquello so they are not miscompiled as ordinary noun-gender choices."
     }
   ],
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
