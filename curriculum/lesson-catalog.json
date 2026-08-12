@@ -2,13 +2,23 @@
   "schema_version": 1,
   "universal": [
     {
+      "lesson_id": "LES.mul.meta.where_languages_come_from",
+      "priority": 0,
+      "category": "orientation",
+      "path_scope": "universal",
+      "featured": true,
+      "next_policy": "next_catalog_item",
+      "notes": "Universal Lesson 0. It introduces language genealogy, contact, writing systems, standards, and the family placement of all 104 current Gef learning-language identities. Candidate content remains development-only until review promotes it.",
+      "review_state": "candidate"
+    },
+    {
       "lesson_id": "LES.mul.meta.international_language_levels",
       "priority": 1,
       "category": "orientation",
       "path_scope": "universal",
       "featured": true,
       "next_policy": "next_language_path_item",
-      "notes": "First ordinary Gef lesson. It teaches the level system used by books, learner profiles, placement, and future Gefstimates. Priority 0 is reserved for a future prerequisite-level orientation such as 'What is a language?' if Gef ever authors one; do not invent a placeholder lesson merely to fill zero.",
+      "notes": "First proficiency-orientation lesson after Lesson 0. It teaches the level system used by books, learner profiles, placement, and future Gefstimates.",
       "review_state": "approved"
     }
   ],
@@ -19,5 +29,5 @@
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 1
+  "version": 2
 }
