@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "lesson_key": "grammatical-gender",
+  "title_key": "lesson.grammaticalGender.title",
+  "fallback_title_en": "How {learning_languages} handles grammatical gender",
+  "summary_key": "lesson.grammaticalGender.summary",
+  "fallback_summary_en": "Languages organize nouns and agreement in very different ways. Some have no grammatical noun gender, some have two or three genders, and some use larger noun-class systems. Articles can make gender visible, but article count is not the same thing as gender count.",
+  "grammar_set_id": "GRAMSET.mul.grammatical_gender",
+  "language_capabilities_manifest": "language-capabilities.json",
+  "comparison_blurb_manifest": "comparison-records/manifest.json",
+  "curriculum_concept_ids": [
+    "CURR.GRAMMATICAL_GENDER",
+    "CURR.ARTICLES_DETERMINERS",
+    "CURR.AGREEMENT",
+    "CURR.PRONOUNS"
+  ],
+  "transparency_slide": {
+    "description": "The lesson compares grammatical gender systems without assuming every language has gender, articles, or a masculine/feminine/neuter three-way split.",
+    "fixed_comparison_language_tags": [],
+    "language_loop_order": [
+      "learning_from",
+      "learning"
+    ],
+    "dedupe_language_roles": true,
+    "rendering_model": "Build one ordered language array from relevant profile/session languages. If no genderless profile is present, add English. If no two-gender profile is present, add Spanish. If no three-gender profile is present, add Greek. Render the system summary and representative markers with the same universal comparison components. Do not derive gender count from the number of article spellings.",
+    "support_selection": {
+      "full": "Render the comparison, structured rules, reviewed examples, and defensible practice for this language.",
+      "comparison_only": "Render only the reviewed gender-system comparison record. Do not invent agreement rules or practice.",
+      "unavailable": "Omit the language from this lesson until a reviewed comparison record exists."
+    }
+  },
+  "title_policy": {
+    "default_display_locale": "en",
+    "template_key": "lesson.shell.title.languageHandlesConcept",
+    "variables": [
+      "learning_languages"
+    ],
+    "forms_source": "lesson language gender-system comparison data",
+    "language_list_format": "shared locale-aware list formatter",
+    "notes": "The title names the grammatical concept, not a guessed article equivalent. Languages without articles or grammatical gender still fit the same lesson family."
+  },
+  "eligibility": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "require_non_anchor_multi_form_language": false,
+    "prefer_profile_languages": true,
+    "fill_with_anchor_language_when_needed": true,
+    "notes": "English, Spanish, and Greek are conditional contrast fallbacks for zero-, two-, and three-gender systems. A noun-class language may also appear when selected, but must not be squeezed into masculine/feminine/neuter labels."
+  },
+  "block_plan": [
+    {
+      "block_id": "facts",
+      "block_type": "lesson_facts",
+      "repeat": "once",
+      "notes": "Introduce grammatical gender as a noun/agreement system. Explicitly distinguish grammatical gender from a person's gender and from biological sex."
+    },
+    {
+      "block_id": "intro-gender-examples",
+      "block_type": "word_examples",
+      "group_id": "comparison-intro",
+      "repeat": "per_relevant_language",
+      "notes": "Resolve lessons/mul/grammatical-gender/gender-examples.json. Show gender-system type plus representative article/determiner markers where the language has them. Article spellings are examples, never the definition of the system."
+    },
+    {
+      "block_id": "language-comparisons",
+      "block_type": "language_comparison_loop",
+      "group_id": "comparison-intro",
+      "repeat": "per_relevant_language",
+      "notes": "Use the same ordered language set. Explicitly allow no-gender, two-gender, three-gender, and noun-class comparison records."
+    },
+    {
+      "block_id": "grammar-primer",
+      "block_type": "grammar_primer",
+      "group_id": "rules",
+      "repeat": "once",
+      "notes": "Explain that gender may be visible on articles, adjectives, pronouns, numerals, case forms, or other agreement targets, and some languages have no grammatical gender at all."
+    },
+    {
+      "block_id": "language-rules",
+      "block_type": "language_rules",
+      "group_id": "rules",
+      "repeat": "per_full_support_learning_language",
+      "notes": "For Spanish, teach two noun genders, article/adjective agreement, reliable-vs-unreliable ending clues, and limited neuter constructions. Never present Spanish neuter forms as a third ordinary noun gender."
+    },
+    {
+      "block_id": "curated-examples",
+      "block_type": "curated_examples",
+      "repeat": "per_selected_language",
+      "notes": "Prefer lesson-safe reviewed sentences that make agreement visible. Corpus evidence remains in gef-content."
+    },
+    {
+      "block_id": "practice-intro",
+      "block_type": "practice_intro",
+      "repeat": "once",
+      "notes": "Transition from identifying the noun's gender to choosing agreement forms. Omit if no full-support learning language is selected."
+    },
+    {
+      "block_id": "practice",
+      "block_type": "practice",
+      "repeat": "per_full_support_learning_language",
+      "notes": "Use shared cloze/feature primitives. Spanish practice may choose el/la, un/una, or a gender-variable adjective only when the noun and answer are unambiguous."
+    },
+    {
+      "block_id": "quest",
+      "block_type": "quest_offer",
+      "repeat": "once",
+      "notes": "Offer a reader hunt for noun phrases whose articles/adjectives reveal grammatical gender. Do not ask learners to infer a person's gender from grammar."
+    },
+    {
+      "block_id": "completion",
+      "block_type": "completion",
+      "repeat": "once",
+      "notes": "Reinforce: learn the noun with its agreement pattern; endings are clues, not laws; neuter behavior differs by language."
+    }
+  ],
+  "presentation_modes": [
+    "scroll",
+    "paged",
+    "presentation"
+  ],
+  "learning_path_policy": {
+    "placements_are_language_specific": true,
+    "placement_registry": "curriculum/learning-path-placements.json",
+    "notes": "Spanish can place this early because noun/article agreement is foundational. Other languages need independent placement and may use comparison-only mode."
+  },
+  "review_state": "candidate",
+  "version": 1
+}
