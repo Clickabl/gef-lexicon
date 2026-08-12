@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.vocab.family_members",
   "capability_model": "lexical_semantic_profile",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
@@ -9,8 +9,8 @@
   "game_vocabulary_manifest": "game-vocabulary/manifest.json",
   "role_requirements": {
     "learning_from": {
-      "description": "The learner's explanation/best language. Every canonical learn-from language may participate when its localized bridge copy exists.",
-      "required_assets": ["localized source bridge"],
+      "description": "The learner's explanation/best language. Every canonical learn-from language may participate when its localized bridge and reusable fact copy exist.",
+      "required_assets": ["localized source bridge", "localized kinship-fact copy"],
       "coverage": "all registry.programs.learnFromLanguages"
     },
     "learning_language_full": {
@@ -19,30 +19,31 @@
       "coverage": "registry.lessonTiers.tier1_full + registry.lessonTiers.tier2_selective"
     },
     "learning_language_game": {
-      "description": "All canonical learn-from languages have a core family vocabulary route for reusable Games. Tier 1 and Tier 2 use their rich target profiles; Tier 3 uses the smaller recognition-safe game vocabulary shard.",
-      "required_assets": ["eight core family concepts", "candidate/review state", "game safety policy"],
+      "description": "All 104 canonical learn-from languages have the same 14 broad family relationship concepts in the universal game vocabulary package. Slash-separated forms preserve lexical subdivisions instead of being flattened into one fake equivalent.",
+      "required_assets": ["14 universal family concepts", "candidate/review state", "game safety policy"],
       "coverage": "all registry.programs.learnFromLanguages"
     },
     "learning_language_comparison": {
-      "description": "Tier 3 may participate as a game/comparison target without implying a full grammar or culture curriculum path. Rich culture/usage explanations remain Tier 1 and Tier 2 until separately researched.",
+      "description": "Every canonical language may participate as a comparison/game target. Tier 3 does not imply a full grammar or culture curriculum path; rich language-and-usage profiles remain Tier 1 and Tier 2 until separately researched.",
       "default_for_tier3": true
     }
   },
   "runtime_model": {
     "source_first": "Show the localized source bridge in the learner's best available language before teaching the target system.",
-    "target_second_full": "For Tier 1 and Tier 2, resolve the structured target profile and render the explanation, term set, distinctions, cultural note, examples, and safe practice.",
-    "target_second_tier3": "For Tier 3, expose the core term set to Games/comparison surfaces only. Do not synthesize a rich cultural profile from the small vocabulary row.",
-    "pair_scaling": "Never author a source-by-target matrix. Source copy, target profiles, and game terms are independent assets joined through stable relationship concepts.",
-    "fallback": "If a source localization is below the user's trust threshold, use the normal best-language fallback. If a target lacks a rich profile, use the Tier 3 game path rather than inventing target prose."
+    "target_second_full": "For Tier 1 and Tier 2, resolve the structured target profile and render its relationship distinctions and cultural-usage cautions through reusable support-language fact templates.",
+    "target_second_tier3": "For Tier 3, expose the 14-concept universal term set to comparison and Games. Do not synthesize a rich cultural profile from the vocabulary row.",
+    "pair_scaling": "Never author a source-by-target matrix. Source copy, reusable localized facts, target profiles, and universal game terms are independent assets joined through stable relationship concepts.",
+    "fallback": "If a support-language localization is below the user's trust threshold, use the normal best-language fallback. If a target lacks a rich profile, use the Tier 3 comparison/game path rather than inventing target prose."
   },
   "trust_contract": {
     "generated_source_bridges": "machine_translated",
     "generated_target_profiles": "machine_translated",
-    "generated_tier3_game_terms": "machine_translated",
+    "generated_game_terms": "machine_translated",
+    "generated_support_fact_locales": "machine_translated",
     "review_state_for_generated_assets": "candidate",
     "structural_validation_is_not_linguistic_approval": true
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 2
+  "version": 3
 }
