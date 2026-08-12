@@ -3,9 +3,13 @@
   "$id": "gef-lexicon/lesson-family.schema.json",
   "title": "Gef multilingual lesson family",
   "type": "object",
-  "required": ["schema_version", "lesson_family_id", "lesson_key", "grammar_set_id", "eligibility", "block_plan", "review_state", "version"],
+  "required": ["schema_version", "lesson_family_id", "lesson_key", "eligibility", "block_plan", "review_state", "version"],
+  "anyOf": [
+    {"required": ["grammar_set_id"]},
+    {"required": ["knowledge_set_id"]}
+  ],
   "properties": {
-    "schema_version": {"type": "integer", "enum": [1, 2]},
+    "schema_version": {"type": "integer", "enum": [1, 2, 3]},
     "lesson_family_id": {"type": "string", "pattern": "^LES\\.mul\\.[A-Za-z0-9._-]+$"},
     "lesson_key": {"type": "string", "minLength": 1},
     "title_key": {"type": "string", "minLength": 1},
@@ -13,6 +17,8 @@
     "summary_key": {"type": "string", "minLength": 1},
     "fallback_summary_en": {"type": "string", "minLength": 1},
     "grammar_set_id": {"type": "string", "pattern": "^GRAMSET\\.[A-Za-z0-9._-]+$"},
+    "knowledge_set_id": {"type": "string", "pattern": "^KNOWSET\\.[A-Za-z0-9._-]+$"},
+    "knowledge_set_source": {"type": "string", "minLength": 1},
     "language_capabilities_manifest": {"type": "string", "minLength": 1},
     "comparison_blurb_manifest": {"type": "string", "minLength": 1},
     "curriculum_concept_ids": {"type": "array", "items": {"type": "string", "pattern": "^CURR\\.[A-Za-z0-9._-]+$"}, "uniqueItems": true},
@@ -72,7 +78,7 @@
         "required": ["block_id", "block_type"],
         "properties": {
           "block_id": {"type": "string", "minLength": 1},
-          "block_type": {"enum": ["lesson_facts", "grammar_primer", "localized_text", "word_examples", "language_comparison_loop", "language_rules", "curated_examples", "practice_intro", "practice", "quest_offer", "completion"]},
+          "block_type": {"enum": ["lesson_facts", "grammar_primer", "localized_text", "word_examples", "language_comparison_loop", "language_rules", "curated_examples", "ordered_term_set", "cultural_context", "practice_intro", "practice", "quest_offer", "completion"]},
           "group_id": {"type": "string"},
           "repeat": {"enum": ["once", "per_single_form_language", "per_multi_form_language", "per_selected_language", "per_relevant_language", "per_full_support_learning_language", "per_form", "per_rule"]},
           "notes": {"type": "string"}

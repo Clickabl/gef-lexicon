@@ -1,0 +1,39 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.days_of_week",
+  "support_language_tag": "en",
+  "proficiency_band": "beginner",
+  "register": "plain",
+  "title": "Days of the Week",
+  "invitation": "Learn the seven-day cycle in the language you are studying, then compare the naming pattern with languages you already know.",
+  "summary": "A week may look simple, but languages name its days in very different ways. English has Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. Spanish has lunes, martes, miércoles, jueves, viernes, sábado, and domingo. Other languages build weekday names from numbers, planets, religious traditions, or older naming systems.",
+  "localization_keys": {
+    "title": "lesson.daysOfWeek.title",
+    "invitation": "lesson.daysOfWeek.invitation",
+    "summary": "lesson.daysOfWeek.summary"
+  },
+  "runtime_copy": {
+    "language_heading": "Languages in this lesson",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "correct_fallback": "Yep, that fits.",
+    "retry_fallback": "Not quite. Look at the cycle and try again.",
+    "correct_score_label": "Correct",
+    "attempted_score_label": "Tried",
+    "done_label": "Done"
+  },
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"intro-cycle","group_id":"comparison-intro","type":"explanation","title":"Seven positions, many naming systems","text":"The useful idea is the cycle, not translating one English name at a time. English Monday and Spanish lunes point to the same place in the week, but their names come from different histories. Portuguese makes Monday through Friday especially regular with segunda-feira, terça-feira, quarta-feira, quinta-feira, and sexta-feira. Mandarin commonly uses 星期 plus a number for Monday through Saturday. Japanese uses a Sun, Moon, and five-element naming pattern. Learn each language's system as a system."},
+    {"block_id":"target-days","group_id":"terms","type":"ordered_term_set","knowledge_set_id":"KNOWSET.mul.calendar.days_of_week","system_selector":"primary","include_readings":true,"include_variants":true,"include_format_forms":false,"source":"selected_language_roles"},
+    {"block_id":"week-start-note","group_id":"culture","type":"cultural_note","title":"One sneaky detail: where does the week start?","text":"That is not a property of Spanish, English, or any other language by itself. Calendar conventions vary by territory. A Spanish speaker in one country can see a different first calendar column from a Spanish speaker somewhere else. Gef should therefore teach the weekday cycle separately from the locale's calendar layout."},
+    {"block_id":"spanish-note","group_id":"culture","type":"cultural_note","title":"English → Spanish shortcut","text":"Spanish weekday names are normally lowercase in ordinary text: lunes, martes, miércoles, jueves, viernes, sábado, domingo. Instead of memorizing seven disconnected translations, say the cycle forward and use hoy, mañana, and ayer to attach the words to real days."},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Now scramble the calendar a little."},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"ordered_sequence","feedback":"show_cycle_neighbor","title":"Put the days in order."},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Week unlocked","description":"You know the cycle. Next, notice the weekday whenever dates or plans appear in something you read.","action_label":"Done"}
+  ],
+  "rule_explanations": {},
+  "review_state": "candidate",
+  "version": 1
+}

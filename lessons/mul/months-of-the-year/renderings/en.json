@@ -1,0 +1,40 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.months_of_year",
+  "support_language_tag": "en",
+  "proficiency_band": "beginner",
+  "register": "plain",
+  "title": "Months of the Year",
+  "invitation": "Learn the month cycle in the language you are studying, then see what changes when languages and calendars organize the year differently.",
+  "summary": "English and Spanish both commonly use the twelve Gregorian months, but the words are only the beginning. Some languages number months, some change a month's grammatical form inside a date, and some communities use another calendar alongside or instead of the Gregorian calendar.",
+  "localization_keys": {
+    "title": "lesson.monthsOfYear.title",
+    "invitation": "lesson.monthsOfYear.invitation",
+    "summary": "lesson.monthsOfYear.summary"
+  },
+  "runtime_copy": {
+    "language_heading": "Languages in this lesson",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "correct_fallback": "Yep, that's the month.",
+    "retry_fallback": "Not quite. Find it in the year cycle and try again.",
+    "correct_score_label": "Correct",
+    "attempted_score_label": "Tried",
+    "done_label": "Done"
+  },
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"intro-cycle","group_id":"comparison-intro","type":"explanation","title":"Twelve familiar slots, very different systems","text":"For English → Spanish, the first layer is wonderfully boring: January → enero, February → febrero, March → marzo, and so on through diciembre. But do not turn that into a universal rule. Mandarin, Japanese, and Korean make modern Gregorian month names mostly from numbers plus the word for month. Russian, Ukrainian, Polish, and Greek can change a month's form inside a full date. Arabic has regional sets of Gregorian month names and also Hijri month vocabulary. Persian in Iran commonly uses the Solar Hijri calendar. The lesson therefore stores the month system and its context, not one supposedly universal list."},
+    {"block_id":"target-months","group_id":"terms","type":"ordered_term_set","knowledge_set_id":"KNOWSET.mul.calendar.months_of_year","system_selector":"session_context","include_readings":true,"include_variants":true,"include_format_forms":true,"source":"selected_language_roles"},
+    {"block_id":"calendar-note","group_id":"culture","type":"cultural_note","title":"A year does not have to be organized the English way","text":"The Gregorian calendar is globally important, but it is not the only living calendar vocabulary. A learner may meet Hijri months in Arabic, Solar Hijri months in Persian, Saka dates in Indian official contexts, or a traditional Chinese calendar alongside Gregorian dates. Gef should show the system that fits the learner's context without deleting the others."},
+    {"block_id":"numbered-month-note","group_id":"culture","type":"cultural_note","title":"Sometimes twelve words collapse into one pattern","text":"Mandarin 一月, 二月, 三月 and Japanese 1月, 2月, 3月 reveal a useful shortcut: the month names are largely numbered. Korean follows the same broad number + month pattern, although some pronunciations need special attention. When a language gives you a pattern, learn the pattern instead of pretending every month is an unrelated vocabulary item."},
+    {"block_id":"spanish-note","group_id":"culture","type":"cultural_note","title":"English → Spanish shortcut","text":"Spanish month names are normally lowercase. Several are easy cognates or near-cognates: marzo, abril, junio, julio, agosto, septiembre, octubre, noviembre, diciembre. The biggest payoff is learning to hear and use them inside dates, birthdays, holidays, and plans rather than only reciting enero through diciembre."},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Now put the year back together."},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"ordered_sequence","feedback":"show_cycle_neighbor","title":"Put the months in order."},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Year mapped","description":"You know the month cycle and, more importantly, you know to ask which calendar and which grammatical form a real date is using.","action_label":"Done"}
+  ],
+  "rule_explanations": {},
+  "review_state": "candidate",
+  "version": 1
+}

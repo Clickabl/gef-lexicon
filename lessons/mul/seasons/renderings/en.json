@@ -1,0 +1,40 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.seasons",
+  "support_language_tag": "en",
+  "proficiency_band": "beginner",
+  "register": "plain",
+  "title": "Seasons",
+  "invitation": "Learn the season words in the language you are studying without assuming the whole world divides the year into the same four boxes.",
+  "summary": "English often teaches spring, summer, autumn or fall, and winter. Spanish commonly teaches primavera, verano, otoño, and invierno. Those are useful broad categories, but climate, hemisphere, calendars, and cultural traditions can divide the year differently.",
+  "localization_keys": {
+    "title": "lesson.seasons.title",
+    "invitation": "lesson.seasons.invitation",
+    "summary": "lesson.seasons.summary"
+  },
+  "runtime_copy": {
+    "language_heading": "Languages in this lesson",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "correct_fallback": "Yep, that fits.",
+    "retry_fallback": "Not quite. Check the season cycle and local context.",
+    "correct_score_label": "Correct",
+    "attempted_score_label": "Tried",
+    "done_label": "Done"
+  },
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"intro-cycle","group_id":"comparison-intro","type":"explanation","title":"Four seasons are useful, not universal","text":"English → Spanish is straightforward at first: spring → primavera, summer → verano, autumn/fall → otoño, winter → invierno. But a language lesson should not quietly turn a temperate Northern Hemisphere model into a law of nature. In Indonesia, rainy and dry seasons can be the locally useful division. A traditional Indian model describes six ritus. Chinese tradition adds 24 solar terms to the yearly cycle. And when the Northern Hemisphere is in summer, much of the Southern Hemisphere is in winter."},
+    {"block_id":"target-seasons","group_id":"terms","type":"ordered_term_set","knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","include_readings":true,"include_variants":true,"include_format_forms":false,"source":"selected_language_roles"},
+    {"block_id":"hemisphere-note","group_id":"culture","type":"cultural_note","title":"The vocabulary can stay the same while the calendar flips","text":"Spanish verano means summer in Spain, Mexico, Argentina, and elsewhere, but summer does not occur in the same months everywhere. Hemisphere belongs to the learner's geographic context, not to the Spanish language. Gef should never attach fixed month ranges to a language tag."},
+    {"block_id":"climate-note","group_id":"culture","type":"cultural_note","title":"Climate can matter more than four neat seasons","text":"Some places are better described by rainy and dry periods, monsoon cycles, or other locally meaningful divisions. Gef can still teach the widely useful four-season vocabulary while showing another system when it actually belongs to the language and region in the learner's context."},
+    {"block_id":"spanish-note","group_id":"culture","type":"cultural_note","title":"English → Spanish shortcut","text":"The core Spanish set is compact: primavera, verano, otoño, invierno. Attach them to phrases you will actually meet, such as en verano or este invierno. Then keep the season name separate from assumptions about weather: invierno does not guarantee snow, and verano does not guarantee the same months everywhere."},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Now rebuild the season cycle that fits this context."},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"concept_term_match","feedback":"show_system_context","title":"Match the season to its name."},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"Year in motion","description":"You know the season words without mistaking one climate model for the whole planet.","action_label":"Done"}
+  ],
+  "rule_explanations": {},
+  "review_state": "candidate",
+  "version": 1
+}
