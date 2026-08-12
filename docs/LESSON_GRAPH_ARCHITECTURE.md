@@ -1,6 +1,6 @@
 # GEF Lesson, Construction & Curriculum Graph
 
-Source: the Gef Notion lesson system, reader UX, publishing pipeline, and lexicon architecture as consolidated in August 2026.
+Source: the Gef lesson system, reader UX, publishing pipeline, and lexicon architecture as consolidated in August 2026.
 
 ## Core separation
 
@@ -18,12 +18,13 @@ A lesson is never copied into every book. A book stores only reviewed occurrence
 `gef-lexicon` owns reusable language knowledge:
 
 ```text
-concepts/                         interlingual lexical concepts
+concepts/                           interlingual lexical concepts
 curriculum/semantic-functions.json language-neutral semantic/function concepts
 languages/{lang}/lexicon.json      lexemes, senses, forms, analyses
 languages/{lang}/constructions.json language-specific constructions/contrast systems
 lessons/{lang}/{lesson}/lesson.json reusable lesson logic
-lessons/{lang}/{lesson}/renderings/{support}.json teacher/editor-authored explanations
+lessons/{lang}/{lesson}/renderings/{support}.json custom support-language prose only when truly needed
+research/grammar/                   research staging before grammar promotion
 ```
 
 `gef-content` owns exact corpus evidence:
@@ -35,9 +36,19 @@ works/{work}/lesson-coverage/{lang}.json  sparse lesson compatibility/review rec
 
 The app owns learner history, cooldowns, dismissal, ranking, and rendering.
 
+## Curriculum depth is separate from linguistic knowledge
+
+Canonical tier membership lives in `Clickabl/gef-expo/registry/language-support.json`.
+
+- **Tier 1 — Full curriculum:** full grammar sets and eventual complete authored paths.
+- **Tier 2 — Selective lessons:** a language contributes only the reviewed mapping required by a lesson that actually includes it. No complete grammar inventory/path is promised.
+- **Tier 3 — Read + Games:** no grammar lessons. Lexicon/parser grammar data may still exist when reading, lookup, translation, corpus analysis, or Games need it.
+
+Do not infer curriculum eligibility merely because a construction record exists.
+
 ## Semantic functions are not English glosses
 
-Do not model English surface words such as `for` as universal concepts. Use language-neutral functions such as:
+Do not model English surface words such as `for` or `be` as universal concepts. Use language-neutral functions such as:
 
 - `SEM.PURPOSE`
 - `SEM.CAUSE_REASON`
@@ -48,7 +59,7 @@ Do not model English surface words such as `for` as universal concepts. Use lang
 - `SEM.MEANS_CHANNEL`
 - `SEM.DEADLINE_TARGET_TIME`
 
-A language-specific construction maps real lexical/syntactic behavior onto one or more semantic functions. Spanish `por/para` and Portuguese `por/para` are separate implementations even when they occupy analogous semantic territory.
+For new domains such as Being/state/location/existence, research the cross-language semantic territory first. A language-specific construction maps real lexical/syntactic behavior onto one or more semantic functions. Spanish `ser/estar`, Portuguese `ser/estar`, Japanese copular/existential constructions, and Russian zero-copula patterns are independent implementations even when they occupy analogous semantic territory.
 
 ## Constructions
 
@@ -62,9 +73,26 @@ A construction is reusable linguistic knowledge above the individual word sense.
 
 Construction IDs are stable and language-specific (`CTR.es...`). They may reference lexemes, senses, phrase patterns, morphology features, semantic functions, or other constructions.
 
+## Grammar sets and rule atoms
+
+A cross-language grammar set compares a semantic domain across independent language systems. It does **not** mean one master language owns the rules.
+
+Prefer reusable structured rule atoms such as:
+
+- form/construction identity;
+- semantic-function IDs;
+- rule/relationship kind;
+- applicability/conditions;
+- exclusions;
+- contrast targets;
+- register/dialect/region metadata;
+- reviewed examples/source refs.
+
+Tier 1 may build a complete language-wide grammar inventory for the domain. Tier 2 should stop once the specific lesson family can represent that language accurately. Tier 3 does not receive grammar-lesson mappings merely to maximize language count.
+
 ## Lessons and rules
 
-A lesson is a reusable pedagogical object (`LES.es...`). It owns:
+A lesson is a reusable pedagogical object (`LES.es...` or a reviewed cross-language family). It owns:
 
 - target language or cross-language scope;
 - stable pedagogical rules/micro-skills;
@@ -78,11 +106,26 @@ A lesson is a reusable pedagogical object (`LES.es...`). It owns:
 
 Rule IDs are semantic and stable. Never encode only a presentation number such as `reason_4`. A rendering may display a rule fourth today and fifth tomorrow without changing the occurrence annotation.
 
-## Support-language renderings
+## Support-language rendering without combinatorial explosion
 
-The logical Spanish lesson is authored once. Explanations are separate renderings by support language. `LES.es.prep.por_para.core` can therefore have English, Chinese, Hindi, Spanish, or other explanation renderings without cloning its rule graph.
+The canonical grammar fact is stored **once** in the language-specific structured rule graph.
 
-Book examples remain in the target language and are referenced by stable work/segment/span IDs rather than copied into the lesson file.
+Do not create `number of grammar rules × number of interface languages` hand-authored copies.
+
+Common explanation should be assembled from shared localized templates and localized semantic labels, for example the conceptual structure:
+
+`Use {FORM} for {SEMANTIC_FUNCTION} when {CONDITION}.`
+
+A support-language rendering file is appropriate for:
+
+- genuinely custom pedagogy;
+- nuance/exceptions not representable by the shared template vocabulary;
+- cultural/usage notes;
+- deliberate lesson narrative or humor.
+
+It is not required merely because another interface language exists.
+
+Tier 2 especially should rely on structured mappings + reusable templates. Tier 1 can justify richer authored prose because Tier 1 has the full-curriculum promise.
 
 ## Passage resolution chain
 
