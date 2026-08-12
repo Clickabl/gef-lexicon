@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lexicon-set.schema.json",
+  "title": "Reusable multilingual lexical set",
+  "type": "object",
+  "required": ["schema_version","lexicon_set_id","domain","vocabulary_manifest","concept_map","expression_separator","entry_policy","review_state","version"],
+  "properties": {
+    "schema_version": {"type":"integer","const":1},
+    "lexicon_set_id": {"type":"string","pattern":"^LEXSET\\.[A-Za-z0-9._-]+$"},
+    "domain": {"type":"string","minLength":1},
+    "lesson_id": {"type":"string","pattern":"^LES\\.[A-Za-z0-9._-]+$"},
+    "vocabulary_manifest": {"type":"string","minLength":1},
+    "concept_map": {"type":"object","minProperties":1,"additionalProperties":{"type":"string","pattern":"^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"}},
+    "broader_concept_map": {"type":"object","additionalProperties":{"type":"array","items":{"type":"string","pattern":"^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},"uniqueItems":true}},
+    "expression_separator": {"type":"string","minLength":1},
+    "expression_metadata": {"type":"object","additionalProperties":{"type":"object","additionalProperties":{"type":"object","properties":{"register_label":{"type":"string"}},"additionalProperties":true}}},
+    "entry_policy": {
+      "type":"object",
+      "required":["one_expression_per_lexeme","group_same_surface_across_relationships_into_one_lexeme","one_sense_per_broad_relationship_per_expression","preserve_internal_slashes","primary_concept_is_broad_relationship","all_concept_links_are_many_to_many_capable","related_by_relationship_is_not_synonymy","default_review_state","default_cefr_level"],
+      "properties": {
+        "one_expression_per_lexeme":{"type":"boolean"},
+        "group_same_surface_across_relationships_into_one_lexeme":{"type":"boolean"},
+        "one_sense_per_broad_relationship_per_expression":{"type":"boolean"},
+        "preserve_internal_slashes":{"type":"boolean"},
+        "primary_concept_is_broad_relationship":{"type":"boolean"},
+        "all_concept_links_are_many_to_many_capable":{"type":"boolean"},
+        "related_by_relationship_is_not_synonymy":{"type":"boolean"},
+        "default_review_state":{"enum":["candidate","approved","superseded","rejected"]},
+        "default_cefr_level":{"enum":["A1","A2","B1","B2","C1","C2"]}
+      },
+      "additionalProperties":false
+    },
+    "lesson_offer": {
+      "type":"object",
+      "required":["lesson_id","role","queueable"],
+      "properties": {
+        "lesson_id":{"type":"string","pattern":"^LES\\.[A-Za-z0-9._-]+$"},
+        "role":{"enum":["teaches_concept","teaches_distinction","teaches_usage","practice"]},
+        "queueable":{"type":"boolean"}
+      },
+      "additionalProperties":false
+    },
+    "notes":{"type":"string"},
+    "review_state":{"enum":["candidate","approved","superseded","rejected"]},
+    "trust_state":{"enum":["machine_translated","machine_verified","public","gef_certified"]},
+    "version":{"type":"integer","minimum":1}
+  },
+  "additionalProperties":false
+}
