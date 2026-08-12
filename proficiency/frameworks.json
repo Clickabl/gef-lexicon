@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "canonical_framework": "cefr",
+  "language_universe_source": "Clickabl/gef-expo/registry/language-support.json",
+  "skill_model": {
+    "overall_is_rollup": true,
+    "activities": ["reception", "production", "interaction", "mediation"],
+    "modalities": ["reading", "listening", "spoken", "written", "signed", "multimodal"],
+    "rules": [
+      "A learner may be at different levels in different skills.",
+      "A content difficulty label describes the demand of that content, not the learner's global proficiency.",
+      "Reading evidence may update reading proficiency but must not silently promote speaking, writing, interaction, or a global rollup.",
+      "Vocabulary size and grammar coverage are supporting signals, not universal definitions of a CEFR level.",
+      "Gef promotion logic must use repeated functional evidence rather than a single score or one successful item."
+    ]
+  },
+  "frameworks": [
+    {
+      "framework_id": "cefr",
+      "name": "Common European Framework of Reference for Languages",
+      "owner_or_authority": "Council of Europe",
+      "scope": "Language-neutral framework for describing communicative proficiency and supporting learning, teaching, curriculum design, and assessment.",
+      "level_codes": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"],
+      "levels": [
+        {
+          "code": "Pre-A1",
+          "gef_label": "First steps",
+          "gef_summary": "The learner is just beginning to connect a small set of words, expressions, sounds, signs, or written forms with immediate meaning and can communicate only in very constrained situations with substantial support.",
+          "progression_focus": "Build a dependable core for identity, immediate needs, recognition, and tiny predictable exchanges before expecting sustained independent communication.",
+          "official_common_reference_level": false,
+          "companion_volume_entry_level": true,
+          "core_ui_level": true
+        },
+        {
+          "code": "A1",
+          "gef_label": "Beginner",
+          "gef_summary": "The learner can handle a narrow set of familiar situations using simple language, especially when the topic is concrete and the other person or the text gives plenty of support.",
+          "progression_focus": "Expand from memorized or highly predictable language into short, flexible exchanges and a broader range of everyday topics.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        },
+        {
+          "code": "A2",
+          "gef_label": "Everyday",
+          "gef_summary": "The learner can manage common routine situations, understand the main point of short straightforward material, and communicate basic information about familiar people, places, activities, and needs.",
+          "progression_focus": "Connect sentences, handle less scripted situations, narrate simple events, and rely less on a partner or translation tool to keep communication moving.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        },
+        {
+          "code": "B1",
+          "gef_label": "Independent",
+          "gef_summary": "The learner can function independently through many ordinary situations, follow the central meaning of clear extended language on familiar subjects, and produce connected communication about experiences, plans, opinions, and problems.",
+          "progression_focus": "Increase range, detail, speed, and control so unfamiliar topics and longer interactions no longer cause communication to collapse.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        },
+        {
+          "code": "B2",
+          "gef_label": "Strong independent",
+          "gef_summary": "The learner can participate effectively in sustained communication, understand substantial material that includes complexity or abstraction, and explain ideas with enough detail and control for many academic, professional, and social situations.",
+          "progression_focus": "Develop nuance, flexibility, register control, inference, and precision across a wider range of demanding subjects and text types.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        },
+        {
+          "code": "C1",
+          "gef_label": "Advanced",
+          "gef_summary": "The learner can use the language flexibly across demanding social, academic, and professional contexts, follow implicit meaning, and shape extended communication with strong organization, precision, and control.",
+          "progression_focus": "Refine subtle meaning, style, idiomatic range, specialized language, and the ability to adapt communication rapidly to audience and purpose.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        },
+        {
+          "code": "C2",
+          "gef_label": "Highly proficient",
+          "gef_summary": "The learner can understand and produce exceptionally demanding language with fine control of meaning, structure, style, implication, and reformulation across a very broad range of situations.",
+          "progression_focus": "Keep deepening domain knowledge, cultural range, stylistic choice, and precision; C2 is a proficiency band, not a claim that the learner has become a native speaker or knows every word.",
+          "official_common_reference_level": true,
+          "companion_volume_entry_level": false,
+          "core_ui_level": true
+        }
+      ],
+      "sublevels": ["A2+", "B1+", "B2+"],
+      "mapping_to_cefr": "canonical",
+      "mapping_notes": [
+        "The Council of Europe describes six common reference levels A1-C2 and also recognizes A2+, B1+, and B2+ for local subdivision.",
+        "The 2020 Companion Volume adds Pre-A1 descriptors. Gef exposes Pre-A1 as a useful first-steps state rather than inventing A0."
+      ],
+      "status_as_of": "2026-08-12",
+      "rights_note": "Gef stores framework facts and first-party summaries. It does not reproduce or translate Council of Europe descriptor tables."
+    },
+    {
+      "framework_id": "actfl",
+      "name": "ACTFL Proficiency Guidelines 2024",
+      "owner_or_authority": "ACTFL",
+      "scope": "Functional proficiency in listening, speaking, reading, and writing, widely used in United States language education and assessment.",
+      "level_codes": ["Novice", "Intermediate", "Advanced", "Superior", "Distinguished"],
+      "sublevels": ["Novice Low", "Novice Mid", "Novice High", "Intermediate Low", "Intermediate Mid", "Intermediate High", "Advanced Low", "Advanced Mid", "Advanced High"],
+      "mapping_to_cefr": "none_stored",
+      "mapping_notes": [
+        "Gef must not present ACTFL and CEFR bands as exact synonyms unless a specific authoritative concordance with stated scope is added later.",
+        "ACTFL evaluates proficiency separately by language domain; an ACTFL rating is not automatically a global all-skills level."
+      ],
+      "status_as_of": "2026-08-12",
+      "rights_note": "ACTFL states that its Proficiency Guidelines are not authorized for for-profit use. Gef may identify the framework and its level names as comparative reference facts but must not reproduce guideline prose or examples."
+    },
+    {
+      "framework_id": "ilr",
+      "name": "Interagency Language Roundtable Skill Level Descriptions",
+      "owner_or_authority": "United States Interagency Language Roundtable",
+      "scope": "Skill-specific functional proficiency scale used in United States government contexts.",
+      "level_codes": ["0", "1", "2", "3", "4", "5"],
+      "sublevels": ["0+", "1+", "2+", "3+", "4+"],
+      "mapping_to_cefr": "none_stored",
+      "mapping_notes": [
+        "ILR levels are assigned by skill and include plus levels between base levels.",
+        "Gef does not collapse ILR 0-5 into CEFR A1-C2 without a sourced, skill-specific concordance."
+      ],
+      "status_as_of": "2026-08-12"
+    },
+    {
+      "framework_id": "clb",
+      "name": "Canadian Language Benchmarks",
+      "owner_or_authority": "Government of Canada",
+      "scope": "Canadian national standard for adult English second-language ability across listening, speaking, reading, and writing.",
+      "level_codes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "mapping_to_cefr": "none_stored",
+      "mapping_notes": [
+        "CLB has 12 benchmarks for each of four skills and a learner may hold different benchmark levels by skill.",
+        "Gef does not invent a CEFR crosswalk from immigration test conversion tables."
+      ],
+      "status_as_of": "2026-08-12"
+    },
+    {
+      "framework_id": "nclc",
+      "name": "Niveaux de compétence linguistique canadiens",
+      "owner_or_authority": "Government of Canada",
+      "scope": "Canadian national standard for adult French second-language ability, parallel in role to CLB for English.",
+      "level_codes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      "mapping_to_cefr": "none_stored",
+      "mapping_notes": [
+        "NCLC is used by the Government of Canada to measure French ability for immigration and citizenship contexts.",
+        "Gef stores NCLC as a distinct framework rather than treating similarly numbered levels as equivalent to another scale."
+      ],
+      "status_as_of": "2026-08-12"
+    },
+    {
+      "framework_id": "jlpt",
+      "name": "Japanese-Language Proficiency Test",
+      "owner_or_authority": "The Japan Foundation and Japan Educational Exchanges and Services",
+      "scope": "Japanese proficiency test with five test levels; from the December 2025 test, passing score reports include a scoped CEFR reference indication.",
+      "level_codes": ["N5", "N4", "N3", "N2", "N1"],
+      "mapping_to_cefr": "official_scoped",
+      "mapping_notes": [
+        "The CEFR indication is reference information tied to JLPT total score, not a replacement for JLPT pass/fail.",
+        "The official JLPT site states that the CEFR reference covers linguistic knowledge and reception tested by JLPT and does not include production or interaction."
+      ],
+      "official_scoped_mappings": [
+        {"jlpt_level": "N5", "passing_total_score_min": 80, "cefr_reference": "A1", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N4", "passing_total_score_min": 90, "cefr_reference": "A2", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N3", "passing_total_score_min": 95, "passing_total_score_max": 103, "cefr_reference": "A2", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N3", "passing_total_score_min": 104, "cefr_reference": "B1", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N2", "passing_total_score_min": 90, "passing_total_score_max": 111, "cefr_reference": "B1", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N2", "passing_total_score_min": 112, "cefr_reference": "B2", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N1", "passing_total_score_min": 100, "passing_total_score_max": 141, "cefr_reference": "B2", "scope": ["linguistic", "reception", "reading", "listening"]},
+        {"jlpt_level": "N1", "passing_total_score_min": 142, "cefr_reference": "C1", "scope": ["linguistic", "reception", "reading", "listening"]}
+      ],
+      "status_as_of": "2026-08-12"
+    },
+    {
+      "framework_id": "hsk",
+      "name": "HSK Chinese Proficiency Test",
+      "owner_or_authority": "Chinese Testing International / Chinese Tests Service",
+      "scope": "Standardized Chinese proficiency testing currently transitioning from the established HSK system toward HSK 3.0.",
+      "level_codes": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "mapping_to_cefr": "transitioning",
+      "mapping_notes": [
+        "HSK 3.0 is designed as a nine-level system, but the official January 2026 notice described HSK 3.0 Levels 1-6 as a global pilot and said regular 2026 exam dates would continue using HSK 2.0 until a formal launch is announced.",
+        "Gef must version HSK metadata by test generation and date rather than treating a single old HSK-to-CEFR chart as timeless.",
+        "No CEFR crosswalk is stored here for HSK 3.0 until an authoritative current mapping with scope is verified."
+      ],
+      "status_as_of": "2026-08-12"
+    }
+  ],
+  "crosswalk_policy": {
+    "exact_equivalence_forbidden_without_source": true,
+    "scope_required": true,
+    "confidence_required": true,
+    "notes": [
+      "A test score, a framework level, and a learner's overall proficiency are three different objects.",
+      "Crosswalks must identify which skills were actually measured and whether the mapping is official, empirical, approximate, or merely a teaching convention.",
+      "Ranges may overlap. Gef should display approximate or scoped mappings honestly rather than force every system into one-to-one boxes.",
+      "Current mappings are data, not constants in UI code. They require a source date because test frameworks change."
+    ]
+  },
+  "language_specific_data_policy": {
+    "do_not_duplicate_language_registry": true,
+    "candidate_fields": [
+      "communicative_functions",
+      "suggested_vocabulary",
+      "grammar_targets",
+      "orthography_and_script_targets",
+      "pronunciation_or_phonology_targets",
+      "discourse_and_text_types",
+      "cultural_pragmatics",
+      "corpus_examples",
+      "assessment_evidence"
+    ],
+    "evidence_rules": [
+      "The CEFR level model applies across languages, but vocabulary and grammar inventories must be researched language by language.",
+      "Prefer first-party Gef corpus evidence, open or clearly licensed frequency resources, official public standards that permit the intended use, and independent linguistic research.",
+      "Do not copy proprietary dictionary definitions, commercial course lists, English Profile entries, publisher inventories, or official descriptor prose into Gef.",
+      "Suggested vocabulary must be stored as Gef candidate curriculum data, not as a claim that CEFR officially requires those exact words.",
+      "Every generated language-specific inventory starts as candidate and needs review appropriate to its trust level.",
+      "Word counts are not portable across writing systems, morphology, segmentation conventions, or languages; never universalize a raw English vocabulary-number threshold across the language registry."
+    ]
+  },
+  "rights_policy": {
+    "gef_copy_is_first_party": true,
+    "copy_official_descriptors": false,
+    "translate_official_descriptors": false,
+    "notes": [
+      "Framework names, level codes, dates, scope, and factual relationships may be referenced, while user-facing explanations are written independently by Gef.",
+      "Council of Europe publication text and official descriptor tables are not imported or mass-translated for the commercial app without explicit rights clearance.",
+      "ACTFL guideline prose and examples are not reproduced because ACTFL expressly restricts the Proficiency Guidelines to non-profit educational use absent permission.",
+      "Preply is UX inspiration only. Do not copy its prose, character quotations, level nicknames, vocabulary counts, study-hour estimates, or level-by-level editorial structure verbatim.",
+      "Short quotations in the wider Gef quote corpus require their own rights/provenance analysis; educational context is not a blanket fair-use guarantee."
+    ]
+  },
+  "research_sources": [
+    {
+      "source_id": "src_cefr_levels_coe_2026",
+      "authority": "Council of Europe",
+      "title": "The CEFR Levels",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions",
+      "use": "Primary source for the six common reference levels and language-neutral framework model.",
+      "rights_note": "Reference facts only; do not reproduce descriptor tables into Gef."
+    },
+    {
+      "source_id": "src_cefr_companion_volume_coe_2020",
+      "authority": "Council of Europe",
+      "title": "Common European Framework of Reference for Languages: Companion Volume",
+      "url": "https://book.coe.int/en/education-and-modern-languages/8150-common-european-framework-of-reference-for-languages-learning-teaching-assessment-companion-volume.html",
+      "use": "Primary source confirming Pre-A1 and expanded activity/competence scales.",
+      "rights_note": "Publication text is copyrighted by the Council of Europe."
+    },
+    {
+      "source_id": "src_cefr_rld_coe_2026",
+      "authority": "Council of Europe",
+      "title": "Reference Level Descriptions language by language",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/reference-level-descriptions",
+      "use": "Primary source for the distinction between language-neutral CEFR levels and language-specific vocabulary/grammar specifications."
+    },
+    {
+      "source_id": "src_coe_rights_permissions_2026",
+      "authority": "Council of Europe",
+      "title": "Rights and permissions",
+      "url": "https://book.coe.int/en/content/10-rights-and-permissions",
+      "use": "Rights gate for reproduction and translation of Council of Europe publication material."
+    },
+    {
+      "source_id": "src_actfl_guidelines_overview_2024",
+      "authority": "ACTFL",
+      "title": "ACTFL Proficiency Guidelines Overview",
+      "url": "https://www.actfl.org/proficiency-guidelines-overview",
+      "use": "Primary source for ACTFL scope, domains, and current 2024 framework."
+    },
+    {
+      "source_id": "src_actfl_usage_policy_2026",
+      "authority": "ACTFL",
+      "title": "Use of ACTFL Proficiency Guidelines and Issuing of Official ACTFL Tests",
+      "url": "https://www.actfl.org/use-of-actfl-proficiency-guidelines-and-issuing-of-official-actfl-tests",
+      "use": "Primary source for ACTFL reproduction and commercial-use restrictions.",
+      "rights_note": "Do not reproduce ACTFL guideline prose or examples in Gef without authorization."
+    },
+    {
+      "source_id": "src_ilr_scale_2026",
+      "authority": "Interagency Language Roundtable",
+      "title": "Descriptions of Proficiency Levels",
+      "url": "https://govtilr.org/Skills/ILRscale1.htm",
+      "use": "Primary source for ILR base levels 0-5 and plus levels."
+    },
+    {
+      "source_id": "src_canada_clb_2026",
+      "authority": "Government of Canada",
+      "title": "Understanding the Canadian Language Benchmarks",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/video/canadian-language-benchmarks.html",
+      "use": "Primary government source for 12 CLB benchmarks across four skills."
+    },
+    {
+      "source_id": "src_canada_language_tests_2026",
+      "authority": "Government of Canada",
+      "title": "Express Entry: Language test results",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+      "use": "Primary source showing CLB for English, NCLC for French, and skill-specific test conversions."
+    },
+    {
+      "source_id": "src_jlpt_cefr_reference_2026",
+      "authority": "The Japan Foundation and Japan Educational Exchanges and Services",
+      "title": "Indication of the CEFR Level for Reference",
+      "url": "https://www.jlpt.jp/e/about/cefr_reference.html",
+      "use": "Primary source for December 2025 onward JLPT-to-CEFR reference score mappings and their limited skill scope."
+    },
+    {
+      "source_id": "src_hsk3_pilot_2026",
+      "authority": "Chinese Tests Service",
+      "title": "HSK 3.0 global pilot announcement",
+      "url": "https://www.chinesetest.cn/notice",
+      "use": "Primary source for the January 31, 2026 HSK 3.0 pilot and transitional 2026 status."
+    },
+    {
+      "source_id": "src_preply_levels_inspiration_2026",
+      "authority": "Preply",
+      "title": "A comprehensive guide to English language levels & how to level up!",
+      "url": "https://preply.com/en/blog/english-language-levels/",
+      "use": "Product-owner supplied UX/editorial inspiration only; not a source of Gef descriptor prose, vocabulary thresholds, study-hour estimates, or copyrighted quotations.",
+      "rights_note": "Do not copy or closely imitate the article's protected expression."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

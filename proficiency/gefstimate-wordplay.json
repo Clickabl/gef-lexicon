@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "registry_snapshot_source": "Clickabl/gef-expo/registry/language-support.json",
+  "purpose": "Candidate localization research for the English 'Gefstimate' wordplay. Advisory only; never use this file as the language-support registry.",
+  "semantic_key": "Gef estimate",
+  "english_display": "Gefstimate",
+  "policy": {
+    "clarity_over_wordplay": true,
+    "all_wordplay_requires_native_review": true,
+    "do_not_transliterate_english_pun": true,
+    "literal_default_when_uncertain": true,
+    "note": "A pun is worth shipping only when a local word meaning estimate remains immediately recognizable after Gef replaces or joins its opening sound. Technical loanwords can be valid yet wrong for friendly consumer UI."
+  },
+  "strong_candidates": [
+    {"language_code":"en","candidate":"Gefstimate","base_term":"estimate","note":"English portmanteau; product owner's proposed term.","source_ids":["src_en"]},
+    {"language_code":"es","candidate":"Gefstimación","base_term":"estimación","note":"Common noun for an estimate.","source_ids":["src_es"]},
+    {"language_code":"fr","candidate":"Gefstimation","base_term":"estimation","note":"Common noun for an estimate.","source_ids":["src_fr"]},
+    {"language_code":"pt","candidate":"Gefstimativa","base_term":"estimativa","note":"Common noun for an approximate estimate.","source_ids":["src_pt"]},
+    {"language_code":"it","candidate":"Gefstima","base_term":"stima","note":"Common noun for estimate/estimation.","source_ids":["src_it"]},
+    {"language_code":"gl","candidate":"Gefstimación","base_term":"estimación","note":"Recognizable Galician estimate form.","source_ids":["src_gl"]},
+    {"language_code":"ro","candidate":"Gefstimare","base_term":"estimare","note":"Recognizable Romanian estimate form.","source_ids":["src_stats"]},
+    {"language_code":"id","candidate":"Gefstimasi","base_term":"estimasi","note":"Established Indonesian noun for estimate/assessment.","source_ids":["src_id"]},
+    {"language_code":"rm","candidate":"Gefstimaziun","base_term":"stimaziun","note":"Romansh government usage shows stimaziun for estimation.","source_ids":["src_rm"]},
+    {"language_code":"ht","candidate":"Gefstimasyon","base_term":"estimasyon","note":"Haitian Creole government usage uses estimasyon.","source_ids":["src_ht"]}
+  ],
+  "register_sensitive_candidates": [
+    {"language_code":"ca","candidate":"Gefstimació","base_term":"estimació","note":"Recognized in statistical terminology; everyday estimate may instead be càlcul/pressupost.","source_ids":["src_stats"]},
+    {"language_code":"da","candidate":"Gefstimat","base_term":"estimat","note":"Danish estimat exists, especially mathematical/technical; everyday estimate often skøn/vurdering.","source_ids":["src_stats"]},
+    {"language_code":"eu","candidate":"Gefstimazio","base_term":"estimazio","note":"Recognized Basque form in statistical/estimation contexts; zenbatespen is also standard and may be more idiomatic.","source_ids":["src_stats"]},
+    {"language_code":"fi","candidate":"Gefstimaatti","base_term":"estimaatti","note":"Technical/statistical loan form exists; everyday estimate is more often arvio.","source_ids":["src_stats"]},
+    {"language_code":"nb","candidate":"Gefstimat","base_term":"estimat","note":"Bokmål recognizes estimat, though anslag/overslag are also common.","source_ids":["src_nb","src_stats"]},
+    {"language_code":"nn","candidate":"Gefstimat","base_term":"estimat","note":"Official Nynorsk dictionary recognizes estimat.","source_ids":["src_nn"]},
+    {"language_code":"sv","candidate":"Gefstimat","base_term":"estimat","note":"Statistical/technical estimat exists; everyday estimate is usually skattning/uppskattning.","source_ids":["src_stats"]}
+  ],
+  "literal_default_codes": ["el","zh","hi","ar","bn","ru","ur","de","ja","pcm","mr","vi","te","ha","tr","pa","sw","fil","ta","yue","fa","ko","th","jv","af","ak","am","as","az","ba","be","bg","bs","cs","cv","cy","dsb","et","ga","gd","gu","he","hr","hsb","hu","hy","ig","is","ka","kk","km","kn","kok","ky","lo","lt","lv","mk","ml","mn","ms","my","ne","nl","or","pl","ps","qu","sd","shn","si","sk","sl","so","sq","sr","ti","tk","uk","uz","yo","zu","haw","bho","om","ku","ckb"],
+  "literal_default_note": "These languages were checked in the first-pass 104-language sweep and no sufficiently obvious broadly natural estim-/stima- portmanteau was identified. Localize the semantic phrase 'Gef estimate' normally. A native reviewer may later promote a genuinely good local joke.",
+  "sources": {
+    "src_en": {"url":"https://dictionary.cambridge.org/dictionary/english/estimate","note":"English source word; Gefstimate is first-party wordplay."},
+    "src_es": {"url":"https://dictionary.cambridge.org/dictionary/english-spanish/estimate","note":"Spanish uses estimación / estimar for estimate."},
+    "src_fr": {"url":"https://dictionary.cambridge.org/dictionary/english-french/estimate","note":"French uses estimation / estimer."},
+    "src_pt": {"url":"https://www.infopedia.pt/dicionarios/lingua-portuguesa/estimativa","note":"Portuguese estimativa is an estimate/approximate calculation."},
+    "src_it": {"url":"https://dictionary.cambridge.org/dictionary/italian-english/stima","note":"Italian stima means estimate/estimation."},
+    "src_gl": {"url":"https://digalego.xunta.gal/es/term/27977/estimar","note":"Galician estimar includes approximate calculation; dictionary neighborhood includes estimación."},
+    "src_stats": {"url":"https://isi-web.org/glossary/476","note":"International Statistical Institute multilingual glossary includes estimate terminology for Catalan, Romanian, Danish, Norwegian, Swedish, Finnish, Basque and others."},
+    "src_id": {"url":"https://kbbi.web.id/estimasi","note":"KBBI mirror records Indonesian estimasi as perkiraan/penilaian."},
+    "src_rm": {"url":"https://www.gr.ch/RM/medias/communicaziuns/MMStaka/1999/Seiten/RM_13800.aspx","note":"Official Grisons Romansh text uses stimaziun/stimaziuns."},
+    "src_ht": {"url":"https://www.census.gov/newsroom/press-releases/2020/2020-demographic-analysis-estimates/2020-demographic-analysis-estimates-haitian-creole.html","note":"US Census Haitian Creole text uses estimasyon."},
+    "src_nn": {"url":"https://ordbokene.no/nn/123363","note":"Official Nynorsk dictionary entry for estimat."},
+    "src_nb": {"url":"https://snl.no/estimat","note":"Norwegian reference entry for estimat."}
+  },
+  "review_state": "candidate",
+  "version": 1
+}

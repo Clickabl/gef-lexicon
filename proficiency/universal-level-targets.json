@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "framework_id": "cefr",
+  "status": "candidate",
+  "purpose": "First-party Gef curriculum scaffold for deciding what kinds of communicative work to research at each CEFR band. These are not official CEFR descriptors and are not vocabulary lists.",
+  "rules": [
+    "These targets define research territory, not mandatory words or grammar shared by every language.",
+    "A language-specific specification resolves these targets into real lexemes, senses, constructions, scripts, phonology, discourse conventions, and pragmatics.",
+    "Higher levels emphasize breadth, precision, discourse, register, inference, and domain flexibility rather than a finite checklist.",
+    "A target can appear at more than one level as independence, range, precision, and complexity increase."
+  ],
+  "levels": [
+    {
+      "level": "Pre-A1",
+      "research_domains": [
+        "identity and names",
+        "recognizing familiar people and objects",
+        "yes, no, thanks, greeting, leave-taking and other tiny social exchanges",
+        "numbers and very basic quantities",
+        "immediate wants and needs",
+        "basic place and direction recognition",
+        "high-frequency classroom or app instructions",
+        "script, sound or sign recognition needed to begin reading/listening"
+      ],
+      "independence_goal": "Move from isolated recognition or memorized fragments toward tiny predictable exchanges with less support.",
+      "reading_goal": "Recognize a small dependable set of highly familiar forms and extract meaning when context is extremely supportive."
+    },
+    {
+      "level": "A1",
+      "research_domains": [
+        "self, family and close relationships",
+        "home and immediate surroundings",
+        "food, drink and basic preferences",
+        "days, dates, clock time and simple schedules",
+        "common places and local movement",
+        "weather and immediate physical description",
+        "common actions and routines",
+        "basic possession, existence, location, identity and description",
+        "simple requests, questions and responses",
+        "short notices, labels, messages and highly predictable narrative"
+      ],
+      "independence_goal": "Use a small repertoire productively instead of relying only on memorized whole phrases.",
+      "reading_goal": "Understand short, concrete material when vocabulary, syntax and context are highly familiar."
+    },
+    {
+      "level": "A2",
+      "research_domains": [
+        "daily routines and changing schedules",
+        "shopping, prices, services and transactions",
+        "school, work and common responsibilities",
+        "travel, transport, directions and accommodation",
+        "health, body and common problems",
+        "past events and near-future plans",
+        "basic comparisons and preferences",
+        "frequency, duration and quantity",
+        "simple reasons, purposes and consequences",
+        "invitations, arrangements and routine social coordination",
+        "short connected narrative and practical correspondence"
+      ],
+      "independence_goal": "Handle familiar routine situations with less scripting and connect several simple ideas into a useful exchange.",
+      "reading_goal": "Follow the main point and useful details in short straightforward material on familiar subjects."
+    },
+    {
+      "level": "B1",
+      "research_domains": [
+        "personal experiences and extended narrative",
+        "plans, goals and explanations",
+        "opinions with simple supporting reasons",
+        "problems, solutions and advice",
+        "travel and unexpected everyday situations",
+        "media, hobbies, interests and cultural topics",
+        "emotions, reactions and relationships",
+        "cause, consequence, condition and contrast",
+        "summarizing the main point of accessible material",
+        "connected messages, stories, descriptions and informal argument"
+      ],
+      "independence_goal": "Sustain connected communication through ordinary situations without another person or a translation tool carrying the structure.",
+      "reading_goal": "Follow central meaning across longer connected texts on familiar or personally relevant topics and infer some meaning from context."
+    },
+    {
+      "level": "B2",
+      "research_domains": [
+        "structured argument and counterargument",
+        "abstract ideas and hypothetical situations",
+        "detailed cause-and-effect reasoning",
+        "advantages, disadvantages and tradeoffs",
+        "academic and professional communication in accessible domains",
+        "stance, emphasis and degrees of certainty",
+        "register differences across common formal and informal settings",
+        "extended explanation, synthesis and comparison",
+        "implicit links across paragraphs or turns",
+        "idiomatic and figurative language that is common rather than highly specialized"
+      ],
+      "independence_goal": "Communicate effectively at length with enough range to discuss complexity and repair many gaps without derailing the interaction.",
+      "reading_goal": "Understand substantial authentic material, including abstraction and argument, while using context and structure to manage unknown language."
+    },
+    {
+      "level": "C1",
+      "research_domains": [
+        "nuanced stance and evaluation",
+        "implicit meaning, inference and presupposition",
+        "fine register and audience adaptation",
+        "complex cohesion and discourse organization",
+        "specialized academic or professional language by domain",
+        "idiomaticity and conventional phraseology",
+        "rhetorical effect, hedging, emphasis and diplomacy",
+        "dense information synthesis",
+        "rapid reformulation and clarification",
+        "culturally situated pragmatic choices where evidence supports them"
+      ],
+      "independence_goal": "Use language flexibly and deliberately across demanding contexts rather than merely cope with them.",
+      "reading_goal": "Follow demanding extended texts, including implicit relationships, stylistic choices and specialized material when the domain is reasonably accessible."
+    },
+    {
+      "level": "C2",
+      "research_domains": [
+        "fine semantic distinctions and near-synonym choice",
+        "highly controlled style and voice",
+        "rare or specialized language by domain rather than one global word list",
+        "dense figurative, ironic and allusive language",
+        "complex rhetoric and argument structure",
+        "rapid synthesis across multiple difficult sources",
+        "precise reformulation under tight meaning constraints",
+        "subtle interpersonal and cultural pragmatics",
+        "historical, literary, technical or dialectal variation when relevant to the learner's goals",
+        "continued expansion into unfamiliar domains"
+      ],
+      "independence_goal": "Maintain exceptionally high precision, flexibility and control even when language, subject matter or style becomes unusually demanding.",
+      "reading_goal": "Handle extremely demanding texts with fine sensitivity to implication, structure and style while still using domain knowledge or reference tools when appropriate."
+    }
+  ]
+}

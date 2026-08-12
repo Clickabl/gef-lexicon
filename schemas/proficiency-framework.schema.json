@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/proficiency-framework.schema.json",
+  "title": "Gef Language Proficiency Framework Database",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "canonical_framework",
+    "language_universe_source",
+    "skill_model",
+    "frameworks",
+    "crosswalk_policy",
+    "language_specific_data_policy",
+    "rights_policy",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "canonical_framework": {"type": "string", "const": "cefr"},
+    "language_universe_source": {"type": "string", "minLength": 1},
+    "skill_model": {
+      "type": "object",
+      "required": ["overall_is_rollup", "activities", "modalities", "rules"],
+      "properties": {
+        "overall_is_rollup": {"type": "boolean"},
+        "activities": {"type": "array", "items": {"enum": ["reception", "production", "interaction", "mediation"]}, "uniqueItems": true},
+        "modalities": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "rules": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "frameworks": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/framework"}
+    },
+    "crosswalk_policy": {
+      "type": "object",
+      "required": ["exact_equivalence_forbidden_without_source", "scope_required", "confidence_required", "notes"],
+      "properties": {
+        "exact_equivalence_forbidden_without_source": {"type": "boolean"},
+        "scope_required": {"type": "boolean"},
+        "confidence_required": {"type": "boolean"},
+        "notes": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "language_specific_data_policy": {
+      "type": "object",
+      "required": ["do_not_duplicate_language_registry", "candidate_fields", "evidence_rules"],
+      "properties": {
+        "do_not_duplicate_language_registry": {"type": "boolean"},
+        "candidate_fields": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "evidence_rules": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "rights_policy": {
+      "type": "object",
+      "required": ["gef_copy_is_first_party", "copy_official_descriptors", "translate_official_descriptors", "notes"],
+      "properties": {
+        "gef_copy_is_first_party": {"type": "boolean"},
+        "copy_official_descriptors": {"type": "boolean"},
+        "translate_official_descriptors": {"type": "boolean"},
+        "notes": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "research_sources": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/researchSource"}
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "level": {
+      "type": "object",
+      "required": ["code", "gef_label", "gef_summary", "progression_focus"],
+      "properties": {
+        "code": {"type": "string", "minLength": 1},
+        "gef_label": {"type": "string", "minLength": 1},
+        "gef_summary": {"type": "string", "minLength": 1},
+        "progression_focus": {"type": "string", "minLength": 1},
+        "official_common_reference_level": {"type": "boolean"},
+        "companion_volume_entry_level": {"type": "boolean"},
+        "core_ui_level": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "framework": {
+      "type": "object",
+      "required": ["framework_id", "name", "owner_or_authority", "scope", "level_codes", "mapping_to_cefr"],
+      "properties": {
+        "framework_id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "owner_or_authority": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "level_codes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "levels": {"type": "array", "items": {"$ref": "#/definitions/level"}},
+        "sublevels": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "mapping_to_cefr": {"enum": ["canonical", "official_scoped", "none_stored", "transitioning"]},
+        "mapping_notes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "official_scoped_mappings": {"type": "array", "items": {"type": "object"}},
+        "status_as_of": {"type": "string"},
+        "rights_note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "researchSource": {
+      "type": "object",
+      "required": ["source_id", "authority", "title", "url", "use"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"},
+        "authority": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "minLength": 1},
+        "use": {"type": "string", "minLength": 1},
+        "rights_note": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/proficiency-language-spec.schema.json",
+  "title": "Gef Language-Specific Proficiency Specification",
+  "type": "object",
+  "required": ["schema_version", "language_tag", "framework_id", "registry_source", "levels", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "language_tag": {"type": "string", "minLength": 2},
+    "framework_id": {"type": "string", "const": "cefr"},
+    "registry_source": {"type": "string", "minLength": 1},
+    "segmentation_note": {"type": "string"},
+    "research_note": {"type": "string"},
+    "levels": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/levelSpec"}
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "sourceEvidence": {
+      "type": "object",
+      "required": ["source_id", "evidence_role"],
+      "properties": {
+        "source_id": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"},
+        "evidence_role": {"enum": ["validation", "frequency", "curriculum", "corpus", "assessment", "linguistic_analysis", "rights"]},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "vocabularyTarget": {
+      "type": "object",
+      "required": ["target_type", "target_id", "reason", "review_state"],
+      "properties": {
+        "target_type": {"enum": ["concept", "lexeme", "sense", "phrase_pattern"]},
+        "target_id": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1},
+        "priority": {"enum": ["core", "high", "useful", "enrichment"]},
+        "source_evidence": {"type": "array", "items": {"$ref": "#/definitions/sourceEvidence"}},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+      },
+      "additionalProperties": false
+    },
+    "grammarTarget": {
+      "type": "object",
+      "required": ["target_type", "target_id", "reason", "review_state"],
+      "properties": {
+        "target_type": {"enum": ["construction", "semantic_function", "morphology_feature", "syntax_pattern"]},
+        "target_id": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1},
+        "priority": {"enum": ["core", "high", "useful", "enrichment"]},
+        "source_evidence": {"type": "array", "items": {"$ref": "#/definitions/sourceEvidence"}},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+      },
+      "additionalProperties": false
+    },
+    "levelSpec": {
+      "type": "object",
+      "required": ["level", "communicative_targets", "suggested_vocabulary", "grammar_targets", "review_state"],
+      "properties": {
+        "level": {"enum": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
+        "communicative_targets": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "suggested_vocabulary": {"type": "array", "items": {"$ref": "#/definitions/vocabularyTarget"}},
+        "grammar_targets": {"type": "array", "items": {"$ref": "#/definitions/grammarTarget"}},
+        "orthography_and_script_targets": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "pronunciation_or_phonology_targets": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "discourse_and_text_targets": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "cultural_pragmatics_targets": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "corpus_evidence": {"type": "array", "items": {"$ref": "#/definitions/sourceEvidence"}},
+        "assessment_evidence": {"type": "array", "items": {"$ref": "#/definitions/sourceEvidence"}},
+        "notes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

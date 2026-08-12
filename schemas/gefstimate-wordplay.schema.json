@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gef.clickabl.co/schemas/gefstimate-wordplay.schema.json",
+  "title": "Gefstimate localization wordplay research",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "registry_snapshot_source", "semantic_key", "english_display", "policy", "strong_candidates", "register_sensitive_candidates", "literal_default_codes", "sources", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "minimum": 1},
+    "registry_snapshot_source": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string"},
+    "semantic_key": {"const": "Gef estimate"},
+    "english_display": {"const": "Gefstimate"},
+    "policy": {"type": "object"},
+    "strong_candidates": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+    "register_sensitive_candidates": {"type": "array", "items": {"$ref": "#/$defs/candidate"}},
+    "literal_default_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
+    "literal_default_note": {"type": "string"},
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["url", "note"],
+        "properties": {"url": {"type": "string"}, "note": {"type": "string"}}
+      }
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language_code", "candidate", "base_term", "note", "source_ids"],
+      "properties": {
+        "language_code": {"type": "string", "minLength": 2},
+        "candidate": {"type": "string", "minLength": 1},
+        "base_term": {"type": "string", "minLength": 1},
+        "note": {"type": "string"},
+        "source_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}
