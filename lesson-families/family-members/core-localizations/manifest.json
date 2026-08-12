@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "language_contract": "../language-contract.json",
+  "purpose": "Learner-facing Family Members lesson copy in every canonical learn-from language. Target-language kinship facts remain structured and relationship-first so the same researched profile can be explained to any source-language learner without a 104 x 21 pair matrix.",
+  "storage_shards": ["tier1.json","tier2.json","mk.json","tier3-01.json","tier3-02.json","tier3-03.json"],
+  "semantic_tiers_are_derived_from": "../language-contract.json",
+  "expected_tier_counts": {"1":6,"2":15,"3":83},
+  "expected_total": 104,
+  "formats": {
+    "extended_v1": {
+      "required_copy_keys": ["title","invitation","summary","idea_title","idea_text","culture_title","culture_text","practice_title","practice_text","completion_title","completion_text"],
+      "required_runtime_keys": ["source_heading","target_heading_template","terms_heading_template","examples_heading","previous_label","next_label","finish_label","done_label","correct_fallback","retry_fallback"]
+    },
+    "compact_core_v1": {
+      "description": "Tier 3 core lesson uses the already-localized source bridge as its invitation/relationship-first explanation, then adds all remaining visible lesson copy locally. App-wide navigation buttons come from the normal interface localization pack; lesson-specific fallback buttons are included for learn-from languages that do not yet have a production UI pack.",
+      "source_bridge_supplies": ["invitation","summary","relationship_first_explanation"],
+      "required_copy_keys": ["title","culture_caution","practice_instruction","completion_text"],
+      "required_runtime_keys": ["source_heading","target_heading_template","terms_heading_template","examples_heading","previous_label","next_label","finish_label","done_label"]
+    }
+  },
+  "review_policy": "Machine-created localization can provide coverage but must stay labeled machine_translated until native/community review promotes it. Language availability and human verification are separate states.",
+  "version": 2
+}
