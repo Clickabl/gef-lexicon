@@ -60,6 +60,8 @@ jobs:
         run: npm run validate:family-members
       - name: Validate calendar-year multilingual coverage
         run: npm run validate:calendar-year
+      - name: Validate shared Lexi lesson semantic inputs
+        run: npm run validate:semantic
       - name: Validate English source coverage
         run: npm run validate:english
       - name: Regenerate concept index
@@ -68,6 +70,8 @@ jobs:
         run: git diff --exit-code -- concepts/compiled-concept-index.json
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
+      - name: Compile shared Lexi semantic lesson index
+        run: npm run compile:semantic
       - name: Compile development shared name index
         run: npm run compile:names
       - name: Compile production name index review gate
