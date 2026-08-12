@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "lesson_family_ids": ["LES.mul.time.days_of_week", "LES.mul.time.months_of_year", "LES.mul.time.seasons"],
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "expected_total": 104,
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
+  "shards": [
+    {"tier":1,"path":"tier1.json","expected_count":6},
+    {"tier":2,"path":"tier2.json","expected_count":15},
+    {"tier":3,"path":"tier3-a.json","expected_count":21},
+    {"tier":3,"path":"tier3-b.json","expected_count":21},
+    {"tier":3,"path":"tier3-c.json","expected_count":21},
+    {"tier":3,"path":"tier3-d.json","expected_count":20}
+  ],
+  "record_contract": {
+    "days_of_week": "Short learner-facing explanation in the language itself for the Days of the Week lesson.",
+    "months_of_year": "Short learner-facing explanation in the language itself for the Months of the Year lesson.",
+    "seasons": "Short learner-facing explanation in the language itself for the Seasons lesson.",
+    "role": "These strings make a language usable as a best/explanation language. They do not make Tier 3 a learning-language target.",
+    "review": "All generated strings are candidates until reviewed. Machine output never self-promotes."
+  },
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 1
+}
