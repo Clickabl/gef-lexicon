@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.relationships_family_life",
+  "lesson_key": "relationships-family-life",
+  "target_language": "mul",
+  "curriculum_concept_ids": [],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.vocab.extended_family"],
+  "difficulty_band": "A2",
+  "language_capabilities_manifest": "../../../lesson-families/family-members/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 4,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Family path stage 4. Core teaches neutral relationship/life-state concepts and recognition/matching. Cultural mode may teach register, gender marking, legal/social distinctions, preferred partner labels and usage contrasts only when both active language roles are full-support."
+  },
+  "rules": [
+    {"rule_id":"RULE.mul.family.relationships.status","rule_key":"relationship-status-words-name-different-kinds-of-facts","order":1,"match_refs":[],"practice_eligible_by_default":true,"notes":"Dating, engaged, married, separated, divorced, widowed and single describe different relationship or legal/social states; do not flatten them into one continuum."},
+    {"rule_id":"RULE.mul.family.relationships.labels","rule_key":"speaker-chosen-relationship-label-wins","order":2,"match_refs":[],"practice_eligible_by_default":true,"notes":"Boyfriend, girlfriend, partner, spouse, husband, wife and significant other carry different gender, marriage and register signals. Teach conventional meaning without overriding a person's chosen label."},
+    {"rule_id":"RULE.mul.family.relationships.context","rule_key":"legal-and-social-meanings-vary","order":3,"match_refs":[],"practice_eligible_by_default":false,"notes":"Marriage, separation, divorce, widowhood and partnership categories can have jurisdictional, religious and community-specific meanings. The lesson is vocabulary, not legal advice."}
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.mul.family.relationships.catalog","trigger_type":"catalog_topic","feature_bundle":{"topic":"family_and_relationships","family_path_stage":4},"notes":"Sequentially follows Family 3 in the initial Family path."}
+  ],
+  "practice_modules": [
+    {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels"],"constraints":{"source":"family_path.stage_4.core_concepts","recognition_safe":true}},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels"],"constraints":{"require_unique_defensible_answer":true,"avoid_personal_disclosure":true}}
+  ],
+  "presentation": {
+    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "intro", "terms", "culture", "examples", "practice", "reading", "completion"],
+    "session_depth_filter": {"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
+  },
+  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state": "candidate",
+  "version": 1
+}

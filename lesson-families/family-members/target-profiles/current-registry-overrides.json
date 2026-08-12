@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "disabled_full_target_language_tags": ["nl"],
+  "entries": [
+    {
+      "language_tag": "mk",
+      "target_explainer_en": "Macedonian has a rich set of kinship terms. Basic close-family words include мајка (mother), татко (father), брат (brother), сестра (sister), син (son), ќерка (daughter), баба (grandmother), and дедо (grandfather). Extended-family vocabulary can encode which side of the family a relative belongs to: вујко is the mother's brother, while стрико or чичко can name the father's brother. Male and female cousins are братучед and братучетка. The same forms внук and внука can cover grandson/granddaughter and nephew/niece, so the relationship must be recovered from context rather than from a one-word English gloss.",
+      "distinctions": [
+        {"code":"maternal_paternal_side","behavior":"lexicalized_in_extended_family","note_en":"вујко marks mother's brother; стрико/чичко can mark father's brother."},
+        {"code":"gender_in_core_term","behavior":"common","note_en":"брат/сестра, син/ќерка, братучед/братучетка."},
+        {"code":"english_gloss_overlap","behavior":"context_required","note_en":"внук/внука can refer to grandchild or nephew/niece relationships."},
+        {"code":"kin_terms_as_social_address","behavior":"possible","note_en":"чичко can also be used in address for an older man; teach the kin relationship first."}
+      ],
+      "core_terms": [
+        {"concept":"family","display":"семејство"},
+        {"concept":"family_member","display":"член на семејството"},
+        {"concept":"parent","display":"родител"},
+        {"concept":"mother","display":"мајка"},
+        {"concept":"father","display":"татко"},
+        {"concept":"child","display":"дете"},
+        {"concept":"son","display":"син"},
+        {"concept":"daughter","display":"ќерка"},
+        {"concept":"brother","display":"брат"},
+        {"concept":"sister","display":"сестра"},
+        {"concept":"grandfather","display":"дедо"},
+        {"concept":"grandmother","display":"баба"},
+        {"concept":"maternal_uncle","display":"вујко"},
+        {"concept":"paternal_uncle","display":"стрико","alternatives":["чичко"]},
+        {"concept":"aunt","display":"тетка","notes_en":"More specific affinal and family-side terms also occur; beginner use should stay relationship-aware."},
+        {"concept":"male_cousin","display":"братучед"},
+        {"concept":"female_cousin","display":"братучетка","alternatives":["братучеда"]},
+        {"concept":"grandson_or_nephew","display":"внук"},
+        {"concept":"granddaughter_or_niece","display":"внука"},
+        {"concept":"husband","display":"сопруг"},
+        {"concept":"wife","display":"сопруга"}
+      ],
+      "cultural_note_en": "Macedonian kin terms can be more specific than a beginner English gloss, especially around uncles and other extended relatives, and some kin words also function as respectful or familiar address. The lesson should teach the relationship encoded by the word without treating one household's preferred address forms as a rule for every Macedonian-speaking family.",
+      "examples": [
+        {"target":"Ова е мајка ми.","translation_en":"This is my mother."},
+        {"target":"Тој ми е вујко.","translation_en":"He is my maternal uncle.","focus":"вујко identifies the mother's brother."},
+        {"target":"Таа ми е братучетка.","translation_en":"She is my female cousin.","focus":"The cousin term marks gender."},
+        {"target":"Ова е мојот внук.","translation_en":"This is my grandson/nephew, depending on the family relationship.","focus":"внук is broader than either single English gloss."}
+      ],
+      "source_refs": [
+        "https://makedonski.gov.mk/corpus/l/striko-m",
+        "https://makedonski.gov.mk/corpus/l/chichko-m",
+        "https://makedonski.gov.mk/bukva/%D0%B1?strana=155",
+        "https://macedonianlanguage.org/Learn/Beginners/4Ordering%2Cgiving%2Creceiving/432ShortIndirectObjectPronounsDescribingFamily.aspx",
+        "https://js.ugd.edu.mk/index.php/vospitanie/article/view/4274"
+      ],
+      "review_state": "research_passed",
+      "trust_state": "machine_verified"
+    }
+  ]
+}

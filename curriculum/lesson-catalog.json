@@ -25,10 +25,40 @@
       "lesson_id": "LES.mul.vocab.family_members",
       "priority": 30,
       "category": "vocabulary",
-      "path_scope": "tier1_tier2",
+      "path_scope": "universal",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "A1 lexical-semantic family lesson. All 104 learn-from languages have localized source bridges; structured target profiles and practice are enabled for the current Tier 1 and Tier 2 learnable languages. Tier 3/4 languages may participate as source-language anchors without implying a grammar or vocabulary course for them.",
+      "notes": "Family path stage 1: Core family. Pair-level session_depth determines Core versus Cultural. If either source or target role is Tier 3/comparison-only, show only the localized Core lesson and recognition-safe vocabulary/game material.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.vocab.describe_family",
+      "priority": 31,
+      "category": "vocabulary",
+      "path_scope": "universal",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Family path stage 2: Describe your family. Starts with reusable sentence functions and separates household facts from kinship. Cultural analysis is available only when both active language roles satisfy the Family full-support contract.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.vocab.extended_family",
+      "priority": 32,
+      "category": "vocabulary",
+      "path_scope": "universal",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Family path stage 3: Extended family. Core mode teaches relationship paths and safe matching; Cultural mode may add family-side, age, gender, affinity, address and register distinctions when both active language roles are full-support.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.vocab.relationships_family_life",
+      "priority": 33,
+      "category": "vocabulary",
+      "path_scope": "universal",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Family path stage 4: Relationships and family life. Covers dating/partner/marriage/separation/divorce vocabulary. Current 104-language Core vocabulary breadth is intentionally partial here until relationship-state vocabulary is expanded; do not fake missing translations.",
       "review_state": "candidate"
     },
     {
@@ -65,9 +95,9 @@
   "path_policy": {
     "tier1": "Build an ordered curriculum that may interleave lessons and story/chapter recommendations. Full grammar path is expected over time.",
     "tier2": "Build a selective ordered curriculum that may interleave reviewed lessons and story/chapter recommendations when evidence supports them. Do not imply a complete grammar path.",
-    "tier3": "Reading and games remain the learning path. Universal orientation lessons may still appear, but no bespoke grammar sequence is promised.",
+    "tier3": "Reading and games remain the main learning path, but universal topical lessons may expose explicitly bounded Core sessions. Core availability must never be mistaken for full cultural or grammar-course support.",
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 4
+  "version": 5
 }

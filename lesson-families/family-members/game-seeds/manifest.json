@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "language_contract": "../language-contract.json",
+  "purpose": "Minimum Tier 3 fallback vocabulary for a tiny Family matching experience. The canonical 104-language broad game inventory lives in ../game-vocabulary/ and is validated separately; rich target profiles are not forced to flatten their language-specific kin distinctions into generic game pivots.",
+  "universal_game_source": "../game-vocabulary/manifest.json",
+  "tier3_shards": ["tier3-01.json","tier3-02.json","tier3-03.json"],
+  "required_concepts": ["mother","father","son","daughter"],
+  "game_contract": {
+    "minimum_pairs": 4,
+    "preferred_game": "pair_match",
+    "relationship_first": true,
+    "forms_may_be_arrays": true,
+    "rule": "These four explicit Tier 3 fallback concepts are deliberately small. Full game coverage for all 104 languages is resolved from game-vocabulary/manifest.json, whose aligned broad concepts preserve slash-separated alternatives rather than requiring rich cultural profiles to expose fake generic concept IDs."
+  },
+  "trust_policy": "Tier 3 seeds are machine-created candidates unless their entry says otherwise. The data exists for Core-mode fallback Games, while the normal trust UI must remain honest about verification state.",
+  "expected_tier3": 83,
+  "expected_resolved_total": 104,
+  "version": 2
+}

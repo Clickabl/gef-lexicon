@@ -1,0 +1,22 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.describe_family",
+  "support_language_tag": "en",
+  "proficiency_band": "beginner",
+  "register": "plain",
+  "title": "Family 2: Describe your family",
+  "invitation": "Now turn family words into tiny useful sentences. Describe a real family, a chosen family, a household, or a completely fictional one. The grammar should work without making you explain your private life.",
+  "summary": "Practice five reusable moves: identify someone, say how many relatives you have, say who you live with, give a person's name, and compare age. Cultural mode adds the ways the two active languages handle possession, age, household language, and respectful or affectionate family labels.",
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"intro","group_id":"intro","type":"explanation","title":"Five sentences can do a lot","text":"Start with: This is my …; I have …; I live with …; My … is named …; and My … is older/younger than me. Keep kinship and household facts separate."},
+    {"block_id":"patterns","group_id":"patterns","type":"ordered_term_set","source":"english_cultural_analysis.description_patterns","include_variants":true},
+    {"block_id":"culture","group_id":"culture","type":"cultural_note","source":"english_cultural_analysis.stages.2","title":"Describing a family without defining one","text":"Languages differ in how they express possession, age, respect, household membership, and family categories. A useful lesson teaches those language choices without treating any household shape as the default."},
+    {"block_id":"examples","group_id":"examples","type":"explanation","title":"English examples","text":"This is my sister. I have two brothers. I live with my dad and my grandmother. My cousin is named Maya. My brother is younger than me."},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"concept_term_match","title":"Build the description","requires_session_mode":"practice"},
+    {"block_id":"reading","group_id":"reading","type":"explanation","title":"Read a family in context","text":"Current Gef candidate: The Frog King, for father/daughter roles. Preferred future Family 2 book: Little Women, whose central household gives repeated sister, mother, father, age, and family-description language."},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"You can introduce the cast","description":"You can describe who someone is without needing a giant family tree.","action_label":"Done"}
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

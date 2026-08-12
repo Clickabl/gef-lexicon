@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.extended_family",
+  "lesson_key": "extended-family",
+  "target_language": "mul",
+  "curriculum_concept_ids": [],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.vocab.describe_family"],
+  "difficulty_band": "A1",
+  "language_capabilities_manifest": "../../../lesson-families/family-members/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 4,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Family path stage 3. Core exposes broad extended-family concepts and recognition/matching. Cultural mode may teach language-specific family side, relative age, gender, affinity, address, and gloss collisions only when both active language roles are full-support."
+  },
+  "rules": [
+    {"rule_id":"RULE.mul.family.extended.relationship_path","rule_key":"resolve-the-relationship-path-first","order":1,"match_refs":[],"practice_eligible_by_default":true,"notes":"Identify the genealogical or affinity path before choosing a surface term: parent's parent, parent's sibling, sibling's child, cousin, spouse's parent, and so on."},
+    {"rule_id":"RULE.mul.family.extended.lexical_dimensions","rule_key":"extended-kin-terms-package-different-dimensions","order":2,"match_refs":[],"practice_eligible_by_default":true,"notes":"Languages may encode maternal/paternal side, relative age, gender, generation, speaker relation, or marriage link in the term itself."},
+    {"rule_id":"RULE.mul.family.extended.address","rule_key":"reference-and-address-can-differ","order":3,"match_refs":[],"practice_eligible_by_default":false,"notes":"A word used to describe a relative may differ from the form used to address that person directly."}
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.mul.family.extended.catalog","trigger_type":"catalog_topic","feature_bundle":{"topic":"family_and_relationships","family_path_stage":3},"notes":"Sequentially follows Family 2 in the initial Family path."}
+  ],
+  "practice_modules": [
+    {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.extended.relationship_path"],"constraints":{"source":"family_path.stage_3.core_concepts","relationship_first":true}},
+    {"module":"features_to_form","eligible_rule_ids":["RULE.mul.family.extended.relationship_path","RULE.mul.family.extended.lexical_dimensions"],"constraints":{"prompt_features":["generation","family_side","relative_age","gender","affinity"],"omit_irrelevant_features":true,"require_unique_defensible_answer":true}}
+  ],
+  "presentation": {
+    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "intro", "terms", "culture", "examples", "practice", "reading", "completion"],
+    "session_depth_filter": {"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
+  },
+  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state": "candidate",
+  "version": 1
+}

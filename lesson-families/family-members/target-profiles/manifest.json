@@ -2,36 +2,27 @@
   "schema_version": 2,
   "lesson_id": "LES.mul.vocab.family_members",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
-  "purpose": "Structured rich target-language family-member profiles for the current Tier 1 Full Curriculum and Tier 2 Selective Lessons sets. Tier 3 Read + Games languages use the separate game-vocabulary core and must not inherit a fabricated culture profile.",
-  "tier_shards": {
-    "1": "tier1.json",
-    "2": "tier2.json"
-  },
-  "expected_tier_counts": {"1": 6, "2": 15},
+  "language_contract": "../language-contract.json",
+  "purpose": "Structured target-language family-member profiles for current Tier 1 and Tier 2 learnable languages. Relationship facts are independent from the learner's explanation language so arbitrary source/target pairs do not require pair-specific lesson files.",
+  "base_shards": ["tier1.json", "tier2.json"],
+  "current_registry_overrides": "current-registry-overrides.json",
+  "resolution_order": ["load base_shards", "remove disabled_full_target_language_tags", "upsert override entries", "validate exact full_target_languages from language-contract.json"],
+  "expected_tier_counts": {"1":6,"2":15},
   "expected_total": 21,
   "record_contract": {
-    "target_explainer_en": "Canonical English editorial explanation of the target language's kinship pattern. Other support-language renderings should localize structured facts/templates rather than create independent pair-specific linguistic truth.",
-    "distinctions": "Only dimensions that materially affect beginner word choice. Absence from the array is not a claim that the language can never express the distinction.",
-    "core_terms": "Representative beginner terms with the distinctions needed for safe teaching. This is not an exhaustive kinship dictionary.",
+    "target_explainer_en": "Canonical English editorial explanation of the target language's kinship pattern. Other source-language renderings localize the structured facts without changing them.",
+    "distinctions": "Dimensions that materially affect beginner word choice. Absence is not a claim that the language can never express the distinction.",
+    "core_terms": "Representative relationship-aware beginner terms. Broad English glosses must not erase target-language distinctions or collisions.",
     "cultural_note_en": "Usage/culture caution. Do not turn community tendencies into claims about every family or speaker.",
-    "examples": "Short beginner-safe examples that illustrate the profile's actual distinctions.",
-    "source_refs": "Language-specific research provenance. Candidate records remain machine-created until reviewed."
+    "examples": "Short beginner-safe examples illustrating actual distinctions.",
+    "source_refs": "Research provenance. Trust state must reflect the level of verification."
   },
   "distinction_codes": [
-    "gender_in_core_term",
-    "sibling_relative_age",
-    "maternal_paternal_side",
-    "parent_sibling_relative_age",
-    "speaker_gender",
-    "affinal_specificity",
-    "address_reference_difference",
-    "honorific_or_register",
-    "kin_terms_as_social_address"
+    "gender_in_core_term","sibling_relative_age","maternal_paternal_side","parent_sibling_relative_age","speaker_gender","affinal_specificity","address_reference_difference","honorific_or_register","kin_terms_as_social_address","english_gloss_overlap"
   ],
-  "tier3_contract": {
-    "data_source": "../game-vocabulary/tier3.json",
-    "allowed": ["recognition games", "multi-match games", "comparison display"],
-    "not_implied": ["rich culture profile", "single-answer production safety", "full curriculum support"]
+  "research_baseline": {
+    "kinbank": "https://github.com/kinbank/kinbank",
+    "principle": "Model kin relationships independently of English labels. Multiple forms and multiple kin types may map across one broad English gloss. Missing data is not evidence of a lexical gap."
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",

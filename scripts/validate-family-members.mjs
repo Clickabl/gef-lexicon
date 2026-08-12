@@ -5,171 +5,256 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const FAMILY_DIR = join(ROOT, 'lesson-families', 'family-members');
+const CONTRACT_PATH = join(FAMILY_DIR, 'language-contract.json');
 const CAPABILITY_PATH = join(FAMILY_DIR, 'language-capabilities.json');
 const SOURCE_MANIFEST_PATH = join(FAMILY_DIR, 'source-bridges', 'manifest.json');
 const TARGET_MANIFEST_PATH = join(FAMILY_DIR, 'target-profiles', 'manifest.json');
-const GAME_DIR = join(FAMILY_DIR, 'game-vocabulary');
-const GAME_MANIFEST_PATH = join(GAME_DIR, 'manifest.json');
+const CORE_MANIFEST_PATH = join(FAMILY_DIR, 'core-localizations', 'manifest.json');
 const LESSON_PATH = join(ROOT, 'lessons', 'mul', 'family-members', 'lesson.json');
 const EN_RENDERING_PATH = join(ROOT, 'lessons', 'mul', 'family-members', 'renderings', 'en.json');
 const DEFAULT_REGISTRY = resolve(ROOT, '..', 'gef-expo', 'registry', 'language-support.json');
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const fail = (message) => { throw new Error(message); };
-const requireFile = (path) => { if (!existsSync(path)) fail(`Missing required family-members asset: ${path}`); };
+const requireFile = (path) => { if (!existsSync(path)) fail(`Missing required Family Members asset: ${path}`); };
+const normalizeShardNames = (value) => Array.isArray(value) ? value : typeof value === 'string' ? [value] : [];
 
-function uniqueTags(entries, label) {
-  const tags = new Set();
-  for (const [index, entry] of entries.entries()) {
-    if (!entry || typeof entry !== 'object') fail(`${label}[${index}] must be an object`);
-    if (typeof entry.language_tag !== 'string' || entry.language_tag.length === 0) fail(`${label}[${index}] is missing language_tag`);
-    if (tags.has(entry.language_tag)) fail(`${label}: duplicate language_tag ${entry.language_tag}`);
-    tags.add(entry.language_tag);
+function setOf(list, label) {
+  if (!Array.isArray(list)) fail(`${label} must be an array`);
+  const out = new Set();
+  for (const value of list) {
+    if (typeof value !== 'string' || !value) fail(`${label} contains an invalid language tag`);
+    if (out.has(value)) fail(`${label} contains duplicate language tag ${value}`);
+    out.add(value);
   }
-  return tags;
+  return out;
 }
 
-function shardNames(value, label) {
-  const names = Array.isArray(value) ? value : [value];
-  if (names.length === 0 || names.some((name) => typeof name !== 'string' || name.length === 0)) fail(`${label}: invalid shard declaration`);
-  return names;
-}
-
-function loadShardedCatalog(manifestPath, baseDir, label, requiredTiers) {
-  const manifest = readJson(manifestPath);
-  const byTier = new Map();
-  const all = [];
-  for (const tier of requiredTiers) {
-    const entries = [];
-    for (const shardName of shardNames(manifest.tier_shards?.[tier], `${label} tier ${tier}`)) {
-      const shardPath = join(baseDir, shardName);
-      requireFile(shardPath);
-      const shard = readJson(shardPath);
-      if (!Array.isArray(shard.entries)) fail(`${shardPath}: entries must be an array`);
-      entries.push(...shard.entries);
-    }
-    uniqueTags(entries, `${label} logical tier ${tier}`);
-    const expected = manifest.expected_tier_counts?.[tier];
-    if (Number.isInteger(expected) && entries.length !== expected) fail(`${label} tier ${tier}: expected ${expected}, found ${entries.length}`);
-    byTier.set(tier, entries);
-    all.push(...entries);
+function assertExactSet(actual, expected, label) {
+  if (actual.size !== expected.size) {
+    fail(`${label}: expected ${expected.size} languages, found ${actual.size}`);
   }
-  const tags = uniqueTags(all, label);
-  if (Number.isInteger(manifest.expected_total) && tags.size !== manifest.expected_total) fail(`${label}: expected ${manifest.expected_total}, found ${tags.size}`);
-  return { manifest, byTier, all, tags };
-}
-
-function validateSourceBridges(catalog) {
-  for (const entry of catalog.all) {
-    if (typeof entry.summary !== 'string' || entry.summary.trim().length < 20) fail(`source bridge ${entry.language_tag}: summary missing/short`);
-    if (typeof entry.tooltip !== 'string' || entry.tooltip.trim().length < 5) fail(`source bridge ${entry.language_tag}: tooltip missing/short`);
+  const missing = [...expected].filter((tag) => !actual.has(tag));
+  const extra = [...actual].filter((tag) => !expected.has(tag));
+  if (missing.length || extra.length) {
+    fail(`${label}: missing [${missing.join(', ')}], extra [${extra.join(', ')}]`);
   }
 }
 
-function validateTargetProfiles(catalog) {
-  for (const entry of catalog.all) {
-    if (typeof entry.target_explainer_en !== 'string' || entry.target_explainer_en.trim().length < 80) fail(`target profile ${entry.language_tag}: explainer missing/short`);
-    if (!Array.isArray(entry.distinctions) || entry.distinctions.length === 0) fail(`target profile ${entry.language_tag}: distinctions empty`);
-    if (!Array.isArray(entry.core_terms) || entry.core_terms.length < 8) fail(`target profile ${entry.language_tag}: expected >=8 core_terms`);
-    const concepts = new Set();
-    for (const [index, term] of entry.core_terms.entries()) {
-      if (typeof term.concept !== 'string' || term.concept.length === 0) fail(`target profile ${entry.language_tag}: core_terms[${index}] missing concept`);
-      if (concepts.has(term.concept)) fail(`target profile ${entry.language_tag}: duplicate concept ${term.concept}`);
-      concepts.add(term.concept);
-      if (typeof term.display !== 'string' || term.display.trim().length === 0) fail(`target profile ${entry.language_tag}: core_terms[${index}] missing display`);
-    }
-    if (typeof entry.cultural_note_en !== 'string' || entry.cultural_note_en.trim().length < 50) fail(`target profile ${entry.language_tag}: cultural note missing/short`);
-    if (!Array.isArray(entry.examples) || entry.examples.length < 2) fail(`target profile ${entry.language_tag}: expected >=2 examples`);
-    if (!Array.isArray(entry.source_refs) || entry.source_refs.length === 0) fail(`target profile ${entry.language_tag}: source refs empty`);
+function validateContract() {
+  requireFile(CONTRACT_PATH);
+  const contract = readJson(CONTRACT_PATH);
+  const tier1 = setOf(contract.tier1, 'language-contract tier1');
+  const tier2 = setOf(contract.tier2, 'language-contract tier2');
+  const tier3 = setOf(contract.tier3, 'language-contract tier3');
+  const learnFrom = setOf(contract.learn_from_languages, 'language-contract learn_from_languages');
+  const fullTargets = setOf(contract.full_target_languages, 'language-contract full_target_languages');
+
+  for (const tag of tier1) if (tier2.has(tag) || tier3.has(tag)) fail(`language-contract tier overlap: ${tag}`);
+  for (const tag of tier2) if (tier3.has(tag)) fail(`language-contract tier overlap: ${tag}`);
+
+  const tierUnion = new Set([...tier1, ...tier2, ...tier3]);
+  assertExactSet(tierUnion, learnFrom, 'language-contract tier union');
+  assertExactSet(new Set([...tier1, ...tier2]), fullTargets, 'language-contract full targets');
+
+  const expectedCounts = contract.tier_counts ?? {};
+  if (tier1.size !== expectedCounts['1'] || tier2.size !== expectedCounts['2'] || tier3.size !== expectedCounts['3']) {
+    fail(`language-contract tier counts must be ${expectedCounts['1']}/${expectedCounts['2']}/${expectedCounts['3']}; found ${tier1.size}/${tier2.size}/${tier3.size}`);
   }
+  if (learnFrom.size !== contract.total_learn_from || fullTargets.size !== contract.total_full_targets) {
+    fail('language-contract declared totals do not match its language sets');
+  }
+  if (learnFrom.size !== 104 || fullTargets.size !== 21 || tier1.size !== 6 || tier2.size !== 15 || tier3.size !== 83) {
+    fail('Family Members product contract must currently resolve to 104 source languages and 6/15/83 lesson tiers');
+  }
+  if (!tier2.has('mk') || fullTargets.has('nl')) {
+    fail('Current registry guard: Macedonian must be Tier 2 full target and Dutch must not be a full target');
+  }
+  return { contract, tier1, tier2, tier3, learnFrom, fullTargets };
 }
 
-function loadGameVocabulary() {
-  const manifest = readJson(GAME_MANIFEST_PATH);
-  if (!Array.isArray(manifest.required_concepts) || manifest.required_concepts.length < 8) fail('game vocabulary manifest needs required_concepts');
-  const all = [];
-  const byTier = new Map();
+function validateSourceBridges(contractState) {
+  requireFile(SOURCE_MANIFEST_PATH);
+  const manifest = readJson(SOURCE_MANIFEST_PATH);
+  const allByTag = new Map();
+  const semanticByTier = new Map();
+
   for (const tier of ['1', '2', '3']) {
-    const file = manifest.sources?.[`tier${tier}`];
-    if (typeof file !== 'string') fail(`game vocabulary missing tier ${tier} source`);
-    const path = join(GAME_DIR, file);
+    const files = normalizeShardNames(manifest.tier_shards?.[tier]);
+    if (!files.length) fail(`source bridges: no shards for semantic Tier ${tier}`);
+    const tierTags = new Set();
+    for (const file of files) {
+      const path = join(FAMILY_DIR, 'source-bridges', file);
+      requireFile(path);
+      const shard = readJson(path);
+      if (!Array.isArray(shard.entries)) fail(`${path}: entries must be an array`);
+      for (const entry of shard.entries) {
+        const tag = entry?.language_tag;
+        if (typeof tag !== 'string' || !tag) fail(`${path}: source bridge missing language_tag`);
+        if (allByTag.has(tag)) fail(`source bridges: duplicate language ${tag}`);
+        if (typeof entry.summary !== 'string' || entry.summary.trim().length < 20) fail(`source bridge ${tag}: summary missing/too short`);
+        if (typeof entry.tooltip !== 'string' || entry.tooltip.trim().length < 5) fail(`source bridge ${tag}: tooltip missing/too short`);
+        allByTag.set(tag, entry);
+        tierTags.add(tag);
+      }
+    }
+    semanticByTier.set(tier, tierTags);
+  }
+
+  assertExactSet(new Set(allByTag.keys()), contractState.learnFrom, 'source bridges total coverage');
+  assertExactSet(semanticByTier.get('1'), contractState.tier1, 'source bridges Tier 1');
+  assertExactSet(semanticByTier.get('2'), contractState.tier2, 'source bridges Tier 2');
+  assertExactSet(semanticByTier.get('3'), contractState.tier3, 'source bridges Tier 3');
+  if (manifest.expected_total !== 104 || manifest.expected_tier_counts?.['3'] !== 83) fail('source bridge manifest must declare current 104 / Tier 3=83 coverage');
+  return allByTag;
+}
+
+function inferLocalizationFormat(entry) {
+  if (entry?.copy?.invitation && entry?.copy?.idea_text) return 'extended_v1';
+  return 'compact_core_v1';
+}
+
+function localizationScore(entry) {
+  return inferLocalizationFormat(entry) === 'extended_v1' ? 2 : 1;
+}
+
+function validateCoreLocalizations(contractState) {
+  requireFile(CORE_MANIFEST_PATH);
+  const manifest = readJson(CORE_MANIFEST_PATH);
+  const resolved = new Map();
+  const allOccurrences = new Map();
+
+  for (const file of manifest.storage_shards ?? []) {
+    const path = join(FAMILY_DIR, 'core-localizations', file);
     requireFile(path);
     const shard = readJson(path);
     if (!Array.isArray(shard.entries)) fail(`${path}: entries must be an array`);
-    if (JSON.stringify(shard.concept_order) !== JSON.stringify(manifest.required_concepts)) fail(`${path}: concept_order must exactly match manifest required_concepts`);
-    const expectedCount = manifest.expected_tier_counts?.[tier];
-    if (shard.entries.length !== expectedCount) fail(`${path}: expected ${expectedCount} entries, found ${shard.entries.length}`);
-    uniqueTags(shard.entries, `game vocabulary tier ${tier}`);
     for (const entry of shard.entries) {
-      if (!Array.isArray(entry.terms) || entry.terms.length !== manifest.required_concepts.length) fail(`game vocabulary ${entry.language_tag}: expected ${manifest.required_concepts.length} ordered terms`);
-      entry.terms.forEach((term, index) => {
-        if (typeof term !== 'string' || term.trim().length === 0) fail(`game vocabulary ${entry.language_tag}: term ${index} empty`);
-      });
+      const tag = entry?.language_tag;
+      if (typeof tag !== 'string' || !tag) fail(`${path}: localization missing language_tag`);
+      allOccurrences.set(tag, (allOccurrences.get(tag) ?? 0) + 1);
+      const current = resolved.get(tag);
+      if (!current || localizationScore(entry) > localizationScore(current)) resolved.set(tag, entry);
     }
-    byTier.set(tier, shard.entries);
-    all.push(...shard.entries);
   }
-  const tags = uniqueTags(all, 'family-members game vocabulary');
-  if (tags.size !== manifest.expected_total) fail(`game vocabulary: expected ${manifest.expected_total} unique languages, found ${tags.size}`);
-  return { manifest, byTier, all, tags };
+
+  assertExactSet(new Set(resolved.keys()), contractState.learnFrom, 'core lesson localizations');
+
+  const extended = manifest.formats?.extended_v1;
+  const compact = manifest.formats?.compact_core_v1;
+  for (const [tag, entry] of resolved) {
+    const format = inferLocalizationFormat(entry);
+    const contract = format === 'extended_v1' ? extended : compact;
+    if (!contract) fail(`core localization ${tag}: missing manifest contract for ${format}`);
+    for (const key of contract.required_copy_keys ?? []) {
+      if (typeof entry.copy?.[key] !== 'string' || entry.copy[key].trim().length < 2) fail(`core localization ${tag}: missing copy.${key}`);
+    }
+    for (const key of contract.required_runtime_keys ?? []) {
+      if (typeof entry.runtime_copy?.[key] !== 'string' || entry.runtime_copy[key].trim().length < 1) fail(`core localization ${tag}: missing runtime_copy.${key}`);
+    }
+  }
+
+  const resolvedTier1 = new Set([...resolved.keys()].filter((tag) => contractState.tier1.has(tag)));
+  const resolvedTier2 = new Set([...resolved.keys()].filter((tag) => contractState.tier2.has(tag)));
+  const resolvedTier3 = new Set([...resolved.keys()].filter((tag) => contractState.tier3.has(tag)));
+  assertExactSet(resolvedTier1, contractState.tier1, 'core localizations Tier 1');
+  assertExactSet(resolvedTier2, contractState.tier2, 'core localizations Tier 2');
+  assertExactSet(resolvedTier3, contractState.tier3, 'core localizations Tier 3');
+
+  if (resolved.get('nl') && inferLocalizationFormat(resolved.get('nl')) !== 'extended_v1') {
+    fail('Dutch should resolve to its existing extended localization even though it is now Tier 3');
+  }
+  if (!resolved.has('mk')) fail('Macedonian core localization is required');
+  return resolved;
 }
 
-function registryPath() {
-  return process.env.GEF_LANGUAGE_SUPPORT_REGISTRY ? resolve(process.env.GEF_LANGUAGE_SUPPORT_REGISTRY) : DEFAULT_REGISTRY;
+function validateTargetProfileEntry(entry) {
+  const tag = entry.language_tag;
+  if (typeof entry.target_explainer_en !== 'string' || entry.target_explainer_en.trim().length < 80) fail(`target profile ${tag}: target_explainer_en missing/too short`);
+  if (!Array.isArray(entry.distinctions) || entry.distinctions.length < 2) fail(`target profile ${tag}: expected at least 2 distinctions`);
+  if (!Array.isArray(entry.core_terms) || entry.core_terms.length < 8) fail(`target profile ${tag}: expected at least 8 core_terms`);
+  const concepts = new Set();
+  for (const term of entry.core_terms) {
+    if (typeof term?.concept !== 'string' || !term.concept) fail(`target profile ${tag}: term missing concept`);
+    if (concepts.has(term.concept)) fail(`target profile ${tag}: duplicate term concept ${term.concept}`);
+    concepts.add(term.concept);
+    if (typeof term.display !== 'string' || !term.display.trim()) fail(`target profile ${tag}: term ${term.concept} missing display`);
+  }
+  if (typeof entry.cultural_note_en !== 'string' || entry.cultural_note_en.trim().length < 50) fail(`target profile ${tag}: cultural_note_en missing/too short`);
+  if (!Array.isArray(entry.examples) || entry.examples.length < 2) fail(`target profile ${tag}: expected at least 2 examples`);
+  if (!Array.isArray(entry.source_refs) || entry.source_refs.length < 1 || entry.source_refs.some((ref) => typeof ref !== 'string' || !ref.trim())) fail(`target profile ${tag}: source_refs required`);
 }
 
-function validateRegistry(sourceCatalog, targetCatalog, gameCatalog) {
-  const path = registryPath();
-  if (!existsSync(path)) {
-    console.log('Family-members registry cross-check skipped: sibling gef-expo registry not present.');
+function validateTargetProfiles(contractState) {
+  requireFile(TARGET_MANIFEST_PATH);
+  const manifest = readJson(TARGET_MANIFEST_PATH);
+  const profiles = new Map();
+  for (const file of manifest.base_shards ?? []) {
+    const path = join(FAMILY_DIR, 'target-profiles', file);
+    requireFile(path);
+    const shard = readJson(path);
+    if (!Array.isArray(shard.entries)) fail(`${path}: entries must be an array`);
+    for (const entry of shard.entries) {
+      if (!entry?.language_tag) fail(`${path}: target profile missing language_tag`);
+      profiles.set(entry.language_tag, entry);
+    }
+  }
+
+  const overridePath = join(FAMILY_DIR, 'target-profiles', manifest.current_registry_overrides ?? '');
+  requireFile(overridePath);
+  const overrides = readJson(overridePath);
+  for (const tag of overrides.disabled_full_target_language_tags ?? []) profiles.delete(tag);
+  for (const entry of overrides.entries ?? []) profiles.set(entry.language_tag, entry);
+
+  assertExactSet(new Set(profiles.keys()), contractState.fullTargets, 'resolved target profiles');
+  if (profiles.has('nl') || !profiles.has('mk')) fail('target profile current-registry guard failed for nl/mk');
+  for (const entry of profiles.values()) validateTargetProfileEntry(entry);
+  return profiles;
+}
+
+function validateCapability(contractState) {
+  requireFile(CAPABILITY_PATH);
+  const capability = readJson(CAPABILITY_PATH);
+  const declared = setOf(capability.role_requirements?.learning_language_full?.language_tags, 'Family Members full-target capability list');
+  assertExactSet(declared, contractState.fullTargets, 'Family Members capability vs language contract');
+  if (capability.role_requirements?.learning_from?.expected_total !== 104) fail('Family Members source capability must declare 104 source languages');
+}
+
+function validateSiblingRegistryWhenAvailable(contractState) {
+  const registryPath = process.env.GEF_LANGUAGE_SUPPORT_REGISTRY ? resolve(process.env.GEF_LANGUAGE_SUPPORT_REGISTRY) : DEFAULT_REGISTRY;
+  if (!existsSync(registryPath)) {
+    console.log(`Family Members: sibling Expo registry unavailable; enforcing pinned local contract from ${contractState.contract.source_registry_commit}.`);
     return;
   }
-  const registry = readJson(path);
-  const learnFrom = registry.programs?.learnFromLanguages;
-  if (!Array.isArray(learnFrom)) fail('Registry missing programs.learnFromLanguages');
-  for (const [label, catalog] of [['source bridges', sourceCatalog], ['game vocabulary', gameCatalog]]) {
-    if (catalog.tags.size !== learnFrom.length || learnFrom.some((tag) => !catalog.tags.has(tag))) fail(`Family-members ${label} must cover every canonical learn-from language exactly once`);
-  }
-  const tierMap = {
-    '1': registry.lessonTiers?.tier1_full ?? [],
-    '2': registry.lessonTiers?.tier2_selective ?? [],
-    '3': registry.lessonTiers?.tier3_read_games ?? [],
-  };
-  for (const tier of ['1', '2', '3']) {
-    for (const [label, catalog] of [['source', sourceCatalog], ['game', gameCatalog]]) {
-      const expected = tierMap[tier];
-      const actual = new Set((catalog.byTier.get(tier) ?? []).map((entry) => entry.language_tag));
-      if (actual.size !== expected.length || expected.some((tag) => !actual.has(tag))) fail(`Family-members ${label} tier ${tier} does not match canonical registry tier`);
-    }
-  }
-  const richExpected = [...tierMap['1'], ...tierMap['2']];
-  if (targetCatalog.tags.size !== richExpected.length || richExpected.some((tag) => !targetCatalog.tags.has(tag))) fail('Family-members rich target profiles must cover canonical Tier 1 + Tier 2 exactly');
-}
-
-function validateCapability() {
-  const capability = readJson(CAPABILITY_PATH);
-  if (capability.game_vocabulary_manifest !== 'game-vocabulary/manifest.json') fail('Capability must point to game-vocabulary/manifest.json');
-  if (capability.role_requirements?.learning_language_game?.coverage !== 'all registry.programs.learnFromLanguages') fail('Game capability must be registry-derived');
+  const registry = readJson(registryPath);
+  const tier1 = setOf(registry.lessonTiers?.tier1_full, 'Expo registry tier1_full');
+  const tier2 = setOf(registry.lessonTiers?.tier2_selective, 'Expo registry tier2_selective');
+  const tier3 = setOf(registry.lessonTiers?.tier3_read_games, 'Expo registry tier3_read_games');
+  const learnFrom = setOf(registry.programs?.learnFromLanguages, 'Expo registry learnFromLanguages');
+  assertExactSet(tier1, contractState.tier1, 'Family Members vs Expo Tier 1');
+  assertExactSet(tier2, contractState.tier2, 'Family Members vs Expo Tier 2');
+  assertExactSet(tier3, contractState.tier3, 'Family Members vs Expo Tier 3');
+  assertExactSet(learnFrom, contractState.learnFrom, 'Family Members vs Expo learnFromLanguages');
 }
 
 function main() {
-  for (const path of [CAPABILITY_PATH, SOURCE_MANIFEST_PATH, TARGET_MANIFEST_PATH, GAME_MANIFEST_PATH, LESSON_PATH, EN_RENDERING_PATH]) requireFile(path);
-  const sourceCatalog = loadShardedCatalog(SOURCE_MANIFEST_PATH, join(FAMILY_DIR, 'source-bridges'), 'family-members source bridges', ['1', '2', '3']);
-  const targetCatalog = loadShardedCatalog(TARGET_MANIFEST_PATH, join(FAMILY_DIR, 'target-profiles'), 'family-members target profiles', ['1', '2']);
-  const gameCatalog = loadGameVocabulary();
-  validateSourceBridges(sourceCatalog);
-  validateTargetProfiles(targetCatalog);
-  validateCapability();
-  validateRegistry(sourceCatalog, targetCatalog, gameCatalog);
+  for (const path of [LESSON_PATH, EN_RENDERING_PATH]) requireFile(path);
+  const contractState = validateContract();
+  const sourceBridges = validateSourceBridges(contractState);
+  const coreLocalizations = validateCoreLocalizations(contractState);
+  const targetProfiles = validateTargetProfiles(contractState);
+  validateCapability(contractState);
+  validateSiblingRegistryWhenAvailable(contractState);
+
   const lesson = readJson(LESSON_PATH);
   const rendering = readJson(EN_RENDERING_PATH);
-  if (lesson.lesson_id !== 'LES.mul.vocab.family_members') fail('Unexpected family-members lesson_id');
-  if (rendering.lesson_id !== lesson.lesson_id) fail('English family-members rendering lesson_id mismatch');
-  console.log(`OK — family-members: ${sourceCatalog.tags.size} source bridges, ${targetCatalog.tags.size} rich target profiles, ${gameCatalog.tags.size} universal game vocabularies × ${gameCatalog.manifest.required_concepts.length} concepts.`);
+  if (lesson.lesson_id !== 'LES.mul.vocab.family_members') fail('Unexpected Family Members lesson_id');
+  if (rendering.lesson_id !== lesson.lesson_id) fail('English Family Members rendering lesson_id mismatch');
+
+  console.log(`OK — Family Members: ${sourceBridges.size} source bridges, ${coreLocalizations.size} resolved core localizations, ${targetProfiles.size} current full targets, exact 6/15/83 registry contract.`);
 }
 
-try { main(); }
-catch (error) {
+try { main(); } catch (error) {
   console.error(`FAMILY MEMBERS VALIDATION ERROR: ${error instanceof Error ? error.message : String(error)}`);
   process.exit(1);
 }

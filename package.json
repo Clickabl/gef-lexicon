@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs",
+    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs",
     "validate:english": "node scripts/validate-english-coverage.mjs",
-    "validate:family-members": "node scripts/validate-family-members.mjs",
+    "validate:family-members": "node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs",
     "validate:grammatical-gender": "node scripts/validate-grammatical-gender-lesson.mjs",
     "validate:calendar-year": "node scripts/validate-calendar-year-lessons.mjs",
     "validate:semantic": "node scripts/validate-lesson-semantic-index.mjs",

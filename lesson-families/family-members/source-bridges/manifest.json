@@ -3,24 +3,20 @@
   "lesson_id": "LES.mul.vocab.family_members",
   "coverage_program": "learnFromLanguages",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
-  "purpose": "Short learner-facing bridge copy in the learner's own/best language. It prepares the learner to compare kinship systems without assuming family words translate one-to-one.",
+  "language_contract": "../language-contract.json",
+  "purpose": "Learner-facing bridge copy in the learner's own/source language. It prepares the learner to compare kinship systems without assuming family words translate one-to-one.",
   "source_summary_en": "Family words divide relationships differently across languages. One language may use a broad word where another builds age, gender, family side, marriage, or another relationship detail into the term.",
-  "tier_shards": {
-    "1": ["tier1.json"],
-    "2": ["tier2.json"],
-    "3": ["tier3.json", "tier4.json"]
-  },
-  "physical_shard_note": "The two Tier 3 physical files preserve the already-authored 30+53 split to avoid rewriting 83 localized records. Logically both belong to the current Tier 3 Read + Games set.",
-  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
+  "tier_shards": {"1":["tier1.json"],"2":["tier2.json"],"3":["tier3.json","tier4.json"]},
+  "legacy_filename_note": "tier4.json is retained as a filename only; under the current registry its 53 entries are the second shard of canonical Tier 3. Runtime and validation treat the union of tier3.json + tier4.json as Tier 3.",
+  "expected_tier_counts": {"1":6,"2":15,"3":83},
   "expected_total": 104,
   "localization_rules": [
-    "Keep the bridge short: normally two sentences or less.",
-    "Use ordinary wording in the learner's language, not anthropological jargon.",
+    "Use ordinary native-language wording, not anthropological jargon.",
     "Do not claim that one kinship pattern describes every dialect, family, region, religion, or community using the language.",
-    "The bridge may mention common distinctions in the source language when well supported, but uncertain lower-resource details should stay general rather than being invented.",
-    "These are machine-created candidates until language-specific review."
+    "The bridge may mention common distinctions in the source language when well supported, but uncertain lower-resource details must stay general rather than being invented.",
+    "Machine-translated candidates remain visibly below native-speaker-reviewed trust states."
   ],
-  "review_state": "candidate",
+  "review_state": "generated",
   "trust_state": "machine_translated",
   "version": 2
 }

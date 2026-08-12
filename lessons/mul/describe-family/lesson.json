@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.describe_family",
+  "lesson_key": "describe-family",
+  "target_language": "mul",
+  "curriculum_concept_ids": [],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.vocab.family_members"],
+  "difficulty_band": "A1",
+  "language_capabilities_manifest": "../../../lesson-families/family-members/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 4,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Family path stage 2. Resolve session_depth from family-path.json. Core is localized intro + reusable description patterns + concept/phrase matching. Cultural adds language-specific possessive, age, household/kinship, address and usage analysis only when both active language roles are full-support."
+  },
+  "rules": [
+    {"rule_id":"RULE.mul.family.describe.relationship","rule_key":"describe-the-relationship-before-extra-detail","order":1,"match_refs":[],"practice_eligible_by_default":true,"notes":"Use a known family relationship as the anchor, then add name, count, age, or household information."},
+    {"rule_id":"RULE.mul.family.describe.household","rule_key":"household-is-not-the-same-as-kin-network","order":2,"match_refs":[],"practice_eligible_by_default":true,"notes":"I live with X is a household statement; I have X as a relative is a kinship statement. Never infer one from the other."},
+    {"rule_id":"RULE.mul.family.describe.privacy","rule_key":"practice-may-use-fictional-family","order":3,"match_refs":[],"practice_eligible_by_default":false,"notes":"Learners may use story characters or invented families. Never require disclosure of adoption, divorce, death, estrangement, sexuality, or household circumstances."}
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.mul.family.describe.catalog","trigger_type":"catalog_topic","feature_bundle":{"topic":"family_and_relationships","family_path_stage":2},"notes":"Sequentially follows Family 1 in the initial Family path."}
+  ],
+  "practice_modules": [
+    {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.describe.relationship"],"constraints":{"source":"family_path_stage_1_vocabulary","mode":"description_pattern_to_relationship"}},
+    {"module":"inline_choice_cloze","eligible_rule_ids":["RULE.mul.family.describe.relationship","RULE.mul.family.describe.household"],"constraints":{"patterns":["this_is_my","i_have","i_live_with","is_named","older_younger"],"require_unique_defensible_answer":true}}
+  ],
+  "presentation": {
+    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "intro", "patterns", "culture", "examples", "practice", "reading", "completion"],
+    "session_depth_filter": {"core":["facts","intro","patterns","practice","reading","completion"],"cultural":["facts","intro","patterns","culture","examples","practice","reading","completion"]}
+  },
+  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state": "candidate",
+  "version": 1
+}
