@@ -126,3 +126,36 @@ Expo now also has a reusable ordered-term visual composition that can show prima
 ### Integration status / next TODO
 
 The UI primitives and typed next-block contracts are landed. **Do not yet assume the old grammar-only `compile-lesson-runtime.mjs` can package `knowledge_set_id` lessons.** Its current pipeline still requires `grammar_set_id` and its shipping runner only accepts the older block union. The next Expo integration TODO is to add one knowledge-set compiler path plus runner dispatch for `ordered_term_set`, `cultural_note`, `interactive_clock`, and `interactive_calendar` atomically. The new block types are intentionally staged outside the shipping `LessonRuntimeBlock` union until that compiler+runner work lands together, preventing a half-wired tool from falling through as a completion screen.
+
+## [2026-08-12 15:19 MDT] GPT-5.6 Sol — contract — Lexi semantic senses, relations, and lesson offers
+
+Family Members now extends the shared lesson semantic index instead of introducing a second translator database.
+
+### Reusable Lexi contract
+
+1. **Lexical expression ≠ relationship concept.** `mother`, `mom`, and `mum` are distinct lexical expressions/senses. They can share the same `FAMILY.mother` primary relationship pivot while carrying different register or usage metadata.
+2. **Many-to-many is first-class.** `lexical_senses` identify language-specific meanings; `sense_concepts` lets one sense link to primary, broader, or later more-specific semantic concepts; `concept_forms` provides the cross-language realization layer. Do not author direct 104 × 104 translation links.
+3. **Concept-mediated translation is the default.** Lexi finds the tapped sense, resolves its semantic concept(s), then finds compatible forms/senses in requested languages. Pairwise translation rows are reserved for genuinely exceptional reviewed cases, not ordinary vocabulary.
+4. **Related is not synonymous.** Family expressions sharing a broad relationship pivot use `related_by_relationship`. That relation must never silently become exact synonymy because differences can encode register, relative age, maternal/paternal side, speaker gender, address/reference use, or a narrower kin path.
+5. **Prose definitions are optional.** A Lexi sense can already be useful as translator/dictionary knowledge through surface form, concepts, localized equivalents, register, typed relations, provenance, and lesson links. Do not manufacture low-quality dictionary paragraphs merely to make a record feel complete.
+6. **Reusable lesson recommendations live on semantic knowledge.** `surface_lesson_links` can connect a resolved sense/form to `LES.*`, optionally with a `rule_id`. Family expressions recommend `LES.mul.vocab.family_members`. Spanish grammatical-gender forms retain their grammatical-gender lesson/rule links.
+7. **Exact occurrence evidence remains separate.** A generic Lexicon sense says what a form can mean. `gef-content` occurrence annotations say what a specific passage occurrence means and can add the exact grammar `reason`/`rule_id`. Reviewed occurrence evidence outranks generic surface lookup.
+8. **Trust remains visible.** The 104-language Family semantic projection is structurally complete but generated/candidate. It surfaces as Gef/unverified until the normal language-specific review ladder promotes it. Do not call structural coverage Lexi-verified coverage.
+
+### Shared semantic-index fields
+
+The reusable output at `dist/dictionaries/shared/lesson-semantic-v1.{json,sqlite}` now supports:
+
+- `concepts`
+- `lexical_senses`
+- `sense_concepts`
+- `concept_forms`
+- `surface_lesson_links`
+- `lexical_relations`
+- localized lesson-source copy where a lesson provides it
+
+Future lesson chats should extend these shared semantic structures when they need tap-to-Lexi vocabulary or grammar concepts. Do not create a lesson-local translator table or a second Lexi knowledge store.
+
+### Family-specific source
+
+`lesson-families/family-members/lexi-metadata.json` owns Family broader-concept grouping, carefully curated expression/register metadata, the non-synonym relation policy, and the Family lesson offer. `scripts/validate-lesson-semantic-index.mjs` verifies the 104-language Family projection and protects `mother`/`mom`/`mum` separation plus existing gender lesson links.
