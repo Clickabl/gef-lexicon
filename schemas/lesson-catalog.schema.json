@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gef-lexicon/lesson-catalog.schema.json",
+  "title": "Gef lesson catalog and path ordering",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "universal", "path_policy", "review_state", "version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "universal": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/lessonEntry"}
+    },
+    "path_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tier1", "tier2", "tier3", "next_resolution"],
+      "properties": {
+        "tier1": {"type": "string"},
+        "tier2": {"type": "string"},
+        "tier3": {"type": "string"},
+        "next_resolution": {"type": "string"}
+      }
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "$defs": {
+    "lessonEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lesson_id", "priority", "category", "path_scope", "next_policy", "review_state"],
+      "properties": {
+        "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
+        "priority": {"type": "integer", "minimum": 0},
+        "category": {"enum": ["orientation", "metalinguistic", "grammar", "vocabulary", "reading", "culture", "assessment"]},
+        "path_scope": {"enum": ["universal", "tier1", "tier1_tier2", "language_specific"]},
+        "featured": {"type": "boolean"},
+        "next_policy": {"enum": ["next_catalog_item", "next_language_path_item", "return_to_context", "none"]},
+        "notes": {"type": "string"},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+      }
+    }
+  }
+}
