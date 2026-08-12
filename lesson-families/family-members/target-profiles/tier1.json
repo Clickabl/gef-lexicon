@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "tier": 1,
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "entries": [
+    {
+      "language_tag": "en",
+      "target_explainer_en": "English has separate everyday words for many basic relationships and often marks the relative's gender, but it leaves several other details outside the kinship noun. Brother and sister do not say older or younger; aunt, uncle, grandparent, and cousin do not say whether the person is on the mother's or father's side. Add those details only when they matter: older brother, maternal aunt, father's cousin. This makes many English family words broader than their nearest equivalents in languages that build age or family side directly into the term.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"common","note_en":"brother/sister, son/daughter, aunt/uncle, niece/nephew"},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"older/younger brother or sister"},
+        {"code":"maternal_paternal_side","behavior":"added_separately","note_en":"maternal/paternal or mother's/father's"},
+        {"code":"affinal_specificity","behavior":"productive_compounds","note_en":"mother-in-law, brother-in-law, etc."}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"mother","casual":"mom"},{"concept":"father","display":"father","casual":"dad"},
+        {"concept":"brother","display":"brother"},{"concept":"sister","display":"sister"},
+        {"concept":"son","display":"son"},{"concept":"daughter","display":"daughter"},
+        {"concept":"grandfather","display":"grandfather","casual":"grandpa"},{"concept":"grandmother","display":"grandmother","casual":"grandma"},
+        {"concept":"uncle","display":"uncle"},{"concept":"aunt","display":"aunt"},
+        {"concept":"cousin","display":"cousin"},{"concept":"niece_nephew","display":"niece / nephew"},
+        {"concept":"partner","display":"partner"},{"concept":"spouse","display":"husband / wife"}
+      ],
+      "cultural_note_en": "English family address varies enormously by family, region, age, and community. Mom, mum, mama, dad, papa, gran, nana, and many other forms can all be normal. Teach neutral relationship labels first and treat affectionate address forms as variants, not as a single cultural rule.",
+      "examples": [
+        {"target":"This is my older brother.","focus":"older is separate from brother"},
+        {"target":"My aunt is my mother's sister.","focus":"aunt alone does not encode maternal side"},
+        {"target":"I have three cousins.","focus":"cousin is gender-neutral in ordinary modern English"}
+      ],
+      "source_refs": ["https://academic.oup.com/book/26758/chapter-abstract/195647377", "https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "es",
+      "target_explainer_en": "Spanish marks gender in many common kinship nouns: hermano/hermana, hijo/hija, tío/tía, primo/prima, sobrino/sobrina, abuelo/abuela. It usually does not build sibling age or maternal versus paternal side into the basic noun, so add that information when it matters: hermano mayor, hermana menor, abuela materna, tío paterno. This is one reason English aunt or cousin often maps cleanly by relationship but still requires Spanish gender agreement.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"systematic_for_many_terms","note_en":"Many beginner kin nouns form masculine/feminine pairs."},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"hermano mayor/menor, hermana mayor/menor"},
+        {"code":"maternal_paternal_side","behavior":"added_separately","note_en":"materno/materna, paterno/paterna when needed"},
+        {"code":"affinal_specificity","behavior":"lexicalized","note_en":"suegro/suegra and cuñado/cuñada are common dedicated terms"}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"madre","casual":"mamá"},{"concept":"father","display":"padre","casual":"papá"},
+        {"concept":"brother","display":"hermano"},{"concept":"sister","display":"hermana"},
+        {"concept":"son","display":"hijo"},{"concept":"daughter","display":"hija"},
+        {"concept":"grandfather","display":"abuelo"},{"concept":"grandmother","display":"abuela"},
+        {"concept":"uncle","display":"tío"},{"concept":"aunt","display":"tía"},
+        {"concept":"male_cousin","display":"primo"},{"concept":"female_cousin","display":"prima"},
+        {"concept":"nephew","display":"sobrino"},{"concept":"niece","display":"sobrina"},
+        {"concept":"father_in_law","display":"suegro"},{"concept":"mother_in_law","display":"suegra"},
+        {"concept":"brother_in_law","display":"cuñado"},{"concept":"sister_in_law","display":"cuñada"},
+        {"concept":"partner","display":"pareja"},{"concept":"spouse","display":"esposo / esposa","alternatives":["marido / mujer"]}
+      ],
+      "cultural_note_en": "Spanish is spoken across many countries and communities, so affectionate family words and the preferred words for spouse or partner vary. The relationship system above is a beginner-safe common core, not a claim that every Spanish-speaking family uses the same address forms.",
+      "examples": [
+        {"target":"Esta es mi hermana.","translation_en":"This is my sister.","focus":"hermana encodes female sibling"},
+        {"target":"Mi hermano mayor vive en Chile.","translation_en":"My older brother lives in Chile.","focus":"mayor adds age; hermano itself does not"},
+        {"target":"Mi abuela materna se llama Rosa.","translation_en":"My maternal grandmother is named Rosa.","focus":"materna adds family side"},
+        {"target":"Tengo dos primos y una prima.","translation_en":"I have two male cousins and one female cousin.","focus":"Spanish marks cousin gender in the noun"}
+      ],
+      "source_refs": ["https://dle.rae.es/hermano", "https://dle.rae.es/t%C3%ADo", "https://dle.rae.es/primo", "https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "fr",
+      "target_explainer_en": "French uses separate basic words for many family relationships and marks gender in several of them: frère/sœur, oncle/tante, cousin/cousine, neveu/nièce. Relative age and maternal or paternal side are normally added with extra wording rather than built into the core term. For beginners, learn the neutral relationship word first, then add aîné/cadet or maternel/paternel when the distinction matters.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"common"},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"frère aîné/cadet, sœur aînée/cadette"},
+        {"code":"maternal_paternal_side","behavior":"added_separately","note_en":"maternel/paternel"},
+        {"code":"affinal_specificity","behavior":"productive_and_lexicalized","note_en":"beau-père, belle-mère, beau-frère, belle-sœur"}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"mère","casual":"maman"},{"concept":"father","display":"père","casual":"papa"},
+        {"concept":"brother","display":"frère"},{"concept":"sister","display":"sœur"},
+        {"concept":"son","display":"fils"},{"concept":"daughter","display":"fille"},
+        {"concept":"grandfather","display":"grand-père"},{"concept":"grandmother","display":"grand-mère"},
+        {"concept":"uncle","display":"oncle"},{"concept":"aunt","display":"tante"},
+        {"concept":"male_cousin","display":"cousin"},{"concept":"female_cousin","display":"cousine"},
+        {"concept":"nephew","display":"neveu"},{"concept":"niece","display":"nièce"}
+      ],
+      "cultural_note_en": "Terms of affection and family address vary across Francophone regions. Maman and papa are widespread, but extended-family nicknames and spouse/partner vocabulary can differ by country and family.",
+      "examples": [
+        {"target":"C'est ma sœur.","translation_en":"This is my sister."},
+        {"target":"Mon frère aîné habite ici.","translation_en":"My older brother lives here.","focus":"age is added separately"},
+        {"target":"Ma tante maternelle vient demain.","translation_en":"My maternal aunt is coming tomorrow.","focus":"family side is added when useful"}
+      ],
+      "source_refs": ["https://www.cnrtl.fr/definition/fr%C3%A8re", "https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "pt",
+      "target_explainer_en": "Portuguese marks gender in many everyday family words: irmão/irmã, filho/filha, tio/tia, primo/prima, sobrinho/sobrinha, avô/avó. Relative age and maternal or paternal side are generally added separately when relevant. Brazilian and European Portuguese can prefer different everyday wording in some family contexts, so the lesson teaches a broad common core and lets locale-specific review refine address forms later.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"systematic_for_many_terms"},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"irmão mais velho/mais novo; irmã mais velha/mais nova"},
+        {"code":"maternal_paternal_side","behavior":"added_separately","note_en":"materno/materna; paterno/paterna"},
+        {"code":"affinal_specificity","behavior":"lexicalized","note_en":"sogro/sogra, cunhado/cunhada"}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"mãe"},{"concept":"father","display":"pai"},
+        {"concept":"brother","display":"irmão"},{"concept":"sister","display":"irmã"},
+        {"concept":"son","display":"filho"},{"concept":"daughter","display":"filha"},
+        {"concept":"grandfather","display":"avô"},{"concept":"grandmother","display":"avó"},
+        {"concept":"uncle","display":"tio"},{"concept":"aunt","display":"tia"},
+        {"concept":"male_cousin","display":"primo"},{"concept":"female_cousin","display":"prima"},
+        {"concept":"nephew","display":"sobrinho"},{"concept":"niece","display":"sobrinha"}
+      ],
+      "cultural_note_en": "Portuguese family vocabulary is shared across a large Lusophone world, but affectionate forms, pronouns, and preferred words for partners can vary by region. Keep the relationship labels separate from assumptions about family structure.",
+      "examples": [
+        {"target":"Esta é a minha irmã.","translation_en":"This is my sister."},
+        {"target":"O meu irmão mais velho mora aqui.","translation_en":"My older brother lives here."},
+        {"target":"A minha avó materna é portuguesa.","translation_en":"My maternal grandmother is Portuguese."}
+      ],
+      "source_refs": ["https://www.infopedia.pt/dicionarios/lingua-portuguesa/irm%C3%A3o", "https://www.cambridge.org/core/journals/language-and-cognition/article/DED3744471AE76BCD8A0F0BE86C74A1B"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "it",
+      "target_explainer_en": "Italian marks gender in many common family words: fratello/sorella, figlio/figlia, zio/zia, cugino/cugina, nipote in some relationships remaining broader. Relative age or maternal/paternal side is usually expressed with extra words rather than a completely different basic kin noun. Pay attention to nipote: depending on context it can refer to a grandchild, nephew, or niece, so the relationship itself matters more than an English one-word gloss.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"common"},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"fratello maggiore/minore; sorella maggiore/minore"},
+        {"code":"maternal_paternal_side","behavior":"added_separately"},
+        {"code":"affinal_specificity","behavior":"lexicalized","note_en":"suocero/suocera, cognato/cognata"}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"madre","casual":"mamma"},{"concept":"father","display":"padre","casual":"papà"},
+        {"concept":"brother","display":"fratello"},{"concept":"sister","display":"sorella"},
+        {"concept":"son","display":"figlio"},{"concept":"daughter","display":"figlia"},
+        {"concept":"grandfather","display":"nonno"},{"concept":"grandmother","display":"nonna"},
+        {"concept":"uncle","display":"zio"},{"concept":"aunt","display":"zia"},
+        {"concept":"male_cousin","display":"cugino"},{"concept":"female_cousin","display":"cugina"},
+        {"concept":"grandchild_or_niece_nephew","display":"nipote","notes_en":"Context distinguishes grandchild from niece/nephew; gender may be shown by article/adjective."}
+      ],
+      "cultural_note_en": "Italian has many affectionate family forms and regional habits. The beginner core is stable, but actual address can be more intimate, dialectal, or family-specific.",
+      "examples": [
+        {"target":"Lei è mia sorella.","translation_en":"She is my sister."},
+        {"target":"Mio fratello maggiore vive a Roma.","translation_en":"My older brother lives in Rome."},
+        {"target":"Giulia è mia nipote.","translation_en":"Giulia is my granddaughter/niece, depending on context.","focus":"nipote is broader than either English word"}
+      ],
+      "source_refs": ["https://www.treccani.it/vocabolario/nipote/", "https://academic.oup.com/book/26758/chapter-abstract/195647377"],
+      "review_state": "generated"
+    },
+    {
+      "language_tag": "el",
+      "target_explainer_en": "Modern Greek has separate gendered words for many close relationships, including αδελφός/αδελφή and θείος/θεία. Relative age and maternal or paternal side are usually added descriptively when they matter rather than built into the basic noun. The word ξάδελφος/ξαδέλφη distinguishes cousin gender, while παππούς and γιαγιά are broad grandparent terms unless you add which side of the family.",
+      "distinctions": [
+        {"code":"gender_in_core_term","behavior":"common"},
+        {"code":"sibling_relative_age","behavior":"added_separately","note_en":"μεγαλύτερος/μικρότερος with the kin term"},
+        {"code":"maternal_paternal_side","behavior":"added_separately"},
+        {"code":"affinal_specificity","behavior":"lexicalized_and_descriptive","note_en":"πεθερός/πεθερά are common parent-in-law terms"}
+      ],
+      "core_terms": [
+        {"concept":"mother","display":"μητέρα","casual":"μαμά"},{"concept":"father","display":"πατέρας","casual":"μπαμπάς"},
+        {"concept":"brother","display":"αδελφός"},{"concept":"sister","display":"αδελφή"},
+        {"concept":"son","display":"γιος"},{"concept":"daughter","display":"κόρη"},
+        {"concept":"grandfather","display":"παππούς"},{"concept":"grandmother","display":"γιαγιά"},
+        {"concept":"uncle","display":"θείος"},{"concept":"aunt","display":"θεία"},
+        {"concept":"male_cousin","display":"ξάδελφος"},{"concept":"female_cousin","display":"ξαδέλφη"}
+      ],
+      "cultural_note_en": "Everyday Greek often favors familiar family forms such as μαμά, μπαμπάς, παππούς, and γιαγιά. Exact affectionate address and extended-family usage vary by household and region.",
+      "examples": [
+        {"target":"Αυτή είναι η αδελφή μου.","translation_en":"This is my sister."},
+        {"target":"Ο μεγαλύτερος αδελφός μου μένει εδώ.","translation_en":"My older brother lives here."},
+        {"target":"Η γιαγιά μου από την πλευρά της μητέρας μου είναι από την Κρήτη.","translation_en":"My grandmother on my mother's side is from Crete."}
+      ],
+      "source_refs": ["https://www.greek-language.gr/greekLang/modern_greek/tools/lexica/triantafyllides/", "https://academic.oup.com/book/26758/chapter-abstract/195647377"],
+      "review_state": "generated"
+    }
+  ]
+}

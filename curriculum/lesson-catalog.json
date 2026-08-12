@@ -20,6 +20,16 @@
       "next_policy": "next_language_path_item",
       "notes": "Universal grammatical-gender comparison family. Spanish has full candidate rule/practice data; other languages participate only when this lesson has explicit comparison or full-support records. Do not infer capability from global language tier.",
       "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.vocab.family_members",
+      "priority": 30,
+      "category": "vocabulary",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "A1 lexical-semantic family lesson. All 104 learn-from languages have localized source bridges; structured target profiles and practice are enabled for the current Tier 1 and Tier 2 learnable languages. Tier 3/4 languages may participate as source-language anchors without implying a grammar or vocabulary course for them.",
+      "review_state": "candidate"
     }
   ],
   "path_policy": {
@@ -29,5 +39,5 @@
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 2
+  "version": 3
 }

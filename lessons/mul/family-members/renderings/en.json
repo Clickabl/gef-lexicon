@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "support_language_tag": "en",
+  "proficiency_band": "A1",
+  "register": "plain",
+  "title": "Family members: who is who?",
+  "invitation": "Family vocabulary looks simple until two languages draw the family tree differently. Learn the relationship first, then learn the word your new language uses for it.",
+  "summary": "Every language can talk about parents, siblings, grandparents, cousins, partners, and extended family, but the labels do not line up perfectly. A language may build age, gender, the mother's or father's side, marriage, or social rank into a family word that another language keeps broad.",
+  "localization_keys": {
+    "title": "lesson.familyMembers.title",
+    "invitation": "lesson.familyMembers.invitation",
+    "summary": "lesson.familyMembers.summary"
+  },
+  "runtime_copy": {
+    "source_heading": "Start with your language",
+    "target_heading_template": "How {language} handles family words",
+    "terms_heading_template": "Useful family words in {language}",
+    "culture_heading": "A culture note, not a rule about people",
+    "examples_heading": "Put the relationships into sentences",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "done_label": "Done",
+    "correct_fallback": "Yep. That relationship matches the term.",
+    "retry_fallback": "Not quite. Check which relationship details the target language makes explicit, then try again."
+  },
+  "blocks": [
+    {
+      "block_id": "facts",
+      "group_id": "facts",
+      "type": "lesson_facts",
+      "source": "lesson_session"
+    },
+    {
+      "block_id": "idea",
+      "group_id": "idea",
+      "type": "explanation",
+      "title": "A family word is a bundle of clues",
+      "text": "Do not begin by asking, ‘What is the translation of aunt?’ Begin with the relationship: whose sibling is this person, on which side of the family, what gender or age distinctions matter here, and is this a blood, marriage, or social relationship? English often leaves several of those clues outside the noun. Other languages may pack more of them into the word itself. Sometimes the opposite happens."
+    },
+    {
+      "block_id": "source-bridge",
+      "group_id": "source",
+      "type": "language_comparison_loop",
+      "source": "learning_from_language_bridge",
+      "roles": ["learning_from"],
+      "show_terms": false,
+      "show_target_explainer": false,
+      "omit_when_empty": false
+    },
+    {
+      "block_id": "target-system",
+      "group_id": "target",
+      "type": "language_comparison_loop",
+      "source": "learning_language_target_profile",
+      "roles": ["learning"],
+      "show_source_bridge": false,
+      "show_target_explainer": true,
+      "show_distinctions": true,
+      "omit_when_empty": false
+    },
+    {
+      "block_id": "target-terms",
+      "group_id": "terms",
+      "type": "language_comparison_loop",
+      "source": "learning_language_target_profile",
+      "roles": ["learning"],
+      "show_source_bridge": false,
+      "show_target_explainer": false,
+      "show_terms": true,
+      "term_groups": ["immediate", "grandparents", "extended", "partner_and_in_laws"],
+      "omit_when_empty": false
+    },
+    {
+      "block_id": "culture",
+      "group_id": "culture",
+      "type": "cultural_note",
+      "source": "learning_language_target_profile.cultural_note_en",
+      "title": "Family language lives inside culture",
+      "text": "Kinship words can also be terms of address, affection, respect, or community belonging. Treat the profile as a language guide, not a claim that every family or every speaker uses the same relationship labels in the same way."
+    },
+    {
+      "block_id": "english-spanish-example",
+      "group_id": "examples",
+      "type": "explanation",
+      "requires_pair": {"learning_from": "en", "learning": "es"},
+      "title": "English → Spanish: notice what changes",
+      "text": "English has broad words like brother, sister, aunt, uncle, and cousin. Spanish maps many of those relationships similarly, but it regularly marks gender in the noun: hermano/hermana, tío/tía, primo/prima. Spanish normally does not need a different basic noun for an older or younger sibling; use hermano mayor or hermano menor when age matters. Likewise, maternal or paternal side is usually added when relevant instead of being built into the basic words tío, tía, abuelo, or abuela."
+    },
+    {
+      "block_id": "examples",
+      "group_id": "examples",
+      "type": "curated_example_group",
+      "source": "learning_language_target_profile.examples",
+      "maximum_examples": 6,
+      "prefer_beginner_examples": true
+    },
+    {
+      "block_id": "practice-intro",
+      "group_id": "practice",
+      "type": "explanation",
+      "title": "Now read the relationship, not the English label",
+      "text": "Pick the target-language form from the relationship clues. If the language does not encode one of the clues in the noun, ignore it instead of forcing a distinction that is not there.",
+      "requires_session_mode": "practice"
+    },
+    {
+      "block_id": "practice-compare",
+      "group_id": "practice",
+      "type": "practice_slot",
+      "module": "compare_realizations",
+      "requires_session_mode": "practice",
+      "title": "Same relative, different language map"
+    },
+    {
+      "block_id": "practice-features",
+      "group_id": "practice",
+      "type": "practice_slot",
+      "module": "features_to_form",
+      "requires_session_mode": "practice",
+      "title": "Which family word fits?"
+    },
+    {
+      "block_id": "completion",
+      "group_id": "completion",
+      "type": "completion",
+      "show_scorecard": true,
+      "scorecard_optional_when_no_practice": true,
+      "celebration": "confetti",
+      "title": "Family tree decoded",
+      "description": "You do not need every family word today. You need the habit: identify the relationship first, then notice which details the language builds into its word.",
+      "action_label": "Done"
+    }
+  ],
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 1
+}
