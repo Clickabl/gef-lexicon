@@ -15,10 +15,7 @@
     "summary": {"type": "string"},
     "localization_keys": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}},
     "runtime_copy": {"$ref": "#/definitions/runtimeCopy"},
-    "blocks": {
-      "type": "array",
-      "items": {"$ref": "#/definitions/block"}
-    },
+    "blocks": {"type": "array", "items": {"$ref": "#/definitions/block"}},
     "rule_explanations": {
       "type": "object",
       "additionalProperties": {
@@ -54,12 +51,21 @@
         "attempted_score_label": {"type": "string", "minLength": 1},
         "done_label": {"type": "string", "minLength": 1},
         "rules_heading_template": {"type": "string", "minLength": 1},
-        "form_kind_labels": {
-          "type": "object",
-          "additionalProperties": {"type": "string", "minLength": 1}
-        }
+        "form_kind_labels": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}}
       },
       "additionalProperties": false
+    },
+    "axisValues": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reading": {"type": "integer", "minimum": 0, "maximum": 7},
+        "listening": {"type": "integer", "minimum": 0, "maximum": 7},
+        "speaking": {"type": "integer", "minimum": 0, "maximum": 7},
+        "writing": {"type": "integer", "minimum": 0, "maximum": 7},
+        "interaction": {"type": "integer", "minimum": 0, "maximum": 7},
+        "mediation": {"type": "integer", "minimum": 0, "maximum": 7}
+      }
     },
     "block": {
       "type": "object",
@@ -85,6 +91,7 @@
             "curated_example_group",
             "practice_slot",
             "quest_offer",
+            "visual",
             "completion"
           ]
         },
@@ -113,7 +120,13 @@
         "requires_session_mode": {"type": "string", "enum": ["practice", "comparison_only"]},
         "show_scorecard": {"type": "boolean"},
         "scorecard_optional_when_no_practice": {"type": "boolean"},
-        "celebration": {"type": "string"}
+        "celebration": {"type": "string"},
+        "visual_kind": {"type": "string", "enum": ["proficiency_scale", "proficiency_level_hero", "proficiency_radar", "mediation_bridge"]},
+        "level_code": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "FLUENT_NATIVE"]},
+        "axis_values": {"$ref": "#/definitions/axisValues"},
+        "source_label": {"type": "string"},
+        "target_label": {"type": "string"},
+        "bridge_label": {"type": "string"}
       },
       "additionalProperties": false
     }
