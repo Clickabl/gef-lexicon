@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "tier": 1,
+  "review_state": "machine_translated",
+  "entries": [
+    {
+      "language_tag": "en",
+      "forms": [{"form_id":"CMP.en.number.core","display":"singular / plural"}],
+      "own_grammar_blurb": "English normally contrasts singular and plural on count nouns. Plurals are often marked with -s or -es, but irregular forms exist, and number can also show up in determiners and verb agreement.",
+      "source_refs": ["https://wals.info/values/33A-eng", "https://wals.info/chapter/34"],
+      "review_state": "machine_verified"
+    },
+    {
+      "language_tag": "es",
+      "forms": [{"form_id":"CMP.es.number.core","display":"singular / plural"}],
+      "own_grammar_blurb": "En español, los sustantivos distinguen normalmente singular y plural. El plural suele formarse con -s o -es, y el número también aparece en la concordancia de determinantes, adjetivos y verbos.",
+      "source_refs": ["https://www.rae.es/dpd/plural", "https://wals.info/chapter/34"],
+      "review_state": "machine_verified"
+    },
+    {
+      "language_tag": "fr",
+      "forms": [{"form_id":"CMP.fr.number.core","display":"singulier / pluriel"}],
+      "own_grammar_blurb": "En français, les noms distinguent généralement le singulier et le pluriel. Le pluriel écrit prend souvent -s, même si cette marque ne s’entend pas toujours, et les déterminants jouent un rôle important pour rendre le nombre visible.",
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "machine_translated"
+    },
+    {
+      "language_tag": "pt",
+      "forms": [{"form_id":"CMP.pt.number.core","display":"singular / plural"}],
+      "own_grammar_blurb": "Em português, os substantivos normalmente distinguem singular e plural. O plural é marcado por terminações que variam conforme a palavra, e determinantes e adjetivos também costumam concordar em número.",
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "machine_translated"
+    },
+    {
+      "language_tag": "it",
+      "forms": [{"form_id":"CMP.it.number.core","display":"singolare / plurale"}],
+      "own_grammar_blurb": "In italiano, i nomi distinguono normalmente singolare e plurale. Il plurale spesso cambia la vocale finale invece di aggiungere una sola desinenza universale, e articoli e aggettivi concordano anch’essi nel numero.",
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "machine_translated"
+    },
+    {
+      "language_tag": "el",
+      "forms": [{"form_id":"CMP.el.number.core","display":"ενικός / πληθυντικός"}],
+      "own_grammar_blurb": "Στα ελληνικά, τα ουσιαστικά διακρίνουν ενικό και πληθυντικό. Ο αριθμός συνδυάζεται με την πτώση και το γένος στις καταλήξεις και εμφανίζεται επίσης στη συμφωνία άρθρων, επιθέτων και ρημάτων.",
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "machine_translated"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 4,
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "capability_model": "lesson_specific",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 4,
+  "grammar_set_id": "GRAMSET.mul.grammatical_number",
+  "source_language_policy": {
+    "coverage_program": "learnFromLanguages",
+    "expected_language_count": 104,
+    "required_assets": ["comparison record forms[]", "comparison record own_grammar_blurb"],
+    "notes": "All 104 current learn-from languages may explain the lesson from the learner's existing language. These records are source/comparison support, not a promise that the language is teachable as a grammar target."
+  },
+  "target_language_policy": {
+    "allowed_registry_tiers": ["tier1_full", "tier2_selective"],
+    "expected_language_count": 21,
+    "required_assets": ["comparison record forms[]", "grammar set language record", "grammar set lesson_ready=true", "at least one structured grammar form", "at least one structured rule"],
+    "notes": "This lesson deliberately implements all current Tier 1 and Tier 2 languages as learning targets. Tier 3 remains reading/games plus source-language comparison only."
+  },
+  "support_levels": {
+    "full": {
+      "description": "Structured grammatical-number rules exist and the language may be selected as a learning target for this lesson.",
+      "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
+    },
+    "comparison_only": {
+      "description": "The language has a native grammatical-number comparison record and may be used as a source/explanation language, but this lesson does not teach it as a target.",
+      "language_tags": ["sk", "ne", "nl", "he", "vi", "fil", "bn", "ur", "pa", "yue", "th", "ro", "cs", "bg", "sr", "hr", "bs", "sl", "sv", "nb", "da", "sw", "ha", "mr", "gu", "ta", "te", "ml", "kn", "haw", "pcm", "jv", "af", "ak", "am", "as", "az", "ba", "be", "cv", "cy", "dsb", "et", "eu", "fi", "ga", "gd", "hsb", "hu", "hy", "ig", "is", "ka", "kk", "km", "kok", "ky", "lo", "lt", "lv", "mn", "ms", "my", "nn", "or", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "ti", "tk", "uz", "yo", "zu", "bho", "om", "ht", "ku", "ckb"]
+    },
+    "unavailable": {
+      "description": "No current learn-from language is unavailable as a source comparison language in this family.",
+      "language_tags": []
+    }
+  },
+  "role_requirements": {
+    "learning_from_language": {
+      "required_assets": ["comparison record forms[]", "comparison record own_grammar_blurb"],
+      "rendering_behavior": "Show the native-language explanation of how that language handles grammatical number, then contrast it with the selected target language."
+    },
+    "learning_language_full": {
+      "required_assets": ["comparison record forms[]", "grammar set language record", "lesson_ready=true", "structured rules"],
+      "rendering_behavior": "Show the target system, then teach its number formation, obligatoriness, agreement, and meaningful exceptions from structured rule data."
+    }
+  },
+  "promotion_rules": [
+    "Only Tier 1 and Tier 2 may be grammar-learning targets under the current product registry policy.",
+    "Tier 3 remains comparison_only even when a native comparison blurb exists.",
+    "Do not infer singular/plural as the only possible number inventory.",
+    "Do not promote a target unless its grammar record is lesson_ready and contains structured rules.",
+    "Generated native blurbs remain machine-level candidates until the normal language-review ladder promotes them."
+  ],
+  "comparison_record_catalog": "comparison-records/manifest.json",
+  "review_state": "candidate",
+  "trust_state": "machine_translated"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "registry_schema_version": 4,
+  "expected_total": 104,
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
+  "tier_shards": {"1": "tier1.json", "2": "tier2.json", "3": "tier3.json"},
+  "record_contract": {
+    "forms": "A compact representation of the language's ordinary nominal-number inventory or marking strategy. It may name categories such as singular/dual/plural or explicitly say that noun number is commonly unmarked.",
+    "own_grammar_blurb": "One short learner-facing explanation written in the language itself describing how that language ordinarily handles grammatical number. It must not assume that every language has obligatory singular/plural noun inflection.",
+    "source_refs": "Research references supporting the language-specific claim when available. WALS 33A/34A provide the shared typological baseline; full target-language records add target-specific grammar references where practical.",
+    "review_state": "machine_translated records are candidates and must remain visibly below human-reviewed trust levels."
+  },
+  "research_notes": [
+    "Grammatical number and CLDR plural categories are different systems; this catalog is about linguistic number marking and agreement, not localization plural-selection rules.",
+    "Absence of obligatory noun plural marking does not mean a language cannot express plural meaning.",
+    "The same language may use different strategies by animacy, definiteness, noun class, numeral construction, register, or dialect. Blurbs intentionally describe the broad learner-facing pattern rather than pretend to be exhaustive grammars."
+  ],
+  "review_state": "machine_translated"
+}

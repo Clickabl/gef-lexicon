@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "lesson_key": "grammatical-number-systems",
+  "title_key": "lesson.grammatical_number.title",
+  "fallback_title_en": "How {learning_languages} handles grammatical number",
+  "summary_key": "lesson.grammatical_number.summary",
+  "fallback_summary_en": "Languages do not all package one versus more than one in the same way. Some require singular/plural marking, some also distinguish a dual or other number values, and some often leave noun number unmarked and rely on context, numerals, classifiers, articles, particles, or agreement.",
+  "grammar_set_id": "GRAMSET.mul.grammatical_number",
+  "language_capabilities_manifest": "language-capabilities.json",
+  "comparison_blurb_manifest": "comparison-records/manifest.json",
+  "curriculum_concept_ids": ["CURR.GRAMMATICAL_NUMBER", "CURR.PLURAL_FORMATION", "CURR.AGREEMENT"],
+  "transparency_slide": {
+    "description": "The lesson is one declarative multilingual shell layered with language-specific number-system data. It covers grammatical number in noun phrases and agreement, including unmarked/general number, singular, dual, plural, and other language-specific values where relevant. Number may be expressed on nouns, determiners, adjectives, pronouns, classifiers, particles, verbs, or by context. The app owns the universal lesson runner.",
+    "fixed_comparison_language_tags": [],
+    "language_loop_order": ["learning_from", "learning"],
+    "dedupe_language_roles": true,
+    "rendering_model": "Render the learner's best language first using its native comparison record, then the selected learning language. Additional known languages may be added in profile order. Each record owns its number-system forms and own_grammar_blurb; never infer a singular/plural binary from English and never confuse grammatical number with localization plural categories.",
+    "support_selection": {
+      "full": "Render the native comparison block, structured GrammarRuleBlock sections, curated examples when available, and defensible rule-driven practice.",
+      "comparison_only": "Render the native comparison block only. Do not synthesize target-language rules or practice.",
+      "unavailable": "Keep a product-known language discoverable but omit unsupported lesson content."
+    }
+  },
+  "title_policy": {
+    "default_display_locale": "en",
+    "template_key": "lesson.shell.title.languageUsesForms",
+    "variables": ["learning_languages"],
+    "forms_source": "lesson language grammatical-number data",
+    "language_list_format": "shared locale-aware list formatter",
+    "notes": "The displayed lesson title is target-language specific. Do not hand-concatenate language names or imply that every target uses a singular/plural binary."
+  },
+  "eligibility": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "require_non_anchor_multi_form_language": false,
+    "prefer_profile_languages": true,
+    "fill_with_anchor_language_when_needed": true,
+    "notes": "Every language in programs.learnFromLanguages may be a source/comparison language when its native comparison record exists. Under the current product registry, only Tier 1 and Tier 2 languages may be grammar-learning targets for this lesson. The data model supports arbitrary language arrays; twelve is only the default visual cap."
+  },
+  "block_plan": [
+    {"block_id":"facts","block_type":"lesson_facts","repeat":"once","notes":"Introduce grammatical number without assuming a universal binary. Use one/more-than-one as an intuitive starting point, then explicitly allow dual, optional marking, and other systems."},
+    {"block_id":"language-comparisons","block_type":"language_comparison_loop","group_id":"comparison-intro","repeat":"per_relevant_language","notes":"Show each language's representative number categories or marking strategy and its own_grammar_blurb in that language. The learner's native language comes first, followed by the learning language."},
+    {"block_id":"grammar-primer","block_type":"grammar_primer","group_id":"rules","repeat":"once","notes":"Explain three separate questions: which number meanings the language distinguishes, whether nouns must mark them, and where agreement or number marking appears."},
+    {"block_id":"language-rules","block_type":"language_rules","group_id":"rules","repeat":"per_full_support_learning_language","notes":"Render structured target-language rules from GRAMSET.mul.grammatical_number. Tier membership alone is not a rule source."},
+    {"block_id":"curated-examples","block_type":"curated_examples","repeat":"per_selected_language","notes":"Prefer reviewed corpus examples when available. Target-specific rule tips may supply compact didactic examples without pretending they are book evidence."},
+    {"block_id":"practice-intro","block_type":"practice_intro","repeat":"once","notes":"Transition into target-language number choices only when a unique, defensible answer exists."},
+    {"block_id":"practice","block_type":"practice","repeat":"per_full_support_learning_language","notes":"Practice number formation and agreement from structured rules. Do not generate a fake singular/plural choice for languages where the noun can legitimately stay unmarked."},
+    {"block_id":"quest","block_type":"quest_offer","repeat":"once","notes":"Offer a reading quest to notice number marking and agreement in real text when the target language has a meaningful visible distinction."},
+    {"block_id":"completion","block_type":"completion","repeat":"once","notes":"Reinforce that number is a language-specific grammatical system, not a word-for-word translation rule."}
+  ],
+  "presentation_modes": ["scroll", "paged", "presentation"],
+  "learning_path_policy": {
+    "placements_are_language_specific": true,
+    "placement_registry": "curriculum/learning-path-placements.json",
+    "notes": "Tier 1 may eventually place this in a complete grammar path. Tier 2 may place it selectively. Tier 3 can still explain the learner's source-language system but is not a grammar-learning target. Research baseline: WALS 33A/34A plus target-specific references in grammar/grammatical-number.json."
+  },
+  "review_state": "candidate",
+  "version": 1
+}

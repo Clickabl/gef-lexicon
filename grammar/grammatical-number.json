@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.grammatical_number",
+  "anchor": {
+    "language_tag": "en",
+    "surface": "one / more than one",
+    "note": "The anchor is the meaning contrast, not an English suffix. Each language record describes its own number inventory, marking, agreement, and obligatoriness."
+  },
+  "lesson_family_id": "LES.mul.noun.grammatical_number",
+  "scope_note": "Learner-facing grammatical number in ordinary noun phrases and agreement. Rules are intentionally language-specific and must not be inherited across languages. A language can be lesson-ready even when its central rule is that nouns normally do not require overt singular/plural marking.",
+  "languages": [
+    {
+      "language_tag": "en",
+      "language_name_en": "English",
+      "classification": "anchor",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.en.number.system",
+        "display": "singular / plural",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.en.number.regular_plural","summary_en":"Most count nouns contrast singular with plural, and the most common written plural ending is -s or -es.","tips_en":["Start with the meaning: one countable thing versus more than one.","Spelling and pronunciation vary, so -s is a pattern rather than the definition of plural."]},
+          {"rule_id":"RULE.en.number.irregular_plural","summary_en":"Some common nouns use irregular plurals or no visible singular/plural change.","tips_en":["Learn common irregular pairs such as child/children as lexical patterns.","A noun can express plural even when there is no final -s."]},
+          {"rule_id":"RULE.en.number.agreement","summary_en":"Number can also affect determiners and present-tense verb agreement.","tips_en":["Compare this book / these books.","Look beyond the noun when deciding what number the whole phrase expresses."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/values/33A-eng", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "es",
+      "language_name_en": "Spanish",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.es.number.system",
+        "display": "singular / plural + agreement",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.es.number.plural_s","summary_en":"A noun ending in an unstressed vowel normally forms its plural with -s.","tips_en":["libro → libros; casa → casas.","Treat this as the high-frequency first pattern, then learn the smaller ending-specific patterns."]},
+          {"rule_id":"RULE.es.number.plural_es","summary_en":"Many nouns ending in a consonant form the plural with -es, with spelling or stress adjustments in some words.","tips_en":["papel → papeles is a useful model.","Do not mechanically add -es without checking ending-specific spelling rules."]},
+          {"rule_id":"RULE.es.number.invariant_nouns","summary_en":"Some nouns keep the same surface form in singular and plural, so the surrounding noun phrase carries the contrast.","tips_en":["la crisis → las crisis; el lunes → los lunes.","An unchanged noun does not mean the phrase has no grammatical number."]},
+          {"rule_id":"RULE.es.number.agreement","summary_en":"Determiners and adjectives normally agree with the noun in number, and subject number can also affect verb agreement.","tips_en":["el libro nuevo → los libros nuevos.","la casa blanca → las casas blancas: change the whole agreement chain, not only the noun."]}
+        ]
+      }],
+      "source_refs": ["https://www.rae.es/dpd/plural", "https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "fr",
+      "language_name_en": "French",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.fr.number.system",
+        "display": "singulier / pluriel",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.fr.number.common_plural","summary_en":"French nouns generally contrast singular and plural; written -s is the most common plural marker, with several ending-specific patterns.","tips_en":["Do not assume the written plural ending will be pronounced.","Learn frequent ending families and irregular nouns as patterns."]},
+          {"rule_id":"RULE.fr.number.determiners","summary_en":"Determiners are often the clearest audible and visible cue to noun-phrase number.","tips_en":["Watch the article or other determiner as well as the noun.","Number belongs to the noun phrase, not just the final letters of the noun."]},
+          {"rule_id":"RULE.fr.number.agreement","summary_en":"Adjectives and other agreeing words can also reflect plural number, subject to normal French agreement rules.","tips_en":["Track agreement across the phrase.","Written agreement may be clearer than spoken agreement in many forms."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "pt",
+      "language_name_en": "Portuguese",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.pt.number.system",
+        "display": "singular / plural + concordância",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.pt.number.common_plural","summary_en":"Portuguese nouns normally contrast singular and plural; many add -s, while several common endings have their own plural patterns.","tips_en":["Start with the noun's ending rather than one universal plural recipe.","Learn frequent irregular or ending-specific plurals with the noun."]},
+          {"rule_id":"RULE.pt.number.agreement","summary_en":"Articles, determiners, and adjectives normally agree with the noun in number.","tips_en":["Change the noun phrase as a unit, not only the noun.","Agreement is often a stronger clue than translating an English plural ending."]},
+          {"rule_id":"RULE.pt.number.verb_agreement","summary_en":"Subject number normally participates in finite verb agreement.","tips_en":["Check whether the subject is singular or plural before choosing a verb form.","Nominal number and verbal person-number agreement are connected but not identical topics."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "it",
+      "language_name_en": "Italian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.it.number.system",
+        "display": "singolare / plurale + accordo",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.it.number.ending_patterns","summary_en":"Italian commonly marks plural by changing a noun's final vowel, with major patterns such as -o/-i, -a/-e, and -e/-i plus important exceptions.","tips_en":["Think vowel change, not simply add -s.","Gender and noun class help predict the common pattern but do not eliminate exceptions."]},
+          {"rule_id":"RULE.it.number.invariable","summary_en":"Some nouns are invariable for number and rely on determiners or context to show singular versus plural.","tips_en":["Do not force a visible noun change when the noun class is invariable.","Use the whole noun phrase as evidence."]},
+          {"rule_id":"RULE.it.number.agreement","summary_en":"Articles and adjectives normally agree with the noun in number as well as gender.","tips_en":["Track article, noun, and adjective together.","A plural noun phrase is an agreement pattern, not only a noun ending."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "el",
+      "language_name_en": "Greek",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.el.number.system",
+        "display": "ενικός / πληθυντικός + συμφωνία",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.el.number.inflection","summary_en":"Modern Greek nouns normally distinguish singular and plural, but the actual endings depend on the noun's inflectional class, gender, and case.","tips_en":["Learn a noun together with enough of its paradigm to recognize its plural family.","Number cannot be separated completely from case endings in Greek."]},
+          {"rule_id":"RULE.el.number.article_adjective_agreement","summary_en":"Articles and adjectives agree with the noun in number as well as other grammatical features.","tips_en":["Read the whole noun phrase for number clues.","Agreement can make number visible even before the noun ending is familiar."]},
+          {"rule_id":"RULE.el.number.verb_agreement","summary_en":"Subject number is also reflected in ordinary finite verb agreement.","tips_en":["Keep noun-phrase agreement and verb agreement conceptually separate, then connect them through the subject.","Do not import English plural endings into Greek morphology."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "zh",
+      "language_name_en": "Mandarin Chinese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.zh.number.system",
+        "display": "number-neutral noun + numerals/classifiers/context",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.zh.number.noun_neutral","summary_en":"Mandarin common nouns normally do not require a singular-versus-plural inflection.","tips_en":["Do not search for a mandatory Chinese equivalent of English -s.","Let context and the rest of the noun phrase establish number when the noun itself is unchanged."]},
+          {"rule_id":"RULE.zh.number.numeral_classifier","summary_en":"Exact quantities are ordinarily expressed with numerals and the appropriate classifier construction.","tips_en":["Treat numeral + classifier + noun as a core counting pattern.","The classifier system is not a plural suffix system."]},
+          {"rule_id":"RULE.zh.number.men_restricted","summary_en":"The suffix 们 can mark groups with personal pronouns and many human-denoting nouns, but it is not a general plural ending for all nouns.","tips_en":["Do not attach 们 mechanically to every noun that is plural in English.","Ask whether the referent and construction naturally license 们."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ja",
+      "language_name_en": "Japanese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.ja.number.system",
+        "display": "number-neutral noun + counters/context",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.ja.number.noun_neutral","summary_en":"Japanese nouns normally do not inflect obligatorily for singular versus plural.","tips_en":["An unchanged noun may refer to one or more than one depending on context.","Do not manufacture a plural marker just because English has one."]},
+          {"rule_id":"RULE.ja.number.counter_construction","summary_en":"Counting ordinarily uses numeral and counter constructions rather than plural noun inflection.","tips_en":["Learn counters as part of how Japanese packages quantity.","Number marking and counting strategy are related but not the same as an English-style plural ending."]},
+          {"rule_id":"RULE.ja.number.group_suffixes","summary_en":"Forms such as たち can mark an associated group, especially with people and pronouns, but they are not universal noun plurals.","tips_en":["Treat たち as a construction with its own distribution.","Do not attach it to every noun meaning more than one."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "de",
+      "language_name_en": "German",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.de.number.system",
+        "display": "Singular / Plural + Kasus",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.de.number.plural_classes","summary_en":"German has several productive plural patterns rather than one universal plural suffix.","tips_en":["Learn a noun together with its plural form.","Common plural signals include -e, -er, -(e)n, -s, zero endings, and sometimes umlaut, but no single cue covers every noun."]},
+          {"rule_id":"RULE.de.number.case_interaction","summary_en":"Number combines with case in the noun phrase, so articles and adjective endings help identify the grammatical form.","tips_en":["Read article + adjective + noun as one inflectional package.","Do not confuse plural formation with the separate question of which case the phrase has."]},
+          {"rule_id":"RULE.de.number.agreement","summary_en":"Determiners and adjectives reflect number through the German agreement system.","tips_en":["Use surrounding agreement as evidence when the noun's plural is unfamiliar.","A plural phrase can be recognizable before you know the noun's exact plural class."]}
+        ]
+      }],
+      "source_refs": ["https://www.duden.de/sprachwissen/sprachratgeber/Deklination", "https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ko",
+      "language_name_en": "Korean",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.ko.number.system",
+        "display": "number-neutral noun + 들/counters/context",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.ko.number.noun_neutral","summary_en":"Korean nouns normally do not require overt plural marking whenever the meaning is plural.","tips_en":["Let context or quantity expressions do the work when they already make number clear.","Do not assume every English plural noun needs a Korean suffix."]},
+          {"rule_id":"RULE.ko.number.deul_optional","summary_en":"들 can make plurality explicit in many contexts, especially with humans or individuated groups, but it is not obligatory for every plural noun.","tips_en":["Ask whether plurality needs to be emphasized or disambiguated.","Treat 들 as distribution-sensitive rather than a mechanical English -s equivalent."]},
+          {"rule_id":"RULE.ko.number.counter_construction","summary_en":"Numeral and counter constructions are central for explicit quantities.","tips_en":["Choose the appropriate counter with the numeral.","Counting syntax can make an additional noun plural marker unnecessary."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ar",
+      "language_name_en": "Arabic",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.ar.number.system",
+        "display": "المفرد / المثنى / الجمع",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.ar.number.three_values","summary_en":"Standard Arabic productively distinguishes singular, dual, and plural rather than only singular versus plural.","tips_en":["Treat exactly two as a grammatical category of its own.","Do not collapse the dual into an ordinary plural when reading or building noun phrases."]},
+          {"rule_id":"RULE.ar.number.plural_types","summary_en":"Arabic plurals include sound patterns and many broken plurals formed by internal stem changes.","tips_en":["Learn the plural with nouns whose broken-plural pattern is not predictable enough for you yet.","A plural does not have to be a suffix attached to an unchanged stem."]},
+          {"rule_id":"RULE.ar.number.agreement","summary_en":"Number interacts with gender, case/state, and agreement, including important special behavior with many non-human plurals.","tips_en":["Learn agreement as part of the construction, not as a copy of the noun ending.","Keep the noun's number and the form required on agreeing words as separate questions."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "hi",
+      "language_name_en": "Hindi",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.hi.number.system",
+        "display": "एकवचन / बहुवचन + direct/oblique patterns",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.hi.number.inflection_classes","summary_en":"Hindi nouns can distinguish singular and plural, with plural behavior depending strongly on gender and the noun's ending/class.","tips_en":["Do not expect one plural suffix for every noun.","Learn the noun's gender and inflection pattern together."]},
+          {"rule_id":"RULE.hi.number.case_interaction","summary_en":"Number interacts with direct and oblique nominal forms, so a plural can look different before a postposition.","tips_en":["Ask both number and syntactic form before choosing the ending.","Do not memorize a plural in isolation from the forms you will meet in sentences."]},
+          {"rule_id":"RULE.hi.number.agreement","summary_en":"Number can participate in adjective and verb agreement together with gender and other syntactic conditions.","tips_en":["Track which element controls the agreement in the sentence.","Number is one feature in a larger agreement system."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "uk",
+      "language_name_en": "Ukrainian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.uk.number.system",
+        "display": "однина / множина + відмінок",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.uk.number.inflection","summary_en":"Ukrainian nouns normally distinguish singular and plural, with endings determined by declension class and case.","tips_en":["Learn plural forms together with the declension pattern.","Number and case are expressed in the same inflectional system."]},
+          {"rule_id":"RULE.uk.number.numerals","summary_en":"Numeral constructions can select forms that do not map neatly onto a simple English singular-versus-plural rule.","tips_en":["Learn common numeral + noun patterns as constructions.","Do not decide the noun ending from the numeral's English translation alone."]},
+          {"rule_id":"RULE.uk.number.agreement","summary_en":"Adjectives and finite verbs can reflect number through agreement.","tips_en":["Use agreement cues across the phrase and clause.","Keep case agreement and number agreement connected but conceptually distinct."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ru",
+      "language_name_en": "Russian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.ru.number.system",
+        "display": "единственное / множественное + падеж",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.ru.number.inflection","summary_en":"Russian nouns normally distinguish singular and plural, and the visible ending depends on declension class and case.","tips_en":["Learn a noun's plural as part of its declension pattern.","Do not treat a single nominative plural ending as the whole number system."]},
+          {"rule_id":"RULE.ru.number.numeral_constructions","summary_en":"Russian numeral constructions use important form patterns, especially around numerals ending in one, two-to-four, and five or more, subject to the normal compound-numeral rules and exceptions.","tips_en":["Learn numeral + noun combinations as constructions rather than translating an English plural mechanically.","Case and the numeral itself both matter."]},
+          {"rule_id":"RULE.ru.number.agreement","summary_en":"Adjectives and finite verbs can reflect number through agreement.","tips_en":["Use surrounding agreement as evidence for the phrase's number.","Remember that past-tense and present/future agreement organize features differently."]}
+        ]
+      }],
+      "source_refs": ["https://gramota.ru/meta/mnozhestvo", "https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "tr",
+      "language_name_en": "Turkish",
+      "classification": "single_dominant_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.tr.number.system",
+        "display": "tekil / çoğul: -lar / -ler",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.tr.number.plural_harmony","summary_en":"Turkish marks ordinary nominal plural with -lar or -ler according to vowel harmony.","tips_en":["Choose the harmonic variant from the noun's vowels.","The plural marker is regular, but its presence is still construction-dependent."]},
+          {"rule_id":"RULE.tr.number.after_numeral","summary_en":"After an exact numeral, the noun normally remains morphologically singular because the quantity is already explicit.","tips_en":["iki kitap, not a mechanical equivalent of English two books with a plural suffix.","Separate semantic plurality from whether Turkish requires the plural morpheme in that construction."]},
+          {"rule_id":"RULE.tr.number.agreement_context","summary_en":"Plural marking can also interact with definiteness, collectivity, and agreement choices in the wider sentence.","tips_en":["Start with the core noun-phrase rule, then learn discourse-sensitive exceptions separately.","Do not make plural suffix presence your only clue to plural meaning."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "pl",
+      "language_name_en": "Polish",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.pl.number.system",
+        "display": "liczba pojedyncza / mnoga + przypadek",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.pl.number.inflection","summary_en":"Polish nouns distinguish singular and plural, with forms determined by gender/class and case.","tips_en":["Learn noun number inside the declension system.","Plural endings are not one universal suffix."]},
+          {"rule_id":"RULE.pl.number.numeral_constructions","summary_en":"Numerals trigger important noun-form and agreement patterns, including a major contrast between forms used with many two-to-four combinations and those used with five and above.","tips_en":["Treat numeral + noun patterns as grammar constructions.","Compound numerals and case can change the surface pattern, so avoid a one-line English rule."]},
+          {"rule_id":"RULE.pl.number.agreement","summary_en":"Adjectives and verbs participate in number agreement, with additional distinctions inside the plural agreement system.","tips_en":["Use the whole phrase and clause to identify number.","Plural agreement can carry distinctions not visible in an English translation."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "fa",
+      "language_name_en": "Persian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.fa.number.system",
+        "display": "مفرد / جمع; ـها and other plural patterns",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.fa.number.ha_productive","summary_en":"Persian commonly forms overt plurals with the productive suffix ها, while other plural patterns also occur.","tips_en":["Treat ها as the broad productive default, not the only plural form in the language.","Learn frequent lexicalized or register-sensitive alternatives with the noun."]},
+          {"rule_id":"RULE.fa.number.an_restricted","summary_en":"The plural suffix ان occurs with particular noun classes and lexical patterns rather than functioning as a universal alternative.","tips_en":["Do not freely swap ها and ان on every noun.","Learn ان plurals where they are established."]},
+          {"rule_id":"RULE.fa.number.quantity_context","summary_en":"Overt plural marking is not required in every quantity construction when plurality is already established by a numeral or quantifying expression.","tips_en":["Separate plural meaning from obligatory plural morphology.","Read numeral/quantifier constructions as whole phrases."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/values/33A-prs", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "id",
+      "language_name_en": "Indonesian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.id.number.system",
+        "display": "number-neutral noun + reduplication/quantifiers/context",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.id.number.noun_neutral","summary_en":"Indonesian nouns do not require an obligatory singular/plural inflection in every noun phrase.","tips_en":["Let context, numerals, and quantifiers carry number when they already make it clear.","Do not search for a mandatory Indonesian equivalent of English -s."]},
+          {"rule_id":"RULE.id.number.reduplication","summary_en":"Full reduplication can express plurality or variety/distributive meanings with many nouns, but it is not simply a required plural suffix strategy.","tips_en":["Learn the meaning of the reduplicated construction, not only the visual repetition.","Do not reduplicate automatically after every numeral or quantifier."]},
+          {"rule_id":"RULE.id.number.explicit_quantity","summary_en":"When an explicit numeral or quantifier already supplies quantity, an additional plural-marking strategy is often unnecessary.","tips_en":["Treat the noun phrase as one information package.","Semantic plurality can be fully clear with an unchanged noun."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "ca",
+      "language_name_en": "Catalan",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.ca.number.system",
+        "display": "singular / plural + concordança",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.ca.number.plural_patterns","summary_en":"Catalan nouns normally distinguish singular and plural, frequently with -s plus ending-specific spelling and morphological changes.","tips_en":["Start from the noun's ending and plural class.","Do not assume every noun is formed by mechanically appending one letter."]},
+          {"rule_id":"RULE.ca.number.invariable","summary_en":"Some nouns are invariable for number and rely on the surrounding noun phrase to show the contrast.","tips_en":["Use determiners and adjectives as evidence when the noun itself does not change.","Unchanged surface form is compatible with grammatical plural."]},
+          {"rule_id":"RULE.ca.number.agreement","summary_en":"Determiners and adjectives normally agree with the noun in number.","tips_en":["Change the agreement chain together.","Treat number as a noun-phrase feature, not only a noun suffix."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "gl",
+      "language_name_en": "Galician",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.gl.number.system",
+        "display": "singular / plural + concordancia",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.gl.number.plural_patterns","summary_en":"Galician nouns normally distinguish singular and plural, with plural formation determined by the word's ending and associated spelling patterns.","tips_en":["Learn the common ending families rather than one universal suffix rule.","Watch accent and spelling changes in ending-specific patterns."]},
+          {"rule_id":"RULE.gl.number.invariable","summary_en":"Some noun forms can remain unchanged across singular and plural, leaving determiners or context to show number.","tips_en":["Read the whole noun phrase.","No visible noun change does not erase grammatical number."]},
+          {"rule_id":"RULE.gl.number.agreement","summary_en":"Determiners and adjectives normally agree with the noun in number.","tips_en":["Track noun-phrase agreement as a unit.","Agreement provides redundant clues that make number easier to recognize in real text."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    },
+    {
+      "language_tag": "mk",
+      "language_name_en": "Macedonian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id": "GRAMFORM.mk.number.system",
+        "display": "еднина / множина + бројни форми",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.mk.number.plural_patterns","summary_en":"Macedonian nouns normally distinguish singular and plural, using several plural suffix patterns rather than one universal ending.","tips_en":["Learn the noun's productive plural pattern with the noun.","Gender and noun shape help organize the common plural classes."]},
+          {"rule_id":"RULE.mk.number.count_forms","summary_en":"Some masculine nouns have special count forms in numeral constructions, so an explicit quantity does not always use the ordinary plural form.","tips_en":["Learn numeral + noun patterns as constructions.","Do not force the ordinary dictionary plural after every number."]},
+          {"rule_id":"RULE.mk.number.agreement","summary_en":"Adjectives and other agreeing elements can reflect noun-phrase number.","tips_en":["Use surrounding agreement as evidence.","Number marking is distributed across the phrase, not only the noun ending."]}
+        ]
+      }],
+      "source_refs": ["https://wals.info/chapter/33", "https://wals.info/chapter/34"],
+      "review_state": "candidate"
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
