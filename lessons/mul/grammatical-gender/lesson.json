@@ -18,23 +18,15 @@
     "minimum_display_languages": 2,
     "maximum_display_languages": 12,
     "prefer_profile_languages": true,
-    "fallback_language_tags": [
-      "en",
-      "es",
-      "el"
-    ],
+    "fallback_language_tags": ["en", "es", "el"],
     "requires_at_least_one_non_anchor_multi_language": false,
     "language_selection_is_session_only": true,
     "language_roles_are_distinct": true,
     "dedupe_display_without_losing_roles": true,
-    "display_modes": [
-      "scroll",
-      "pages",
-      "presentation"
-    ],
+    "display_modes": ["scroll", "pages", "presentation"],
     "practice_mode": "learning_languages_with_full_lesson_support_only",
     "comparison_only_mode": true,
-    "notes": "Start with profile/session languages. Add English only if no genderless comparison is present, Spanish only if no two-gender comparison is present, and Greek only if no three-gender comparison is present. These are contrast fallbacks, not a claim that article counts equal gender counts."
+    "notes": "Profile/session languages come first. English, Spanish, and Greek are fallback/reference candidates for zero-, two-, and three-gender contrasts. They are never used to infer another language's system, and display-only references do not gain profile or practice status."
   },
   "rules": [],
   "triggers": [
@@ -62,10 +54,7 @@
       "constraints": {
         "resolve_rule_pool_from_learning_languages": true,
         "require_full_lesson_support": true,
-        "feature_focus": [
-          "grammatical_gender",
-          "agreement"
-        ],
+        "feature_focus": ["grammatical_gender", "agreement"],
         "omit_when_no_meaningful_choice": true
       }
     },
@@ -85,11 +74,7 @@
       "constraints": {
         "learning_languages_only": true,
         "open_reader_mode": "lesson-quest",
-        "teacher_policy": [
-          "hidden",
-          "optional",
-          "required"
-        ],
+        "teacher_policy": ["hidden", "optional", "required"],
         "omit_when_no_meaningful_choice": true
       }
     }
@@ -107,16 +92,7 @@
   },
   "presentation": {
     "groups_are_semantic_not_visual": true,
-    "groups": [
-      "facts",
-      "comparison-intro",
-      "rules",
-      "examples",
-      "practice",
-      "quest",
-      "completion"
-    ],
-    "intro_word_examples": "gender-examples.json",
+    "groups": ["facts", "comparison-intro", "rules", "examples", "practice", "quest", "completion"],
     "scroll_mode": "render groups in one vertical lesson surface",
     "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
     "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
@@ -127,5 +103,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
