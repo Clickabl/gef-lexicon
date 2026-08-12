@@ -18,7 +18,8 @@
   },
   "record_contract": {
     "forms": "Representative words, case markers, particles, affixes, or constructions used in this lesson's semantic territory. This is not a promise of exhaustive grammar coverage.",
-    "comparison_blurb": "Short explanation written in the language itself. It must describe how that language handles this semantic territory rather than repeat the generic lesson intro.",
+    "own_grammar_blurb": "Optional learner-facing explanation written in the language itself, describing how that language handles this semantic territory. The lesson may show this only when the language belongs to the learner's own profile; an injected reference anchor can show forms without this paragraph.",
+    "comparison_blurb": "Legacy machine-draft native explanation retained for research and backfill compatibility. New learner-facing teaching copy should use own_grammar_blurb.",
     "review_state": "Generated/research-required records are candidates. Promotion to reviewed/verified follows the normal Gef trust ladder."
   },
   "review_state": "generated"
