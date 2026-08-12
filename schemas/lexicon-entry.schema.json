@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/lexicon-entry.schema.json",
   "title": "Lexicon Entry (Lexeme & Senses)",
-  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
+  "description": "Cross-linguistic schema for Gef & Clickabl lexemes. A sense is a semantic identity, not necessarily a prose dictionary definition: it may instead be anchored by a concept and cross-language equivalents. The schema also carries Lexi-facing semantic relations, grammar links, and lesson recommendations while occurrence-specific explanations remain in book/content annotations.",
   "type": "object",
   "required": ["schema_version", "language_code", "lexemes"],
   "properties": {
@@ -30,21 +30,75 @@
     },
     "sense": {
       "type": "object",
-      "required": ["sense_id", "sense_key", "definitions"],
+      "required": ["sense_id", "sense_key"],
+      "anyOf": [
+        {"required": ["definitions"]},
+        {"required": ["primary_concept_id"]},
+        {"required": ["equivalents"]},
+        {"required": ["grammar_links"]}
+      ],
       "properties": {
         "sense_id": {"type": "string"},
         "sense_key": {"type": "string"},
         "primary_concept_id": {"type": ["string", "null"]},
         "entity_id": {"type": ["string", "null"], "description": "Optional link to the particular person, character, place, or other named entity represented by this contextual proper-name sense."},
-        "definitions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
+        "definitions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}, "description": "Optional prose definitions. Lexi does not require prose when a sense is sufficiently modeled by semantic/grammar links."},
+        "translator_gloss": {"type": "string", "minLength": 1, "description": "Short editor-facing sense label for translator UI/disambiguation; not a full dictionary definition."},
         "sense_hint": {"type": "object", "additionalProperties": {"type": "string"}},
         "cefr_level": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
         "register_label": {"type": "string"},
+        "equivalents": {"type": "array", "items": {"$ref": "#/definitions/equivalentRelation"}},
+        "semantic_relations": {"type": "array", "items": {"$ref": "#/definitions/semanticRelation"}},
+        "grammar_links": {"type": "array", "items": {"$ref": "#/definitions/grammarLink"}},
+        "lesson_recommendations": {"type": "array", "items": {"$ref": "#/definitions/lessonRecommendation"}},
         "homophones": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "homonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "synonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "antonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "confusable_senses": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}}
+      }
+    },
+    "equivalentRelation": {
+      "type": "object",
+      "required": ["language_code", "target_sense_id", "equivalence"],
+      "properties": {
+        "language_code": {"type": "string", "minLength": 2},
+        "target_sense_id": {"type": "string", "minLength": 1},
+        "target_lexeme_id": {"type": "string"},
+        "target_form_id": {"type": "string"},
+        "equivalence": {"type": "string", "enum": ["exact", "near", "contextual"]},
+        "note": {"type": "string"},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]}
+      }
+    },
+    "semanticRelation": {
+      "type": "object",
+      "required": ["relation_kind", "target_id", "target_type"],
+      "properties": {
+        "relation_kind": {"type": "string", "enum": ["synonym", "near_synonym", "register_variant", "regional_variant", "family_term_variant", "contrast", "confusable", "broader", "narrower", "related"]},
+        "target_id": {"type": "string"},
+        "target_type": {"type": "string", "enum": ["sense", "lexeme", "form", "expression", "concept"]},
+        "note": {"type": "string"}
+      }
+    },
+    "grammarLink": {
+      "type": "object",
+      "required": ["grammar_id", "relation"],
+      "properties": {
+        "grammar_id": {"type": "string", "minLength": 1},
+        "rule_id": {"type": "string"},
+        "relation": {"type": "string", "enum": ["example_of", "marks", "contrasts", "inflects_for", "disambiguates"]},
+        "explainer": {"type": "object", "additionalProperties": {"type": "string", "minLength": 1}}
+      }
+    },
+    "lessonRecommendation": {
+      "type": "object",
+      "required": ["lesson_id", "reason"],
+      "properties": {
+        "lesson_id": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "enum": ["learn_concept", "practice", "contrast", "disambiguate"]},
+        "priority": {"type": "integer", "minimum": 0, "maximum": 100},
+        "note": {"type": "string"}
       }
     },
     "typedRelation": {
