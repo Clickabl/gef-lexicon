@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "capability_model": "lexical_semantic_profile",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "coverage_program": "learnFromLanguages",
+  "source_bridge_manifest": "source-bridges/manifest.json",
+  "target_profile_manifest": "target-profiles/manifest.json",
+  "role_requirements": {
+    "learning_from": {
+      "description": "The learner's explanation/source language. Every registered learn-from language may participate when its localized bridge copy exists.",
+      "required_assets": ["localized source bridge"],
+      "expected_total": 104
+    },
+    "learning_language_full": {
+      "description": "A currently learnable target language with researched family-member distinctions, representative terms, an English canonical explainer, cultural cautions, and practice-ready relation features.",
+      "required_assets": ["target profile", "core_terms", "distinctions", "target_explainer_en"],
+      "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
+    },
+    "learning_language_comparison": {
+      "description": "A registered language may still be shown as a source-language anchor or future comparison target when only localized bridge copy exists, but the lesson must not invent a target vocabulary system or practice items.",
+      "default_for_registered_languages_not_in_full": true
+    }
+  },
+  "runtime_model": {
+    "source_first": "Show a short bridge in the learner's strongest learning-from language before teaching the target system.",
+    "target_second": "Resolve the selected learning language's structured target profile and render a longer explanation, term set, distinctions, cultural note, examples, and practice.",
+    "pair_scaling": "Do not author a 104 x N matrix. Source copy and target facts are independent assets joined at runtime, so English to Spanish, Greek to Portuguese, Chinese to English, and Nepali to Portuguese use the same lesson graph.",
+    "fallback": "If a source localization is below the user's trust threshold, fall back through the normal best-language chain. If the target lacks a full profile, render comparison-only and omit target practice rather than guessing.",
+    "english_spanish_reference": "The approved worked example is English as the source language and Spanish as the learning language."
+  },
+  "trust_contract": {
+    "canonical_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "generated_source_bridges": "machine_translated",
+    "generated_target_profiles": "machine_translated",
+    "below_threshold_behavior": "visible_disabled_with_badge"
+  },
+  "review_state": "candidate",
+  "trust_state": "machine_translated",
+  "version": 1
+}
