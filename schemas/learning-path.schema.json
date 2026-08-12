@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/learning-path.schema.json",
+  "title": "Gef ordered learning path",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "path_id", "language_registry_ref", "default_items", "language_overrides", "review_state", "version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "path_id": {"type": "string", "pattern": "^PATHSET\\.[A-Za-z0-9._-]+$"},
+    "language_registry_ref": {"type": "string", "minLength": 1},
+    "default_items": {"type": "array", "items": {"$ref": "#/definitions/pathItem"}},
+    "language_overrides": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["language", "operations", "review_state"],
+        "properties": {
+          "language": {"type": "string", "minLength": 1},
+          "operations": {"type": "array", "items": {"$ref": "#/definitions/operation"}},
+          "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "compatibility_view": {"type": "string"},
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "pathItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item_id", "kind", "ref", "availability"],
+      "properties": {
+        "item_id": {"type": "string", "pattern": "^PATHITEM\\.[A-Za-z0-9._-]+$"},
+        "kind": {"enum": ["lesson_part", "book", "chapter", "learning_object"]},
+        "ref": {"type": "string", "minLength": 1},
+        "availability": {"enum": ["active", "planned", "conditional"]},
+        "cefr_target": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+        "prerequisite_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "notes": {"type": "string"}
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["op", "item_id"],
+      "properties": {
+        "op": {"enum": ["move_before", "move_after", "omit", "insert_before", "insert_after", "replace", "set_cefr"]},
+        "item_id": {"type": "string", "pattern": "^PATHITEM\\.[A-Za-z0-9._-]+$"},
+        "relative_to_item_id": {"type": "string", "pattern": "^PATHITEM\\.[A-Za-z0-9._-]+$"},
+        "item": {"$ref": "#/definitions/pathItem"},
+        "replacement_item": {"$ref": "#/definitions/pathItem"},
+        "cefr_target": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+        "reason": {"type": "string"}
+      },
+      "allOf": [
+        {"if": {"properties": {"op": {"enum": ["move_before", "move_after"]}}}, "then": {"required": ["relative_to_item_id"]}},
+        {"if": {"properties": {"op": {"enum": ["insert_before", "insert_after"]}}}, "then": {"required": ["relative_to_item_id", "item"]}},
+        {"if": {"properties": {"op": {"const": "replace"}}}, "then": {"required": ["replacement_item"]}},
+        {"if": {"properties": {"op": {"const": "set_cefr"}}}, "then": {"required": ["cefr_target"]}}
+      ]
+    }
+  }
+}
