@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "capability_model": "lesson_specific",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "grammar_set_id": "GRAMSET.mul.grammatical_gender",
+  "fixed_comparison_language_tags": [
+    "en",
+    "es",
+    "el"
+  ],
+  "support_levels": {
+    "full": {
+      "description": "The lesson has structured grammatical-gender rules for this language and may render rule blocks and practice.",
+      "language_tags": [
+        "en",
+        "es"
+      ]
+    },
+    "comparison_only": {
+      "description": "A reviewed comparison record may be shown, but the app must not synthesize missing agreement rules or practice.",
+      "default_for_registered_languages_not_in_full": false,
+      "language_tags": [
+        "el",
+        "de",
+        "fr",
+        "ru",
+        "tr",
+        "sw"
+      ]
+    },
+    "unavailable": {
+      "description": "No defensible gender-system comparison record exists yet. Omit the language rather than guessing from language family.",
+      "language_tags": []
+    }
+  },
+  "expected_full_support_language_tags": [
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "it",
+    "de",
+    "el",
+    "ru",
+    "uk",
+    "pl",
+    "ar",
+    "he",
+    "hi"
+  ],
+  "pending_full_support_research": [
+    {
+      "language_tags": [
+        "fr",
+        "pt",
+        "it",
+        "de",
+        "el",
+        "ru",
+        "uk",
+        "pl",
+        "ar",
+        "he",
+        "hi"
+      ],
+      "reason": "These languages need independent structured agreement rules, exceptions, and practice constraints before lesson-level full support. Comparison facts do not grant full support."
+    }
+  ],
+  "promotion_rules": [
+    "Global language tier never grants lesson-level full support automatically.",
+    "Do not infer a gender inventory from genealogical family or article count.",
+    "A full-support language must have explicit structured rules and safe practice constraints in the grammatical-gender grammar set.",
+    "A comparison-only language must have an explicit comparison record; missing data means omit, not 'no gender'.",
+    "Noun-class systems must be represented on their own terms rather than relabeled masculine/feminine/neuter."
+  ],
+  "comparison_record_catalog": "comparison-records/manifest.json",
+  "comparison_blurb_catalog": "comparison-records/manifest.json",
+  "review_state": "candidate"
+}
