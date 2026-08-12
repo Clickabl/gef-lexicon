@@ -93,3 +93,36 @@ This entry supersedes the tier-count statement in the 08:44 entry above. The cur
 ### Editorial/research guardrail
 
 See `docs/CALENDAR_YEAR_LESSON_ARCHITECTURE.md` before copying this pattern. Calendar, climate, and cultural facts are especially easy to overgeneralize. Store the language vocabulary and the contextual convention separately, preserve alternate systems, and prefer an honest candidate record over fake universality.
+
+## [2026-08-12 10:08 MDT] GPT-5.6 Sol — UI handoff — clock/date tools for calendar and time lessons
+
+The Expo app now has reusable temporal-learning UI primitives ready for the lesson/compiler layer:
+
+- `gef-expo/src/core/components/practice-elements/temporal/InteractiveClock.tsx`
+- `gef-expo/src/core/components/practice-elements/temporal/InteractiveCalendar.tsx`
+- `gef-expo/src/core/components/practice-elements/temporal/temporalModel.ts`
+- `gef-expo/src/features/lessons/components/lesson-elements/LessonTemporalTools.tsx`
+
+### Time-of-day lesson contract
+
+1. **Please use the shared interactive clock rather than inventing a lesson-only clock.** The learner can choose the hour or minute hand, drag/tap the dial, and VoiceOver/TalkBack can increment/decrement it through the adjustable accessibility role.
+2. **The clock UI owns geometry, not linguistic truth.** It consumes approved phrase data keyed by `HH:MM`. Do not make Expo infer a universal English-shaped rule such as “quarter past,” “half past,” or `hour + minute`; languages differ too much in time expressions for that to be safe.
+3. **The phrase-data contract is `languageTag + label + phrases: { "HH:MM": "…" }`.** A lesson may use a practical step such as 5 minutes initially, then expand where research supports finer distinctions. The UI already supports a configurable `minuteStep`.
+4. **104-language coverage should be on-demand, not one giant app-bundle table.** If a selected best/explanation language is promised by the lesson, its time phrases must exist for that lesson's supported clock positions. Store/review those records in Lexicon and compile only the selected session languages into the runtime package.
+5. **Do not silently fall back to English wording.** Missing linguistic data should stay visibly missing/research-required until the normal trust/review pipeline fills it.
+6. **Day periods are part of the linguistic model.** Morning/afternoon/evening/night boundaries and names can be locale/language specific. Keep them in the language/context data rather than deriving them from an English AM/PM assumption.
+
+### Date/calendar lesson contract
+
+1. The shared calendar UI accepts a **session/territory-resolved `firstDayOfWeek` (0–6)**. Never derive the first calendar column from a bare language tag. This matches the existing calendar-year architecture.
+2. Selected-date readouts can use BCP-47 locale/calendar/numbering-system metadata, with exact reviewed `dateOverrides` when a lesson needs a form that generic locale formatting cannot safely express.
+3. Keep alternate calendar systems explicit. Do not flatten Gregorian, Persian, Islamic, Hebrew, traditional, or other systems into one fake universal month list.
+4. Keep dictionary/standalone month forms separate from grammatical forms used inside dates. The existing `formatForms` concept should feed this UI when relevant.
+
+### Ordered-set renderer contract
+
+Expo now also has a reusable ordered-term visual composition that can show primary or contextual term systems, readings, transliterations, variants, and date-format forms. The existing `ordered_term_set` semantic block is the correct input. Days/months/seasons/numbers/colors/etc. should reuse it.
+
+### Integration status / next TODO
+
+The UI primitives and typed next-block contracts are landed. **Do not yet assume the old grammar-only `compile-lesson-runtime.mjs` can package `knowledge_set_id` lessons.** Its current pipeline still requires `grammar_set_id` and its shipping runner only accepts the older block union. The next Expo integration TODO is to add one knowledge-set compiler path plus runner dispatch for `ordered_term_set`, `cultural_note`, `interactive_clock`, and `interactive_calendar` atomically. The new block types are intentionally staged outside the shipping `LessonRuntimeBlock` union until that compiler+runner work lands together, preventing a half-wired tool from falling through as a completion screen.
