@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.grammar.being",
+  "support_language_tag": "en",
+  "proficiency_band": "all",
+  "register": "plain",
+  "title": "To be, or not to be",
+  "invitation": "Want to see how languages handle identity, state, location, and existence?",
+  "summary": "Languages do not divide the idea of ‘being’ in the same way. Spanish distinguishes ser, estar, and hay; other languages may use one broad copula, several constructions, a zero copula, grammatical endings, or separate existence and location patterns.",
+  "blocks": [
+    {
+      "block_id": "hamlet-note",
+      "type": "explanation",
+      "text": "The title is Shakespeare's exact line from Hamlet, Act 3, Scene 1. Hamlet is weighing life and death, not choosing between grammar forms."
+    },
+    {
+      "block_id": "universal-map",
+      "type": "explanation",
+      "text": "Instead of asking which word means ‘to be,’ Gef asks what the sentence is doing: identifying, classifying, describing a property or state, locating something, saying that something exists, or expressing another related meaning."
+    },
+    {"block_id":"dynamic-target-map","type":"dynamic_example_slot","slot":"being_target_language_map"},
+    {
+      "block_id": "rule-property-state",
+      "type": "rule",
+      "rule_id": "RULE.mul.being.current_state",
+      "text": "A characteristic and a current state are useful meanings to compare, but no universal permanent-versus-temporary rule exists. Each language draws its own boundaries."
+    },
+    {
+      "block_id": "rule-location",
+      "type": "rule",
+      "rule_id": "RULE.mul.being.entity_location",
+      "text": "Location may use the same grammar as identity, a different copula, a locative construction, a case ending, or no overt copula at all."
+    },
+    {
+      "block_id": "rule-existence",
+      "type": "rule",
+      "rule_id": "RULE.mul.being.existence_presence",
+      "text": "Saying that something exists can be different from saying where an already known thing is. Spanish hay versus estar is one example, but every target language must be learned on its own terms."
+    },
+    {"block_id":"dynamic-book-examples","type":"dynamic_example_slot","slot":"reviewed_being_examples"},
+    {"block_id":"dynamic-comparison","type":"dynamic_example_slot","slot":"being_cross_language_comparison"}
+  ],
+  "rule_explanations": {},
+  "review_state": "candidate",
+  "version": 1
+}
