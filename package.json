@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs",
+    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs",
     "validate:english": "node scripts/validate-english-coverage.mjs",
+    "validate:family-members": "node scripts/validate-family-members.mjs",
     "compile:concepts": "node scripts/compile-concept-index.mjs",
     "compile:sqlite": "node scripts/compile-sqlite.mjs",
     "compile:names": "node scripts/compile-name-index.mjs",
