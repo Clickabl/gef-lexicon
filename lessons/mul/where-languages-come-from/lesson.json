@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.meta.where_languages_come_from",
+  "lesson_key": "where-languages-come-from",
+  "target_language": "mul",
+  "curriculum_concept_ids": [],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "mixed",
+  "rules": [],
+  "triggers": [
+    {
+      "trigger_id": "TRG.mul.language_families.manual",
+      "trigger_type": "manual",
+      "notes": "Available from the Lessons catalog as the universal Lesson 0 orientation."
+    },
+    {
+      "trigger_id": "TRG.mul.language_families.catalog",
+      "trigger_type": "catalog_topic",
+      "notes": "Introduces genealogy, contact, writing systems, standardization, and the family placement of every current Gef learn-from language before language-specific paths diverge."
+    }
+  ],
+  "practice_modules": [],
+  "presentation": {
+    "catalog_source": "../../../curriculum/lesson-catalog.json",
+    "language_support_source": "https://github.com/Clickabl/gef-expo/blob/main/registry/language-support.json",
+    "family_atlas_source": "language-families.json",
+    "translation_manifest_source": "translation-manifest.json",
+    "groups_are_semantic_not_visual": false,
+    "groups": [
+      "intro",
+      "what-a-family-means",
+      "family-atlas",
+      "indo-european",
+      "east-and-southeast-asia",
+      "west-and-central-asia",
+      "africa-and-middle-east",
+      "islands-and-oceans",
+      "isolates-and-small-families",
+      "contact-languages",
+      "writing-is-not-ancestry",
+      "history-changes-the-map",
+      "language-names-and-standards",
+      "how-we-know",
+      "completion"
+    ],
+    "scroll_mode": "Render all groups as one long-form article lesson in order. The family atlas remains an accessible native-text visualization, never an image-only map.",
+    "pages_mode": "Render semantic groups as learner pages with the same source content; do not fork the lesson by tier or language.",
+    "teacher_presentation_mode": "Use the same ordered content and family-atlas data with classroom-sized controls; do not fork lesson truth.",
+    "tier_policy": "Universal orientation content is eligible for Tier 1, Tier 2, and Tier 3. It teaches no language-specific grammar and therefore does not change any tier's grammar promise.",
+    "variant_policy": "Script, region, transliteration, and read-aid variants are representations of a supported language identity and never add extra leaves to the 104-language atlas.",
+    "classification_policy": "The atlas is a pedagogical genealogy overview, not a claim that every boundary or subgroup is permanently settled. Contact languages are grouped by formation history instead of being forced into a single-parent tree.",
+    "translation_policy": "Every support-language rendering is translated directly from the canonical English semantic source. Sibling-language renderings may be used for comparison and terminology QA, never as the translation source.",
+    "research_sources": [
+      {
+        "id": "glottolog-5.3",
+        "title": "Glottolog 5.3",
+        "role": "Primary classification backbone and current family/isolate terminology",
+        "url": "https://glottolog.org/",
+        "accessed": "2026-08-12"
+      },
+      {
+        "id": "gef-standard-translation-groups",
+        "title": "Gef standard translation groups",
+        "role": "Product workflow grouping and independent-translation policy",
+        "url": "https://github.com/Clickabl/gef-expo/blob/main/registry/standard-translation-groups.json",
+        "accessed": "2026-08-12"
+      }
+    ],
+    "next_policy": "On completion, resolve the next eligible universal catalog item, normally International Language Levels, before entering the learner's language-specific path."
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 1,
+    "teacher_quest_default": "hidden"
+  },
+  "review_state": "candidate",
+  "version": 2
+}
