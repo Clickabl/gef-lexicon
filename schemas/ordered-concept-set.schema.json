@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/ordered-concept-set.schema.json",
+  "title": "Gef ordered concept set",
+  "description": "Reusable language data for teachable sets such as weekdays, months, seasons, numbers, colors, and other ordered or cyclic vocabularies. Language terms are kept separate from territory-, calendar-, climate-, and hemisphere-dependent conventions.",
+  "type": "object",
+  "required": ["schema_version", "knowledge_set_id", "topic", "set_kind", "target_language_policy", "language_records", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "enum": [1]},
+    "knowledge_set_id": {"type": "string", "pattern": "^KNOWSET\\.[A-Za-z0-9._-]+$"},
+    "topic": {"type": "string", "minLength": 1},
+    "set_kind": {"type": "string", "enum": ["ordered_cycle", "ordered_sequence", "unordered_set"]},
+    "canonical_concept_keys": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "target_language_policy": {
+      "type": "object",
+      "required": ["registry_source", "allowed_lesson_tiers"],
+      "properties": {
+        "registry_source": {"type": "string", "minLength": 1},
+        "allowed_lesson_tiers": {"type": "array", "items": {"type": "integer", "enum": [1, 2, 3]}, "uniqueItems": true},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "context_policy": {
+      "type": "object",
+      "properties": {
+        "teaching_order_is_not_locale_layout": {"type": "boolean"},
+        "territory_controls_week_layout": {"type": "boolean"},
+        "calendar_system_sensitive": {"type": "boolean"},
+        "hemisphere_sensitive": {"type": "boolean"},
+        "climate_sensitive": {"type": "boolean"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "language_records": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/languageRecord"}
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "trust_state": {"type": "string", "enum": ["machine_translated", "machine_verified", "public", "gef_certified"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "languageRecord": {
+      "type": "object",
+      "required": ["language_tag", "primary_system_id", "systems", "review_state"],
+      "properties": {
+        "language_tag": {"type": "string", "minLength": 1},
+        "primary_system_id": {"type": "string", "minLength": 1},
+        "systems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/definitions/system"}
+        },
+        "usage_notes": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "culture_notes": {"type": "array", "items": {"$ref": "#/definitions/cultureNote"}},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+        "trust_state": {"type": "string", "enum": ["machine_translated", "machine_verified", "public", "gef_certified"]}
+      },
+      "additionalProperties": false
+    },
+    "system": {
+      "type": "object",
+      "required": ["system_id", "scope", "terms"],
+      "properties": {
+        "system_id": {"type": "string", "minLength": 1},
+        "label_en": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "enum": ["everyday", "regional", "calendar", "climate", "traditional", "historical", "literary"]},
+        "region_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/definitions/term"}
+        },
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "term": {
+      "type": "object",
+      "required": ["concept_key", "order", "display"],
+      "properties": {
+        "concept_key": {"type": "string", "minLength": 1},
+        "order": {"type": "integer", "minimum": 1},
+        "display": {"type": "string", "minLength": 1},
+        "reading": {"type": "string", "minLength": 1},
+        "transliteration": {"type": "string", "minLength": 1},
+        "variants": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "format_forms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["context", "display"],
+            "properties": {
+              "context": {"type": "string", "minLength": 1},
+              "display": {"type": "string", "minLength": 1},
+              "region_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+              "notes": {"type": "string"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "cultureNote": {
+      "type": "object",
+      "required": ["note_id", "type", "text_en"],
+      "properties": {
+        "note_id": {"type": "string", "minLength": 1},
+        "type": {"type": "string", "enum": ["calendar_system", "week_convention", "naming_pattern", "grammar_usage", "regional_variant", "season_system", "hemisphere", "climate", "historical_note"]},
+        "title_en": {"type": "string"},
+        "text_en": {"type": "string", "minLength": 1},
+        "region_tags": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "source_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
