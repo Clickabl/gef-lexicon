@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "grammar_set_id": "GRAMSET.mul.for_equivalents",
+  "lesson_family_id": "LES.mul.prep.multiple_for",
+  "batch_id": "GRAMBATCH.mul.for_equivalents.ar_fa_hi",
+  "research_mode": "native_explainer_plus_structured_rules",
+  "comparison_basis": "semantic_functions",
+  "languages": [
+    {
+      "language_tag": "ar",
+      "language_name_en": "Arabic",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "ar",
+        "title": "في العربية: حدِّد العلاقة أولًا",
+        "body": "في العربية تتوزع هذه العلاقات بين حروف جر وتراكيب مختلفة. قد تدل لِـ على الغرض أو المستفيد، ويُستعمل بسبب للسبب، وإلى للغاية أو الوجهة، ولمدة للزمن الممتد، ومقابل للتبادل. لذلك يُختار التركيب بحسب العلاقة التي تؤديها العبارة داخل الجملة.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.ar.for.li",
+          "display": "لِـ",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.li_beneficiary",
+              "summary_en": "Marks an intended recipient, beneficiary, possession-like relation, or intended use in many noun-phrase constructions.",
+              "semantic_function_ids": ["SEM.BENEFICIARY", "SEM.RECIPIENT"],
+              "tips_en": ["Ask who receives, benefits, or is designated by the phrase.", "Treat attached لِـ as part of the Arabic construction rather than a detachable translation token."]
+            },
+            {
+              "rule_id": "RULE.ar.for.li_purpose",
+              "summary_en": "Introduces purpose with a verbal noun or, as lām of purpose, a following present verb in the appropriate construction.",
+              "semantic_function_ids": ["SEM.PURPOSE"],
+              "tips_en": ["Ask what goal the action is meant to achieve.", "Purpose with a following verb has its own Arabic mood/syntax; learn the whole construction."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ar.for.min_ajl",
+          "display": "من أجل",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.min_ajl_purpose",
+              "summary_en": "Explicitly frames an intended purpose, goal, or beneficiary-oriented motivation.",
+              "semantic_function_ids": ["SEM.PURPOSE", "SEM.BENEFICIARY"],
+              "tips_en": ["Use the intended goal or beneficiary as the clue.", "This is a larger phrase, so store and teach it as a construction rather than splitting it into translated pieces."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ar.for.bisabab",
+          "display": "بسبب",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.bisabab_cause",
+              "summary_en": "Marks a cause or reason followed by a noun or noun phrase.",
+              "semantic_function_ids": ["SEM.CAUSE_REASON"],
+              "tips_en": ["Look backward for the circumstance that caused the event.", "بسبب takes a nominal complement; a full causal clause uses a different Arabic construction."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ar.for.ila",
+          "display": "إلى",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.ila_goal",
+              "summary_en": "Marks movement or extension toward a destination, endpoint, or limit.",
+              "semantic_function_ids": ["SEM.DESTINATION_GOAL", "SEM.DEADLINE_TARGET_TIME"],
+              "tips_en": ["Picture movement or extension toward an endpoint.", "Do not assume every recipient relationship uses إلى; destination and endpoint are the central clue here."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ar.for.duration",
+          "display": "لمدة",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.duration",
+              "summary_en": "Introduces the amount of time for which an event or state lasts.",
+              "semantic_function_ids": ["SEM.DURATION"],
+              "tips_en": ["Ask how long the event lasts, not when it must be finished.", "Keep duration separate from an endpoint or deadline relationship."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.ar.for.exchange",
+          "display": "مقابل",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.ar.for.exchange",
+              "summary_en": "Marks exchange, compensation, price-like return, or one thing given in return for another.",
+              "semantic_function_ids": ["SEM.EXCHANGE_SUBSTITUTION"],
+              "tips_en": ["Look for two sides of an exchange or compensation relationship.", "Do not merge exchange with beneficiary merely because both can be translated similarly in another language."]
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://learning.aljazeera.net/es/node/20507",
+        "https://learning.aljazeera.net/en/generallanguage/%E2%80%8B%D8%A7%D9%84%D9%85%D9%8E%D9%81%D9%92%D8%B9%D9%8F%D9%88%D9%84%D9%8F-%D9%84%D9%90%D8%A3%D9%8E%D8%AC%D9%92%D9%84%D9%90%D9%87",
+        "https://openbooks.lib.msu.edu/elemarabicll/chapter/grammar-3/",
+        "https://openbooks.lib.msu.edu/elemarabicll/chapter/grammar-5/",
+        "https://www.arabicacademy.gov.eg/ar/search_engine/roots/%D8%A5%D9%84%D9%89"
+      ],
+      "review_state": "candidate",
+      "notes": "Modern Standard Arabic candidate rules. Dialect-specific alternatives and the exact distribution of recipient/purpose constructions require native review before reviewed status."
+    },
+    {
+      "language_tag": "fa",
+      "language_name_en": "Persian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "fa",
+        "title": "در فارسی: رابطه را پیدا کن، بعد حرف اضافه را انتخاب کن",
+        "body": "در فارسی این معناها میان چند حرف اضافه و عبارت پخش می‌شوند. «برای» معمولاً هدف یا بهره‌مند را نشان می‌دهد، «به» جهت و مقصد را، «تا» حد یا زمان هدف را، و عبارت‌هایی مانند «به دلیل»، «به مدت» و «در ازای» به‌ترتیب علت، مدت و مبادله را روشن‌تر می‌کنند.",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.fa.for.baraye",
+          "display": "برای",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.baraye_purpose",
+              "summary_en": "Marks purpose, intended use, or the goal something is meant to serve.",
+              "semantic_function_ids": ["SEM.PURPOSE"],
+              "tips_en": ["Ask what the action or object is intended to accomplish.", "برای is a central Persian form, but it does not absorb every relationship in this lesson."]
+            },
+            {
+              "rule_id": "RULE.fa.for.baraye_beneficiary",
+              "summary_en": "Marks an intended beneficiary or recipient in many common constructions.",
+              "semantic_function_ids": ["SEM.BENEFICIARY", "SEM.RECIPIENT"],
+              "tips_en": ["Ask who the thing or action is intended for.", "Keep beneficiary distinct from motion toward a destination, which commonly uses به."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fa.for.be",
+          "display": "به",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.be_destination",
+              "summary_en": "Marks direction or movement toward a destination and also participates in recipient/indirect-object constructions.",
+              "semantic_function_ids": ["SEM.DESTINATION_GOAL", "SEM.RECIPIENT"],
+              "tips_en": ["Picture movement toward a destination or transfer toward a recipient.", "The governing verb and construction decide whether به is directional or recipient-oriented."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fa.for.cause",
+          "display": "به دلیل / به‌خاطر",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.cause",
+              "summary_en": "Introduces an explicit cause or reason.",
+              "semantic_function_ids": ["SEM.CAUSE_REASON"],
+              "tips_en": ["Look backward for the cause of the event.", "Learn the phrase as a causal construction rather than forcing a single general-purpose preposition."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fa.for.ta",
+          "display": "تا",
+          "form_kind": "preposition",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.ta_endpoint",
+              "summary_en": "Marks an endpoint or limit in time or space; in temporal contexts it can mean by, until, or up to a target point.",
+              "semantic_function_ids": ["SEM.DEADLINE_TARGET_TIME", "SEM.DESTINATION_GOAL"],
+              "tips_en": ["Think of a boundary or target point.", "Separate an endpoint from elapsed duration; the two time relationships are not interchangeable."]
+            },
+            {
+              "rule_id": "RULE.fa.for.ta_purpose_clause",
+              "summary_en": "Can introduce a purpose/result-oriented clause in constructions meaning so that or in order to.",
+              "semantic_function_ids": ["SEM.PURPOSE"],
+              "tips_en": ["When a clause follows, ask whether it expresses the intended result.", "Treat this as a clause construction, not the same rule as temporal تا."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fa.for.duration",
+          "display": "به مدت",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.duration",
+              "summary_en": "Introduces an explicit duration or length of time.",
+              "semantic_function_ids": ["SEM.DURATION"],
+              "tips_en": ["Ask how long the state or event lasts.", "Do not confuse duration with تا, which points to a limit or endpoint."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.fa.for.exchange",
+          "display": "در ازای / به عوض",
+          "form_kind": "prepositional_phrase",
+          "rules": [
+            {
+              "rule_id": "RULE.fa.for.exchange",
+              "summary_en": "Marks exchange, substitution, compensation, or something received in return for something else.",
+              "semantic_function_ids": ["SEM.EXCHANGE_SUBSTITUTION"],
+              "tips_en": ["Look for two sides of a trade or replacement.", "Keep exchange separate from beneficiary even when another language reuses one form for both."]
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://sites.la.utexas.edu/persian_online_resources/prepositions/",
+        "https://sites.la.utexas.edu/persian_online_resources/prepositions/basic-prepositions/",
+        "https://sites.la.utexas.edu/persian_online_resources/prepositions/prepositional-phrases/",
+        "https://openbooks.lib.msu.edu/persian/chapter/4-6-post-positions-prepositions-where-is-my-bag-work-on-it/"
+      ],
+      "review_state": "candidate",
+      "notes": "Candidate Standard Persian rules. Formal/colloquial distribution and exchange/cause phrase preferences should be native-reviewed."
+    },
+    {
+      "language_tag": "hi",
+      "language_name_en": "Hindi",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "native_explainer": {
+        "language_tag": "hi",
+        "title": "हिंदी में: पहले संबंध पहचानें",
+        "body": "हिंदी में इन अर्थ-संबंधों के लिए अलग-अलग परसर्ग और संरचनाएँ आती हैं। «के लिए» उद्देश्य या लाभार्थी दिखा सकता है, «के कारण/की वजह से» कारण, «को» प्राप्तकर्ता, «की ओर» दिशा, «तक» सीमा या लक्ष्य समय और «के बदले» विनिमय या प्रतिस्थापन बताता है।",
+        "native_review_required": true
+      },
+      "forms": [
+        {
+          "form_id": "GRAMFORM.hi.for.ke_liye",
+          "display": "के लिए",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.ke_liye_purpose",
+              "summary_en": "Marks purpose, intended use, or an action done in order to achieve a goal; it also combines with oblique infinitives.",
+              "semantic_function_ids": ["SEM.PURPOSE"],
+              "tips_en": ["Ask what the action or object is meant to accomplish.", "With a verb, learn the infinitive-plus-postposition construction as a whole."]
+            },
+            {
+              "rule_id": "RULE.hi.for.ke_liye_beneficiary",
+              "summary_en": "Marks an intended beneficiary, person, or thing something is for.",
+              "semantic_function_ids": ["SEM.BENEFICIARY"],
+              "tips_en": ["Ask who or what is meant to benefit.", "Do not confuse this with को when the grammar is marking an indirect recipient of a verb."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.hi.for.ko",
+          "display": "को",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.ko_recipient",
+              "summary_en": "Marks an indirect object or recipient with many ditransitive verbs.",
+              "semantic_function_ids": ["SEM.RECIPIENT"],
+              "tips_en": ["Ask who receives the transferred object or message.", "The verb controls this recipient construction; it is not a general substitute for के लिए."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.hi.for.cause",
+          "display": "के कारण / की वजह से",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.cause",
+              "summary_en": "Introduces an explicit cause or reason.",
+              "semantic_function_ids": ["SEM.CAUSE_REASON"],
+              "tips_en": ["Look backward for the cause of what happened.", "Keep the full compound postposition together when learning it."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.hi.for.direction",
+          "display": "की ओर / की तरफ़",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.direction",
+              "summary_en": "Marks direction or orientation toward a place, person, or target.",
+              "semantic_function_ids": ["SEM.DESTINATION_GOAL"],
+              "tips_en": ["Picture an arrow pointing toward a target.", "Direction is different from a completed recipient transfer, which commonly uses को."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.hi.for.tak",
+          "display": "तक",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.tak_endpoint",
+              "summary_en": "Marks an endpoint or limit in time or space, including by/until a target time.",
+              "semantic_function_ids": ["SEM.DEADLINE_TARGET_TIME", "SEM.DESTINATION_GOAL"],
+              "tips_en": ["Think of the point where the range stops.", "For time, distinguish a target endpoint from an ongoing-since construction with से."]
+            },
+            {
+              "rule_id": "RULE.hi.for.tak_duration_boundary",
+              "summary_en": "Can bound the duration of an activity by stating how long or until what point it continues.",
+              "semantic_function_ids": ["SEM.DURATION"],
+              "tips_en": ["Ask how far in time the activity continues.", "When emphasis is ongoing since a starting point, Hindi often uses से instead."]
+            }
+          ]
+        },
+        {
+          "form_id": "GRAMFORM.hi.for.exchange",
+          "display": "के बदले / के एवज में",
+          "form_kind": "postposition",
+          "rules": [
+            {
+              "rule_id": "RULE.hi.for.exchange",
+              "summary_en": "Marks exchange, compensation, replacement, or one thing given in return for another.",
+              "semantic_function_ids": ["SEM.EXCHANGE_SUBSTITUTION"],
+              "tips_en": ["Look for a trade, compensation, or substitution relationship.", "Keep exchange distinct from purpose even if both can be glossed with the same word elsewhere."]
+            }
+          ]
+        }
+      ],
+      "source_refs": [
+        "https://hindi.la.utexas.edu/resources/grammar/",
+        "https://openbooks.lib.msu.edu/basichindi/chapter/grammar-3/",
+        "https://www.hindwi.org/hindi-dictionary/meaning-of-ke-badle"
+      ],
+      "review_state": "candidate",
+      "notes": "Standard Hindi candidate rules. Register choices between तरफ़/ओर, cause phrases, and endpoint-duration nuance require native review."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
