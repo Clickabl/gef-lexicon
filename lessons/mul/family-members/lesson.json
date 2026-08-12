@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_id": "LES.mul.vocab.family_members",
   "lesson_key": "family-members",
   "target_language": "mul",
@@ -17,9 +17,10 @@
     "language_roles_are_distinct": true,
     "dedupe_display_without_losing_roles": true,
     "display_modes": ["scroll", "pages", "presentation"],
-    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "full_lesson_target_policy": "tier1_and_tier2_rich_target_profiles",
+    "tier3_target_policy": "read_and_games_core_only",
     "comparison_only_mode": true,
-    "notes": "The lesson always begins from the learner's strongest available learning-from language, then teaches the selected learning language. It compares relationships and semantic distinctions rather than assuming dictionary words line up one-to-one."
+    "notes": "Begin from the learner's best available explanation language, then teach the selected target. Rich culture/usage teaching requires the researched Tier 1 or Tier 2 target profile. Tier 3 target data is deliberately smaller and powers recognition-safe Games without pretending to be a full curriculum path."
   },
   "rules": [
     {
@@ -51,13 +52,13 @@
     {
       "trigger_id": "TRG.mul.family.manual",
       "trigger_type": "manual",
-      "notes": "Available from the lesson catalog as an A1 vocabulary-and-culture lesson."
+      "notes": "Available from the lesson catalog as an A1 vocabulary-and-culture lesson when the selected target has a rich profile."
     },
     {
       "trigger_id": "TRG.mul.family.catalog",
       "trigger_type": "catalog_topic",
       "feature_bundle": {"topic": "family_and_relationships"},
-      "notes": "May be placed early in language paths where basic personal-description vocabulary is appropriate."
+      "notes": "May be placed early in Tier 1 and Tier 2 language paths where basic personal-description vocabulary is appropriate."
     }
   ],
   "practice_modules": [
@@ -89,15 +90,33 @@
       }
     }
   ],
+  "game_exports": [
+    {
+      "game": "family_form_to_relation",
+      "source": "language_capabilities.learning_language_game",
+      "concepts": ["mother", "father", "brother", "sister", "son", "daughter", "grandfather", "grandmother"],
+      "tier3_policy": "recognition_only_until_language_specific_review",
+      "allow_multiple_surface_forms": true,
+      "require_unique_answer_for_reverse_direction": true
+    },
+    {
+      "game": "family_pair_match",
+      "source": "language_capabilities.learning_language_game",
+      "pairing_key": "relationship_concept",
+      "allow_cross_tier_pairs": true,
+      "notes": "The game pairs relationship concepts, not English words. Multiple target forms may be accepted when the language lexicalizes a distinction the prompt has not specified."
+    }
+  ],
   "presentation": {
     "source_bridge_manifest": "../../../lesson-families/family-members/source-bridges/manifest.json",
     "target_profile_manifest": "../../../lesson-families/family-members/target-profiles/manifest.json",
+    "game_vocabulary_manifest": "../../../lesson-families/family-members/game-vocabulary/manifest.json",
     "groups_are_semantic_not_visual": true,
     "groups": ["facts", "idea", "source", "target", "terms", "culture", "examples", "practice", "completion"],
     "scroll_mode": "Render the groups in one short vertical lesson.",
     "pages_mode": "Render each semantic group as one or more pages while preserving source-first then target-second order.",
     "teacher_presentation_mode": "Use the same lesson graph and profile data with classroom-sized controls; do not fork content.",
-    "pairing_policy": "Source bridge and target profile are resolved independently. Never generate a bespoke 104-by-104 lesson file."
+    "pairing_policy": "Source bridge, rich target profile, and game vocabulary are resolved independently. Never generate a source-by-target matrix."
   },
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
@@ -105,5 +124,6 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 1
+  "trust_state": "machine_translated",
+  "version": 2
 }
