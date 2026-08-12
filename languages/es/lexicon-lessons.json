@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "language_code": "es",
+  "source_scope": "lesson_linked_core_forms",
+  "lexemes": [
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000001",
+      "lemma_nfc": "el",
+      "upos": "DET",
+      "language_pos": "artículo definido",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "relations": [
+        {"relation_type":"paradigm_peer","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000002","review_state":"candidate"},
+        {"relation_type":"confusable_with","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000003","note":"el without an accent is an article; él with an accent is a pronoun.","review_state":"candidate"}
+      ],
+      "senses": [
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000001",
+          "sense_key": "el-definite-article-masculine-singular",
+          "primary_concept_id": "GRAMMAR.es.definite_article.masculine_singular",
+          "definitions": {
+            "en": "the masculine singular definite article used before many masculine singular noun phrases",
+            "es": "artículo definido masculino singular usado ante muchos sintagmas nominales masculinos singulares",
+            "fr": "article défini masculin singulier employé devant de nombreux groupes nominaux masculins singuliers",
+            "pt": "artigo definido masculino singular usado antes de muitos sintagmas nominais masculinos singulares",
+            "it": "articolo determinativo maschile singolare usato davanti a molti sintagmi nominali maschili singolari",
+            "el": "αρσενικό ενικό οριστικό άρθρο που χρησιμοποιείται πριν από πολλές αρσενικές ονοματικές φράσεις"
+          },
+          "cefr_level": "A1",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","rule_id":"RULE.es.gender.masculine_agreement","relationship":"teaches_form_and_agreement","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {"form_id":"03000000-0000-7000-8500-000000000001","surface_nfc":"el","normalized_lookup":"el","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000001","features":{"base":{"part_of_speech":"determiner","definiteness":"definite","gender":"masculine","number":"singular"}},"display_label_key":"artículo definido masculino singular"}]}
+      ]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000002",
+      "lemma_nfc": "la",
+      "upos": "DET",
+      "language_pos": "artículo definido",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "relations": [
+        {"relation_type":"paradigm_peer","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000001","review_state":"candidate"}
+      ],
+      "senses": [
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000002",
+          "sense_key": "la-definite-article-feminine-singular",
+          "primary_concept_id": "GRAMMAR.es.definite_article.feminine_singular",
+          "definitions": {
+            "en": "the feminine singular definite article used before many feminine singular noun phrases",
+            "es": "artículo definido femenino singular usado ante muchos sintagmas nominales femeninos singulares",
+            "fr": "article défini féminin singulier employé devant de nombreux groupes nominaux féminins singuliers",
+            "pt": "artigo definido feminino singular usado antes de muitos sintagmas nominais femininos singulares",
+            "it": "articolo determinativo femminile singolare usato davanti a molti sintagmi nominali femminili singolari",
+            "el": "θηλυκό ενικό οριστικό άρθρο που χρησιμοποιείται πριν από πολλές θηλυκές ονοματικές φράσεις"
+          },
+          "cefr_level": "A1",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","rule_id":"RULE.es.gender.feminine_agreement","relationship":"teaches_form_and_agreement","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {"form_id":"03000000-0000-7000-8500-000000000002","surface_nfc":"la","normalized_lookup":"la","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000002","features":{"base":{"part_of_speech":"determiner","definiteness":"definite","gender":"feminine","number":"singular"}},"display_label_key":"artículo definido femenino singular"}]}
+      ]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000003",
+      "lemma_nfc": "él",
+      "upos": "PRON",
+      "language_pos": "pronombre personal",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "relations": [
+        {"relation_type":"confusable_with","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000001","note":"él with an accent is a pronoun; el without an accent is an article.","review_state":"candidate"},
+        {"relation_type":"paradigm_peer","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000004","review_state":"candidate"}
+      ],
+      "senses": [
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000003",
+          "sense_key": "el-personal-pronoun-third-masculine-singular",
+          "primary_concept_id": "GRAMMAR.es.personal_pronoun.third_masculine_singular",
+          "definitions": {
+            "en": "third-person singular personal pronoun commonly used for a male or grammatically masculine referent: he",
+            "es": "pronombre personal de tercera persona singular usado normalmente para un referente masculino: él",
+            "fr": "pronom personnel de troisième personne du singulier couramment employé pour un référent masculin : il",
+            "pt": "pronome pessoal de terceira pessoa do singular normalmente usado para um referente masculino: ele",
+            "it": "pronome personale di terza persona singolare comunemente usato per un referente maschile: lui/egli",
+            "el": "προσωπική αντωνυμία τρίτου ενικού που χρησιμοποιείται συνήθως για αρσενική αναφορά: αυτός"
+          },
+          "cefr_level": "A1",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"related_pronoun_gender","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {"form_id":"03000000-0000-7000-8500-000000000003","surface_nfc":"él","normalized_lookup":"él","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000003","features":{"base":{"part_of_speech":"pronoun","person":"3","gender":"masculine","number":"singular"}},"display_label_key":"pronombre personal masculino singular"}]}
+      ]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000004",
+      "lemma_nfc": "ella",
+      "upos": "PRON",
+      "language_pos": "pronombre personal",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "relations": [
+        {"relation_type":"paradigm_peer","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000003","review_state":"candidate"},
+        {"relation_type":"not_an_article","target_kind":"lexeme","target_id":"03000000-0000-7000-8300-000000000002","note":"ella is a pronoun; la is the feminine singular definite article.","review_state":"candidate"}
+      ],
+      "senses": [
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000004",
+          "sense_key": "ella-personal-pronoun-third-feminine-singular",
+          "primary_concept_id": "GRAMMAR.es.personal_pronoun.third_feminine_singular",
+          "definitions": {
+            "en": "third-person singular personal pronoun commonly used for a female or grammatically feminine referent: she",
+            "es": "pronombre personal de tercera persona singular usado normalmente para un referente femenino: ella",
+            "fr": "pronom personnel de troisième personne du singulier couramment employé pour un référent féminin : elle",
+            "pt": "pronome pessoal de terceira pessoa do singular normalmente usado para um referente feminino: ela",
+            "it": "pronome personale di terza persona singolare comunemente usato per un referente femminile: lei/ella",
+            "el": "προσωπική αντωνυμία τρίτου ενικού που χρησιμοποιείται συνήθως για θηλυκή αναφορά: αυτή"
+          },
+          "cefr_level": "A1",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"related_pronoun_gender","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {"form_id":"03000000-0000-7000-8500-000000000004","surface_nfc":"ella","normalized_lookup":"ella","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000004","features":{"base":{"part_of_speech":"pronoun","person":"3","gender":"feminine","number":"singular"}},"display_label_key":"pronombre personal femenino singular"}]}
+      ]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000005",
+      "lemma_nfc": "lo",
+      "upos": "DET",
+      "language_pos": "artículo neutro / nominalizador",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "03000000-0000-7000-8400-000000000005",
+          "sense_key": "lo-neuter-article-nominalizer",
+          "primary_concept_id": "GRAMMAR.es.neuter.lo",
+          "definitions": {
+            "en": "neuter lo used to nominalize adjectives, participles, possessives, or similar expressions, as in lo importante",
+            "es": "lo neutro usado para sustantivar adjetivos, participios, posesivos u otras expresiones, como en lo importante",
+            "fr": "lo neutre employé pour nominaliser des adjectifs, participes, possessifs ou expressions similaires, comme dans lo importante",
+            "pt": "lo neutro usado para nominalizar adjetivos, particípios, possessivos ou expressões semelhantes, como em lo importante",
+            "it": "lo neutro usato per nominalizzare aggettivi, participi, possessivi o espressioni simili, come in lo importante",
+            "el": "το ουδέτερο lo που χρησιμοποιείται για την ουσιαστικοποίηση επιθέτων, μετοχών, κτητικών ή παρόμοιων εκφράσεων, όπως στο lo importante"
+          },
+          "cefr_level": "A2",
+          "register_label": "standard",
+          "lesson_links": [
+            {"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"teaches_limited_neuter_construction","review_state":"candidate"}
+          ],
+          "homophones": [], "homonyms": [], "synonyms": [], "antonyms": [], "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {"form_id":"03000000-0000-7000-8500-000000000005","surface_nfc":"lo","normalized_lookup":"lo","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000005","features":{"base":{"part_of_speech":"determiner","gender":"neuter","construction":"nominalizing_lo"}},"display_label_key":"lo neutro"}]}
+      ]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000006",
+      "lemma_nfc": "esto",
+      "upos": "PRON",
+      "language_pos": "demostrativo neutro",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"03000000-0000-7000-8400-000000000006","sense_key":"esto-neuter-demonstrative","primary_concept_id":"GRAMMAR.es.demonstrative.neuter_proximal","definitions":{"en":"neuter demonstrative referring to an unspecified thing, situation, or idea near the speaker: this","es":"demostrativo neutro que se refiere a una cosa, situación o idea no especificada cercana al hablante","fr":"démonstratif neutre renvoyant à une chose, situation ou idée non spécifiée proche du locuteur","pt":"demonstrativo neutro que se refere a uma coisa, situação ou ideia não especificada próxima do falante","it":"dimostrativo neutro che rimanda a una cosa, situazione o idea non specificata vicina al parlante","el":"ουδέτερη δεικτική αντωνυμία για μη προσδιορισμένο πράγμα, κατάσταση ή ιδέα κοντά στον ομιλητή"},"cefr_level":"A1","register_label":"standard","lesson_links":[{"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"teaches_limited_neuter_demonstratives","review_state":"candidate"}],"homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]}],
+      "forms": [{"form_id":"03000000-0000-7000-8500-000000000006","surface_nfc":"esto","normalized_lookup":"esto","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000006","features":{"base":{"part_of_speech":"pronoun","gender":"neuter","deixis":"proximal"}},"display_label_key":"demostrativo neutro proximal"}]}]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000007",
+      "lemma_nfc": "eso",
+      "upos": "PRON",
+      "language_pos": "demostrativo neutro",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"03000000-0000-7000-8400-000000000007","sense_key":"eso-neuter-demonstrative","primary_concept_id":"GRAMMAR.es.demonstrative.neuter_medial","definitions":{"en":"neuter demonstrative referring to an unspecified thing, situation, or idea: that","es":"demostrativo neutro que se refiere a una cosa, situación o idea no especificada","fr":"démonstratif neutre renvoyant à une chose, situation ou idée non spécifiée : cela","pt":"demonstrativo neutro que se refere a uma coisa, situação ou ideia não especificada: isso","it":"dimostrativo neutro che rimanda a una cosa, situazione o idea non specificata: ciò/quello","el":"ουδέτερη δεικτική αντωνυμία για μη προσδιορισμένο πράγμα, κατάσταση ή ιδέα"},"cefr_level":"A1","register_label":"standard","lesson_links":[{"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"teaches_limited_neuter_demonstratives","review_state":"candidate"}],"homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]}],
+      "forms": [{"form_id":"03000000-0000-7000-8500-000000000007","surface_nfc":"eso","normalized_lookup":"eso","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000007","features":{"base":{"part_of_speech":"pronoun","gender":"neuter","deixis":"medial"}},"display_label_key":"demostrativo neutro medial"}]}]
+    },
+    {
+      "lexeme_id": "03000000-0000-7000-8300-000000000008",
+      "lemma_nfc": "aquello",
+      "upos": "PRON",
+      "language_pos": "demostrativo neutro",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"03000000-0000-7000-8400-000000000008","sense_key":"aquello-neuter-demonstrative","primary_concept_id":"GRAMMAR.es.demonstrative.neuter_distal","definitions":{"en":"distal neuter demonstrative referring to an unspecified thing, situation, or idea farther away: that over there","es":"demostrativo neutro distal que se refiere a una cosa, situación o idea no especificada más alejada","fr":"démonstratif neutre distal renvoyant à une chose, situation ou idée non spécifiée plus éloignée","pt":"demonstrativo neutro distal que se refere a uma coisa, situação ou ideia não especificada mais distante","it":"dimostrativo neutro distale che rimanda a una cosa, situazione o idea non specificata più lontana","el":"απομακρυσμένη ουδέτερη δεικτική αντωνυμία για μη προσδιορισμένο πράγμα, κατάσταση ή ιδέα"},"cefr_level":"A2","register_label":"standard","lesson_links":[{"lesson_id":"LES.mul.grammar.grammatical_gender","relationship":"teaches_limited_neuter_demonstratives","review_state":"candidate"}],"homophones":[],"homonyms":[],"synonyms":[],"antonyms":[],"confusable_senses":[]}],
+      "forms": [{"form_id":"03000000-0000-7000-8500-000000000008","surface_nfc":"aquello","normalized_lookup":"aquello","attested_in_text":true,"analyses":[{"analysis_id":"03000000-0000-7000-8600-000000000008","features":{"base":{"part_of_speech":"pronoun","gender":"neuter","deixis":"distal"}},"display_label_key":"demostrativo neutro distal"}]}]
+    }
+  ]
+}

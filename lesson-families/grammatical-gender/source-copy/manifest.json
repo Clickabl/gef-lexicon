@@ -4,8 +4,29 @@
   "coverage_program": "learnFromLanguages",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "expected_total": 104,
-  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
-  "tier_shards": {"1": "tier1.json", "2": "tier2.json", "3": "tier3.json"},
+  "expected_tier_counts": {
+    "1": 6,
+    "2": 15,
+    "3": 83
+  },
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": [
+      "tier3-01.json",
+      "tier3-02.json",
+      "tier3-03.json",
+      "tier3-04.json",
+      "tier3-05.json",
+      "tier3-06.json",
+      "tier3-07.json",
+      "tier3-08.json",
+      "tier3-09.json",
+      "tier3-10.json",
+      "tier3-11.json",
+      "tier3-12.json"
+    ]
+  },
   "record_contract": {
     "title": "Localized lesson title.",
     "body": "Localized core explanation of grammatical gender and the comparison legend.",
