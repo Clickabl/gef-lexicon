@@ -3,7 +3,7 @@
   "lesson_id": "LES.mul.vocab.family_members",
   "language_contract": "../language-contract.json",
   "purpose": "Complete learner-facing fixed lesson copy for Family Members in every canonical learn-from language. Dynamic target-language kinship facts are rendered from structured relationship/distinction data rather than prewriting 104x21 pair-specific paragraphs.",
-  "tier_shards": {"1":"tier1.json","2":"tier2.json","3":"tier3.json"},
+  "tier_shards": {"1":["tier1.json"],"2":["tier2.json"],"3":["tier3-a-f.json","tier3-g-n.json","tier3-o-z.json"]},
   "expected_tier_counts": {"1":6,"2":15,"3":83},
   "expected_total": 104,
   "required_copy_keys": ["title","invitation","summary","idea_title","idea_text","culture_title","culture_text","practice_title","practice_text","completion_title","completion_text"],
