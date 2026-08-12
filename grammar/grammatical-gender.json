@@ -4,35 +4,26 @@
   "anchor": {
     "language_tag": "en",
     "surface": "grammatical gender",
-    "note": "English is the comparison anchor because ordinary English nouns do not belong to grammatical masculine/feminine/neuter classes, even though pronouns can encode gender."
+    "note": "English is the comparison anchor because ordinary English nouns do not belong to productive grammatical masculine/feminine/neuter classes, even though pronouns can encode gender."
   },
   "lesson_family_id": "LES.mul.grammar.grammatical_gender",
-  "scope_note": "How languages classify nouns and trigger agreement. Article forms are an A1 teaching window into the system, not its definition. A language may have grammatical gender without articles, multiple article allomorphs within one gender, no grammatical noun gender, or a broader noun-class system.",
+  "scope_note": "Learner-facing noun classification and agreement for the current 21 Tier 1/Tier 2 grammar targets. Rules are language-specific. A single construction form is used when a language has a system to explain but no safe generic two-choice cloze contrast. Spanish keeps el/la as two insertable forms because the shared practice compiler can use that contrast defensibly.",
   "languages": [
     {
       "language_tag": "en",
       "language_name_en": "English",
       "classification": "anchor",
       "lesson_ready": true,
-      "forms": [
-        {
-          "form_id": "GRAMFORM.en.gender.invariant",
-          "display": "the",
-          "form_kind": "word",
-          "rules": [
-            {
-              "rule_id": "RULE.en.gender.no_noun_gender",
-              "summary_en": "Ordinary English nouns are not assigned grammatical masculine, feminine, or neuter classes, and the definite article the does not change for noun gender.",
-              "tips_en": [
-                "Do not confuse gendered pronouns such as he and she with a grammatical gender class on every noun.",
-                "English is useful as a zero-gender comparison, not as a universal default."
-              ]
-            }
-          ]
-        }
-      ],
-      "review_state": "candidate",
-      "notes": "English retains limited natural-gender distinctions in pronouns and some lexical pairs; that is different from a grammatical noun-gender agreement system."
+      "forms": [{
+        "form_id": "GRAMFORM.en.gender.system",
+        "display": "no productive noun gender",
+        "form_kind": "construction",
+        "rules": [
+          {"rule_id":"RULE.en.gender.no_noun_gender","summary_en":"Ordinary English nouns are not assigned to productive masculine, feminine, or neuter agreement classes.","tips_en":["The definite article the does not change for noun gender.","Gendered pronouns such as he and she are a different grammatical question from assigning every noun a gender class."]},
+          {"rule_id":"RULE.en.gender.natural_gender","summary_en":"English can express natural or social gender in pronouns and some lexical pairs without having grammatical noun gender.","tips_en":["Do not infer a hidden masculine/feminine class for ordinary objects.","Treat person-reference choices separately from noun-class agreement."]}
+        ]
+      }],
+      "review_state": "candidate"
     },
     {
       "language_tag": "es",
@@ -44,37 +35,267 @@
           "form_id": "GRAMFORM.es.gender.el",
           "display": "el",
           "form_kind": "word",
-          "rules": [
-            {
-              "rule_id": "RULE.es.gender.masculine_agreement",
-              "summary_en": "El is the ordinary masculine singular definite article. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.",
-              "tips_en": [
-                "Learn a new noun with an article: el libro, el problema.",
-                "Many nouns ending in -o are masculine, but the ending is a clue rather than a guarantee."
-              ]
-            }
-          ]
+          "rules": [{"rule_id":"RULE.es.gender.masculine_agreement","summary_en":"El is the ordinary masculine singular definite article. More broadly, masculine nouns trigger masculine agreement on gender-variable determiners and adjectives.","tips_en":["Learn a new noun with an article: el libro, el problema.","Many nouns ending in -o are masculine, but the ending is a clue rather than a guarantee."]}]
         },
         {
           "form_id": "GRAMFORM.es.gender.la",
           "display": "la",
           "form_kind": "word",
-          "rules": [
-            {
-              "rule_id": "RULE.es.gender.feminine_agreement",
-              "summary_en": "La is the ordinary feminine singular definite article. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives.",
-              "tips_en": [
-                "Learn a new noun with an article: la casa, la mano.",
-                "Many nouns ending in -a are feminine, but exceptions are normal."
-              ]
-            }
-          ]
+          "rules": [{"rule_id":"RULE.es.gender.feminine_agreement","summary_en":"La is the ordinary feminine singular definite article. More broadly, feminine nouns trigger feminine agreement on gender-variable determiners and adjectives.","tips_en":["Learn a new noun with an article: la casa, la mano.","Many nouns ending in -a are feminine, but exceptions are normal."]}]
         }
       ],
       "review_state": "candidate",
-      "notes": "Spanish has two grammatical genders for ordinary nouns. This A1 grammar set uses el/la as the practiceable surface contrast. The lesson rendering separately teaches ending clues and the limited neuter forms lo/esto/eso/aquello so they are not miscompiled as ordinary noun-gender choices."
+      "notes": "Spanish has two grammatical genders for ordinary nouns. The rendering separately teaches limited neuter lo/esto/eso/aquello so those forms are not miscompiled as a third ordinary noun-gender choice."
+    },
+    {
+      "language_tag": "fr",
+      "language_name_en": "French",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.fr.gender.system","display":"masculin / féminin","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.fr.gender.inventory","summary_en":"French nouns are ordinarily masculine or feminine.","tips_en":["Learn a noun with its determiner because spelling alone does not reliably predict gender.","The same real-world object can belong to a different grammatical gender in another language."]},
+          {"rule_id":"RULE.fr.gender.agreement","summary_en":"Determiners and many adjectives reflect the noun's gender, with number and phonological context adding further surface variation.","tips_en":["Read the whole noun phrase rather than counting article spellings.","Forms such as l’ hide the gender contrast on the article, so other agreement or lexical knowledge may carry the clue."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "pt",
+      "language_name_en": "Portuguese",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.pt.gender.system","display":"masculino / feminino","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.pt.gender.inventory","summary_en":"Portuguese ordinary nouns are generally masculine or feminine.","tips_en":["Learn frequent nouns with an article such as o or a.","Common endings provide clues, but lexical exceptions are normal."]},
+          {"rule_id":"RULE.pt.gender.agreement","summary_en":"Articles, determiners, adjectives, and some pronouns normally agree with the noun in gender.","tips_en":["Track gender and number across the noun phrase as one agreement pattern.","Do not treat every surface article variant as a separate gender."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "it",
+      "language_name_en": "Italian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.it.gender.system","display":"maschile / femminile","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.it.gender.inventory","summary_en":"Italian ordinary nouns are masculine or feminine.","tips_en":["Final vowels often provide useful gender clues, but exceptions and invariable nouns remain important.","Learn unfamiliar nouns together with a determiner and plural pattern."]},
+          {"rule_id":"RULE.it.gender.agreement","summary_en":"Articles and adjectives agree with noun gender, while article shape also varies for phonological context and number.","tips_en":["Italian has two noun genders even though it has several definite-article forms.","Use agreement class, not the number of words that can translate English the, to understand the system."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "el",
+      "language_name_en": "Greek",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.el.gender.system","display":"αρσενικό / θηλυκό / ουδέτερο","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.el.gender.inventory","summary_en":"Modern Greek nouns belong to masculine, feminine, or neuter grammatical gender.","tips_en":["Learn nouns with their article because endings are strong clues but not perfect rules.","Gender combines with number and case in the noun phrase."]},
+          {"rule_id":"RULE.el.gender.agreement","summary_en":"Articles, adjectives, and other agreeing forms reflect noun gender together with number and case.","tips_en":["Track the article, noun, and adjective as an agreement package.","Neuter is a full ordinary noun gender in Greek, unlike the limited neuter constructions of Spanish."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "zh",
+      "language_name_en": "Mandarin Chinese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.zh.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.zh.gender.no_noun_gender","summary_en":"Mandarin common nouns do not belong to a productive grammatical gender agreement system.","tips_en":["Do not confuse classifiers with grammatical gender.","A noun does not require masculine/feminine agreement on adjectives or articles."]},
+          {"rule_id":"RULE.zh.gender.pronouns","summary_en":"Written third-person pronouns can distinguish forms such as 他 and 她, but that does not create gender classes for ordinary nouns.","tips_en":["Keep person-reference pronouns separate from noun-class agreement.","The spoken forms are homophonous in Standard Mandarin."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "ja",
+      "language_name_en": "Japanese",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.ja.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.ja.gender.no_noun_gender","summary_en":"Japanese ordinary nouns do not belong to productive grammatical gender agreement classes.","tips_en":["Adjectives and particles do not change because a noun is masculine or feminine.","Lexical words for people can encode sex or social role without creating noun gender."]},
+          {"rule_id":"RULE.ja.gender.reference","summary_en":"Person-reference expressions can carry gendered social meaning, but that belongs to vocabulary and discourse rather than noun-class agreement.","tips_en":["Do not import an English he/she distinction into every Japanese noun phrase.","Treat register and person reference independently from grammatical gender."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "de",
+      "language_name_en": "German",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.de.gender.system","display":"Maskulinum / Femininum / Neutrum","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.de.gender.inventory","summary_en":"German nouns belong to masculine, feminine, or neuter grammatical gender.","tips_en":["Learn a noun with its gender and plural rather than relying on one ending rule.","Der, die, and das show the nominative singular contrast, but those spellings are not the definition of the three genders."]},
+          {"rule_id":"RULE.de.gender.case_agreement","summary_en":"Determiners and adjective endings express gender together with case and number.","tips_en":["A form such as der can represent different feature bundles in different cases.","Identify case and number before treating an article form as a gender clue."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "ko",
+      "language_name_en": "Korean",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.ko.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.ko.gender.no_noun_gender","summary_en":"Korean ordinary nouns do not belong to productive grammatical gender agreement classes.","tips_en":["Particles and adjectives do not select forms because a noun is masculine or feminine.","Kinship and person-reference vocabulary can encode gender lexically without creating noun gender."]},
+          {"rule_id":"RULE.ko.gender.reference","summary_en":"Pronouns and titles can carry gendered or social information, but those choices belong to reference and register rather than noun-class agreement.","tips_en":["Do not expect an article-like gender marker before every noun.","Separate honorific/register systems from grammatical gender."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "ar",
+      "language_name_en": "Arabic",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.ar.gender.system","display":"مذكّر / مؤنّث","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.ar.gender.inventory","summary_en":"Arabic nouns are broadly organized into masculine and feminine grammatical gender.","tips_en":["The feminine ending ـة is a powerful clue, but not every feminine noun uses it and not every noun should be guessed mechanically.","Learn high-frequency nouns with their agreement behavior."]},
+          {"rule_id":"RULE.ar.gender.agreement","summary_en":"Gender appears across adjectives, demonstratives, pronouns, numerals, and verbs; the definite article الـ itself does not vary by gender.","tips_en":["Look beyond the article to find the gender contrast.","Plural agreement, especially with nonhuman plurals, has important patterns that deserve their own lesson rather than a simplistic singular rule."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "hi",
+      "language_name_en": "Hindi",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.hi.gender.system","display":"पुल्लिंग / स्त्रीलिंग","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.hi.gender.inventory","summary_en":"Hindi nouns are masculine or feminine grammatical gender.","tips_en":["Common noun endings can provide clues, but many frequent nouns must be learned lexically.","Learn a noun with an agreeing adjective or other useful phrase when possible."]},
+          {"rule_id":"RULE.hi.gender.agreement","summary_en":"Many adjectives and participial or verbal forms reflect gender agreement, interacting with number and syntactic construction.","tips_en":["Use agreement elsewhere in the sentence as evidence when a noun's gender is unfamiliar.","Do not assume every adjective visibly changes; indeclinable adjectives can stay invariant."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "uk",
+      "language_name_en": "Ukrainian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.uk.gender.system","display":"чоловічий / жіночий / середній","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.uk.gender.inventory","summary_en":"Ukrainian nouns belong to masculine, feminine, or neuter grammatical gender.","tips_en":["Noun endings are often informative but should be learned with declension patterns.","Masculine nouns also interact with animacy in parts of case marking."]},
+          {"rule_id":"RULE.uk.gender.agreement","summary_en":"Adjectives, pronouns, numerals, and some verb forms reflect gender together with number and case.","tips_en":["Use agreement across the phrase to confirm a noun's gender.","Do not reduce the system to article forms: Ukrainian has no articles."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "ru",
+      "language_name_en": "Russian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.ru.gender.system","display":"мужской / женский / средний","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.ru.gender.inventory","summary_en":"Russian nouns belong to masculine, feminine, or neuter grammatical gender.","tips_en":["Noun endings are strong beginner clues but exceptions and indeclinable nouns exist.","Russian has grammatical gender without articles, so agreement is the better window into the system."]},
+          {"rule_id":"RULE.ru.gender.agreement","summary_en":"Adjectives, pronouns, numerals, and past-tense singular verbs can reveal gender, while case and number shape the actual endings.","tips_en":["Read the entire inflectional phrase rather than one ending in isolation.","Masculine also interacts with animacy in parts of the case system."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "tr",
+      "language_name_en": "Turkish",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.tr.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.tr.gender.no_noun_gender","summary_en":"Turkish ordinary nouns are not assigned to productive masculine, feminine, or neuter grammatical gender classes.","tips_en":["Adjectives do not change to agree with noun gender.","The third-person pronoun o is not grammatically masculine versus feminine."]},
+          {"rule_id":"RULE.tr.gender.lexical_gender","summary_en":"Turkish can express natural gender lexically when relevant without a noun-gender agreement system.","tips_en":["Do not manufacture gender marking when context does not require it.","Keep lexical person distinctions separate from grammar-wide noun classes."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "pl",
+      "language_name_en": "Polish",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.pl.gender.system","display":"rodzaj: męski / żeński / nijaki + subclasses","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.pl.gender.inventory","summary_en":"Polish has masculine, feminine, and neuter noun gender, with important subclasses inside masculine.","tips_en":["Masculine personal, animate, and inanimate distinctions affect agreement and case patterns.","A simple three-label table is a useful start but not the whole Polish system."]},
+          {"rule_id":"RULE.pl.gender.agreement","summary_en":"Adjectives, pronouns, numerals, and past-tense verb forms reflect gender, with major plural distinctions especially for masculine-personal groups.","tips_en":["Track number and animacy/personhood as well as gender.","Learn noun gender together with enough declension information to recognize its agreement family."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "fa",
+      "language_name_en": "Persian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.fa.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.fa.gender.no_noun_gender","summary_en":"Modern Persian ordinary nouns do not belong to productive grammatical gender agreement classes.","tips_en":["Adjectives do not change for masculine versus feminine noun gender.","The ordinary third-person pronoun او does not encode a he/she distinction."]},
+          {"rule_id":"RULE.fa.gender.lexical_gender","summary_en":"Natural gender can be expressed with lexical choices when relevant without changing the grammar of every noun phrase.","tips_en":["Do not infer noun gender from a person's sex or social role.","Treat gendered kinship or title vocabulary as lexical meaning rather than agreement class."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "id",
+      "language_name_en": "Indonesian",
+      "classification": "multi_construction",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.id.gender.system","display":"no productive noun gender","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.id.gender.no_noun_gender","summary_en":"Indonesian ordinary nouns do not belong to productive grammatical gender agreement classes.","tips_en":["Adjectives and determiners do not change because a noun is masculine or feminine.","Third-person dia or ia does not require a he/she grammatical distinction."]},
+          {"rule_id":"RULE.id.gender.lexical_gender","summary_en":"Indonesian can encode gender lexically in some person and kinship terms without a grammar-wide noun-gender system.","tips_en":["Learn lexical distinctions only where the language actually uses them.","Do not equate gender-neutral grammar with inability to talk about gender."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "ca",
+      "language_name_en": "Catalan",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.ca.gender.system","display":"masculí / femení","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.ca.gender.inventory","summary_en":"Catalan ordinary nouns are masculine or feminine.","tips_en":["Learn nouns with an article such as el or la, while remembering contractions and phonological variants.","Common endings can help but do not remove lexical exceptions."]},
+          {"rule_id":"RULE.ca.gender.agreement","summary_en":"Articles, determiners, adjectives, and many pronouns reflect gender together with number.","tips_en":["Track the whole noun phrase for agreement clues.","Article allomorphs do not create extra grammatical genders."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "gl",
+      "language_name_en": "Galician",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.gl.gender.system","display":"masculino / feminino","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.gl.gender.inventory","summary_en":"Galician ordinary nouns are masculine or feminine.","tips_en":["Learn frequent nouns with their article, commonly o or a.","Word endings are useful clues but lexical exceptions remain."]},
+          {"rule_id":"RULE.gl.gender.agreement","summary_en":"Articles, determiners, adjectives, and pronouns can reflect noun gender together with number.","tips_en":["Use agreement across the phrase as evidence.","Do not assume cognates have the same gender in every Romance language."]}
+        ]
+      }],"review_state":"candidate"
+    },
+    {
+      "language_tag": "mk",
+      "language_name_en": "Macedonian",
+      "classification": "multi_form",
+      "lesson_ready": true,
+      "forms": [{
+        "form_id":"GRAMFORM.mk.gender.system","display":"машки / женски / среден","form_kind":"construction",
+        "rules":[
+          {"rule_id":"RULE.mk.gender.inventory","summary_en":"Macedonian nouns belong to masculine, feminine, or neuter grammatical gender.","tips_en":["Noun endings often help identify gender but should be learned with actual inflection patterns.","Neuter is an ordinary noun gender in Macedonian."]},
+          {"rule_id":"RULE.mk.gender.agreement","summary_en":"Adjectives, pronouns, numerals, and the postposed definite-article system reflect gender and number.","tips_en":["Macedonian definiteness is suffixed rather than expressed by a separate pre-nominal article.","Use the agreement pattern, not English article translation, to identify the gender system."]}
+        ]
+      }],"review_state":"candidate"
     }
   ],
   "review_state": "candidate",
-  "version": 2
+  "trust_state": "machine_translated",
+  "version": 3
 }
