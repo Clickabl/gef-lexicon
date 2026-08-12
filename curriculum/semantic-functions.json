@@ -12,9 +12,11 @@
     {"semantic_function_id":"SEM.MEANS_CHANNEL","key":"means_channel","family":"means","description":"a means, method, channel, or medium by which something happens","review_state":"candidate"},
     {"semantic_function_id":"SEM.DURATION","key":"duration","family":"time_span","description":"a span of time during which an event, action, or state lasts","review_state":"candidate"},
     {"semantic_function_id":"SEM.DEADLINE_TARGET_TIME","key":"deadline_target_time","family":"time_goal","description":"a target time, deadline, or temporal endpoint","review_state":"candidate"},
+    {"semantic_function_id":"SEM.TEMPORAL_FRAME","key":"temporal_frame","family":"time_frame","description":"a temporal setting or frame in which an event occurs, such as in the morning or at night","review_state":"candidate"},
     {"semantic_function_id":"SEM.DISTRIBUTIVE_SEQUENCE","key":"distributive_sequence","family":"quantity_distribution","description":"distribution or progression one unit at a time, as in one by one","review_state":"candidate"},
     {"semantic_function_id":"SEM.INTERROGATIVE_REASON","key":"interrogative_reason","family":"question","description":"a question asking for a cause or reason","review_state":"candidate"},
     {"semantic_function_id":"SEM.CONSEQUENCE_LINK","key":"consequence_link","family":"discourse_relation","description":"a discourse relation presenting a result or consequence of prior information","review_state":"candidate"},
+    {"semantic_function_id":"SEM.SEQUENCE_COMPLETION","key":"sequence_completion","family":"discourse_relation","description":"marks an event as occurring finally after delay, progression, or expectation","review_state":"candidate"},
 
     {"semantic_function_id":"SEM.IDENTITY_EQUIVALENCE","key":"identity_equivalence","family":"being_predication","description":"identifying one referent as the same person, thing, name, or value as another expression","review_state":"candidate"},
     {"semantic_function_id":"SEM.CLASSIFICATION_ROLE","key":"classification_role","family":"being_predication","description":"classifying a referent as a member of a category, profession, role, type, or class","review_state":"candidate"},
