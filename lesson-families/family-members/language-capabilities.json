@@ -1,41 +1,52 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.vocab.family_members",
-  "capability_model": "lexical_semantic_profile",
+  "capability_model": "full_profile_plus_universal_game_core",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "coverage_program": "learnFromLanguages",
   "source_bridge_manifest": "source-bridges/manifest.json",
   "target_profile_manifest": "target-profiles/manifest.json",
+  "game_core_manifest": "game-core/manifest.json",
   "role_requirements": {
     "learning_from": {
-      "description": "The learner's explanation/source language. Every registered learn-from language may participate when its localized bridge copy exists.",
+      "description": "The learner's best/explanation language. Every registered learn-from language may participate when its localized source bridge exists.",
       "required_assets": ["localized source bridge"],
       "expected_total": 104
     },
     "learning_language_full": {
-      "description": "A currently learnable target language with researched family-member distinctions, representative terms, an English canonical explainer, cultural cautions, and practice-ready relation features.",
-      "required_assets": ["target profile", "core_terms", "distinctions", "target_explainer_en"],
+      "description": "A Tier 1 or Tier 2 target with a researched family-system profile, representative terms, structured distinctions, cultural cautions, examples, and full lesson practice.",
+      "required_assets": ["target profile", "core_terms", "distinctions", "target_explainer_en", "cultural_note_en", "game-core record"],
       "language_tags": ["en", "es", "fr", "pt", "it", "el", "zh", "ja", "de", "ko", "ar", "hi", "uk", "ru", "tr", "pl", "fa", "id", "ca", "gl", "mk"]
     },
+    "learning_language_game_core": {
+      "description": "Any canonical learn-from language may be a Family Members vocabulary-game target. The game core covers the same fourteen relationship slots in all 104 languages and permits multiple target forms where the language requires a finer distinction.",
+      "required_assets": ["game-core record", "all manifest concept_keys", "at least one non-empty form per concept"],
+      "registry_program": "programs.learnFromLanguages",
+      "expected_total": 104,
+      "tier3_behavior": "game_and_comparison_only_no_grammar_curriculum_promotion"
+    },
     "learning_language_comparison": {
-      "description": "A registered language may still be shown as a source-language anchor or future comparison target when only localized bridge copy exists, but the lesson must not invent a target vocabulary system or practice items.",
+      "description": "Every canonical learn-from language may participate in the vocabulary comparison layer when its game-core record exists. Tier 3 comparison/game capability does not imply a full authored language course.",
       "default_for_registered_languages_not_in_full": true
     }
   },
   "runtime_model": {
-    "source_first": "Show a short bridge in the learner's strongest learning-from language before teaching the target system.",
-    "target_second": "Resolve the selected learning language's structured target profile and render a longer explanation, term set, distinctions, cultural note, examples, and practice.",
-    "pair_scaling": "Do not author a 104 x N matrix. Source copy and target facts are independent assets joined at runtime, so English to Spanish, Greek to Portuguese, Chinese to English, and Nepali to Portuguese use the same lesson graph.",
-    "fallback": "If a source localization is below the user's trust threshold, fall back through the normal best-language chain. If the target lacks a full profile, render comparison-only and omit target practice rather than guessing.",
-    "english_spanish_reference": "The approved worked example is English as the source language and Spanish as the learning language."
+    "source_first": "Show the localized bridge in the learner's best available explanation language before teaching the target system.",
+    "full_target": "For a Tier 1/Tier 2 target, resolve the structured target profile plus its game-core record and render the longer explanation, relationship distinctions, cultural caution, examples, and practice.",
+    "game_target": "For any of the 104 languages, resolve the game-core record and build relationship-safe vocabulary games. Multiple forms must remain distinguishable when they encode age, side, speaker gender, or another required relationship feature.",
+    "pair_scaling": "Do not author a 104 x 104 matrix. Source copy, full target profiles, and universal game-core vocabulary are independent assets joined at runtime.",
+    "fallback": "If a full target profile is absent, keep the language available for comparison and game-core practice instead of inventing a full cultural/grammar profile.",
+    "english_spanish_reference": "English to Spanish remains the worked editorial example; it is not a runtime special case."
   },
   "trust_contract": {
     "canonical_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
     "generated_source_bridges": "machine_translated",
     "generated_target_profiles": "machine_translated",
-    "below_threshold_behavior": "visible_disabled_with_badge"
+    "generated_game_core": "machine_translated",
+    "below_threshold_behavior": "visible_disabled_with_badge",
+    "important": "Game-core completeness is structural coverage, not a claim of native-speaker verification."
   },
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 1
+  "version": 2
 }
