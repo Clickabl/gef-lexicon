@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "purpose": "Short learner-facing bridge copy in the learner's own/source language. It prepares the learner to compare kinship systems without assuming family words translate one-to-one.",
+  "source_summary_en": "Family words divide relationships differently across languages. One language may use a broad word where another builds age, gender, family side, marriage, or another relationship detail into the term.",
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json",
+    "3": "tier3.json",
+    "4": "tier4.json"
+  },
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 30, "4": 53},
+  "expected_total": 104,
+  "localization_rules": [
+    "Keep the bridge short: normally two sentences or less.",
+    "Use ordinary native-language wording, not anthropological jargon.",
+    "Do not claim that one kinship pattern describes every dialect, family, region, religion, or community using the language.",
+    "The bridge may mention common distinctions in the source language when well supported, but uncertain lower-resource details should stay general rather than being invented.",
+    "These are generated candidates until native-speaker review."
+  ],
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "version": 1
+}
