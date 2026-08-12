@@ -1,0 +1,179 @@
+{
+  "$schema": "../schemas/gef-proficiency-scale.schema.json",
+  "schema_version": 1,
+  "scale_id": "gef-language-proficiency",
+  "reference_framework": {
+    "framework_id": "cefr",
+    "relationship": "Gef uses CEFR A1-C2 as its shared reference coordinate system, keeps Pre-A1 as an internal first-steps band, and adds one clearly labeled Gef-only top tier for manual self-description. The added top tier is not CEFR C3 and is not an official external certification.",
+    "source": "proficiency/frameworks.json"
+  },
+  "manual_picker": {
+    "min_value": 0,
+    "max_value": 7,
+    "top_tier_is_cefr": false,
+    "rings": [
+      {
+        "value": 0,
+        "code": "NONE",
+        "label": "No knowledge yet",
+        "kind": "zero",
+        "cefr_level": null,
+        "description": "No meaningful current ability in this skill.",
+        "selection_guidance": "Use the center when you genuinely have no usable ability in this skill. Knowing one greeting does not require moving the marker outward."
+      },
+      {
+        "value": 1,
+        "code": "A1",
+        "label": "Beginner",
+        "kind": "cefr",
+        "cefr_level": "A1",
+        "description": "Early usable ability in highly familiar, concrete situations.",
+        "selection_guidance": "Choose A1 when you can do a small but useful amount without relying entirely on memorized recognition."
+      },
+      {
+        "value": 2,
+        "code": "A2",
+        "label": "Everyday",
+        "kind": "cefr",
+        "cefr_level": "A2",
+        "description": "Routine everyday material and situations are becoming manageable.",
+        "selection_guidance": "Choose A2 when short, straightforward material in familiar areas is usually workable."
+      },
+      {
+        "value": 3,
+        "code": "B1",
+        "label": "Independent",
+        "kind": "cefr",
+        "cefr_level": "B1",
+        "description": "Independent use is reliable across many ordinary situations.",
+        "selection_guidance": "Choose B1 when you can keep going through ordinary material without needing constant support."
+      },
+      {
+        "value": 4,
+        "code": "B2",
+        "label": "Strong independent",
+        "kind": "cefr",
+        "cefr_level": "B2",
+        "description": "Sustained and substantially more complex language is broadly workable.",
+        "selection_guidance": "Choose B2 when complexity, abstraction, and longer material are often manageable without learner-specific simplification."
+      },
+      {
+        "value": 5,
+        "code": "C1",
+        "label": "Advanced",
+        "kind": "cefr",
+        "cefr_level": "C1",
+        "description": "The language is a flexible tool across demanding contexts.",
+        "selection_guidance": "Choose C1 when implicit meaning, nuance, register, and demanding material are normally within reach."
+      },
+      {
+        "value": 6,
+        "code": "C2",
+        "label": "Highly proficient",
+        "kind": "cefr",
+        "cefr_level": "C2",
+        "description": "Exceptionally broad and precise functional proficiency.",
+        "selection_guidance": "Choose C2 for extremely strong proficiency. C2 is the highest CEFR level, but Gef does not use it as a synonym for native identity or perfection."
+      },
+      {
+        "value": 7,
+        "code": "FLUENT_NATIVE",
+        "label": "Fully fluent / Native",
+        "kind": "gef-extension",
+        "cefr_level": null,
+        "description": "Gef's top self-description tier for mature, effortless command comparable to a fully fluent adult native speaker in the selected skill.",
+        "selection_guidance": "This is not C3 and is not awarded merely because the language was acquired in childhood. Select it when your current ability in this skill is mature, broad, automatic, and fully fluent. A non-native speaker may select it if that description genuinely fits."
+      }
+    ]
+  },
+  "internal_entry_band": {
+    "code": "Pre-A1",
+    "numeric_value": 0.5,
+    "visible_as_manual_ring": false,
+    "purpose": "Pre-A1 remains useful for lessons, diagnostics, evidence models, and first-step content. The manual picker intentionally keeps seven outward rings after zero: A1, A2, B1, B2, C1, C2, and Fully fluent / Native."
+  },
+  "axes": [
+    {
+      "axis_id": "reading",
+      "label": "Reading",
+      "definition": "Understanding written language, including words, sentences, connected texts, structure, implication, register, and meaning in context.",
+      "current_evidence_mode": "app-evidence-and-self-report",
+      "future_evidence_examples": [
+        "difficulty and breadth of texts successfully read",
+        "comprehension performance",
+        "dictionary and reveal behavior interpreted cautiously",
+        "lesson evidence tied to reading",
+        "longitudinal performance across varied content"
+      ]
+    },
+    {
+      "axis_id": "listening",
+      "label": "Listening",
+      "definition": "Understanding spoken language in real time across speakers, speeds, accents, contexts, and levels of explicitness.",
+      "current_evidence_mode": "self-report-only",
+      "future_evidence_examples": ["audio comprehension tasks", "narration comprehension", "future listening diagnostics"]
+    },
+    {
+      "axis_id": "speaking",
+      "label": "Speaking",
+      "definition": "Producing understandable spoken language with appropriate range, control, fluency, and adaptability for the situation.",
+      "current_evidence_mode": "self-report-only",
+      "future_evidence_examples": ["future speaking tasks", "human or model-assisted intelligibility checks", "spoken production diagnostics"]
+    },
+    {
+      "axis_id": "writing",
+      "label": "Writing",
+      "definition": "Producing written language that communicates intended meaning with suitable range, structure, control, style, and audience awareness.",
+      "current_evidence_mode": "self-report-only",
+      "future_evidence_examples": ["future writing prompts", "revision behavior", "structured writing diagnostics"]
+    },
+    {
+      "axis_id": "interaction",
+      "label": "Interaction",
+      "definition": "Participating in live or asynchronous exchanges: understanding others, responding appropriately, taking turns, repairing misunderstandings, and keeping communication moving.",
+      "current_evidence_mode": "self-report-only",
+      "future_evidence_examples": ["future social features", "conversation tasks", "chat interaction", "repair and turn-taking evidence"]
+    },
+    {
+      "axis_id": "mediation",
+      "label": "Mediation",
+      "definition": "Helping meaning move between people, texts, languages, or viewpoints by explaining, summarizing, translating, interpreting, reframing, or otherwise bridging a communication gap.",
+      "current_evidence_mode": "self-report-only",
+      "future_evidence_examples": ["translation tasks", "live interpretation tasks", "summarization across languages", "explaining a text to someone who cannot access it directly"]
+    }
+  ],
+  "evidence_policy": {
+    "current_product_scope": "reading-first",
+    "current_measured_axes": ["reading"],
+    "self_report_axes": ["reading", "listening", "speaking", "writing", "interaction", "mediation"],
+    "future_assessment": {
+      "status": "planned-not-implemented",
+      "principles": [
+        "Keep self-report, app evidence, and external credentials as distinct evidence sources.",
+        "Never infer an unmeasured skill from reading evidence.",
+        "Use repeated evidence across varied material rather than one quiz, one lesson, one book, or one vocabulary total.",
+        "A difficult book can provide reading evidence but cannot certify speaking, listening, writing, interaction, or mediation.",
+        "External credentials retain their original framework, version, date, score, and measured-skill scope.",
+        "Future adaptive placement may use calibrated items or psychometric models, but Gef must not claim psychometric precision before item calibration and validation exist.",
+        "Current estimates can age in confidence without rewriting or invalidating historical credentials."
+      ],
+      "candidate_inputs": [
+        "lesson completion and performance",
+        "reading difficulty and sustained comprehension",
+        "frequency and type of dictionary assistance",
+        "mistake and correction patterns where the product can observe them",
+        "breadth of concepts and constructions encountered successfully",
+        "optional placement tests",
+        "reviewed external credentials"
+      ]
+    }
+  },
+  "estimate_branding": {
+    "canonical_semantic_term": "Gef estimate",
+    "english_display_term": "Gefstimate",
+    "localization_policy": "Gefstimate is an English wordplay treatment, not a string that must be transliterated into every language. Each locale may use an approved local Gef portmanteau only when it remains immediately understandable and natural; otherwise translate the semantic phrase 'Gef estimate' normally. Never sacrifice clarity to preserve the joke.",
+    "wordplay_registry": "proficiency/gefstimate-wordplay.json"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
