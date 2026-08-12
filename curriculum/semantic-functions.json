@@ -11,6 +11,20 @@
     {"semantic_function_id":"SEM.DEADLINE_TARGET_TIME","key":"deadline_target_time","family":"time_goal","description":"a target time, deadline, or temporal endpoint","review_state":"candidate"},
     {"semantic_function_id":"SEM.DISTRIBUTIVE_SEQUENCE","key":"distributive_sequence","family":"quantity_distribution","description":"distribution or progression one unit at a time, as in one by one","review_state":"candidate"},
     {"semantic_function_id":"SEM.INTERROGATIVE_REASON","key":"interrogative_reason","family":"question","description":"a question asking for a cause or reason","review_state":"candidate"},
-    {"semantic_function_id":"SEM.CONSEQUENCE_LINK","key":"consequence_link","family":"discourse_relation","description":"a discourse relation presenting a result or consequence of prior information","review_state":"candidate"}
+    {"semantic_function_id":"SEM.CONSEQUENCE_LINK","key":"consequence_link","family":"discourse_relation","description":"a discourse relation presenting a result or consequence of prior information","review_state":"candidate"},
+
+    {"semantic_function_id":"SEM.IDENTITY_EQUIVALENCE","key":"identity_equivalence","family":"being_predication","description":"identifying one referent as the same person, thing, name, or value as another expression","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CLASSIFICATION_ROLE","key":"classification_role","family":"being_predication","description":"classifying a referent as a member of a category, profession, role, type, or class","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CHARACTERISTIC_PROPERTY","key":"characteristic_property","family":"being_predication","description":"predicating a descriptive property or characteristic without assuming that it is literally permanent","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CURRENT_STATE","key":"current_state","family":"being_state","description":"predicating a condition, state, disposition, or situation holding at the reference time","review_state":"candidate"},
+    {"semantic_function_id":"SEM.RESULTANT_STATE","key":"resultant_state","family":"being_state","description":"predicating a state understood as the result or outcome of a prior change, event, or process","review_state":"candidate"},
+    {"semantic_function_id":"SEM.ENTITY_LOCATION","key":"entity_location","family":"being_location","description":"locating a person, object, place, or other entity in physical or abstract space","review_state":"candidate"},
+    {"semantic_function_id":"SEM.EVENT_LOCATION","key":"event_location","family":"being_location","description":"locating where an event, meeting, performance, activity, or occurrence takes place","review_state":"candidate"},
+    {"semantic_function_id":"SEM.EXISTENCE_PRESENCE","key":"existence_presence","family":"being_existence","description":"asserting that a person, thing, event, quantity, or possibility exists or is present","review_state":"candidate"},
+    {"semantic_function_id":"SEM.ABSENCE_NONEXISTENCE","key":"absence_nonexistence","family":"being_existence","description":"asserting the absence or nonexistence of a person, thing, event, quantity, or possibility","review_state":"candidate"},
+    {"semantic_function_id":"SEM.TIME_DATE_PREDICATION","key":"time_date_predication","family":"being_time","description":"stating clock time, day, date, season, or another calendrical/temporal identification with a copular or equivalent construction","review_state":"candidate"},
+    {"semantic_function_id":"SEM.ORIGIN_AFFILIATION","key":"origin_affiliation","family":"being_relation","description":"stating origin, nationality, provenance, membership, affiliation, or belonging","review_state":"candidate"},
+    {"semantic_function_id":"SEM.MATERIAL_COMPOSITION","key":"material_composition","family":"being_relation","description":"stating the material, composition, substance, or constituent type of something","review_state":"candidate"},
+    {"semantic_function_id":"SEM.POSSESSION_AS_EXISTENCE","key":"possession_as_existence","family":"being_existence","description":"expressing possession through an existential or locative structure rather than a dedicated have-type predicate","review_state":"candidate"}
   ]
 }
