@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "lesson_family_id": "LES.mul.grammar.grammatical_gender",
+  "coverage_program": "learnFromLanguages",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "expected_total": 104,
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
+  "tier_shards": {"1": "tier1.json", "2": "tier2.json", "3": "tier3.json"},
+  "record_contract": {
+    "title": "Localized lesson title.",
+    "body": "Localized core explanation of grammatical gender and the comparison legend.",
+    "culture_note": "Localized guardrail separating grammatical structure from culture and social gender.",
+    "practice": "Localized practice transition.",
+    "quest": "Localized reading-quest instruction.",
+    "completion": "Localized completion takeaway.",
+    "review_state": "Research/editorial state. Machine-authored records remain candidate until reviewed.",
+    "trust_state": "Product trust stage. Machine-authored source copy defaults to machine_translated."
+  },
+  "review_state": "candidate",
+  "trust_state": "machine_translated"
+}
