@@ -12,7 +12,7 @@
     {
       "trigger_id": "TRG.mul.language_levels.manual",
       "trigger_type": "manual",
-      "notes": "Available from the Lessons catalog and from explicit Learn more actions on proficiency badges."
+      "notes": "Available from the Lessons catalog and from explicit Learn more actions on proficiency badges or the proficiency picker."
     },
     {
       "trigger_id": "TRG.mul.language_levels.catalog",
@@ -23,6 +23,8 @@
   "practice_modules": [],
   "presentation": {
     "data_source": "../../../proficiency/frameworks.json",
+    "gef_scale_source": "../../../proficiency/gef-scale.json",
+    "universal_target_source": "../../../proficiency/universal-level-targets.json",
     "groups_are_semantic_not_visual": true,
     "groups": ["intro", "levels", "profile", "world", "gef", "completion"],
     "scroll_mode": "render groups in one article-like vertical lesson surface",
@@ -31,10 +33,11 @@
     "badge_deep_link_policy": {
       "entry": "open the lesson at the tapped level block",
       "preserve_context": true,
-      "examples": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]
+      "examples": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "FLUENT_NATIVE"]
     },
+    "manual_picker_policy": "The quick self-report picker uses center 0 plus seven outward stops: A1, A2, B1, B2, C1, C2, and Gef-only Fully fluent / Native. Pre-A1 remains an internal first-steps band between zero and A1 rather than a visible manual ring.",
     "content_difficulty_policy": "A level badge on a book describes reading demand unless another scope is explicitly stored.",
-    "learner_level_policy": "Learner proficiency remains skill-scoped; the lesson must not imply that a reading level is a global all-skills rating."
+    "learner_level_policy": "Learner proficiency may retain separate Reading, Listening, Speaking, Writing, Interaction, and Mediation values. Current Gef product evidence may update Reading only; the other axes remain self-report-only until a real feature measures them."
   },
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
@@ -42,5 +45,5 @@
     "teacher_quest_default": "hidden"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
