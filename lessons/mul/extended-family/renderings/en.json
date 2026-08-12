@@ -1,0 +1,22 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.vocab.extended_family",
+  "support_language_tag": "en",
+  "proficiency_band": "beginner",
+  "register": "plain",
+  "title": "Family 3: Extended family",
+  "invitation": "Now the family tree grows branches. Learn grandparents, grandchildren, aunts, uncles, cousins, nieces, nephews, great-relatives, and in-laws by following the relationship path first.",
+  "summary": "English uses broad words for many extended relationships. Other languages may build family side, age, gender, generation, or marriage links directly into the word. Core mode teaches the relationships and matching; Cultural mode explains those extra dimensions.",
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"intro","group_id":"intro","type":"explanation","title":"Follow the path","text":"A grandparent is a parent's parent. An aunt or uncle is usually a parent's sibling or that sibling's spouse. A niece or nephew is a sibling's child. In-law terms describe relationships connected through marriage. Start from that path instead of an English word."},
+    {"block_id":"terms","group_id":"terms","type":"ordered_term_set","source":"family_path.stage_3.core_concepts","include_variants":true},
+    {"block_id":"culture","group_id":"culture","type":"cultural_note","source":"english_cultural_analysis.stages.3","title":"English collapses distinctions other languages may require","text":"Aunt, uncle, cousin, grandparent, and grandchild usually do not tell you the mother's versus father's side. Cousin is also gender-neutral in ordinary English. These broad labels are useful, but they should not be treated as universal semantic boxes."},
+    {"block_id":"examples","group_id":"examples","type":"explanation","title":"English relationship paths","text":"My maternal grandmother is my mother's mother. My nephew is my sister's son. My father-in-law is my spouse's father. My cousin may be related through either side of my family."},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"concept_term_match","title":"Match the relationship path","requires_session_mode":"practice"},
+    {"block_id":"reading","group_id":"reading","type":"explanation","title":"Read across generations","text":"Current Gef candidate: Little Red Cap, for mother and grandmother vocabulary. Preferred future Family 3 book: Eight Cousins, built around cousins, aunts, and Uncle Alec."},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"More branches, same trick","description":"Trace the relationship first. Then learn which details the language chooses to put inside the word.","action_label":"Done"}
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
