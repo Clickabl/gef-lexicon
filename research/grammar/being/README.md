@@ -2,9 +2,9 @@
 
 Status: **research staging — not canonical grammar truth**
 
-This directory is the research workspace for the cross-language grammar domain informally introduced by the lesson hook **“To be… or to be?”**.
+This directory is the research workspace for the cross-language grammar domain introduced by the lesson hook **“To be, or not to be”**, the exact English wording from Shakespeare's *Hamlet*, Act 3, Scene 1.
 
-The Shakespeare hook is editorial only. The linguistic model is not built around English `be` and must never assume every language has one equivalent verb.
+The Shakespeare hook is editorial only. The linguistic model is not built around English `be` and must never assume every language has one equivalent verb. Do not machine-invent localized Shakespeare quotations. If the lesson title is localized as a quotation, use a reviewed source edition in that language.
 
 ## Product scope
 
@@ -22,22 +22,26 @@ Tier 2: `zh`, `ja`, `de`, `ko`, `ar`, `hi`, `uk`, `ru`, `tr`, `pl`, `fa`, `id`, 
 
 ## Universal semantic territory to investigate
 
-These are **research slots**, not final production IDs. Each language may fuse, split, omit, or express them through entirely different grammatical machinery.
+The current candidate production IDs are maintained in `curriculum/semantic-functions.json` and grouped by `curriculum/grammar-domains/being.v1.json`. Research may split, merge, or refine them before review, but must not force another language into English- or Spanish-shaped grammar.
 
-1. **IDENTITY / EQUATION** — X is Y; identifying one entity with another.
-2. **CLASSIFICATION / MEMBERSHIP** — X is a teacher / animal / member of class Y.
-3. **PROPERTY / CHARACTERISTIC** — X is old, red, intelligent, wooden, etc.
-4. **CURRENT STATE / CONDITION** — X is tired, sick, open, angry, ready.
-5. **RESULTANT STATE** — X is broken/closed/finished as a result of a change.
-6. **LOCATION** — X is in/at location Y.
-7. **EXISTENCE / PRESENCE** — there is/are X; X exists/is present.
-8. **ANIMACY-SENSITIVE EXISTENCE/LOCATION** — if the language distinguishes animate/inanimate or other noun classes here.
-9. **TEMPORAL/OTHER COPULAR PREDICATION** — time, date, age, measure, origin, material, possession-like structures, etc. only where the language treats them as part of the same system.
-10. **ZERO COPULA / OMISSION CONDITIONS** — where no overt copular form appears and under which tense/person/register conditions.
-11. **BOUND OR INFLECTIONAL COPULA** — where copular meaning is encoded as suffix/clitic/agreement rather than an independent word.
-12. **AUXILIARY `BE`-TYPE USES** — progressive, passive, perfect, or other auxiliary uses must be identified and kept separate from true copular/existential rules when the language distinguishes them.
+1. **IDENTITY / EQUIVALENCE** — identifying one referent as the same person, thing, name, or value as another expression.
+2. **CLASSIFICATION / ROLE** — classifying someone or something as a category, profession, role, or type.
+3. **CHARACTERISTIC / PROPERTY** — predicating a descriptive characteristic without assuming it is literally permanent.
+4. **CURRENT STATE / CONDITION** — a state, condition, disposition, or situation holding at the reference time.
+5. **RESULTANT STATE** — a state understood as the result of a prior change, event, or process.
+6. **ENTITY LOCATION** — where a person, object, place, or other entity is.
+7. **EVENT LOCATION** — where an event, meeting, performance, or occurrence takes place.
+8. **EXISTENCE / PRESENCE** — asserting that something exists or is present.
+9. **ABSENCE / NONEXISTENCE** — asserting that something is absent or does not exist.
+10. **TIME / DATE PREDICATION** — stating clock time, day, date, season, or related temporal identification.
+11. **ORIGIN / AFFILIATION** — origin, nationality, provenance, membership, affiliation, or belonging.
+12. **MATERIAL / COMPOSITION** — what something is made of or composed of.
+13. **POSSESSION AS EXISTENCE** — languages that express possession through existential or locative grammar rather than a dedicated have-type predicate.
+14. **ZERO COPULA / OMISSION CONDITIONS** — where no overt copular form appears and under which tense/person/register conditions.
+15. **BOUND OR INFLECTIONAL COPULA** — where copular meaning is encoded as suffix/clitic/agreement rather than an independent word.
+16. **AUXILIARY `BE`-TYPE USES** — progressive, passive, perfect, or other auxiliary uses must be identified and kept separate from true copular/existential rules when the language distinguishes them.
 
-Research may propose additional semantic slots, but must explain why an existing slot cannot represent the distinction.
+The first 13 are candidate reusable semantic functions. Items 14–16 primarily describe **how a language realizes the domain**, rather than additional universal meanings.
 
 ## Required language-document output
 
@@ -101,16 +105,17 @@ Do not turn Tier 2 research into curriculum debt.
 
 The research facts are not translated 104 times.
 
-Production should ultimately store language-specific rule atoms once, connected to reusable semantic-function IDs. Shared explanation templates and localized semantic labels render common statements. Custom translated prose is reserved for nuance that templates cannot express faithfully.
+Production stores language-specific rule atoms once, connected to reusable semantic-function IDs. `curriculum/grammar-domains/being.concept-renderings.v1.json` provides machine-candidate Tier 1/2 translations of the reusable semantic labels and rendering templates. Custom translated prose is reserved for nuance that templates cannot express faithfully.
 
-## Lesson hook
+## Lesson title
 
-Possible public-facing title/hook:
+Canonical English lesson title:
 
-> **To be… or to be?**
-> Hamlet only had one “be.” Some languages make you choose.
+> **To be, or not to be**
 
-Any Hamlet note should accurately explain that “To be, or not to be” concerns living versus dying, not a grammatical choice between copulas.
+Source: William Shakespeare, *Hamlet*, Act 3, Scene 1.
+
+This is an exact quotation from the work, not a grammar joke that must be recreated in every language. Any localized quotation title requires a reviewed source edition. A short lesson note may accurately explain that Hamlet's line concerns continuing life versus death, not choosing between grammatical copulas.
 
 ## Research files
 
@@ -141,6 +146,6 @@ Tier 2:
 
 ## Promotion boundary
 
-This research directory is deliberately separate from `grammar/`, `languages/*/constructions.json`, and `lessons/`.
+This research directory is deliberately separate from production grammar/construction and lesson data.
 
-Research completion may propose candidate production records. A later review/publishing step decides what becomes reusable lexicon/grammar truth. No research Task self-promotes its output.
+Research completion may propose candidate production records. The current initial candidate cross-language mapping lives in `curriculum/grammar-domains/being.v1.json`. A later review/publishing step decides what becomes approved reusable lexicon/grammar truth. No research Task self-promotes its output.
