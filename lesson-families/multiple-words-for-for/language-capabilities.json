@@ -4,7 +4,8 @@
   "capability_model": "lesson_specific",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "grammar_set_id": "GRAMSET.mul.for_equivalents",
-  "fixed_comparison_language_tags": ["en", "es"],
+  "fixed_comparison_language_tags": [],
+  "reference_anchor_language_tags": ["en", "es"],
   "support_levels": {
     "full": {
       "description": "The lesson has structured grammar forms/rules for this language and may render GrammarRuleBlock/practice from Lexicon data.",
@@ -33,7 +34,8 @@
     "Global language tier never grants lesson-level full support automatically.",
     "Any registered language, including Tier 3 or Tier 4, may be promoted to full for this lesson when this lesson's structured grammar records are ready.",
     "A full-support language must exist in the referenced grammar set, be lesson_ready, contain at least one form and at least one structured rule, and be explicitly listed in support_levels.full.language_tags.",
-    "A comparison_only language becomes renderable only when the dedicated comparison-record catalog contains actual forms/constructions plus a native-language comparison blurb. Generic catalog/tooltip copy does not count.",
+    "A comparison_only language becomes renderable when the dedicated comparison-record catalog contains actual forms/constructions. own_grammar_blurb is optional until native learner-facing copy has been authored for that language.",
+    "English and Spanish are reference-anchor candidates, not unconditional fixed languages. The runtime may inject one forms-only anchor when neither is already part of the learner's displayed profile languages.",
     "Removing or downgrading a language must be explicit; do not infer capability from global tier changes."
   ],
   "comparison_record_catalog": "comparison-records/manifest.json",
