@@ -1,0 +1,50 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.seasons",
+  "lesson_key": "seasons-of-the-year",
+  "target_language": "mul",
+  "curriculum_concept_ids": ["CURR.DATES_TIME"],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A1",
+  "knowledge_set_id": "KNOWSET.mul.calendar.seasons",
+  "knowledge_set_source": "../../../knowledge-sets/seasons.json",
+  "language_capabilities_manifest": "../../../lesson-families/calendar-year/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "requires_at_least_one_non_anchor_multi_language": false,
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Best/explanation languages may come from all canonical learn-from languages. Practice targets only Tier 1 and Tier 2 learning languages with knowledge-set records. Hemisphere, climate, and cultural season systems are runtime context and must not be inferred from a bare language tag."
+  },
+  "rules": [],
+  "triggers": [
+    {"trigger_id":"TRG.mul.seasons.catalog","trigger_type":"catalog_topic","notes":"Offer as an early dates/time vocabulary and culture lesson for eligible learning languages."}
+  ],
+  "practice_modules": [
+    {"module":"ordered_sequence","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"put the selected season system in cycle order"}},
+    {"module":"concept_term_match","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"match season concepts to target-language terms"}},
+    {"module":"cycle_neighbor","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"identify the season before or after a named season when the selected system is cyclic"}}
+  ],
+  "presentation": {
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "comparison-intro", "terms", "culture", "practice", "completion"],
+    "scroll_mode": "render groups in one vertical lesson surface",
+    "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
+    "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 12,
+    "teacher_quest_default": "optional"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
