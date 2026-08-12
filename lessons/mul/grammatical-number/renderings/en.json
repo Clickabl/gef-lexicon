@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.noun.grammatical_number",
+  "support_language_tag": "en",
+  "proficiency_band": "all",
+  "register": "plain",
+  "title": "One, two, many: how languages handle number",
+  "invitation": "See what your language already does with one thing, two things, and more, then compare it with the language you are learning.",
+  "summary": "Languages do not all divide number the same way. Some make nouns singular or plural. Some also have a dual for exactly two. Others often leave nouns unchanged and let numerals, classifiers, determiners, particles, agreement, or context carry the number.",
+  "localization_keys": {
+    "title": "lesson.grammaticalNumber.title",
+    "invitation": "lesson.grammaticalNumber.invitation",
+    "summary": "lesson.grammaticalNumber.summary",
+    "grammar_primer": "lesson.grammaticalNumber.grammarPrimer",
+    "rules_intro": "lesson.grammaticalNumber.rulesIntro",
+    "example_intro": "lesson.grammaticalNumber.exampleIntro",
+    "practice_intro": "lesson.grammaticalNumber.practiceIntro",
+    "quest_title": "lesson.grammaticalNumber.questTitle",
+    "completion_title": "lesson.grammaticalNumber.completionTitle"
+  },
+  "runtime_copy": {
+    "language_heading": "Number in your languages",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish",
+    "correct_fallback": "Yep. That number pattern fits here.",
+    "retry_fallback": "Not quite. Check what number is meant and where this language marks it, then try again.",
+    "correct_score_label": "Correct",
+    "attempted_score_label": "Tried",
+    "done_label": "Done",
+    "rules_heading_template": "How {form} works",
+    "form_kind_labels": {
+      "word": "Word",
+      "preposition": "Preposition",
+      "postposition": "Postposition",
+      "case_marker": "Case marker",
+      "particle": "Particle",
+      "prepositional_phrase": "Phrase",
+      "construction": "Number system",
+      "clause_marker": "Clause marker",
+      "other": "Grammar pattern"
+    }
+  },
+  "blocks": [
+    {"block_id":"facts","group_id":"facts","type":"lesson_facts","source":"lesson_session"},
+    {"block_id":"language-comparisons","group_id":"comparison-intro","type":"language_comparison_loop","source":"learning_from_then_learning_languages","omit_when_empty":false},
+    {"block_id":"grammar-primer","group_id":"rules","type":"grammar_primer","source":"selected_language_number_metadata","show_once":true,"title":"Ask three questions","description":"Which number meanings does this language distinguish? Does it have to mark them? Where does the marking show up: the noun, another word, agreement, or just the context?"},
+    {"block_id":"rules-intro","group_id":"rules","type":"explanation","text":"Do not translate an English plural ending. Learn the number system your target language actually uses. If the noun can stay unchanged, that is a rule too."},
+    {"block_id":"language-rules","group_id":"rules","type":"language_rule_groups","source":"selected_learning_languages_with_full_number_rule_data","one_block_per_form":true,"include_tips":true,"omit_when_empty":true},
+    {"block_id":"examples-intro","group_id":"examples","type":"explanation","text":"Now watch number spread through real noun phrases. In Spanish, for example, el libro nuevo becomes los libros nuevos: the article, noun, and adjective all move together. But la crisis becomes las crisis, so an unchanged noun can still sit inside a plural phrase."},
+    {"block_id":"curated-examples","group_id":"examples","type":"curated_example_group","source":"reviewed_lesson_example_resolver","prefer_current_or_quotes_weighted":true,"maximum_languages":12,"omit_when_empty":true},
+    {"block_id":"practice-intro","group_id":"practice","type":"explanation","text":"Try a few where there is one defensible answer. Gef skips a question when the language genuinely allows more than one number-marking choice.","requires_session_mode":"practice"},
+    {"block_id":"practice","group_id":"practice","type":"practice_slot","module":"inline_choice_cloze","feedback":"gentle_rule_tip_rotation","requires_session_mode":"practice","title":"Make the number fit."},
+    {"block_id":"quest","group_id":"quest","type":"quest_offer","quest_type":"find_number_marking_in_book","teacher_policy":"session","requires_session_mode":"practice","title":"Find number in the wild","description":"While you read, spot where the language marks one, two, or more, and where it leaves number unmarked.","begin_label":"Begin","decline_label":"Not now"},
+    {"block_id":"completion","group_id":"completion","type":"completion","show_scorecard":true,"scorecard_optional_when_no_practice":true,"celebration":"confetti","title":"You found the system","description":"Number is not a universal suffix. Learn which distinctions your language makes, whether marking is required, and where the grammar puts the evidence.","action_label":"Done"}
+  ],
+  "rule_explanations": {
+    "RULE.es.number.plural_s": {"summary":"For the common Spanish pattern, an unstressed-vowel ending usually takes -s.","tips":["libro → libros","casa → casas"]},
+    "RULE.es.number.plural_es": {"summary":"Many consonant-final Spanish nouns take -es.","tips":["papel → papeles","Check ending-specific spelling and stress changes instead of adding -es blindly."]},
+    "RULE.es.number.invariant_nouns": {"summary":"Some Spanish nouns do not visibly change for plural.","tips":["la crisis → las crisis","el lunes → los lunes"]},
+    "RULE.es.number.agreement": {"summary":"Spanish number usually propagates through agreeing words in the noun phrase.","tips":["el libro nuevo → los libros nuevos","la casa blanca → las casas blancas"]}
+  },
+  "review_state": "candidate",
+  "version": 1
+}
