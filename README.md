@@ -17,7 +17,7 @@ Exact story sentences and passage-specific lesson evidence belong in `Clickabl/g
 
 ## Product-wide language support
 
-This repository does **not** decide which languages are Tier 1, Tier 2, Tier 3, Tier 4/Learn From, UI-only, experimental, or otherwise product-supported.
+This repository does **not** decide product tier membership.
 
 Canonical product-wide authority:
 
@@ -31,7 +31,24 @@ Standard batch grouping for translation/review:
 
 `Clickabl/gef-expo/registry/standard-translation-groups.json`
 
-A `languages/{lang}` profile, lexicon entry, lesson rendering, or incidental piece of linguistic data does not promote that language's product support level. Likewise, a Tier 4 language does not need a bespoke grammar course to remain learnable: Gef may teach it through leveled books, dictionary support, comprehension, and reusable reading games. Do not copy a strategic language list or count into this repository.
+Current curriculum-depth model:
+
+- **Tier 1 — Full curriculum:** English, Spanish, French, Portuguese, Italian, and Modern Greek. These languages are the long-term complete-grammar/path promise.
+- **Tier 2 — Selective lessons:** lesson-specific grammar mappings when a reviewed cross-language lesson naturally applies. No complete grammar inventory or full path is promised.
+- **Tier 3 — Read + Games:** the merged former Tier 3/Tier 4 population. Reading, dictionary, comprehension, progression, script support where useful, and reusable Games; no grammar lessons are promised.
+
+A `languages/{lang}` profile, lexicon entry, construction, or incidental piece of linguistic data does not promote that language's curriculum tier. A Tier 3 language may still need sophisticated morphology/construction data for lookup, translation, corpus analysis, or Games. **Linguistic knowledge is not curriculum commitment.** Do not copy strategic language lists or counts into this repository; read the Expo registry.
+
+## Grammar-set scaling rule
+
+Cross-language lesson families are built on **shared semantic functions + independent language mappings**.
+
+Do not clone one language's grammar into another. Spanish `ser/estar`, Japanese copular/existential constructions, Russian zero-copula behavior, and other systems can occupy related semantic territory without sharing rules.
+
+- Tier 1 may maintain complete reusable grammar sets, rich rule inventories, nuance/exceptions, authored tips, and full path placement.
+- Tier 2 should normally contribute only the structured rule atoms needed by a lesson that actually includes that language: form/construction, semantic-function IDs, rule/relationship kind, applicability/contrast metadata, reviewed examples, and sources.
+- Tier 2 explanations should prefer shared localized rendering templates over hand-translating bespoke prose for every rule/interface language pair.
+- Tier 3 receives no grammar lessons, even if lexicon/parser knowledge exists for that language.
 
 ## Architecture
 
@@ -47,6 +64,7 @@ entities/                           reusable non-book entities where appropriate
 lessons/{lang}/{lesson}/            reusable lesson logic
   lesson.json
   renderings/{support}.json
+research/grammar/                   research staging; never approval by itself
 sources/                            bibliography/provenance records
 schemas/                            machine-readable source contracts
 scripts/                            validation/compilation
@@ -80,7 +98,7 @@ The lesson is authored once and becomes available to every compatible reviewed S
 
 ## Review policy
 
-Generated lexical, construction, name/entity and lesson material remains `candidate` until the appropriate review promotes it. Machine generation is not approval.
+Generated lexical, construction, name/entity, grammar-research, and lesson material remains `candidate` until the appropriate review promotes it. Machine generation is not approval.
 
 Do not import share-alike/copyrighted dictionary rows into the proprietary core. External resources may only be used when licensing/provenance is explicitly compatible or as non-copied validation references.
 
