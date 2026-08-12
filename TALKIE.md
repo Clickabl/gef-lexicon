@@ -93,3 +93,33 @@ This entry supersedes the tier-count statement in the 08:44 entry above. The cur
 ### Editorial/research guardrail
 
 See `docs/CALENDAR_YEAR_LESSON_ARCHITECTURE.md` before copying this pattern. Calendar, climate, and cultural facts are especially easy to overgeneralize. Store the language vocabulary and the contextual convention separately, preserve alternate systems, and prefer an honest candidate record over fake universality.
+
+## [2026-08-12 09:40 MDT] GPT-5.6 Sol — contract — universal Family Members game core
+
+Family Members now has a **separate universal vocabulary-game layer** in addition to its 21 rich full target profiles. This entry supersedes the old assumption that Tier 3 languages are source-only for this lesson.
+
+### New capability split
+
+- **104/104 source/best languages:** localized bridge copy remains available for lesson orientation.
+- **21/104 full target languages:** current Tier 1 + Tier 2 retain richer target profiles, culture/usage distinctions, examples, and full lesson practice.
+- **104/104 game-core target languages:** every canonical `programs.learnFromLanguages` language now has the same fourteen semantic relationship slots and can participate in Family Members vocabulary comparison/games at its content-trust level.
+- **Tier 3 remains Tier 3.** Game readiness does not promote a language into a full authored curriculum or grammar tier.
+
+### Landed paths
+
+- `lesson-families/family-members/game-core/manifest.json`
+- `lesson-families/family-members/game-core/{tier1,tier2,tier3-a,tier3-b,tier3-c,tier3-d}.json`
+- `lesson-families/family-members/language-capabilities.json`
+- `scripts/validate-family-members.mjs`
+- `docs/FAMILY_MEMBERS_LESSON_RESEARCH.md`
+
+### Reusable contract
+
+1. The fourteen canonical prompts are semantic relationship slots, not English dictionary words: `family`, `mother`, `father`, `brother`, `sister`, `son`, `daughter`, `grandfather`, `grandmother`, `uncle`, `aunt`, `cousin`, `husband`, `wife`.
+2. **A slot may have multiple forms on purpose.** Those forms can encode relative age, maternal/paternal side, speaker gender, gender of the relative, register, or another real distinction. Never flatten them into fake synonyms merely to make PairMatch easier.
+3. A vocabulary game must supply enough relationship features to make the selected target form defensible. If the target distinguishes maternal and paternal uncle, a vague prompt equivalent to English `uncle` is insufficient.
+4. A conventional descriptive phrase is acceptable when the target language has no single lexical item matching the broad cross-language slot.
+5. The universal game core is currently **1,456 structurally complete semantic slots (104 × 14)** at `machine_translated` trust. This is complete machine-draft coverage, not native-speaker certification.
+6. `npm run validate:family-members` now proves exact 104-source coverage, exact 104-game-target coverage, all fourteen concepts per language, non-empty NFC forms, exact live registry membership, exact 21 full-profile membership, and the rule that Tier 3 game coverage may not silently promote a language into the full target tier.
+7. The public KinDiv/LREC lexical-gap research informs the semantic architecture only. Its data inherits Wiktionary/CC BY-SA provenance, so **do not copy its word rows into Gef**. Gef lexical forms remain first-party generated/researched candidates and move through the normal trust ladder.
+8. Future vocabulary lesson families should reuse the same orthogonal capability idea when appropriate: `full lesson support` and `game-ready vocabulary support` are separate product promises.
