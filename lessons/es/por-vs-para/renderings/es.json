@@ -13,14 +13,30 @@
     {"block_id":"rule-path","type":"rule","rule_id":"RULE.es.por_para.por_path_route","text":"Por puede marcar el camino, recorrido o zona por donde pasa un movimiento."},
     {"block_id":"rule-reason","type":"rule","rule_id":"RULE.es.por_para.por_cause_reason","text":"Por puede introducir una causa, razón o motivo."},
     {"block_id":"rule-question","type":"rule","rule_id":"RULE.es.por_para.por_reason_question","text":"Por qué pregunta por una razón. Conviene aprender la expresión interrogativa completa, no tratar por como una pieza intercambiable con para."},
-    {"block_id":"rule-consequence","type":"rule","rule_id":"RULE.es.por_para.por_consequence","text":"Por eso conecta una causa o información anterior con su consecuencia."},
+    {"block_id":"rule-consequence","type":"rule","rule_id":"RULE.es.por_para.por_consequence","text":"Construcciones como por eso y por lo que conectan la información anterior con una consecuencia o resultado."},
     {"block_id":"rule-purpose","type":"rule","rule_id":"RULE.es.por_para.para_purpose","text":"Para orienta la frase hacia una finalidad u objetivo. Para + infinitivo es una construcción frecuente para expresar propósito."},
     {"block_id":"rule-destination","type":"rule","rule_id":"RULE.es.por_para.para_destination_goal","text":"Para puede señalar un destino, punto final u objetivo."},
     {"block_id":"rule-beneficiary","type":"rule","rule_id":"RULE.es.por_para.para_beneficiary","text":"Para puede identificar al destinatario o beneficiario previsto."},
     {"block_id":"rule-deadline","type":"rule","rule_id":"RULE.es.por_para.para_deadline","text":"Para se usa con muchos plazos y momentos objetivo."},
+    {"block_id":"rule-time-frame","type":"rule","rule_id":"RULE.es.por_para.por_time_frame","text":"Expresiones como por la mañana y por la noche usan por para situar un hecho en un marco temporal. Conviene aprenderlas como expresiones frecuentes, no como un hueco mecánico entre por y para."},
+    {"block_id":"rule-por-fin","type":"rule","rule_id":"RULE.es.por_para.por_fin_fixed","text":"Por fin es una expresión fija que significa finalmente o al fin. Conviene aprenderla como una unidad."},
     {"block_id":"dynamic-more","type":"dynamic_example_slot","slot":"reviewed_book_examples"}
   ],
-  "rule_explanations":{},
+  "rule_explanations":{
+    "RULE.es.por_para.por_path_route":{"summary":"Aquí se expresa un camino, recorrido o zona que se atraviesa o se recorre; por eso se usa por.","tips":["Piensa en pasar por, recorrer o buscar por una zona."]},
+    "RULE.es.por_para.por_cause_reason":{"summary":"Aquí la frase expresa la causa o razón de lo ocurrido; por eso se usa por.","tips":["Si la idea equivale a a causa de, por es una pista fuerte."]},
+    "RULE.es.por_para.por_reason_question":{"summary":"Aquí aparece la expresión interrogativa fija por qué, que pregunta por una razón.","tips":["Trata por qué como una unidad."]},
+    "RULE.es.por_para.por_consequence":{"summary":"Esta construcción conecta lo anterior con un resultado o consecuencia.","tips":["Expresiones como por eso o por lo que funcionan como unidades; no son un hueco abierto entre por y para."]},
+    "RULE.es.por_para.por_means_channel":{"summary":"Aquí se expresa el medio, método, vía o canal por el que ocurre algo; por eso se usa por.","tips":["Pregunta: ¿cómo o por qué medio?"]},
+    "RULE.es.por_para.por_exchange_substitution":{"summary":"Aquí hay una relación de intercambio, precio, reemplazo o sustitución; por eso se usa por.","tips":["Piensa en una cosa a cambio de otra."]},
+    "RULE.es.por_para.por_distributive":{"summary":"Aquí aparece un patrón distributivo, como uno por uno.","tips":["Aprende el patrón de unidad repetida como una construcción completa."]},
+    "RULE.es.por_para.para_purpose":{"summary":"Aquí la frase señala lo que la acción pretende lograr; por eso se usa para.","tips":["Si la idea es con el fin de, para es una pista fuerte."]},
+    "RULE.es.por_para.para_destination_goal":{"summary":"Aquí la frase apunta hacia un destino, punto final u objetivo; por eso se usa para.","tips":["Imagina una flecha dirigida al punto de llegada."]},
+    "RULE.es.por_para.para_beneficiary":{"summary":"Aquí se identifica al destinatario o beneficiario previsto; por eso se usa para.","tips":["Pregunta: ¿para quién está destinado?"]},
+    "RULE.es.por_para.para_deadline":{"summary":"Aquí el tiempo funciona como plazo o punto objetivo; por eso se usa para.","tips":["Piensa en la fecha o la hora como un punto de llegada."]},
+    "RULE.es.por_para.por_time_frame":{"summary":"Esta es una expresión temporal frecuente con por, como por la mañana o por la noche.","tips":["Es un patrón de ampliación. Aprende la expresión natural sin forzarla dentro de las reglas básicas de causa o recorrido."]},
+    "RULE.es.por_para.por_fin_fixed":{"summary":"Por fin es una expresión fija que significa finalmente o al fin.","tips":["La unidad útil aquí es por fin completa."]}
+  },
   "review_state":"candidate",
-  "version":1
+  "version":2
 }
