@@ -1,9 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "lesson_id": "LES.mul.vocab.family_members",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
-  "purpose": "Game-safe core family vocabulary coverage. Tier 1 and Tier 2 reuse their richer target profiles; Tier 3 contributes a smaller candidate core for recognition and matching games without claiming a full grammar or culture lesson path.",
-  "required_concepts": ["mother", "father", "brother", "sister", "son", "daughter", "grandfather", "grandmother"],
+  "purpose": "Game-safe universal family vocabulary coverage. Tier 1 and Tier 2 reuse their richer target profiles; Tier 3 contributes candidate forms for recognition and matching games without claiming a full grammar or culture lesson path.",
+  "required_concepts": [
+    "mother", "father", "brother", "sister", "son", "daughter",
+    "grandfather", "grandmother", "uncle", "aunt", "cousin",
+    "niece_nephew", "partner", "spouse"
+  ],
   "sources": {
     "tier1": "../target-profiles/tier1.json",
     "tier2": "../target-profiles/tier2.json",
@@ -13,8 +17,8 @@
   "expected_total": 104,
   "safety": {
     "tier1_tier2": "Use structured target-profile features and only emit a single-answer production prompt when the profile proves the answer is unique.",
-    "tier3": "Recognition and multi-match only until language-specific review. Slash-separated alternatives may encode age, speaker gender, maternal/paternal side, register, or another lexical subdivision and must not be flattened into one fake equivalent.",
-    "all": "A structurally complete game row remains machine-created until language-specific review promotes it."
+    "tier3": "Recognition and multi-match only until language-specific review. Slash-separated alternatives may encode age, speaker gender, maternal/paternal side, register, relationship path, or another lexical subdivision and must not be flattened into one fake equivalent.",
+    "all": "A structurally complete game row remains Machine created until language-specific review promotes it."
   },
   "research_sources": [
     {"name":"Kinbank v1.2","url":"https://github.com/kinbank/kinbank/tree/v1.2","license":"CC BY 4.0","use":"cross-linguistic kinship terminology research and candidate verification pool"},
@@ -22,5 +26,5 @@
   ],
   "review_state": "candidate",
   "trust_state": "machine_translated",
-  "version": 1
+  "version": 2
 }
