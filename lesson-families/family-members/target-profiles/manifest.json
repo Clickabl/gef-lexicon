@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "lesson_id": "LES.mul.vocab.family_members",
+  "registry_source": "Clickabl/gef-expo/registry/language-support.json",
+  "purpose": "Structured target-language family-member profiles for current Tier 1 and Tier 2 learnable languages. The records separate relationship facts from learner-language rendering so arbitrary source/target pairs do not require pair-specific lesson files.",
+  "tier_shards": {
+    "1": "tier1.json",
+    "2": "tier2.json"
+  },
+  "expected_tier_counts": {"1": 6, "2": 15},
+  "expected_total": 21,
+  "record_contract": {
+    "target_explainer_en": "Canonical English editorial explanation of the target language's kinship pattern. Other source-language renderings may localize this structured content without changing the underlying facts.",
+    "distinctions": "Only dimensions that materially affect beginner word choice. Absence from the array is not a claim that the language can never express the distinction.",
+    "core_terms": "Representative neutral beginner terms. This is not an exhaustive kinship dictionary.",
+    "cultural_note_en": "Usage/culture caution. Do not turn community tendencies into claims about every family or speaker.",
+    "examples": "Short beginner-safe examples that illustrate the profile's actual distinctions.",
+    "source_refs": "Research provenance. Generated records remain candidates until reviewed."
+  },
+  "distinction_codes": [
+    "gender_in_core_term",
+    "sibling_relative_age",
+    "maternal_paternal_side",
+    "parent_sibling_relative_age",
+    "speaker_gender",
+    "affinal_specificity",
+    "address_reference_difference",
+    "honorific_or_register",
+    "kin_terms_as_social_address"
+  ],
+  "review_state": "generated",
+  "trust_state": "machine_translated",
+  "version": 1
+}
