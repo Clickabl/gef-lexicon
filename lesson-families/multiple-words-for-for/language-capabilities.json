@@ -1,11 +1,60 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "lesson_family_id": "LES.mul.prep.multiple_for",
   "capability_model": "lesson_specific",
   "registry_source": "Clickabl/gef-expo/registry/language-support.json",
   "grammar_set_id": "GRAMSET.mul.for_equivalents",
   "fixed_comparison_language_tags": [],
   "reference_anchor_language_tags": ["en", "es"],
+  "role_requirements": {
+    "best_language": {
+      "description": "A language Gef can use as one of the learner's strongest explanation/comparison languages for this lesson.",
+      "registry_requirement": "The language tag must exist in registry/language-support.json programs.learnFromLanguages.",
+      "required_assets": [
+        "lessons/mul/multiple-words-for/renderings/{language}.json",
+        "rendering.summary",
+        "rendering.reference_anchor_explainers.en",
+        "rendering.reference_anchor_explainers.es",
+        "comparison record forms[]",
+        "comparison record own_grammar_blurb"
+      ],
+      "notes": "The rendering supplies lesson-wide wording in the best language. The comparison record supplies that language's own forms and ownGrammarBlurb. If a required asset exists below the user's trust threshold, keep the language visible but unavailable at that threshold."
+    },
+    "learning_language_comparison": {
+      "description": "A language that can participate as a learning/target language in the comparison portion without rule-driven practice.",
+      "registry_requirement": "The language identity must be recognized by the product registry; lesson tier alone does not grant support.",
+      "required_assets": [
+        "comparison record forms[]"
+      ],
+      "notes": "This is enough to show how the language realizes the semantic territory, but not enough to claim complete grammar instruction."
+    },
+    "learning_language_full": {
+      "description": "A language this lesson can actively teach with structured rules and defensible practice.",
+      "registry_requirement": "The language identity must be recognized by the product registry.",
+      "required_assets": [
+        "comparison record forms[]",
+        "grammar set language record",
+        "grammar set lesson_ready=true",
+        "at least one structured grammar form",
+        "at least one structured rule",
+        "explicit membership in support_levels.full.language_tags"
+      ],
+      "notes": "Full support never follows automatically from the product-wide language tier."
+    }
+  },
+  "trust_visibility": {
+    "canonical_product_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "user_modes": {
+      "beta": "machine_verified",
+      "reviewed": "public",
+      "verified": "gef_certified"
+    },
+    "effective_language_trust": "Minimum trust state among the required assets for that language in the requested role.",
+    "effective_lesson_trust": "Minimum trust state among all artifacts actually rendered in the current lesson session.",
+    "below_threshold": "visible_disabled_with_badge",
+    "missing_required_assets": "visible_unavailable_when_the_product_registry_knows_the_language",
+    "notes": "A teacher using Verified-only mode should still be able to see that a known language exists. If its lesson assets are only Beta/Reviewed or incomplete, show it disabled with the appropriate badge/status instead of silently hiding it."
+  },
   "support_levels": {
     "full": {
       "description": "The lesson has structured grammar forms/rules for this language and may render GrammarRuleBlock/practice from Lexicon data.",
@@ -16,7 +65,7 @@
       "default_for_registered_languages_not_in_full": true
     },
     "unavailable": {
-      "description": "No defensible lesson comparison data exists yet. Omit the language from this lesson rather than inventing data.",
+      "description": "No defensible lesson comparison data exists yet. Keep a product-known language discoverable in selection UI, but do not invent lesson data.",
       "language_tags": []
     }
   },
@@ -32,15 +81,17 @@
   ],
   "promotion_rules": [
     "Global language tier never grants lesson-level full support automatically.",
-    "Any registered language, including Tier 3 or Tier 4, may be promoted to full for this lesson when this lesson's structured grammar records are ready.",
+    "Any registered language, including a reading-led language, may be promoted to full for this lesson when this lesson's structured grammar records are ready.",
     "A full-support language must exist in the referenced grammar set, be lesson_ready, contain at least one form and at least one structured rule, and be explicitly listed in support_levels.full.language_tags.",
-    "A comparison_only language becomes renderable when the dedicated comparison-record catalog contains actual forms/constructions. own_grammar_blurb is optional until native learner-facing copy has been authored for that language.",
+    "A comparison_only language becomes renderable when the dedicated comparison-record catalog contains actual forms/constructions. own_grammar_blurb is required before the language qualifies as a complete best-language explanation path.",
     "English and Spanish are reference-anchor candidates, not unconditional fixed languages. The runtime may inject one forms-only anchor when neither is already part of the learner's displayed profile languages.",
+    "An injected reference anchor uses the best-language rendering's short reference_anchor_explainers entry, never the anchor's full own_grammar_blurb unless that anchor is one of the learner's real profile languages.",
     "Removing or downgrading a language must be explicit; do not infer capability from global tier changes."
   ],
   "comparison_record_catalog": "comparison-records/manifest.json",
   "comparison_blurb_catalog": "comparison-records/manifest.json",
   "generic_support_blurb_catalog": "support-blurbs/manifest.json",
   "automation_ids": ["GEF-AUTO-LANG-001", "GEF-AUTO-LANG-002", "GEF-AUTO-LESSON-GRAMMAR-001"],
-  "review_state": "candidate"
+  "review_state": "candidate",
+  "trust_state": "machine_translated"
 }
