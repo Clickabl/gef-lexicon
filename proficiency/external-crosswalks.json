@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "canonical_target": "gef-language-proficiency",
+  "purpose": "Interoperability hints for external language systems. Preserve the source system and scope; never overwrite it with a Gef value.",
+  "display_policy": {
+    "official_mapping_label": "Reference equivalent",
+    "gef_mapping_label": "Gef estimate",
+    "estimated_symbol": "≈",
+    "never_call_estimates_official": true,
+    "skill_scope_required": true,
+    "version_required": true
+  },
+  "crosswalks": [
+    {
+      "source_id": "jlpt-2025-cefr-reference",
+      "framework": "JLPT",
+      "framework_name": "Japanese-Language Proficiency Test",
+      "version": "CEFR reference reporting from December 2025",
+      "mapping_kind": "official_scoped",
+      "scope": ["language_knowledge", "reading", "listening"],
+      "excluded_scope": ["speaking", "writing", "interaction", "mediation"],
+      "rows": [
+        {"source_level":"N5","score_min":80,"gef_reference":"A1"},
+        {"source_level":"N4","score_min":90,"gef_reference":"A2"},
+        {"source_level":"N3","score_min":95,"score_max":103,"gef_reference":"A2"},
+        {"source_level":"N3","score_min":104,"gef_reference":"B1"},
+        {"source_level":"N2","score_min":90,"score_max":111,"gef_reference":"B1"},
+        {"source_level":"N2","score_min":112,"gef_reference":"B2"},
+        {"source_level":"N1","score_min":100,"score_max":141,"gef_reference":"B2"},
+        {"source_level":"N1","score_min":142,"gef_reference":"C1"}
+      ],
+      "notes": [
+        "This is unusually strong crosswalk evidence because JLPT itself now reports the CEFR reference level for passing results.",
+        "The JLPT authority explicitly limits the CEFR reference to abilities actually tested, so Gef must not infer speaking or writing from it.",
+        "No JLPT result maps to C2 in the official reference table."
+      ],
+      "sources": ["https://www.jlpt.jp/e/about/cefr_reference.html"]
+    },
+    {
+      "source_id": "hsk2-issuer-cefr",
+      "framework": "HSK",
+      "framework_name": "Chinese Proficiency Test",
+      "version": "HSK 2.0 / regular six-level system",
+      "mapping_kind": "issuer_published",
+      "scope": ["tested_hsk_skills"],
+      "rows": [
+        {"source_level":"1","gef_reference":"A1"},
+        {"source_level":"2","gef_reference":"A2"},
+        {"source_level":"3","gef_reference":"B1"},
+        {"source_level":"4","gef_reference":"B2"},
+        {"source_level":"5","gef_reference":"C1"},
+        {"source_level":"6","gef_reference":"C2"}
+      ],
+      "notes": [
+        "Chinese Test Service has historically published this one-to-one HSK 1-6 to CEFR table.",
+        "Treat the mapping as belonging to the six-level HSK generation. Do not reuse it for HSK 3.0 merely because level numbers overlap.",
+        "Regular 2026 HSK dates still use the 2.0 system while HSK 3.0 remains in pilot/transition status."
+      ],
+      "sources": [
+        "https://admin.chinesetest.cn/gonewcontent.do?id=40575936",
+        "https://www.chinesetest.cn/notice"
+      ]
+    },
+    {
+      "source_id": "hsk3-gef-estimate-v1",
+      "framework": "HSK",
+      "framework_name": "Chinese Proficiency Test",
+      "version": "HSK 3.0 / three stages, nine levels",
+      "mapping_kind": "gef_estimate",
+      "scope": ["overall_orientation_only"],
+      "rows": [
+        {"source_level":"1","gef_reference_min":"A1","gef_reference_max":"A1","confidence":"medium"},
+        {"source_level":"2","gef_reference_min":"A1","gef_reference_max":"A2","confidence":"low"},
+        {"source_level":"3","gef_reference_min":"A2","gef_reference_max":"A2","confidence":"low"},
+        {"source_level":"4","gef_reference_min":"B1","gef_reference_max":"B1","confidence":"low"},
+        {"source_level":"5","gef_reference_min":"B1","gef_reference_max":"B2","confidence":"low"},
+        {"source_level":"6","gef_reference_min":"B2","gef_reference_max":"B2","confidence":"low"},
+        {"source_level":"7","gef_reference_min":"B2","gef_reference_max":"C1","confidence":"low"},
+        {"source_level":"8","gef_reference_min":"C1","gef_reference_max":"C1","confidence":"low"},
+        {"source_level":"9","gef_reference_min":"C1","gef_reference_max":"C2","confidence":"low"}
+      ],
+      "notes": [
+        "This is a Gef orientation crosswalk, not an official HSK-to-CEFR concordance.",
+        "The defensible high-level relationship is stronger than the exact rows: HSK 3.0 Levels 1-3 are elementary territory, 4-6 intermediate territory, and 7-9 advanced territory.",
+        "Do not use this estimate to certify a user or to translate HSK credentials into a hard Gef level automatically.",
+        "Keep HSK version on every credential. HSK 2.0 Level 6 and HSK 3.0 Level 6 are not interchangeable records."
+      ],
+      "sources": [
+        "https://www.chinesetest.cn/HSK",
+        "https://www.chinesetest.cn/notice",
+        "https://www.chinesetest.cn/HSK/7-9"
+      ]
+    },
+    {
+      "source_id": "duolingo-course-score-cefr",
+      "framework": "Duolingo Score",
+      "framework_name": "Duolingo in-app course progress score",
+      "version": "0-160 score",
+      "mapping_kind": "publisher_published_course_alignment",
+      "scope": ["course_progress", "course_content_alignment"],
+      "rows": [
+        {"score_min":0,"score_max":9,"gef_reference":"A1","subband":"very early"},
+        {"score_min":10,"score_max":19,"gef_reference":"A1","subband":"early"},
+        {"score_min":20,"score_max":29,"gef_reference":"A1","subband":"high"},
+        {"score_min":30,"score_max":59,"gef_reference":"A2"},
+        {"score_min":60,"score_max":79,"gef_reference":"B1","subband":"early"},
+        {"score_min":80,"score_max":99,"gef_reference":"B1","subband":"high"},
+        {"score_min":100,"score_max":114,"gef_reference":"B2","subband":"early"},
+        {"score_min":115,"score_max":129,"gef_reference":"B2","subband":"high"},
+        {"score_min":130,"score_max":160,"gef_reference_min":"C1","gef_reference_max":"C2"}
+      ],
+      "notes": [
+        "This is Duolingo's course-progress score, not the Duolingo English Test and not an independent proficiency certification.",
+        "Gef may show it as an interoperability reference when a user knows their Duolingo Score, but should not treat course completion as proof of equal ability on every Gef axis.",
+        "As of 2026, Duolingo says its most advanced major courses teach through Score 129 / end of B2 even though the score scale itself extends to 160."
+      ],
+      "sources": [
+        "https://blog.duolingo.com/duolingo-score/",
+        "https://blog.duolingo.com/courses-teach-advanced-content/"
+      ]
+    },
+    {
+      "source_id": "duolingo-english-test-cefr",
+      "framework": "DET",
+      "framework_name": "Duolingo English Test",
+      "version": "0-160 score",
+      "mapping_kind": "validated_test_alignment",
+      "scope": ["english_test_proficiency"],
+      "rows": [
+        {"score_min":60,"score_max":95,"gef_reference":"B1"},
+        {"score_min":100,"score_max":125,"gef_reference":"B2"},
+        {"score_min":130,"score_max":150,"gef_reference":"C1"},
+        {"score_min":155,"score_max":160,"gef_reference":"C2"}
+      ],
+      "notes": [
+        "Keep DET separate from the in-app Duolingo Score even though both use a 160-point range. They are different constructs."
+      ],
+      "sources": ["https://blog.englishtest.duolingo.com/duolingo-test-aligned-with-cefr/"]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
