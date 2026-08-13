@@ -282,10 +282,10 @@
           "prerequisite_part_ids":["PART.multiple_words_for.semantic_map"],
           "core_concept_refs":["lesson-families/multiple-words-for-for/family.json","lessons/es/por-vs-para/lesson.json"],
           "quest":{"status":"required_missing","notes":"Current Spanish lesson has cloze and why-this practice but no reader_quest module."},
-          "default_reading":{"status":"required_missing","notes":"Search found no canonical gef-content por/para coverage binding."},
+          "default_reading":{"status":"required_missing","notes":"Candidate Frog King por/para coverage exists in gef-content, but it has zero human-reviewed occurrences and is not yet an eligible reviewed default reading."},
           "ui_component_refs":[],
           "readiness":{"default":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","components":{"intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lesson-families/multiple-words-for-for/family.json"},"examples":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/es/por-vs-para/lesson.json"},"practice":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/es/por-vs-para/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}},"language_overrides":[{"language":"es","role":"target","readiness":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","notes":"Spanish has the concrete por/para rule implementation; integrity review is still candidate."}}]},
-          "gaps":["Add reader quest.","Bind reviewed default annotated reading and occurrence annotations from gef-content.","Keep candidate until human/research review passes; this is the structural gold standard, not an automatic approval shortcut."]
+          "gaps":["Add reader quest.","Human-review the existing Frog King por/para occurrence coverage, then bind an eligible reviewed default reading.","Keep candidate until human/research review passes; this is the structural gold standard, not an automatic approval shortcut."]
         }
       ],
       "related_lessons_ref":"curriculum/related-lessons.json",
