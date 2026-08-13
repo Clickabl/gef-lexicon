@@ -1,0 +1,75 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.time_of_day",
+  "lesson_key": "time-of-day",
+  "target_language": "mul",
+  "curriculum_concept_ids": ["CURR.DATES_TIME"],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A1",
+  "language_capabilities_manifest": "../../../lesson-families/calendar-year/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "requires_at_least_one_non_anchor_multi_language": false,
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Core teaches the shared ideas of clock time and day-period reference through the reusable temporal UI. Exact spoken/written forms and day-period boundaries are language- and context-owned data; the lesson must not invent universal morning/evening cutoffs."
+  },
+  "rules": [
+    {
+      "rule_id": "RULE.mul.time_of_day.clock_time",
+      "rule_key": "clock-time-reference",
+      "order": 1,
+      "semantic_function_ids": ["SEM.CLOCK_TIME_REFERENCE"],
+      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CLOCK_TIME_REFERENCE"}],
+      "practice_eligible_by_default": true,
+      "notes": "Teach reading, identifying, and asking about clock time. Numeric/analog geometry is universal UI; language-specific phrasing is supplied only from reviewed language data."
+    },
+    {
+      "rule_id": "RULE.mul.time_of_day.day_period",
+      "rule_key": "day-period-reference",
+      "order": 2,
+      "semantic_function_ids": ["SEM.DAY_PERIOD_REFERENCE"],
+      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.DAY_PERIOD_REFERENCE"}],
+      "practice_eligible_by_default": true,
+      "notes": "Compare day-period systems without assuming every language has English-style morning/afternoon/evening/night categories or identical clock boundaries."
+    }
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.mul.time_of_day.catalog","trigger_type":"catalog_topic","notes":"Offer as the first concrete calendar/time lesson."},
+    {"trigger_id":"TRG.mul.time_of_day.clock_occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.CLOCK_TIME_REFERENCE"},{"target_type":"semantic_function","target_id":"SEM.DAY_PERIOD_REFERENCE"}],"notes":"Reviewed corpus occurrences may offer the lesson or a reader quest without interrupting reading."}
+  ],
+  "practice_modules": [
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.time_of_day.clock_time","RULE.mul.time_of_day.day_period"],"constraints":{"ui_surface":"interactive_time_scale","preferred_scale":"time","comparison_only_when_forms_are_unreviewed":true}},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.time_of_day.day_period"],"constraints":{"require_reviewed_context":true,"unique_answer_required":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.time_of_day.clock_time","RULE.mul.time_of_day.day_period"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "presentation": {
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "comparison-intro", "interactive-time-scale", "examples", "practice", "reading", "completion"],
+    "scroll_mode": "render the same canonical blocks in one vertical lesson surface",
+    "pages_mode": "render semantic groups as pages without changing lesson truth",
+    "teacher_presentation_mode": "reuse the same interactive temporal control with classroom-sized controls"
+  },
+  "example_query": {
+    "prefer_current_book": true,
+    "max_book_examples": 6,
+    "spoiler_policy": "current_then_read",
+    "minimum_quality": "usable",
+    "require_reviewed_occurrence": true
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 12,
+    "teacher_quest_default": "optional"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
