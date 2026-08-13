@@ -85,7 +85,7 @@
       "group_id": "GROUP.family",
       "title": "Family and relationships",
       "gold_standard": false,
-      "family_refs": ["lesson-families/family-members/family.json"],
+      "family_refs": ["lesson-families/family-members/family-path.json"],
       "parts": [
         {
           "part_id":"PART.family.members",
@@ -150,7 +150,7 @@
       "group_id":"GROUP.calendar_time",
       "title":"Calendar and time",
       "gold_standard":false,
-      "family_refs":["lesson-families/calendar-year/family.json"],
+      "family_refs":["lesson-families/calendar-year/language-capabilities.json"],
       "parts":[
         {
           "part_id":"PART.calendar_time.time_of_day",
@@ -268,7 +268,7 @@
           "prerequisite_part_ids":[],
           "core_concept_refs":["lesson-families/multiple-words-for-for/family.json"],
           "quest":{"status":"candidate","ref":"lessons/mul/multiple-words-for/lesson.json"},
-          "default_reading":{"status":"required_missing","notes":"No canonical gef-content reading binding was found during this audit."},
+          "default_reading":{"status":"required_missing","notes":"No canonical gef-content default reading binding was found during this audit."},
           "ui_component_refs":[],
           "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"},"tier_overrides":[{"source_tier":"any","target_tier":"tier3_read_games","readiness":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","notes":"Tier 3 may use exported token matching/explanation and reader-quest Core only, never Full grammar instruction."}}]},
           "gaps":["Bind a reviewed default annotated reading in gef-content.","Promote only after machine verification and subsequent release review."]
@@ -282,10 +282,10 @@
           "prerequisite_part_ids":["PART.multiple_words_for.semantic_map"],
           "core_concept_refs":["lesson-families/multiple-words-for-for/family.json","lessons/es/por-vs-para/lesson.json"],
           "quest":{"status":"required_missing","notes":"Current Spanish lesson has cloze and why-this practice but no reader_quest module."},
-          "default_reading":{"status":"required_missing","notes":"Search found no canonical gef-content por/para coverage binding."},
+          "default_reading":{"status":"required_missing","notes":"Candidate Frog King lesson coverage exists in gef-content, but it has zero reviewed occurrences and is not yet a reviewed default reading binding."},
           "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","components":{"intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lesson-families/multiple-words-for-for/family.json"},"examples":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/es/por-vs-para/lesson.json"},"practice":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/es/por-vs-para/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}},"language_overrides":[{"language":"es","role":"target","readiness":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","notes":"Spanish has the concrete por/para rule implementation; integrity review is still candidate."}}]},
-          "gaps":["Add reader quest.","Bind reviewed default annotated reading and occurrence annotations from gef-content.","Keep candidate until human/research review passes; this is the structural gold standard, not an automatic approval shortcut."]
+          "readiness":{"default":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","components":{"intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lesson-families/multiple-words-for-for/family.json"},"examples":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/es/por-vs-para/lesson.json"},"practice":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/es/por-vs-para/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"annotations":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"Clickabl/gef-content/works/frog-king/lesson-coverage/es.json","notes":"Candidate corpus analysis maps five por/para-related rule uses; two are deterministic binary-cloze candidates. Human Spanish review is still required."}}},"language_overrides":[{"language":"es","role":"target","readiness":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","notes":"Spanish has the concrete por/para rule implementation; integrity review is still candidate."}}]},
+          "gaps":["Add reader quest.","Human-review the existing Frog King occurrence coverage, then bind an eligible reviewed default reading.","Keep candidate until human/research review passes; this is the structural gold standard, not an automatic approval shortcut."]
         }
       ],
       "related_lessons_ref":"curriculum/related-lessons.json",
