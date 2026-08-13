@@ -31,16 +31,17 @@
   ],
   "practice_modules": [
     {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.extended.relationship_path"],"constraints":{"source":"family_path.stage_3.core_concepts","relationship_first":true}},
-    {"module":"features_to_form","eligible_rule_ids":["RULE.mul.family.extended.relationship_path","RULE.mul.family.extended.lexical_dimensions"],"constraints":{"prompt_features":["generation","family_side","relative_age","gender","affinity"],"omit_irrelevant_features":true,"require_unique_defensible_answer":true}}
+    {"module":"features_to_form","eligible_rule_ids":["RULE.mul.family.extended.relationship_path","RULE.mul.family.extended.lexical_dimensions"],"constraints":{"prompt_features":["generation","family_side","relative_age","gender","affinity"],"omit_irrelevant_features":true,"require_unique_defensible_answer":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.family.extended.relationship_path","RULE.mul.family.extended.lexical_dimensions","RULE.mul.family.extended.address"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"relationship_path_must_be_resolved":true,"do_not_infer_unstated_kinship_dimensions":true}}
   ],
   "presentation": {
-    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
-    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
-    "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "intro", "terms", "culture", "examples", "practice", "reading", "completion"],
-    "session_depth_filter": {"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
+    "family_path_manifest":"../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis":"../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual":true,
+    "groups":["facts","intro","terms","culture","examples","practice","reading","completion"],
+    "session_depth_filter":{"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
   },
-  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
-  "review_state": "candidate",
-  "version": 1
+  "interaction_defaults":{"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state":"candidate",
+  "version":2
 }
