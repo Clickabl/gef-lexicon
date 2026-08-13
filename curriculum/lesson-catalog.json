@@ -4,13 +4,23 @@
   "projection_role": "compatibility_catalog",
   "universal": [
     {
+      "lesson_id": "LES.mul.meta.where_languages_come_from",
+      "priority": 0,
+      "category": "orientation",
+      "path_scope": "universal",
+      "featured": true,
+      "next_policy": "next_language_path_item",
+      "notes": "Gef Lesson 0. Universal machine-created orientation to language genealogy, contact, writing systems, standards, and the current 104-language learning map. Candidate until human linguistic and translation review; do not infer public release from structural QA.",
+      "review_state": "candidate"
+    },
+    {
       "lesson_id": "LES.mul.meta.international_language_levels",
       "priority": 1,
       "category": "orientation",
       "path_scope": "universal",
       "featured": true,
       "next_policy": "next_language_path_item",
-      "notes": "First ordinary Gef lesson. It teaches the level system used by books, learner profiles, placement, and future Gefstimates. Priority 0 is reserved for a future prerequisite-level orientation such as 'What is a language?' if Gef ever authors one; do not invent a placeholder lesson merely to fill zero.",
+      "notes": "Second Gef orientation lesson, after Lesson 0. It teaches the level system used by books, learner profiles, placement, and future Gefstimates.",
       "review_state": "approved"
     },
     {
@@ -155,5 +165,5 @@
     "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible compatibility-catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 6
+  "version": 7
 }
