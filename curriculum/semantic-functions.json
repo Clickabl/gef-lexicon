@@ -28,6 +28,10 @@
     {"semantic_function_id":"SEM.TIME_DATE_PREDICATION","key":"time_date_predication","family":"being_time","description":"stating clock time, day, date, season, or another calendrical/temporal identification with a copular or equivalent construction","review_state":"candidate"},
     {"semantic_function_id":"SEM.ORIGIN_AFFILIATION","key":"origin_affiliation","family":"being_relation","description":"stating origin, nationality, provenance, membership, affiliation, or belonging","review_state":"candidate"},
     {"semantic_function_id":"SEM.MATERIAL_COMPOSITION","key":"material_composition","family":"being_relation","description":"stating the material, composition, substance, or constituent type of something","review_state":"candidate"},
-    {"semantic_function_id":"SEM.POSSESSION_AS_EXISTENCE","key":"possession_as_existence","family":"being_existence","description":"expressing possession through an existential or locative structure rather than a dedicated have-type predicate","review_state":"candidate"}
+    {"semantic_function_id":"SEM.POSSESSION_AS_EXISTENCE","key":"possession_as_existence","family":"being_existence","description":"expressing possession through an existential or locative structure rather than a dedicated have-type predicate","review_state":"candidate"},
+
+    {"semantic_function_id":"SEM.CLOCK_TIME_REFERENCE","key":"clock_time_reference","family":"time_reference","description":"identifying or asking for a clock time, independently of whether a language uses a copula, zero predication, particles, or another construction","review_state":"candidate"},
+    {"semantic_function_id":"SEM.DAY_PERIOD_REFERENCE","key":"day_period_reference","family":"time_reference","description":"referring to a culturally and contextually interpreted part of the day such as morning, afternoon, evening, or night without imposing one universal boundary system","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CALENDAR_YEAR_REFERENCE","key":"calendar_year_reference","family":"calendar_reference","description":"identifying or referring to a calendar year, including language- and calendar-specific year-reading conventions when explicitly supplied by context","review_state":"candidate"}
   ]
 }
