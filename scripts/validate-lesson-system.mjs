@@ -24,6 +24,10 @@ function walkJsonFiles(relativeDir) {
   return results;
 }
 
+function canonicalLessonDefinitionFiles() {
+  return walkJsonFiles('lessons').filter((relativePath) => path.basename(relativePath) === 'lesson.json');
+}
+
 function sameArray(left, right) {
   return Array.isArray(left) && Array.isArray(right) && left.length === right.length && left.every((value, index) => value === right[index]);
 }
@@ -126,11 +130,13 @@ for (const group of manifest.lesson_groups) {
 }
 
 const pathItemIds = new Set();
+const pathPartRefs = new Set();
 for (const item of learningPath.default_items) {
   if (pathItemIds.has(item.item_id)) errors.push(`Duplicate default path item id: ${item.item_id}`);
   pathItemIds.add(item.item_id);
-  if (item.kind === 'lesson_part' && !partIds.has(item.ref)) {
-    errors.push(`${item.item_id} references unknown lesson part ${item.ref}`);
+  if (item.kind === 'lesson_part') {
+    pathPartRefs.add(item.ref);
+    if (!partIds.has(item.ref)) errors.push(`${item.item_id} references unknown lesson part ${item.ref}`);
   }
   for (const prerequisite of item.prerequisite_refs ?? []) {
     if (!partIds.has(prerequisite)) errors.push(`${item.item_id} references unknown prerequisite ${prerequisite}`);
@@ -140,12 +146,21 @@ for (const item of learningPath.default_items) {
 for (const languageOverride of learningPath.language_overrides) {
   for (const operation of languageOverride.operations) {
     const inserted = operation.item ?? operation.replacement_item;
-    if (inserted?.kind === 'lesson_part' && !partIds.has(inserted.ref)) {
-      errors.push(`Learning-path override ${languageOverride.language}/${operation.item_id} references unknown lesson part ${inserted.ref}`);
+    if (inserted?.kind === 'lesson_part') {
+      pathPartRefs.add(inserted.ref);
+      if (!partIds.has(inserted.ref)) {
+        errors.push(`Learning-path override ${languageOverride.language}/${operation.item_id} references unknown lesson part ${inserted.ref}`);
+      }
     }
     if (operation.relative_to_item_id && !pathItemIds.has(operation.relative_to_item_id)) {
       errors.push(`Learning-path override ${languageOverride.language}/${operation.item_id} references unknown relative item ${operation.relative_to_item_id}`);
     }
+  }
+}
+
+for (const partId of partIds) {
+  if (!pathPartRefs.has(partId)) {
+    errors.push(`Lesson part ${partId} is missing from the default learning path and all language overrides`);
   }
 }
 
@@ -156,7 +171,7 @@ for (const edge of related.edges) {
 }
 
 const actualLessonIds = new Map();
-for (const relativePath of walkJsonFiles('lessons')) {
+for (const relativePath of canonicalLessonDefinitionFiles()) {
   let lesson;
   try {
     lesson = readJson(relativePath);
@@ -164,7 +179,10 @@ for (const relativePath of walkJsonFiles('lessons')) {
     errors.push(`Could not parse ${relativePath}: ${error.message}`);
     continue;
   }
-  if (!lesson.lesson_id) continue;
+  if (!lesson.lesson_id) {
+    errors.push(`Canonical lesson definition ${relativePath} is missing lesson_id`);
+    continue;
+  }
   if (actualLessonIds.has(lesson.lesson_id)) {
     errors.push(`Duplicate lesson_id ${lesson.lesson_id} in ${actualLessonIds.get(lesson.lesson_id)} and ${relativePath}`);
   } else {
@@ -205,4 +223,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Universal lesson SSOT valid: ${groupIds.size} groups, ${partIds.size} parts, ${actualLessonIds.size} lesson definitions indexed with bidirectional manifest parity.`);
+console.log(`Universal lesson SSOT valid: ${groupIds.size} groups, ${partIds.size} parts, ${actualLessonIds.size} canonical lesson definitions indexed with bidirectional manifest and learning-path parity.`);
