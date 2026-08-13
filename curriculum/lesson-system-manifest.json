@@ -47,101 +47,43 @@
   },
   "lesson_groups": [
     {
-      "group_id": "GROUP.meta.language_levels",
-      "title": "International language levels",
-      "gold_standard": false,
-      "family_refs": [],
-      "parts": [
-        {
-          "part_id": "PART.meta.language_levels.orientation",
-          "title": "How international language levels work",
-          "implementation_lesson_ids": ["LES.mul.meta.international_language_levels"],
-          "implementation_status": "implemented",
-          "cefr": {"default":"mixed","notes":"Orientation spans the full proficiency scale rather than teaching at one language-production level."},
-          "prerequisite_part_ids": [],
-          "core_concept_refs": ["proficiency/frameworks.json","proficiency/gef-scale.json"],
-          "quest": {"status":"not_applicable","notes":"This meta orientation intentionally has no reader quest."},
-          "default_reading": {"status":"not_applicable","notes":"This is a product-orientation lesson rather than a corpus-anchored language lesson."},
-          "ui_component_refs": [],
-          "readiness": {
-            "default": {
-              "available_tier":"full",
-              "release_stage":"machine_verified",
-              "review_state":"approved",
-              "components": {
-                "lexicon_concepts":{"release_stage":"machine_verified","review_state":"approved","status":"ready","source_ref":"proficiency/frameworks.json"},
-                "cefr_target":{"release_stage":"machine_verified","review_state":"approved","status":"ready","source_ref":"lessons/mul/international-language-levels/lesson.json"},
-                "learning_path":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"curriculum/learning-path-template.json"}
-              },
-              "notes":"Approved integrity state is preserved; general-public/education release is not inferred without an explicit release decision."
-            }
-          },
-          "gaps": ["Explicit release-stage promotion decision remains separate from integrity approval."]
-        }
-      ],
-      "related_lessons_ref": "curriculum/related-lessons.json"
+      "group_id":"GROUP.meta.language_levels",
+      "title":"International language levels",
+      "gold_standard":false,
+      "family_refs":[],
+      "parts":[{
+        "part_id":"PART.meta.language_levels.orientation",
+        "title":"How international language levels work",
+        "implementation_lesson_ids":["LES.mul.meta.international_language_levels"],
+        "implementation_status":"implemented",
+        "cefr":{"default":"mixed","notes":"Orientation spans the full proficiency scale rather than teaching at one language-production level."},
+        "prerequisite_part_ids":[],
+        "core_concept_refs":["proficiency/frameworks.json","proficiency/gef-scale.json"],
+        "quest":{"status":"not_applicable","notes":"This meta orientation intentionally has no reader quest."},
+        "default_reading":{"status":"not_applicable","notes":"This is a product-orientation lesson rather than a corpus-anchored language lesson."},
+        "ui_component_refs":[],
+        "readiness":{"default":{"available_tier":"full","release_stage":"machine_verified","review_state":"approved","components":{"lexicon_concepts":{"release_stage":"machine_verified","review_state":"approved","status":"ready","source_ref":"proficiency/frameworks.json"},"cefr_target":{"release_stage":"machine_verified","review_state":"approved","status":"ready","source_ref":"lessons/mul/international-language-levels/lesson.json"},"learning_path":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"curriculum/learning-path-template.json"}},"notes":"Approved integrity state is preserved; general-public/education release is not inferred without an explicit release decision."}},
+        "gaps":["Explicit release-stage promotion decision remains separate from integrity approval."]
+      }],
+      "related_lessons_ref":"curriculum/related-lessons.json"
     },
     {
-      "group_id": "GROUP.family",
-      "title": "Family and relationships",
-      "gold_standard": false,
-      "family_refs": ["lesson-families/family-members/family-path.json"],
-      "parts": [
+      "group_id":"GROUP.family",
+      "title":"Family and relationships",
+      "gold_standard":false,
+      "family_refs":["lesson-families/family-members/family-path.json"],
+      "parts":[
         {
-          "part_id":"PART.family.members",
-          "title":"Family members",
-          "implementation_lesson_ids":["LES.mul.vocab.family_members"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":["lesson-families/family-members/game-vocabulary/manifest.json","lesson-families/family-members/language-capabilities.json"],
-          "quest":{"status":"required_missing","notes":"Teacher quest policy exists, but no canonical reader quest binding is present in the lesson definition."},
-          "default_reading":{"status":"required_missing","notes":"gef-content must bind a reviewed default annotated reading."},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"lexicon_concepts":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lesson-families/family-members/game-vocabulary/manifest.json"},"game":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/mul/family-members/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"annotations":{"release_stage":"machine_created","review_state":"candidate","status":"partial"}}},"tier_overrides":[{"source_tier":"any","target_tier":"tier3_read_games","readiness":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","notes":"Recognition-safe 14-concept game core exists; this is not Full grammar/culture support."}}]},
-          "gaps":["Bind a quest.","Bind a default annotated reading.","Prove all canonical concept coverage across the derived learn-from language set before claiming all-language Core."]
+          "part_id":"PART.family.members","title":"Family members","implementation_lesson_ids":["LES.mul.vocab.family_members"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["lesson-families/family-members/game-vocabulary/manifest.json","lesson-families/family-members/language-capabilities.json"],"quest":{"status":"required_missing","notes":"Teacher quest policy exists, but no canonical reader quest binding is present in the lesson definition."},"default_reading":{"status":"required_missing","notes":"gef-content must bind a reviewed default annotated reading."},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"lexicon_concepts":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lesson-families/family-members/game-vocabulary/manifest.json"},"game":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/mul/family-members/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"annotations":{"release_stage":"machine_created","review_state":"candidate","status":"partial"}}},"tier_overrides":[{"source_tier":"any","target_tier":"tier3_read_games","readiness":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","notes":"Recognition-safe 14-concept game core exists; this is not Full grammar/culture support."}}]},"gaps":["Bind a quest.","Bind a default annotated reading.","Prove all canonical concept coverage across the derived learn-from language set before claiming all-language Core."]
         },
         {
-          "part_id":"PART.family.describe",
-          "title":"Describe your family",
-          "implementation_lesson_ids":["LES.mul.vocab.describe_family"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":["PART.family.members"],
-          "core_concept_refs":["lesson-families/family-members/family-path.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Quest missing.","Default annotated reading missing.","All-language Core concept coverage must be proven."]
+          "part_id":"PART.family.describe","title":"Describe your family","implementation_lesson_ids":["LES.mul.vocab.describe_family"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":["PART.family.members"],"core_concept_refs":["lesson-families/family-members/family-path.json"],"quest":{"status":"required_missing"},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Quest missing.","Default annotated reading missing.","All-language Core concept coverage must be proven."]
         },
         {
-          "part_id":"PART.family.extended",
-          "title":"Extended family",
-          "implementation_lesson_ids":["LES.mul.vocab.extended_family"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1","notes":"Language-specific overrides may move this substantially later when kinship systems require more distinctions; no override is invented without research."},
-          "prerequisite_part_ids":["PART.family.describe"],
-          "core_concept_refs":["lesson-families/family-members/family-path.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Quest missing.","Default annotated reading missing.","Language-specific CEFR/path overrides require research."]
+          "part_id":"PART.family.extended","title":"Extended family","implementation_lesson_ids":["LES.mul.vocab.extended_family"],"implementation_status":"implemented","cefr":{"default":"A1","notes":"Language-specific overrides may move this substantially later when kinship systems require more distinctions; no override is invented without research."},"prerequisite_part_ids":["PART.family.describe"],"core_concept_refs":["lesson-families/family-members/family-path.json"],"quest":{"status":"required_missing"},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Quest missing.","Default annotated reading missing.","Language-specific CEFR/path overrides require research."]
         },
         {
-          "part_id":"PART.family.relationships",
-          "title":"Relationships and family life",
-          "implementation_lesson_ids":["LES.mul.vocab.relationships_family_life"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A2"},
-          "prerequisite_part_ids":["PART.family.extended"],
-          "core_concept_refs":["lesson-families/family-members/family-path.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Quest missing.","Default annotated reading missing."]
+          "part_id":"PART.family.relationships","title":"Relationships and family life","implementation_lesson_ids":["LES.mul.vocab.relationships_family_life"],"implementation_status":"implemented","cefr":{"default":"A2"},"prerequisite_part_ids":["PART.family.extended"],"core_concept_refs":["lesson-families/family-members/family-path.json"],"quest":{"status":"required_missing"},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Quest missing.","Default annotated reading missing."]
         }
       ],
       "related_lessons_ref":"curriculum/related-lessons.json"
@@ -153,105 +95,25 @@
       "family_refs":["lesson-families/days-of-the-week/family.json","lesson-families/months-of-the-year/family.json","lesson-families/seasons-of-the-year/family.json"],
       "parts":[
         {
-          "part_id":"PART.calendar_time.time_of_day",
-          "title":"Time of day",
-          "implementation_lesson_ids":[],
-          "implementation_status":"planned",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":[],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"none","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Lesson implementation missing.","Canonical time-of-day concept set missing.","Quest missing.","Default annotated reading missing."]
+          "part_id":"PART.calendar_time.time_of_day","title":"Time of day","implementation_lesson_ids":["LES.mul.time.time_of_day"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["curriculum/semantic-functions.json","lessons/mul/time-of-day/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/time-of-day/lesson.json","notes":"Reader-quest execution is defined; a reviewed corpus occurrence binding is still required."},"default_reading":{"status":"required_missing"},"ui_component_refs":["Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"lexicon_concepts":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"curriculum/semantic-functions.json"},"ui_interactions":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/time-of-day/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},"gaps":["Bind reviewed clock/day-period corpus occurrences and a default annotated reading.","Full language-specific clock/day-period phrasing remains subject to language-data review; Core must not invent universal day-period boundaries."]
         },
         {
-          "part_id":"PART.calendar_time.days_of_week",
-          "title":"Days of the week",
-          "implementation_lesson_ids":["LES.mul.time.days_of_week"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":["knowledge-sets/days-of-week.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Quest missing.","Default annotated reading missing.","Verify all-language concept realization coverage."]
+          "part_id":"PART.calendar_time.days_of_week","title":"Days of the week","implementation_lesson_ids":["LES.mul.time.days_of_week"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["knowledge-sets/days-of-week.json"],"quest":{"status":"candidate","ref":"lessons/mul/days-of-the-week/lesson.json","notes":"Reader-quest primitive now exists; reviewed occurrence binding is still required."},"default_reading":{"status":"required_missing"},"ui_component_refs":["Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"ui_interactions":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/days-of-the-week/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},"gaps":["Bind reviewed weekday occurrences and a default annotated reading.","Verify all-language concept realization coverage before all-language Core promotion."]
         },
         {
-          "part_id":"PART.calendar_time.months_and_years",
-          "title":"Months and years",
-          "implementation_lesson_ids":["LES.mul.time.months_of_year"],
-          "implementation_status":"partial",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":["knowledge-sets/months-of-year.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Years portion is not implemented by the current months lesson.","Quest missing.","Default annotated reading missing."]
+          "part_id":"PART.calendar_time.months_and_years","title":"Months and years","implementation_lesson_ids":["LES.mul.time.months_of_year","LES.mul.time.calendar_years"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["knowledge-sets/months-of-year.json","curriculum/semantic-functions.json","lessons/mul/calendar-years/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/calendar-years/lesson.json","notes":"Both month and year implementations expose reader-quest hooks; reviewed occurrence bindings are still required."},"default_reading":{"status":"required_missing"},"ui_component_refs":["Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"ui_interactions":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/calendar-years/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},"gaps":["Bind reviewed month/year/date occurrences and a default annotated reading.","Language-specific spoken year conventions and calendar/era systems remain review-gated Full content."]
         },
         {
-          "part_id":"PART.calendar_time.seasons",
-          "title":"Seasons",
-          "implementation_lesson_ids":["LES.mul.time.seasons"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1"},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":["knowledge-sets/seasons.json"],
-          "quest":{"status":"required_missing"},
-          "default_reading":{"status":"required_missing"},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-          "gaps":["Quest missing.","Default annotated reading missing.","Season-system context must remain climate/hemisphere aware rather than inferred from language alone."]
+          "part_id":"PART.calendar_time.seasons","title":"Seasons","implementation_lesson_ids":["LES.mul.time.seasons"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["knowledge-sets/seasons.json"],"quest":{"status":"candidate","ref":"lessons/mul/seasons/lesson.json","notes":"Reader-quest primitive now exists; reviewed occurrence binding is still required."},"default_reading":{"status":"required_missing"},"ui_component_refs":["Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"ui_interactions":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"Clickabl/gef-expo/src/core/components/practice-elements/temporal/InteractiveTimeScale.tsx"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/seasons/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},"gaps":["Bind reviewed season occurrences and a default annotated reading.","Verify all-language concept coverage; season context must remain climate/hemisphere aware rather than inferred from language alone."]
         }
       ],
       "related_lessons_ref":"curriculum/related-lessons.json"
     },
     {
-      "group_id":"GROUP.grammatical_gender",
-      "title":"Grammatical gender",
-      "gold_standard":false,
-      "family_refs":["lesson-families/grammatical-gender/family.json"],
-      "parts":[{
-        "part_id":"PART.grammatical_gender.core",
-        "title":"Grammatical gender systems",
-        "implementation_lesson_ids":["LES.mul.grammar.grammatical_gender"],
-        "implementation_status":"implemented",
-        "cefr":{"default":"A1"},
-        "prerequisite_part_ids":[],
-        "core_concept_refs":["lesson-families/grammatical-gender/language-capabilities.json"],
-        "quest":{"status":"candidate","ref":"lessons/mul/grammatical-gender/lesson.json","notes":"reader_quest practice module exists; corpus binding still required."},
-        "default_reading":{"status":"required_missing"},
-        "ui_component_refs":[],
-        "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/grammatical-gender/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},
-        "gaps":["Default annotated reading missing.","All-language Core concept coverage requires proof; Full target eligibility follows the language registry."]
-      }],
-      "related_lessons_ref":"curriculum/related-lessons.json"
+      "group_id":"GROUP.grammatical_gender","title":"Grammatical gender","gold_standard":false,"family_refs":["lesson-families/grammatical-gender/family.json"],"parts":[{"part_id":"PART.grammatical_gender.core","title":"Grammatical gender systems","implementation_lesson_ids":["LES.mul.grammar.grammatical_gender"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["lesson-families/grammatical-gender/language-capabilities.json"],"quest":{"status":"candidate","ref":"lessons/mul/grammatical-gender/lesson.json","notes":"reader_quest practice module exists; corpus binding still required."},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","components":{"quest":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/mul/grammatical-gender/lesson.json"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}}},"gaps":["Default annotated reading missing.","All-language Core concept coverage requires proof; Full target eligibility follows the language registry."]}],"related_lessons_ref":"curriculum/related-lessons.json"
     },
     {
-      "group_id":"GROUP.grammatical_number",
-      "title":"Grammatical number",
-      "gold_standard":false,
-      "family_refs":["lesson-families/grammatical-number-systems/family.json"],
-      "parts":[{
-        "part_id":"PART.grammatical_number.core",
-        "title":"Grammatical number systems",
-        "implementation_lesson_ids":["LES.mul.noun.grammatical_number"],
-        "implementation_status":"implemented",
-        "cefr":{"default":"A2"},
-        "prerequisite_part_ids":[],
-        "core_concept_refs":["lesson-families/grammatical-number-systems/language-capabilities.json"],
-        "quest":{"status":"candidate","ref":"lessons/mul/grammatical-number/lesson.json"},
-        "default_reading":{"status":"required_missing"},
-        "ui_component_refs":[],
-        "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-        "gaps":["Default annotated reading missing.","Full target eligibility follows the language registry."]
-      }],
-      "related_lessons_ref":"curriculum/related-lessons.json"
+      "group_id":"GROUP.grammatical_number","title":"Grammatical number","gold_standard":false,"family_refs":["lesson-families/grammatical-number-systems/family.json"],"parts":[{"part_id":"PART.grammatical_number.core","title":"Grammatical number systems","implementation_lesson_ids":["LES.mul.noun.grammatical_number"],"implementation_status":"implemented","cefr":{"default":"A2"},"prerequisite_part_ids":[],"core_concept_refs":["lesson-families/grammatical-number-systems/language-capabilities.json"],"quest":{"status":"candidate","ref":"lessons/mul/grammatical-number/lesson.json"},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Default annotated reading missing.","Full target eligibility follows the language registry."]}],"related_lessons_ref":"curriculum/related-lessons.json"
     },
     {
       "group_id":"GROUP.multiple_words_for",
@@ -259,81 +121,31 @@
       "gold_standard":true,
       "family_refs":["lesson-families/multiple-words-for-for/family.json"],
       "parts":[
-        {
-          "part_id":"PART.multiple_words_for.semantic_map",
-          "title":"Why one meaning can split across multiple forms",
-          "implementation_lesson_ids":["LES.mul.prep.multiple_for"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A1","notes":"Comparison/orientation layer; target-language production may require a later CEFR override."},
-          "prerequisite_part_ids":[],
-          "core_concept_refs":["lesson-families/multiple-words-for-for/family.json"],
-          "quest":{"status":"candidate","ref":"lessons/mul/multiple-words-for/lesson.json"},
-          "default_reading":{"status":"required_missing","notes":"No canonical gef-content reading binding was found during this audit."},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"},"tier_overrides":[{"source_tier":"any","target_tier":"tier3_read_games","readiness":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","notes":"Tier 3 may use exported token matching/explanation and reader-quest Core only, never Full grammar instruction."}}]},
-          "gaps":["Bind a reviewed default annotated reading in gef-content.","Promote only after machine verification and subsequent release review."]
-        },
-        {
-          "part_id":"PART.multiple_words_for.spanish_por_para",
-          "title":"Spanish por and para",
-          "implementation_lesson_ids":["LES.es.prep.por_para.core"],
-          "implementation_status":"implemented",
-          "cefr":{"default":"A2"},
-          "prerequisite_part_ids":["PART.multiple_words_for.semantic_map"],
-          "core_concept_refs":["lesson-families/multiple-words-for-for/family.json","lessons/es/por-vs-para/lesson.json"],
-          "quest":{"status":"required_missing","notes":"Current Spanish lesson has cloze and why-this practice but no reader_quest module."},
-          "default_reading":{"status":"required_missing","notes":"Candidate Frog King por/para coverage exists in gef-content, but it has zero human-reviewed occurrences and is not yet an eligible reviewed default reading."},
-          "ui_component_refs":[],
-          "readiness":{"default":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","components":{"intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lesson-families/multiple-words-for-for/family.json"},"examples":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/es/por-vs-para/lesson.json"},"practice":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/es/por-vs-para/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}},"language_overrides":[{"language":"es","role":"target","readiness":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","notes":"Spanish has the concrete por/para rule implementation; integrity review is still candidate."}}]},
-          "gaps":["Add reader quest.","Human-review the existing Frog King por/para occurrence coverage, then bind an eligible reviewed default reading.","Keep candidate until human/research review passes; this is the structural gold standard, not an automatic approval shortcut."]
-        }
+        {"part_id":"PART.multiple_words_for.semantic_map","title":"Why one meaning can split across multiple forms","implementation_lesson_ids":["LES.mul.prep.multiple_for"],"implementation_status":"implemented","cefr":{"default":"A1","notes":"Comparison/orientation layer; target-language production may require a later CEFR override."},"prerequisite_part_ids":[],"core_concept_refs":["lesson-families/multiple-words-for-for/family.json"],"quest":{"status":"candidate","ref":"lessons/mul/multiple-words-for/lesson.json"},"default_reading":{"status":"required_missing","notes":"No canonical reviewed gef-content reading binding is currently eligible."},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"},"tier_overrides":[{"source_tier":"any","target_tier":"tier3_read_games","readiness":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate","notes":"Tier 3 may use exported token matching/explanation and reader-quest Core only, never Full grammar instruction."}}]},"gaps":["Bind a reviewed default annotated reading in gef-content.","Promote only after machine verification and subsequent release review."]},
+        {"part_id":"PART.multiple_words_for.spanish_por_para","title":"Spanish por and para","implementation_lesson_ids":["LES.es.prep.por_para.core"],"implementation_status":"implemented","cefr":{"default":"A2"},"prerequisite_part_ids":["PART.multiple_words_for.semantic_map"],"core_concept_refs":["lesson-families/multiple-words-for-for/family.json","lessons/es/por-vs-para/lesson.json"],"quest":{"status":"required_missing","notes":"The current main Spanish lesson still needs the reviewed Hansel/reader-quest work reconciled from the existing corpus-evidence branches."},"default_reading":{"status":"required_missing","notes":"Hansel & Gretel exists in gef-content and has candidate por/para annotation work, but review gates must pass before it becomes the canonical default."},"ui_component_refs":[],"readiness":{"default":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","components":{"intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lesson-families/multiple-words-for-for/family.json"},"examples":{"release_stage":"machine_created","review_state":"candidate","status":"partial","source_ref":"lessons/es/por-vs-para/lesson.json"},"practice":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/es/por-vs-para/lesson.json"},"quest":{"release_stage":"machine_created","review_state":"candidate","status":"missing"},"default_reading":{"release_stage":"machine_created","review_state":"candidate","status":"missing"}}},"language_overrides":[{"language":"es","role":"target","readiness":{"available_tier":"full","release_stage":"machine_created","review_state":"candidate","notes":"Spanish has the concrete por/para rule implementation; integrity review is still candidate."}}]},"gaps":["Reconcile the existing Hansel por/para reader-quest/annotation work onto current main.","Human/research review the occurrence evidence before default-reading promotion.","Keep candidate until review passes; structural gold standard is not an approval shortcut."]}
       ],
       "related_lessons_ref":"curriculum/related-lessons.json",
-      "notes":"Gold-standard reference for architecture, generic comparison blurbs, support-anchor injection, rules, examples, practice, and future annotated-reader linkage. Gold-standard means implementation pattern, not review-state promotion."
+      "notes":"Gold-standard reference for architecture, generic comparison blurbs, support-anchor injection, rules, examples, practice, and annotated-reader linkage. Gold-standard means implementation pattern, not review-state promotion."
     },
     {
       "group_id":"GROUP.being",
       "title":"To be or not to be",
       "gold_standard":false,
       "family_refs":[],
-      "parts":[{
-        "part_id":"PART.being.core",
-        "title":"Being, identity, state, location, and existence",
-        "implementation_lesson_ids":["LES.mul.grammar.being"],
-        "implementation_status":"implemented",
-        "cefr":{"default":"mixed"},
-        "prerequisite_part_ids":[],
-        "core_concept_refs":["lessons/mul/to-be-or-not-to-be/lesson.json"],
-        "quest":{"status":"required_missing"},
-        "default_reading":{"status":"required_missing"},
-        "ui_component_refs":[],
-        "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-        "gaps":["Split mixed semantic functions into CEFR-appropriate parts before calling this a polished sequential lesson.","Quest missing.","Default annotated reading missing."]
-      }],
-      "related_lessons_ref":"curriculum/related-lessons.json"
+      "parts":[
+        {"part_id":"PART.being.overview","title":"Being across languages: semantic overview","implementation_lesson_ids":["LES.mul.grammar.being"],"implementation_status":"implemented","cefr":{"default":"mixed","notes":"Optional comparison/orientation map, not scored sequential practice."},"prerequisite_part_ids":[],"core_concept_refs":["lessons/mul/to-be-or-not-to-be/lesson.json","lessons/mul/to-be-or-not-to-be/concept-labels.json"],"quest":{"status":"not_applicable","notes":"The overview is intentionally comparison-only; reader quests attach to the CEFR-bounded parts."},"default_reading":{"status":"not_applicable","notes":"The overview is not a corpus-anchored ordinary lesson."},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Machine-authored concept labels still require language review before higher trust/release promotion."]},
+        {"part_id":"PART.being.identity_classification","title":"Identity, classification, and properties","implementation_lesson_ids":["LES.mul.grammar.being.identity_classification"],"implementation_status":"implemented","cefr":{"default":"A1"},"prerequisite_part_ids":[],"core_concept_refs":["lessons/mul/to-be-or-not-to-be/concept-labels.json","lessons/mul/being-identity-classification/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/being-identity-classification/lesson.json","notes":"Reader-quest primitive exists; corpus binding remains required."},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Bind reviewed corpus occurrences/default reading.","Language-specific Full rules/examples remain review-gated."]},
+        {"part_id":"PART.being.states_location","title":"States and location","implementation_lesson_ids":["LES.mul.grammar.being.states_location"],"implementation_status":"implemented","cefr":{"default":"A2"},"prerequisite_part_ids":["PART.being.identity_classification"],"core_concept_refs":["lessons/mul/to-be-or-not-to-be/concept-labels.json","lessons/mul/being-states-location/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/being-states-location/lesson.json","notes":"Reader-quest primitive exists; corpus binding remains required."},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Bind reviewed corpus occurrences/default reading.","Target-language distinctions such as entity versus event location must be reviewed rather than inferred."]},
+        {"part_id":"PART.being.existence","title":"Existence, absence, and existential possession","implementation_lesson_ids":["LES.mul.grammar.being.existence"],"implementation_status":"implemented","cefr":{"default":"A2"},"prerequisite_part_ids":["PART.being.states_location"],"core_concept_refs":["lessons/mul/to-be-or-not-to-be/concept-labels.json","lessons/mul/being-existence/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/being-existence/lesson.json","notes":"Reader-quest primitive exists; corpus binding remains required."},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Bind reviewed corpus occurrences/default reading.","Possession-as-existence is conditional and must never be projected onto languages that do not license it."]},
+        {"part_id":"PART.being.extended_predication","title":"Time/date, origin, and material predication","implementation_lesson_ids":["LES.mul.grammar.being.extended_predication"],"implementation_status":"implemented","cefr":{"default":"A2","notes":"Later/optional per target language; language-specific path overrides may move or omit it."},"prerequisite_part_ids":["PART.being.existence"],"core_concept_refs":["lessons/mul/to-be-or-not-to-be/concept-labels.json","lessons/mul/being-extended-predication/lesson.json"],"quest":{"status":"candidate","ref":"lessons/mul/being-extended-predication/lesson.json","notes":"Reader-quest primitive exists; corpus binding remains required."},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Bind reviewed corpus occurrences/default reading.","Only expose language-specific extended patterns when research says they belong in the target language's Being system."]}
+      ],
+      "related_lessons_ref":"curriculum/related-lessons.json",
+      "notes":"The legacy LES.mul.grammar.being remains a stable semantic overview for backward compatibility. Sequential practice is owned by the four CEFR-bounded implementations."
     },
     {
-      "group_id":"GROUP.names",
-      "title":"Names around the world",
-      "gold_standard":false,
-      "family_refs":[],
-      "parts":[{
-        "part_id":"PART.names.around_world",
-        "title":"Names, transliteration, equivalents, and naming practices",
-        "implementation_lesson_ids":["LES.mul.names.around_world"],
-        "implementation_status":"implemented",
-        "cefr":{"default":"mixed"},
-        "prerequisite_part_ids":[],
-        "core_concept_refs":["lessons/mul/names-around-world/lesson.json"],
-        "quest":{"status":"required_missing"},
-        "default_reading":{"status":"required_missing"},
-        "ui_component_refs":[],
-        "readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},
-        "gaps":["Quest missing.","Default annotated reading missing.","Culture-note sourcing must remain explicit per community/language rather than generalized."]
-      }],
-      "related_lessons_ref":"curriculum/related-lessons.json"
+      "group_id":"GROUP.names","title":"Names around the world","gold_standard":false,"family_refs":[],"parts":[{"part_id":"PART.names.around_world","title":"Names, transliteration, equivalents, and naming practices","implementation_lesson_ids":["LES.mul.names.around_world"],"implementation_status":"implemented","cefr":{"default":"mixed"},"prerequisite_part_ids":[],"core_concept_refs":["lessons/mul/names-around-world/lesson.json"],"quest":{"status":"required_missing"},"default_reading":{"status":"required_missing"},"ui_component_refs":[],"readiness":{"default":{"available_tier":"core","release_stage":"machine_created","review_state":"candidate"}},"gaps":["Quest missing.","Default annotated reading missing.","Culture-note sourcing must remain explicit per community/language rather than generalized."]}],"related_lessons_ref":"curriculum/related-lessons.json"
     }
   ],
   "review_state":"candidate",
-  "version":1
+  "version":2
 }
