@@ -3,123 +3,30 @@
   "lesson_id": "LES.mul.names.around_world",
   "lesson_key": "names-around-the-world",
   "target_language": "mul",
-  "curriculum_concept_ids": [
-    "CURR.NAMES_PERSONAL_IDENTITY",
-    "CURR.NAME_FAMILIES_EQUIVALENTS",
-    "CURR.NAME_TRANSLITERATION_ADAPTATION",
-    "CURR.NAMING_PRACTICES"
-  ],
+  "curriculum_concept_ids": ["CURR.NAMES_PERSONAL_IDENTITY","CURR.NAME_FAMILIES_EQUIVALENTS","CURR.NAME_TRANSLITERATION_ADAPTATION","CURR.NAMING_PRACTICES"],
   "construction_ids": [],
   "prerequisite_lesson_ids": [],
   "difficulty_band": "mixed",
   "rules": [
-    {
-      "rule_id": "RULE.mul.names.same_person_not_same_form",
-      "rule_key": "same-person-name-can-change-form",
-      "order": 1,
-      "match_refs": [
-        {"target_type": "name_family", "target_id": "NF.alexander"}
-      ],
-      "practice_eligible_by_default": true,
-      "notes": "A person's identity is not replaced by a name form. A book or user profile may deliberately choose a reviewed local equivalent, adaptation, or transliteration."
-    },
-    {
-      "rule_id": "RULE.mul.names.transliteration_vs_equivalent",
-      "rule_key": "transliteration-vs-local-equivalent",
-      "order": 2,
-      "match_refs": [
-        {"target_type": "name_family", "target_id": "NF.alexander"}
-      ],
-      "practice_eligible_by_default": true,
-      "notes": "Teach the distinction between preserving a name in another script/sound system and choosing a historically related local equivalent."
-    },
-    {
-      "rule_id": "RULE.mul.names.related_not_identical",
-      "rule_key": "related-names-are-not-identical-people",
-      "order": 3,
-      "match_refs": [
-        {"target_type": "name_family", "target_id": "NF.alexander"}
-      ],
-      "practice_eligible_by_default": true,
-      "notes": "George/Jorge-style relationships can reveal shared name history without claiming every culturally related form is interchangeable in every context."
-    },
-    {
-      "rule_id": "RULE.mul.names.community_practices",
-      "rule_key": "communities-have-different-name-practices",
-      "order": 4,
-      "match_refs": [],
-      "practice_eligible_by_default": false,
-      "notes": "Culture notes may include reviewed examples such as Chinese adaptation/transliteration strategies and Deaf-community name-sign practices. These require sourced cultural notes, not generalization from one language to another."
-    },
-    {
-      "rule_id": "RULE.mul.names.your_name",
-      "rule_key": "explore-your-own-name",
-      "order": 5,
-      "match_refs": [],
-      "practice_eligible_by_default": true,
-      "notes": "If the learner supplies a name, search the reviewed name database. Unknown names remain usable as entered and create a research request rather than an invented equivalence."
-    }
+    {"rule_id":"RULE.mul.names.same_person_not_same_form","rule_key":"same-person-name-can-change-form","order":1,"match_refs":[{"target_type":"name_family","target_id":"NF.alexander"}],"practice_eligible_by_default":true,"notes":"A person's identity is not replaced by a name form. A book or user profile may deliberately choose a reviewed local equivalent, adaptation, or transliteration."},
+    {"rule_id":"RULE.mul.names.transliteration_vs_equivalent","rule_key":"transliteration-vs-local-equivalent","order":2,"match_refs":[{"target_type":"name_family","target_id":"NF.alexander"}],"practice_eligible_by_default":true,"notes":"Teach the distinction between preserving a name in another script/sound system and choosing a historically related local equivalent."},
+    {"rule_id":"RULE.mul.names.related_not_identical","rule_key":"related-names-are-not-identical-people","order":3,"match_refs":[{"target_type":"name_family","target_id":"NF.alexander"}],"practice_eligible_by_default":true,"notes":"George/Jorge-style relationships can reveal shared name history without claiming every culturally related form is interchangeable in every context."},
+    {"rule_id":"RULE.mul.names.community_practices","rule_key":"communities-have-different-name-practices","order":4,"match_refs":[],"practice_eligible_by_default":false,"notes":"Culture notes may include reviewed examples such as Chinese adaptation/transliteration strategies and Deaf-community name-sign practices. These require sourced cultural notes, not generalization from one language to another."},
+    {"rule_id":"RULE.mul.names.your_name","rule_key":"explore-your-own-name","order":5,"match_refs":[],"practice_eligible_by_default":true,"notes":"If the learner supplies a name, search the reviewed name database. Unknown names remain usable as entered and create a research request rather than an invented equivalence."}
   ],
   "triggers": [
-    {
-      "trigger_id": "TRG.mul.names.tap_name",
-      "trigger_type": "tap",
-      "match_any": [
-        {"target_type": "name_family", "target_id": "NF.alexander"}
-      ],
-      "notes": "Any resolved name tap may expose a compact names-vary-across-languages footnote and offer this lesson. The tap must not interrupt reading automatically."
-    },
-    {
-      "trigger_id": "TRG.mul.names.profile_name_set",
-      "trigger_type": "profile_event",
-      "match_any": [],
-      "feature_bundle": {"event": "display_name_saved"},
-      "notes": "A queued conversational knot may invite the learner to explore their name after they provide it."
-    },
-    {
-      "trigger_id": "TRG.mul.names.catalog_topic",
-      "trigger_type": "catalog_topic",
-      "match_any": [],
-      "feature_bundle": {"topic": "names_on_personal_identity"},
-      "notes": "A names-focused book or chapter can advertise this topic and offer the lesson even if onboarding skipped it."
-    }
+    {"trigger_id":"TRG.mul.names.tap_name","trigger_type":"tap","match_any":[{"target_type":"name_family","target_id":"NF.alexander"}],"notes":"Any resolved name tap may expose a compact names-vary-across-languages footnote and offer this lesson. The tap must not interrupt reading automatically."},
+    {"trigger_id":"TRG.mul.names.profile_name_set","trigger_type":"profile_event","match_any":[],"feature_bundle":{"event":"display_name_saved"},"notes":"A queued conversational knot may invite the learner to explore their name after they provide it."},
+    {"trigger_id":"TRG.mul.names.catalog_topic","trigger_type":"catalog_topic","match_any":[],"feature_bundle":{"topic":"names_on_personal_identity"},"notes":"A names-focused book or chapter can advertise this topic and offer the lesson even if onboarding skipped it."}
   ],
   "practice_modules": [
-    {
-      "module": "name_family_map",
-      "eligible_rule_ids": [
-        "RULE.mul.names.same_person_not_same_form",
-        "RULE.mul.names.transliteration_vs_equivalent",
-        "RULE.mul.names.related_not_identical"
-      ],
-      "choice_refs": [
-        {"target_type": "name_family", "target_id": "NF.alexander"}
-      ]
-    },
-    {
-      "module": "name_form_match",
-      "eligible_rule_ids": [
-        "RULE.mul.names.transliteration_vs_equivalent",
-        "RULE.mul.names.related_not_identical"
-      ]
-    },
-    {
-      "module": "personal_name_explorer",
-      "eligible_rule_ids": ["RULE.mul.names.your_name"]
-    }
+    {"module":"name_family_map","eligible_rule_ids":["RULE.mul.names.same_person_not_same_form","RULE.mul.names.transliteration_vs_equivalent","RULE.mul.names.related_not_identical"],"choice_refs":[{"target_type":"name_family","target_id":"NF.alexander"}]},
+    {"module":"name_form_match","eligible_rule_ids":["RULE.mul.names.transliteration_vs_equivalent","RULE.mul.names.related_not_identical"]},
+    {"module":"personal_name_explorer","eligible_rule_ids":["RULE.mul.names.your_name"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.names.same_person_not_same_form","RULE.mul.names.transliteration_vs_equivalent","RULE.mul.names.related_not_identical","RULE.mul.names.community_practices"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"resolved_name_identity_required":true,"do_not_invent_name_equivalence":true,"culture_claims_require_sourced_note":true}}
   ],
-  "example_query": {
-    "prefer_current_book": true,
-    "max_book_examples": 5,
-    "spoiler_policy": "current_then_read",
-    "minimum_quality": "usable",
-    "require_reviewed_occurrence": false
-  },
-  "interaction_defaults": {
-    "offer_mode": "queued_story_knot",
-    "dismissal_behavior": "Never force the lesson. Name taps may offer Learn now or Queue lesson; dismissal leaves the story uninterrupted.",
-    "cooldown_policy": "The compact name primer may be shown for a small bounded number of early name taps, then collapse by default; the lesson remains manually available."
-  },
-  "review_state": "candidate",
-  "version": 1
+  "example_query":{"prefer_current_book":true,"max_book_examples":5,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
+  "interaction_defaults":{"offer_mode":"queued_story_knot","dismissal_behavior":"Never force the lesson. Name taps may offer Learn now or Queue lesson; dismissal leaves the story uninterrupted.","cooldown_policy":"The compact name primer may be shown for a small bounded number of early name taps, then collapse by default; the lesson remains manually available."},
+  "review_state":"candidate",
+  "version":2
 }
