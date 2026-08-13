@@ -21,7 +21,7 @@
     "display_modes": ["scroll", "pages", "presentation"],
     "practice_mode": "learning_languages_with_full_lesson_support_only",
     "comparison_only_mode": true,
-    "notes": "The comparison loop always places the learner's native language first, preserves learning-from profile order from best known to worst known, then appends learning languages. English or Spanish may be injected as a display-only contrast anchor when neither is already present; injected anchors do not gain profile status or practice eligibility."
+    "notes": "The comparison loop always places the learner's best/explanation language first, preserves other learning-from profile languages from best known to worst known, then appends learning languages. English or Spanish may be injected as a display-only contrast anchor when neither is already present; injected anchors do not gain profile status or practice eligibility."
   },
   "rules": [],
   "triggers": [
@@ -88,5 +88,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 5
+  "version": 6
 }

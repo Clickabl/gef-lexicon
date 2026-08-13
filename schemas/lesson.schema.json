@@ -3,16 +3,16 @@
   "$id": "gef-lexicon/lesson.schema.json",
   "title": "GEF Reusable Lesson",
   "type": "object",
-  "required": ["schema_version", "lesson_id", "lesson_key", "target_language", "rules", "review_state", "version"],
+  "required": ["schema_version", "lesson_id", "lesson_key", "target_language", "difficulty_band", "rules", "triggers", "practice_modules", "review_state", "version"],
   "properties": {
-    "schema_version": {"type": "integer", "enum": [1, 2, 3]},
+    "schema_version": {"type": "integer", "enum": [1, 2, 3, 4]},
     "lesson_id": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"},
     "lesson_key": {"type": "string", "minLength": 1},
     "target_language": {"type": "string", "minLength": 1},
     "curriculum_concept_ids": {"type": "array", "items": {"type": "string"}},
     "construction_ids": {"type": "array", "items": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"}},
     "prerequisite_lesson_ids": {"type": "array", "items": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"}},
-    "difficulty_band": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+    "difficulty_band": {"type": "string", "enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
     "grammar_set_id": {"type": "string", "pattern": "^GRAMSET\\.[A-Za-z0-9._-]+$"},
     "knowledge_set_id": {"type": "string", "pattern": "^KNOWSET\\.[A-Za-z0-9._-]+$"},
     "knowledge_set_source": {"type": "string", "minLength": 1},
@@ -21,6 +21,7 @@
     "rules": {"type": "array", "items": {"$ref": "#/definitions/rule"}},
     "triggers": {"type": "array", "items": {"$ref": "#/definitions/trigger"}},
     "practice_modules": {"type": "array", "items": {"$ref": "#/definitions/practiceModule"}},
+    "game_exports": {"type": "array", "items": {"type": "object"}},
     "example_query": {"$ref": "#/definitions/exampleQuery"},
     "presentation": {"type": "object"},
     "interaction_defaults": {
@@ -35,6 +36,7 @@
       "additionalProperties": false
     },
     "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "trust_state": {"type": "string", "enum": ["machine_translated", "machine_verified", "public", "gef_certified"]},
     "version": {"type": "integer", "minimum": 1}
   },
   "definitions": {
@@ -62,6 +64,8 @@
         "dedupe_display_without_losing_roles": {"type": "boolean"},
         "display_modes": {"type": "array", "items": {"enum": ["scroll", "pages", "presentation"]}, "uniqueItems": true},
         "practice_mode": {"enum": ["always", "only_when_selected_languages_have_meaningful_choice", "learning_languages_with_full_lesson_support_only", "none"]},
+        "full_lesson_target_policy": {"type": "string"},
+        "tier3_target_policy": {"type": "string"},
         "comparison_only_mode": {"type": "boolean"},
         "notes": {"type": "string"}
       },

@@ -47,32 +47,19 @@
         "full_grammar_policy": {"type": "string", "minLength": 1}
       }
     },
-    "component_catalog": {
-      "type": "array",
-      "minItems": 1,
-      "items": {"$ref": "#/definitions/componentDefinition"}
-    },
+    "component_catalog": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/componentDefinition"}},
     "readiness_resolution": {
       "type": "object",
       "additionalProperties": false,
       "required": ["precedence", "summary_is_derived", "pair_matrix_is_materialized"],
       "properties": {
-        "precedence": {
-          "type": "array",
-          "items": {"enum": ["part_default", "tier_override", "source_language_override", "target_language_override", "pair_override"]},
-          "minItems": 5,
-          "maxItems": 5,
-          "uniqueItems": true
-        },
+        "precedence": {"type": "array", "items": {"enum": ["part_default", "tier_override", "source_language_override", "target_language_override", "pair_override"]}, "minItems": 5, "maxItems": 5, "uniqueItems": true},
         "summary_is_derived": {"const": true},
         "pair_matrix_is_materialized": {"const": false},
         "notes": {"type": "string"}
       }
     },
-    "lesson_groups": {
-      "type": "array",
-      "items": {"$ref": "#/definitions/lessonGroup"}
-    },
+    "lesson_groups": {"type": "array", "items": {"$ref": "#/definitions/lessonGroup"}},
     "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
     "version": {"type": "integer", "minimum": 1}
   },
@@ -93,16 +80,8 @@
       "required": ["default"],
       "properties": {
         "default": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
-        "range": {
-          "type": "array",
-          "items": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
-          "minItems": 2,
-          "maxItems": 2
-        },
-        "language_overrides": {
-          "type": "object",
-          "additionalProperties": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]}
-        },
+        "range": {"type": "array", "items": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]}, "minItems": 2, "maxItems": 2},
+        "language_overrides": {"type": "object", "additionalProperties": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]}},
         "notes": {"type": "string"}
       }
     },
@@ -125,10 +104,7 @@
         "available_tier": {"enum": ["none", "core", "full"]},
         "release_stage": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
         "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
-        "components": {
-          "type": "object",
-          "additionalProperties": {"$ref": "#/definitions/componentState"}
-        },
+        "components": {"type": "object", "additionalProperties": {"$ref": "#/definitions/componentState"}},
         "notes": {"type": "string"}
       }
     },
@@ -175,7 +151,7 @@
     "lessonPart": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["part_id", "title", "cefr", "implementation_status", "core_concept_refs", "quest", "default_reading", "readiness"],
+      "required": ["part_id", "title", "implementation_lesson_ids", "implementation_status", "cefr", "prerequisite_part_ids", "core_concept_refs", "quest", "default_reading", "ui_component_refs", "readiness", "gaps"],
       "properties": {
         "part_id": {"type": "string", "pattern": "^PART\\.[A-Za-z0-9._-]+$"},
         "title": {"type": "string", "minLength": 1},
@@ -205,14 +181,14 @@
     "lessonGroup": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["group_id", "title", "parts"],
+      "required": ["group_id", "title", "family_refs", "parts", "related_lessons_ref"],
       "properties": {
         "group_id": {"type": "string", "pattern": "^GROUP\\.[A-Za-z0-9._-]+$"},
         "title": {"type": "string", "minLength": 1},
         "gold_standard": {"type": "boolean"},
         "family_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
         "parts": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/lessonPart"}},
-        "related_lessons_ref": {"type": "string"},
+        "related_lessons_ref": {"type": "string", "minLength": 1},
         "notes": {"type": "string"}
       }
     }
