@@ -31,16 +31,17 @@
   ],
   "practice_modules": [
     {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels"],"constraints":{"source":"family_path.stage_4.core_concepts","recognition_safe":true}},
-    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels"],"constraints":{"require_unique_defensible_answer":true,"avoid_personal_disclosure":true}}
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels"],"constraints":{"require_unique_defensible_answer":true,"avoid_personal_disclosure":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.family.relationships.status","RULE.mul.family.relationships.labels","RULE.mul.family.relationships.context"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"avoid_personal_disclosure":true,"do_not_convert_vocabulary_into_legal_advice":true}}
   ],
   "presentation": {
-    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
-    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
-    "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "intro", "terms", "culture", "examples", "practice", "reading", "completion"],
-    "session_depth_filter": {"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
+    "family_path_manifest":"../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis":"../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual":true,
+    "groups":["facts","intro","terms","culture","examples","practice","reading","completion"],
+    "session_depth_filter":{"core":["facts","intro","terms","practice","reading","completion"],"cultural":["facts","intro","terms","culture","examples","practice","reading","completion"]}
   },
-  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
-  "review_state": "candidate",
-  "version": 1
+  "interaction_defaults":{"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state":"candidate",
+  "version":2
 }
