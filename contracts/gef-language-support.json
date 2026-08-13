@@ -1,15 +1,28 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "canonicalSource": "Clickabl/gef-expo/registry/language-support.json",
-  "canonicalSourceSchemaVersion": 3,
+  "canonicalSourceSchemaVersion": 4,
   "canonicalUiOnlySource": "Clickabl/gef-expo/registry/ui-only-languages.json",
-  "reviewed": "2026-08-11",
+  "reviewed": "2026-08-13",
   "learnFromLanguages": ["en","es","fr","pt","it","el","zh","hi","ar","bn","ru","id","ur","de","ja","pcm","mr","vi","te","ha","tr","pa","sw","fil","ta","yue","fa","ko","th","jv","af","ak","am","as","az","ba","be","bg","bs","ca","cs","cv","cy","da","dsb","et","eu","fi","ga","gd","gl","gu","he","hr","hsb","hu","hy","ig","is","ka","kk","km","kn","kok","ky","lo","lt","lv","mk","ml","mn","ms","my","nb","ne","nl","nn","or","pl","ps","qu","rm","ro","sd","shn","si","sk","sl","so","sq","sr","sv","ti","tk","uk","uz","yo","zu","haw","bho","om","ht","ku","ckb"],
+  "lessonTiers": {
+    "tier1_full": ["en","es","fr","pt","it","el"],
+    "tier2_selective": ["zh","ja","de","ko","ar","hi","uk","ru","tr","pl","fa","id","ca","gl","mk"],
+    "tier3_read_games": ["sk","ne","nl","he","vi","fil","bn","ur","pa","yue","th","ro","cs","bg","sr","hr","bs","sl","sv","nb","da","sw","ha","mr","gu","ta","te","ml","kn","haw","pcm","jv","af","ak","am","as","az","ba","be","cv","cy","dsb","et","eu","fi","ga","gd","hsb","hu","hy","ig","is","ka","kk","km","kok","ky","lo","lt","lv","mn","ms","my","nn","or","ps","qu","rm","sd","shn","si","so","sq","ti","tk","uz","yo","zu","bho","om","ht","ku","ckb"]
+  },
+  "lessonTierPolicy": {
+    "grammarLessonsLimitedToTier1AndTier2": true,
+    "tier1GuaranteesFullGrammarPath": true,
+    "tier2SelectiveGrammarOnly": true,
+    "tier3ReadAndGamesOnly": true,
+    "lessonSpecificReadinessRemainsDirectional": true
+  },
   "activeUiOnlyProductLanguages": ["chr","pirate"],
   "rules": {
     "lexiconLanguageDirectoriesMustBeLearnFromIdentities": true,
     "uiOnlyLanguagesCannotHaveLexiconLanguageTrees": true,
     "localeAndScriptVariantsAreNotLanguageIdentities": true,
-    "refreshWhenCanonicalLanguageIdentitySetChanges": true
+    "refreshWhenCanonicalLanguageIdentitySetChanges": true,
+    "refreshWhenCanonicalLessonTierMembershipChanges": true
   }
 }
