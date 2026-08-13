@@ -52,6 +52,8 @@ jobs:
           fi
       - name: Validate universal lesson SSOT parity
         run: npm run validate:lesson-system
+      - name: Validate Lesson 0 multilingual coverage
+        run: npm run validate:lesson-zero
       - name: Validate multilingual lesson support blurbs
         run: node scripts/validate-lesson-support-blurbs.mjs
       - name: Validate lesson language capabilities and comparison records

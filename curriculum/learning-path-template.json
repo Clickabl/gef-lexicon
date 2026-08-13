@@ -3,7 +3,8 @@
   "path_id": "PATHSET.default_language_learning",
   "language_registry_ref": "Clickabl/gef-expo/registry/language-support.json",
   "default_items": [
-    {"item_id":"PATHITEM.meta.language_levels","kind":"lesson_part","ref":"PART.meta.language_levels.orientation","availability":"active","cefr_target":"mixed","prerequisite_refs":[],"notes":"Universal orientation may be shown once per learner rather than repeated for every target language."},
+    {"item_id":"PATHITEM.meta.language_origins","kind":"lesson_part","ref":"PART.meta.language_origins.orientation","availability":"active","cefr_target":"mixed","prerequisite_refs":[],"notes":"Universal Lesson 0. Show once as the learner's orientation to language genealogy, contact, scripts, standards, and the current Gef language map."},
+    {"item_id":"PATHITEM.meta.language_levels","kind":"lesson_part","ref":"PART.meta.language_levels.orientation","availability":"active","cefr_target":"mixed","prerequisite_refs":["PART.meta.language_origins.orientation"],"notes":"Universal orientation may be shown once per learner rather than repeated for every target language."},
     {"item_id":"PATHITEM.family.members","kind":"lesson_part","ref":"PART.family.members","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
     {"item_id":"PATHITEM.calendar.days","kind":"lesson_part","ref":"PART.calendar_time.days_of_week","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
     {"item_id":"PATHITEM.names.around_world","kind":"lesson_part","ref":"PART.names.around_world","availability":"active","cefr_target":"mixed","prerequisite_refs":[]},

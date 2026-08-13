@@ -1,0 +1,203 @@
+{
+  "schema_version": 4,
+  "lesson_id": "LES.mul.meta.where_languages_come_from",
+  "support_language_tag": "en",
+  "text_direction": "ltr",
+  "proficiency_band": "all",
+  "register": "clear, curious, non-technical where possible; technical terms are defined before use",
+  "title": "Where do languages come from?",
+  "invitation": "Meet the family tree behind all 104 learning languages in Gef, plus the parts of language history that do not fit neatly on a tree.",
+  "summary": "Languages inherit patterns from older languages, borrow from neighbors, move with people, and change as communities build new varieties and standards. This lesson maps every current Gef learning language without confusing ancestry, geography, writing system, or politics.",
+  "localization_keys": {
+    "catalog_kicker": "LESSON 0 · LANGUAGE FAMILIES",
+    "completion_title": "The tree is a history, not a ranking"
+  },
+  "runtime_copy": {
+    "language_heading": "English",
+    "previous_label": "Back",
+    "next_label": "Next",
+    "finish_label": "Finish lesson",
+    "done_label": "Done"
+  },
+  "atlas_labels": {
+    "eyebrow": "{count} LEARNING LANGUAGES · GENEALOGY + CONTACT",
+    "title": "The Gef language family atlas",
+    "description": "Every current learning-language identity appears exactly once. Script, regional, transliteration, and reading-aid variants do not create extra languages. Contact languages are shown separately because one parent branch does not explain their formation well.",
+    "accessibility_label": "Language-family atlas containing all 104 Gef learning languages",
+    "count_template": "{count} in Gef",
+    "families": {
+      "indo_european": "Indo-European",
+      "sino_tibetan": "Sino-Tibetan / Trans-Himalayan",
+      "japonic": "Japonic",
+      "koreanic": "Koreanic",
+      "afro_asiatic": "Afro-Asiatic",
+      "austronesian": "Austronesian",
+      "dravidian": "Dravidian",
+      "turkic": "Turkic",
+      "uralic": "Uralic",
+      "austroasiatic": "Austroasiatic",
+      "kra_dai": "Kra-Dai / Tai-Kadai",
+      "atlantic_congo": "Atlantic-Congo",
+      "kartvelian": "Kartvelian",
+      "mongolic": "Mongolic",
+      "quechuan": "Quechuan",
+      "basque": "Basque"
+    },
+    "groups": {
+      "germanic": "Germanic",
+      "romance": "Romance",
+      "slavic": "Slavic",
+      "baltic": "Baltic",
+      "indo_aryan": "Indo-Aryan",
+      "iranian": "Iranian",
+      "celtic": "Celtic",
+      "hellenic": "Hellenic",
+      "armenian": "Armenian",
+      "albanian": "Albanian",
+      "sinitic": "Sinitic",
+      "burmese": "Burmese branch",
+      "japonic": "Japonic",
+      "koreanic": "Koreanic",
+      "semitic": "Semitic",
+      "chadic": "Chadic",
+      "cushitic": "Cushitic",
+      "austronesian": "Austronesian",
+      "dravidian": "Dravidian",
+      "turkic": "Turkic",
+      "uralic": "Uralic",
+      "austroasiatic": "Austroasiatic",
+      "tai": "Tai",
+      "atlantic_congo": "Atlantic-Congo",
+      "kartvelian": "Kartvelian",
+      "mongolic": "Mongolic",
+      "quechuan": "Quechuan",
+      "isolate": "Language isolate"
+    },
+    "notes": {
+      "atlantic_congo": "A cautious high-level label for the Gef languages shown here. Broader Niger-Congo terminology is also common, and not every high-level internal branch is equally settled.",
+      "basque": "Basque is treated as a language isolate because no larger genealogical family has been demonstrated by the comparative method."
+    },
+    "contact_label": "Contact languages",
+    "contact_note": "Grouped by formation history rather than forced into a single-parent branch. Their development reflects intense multilingual contact and community innovation."
+  },
+  "blocks": [
+    {
+      "block_id": "language-families.intro",
+      "group_id": "intro",
+      "type": "explanation",
+      "title": "Every language has ancestors",
+      "text": "Languages are not invented all at once. Children learn speech from other people, each generation changes sounds and grammar a little, communities move and meet, and words travel with them. Over centuries, one older variety can become several new languages.\n\nThat history leaves patterns. Some languages are close cousins, some are distant relatives, and some neighbors are not genealogically related at all. Contact languages can have histories so networked that a single family-tree branch hides important parts of the story. Gef currently has 104 learning languages. This lesson is the map behind that map."
+    },
+    {
+      "block_id": "language-families.family-definition",
+      "group_id": "what-a-family-means",
+      "type": "explanation",
+      "title": "A language family is about inheritance",
+      "text": "Historical linguists place languages in the same family when systematic evidence is best explained by inheritance from a common ancestor. One similar word is not enough because languages borrow words constantly. Researchers look for recurring sound correspondences, basic vocabulary, morphology, and grammatical patterns across many languages.\n\nThat is why English is Germanic even after heavy French and Latin influence; Persian is Indo-European while Arabic is Afro-Asiatic despite centuries of contact; and Vietnamese is Austroasiatic despite deep Chinese influence. Family means ancestry. It does not mean country, race, alphabet, prestige, or mutual intelligibility today."
+    },
+    {
+      "block_id": "language-families.atlas",
+      "group_id": "family-atlas",
+      "type": "visual",
+      "title": "The Gef language family atlas",
+      "description": "All 104 current learning-language identities appear exactly once.",
+      "visual_kind": "language_family_atlas",
+      "source": "../language-families.json"
+    },
+    {
+      "block_id": "language-families.indo-european",
+      "group_id": "indo-european",
+      "type": "explanation",
+      "title": "Indo-European: one enormous family across continents",
+      "text": "More than half of Gef's current learning languages belong to Indo-European. Its branches stretch through Europe and deep into South and Southwest Asia. Germanic includes English, German, Dutch, Afrikaans, the Scandinavian languages in Gef, and Icelandic. Romance includes Spanish, French, Portuguese, Italian, Romanian, Catalan, Galician, and Romansh. Slavic includes the East, West, and South Slavic languages in Gef; Lithuanian and Latvian are Baltic; Welsh, Irish, and Scottish Gaelic are Celtic.\n\nFarther east and south, Indo-Aryan includes Hindi, Urdu, Bengali, Punjabi, Nepali, Marathi, Gujarati, Assamese, Konkani, Odia, Sindhi, Sinhala, and Bhojpuri. The Iranian branch includes Persian, Pashto, Kurmanji Kurdish, and Sorani Kurdish. Greek represents Hellenic; Armenian and Albanian each form their own major Indo-European branches. A useful surprise: Hindi and English are distant genealogical relatives. Arabic and Persian are not."
+    },
+    {
+      "block_id": "language-families.east-southeast-asia",
+      "group_id": "east-and-southeast-asia",
+      "type": "explanation",
+      "title": "East and Southeast Asia: neighbors are not automatically cousins",
+      "text": "Mandarin Chinese and Cantonese are Sinitic languages inside the broader Sino-Tibetan, also called Trans-Himalayan, family. Burmese belongs to that larger family on another branch. Japanese is Japonic and Korean is Koreanic. Chinese writing and vocabulary influenced both strongly, but cultural influence does not change genealogy.\n\nVietnamese and Khmer are Austroasiatic. Thai, Lao, and Shan are Tai languages inside Kra-Dai, also called Tai-Kadai. Centuries of contact have created borrowing and shared regional patterns across unrelated families. A family tree explains descent; a contact map explains interaction. Good language history usually needs both."
+    },
+    {
+      "block_id": "language-families.west-central-asia",
+      "group_id": "west-and-central-asia",
+      "type": "explanation",
+      "title": "West and Central Asia: several trees woven together",
+      "text": "Gef's Turkic languages are Turkish, Azerbaijani, Bashkir, Chuvash, Kazakh, Kyrgyz, Turkmen, and Uzbek. Mongolian is Mongolic, not Turkic. Older proposals sometimes grouped Turkic, Mongolic, and other northern Eurasian families into an 'Altaic' family, but Gef does not teach that disputed proposal as established genealogy.\n\nEstonian, Finnish, and Hungarian are Uralic. In the Caucasus, Georgian is Kartvelian, Armenian is Indo-European, and Azerbaijani is Turkic. Geography can put different family histories side by side."
+    },
+    {
+      "block_id": "language-families.africa-middle-east",
+      "group_id": "africa-and-middle-east",
+      "type": "explanation",
+      "title": "Africa and the Middle East: deep diversity behind familiar labels",
+      "text": "Within Afro-Asiatic, Gef's Semitic languages are Arabic, Hebrew, Amharic, and Tigrinya; Hausa is Chadic; Somali and Oromo are Cushitic. These are relatives at different distances, not dialects of one language.\n\nGef also includes Swahili, Akan, Igbo, Yoruba, and Zulu in the broad Atlantic-Congo area of the current classification backbone. You will also see broader Niger-Congo terminology in linguistic work, and high-level internal classification is not equally settled everywhere. Swahili and Zulu are Bantu; Akan, Igbo, and Yoruba belong elsewhere in the broader grouping. Africa contains far more language families and isolates than Gef currently represents, so these languages are a window, not a complete map."
+    },
+    {
+      "block_id": "language-families.islands-oceans",
+      "group_id": "islands-and-oceans",
+      "type": "explanation",
+      "title": "Austronesian: relatives scattered across an ocean world",
+      "text": "Indonesian, Malay, Javanese, Filipino, and Hawaiian are Austronesian. They are not all close siblings, but historical comparison connects them inside a vast family spread from Southeast Asia far into the Pacific. Seafaring, migration, trade, intermarriage, settlement, schooling, and state policy all help explain where languages are spoken today.\n\nA product language identity is not the same thing as a deep family-tree node. Indonesian and Malay are extremely close standardized relatives; Filipino has its own standardization history; Hawaiian sits much farther away in the same immense family."
+    },
+    {
+      "block_id": "language-families.south-asia-dravidian",
+      "group_id": "islands-and-oceans",
+      "type": "explanation",
+      "title": "South Asia has more than one giant family",
+      "text": "Many languages of northern South Asia in Gef are Indo-Aryan and therefore Indo-European. Tamil, Telugu, Malayalam, and Kannada belong to the independent Dravidian family. Centuries of contact between Indo-Aryan and Dravidian languages created borrowing and shared regional features without erasing their separate ancestry.\n\nLabels such as 'Indian language' describe geography or national context, not a single linguistic family. Large regions usually contain several histories at once."
+    },
+    {
+      "block_id": "language-families.small-families-isolate",
+      "group_id": "isolates-and-small-families",
+      "type": "explanation",
+      "title": "Small families and an isolate still contain full histories",
+      "text": "Quechua belongs to the Quechuan family of the Andes. Georgian is Kartvelian, Mongolian is Mongolic, Japanese is Japonic, and Korean is Koreanic. A family does not become less important because Gef currently has only one member from it.\n\nBasque is treated as a language isolate because researchers have not demonstrated a larger genealogical family for it. That does not mean Basque appeared from nowhere or never had relatives; it means no surviving or documented relatives have been established convincingly. An isolate is not primitive, and a small family is not less developed."
+    },
+    {
+      "block_id": "language-families.contact",
+      "group_id": "contact-languages",
+      "type": "explanation",
+      "title": "Some histories are better drawn as networks",
+      "text": "Nigerian Pidgin and Haitian Creole emerged through intense multilingual contact. English is the major historical lexifier for Nigerian Pidgin and French for Haitian Creole, but each language also reflects the structures, identities, innovations, and other languages of the communities that created and expanded it.\n\nA database can force a contact language under one parent, but that can teach the wrong story. Gef therefore shows these two under contact history rather than pretending one trunk explains their formation. Every language borrows; contact languages simply make the network impossible to ignore."
+    },
+    {
+      "block_id": "language-families.writing",
+      "group_id": "writing-is-not-ancestry",
+      "type": "explanation",
+      "title": "The writing system can fool your eyes",
+      "text": "Writing systems are technologies; language families are genealogies. Unrelated languages can share an alphabet, and related languages can use different scripts. Arabic, Persian, Urdu, and Sorani Kurdish commonly use related Arabic-derived scripts, yet Arabic is Afro-Asiatic while the others are Indo-European. Serbian can be written in Cyrillic or Latin without becoming two languages.\n\nThe same rule applies inside Gef. Simplified and Traditional Chinese, Japanese kana/kanji and romaji, Serbian Cyrillic and Latin, transliterations, and reading aids are representations. They do not increase the 104-language count and they do not change ancestry."
+    },
+    {
+      "block_id": "language-families.history",
+      "group_id": "history-changes-the-map",
+      "type": "explanation",
+      "title": "Why languages move, split, mix, and borrow",
+      "text": "Languages change when communities separate, but real history is much noisier than a branching tree. Trade connects distant speakers. Empires and religions move administrative and literary languages. Migration and diaspora move languages far from earlier centers. Cities create new multilingual repertoires. Schools, media, and governments can strengthen a standard or suppress other varieties.\n\nLanguage spread is not automatically peaceful. Its history includes trade and exploration, but also displacement, slavery, conquest, colonization, assimilation policies, and communities fighting to maintain or revive their languages. A responsible family map remembers the people behind the lines."
+    },
+    {
+      "block_id": "language-families.standards",
+      "group_id": "language-names-and-standards",
+      "type": "explanation",
+      "title": "Where does one language end and another begin?",
+      "text": "Genealogy tells us how varieties are historically related, but it cannot always decide which modern language names a society should use. Literature, schooling, institutions, ethnicity, politics, writing standards, and speakers' own identities also matter.\n\nBosnian, Croatian, and Serbian are very close South Slavic standards, yet they are distinct modern language identities in Gef. Norwegian Bokmål and Nynorsk are two written standards of Norwegian and are separate learner-facing identities in the product even though that is not a deep genealogical split. Hindi and Urdu share a very close linguistic base while scripts, standard registers, and cultural histories can diverge. The 104-language product registry and a linguist's family tree answer different questions, and Gef keeps those questions separate."
+    },
+    {
+      "block_id": "language-families.method",
+      "group_id": "how-we-know",
+      "type": "explanation",
+      "title": "How can we know about ancestors nobody recorded?",
+      "text": "Historical linguists use the comparative method. They compare languages, identify regular sound correspondences and shared grammatical material, and reconstruct features that best explain the descendants. A striking word match is weak evidence; a pattern repeated across many basic words and structures is much stronger.\n\nA reconstructed ancestor is called a proto-language. Proto-Indo-European, for example, is a scholarly reconstruction, not a recording. The farther back researchers reach, the less evidence survives, so uncertainty grows. Specialists may disagree about high-level subgrouping, especially where documentation is thin. Gef's atlas is therefore a map of current evidence, not a frozen truth table, and should change when better evidence changes the best classification."
+    },
+    {
+      "block_id": "language-families.completion",
+      "group_id": "completion",
+      "type": "completion",
+      "title": "The tree is a history, not a ranking",
+      "description": "You now have the map behind the map: 104 Gef languages, many genealogical families, contact histories that need a network, and one rule worth keeping. Related does not mean better, purer, easier, more advanced, or more important. When two languages look surprisingly alike, ask two questions: did they inherit this from a common ancestor, or did history bring their speakers together?",
+      "action_label": "Finish lesson",
+      "celebration": "none"
+    }
+  ],
+  "review_state": "candidate",
+  "version": 2
+}
