@@ -2,11 +2,16 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import Ajv from 'ajv';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 let errors = 0;
 const fail = (message) => { console.error(`FAIL: ${message}`); errors += 1; };
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
+
+const ajv = new Ajv({ allErrors: true, strict: false });
+const lessonSchema = readJson(join(ROOT, 'schemas', 'lesson.schema.json'));
+const validateLessonSchema = ajv.compile(lessonSchema);
 
 const lexical = {
   lexeme: new Set(),
@@ -27,6 +32,36 @@ const grammarSetRuleIds = new Map();
 function listDirs(path) {
   if (!existsSync(path)) return [];
   return readdirSync(path).filter((entry) => statSync(join(path, entry)).isDirectory());
+}
+
+function validateLessonDocument(lesson, path) {
+  if (!validateLessonSchema(lesson)) {
+    for (const error of validateLessonSchema.errors ?? []) {
+      fail(`${path}${error.instancePath || '/'} ${error.message}`);
+    }
+  }
+
+  const visit = (value, location) => {
+    if (typeof value === 'string') {
+      if (/\bnative language\b/i.test(value)) {
+        fail(`${location}: use best/explanation language, not the profile concept “native language”`);
+      }
+      return;
+    }
+    if (Array.isArray(value)) {
+      value.forEach((item, index) => visit(item, `${location}[${index}]`));
+      return;
+    }
+    if (value && typeof value === 'object') {
+      for (const [key, child] of Object.entries(value)) {
+        if (/^nativeLanguage/i.test(key)) {
+          fail(`${location}.${key}: nativeLanguage* profile fields are forbidden; use bestLanguage*`);
+        }
+        visit(child, `${location}.${key}`);
+      }
+    }
+  };
+  visit(lesson, path);
 }
 
 function loadLexicalIds() {
@@ -164,6 +199,7 @@ function walkLessons() {
       const path = join(lessonDir, 'lesson.json');
       if (!existsSync(path)) continue;
       const lesson = readJson(path);
+      validateLessonDocument(lesson, path);
       if (lesson.target_language !== lang) fail(`${path}: target_language ${lesson.target_language} does not match directory ${lang}`);
       if (lessons.has(lesson.lesson_id)) fail(`duplicate lesson id ${lesson.lesson_id}`);
       const ruleIds = new Set();
@@ -225,4 +261,4 @@ if (errors) {
   console.error(`\n${errors} lesson-graph validation error(s).`);
   process.exit(1);
 }
-console.log(`OK — ${semanticFunctions.size} semantic functions, ${constructions.size} constructions, ${grammarSetRuleIds.size} grammar set(s), ${lessons.size} lesson(s), 0 lesson-graph errors.`);
+console.log(`OK — ${semanticFunctions.size} semantic functions, ${constructions.size} constructions, ${grammarSetRuleIds.size} grammar set(s), ${lessons.size} schema-validated lesson(s), 0 lesson-graph errors.`);
