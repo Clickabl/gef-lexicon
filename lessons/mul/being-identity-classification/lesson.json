@@ -1,0 +1,52 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.grammar.being.identity_classification",
+  "lesson_key": "being-identity-classification",
+  "target_language": "mul",
+  "construction_ids": [],
+  "prerequisite_lesson_ids": [],
+  "difficulty_band": "A1",
+  "rules": [
+    {
+      "rule_id":"RULE.mul.being.identity_equivalence",
+      "rule_key":"identity-equivalence",
+      "order":1,
+      "semantic_function_ids":["SEM.IDENTITY_EQUIVALENCE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.IDENTITY_EQUIVALENCE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare identification/equivalence without assuming a dedicated copular verb."
+    },
+    {
+      "rule_id":"RULE.mul.being.classification_role",
+      "rule_key":"classification-role",
+      "order":2,
+      "semantic_function_ids":["SEM.CLASSIFICATION_ROLE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.CLASSIFICATION_ROLE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare category, profession, role, type, and class predication."
+    },
+    {
+      "rule_id":"RULE.mul.being.characteristic_property",
+      "rule_key":"characteristic-property",
+      "order":3,
+      "semantic_function_ids":["SEM.CHARACTERISTIC_PROPERTY"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.CHARACTERISTIC_PROPERTY"}],
+      "practice_eligible_by_default":true,
+      "notes":"Teach ordinary descriptive properties without presenting permanent versus temporary as a universal rule."
+    }
+  ],
+  "triggers":[
+    {"trigger_id":"TRG.mul.being.identity_classification.catalog","trigger_type":"catalog_topic","notes":"Early Being lesson for eligible grammar-learning targets."},
+    {"trigger_id":"TRG.mul.being.identity_classification.occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.IDENTITY_EQUIVALENCE"},{"target_type":"semantic_function","target_id":"SEM.CLASSIFICATION_ROLE"},{"target_type":"semantic_function","target_id":"SEM.CHARACTERISTIC_PROPERTY"}],"notes":"Offer only from reviewed occurrences; do not interrupt reading."}
+  ],
+  "practice_modules":[
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.being.identity_equivalence","RULE.mul.being.classification_role","RULE.mul.being.characteristic_property"]},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.being.identity_equivalence","RULE.mul.being.classification_role","RULE.mul.being.characteristic_property"]},
+    {"module":"why_this","eligible_rule_ids":["RULE.mul.being.characteristic_property"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.being.identity_equivalence","RULE.mul.being.classification_role","RULE.mul.being.characteristic_property"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "example_query":{"prefer_current_book":true,"max_book_examples":6,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":true},
+  "interaction_defaults":{"offer_mode":"restrained_contextual_offer","dismissal_behavior":"Never interrupt reading automatically.","cooldown_policy":"Do not repeatedly offer after dismissal; manual lesson access remains available."},
+  "review_state":"candidate",
+  "version":1
+}
