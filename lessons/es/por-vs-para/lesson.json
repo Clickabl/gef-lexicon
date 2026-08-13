@@ -33,7 +33,16 @@
     {"module":"reader_quest","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_reason_question","RULE.es.por_para.por_consequence","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.por_distributive","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"prefer_current_book":true,"practice_only_when_unique_defensible_answer":true}}
   ],
   "example_query":{"prefer_current_book":true,"max_book_examples":5,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
+  "candidate_example_pool_refs":[
+    {
+      "pool_id":"LEPOOL.es.por_para.hansel",
+      "repo_ref":"Clickabl/gef-content/lesson-example-pools/es-por-para-hansel.json",
+      "intended_uses":["default_reading","quest","examples","practice"],
+      "review_state":"candidate",
+      "notes":"Hansel & Gretel Spanish has exact route/path, beneficiary, and purpose spans backed by candidate standoff annotations. This is a selectable review candidate, not reviewed/public default-reading truth."
+    }
+  ],
   "interaction_defaults":{"offer_mode":"tap_sheet","dismissal_behavior":"Suppress repeated contextual invitations after explicit dismissal; manual Lessons access remains available.","cooldown_policy":"Reader-owned learner-state policy; lesson data does not hard-code a wall-clock cadence."},
   "review_state":"candidate",
-  "version":2
+  "version":3
 }
