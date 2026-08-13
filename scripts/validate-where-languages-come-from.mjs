@@ -183,7 +183,8 @@ for (const tag of fileTags) {
   if (!String(doc.atlas_labels?.count_template ?? '').includes('{count}')) fail(`${tag}: count_template must preserve {count}`);
 
   const copy = combinedLearnerCopy(doc);
-  if (copy.includes('{{') || copy.includes('}}') || /\b(?:TODO|TBD|TRANSLATE_ME|PLACEHOLDER)\b/i.test(copy)) fail(`${tag}: unresolved placeholder found`);
+  const hasPlaceholder = copy.includes('{{') || copy.includes('}}') || /\b(?:TODO|TBD|TRANSLATE_ME|PLACEHOLDER)\b/.test(copy);
+  if (hasPlaceholder) fail(`${tag}: unresolved placeholder found`);
   if (copy.trim().length < 1200) fail(`${tag}: learner copy is suspiciously short (${copy.trim().length} chars)`);
   if (tag !== 'en' && normalizedPayload(doc) === normalizedPayload(english)) fail(`${tag}: full rendering is identical to English`);
   if (tag !== 'en' && jaccard(copy, englishCopy) > 0.68) fail(`${tag}: suspiciously high English lexical overlap`);
