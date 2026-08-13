@@ -1,0 +1,75 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.time.calendar_years",
+  "lesson_key": "calendar-years",
+  "target_language": "mul",
+  "curriculum_concept_ids": ["CURR.DATES_TIME"],
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.time.months_of_year"],
+  "difficulty_band": "A1",
+  "language_capabilities_manifest": "../../../lesson-families/calendar-year/language-capabilities.json",
+  "session_policy": {
+    "minimum_display_languages": 2,
+    "maximum_display_languages": 12,
+    "prefer_profile_languages": true,
+    "fallback_language_tags": ["en", "es"],
+    "requires_at_least_one_non_anchor_multi_language": false,
+    "language_selection_is_session_only": true,
+    "language_roles_are_distinct": true,
+    "dedupe_display_without_losing_roles": true,
+    "display_modes": ["scroll", "pages", "presentation"],
+    "practice_mode": "learning_languages_with_full_lesson_support_only",
+    "comparison_only_mode": true,
+    "notes": "Core teaches what a calendar year reference is and how to navigate/select years. Spoken year-reading, era names, numeral systems, and non-Gregorian calendar conventions are explicit language/context data, never inferred from a bare language tag."
+  },
+  "rules": [
+    {
+      "rule_id": "RULE.mul.calendar_year.reference",
+      "rule_key": "calendar-year-reference",
+      "order": 1,
+      "semantic_function_ids": ["SEM.CALENDAR_YEAR_REFERENCE"],
+      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CALENDAR_YEAR_REFERENCE"}],
+      "practice_eligible_by_default": true,
+      "notes": "Identify and interpret a year reference while keeping calendar system and era context explicit."
+    },
+    {
+      "rule_id": "RULE.mul.calendar_year.date_context",
+      "rule_key": "year-in-date-context",
+      "order": 2,
+      "semantic_function_ids": ["SEM.CALENDAR_YEAR_REFERENCE","SEM.TIME_DATE_PREDICATION"],
+      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CALENDAR_YEAR_REFERENCE"},{"target_type":"semantic_function","target_id":"SEM.TIME_DATE_PREDICATION"}],
+      "practice_eligible_by_default": true,
+      "notes": "Connect a year to month/day/date expressions only when the session calendar context is known."
+    }
+  ],
+  "triggers": [
+    {"trigger_id":"TRG.mul.calendar_year.catalog","trigger_type":"catalog_topic","notes":"Offer after or alongside months when the learner is ready to read complete dates."},
+    {"trigger_id":"TRG.mul.calendar_year.occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.CALENDAR_YEAR_REFERENCE"}],"notes":"Reviewed year/date occurrences may offer this part or a reader quest."}
+  ],
+  "practice_modules": [
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.calendar_year.reference","RULE.mul.calendar_year.date_context"],"constraints":{"ui_surface":"interactive_time_scale","preferred_scale":"year","calendar_context_required":true}},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.calendar_year.reference","RULE.mul.calendar_year.date_context"],"constraints":{"require_reviewed_context":true,"unique_answer_required":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.calendar_year.reference","RULE.mul.calendar_year.date_context"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "presentation": {
+    "groups_are_semantic_not_visual": true,
+    "groups": ["facts", "comparison-intro", "interactive-time-scale", "examples", "practice", "reading", "completion"],
+    "scroll_mode": "render the same canonical blocks in one vertical lesson surface",
+    "pages_mode": "render semantic groups as pages without changing lesson truth",
+    "teacher_presentation_mode": "reuse the same temporal scale control with classroom-sized controls"
+  },
+  "example_query": {
+    "prefer_current_book": true,
+    "max_book_examples": 6,
+    "spoiler_policy": "current_then_read",
+    "minimum_quality": "usable",
+    "require_reviewed_occurrence": true
+  },
+  "interaction_defaults": {
+    "offer_mode": "lesson_catalog",
+    "language_limit": 12,
+    "teacher_quest_default": "optional"
+  },
+  "review_state": "candidate",
+  "version": 1
+}
