@@ -47,6 +47,42 @@
   },
   "lesson_groups": [
     {
+      "group_id": "GROUP.meta.language_origins",
+      "title": "Where languages come from",
+      "gold_standard": false,
+      "family_refs": [],
+      "parts": [
+        {
+          "part_id": "PART.meta.language_origins.orientation",
+          "title": "Where do languages come from?",
+          "implementation_lesson_ids": ["LES.mul.meta.where_languages_come_from"],
+          "implementation_status": "implemented",
+          "cefr": {"default":"mixed","notes":"Universal orientation about language history and classification rather than language-production difficulty."},
+          "prerequisite_part_ids": [],
+          "core_concept_refs": ["lessons/mul/where-languages-come-from/language-families.json","lessons/mul/where-languages-come-from/translation-manifest.json"],
+          "quest": {"status":"not_applicable","notes":"This is a product-orientation lesson rather than a reader quest."},
+          "default_reading": {"status":"not_applicable","notes":"The lesson is self-contained orientation content rather than a corpus-anchored reading lesson."},
+          "ui_component_refs": ["language_family_atlas"],
+          "readiness": {
+            "default": {
+              "available_tier":"full",
+              "release_stage":"machine_created",
+              "review_state":"candidate",
+              "components": {
+                "intro_blurb":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/mul/where-languages-come-from/renderings/en.json"},
+                "ui_interactions":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/mul/where-languages-come-from/lesson.json"},
+                "learning_path":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"curriculum/learning-path-template.json"},
+                "cefr_target":{"release_stage":"machine_created","review_state":"candidate","status":"ready","source_ref":"lessons/mul/where-languages-come-from/lesson.json"}
+              },
+              "notes":"All 104 current support-language renderings are present, but structural QA does not promote machine-authored linguistic content beyond candidate/machine_created."
+            }
+          },
+          "gaps": ["Run the complete 104-language automated QA gate.","Human linguistic and translation review is still required before machine_verified or public release."]
+        }
+      ],
+      "related_lessons_ref": "curriculum/related-lessons.json"
+    },
+    {
       "group_id": "GROUP.meta.language_levels",
       "title": "International language levels",
       "gold_standard": false,
@@ -335,5 +371,5 @@
     }
   ],
   "review_state":"candidate",
-  "version":1
+  "version":2
 }
