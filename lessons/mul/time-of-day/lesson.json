@@ -65,11 +65,20 @@
     "minimum_quality": "usable",
     "require_reviewed_occurrence": true
   },
+  "candidate_example_pool_refs": [
+    {
+      "pool_id": "LEPOOL.mul.time_of_day.hansel_es",
+      "repo_ref": "Clickabl/gef-content/lesson-example-pools/mul-time-of-day-hansel-es.json",
+      "intended_uses": ["default_reading", "quest", "examples"],
+      "review_state": "candidate",
+      "notes": "Hansel & Gretel Spanish has exact morning/night day-period spans. This is selectable candidate evidence, not a reviewed/public default reading."
+    }
+  ],
   "interaction_defaults": {
     "offer_mode": "lesson_catalog",
     "language_limit": 12,
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
