@@ -29,6 +29,8 @@ for (const concept of semantic.semantic_functions ?? []) {
   semanticIds.add(concept.semantic_function_id);
 }
 
+const lessonIds = new Set();
+const lessonPaths = new Map();
 const lessonsRoot = join(ROOT, 'lessons');
 if (existsSync(lessonsRoot)) {
   for (const lang of readdirSync(lessonsRoot)) {
@@ -38,6 +40,15 @@ if (existsSync(lessonsRoot)) {
       const lessonPath = join(langDir, slug, 'lesson.json');
       if (!existsSync(lessonPath)) continue;
       const lesson = readJson(lessonPath);
+      if (!lesson.lesson_id) {
+        fail(`${lessonPath}: missing lesson_id`);
+        continue;
+      }
+      if (lessonIds.has(lesson.lesson_id)) {
+        fail(`duplicate lesson_id ${lesson.lesson_id}: ${lessonPaths.get(lesson.lesson_id)} and ${lessonPath}`);
+      }
+      lessonIds.add(lesson.lesson_id);
+      lessonPaths.set(lesson.lesson_id, lessonPath);
       for (const id of lesson.curriculum_concept_ids ?? []) {
         if (!curriculumIds.has(id)) fail(`${lesson.lesson_id}: unknown curriculum concept ${id}`);
       }
@@ -50,8 +61,48 @@ if (existsSync(lessonsRoot)) {
   }
 }
 
+const manifestPath = join(ROOT, 'curriculum', 'lesson-system-manifest.json');
+const manifestLessonIds = new Set();
+if (existsSync(manifestPath)) {
+  const manifest = readJson(manifestPath);
+  for (const group of manifest.lesson_groups ?? []) {
+    for (const part of group.parts ?? []) {
+      const implementationIds = part.implementation_lesson_ids ?? [];
+      if (part.implementation_status === 'implemented' && implementationIds.length === 0) {
+        fail(`${part.part_id}: implementation_status=implemented but implementation_lesson_ids is empty`);
+      }
+      for (const lessonId of implementationIds) {
+        manifestLessonIds.add(lessonId);
+        if (!lessonIds.has(lessonId)) {
+          fail(`${part.part_id}: implementation lesson ${lessonId} does not resolve to lessons/**/lesson.json`);
+        }
+      }
+    }
+  }
+  for (const lessonId of lessonIds) {
+    if (!manifestLessonIds.has(lessonId)) {
+      fail(`${lessonId}: lesson.json exists but curriculum/lesson-system-manifest.json does not account for it`);
+    }
+  }
+}
+
+const catalogPath = join(ROOT, 'curriculum', 'lesson-catalog.json');
+if (existsSync(catalogPath)) {
+  const catalog = readJson(catalogPath);
+  const priorities = new Set();
+  const catalogIds = new Set();
+  for (const entry of catalog.lessons ?? []) {
+    if (catalogIds.has(entry.lesson_id)) fail(`lesson catalog duplicates ${entry.lesson_id}`);
+    catalogIds.add(entry.lesson_id);
+    if (!lessonIds.has(entry.lesson_id)) fail(`lesson catalog references missing lesson ${entry.lesson_id}`);
+    if (!manifestLessonIds.has(entry.lesson_id)) fail(`lesson catalog references lesson not represented in lesson-system manifest: ${entry.lesson_id}`);
+    if (priorities.has(entry.priority)) fail(`lesson catalog duplicates priority ${entry.priority}`);
+    priorities.add(entry.priority);
+  }
+}
+
 if (errors) {
   console.error(`\n${errors} curriculum validation error(s).`);
   process.exit(1);
 }
-console.log(`OK — ${curriculumIds.size} curriculum concepts, ${semanticIds.size} semantic functions, 0 curriculum errors.`);
+console.log(`OK — ${curriculumIds.size} curriculum concepts, ${semanticIds.size} semantic functions, ${lessonIds.size} lessons, ${manifestLessonIds.size} manifest implementations, 0 curriculum errors.`);
