@@ -1,0 +1,52 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.grammar.being.existence",
+  "lesson_key": "being-existence",
+  "target_language": "mul",
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.grammar.being.states_location"],
+  "difficulty_band": "A2",
+  "rules": [
+    {
+      "rule_id":"RULE.mul.being.existence_presence",
+      "rule_key":"existence-presence",
+      "order":1,
+      "semantic_function_ids":["SEM.EXISTENCE_PRESENCE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.EXISTENCE_PRESENCE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare existential/presentational constructions without reducing them to English there is."
+    },
+    {
+      "rule_id":"RULE.mul.being.absence_nonexistence",
+      "rule_key":"absence-nonexistence",
+      "order":2,
+      "semantic_function_ids":["SEM.ABSENCE_NONEXISTENCE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.ABSENCE_NONEXISTENCE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Absence/nonexistence may use ordinary negation or a dedicated negative existential."
+    },
+    {
+      "rule_id":"RULE.mul.being.possession_as_existence",
+      "rule_key":"possession-as-existence",
+      "order":3,
+      "semantic_function_ids":["SEM.POSSESSION_AS_EXISTENCE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.POSSESSION_AS_EXISTENCE"}],
+      "practice_eligible_by_default":false,
+      "notes":"Include possession only when the language actually expresses it through an existential/locative structure and the comparison is useful."
+    }
+  ],
+  "triggers":[
+    {"trigger_id":"TRG.mul.being.existence.catalog","trigger_type":"catalog_topic","notes":"Follow states/location for eligible grammar-learning targets."},
+    {"trigger_id":"TRG.mul.being.existence.occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.EXISTENCE_PRESENCE"},{"target_type":"semantic_function","target_id":"SEM.ABSENCE_NONEXISTENCE"},{"target_type":"semantic_function","target_id":"SEM.POSSESSION_AS_EXISTENCE"}],"notes":"Offer only from reviewed occurrences; do not interrupt reading."}
+  ],
+  "practice_modules":[
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.being.existence_presence","RULE.mul.being.absence_nonexistence","RULE.mul.being.possession_as_existence"]},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.being.existence_presence","RULE.mul.being.absence_nonexistence"]},
+    {"module":"why_this","eligible_rule_ids":["RULE.mul.being.existence_presence","RULE.mul.being.absence_nonexistence"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.being.existence_presence","RULE.mul.being.absence_nonexistence","RULE.mul.being.possession_as_existence"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "example_query":{"prefer_current_book":true,"max_book_examples":6,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":true},
+  "interaction_defaults":{"offer_mode":"restrained_contextual_offer","dismissal_behavior":"Never interrupt reading automatically.","cooldown_policy":"Do not repeatedly offer after dismissal; manual lesson access remains available."},
+  "review_state":"candidate",
+  "version":1
+}
