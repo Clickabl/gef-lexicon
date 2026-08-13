@@ -1,0 +1,61 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.grammar.being.states_location",
+  "lesson_key": "being-states-location",
+  "target_language": "mul",
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.grammar.being.identity_classification"],
+  "difficulty_band": "A2",
+  "rules": [
+    {
+      "rule_id":"RULE.mul.being.current_state",
+      "rule_key":"current-state-condition",
+      "order":1,
+      "semantic_function_ids":["SEM.CURRENT_STATE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.CURRENT_STATE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare current state/condition predication without assuming an English-style copula."
+    },
+    {
+      "rule_id":"RULE.mul.being.resultant_state",
+      "rule_key":"resultant-state",
+      "order":2,
+      "semantic_function_ids":["SEM.RESULTANT_STATE"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.RESULTANT_STATE"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare states understood as a result of a prior change or event."
+    },
+    {
+      "rule_id":"RULE.mul.being.entity_location",
+      "rule_key":"entity-location",
+      "order":3,
+      "semantic_function_ids":["SEM.ENTITY_LOCATION"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.ENTITY_LOCATION"}],
+      "practice_eligible_by_default":true,
+      "notes":"Keep location of an entity distinct from event location where a language treats them differently."
+    },
+    {
+      "rule_id":"RULE.mul.being.event_location",
+      "rule_key":"event-location",
+      "order":4,
+      "semantic_function_ids":["SEM.EVENT_LOCATION"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.EVENT_LOCATION"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare how languages locate events and occurrences."
+    }
+  ],
+  "triggers":[
+    {"trigger_id":"TRG.mul.being.states_location.catalog","trigger_type":"catalog_topic","notes":"Follow identity/classification for eligible grammar-learning targets."},
+    {"trigger_id":"TRG.mul.being.states_location.occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.CURRENT_STATE"},{"target_type":"semantic_function","target_id":"SEM.RESULTANT_STATE"},{"target_type":"semantic_function","target_id":"SEM.ENTITY_LOCATION"},{"target_type":"semantic_function","target_id":"SEM.EVENT_LOCATION"}],"notes":"Offer only from reviewed occurrences; do not interrupt reading."}
+  ],
+  "practice_modules":[
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.being.current_state","RULE.mul.being.resultant_state","RULE.mul.being.entity_location","RULE.mul.being.event_location"]},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.being.current_state","RULE.mul.being.resultant_state","RULE.mul.being.entity_location","RULE.mul.being.event_location"]},
+    {"module":"why_this","eligible_rule_ids":["RULE.mul.being.current_state","RULE.mul.being.resultant_state","RULE.mul.being.entity_location","RULE.mul.being.event_location"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.being.current_state","RULE.mul.being.resultant_state","RULE.mul.being.entity_location","RULE.mul.being.event_location"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "example_query":{"prefer_current_book":true,"max_book_examples":6,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":true},
+  "interaction_defaults":{"offer_mode":"restrained_contextual_offer","dismissal_behavior":"Never interrupt reading automatically.","cooldown_policy":"Do not repeatedly offer after dismissal; manual lesson access remains available."},
+  "review_state":"candidate",
+  "version":1
+}
