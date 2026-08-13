@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "policy_id": "GEF.LESSON_DELIVERY_CAPABILITIES",
+  "canonical_manifest": "curriculum/lesson-system-manifest.json",
+  "principle": "Pedagogical Core/Full describes lesson depth. Delivery capabilities describe what the product can actually do with the current bound artifacts. Neither dimension may silently promote the other.",
+  "capabilities": [
+    {"capability_id":"presentation","requires":["implementation","rendering"],"notes":"A learner can open and read the lesson presentation."},
+    {"capability_id":"self_study","requires":["presentation","pedagogical_tier"],"notes":"The lesson has at least Core pedagogical content and a presentation runtime."},
+    {"capability_id":"practice","requires":["self_study","practice_material"],"notes":"At least one canonical non-reader-quest practice module or practice block exists."},
+    {"capability_id":"graded_assignment","requires":["practice","machine_verified_release"],"notes":"Graded assignment eligibility is stricter than ordinary practice and requires machine-verified-or-higher release."},
+    {"capability_id":"reader_quest","requires":["self_study","bound_quest","quest_material"],"notes":"A candidate quest block alone is not enough; the lesson part must have a bound canonical quest."},
+    {"capability_id":"annotated_reading","requires":["self_study","bound_default_reading","annotations_ready"],"notes":"A reading claim requires both a bound default reading and ready annotation evidence."},
+    {"capability_id":"live_classroom","requires":["presentation","presentation_mode"],"notes":"Classroom delivery is available only when the canonical lesson explicitly supports presentation mode."}
+  ],
+  "component_applicability": {
+    "not_applicable_binding_status": "not_applicable",
+    "omitted_component_status": "missing",
+    "notes": "Part bindings are authoritative for quest/default-reading applicability. Other omitted component states remain missing for capabilities that require them; they do not erase pedagogical Core/Full depth."
+  },
+  "release_audiences": {
+    "machine_created": ["internal"],
+    "machine_verified": ["internal", "public_beta"],
+    "general_public": ["internal", "public_beta", "general_public"],
+    "education": ["internal", "public_beta", "general_public", "education"]
+  },
+  "review_state_is_independent": true,
+  "version": 1
+}
