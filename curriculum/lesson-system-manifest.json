@@ -85,7 +85,7 @@
       "group_id": "GROUP.family",
       "title": "Family and relationships",
       "gold_standard": false,
-      "family_refs": ["lesson-families/family-members/family.json"],
+      "family_refs": ["lesson-families/family-members/family-path.json"],
       "parts": [
         {
           "part_id":"PART.family.members",
@@ -150,7 +150,7 @@
       "group_id":"GROUP.calendar_time",
       "title":"Calendar and time",
       "gold_standard":false,
-      "family_refs":["lesson-families/calendar-year/family.json"],
+      "family_refs":["lesson-families/days-of-the-week/family.json","lesson-families/months-of-the-year/family.json","lesson-families/seasons-of-the-year/family.json"],
       "parts":[
         {
           "part_id":"PART.calendar_time.time_of_day",
@@ -262,7 +262,7 @@
         {
           "part_id":"PART.multiple_words_for.semantic_map",
           "title":"Why one meaning can split across multiple forms",
-          "implementation_lesson_ids":["LES.mul.prep.multiple_words_for"],
+          "implementation_lesson_ids":["LES.mul.prep.multiple_for"],
           "implementation_status":"implemented",
           "cefr":{"default":"A1","notes":"Comparison/orientation layer; target-language production may require a later CEFR override."},
           "prerequisite_part_ids":[],
