@@ -1,0 +1,13 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.grammar.being",
+  "lesson_id":"LES.mul.grammar.being",
+  "domains":["copula","identity","state","location","existence"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/to-be-or-not-to-be/lesson.json","role":"lesson_offer"},
+    {"kind":"semantic_data","ref":"curriculum/grammar-domains/being.v1.json","role":"being_semantic_functions"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "review_state":"candidate",
+  "version":1
+}

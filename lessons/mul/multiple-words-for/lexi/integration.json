@@ -1,0 +1,12 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.prep.multiple_for",
+  "lesson_id":"LES.mul.prep.multiple_for",
+  "domains":["semantic_roles","prepositions","purpose","cause","goal","beneficiary"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/multiple-words-for/lesson.json","role":"lesson_offer"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "review_state":"candidate",
+  "version":1
+}

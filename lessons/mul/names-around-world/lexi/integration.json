@@ -1,0 +1,12 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.names.around_world",
+  "lesson_id":"LES.mul.names.around_world",
+  "domains":["personal_names","transliteration","naming_practices","historical_name_forms"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/names-around-world/lesson.json","role":"lesson_offer"}
+  ],
+  "surfaces":["dictionary","name_inspection","semantic_inspection","lesson_discovery"],
+  "review_state":"candidate",
+  "version":1
+}

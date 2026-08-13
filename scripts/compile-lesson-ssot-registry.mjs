@@ -3,9 +3,13 @@
  * Compile the canonical universal Lesson SSOT into a compact registry that Lexi,
  * admin tooling, and runtime packaging can consume without inventing a second
  * lesson catalog. Pedagogical depth and delivery completeness stay separate.
+ *
+ * Every canonical lesson must also own lessons/<scope>/<key>/lexi/integration.json.
+ * That manifest is the explicit bridge from lesson pedagogy into reusable Lexi
+ * semantic/lexical domains. Missing bridges are build failures, not silent gaps.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { deriveLessonDelivery, implementationResolution } from './lib/lesson-delivery-readiness.mjs';
 
@@ -14,8 +18,10 @@ const OUT_DIR = join(ROOT, 'dist', 'dictionaries', 'shared');
 const MANIFEST = join(ROOT, 'curriculum', 'lesson-system-manifest.json');
 const STATUS = join(ROOT, 'curriculum', 'review-and-release-status.json');
 const DELIVERY_POLICY = join(ROOT, 'curriculum', 'lesson-delivery-capabilities.json');
+const LEXI_INTEGRATION_SCHEMA = 'schemas/lesson-lexi-integration.schema.json';
 
 function readJson(path) { return JSON.parse(readFileSync(path, 'utf8')); }
+function repoPath(path) { return relative(ROOT, path).split('\\').join('/'); }
 
 function walkLessonFiles(root) {
   const result = [];
@@ -31,6 +37,44 @@ function walkLessonFiles(root) {
     }
   }
   return result.sort();
+}
+
+function validateLexiIntegration(lessonPath, lesson, integrationIds) {
+  const path = join(dirname(lessonPath), 'lexi', 'integration.json');
+  if (!existsSync(path)) {
+    throw new Error(`Canonical lesson ${lesson.lesson_id} is missing required Lexi integration ${repoPath(path)}`);
+  }
+  const integration = readJson(path);
+  if (integration.schema_version !== 1) throw new Error(`${repoPath(path)} must use schema_version 1`);
+  if (!integration.integration_id?.startsWith('LEXI.LESSON.')) throw new Error(`${repoPath(path)} has invalid integration_id`);
+  if (integration.lesson_id !== lesson.lesson_id) {
+    throw new Error(`${repoPath(path)} lesson_id ${integration.lesson_id} does not match ${lesson.lesson_id}`);
+  }
+  if (!Array.isArray(integration.domains) || integration.domains.length === 0) {
+    throw new Error(`${repoPath(path)} must declare at least one Lexi domain`);
+  }
+  if (!Array.isArray(integration.artifacts) || integration.artifacts.length === 0) {
+    throw new Error(`${repoPath(path)} must declare at least one canonical artifact`);
+  }
+  if (!Array.isArray(integration.surfaces) || integration.surfaces.length === 0) {
+    throw new Error(`${repoPath(path)} must declare at least one Lexi surface`);
+  }
+  const duplicate = integrationIds.get(integration.integration_id);
+  if (duplicate) throw new Error(`Duplicate Lexi integration_id ${integration.integration_id}: ${duplicate} and ${repoPath(path)}`);
+  integrationIds.set(integration.integration_id, repoPath(path));
+
+  for (const artifact of integration.artifacts) {
+    if (!artifact?.kind || !artifact?.ref || !artifact?.role) {
+      throw new Error(`${repoPath(path)} contains an artifact without kind/ref/role`);
+    }
+    if (artifact.ref.startsWith('/') || artifact.ref.includes('..')) {
+      throw new Error(`${repoPath(path)} artifact ref must be repository-root relative: ${artifact.ref}`);
+    }
+    if (artifact.required !== false && !existsSync(join(ROOT, artifact.ref))) {
+      throw new Error(`${repoPath(path)} references missing required artifact ${artifact.ref}`);
+    }
+  }
+  return { ...integration, source_path: repoPath(path) };
 }
 
 function renderingSummaries(lessonPath) {
@@ -50,7 +94,7 @@ function renderingSummaries(lessonPath) {
         invitation: document.invitation ?? null,
         rendering_review_state: document.review_state ?? null,
         rendering_trust_state: document.trust_state ?? null,
-        source_path: path.slice(ROOT.length + 1),
+        source_path: repoPath(path),
       };
     });
 }
@@ -64,11 +108,13 @@ const manifest = readJson(MANIFEST);
 const statusModel = readJson(STATUS);
 const deliveryPolicy = readJson(DELIVERY_POLICY);
 const lessonsById = new Map();
+const integrationIds = new Map();
 for (const path of walkLessonFiles(join(ROOT, 'lessons'))) {
   const lesson = readJson(path);
   if (!lesson.lesson_id) continue;
   if (lessonsById.has(lesson.lesson_id)) throw new Error(`Duplicate lesson_id ${lesson.lesson_id}`);
-  lessonsById.set(lesson.lesson_id, { path, lesson });
+  const lexiIntegration = validateLexiIntegration(path, lesson, integrationIds);
+  lessonsById.set(lesson.lesson_id, { path, lesson, lexiIntegration });
 }
 
 const lessonRegistry = [];
@@ -105,9 +151,10 @@ for (const group of manifest.lesson_groups ?? []) {
       lessonRegistry.push({
         lesson_id: lessonId,
         lesson_version: found.lesson.version ?? 1,
-        lesson_source_path: found.path.slice(ROOT.length + 1),
+        lesson_source_path: repoPath(found.path),
         target_language: found.lesson.target_language ?? 'mul',
         lesson_review_state: found.lesson.review_state ?? 'candidate',
+        lexi_integration: found.lexiIntegration,
         group_id: group.group_id,
         group_title: group.title,
         part_id: part.part_id,
@@ -151,14 +198,16 @@ for (const lessonId of lessonsById.keys()) {
 }
 
 const document = {
-  schema_version: 2,
+  schema_version: 3,
   canonical_source: 'curriculum/lesson-system-manifest.json',
   status_model_source: 'curriculum/review-and-release-status.json',
   delivery_policy_source: 'curriculum/lesson-delivery-capabilities.json',
+  lexi_integration_schema: LEXI_INTEGRATION_SCHEMA,
   manifest_schema_version: manifest.schema_version,
   status_schema_version: statusModel.schema_version,
   delivery_policy_version: deliveryPolicy.version,
   implemented_lesson_count: lessonRegistry.length,
+  lexi_integration_count: integrationIds.size,
   planned_part_count: plannedParts.length,
   lessons: lessonRegistry,
   planned_parts: plannedParts,
@@ -167,5 +216,5 @@ const document = {
 mkdirSync(OUT_DIR, { recursive: true });
 const output = join(OUT_DIR, 'lesson-ssot-v1.json');
 writeFileSync(output, `${JSON.stringify(document, null, 2)}\n`, 'utf8');
-console.log(`🧭 SSOT lesson registry: ${lessonRegistry.length} implemented lessons, ${plannedParts.length} planned parts.`);
-console.log(`📦 ${output.slice(ROOT.length + 1)}`);
+console.log(`🧭 SSOT lesson registry: ${lessonRegistry.length} implemented lessons, ${integrationIds.size} Lexi integrations, ${plannedParts.length} planned parts.`);
+console.log(`📦 ${repoPath(output)}`);

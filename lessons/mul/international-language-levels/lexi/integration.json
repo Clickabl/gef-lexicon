@@ -1,0 +1,14 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.meta.international_language_levels",
+  "lesson_id":"LES.mul.meta.international_language_levels",
+  "domains":["proficiency_frameworks","learner_level"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/international-language-levels/lesson.json","role":"lesson_offer"},
+    {"kind":"semantic_data","ref":"proficiency/frameworks.json","role":"framework_knowledge"},
+    {"kind":"semantic_data","ref":"proficiency/gef-scale.json","role":"gef_level_knowledge"}
+  ],
+  "surfaces":["semantic_inspection","lesson_discovery"],
+  "review_state":"approved",
+  "version":1
+}

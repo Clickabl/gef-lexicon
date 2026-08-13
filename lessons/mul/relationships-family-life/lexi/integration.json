@@ -1,0 +1,13 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.vocab.relationships_family_life",
+  "lesson_id":"LES.mul.vocab.relationships_family_life",
+  "domains":["relationships","family_life","kinship"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/relationships-family-life/lesson.json","role":"lesson_offer"},
+    {"kind":"lesson_family","ref":"lesson-families/family-members/family-path.json","role":"family_path_semantics"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery"],
+  "review_state":"candidate",
+  "version":1
+}

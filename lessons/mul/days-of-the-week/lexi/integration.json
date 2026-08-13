@@ -1,0 +1,15 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.time.days_of_week",
+  "lesson_id":"LES.mul.time.days_of_week",
+  "domains":["calendar","weekday","dates_time"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/days-of-the-week/lesson.json","role":"lesson_offer"},
+    {"kind":"knowledge_set","ref":"knowledge-sets/days-of-week.json","role":"weekday_lexical_semantics"},
+    {"kind":"lexi_domain","ref":"lexi/domains/numbers-dates-time.json","role":"numbers_dates_time_integration"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "related_integrations":[{"ref":"LEXI.DOMAIN.numbers_dates_time","relationship":"contributes_calendar_vocabulary"}],
+  "review_state":"candidate",
+  "version":1
+}

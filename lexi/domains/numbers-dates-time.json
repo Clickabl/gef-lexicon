@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "domain_id": "LEXI.DOMAIN.numbers_dates_time",
+  "title": "Numbers, dates, times, and years",
+  "curriculum_concept_ids": ["CURR.NUMBERS_QUANTITIES", "CURR.DATES_TIME"],
+  "semantic_kinds": [
+    "cardinal_number",
+    "ordinal_number",
+    "decimal_number",
+    "fraction",
+    "percentage",
+    "quantity",
+    "date",
+    "time_of_day",
+    "duration",
+    "year",
+    "decade",
+    "century"
+  ],
+  "recognition_contract": {
+    "status": "semantic_contract_only",
+    "digit_expressions": ["integer", "signed_number", "decimal", "fraction", "percentage", "clock_time", "numeric_date", "year"],
+    "unicode_decimal_digits_are_not_language_words": true,
+    "written_number_words_require_reviewed_lexicon_realizations": true,
+    "date_order_requires_locale_or_explicit_context": true,
+    "clock_conventions_require_locale_or_explicit_context": true,
+    "never_infer_calendar_system_from_language_tag_alone": true
+  },
+  "calendar_artifacts": [
+    "knowledge-sets/days-of-week.json",
+    "knowledge-sets/months-of-year.json",
+    "knowledge-sets/seasons.json"
+  ],
+  "lesson_binding": {
+    "status": "planned",
+    "intended_lesson_id": "LES.mul.quantity.numbers_dates_time",
+    "notes": "The reusable semantic domain exists before the dedicated universal Numbers lesson is complete. Do not redirect numeric expressions to grammatical number as a substitute."
+  },
+  "related_domains": [
+    {
+      "ref": "lessons/mul/grammatical-number/lexi/integration.json",
+      "relationship": "related_not_equivalent",
+      "notes": "Grammatical number concerns singular/plural/dual/etc.; numeric expressions concern quantities and numeric notation."
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

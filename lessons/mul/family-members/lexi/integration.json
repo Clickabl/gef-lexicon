@@ -1,0 +1,15 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.vocab.family_members",
+  "lesson_id":"LES.mul.vocab.family_members",
+  "domains":["kinship","family_relationships"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/family-members/lesson.json","role":"lesson_offer"},
+    {"kind":"semantic_data","ref":"lesson-families/family-members/game-vocabulary/manifest.json","role":"core_concepts"},
+    {"kind":"lexi_metadata","ref":"lesson-families/family-members/lexi-metadata.json","role":"lexical_semantic_links"},
+    {"kind":"language_capabilities","ref":"lesson-families/family-members/language-capabilities.json","role":"language_support"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "review_state":"candidate",
+  "version":1
+}

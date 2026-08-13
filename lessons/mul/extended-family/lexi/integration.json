@@ -1,0 +1,13 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.vocab.extended_family",
+  "lesson_id":"LES.mul.vocab.extended_family",
+  "domains":["kinship","extended_family"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/extended-family/lesson.json","role":"lesson_offer"},
+    {"kind":"lesson_family","ref":"lesson-families/family-members/family-path.json","role":"family_path_semantics"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery"],
+  "review_state":"candidate",
+  "version":1
+}
