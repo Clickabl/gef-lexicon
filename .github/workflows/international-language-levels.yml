@@ -1,0 +1,26 @@
+name: International language levels coverage
+
+on:
+  pull_request:
+    paths:
+      - 'lessons/mul/international-language-levels/**'
+      - 'scripts/validate-international-language-levels.mjs'
+      - 'package.json'
+      - '.github/workflows/international-language-levels.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'lessons/mul/international-language-levels/**'
+      - 'scripts/validate-international-language-levels.mjs'
+      - 'package.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Validate all 104 language-level renderings
+        run: node scripts/validate-international-language-levels.mjs
