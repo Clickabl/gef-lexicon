@@ -3,157 +3,39 @@
   "canonical_source": "curriculum/lesson-system-manifest.json",
   "projection_role": "compatibility_catalog",
   "universal": [
-    {
-      "lesson_id": "LES.mul.meta.international_language_levels",
-      "priority": 1,
-      "category": "orientation",
-      "path_scope": "universal",
-      "featured": true,
-      "next_policy": "next_language_path_item",
-      "notes": "First ordinary Gef lesson. It teaches the level system used by books, learner profiles, placement, and future Gefstimates. Priority 0 is reserved for a future prerequisite-level orientation such as 'What is a language?' if Gef ever authors one; do not invent a placeholder lesson merely to fill zero.",
-      "review_state": "approved"
-    },
-    {
-      "lesson_id": "LES.mul.grammar.grammatical_gender",
-      "priority": 20,
-      "category": "grammar",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Universal grammatical-gender comparison family. Runtime eligibility and Core/Full readiness come from the universal Lesson SSOT plus lesson-specific language capabilities; global language tier alone never grants support.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.vocab.family_members",
-      "priority": 30,
-      "category": "vocabulary",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Family path stage 1: Core family. Pair-level session depth determines Core versus Cultural. If either source or target role is Tier 3/comparison-only, show only the localized Core lesson and recognition-safe vocabulary/game material.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.vocab.describe_family",
-      "priority": 31,
-      "category": "vocabulary",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Family path stage 2: Describe your family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.vocab.extended_family",
-      "priority": 32,
-      "category": "vocabulary",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Family path stage 3: Extended family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.vocab.relationships_family_life",
-      "priority": 33,
-      "category": "vocabulary",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Family path stage 4: Relationships and family life. Current 104-language Core vocabulary breadth remains intentionally partial where the SSOT says coverage is not yet proven; do not fake missing translations.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.names.around_world",
-      "priority": 35,
-      "category": "culture",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Names, transliteration, related historical forms, and naming practices. Cultural claims remain community-sourced and candidate until reviewed.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.time.days_of_week",
-      "priority": 40,
-      "category": "vocabulary",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "A1 weekday-cycle lesson. Calendar first-day layout remains territory/locale context rather than a language fact. Canonical readiness is resolved by the Lesson SSOT.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.time.months_of_year",
-      "priority": 41,
-      "category": "vocabulary",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "A1 month-cycle implementation. The SSOT part is intentionally named Months and years and remains partial because this implementation does not yet teach years.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.time.seasons",
-      "priority": 42,
-      "category": "vocabulary",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "A1 season vocabulary. Hemisphere, climate, and traditional seasonal systems remain contextual instead of being inferred from a language tag.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.prep.multiple_for",
-      "priority": 45,
-      "category": "grammar",
-      "path_scope": "universal",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Universal semantic-map primer for meanings English often gives to 'for'. Structural gold-standard family; review state remains candidate and Tier 3 never inherits Full grammar support from Core comparison coverage.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.noun.grammatical_number",
-      "priority": 50,
-      "category": "grammar",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Universal grammatical-number comparison lesson. Core comparison and Full target eligibility are resolved from lesson-specific capability data and the universal Lesson SSOT.",
-      "review_state": "candidate"
-    },
-    {
-      "lesson_id": "LES.mul.grammar.being",
-      "priority": 60,
-      "category": "grammar",
-      "path_scope": "tier1_tier2",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Cross-language Being lesson covering identity, state, location, and existence. The SSOT intentionally keeps this conditional until mixed semantic functions are split into CEFR-appropriate parts for a target language.",
-      "review_state": "candidate"
-    }
+    {"lesson_id":"LES.mul.meta.international_language_levels","priority":1,"category":"orientation","path_scope":"universal","featured":true,"next_policy":"next_language_path_item","notes":"First ordinary Gef lesson. It teaches the level system used by books, learner profiles, placement, and future Gefstimates. Priority 0 is reserved for a future prerequisite-level orientation such as 'What is a language?' if Gef ever authors one; do not invent a placeholder lesson merely to fill zero.","review_state":"approved"},
+    {"lesson_id":"LES.mul.grammar.grammatical_gender","priority":20,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"Universal grammatical-gender comparison family. Runtime eligibility and Core/Full readiness come from the universal Lesson SSOT plus lesson-specific language capabilities; global language tier alone never grants support.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.vocab.family_members","priority":30,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Family path stage 1: Core family. Pair-level session depth determines Core versus Cultural. If either source or target role is Tier 3/comparison-only, show only the localized Core lesson and recognition-safe vocabulary/game material.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.vocab.describe_family","priority":31,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Family path stage 2: Describe your family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.vocab.extended_family","priority":32,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Family path stage 3: Extended family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.vocab.relationships_family_life","priority":33,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Family path stage 4: Relationships and family life. Current 104-language Core vocabulary breadth remains intentionally partial where the SSOT says coverage is not yet proven; do not fake missing translations.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.names.around_world","priority":35,"category":"culture","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Names, transliteration, related historical forms, and naming practices. Cultural claims remain community-sourced and candidate until reviewed.","review_state":"candidate"},
+
+    {"lesson_id":"LES.mul.time.time_of_day","priority":39,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"A1 clock-time and day-period concept lesson. Core can use the shared temporal teaching surface universally; target-language phrasing and day-period boundaries remain reviewed language/context data.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.time.days_of_week","priority":40,"category":"vocabulary","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A1 weekday-cycle lesson. Calendar first-day layout remains territory/locale context rather than a language fact. The shared temporal surface provides day/week navigation without changing the canonical teaching order.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.time.months_of_year","priority":41,"category":"vocabulary","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A1 month-cycle implementation. It is paired with LES.mul.time.calendar_years inside the canonical Months and years lesson part.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.time.calendar_years","priority":42,"category":"vocabulary","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"A1 calendar-year reference implementation. Calendar system, era, numeral, and spoken year conventions remain explicit context/review data rather than bare-language assumptions.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.time.seasons","priority":43,"category":"vocabulary","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A1 season vocabulary. Hemisphere, climate, and traditional seasonal systems remain contextual instead of being inferred from a language tag.","review_state":"candidate"},
+
+    {"lesson_id":"LES.mul.prep.multiple_for","priority":45,"category":"grammar","path_scope":"universal","featured":false,"next_policy":"next_language_path_item","notes":"Universal semantic-map primer for meanings English often gives to 'for'. Structural gold-standard family; review state remains candidate and Tier 3 never inherits Full grammar support from Core comparison coverage.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.noun.grammatical_number","priority":50,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"Universal grammatical-number comparison lesson. Core comparison and Full target eligibility are resolved from lesson-specific capability data and the universal Lesson SSOT.","review_state":"candidate"},
+
+    {"lesson_id":"LES.mul.grammar.being","priority":59,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"Optional cross-language semantic overview only. It no longer owns scored sequential practice; the CEFR-bounded Being lessons do.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.grammar.being.identity_classification","priority":60,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A1 Being stage 1: identity, classification, and ordinary properties.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.grammar.being.states_location","priority":61,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A2 Being stage 2: current/resultant states plus entity and event location distinctions where licensed.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.grammar.being.existence","priority":62,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"A2 Being stage 3: existence, absence, and conditional possession-as-existence comparisons.","review_state":"candidate"},
+    {"lesson_id":"LES.mul.grammar.being.extended_predication","priority":63,"category":"grammar","path_scope":"tier1_tier2","featured":false,"next_policy":"next_language_path_item","notes":"Later/optional Being stage for time/date, origin/affiliation, and material predication when the target language makes those comparisons pedagogically useful.","review_state":"candidate"}
   ],
   "language_specific": [
-    {
-      "lesson_id": "LES.es.prep.por_para.core",
-      "language_tag": "es",
-      "priority": 46,
-      "category": "grammar",
-      "path_scope": "language_override",
-      "featured": false,
-      "next_policy": "next_language_path_item",
-      "notes": "Spanish-specific Full implementation inserted by the canonical Spanish learning-path override immediately after the universal multiple-words-for semantic primer. Practice exists; quest/default-reading gaps remain exactly as declared in the SSOT.",
-      "review_state": "candidate"
-    }
+    {"lesson_id":"LES.es.prep.por_para.core","language_tag":"es","priority":46,"category":"grammar","path_scope":"language_override","featured":false,"next_policy":"next_language_path_item","notes":"Spanish-specific Full implementation inserted by the canonical Spanish learning-path override immediately after the universal multiple-words-for semantic primer. Practice exists; reader/default-reading evidence remains review-gated.","review_state":"candidate"}
   ],
   "path_policy": {
-    "canonical_path_source": "curriculum/learning-path-template.json",
-    "tier1": "Build an ordered curriculum that may interleave lessons and story/chapter recommendations. Full grammar path is expected over time.",
-    "tier2": "Build a selective ordered curriculum that may interleave reviewed lessons and story/chapter recommendations when evidence supports them. Do not imply a complete grammar path.",
-    "tier3": "Reading and games remain the main learning path, but universal topical lessons may expose explicitly bounded Core sessions. Core availability must never be mistaken for full cultural or grammar-course support.",
-    "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible compatibility-catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
+    "canonical_path_source":"curriculum/learning-path-template.json",
+    "tier1":"Build an ordered curriculum that may interleave lessons and story/chapter recommendations. Full grammar path is expected over time.",
+    "tier2":"Build a selective ordered curriculum that may interleave reviewed lessons and story/chapter recommendations when evidence supports them. Do not imply a complete grammar path.",
+    "tier3":"Reading and games remain the main learning path, but universal topical lessons may expose explicitly bounded Core sessions. Core availability must never be mistaken for full cultural or grammar-course support.",
+    "next_resolution":"After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible compatibility-catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
-  "review_state": "approved",
-  "version": 6
+  "review_state":"approved",
+  "version":7
 }
