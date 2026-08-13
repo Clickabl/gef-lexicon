@@ -31,16 +31,17 @@
   ],
   "practice_modules": [
     {"module":"concept_term_match","eligible_rule_ids":["RULE.mul.family.describe.relationship"],"constraints":{"source":"family_path_stage_1_vocabulary","mode":"description_pattern_to_relationship"}},
-    {"module":"inline_choice_cloze","eligible_rule_ids":["RULE.mul.family.describe.relationship","RULE.mul.family.describe.household"],"constraints":{"patterns":["this_is_my","i_have","i_live_with","is_named","older_younger"],"require_unique_defensible_answer":true}}
+    {"module":"inline_choice_cloze","eligible_rule_ids":["RULE.mul.family.describe.relationship","RULE.mul.family.describe.household"],"constraints":{"patterns":["this_is_my","i_have","i_live_with","is_named","older_younger"],"require_unique_defensible_answer":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.family.describe.relationship","RULE.mul.family.describe.household"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"allow_fictional_or_story_family_only":true,"avoid_personal_disclosure":true}}
   ],
   "presentation": {
-    "family_path_manifest": "../../../lesson-families/family-members/family-path.json",
-    "english_cultural_analysis": "../../../lesson-families/family-members/english-cultural-analysis.json",
-    "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "intro", "patterns", "culture", "examples", "practice", "reading", "completion"],
-    "session_depth_filter": {"core":["facts","intro","patterns","practice","reading","completion"],"cultural":["facts","intro","patterns","culture","examples","practice","reading","completion"]}
+    "family_path_manifest":"../../../lesson-families/family-members/family-path.json",
+    "english_cultural_analysis":"../../../lesson-families/family-members/english-cultural-analysis.json",
+    "groups_are_semantic_not_visual":true,
+    "groups":["facts","intro","patterns","culture","examples","practice","reading","completion"],
+    "session_depth_filter":{"core":["facts","intro","patterns","practice","reading","completion"],"cultural":["facts","intro","patterns","culture","examples","practice","reading","completion"]}
   },
-  "interaction_defaults": {"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
-  "review_state": "candidate",
-  "version": 1
+  "interaction_defaults":{"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state":"candidate",
+  "version":2
 }
