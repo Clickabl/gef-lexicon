@@ -23,116 +23,37 @@
     "notes": "Begin from the learner's best available explanation language, then teach the selected target. Rich kinship-language culture/usage teaching requires the researched Tier 1 or Tier 2 target profile. Every Tier 3 target still has the same 14 broad relationship concepts for comparison and recognition-safe Games."
   },
   "rules": [
-    {
-      "rule_id": "RULE.mul.family.relation_first",
-      "rule_key": "identify-the-relationship-before-the-word",
-      "order": 1,
-      "match_refs": [],
-      "practice_eligible_by_default": true,
-      "notes": "Resolve the actual relationship first: parent, child, sibling, grandparent, aunt/uncle, cousin, niece/nephew, partner/spouse, and so on. Then choose the target language's term."
-    },
-    {
-      "rule_id": "RULE.mul.family.distinctions",
-      "rule_key": "languages-package-kinship-dimensions-differently",
-      "order": 2,
-      "match_refs": [],
-      "practice_eligible_by_default": true,
-      "notes": "A target language may lexicalize dimensions that the learner's source language leaves implicit, including relative age, gender, maternal/paternal side, generation, marriage link, or speaker-relative status."
-    },
-    {
-      "rule_id": "RULE.mul.family.usage_context",
-      "rule_key": "kinship-terms-also-have-usage-context",
-      "order": 3,
-      "match_refs": [],
-      "practice_eligible_by_default": true,
-      "notes": "Reference forms, address forms, honorific forms, affectionate forms, and community usage can differ. Teach the neutral beginner form first and label meaningful alternatives instead of flattening them into one translation."
-    }
+    {"rule_id":"RULE.mul.family.relation_first","rule_key":"identify-the-relationship-before-the-word","order":1,"match_refs":[],"practice_eligible_by_default":true,"notes":"Resolve the actual relationship first: parent, child, sibling, grandparent, aunt/uncle, cousin, niece/nephew, partner/spouse, and so on. Then choose the target language's term."},
+    {"rule_id":"RULE.mul.family.distinctions","rule_key":"languages-package-kinship-dimensions-differently","order":2,"match_refs":[],"practice_eligible_by_default":true,"notes":"A target language may lexicalize dimensions that the learner's source language leaves implicit, including relative age, gender, maternal/paternal side, generation, marriage link, or speaker-relative status."},
+    {"rule_id":"RULE.mul.family.usage_context","rule_key":"kinship-terms-also-have-usage-context","order":3,"match_refs":[],"practice_eligible_by_default":true,"notes":"Reference forms, address forms, honorific forms, affectionate forms, and community usage can differ. Teach the neutral beginner form first and label meaningful alternatives instead of flattening them into one translation."}
   ],
   "triggers": [
-    {
-      "trigger_id": "TRG.mul.family.manual",
-      "trigger_type": "manual",
-      "notes": "Available from the lesson catalog as an A1 vocabulary-and-kinship-language lesson. Tier 1 and Tier 2 targets expose the rich profile; Tier 3 targets expose the comparison/game core."
-    },
-    {
-      "trigger_id": "TRG.mul.family.catalog",
-      "trigger_type": "catalog_topic",
-      "feature_bundle": {"topic": "family_and_relationships"},
-      "notes": "May be placed early in Tier 1 and Tier 2 language paths where basic personal-description vocabulary is appropriate."
-    }
+    {"trigger_id":"TRG.mul.family.manual","trigger_type":"manual","notes":"Available from the lesson catalog as an A1 vocabulary-and-kinship-language lesson. Tier 1 and Tier 2 targets expose the rich profile; Tier 3 targets expose the comparison/game core."},
+    {"trigger_id":"TRG.mul.family.catalog","trigger_type":"catalog_topic","feature_bundle":{"topic":"family_and_relationships"},"notes":"May be placed early in Tier 1 and Tier 2 language paths where basic personal-description vocabulary is appropriate."}
   ],
   "practice_modules": [
-    {
-      "module": "compare_realizations",
-      "eligible_rule_ids": ["RULE.mul.family.relation_first", "RULE.mul.family.distinctions"],
-      "constraints": {
-        "source": "target_profile.core_terms",
-        "compare_against": "source_language_profile",
-        "require_reviewed_relation_features": true
-      }
-    },
-    {
-      "module": "features_to_form",
-      "eligible_rule_ids": ["RULE.mul.family.relation_first", "RULE.mul.family.distinctions"],
-      "constraints": {
-        "source": "target_profile.core_terms",
-        "prompt_features": ["relation", "gender", "relative_age", "family_side", "affinity"],
-        "omit_irrelevant_features": true,
-        "require_unique_defensible_answer": true
-      }
-    },
-    {
-      "module": "form_to_features",
-      "eligible_rule_ids": ["RULE.mul.family.distinctions", "RULE.mul.family.usage_context"],
-      "constraints": {
-        "source": "target_profile.core_terms",
-        "ask_only_features_explicitly_encoded_by_term": true
-      }
-    }
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.family.relation_first","RULE.mul.family.distinctions"],"constraints":{"source":"target_profile.core_terms","compare_against":"source_language_profile","require_reviewed_relation_features":true}},
+    {"module":"features_to_form","eligible_rule_ids":["RULE.mul.family.relation_first","RULE.mul.family.distinctions"],"constraints":{"source":"target_profile.core_terms","prompt_features":["relation","gender","relative_age","family_side","affinity"],"omit_irrelevant_features":true,"require_unique_defensible_answer":true}},
+    {"module":"form_to_features","eligible_rule_ids":["RULE.mul.family.distinctions","RULE.mul.family.usage_context"],"constraints":{"source":"target_profile.core_terms","ask_only_features_explicitly_encoded_by_term":true}},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.family.relation_first","RULE.mul.family.distinctions","RULE.mul.family.usage_context"],"constraints":{"source":"family_relationship_concept_annotations","require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"recognition_safe_for_tier3":true}}
   ],
   "game_exports": [
-    {
-      "game": "family_form_to_relation",
-      "source": "language_capabilities.learning_language_game",
-      "concepts": [
-        "mother", "father", "brother", "sister", "son", "daughter",
-        "grandfather", "grandmother", "uncle", "aunt", "cousin",
-        "niece_nephew", "partner", "spouse"
-      ],
-      "tier3_policy": "recognition_only_until_language_specific_review",
-      "allow_multiple_surface_forms": true,
-      "require_unique_answer_for_reverse_direction": true
-    },
-    {
-      "game": "family_pair_match",
-      "source": "language_capabilities.learning_language_game",
-      "concepts": [
-        "mother", "father", "brother", "sister", "son", "daughter",
-        "grandfather", "grandmother", "uncle", "aunt", "cousin",
-        "niece_nephew", "partner", "spouse"
-      ],
-      "pairing_key": "relationship_concept",
-      "allow_cross_tier_pairs": true,
-      "notes": "The game pairs relationship concepts, not English words. Multiple target forms may be accepted when the language lexicalizes a distinction the prompt has not specified."
-    }
+    {"game":"family_form_to_relation","source":"language_capabilities.learning_language_game","concepts":["mother","father","brother","sister","son","daughter","grandfather","grandmother","uncle","aunt","cousin","niece_nephew","partner","spouse"],"tier3_policy":"recognition_only_until_language_specific_review","allow_multiple_surface_forms":true,"require_unique_answer_for_reverse_direction":true},
+    {"game":"family_pair_match","source":"language_capabilities.learning_language_game","concepts":["mother","father","brother","sister","son","daughter","grandfather","grandmother","uncle","aunt","cousin","niece_nephew","partner","spouse"],"pairing_key":"relationship_concept","allow_cross_tier_pairs":true,"notes":"The game pairs relationship concepts, not English words. Multiple target forms may be accepted when the language lexicalizes a distinction the prompt has not specified."}
   ],
   "presentation": {
-    "source_bridge_manifest": "../../../lesson-families/family-members/source-bridges/manifest.json",
-    "target_profile_manifest": "../../../lesson-families/family-members/target-profiles/manifest.json",
-    "game_vocabulary_manifest": "../../../lesson-families/family-members/game-vocabulary/manifest.json",
-    "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "idea", "source", "target", "terms", "culture", "examples", "practice", "completion"],
-    "scroll_mode": "Render the groups in one short vertical lesson.",
-    "pages_mode": "Render each semantic group as one or more pages while preserving source-first then target-second order.",
-    "teacher_presentation_mode": "Use the same lesson graph and profile data with classroom-sized controls; do not fork content.",
-    "pairing_policy": "Source bridge, reusable support-language facts, rich target profile, and universal game vocabulary are resolved independently. Never generate a source-by-target matrix."
+    "source_bridge_manifest":"../../../lesson-families/family-members/source-bridges/manifest.json",
+    "target_profile_manifest":"../../../lesson-families/family-members/target-profiles/manifest.json",
+    "game_vocabulary_manifest":"../../../lesson-families/family-members/game-vocabulary/manifest.json",
+    "groups_are_semantic_not_visual":true,
+    "groups":["facts","idea","source","target","terms","culture","examples","practice","reading","completion"],
+    "scroll_mode":"Render the groups in one short vertical lesson.",
+    "pages_mode":"Render each semantic group as one or more pages while preserving source-first then target-second order.",
+    "teacher_presentation_mode":"Use the same lesson graph and profile data with classroom-sized controls; do not fork content.",
+    "pairing_policy":"Source bridge, reusable support-language facts, rich target profile, and universal game vocabulary are resolved independently. Never generate a source-by-target matrix."
   },
-  "interaction_defaults": {
-    "offer_mode": "lesson_catalog",
-    "language_limit": 4,
-    "teacher_quest_default": "optional"
-  },
-  "review_state": "candidate",
-  "trust_state": "machine_translated",
-  "version": 3
+  "interaction_defaults":{"offer_mode":"lesson_catalog","language_limit":4,"teacher_quest_default":"optional"},
+  "review_state":"candidate",
+  "trust_state":"machine_translated",
+  "version":4
 }
