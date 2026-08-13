@@ -2,17 +2,18 @@
 /**
  * Compile the canonical universal Lesson SSOT into a compact registry that Lexi,
  * admin tooling, and runtime packaging can consume without inventing a second
- * lesson catalog. This does not promote trust or claim missing lesson components
- * exist; it preserves the SSOT's declared readiness and gaps verbatim.
+ * lesson catalog. Pedagogical depth and delivery completeness stay separate.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { deriveLessonDelivery, implementationResolution } from './lib/lesson-delivery-readiness.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = join(ROOT, 'dist', 'dictionaries', 'shared');
 const MANIFEST = join(ROOT, 'curriculum', 'lesson-system-manifest.json');
 const STATUS = join(ROOT, 'curriculum', 'review-and-release-status.json');
+const DELIVERY_POLICY = join(ROOT, 'curriculum', 'lesson-delivery-capabilities.json');
 
 function readJson(path) { return JSON.parse(readFileSync(path, 'utf8')); }
 
@@ -32,21 +33,36 @@ function walkLessonFiles(root) {
   return result.sort();
 }
 
-function renderingSummary(lessonPath) {
-  const path = join(dirname(lessonPath), 'renderings', 'en.json');
-  if (!existsSync(path)) return null;
-  const doc = readJson(path);
-  return {
-    title_en: doc.title ?? null,
-    summary_en: doc.summary ?? doc.invitation ?? null,
-    rendering_review_state: doc.review_state ?? null,
-    rendering_trust_state: doc.trust_state ?? null,
-    source_path: path.slice(ROOT.length + 1),
-  };
+function renderingSummaries(lessonPath) {
+  const dir = join(dirname(lessonPath), 'renderings');
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter((name) => name.endsWith('.json'))
+    .sort()
+    .map((name) => {
+      const path = join(dir, name);
+      const document = readJson(path);
+      return {
+        document,
+        support_language_tag: document.support_language_tag ?? name.replace(/\.json$/u, ''),
+        title: document.title ?? null,
+        summary: document.summary ?? document.invitation ?? null,
+        invitation: document.invitation ?? null,
+        rendering_review_state: document.review_state ?? null,
+        rendering_trust_state: document.trust_state ?? null,
+        source_path: path.slice(ROOT.length + 1),
+      };
+    });
+}
+
+function publicRendering(rendering) {
+  const { document: _document, ...summary } = rendering;
+  return summary;
 }
 
 const manifest = readJson(MANIFEST);
 const statusModel = readJson(STATUS);
+const deliveryPolicy = readJson(DELIVERY_POLICY);
 const lessonsById = new Map();
 for (const path of walkLessonFiles(join(ROOT, 'lessons'))) {
   const lesson = readJson(path);
@@ -60,6 +76,7 @@ const plannedParts = [];
 for (const group of manifest.lesson_groups ?? []) {
   for (const part of group.parts ?? []) {
     const implementationIds = part.implementation_lesson_ids ?? [];
+    const partResolution = implementationResolution(part);
     if (implementationIds.length === 0) {
       plannedParts.push({
         group_id: group.group_id,
@@ -67,8 +84,10 @@ for (const group of manifest.lesson_groups ?? []) {
         part_id: part.part_id,
         part_title: part.title,
         implementation_status: part.implementation_status,
-        core_status: part.core_status,
-        full_status: part.full_status,
+        pedagogical_tier: part.readiness?.default?.available_tier ?? 'none',
+        release_stage: part.readiness?.default?.release_stage ?? 'machine_created',
+        review_state: part.readiness?.default?.review_state ?? 'candidate',
+        implementation_resolution: partResolution,
         gaps: part.gaps ?? [],
       });
       continue;
@@ -79,24 +98,37 @@ for (const group of manifest.lesson_groups ?? []) {
       if (!found) throw new Error(`SSOT references missing lesson ${lessonId}`);
       const triggers = found.lesson.triggers ?? [];
       const tapTriggers = triggers.filter((trigger) => trigger.trigger_type === 'tap');
+      const renderings = renderingSummaries(found.path);
+      const delivery = deriveLessonDelivery({ part, lesson: found.lesson, renderings });
+      const english = renderings.find((rendering) => rendering.support_language_tag === 'en') ?? renderings[0] ?? null;
+
       lessonRegistry.push({
         lesson_id: lessonId,
         lesson_version: found.lesson.version ?? 1,
         lesson_source_path: found.path.slice(ROOT.length + 1),
         target_language: found.lesson.target_language ?? 'mul',
-        review_state: found.lesson.review_state ?? 'candidate',
+        lesson_review_state: found.lesson.review_state ?? 'candidate',
         group_id: group.group_id,
         group_title: group.title,
         part_id: part.part_id,
         part_title: part.title,
         implementation_status: part.implementation_status,
-        core_status: part.core_status,
-        full_status: part.full_status,
-        release_status: part.release_status ?? null,
+        pedagogical_tier: delivery.pedagogical_tier,
+        release_stage: delivery.release_stage,
+        review_state: delivery.review_state,
+        audiences: delivery.audiences,
+        delivery_capabilities: delivery.capabilities,
+        capability_evidence: delivery.evidence,
+        component_status: delivery.component_status,
+        implementation_resolution: delivery.implementation_resolution,
         required_components: part.required_components ?? [],
         gaps: part.gaps ?? [],
         quest: part.quest ?? null,
         default_reading: part.default_reading ?? null,
+        session_policy: found.lesson.session_policy ?? null,
+        language_capabilities_manifest: found.lesson.language_capabilities_manifest ?? null,
+        renderings: renderings.map(publicRendering),
+        rendering: english ? publicRendering(english) : null,
         tap_offer_contract: {
           eligible: tapTriggers.length > 0,
           trigger_ids: tapTriggers.map((trigger) => trigger.trigger_id),
@@ -104,7 +136,6 @@ for (const group of manifest.lesson_groups ?? []) {
             ? 'A tap offer may be resolved only from canonical lexical/occurrence evidence; this registry never invents a surface match.'
             : 'No canonical tap trigger is declared for this lesson. Manual/path/catalog discovery may still be valid.',
         },
-        rendering: renderingSummary(found.path),
       });
     }
   }
@@ -120,11 +151,13 @@ for (const lessonId of lessonsById.keys()) {
 }
 
 const document = {
-  schema_version: 1,
+  schema_version: 2,
   canonical_source: 'curriculum/lesson-system-manifest.json',
   status_model_source: 'curriculum/review-and-release-status.json',
+  delivery_policy_source: 'curriculum/lesson-delivery-capabilities.json',
   manifest_schema_version: manifest.schema_version,
   status_schema_version: statusModel.schema_version,
+  delivery_policy_version: deliveryPolicy.version,
   implemented_lesson_count: lessonRegistry.length,
   planned_part_count: plannedParts.length,
   lessons: lessonRegistry,
