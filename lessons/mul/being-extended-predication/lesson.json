@@ -1,0 +1,51 @@
+{
+  "schema_version": 3,
+  "lesson_id": "LES.mul.grammar.being.extended_predication",
+  "lesson_key": "being-extended-predication",
+  "target_language": "mul",
+  "construction_ids": [],
+  "prerequisite_lesson_ids": ["LES.mul.grammar.being.existence"],
+  "difficulty_band": "A2",
+  "rules": [
+    {
+      "rule_id":"RULE.mul.being.time_date",
+      "rule_key":"time-date-predication",
+      "order":1,
+      "semantic_function_ids":["SEM.TIME_DATE_PREDICATION"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.TIME_DATE_PREDICATION"}],
+      "practice_eligible_by_default":false,
+      "notes":"Connect time/date predication to the language's Being system only when that relationship is useful; the dedicated calendar/time lessons own the temporal concepts themselves."
+    },
+    {
+      "rule_id":"RULE.mul.being.origin_affiliation",
+      "rule_key":"origin-affiliation",
+      "order":2,
+      "semantic_function_ids":["SEM.ORIGIN_AFFILIATION"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.ORIGIN_AFFILIATION"}],
+      "practice_eligible_by_default":true,
+      "notes":"Compare origin, provenance, nationality, membership, or affiliation constructions when relevant."
+    },
+    {
+      "rule_id":"RULE.mul.being.material_composition",
+      "rule_key":"material-composition",
+      "order":3,
+      "semantic_function_ids":["SEM.MATERIAL_COMPOSITION"],
+      "match_refs":[{"target_type":"semantic_function","target_id":"SEM.MATERIAL_COMPOSITION"}],
+      "practice_eligible_by_default":false,
+      "notes":"Compare material/composition predication only where it belongs naturally to the target language's copular system."
+    }
+  ],
+  "triggers":[
+    {"trigger_id":"TRG.mul.being.extended_predication.catalog","trigger_type":"catalog_topic","notes":"Later optional Being lesson after the core identity/state/existence sequence."},
+    {"trigger_id":"TRG.mul.being.extended_predication.occurrence","trigger_type":"tap","match_any":[{"target_type":"semantic_function","target_id":"SEM.TIME_DATE_PREDICATION"},{"target_type":"semantic_function","target_id":"SEM.ORIGIN_AFFILIATION"},{"target_type":"semantic_function","target_id":"SEM.MATERIAL_COMPOSITION"}],"notes":"Offer only from reviewed occurrences and only when the target-language comparison is pedagogically useful."}
+  ],
+  "practice_modules":[
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.being.time_date","RULE.mul.being.origin_affiliation","RULE.mul.being.material_composition"]},
+    {"module":"meaning_here","eligible_rule_ids":["RULE.mul.being.origin_affiliation"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.mul.being.time_date","RULE.mul.being.origin_affiliation","RULE.mul.being.material_composition"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
+  ],
+  "example_query":{"prefer_current_book":true,"max_book_examples":6,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":true},
+  "interaction_defaults":{"offer_mode":"restrained_contextual_offer","dismissal_behavior":"Never interrupt reading automatically.","cooldown_policy":"Do not repeatedly offer after dismissal; manual lesson access remains available."},
+  "review_state":"candidate",
+  "version":1
+}
