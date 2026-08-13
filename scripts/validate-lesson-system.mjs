@@ -88,6 +88,7 @@ if (manifest.status_model.public_beta_minimum !== statusModel.lesson_release.pub
 const groupIds = new Set();
 const partIds = new Set();
 const referencedLessonIds = new Set();
+const lessonReferenceOwners = new Map();
 
 for (const group of manifest.lesson_groups) {
   if (groupIds.has(group.group_id)) errors.push(`Duplicate group id: ${group.group_id}`);
@@ -97,9 +98,20 @@ for (const group of manifest.lesson_groups) {
   for (const part of group.parts) {
     if (partIds.has(part.part_id)) errors.push(`Duplicate part id: ${part.part_id}`);
     partIds.add(part.part_id);
-    for (const lessonId of part.implementation_lesson_ids ?? []) referencedLessonIds.add(lessonId);
+    for (const lessonId of part.implementation_lesson_ids ?? []) {
+      referencedLessonIds.add(lessonId);
+      const owners = lessonReferenceOwners.get(lessonId) ?? [];
+      owners.push(part.part_id);
+      lessonReferenceOwners.set(lessonId, owners);
+    }
     for (const conceptRef of part.core_concept_refs ?? []) checkLocalRef(conceptRef, part.part_id, errors);
     if (part.quest?.ref) checkLocalRef(part.quest.ref, `${part.part_id} quest`, errors);
+  }
+}
+
+for (const [lessonId, owners] of lessonReferenceOwners) {
+  if (owners.length > 1) {
+    errors.push(`lesson_id ${lessonId} is bound to multiple lesson parts: ${owners.join(', ')}`);
   }
 }
 
@@ -163,6 +175,11 @@ for (const relativePath of walkJsonFiles('lessons')) {
 for (const lessonId of referencedLessonIds) {
   if (!actualLessonIds.has(lessonId)) errors.push(`Manifest references missing lesson_id ${lessonId}`);
 }
+for (const [lessonId, relativePath] of actualLessonIds) {
+  if (!referencedLessonIds.has(lessonId)) {
+    errors.push(`Lesson definition ${lessonId} in ${relativePath} is not represented by any manifest lesson part`);
+  }
+}
 
 const requiredComponentIds = new Set(
   manifest.component_catalog.flatMap((component) => component.required_for.length ? [component.component_id] : [])
@@ -188,4 +205,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Universal lesson SSOT valid: ${groupIds.size} groups, ${partIds.size} parts, ${actualLessonIds.size} lesson definitions indexed.`);
+console.log(`Universal lesson SSOT valid: ${groupIds.size} groups, ${partIds.size} parts, ${actualLessonIds.size} lesson definitions indexed with bidirectional manifest parity.`);
