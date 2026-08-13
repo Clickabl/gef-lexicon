@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "lesson_id": "LES.mul.grammar.being",
   "lesson_key": "to-be-or-not-to-be",
   "target_language": "mul",
@@ -7,198 +7,28 @@
   "prerequisite_lesson_ids": [],
   "difficulty_band": "mixed",
   "rules": [
-    {
-      "rule_id": "RULE.mul.being.identity_equivalence",
-      "rule_key": "identity-equivalence",
-      "order": 1,
-      "semantic_function_ids": ["SEM.IDENTITY_EQUIVALENCE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.IDENTITY_EQUIVALENCE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare how a language identifies or equates one referent with another. Do not assume a dedicated copular verb."
-    },
-    {
-      "rule_id": "RULE.mul.being.classification_role",
-      "rule_key": "classification-role",
-      "order": 2,
-      "semantic_function_ids": ["SEM.CLASSIFICATION_ROLE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CLASSIFICATION_ROLE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare category, profession, role, type, and class predication."
-    },
-    {
-      "rule_id": "RULE.mul.being.characteristic_property",
-      "rule_key": "characteristic-property",
-      "order": 3,
-      "semantic_function_ids": ["SEM.CHARACTERISTIC_PROPERTY"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CHARACTERISTIC_PROPERTY"}],
-      "practice_eligible_by_default": true,
-      "notes": "Teach characteristic/property predication without using permanent versus temporary as a universal rule."
-    },
-    {
-      "rule_id": "RULE.mul.being.current_state",
-      "rule_key": "current-state-condition",
-      "order": 4,
-      "semantic_function_ids": ["SEM.CURRENT_STATE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.CURRENT_STATE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare how current state or condition is predicated."
-    },
-    {
-      "rule_id": "RULE.mul.being.resultant_state",
-      "rule_key": "resultant-state",
-      "order": 5,
-      "semantic_function_ids": ["SEM.RESULTANT_STATE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.RESULTANT_STATE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare states understood as the result of a prior change or event."
-    },
-    {
-      "rule_id": "RULE.mul.being.entity_location",
-      "rule_key": "entity-location",
-      "order": 6,
-      "semantic_function_ids": ["SEM.ENTITY_LOCATION"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.ENTITY_LOCATION"}],
-      "practice_eligible_by_default": true,
-      "notes": "Keep location of a person or thing distinct from event-location grammar where a language treats them differently."
-    },
-    {
-      "rule_id": "RULE.mul.being.event_location",
-      "rule_key": "event-location",
-      "order": 7,
-      "semantic_function_ids": ["SEM.EVENT_LOCATION"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.EVENT_LOCATION"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare how languages locate events and occurrences. Spanish is a useful case because event location commonly patterns with ser rather than entity-location estar."
-    },
-    {
-      "rule_id": "RULE.mul.being.existence_presence",
-      "rule_key": "existence-presence",
-      "order": 8,
-      "semantic_function_ids": ["SEM.EXISTENCE_PRESENCE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.EXISTENCE_PRESENCE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare existential/presentational constructions such as English there is, Spanish hay, Japanese iru/aru, or language-specific zero/bound constructions."
-    },
-    {
-      "rule_id": "RULE.mul.being.absence_nonexistence",
-      "rule_key": "absence-nonexistence",
-      "order": 9,
-      "semantic_function_ids": ["SEM.ABSENCE_NONEXISTENCE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.ABSENCE_NONEXISTENCE"}],
-      "practice_eligible_by_default": true,
-      "notes": "Absence/nonexistence may use ordinary negation or a dedicated negative existential."
-    },
-    {
-      "rule_id": "RULE.mul.being.time_date",
-      "rule_key": "time-date-predication",
-      "order": 10,
-      "semantic_function_ids": ["SEM.TIME_DATE_PREDICATION"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.TIME_DATE_PREDICATION"}],
-      "practice_eligible_by_default": false,
-      "notes": "Include only where time/date predication is usefully connected to the language's Being system."
-    },
-    {
-      "rule_id": "RULE.mul.being.origin_affiliation",
-      "rule_key": "origin-affiliation",
-      "order": 11,
-      "semantic_function_ids": ["SEM.ORIGIN_AFFILIATION"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.ORIGIN_AFFILIATION"}],
-      "practice_eligible_by_default": true,
-      "notes": "Compare origin, provenance, nationality, membership, or affiliation constructions when relevant."
-    },
-    {
-      "rule_id": "RULE.mul.being.material_composition",
-      "rule_key": "material-composition",
-      "order": 12,
-      "semantic_function_ids": ["SEM.MATERIAL_COMPOSITION"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.MATERIAL_COMPOSITION"}],
-      "practice_eligible_by_default": false,
-      "notes": "Compare material/composition predication where it belongs naturally to the language's copular system."
-    },
-    {
-      "rule_id": "RULE.mul.being.possession_as_existence",
-      "rule_key": "possession-as-existence",
-      "order": 13,
-      "semantic_function_ids": ["SEM.POSSESSION_AS_EXISTENCE"],
-      "match_refs": [{"target_type":"semantic_function","target_id":"SEM.POSSESSION_AS_EXISTENCE"}],
-      "practice_eligible_by_default": false,
-      "notes": "Show possession in this lesson only when a language expresses it through an existential/locative structure and the comparison is pedagogically useful."
-    }
+    {"rule_id":"RULE.mul.being.identity_equivalence","rule_key":"identity-equivalence","order":1,"semantic_function_ids":["SEM.IDENTITY_EQUIVALENCE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.IDENTITY_EQUIVALENCE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.identity_classification."},
+    {"rule_id":"RULE.mul.being.classification_role","rule_key":"classification-role","order":2,"semantic_function_ids":["SEM.CLASSIFICATION_ROLE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.CLASSIFICATION_ROLE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.identity_classification."},
+    {"rule_id":"RULE.mul.being.characteristic_property","rule_key":"characteristic-property","order":3,"semantic_function_ids":["SEM.CHARACTERISTIC_PROPERTY"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.CHARACTERISTIC_PROPERTY"}],"practice_eligible_by_default":false,"notes":"Overview only. Do not teach permanent versus temporary as a universal rule."},
+    {"rule_id":"RULE.mul.being.current_state","rule_key":"current-state-condition","order":4,"semantic_function_ids":["SEM.CURRENT_STATE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.CURRENT_STATE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.states_location."},
+    {"rule_id":"RULE.mul.being.resultant_state","rule_key":"resultant-state","order":5,"semantic_function_ids":["SEM.RESULTANT_STATE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.RESULTANT_STATE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.states_location."},
+    {"rule_id":"RULE.mul.being.entity_location","rule_key":"entity-location","order":6,"semantic_function_ids":["SEM.ENTITY_LOCATION"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.ENTITY_LOCATION"}],"practice_eligible_by_default":false,"notes":"Overview only. Keep entity location distinct from event location where relevant."},
+    {"rule_id":"RULE.mul.being.event_location","rule_key":"event-location","order":7,"semantic_function_ids":["SEM.EVENT_LOCATION"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.EVENT_LOCATION"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.states_location."},
+    {"rule_id":"RULE.mul.being.existence_presence","rule_key":"existence-presence","order":8,"semantic_function_ids":["SEM.EXISTENCE_PRESENCE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.EXISTENCE_PRESENCE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.existence."},
+    {"rule_id":"RULE.mul.being.absence_nonexistence","rule_key":"absence-nonexistence","order":9,"semantic_function_ids":["SEM.ABSENCE_NONEXISTENCE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.ABSENCE_NONEXISTENCE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.existence."},
+    {"rule_id":"RULE.mul.being.time_date","rule_key":"time-date-predication","order":10,"semantic_function_ids":["SEM.TIME_DATE_PREDICATION"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.TIME_DATE_PREDICATION"}],"practice_eligible_by_default":false,"notes":"Overview only. Temporal concepts are taught by the dedicated calendar/time lessons."},
+    {"rule_id":"RULE.mul.being.origin_affiliation","rule_key":"origin-affiliation","order":11,"semantic_function_ids":["SEM.ORIGIN_AFFILIATION"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.ORIGIN_AFFILIATION"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.extended_predication."},
+    {"rule_id":"RULE.mul.being.material_composition","rule_key":"material-composition","order":12,"semantic_function_ids":["SEM.MATERIAL_COMPOSITION"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.MATERIAL_COMPOSITION"}],"practice_eligible_by_default":false,"notes":"Overview only. Include in target-language instruction only where pedagogically useful."},
+    {"rule_id":"RULE.mul.being.possession_as_existence","rule_key":"possession-as-existence","order":13,"semantic_function_ids":["SEM.POSSESSION_AS_EXISTENCE"],"match_refs":[{"target_type":"semantic_function","target_id":"SEM.POSSESSION_AS_EXISTENCE"}],"practice_eligible_by_default":false,"notes":"Overview only. Practice belongs to LES.mul.grammar.being.existence when the target language licenses the comparison."}
   ],
   "triggers": [
-    {
-      "trigger_id": "TRG.mul.being.manual",
-      "trigger_type": "manual",
-      "match_any": [],
-      "notes": "Available from Lessons only for Tier 1 and Tier 2 target languages according to the canonical language-support registry."
-    },
-    {
-      "trigger_id": "TRG.mul.being.semantic_occurrence",
-      "trigger_type": "tap",
-      "match_any": [
-        {"target_type":"semantic_function","target_id":"SEM.IDENTITY_EQUIVALENCE"},
-        {"target_type":"semantic_function","target_id":"SEM.CLASSIFICATION_ROLE"},
-        {"target_type":"semantic_function","target_id":"SEM.CHARACTERISTIC_PROPERTY"},
-        {"target_type":"semantic_function","target_id":"SEM.CURRENT_STATE"},
-        {"target_type":"semantic_function","target_id":"SEM.RESULTANT_STATE"},
-        {"target_type":"semantic_function","target_id":"SEM.ENTITY_LOCATION"},
-        {"target_type":"semantic_function","target_id":"SEM.EXISTENCE_PRESENCE"}
-      ],
-      "notes": "A reviewed passage occurrence may offer the lesson without interrupting reading. Runtime must still enforce Tier 1/2 grammar-lesson eligibility."
-    }
+    {"trigger_id":"TRG.mul.being.manual","trigger_type":"manual","match_any":[],"notes":"Semantic overview available from Lessons. Sequential practice uses the smaller CEFR-bounded Being lessons."}
   ],
   "practice_modules": [
-    {
-      "module": "compare_realizations",
-      "eligible_rule_ids": [
-        "RULE.mul.being.identity_equivalence",
-        "RULE.mul.being.classification_role",
-        "RULE.mul.being.characteristic_property",
-        "RULE.mul.being.current_state",
-        "RULE.mul.being.resultant_state",
-        "RULE.mul.being.entity_location",
-        "RULE.mul.being.event_location",
-        "RULE.mul.being.existence_presence",
-        "RULE.mul.being.absence_nonexistence"
-      ]
-    },
-    {
-      "module": "meaning_here",
-      "eligible_rule_ids": [
-        "RULE.mul.being.identity_equivalence",
-        "RULE.mul.being.classification_role",
-        "RULE.mul.being.characteristic_property",
-        "RULE.mul.being.current_state",
-        "RULE.mul.being.resultant_state",
-        "RULE.mul.being.entity_location",
-        "RULE.mul.being.event_location",
-        "RULE.mul.being.existence_presence"
-      ]
-    },
-    {
-      "module": "why_this",
-      "eligible_rule_ids": [
-        "RULE.mul.being.characteristic_property",
-        "RULE.mul.being.current_state",
-        "RULE.mul.being.resultant_state",
-        "RULE.mul.being.entity_location",
-        "RULE.mul.being.event_location",
-        "RULE.mul.being.existence_presence"
-      ]
-    }
+    {"module":"compare_realizations","eligible_rule_ids":["RULE.mul.being.identity_equivalence","RULE.mul.being.classification_role","RULE.mul.being.characteristic_property","RULE.mul.being.current_state","RULE.mul.being.resultant_state","RULE.mul.being.entity_location","RULE.mul.being.event_location","RULE.mul.being.existence_presence","RULE.mul.being.absence_nonexistence","RULE.mul.being.time_date","RULE.mul.being.origin_affiliation","RULE.mul.being.material_composition","RULE.mul.being.possession_as_existence"],"constraints":{"teaching_surface_only":true,"scored_practice_forbidden":true}}
   ],
-  "example_query": {
-    "prefer_current_book": true,
-    "max_book_examples": 6,
-    "spoiler_policy": "current_then_read",
-    "minimum_quality": "usable",
-    "require_reviewed_occurrence": false
-  },
-  "interaction_defaults": {
-    "offer_mode": "restrained_contextual_offer",
-    "dismissal_behavior": "Never interrupt reading automatically. Offer Learn now or Queue lesson from an eligible grammar occurrence.",
-    "cooldown_policy": "Do not repeatedly offer the lesson from ordinary copular occurrences after dismissal; manual Lessons access remains available."
-  },
-  "review_state": "candidate",
-  "version": 1
+  "example_query":{"prefer_current_book":true,"max_book_examples":6,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
+  "interaction_defaults":{"offer_mode":"manual_lessons_tab","dismissal_behavior":"Overview only; never interrupt reading automatically.","cooldown_policy":"Not contextually re-offered after dismissal."},
+  "review_state":"candidate",
+  "version":2
 }
