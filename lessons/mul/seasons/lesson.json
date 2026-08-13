@@ -31,11 +31,12 @@
   "practice_modules": [
     {"module":"ordered_sequence","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"put the selected season system in cycle order"}},
     {"module":"concept_term_match","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"match season concepts to target-language terms"}},
-    {"module":"cycle_neighbor","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"identify the season before or after a named season when the selected system is cyclic"}}
+    {"module":"cycle_neighbor","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","system_selector":"session_context","learning_languages_only":true,"task":"identify the season before or after a named season when the selected system is cyclic"}},
+    {"module":"reader_quest","eligible_rule_ids":[],"constraints":{"knowledge_set_id":"KNOWSET.mul.calendar.seasons","target_type":"concept","require_reviewed_occurrence":true,"omit_when_evidence_missing":true}}
   ],
   "presentation": {
     "groups_are_semantic_not_visual": true,
-    "groups": ["facts", "comparison-intro", "terms", "culture", "practice", "completion"],
+    "groups": ["facts", "comparison-intro", "terms", "interactive-time-scale", "culture", "practice", "reading", "completion"],
     "scroll_mode": "render groups in one vertical lesson surface",
     "pages_mode": "render each group as one or more full-screen pages according to block page_break/group metadata",
     "teacher_presentation_mode": "use the same groups and data with classroom-sized controls; do not fork lesson content"
@@ -46,5 +47,5 @@
     "teacher_quest_default": "optional"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
