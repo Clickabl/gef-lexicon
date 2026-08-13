@@ -15,7 +15,7 @@
     "fixed_comparison_language_tags": [],
     "language_loop_order": ["learning_from", "learning"],
     "dedupe_language_roles": true,
-    "rendering_model": "Render one language at a time. The learner's native language is first, then other learning-from languages in best-known-to-worst-known profile order, then learning languages. Each language record owns its forms array and optional own_grammar_blurb. If neither English nor Spanish is already displayed, inject one of them immediately after the native language as a forms-only contrast anchor, choosing the one that best contrasts with the native language's number of forms.",
+    "rendering_model": "Render one language at a time. The learner's best/explanation language is first, then other learning-from languages in best-known-to-worst-known profile order, then learning languages. Each language record owns its forms array and optional own_grammar_blurb. If neither English nor Spanish is already displayed, inject one of them immediately after the best/explanation language as a forms-only contrast anchor, choosing the one that best contrasts with the active language's number of forms. A contrast anchor is pedagogical evidence for the cross-language claim, not an inferred profile language.",
     "support_selection": {
       "full": "Render the language comparison block plus structured GrammarRuleBlock sections and any defensible rule-driven practice.",
       "comparison_only": "Render the language comparison block only. Do not synthesize missing grammar rules or practice.",
@@ -50,7 +50,7 @@
       "block_type": "language_comparison_loop",
       "group_id": "comparison-intro",
       "repeat": "per_relevant_language",
-      "notes": "For each ordered language, show the language label and forms from its comparison record. If own_grammar_blurb exists and the language actually belongs to the learner's profile, show that native-language paragraph directly below the forms. An injected English/Spanish reference anchor shows forms only."
+      "notes": "For each ordered language, show the language label and forms from its comparison record. If own_grammar_blurb exists and the language actually belongs to the learner's profile, show that best/explanation-language paragraph directly below the forms. An injected English/Spanish reference anchor shows forms only. Never make a cross-language contrast claim without rendering at least one concrete contrast example."
     },
     {
       "block_id": "grammar-primer",
@@ -100,9 +100,9 @@
   "presentation_modes": ["scroll", "paged", "presentation"],
   "learning_path_policy": {
     "placements_are_language_specific": true,
-    "placement_registry": "curriculum/learning-path-placements.json",
-    "notes": "The same multilingual lesson family may appear at different positions in different language paths. Lesson-specific full support can be added for any global tier without changing that language's global tier."
+    "placement_registry": "curriculum/learning-path-template.json",
+    "notes": "The ordered learning-path template is canonical. curriculum/learning-path-placements.json is a compatibility projection while older consumers migrate. The same multilingual lesson family may appear at different positions in different language paths. Lesson-specific full support can be added for any global tier without changing that language's global tier."
   },
   "review_state": "candidate",
-  "version": 7
+  "version": 8
 }

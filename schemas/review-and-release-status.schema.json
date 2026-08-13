@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/review-and-release-status.schema.json",
+  "title": "Gef lesson review, trust, and release status model",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "model_id", "integrity_review", "asset_trust", "lesson_release", "release_requirements", "version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "model_id": {"const": "GEF.LESSON_STATUS_MODEL"},
+    "integrity_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["states"],
+      "properties": {
+        "states": {"const": ["candidate", "approved", "superseded", "rejected"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "asset_trust": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ladder"],
+      "properties": {
+        "ladder": {"const": ["machine_translated", "machine_verified", "public", "gef_certified"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "lesson_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ladder", "public_beta_minimum", "general_public_stage", "education_stage"],
+      "properties": {
+        "ladder": {"const": ["machine_created", "machine_verified", "general_public", "education"]},
+        "public_beta_minimum": {"const": "machine_verified"},
+        "general_public_stage": {"const": "general_public"},
+        "education_stage": {"const": "education"},
+        "notes": {"type": "string"}
+      }
+    },
+    "release_requirements": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["release_stage", "minimum_asset_trust", "integrity_rule"],
+        "properties": {
+          "release_stage": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
+          "minimum_asset_trust": {"enum": ["machine_translated", "machine_verified", "public", "gef_certified"]},
+          "integrity_rule": {"type": "string", "minLength": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "version": {"type": "integer", "minimum": 1}
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson-system-manifest.schema.json",
+  "title": "Gef universal lesson system manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "manifest_id", "canonical_sources", "status_model", "coverage_policy", "component_catalog", "readiness_resolution", "lesson_groups", "review_state", "version"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "manifest_id": {"const": "GEF.LESSON_SYSTEM"},
+    "canonical_sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lesson_truth_repo", "language_registry", "corpus_evidence_repo", "runtime_repo", "agent_queue_contract"],
+      "properties": {
+        "lesson_truth_repo": {"const": "Clickabl/gef-lexicon"},
+        "language_registry": {"type": "string", "minLength": 1},
+        "corpus_evidence_repo": {"const": "Clickabl/gef-content"},
+        "runtime_repo": {"const": "Clickabl/gef-expo"},
+        "agent_queue_contract": {"type": "string", "minLength": 1}
+      }
+    },
+    "status_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["integrity_review_states", "release_stages", "release_order", "public_beta_minimum"],
+      "properties": {
+        "integrity_review_states": {"type": "array", "items": {"enum": ["candidate", "approved", "superseded", "rejected"]}, "minItems": 4, "uniqueItems": true},
+        "release_stages": {"type": "array", "items": {"enum": ["machine_created", "machine_verified", "general_public", "education"]}, "minItems": 4, "uniqueItems": true},
+        "release_order": {"type": "array", "items": {"enum": ["machine_created", "machine_verified", "general_public", "education"]}, "minItems": 4, "maxItems": 4, "uniqueItems": true},
+        "public_beta_minimum": {"const": "machine_verified"},
+        "notes": {"type": "string"}
+      }
+    },
+    "coverage_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language_registry_ref", "language_program_pointer", "counts_must_be_derived", "directional_pairs", "completeness_tiers", "core_all_language_invariant", "tier3_core_policy", "full_grammar_policy"],
+      "properties": {
+        "language_registry_ref": {"type": "string", "minLength": 1},
+        "language_program_pointer": {"const": "/programs/learnFromLanguages"},
+        "counts_must_be_derived": {"const": true},
+        "directional_pairs": {"const": true},
+        "completeness_tiers": {"type": "array", "items": {"enum": ["core", "full"]}, "minItems": 2, "maxItems": 2, "uniqueItems": true},
+        "core_all_language_invariant": {"type": "string", "minLength": 1},
+        "tier3_core_policy": {"type": "string", "minLength": 1},
+        "full_grammar_policy": {"type": "string", "minLength": 1}
+      }
+    },
+    "component_catalog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/definitions/componentDefinition"}
+    },
+    "readiness_resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["precedence", "summary_is_derived", "pair_matrix_is_materialized"],
+      "properties": {
+        "precedence": {
+          "type": "array",
+          "items": {"enum": ["part_default", "tier_override", "source_language_override", "target_language_override", "pair_override"]},
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "summary_is_derived": {"const": true},
+        "pair_matrix_is_materialized": {"const": false},
+        "notes": {"type": "string"}
+      }
+    },
+    "lesson_groups": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/lessonGroup"}
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "componentDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "required_for"],
+      "properties": {
+        "component_id": {"enum": ["lexicon_concepts", "intro_blurb", "examples", "ui_interactions", "practice", "game", "quest", "default_reading", "annotations", "related_lessons", "learning_path", "cefr_target"]},
+        "required_for": {"type": "array", "items": {"enum": ["core", "full"]}, "uniqueItems": true},
+        "notes": {"type": "string"}
+      }
+    },
+    "cefrTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default"],
+      "properties": {
+        "default": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+        "range": {
+          "type": "array",
+          "items": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "language_overrides": {
+          "type": "object",
+          "additionalProperties": {"enum": ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]}
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "componentState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["release_stage", "review_state"],
+      "properties": {
+        "release_stage": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+        "status": {"enum": ["ready", "partial", "missing", "not_applicable", "blocked"]},
+        "source_ref": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    },
+    "readinessProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "available_tier": {"enum": ["none", "core", "full"]},
+        "release_stage": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
+        "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+        "components": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/definitions/componentState"}
+        },
+        "notes": {"type": "string"}
+      }
+    },
+    "tierOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_tier", "target_tier", "readiness"],
+      "properties": {
+        "source_tier": {"enum": ["tier1_full", "tier2_selective", "tier3_read_games", "any"]},
+        "target_tier": {"enum": ["tier1_full", "tier2_selective", "tier3_read_games", "any"]},
+        "readiness": {"$ref": "#/definitions/readinessProfile"}
+      }
+    },
+    "languageOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language", "role", "readiness"],
+      "properties": {
+        "language": {"type": "string", "minLength": 1},
+        "role": {"enum": ["source", "target"]},
+        "readiness": {"$ref": "#/definitions/readinessProfile"}
+      }
+    },
+    "pairOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_language", "target_language", "readiness"],
+      "properties": {
+        "source_language": {"type": "string", "minLength": 1},
+        "target_language": {"type": "string", "minLength": 1},
+        "readiness": {"$ref": "#/definitions/readinessProfile"}
+      }
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["bound", "candidate", "required_missing", "not_applicable"]},
+        "ref": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    },
+    "lessonPart": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["part_id", "title", "cefr", "implementation_status", "core_concept_refs", "quest", "default_reading", "readiness"],
+      "properties": {
+        "part_id": {"type": "string", "pattern": "^PART\\.[A-Za-z0-9._-]+$"},
+        "title": {"type": "string", "minLength": 1},
+        "lesson_family_ref": {"type": "string"},
+        "implementation_lesson_ids": {"type": "array", "items": {"type": "string", "pattern": "^LES\\.[A-Za-z0-9._-]+$"}, "uniqueItems": true},
+        "implementation_status": {"enum": ["implemented", "partial", "planned"]},
+        "cefr": {"$ref": "#/definitions/cefrTarget"},
+        "prerequisite_part_ids": {"type": "array", "items": {"type": "string", "pattern": "^PART\\.[A-Za-z0-9._-]+$"}, "uniqueItems": true},
+        "core_concept_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "quest": {"$ref": "#/definitions/binding"},
+        "default_reading": {"$ref": "#/definitions/binding"},
+        "ui_component_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "readiness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["default"],
+          "properties": {
+            "default": {"$ref": "#/definitions/readinessProfile"},
+            "tier_overrides": {"type": "array", "items": {"$ref": "#/definitions/tierOverride"}},
+            "language_overrides": {"type": "array", "items": {"$ref": "#/definitions/languageOverride"}},
+            "pair_overrides": {"type": "array", "items": {"$ref": "#/definitions/pairOverride"}}
+          }
+        },
+        "gaps": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "lessonGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group_id", "title", "parts"],
+      "properties": {
+        "group_id": {"type": "string", "pattern": "^GROUP\\.[A-Za-z0-9._-]+$"},
+        "title": {"type": "string", "minLength": 1},
+        "gold_standard": {"type": "boolean"},
+        "family_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "parts": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/lessonPart"}},
+        "related_lessons_ref": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}

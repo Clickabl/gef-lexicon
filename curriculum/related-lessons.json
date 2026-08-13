@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "edges": [
+    {"edge_id":"REL.family.members.describe","from_ref":"PART.family.members","to_ref":"PART.family.describe","relationship":"next","reason":"Description patterns build directly on basic family-member concepts.","review_state":"candidate"},
+    {"edge_id":"REL.family.describe.extended","from_ref":"PART.family.describe","to_ref":"PART.family.extended","relationship":"next","reason":"Extended kinship adds relationship paths after basic family description.","review_state":"candidate"},
+    {"edge_id":"REL.family.extended.relationships","from_ref":"PART.family.extended","to_ref":"PART.family.relationships","relationship":"next","reason":"Relationship and family-life vocabulary expands beyond kinship labels.","review_state":"candidate"},
+    {"edge_id":"REL.calendar.days.months","from_ref":"PART.calendar_time.days_of_week","to_ref":"PART.calendar_time.months_and_years","relationship":"sibling","bidirectional":true,"reason":"Both are early calendar-cycle concepts but need not be taught consecutively.","review_state":"candidate"},
+    {"edge_id":"REL.calendar.months.seasons","from_ref":"PART.calendar_time.months_and_years","to_ref":"PART.calendar_time.seasons","relationship":"sibling","bidirectional":true,"reason":"Months and seasons interact in calendar discourse while remaining separate lesson parts.","review_state":"candidate"},
+    {"edge_id":"REL.calendar.time.days","from_ref":"PART.calendar_time.time_of_day","to_ref":"PART.calendar_time.days_of_week","relationship":"sibling","bidirectional":true,"reason":"Both belong to the broader time/calendar concept family without imposing a fixed back-to-back sequence.","review_state":"candidate"},
+    {"edge_id":"REL.for.semantic.spanish","from_ref":"PART.multiple_words_for.semantic_map","to_ref":"PART.multiple_words_for.spanish_por_para","relationship":"expands","reason":"The generic one-form/multiple-form semantic map primes the Spanish-specific por/para split.","review_state":"candidate"},
+    {"edge_id":"REL.gender.number","from_ref":"PART.grammatical_gender.core","to_ref":"PART.grammatical_number.core","relationship":"contrast","bidirectional":true,"reason":"Both show how languages grammaticalize noun-phrase features and agreement, but neither is a universal prerequisite for the other.","review_state":"candidate"},
+    {"edge_id":"REL.being.multiple_for","from_ref":"PART.being.core","to_ref":"PART.multiple_words_for.semantic_map","relationship":"reinforces","bidirectional":true,"reason":"Both explicitly teach that semantic functions do not map one-to-one onto words across languages.","review_state":"candidate"}
+  ],
+  "review_state":"candidate",
+  "version":1
+}

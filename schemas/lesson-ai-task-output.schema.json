@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lesson-ai-task-output.schema.json",
+  "title": "Gef lesson component AI task candidate output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lesson_group_id", "part_id", "source_language", "target_language", "component", "result", "review_state", "evidence", "proposed_changes"],
+  "properties": {
+    "lesson_group_id": {"type": "string", "pattern": "^GROUP\\.[A-Za-z0-9._-]+$"},
+    "part_id": {"type": "string", "pattern": "^PART\\.[A-Za-z0-9._-]+$"},
+    "source_language": {"type": "string", "minLength": 1},
+    "target_language": {"type": "string", "minLength": 1},
+    "component": {"enum": ["lexicon_concepts", "intro_blurb", "examples", "ui_interactions", "practice", "game", "quest", "default_reading", "annotations", "related_lessons", "learning_path", "cefr_target"]},
+    "result": {"enum": ["candidate_ready", "needs_research", "blocked", "no_change_needed"]},
+    "review_state": {"const": "candidate"},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "ref", "supports"],
+        "properties": {
+          "kind": {"enum": ["repo_ref", "source_url", "corpus_occurrence", "linguistic_source", "validator"]},
+          "ref": {"type": "string", "minLength": 1},
+          "supports": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "proposed_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "path", "operation", "summary"],
+        "properties": {
+          "repository": {"enum": ["Clickabl/gef-lexicon", "Clickabl/gef-content", "Clickabl/gef-expo"]},
+          "path": {"type": "string", "minLength": 1},
+          "operation": {"enum": ["create", "update", "none"]},
+          "summary": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "readiness_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "component_status_after_review": {"enum": ["ready", "partial", "missing", "blocked", "not_applicable"]},
+        "maximum_release_stage_supported": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "validator_commands": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "string"}
+  }
+}

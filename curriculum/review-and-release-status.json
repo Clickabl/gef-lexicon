@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "model_id": "GEF.LESSON_STATUS_MODEL",
+  "integrity_review": {
+    "states": ["candidate", "approved", "superseded", "rejected"],
+    "notes": "Answers whether the underlying authored/researched artifact has passed integrity review. Automated generation or verification never self-promotes candidate to approved."
+  },
+  "asset_trust": {
+    "ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "notes": "Existing product trust vocabulary. A lesson session inherits the minimum trust of the assets it actually renders."
+  },
+  "lesson_release": {
+    "ladder": ["machine_created", "machine_verified", "general_public", "education"],
+    "public_beta_minimum": "machine_verified",
+    "general_public_stage": "general_public",
+    "education_stage": "education",
+    "notes": "Audience/readiness gate for a resolved lesson part + directional language pair + completeness tier. This is not a replacement for integrity review or asset trust."
+  },
+  "release_requirements": [
+    {
+      "release_stage": "machine_created",
+      "minimum_asset_trust": "machine_translated",
+      "integrity_rule": "Candidate integrity is allowed. The lesson may exist internally with visible gaps and is not implied to be public-beta ready.",
+      "notes": "Machine-created includes deterministic or machine-authored scaffolding whose required components may still be partial or missing."
+    },
+    {
+      "release_stage": "machine_verified",
+      "minimum_asset_trust": "machine_verified",
+      "integrity_rule": "Automated verification may leave integrity review as candidate. It must not fabricate approval.",
+      "notes": "This is the minimum audience gate for public beta. Required components for the resolved Core/Full tier must pass the machine-verification contract."
+    },
+    {
+      "release_stage": "general_public",
+      "minimum_asset_trust": "public",
+      "integrity_rule": "All linguistically load-bearing rendered assets must meet the repository's public-release review policy; candidate-only assets cannot silently satisfy this gate.",
+      "notes": "General-public readiness is stricter than public beta and remains directional/component-aware."
+    },
+    {
+      "release_stage": "education",
+      "minimum_asset_trust": "gef_certified",
+      "integrity_rule": "Education release requires approved/qualified human review for the school-facing material and any additional classroom policy checks.",
+      "notes": "Education is the school/classroom gate, not an automatic synonym for technically correct or generally public."
+    }
+  ],
+  "version": 1
+}
