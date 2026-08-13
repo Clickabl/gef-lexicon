@@ -1,0 +1,15 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.time.seasons",
+  "lesson_id":"LES.mul.time.seasons",
+  "domains":["calendar","season","climate_context","dates_time"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/seasons/lesson.json","role":"lesson_offer"},
+    {"kind":"knowledge_set","ref":"knowledge-sets/seasons.json","role":"season_lexical_semantics"},
+    {"kind":"lexi_domain","ref":"lexi/domains/numbers-dates-time.json","role":"numbers_dates_time_integration"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "related_integrations":[{"ref":"LEXI.DOMAIN.numbers_dates_time","relationship":"calendar_context"}],
+  "review_state":"candidate",
+  "version":1
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.time.months_of_year",
+  "lesson_id":"LES.mul.time.months_of_year",
+  "domains":["calendar","month","date","year_context","dates_time"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/months-of-the-year/lesson.json","role":"lesson_offer"},
+    {"kind":"knowledge_set","ref":"knowledge-sets/months-of-year.json","role":"month_lexical_semantics"},
+    {"kind":"lexi_domain","ref":"lexi/domains/numbers-dates-time.json","role":"numbers_dates_time_integration"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "related_integrations":[{"ref":"LEXI.DOMAIN.numbers_dates_time","relationship":"contributes_calendar_vocabulary"}],
+  "review_state":"candidate",
+  "notes":"Month vocabulary exists. Year expression semantics live in the shared numbers/date/time domain; the current months lesson does not by itself claim complete year-language coverage.",
+  "version":1
+}

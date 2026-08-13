@@ -1,0 +1,16 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.noun.grammatical_number",
+  "lesson_id":"LES.mul.noun.grammatical_number",
+  "domains":["grammatical_number","agreement","number_morphology"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/grammatical-number/lesson.json","role":"lesson_offer"},
+    {"kind":"lesson_family","ref":"lesson-families/grammatical-number-systems/family.json","role":"grammatical_number_semantics"},
+    {"kind":"lexi_domain","ref":"lexi/domains/numbers-dates-time.json","role":"related_numeric_domain"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "related_integrations":[{"ref":"LEXI.DOMAIN.numbers_dates_time","relationship":"related_not_equivalent"}],
+  "review_state":"candidate",
+  "notes":"Do not use this lesson as the destination for ordinary numeric expressions. It teaches singular/plural/dual/etc., not arithmetic or date/time notation.",
+  "version":1
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version":1,
+  "integration_id":"LEXI.LESSON.mul.grammar.grammatical_gender",
+  "lesson_id":"LES.mul.grammar.grammatical_gender",
+  "domains":["grammatical_gender","noun_class","agreement"],
+  "artifacts":[
+    {"kind":"lesson_definition","ref":"lessons/mul/grammatical-gender/lesson.json","role":"lesson_offer"},
+    {"kind":"lesson_family","ref":"lesson-families/grammatical-gender/family.json","role":"semantic_family"},
+    {"kind":"language_capabilities","ref":"lesson-families/grammatical-gender/language-capabilities.json","role":"language_support"}
+  ],
+  "surfaces":["dictionary","semantic_inspection","lesson_discovery","games"],
+  "review_state":"candidate",
+  "version":1
+}
