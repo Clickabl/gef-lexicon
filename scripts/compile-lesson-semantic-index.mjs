@@ -2,10 +2,9 @@
 /**
  * Compile reusable lesson vocabulary into one shared semantic/translator index.
  *
- * This bridges canonical lesson data and Lexi without manufacturing prose
- * dictionary definitions. It packages concepts, language-specific lexical
- * senses/forms, many-to-many concept links, typed lexical relations, localized
- * lesson copy, and surface/concept -> lesson links.
+ * Lesson families contribute semantic concepts and language-specific senses to
+ * this one shared Lexi store. Exact book occurrences remain gef-content-owned
+ * evidence and may pin a narrower sense than surface lookup alone.
  *
  * Output:
  *   dist/dictionaries/shared/lesson-semantic-v1.json
@@ -22,6 +21,7 @@ import {
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
+import { calendarVocabularyCore } from './calendar-vocabulary-core.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = join(ROOT, 'dist', 'dictionaries', 'shared');
@@ -34,6 +34,11 @@ const SPANISH_SUPPLEMENT = join(ROOT, 'languages', 'es', 'lexicon-lessons.json')
 
 const FAMILY_LESSON_ID = 'LES.mul.vocab.family_members';
 const GENDER_LESSON_ID = 'LES.mul.grammar.grammatical_gender';
+const CALENDAR_LESSON_IDS = new Set([
+  'LES.mul.time.days_of_week',
+  'LES.mul.time.months_of_year',
+  'LES.mul.time.seasons',
+]);
 
 function readJson(path) {
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -112,8 +117,6 @@ function familyData() {
         const termCell = terms[index];
         if (!conceptKey || typeof termCell !== 'string' || !termCell.trim()) continue;
 
-        // Family authoring uses spaces around slash as the alternative delimiter.
-        // Internal slashes without surrounding spaces are lexical content.
         const alternatives = termCell.split(/\s+\/\s+/u).map((value) => value.trim()).filter(Boolean);
         for (let variantIndex = 0; variantIndex < alternatives.length; variantIndex += 1) {
           const surface = alternatives[variantIndex].normalize('NFC');
@@ -138,18 +141,9 @@ function familyData() {
             trust_state: trustState,
             source_path: sourcePath,
           });
-
-          senseConcepts.push({
-            sense_id: senseId,
-            concept_id: primaryConceptId,
-            relation: 'primary',
-          });
+          senseConcepts.push({ sense_id: senseId, concept_id: primaryConceptId, relation: 'primary' });
           for (const broaderConceptId of metadata.broader_concepts?.[conceptKey] ?? []) {
-            senseConcepts.push({
-              sense_id: senseId,
-              concept_id: broaderConceptId,
-              relation: 'broader',
-            });
+            senseConcepts.push({ sense_id: senseId, concept_id: broaderConceptId, relation: 'broader' });
           }
 
           forms.push({
@@ -211,22 +205,10 @@ function familyData() {
     metadata,
     concepts: dedupeBy(concepts, (concept) => concept.concept_id),
     senses: dedupeBy(senses, (sense) => sense.sense_id),
-    senseConcepts: dedupeBy(
-      senseConcepts,
-      (row) => `${row.sense_id}\u0000${row.concept_id}\u0000${row.relation}`,
-    ),
-    forms: dedupeBy(
-      forms,
-      (form) => `${form.concept_id}\u0000${form.language_tag}\u0000${form.normalized_lookup}`,
-    ),
-    lessonLinks: dedupeBy(
-      lessonLinks,
-      (link) => `${link.language_tag}\u0000${link.normalized_lookup}\u0000${link.lesson_id}\u0000${link.subject_id}`,
-    ),
-    relations: dedupeBy(
-      relations,
-      (relation) => `${relation.source_kind}\u0000${relation.source_id}\u0000${relation.relation_type}\u0000${relation.target_kind}\u0000${relation.target_id}`,
-    ),
+    senseConcepts: dedupeBy(senseConcepts, (row) => `${row.sense_id}\u0000${row.concept_id}\u0000${row.relation}`),
+    forms: dedupeBy(forms, (form) => `${form.concept_id}\u0000${form.language_tag}\u0000${form.normalized_lookup}`),
+    lessonLinks: dedupeBy(lessonLinks, (link) => `${link.language_tag}\u0000${link.normalized_lookup}\u0000${link.lesson_id}\u0000${link.subject_id}`),
+    relations: dedupeBy(relations, (relation) => `${relation.source_kind}\u0000${relation.source_id}\u0000${relation.relation_type}\u0000${relation.target_kind}\u0000${relation.target_id}`),
   };
 }
 
@@ -301,10 +283,7 @@ function genderSurfaceLessonLinks() {
     }
   }
 
-  return dedupeBy(
-    links,
-    (link) => `${link.language_tag}\u0000${link.normalized_lookup}\u0000${link.lesson_id}\u0000${link.rule_id ?? ''}\u0000${link.subject_id}`,
-  );
+  return dedupeBy(links, (link) => `${link.language_tag}\u0000${link.normalized_lookup}\u0000${link.lesson_id}\u0000${link.rule_id ?? ''}\u0000${link.subject_id}`);
 }
 
 function spanishLexicalRelations() {
@@ -329,9 +308,21 @@ function spanishLexicalRelations() {
 
 function compileJson() {
   const family = familyData();
+  const calendar = calendarVocabularyCore();
   const genderCopy = genderSourceCopy();
+
+  const concepts = dedupeBy([...family.concepts, ...calendar.concepts], (row) => row.concept_id);
+  const lexicalSenses = dedupeBy([...family.senses, ...calendar.senses], (row) => row.sense_id);
+  const senseConcepts = dedupeBy(
+    [...family.senseConcepts, ...calendar.senseConcepts],
+    (row) => `${row.sense_id}\u0000${row.concept_id}\u0000${row.relation}`,
+  );
+  const conceptForms = dedupeBy(
+    [...family.forms, ...calendar.forms],
+    (row) => `${row.concept_id}\u0000${row.language_tag}\u0000${row.normalized_lookup}`,
+  );
   const surfaceLessonLinks = dedupeBy(
-    [...family.lessonLinks, ...genderSurfaceLessonLinks()],
+    [...family.lessonLinks, ...calendar.lessonLinks, ...genderSurfaceLessonLinks()],
     (link) => `${link.language_tag}\u0000${link.normalized_lookup}\u0000${link.lesson_id}\u0000${link.rule_id ?? ''}\u0000${link.subject_id}`,
   );
   const lexicalRelations = dedupeBy(
@@ -340,18 +331,25 @@ function compileJson() {
   );
 
   const document = {
-    schema_version: 2,
+    schema_version: 3,
     generated_from: {
       family_members_game_vocabulary: 'lesson-families/family-members/game-vocabulary',
       family_members_lexi_metadata: 'lesson-families/family-members/lexi-metadata.json',
+      calendar_year_knowledge_sets: [
+        'knowledge-sets/days-of-week.json',
+        'knowledge-sets/months-of-year.json',
+        'knowledge-sets/seasons.json',
+      ],
+      calendar_year_tier3_seasons: 'lesson-families/calendar-year/tier3-seasons-vocabulary.json',
+      calendar_year_tier3_days_months: 'Unicode CLDR via Intl.DateTimeFormat plus checked locale overrides',
       grammatical_gender_source_copy: 'lesson-families/grammatical-gender/source-copy',
       grammatical_gender_comparison_records: 'lesson-families/grammatical-gender/comparison-records',
       spanish_lesson_lexicon: 'languages/es/lexicon-lessons.json',
     },
-    concepts: family.concepts,
-    lexical_senses: family.senses,
-    sense_concepts: family.senseConcepts,
-    concept_forms: family.forms,
+    concepts,
+    lexical_senses: lexicalSenses,
+    sense_concepts: senseConcepts,
+    concept_forms: conceptForms,
     lesson_source_copy: genderCopy,
     surface_lesson_links: surfaceLessonLinks,
     lexical_relations: lexicalRelations,
@@ -518,11 +516,16 @@ function compileSqlite(document) {
 
 const { path, document } = compileJson();
 const dbPath = compileSqlite(document);
-const familyLanguages = new Set(document.concept_forms.map((form) => form.language_tag));
+const familyForms = document.concept_forms.filter((form) => form.concept_id.startsWith('FAMILY.'));
+const calendarForms = document.concept_forms.filter((form) => form.concept_id.startsWith('CALENDAR.'));
+const familyLanguages = new Set(familyForms.map((form) => form.language_tag));
+const calendarLanguages = new Set(calendarForms.map((form) => form.language_tag));
 const genderSourceLanguages = new Set(document.lesson_source_copy.map((copy) => copy.language_tag));
 const familyLessonLinks = document.surface_lesson_links.filter((link) => link.lesson_id === FAMILY_LESSON_ID);
-console.log(`📚 Semantic lesson index: ${familyLanguages.size} family-vocabulary languages, ${document.concepts.length} family concepts, ${document.lexical_senses.length} senses, ${document.concept_forms.length} forms.`);
-console.log(`🔗 Family surface lesson links: ${familyLessonLinks.length}; lexical relations: ${document.lexical_relations.length}.`);
+const calendarLessonLinks = document.surface_lesson_links.filter((link) => CALENDAR_LESSON_IDS.has(link.lesson_id));
+console.log(`📚 Shared lesson semantic index: ${document.concepts.length} concepts, ${document.lexical_senses.length} senses, ${document.concept_forms.length} forms.`);
+console.log(`👪 Family: ${familyLanguages.size} languages, ${familyForms.length} forms, ${familyLessonLinks.length} lesson links.`);
+console.log(`📅 Calendar/year: ${calendarLanguages.size} languages, ${calendarForms.length} forms, ${calendarLessonLinks.length} lesson links.`);
 console.log(`🧭 Gender source copy: ${genderSourceLanguages.size} languages; total surface lesson links: ${document.surface_lesson_links.length}.`);
 console.log(`📦 ${path.slice(ROOT.length + 1)}`);
 console.log(`📦 ${dbPath.slice(ROOT.length + 1)}`);

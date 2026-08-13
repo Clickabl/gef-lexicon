@@ -81,6 +81,16 @@
           "block_type": {"enum": ["lesson_facts", "grammar_primer", "localized_text", "word_examples", "language_comparison_loop", "language_rules", "curated_examples", "ordered_term_set", "cultural_context", "practice_intro", "practice", "quest_offer", "completion"]},
           "group_id": {"type": "string"},
           "repeat": {"enum": ["once", "per_single_form_language", "per_multi_form_language", "per_selected_language", "per_relevant_language", "per_full_support_learning_language", "per_form", "per_rule"]},
+          "semantic_exposure": {
+            "type": "object",
+            "required": ["source", "surface_lesson_offer"],
+            "properties": {
+              "source": {"enum": ["family_knowledge_set", "family_grammar_set"]},
+              "surface_lesson_offer": {"type": "boolean"},
+              "notes": {"type": "string"}
+            },
+            "additionalProperties": false
+          },
           "notes": {"type": "string"}
         },
         "additionalProperties": false

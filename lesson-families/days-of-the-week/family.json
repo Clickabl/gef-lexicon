@@ -18,8 +18,8 @@
     "dedupe_language_roles": true,
     "rendering_model": "Native-language support blurb plus structured ordered term sets for eligible learning languages.",
     "support_selection": {
-      "full": "Tier 1 or Tier 2 learning language with a reviewed knowledge-set record.",
-      "comparison_only": "Canonical learn-from language with support copy but no target eligibility.",
+      "full": "Tier 1 or Tier 2 learning language with a rich knowledge-set record.",
+      "comparison_only": "Tier 3 vocabulary-only target, or a canonical source language used only for explanation.",
       "unavailable": "No required lesson asset exists at the user's trust threshold."
     }
   },
@@ -37,12 +37,12 @@
     "require_non_anchor_multi_form_language": false,
     "prefer_profile_languages": true,
     "fill_with_anchor_language_when_needed": true,
-    "notes": "Tier 3 languages may explain the lesson but may not be selected as learning-language targets."
+    "notes": "Tier 1/2 may receive the full lesson. Tier 3 may be selected for the vocabulary/game layer only."
   },
   "block_plan": [
     {"block_id":"facts","block_type":"lesson_facts","group_id":"facts","repeat":"once"},
     {"block_id":"intro","block_type":"localized_text","group_id":"comparison-intro","repeat":"once"},
-    {"block_id":"language-cycle","block_type":"ordered_term_set","group_id":"terms","repeat":"per_relevant_language","notes":"Use the primary seven-day term system. The teaching order is stable, but calendar first-day layout is resolved separately from territory/locale."},
+    {"block_id":"language-cycle","block_type":"ordered_term_set","group_id":"terms","repeat":"per_relevant_language","semantic_exposure":{"source":"family_knowledge_set","surface_lesson_offer":true,"notes":"Every weekday surface form resolves through the shared lesson semantic index; exact corpus occurrences may pin a narrower sense."},"notes":"Use the primary seven-day term system. The teaching order is stable, but calendar first-day layout is resolved separately from territory/locale."},
     {"block_id":"culture","block_type":"cultural_context","group_id":"culture","repeat":"per_selected_language"},
     {"block_id":"practice-intro","block_type":"practice_intro","group_id":"practice","repeat":"once"},
     {"block_id":"practice","block_type":"practice","group_id":"practice","repeat":"once"},
@@ -55,5 +55,5 @@
     "notes": "Exact ordering can vary by language path; the family itself remains reusable."
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
