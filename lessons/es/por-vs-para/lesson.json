@@ -5,17 +5,7 @@
   "target_language": "es",
   "curriculum_concept_ids": ["CURR.PREPOSITIONS", "CURR.PURPOSE_CAUSE_GOAL", "CURR.PATH_ROUTE", "CURR.BENEFICIARY", "CURR.TIME_GOAL"],
   "construction_ids": [
-    "CTR.es.prep.por_path_route",
-    "CTR.es.prep.por_cause_reason",
-    "CTR.es.prep.por_que_question",
-    "CTR.es.discourse.por_eso",
-    "CTR.es.prep.por_means_channel",
-    "CTR.es.prep.por_exchange_substitution",
-    "CTR.es.prep.por_distributive",
-    "CTR.es.prep.para_purpose_infinitive",
-    "CTR.es.prep.para_destination_goal",
-    "CTR.es.prep.para_beneficiary",
-    "CTR.es.prep.para_deadline"
+    "CTR.es.prep.por_path_route","CTR.es.prep.por_cause_reason","CTR.es.prep.por_que_question","CTR.es.discourse.por_eso","CTR.es.prep.por_means_channel","CTR.es.prep.por_exchange_substitution","CTR.es.prep.por_distributive","CTR.es.prep.para_purpose_infinitive","CTR.es.prep.para_destination_goal","CTR.es.prep.para_beneficiary","CTR.es.prep.para_deadline"
   ],
   "prerequisite_lesson_ids": [],
   "difficulty_band": "A2",
@@ -39,10 +29,11 @@
   ],
   "practice_modules": [
     {"module":"inline_choice_cloze","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"],"choice_refs":[{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000301"},{"target_type":"lexeme","target_id":"02000000-0000-7000-8200-000000000302"}],"constraints":{"require_unique_defensible_answer":true}},
-    {"module":"why_this","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_reason_question","RULE.es.por_para.por_consequence","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.por_distributive","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"]}
+    {"module":"why_this","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_reason_question","RULE.es.por_para.por_consequence","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.por_distributive","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"]},
+    {"module":"reader_quest","eligible_rule_ids":["RULE.es.por_para.por_path_route","RULE.es.por_para.por_cause_reason","RULE.es.por_para.por_reason_question","RULE.es.por_para.por_consequence","RULE.es.por_para.por_means_channel","RULE.es.por_para.por_exchange_substitution","RULE.es.por_para.por_distributive","RULE.es.por_para.para_purpose","RULE.es.por_para.para_destination_goal","RULE.es.por_para.para_beneficiary","RULE.es.por_para.para_deadline"],"constraints":{"require_reviewed_occurrence":true,"omit_when_evidence_missing":true,"prefer_current_book":true,"practice_only_when_unique_defensible_answer":true}}
   ],
-  "example_query": {"prefer_current_book":true,"max_book_examples":5,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
-  "interaction_defaults": {"offer_mode":"tap_sheet","dismissal_behavior":"Suppress repeated contextual invitations after explicit dismissal; manual Lessons access remains available.","cooldown_policy":"Reader-owned learner-state policy; lesson data does not hard-code a wall-clock cadence."},
-  "review_state": "candidate",
-  "version": 1
+  "example_query":{"prefer_current_book":true,"max_book_examples":5,"spoiler_policy":"current_then_read","minimum_quality":"usable","require_reviewed_occurrence":false},
+  "interaction_defaults":{"offer_mode":"tap_sheet","dismissal_behavior":"Suppress repeated contextual invitations after explicit dismissal; manual Lessons access remains available.","cooldown_policy":"Reader-owned learner-state policy; lesson data does not hard-code a wall-clock cadence."},
+  "review_state":"candidate",
+  "version":2
 }
