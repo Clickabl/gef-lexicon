@@ -2,6 +2,8 @@
 
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
 
+**Before any lesson work, also read `docs/wiki/LESSON_SYSTEM.md`, `docs/wiki/LESSON_AUDIT.md`, and `docs/SO_YOU_WANT_TO_BUILD_A_LESSON.md`.** The machine-readable lesson SSOT is `curriculum/lesson-system-manifest.json`. Do not create a lesson or lesson-specific checklist outside that system.
+
 ## Repository ownership and source of truth
 
 Gef has exactly three active product repositories:
@@ -53,7 +55,7 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 9. **Gender Evidence Is Scoped**: `known_gender` on an entity may only be populated from source evidence about that particular person/character. Name gender association belongs in sourced `gender_usage` records by region/time; never infer or invent a permanent male/female score from spelling.
 10. **Coverage Staging Is Not the Dictionary**: Files under `languages/{lang}/coverage/` are candidate inventory/enrichment data used to prove source coverage and route items. They are not runtime dictionaries and must not be treated as human-approved lexical truth.
 11. **Stable Text Annotations**: Do not insert hidden brackets or IDs into canonical story text. Use standoff annotations with the offset convention defined by `semantic-annotation.schema.json`.
-12. **Validation**: Run `node scripts/validate-lexicon.mjs` for repository integrity. When changing the English source-coverage pass, also run `node scripts/validate-english-coverage.mjs`.
+12. **Validation**: Run `npm run validate` for repository integrity. When changing the English source-coverage pass, also run `npm run validate:english`.
 13. **Semantic Functions Are Not English Words**: Curriculum concepts use language-neutral functions such as `SEM.PURPOSE`, `SEM.CAUSE_REASON`, and `SEM.PATH_ROUTE`. Never use a polysemous English spelling such as `for` as the universal semantic identity.
 14. **Constructions Are First-Class**: Language-specific grammar, syntax, discourse patterns, and contrast systems belong in `languages/{lang}/constructions.json`. Do not force every grammar distinction into a lexical sense when the distinction belongs to a construction.
 15. **Lessons Are Reusable**: A lesson links to lexemes, senses, constructions, morphology, syntax, and semantic functions. Never copy one lesson into every book and never add free-form `lesson_tag` strings to lexemes.
@@ -61,3 +63,9 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 17. **Lesson Logic and Rendering Are Separate**: `lesson.json` owns reusable pedagogical logic. `renderings/{support-language}.json` owns explanation wording. Do not clone logical lessons for every learner language pair.
 18. **Corpus Evidence Lives With Content**: Exact work/anchor/span occurrences, example quality, practice eligibility, and book/chapter lesson coverage belong in `Clickabl/gef-content`. `gef-lexicon` owns reusable linguistic and lesson truth; it must not become a warehouse of copied story sentences.
 19. **Best-Language Vocabulary Is Canonical**: A learner has a **best language**, not a “native language.” Never introduce `nativeLanguage*` fields, variables, schema keys, lesson copy, or documentation for this profile concept. Use `bestLanguage*` / “best language.” The word `native` remains valid for unrelated technical concepts such as React Native and for reviewer qualifications such as an approved native speaker.
+20. **Every Concrete Lesson Is in the SSOT**: Every `lessons/**/lesson.json` must map to exactly one `PART.*` in `curriculum/lesson-system-manifest.json`. A planned part may have no concrete lesson yet, but an implemented lesson may never be an orphan.
+21. **CEFR Is Mandatory**: Every concrete lesson must declare `difficulty_band`; every universal lesson part must declare its CEFR target. Language-specific differences use explicit overrides/ranges rather than undocumented drift.
+22. **Missing Components Stay Missing**: Ordinary lesson parts require quest/default-reading/annotation bridges according to the universal component contract. Never invent a book, example, translation, or approval just to make readiness green. Record the gap and queue the smallest defensible TASK/TODO.
+23. **Ordered Paths Are Canonical**: `curriculum/learning-path-template.json` and its language overrides own sequence. Numeric priority is never the curriculum SSOT.
+24. **No Pair-Matrix Explosion**: Resolve directional lesson readiness from defaults/tier/language/pair overrides. Do not generate one lesson file per source-target language pair.
+25. **Design Pedagogy Before UI**: Define the teaching interaction first, inspect Expo's reusable lesson components second, improve a universal component when possible, and only create a new component when the interaction is genuinely distinct.

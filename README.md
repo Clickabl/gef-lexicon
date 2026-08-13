@@ -15,6 +15,19 @@ This repository owns language knowledge that should survive any one book:
 
 Exact story sentences and passage-specific lesson evidence belong in `Clickabl/gef-content`, not here.
 
+## Lesson system
+
+The human-readable lesson wiki starts at:
+
+- `docs/wiki/README.md`
+- `docs/wiki/LESSON_SYSTEM.md` — complete architecture/decision mirror
+- `docs/wiki/LESSON_AUDIT.md` — every current lesson and remaining blocker
+- `docs/SO_YOU_WANT_TO_BUILD_A_LESSON.md` — mandatory build workflow
+
+Canonical machine-readable lesson truth lives in `curriculum/lesson-system-manifest.json`. The ordered path is `curriculum/learning-path-template.json`; related lessons are in `curriculum/related-lessons.json`.
+
+Every concrete `lessons/**/lesson.json` must be schema-valid, CEFR-tagged, and represented by the lesson-system manifest. `npm run validate` enforces those rules.
+
 ## Product-wide language support
 
 This repository does **not** decide product tier membership.
@@ -73,6 +86,7 @@ legacy/do-not-run/                  quarantined historical generators
 
 See:
 
+- `docs/wiki/README.md`
 - `docs/LEXICON_ARCHITECTURE.md`
 - `docs/NAME_ENTITY_ARCHITECTURE.md`
 - `docs/LESSON_GRAPH_ARCHITECTURE.md`
@@ -112,4 +126,4 @@ npm run compile:sqlite
 npm run compile:names
 ```
 
-`npm run validate` runs structural lexicon plus curriculum/lesson reference validation. GitHub Actions also regenerates deterministic compiled artifacts and checks development/production package gates. Production name compilation includes approved rows only; candidate rows remain development/review data.
+`npm run validate` runs structural lexicon, concrete lesson JSON Schema validation, curriculum/lesson reference validation, SSOT parity checks, and family-specific validators. GitHub Actions also regenerates deterministic compiled artifacts and checks development/production package gates. Production name compilation includes approved rows only; candidate rows remain development/review data.
