@@ -12,6 +12,7 @@
     {"item_id":"PATHITEM.gender.core","kind":"lesson_part","ref":"PART.grammatical_gender.core","availability":"conditional","cefr_target":"A1","prerequisite_refs":[],"notes":"Runtime eligibility follows the canonical language-support registry and the resolved lesson readiness for the selected learning language."},
     {"item_id":"PATHITEM.calendar.months_years","kind":"lesson_part","ref":"PART.calendar_time.months_and_years","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
     {"item_id":"PATHITEM.multiple_for.semantic","kind":"lesson_part","ref":"PART.multiple_words_for.semantic_map","availability":"conditional","cefr_target":"A1","prerequisite_refs":[],"notes":"Useful as a cross-language comparison knot when the selected languages split or merge relevant semantic functions."},
+    {"item_id":"PATHITEM.being.overview","kind":"lesson_part","ref":"PART.being.overview","availability":"conditional","cefr_target":"mixed","prerequisite_refs":[],"notes":"Optional comparison map. It is not a scored prerequisite and does not replace the smaller CEFR-bounded Being sequence."},
     {"item_id":"PATHITEM.family.extended","kind":"lesson_part","ref":"PART.family.extended","availability":"active","cefr_target":"A1","prerequisite_refs":["PART.family.describe"]},
     {"item_id":"PATHITEM.calendar.seasons","kind":"lesson_part","ref":"PART.calendar_time.seasons","availability":"active","cefr_target":"A1","prerequisite_refs":[]},
     {"item_id":"PATHITEM.being.identity_classification","kind":"lesson_part","ref":"PART.being.identity_classification","availability":"conditional","cefr_target":"A1","prerequisite_refs":[],"notes":"First sequential Being lesson. The broad To be or not to be object is an overview, not scored curriculum."},
@@ -39,5 +40,5 @@
   ],
   "compatibility_view":"curriculum/learning-path-placements.json",
   "review_state":"candidate",
-  "version":2
+  "version":3
 }
