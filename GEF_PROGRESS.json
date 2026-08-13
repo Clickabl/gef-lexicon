@@ -2,7 +2,7 @@
   "schema_version": 1,
   "manifest_id": "GEF.PROGRESS",
   "title": "GEF cross-repo progress and roll-call ledger",
-  "updated_at": "2026-08-13T06:31:00Z",
+  "updated_at": "2026-08-13T07:04:20Z",
   "canonical_location": {
     "repo": "Clickabl/gef-lexicon",
     "branch": "main",
@@ -355,7 +355,7 @@
           "repo": "Clickabl/gef-lexicon",
           "path": "lexi/system/manifest.json",
           "role": "canonical",
-          "ref": "codex/lexi-modular-ssot",
+          "ref": "codex/lexi-104-integration",
           "pr": 72,
           "required": true
         },
@@ -363,7 +363,7 @@
           "repo": "Clickabl/gef-lexicon",
           "path": "lexi/integrations/**/integration.json",
           "role": "canonical",
-          "ref": "codex/lexi-modular-ssot",
+          "ref": "codex/lexi-104-integration",
           "pr": 72,
           "required": true
         }
@@ -398,20 +398,21 @@
           "human_editor"
         ],
         "completed_roles": [],
-        "notes": "PR #72 is open; this ledger indexes it but does not duplicate its graph truth."
+        "notes": "PR #72 is open on codex/lexi-104-integration; this ledger indexes it but does not duplicate its graph truth."
       },
       "ci": {
         "state": "unknown",
-        "ref": "Clickabl/gef-lexicon#72",
-        "notes": "Roll-call owner should refresh from the PR."
+        "ref": "Clickabl/gef-lexicon#72@75431921cc8468f6ff94a9a272ee304e0dbb5676",
+        "notes": "CI was not re-evaluated in this roll-call; current PR metadata shows the PR is open and non-mergeable, which is tracked as a blocker rather than a CI result."
       },
       "blockers": [
-        "Not yet on main."
+        "Not yet on main.",
+        "PR #72 is currently non-mergeable at head 75431921cc8468f6ff94a9a272ee304e0dbb5676; cause was not diagnosed in this roll-call."
       ],
       "next_actions": [
-        "Lexi chat should roll-call exact merged/remaining state from PR #72."
+        "Resolve/rebase PR #72 against current main and refresh CI/mergeability."
       ],
-      "last_rollcall_id": "20260813T0631Z-night-closeout"
+      "last_rollcall_id": "20260813T0704Z-lexi-progress-reconcile"
     },
     {
       "item_id": "system.lexi.lesson-integrations",
@@ -1211,6 +1212,61 @@
         "After roll-call, reconcile duplicate/superseded PRs and decide what is safe to merge before ending the night."
       ],
       "notes": "This ledger deliberately does not overwrite canonical Lexi or lesson truth. It is an index plus progress state."
+    },
+    {
+      "rollcall_id": "20260813T0704Z-lexi-progress-reconcile",
+      "timestamp": "2026-08-13T07:04:20Z",
+      "chat_or_agent": "lexi-progress-reconciliation",
+      "scope": "Reconcile this chat's Lexi/lesson SSOT coordination work with the canonical main progress ledger and remove the duplicate branch-local tracker created earlier in this chat.",
+      "touched_item_ids": [
+        "system.lexi.modular-ssot"
+      ],
+      "refs": [
+        {
+          "repo": "Clickabl/gef-lexicon",
+          "path": "GEF_PROGRESS.json",
+          "role": "canonical",
+          "ref": "main",
+          "required": true
+        },
+        {
+          "repo": "Clickabl/gef-lexicon",
+          "path": "lexi/system/manifest.json",
+          "role": "canonical",
+          "ref": "codex/lexi-104-integration",
+          "pr": 72,
+          "required": true
+        },
+        {
+          "repo": "Clickabl/gef-lexicon",
+          "path": "lexi/integrations/**/integration.json",
+          "role": "canonical",
+          "ref": "codex/lexi-104-integration",
+          "pr": 72,
+          "required": true
+        },
+        {
+          "repo": "Clickabl/gef-lexicon",
+          "path": "FEATURE_PROGRESS.json",
+          "role": "documentation",
+          "ref": "e909c87bfe7cf618b0579a90f72d7992be22a5c3",
+          "pr": 72,
+          "required": false
+        }
+      ],
+      "completed": [
+        "Fetched the current main GEF_PROGRESS.json and reconciled this chat against its no_parallel_ssot and roll-call rules.",
+        "Removed the duplicate branch-local FEATURE_PROGRESS.json that this chat had added to PR #72; deletion commit is 75431921cc8468f6ff94a9a272ee304e0dbb5676.",
+        "Corrected system.lexi.modular-ssot refs from the stale codex/lexi-modular-ssot name to the actual PR #72 branch codex/lexi-104-integration.",
+        "Verified PR #72 remains open at head 75431921cc8468f6ff94a9a272ee304e0dbb5676 and preserved independent Lexicon, Lexi, Content, Runtime, UI, Locales, Review and CI axes."
+      ],
+      "blockers": [
+        "PR #72 remains open and currently non-mergeable; this roll-call did not diagnose the mergeability cause."
+      ],
+      "next_actions": [
+        "Resolve/rebase PR #72 against current main and refresh CI/mergeability before merge."
+      ],
+      "notes": "No language coverage, Content, Runtime, UI, Locales, integrity review, release, or CI state was promoted by this roll-call. Only system.lexi.modular-ssot was updated."
     }
   ]
 }
