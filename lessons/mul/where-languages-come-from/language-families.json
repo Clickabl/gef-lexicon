@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "lesson_id": "LES.mul.meta.where_languages_come_from",
+  "classification_basis": "Pedagogical genealogy overview based primarily on Glottolog 5.3. Contact languages are separated by formation history. High-level labels are intentionally cautious where scholarship differs.",
+  "language_count": 104,
+  "families": [
+    {"family_id":"indo_european","label_en":"Indo-European","groups":[
+      {"group_id":"germanic","label_en":"Germanic","languages":["en","de","nl","af","sv","nb","nn","da","is"]},
+      {"group_id":"romance","label_en":"Romance","languages":["es","fr","pt","it","ro","ca","gl","rm"]},
+      {"group_id":"slavic","label_en":"Slavic","languages":["uk","ru","pl","mk","sk","cs","bg","sr","hr","bs","sl","be","dsb","hsb"]},
+      {"group_id":"baltic","label_en":"Baltic","languages":["lt","lv"]},
+      {"group_id":"indo_aryan","label_en":"Indo-Aryan","languages":["hi","ne","bn","ur","pa","mr","gu","as","kok","or","sd","si","bho"]},
+      {"group_id":"iranian","label_en":"Iranian","languages":["fa","ps","ku","ckb"]},
+      {"group_id":"celtic","label_en":"Celtic","languages":["cy","ga","gd"]},
+      {"group_id":"hellenic","label_en":"Hellenic","languages":["el"]},
+      {"group_id":"armenian","label_en":"Armenian","languages":["hy"]},
+      {"group_id":"albanian","label_en":"Albanian","languages":["sq"]}
+    ]},
+    {"family_id":"sino_tibetan","label_en":"Sino-Tibetan / Trans-Himalayan","groups":[{"group_id":"sinitic","label_en":"Sinitic","languages":["zh","yue"]},{"group_id":"burmese","label_en":"Burmese branch","languages":["my"]}]},
+    {"family_id":"japonic","label_en":"Japonic","groups":[{"group_id":"japonic","label_en":"Japonic","languages":["ja"]}]},
+    {"family_id":"koreanic","label_en":"Koreanic","groups":[{"group_id":"koreanic","label_en":"Koreanic","languages":["ko"]}]},
+    {"family_id":"afro_asiatic","label_en":"Afro-Asiatic","groups":[{"group_id":"semitic","label_en":"Semitic","languages":["ar","he","am","ti"]},{"group_id":"chadic","label_en":"Chadic","languages":["ha"]},{"group_id":"cushitic","label_en":"Cushitic","languages":["so","om"]}]},
+    {"family_id":"austronesian","label_en":"Austronesian","groups":[{"group_id":"austronesian","label_en":"Austronesian","languages":["id","fil","haw","jv","ms"]}]},
+    {"family_id":"dravidian","label_en":"Dravidian","groups":[{"group_id":"dravidian","label_en":"Dravidian","languages":["ta","te","ml","kn"]}]},
+    {"family_id":"turkic","label_en":"Turkic","groups":[{"group_id":"turkic","label_en":"Turkic","languages":["tr","az","ba","cv","kk","ky","tk","uz"]}]},
+    {"family_id":"uralic","label_en":"Uralic","groups":[{"group_id":"uralic","label_en":"Uralic","languages":["et","fi","hu"]}]},
+    {"family_id":"austroasiatic","label_en":"Austroasiatic","groups":[{"group_id":"austroasiatic","label_en":"Austroasiatic","languages":["vi","km"]}]},
+    {"family_id":"kra_dai","label_en":"Kra-Dai / Tai-Kadai","groups":[{"group_id":"tai","label_en":"Tai","languages":["th","lo","shn"]}]},
+    {"family_id":"atlantic_congo","label_en":"Atlantic-Congo","note_en":"A cautious high-level label for the Gef languages shown here; broader Niger-Congo terminology is also common and high-level internal classification is not equally settled at every node.","groups":[{"group_id":"atlantic_congo","label_en":"Atlantic-Congo","languages":["sw","ak","ig","yo","zu"]}]},
+    {"family_id":"kartvelian","label_en":"Kartvelian","groups":[{"group_id":"kartvelian","label_en":"Kartvelian","languages":["ka"]}]},
+    {"family_id":"mongolic","label_en":"Mongolic","groups":[{"group_id":"mongolic","label_en":"Mongolic","languages":["mn"]}]},
+    {"family_id":"quechuan","label_en":"Quechuan","groups":[{"group_id":"quechuan","label_en":"Quechuan","languages":["qu"]}]},
+    {"family_id":"basque","label_en":"Basque","note_en":"Basque is treated as a language isolate because no larger genealogical family has been demonstrated by the comparative method.","groups":[{"group_id":"isolate","label_en":"Language isolate","languages":["eu"]}]}
+  ],
+  "contact_languages": {
+    "label_en": "Contact languages",
+    "note_en": "Grouped by formation history rather than forced into a single-parent branch. Their development reflects intense multilingual contact and community innovation.",
+    "languages": ["pcm","ht"]
+  },
+  "review_state": "candidate",
+  "version": 2
+}
