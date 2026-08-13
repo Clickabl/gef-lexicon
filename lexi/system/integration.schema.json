@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lexi/system/integration.schema.json",
+  "title": "Gef Lexi integration contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "integration_id",
+    "label",
+    "kind",
+    "truth_role",
+    "owner",
+    "canonical_sources",
+    "depends_on",
+    "typed_reference_targets",
+    "provides",
+    "required_for_core_lookup",
+    "failure_mode",
+    "invariants",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "integration_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "label": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["graph", "registry", "runtime"]},
+    "truth_role": {"enum": ["authoritative", "evidence", "registry", "presentation"]},
+    "owner": {"type": "string", "minLength": 1},
+    "canonical_sources": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "depends_on": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "uniqueItems": true},
+    "typed_reference_targets": {
+      "type": "array",
+      "items": {"enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"]},
+      "uniqueItems": true
+    },
+    "provides": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"}, "uniqueItems": true},
+    "required_for_core_lookup": {"type": "boolean"},
+    "failure_mode": {"type": "string", "minLength": 1},
+    "invariants": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  }
+}

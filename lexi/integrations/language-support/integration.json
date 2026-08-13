@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "integration_id": "language-support",
+  "label": "Product language support registry",
+  "kind": "registry",
+  "truth_role": "registry",
+  "owner": "Clickabl/gef-expo",
+  "canonical_sources": [
+    "Clickabl/gef-expo/registry/language-support.json",
+    "Clickabl/gef-expo/registry/lexi-capabilities.json"
+  ],
+  "depends_on": [],
+  "typed_reference_targets": [],
+  "provides": ["language_identity", "language_tier_membership", "representation_requirements", "lexi_tier_capabilities"],
+  "required_for_core_lookup": true,
+  "failure_mode": "Do not infer product tier or curriculum eligibility from lexicon file presence. Use conservative feature availability until the registry is available.",
+  "invariants": [
+    "Lexi never duplicates the Tier 1/2/3 language lists.",
+    "Language counts are derived from the canonical registry and are not semantic constants.",
+    "A language may have deep lexical data without changing curriculum tier.",
+    "Tier 3 remains reading/games with dictionary-first Lexi and no Full grammar promise."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

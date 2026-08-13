@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "integration_id": "occurrence-graph",
+  "label": "Corpus occurrence graph",
+  "kind": "graph",
+  "truth_role": "evidence",
+  "owner": "Clickabl/gef-content",
+  "canonical_sources": [
+    "Clickabl/gef-content linguistic standoff annotations",
+    "Clickabl/gef-content lesson occurrence/example evidence"
+  ],
+  "depends_on": ["lexical-graph", "semantic-grammar-graph", "names-entities", "lesson-graph", "provenance-sources"],
+  "typed_reference_targets": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"],
+  "provides": ["exact_span_resolution", "contextual_disambiguation", "lesson_occurrence_evidence", "example_quality", "practice_safety"],
+  "required_for_core_lookup": false,
+  "failure_mode": "Fall back to reusable graph lookup. Missing occurrence analysis means not analyzed, not impossible or absent.",
+  "invariants": [
+    "Canonical prose remains clean; occurrence data is standoff evidence.",
+    "Offsets are zero-based, end-exclusive Unicode code points over NFC-normalized text.",
+    "Occurrence evidence may reference reusable graph IDs but does not own those reusable objects.",
+    "A passage-specific lesson match is evidence only and cannot bypass canonical lesson trigger/readiness/release gating."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

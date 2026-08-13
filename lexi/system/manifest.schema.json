@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lexi/system/manifest.schema.json",
+  "title": "Gef Lexi system manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "manifest_id",
+    "front_door",
+    "annotation_pass_catalog",
+    "research_catalog",
+    "integration_schema",
+    "integration_catalog",
+    "global_contracts",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"const": 2},
+    "manifest_id": {"const": "GEF.LEXI_SYSTEM"},
+    "front_door": {"const": "lexi/README.md"},
+    "annotation_pass_catalog": {"const": "lexi/annotations/README.md"},
+    "research_catalog": {"const": "lexi/research/README.md"},
+    "integration_schema": {"const": "lexi/system/integration.schema.json"},
+    "integration_catalog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["integration_id", "manifest", "required_for_core_lookup"],
+        "properties": {
+          "integration_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "manifest": {"type": "string", "pattern": "^lexi/integrations/[a-z0-9-]+/integration\\.json$"},
+          "required_for_core_lookup": {"type": "boolean"}
+        }
+      }
+    },
+    "global_contracts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "typed_reference_targets",
+        "integrity_review_states",
+        "asset_trust_ladder",
+        "lesson_release_ladder",
+        "pass_coverage_states",
+        "occurrence_offset_unit",
+        "longest_reviewed_span_wins",
+        "components_remain_tappable",
+        "surface_text_is_not_identity",
+        "confidence_never_promotes_review",
+        "missing_optional_data_is_not_fabricated",
+        "lesson_readiness_is_external",
+        "language_membership_is_external",
+        "counts_are_derived",
+        "tier3_lesson_scope",
+        "tier3_full_grammar_forbidden"
+      ],
+      "properties": {
+        "typed_reference_targets": {
+          "type": "array",
+          "items": {"enum": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"]},
+          "minItems": 12,
+          "maxItems": 12,
+          "uniqueItems": true
+        },
+        "integrity_review_states": {
+          "type": "array",
+          "items": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true
+        },
+        "asset_trust_ladder": {
+          "type": "array",
+          "items": {"enum": ["machine_translated", "machine_verified", "public", "gef_certified"]},
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true
+        },
+        "lesson_release_ladder": {
+          "type": "array",
+          "items": {"enum": ["machine_created", "machine_verified", "general_public", "education"]},
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true
+        },
+        "pass_coverage_states": {
+          "type": "array",
+          "items": {"enum": ["missing", "partial", "complete", "not_applicable", "blocked"]},
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "occurrence_offset_unit": {"const": "unicode_codepoint_nfc"},
+        "longest_reviewed_span_wins": {"const": true},
+        "components_remain_tappable": {"const": true},
+        "surface_text_is_not_identity": {"const": true},
+        "confidence_never_promotes_review": {"const": true},
+        "missing_optional_data_is_not_fabricated": {"const": true},
+        "lesson_readiness_is_external": {"const": true},
+        "language_membership_is_external": {"const": true},
+        "counts_are_derived": {"const": true},
+        "tier3_lesson_scope": {"const": "core_read_game_discovery_only"},
+        "tier3_full_grammar_forbidden": {"const": true}
+      }
+    },
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 2}
+  }
+}

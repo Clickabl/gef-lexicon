@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "integration_id": "semantic-grammar-graph",
+  "label": "Semantic and grammar graph",
+  "kind": "graph",
+  "truth_role": "authoritative",
+  "owner": "Clickabl/gef-lexicon",
+  "canonical_sources": [
+    "curriculum/semantic-functions.json",
+    "languages/**/constructions.json",
+    "lesson-families/**"
+  ],
+  "depends_on": ["lexical-graph", "provenance-sources"],
+  "typed_reference_targets": ["phrase_pattern", "semantic_function", "construction"],
+  "provides": ["construction_resolution", "semantic_function_resolution", "phrase_pattern_resolution", "grammar_explanation_grounding"],
+  "required_for_core_lookup": false,
+  "failure_mode": "Keep the lexical answer and omit unsupported grammar/construction enrichment.",
+  "invariants": [
+    "Semantic functions are language-neutral concepts; language-specific constructions remain language-specific.",
+    "Do not clone one language's school-grammar categories into another language.",
+    "A construction or phrase pattern may outrank a component word for the initial tap while components remain tappable.",
+    "Deep grammar data does not promote a language's curriculum tier."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

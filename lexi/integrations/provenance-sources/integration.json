@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "integration_id": "provenance-sources",
+  "label": "Provenance and source graph",
+  "kind": "graph",
+  "truth_role": "authoritative",
+  "owner": "Clickabl/gef-lexicon",
+  "canonical_sources": [
+    "sources/**",
+    "record-level source/provenance references"
+  ],
+  "depends_on": [],
+  "typed_reference_targets": [],
+  "provides": ["source_identity", "citation_resolution", "rights_lane", "review_provenance", "supersession_provenance"],
+  "required_for_core_lookup": true,
+  "failure_mode": "Do not present a claim as verified Lexi when its required provenance cannot be resolved; candidate/provisional presentation may remain available when otherwise safe.",
+  "invariants": [
+    "Provenance survives packaging and cannot be stripped merely for UI simplicity.",
+    "First-party and deliberately external evidence remain distinguishable.",
+    "External lexical rows require an explicitly approved source/version/license/provenance lane before publishable ingestion.",
+    "Confidence is not provenance and cannot substitute for review."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "integration_id": "names-entities",
+  "label": "Reusable names and entities graph",
+  "kind": "graph",
+  "truth_role": "authoritative",
+  "owner": "Clickabl/gef-lexicon",
+  "canonical_sources": [
+    "names/**",
+    "name-families/**",
+    "entities/**"
+  ],
+  "depends_on": ["provenance-sources"],
+  "typed_reference_targets": ["name_family", "name_form", "name", "entity"],
+  "provides": ["name_identity", "name_family_links", "localized_name_forms", "reusable_entity_identity", "name_usage_metadata"],
+  "required_for_core_lookup": false,
+  "failure_mode": "Keep ordinary lexical lookup available and omit unsupported name/entity enrichment.",
+  "invariants": [
+    "Generic reusable name data cannot by itself prove that a passage refers to a specific story entity.",
+    "Localized, translated, transliterated, traditional and source-attested name forms remain explicitly typed.",
+    "Exact story-character identity requires occurrence evidence from the occurrence graph.",
+    "Name relationships remain reviewed claims rather than inferred equivalence from spelling similarity."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

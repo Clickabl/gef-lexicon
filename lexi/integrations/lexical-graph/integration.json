@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "integration_id": "lexical-graph",
+  "label": "Reusable lexical graph",
+  "kind": "graph",
+  "truth_role": "authoritative",
+  "owner": "Clickabl/gef-lexicon",
+  "canonical_sources": [
+    "languages/**/lexicon.json",
+    "languages/**/profile.json",
+    "concepts/**"
+  ],
+  "depends_on": ["provenance-sources"],
+  "typed_reference_targets": ["lexeme", "sense", "form", "analysis", "concept"],
+  "provides": ["dictionary_lookup", "sense_inventory", "morphology", "localized_forms", "concept_links"],
+  "required_for_core_lookup": true,
+  "failure_mode": "Return unavailable or a narrower reviewed result; never synthesize a lexical row merely because the graph is sparse.",
+  "invariants": [
+    "Stable lexical IDs are identity; surface text is not identity.",
+    "A form may have multiple analyses and a spelling may have multiple senses or lexemes.",
+    "Concept links do not prove exact translation equivalence.",
+    "Candidate lexical material cannot present as verified Lexi."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

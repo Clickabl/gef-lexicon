@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "integration_id": "lesson-graph",
+  "label": "Canonical lesson graph",
+  "kind": "graph",
+  "truth_role": "authoritative",
+  "owner": "Clickabl/gef-lexicon",
+  "canonical_sources": [
+    "curriculum/lesson-system-manifest.json",
+    "curriculum/review-and-release-status.json",
+    "lessons/**/lesson.json",
+    "dist/dictionaries/shared/lesson-ssot-v2.json"
+  ],
+  "depends_on": ["lexical-graph", "semantic-grammar-graph", "language-support", "provenance-sources"],
+  "typed_reference_targets": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"],
+  "provides": ["lesson_identity", "rule_identity", "tap_triggers", "core_full_readiness", "directional_readiness", "lesson_release", "cefr", "prerequisites", "learning_path", "quest_bindings"],
+  "required_for_core_lookup": false,
+  "failure_mode": "Keep Lexi dictionary/linguistic evidence available but suppress lesson actions until canonical lesson readiness can be resolved.",
+  "invariants": [
+    "Lesson links are stable LES.* and optional RULE.* references, never copied lesson prose.",
+    "Tap offers require canonical tap triggers and matching typed evidence.",
+    "Readiness resolves in canonical order: part default, tier override, source-language override, target-language override, exact pair override.",
+    "Lexical authority and lesson integrity/release are independent.",
+    "Tier 3 may receive canonical Core reading/comparison/game/quest/discovery experiences but never Full grammar instruction."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

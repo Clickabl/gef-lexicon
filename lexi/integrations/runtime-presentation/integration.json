@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "integration_id": "runtime-presentation",
+  "label": "Expo Lexi runtime and presentation",
+  "kind": "runtime",
+  "truth_role": "presentation",
+  "owner": "Clickabl/gef-expo",
+  "canonical_sources": [
+    "Clickabl/gef-expo/src/features/dictionary/**",
+    "Clickabl/gef-expo/registry/lexi-capabilities.json"
+  ],
+  "depends_on": ["lexical-graph", "semantic-grammar-graph", "lesson-graph", "occurrence-graph", "names-entities", "provenance-sources", "language-support"],
+  "typed_reference_targets": ["lexeme", "sense", "form", "analysis", "phrase_pattern", "semantic_function", "construction", "concept", "name_family", "name_form", "name", "entity"],
+  "provides": ["lookup_ranking", "ambiguity_presentation", "lesson_offer_gating", "lexi_gef_authority_presentation", "learner_context", "accessible_ui"],
+  "required_for_core_lookup": true,
+  "failure_mode": "Degrade visual effects first, then optional enrichment. Never fabricate evidence or make the lexical answer unreadable because an effect or optional integration failed.",
+  "invariants": [
+    "Runtime ranks and renders canonical evidence; it does not author reusable linguistic truth.",
+    "Approved evidence may present as Lexi; candidate evidence remains Gef/provisional.",
+    "Lesson actions are gated through canonical trigger, directional readiness and release rules.",
+    "Persistent DustFlow remains the only particle/GL background; UI styling never enters linguistic annotations.",
+    "Legacy adapter vocabulary is normalized to canonical typed refs before lesson matching or presentation."
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

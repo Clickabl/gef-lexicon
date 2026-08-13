@@ -1,14 +1,15 @@
 {
   "scripts": {
-    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
+    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/compile-lesson-ssot-registry.mjs && node scripts/validate-compiled-lesson-ssot.mjs && node scripts/validate-lexi-system.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
     "validate:lesson-zero": "node scripts/validate-where-languages-come-from.mjs",
+    "validate:lexi": "node scripts/compile-lesson-ssot-registry.mjs && node scripts/validate-compiled-lesson-ssot.mjs && node scripts/validate-lexi-system.mjs && node scripts/validate-lesson-semantic-index.mjs",
     "validate:international-language-levels": "node scripts/validate-international-language-levels.mjs",
     "validate:english": "node scripts/validate-english-coverage.mjs",
     "validate:family-members": "node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs",
     "validate:grammatical-gender": "node scripts/validate-grammatical-gender-lesson.mjs",
     "validate:calendar-year": "node scripts/validate-calendar-year-lessons.mjs",
-    "validate:semantic": "node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
+    "validate:semantic": "node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs && node scripts/validate-compiled-lesson-ssot.mjs",
     "compile:concepts": "node scripts/compile-concept-index.mjs",
     "compile:sqlite": "node scripts/compile-sqlite.mjs",
     "compile:semantic": "node scripts/compile-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",

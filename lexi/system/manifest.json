@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "manifest_id": "GEF.LEXI_SYSTEM",
+  "front_door": "lexi/README.md",
+  "annotation_pass_catalog": "lexi/annotations/README.md",
+  "research_catalog": "lexi/research/README.md",
+  "integration_schema": "lexi/system/integration.schema.json",
+  "integration_catalog": [
+    {"integration_id":"lexical-graph","manifest":"lexi/integrations/lexical-graph/integration.json","required_for_core_lookup":true},
+    {"integration_id":"semantic-grammar-graph","manifest":"lexi/integrations/semantic-grammar-graph/integration.json","required_for_core_lookup":false},
+    {"integration_id":"lesson-graph","manifest":"lexi/integrations/lesson-graph/integration.json","required_for_core_lookup":false},
+    {"integration_id":"occurrence-graph","manifest":"lexi/integrations/occurrence-graph/integration.json","required_for_core_lookup":false},
+    {"integration_id":"names-entities","manifest":"lexi/integrations/names-entities/integration.json","required_for_core_lookup":false},
+    {"integration_id":"provenance-sources","manifest":"lexi/integrations/provenance-sources/integration.json","required_for_core_lookup":true},
+    {"integration_id":"language-support","manifest":"lexi/integrations/language-support/integration.json","required_for_core_lookup":true},
+    {"integration_id":"runtime-presentation","manifest":"lexi/integrations/runtime-presentation/integration.json","required_for_core_lookup":true}
+  ],
+  "global_contracts": {
+    "typed_reference_targets": [
+      "lexeme",
+      "sense",
+      "form",
+      "analysis",
+      "phrase_pattern",
+      "semantic_function",
+      "construction",
+      "concept",
+      "name_family",
+      "name_form",
+      "name",
+      "entity"
+    ],
+    "integrity_review_states": ["candidate", "approved", "superseded", "rejected"],
+    "asset_trust_ladder": ["machine_translated", "machine_verified", "public", "gef_certified"],
+    "lesson_release_ladder": ["machine_created", "machine_verified", "general_public", "education"],
+    "pass_coverage_states": ["missing", "partial", "complete", "not_applicable", "blocked"],
+    "occurrence_offset_unit": "unicode_codepoint_nfc",
+    "longest_reviewed_span_wins": true,
+    "components_remain_tappable": true,
+    "surface_text_is_not_identity": true,
+    "confidence_never_promotes_review": true,
+    "missing_optional_data_is_not_fabricated": true,
+    "lesson_readiness_is_external": true,
+    "language_membership_is_external": true,
+    "counts_are_derived": true,
+    "tier3_lesson_scope": "core_read_game_discovery_only",
+    "tier3_full_grammar_forbidden": true
+  },
+  "review_state": "candidate",
+  "version": 2
+}
