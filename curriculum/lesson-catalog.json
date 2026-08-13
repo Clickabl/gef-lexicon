@@ -1,5 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "canonical_source": "curriculum/lesson-system-manifest.json",
+  "projection_role": "compatibility_catalog",
   "universal": [
     {
       "lesson_id": "LES.mul.meta.international_language_levels",
@@ -18,7 +20,7 @@
       "path_scope": "tier1_tier2",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "Universal grammatical-gender comparison family. Spanish has full candidate rule/practice data; other languages participate only when this lesson has explicit comparison or full-support records. Do not infer capability from global language tier.",
+      "notes": "Universal grammatical-gender comparison family. Runtime eligibility and Core/Full readiness come from the universal Lesson SSOT plus lesson-specific language capabilities; global language tier alone never grants support.",
       "review_state": "candidate"
     },
     {
@@ -28,7 +30,7 @@
       "path_scope": "universal",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "Family path stage 1: Core family. Pair-level session_depth determines Core versus Cultural. If either source or target role is Tier 3/comparison-only, show only the localized Core lesson and recognition-safe vocabulary/game material.",
+      "notes": "Family path stage 1: Core family. Pair-level session depth determines Core versus Cultural. If either source or target role is Tier 3/comparison-only, show only the localized Core lesson and recognition-safe vocabulary/game material.",
       "review_state": "candidate"
     },
     {
@@ -38,7 +40,7 @@
       "path_scope": "universal",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "Family path stage 2: Describe your family. Starts with reusable sentence functions and separates household facts from kinship. Cultural analysis is available only when both active language roles satisfy the Family full-support contract.",
+      "notes": "Family path stage 2: Describe your family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.",
       "review_state": "candidate"
     },
     {
@@ -48,7 +50,7 @@
       "path_scope": "universal",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "Family path stage 3: Extended family. Core mode teaches relationship paths and safe matching; Cultural mode may add family-side, age, gender, affinity, address and register distinctions when both active language roles are full-support.",
+      "notes": "Family path stage 3: Extended family. Canonical readiness and gaps are owned by curriculum/lesson-system-manifest.json.",
       "review_state": "candidate"
     },
     {
@@ -58,7 +60,17 @@
       "path_scope": "universal",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "Family path stage 4: Relationships and family life. Covers dating/partner/marriage/separation/divorce vocabulary. Current 104-language Core vocabulary breadth is intentionally partial here until relationship-state vocabulary is expanded; do not fake missing translations.",
+      "notes": "Family path stage 4: Relationships and family life. Current 104-language Core vocabulary breadth remains intentionally partial where the SSOT says coverage is not yet proven; do not fake missing translations.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.names.around_world",
+      "priority": 35,
+      "category": "culture",
+      "path_scope": "universal",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Names, transliteration, related historical forms, and naming practices. Cultural claims remain community-sourced and candidate until reviewed.",
       "review_state": "candidate"
     },
     {
@@ -68,7 +80,7 @@
       "path_scope": "tier1_tier2",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "A1 weekday-cycle lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured weekday systems and practice. Calendar first-day layout remains territory/locale context rather than a language fact.",
+      "notes": "A1 weekday-cycle lesson. Calendar first-day layout remains territory/locale context rather than a language fact. Canonical readiness is resolved by the Lesson SSOT.",
       "review_state": "candidate"
     },
     {
@@ -78,7 +90,7 @@
       "path_scope": "tier1_tier2",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "A1 month-cycle lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured month systems and practice, including contextual alternate calendars, regional month systems, and grammatical date forms where reviewed data exists.",
+      "notes": "A1 month-cycle implementation. The SSOT part is intentionally named Months and years and remains partial because this implementation does not yet teach years.",
       "review_state": "candidate"
     },
     {
@@ -88,16 +100,60 @@
       "path_scope": "tier1_tier2",
       "featured": false,
       "next_policy": "next_language_path_item",
-      "notes": "A1 season-vocabulary lesson. All 104 current learn-from languages have short source/explanation blurbs; the current 21 Tier 1/Tier 2 languages have structured season systems and practice. Hemisphere, climate, and traditional seasonal systems remain contextual instead of being inferred from a language tag.",
+      "notes": "A1 season vocabulary. Hemisphere, climate, and traditional seasonal systems remain contextual instead of being inferred from a language tag.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.prep.multiple_for",
+      "priority": 45,
+      "category": "grammar",
+      "path_scope": "universal",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Universal semantic-map primer for meanings English often gives to 'for'. Structural gold-standard family; review state remains candidate and Tier 3 never inherits Full grammar support from Core comparison coverage.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.noun.grammatical_number",
+      "priority": 50,
+      "category": "grammar",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Universal grammatical-number comparison lesson. Core comparison and Full target eligibility are resolved from lesson-specific capability data and the universal Lesson SSOT.",
+      "review_state": "candidate"
+    },
+    {
+      "lesson_id": "LES.mul.grammar.being",
+      "priority": 60,
+      "category": "grammar",
+      "path_scope": "tier1_tier2",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Cross-language Being lesson covering identity, state, location, and existence. The SSOT intentionally keeps this conditional until mixed semantic functions are split into CEFR-appropriate parts for a target language.",
+      "review_state": "candidate"
+    }
+  ],
+  "language_specific": [
+    {
+      "lesson_id": "LES.es.prep.por_para.core",
+      "language_tag": "es",
+      "priority": 46,
+      "category": "grammar",
+      "path_scope": "language_override",
+      "featured": false,
+      "next_policy": "next_language_path_item",
+      "notes": "Spanish-specific Full implementation inserted by the canonical Spanish learning-path override immediately after the universal multiple-words-for semantic primer. Practice exists; quest/default-reading gaps remain exactly as declared in the SSOT.",
       "review_state": "candidate"
     }
   ],
   "path_policy": {
+    "canonical_path_source": "curriculum/learning-path-template.json",
     "tier1": "Build an ordered curriculum that may interleave lessons and story/chapter recommendations. Full grammar path is expected over time.",
     "tier2": "Build a selective ordered curriculum that may interleave reviewed lessons and story/chapter recommendations when evidence supports them. Do not imply a complete grammar path.",
     "tier3": "Reading and games remain the main learning path, but universal topical lessons may expose explicitly bounded Core sessions. Core availability must never be mistaken for full cultural or grammar-course support.",
-    "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible universal catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
+    "next_resolution": "After a lesson completes, prefer the next explicit item in the active language path. If no language-path successor exists, fall back to the next eligible compatibility-catalog item by ascending priority. If neither exists, return to the originating lesson/dashboard context."
   },
   "review_state": "approved",
-  "version": 5
+  "version": 6
 }
