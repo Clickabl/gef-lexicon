@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
+    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-lexicon-v2.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
+    "validate:v2": "node scripts/validate-lexicon-v2.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
     "validate:lesson-zero": "node scripts/validate-where-languages-come-from.mjs",
     "validate:international-language-levels": "node scripts/validate-international-language-levels.mjs",
@@ -11,8 +12,11 @@
     "validate:semantic": "node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
     "compile:concepts": "node scripts/compile-concept-index.mjs",
     "compile:sqlite": "node scripts/compile-sqlite.mjs",
+    "compile:sqlite:v2": "node scripts/compile-sqlite-v2.mjs",
     "compile:semantic": "node scripts/compile-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
     "compile:names": "node scripts/compile-name-index.mjs",
+    "sense-card": "node scripts/build-sense-card.mjs",
+    "migrate:lexicon-v2": "node scripts/migrate-lexicon-v1-to-v2.mjs",
     "generate:learning-paths": "node scripts/generate-learning-path-placements.mjs"
   },
   "dependencies": {
