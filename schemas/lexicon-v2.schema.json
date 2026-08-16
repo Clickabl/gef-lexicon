@@ -49,6 +49,17 @@
         "source_refs": {"$ref": "#/definitions/sourceRefs"}
       }
     },
+    "lessonLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lesson_id", "relationship"],
+      "properties": {
+        "lesson_id": {"type": "string", "minLength": 1},
+        "rule_id": {"type": "string"},
+        "relationship": {"type": "string", "minLength": 1},
+        "review_state": {"$ref": "#/definitions/reviewState"}
+      }
+    },
     "sense": {
       "type": "object",
       "additionalProperties": false,
@@ -59,6 +70,8 @@
         "sense_key": {"type": "string", "minLength": 1},
         "primary_concept_id": {"type": ["string", "null"]},
         "concept_links": {"type": "array", "items": {"$ref": "#/definitions/conceptLink"}},
+        "knowledge_links": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "lesson_links": {"type": "array", "items": {"$ref": "#/definitions/lessonLink"}},
         "entity_id": {"type": ["string", "null"]},
         "cefr_level": {"type": "string", "enum": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
         "gef_level": {"type": "number", "minimum": 0, "maximum": 7},
@@ -187,7 +200,7 @@
       "properties": {
         "relation_id": {"type": "string", "minLength": 1},
         "source": {"$ref": "#/definitions/endpoint"},
-        "relation_type": {"type": "string", "enum": ["synonym", "near_synonym", "antonym", "homophone", "homonym", "semantic_confusable", "orthographic_confusable", "grammatical_distractor", "broader", "narrower", "metaphorical_extension", "false_friend", "derived_from", "spelling_variant", "regional_equivalent", "translation_exact", "translation_overlapping"]},
+        "relation_type": {"type": "string", "enum": ["synonym", "near_synonym", "antonym", "homophone", "homonym", "semantic_confusable", "orthographic_confusable", "grammatical_distractor", "broader", "narrower", "metaphorical_extension", "false_friend", "derived_from", "spelling_variant", "regional_equivalent", "translation_exact", "translation_overlapping", "paradigm_peer", "related"]},
         "target": {"$ref": "#/definitions/endpoint"},
         "confidence": {"type": "number", "minimum": 0, "maximum": 1},
         "difficulty_weight": {"type": "number", "minimum": 0, "maximum": 1},
