@@ -1,0 +1,236 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/lexicon-v2.schema.json",
+  "title": "GEF Lexicon v2 normalized language package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "language_code", "lexemes", "senses", "localizations", "forms", "examples", "relations", "redirects", "collections"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "language_code": {"type": "string", "minLength": 2},
+    "work_id": {"type": "string"},
+    "lexemes": {"type": "array", "items": {"$ref": "#/definitions/lexeme"}},
+    "senses": {"type": "array", "items": {"$ref": "#/definitions/sense"}},
+    "localizations": {"type": "array", "items": {"$ref": "#/definitions/localization"}},
+    "forms": {"type": "array", "items": {"$ref": "#/definitions/form"}},
+    "examples": {"type": "array", "items": {"$ref": "#/definitions/example"}},
+    "relations": {"type": "array", "items": {"$ref": "#/definitions/relation"}},
+    "redirects": {"type": "array", "items": {"$ref": "#/definitions/redirect"}},
+    "collections": {"type": "array", "items": {"$ref": "#/definitions/collection"}}
+  },
+  "definitions": {
+    "reviewState": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "sourceRefs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^src_[A-Za-z0-9._:-]+$"}},
+    "lexeme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lexeme_id", "lemma_nfc", "upos", "review_state"],
+      "properties": {
+        "lexeme_id": {"type": "string", "minLength": 1},
+        "lemma_nfc": {"type": "string", "minLength": 1},
+        "upos": {"type": "string", "enum": ["NOUN", "VERB", "ADJ", "ADV", "PRON", "DET", "ADP", "NUM", "CONJ", "CCONJ", "SCONJ", "PART", "INTJ", "PROPN", "PUNCT", "SYM", "X"]},
+        "language_pos": {"type": "string"},
+        "lexical_features": {"type": "object", "additionalProperties": {"type": "string"}},
+        "proper_noun": {"type": "boolean", "default": false},
+        "name_id": {"type": ["string", "null"]},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "conceptLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["concept_id", "relationship"],
+      "properties": {
+        "concept_id": {"type": "string"},
+        "relationship": {"type": "string", "enum": ["exact", "broader", "narrower", "overlapping", "contextual"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "note": {"type": "string"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sense_id", "lexeme_id", "sense_key", "concept_links", "review_state"],
+      "properties": {
+        "sense_id": {"type": "string", "minLength": 1},
+        "lexeme_id": {"type": "string", "minLength": 1},
+        "sense_key": {"type": "string", "minLength": 1},
+        "primary_concept_id": {"type": ["string", "null"]},
+        "concept_links": {"type": "array", "items": {"$ref": "#/definitions/conceptLink"}},
+        "entity_id": {"type": ["string", "null"]},
+        "cefr_level": {"type": "string", "enum": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
+        "gef_level": {"type": "number", "minimum": 0, "maximum": 7},
+        "register_label": {"type": "string"},
+        "domains": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "regions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+        "learner": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "frequency_rank": {"type": "integer", "minimum": 1},
+            "frequency_band": {"type": "string"},
+            "usefulness": {"type": "number", "minimum": 0, "maximum": 1},
+            "concreteness": {"type": "number", "minimum": 0, "maximum": 1},
+            "imageability": {"type": "number", "minimum": 0, "maximum": 1},
+            "minimum_age": {"type": "integer", "minimum": 0},
+            "sensitivity_labels": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+          }
+        },
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "localization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sense_id", "interface_language", "definition", "review_state"],
+      "properties": {
+        "sense_id": {"type": "string", "minLength": 1},
+        "interface_language": {"type": "string", "minLength": 2},
+        "gloss": {"type": "string", "minLength": 1},
+        "definition": {"type": "string", "minLength": 1},
+        "hint": {"type": "string", "minLength": 1},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "pronunciation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ipa"],
+      "properties": {
+        "ipa": {"type": "string", "minLength": 1},
+        "locale": {"type": "string"},
+        "notation": {"type": "string", "enum": ["phonemic", "phonetic"]},
+        "audio_asset_id": {"type": "string"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["analysis_id", "features"],
+      "properties": {
+        "analysis_id": {"type": "string", "minLength": 1},
+        "features": {
+          "type": "object",
+          "required": ["base"],
+          "properties": {
+            "base": {"type": "object", "additionalProperties": {"type": "string"}},
+            "possessor": {"type": "object", "additionalProperties": {"type": "string"}},
+            "subject": {"type": "object", "additionalProperties": {"type": "string"}},
+            "object": {"type": "object", "additionalProperties": {"type": "string"}},
+            "clitic": {"type": "object", "additionalProperties": {"type": "string"}}
+          },
+          "additionalProperties": {"type": "object", "additionalProperties": {"type": "string"}}
+        },
+        "display_label_key": {"type": "string"},
+        "pronunciations": {"type": "array", "items": {"$ref": "#/definitions/pronunciation"}}
+      }
+    },
+    "form": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["form_id", "lexeme_id", "surface_nfc", "normalized_lookup", "analyses"],
+      "properties": {
+        "form_id": {"type": "string", "minLength": 1},
+        "lexeme_id": {"type": "string", "minLength": 1},
+        "surface_nfc": {"type": "string", "minLength": 1},
+        "normalized_lookup": {"type": "string", "minLength": 1},
+        "analyses": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/analysis"}},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "exampleTranslation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interface_language", "text"],
+      "properties": {
+        "interface_language": {"type": "string", "minLength": 2},
+        "text": {"type": "string", "minLength": 1},
+        "review_state": {"$ref": "#/definitions/reviewState"}
+      }
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["example_id", "language_code", "text_nfc", "sense_ids", "review_state"],
+      "properties": {
+        "example_id": {"type": "string", "minLength": 1},
+        "language_code": {"type": "string", "minLength": 2},
+        "text_nfc": {"type": "string", "minLength": 1},
+        "sense_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "cefr_level": {"type": "string", "enum": ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]},
+        "gef_level": {"type": "number", "minimum": 0, "maximum": 7},
+        "translations": {"type": "array", "items": {"$ref": "#/definitions/exampleTranslation"}},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"},
+        "provenance_note": {"type": "string"}
+      }
+    },
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id"],
+      "properties": {
+        "type": {"type": "string", "enum": ["concept", "sense", "lexeme", "form", "analysis", "expression", "construction", "entity", "name"]},
+        "id": {"type": "string", "minLength": 1}
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation_id", "source", "relation_type", "target", "review_state"],
+      "properties": {
+        "relation_id": {"type": "string", "minLength": 1},
+        "source": {"$ref": "#/definitions/endpoint"},
+        "relation_type": {"type": "string", "enum": ["synonym", "near_synonym", "antonym", "homophone", "homonym", "semantic_confusable", "orthographic_confusable", "grammatical_distractor", "broader", "narrower", "metaphorical_extension", "false_friend", "derived_from", "spelling_variant", "regional_equivalent", "translation_exact", "translation_overlapping"]},
+        "target": {"$ref": "#/definitions/endpoint"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "difficulty_weight": {"type": "number", "minimum": 0, "maximum": 1},
+        "note": {"type": "string"},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    },
+    "redirect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_type", "from_id", "to", "reason"],
+      "properties": {
+        "from_type": {"type": "string", "enum": ["sense", "lexeme", "form", "analysis", "example"]},
+        "from_id": {"type": "string", "minLength": 1},
+        "to": {"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/endpoint"}},
+        "reason": {"type": "string", "enum": ["replacement", "split", "merge", "deduplication", "correction"]},
+        "note": {"type": "string"}
+      }
+    },
+    "collectionMember": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_type", "target_id"],
+      "properties": {
+        "target_type": {"type": "string", "enum": ["sense", "lexeme", "concept", "construction"]},
+        "target_id": {"type": "string", "minLength": 1},
+        "weight": {"type": "number", "minimum": 0},
+        "note": {"type": "string"}
+      }
+    },
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["collection_id", "collection_key", "purpose", "members", "review_state"],
+      "properties": {
+        "collection_id": {"type": "string", "minLength": 1},
+        "collection_key": {"type": "string", "minLength": 1},
+        "purpose": {"type": "string", "enum": ["daily_pool", "frequency_band", "topic", "curriculum", "practice_pool", "editorial"]},
+        "members": {"type": "array", "items": {"$ref": "#/definitions/collectionMember"}},
+        "review_state": {"$ref": "#/definitions/reviewState"},
+        "source_refs": {"$ref": "#/definitions/sourceRefs"}
+      }
+    }
+  }
+}
