@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
@@ -42,6 +42,7 @@ function initDatabase(path) {
       domains_json TEXT NOT NULL DEFAULT '[]',
       regions_json TEXT NOT NULL DEFAULT '[]',
       learner_json TEXT NOT NULL DEFAULT '{}',
+      knowledge_links_json TEXT NOT NULL DEFAULT '[]',
       review_state TEXT NOT NULL,
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id)
     );
@@ -52,6 +53,15 @@ function initDatabase(path) {
       confidence REAL,
       note TEXT,
       PRIMARY KEY(sense_id, concept_id, relationship),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id)
+    );
+    CREATE TABLE sense_lesson_links (
+      sense_id TEXT NOT NULL,
+      lesson_id TEXT NOT NULL,
+      rule_id TEXT,
+      relationship TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      PRIMARY KEY(sense_id, lesson_id, rule_id, relationship),
       FOREIGN KEY(sense_id) REFERENCES senses(sense_id)
     );
     CREATE TABLE sense_localizations (
@@ -86,6 +96,7 @@ function initDatabase(path) {
       locale TEXT,
       notation TEXT,
       audio_asset_id TEXT,
+      note TEXT,
       PRIMARY KEY(analysis_id, ordinal),
       FOREIGN KEY(analysis_id) REFERENCES form_analyses(analysis_id)
     );
@@ -162,6 +173,8 @@ function initDatabase(path) {
     CREATE INDEX idx_forms_lookup ON forms(normalized_lookup);
     CREATE INDEX idx_senses_lexeme ON senses(lexeme_id);
     CREATE INDEX idx_localizations_language ON sense_localizations(interface_language);
+    CREATE INDEX idx_lesson_links_sense ON sense_lesson_links(sense_id);
+    CREATE INDEX idx_lesson_links_lesson ON sense_lesson_links(lesson_id);
     CREATE INDEX idx_relations_source ON relations(source_type, source_id);
     CREATE INDEX idx_relations_target ON relations(target_type, target_id);
     CREATE INDEX idx_readiness_daily ON sense_readiness(daily_ready);
@@ -174,12 +187,13 @@ function compilePackage(pkg, outputPath) {
   const insert = {
     meta: db.prepare('INSERT INTO package_meta (key, value) VALUES (?, ?)'),
     lexeme: db.prepare('INSERT INTO lexemes VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'),
-    sense: db.prepare('INSERT INTO senses VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'),
+    sense: db.prepare('INSERT INTO senses VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'),
     concept: db.prepare('INSERT INTO sense_concepts VALUES (?, ?, ?, ?, ?)'),
+    lessonLink: db.prepare('INSERT INTO sense_lesson_links VALUES (?, ?, ?, ?, ?)'),
     localization: db.prepare('INSERT INTO sense_localizations VALUES (?, ?, ?, ?, ?, ?)'),
     form: db.prepare('INSERT INTO forms VALUES (?, ?, ?, ?, ?)'),
     analysis: db.prepare('INSERT INTO form_analyses VALUES (?, ?, ?, ?)'),
-    pronunciation: db.prepare('INSERT INTO pronunciations VALUES (?, ?, ?, ?, ?, ?)'),
+    pronunciation: db.prepare('INSERT INTO pronunciations VALUES (?, ?, ?, ?, ?, ?, ?)'),
     example: db.prepare('INSERT INTO examples VALUES (?, ?, ?, ?, ?, ?, ?)'),
     exampleSense: db.prepare('INSERT INTO example_senses VALUES (?, ?)'),
     exampleTranslation: db.prepare('INSERT INTO example_translations VALUES (?, ?, ?, ?)'),
@@ -206,9 +220,13 @@ function compilePackage(pkg, outputPath) {
       insert.sense.run(
         item.sense_id, item.lexeme_id, item.sense_key, item.primary_concept_id ?? null, item.cefr_level ?? null,
         item.gef_level ?? null, item.register_label ?? null, JSON.stringify(item.domains ?? []), JSON.stringify(item.regions ?? []),
-        JSON.stringify(item.learner ?? {}), item.review_state,
+        JSON.stringify(item.learner ?? {}), JSON.stringify(item.knowledge_links ?? []), item.review_state,
       );
       for (const link of item.concept_links ?? []) insert.concept.run(item.sense_id, link.concept_id, link.relationship, link.confidence ?? null, link.note ?? null);
+      for (const link of item.lesson_links ?? []) {
+        const reviewState = link.review_state ?? item.review_state;
+        if (included(reviewState)) insert.lessonLink.run(item.sense_id, link.lesson_id, link.rule_id ?? null, link.relationship, reviewState);
+      }
     }
     for (const item of pkg.localizations) if (senseIds.has(item.sense_id) && included(item.review_state)) insert.localization.run(
       item.sense_id, item.interface_language, item.gloss ?? null, item.definition, item.hint ?? null, item.review_state,
@@ -218,7 +236,8 @@ function compilePackage(pkg, outputPath) {
       for (const analysis of item.analyses ?? []) {
         insert.analysis.run(analysis.analysis_id, item.form_id, JSON.stringify(analysis.features ?? { base: {} }), analysis.display_label_key ?? null);
         (analysis.pronunciations ?? []).forEach((pronunciation, ordinal) => insert.pronunciation.run(
-          analysis.analysis_id, ordinal, pronunciation.ipa, pronunciation.locale ?? null, pronunciation.notation ?? null, pronunciation.audio_asset_id ?? null,
+          analysis.analysis_id, ordinal, pronunciation.ipa, pronunciation.locale ?? null, pronunciation.notation ?? null,
+          pronunciation.audio_asset_id ?? null, pronunciation.note ?? null,
         ));
       }
     }
