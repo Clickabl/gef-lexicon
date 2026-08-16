@@ -8,6 +8,19 @@ const RELATION_FIELD_TYPES = Object.freeze({
   confusable_senses: 'semantic_confusable',
 });
 
+const LEGACY_RELATION_TYPES = Object.freeze({
+  confusable_with: 'semantic_confusable',
+  not_an_article: 'grammatical_distractor',
+  paradigm_peer: 'paradigm_peer',
+});
+
+const V2_RELATION_TYPES = new Set([
+  'synonym', 'near_synonym', 'antonym', 'homophone', 'homonym', 'semantic_confusable',
+  'orthographic_confusable', 'grammatical_distractor', 'broader', 'narrower',
+  'metaphorical_extension', 'false_friend', 'derived_from', 'spelling_variant',
+  'regional_equivalent', 'translation_exact', 'translation_overlapping', 'paradigm_peer', 'related',
+]);
+
 function compactObject(value) {
   return Object.fromEntries(Object.entries(value).filter(([, item]) => item !== undefined));
 }
@@ -18,6 +31,11 @@ function stableRelationId(sourceType, sourceId, relationType, targetType, target
     .digest('hex')
     .slice(0, 20);
   return `rel_${digest}`;
+}
+
+function canonicalRelationType(value) {
+  if (LEGACY_RELATION_TYPES[value]) return LEGACY_RELATION_TYPES[value];
+  return V2_RELATION_TYPES.has(value) ? value : 'related';
 }
 
 function normalizeV2(data) {
@@ -59,17 +77,25 @@ function normalizeV1(data) {
 
     for (const sense of lexeme.senses ?? []) {
       const senseReview = sense.review_state ?? reviewState;
+      const legacyConceptId = sense.primary_concept_id ?? null;
+      const primaryConceptId = typeof legacyConceptId === 'string' && legacyConceptId.startsWith('cpt_') ? legacyConceptId : null;
       const conceptLinks = Array.isArray(sense.concept_links) ? [...sense.concept_links] : [];
-      if (sense.primary_concept_id && !conceptLinks.some((link) => link.concept_id === sense.primary_concept_id)) {
-        conceptLinks.unshift({ concept_id: sense.primary_concept_id, relationship: 'exact' });
+      if (primaryConceptId && !conceptLinks.some((link) => link.concept_id === primaryConceptId)) {
+        conceptLinks.unshift({ concept_id: primaryConceptId, relationship: 'exact' });
       }
+      const knowledgeLinks = [...new Set([
+        ...(sense.knowledge_links ?? []),
+        ...(!primaryConceptId && legacyConceptId ? [legacyConceptId] : []),
+      ])];
 
       senses.push(compactObject({
         sense_id: sense.sense_id,
         lexeme_id: lexeme.lexeme_id,
         sense_key: sense.sense_key,
-        primary_concept_id: sense.primary_concept_id ?? null,
+        primary_concept_id: primaryConceptId,
         concept_links: conceptLinks,
+        knowledge_links: knowledgeLinks,
+        lesson_links: sense.lesson_links ?? [],
         entity_id: sense.entity_id,
         cefr_level: sense.cefr_level,
         gef_level: sense.gef_level,
@@ -94,7 +120,9 @@ function normalizeV1(data) {
       }
 
       for (const [field, relationType] of Object.entries(RELATION_FIELD_TYPES)) {
-        for (const relation of sense[field] ?? []) {
+        for (const rawRelation of sense[field] ?? []) {
+          const relation = typeof rawRelation === 'string' ? { target_id: rawRelation, target_type: 'sense' } : rawRelation;
+          if (!relation?.target_id) continue;
           const targetType = relation.target_type ?? 'sense';
           relations.push(compactObject({
             relation_id: stableRelationId('sense', sense.sense_id, relationType, targetType, relation.target_id),
@@ -128,14 +156,18 @@ function normalizeV1(data) {
 
     for (const relation of lexeme.relations ?? []) {
       const targetType = relation.target_type ?? relation.target_kind ?? 'lexeme';
-      const relationType = relation.relation_type ?? relation.type;
-      if (!relationType || !relation.target_id) continue;
+      const legacyType = relation.relation_type ?? relation.type;
+      if (!legacyType || !relation.target_id) continue;
+      const relationType = canonicalRelationType(legacyType);
+      const note = relationType === 'related' && legacyType !== 'related'
+        ? [`legacy relation type: ${legacyType}`, relation.note].filter(Boolean).join('; ')
+        : relation.note;
       relations.push(compactObject({
         relation_id: relation.relation_id ?? stableRelationId('lexeme', lexeme.lexeme_id, relationType, targetType, relation.target_id),
         source: { type: 'lexeme', id: lexeme.lexeme_id },
         relation_type: relationType,
         target: { type: targetType, id: relation.target_id },
-        note: relation.note,
+        note,
         review_state: relation.review_state ?? reviewState,
         source_refs: relation.source_refs,
       }));
