@@ -2,6 +2,7 @@
   "scripts": {
     "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-sense-links.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
     "validate:sense-links": "node scripts/validate-sense-links.mjs",
+    "test:sense-links": "node scripts/test-sense-links.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
     "validate:lesson-zero": "node scripts/validate-where-languages-come-from.mjs",
     "validate:international-language-levels": "node scripts/validate-international-language-levels.mjs",
