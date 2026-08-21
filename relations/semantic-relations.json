@@ -11,7 +11,7 @@
       "translation_authority": "none",
       "review_state": "candidate",
       "provenance": {"source":"gef_editorial","source_record_id":"frog-relative-pilot"},
-      "notes": "Bullfrog is narrower than the broad frog concept. This edge is discovery/taxonomy only."
+      "notes": "For hypernym edges, `to` is broader than `from`: bullfrog -> frog. Discovery/taxonomy only."
     },
     {
       "relation_id": "rel_frog_toad_coordinate_v1",
@@ -26,23 +26,25 @@
     },
     {
       "relation_id": "rel_frog_anuran_taxonomy_v1",
-      "relation_type": "hyponym",
+      "relation_type": "hypernym",
       "from": {"kind":"concept","id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003"},
       "to": {"kind":"concept","id":"cpt_02000000-0000-7000-9000-000000000005"},
       "directionality": "directed",
       "translation_authority": "none",
       "review_state": "candidate",
-      "provenance": {"source":"gef_editorial","source_record_id":"frog-relative-pilot"}
+      "provenance": {"source":"gef_editorial","source_record_id":"frog-relative-pilot"},
+      "notes": "For hypernym edges, `to` is broader than `from`: frog -> broad anuran taxonomy."
     },
     {
       "relation_id": "rel_toad_anuran_taxonomy_v1",
-      "relation_type": "hyponym",
+      "relation_type": "hypernym",
       "from": {"kind":"concept","id":"cpt_02000000-0000-7000-9000-000000000003"},
       "to": {"kind":"concept","id":"cpt_02000000-0000-7000-9000-000000000005"},
       "directionality": "directed",
       "translation_authority": "none",
       "review_state": "candidate",
-      "provenance": {"source":"gef_editorial","source_record_id":"frog-relative-pilot"}
+      "provenance": {"source":"gef_editorial","source_record_id":"frog-relative-pilot"},
+      "notes": "For hypernym edges, `to` is broader than `from`: toad -> broad anuran taxonomy."
     },
     {
       "relation_id": "rel_date_appointment_confusable_v1",
