@@ -11,8 +11,10 @@
  * grow without forcing rewrites of a large canonical core file.
  *
  * Default builds include candidate + approved rows for development fixtures.
- * `--production` includes approved rows only. Compilation is always from a
- * freshly recreated database so removed source rows can never survive.
+ * `--production` includes approved rows only. Review filtering applies at both
+ * lexeme and sense level; an approved lexeme must never smuggle a candidate
+ * sense into a production package. Compilation is always from a freshly
+ * recreated database so removed source rows can never survive.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -26,6 +28,10 @@ const PRODUCTION = process.argv.includes('--production');
 
 function included(reviewState) {
   return reviewState === 'approved' || (!PRODUCTION && reviewState === 'candidate');
+}
+
+function senseReviewState(lexeme, sense) {
+  return sense?.review_state ?? lexeme?.review_state ?? 'candidate';
 }
 
 function initCoreDb(dbPath) {
@@ -49,6 +55,7 @@ function initCoreDb(dbPath) {
       primary_concept_id TEXT,
       cefr_level TEXT,
       register_label TEXT,
+      review_state TEXT NOT NULL,
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id)
     );
 
@@ -112,6 +119,7 @@ function initCoreDb(dbPath) {
 
     CREATE INDEX idx_forms_lookup ON forms(normalized_lookup);
     CREATE INDEX idx_lexemes_lemma ON lexemes(lemma_nfc);
+    CREATE INDEX idx_senses_review_state ON senses(review_state);
     CREATE INDEX idx_sense_concepts_sense ON sense_concepts(sense_id, relation);
     CREATE INDEX idx_sense_concepts_concept ON sense_concepts(concept_id, relation);
     CREATE INDEX idx_relations_source ON lexeme_relations(source_lexeme_id);
@@ -128,8 +136,9 @@ function statements(db) {
       VALUES (?, ?, ?, ?, ?, ?)
     `),
     sense: db.prepare(`
-      INSERT INTO senses (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label)
-      VALUES (?, ?, ?, ?, ?, ?)
+      INSERT INTO senses
+        (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label, review_state)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `),
     senseConcept: db.prepare(`
       INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
@@ -166,6 +175,12 @@ function insertLexiconDocument(db, data) {
   db.transaction(() => {
     for (const lex of data.lexemes ?? []) {
       if (!included(lex.review_state)) continue;
+
+      const includedSenses = (lex.senses ?? []).filter((sense) => (
+        included(senseReviewState(lex, sense))
+      ));
+      if (includedSenses.length === 0) continue;
+
       insert.lexeme.run(
         lex.lexeme_id,
         lex.lemma_nfc,
@@ -175,8 +190,9 @@ function insertLexiconDocument(db, data) {
         lex.review_state,
       );
 
-      for (const sense of lex.senses ?? []) {
-        const conceptLinks = activeSenseConceptLinks(sense, sense.review_state ?? lex.review_state)
+      for (const sense of includedSenses) {
+        const reviewState = senseReviewState(lex, sense);
+        const conceptLinks = activeSenseConceptLinks(sense, reviewState)
           .filter((link) => included(link.review_state));
         const primaryConceptId = conceptLinks.find((link) => link.relation === 'primary')?.concept_id ?? null;
         insert.sense.run(
@@ -186,6 +202,7 @@ function insertLexiconDocument(db, data) {
           primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
+          reviewState,
         );
         for (const link of conceptLinks) {
           insert.senseConcept.run(
@@ -204,14 +221,14 @@ function insertLexiconDocument(db, data) {
           insert.definition.run(sense.sense_id, interfaceLang, definition);
         }
         for (const link of sense.lesson_links ?? []) {
-          const reviewState = link.review_state ?? lex.review_state;
-          if (!included(reviewState)) continue;
+          const linkReviewState = link.review_state ?? reviewState;
+          if (!included(linkReviewState)) continue;
           insert.lessonLink.run(
             sense.sense_id,
             link.lesson_id,
             link.rule_id ?? null,
             link.relationship ?? 'related_lesson',
-            reviewState,
+            linkReviewState,
           );
         }
       }
