@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 import {
   normalizeSenseConceptLinks,
-  translationReadySenseConceptLinks,
+  approvedPrimarySenseConceptLinks,
 } from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -74,7 +74,7 @@ function main() {
   let senses = 0;
   let links = 0;
   let primaryLinks = 0;
-  let translationReadyPrimaryLinks = 0;
+  let approvedSemanticPivots = 0;
   let legacyOnly = 0;
   let explicitLinkedSenses = 0;
 
@@ -150,7 +150,7 @@ function main() {
             primaryLinks += 1;
             if (concept.translation_role !== 'exact_pivot') {
               fail(
-                `${rel}:${sense.sense_id}: primary translation link points to ${link.concept_id}, `
+                `${rel}:${sense.sense_id}: primary semantic link points to ${link.concept_id}, `
                 + `but that concept is '${concept.translation_role ?? 'unclassified'}' rather than exact_pivot`,
               );
             }
@@ -163,18 +163,18 @@ function main() {
           }
         }
 
-        let ready;
+        let approved;
         try {
-          ready = translationReadySenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
+          approved = approvedPrimarySenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
         } catch (error) {
           fail(`${rel}:${sense.sense_id}: ${error.message}`);
           continue;
         }
-        for (const link of ready) {
-          translationReadyPrimaryLinks += 1;
+        for (const link of approved) {
+          approvedSemanticPivots += 1;
           const concept = conceptsById.get(link.concept_id);
           if (concept?.translation_role !== 'exact_pivot') {
-            fail(`${rel}:${sense.sense_id}: translation-ready link uses a non-exact concept ${link.concept_id}`);
+            fail(`${rel}:${sense.sense_id}: approved semantic pivot uses a non-exact concept ${link.concept_id}`);
           }
         }
       }
@@ -186,7 +186,7 @@ function main() {
   console.log(`  Senses: ${senses}`);
   console.log(`  Materialized concept links: ${links}`);
   console.log(`  Primary links: ${primaryLinks}`);
-  console.log(`  Translation-ready approved primary links: ${translationReadyPrimaryLinks}`);
+  console.log(`  Hierarchically approved semantic pivots: ${approvedSemanticPivots}`);
   console.log(`  Explicitly linked senses: ${explicitLinkedSenses}`);
   console.log(`  Legacy scalar-only senses: ${legacyOnly}`);
 
