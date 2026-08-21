@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import {
   activeSenseConceptLinks,
   approvedPrimarySenseConceptLinks,
+  explicitlyReviewedPrimarySenseConceptLinks,
 } from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -126,6 +127,41 @@ function main() {
     approvedPrimarySenseConceptLinks(syntheticApproved, 'approved')[0]?.concept_id === frogConceptId,
     'approved lexeme + approved sense + approved primary link must become semantic-pivot-ready',
   );
+  assert(
+    explicitlyReviewedPrimarySenseConceptLinks(syntheticApproved, 'approved')[0]?.concept_id === frogConceptId,
+    'explicitly reviewed primary link must pass the strict edge-review view',
+  );
+
+  const explicitLinkMissingReview = {
+    sense_id: 'synthetic-approved-parent-unreviewed-edge',
+    review_state: 'approved',
+    concept_links: [
+      { concept_id: frogConceptId, relation: 'primary' },
+    ],
+  };
+  assert(
+    activeSenseConceptLinks(explicitLinkMissingReview, 'approved')[0]?.review_state === 'candidate',
+    'explicit concept link without review_state must fail closed to candidate',
+  );
+  assert(
+    approvedPrimarySenseConceptLinks(explicitLinkMissingReview, 'approved').length === 0,
+    'approved parent metadata was allowed to launder an explicit unreviewed concept edge',
+  );
+
+  const legacyApproved = {
+    sense_id: 'synthetic-legacy-approved-parent',
+    review_state: 'approved',
+    primary_concept_id: frogConceptId,
+  };
+  const legacyProjected = approvedPrimarySenseConceptLinks(legacyApproved, 'approved');
+  assert(
+    legacyProjected[0]?.compatibility_source === 'primary_concept_id',
+    'legacy inherited concept membership must remain visibly marked as compatibility data',
+  );
+  assert(
+    explicitlyReviewedPrimarySenseConceptLinks(legacyApproved, 'approved').length === 0,
+    'legacy inherited approval must not pass the strict independently-reviewed edge view',
+  );
 
   const candidateSenseWithApprovedLink = {
     ...syntheticApproved,
@@ -143,7 +179,7 @@ function main() {
   );
 
   console.log(
-    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, carry usage metadata, and still do not claim final surface-level equivalence.',
+    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, explicit edges fail closed, legacy inherited approval is identifiable/excludable, usage metadata is retained, and pivot identity still does not claim final surface-level equivalence.',
   );
 }
 
