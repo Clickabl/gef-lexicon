@@ -89,7 +89,7 @@
               "child_directed"
             ]
           },
-          "description": "Lexical/register marking of the sense itself. Morphological speech level still belongs on form analyses."
+          "description": "Lexical/register marking of the sense itself. Explicit neutral is real evidence, not the same as unknown. Morphological speech level still belongs on form analyses."
         },
         "region_scope": {
           "type": "object",
@@ -124,14 +124,18 @@
         "pragmatics": {
           "type": "object",
           "additionalProperties": false,
+          "required": ["politeness", "stance", "taboo_level", "address_use", "social_relation_tags"],
           "properties": {
             "politeness": {
               "type": "array",
+              "minItems": 1,
               "uniqueItems": true,
-              "items": {"type": "string", "enum": ["unmarked", "plain", "polite", "formal", "honorific", "humble"]}
+              "items": {"type": "string", "enum": ["unmarked", "plain", "polite", "formal", "honorific", "humble"]},
+              "description": "Use unmarked explicitly when the sense itself carries no required speech-level choice. Form analyses may add a concrete morphological politeness value."
             },
             "stance": {
               "type": "array",
+              "minItems": 1,
               "uniqueItems": true,
               "items": {
                 "type": "string",
@@ -144,7 +148,7 @@
               "type": "array",
               "uniqueItems": true,
               "items": {"type": "string", "minLength": 1},
-              "description": "Project-controlled social-relation constraints where a language lexicalizes speaker/addressee relationship."
+              "description": "Project-controlled social-relation constraints where a language lexicalizes speaker/addressee relationship. Use an empty array when no special relation is encoded."
             }
           }
         },
