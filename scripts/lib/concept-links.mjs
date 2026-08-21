@@ -6,7 +6,7 @@ export const SENSE_CONCEPT_RELATIONS = Object.freeze([
 ]);
 
 export const ACTIVE_REVIEW_STATES = new Set(['candidate', 'approved']);
-export const TRANSLATION_READY_REVIEW_STATES = new Set(['approved']);
+export const APPROVED_PRIMARY_REVIEW_STATES = new Set(['approved']);
 
 function inheritedReviewState(sense, fallbackReviewState) {
   return sense?.review_state ?? fallbackReviewState ?? 'candidate';
@@ -80,19 +80,29 @@ export function activeSenseConceptLinks(sense, fallbackReviewState = 'candidate'
 }
 
 /**
- * Links safe for ordinary cross-language translation lookup.
+ * Approved primary semantic pivots for a sense.
  *
- * This deliberately requires BOTH an exact semantic role (`primary`) and an
- * approved link. Candidate links are useful evidence, but they must never be
- * silently promoted into a learner-facing statement that two senses are exact
- * equivalents.
+ * Passing this gate means the denotational sense -> concept identity has been
+ * reviewed. It does NOT by itself certify a final surface translation. Exact
+ * learner-facing translation must additionally preserve relevant register,
+ * social meaning, dialect/variety, morphology, constructional meaning, and the
+ * resolved passage context. Candidate links never pass this gate.
  */
-export function translationReadySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
+export function approvedPrimarySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
   return normalizeSenseConceptLinks(sense, fallbackReviewState)
     .filter((link) => (
       link.relation === 'primary'
-      && TRANSLATION_READY_REVIEW_STATES.has(link.review_state)
+      && APPROVED_PRIMARY_REVIEW_STATES.has(link.review_state)
     ));
+}
+
+/**
+ * Backward-compatible alias. Prefer approvedPrimarySenseConceptLinks in new
+ * code because "translation ready" can be misread as a complete surface-level
+ * equivalence guarantee.
+ */
+export function translationReadySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
+  return approvedPrimarySenseConceptLinks(sense, fallbackReviewState);
 }
 
 export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
@@ -101,9 +111,14 @@ export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate
   return primary?.concept_id ?? null;
 }
 
-export function translationReadyPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
-  const primary = translationReadySenseConceptLinks(sense, fallbackReviewState)[0];
+export function approvedPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
+  const primary = approvedPrimarySenseConceptLinks(sense, fallbackReviewState)[0];
   return primary?.concept_id ?? null;
+}
+
+/** Backward-compatible alias; see translationReadySenseConceptLinks. */
+export function translationReadyPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
+  return approvedPrimaryConceptIdForSense(sense, fallbackReviewState);
 }
 
 export function conceptLinkKey(link) {
