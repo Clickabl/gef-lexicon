@@ -4,16 +4,23 @@
  * senses. Canonical authoring lives beside each sense; this generated view is
  * the cross-language lookup projection.
  *
- * `senses_by_language` remains as a compatibility/default-translation view and
- * contains only active `primary` concept links. `sense_links_by_language`
- * exposes the complete active many-to-many relationship graph.
+ * Safety contract:
+ * - `senses_by_language` contains APPROVED primary links only and is the only
+ *   compatibility view that may be treated as translation-ready.
+ * - `candidate_senses_by_language` contains unapproved candidate primary links
+ *   for development/review UI.
+ * - `sense_links_by_language` exposes the complete active candidate + approved
+ *   relationship graph with review state attached.
  *
  * Run: node scripts/compile-concept-index.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { activeSenseConceptLinks } from './lib/concept-links.mjs';
+import {
+  activeSenseConceptLinks,
+  translationReadySenseConceptLinks,
+} from './lib/concept-links.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
@@ -39,6 +46,12 @@ function pushUnique(array, value, keyFn) {
   if (!array.some((item) => keyFn(item) === key)) array.push(value);
 }
 
+function pushSenseId(bucket, languageTag, senseId) {
+  const values = bucket[languageTag] ?? [];
+  if (!values.includes(senseId)) values.push(senseId);
+  bucket[languageTag] = values;
+}
+
 function main() {
   const conceptsFile = join(REPO_ROOT, 'concepts', 'graph.json');
   if (!existsSync(conceptsFile)) {
@@ -54,8 +67,11 @@ function main() {
       concept_id: concept.concept_id,
       concept_key: concept.concept_key,
       domain: concept.domain,
+      translation_role: concept.translation_role,
+      semantic_contract: concept.semantic_contract,
       planning_difficulty_hint: concept.planning_difficulty_hint ?? null,
       senses_by_language: {},
+      candidate_senses_by_language: {},
       sense_links_by_language: {},
     };
   }
@@ -77,6 +93,11 @@ function main() {
         for (const lexeme of data.lexemes ?? []) {
           for (const sense of lexeme.senses ?? []) {
             const links = activeSenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
+            const readyPrimaryIds = new Set(
+              translationReadySenseConceptLinks(sense, lexeme.review_state ?? 'candidate')
+                .map((link) => link.concept_id),
+            );
+
             for (const link of links) {
               const concept = conceptIndex[link.concept_id];
               if (!concept) {
@@ -93,6 +114,7 @@ function main() {
                   lexeme_id: lexeme.lexeme_id,
                   relation: link.relation,
                   review_state: link.review_state,
+                  translation_ready: readyPrimaryIds.has(link.concept_id) && link.relation === 'primary',
                   source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
                 },
                 (row) => `${row.sense_id}\u0000${row.relation}`,
@@ -100,9 +122,11 @@ function main() {
               concept.sense_links_by_language[languageTag] = richLinks;
 
               if (link.relation === 'primary') {
-                const primarySenses = concept.senses_by_language[languageTag] ?? [];
-                if (!primarySenses.includes(sense.sense_id)) primarySenses.push(sense.sense_id);
-                concept.senses_by_language[languageTag] = primarySenses;
+                if (readyPrimaryIds.has(link.concept_id)) {
+                  pushSenseId(concept.senses_by_language, languageTag, sense.sense_id);
+                } else if (link.review_state === 'candidate') {
+                  pushSenseId(concept.candidate_senses_by_language, languageTag, sense.sense_id);
+                }
               }
             }
           }
@@ -112,8 +136,8 @@ function main() {
   }
 
   for (const concept of Object.values(conceptIndex)) {
-    for (const languageTag of Object.keys(concept.senses_by_language)) {
-      concept.senses_by_language[languageTag].sort();
+    for (const bucket of [concept.senses_by_language, concept.candidate_senses_by_language]) {
+      for (const languageTag of Object.keys(bucket)) bucket[languageTag].sort();
     }
     for (const languageTag of Object.keys(concept.sense_links_by_language)) {
       concept.sense_links_by_language[languageTag].sort((left, right) => (
@@ -126,8 +150,9 @@ function main() {
 
   const outputFile = join(REPO_ROOT, 'concepts', 'compiled-concept-index.json');
   const payload = {
-    schema_version: 2,
+    schema_version: 3,
     generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
+    translation_ready_policy: 'approved primary links to exact_pivot concepts only',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
