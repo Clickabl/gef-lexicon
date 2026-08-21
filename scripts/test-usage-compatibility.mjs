@@ -43,15 +43,12 @@ result = compareUsageCompatibility(neutralMother, familiarMom, { requireApproved
 assert(result.status === 'blocked', `neutral -> familiar should block, got ${result.status}`);
 assert(has(result, 'blockers', 'register_mismatch'), 'expected register_mismatch');
 
-// Exactness requires the full marked set, not merely one overlapping label.
 const formalTechnical = sense(['formal', 'technical']);
 const merelyFormal = sense(['formal']);
 result = compareUsageCompatibility(formalTechnical, merelyFormal, { requireApprovedProfiles: true });
 assert(result.status === 'blocked', 'formal+technical -> formal must not pass on partial overlap');
 assert(has(result, 'blockers', 'register_mismatch'), 'partial register set must produce register_mismatch');
 
-// Sense-level lexical politeness and form-level morphological politeness are
-// separate dimensions. An unmarked lexeme may still appear in a polite form.
 const japaneseNeutral = sense(['neutral']);
 result = compareUsageCompatibility(neutralMother, japaneseNeutral, {
   sourceAnalysis: analysis(null),
@@ -66,7 +63,7 @@ result = compareUsageCompatibility(japaneseNeutral, japaneseNeutral, {
   targetAnalysis: analysis('honorific'),
   requireApprovedProfiles: true,
 });
-assert(result.status === 'blocked', `plain form -> honorific form should block, got ${result.status}`);
+assert(result.status === 'blocked', `plain -> honorific Japanese should block, got ${result.status}`);
 assert(has(result, 'blockers', 'form_politeness_mismatch'), 'expected form_politeness_mismatch');
 
 const lexicalHonorific = sense(['neutral'], { politeness: ['honorific'] });
@@ -79,8 +76,6 @@ result = compareUsageCompatibility(lexicalHonorific, lexicalPolite, { requireApp
 assert(result.status === 'blocked', 'honorific lexical meaning -> merely polite lexical meaning must block');
 assert(has(result, 'blockers', 'lexical_politeness_mismatch'), 'expected lexical_politeness_mismatch');
 
-// `both` is not a wildcard when the target expression is address-only or
-// reference-only. The occurrence must tell us which use is intended.
 const bothUse = sense(['neutral'], { address_use: 'both' });
 const referenceOnly = sense(['neutral'], { address_use: 'reference' });
 result = compareUsageCompatibility(bothUse, referenceOnly, { requireApprovedProfiles: true });
@@ -100,8 +95,6 @@ result = compareUsageCompatibility(bothUse, referenceOnly, {
 assert(result.status === 'blocked', 'address occurrence must reject reference-only target');
 assert(has(result, 'blockers', 'target_address_occurrence_mismatch'), 'expected target_address_occurrence_mismatch');
 
-// Geography/variety is checked on both source and target. Resolving a sense ID
-// does not prove that a region-restricted source sense was valid in this edition.
 const regionalSource = sense(['neutral'], {}, { kind: 'restricted', tags: ['en-US'] }, ['us-standard']);
 const regionalTarget = sense(['neutral'], {}, { kind: 'restricted', tags: ['es-MX'] }, ['mexican-standard']);
 result = compareUsageCompatibility(regionalSource, regionalTarget, { requireApprovedProfiles: true });
@@ -131,7 +124,6 @@ result = compareUsageCompatibility(regionalSource, regionalTarget, {
 });
 assert(result.status === 'compatible', 'matching source/target regional contexts should pass');
 
-// Social relation tags are simultaneous constraints, not an any-overlap bag.
 const respectfulOlder = sense(['neutral'], { social_relation_tags: ['respectful', 'older_addressee'] });
 const merelyRespectful = sense(['neutral'], { social_relation_tags: ['respectful'] });
 result = compareUsageCompatibility(respectfulOlder, merelyRespectful, { requireApprovedProfiles: true });
@@ -150,4 +142,12 @@ result = compareUsageCompatibility(taboo, euphemism, { requireApprovedProfiles: 
 assert(result.status === 'blocked', 'taboo/vulgar -> euphemistic/sensitive should not be exact');
 assert(has(result, 'blockers', 'taboo_level_mismatch'), 'expected taboo_level_mismatch');
 
-console.log('✅ Usage compatibility tests passed: full marked sets, lexical vs form politeness, address use, source/target variety, social relation, and taboo gates are conservative.');
+// A profile cannot self-certify by saying approved while carrying contradictory
+// data. The runtime gate independently rejects it even if a transport/compiler
+// path failed to run authoring validation first.
+const contradictoryApproved = sense(['neutral', 'slang']);
+result = compareUsageCompatibility(contradictoryApproved, neutralMadre, { requireApprovedProfiles: true });
+assert(result.status === 'blocked', 'contradictory approved usage profile must fail closed at runtime');
+assert(has(result, 'blockers', 'source_usage_profile_invalid'), 'expected source_usage_profile_invalid');
+
+console.log('✅ Usage compatibility tests passed: full marked sets, lexical vs form politeness, address use, source/target variety, social relation, taboo, and invalid-profile defenses are conservative.');
