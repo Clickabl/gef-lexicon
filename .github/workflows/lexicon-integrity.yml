@@ -76,6 +76,8 @@ jobs:
         run: npm run compile:concepts
       - name: Require generated concept index to be current
         run: git diff --exit-code -- concepts/compiled-concept-index.json
+      - name: Test multilingual sense-link traversal
+        run: npm run test:sense-links
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
       - name: Compile deterministic v2 core packages
