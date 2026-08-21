@@ -118,6 +118,13 @@ function main() {
                   `${sourceLabel} references unmanifested concept_id ${link.concept_id}.`,
                 );
               }
+              if (link.relation === 'primary' && concept.translation_role !== 'exact_pivot') {
+                throw new Error(
+                  `${sourceLabel} uses primary concept link ${link.concept_id}, but `
+                  + `translation_role=${concept.translation_role}. Primary sense identity may only `
+                  + `target exact_pivot concepts; use broader/narrower/related for taxonomy-only concepts.`,
+                );
+              }
 
               const richLinks = concept.sense_links_by_language[languageTag] ?? [];
               pushUnique(
