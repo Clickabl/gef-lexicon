@@ -2,15 +2,20 @@
 /**
  * Compile the deterministic reverse concept index from canonical language
  * senses. Canonical authoring lives beside each sense; this generated view is
- * the cross-language lookup projection.
+ * the cross-language semantic-pivot projection.
  *
  * Safety contract:
- * - `senses_by_language` contains APPROVED primary links only and is the only
- *   compatibility view that may be treated as translation-ready.
+ * - `senses_by_language` contains APPROVED primary semantic links only. These
+ *   are reviewed concept members, not automatically final surface translations.
  * - `candidate_senses_by_language` contains unapproved candidate primary links
  *   for development/review UI.
  * - `sense_links_by_language` exposes the complete active candidate + approved
  *   relationship graph with review state attached.
+ *
+ * Final learner-facing translation must additionally preserve the resolved
+ * occurrence context, register/social meaning, dialect/variety, morphology,
+ * and constructional meaning. A same-concept join is a candidate-generation
+ * primitive, not the entire translator.
  *
  * Run: node scripts/compile-concept-index.mjs
  */
@@ -19,7 +24,7 @@ import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   activeSenseConceptLinks,
-  translationReadySenseConceptLinks,
+  approvedPrimarySenseConceptLinks,
 } from './lib/concept-links.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -93,8 +98,8 @@ function main() {
         for (const lexeme of data.lexemes ?? []) {
           for (const sense of lexeme.senses ?? []) {
             const links = activeSenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
-            const readyPrimaryIds = new Set(
-              translationReadySenseConceptLinks(sense, lexeme.review_state ?? 'candidate')
+            const approvedPrimaryIds = new Set(
+              approvedPrimarySenseConceptLinks(sense, lexeme.review_state ?? 'candidate')
                 .map((link) => link.concept_id),
             );
 
@@ -114,7 +119,7 @@ function main() {
                   lexeme_id: lexeme.lexeme_id,
                   relation: link.relation,
                   review_state: link.review_state,
-                  translation_ready: readyPrimaryIds.has(link.concept_id) && link.relation === 'primary',
+                  semantic_pivot_ready: approvedPrimaryIds.has(link.concept_id) && link.relation === 'primary',
                   source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
                 },
                 (row) => `${row.sense_id}\u0000${row.relation}`,
@@ -122,7 +127,7 @@ function main() {
               concept.sense_links_by_language[languageTag] = richLinks;
 
               if (link.relation === 'primary') {
-                if (readyPrimaryIds.has(link.concept_id)) {
+                if (approvedPrimaryIds.has(link.concept_id)) {
                   pushSenseId(concept.senses_by_language, languageTag, sense.sense_id);
                 } else if (link.review_state === 'candidate') {
                   pushSenseId(concept.candidate_senses_by_language, languageTag, sense.sense_id);
@@ -150,9 +155,9 @@ function main() {
 
   const outputFile = join(REPO_ROOT, 'concepts', 'compiled-concept-index.json');
   const payload = {
-    schema_version: 3,
+    schema_version: 4,
     generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
-    translation_ready_policy: 'approved primary links to exact_pivot concepts only',
+    semantic_pivot_policy: 'senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
