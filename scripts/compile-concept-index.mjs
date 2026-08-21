@@ -26,6 +26,10 @@ import {
   activeSenseConceptLinks,
   approvedPrimarySenseConceptLinks,
 } from './lib/concept-links.mjs';
+import {
+  approvedUsageProfileReady,
+  assertApprovedUsageProfileIntegrity,
+} from './lib/usage-profile.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
@@ -97,17 +101,24 @@ function main() {
 
         for (const lexeme of data.lexemes ?? []) {
           for (const sense of lexeme.senses ?? []) {
+            const sourceLabel = `${relative(REPO_ROOT, lexFile)}:${sense.sense_id}`;
+            // Compilation itself enforces approved-profile integrity. A caller
+            // cannot bypass validation and turn a contradictory `approved`
+            // profile into usage_profile_ready=true merely by running compile.
+            assertApprovedUsageProfileIntegrity(lexeme, sense, sourceLabel);
+
             const links = activeSenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
             const approvedPrimaryIds = new Set(
               approvedPrimarySenseConceptLinks(sense, lexeme.review_state ?? 'candidate')
                 .map((link) => link.concept_id),
             );
+            const usageReady = approvedUsageProfileReady(lexeme, sense);
 
             for (const link of links) {
               const concept = conceptIndex[link.concept_id];
               if (!concept) {
                 throw new Error(
-                  `${relative(REPO_ROOT, lexFile)}:${sense.sense_id} references unmanifested concept_id ${link.concept_id}.`,
+                  `${sourceLabel} references unmanifested concept_id ${link.concept_id}.`,
                 );
               }
 
@@ -121,7 +132,7 @@ function main() {
                   review_state: link.review_state,
                   semantic_pivot_ready: approvedPrimaryIds.has(link.concept_id) && link.relation === 'primary',
                   usage_profile: sense.usage_profile ?? null,
-                  usage_profile_ready: sense.usage_profile?.review_state === 'approved',
+                  usage_profile_ready: usageReady,
                   legacy_register_label: sense.register_label ?? null,
                   source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
                 },
@@ -161,7 +172,7 @@ function main() {
     schema_version: 5,
     generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
     semantic_pivot_policy: 'senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks',
-    usage_policy: 'sense_links_by_language carries structured usage_profile metadata; semantic_pivot_ready never bypasses register, pragmatic, region/variety, morphology, or construction compatibility',
+    usage_policy: 'sense_links_by_language carries structured usage_profile metadata; usage_profile_ready requires approved lexeme + approved sense + approved internally consistent profile, and semantic_pivot_ready never bypasses occurrence, variety, morphology, or construction compatibility',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
