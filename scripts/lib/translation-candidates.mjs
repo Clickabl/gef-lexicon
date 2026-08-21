@@ -9,6 +9,15 @@ function senseLink(concept, languageTag, senseId) {
     .find((link) => link.sense_id === senseId && link.relation === 'primary') ?? null;
 }
 
+function isReviewedPivotLink(link) {
+  return Boolean(
+    link
+    && link.relation === 'primary'
+    && link.review_state === 'approved'
+    && link.semantic_pivot_ready === true,
+  );
+}
+
 function senseFromLink(link) {
   return {
     sense_id: link?.sense_id,
@@ -25,6 +34,11 @@ function senseFromLink(link) {
  * construction selection, passage discourse context and form-level constraints
  * remain later gates. `compatible` here means semantic identity + sense-level
  * usage + any supplied occurrence constraints are safe enough to continue.
+ *
+ * Runtime deliberately re-checks review_state instead of trusting the compiled
+ * semantic_pivot_ready boolean by itself. This makes a stale, hand-edited, or
+ * internally contradictory compiled row fail closed rather than laundering a
+ * candidate concept edge into learner-facing translation candidates.
  */
 export function resolveTranslationCandidates(
   compiledIndex,
@@ -47,7 +61,7 @@ export function resolveTranslationCandidates(
   for (const concept of compiledIndex?.concepts ?? []) {
     if (concept.translation_role !== 'exact_pivot') continue;
     const source = senseLink(concept, sourceLanguage, sourceSenseId);
-    if (!source?.semantic_pivot_ready) continue;
+    if (!isReviewedPivotLink(source)) continue;
     sourceMemberships.push({ concept, source });
   }
 
@@ -68,7 +82,7 @@ export function resolveTranslationCandidates(
   }
 
   const targetLinks = (concept.sense_links_by_language?.[targetLanguage] ?? [])
-    .filter((link) => link.relation === 'primary' && link.semantic_pivot_ready === true);
+    .filter((link) => isReviewedPivotLink(link));
 
   const candidates = [];
   for (const target of targetLinks) {
@@ -133,7 +147,7 @@ export function resolveConceptForApprovedSource(compiledIndex, sourceLanguage, s
   for (const concept of compiledIndex?.concepts ?? []) {
     if (concept.translation_role !== 'exact_pivot') continue;
     const source = senseLink(concept, sourceLanguage, sourceSenseId);
-    if (source?.semantic_pivot_ready) return conceptById(compiledIndex, concept.concept_id);
+    if (isReviewedPivotLink(source)) return conceptById(compiledIndex, concept.concept_id);
   }
   return null;
 }
