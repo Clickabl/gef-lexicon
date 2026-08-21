@@ -82,6 +82,8 @@ jobs:
         run: npm run test:usage-compatibility
       - name: Test strict cross-language candidate resolver
         run: npm run test:translation-candidates
+      - name: Test translation occurrence context gates
+        run: npm run test:translation-occurrence-context
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
       - name: Compile deterministic v2 core packages
