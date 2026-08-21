@@ -130,7 +130,12 @@ function main() {
                   semantic_pivot_ready: approvedPrimaryIds.has(link.concept_id) && link.relation === 'primary',
                   usage_profile: sense.usage_profile ?? null,
                   usage_profile_ready: usageReady,
-                  legacy_register_label: sense.register_label ?? null,
+                  // A deprecated scalar alias has no independently reviewed edge or
+                  // structured-usage evidence. Do not make its old display label look
+                  // like compatibility evidence in the semantic-pivot projection.
+                  legacy_register_label: link.compatibility_source === 'primary_concept_id'
+                    ? null
+                    : sense.register_label ?? null,
                   source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
                 },
                 (row) => `${row.sense_id}\u0000${row.relation}`,
@@ -173,7 +178,14 @@ function main() {
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
-  writeFileSync(outputFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+  // Generated data is semantic JSON, not a formatter. Preserve an already-current
+  // checked-in representation so regeneration does not create whitespace-only
+  // diffs. A semantic change still rewrites deterministically in canonical pretty
+  // JSON and is caught by the CI freshness gate.
+  const existing = existsSync(outputFile) ? readJson(outputFile) : null;
+  if (JSON.stringify(existing) !== JSON.stringify(payload)) {
+    writeFileSync(outputFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+  }
   console.log(
     `✅ Compiled deterministic reverse concept index to concepts/compiled-concept-index.json `
     + `(${Object.keys(conceptIndex).length} concepts mapped).`,
