@@ -6,6 +6,7 @@ export const SENSE_CONCEPT_RELATIONS = Object.freeze([
 ]);
 
 export const ACTIVE_REVIEW_STATES = new Set(['candidate', 'approved']);
+export const TRANSLATION_READY_REVIEW_STATES = new Set(['approved']);
 
 function inheritedReviewState(sense, fallbackReviewState) {
   return sense?.review_state ?? fallbackReviewState ?? 'candidate';
@@ -72,14 +73,36 @@ export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candida
   return links;
 }
 
+/** Candidate + approved links used for authoring, development, and review UI. */
 export function activeSenseConceptLinks(sense, fallbackReviewState = 'candidate') {
   return normalizeSenseConceptLinks(sense, fallbackReviewState)
     .filter((link) => ACTIVE_REVIEW_STATES.has(link.review_state));
 }
 
+/**
+ * Links safe for ordinary cross-language translation lookup.
+ *
+ * This deliberately requires BOTH an exact semantic role (`primary`) and an
+ * approved link. Candidate links are useful evidence, but they must never be
+ * silently promoted into a learner-facing statement that two senses are exact
+ * equivalents.
+ */
+export function translationReadySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
+  return normalizeSenseConceptLinks(sense, fallbackReviewState)
+    .filter((link) => (
+      link.relation === 'primary'
+      && TRANSLATION_READY_REVIEW_STATES.has(link.review_state)
+    ));
+}
+
 export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
   const primary = activeSenseConceptLinks(sense, fallbackReviewState)
     .find((link) => link.relation === 'primary');
+  return primary?.concept_id ?? null;
+}
+
+export function translationReadyPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
+  const primary = translationReadySenseConceptLinks(sense, fallbackReviewState)[0];
   return primary?.concept_id ?? null;
 }
 
