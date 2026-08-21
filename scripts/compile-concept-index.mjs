@@ -102,9 +102,6 @@ function main() {
         for (const lexeme of data.lexemes ?? []) {
           for (const sense of lexeme.senses ?? []) {
             const sourceLabel = `${relative(REPO_ROOT, lexFile)}:${sense.sense_id}`;
-            // Compilation itself enforces approved-profile integrity. A caller
-            // cannot bypass validation and turn a contradictory `approved`
-            // profile into usage_profile_ready=true merely by running compile.
             assertApprovedUsageProfileIntegrity(lexeme, sense, sourceLabel);
 
             const links = activeSenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
@@ -172,7 +169,7 @@ function main() {
     schema_version: 5,
     generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
     semantic_pivot_policy: 'senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks',
-    usage_policy: 'sense_links_by_language carries structured usage_profile metadata; usage_profile_ready requires approved lexeme + approved sense + approved internally consistent profile, and semantic_pivot_ready never bypasses occurrence, variety, morphology, or construction compatibility',
+    usage_policy: 'sense_links_by_language carries structured usage_profile metadata; semantic_pivot_ready never bypasses register, pragmatic, region/variety, morphology, or construction compatibility',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
