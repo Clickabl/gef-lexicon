@@ -55,6 +55,7 @@ function initCoreDb(dbPath) {
       primary_concept_id TEXT,
       cefr_level TEXT,
       register_label TEXT,
+      usage_profile_json TEXT NOT NULL,
       review_state TEXT NOT NULL,
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id)
     );
@@ -137,8 +138,8 @@ function statements(db) {
     `),
     sense: db.prepare(`
       INSERT INTO senses
-        (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label, review_state)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
+        (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label, usage_profile_json, review_state)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `),
     senseConcept: db.prepare(`
       INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
@@ -202,6 +203,7 @@ function insertLexiconDocument(db, data) {
           primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
+          JSON.stringify(sense.usage_profile ?? null),
           reviewState,
         );
         for (const link of conceptLinks) {
