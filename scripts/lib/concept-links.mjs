@@ -19,6 +19,12 @@ function inheritedReviewState(sense, fallbackReviewState) {
  * a temporary compatibility alias for older records. A legacy scalar is
  * projected into one `primary` edge only when an explicit primary edge is not
  * already present. If both forms exist they must agree.
+ *
+ * IMPORTANT: an explicit concept edge never inherits approval from its parent.
+ * Missing edge-level review metadata fails closed to `candidate`. The legacy
+ * scalar keeps its historical compatibility behavior until that data is
+ * migrated, and is marked with `compatibility_source` so callers can identify
+ * it rather than mistaking inherited approval for independent edge review.
  */
 export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candidate') {
   const fallback = inheritedReviewState(sense, fallbackReviewState);
@@ -26,7 +32,7 @@ export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candida
   const links = explicit.map((link) => ({
     ...link,
     relation: link.relation ?? 'primary',
-    review_state: link.review_state ?? fallback,
+    review_state: link.review_state ?? 'candidate',
   }));
 
   const primaryLinks = links.filter((link) => link.relation === 'primary');
@@ -104,6 +110,20 @@ export function approvedPrimarySenseConceptLinks(sense, parentReviewState = 'can
 }
 
 /**
+ * Strict edge-review view for migration-sensitive callers.
+ *
+ * Unlike approvedPrimarySenseConceptLinks, this deliberately excludes a
+ * compatibility edge synthesized from legacy `primary_concept_id`. It lets
+ * validation, reports, and future runtime gates distinguish independently
+ * reviewed concept membership from historically inherited approval without
+ * breaking legacy authoring data during migration.
+ */
+export function explicitlyReviewedPrimarySenseConceptLinks(sense, parentReviewState = 'candidate') {
+  return approvedPrimarySenseConceptLinks(sense, parentReviewState)
+    .filter((link) => link.compatibility_source !== 'primary_concept_id');
+}
+
+/**
  * Backward-compatible alias. Prefer approvedPrimarySenseConceptLinks in new
  * code because "translation ready" can be misread as a complete surface-level
  * equivalence guarantee.
@@ -120,6 +140,11 @@ export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate
 
 export function approvedPrimaryConceptIdForSense(sense, parentReviewState = 'candidate') {
   const primary = approvedPrimarySenseConceptLinks(sense, parentReviewState)[0];
+  return primary?.concept_id ?? null;
+}
+
+export function explicitlyReviewedPrimaryConceptIdForSense(sense, parentReviewState = 'candidate') {
+  const primary = explicitlyReviewedPrimarySenseConceptLinks(sense, parentReviewState)[0];
   return primary?.concept_id ?? null;
 }
 
