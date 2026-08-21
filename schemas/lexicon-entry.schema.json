@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/lexicon-entry.schema.json",
   "title": "Lexicon Entry (Lexeme & Senses)",
-  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, language-neutral concept links, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
+  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, language-neutral concept links, structured usage/pragmatic constraints, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
   "type": "object",
   "required": ["schema_version", "language_code", "lexemes"],
   "properties": {
@@ -47,12 +47,109 @@
         "definitions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
         "sense_hint": {"type": "object", "additionalProperties": {"type": "string"}},
         "cefr_level": {"type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
-        "register_label": {"type": "string"},
+        "register_label": {
+          "type": "string",
+          "description": "Legacy display label. New marked usage should also be represented in usage_profile so translation compatibility is machine-checkable."
+        },
+        "usage_profile": {"$ref": "#/definitions/usageProfile"},
         "homophones": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "homonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "synonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "antonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "confusable_senses": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}}
+      }
+    },
+    "usageProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["register", "region_scope", "pragmatics", "review_state"],
+      "properties": {
+        "register": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "informal",
+              "familiar",
+              "colloquial",
+              "formal",
+              "ceremonial",
+              "literary",
+              "poetic",
+              "technical",
+              "archaic",
+              "dated",
+              "slang",
+              "vulgar",
+              "taboo",
+              "euphemistic",
+              "child_directed"
+            ]
+          },
+          "description": "Lexical/register marking of the sense itself. Morphological speech level still belongs on form analyses."
+        },
+        "region_scope": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "tags"],
+          "properties": {
+            "kind": {"type": "string", "enum": ["general", "restricted", "unknown"]},
+            "tags": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "minLength": 1},
+              "description": "BCP-47 language/region tags or documented project variety IDs when scope is restricted."
+            }
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"kind": {"const": "restricted"}}},
+              "then": {"properties": {"tags": {"minItems": 1}}}
+            },
+            {
+              "if": {"properties": {"kind": {"enum": ["general", "unknown"]}}},
+              "then": {"properties": {"tags": {"maxItems": 0}}}
+            }
+          ]
+        },
+        "varieties": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1},
+          "description": "Optional language-internal variety/dialect identifiers. These constrain candidate selection without creating a new interlingual concept."
+        },
+        "pragmatics": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "politeness": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "enum": ["unmarked", "plain", "polite", "formal", "honorific", "humble"]}
+            },
+            "stance": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["unmarked", "neutral", "respectful", "deferential", "familiar", "intimate", "affectionate", "derogatory", "self_deprecating"]
+              }
+            },
+            "taboo_level": {"type": "string", "enum": ["none", "sensitive", "vulgar", "slur", "unknown"]},
+            "address_use": {"type": "string", "enum": ["both", "address", "reference", "unknown"]},
+            "social_relation_tags": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "minLength": 1},
+              "description": "Project-controlled social-relation constraints where a language lexicalizes speaker/addressee relationship."
+            }
+          }
+        },
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+        "notes": {"type": "string"}
       }
     },
     "conceptLink": {
