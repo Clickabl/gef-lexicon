@@ -100,17 +100,33 @@ function main() {
 
   const syntheticApproved = {
     sense_id: 'synthetic-approved-frog',
+    review_state: 'approved',
     concept_links: [
       { concept_id: frogConceptId, relation: 'primary', review_state: 'approved' },
     ],
   };
   assert(
-    approvedPrimarySenseConceptLinks(syntheticApproved, 'candidate')[0]?.concept_id === frogConceptId,
-    'approved exact primary link must become semantic-pivot-ready',
+    approvedPrimarySenseConceptLinks(syntheticApproved, 'approved')[0]?.concept_id === frogConceptId,
+    'approved lexeme + approved sense + approved primary link must become semantic-pivot-ready',
+  );
+
+  const candidateSenseWithApprovedLink = {
+    ...syntheticApproved,
+    sense_id: 'synthetic-candidate-sense-approved-link',
+    review_state: 'candidate',
+  };
+  assert(
+    approvedPrimarySenseConceptLinks(candidateSenseWithApprovedLink, 'approved').length === 0,
+    'approved concept edge must not launder a candidate sense into the approved semantic-pivot view',
+  );
+
+  assert(
+    approvedPrimarySenseConceptLinks(syntheticApproved, 'candidate').length === 0,
+    'approved sense/link must not launder a candidate containing lexeme into the approved semantic-pivot view',
   );
 
   console.log(
-    '✅ Sense-link graph test passed: candidate links remain review-only; approved links become semantic pivots without claiming surface-level equivalence.',
+    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval and still do not claim final surface-level equivalence.',
   );
 }
 
