@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/lexicon-entry.schema.json",
   "title": "Lexicon Entry (Lexeme & Senses)",
-  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
+  "description": "Cross-linguistic schema for Gef & Clickabl lexemes, incorporating UniMorph/UD feature layers, form-vs-analysis separation, language-neutral concept links, typed distractor/quiz graph relationships, analysis-specific pronunciation, and optional links from proper-name lexemes to name/entity records.",
   "type": "object",
   "required": ["schema_version", "language_code", "lexemes"],
   "properties": {
@@ -34,7 +34,15 @@
       "properties": {
         "sense_id": {"type": "string"},
         "sense_key": {"type": "string"},
-        "primary_concept_id": {"type": ["string", "null"]},
+        "primary_concept_id": {
+          "type": ["string", "null"],
+          "description": "Deprecated compatibility alias for the active primary concept. New data should author concept_links instead."
+        },
+        "concept_links": {
+          "type": "array",
+          "description": "Canonical many-to-many links from this language-specific sense to language-neutral concepts.",
+          "items": {"$ref": "#/definitions/conceptLink"}
+        },
         "entity_id": {"type": ["string", "null"], "description": "Optional link to the particular person, character, place, or other named entity represented by this contextual proper-name sense."},
         "definitions": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
         "sense_hint": {"type": "object", "additionalProperties": {"type": "string"}},
@@ -45,6 +53,26 @@
         "synonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "antonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "confusable_senses": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}}
+      }
+    },
+    "conceptLink": {
+      "type": "object",
+      "required": ["concept_id", "relation"],
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "pattern": "^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "relation": {
+          "type": "string",
+          "enum": ["primary", "broader", "narrower", "related"]
+        },
+        "review_state": {
+          "type": "string",
+          "enum": ["candidate", "approved", "superseded", "rejected"]
+        },
+        "note": {"type": "string"},
+        "source_refs": {"type": "array", "items": {"type": "string"}}
       }
     },
     "typedRelation": {
