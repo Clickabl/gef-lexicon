@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "language_code": "en",
+  "lexemes": [
+    {
+      "lexeme_id": "02000000-0000-7000-9100-000000000001",
+      "lemma_nfc": "date",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "02000000-0000-7000-9101-000000000001",
+          "sense_key": "date-romantic-meeting",
+          "concept_links": [{"concept_id":"cpt_02000000-0000-7000-9000-000000000001","relation":"primary","review_state":"candidate","source_refs":["gef-editorial:polysemy-example"]}],
+          "definitions": {"en":"a planned social meeting with a romantic or potentially romantic purpose"},
+          "sense_hint": {"en":"as in go on a date with someone"},
+          "cefr_level": "A2",
+          "register_label": "standard",
+          "usage_profile": {"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}
+        },
+        {
+          "sense_id": "02000000-0000-7000-9101-000000000002",
+          "sense_key": "date-calendar-day",
+          "concept_links": [{"concept_id":"cpt_02000000-0000-7000-9000-000000000006","relation":"primary","review_state":"candidate","source_refs":["gef-editorial:polysemy-example"]}],
+          "definitions": {"en":"a particular day identified on a calendar"},
+          "sense_hint": {"en":"as in today's date or the date on a form"},
+          "cefr_level": "A1",
+          "register_label": "standard",
+          "usage_profile": {"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}
+        }
+      ],
+      "forms": [{"form_id":"02000000-0000-7000-9102-000000000001","surface_nfc":"date","normalized_lookup":"date","attested_in_text":false,"analyses":[{"analysis_id":"02000000-0000-7000-9103-000000000001","features":{"base":{"number":"singular"}},"display_label_key":"singular","pronunciations":[{"ipa":"deɪt","locale":"en","notation":"phonemic"}]}]}]
+    },
+    {
+      "lexeme_id": "02000000-0000-7000-9100-000000000002",
+      "lemma_nfc": "appointment",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"02000000-0000-7000-9101-000000000003","sense_key":"appointment-scheduled-meeting","concept_links":[{"concept_id":"cpt_02000000-0000-7000-9000-000000000002","relation":"primary","review_state":"candidate","source_refs":["gef-editorial:polysemy-example"]}],"definitions":{"en":"an arrangement to meet or receive a service at a scheduled time"},"sense_hint":{"en":"as in a dentist appointment"},"cefr_level":"A2","register_label":"standard","usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}}],
+      "forms": [{"form_id":"02000000-0000-7000-9102-000000000002","surface_nfc":"appointment","normalized_lookup":"appointment","attested_in_text":false,"analyses":[{"analysis_id":"02000000-0000-7000-9103-000000000002","features":{"base":{"number":"singular"}},"display_label_key":"singular","pronunciations":[{"ipa":"əˈpɔɪntmənt","locale":"en","notation":"phonemic"}]}]}]
+    },
+    {
+      "lexeme_id": "02000000-0000-7000-9100-000000000003",
+      "lemma_nfc": "toad",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"02000000-0000-7000-9101-000000000004","sense_key":"toad-amphibian","concept_links":[{"concept_id":"cpt_02000000-0000-7000-9000-000000000003","relation":"primary","review_state":"candidate","source_refs":["gef-editorial:frog-relative-example"]},{"concept_id":"cpt_02000000-0000-7000-9000-000000000005","relation":"broader","review_state":"candidate","source_refs":["gef-editorial:frog-relative-example"]}],"definitions":{"en":"a tailless amphibian conventionally called a toad"},"cefr_level":"A2","register_label":"standard","usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}}],
+      "forms": [{"form_id":"02000000-0000-7000-9102-000000000003","surface_nfc":"toad","normalized_lookup":"toad","attested_in_text":false,"analyses":[{"analysis_id":"02000000-0000-7000-9103-000000000003","features":{"base":{"number":"singular"}},"display_label_key":"singular","pronunciations":[{"ipa":"toʊd","locale":"en","notation":"phonemic"}]}]}]
+    },
+    {
+      "lexeme_id": "02000000-0000-7000-9100-000000000004",
+      "lemma_nfc": "bullfrog",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [{"sense_id":"02000000-0000-7000-9101-000000000005","sense_key":"bullfrog-amphibian","concept_links":[{"concept_id":"cpt_02000000-0000-7000-9000-000000000004","relation":"primary","review_state":"candidate","source_refs":["gef-editorial:frog-relative-example"]},{"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003","relation":"broader","review_state":"candidate","source_refs":["gef-editorial:frog-relative-example"]}],"definitions":{"en":"a frog specifically identified as a bullfrog"},"cefr_level":"B1","register_label":"standard","usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}}],
+      "forms": [{"form_id":"02000000-0000-7000-9102-000000000004","surface_nfc":"bullfrog","normalized_lookup":"bullfrog","attested_in_text":false,"analyses":[{"analysis_id":"02000000-0000-7000-9103-000000000004","features":{"base":{"number":"singular"}},"display_label_key":"singular","pronunciations":[{"ipa":"ˈbʊlˌfrɑɡ","locale":"en-US","notation":"phonemic"}]}]}]
+    }
+  ]
+}
