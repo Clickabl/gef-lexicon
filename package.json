@@ -5,6 +5,7 @@
     "test:sense-links": "node scripts/test-sense-links.mjs",
     "test:usage-compatibility": "node scripts/test-usage-compatibility.mjs",
     "test:translation-candidates": "node scripts/test-translation-candidates.mjs",
+    "test:translation-occurrence-context": "node scripts/test-translation-occurrence-context.mjs",
     "test:core-usage-roundtrip": "node scripts/test-compiled-usage-profiles.mjs",
     "test:book-slice-usage-roundtrip": "node scripts/test-book-slice-usage-profiles.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
