@@ -18,6 +18,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync } fr
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
+import { activeSenseConceptLinks } from './lib/concept-links.mjs';
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST_DIR = join(REPO_ROOT, 'dist');
@@ -49,6 +50,16 @@ function initCoreDb(dbPath) {
       cefr_level TEXT,
       register_label TEXT,
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id)
+    );
+
+    CREATE TABLE sense_concepts (
+      sense_id TEXT NOT NULL,
+      concept_id TEXT NOT NULL,
+      relation TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      metadata_json TEXT NOT NULL,
+      PRIMARY KEY(sense_id, concept_id, relation),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id)
     );
 
     CREATE TABLE definitions (
@@ -101,6 +112,8 @@ function initCoreDb(dbPath) {
 
     CREATE INDEX idx_forms_lookup ON forms(normalized_lookup);
     CREATE INDEX idx_lexemes_lemma ON lexemes(lemma_nfc);
+    CREATE INDEX idx_sense_concepts_sense ON sense_concepts(sense_id, relation);
+    CREATE INDEX idx_sense_concepts_concept ON sense_concepts(concept_id, relation);
     CREATE INDEX idx_relations_source ON lexeme_relations(source_lexeme_id);
     CREATE INDEX idx_lesson_links_sense ON sense_lesson_links(sense_id);
     CREATE INDEX idx_lesson_links_lesson ON sense_lesson_links(lesson_id);
@@ -117,6 +130,10 @@ function statements(db) {
     sense: db.prepare(`
       INSERT INTO senses (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label)
       VALUES (?, ?, ?, ?, ?, ?)
+    `),
+    senseConcept: db.prepare(`
+      INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
+      VALUES (?, ?, ?, ?, ?)
     `),
     definition: db.prepare(`
       INSERT INTO definitions (sense_id, interface_lang, definition_text)
@@ -159,14 +176,30 @@ function insertLexiconDocument(db, data) {
       );
 
       for (const sense of lex.senses ?? []) {
+        const conceptLinks = activeSenseConceptLinks(sense, sense.review_state ?? lex.review_state)
+          .filter((link) => included(link.review_state));
+        const primaryConceptId = conceptLinks.find((link) => link.relation === 'primary')?.concept_id ?? null;
         insert.sense.run(
           sense.sense_id,
           lex.lexeme_id,
           sense.sense_key,
-          sense.primary_concept_id ?? null,
+          primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
         );
+        for (const link of conceptLinks) {
+          insert.senseConcept.run(
+            sense.sense_id,
+            link.concept_id,
+            link.relation,
+            link.review_state,
+            JSON.stringify({
+              note: link.note ?? null,
+              source_refs: link.source_refs ?? [],
+              compatibility_source: link.compatibility_source ?? null,
+            }),
+          );
+        }
         for (const [interfaceLang, definition] of Object.entries(sense.definitions ?? {})) {
           insert.definition.run(sense.sense_id, interfaceLang, definition);
         }
