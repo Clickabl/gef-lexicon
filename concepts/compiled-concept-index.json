@@ -9,86 +9,15 @@
       "concept_key": "speak-communicate",
       "domain": "communication",
       "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "produce spoken words in order to communicate",
-        "must_preserve": [
-          "the communication is performed with spoken words or speech"
-        ],
-        "must_not_imply": [
-          "a specific language ability unless the source sense explicitly includes it",
-          "a conversation with multiple participants unless the source sense explicitly includes it",
-          "writing or non-spoken communication"
-        ]
-      },
+      "semantic_contract": {"definition_en":"produce spoken words in order to communicate","must_preserve":["the communication is performed with spoken words or speech"],"must_not_imply":["a specific language ability unless the source sense explicitly includes it","a conversation with multiple participants unless the source sense explicitly includes it","writing or non-spoken communication"]},
       "planning_difficulty_hint": "A1",
       "senses_by_language": {},
-      "candidate_senses_by_language": {
-        "el": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000402"
-        ],
-        "en": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000109"
-        ],
-        "es": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000202"
-        ],
-        "ja": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000302"
-        ]
-      },
+      "candidate_senses_by_language": {"el":["018f2c3a-7b1e-7a4d-9c2e-000000000402"],"en":["018f2c3a-7b1e-7a4d-9c2e-000000000109"],"es":["018f2c3a-7b1e-7a4d-9c2e-000000000202"],"ja":["018f2c3a-7b1e-7a4d-9c2e-000000000302"]},
       "sense_links_by_language": {
-        "el": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000402",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000401",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/el/lexicon.json"
-          }
-        ],
-        "en": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000109",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000108",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/en/lexicon.json"
-          }
-        ],
-        "es": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000202",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000201",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/es/lexicon.json"
-          }
-        ],
-        "ja": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000302",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000301",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/ja/lexicon.json"
-          }
-        ]
+        "el":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000402","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000401","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/el/lexicon.json"}],
+        "en":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000109","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000108","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/en/lexicon.json"}],
+        "es":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000202","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000201","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/es/lexicon.json"}],
+        "ja":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000302","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000301","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/ja/lexicon.json"}]
       }
     },
     {
@@ -96,126 +25,102 @@
       "concept_key": "read-written-words",
       "domain": "education",
       "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "interpret written or printed linguistic symbols as language",
-        "must_preserve": [
-          "the object interpreted is written or printed language"
-        ],
-        "must_not_imply": [
-          "reading aloud unless explicitly expressed",
-          "studying or memorizing the text unless explicitly expressed",
-          "interpreting a non-linguistic sign, meter, or measurement"
-        ]
-      },
+      "semantic_contract": {"definition_en":"interpret written or printed linguistic symbols as language","must_preserve":["the object interpreted is written or printed language"],"must_not_imply":["reading aloud unless explicitly expressed","studying or memorizing the text unless explicitly expressed","interpreting a non-linguistic sign, meter, or measurement"]},
       "planning_difficulty_hint": "A1",
       "senses_by_language": {},
-      "candidate_senses_by_language": {
-        "en": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000102"
-        ]
-      },
-      "sense_links_by_language": {
-        "en": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000102",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000101",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/en/lexicon.json"
-          }
-        ]
-      }
+      "candidate_senses_by_language": {"en":["018f2c3a-7b1e-7a4d-9c2e-000000000102"]},
+      "sense_links_by_language": {"en":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000102","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000101","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/en/lexicon.json"}]}
     },
     {
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
       "concept_key": "frog-amphibian",
       "domain": "nature",
       "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a frog: a tailless adult amphibian of the group commonly called frogs",
-        "must_preserve": [
-          "the referent is a frog rather than a generic amphibian"
-        ],
-        "must_not_imply": [
-          "a toad specifically",
-          "a tadpole or other larval stage",
-          "a figurative person or object called a frog"
-        ]
-      },
+      "semantic_contract": {"definition_en":"a frog: a tailless adult amphibian of the group commonly called frogs","must_preserve":["the referent is a frog rather than a generic amphibian"],"must_not_imply":["a toad specifically","a tadpole or other larval stage","a figurative person or object called a frog"]},
       "planning_difficulty_hint": "A1",
       "senses_by_language": {},
-      "candidate_senses_by_language": {
-        "el": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000406"
-        ],
-        "en": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000113"
-        ],
-        "es": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000208"
-        ],
-        "ja": [
-          "018f2c3a-7b1e-7a4d-9c2e-000000000308"
-        ]
-      },
+      "candidate_senses_by_language": {"el":["018f2c3a-7b1e-7a4d-9c2e-000000000406"],"en":["018f2c3a-7b1e-7a4d-9c2e-000000000113"],"es":["018f2c3a-7b1e-7a4d-9c2e-000000000208"],"ja":["018f2c3a-7b1e-7a4d-9c2e-000000000308"]},
       "sense_links_by_language": {
-        "el": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000406",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000405",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/el/lexicon.json"
-          }
+        "el":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000406","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000405","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/el/lexicon.json"}],
+        "en":[
+          {"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000113","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000112","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/en/lexicon.json"},
+          {"sense_id":"02000000-0000-7000-9101-000000000005","lexeme_id":"02000000-0000-7000-9100-000000000004","relation":"broader","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}
         ],
-        "en": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000113",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000112",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/en/lexicon.json"
-          }
-        ],
-        "es": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000208",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000207",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/es/lexicon.json"
-          }
-        ],
-        "ja": [
-          {
-            "sense_id": "018f2c3a-7b1e-7a4d-9c2e-000000000308",
-            "lexeme_id": "018f2c3a-7b1e-7a4d-9c2e-000000000307",
-            "relation": "primary",
-            "review_state": "candidate",
-            "semantic_pivot_ready": false,
-            "usage_profile": null,
-            "usage_profile_ready": false,
-            "legacy_register_label": null,
-            "source_path": "languages/ja/lexicon.json"
-          }
-        ]
+        "es":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000208","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000207","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/es/lexicon.json"}],
+        "ja":[{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000308","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000307","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":null,"usage_profile_ready":false,"legacy_register_label":null,"source_path":"languages/ja/lexicon.json"}]
       }
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000001",
+      "concept_key": "romantic-date-meeting",
+      "domain": "social",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {"definition_en":"a planned social meeting between people with a romantic or potentially romantic purpose","must_preserve":["the meeting has a romantic or potentially romantic social purpose"],"must_not_imply":["a medical, business, or service appointment","a calendar day","a generic meeting with no romantic implication"]},
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {"en":["02000000-0000-7000-9101-000000000001"],"es":["02000000-0000-7000-9201-000000000001"]},
+      "sense_links_by_language": {
+        "en":[{"sense_id":"02000000-0000-7000-9101-000000000001","lexeme_id":"02000000-0000-7000-9100-000000000001","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}],
+        "es":[{"sense_id":"02000000-0000-7000-9201-000000000001","lexeme_id":"02000000-0000-7000-9200-000000000001","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"estándar","source_path":"languages/es/lexicon-polysemy-cita.json"}]
+      }
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000002",
+      "concept_key": "scheduled-appointment",
+      "domain": "time",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {"definition_en":"an arrangement to meet or receive a service at a scheduled time","must_preserve":["there is an arranged meeting or service at a scheduled time"],"must_not_imply":["a romantic purpose","a calendar date by itself","an unscheduled encounter"]},
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {"en":["02000000-0000-7000-9101-000000000003"],"es":["02000000-0000-7000-9201-000000000002"]},
+      "sense_links_by_language": {
+        "en":[{"sense_id":"02000000-0000-7000-9101-000000000003","lexeme_id":"02000000-0000-7000-9100-000000000002","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}],
+        "es":[{"sense_id":"02000000-0000-7000-9201-000000000002","lexeme_id":"02000000-0000-7000-9200-000000000001","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"estándar","source_path":"languages/es/lexicon-polysemy-cita.json"}]
+      }
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000003",
+      "concept_key": "toad-amphibian",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {"definition_en":"a terrestrial or semi-terrestrial tailless amphibian conventionally called a toad","must_preserve":["the referent is specifically a toad"],"must_not_imply":["any frog generically","a bullfrog specifically","a tadpole"]},
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {"en":["02000000-0000-7000-9101-000000000004"]},
+      "sense_links_by_language": {"en":[{"sense_id":"02000000-0000-7000-9101-000000000004","lexeme_id":"02000000-0000-7000-9100-000000000003","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}]}
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000004",
+      "concept_key": "bullfrog-amphibian",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {"definition_en":"a frog specifically identified as a bullfrog","must_preserve":["the referent is a bullfrog, a narrower kind of frog"],"must_not_imply":["a frog of unspecified kind","a toad","a tadpole"]},
+      "planning_difficulty_hint": "B1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {"en":["02000000-0000-7000-9101-000000000005"]},
+      "sense_links_by_language": {"en":[{"sense_id":"02000000-0000-7000-9101-000000000005","lexeme_id":"02000000-0000-7000-9100-000000000004","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}]}
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000005",
+      "concept_key": "anuran-taxonomy",
+      "domain": "nature",
+      "translation_role": "taxonomy_only",
+      "semantic_contract": {"definition_en":"the broad taxonomic grouping containing adult frogs and toads","must_preserve":["the member belongs to the broad frog/toad taxonomic neighborhood"],"must_not_imply":["that frog and toad are exact lexical equivalents","that every member is conventionally called a frog","that every member is conventionally called a toad"]},
+      "planning_difficulty_hint": "B1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {},
+      "sense_links_by_language": {"en":[{"sense_id":"02000000-0000-7000-9101-000000000004","lexeme_id":"02000000-0000-7000-9100-000000000003","relation":"broader","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}]}
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000006",
+      "concept_key": "calendar-date",
+      "domain": "time",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {"definition_en":"a particular day identified in a calendar system","must_preserve":["the referent is a calendar day or calendar designation"],"must_not_imply":["a romantic meeting","a scheduled appointment","a duration"]},
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {"en":["02000000-0000-7000-9101-000000000002"]},
+      "sense_links_by_language": {"en":[{"sense_id":"02000000-0000-7000-9101-000000000002","lexeme_id":"02000000-0000-7000-9100-000000000001","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"usage_profile":{"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"},"usage_profile_ready":false,"legacy_register_label":"standard","source_path":"languages/en/lexicon-polysemy-relatives.json"}]}
     }
   ]
 }
