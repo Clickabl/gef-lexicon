@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   activeSenseConceptLinks,
-  translationReadySenseConceptLinks,
+  approvedPrimarySenseConceptLinks,
 } from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -27,7 +27,12 @@ function findSense(document, senseId) {
 
 function main() {
   const compiled = readJson(join(ROOT, 'concepts', 'compiled-concept-index.json'));
-  assert(compiled.schema_version === 3, 'compiled concept index must use schema_version 3');
+  assert(compiled.schema_version === 4, 'compiled concept index must use schema_version 4');
+  assert(
+    typeof compiled.semantic_pivot_policy === 'string'
+      && compiled.semantic_pivot_policy.includes('final translation requires contextual compatibility'),
+    'compiled index must state that semantic pivot membership is not a complete translation guarantee',
+  );
 
   for (const concept of compiled.concepts ?? []) {
     assert(
@@ -43,9 +48,9 @@ function main() {
             link.sense_id === senseId
             && link.relation === 'primary'
             && link.review_state === 'approved'
-            && link.translation_ready === true
+            && link.semantic_pivot_ready === true
           )),
-          `${concept.concept_id}/${languageTag}/${senseId} is in translation-ready view without an approved exact primary link`,
+          `${concept.concept_id}/${languageTag}/${senseId} is in approved pivot view without an approved exact primary link`,
         );
       }
     }
@@ -61,7 +66,7 @@ function main() {
   const frogConceptId = 'cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003';
   const frog = (compiled.concepts ?? []).find((concept) => concept.concept_id === frogConceptId);
   assert(frog, 'frog concept missing from compiled index');
-  assert(frog.translation_role === 'exact_pivot', 'frog concept must be an exact translation pivot');
+  assert(frog.translation_role === 'exact_pivot', 'frog concept must be an exact semantic pivot');
 
   const expected = {
     el: '018f2c3a-7b1e-7a4d-9c2e-000000000406',
@@ -77,7 +82,7 @@ function main() {
     );
     assert(
       !(frog.senses_by_language?.[languageTag] ?? []).includes(senseId),
-      `candidate ${languageTag} frog sense ${senseId} leaked into translation-ready view`,
+      `candidate ${languageTag} frog sense ${senseId} leaked into approved semantic-pivot view`,
     );
 
     const lexicon = readJson(join(ROOT, 'languages', languageTag, 'lexicon.json'));
@@ -88,8 +93,8 @@ function main() {
       .find((link) => link.relation === 'primary');
     assert(primary?.concept_id === frogConceptId, `${languageTag} frog sense does not round-trip to frog concept`);
     assert(
-      translationReadySenseConceptLinks(hit.sense, hit.lexeme.review_state).length === 0,
-      `${languageTag} candidate frog sense unexpectedly became translation-ready`,
+      approvedPrimarySenseConceptLinks(hit.sense, hit.lexeme.review_state).length === 0,
+      `${languageTag} candidate frog sense unexpectedly became an approved semantic pivot`,
     );
   }
 
@@ -100,12 +105,12 @@ function main() {
     ],
   };
   assert(
-    translationReadySenseConceptLinks(syntheticApproved, 'candidate')[0]?.concept_id === frogConceptId,
-    'approved exact primary link must become translation-ready',
+    approvedPrimarySenseConceptLinks(syntheticApproved, 'candidate')[0]?.concept_id === frogConceptId,
+    'approved exact primary link must become semantic-pivot-ready',
   );
 
   console.log(
-    '✅ Sense-link graph test passed: candidate frog links remain review-only; approved exact pivots become translation-ready.',
+    '✅ Sense-link graph test passed: candidate links remain review-only; approved links become semantic pivots without claiming surface-level equivalence.',
   );
 }
 
