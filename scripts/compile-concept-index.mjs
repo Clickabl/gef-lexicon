@@ -1,20 +1,43 @@
 #!/usr/bin/env node
 /**
- * Compiles reverse concept index (concept_id -> senses_by_language)
- * from canonical sense data in core lexicons.
+ * Compile the deterministic reverse concept index from canonical language
+ * senses. Canonical authoring lives beside each sense; this generated view is
+ * the cross-language lookup projection.
  *
- * The output is deterministic. Do not include wall-clock timestamps in a
- * committed generated artifact, otherwise an integrity check can never prove
- * that the checked-in file is current.
+ * `senses_by_language` remains as a compatibility/default-translation view and
+ * contains only active `primary` concept links. `sense_links_by_language`
+ * exposes the complete active many-to-many relationship graph.
  *
  * Run: node scripts/compile-concept-index.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { activeSenseConceptLinks } from './lib/concept-links.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
+const LEXICON_RE = /^lexicon(?:-[a-z0-9-]+)?\.json$/iu;
+
+function readJson(path) {
+  return JSON.parse(readFileSync(path, 'utf8'));
+}
+
+function lexiconSources(languageDir) {
+  return readdirSync(languageDir)
+    .filter((entry) => LEXICON_RE.test(entry))
+    .sort((left, right) => {
+      if (left === 'lexicon.json') return -1;
+      if (right === 'lexicon.json') return 1;
+      return left.localeCompare(right);
+    })
+    .map((entry) => join(languageDir, entry));
+}
+
+function pushUnique(array, value, keyFn) {
+  const key = keyFn(value);
+  if (!array.some((item) => keyFn(item) === key)) array.push(value);
+}
 
 function main() {
   const conceptsFile = join(REPO_ROOT, 'concepts', 'graph.json');
@@ -23,63 +46,96 @@ function main() {
     process.exit(1);
   }
 
-  const conceptsManifest = JSON.parse(readFileSync(conceptsFile, 'utf8'));
+  const conceptsManifest = readJson(conceptsFile);
   const conceptIndex = {};
 
-  for (const c of conceptsManifest.concepts || []) {
-    conceptIndex[c.concept_id] = {
-      concept_id: c.concept_id,
-      concept_key: c.concept_key,
-      domain: c.domain,
-      planning_difficulty_hint: c.planning_difficulty_hint || null,
+  for (const concept of conceptsManifest.concepts ?? []) {
+    conceptIndex[concept.concept_id] = {
+      concept_id: concept.concept_id,
+      concept_key: concept.concept_key,
+      domain: concept.domain,
+      planning_difficulty_hint: concept.planning_difficulty_hint ?? null,
       senses_by_language: {},
+      sense_links_by_language: {},
     };
   }
 
   const languagesDir = join(REPO_ROOT, 'languages');
   if (existsSync(languagesDir)) {
-    const langs = readdirSync(languagesDir)
-      .filter((f) => statSync(join(languagesDir, f)).isDirectory())
+    const languages = readdirSync(languagesDir)
+      .filter((entry) => statSync(join(languagesDir, entry)).isDirectory())
       .sort();
 
-    for (const lang of langs) {
-      const lexFile = join(languagesDir, lang, 'lexicon.json');
-      if (!existsSync(lexFile)) continue;
+    for (const languageTag of languages) {
+      const languageDir = join(languagesDir, languageTag);
+      for (const lexFile of lexiconSources(languageDir)) {
+        const data = readJson(lexFile);
+        if (data.language_code && data.language_code !== languageTag) {
+          throw new Error(`${relative(REPO_ROOT, lexFile)} declares ${data.language_code}, expected ${languageTag}.`);
+        }
 
-      const data = JSON.parse(readFileSync(lexFile, 'utf8'));
-      for (const lex of data.lexemes || []) {
-        for (const s of lex.senses || []) {
-          const cid = s.primary_concept_id;
-          if (!cid) continue;
+        for (const lexeme of data.lexemes ?? []) {
+          for (const sense of lexeme.senses ?? []) {
+            const links = activeSenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
+            for (const link of links) {
+              const concept = conceptIndex[link.concept_id];
+              if (!concept) {
+                throw new Error(
+                  `${relative(REPO_ROOT, lexFile)}:${sense.sense_id} references unmanifested concept_id ${link.concept_id}.`,
+                );
+              }
 
-          if (!conceptIndex[cid]) {
-            console.warn(`⚠️  Sense ${s.sense_id} references unmanifested concept_id: ${cid}`);
-            conceptIndex[cid] = {
-              concept_id: cid,
-              concept_key: `unmanifested-${cid}`,
-              domain: 'unspecified',
-              planning_difficulty_hint: null,
-              senses_by_language: {},
-            };
+              const richLinks = concept.sense_links_by_language[languageTag] ?? [];
+              pushUnique(
+                richLinks,
+                {
+                  sense_id: sense.sense_id,
+                  lexeme_id: lexeme.lexeme_id,
+                  relation: link.relation,
+                  review_state: link.review_state,
+                  source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
+                },
+                (row) => `${row.sense_id}\u0000${row.relation}`,
+              );
+              concept.sense_links_by_language[languageTag] = richLinks;
+
+              if (link.relation === 'primary') {
+                const primarySenses = concept.senses_by_language[languageTag] ?? [];
+                if (!primarySenses.includes(sense.sense_id)) primarySenses.push(sense.sense_id);
+                concept.senses_by_language[languageTag] = primarySenses;
+              }
+            }
           }
-
-          const langSenses = conceptIndex[cid].senses_by_language[lang] || [];
-          if (!langSenses.includes(s.sense_id)) langSenses.push(s.sense_id);
-          conceptIndex[cid].senses_by_language[lang] = langSenses.sort();
         }
       }
     }
   }
 
+  for (const concept of Object.values(conceptIndex)) {
+    for (const languageTag of Object.keys(concept.senses_by_language)) {
+      concept.senses_by_language[languageTag].sort();
+    }
+    for (const languageTag of Object.keys(concept.sense_links_by_language)) {
+      concept.sense_links_by_language[languageTag].sort((left, right) => (
+        left.sense_id.localeCompare(right.sense_id)
+        || left.relation.localeCompare(right.relation)
+        || left.lexeme_id.localeCompare(right.lexeme_id)
+      ));
+    }
+  }
+
   const outputFile = join(REPO_ROOT, 'concepts', 'compiled-concept-index.json');
   const payload = {
-    schema_version: 1,
-    generated_from: 'concepts/graph.json + languages/*/lexicon.json',
+    schema_version: 2,
+    generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
-  writeFileSync(outputFile, JSON.stringify(payload, null, 2) + '\n', 'utf8');
-  console.log(`✅ Compiled deterministic reverse concept index to concepts/compiled-concept-index.json (${Object.keys(conceptIndex).length} concepts mapped).`);
+  writeFileSync(outputFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+  console.log(
+    `✅ Compiled deterministic reverse concept index to concepts/compiled-concept-index.json `
+    + `(${Object.keys(conceptIndex).length} concepts mapped).`,
+  );
 }
 
 main();
