@@ -8,14 +8,8 @@
       "translation_role": "exact_pivot",
       "semantic_contract": {
         "definition_en": "produce spoken words in order to communicate",
-        "must_preserve": [
-          "the communication is performed with spoken words or speech"
-        ],
-        "must_not_imply": [
-          "a specific language ability unless the source sense explicitly includes it",
-          "a conversation with multiple participants unless the source sense explicitly includes it",
-          "writing or non-spoken communication"
-        ]
+        "must_preserve": ["the communication is performed with spoken words or speech"],
+        "must_not_imply": ["a specific language ability unless the source sense explicitly includes it", "a conversation with multiple participants unless the source sense explicitly includes it", "writing or non-spoken communication"]
       },
       "planning_difficulty_hint": "A1"
     },
@@ -26,14 +20,8 @@
       "translation_role": "exact_pivot",
       "semantic_contract": {
         "definition_en": "interpret written or printed linguistic symbols as language",
-        "must_preserve": [
-          "the object interpreted is written or printed language"
-        ],
-        "must_not_imply": [
-          "reading aloud unless explicitly expressed",
-          "studying or memorizing the text unless explicitly expressed",
-          "interpreting a non-linguistic sign, meter, or measurement"
-        ]
+        "must_preserve": ["the object interpreted is written or printed language"],
+        "must_not_imply": ["reading aloud unless explicitly expressed", "studying or memorizing the text unless explicitly expressed", "interpreting a non-linguistic sign, meter, or measurement"]
       },
       "planning_difficulty_hint": "A1"
     },
@@ -44,14 +32,80 @@
       "translation_role": "exact_pivot",
       "semantic_contract": {
         "definition_en": "a frog: a tailless adult amphibian of the group commonly called frogs",
-        "must_preserve": [
-          "the referent is a frog rather than a generic amphibian"
-        ],
-        "must_not_imply": [
-          "a toad specifically",
-          "a tadpole or other larval stage",
-          "a figurative person or object called a frog"
-        ]
+        "must_preserve": ["the referent is a frog rather than a generic amphibian"],
+        "must_not_imply": ["a toad specifically", "a tadpole or other larval stage", "a figurative person or object called a frog"]
+      },
+      "planning_difficulty_hint": "A1"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000001",
+      "concept_key": "romantic-date-meeting",
+      "domain": "social",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a planned social meeting between people with a romantic or potentially romantic purpose",
+        "must_preserve": ["the meeting has a romantic or potentially romantic social purpose"],
+        "must_not_imply": ["a medical, business, or service appointment", "a calendar day", "a generic meeting with no romantic implication"]
+      },
+      "planning_difficulty_hint": "A2"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000002",
+      "concept_key": "scheduled-appointment",
+      "domain": "time",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "an arrangement to meet or receive a service at a scheduled time",
+        "must_preserve": ["there is an arranged meeting or service at a scheduled time"],
+        "must_not_imply": ["a romantic purpose", "a calendar date by itself", "an unscheduled encounter"]
+      },
+      "planning_difficulty_hint": "A2"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000003",
+      "concept_key": "toad-amphibian",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a terrestrial or semi-terrestrial tailless amphibian conventionally called a toad",
+        "must_preserve": ["the referent is specifically a toad"],
+        "must_not_imply": ["any frog generically", "a bullfrog specifically", "a tadpole"]
+      },
+      "planning_difficulty_hint": "A2"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000004",
+      "concept_key": "bullfrog-amphibian",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a frog specifically identified as a bullfrog",
+        "must_preserve": ["the referent is a bullfrog, a narrower kind of frog"],
+        "must_not_imply": ["a frog of unspecified kind", "a toad", "a tadpole"]
+      },
+      "planning_difficulty_hint": "B1"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000005",
+      "concept_key": "anuran-taxonomy",
+      "domain": "nature",
+      "translation_role": "taxonomy_only",
+      "semantic_contract": {
+        "definition_en": "the broad taxonomic grouping containing adult frogs and toads",
+        "must_preserve": ["the member belongs to the broad frog/toad taxonomic neighborhood"],
+        "must_not_imply": ["that frog and toad are exact lexical equivalents", "that every member is conventionally called a frog", "that every member is conventionally called a toad"]
+      },
+      "planning_difficulty_hint": "B1"
+    },
+    {
+      "concept_id": "cpt_02000000-0000-7000-9000-000000000006",
+      "concept_key": "calendar-date",
+      "domain": "time",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a particular day identified in a calendar system",
+        "must_preserve": ["the referent is a calendar day or calendar designation"],
+        "must_not_imply": ["a romantic meeting", "a scheduled appointment", "a duration"]
       },
       "planning_difficulty_hint": "A1"
     }
