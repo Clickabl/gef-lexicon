@@ -55,6 +55,10 @@ function overlayLexiconSources() {
   return sources;
 }
 
+function effectiveSenseReviewState(lexeme, sense) {
+  return sense.review_state ?? lexeme.review_state ?? 'candidate';
+}
+
 function main() {
   const conceptManifestPath = join(ROOT, 'concepts', 'graph.json');
   if (!existsSync(conceptManifestPath)) throw new Error('Missing concepts/graph.json.');
@@ -75,6 +79,7 @@ function main() {
   let links = 0;
   let primaryLinks = 0;
   let approvedSemanticPivots = 0;
+  let approvedUsageProfiles = 0;
   let legacyOnly = 0;
   let explicitLinkedSenses = 0;
 
@@ -125,9 +130,20 @@ function main() {
     for (const lexeme of document.lexemes ?? []) {
       for (const sense of lexeme.senses ?? []) {
         senses += 1;
+        const senseReviewState = effectiveSenseReviewState(lexeme, sense);
         if (Array.isArray(sense.concept_links) && sense.concept_links.length > 0) explicitLinkedSenses += 1;
         if (sense.primary_concept_id && (!Array.isArray(sense.concept_links) || sense.concept_links.length === 0)) {
           legacyOnly += 1;
+        }
+
+        if (sense.usage_profile?.review_state === 'approved') {
+          approvedUsageProfiles += 1;
+          if (lexeme.review_state !== 'approved' || senseReviewState !== 'approved') {
+            fail(
+              `${rel}:${sense.sense_id}: approved usage_profile cannot launder an unapproved `
+              + `lexeme/sense (lexeme=${lexeme.review_state}, sense=${senseReviewState})`,
+            );
+          }
         }
 
         let normalized;
@@ -176,6 +192,22 @@ function main() {
           if (concept?.translation_role !== 'exact_pivot') {
             fail(`${rel}:${sense.sense_id}: approved semantic pivot uses a non-exact concept ${link.concept_id}`);
           }
+
+          // A reviewed semantic identity alone is not enough for 100+ language
+          // translation. Production-equivalent membership must also have an
+          // approved structured usage profile so register, region/variety,
+          // politeness and social meaning can be compared instead of guessed.
+          if (!sense.usage_profile) {
+            fail(
+              `${rel}:${sense.sense_id}: approved exact semantic pivot is missing usage_profile; `
+              + `translation compatibility would be unknowable`,
+            );
+          } else if (sense.usage_profile.review_state !== 'approved') {
+            fail(
+              `${rel}:${sense.sense_id}: approved exact semantic pivot has usage_profile `
+              + `review_state=${sense.usage_profile.review_state}; expected approved`,
+            );
+          }
         }
       }
     }
@@ -187,6 +219,7 @@ function main() {
   console.log(`  Materialized concept links: ${links}`);
   console.log(`  Primary links: ${primaryLinks}`);
   console.log(`  Hierarchically approved semantic pivots: ${approvedSemanticPivots}`);
+  console.log(`  Approved structured usage profiles: ${approvedUsageProfiles}`);
   console.log(`  Explicitly linked senses: ${explicitLinkedSenses}`);
   console.log(`  Legacy scalar-only senses: ${legacyOnly}`);
 
@@ -194,7 +227,7 @@ function main() {
     console.error(`\n❌ SENSE-LINK VALIDATION FAILED with ${errors} error(s).`);
     process.exit(1);
   }
-  console.log('\n✅ OK — sense/concept graph invariants passed.');
+  console.log('\n✅ OK — sense/concept graph and usage-profile invariants passed.');
 }
 
 main();
