@@ -82,14 +82,21 @@ export function activeSenseConceptLinks(sense, fallbackReviewState = 'candidate'
 /**
  * Approved primary semantic pivots for a sense.
  *
+ * `parentReviewState` is normally the containing lexeme's review state. The
+ * lexeme, sense, and concept edge must all be approved. This prevents an
+ * approved child edge from laundering a candidate parent into production.
+ *
  * Passing this gate means the denotational sense -> concept identity has been
  * reviewed. It does NOT by itself certify a final surface translation. Exact
  * learner-facing translation must additionally preserve relevant register,
  * social meaning, dialect/variety, morphology, constructional meaning, and the
- * resolved passage context. Candidate links never pass this gate.
+ * resolved passage context.
  */
-export function approvedPrimarySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
-  return normalizeSenseConceptLinks(sense, fallbackReviewState)
+export function approvedPrimarySenseConceptLinks(sense, parentReviewState = 'candidate') {
+  const senseState = inheritedReviewState(sense, parentReviewState);
+  if (parentReviewState !== 'approved' || senseState !== 'approved') return [];
+
+  return normalizeSenseConceptLinks(sense, parentReviewState)
     .filter((link) => (
       link.relation === 'primary'
       && APPROVED_PRIMARY_REVIEW_STATES.has(link.review_state)
@@ -101,8 +108,8 @@ export function approvedPrimarySenseConceptLinks(sense, fallbackReviewState = 'c
  * code because "translation ready" can be misread as a complete surface-level
  * equivalence guarantee.
  */
-export function translationReadySenseConceptLinks(sense, fallbackReviewState = 'candidate') {
-  return approvedPrimarySenseConceptLinks(sense, fallbackReviewState);
+export function translationReadySenseConceptLinks(sense, parentReviewState = 'candidate') {
+  return approvedPrimarySenseConceptLinks(sense, parentReviewState);
 }
 
 export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
@@ -111,14 +118,14 @@ export function primaryConceptIdForSense(sense, fallbackReviewState = 'candidate
   return primary?.concept_id ?? null;
 }
 
-export function approvedPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
-  const primary = approvedPrimarySenseConceptLinks(sense, fallbackReviewState)[0];
+export function approvedPrimaryConceptIdForSense(sense, parentReviewState = 'candidate') {
+  const primary = approvedPrimarySenseConceptLinks(sense, parentReviewState)[0];
   return primary?.concept_id ?? null;
 }
 
 /** Backward-compatible alias; see translationReadySenseConceptLinks. */
-export function translationReadyPrimaryConceptIdForSense(sense, fallbackReviewState = 'candidate') {
-  return approvedPrimaryConceptIdForSense(sense, fallbackReviewState);
+export function translationReadyPrimaryConceptIdForSense(sense, parentReviewState = 'candidate') {
+  return approvedPrimaryConceptIdForSense(sense, parentReviewState);
 }
 
 export function conceptLinkKey(link) {
