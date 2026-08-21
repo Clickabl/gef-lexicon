@@ -126,4 +126,48 @@ result = resolveTranslationCandidates(pivotNotReady, {
 });
 assert(result.status === 'source_not_translation_ready', 'unapproved semantic pivot must stop translation');
 
-console.log('✅ Translation-candidate resolver tests passed: exact pivot, complete usage review, explicit register, and separated form politeness gates compose conservatively.');
+const contradictorySourcePivot = structuredClone(compiled);
+contradictorySourcePivot.concepts[0].sense_links_by_language.en[0].review_state = 'candidate';
+contradictorySourcePivot.concepts[0].sense_links_by_language.en[0].semantic_pivot_ready = true;
+result = resolveTranslationCandidates(contradictorySourcePivot, {
+  sourceLanguage: 'en',
+  sourceSenseId: 'sense-en-mother',
+  targetLanguage: 'es',
+});
+assert(
+  result.status === 'source_not_translation_ready',
+  'semantic_pivot_ready=true must not launder a candidate source concept edge at runtime',
+);
+
+const contradictoryTargetPivot = structuredClone(compiled);
+contradictoryTargetPivot.concepts[0].sense_links_by_language.es[0].review_state = 'candidate';
+contradictoryTargetPivot.concepts[0].sense_links_by_language.es[0].semantic_pivot_ready = true;
+result = resolveTranslationCandidates(contradictoryTargetPivot, {
+  sourceLanguage: 'en',
+  sourceSenseId: 'sense-en-mother',
+  targetLanguage: 'es',
+});
+assert(
+  !result.candidates.some((candidate) => candidate.target_sense_id === 'sense-es-madre'),
+  'semantic_pivot_ready=true must not launder a candidate target concept edge at runtime',
+);
+
+const ambiguousSourcePivot = structuredClone(compiled);
+ambiguousSourcePivot.concepts.push({
+  concept_id: 'cpt_00000000-0000-0000-0000-000000000003',
+  translation_role: 'exact_pivot',
+  senses_by_language: { en: ['sense-en-mother'] },
+  sense_links_by_language: {
+    en: [link('sense-en-mother', neutral)],
+    es: [link('sense-es-other', neutral)],
+  },
+});
+result = resolveTranslationCandidates(ambiguousSourcePivot, {
+  sourceLanguage: 'en',
+  sourceSenseId: 'sense-en-mother',
+  targetLanguage: 'es',
+});
+assert(result.status === 'ambiguous_source_pivot', 'one approved source sense in two exact pivots must fail as ambiguous');
+assert(result.candidates.length === 0, 'ambiguous source pivot must return no translation candidates');
+
+console.log('✅ Translation-candidate resolver tests passed: exact pivot, complete usage review, explicit register, separated form politeness, contradictory compiled metadata, and ambiguous source pivots all fail conservatively.');
