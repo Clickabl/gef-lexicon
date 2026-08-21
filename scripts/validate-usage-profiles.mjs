@@ -2,6 +2,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { usageProfileInvariantErrors } from './lib/usage-profile.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LEXICON_RE = /^lexicon(?:-[a-z0-9-]+)?\.json$/iu;
@@ -34,34 +35,6 @@ function sourceFiles() {
     }
   }
   return files;
-}
-
-export function usageProfileInvariantErrors(profile) {
-  if (!profile) return [];
-  const errors = [];
-  const register = new Set(profile.register ?? []);
-  const politeness = new Set(profile.pragmatics?.politeness ?? []);
-  const stance = new Set(profile.pragmatics?.stance ?? []);
-
-  if (register.has('neutral') && register.size > 1) {
-    errors.push('register_neutral_cannot_coexist_with_marked_register');
-  }
-  if (politeness.has('unmarked') && politeness.size > 1) {
-    errors.push('politeness_unmarked_cannot_coexist_with_marked_politeness');
-  }
-  if (stance.has('unmarked') && stance.size > 1) {
-    errors.push('stance_unmarked_cannot_coexist_with_marked_stance');
-  }
-  if (stance.has('neutral') && stance.size > 1) {
-    errors.push('stance_neutral_cannot_coexist_with_marked_stance');
-  }
-
-  if (profile.review_state === 'approved') {
-    if (profile.region_scope?.kind === 'unknown') errors.push('approved_profile_region_scope_unknown');
-    if (profile.pragmatics?.taboo_level === 'unknown') errors.push('approved_profile_taboo_level_unknown');
-    if (profile.pragmatics?.address_use === 'unknown') errors.push('approved_profile_address_use_unknown');
-  }
-  return errors;
 }
 
 function syntheticRegressionTests() {
