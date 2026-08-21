@@ -1,32 +1,3 @@
-const MARKED_REGISTERS = new Set([
-  'informal',
-  'familiar',
-  'colloquial',
-  'formal',
-  'ceremonial',
-  'literary',
-  'poetic',
-  'technical',
-  'archaic',
-  'dated',
-  'slang',
-  'vulgar',
-  'taboo',
-  'euphemistic',
-  'child_directed',
-]);
-
-const MARKED_POLITENESS = new Set(['plain', 'polite', 'formal', 'honorific', 'humble']);
-const MARKED_STANCE = new Set([
-  'respectful',
-  'deferential',
-  'familiar',
-  'intimate',
-  'affectionate',
-  'derogatory',
-  'self_deprecating',
-]);
-
 function array(value) {
   return Array.isArray(value) ? value.filter(Boolean) : [];
 }
@@ -41,8 +12,8 @@ function intersects(left, right) {
   return false;
 }
 
-function marked(values, markedSet) {
-  return new Set([...values].filter((value) => markedSet.has(value)));
+function withoutUnmarked(values) {
+  return new Set([...values].filter((value) => value !== 'unmarked'));
 }
 
 function analysisPoliteness(analysis) {
@@ -87,36 +58,44 @@ export function normalizeUsageProfile(sense) {
   };
 }
 
-function compareMarkedDimension({
+/**
+ * Compare one usage dimension while keeping three states distinct:
+ *
+ * - explicit values such as neutral/familiar/plain/honorific are evidence;
+ * - `unmarked` means the language does not lexically/grammatically require a
+ *   marked choice at this layer, so a marked value on the other side needs
+ *   context rather than being silently copied;
+ * - an empty set means the data is unknown/incomplete and also needs context
+ *   when the other side makes a choice.
+ */
+function compareDimension({
   dimension,
   sourceValues,
   targetValues,
-  markedValues,
   blockers,
   needsContext,
 }) {
-  const sourceMarked = marked(sourceValues, markedValues);
-  const targetMarked = marked(targetValues, markedValues);
+  const sourceExplicit = withoutUnmarked(sourceValues);
+  const targetExplicit = withoutUnmarked(targetValues);
 
-  if (sourceMarked.size > 0 && targetMarked.size > 0 && !intersects(sourceMarked, targetMarked)) {
-    blockers.push({
-      code: `${dimension}_mismatch`,
-      source: [...sourceMarked],
-      target: [...targetMarked],
-    });
+  if (sourceExplicit.size > 0 && targetExplicit.size > 0) {
+    if (!intersects(sourceExplicit, targetExplicit)) {
+      blockers.push({
+        code: `${dimension}_mismatch`,
+        source: [...sourceExplicit],
+        target: [...targetExplicit],
+      });
+    }
     return;
   }
 
-  // When only one language grammatically/lexically marks the distinction, the
-  // semantic pivot may still be correct, but an exact line-level realization
-  // needs context or a construction-level solution. Do not silently pick one.
-  if ((sourceMarked.size > 0) !== (targetMarked.size > 0)) {
-    needsContext.push({
-      code: `${dimension}_asymmetry`,
-      source: [...sourceMarked],
-      target: [...targetMarked],
-    });
-  }
+  if (sourceExplicit.size === 0 && targetExplicit.size === 0) return;
+
+  needsContext.push({
+    code: `${dimension}_asymmetry`,
+    source: [...sourceValues],
+    target: [...targetValues],
+  });
 }
 
 export function compareUsageCompatibility(
@@ -144,31 +123,30 @@ export function compareUsageCompatibility(
     }
   }
 
-  compareMarkedDimension({
+  // `neutral` is explicit register evidence, not the same thing as unknown.
+  // Therefore neutral -> familiar is a mismatch, not a mere context request.
+  compareDimension({
     dimension: 'register',
     sourceValues: source.register,
     targetValues: target.register,
-    markedValues: MARKED_REGISTERS,
     blockers,
     needsContext,
   });
 
   const sourcePoliteness = new Set([...source.politeness, ...analysisPoliteness(sourceAnalysis)]);
   const targetPoliteness = new Set([...target.politeness, ...analysisPoliteness(targetAnalysis)]);
-  compareMarkedDimension({
+  compareDimension({
     dimension: 'politeness',
     sourceValues: sourcePoliteness,
     targetValues: targetPoliteness,
-    markedValues: MARKED_POLITENESS,
     blockers,
     needsContext,
   });
 
-  compareMarkedDimension({
+  compareDimension({
     dimension: 'stance',
     sourceValues: source.stance,
     targetValues: target.stance,
-    markedValues: MARKED_STANCE,
     blockers,
     needsContext,
   });
@@ -183,9 +161,9 @@ export function compareUsageCompatibility(
       source: source.tabooLevel,
       target: target.tabooLevel,
     });
-  } else if ((source.tabooLevel === 'unknown') !== (target.tabooLevel === 'unknown')) {
+  } else if (source.tabooLevel === 'unknown' || target.tabooLevel === 'unknown') {
     needsContext.push({
-      code: 'taboo_level_unknown_on_one_side',
+      code: 'taboo_level_unknown',
       source: source.tabooLevel,
       target: target.tabooLevel,
     });
@@ -200,6 +178,12 @@ export function compareUsageCompatibility(
   ) {
     blockers.push({
       code: 'address_reference_mismatch',
+      source: source.addressUse,
+      target: target.addressUse,
+    });
+  } else if (source.addressUse === 'unknown' || target.addressUse === 'unknown') {
+    needsContext.push({
+      code: 'address_reference_unknown',
       source: source.addressUse,
       target: target.addressUse,
     });
@@ -220,6 +204,14 @@ export function compareUsageCompatibility(
       code: 'social_relation_asymmetry',
       source: [...source.socialRelationTags],
       target: [...target.socialRelationTags],
+    });
+  }
+
+  if (source.regionKind === 'unknown' || target.regionKind === 'unknown') {
+    needsContext.push({
+      code: 'region_scope_unknown',
+      source: source.regionKind,
+      target: target.regionKind,
     });
   }
 
