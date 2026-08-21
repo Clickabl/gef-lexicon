@@ -1,3 +1,5 @@
+import { usageProfileInvariantErrors } from './usage-profile.mjs';
+
 function array(value) {
   return Array.isArray(value) ? value.filter(Boolean) : [];
 }
@@ -60,21 +62,9 @@ export function normalizeUsageProfile(sense) {
   };
 }
 
-/**
- * Compare a set of simultaneously applicable semantic/usage labels.
- *
- * Exact translation is deliberately stricter than "the sets overlap". If a
- * source is both formal and technical, a target that is merely formal loses a
- * marked property. Conversely an extra target label adds one. `unmarked` is a
- * special explicit statement that this layer imposes no marked choice.
- */
 function compareSemanticSet({ dimension, sourceValues, targetValues, blockers, needsContext }) {
   if (sourceValues.size === 0 || targetValues.size === 0) {
-    needsContext.push({
-      code: `${dimension}_unknown`,
-      source: [...sourceValues],
-      target: [...targetValues],
-    });
+    needsContext.push({ code: `${dimension}_unknown`, source: [...sourceValues], target: [...targetValues] });
     return;
   }
 
@@ -90,11 +80,7 @@ function compareSemanticSet({ dimension, sourceValues, targetValues, blockers, n
   }
 
   if (sourceExplicit.size === 0 || targetExplicit.size === 0) {
-    needsContext.push({
-      code: `${dimension}_asymmetry`,
-      source: [...sourceValues],
-      target: [...targetValues],
-    });
+    needsContext.push({ code: `${dimension}_asymmetry`, source: [...sourceValues], target: [...targetValues] });
     return;
   }
 
@@ -107,11 +93,6 @@ function compareSemanticSet({ dimension, sourceValues, targetValues, blockers, n
   }
 }
 
-/**
- * Form-level speech morphology is a separate gate from lexical politeness.
- * Missing morphology on one side is not automatically semantic loss: another
- * language may realize the same social choice constructionally or in context.
- */
 function compareFormPoliteness(sourceAnalysis, targetAnalysis, blockers, needsContext) {
   const source = analysisPoliteness(sourceAnalysis);
   const target = analysisPoliteness(targetAnalysis);
@@ -187,19 +168,19 @@ function checkSocialRelations(source, target, occurrenceTags, blockers, needsCon
   const targetTags = target.socialRelationTags;
   if (sourceTags.size === 0 && targetTags.size === 0) return;
   if (sourceTags.size === 0 || targetTags.size === 0) {
-    needsContext.push({
-      code: 'social_relation_asymmetry',
-      source: [...sourceTags].sort(),
-      target: [...targetTags].sort(),
-    });
+    needsContext.push({ code: 'social_relation_asymmetry', source: [...sourceTags].sort(), target: [...targetTags].sort() });
     return;
   }
   if (!setEquals(sourceTags, targetTags)) {
-    blockers.push({
-      code: 'social_relation_mismatch',
-      source: [...sourceTags].sort(),
-      target: [...targetTags].sort(),
-    });
+    blockers.push({ code: 'social_relation_mismatch', source: [...sourceTags].sort(), target: [...targetTags].sort() });
+  }
+}
+
+function rejectInvalidAuthoredProfile(side, sense, blockers) {
+  if (!sense?.usage_profile) return;
+  const errors = usageProfileInvariantErrors(sense.usage_profile);
+  if (errors.length > 0) {
+    blockers.push({ code: `${side}_usage_profile_invalid`, errors });
   }
 }
 
@@ -223,6 +204,9 @@ export function compareUsageCompatibility(
   const blockers = [];
   const needsContext = [];
   const warnings = [];
+
+  rejectInvalidAuthoredProfile('source', sourceSense, blockers);
+  rejectInvalidAuthoredProfile('target', targetSense, blockers);
 
   if (requireApprovedProfiles) {
     for (const [side, profile] of [['source', source], ['target', target]]) {
