@@ -5,18 +5,54 @@
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
       "concept_key": "speak-communicate",
       "domain": "communication",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "produce spoken words in order to communicate",
+        "must_preserve": [
+          "the communication is performed with spoken words or speech"
+        ],
+        "must_not_imply": [
+          "a specific language ability unless the source sense explicitly includes it",
+          "a conversation with multiple participants unless the source sense explicitly includes it",
+          "writing or non-spoken communication"
+        ]
+      },
       "planning_difficulty_hint": "A1"
     },
     {
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
       "concept_key": "read-written-words",
       "domain": "education",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "interpret written or printed linguistic symbols as language",
+        "must_preserve": [
+          "the object interpreted is written or printed language"
+        ],
+        "must_not_imply": [
+          "reading aloud unless explicitly expressed",
+          "studying or memorizing the text unless explicitly expressed",
+          "interpreting a non-linguistic sign, meter, or measurement"
+        ]
+      },
       "planning_difficulty_hint": "A1"
     },
     {
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
       "concept_key": "frog-amphibian",
       "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a frog: a tailless adult amphibian of the group commonly called frogs",
+        "must_preserve": [
+          "the referent is a frog rather than a generic amphibian"
+        ],
+        "must_not_imply": [
+          "a toad specifically",
+          "a tadpole or other larval stage",
+          "a figurative person or object called a frog"
+        ]
+      },
       "planning_difficulty_hint": "A1"
     }
   ]
