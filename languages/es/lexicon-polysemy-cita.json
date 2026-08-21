@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "language_code": "es",
+  "lexemes": [
+    {
+      "lexeme_id": "02000000-0000-7000-9200-000000000001",
+      "lemma_nfc": "cita",
+      "upos": "NOUN",
+      "language_pos": "sustantivo-común",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "02000000-0000-7000-9201-000000000001",
+          "sense_key": "cita-encuentro-romantico",
+          "concept_links": [{"concept_id":"cpt_02000000-0000-7000-9000-000000000001","relation":"primary","review_state":"candidate"}],
+          "definitions": {"es":"encuentro acordado con propósito romántico o potencialmente romántico","en":"a planned meeting with a romantic or potentially romantic purpose"},
+          "sense_hint": {"es":"como en tener una cita con alguien"},
+          "cefr_level": "A2",
+          "register_label": "estándar",
+          "usage_profile": {"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}
+        },
+        {
+          "sense_id": "02000000-0000-7000-9201-000000000002",
+          "sense_key": "cita-cita-programada",
+          "concept_links": [{"concept_id":"cpt_02000000-0000-7000-9000-000000000002","relation":"primary","review_state":"candidate"}],
+          "definitions": {"es":"acuerdo para reunirse o recibir un servicio a una hora programada","en":"an arrangement to meet or receive a service at a scheduled time"},
+          "sense_hint": {"es":"como en una cita con el dentista"},
+          "cefr_level": "A2",
+          "register_label": "estándar",
+          "usage_profile": {"register":["neutral"],"region_scope":{"kind":"general","tags":[]},"pragmatics":{"politeness":["unmarked"],"stance":["neutral"],"taboo_level":"none","address_use":"both","social_relation_tags":[]},"review_state":"candidate"}
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "02000000-0000-7000-9202-000000000001",
+          "surface_nfc": "cita",
+          "normalized_lookup": "cita",
+          "attested_in_text": false,
+          "analyses": [{"analysis_id":"02000000-0000-7000-9203-000000000001","features":{"base":{"number":"singular","gender":"feminine"}},"display_label_key":"singular feminine","pronunciations":[{"ipa":"ˈsita","locale":"es","notation":"phonemic"}]}]
+        }
+      ]
+    }
+  ]
+}

@@ -11,13 +11,16 @@
  * grow without forcing rewrites of a large canonical core file.
  *
  * Default builds include candidate + approved rows for development fixtures.
- * `--production` includes approved rows only. Compilation is always from a
- * freshly recreated database so removed source rows can never survive.
+ * `--production` includes approved rows only. Review filtering applies at both
+ * lexeme and sense level; an approved lexeme must never smuggle a candidate
+ * sense into a production package. Compilation is always from a freshly
+ * recreated database so removed source rows can never survive.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
+import { activeSenseConceptLinks } from './lib/concept-links.mjs';
 
 const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST_DIR = join(REPO_ROOT, 'dist');
@@ -25,6 +28,10 @@ const PRODUCTION = process.argv.includes('--production');
 
 function included(reviewState) {
   return reviewState === 'approved' || (!PRODUCTION && reviewState === 'candidate');
+}
+
+function senseReviewState(lexeme, sense) {
+  return sense?.review_state ?? lexeme?.review_state ?? 'candidate';
 }
 
 function initCoreDb(dbPath) {
@@ -48,7 +55,19 @@ function initCoreDb(dbPath) {
       primary_concept_id TEXT,
       cefr_level TEXT,
       register_label TEXT,
+      usage_profile_json TEXT NOT NULL,
+      review_state TEXT NOT NULL,
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id)
+    );
+
+    CREATE TABLE sense_concepts (
+      sense_id TEXT NOT NULL,
+      concept_id TEXT NOT NULL,
+      relation TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      metadata_json TEXT NOT NULL,
+      PRIMARY KEY(sense_id, concept_id, relation),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id)
     );
 
     CREATE TABLE definitions (
@@ -101,6 +120,9 @@ function initCoreDb(dbPath) {
 
     CREATE INDEX idx_forms_lookup ON forms(normalized_lookup);
     CREATE INDEX idx_lexemes_lemma ON lexemes(lemma_nfc);
+    CREATE INDEX idx_senses_review_state ON senses(review_state);
+    CREATE INDEX idx_sense_concepts_sense ON sense_concepts(sense_id, relation);
+    CREATE INDEX idx_sense_concepts_concept ON sense_concepts(concept_id, relation);
     CREATE INDEX idx_relations_source ON lexeme_relations(source_lexeme_id);
     CREATE INDEX idx_lesson_links_sense ON sense_lesson_links(sense_id);
     CREATE INDEX idx_lesson_links_lesson ON sense_lesson_links(lesson_id);
@@ -115,8 +137,13 @@ function statements(db) {
       VALUES (?, ?, ?, ?, ?, ?)
     `),
     sense: db.prepare(`
-      INSERT INTO senses (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label)
-      VALUES (?, ?, ?, ?, ?, ?)
+      INSERT INTO senses
+        (sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label, usage_profile_json, review_state)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    `),
+    senseConcept: db.prepare(`
+      INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
+      VALUES (?, ?, ?, ?, ?)
     `),
     definition: db.prepare(`
       INSERT INTO definitions (sense_id, interface_lang, definition_text)
@@ -149,6 +176,12 @@ function insertLexiconDocument(db, data) {
   db.transaction(() => {
     for (const lex of data.lexemes ?? []) {
       if (!included(lex.review_state)) continue;
+
+      const includedSenses = (lex.senses ?? []).filter((sense) => (
+        included(senseReviewState(lex, sense))
+      ));
+      if (includedSenses.length === 0) continue;
+
       insert.lexeme.run(
         lex.lexeme_id,
         lex.lemma_nfc,
@@ -158,27 +191,46 @@ function insertLexiconDocument(db, data) {
         lex.review_state,
       );
 
-      for (const sense of lex.senses ?? []) {
+      for (const sense of includedSenses) {
+        const reviewState = senseReviewState(lex, sense);
+        const conceptLinks = activeSenseConceptLinks(sense, reviewState)
+          .filter((link) => included(link.review_state));
+        const primaryConceptId = conceptLinks.find((link) => link.relation === 'primary')?.concept_id ?? null;
         insert.sense.run(
           sense.sense_id,
           lex.lexeme_id,
           sense.sense_key,
-          sense.primary_concept_id ?? null,
+          primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
+          JSON.stringify(sense.usage_profile ?? null),
+          reviewState,
         );
+        for (const link of conceptLinks) {
+          insert.senseConcept.run(
+            sense.sense_id,
+            link.concept_id,
+            link.relation,
+            link.review_state,
+            JSON.stringify({
+              note: link.note ?? null,
+              source_refs: link.source_refs ?? [],
+              compatibility_source: link.compatibility_source ?? null,
+            }),
+          );
+        }
         for (const [interfaceLang, definition] of Object.entries(sense.definitions ?? {})) {
           insert.definition.run(sense.sense_id, interfaceLang, definition);
         }
         for (const link of sense.lesson_links ?? []) {
-          const reviewState = link.review_state ?? lex.review_state;
-          if (!included(reviewState)) continue;
+          const linkReviewState = link.review_state ?? reviewState;
+          if (!included(linkReviewState)) continue;
           insert.lessonLink.run(
             sense.sense_id,
             link.lesson_id,
             link.rule_id ?? null,
             link.relationship ?? 'related_lesson',
-            reviewState,
+            linkReviewState,
           );
         }
       }

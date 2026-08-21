@@ -3,7 +3,7 @@ name: Lexicon integrity
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, senses]
 
 jobs:
   validate:
@@ -28,6 +28,12 @@ jobs:
             while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
             exit "$status"
           fi
+      - name: Validate multilingual sense/concept links
+        run: npm run validate:sense-links
+      - name: Validate structured usage profiles
+        run: npm run validate:usage-profiles
+      - name: Validate typed semantic relation graph
+        run: npm run validate:semantic-relations
       - name: Validate curriculum taxonomy
         shell: bash
         run: |
@@ -74,8 +80,22 @@ jobs:
         run: npm run compile:concepts
       - name: Require generated concept index to be current
         run: git diff --exit-code -- concepts/compiled-concept-index.json
+      - name: Test multilingual sense-link traversal
+        run: npm run test:sense-links
+      - name: Test translation usage compatibility gate
+        run: npm run test:usage-compatibility
+      - name: Test strict cross-language candidate resolver
+        run: npm run test:translation-candidates
+      - name: Test translation occurrence context gates
+        run: npm run test:translation-occurrence-context
+      - name: Test occurrence-sense reverse-tag protection
+        run: npm run test:occurrence-sense
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
+      - name: Compile deterministic v2 core packages
+        run: npm run compile:core
+      - name: Verify core usage-profile round trip
+        run: npm run test:core-usage-roundtrip
       - name: Compile shared Lexi semantic lesson index
         run: npm run compile:semantic
       - name: Compile development shared name index

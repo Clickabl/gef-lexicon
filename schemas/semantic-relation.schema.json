@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/semantic-relation.schema.json",
+  "title": "Gef typed lexical and semantic relation graph",
+  "description": "Relations between stable Gef lexical/semantic identities. Relation edges are discovery, explanation, taxonomy, form, or confusion evidence only. They never authorize exact cross-language translation; exact translation requires independently approved exact-pivot membership and contextual compatibility.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract", "relations"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "contract": { "type": "string", "const": "gef-semantic-relation-graph-v1" },
+    "relations": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/relation" }
+    }
+  },
+  "definitions": {
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["sense", "concept", "lexeme", "pronunciation", "entity"]
+        },
+        "id": { "type": "string", "minLength": 1 }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source"],
+      "properties": {
+        "source": {
+          "type": "string",
+          "enum": ["gef_editorial", "wiktionary", "kaikki", "community", "publisher", "other"]
+        },
+        "source_record_id": { "type": "string" },
+        "source_revision": { "type": "string" },
+        "source_url": { "type": "string" },
+        "imported_at": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation_id",
+        "relation_type",
+        "from",
+        "to",
+        "directionality",
+        "translation_authority",
+        "review_state",
+        "provenance"
+      ],
+      "properties": {
+        "relation_id": { "type": "string", "minLength": 1 },
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "near_synonym",
+            "antonym",
+            "hypernym",
+            "hyponym",
+            "coordinate_term",
+            "related",
+            "confusable",
+            "homonym",
+            "homophone",
+            "homograph",
+            "derived_from",
+            "etymologically_related",
+            "register_variant",
+            "regional_variant",
+            "orthographic_variant"
+          ]
+        },
+        "from": { "$ref": "#/definitions/endpoint" },
+        "to": { "$ref": "#/definitions/endpoint" },
+        "directionality": {
+          "type": "string",
+          "enum": ["directed", "symmetric"]
+        },
+        "translation_authority": {
+          "type": "string",
+          "const": "none",
+          "description": "Hard safety invariant. A relation edge is never sufficient evidence for exact translation equivalence."
+        },
+        "review_state": {
+          "type": "string",
+          "enum": ["candidate", "machine_verified", "approved"]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "provenance": { "$ref": "#/definitions/provenance" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

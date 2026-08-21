@@ -10,7 +10,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["concept_id", "concept_key", "domain"],
+        "required": ["concept_id", "concept_key", "domain", "translation_role", "semantic_contract"],
         "properties": {
           "concept_id": {
             "type": "string",
@@ -18,6 +18,34 @@
           },
           "concept_key": { "type": "string" },
           "domain": { "type": "string" },
+          "translation_role": {
+            "type": "string",
+            "enum": ["exact_pivot", "taxonomy_only"],
+            "description": "Only exact_pivot concepts may back ordinary cross-language translation equivalence. taxonomy_only concepts are organizational/semantic relatives and must never be treated as direct translations."
+          },
+          "semantic_contract": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["definition_en", "must_preserve", "must_not_imply"],
+            "properties": {
+              "definition_en": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Editorial metalanguage definition of the exact semantic pivot. Never shown as a learner-facing definition by default."
+              },
+              "must_preserve": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "description": "Meaning components that every sense using this exact pivot must entail."
+              },
+              "must_not_imply": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 },
+                "description": "Nearby meanings or extra implications that are specifically excluded from this pivot."
+              },
+              "editorial_notes": { "type": "string" }
+            }
+          },
           "planning_difficulty_hint": {
             "type": "string",
             "enum": ["A1", "A2", "B1", "B2", "C1", "C2"]
