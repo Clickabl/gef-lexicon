@@ -10,7 +10,7 @@
  * - `candidate_senses_by_language` contains unapproved candidate primary links
  *   for development/review UI.
  * - `sense_links_by_language` exposes the complete active candidate + approved
- *   relationship graph with review state attached.
+ *   relationship graph with review and usage-compatibility metadata attached.
  *
  * Final learner-facing translation must additionally preserve the resolved
  * occurrence context, register/social meaning, dialect/variety, morphology,
@@ -120,6 +120,9 @@ function main() {
                   relation: link.relation,
                   review_state: link.review_state,
                   semantic_pivot_ready: approvedPrimaryIds.has(link.concept_id) && link.relation === 'primary',
+                  usage_profile: sense.usage_profile ?? null,
+                  usage_profile_ready: sense.usage_profile?.review_state === 'approved',
+                  legacy_register_label: sense.register_label ?? null,
                   source_path: relative(REPO_ROOT, lexFile).replaceAll('\\', '/'),
                 },
                 (row) => `${row.sense_id}\u0000${row.relation}`,
@@ -155,9 +158,10 @@ function main() {
 
   const outputFile = join(REPO_ROOT, 'concepts', 'compiled-concept-index.json');
   const payload = {
-    schema_version: 4,
+    schema_version: 5,
     generated_from: 'concepts/graph.json + languages/*/lexicon*.json',
     semantic_pivot_policy: 'senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks',
+    usage_policy: 'sense_links_by_language carries structured usage_profile metadata; semantic_pivot_ready never bypasses register, pragmatic, region/variety, morphology, or construction compatibility',
     concepts: Object.values(conceptIndex).sort((a, b) => a.concept_id.localeCompare(b.concept_id)),
   };
 
