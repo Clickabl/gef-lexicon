@@ -153,14 +153,29 @@ function main() {
     review_state: 'approved',
     primary_concept_id: frogConceptId,
   };
-  const legacyProjected = approvedPrimarySenseConceptLinks(legacyApproved, 'approved');
+  const legacyActive = activeSenseConceptLinks(legacyApproved, 'approved');
   assert(
-    legacyProjected[0]?.compatibility_source === 'primary_concept_id',
-    'legacy inherited concept membership must remain visibly marked as compatibility data',
+    legacyActive[0]?.compatibility_source === 'primary_concept_id'
+      && legacyActive[0]?.review_state === 'candidate',
+    'legacy canonical concept aliases must remain visibly compatibility-only and fail closed to candidate',
+  );
+  assert(
+    approvedPrimarySenseConceptLinks(legacyApproved, 'approved').length === 0,
+    'legacy parent approval must never self-certify concept-edge approval',
   );
   assert(
     explicitlyReviewedPrimarySenseConceptLinks(legacyApproved, 'approved').length === 0,
     'legacy inherited approval must not pass the strict independently-reviewed edge view',
+  );
+
+  const grammarLegacy = {
+    sense_id: 'synthetic-grammar-legacy',
+    review_state: 'approved',
+    primary_concept_id: 'GRAMMAR.es.definite_article.masculine_singular',
+  };
+  assert(
+    activeSenseConceptLinks(grammarLegacy, 'approved').length === 0,
+    'legacy grammar-rule identifiers must not be materialized as language-neutral semantic concepts',
   );
 
   const candidateSenseWithApprovedLink = {
@@ -179,7 +194,7 @@ function main() {
   );
 
   console.log(
-    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, explicit edges fail closed, legacy inherited approval is identifiable/excludable, usage metadata is retained, and pivot identity still does not claim final surface-level equivalence.',
+    '✅ Sense-link graph test passed: semantic pivots require hierarchical and edge-specific approval, legacy aliases fail closed, grammar IDs stay outside the interlingual concept graph, usage metadata is retained, and pivot identity still does not claim final surface-level equivalence.',
   );
 }
 
