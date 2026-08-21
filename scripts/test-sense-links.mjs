@@ -47,6 +47,19 @@ function main() {
       `${concept.concept_id} is missing translation_role`,
     );
 
+    if (concept.translation_role === 'taxonomy_only') {
+      const approvedPrimaryCount = Object.values(concept.senses_by_language ?? {})
+        .reduce((count, senseIds) => count + senseIds.length, 0);
+      const candidatePrimaryCount = Object.values(concept.candidate_senses_by_language ?? {})
+        .reduce((count, senseIds) => count + senseIds.length, 0);
+      const primaryRichLinks = Object.values(concept.sense_links_by_language ?? {})
+        .flat()
+        .filter((link) => link.relation === 'primary');
+      assert(approvedPrimaryCount === 0, `${concept.concept_id} taxonomy-only concept leaked into approved pivot view`);
+      assert(candidatePrimaryCount === 0, `${concept.concept_id} taxonomy-only concept leaked into candidate pivot view`);
+      assert(primaryRichLinks.length === 0, `${concept.concept_id} taxonomy-only concept accepted a primary sense identity link`);
+    }
+
     for (const [languageTag, primarySenseIds] of Object.entries(concept.senses_by_language ?? {})) {
       const links = concept.sense_links_by_language?.[languageTag] ?? [];
       for (const senseId of primarySenseIds) {
@@ -179,7 +192,7 @@ function main() {
   );
 
   console.log(
-    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, explicit edges fail closed, legacy inherited approval is identifiable/excludable, usage metadata is retained, and pivot identity still does not claim final surface-level equivalence.',
+    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, taxonomy-only concepts cannot accept primary sense identity, explicit edges fail closed, legacy inherited approval is identifiable/excludable, usage metadata is retained, and pivot identity still does not claim final surface-level equivalence.',
   );
 }
 
