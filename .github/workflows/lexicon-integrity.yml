@@ -78,6 +78,8 @@ jobs:
         run: git diff --exit-code -- concepts/compiled-concept-index.json
       - name: Test multilingual sense-link traversal
         run: npm run test:sense-links
+      - name: Test translation usage compatibility gate
+        run: npm run test:usage-compatibility
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
       - name: Compile deterministic v2 core packages
