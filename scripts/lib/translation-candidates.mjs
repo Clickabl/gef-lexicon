@@ -23,8 +23,8 @@ function senseFromLink(link) {
  *
  * This function deliberately does not choose a final surface form. Morphology,
  * construction selection, passage discourse context and form-level constraints
- * remain later gates. Returning `compatible` here means only that semantic
- * identity + sense-level usage are safe enough to continue.
+ * remain later gates. `compatible` here means semantic identity + sense-level
+ * usage + any supplied occurrence constraints are safe enough to continue.
  */
 export function resolveTranslationCandidates(
   compiledIndex,
@@ -32,8 +32,12 @@ export function resolveTranslationCandidates(
     sourceLanguage,
     sourceSenseId,
     targetLanguage,
+    sourceRegion = null,
+    sourceVariety = null,
     targetRegion = null,
     targetVariety = null,
+    occurrenceAddressUse = null,
+    occurrenceSocialRelationTags = [],
     sourceAnalysis = null,
     targetAnalysesBySense = {},
     includeNeedsContext = true,
@@ -48,10 +52,7 @@ export function resolveTranslationCandidates(
   }
 
   if (sourceMemberships.length === 0) {
-    return {
-      status: 'source_not_translation_ready',
-      candidates: [],
-    };
+    return { status: 'source_not_translation_ready', candidates: [] };
   }
   if (sourceMemberships.length > 1) {
     return {
@@ -63,11 +64,7 @@ export function resolveTranslationCandidates(
 
   const { concept, source } = sourceMemberships[0];
   if (!source.usage_profile_ready) {
-    return {
-      status: 'source_usage_not_ready',
-      concept_id: concept.concept_id,
-      candidates: [],
-    };
+    return { status: 'source_usage_not_ready', concept_id: concept.concept_id, candidates: [] };
   }
 
   const targetLinks = (concept.sense_links_by_language?.[targetLanguage] ?? [])
@@ -93,8 +90,12 @@ export function resolveTranslationCandidates(
       {
         sourceAnalysis,
         targetAnalysis: targetAnalysesBySense[target.sense_id] ?? null,
+        sourceRegion,
+        sourceVariety,
         targetRegion,
         targetVariety,
+        occurrenceAddressUse,
+        occurrenceSocialRelationTags,
         requireApprovedProfiles: true,
       },
     );
