@@ -86,6 +86,8 @@ jobs:
         run: npm run compile:sqlite
       - name: Compile deterministic v2 core packages
         run: npm run compile:core
+      - name: Verify core usage-profile round trip
+        run: npm run test:core-usage-roundtrip
       - name: Compile shared Lexi semantic lesson index
         run: npm run compile:semantic
       - name: Compile development shared name index
