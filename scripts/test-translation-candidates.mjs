@@ -94,8 +94,8 @@ result = resolveTranslationCandidates(compiled, {
 });
 assert(result.status === 'context_required', `English -> polite Japanese should require context, got ${result.status}`);
 assert(
-  result.candidates[0]?.needs_context?.some((item) => item.code === 'politeness_asymmetry'),
-  'English -> Japanese polite candidate must expose politeness asymmetry',
+  result.candidates[0]?.needs_context?.some((item) => item.code === 'form_politeness_asymmetry'),
+  'English -> Japanese polite candidate must expose form-level politeness asymmetry',
 );
 
 const sourceNotReady = structuredClone(compiled);
@@ -126,4 +126,4 @@ result = resolveTranslationCandidates(pivotNotReady, {
 });
 assert(result.status === 'source_not_translation_ready', 'unapproved semantic pivot must stop translation');
 
-console.log('✅ Translation-candidate resolver tests passed: exact pivot, complete usage review, explicit register, and Japanese politeness gates compose conservatively.');
+console.log('✅ Translation-candidate resolver tests passed: exact pivot, complete usage review, explicit register, and separated form politeness gates compose conservatively.');
