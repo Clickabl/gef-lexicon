@@ -7,27 +7,30 @@ export const SENSE_CONCEPT_RELATIONS = Object.freeze([
 
 export const ACTIVE_REVIEW_STATES = new Set(['candidate', 'approved']);
 export const APPROVED_PRIMARY_REVIEW_STATES = new Set(['approved']);
+const CANONICAL_CONCEPT_ID = /^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/u;
 
 function inheritedReviewState(sense, fallbackReviewState) {
   return sense?.review_state ?? fallbackReviewState ?? 'candidate';
+}
+
+export function isCanonicalConceptId(value) {
+  return typeof value === 'string' && CANONICAL_CONCEPT_ID.test(value);
 }
 
 /**
  * Normalize the canonical many-to-many sense -> concept authoring model.
  *
  * `concept_links` is authoritative for new data. `primary_concept_id` remains
- * a temporary compatibility alias for older records. A legacy scalar is
- * projected into one `primary` edge only when an explicit primary edge is not
- * already present. If both forms exist they must agree.
+ * a temporary compatibility alias for older records. Historical datasets also
+ * used that field for grammar-rule identifiers such as `GRAMMAR.es.*`; those
+ * are not language-neutral Gef concepts and are deliberately ignored here.
  *
- * IMPORTANT: an explicit concept edge never inherits approval from its parent.
- * Missing edge-level review metadata fails closed to `candidate`. The legacy
- * scalar keeps its historical compatibility behavior until that data is
- * migrated, and is marked with `compatibility_source` so callers can identify
- * it rather than mistaking inherited approval for independent edge review.
+ * A legacy scalar canonical concept ID is projected into one `primary` edge
+ * only when an explicit primary edge is not already present. It always fails
+ * closed to `candidate`: historical parent approval is not independent evidence
+ * that the sense -> concept edge itself was reviewed.
  */
 export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candidate') {
-  const fallback = inheritedReviewState(sense, fallbackReviewState);
   const explicit = Array.isArray(sense?.concept_links) ? sense.concept_links : [];
   const links = explicit.map((link) => ({
     ...link,
@@ -41,12 +44,12 @@ export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candida
   }
 
   const legacyPrimary = sense?.primary_concept_id ?? null;
-  if (legacyPrimary) {
+  if (legacyPrimary && isCanonicalConceptId(legacyPrimary)) {
     if (primaryLinks.length === 0) {
       links.push({
         concept_id: legacyPrimary,
         relation: 'primary',
-        review_state: fallback,
+        review_state: 'candidate',
         compatibility_source: 'primary_concept_id',
       });
     } else if (primaryLinks[0].concept_id !== legacyPrimary) {
@@ -61,6 +64,12 @@ export function normalizeSenseConceptLinks(sense, fallbackReviewState = 'candida
   for (const link of links) {
     if (!link?.concept_id) {
       throw new Error(`Sense ${sense?.sense_id ?? '(unknown)'} has a concept link without concept_id.`);
+    }
+    if (!isCanonicalConceptId(link.concept_id)) {
+      throw new Error(
+        `Sense ${sense?.sense_id ?? '(unknown)'} has non-canonical concept_id '${link.concept_id}'. `
+        + 'Semantic concept links must use cpt_* UUID identities.',
+      );
     }
     if (!SENSE_CONCEPT_RELATIONS.includes(link.relation)) {
       throw new Error(
@@ -89,8 +98,8 @@ export function activeSenseConceptLinks(sense, fallbackReviewState = 'candidate'
  * Approved primary semantic pivots for a sense.
  *
  * `parentReviewState` is normally the containing lexeme's review state. The
- * lexeme, sense, and concept edge must all be approved. This prevents an
- * approved child edge from laundering a candidate parent into production.
+ * lexeme, sense, and concept edge must all be approved. Legacy scalar aliases
+ * never pass this gate because their synthesized edge is always candidate.
  *
  * Passing this gate means the denotational sense -> concept identity has been
  * reviewed. It does NOT by itself certify a final surface translation. Exact
@@ -110,24 +119,17 @@ export function approvedPrimarySenseConceptLinks(sense, parentReviewState = 'can
 }
 
 /**
- * Strict edge-review view for migration-sensitive callers.
- *
- * Unlike approvedPrimarySenseConceptLinks, this deliberately excludes a
- * compatibility edge synthesized from legacy `primary_concept_id`. It lets
- * validation, reports, and future runtime gates distinguish independently
- * reviewed concept membership from historically inherited approval without
- * breaking legacy authoring data during migration.
+ * Strict edge-review view retained for callers that want to make the migration
+ * boundary explicit. Legacy aliases already fail closed, and this additionally
+ * guards against future compatibility projections being mistaken for reviewed
+ * edges.
  */
 export function explicitlyReviewedPrimarySenseConceptLinks(sense, parentReviewState = 'candidate') {
   return approvedPrimarySenseConceptLinks(sense, parentReviewState)
     .filter((link) => link.compatibility_source !== 'primary_concept_id');
 }
 
-/**
- * Backward-compatible alias. Prefer approvedPrimarySenseConceptLinks in new
- * code because "translation ready" can be misread as a complete surface-level
- * equivalence guarantee.
- */
+/** Backward-compatible alias; semantic identity is not final translation. */
 export function translationReadySenseConceptLinks(sense, parentReviewState = 'candidate') {
   return approvedPrimarySenseConceptLinks(sense, parentReviewState);
 }
