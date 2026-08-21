@@ -59,6 +59,30 @@ function effectiveSenseReviewState(lexeme, sense) {
   return sense.review_state ?? lexeme.review_state ?? 'candidate';
 }
 
+function validateApprovedUsageProfile(rel, sense, lexeme, senseReviewState, fail) {
+  const profile = sense.usage_profile;
+  if (profile?.review_state !== 'approved') return false;
+
+  if (lexeme.review_state !== 'approved' || senseReviewState !== 'approved') {
+    fail(
+      `${rel}:${sense.sense_id}: approved usage_profile cannot launder an unapproved `
+      + `lexeme/sense (lexeme=${lexeme.review_state}, sense=${senseReviewState})`,
+    );
+  }
+
+  if (profile.region_scope?.kind === 'unknown') {
+    fail(`${rel}:${sense.sense_id}: approved usage_profile cannot have unknown region_scope`);
+  }
+  if (profile.pragmatics?.taboo_level === 'unknown') {
+    fail(`${rel}:${sense.sense_id}: approved usage_profile cannot have unknown taboo_level`);
+  }
+  if (profile.pragmatics?.address_use === 'unknown') {
+    fail(`${rel}:${sense.sense_id}: approved usage_profile cannot have unknown address_use`);
+  }
+
+  return true;
+}
+
 function main() {
   const conceptManifestPath = join(ROOT, 'concepts', 'graph.json');
   if (!existsSync(conceptManifestPath)) throw new Error('Missing concepts/graph.json.');
@@ -136,14 +160,8 @@ function main() {
           legacyOnly += 1;
         }
 
-        if (sense.usage_profile?.review_state === 'approved') {
+        if (validateApprovedUsageProfile(rel, sense, lexeme, senseReviewState, fail)) {
           approvedUsageProfiles += 1;
-          if (lexeme.review_state !== 'approved' || senseReviewState !== 'approved') {
-            fail(
-              `${rel}:${sense.sense_id}: approved usage_profile cannot launder an unapproved `
-              + `lexeme/sense (lexeme=${lexeme.review_state}, sense=${senseReviewState})`,
-            );
-          }
         }
 
         let normalized;
@@ -195,7 +213,7 @@ function main() {
 
           // A reviewed semantic identity alone is not enough for 100+ language
           // translation. Production-equivalent membership must also have an
-          // approved structured usage profile so register, region/variety,
+          // approved, fully specified usage profile so register, region/variety,
           // politeness and social meaning can be compared instead of guessed.
           if (!sense.usage_profile) {
             fail(
