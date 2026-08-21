@@ -11,8 +11,11 @@ function usage(register, pragmatics = {}) {
     region_scope: { kind: 'general', tags: [] },
     varieties: [],
     pragmatics: {
+      politeness: ['unmarked'],
+      stance: ['unmarked'],
       taboo_level: 'none',
       address_use: 'both',
+      social_relation_tags: [],
       ...pragmatics,
     },
     review_state: 'approved',
@@ -123,4 +126,4 @@ result = resolveTranslationCandidates(pivotNotReady, {
 });
 assert(result.status === 'source_not_translation_ready', 'unapproved semantic pivot must stop translation');
 
-console.log('✅ Translation-candidate resolver tests passed: exact pivot, usage review, register, and Japanese politeness gates compose conservatively.');
+console.log('✅ Translation-candidate resolver tests passed: exact pivot, complete usage review, explicit register, and Japanese politeness gates compose conservatively.');
