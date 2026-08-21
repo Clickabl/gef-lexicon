@@ -6,10 +6,15 @@ function set(value) {
   return new Set(array(value));
 }
 
-function intersects(left, right) {
-  if (left.size === 0 || right.size === 0) return false;
-  for (const value of left) if (right.has(value)) return true;
-  return false;
+function setEquals(left, right) {
+  if (left.size !== right.size) return false;
+  for (const value of left) if (!right.has(value)) return false;
+  return true;
+}
+
+function isSubset(subset, superset) {
+  for (const value of subset) if (!superset.has(value)) return false;
+  return true;
 }
 
 function withoutUnmarked(values) {
@@ -29,7 +34,7 @@ export function normalizeUsageProfile(sense) {
       regionKind: authored.region_scope?.kind ?? 'unknown',
       regions: set(authored.region_scope?.tags),
       varieties: set(authored.varieties),
-      politeness: set(authored.pragmatics?.politeness),
+      lexicalPoliteness: set(authored.pragmatics?.politeness),
       stance: set(authored.pragmatics?.stance),
       tabooLevel: authored.pragmatics?.taboo_level ?? 'unknown',
       addressUse: authored.pragmatics?.address_use ?? 'unknown',
@@ -39,16 +44,13 @@ export function normalizeUsageProfile(sense) {
     };
   }
 
-  // Legacy labels remain visible but are never promoted to approved structured
-  // evidence. This lets old data participate in QA without pretending that a
-  // display string is a reviewed cross-language compatibility profile.
   const legacyRegister = sense?.register_label ? new Set([sense.register_label]) : new Set();
   return {
     register: legacyRegister,
     regionKind: 'unknown',
     regions: new Set(),
     varieties: new Set(),
-    politeness: new Set(),
+    lexicalPoliteness: new Set(),
     stance: new Set(),
     tabooLevel: 'unknown',
     addressUse: 'unknown',
@@ -59,43 +61,146 @@ export function normalizeUsageProfile(sense) {
 }
 
 /**
- * Compare one usage dimension while keeping three states distinct:
+ * Compare a set of simultaneously applicable semantic/usage labels.
  *
- * - explicit values such as neutral/familiar/plain/honorific are evidence;
- * - `unmarked` means the language does not lexically/grammatically require a
- *   marked choice at this layer, so a marked value on the other side needs
- *   context rather than being silently copied;
- * - an empty set means the data is unknown/incomplete and also needs context
- *   when the other side makes a choice.
+ * Exact translation is deliberately stricter than "the sets overlap". If a
+ * source is both formal and technical, a target that is merely formal loses a
+ * marked property. Conversely an extra target label adds one. `unmarked` is a
+ * special explicit statement that this layer imposes no marked choice.
  */
-function compareDimension({
-  dimension,
-  sourceValues,
-  targetValues,
-  blockers,
-  needsContext,
-}) {
+function compareSemanticSet({ dimension, sourceValues, targetValues, blockers, needsContext }) {
+  if (sourceValues.size === 0 || targetValues.size === 0) {
+    needsContext.push({
+      code: `${dimension}_unknown`,
+      source: [...sourceValues],
+      target: [...targetValues],
+    });
+    return;
+  }
+
   const sourceExplicit = withoutUnmarked(sourceValues);
   const targetExplicit = withoutUnmarked(targetValues);
+  const sourceUnmarked = sourceValues.has('unmarked');
+  const targetUnmarked = targetValues.has('unmarked');
 
-  if (sourceExplicit.size > 0 && targetExplicit.size > 0) {
-    if (!intersects(sourceExplicit, targetExplicit)) {
-      blockers.push({
-        code: `${dimension}_mismatch`,
-        source: [...sourceExplicit],
-        target: [...targetExplicit],
-      });
+  if (sourceExplicit.size === 0 && targetExplicit.size === 0) {
+    if (sourceUnmarked && targetUnmarked) return;
+    needsContext.push({ code: `${dimension}_unknown`, source: [...sourceValues], target: [...targetValues] });
+    return;
+  }
+
+  if (sourceExplicit.size === 0 || targetExplicit.size === 0) {
+    needsContext.push({
+      code: `${dimension}_asymmetry`,
+      source: [...sourceValues],
+      target: [...targetValues],
+    });
+    return;
+  }
+
+  if (!setEquals(sourceExplicit, targetExplicit)) {
+    blockers.push({
+      code: `${dimension}_mismatch`,
+      source: [...sourceExplicit].sort(),
+      target: [...targetExplicit].sort(),
+    });
+  }
+}
+
+/**
+ * Form-level speech morphology is a separate gate from lexical politeness.
+ * Missing morphology on one side is not automatically semantic loss: another
+ * language may realize the same social choice constructionally or in context.
+ */
+function compareFormPoliteness(sourceAnalysis, targetAnalysis, blockers, needsContext) {
+  const source = analysisPoliteness(sourceAnalysis);
+  const target = analysisPoliteness(targetAnalysis);
+  if (source.size === 0 && target.size === 0) return;
+  if (source.size === 0 || target.size === 0) {
+    needsContext.push({ code: 'form_politeness_asymmetry', source: [...source], target: [...target] });
+    return;
+  }
+  if (!setEquals(source, target)) {
+    blockers.push({ code: 'form_politeness_mismatch', source: [...source], target: [...target] });
+  }
+}
+
+function checkGeography(profile, side, region, variety, blockers, needsContext) {
+  if (profile.regionKind === 'unknown') {
+    needsContext.push({ code: `${side}_region_scope_unknown` });
+  } else if (profile.regionKind === 'restricted') {
+    if (!region) {
+      needsContext.push({ code: `${side}_region_required`, allowed: [...profile.regions].sort() });
+    } else if (!profile.regions.has(region)) {
+      blockers.push({ code: `${side}_region_mismatch`, requested: region, allowed: [...profile.regions].sort() });
+    }
+  }
+
+  if (profile.varieties.size > 0) {
+    if (!variety) {
+      needsContext.push({ code: `${side}_variety_required`, allowed: [...profile.varieties].sort() });
+    } else if (!profile.varieties.has(variety)) {
+      blockers.push({ code: `${side}_variety_mismatch`, requested: variety, allowed: [...profile.varieties].sort() });
+    }
+  }
+}
+
+function checkAddressUse(source, target, occurrenceAddressUse, blockers, needsContext) {
+  if (source.addressUse === 'unknown' || target.addressUse === 'unknown') {
+    needsContext.push({ code: 'address_reference_unknown', source: source.addressUse, target: target.addressUse });
+    return;
+  }
+
+  if (occurrenceAddressUse) {
+    for (const [side, value] of [['source', source.addressUse], ['target', target.addressUse]]) {
+      if (value !== 'both' && value !== occurrenceAddressUse) {
+        blockers.push({ code: `${side}_address_occurrence_mismatch`, occurrence: occurrenceAddressUse, allowed: value });
+      }
     }
     return;
   }
 
-  if (sourceExplicit.size === 0 && targetExplicit.size === 0) return;
+  if (source.addressUse === target.addressUse) return;
+  if (source.addressUse === 'both' || target.addressUse === 'both') {
+    needsContext.push({ code: 'address_reference_context_required', source: source.addressUse, target: target.addressUse });
+    return;
+  }
+  blockers.push({ code: 'address_reference_mismatch', source: source.addressUse, target: target.addressUse });
+}
 
-  needsContext.push({
-    code: `${dimension}_asymmetry`,
-    source: [...sourceValues],
-    target: [...targetValues],
-  });
+function checkSocialRelations(source, target, occurrenceTags, blockers, needsContext) {
+  const occurrence = set(occurrenceTags);
+  if (occurrence.size > 0) {
+    for (const [side, required] of [['source', source.socialRelationTags], ['target', target.socialRelationTags]]) {
+      if (!isSubset(required, occurrence)) {
+        blockers.push({
+          code: `${side}_social_relation_context_mismatch`,
+          required: [...required].sort(),
+          occurrence: [...occurrence].sort(),
+        });
+      }
+    }
+    return;
+  }
+
+  const sourceTags = source.socialRelationTags;
+  const targetTags = target.socialRelationTags;
+  if (sourceTags.size === 0 && targetTags.size === 0) return;
+  if (sourceTags.size === 0 || targetTags.size === 0) {
+    needsContext.push({
+      code: 'social_relation_asymmetry',
+      source: [...sourceTags].sort(),
+      target: [...targetTags].sort(),
+    });
+    return;
+  }
+  if (!setEquals(sourceTags, targetTags)) {
+    blockers.push({
+      code: 'social_relation_mismatch',
+      source: [...sourceTags].sort(),
+      target: [...targetTags].sort(),
+    });
+  }
 }
 
 export function compareUsageCompatibility(
@@ -104,8 +209,12 @@ export function compareUsageCompatibility(
   {
     sourceAnalysis = null,
     targetAnalysis = null,
+    sourceRegion = null,
+    sourceVariety = null,
     targetRegion = null,
     targetVariety = null,
+    occurrenceAddressUse = null,
+    occurrenceSocialRelationTags = [],
     requireApprovedProfiles = false,
   } = {},
 ) {
@@ -123,113 +232,21 @@ export function compareUsageCompatibility(
     }
   }
 
-  // `neutral` is explicit register evidence, not the same thing as unknown.
-  // Therefore neutral -> familiar is a mismatch, not a mere context request.
-  compareDimension({
-    dimension: 'register',
-    sourceValues: source.register,
-    targetValues: target.register,
-    blockers,
-    needsContext,
-  });
+  compareSemanticSet({ dimension: 'register', sourceValues: source.register, targetValues: target.register, blockers, needsContext });
+  compareSemanticSet({ dimension: 'lexical_politeness', sourceValues: source.lexicalPoliteness, targetValues: target.lexicalPoliteness, blockers, needsContext });
+  compareFormPoliteness(sourceAnalysis, targetAnalysis, blockers, needsContext);
+  compareSemanticSet({ dimension: 'stance', sourceValues: source.stance, targetValues: target.stance, blockers, needsContext });
 
-  const sourcePoliteness = new Set([...source.politeness, ...analysisPoliteness(sourceAnalysis)]);
-  const targetPoliteness = new Set([...target.politeness, ...analysisPoliteness(targetAnalysis)]);
-  compareDimension({
-    dimension: 'politeness',
-    sourceValues: sourcePoliteness,
-    targetValues: targetPoliteness,
-    blockers,
-    needsContext,
-  });
-
-  compareDimension({
-    dimension: 'stance',
-    sourceValues: source.stance,
-    targetValues: target.stance,
-    blockers,
-    needsContext,
-  });
-
-  if (
-    source.tabooLevel !== 'unknown'
-    && target.tabooLevel !== 'unknown'
-    && source.tabooLevel !== target.tabooLevel
-  ) {
-    blockers.push({
-      code: 'taboo_level_mismatch',
-      source: source.tabooLevel,
-      target: target.tabooLevel,
-    });
-  } else if (source.tabooLevel === 'unknown' || target.tabooLevel === 'unknown') {
-    needsContext.push({
-      code: 'taboo_level_unknown',
-      source: source.tabooLevel,
-      target: target.tabooLevel,
-    });
+  if (source.tabooLevel === 'unknown' || target.tabooLevel === 'unknown') {
+    needsContext.push({ code: 'taboo_level_unknown', source: source.tabooLevel, target: target.tabooLevel });
+  } else if (source.tabooLevel !== target.tabooLevel) {
+    blockers.push({ code: 'taboo_level_mismatch', source: source.tabooLevel, target: target.tabooLevel });
   }
 
-  if (
-    source.addressUse !== 'unknown'
-    && target.addressUse !== 'unknown'
-    && source.addressUse !== 'both'
-    && target.addressUse !== 'both'
-    && source.addressUse !== target.addressUse
-  ) {
-    blockers.push({
-      code: 'address_reference_mismatch',
-      source: source.addressUse,
-      target: target.addressUse,
-    });
-  } else if (source.addressUse === 'unknown' || target.addressUse === 'unknown') {
-    needsContext.push({
-      code: 'address_reference_unknown',
-      source: source.addressUse,
-      target: target.addressUse,
-    });
-  }
-
-  if (
-    source.socialRelationTags.size > 0
-    && target.socialRelationTags.size > 0
-    && !intersects(source.socialRelationTags, target.socialRelationTags)
-  ) {
-    blockers.push({
-      code: 'social_relation_mismatch',
-      source: [...source.socialRelationTags],
-      target: [...target.socialRelationTags],
-    });
-  } else if ((source.socialRelationTags.size > 0) !== (target.socialRelationTags.size > 0)) {
-    needsContext.push({
-      code: 'social_relation_asymmetry',
-      source: [...source.socialRelationTags],
-      target: [...target.socialRelationTags],
-    });
-  }
-
-  if (source.regionKind === 'unknown' || target.regionKind === 'unknown') {
-    needsContext.push({
-      code: 'region_scope_unknown',
-      source: source.regionKind,
-      target: target.regionKind,
-    });
-  }
-
-  if (target.regionKind === 'restricted') {
-    if (!targetRegion) {
-      needsContext.push({ code: 'target_region_required', allowed: [...target.regions] });
-    } else if (!target.regions.has(targetRegion)) {
-      blockers.push({ code: 'target_region_mismatch', requested: targetRegion, allowed: [...target.regions] });
-    }
-  }
-
-  if (target.varieties.size > 0) {
-    if (!targetVariety) {
-      needsContext.push({ code: 'target_variety_required', allowed: [...target.varieties] });
-    } else if (!target.varieties.has(targetVariety)) {
-      blockers.push({ code: 'target_variety_mismatch', requested: targetVariety, allowed: [...target.varieties] });
-    }
-  }
+  checkAddressUse(source, target, occurrenceAddressUse, blockers, needsContext);
+  checkSocialRelations(source, target, occurrenceSocialRelationTags, blockers, needsContext);
+  checkGeography(source, 'source', sourceRegion, sourceVariety, blockers, needsContext);
+  checkGeography(target, 'target', targetRegion, targetVariety, blockers, needsContext);
 
   if (source.source !== 'usage_profile' || target.source !== 'usage_profile') {
     warnings.push({
