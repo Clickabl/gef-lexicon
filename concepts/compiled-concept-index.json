@@ -1,7 +1,8 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "generated_from": "concepts/graph.json + languages/*/lexicon*.json",
   "semantic_pivot_policy": "senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks",
+  "usage_policy": "sense_links_by_language carries structured usage_profile metadata; semantic_pivot_ready never bypasses register, pragmatic, region/variety, morphology, or construction compatibility",
   "concepts": [
     {
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
@@ -43,6 +44,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/el/lexicon.json"
           }
         ],
@@ -53,6 +57,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/en/lexicon.json"
           }
         ],
@@ -63,6 +70,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/es/lexicon.json"
           }
         ],
@@ -73,6 +83,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/ja/lexicon.json"
           }
         ]
@@ -109,6 +122,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/en/lexicon.json"
           }
         ]
@@ -154,6 +170,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/el/lexicon.json"
           }
         ],
@@ -164,6 +183,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/en/lexicon.json"
           }
         ],
@@ -174,6 +196,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/es/lexicon.json"
           }
         ],
@@ -184,6 +209,9 @@
             "relation": "primary",
             "review_state": "candidate",
             "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
             "source_path": "languages/ja/lexicon.json"
           }
         ]
