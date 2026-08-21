@@ -40,15 +40,10 @@ function stableUuid(namespace) {
   const value = hex.join('');
   return `${value.slice(0, 8)}-${value.slice(8, 12)}-${value.slice(12, 16)}-${value.slice(16, 20)}-${value.slice(20)}`;
 }
-
-function normalizeWord(value) {
-  return typeof value === 'string' ? value.normalize('NFC').trim() : '';
-}
-function sourceIdentity(row) {
-  return String(row.page_id ?? row.source ?? row.word ?? '').normalize('NFC');
-}
+function normalizeWord(value) { return typeof value === 'string' ? value.normalize('NFC').trim() : ''; }
+function sourceIdentity(row) { return String(row.page_id ?? row.source ?? row.word ?? '').normalize('NFC'); }
 function sourceRevision(row) {
-  const candidate = row.revision_id ?? row.revision ?? row.etymology_number;
+  const candidate = row.revision_id ?? row.revision;
   return candidate === undefined || candidate === null ? undefined : String(candidate);
 }
 function posToUpos(pos) {
@@ -62,6 +57,14 @@ function relationWords(value) {
   if (!Array.isArray(value)) return [];
   return value.map((item) => typeof item === 'string' ? item : item?.word).filter((word) => typeof word === 'string' && word.trim()).map(normalizeWord);
 }
+function usableSenses(row) {
+  return (Array.isArray(row.senses) ? row.senses : []).map((sense, sourceIndex) => {
+    const glosses = Array.isArray(sense.glosses)
+      ? sense.glosses.filter((g) => typeof g === 'string' && g.trim()).map((g) => g.normalize('NFC').trim())
+      : [];
+    return { sense, sourceIndex, glosses };
+  }).filter((entry) => entry.glosses.length > 0);
+}
 
 const rows = [];
 const source = createInterface({ input: createReadStream(resolve(input), { encoding: 'utf8' }), crlfDelay: Infinity });
@@ -71,20 +74,18 @@ for await (const line of source) {
   try { row = JSON.parse(line); } catch { continue; }
   const langCode = String(row.lang_code ?? row.lang ?? '');
   if (langCode !== language) continue;
-  const word = normalizeWord(row.word);
-  if (!word) continue;
+  if (!normalizeWord(row.word) || usableSenses(row).length === 0) continue;
   rows.push(row);
 }
 
-// Build target lexeme IDs first so relation edges can use stable Gef IDs even
-// when the target entry occurs later in the dump.
 const lexemeIdsByWord = new Map();
 for (const row of rows) {
   const word = normalizeWord(row.word);
   const pos = String(row.pos ?? 'unknown');
-  const key = `${language}\u0000${word}\u0000${pos}`;
-  if (!lexemeIdsByWord.has(word)) lexemeIdsByWord.set(word, []);
-  lexemeIdsByWord.get(word).push({ pos, id: stableUuid(`kaikki:lexeme:${key}`) });
+  const id = stableUuid(`kaikki:lexeme:${language}:${word}:${pos}`);
+  const existing = lexemeIdsByWord.get(word) ?? [];
+  if (!existing.some((target) => target.id === id)) existing.push({ pos, id });
+  lexemeIdsByWord.set(word, existing);
 }
 
 const lexemes = [];
@@ -94,25 +95,17 @@ for (const row of rows) {
   const word = normalizeWord(row.word);
   const pos = String(row.pos ?? 'unknown');
   const lexemeId = stableUuid(`kaikki:lexeme:${language}:${word}:${pos}`);
-  const senses = Array.isArray(row.senses) && row.senses.length ? row.senses : [{ glosses: [] }];
   const importedSenses = [];
 
-  senses.forEach((sense, senseIndex) => {
-    const glosses = Array.isArray(sense.glosses) ? sense.glosses.filter((g) => typeof g === 'string' && g.trim()) : [];
-    const senseId = stableUuid(`kaikki:sense:${language}:${word}:${pos}:${senseIndex}:${glosses[0] ?? ''}`);
+  for (const { sense, sourceIndex, glosses } of usableSenses(row)) {
+    const senseId = stableUuid(`kaikki:sense:${language}:${word}:${pos}:${sourceIndex}:${glosses[0]}`);
     importedSenses.push({
       sense_id: senseId,
-      sense_key: `wiktionary-${word}-${pos}-${senseIndex + 1}`.replace(/\s+/gu, '-').toLowerCase(),
+      sense_key: `wiktionary-${word}-${pos}-${sourceIndex + 1}`.replace(/\s+/gu, '-').toLowerCase(),
       concept_links: [],
-      definitions: glosses.length ? { [language]: glosses[0].normalize('NFC') } : {},
-      sense_hint: glosses[1] ? { [language]: glosses[1].normalize('NFC') } : undefined,
+      definitions: { [language]: glosses[0] },
+      ...(glosses[1] ? { sense_hint: { [language]: glosses[1] } } : {}),
       register_label: 'imported-unreviewed',
-      usage_profile: {
-        register: ['unspecified'],
-        region_scope: { kind: 'unspecified', tags: [] },
-        pragmatics: { politeness: ['unspecified'], stance: ['unspecified'], taboo_level: 'unspecified', address_use: 'unspecified', social_relation_tags: [] },
-        review_state: 'candidate',
-      },
       source_refs: [`wiktionary:${sourceIdentity(row)}${sourceRevision(row) ? `@${sourceRevision(row)}` : ''}`],
     });
 
@@ -121,10 +114,10 @@ for (const row of rows) {
       for (const targetWord of relationWords(sense[key] ?? row[key])) {
         for (const target of lexemeIdsByWord.get(targetWord) ?? []) {
           const directed = ['hypernym', 'hyponym', 'derived_from'].includes(type);
-          const edgeParts = directed
-            ? [senseId, target.id]
-            : [senseId, target.id].sort();
-          const edgeKey = `${type}|sense:${edgeParts[0]}|lexeme:${edgeParts[1]}`;
+          const canonicalEndpoints = directed
+            ? [`sense:${senseId}`, `lexeme:${target.id}`]
+            : [`sense:${senseId}`, `lexeme:${target.id}`].sort();
+          const edgeKey = `${type}|${canonicalEndpoints.join('|')}`;
           if (relationKeys.has(edgeKey)) continue;
           relationKeys.add(edgeKey);
           relations.push({
@@ -144,7 +137,7 @@ for (const row of rows) {
         }
       }
     }
-  });
+  }
 
   lexemes.push({
     lexeme_id: lexemeId,
@@ -154,11 +147,10 @@ for (const row of rows) {
     proper_noun: posToUpos(pos) === 'PROPN',
     review_state: 'candidate',
     senses: importedSenses,
-    forms: [],
   });
 }
 
-const output = {
+writeFileSync(resolve(ROOT, outputArg), `${JSON.stringify({
   schema_version: 1,
   language_code: language,
   import_metadata: {
@@ -168,12 +160,10 @@ const output = {
     imported_entry_count: lexemes.length,
   },
   lexemes,
-};
-const relationOutput = {
+}, null, 2)}\n`, 'utf8');
+writeFileSync(resolve(ROOT, relationsArg), `${JSON.stringify({
   schema_version: 1,
   contract: 'gef-semantic-relation-graph-v1',
   relations,
-};
-writeFileSync(resolve(ROOT, outputArg), `${JSON.stringify(output, null, 2)}\n`, 'utf8');
-writeFileSync(resolve(ROOT, relationsArg), `${JSON.stringify(relationOutput, null, 2)}\n`, 'utf8');
+}, null, 2)}\n`, 'utf8');
 console.log(`✅ Imported ${lexemes.length} candidate lexemes and ${relations.length} non-translation relations for ${language}.`);
