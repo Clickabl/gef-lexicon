@@ -27,11 +27,17 @@ function findSense(document, senseId) {
 
 function main() {
   const compiled = readJson(join(ROOT, 'concepts', 'compiled-concept-index.json'));
-  assert(compiled.schema_version === 4, 'compiled concept index must use schema_version 4');
+  assert(compiled.schema_version === 5, 'compiled concept index must use schema_version 5');
   assert(
     typeof compiled.semantic_pivot_policy === 'string'
       && compiled.semantic_pivot_policy.includes('final translation requires contextual compatibility'),
     'compiled index must state that semantic pivot membership is not a complete translation guarantee',
+  );
+  assert(
+    typeof compiled.usage_policy === 'string'
+      && compiled.usage_policy.includes('register')
+      && compiled.usage_policy.includes('region/variety'),
+    'compiled index must preserve the structured usage compatibility contract',
   );
 
   for (const concept of compiled.concepts ?? []) {
@@ -52,6 +58,17 @@ function main() {
           )),
           `${concept.concept_id}/${languageTag}/${senseId} is in approved pivot view without an approved exact primary link`,
         );
+      }
+    }
+
+    for (const links of Object.values(concept.sense_links_by_language ?? {})) {
+      for (const link of links) {
+        assert(Object.hasOwn(link, 'usage_profile'), `${link.sense_id} compiled link is missing usage_profile`);
+        assert(Object.hasOwn(link, 'usage_profile_ready'), `${link.sense_id} compiled link is missing usage_profile_ready`);
+        assert(Object.hasOwn(link, 'legacy_register_label'), `${link.sense_id} compiled link is missing legacy_register_label`);
+        if (link.usage_profile_ready) {
+          assert(link.usage_profile?.review_state === 'approved', `${link.sense_id} usage_profile_ready without approved profile`);
+        }
       }
     }
 
@@ -126,7 +143,7 @@ function main() {
   );
 
   console.log(
-    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval and still do not claim final surface-level equivalence.',
+    '✅ Sense-link graph test passed: semantic pivots require hierarchical approval, carry usage metadata, and still do not claim final surface-level equivalence.',
   );
 }
 
