@@ -11,7 +11,10 @@ import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
-import { normalizeSenseConceptLinks } from './lib/concept-links.mjs';
+import {
+  normalizeSenseConceptLinks,
+  translationReadySenseConceptLinks,
+} from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LEXICON_RE = /^lexicon(?:-[a-z0-9-]+)?\.json$/iu;
@@ -43,7 +46,7 @@ function overlayLexiconSources() {
   const worksRoot = join(ROOT, 'works');
   const sources = [];
   for (const workId of listDirs(worksRoot)) {
-    const lexiconDir = join(worksRoot, workId, 'lexicon');
+    const lexiconDir = join(ROOT, 'works', workId, 'lexicon');
     if (!existsSync(lexiconDir)) continue;
     for (const filename of readdirSync(lexiconDir).filter((entry) => entry.endsWith('.json')).sort()) {
       sources.push({ languageTag: filename.slice(0, -5), path: join(lexiconDir, filename) });
@@ -56,7 +59,6 @@ function main() {
   const conceptManifestPath = join(ROOT, 'concepts', 'graph.json');
   if (!existsSync(conceptManifestPath)) throw new Error('Missing concepts/graph.json.');
   const conceptManifest = readJson(conceptManifestPath);
-  const concepts = new Set((conceptManifest.concepts ?? []).map((concept) => concept.concept_id));
 
   const sourcesPath = join(ROOT, 'sources', 'bibliography.json');
   const sourceIds = existsSync(sourcesPath)
@@ -64,6 +66,7 @@ function main() {
     : new Set();
 
   const ajv = new Ajv({ allErrors: true, strict: false });
+  const validateConcepts = ajv.compile(readJson(join(ROOT, 'schemas', 'concept.schema.json')));
   const validateLexicon = ajv.compile(readJson(join(ROOT, 'schemas', 'lexicon-entry.schema.json')));
 
   let errors = 0;
@@ -71,6 +74,7 @@ function main() {
   let senses = 0;
   let links = 0;
   let primaryLinks = 0;
+  let translationReadyPrimaryLinks = 0;
   let legacyOnly = 0;
   let explicitLinkedSenses = 0;
 
@@ -78,6 +82,32 @@ function main() {
     console.error(`❌ ${message}`);
     errors += 1;
   };
+
+  if (!validateConcepts(conceptManifest)) {
+    fail(`concepts/graph.json: schema error ${JSON.stringify(validateConcepts.errors)}`);
+  }
+
+  const conceptsById = new Map();
+  for (const concept of conceptManifest.concepts ?? []) {
+    if (conceptsById.has(concept.concept_id)) {
+      fail(`concepts/graph.json: duplicate concept_id ${concept.concept_id}`);
+      continue;
+    }
+    conceptsById.set(concept.concept_id, concept);
+
+    if (concept.translation_role === 'exact_pivot') {
+      const contract = concept.semantic_contract;
+      if (!contract?.definition_en?.trim()) {
+        fail(`${concept.concept_id}: exact_pivot is missing semantic_contract.definition_en`);
+      }
+      if (!Array.isArray(contract?.must_preserve) || contract.must_preserve.length === 0) {
+        fail(`${concept.concept_id}: exact_pivot must declare at least one must_preserve invariant`);
+      }
+      if (!Array.isArray(contract?.must_not_imply)) {
+        fail(`${concept.concept_id}: exact_pivot must declare must_not_imply, even when empty`);
+      }
+    }
+  }
 
   for (const { languageTag, path } of [...languageLexiconSources(), ...overlayLexiconSources()]) {
     const rel = relative(ROOT, path).replaceAll('\\', '/');
@@ -110,14 +140,41 @@ function main() {
 
         for (const link of normalized) {
           links += 1;
-          if (link.relation === 'primary') primaryLinks += 1;
-          if (!concepts.has(link.concept_id)) {
+          const concept = conceptsById.get(link.concept_id);
+          if (!concept) {
             fail(`${rel}:${sense.sense_id}: concept '${link.concept_id}' does not exist in concepts/graph.json`);
+            continue;
           }
+
+          if (link.relation === 'primary') {
+            primaryLinks += 1;
+            if (concept.translation_role !== 'exact_pivot') {
+              fail(
+                `${rel}:${sense.sense_id}: primary translation link points to ${link.concept_id}, `
+                + `but that concept is '${concept.translation_role ?? 'unclassified'}' rather than exact_pivot`,
+              );
+            }
+          }
+
           for (const sourceId of link.source_refs ?? []) {
             if (!sourceIds.has(sourceId)) {
               fail(`${rel}:${sense.sense_id}: concept link source '${sourceId}' does not exist in sources/bibliography.json`);
             }
+          }
+        }
+
+        let ready;
+        try {
+          ready = translationReadySenseConceptLinks(sense, lexeme.review_state ?? 'candidate');
+        } catch (error) {
+          fail(`${rel}:${sense.sense_id}: ${error.message}`);
+          continue;
+        }
+        for (const link of ready) {
+          translationReadyPrimaryLinks += 1;
+          const concept = conceptsById.get(link.concept_id);
+          if (concept?.translation_role !== 'exact_pivot') {
+            fail(`${rel}:${sense.sense_id}: translation-ready link uses a non-exact concept ${link.concept_id}`);
           }
         }
       }
@@ -129,6 +186,7 @@ function main() {
   console.log(`  Senses: ${senses}`);
   console.log(`  Materialized concept links: ${links}`);
   console.log(`  Primary links: ${primaryLinks}`);
+  console.log(`  Translation-ready approved primary links: ${translationReadyPrimaryLinks}`);
   console.log(`  Explicitly linked senses: ${explicitLinkedSenses}`);
   console.log(`  Legacy scalar-only senses: ${legacyOnly}`);
 
