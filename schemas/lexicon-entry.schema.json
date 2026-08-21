@@ -70,24 +70,7 @@
           "uniqueItems": true,
           "items": {
             "type": "string",
-            "enum": [
-              "neutral",
-              "informal",
-              "familiar",
-              "colloquial",
-              "formal",
-              "ceremonial",
-              "literary",
-              "poetic",
-              "technical",
-              "archaic",
-              "dated",
-              "slang",
-              "vulgar",
-              "taboo",
-              "euphemistic",
-              "child_directed"
-            ]
+            "enum": ["neutral", "informal", "familiar", "colloquial", "formal", "ceremonial", "literary", "poetic", "technical", "archaic", "dated", "slang", "vulgar", "taboo", "euphemistic", "child_directed"]
           },
           "description": "Lexical/register marking of the sense itself. Explicit neutral is real evidence, not the same as unknown. Morphological speech level still belongs on form analyses."
         },
@@ -97,59 +80,24 @@
           "required": ["kind", "tags"],
           "properties": {
             "kind": {"type": "string", "enum": ["general", "restricted", "unknown"]},
-            "tags": {
-              "type": "array",
-              "uniqueItems": true,
-              "items": {"type": "string", "minLength": 1},
-              "description": "BCP-47 language/region tags or documented project variety IDs when scope is restricted."
-            }
+            "tags": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}, "description": "BCP-47 language/region tags or documented project variety IDs when scope is restricted."}
           },
           "allOf": [
-            {
-              "if": {"properties": {"kind": {"const": "restricted"}}},
-              "then": {"properties": {"tags": {"minItems": 1}}}
-            },
-            {
-              "if": {"properties": {"kind": {"enum": ["general", "unknown"]}}},
-              "then": {"properties": {"tags": {"maxItems": 0}}}
-            }
+            {"if": {"properties": {"kind": {"const": "restricted"}}}, "then": {"properties": {"tags": {"minItems": 1}}}},
+            {"if": {"properties": {"kind": {"enum": ["general", "unknown"]}}}, "then": {"properties": {"tags": {"maxItems": 0}}}}
           ]
         },
-        "varieties": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {"type": "string", "minLength": 1},
-          "description": "Optional language-internal variety/dialect identifiers. These constrain candidate selection without creating a new interlingual concept."
-        },
+        "varieties": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}, "description": "Optional language-internal variety/dialect identifiers. These constrain candidate selection without creating a new interlingual concept."},
         "pragmatics": {
           "type": "object",
           "additionalProperties": false,
           "required": ["politeness", "stance", "taboo_level", "address_use", "social_relation_tags"],
           "properties": {
-            "politeness": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "items": {"type": "string", "enum": ["unmarked", "plain", "polite", "formal", "honorific", "humble"]},
-              "description": "Use unmarked explicitly when the sense itself carries no required speech-level choice. Form analyses may add a concrete morphological politeness value."
-            },
-            "stance": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "items": {
-                "type": "string",
-                "enum": ["unmarked", "neutral", "respectful", "deferential", "familiar", "intimate", "affectionate", "derogatory", "self_deprecating"]
-              }
-            },
+            "politeness": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "enum": ["unmarked", "plain", "polite", "formal", "honorific", "humble"]}, "description": "Use unmarked explicitly when the sense itself carries no required speech-level choice. Form analyses may add a concrete morphological politeness value."},
+            "stance": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "enum": ["unmarked", "neutral", "respectful", "deferential", "familiar", "intimate", "affectionate", "derogatory", "self_deprecating"]}},
             "taboo_level": {"type": "string", "enum": ["none", "sensitive", "vulgar", "slur", "unknown"]},
             "address_use": {"type": "string", "enum": ["both", "address", "reference", "unknown"]},
-            "social_relation_tags": {
-              "type": "array",
-              "uniqueItems": true,
-              "items": {"type": "string", "minLength": 1},
-              "description": "Project-controlled social-relation constraints where a language lexicalizes speaker/addressee relationship. Use an empty array when no special relation is encoded."
-            }
+            "social_relation_tags": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}, "description": "Project-controlled social-relation constraints where a language lexicalizes speaker/addressee relationship. Use an empty array when no special relation is encoded."}
           }
         },
         "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
@@ -160,30 +108,27 @@
       "type": "object",
       "required": ["concept_id", "relation"],
       "properties": {
-        "concept_id": {
-          "type": "string",
-          "pattern": "^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-        },
-        "relation": {
-          "type": "string",
-          "enum": ["primary", "broader", "narrower", "related"]
-        },
-        "review_state": {
-          "type": "string",
-          "enum": ["candidate", "approved", "superseded", "rejected"]
-        },
+        "concept_id": {"type": "string", "pattern": "^cpt_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+        "relation": {"type": "string", "enum": ["primary", "broader", "narrower", "related"]},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
         "note": {"type": "string"},
         "source_refs": {"type": "array", "items": {"type": "string"}}
       }
     },
     "typedRelation": {
-      "type": "object",
-      "required": ["target_id", "target_type"],
-      "properties": {
-        "target_id": {"type": "string"},
-        "target_type": {"type": "string", "enum": ["sense", "lexeme", "form", "expression", "concept"]},
-        "note": {"type": "string"}
-      }
+      "description": "Typed object is canonical. A bare string target ID is a deprecated candidate-era compatibility shape and carries no translation authority; new data must use the object form or the dedicated semantic relation graph.",
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["target_id", "target_type"],
+          "properties": {
+            "target_id": {"type": "string"},
+            "target_type": {"type": "string", "enum": ["sense", "lexeme", "form", "expression", "concept"]},
+            "note": {"type": "string"}
+          }
+        },
+        {"type": "string", "minLength": 1}
+      ]
     },
     "wordForm": {
       "type": "object",
@@ -208,25 +153,11 @@
             "base": {
               "type": "object",
               "properties": {
-                "tense": {"type": "string"},
-                "aspect": {"type": "string"},
-                "mood": {"type": "string"},
-                "voice": {"type": "string"},
-                "person": {"type": "string"},
-                "number": {"type": "string"},
-                "gender": {"type": "string"},
-                "case": {"type": "string"},
-                "degree": {"type": "string"},
-                "definiteness": {"type": "string"},
-                "non_finite": {"type": "string"},
-                "politeness": {"type": "string", "enum": ["plain", "polite", "formal", "honorific", "humble"]}
+                "tense": {"type": "string"}, "aspect": {"type": "string"}, "mood": {"type": "string"}, "voice": {"type": "string"}, "person": {"type": "string"}, "number": {"type": "string"}, "gender": {"type": "string"}, "case": {"type": "string"}, "degree": {"type": "string"}, "definiteness": {"type": "string"}, "non_finite": {"type": "string"}, "politeness": {"type": "string", "enum": ["plain", "polite", "formal", "honorific", "humble"]}
               },
               "additionalProperties": {"type": "string"}
             },
-            "possessor": {"type": "object", "additionalProperties": {"type": "string"}},
-            "subject": {"type": "object", "additionalProperties": {"type": "string"}},
-            "object": {"type": "object", "additionalProperties": {"type": "string"}},
-            "clitic": {"type": "object", "additionalProperties": {"type": "string"}}
+            "possessor": {"type": "object", "additionalProperties": {"type": "string"}}, "subject": {"type": "object", "additionalProperties": {"type": "string"}}, "object": {"type": "object", "additionalProperties": {"type": "string"}}, "clitic": {"type": "object", "additionalProperties": {"type": "string"}}
           },
           "additionalProperties": {"type": "object"}
         },
@@ -237,11 +168,7 @@
     "pronunciation": {
       "type": "object",
       "required": ["ipa"],
-      "properties": {
-        "ipa": {"type": "string", "minLength": 1},
-        "locale": {"type": "string"},
-        "notation": {"type": "string", "enum": ["phonemic", "phonetic"]}
-      }
+      "properties": {"ipa": {"type": "string", "minLength": 1}, "locale": {"type": "string"}, "notation": {"type": "string", "enum": ["phonemic", "phonetic"]}}
     }
   }
 }
