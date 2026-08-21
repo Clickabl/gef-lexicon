@@ -11,7 +11,14 @@ function sense(register, pragmatics = {}, regionScope = { kind: 'general', tags:
       register,
       region_scope: regionScope,
       varieties,
-      pragmatics,
+      pragmatics: {
+        politeness: ['unmarked'],
+        stance: ['unmarked'],
+        taboo_level: 'none',
+        address_use: 'both',
+        social_relation_tags: [],
+        ...pragmatics,
+      },
       review_state: 'approved',
     },
   };
@@ -23,9 +30,9 @@ function analysis(politeness) {
     : { features: { base: {} } };
 }
 
-const neutralMother = sense(['neutral'], { taboo_level: 'none', address_use: 'both' });
-const familiarMom = sense(['familiar'], { taboo_level: 'none', address_use: 'both' });
-const neutralMadre = sense(['neutral'], { taboo_level: 'none', address_use: 'both' });
+const neutralMother = sense(['neutral']);
+const familiarMom = sense(['familiar']);
+const neutralMadre = sense(['neutral']);
 
 let result = compareUsageCompatibility(neutralMother, neutralMadre, { requireApprovedProfiles: true });
 assert(result.status === 'compatible', `neutral mother -> neutral madre should be compatible, got ${result.status}`);
@@ -34,7 +41,7 @@ result = compareUsageCompatibility(neutralMother, familiarMom, { requireApproved
 assert(result.status === 'blocked', `neutral mother -> familiar mom should be blocked, got ${result.status}`);
 assert(result.blockers.some((item) => item.code === 'register_mismatch'), 'expected register_mismatch');
 
-const japaneseNeutral = sense(['neutral'], { taboo_level: 'none', address_use: 'both' });
+const japaneseNeutral = sense(['neutral']);
 result = compareUsageCompatibility(
   neutralMother,
   japaneseNeutral,
@@ -64,7 +71,7 @@ assert(result.blockers.some((item) => item.code === 'politeness_mismatch'), 'exp
 
 const regionalTarget = sense(
   ['neutral'],
-  { taboo_level: 'none', address_use: 'both' },
+  {},
   { kind: 'restricted', tags: ['es-MX'] },
   ['mexican-standard'],
 );
@@ -80,10 +87,10 @@ assert(result.status === 'blocked', 'wrong region/variety should block target ca
 assert(result.blockers.some((item) => item.code === 'target_region_mismatch'), 'expected target_region_mismatch');
 assert(result.blockers.some((item) => item.code === 'target_variety_mismatch'), 'expected target_variety_mismatch');
 
-const taboo = sense(['taboo'], { taboo_level: 'vulgar', address_use: 'both' });
-const euphemism = sense(['euphemistic'], { taboo_level: 'sensitive', address_use: 'both' });
+const taboo = sense(['taboo'], { taboo_level: 'vulgar' });
+const euphemism = sense(['euphemistic'], { taboo_level: 'sensitive' });
 result = compareUsageCompatibility(taboo, euphemism, { requireApprovedProfiles: true });
 assert(result.status === 'blocked', 'taboo/vulgar -> euphemistic/sensitive should not be exact');
 assert(result.blockers.some((item) => item.code === 'taboo_level_mismatch'), 'expected taboo_level_mismatch');
 
-console.log('✅ Usage compatibility tests passed: register, politeness, region/variety, and taboo/social gates behave conservatively.');
+console.log('✅ Usage compatibility tests passed: explicit neutral, unmarked politeness, region/variety, and taboo/social gates behave conservatively.');
