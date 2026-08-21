@@ -32,7 +32,7 @@ const PRODUCTION = process.argv.includes('--production');
 const LANGUAGE_ARG = process.argv.find((value) => value.startsWith('--language='));
 const ONLY_LANGUAGE = LANGUAGE_ARG?.slice('--language='.length).trim() || null;
 const FORMAT_VERSION = 2;
-const FIELD_POLICY_VERSION = 2;
+const FIELD_POLICY_VERSION = 3;
 
 const FAST_FIELDS = Object.freeze({
   lexeme: [
@@ -52,6 +52,7 @@ const FAST_FIELDS = Object.freeze({
     'primary_concept_id',
     'cefr_level',
     'register_label',
+    'usage_profile_json',
     'review_state',
     'learner_gloss_json',
     'definitions_json',
@@ -192,6 +193,7 @@ function initDatabase(path) {
       primary_concept_id TEXT,
       cefr_level TEXT,
       register_label TEXT,
+      usage_profile_json TEXT NOT NULL,
       review_state TEXT NOT NULL,
       learner_gloss_json TEXT NOT NULL,
       definitions_json TEXT NOT NULL,
@@ -262,8 +264,8 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
   const insertSense = db.prepare(`
     INSERT INTO senses (
       sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level,
-      register_label, review_state, learner_gloss_json, definitions_json, deep_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      register_label, usage_profile_json, review_state, learner_gloss_json, definitions_json, deep_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertSenseConcept = db.prepare(`
     INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
@@ -346,6 +348,7 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
           primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
+          stableJson(sense.usage_profile ?? null),
           reviewState,
           stableJson(gloss),
           stableJson(definitions),
