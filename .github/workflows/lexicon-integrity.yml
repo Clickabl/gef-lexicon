@@ -3,7 +3,7 @@ name: Lexicon integrity
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, senses]
 
 jobs:
   validate:
