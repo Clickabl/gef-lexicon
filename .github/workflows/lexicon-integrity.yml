@@ -79,14 +79,7 @@ jobs:
       - name: Regenerate concept index
         run: npm run compile:concepts
       - name: Require generated concept index to be current
-        shell: bash
-        run: |
-          if ! git diff --exit-code -- concepts/compiled-concept-index.json; then
-            echo '---BEGIN REGENERATED CONCEPT INDEX---'
-            cat concepts/compiled-concept-index.json
-            echo '---END REGENERATED CONCEPT INDEX---'
-            exit 1
-          fi
+        run: git diff --exit-code -- concepts/compiled-concept-index.json
       - name: Test multilingual sense-link traversal
         run: npm run test:sense-links
       - name: Test translation usage compatibility gate
