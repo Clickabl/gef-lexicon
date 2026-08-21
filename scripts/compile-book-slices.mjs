@@ -31,6 +31,7 @@ import {
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
+import { activeSenseConceptLinks } from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LANGUAGES_DIR = join(ROOT, 'languages');
@@ -43,6 +44,7 @@ const CONTENT_ROOT = CONTENT_ARG ? resolve(CONTENT_ARG.slice('--content-root='.l
 const ONLY_WORK = WORK_ARG?.slice('--work='.length).trim() || null;
 const ONLY_LANGUAGE = LANGUAGE_ARG?.slice('--language='.length).trim() || null;
 const FORMAT_VERSION = 2;
+const SENSE_LINK_EXTENSION_VERSION = 1;
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
@@ -296,6 +298,16 @@ function initDatabase(path) {
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id) ON DELETE CASCADE
     );
 
+    CREATE TABLE sense_concepts (
+      sense_id TEXT NOT NULL,
+      concept_id TEXT NOT NULL,
+      relation TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      metadata_json TEXT NOT NULL,
+      PRIMARY KEY(sense_id, concept_id, relation),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id) ON DELETE CASCADE
+    );
+
     CREATE TABLE forms (
       form_id TEXT PRIMARY KEY,
       lexeme_id TEXT NOT NULL,
@@ -333,6 +345,8 @@ function initDatabase(path) {
 
     CREATE INDEX forms_lookup_idx ON forms(normalized_lookup);
     CREATE INDEX senses_lexeme_idx ON senses(lexeme_id);
+    CREATE INDEX sense_concepts_sense_idx ON sense_concepts(sense_id, relation);
+    CREATE INDEX sense_concepts_concept_idx ON sense_concepts(concept_id, relation);
     CREATE INDEX relation_source_idx ON relation_stubs(source_sense_id);
   `);
   return db;
@@ -350,6 +364,10 @@ function insertSlice(db, args) {
       sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label,
       review_state, learner_gloss_json, definitions_json, deep_json, annotation_count
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertSenseConcept = db.prepare(`
+    INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
+    VALUES (?, ?, ?, ?, ?)
   `);
   const insertForm = db.prepare(`
     INSERT INTO forms (form_id, lexeme_id, surface_nfc, normalized_lookup, attested_in_text)
@@ -371,6 +389,7 @@ function insertSlice(db, args) {
 
   db.transaction(() => {
     metadata.run('format_version', String(FORMAT_VERSION));
+    metadata.run('sense_link_extension_version', String(SENSE_LINK_EXTENSION_VERSION));
     metadata.run('package_type', 'gef-book-lexicon-slice');
     metadata.run('package_version', packageVersion);
     metadata.run('work_id', workId);
@@ -391,18 +410,21 @@ function insertSlice(db, args) {
 
       for (const sense of senses) {
         const reviewState = sense.review_state ?? lexeme.review_state ?? 'candidate';
+        const conceptLinks = activeSenseConceptLinks(sense, reviewState)
+          .filter((link) => includedReviewState(link.review_state));
+        const primaryConceptId = conceptLinks.find((link) => link.relation === 'primary')?.concept_id ?? null;
         insertSense.run(
           sense.sense_id,
           lexeme.lexeme_id,
           sense.sense_key ?? null,
-          sense.primary_concept_id ?? null,
+          primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
           reviewState,
           stableJson(sense.learner_gloss ?? sense.sense_hint ?? {}),
           stableJson(sense.definitions ?? {}),
           stableJson({
-            concept_links: sense.concept_links ?? [],
+            concept_links: conceptLinks,
             safety: sense.safety ?? null,
             provenance: sense.provenance ?? [],
             status: sense.status ?? 'active',
@@ -410,6 +432,20 @@ function insertSlice(db, args) {
           }),
           senseReferences.get(sense.sense_id) ?? 0,
         );
+
+        for (const link of conceptLinks) {
+          insertSenseConcept.run(
+            sense.sense_id,
+            link.concept_id,
+            link.relation,
+            link.review_state,
+            stableJson({
+              note: link.note ?? null,
+              source_refs: link.source_refs ?? [],
+              compatibility_source: link.compatibility_source ?? null,
+            }),
+          );
+        }
 
         for (const candidate of relationCandidates(sense)) {
           const targetId = relationTargetId(candidate.value);
@@ -506,6 +542,7 @@ function compileSlice(workId, languageTag, linguisticPath) {
   ];
   const identityPayload = stableJson({
     formatVersion: FORMAT_VERSION,
+    senseLinkExtensionVersion: SENSE_LINK_EXTENSION_VERSION,
     buildMode: PRODUCTION ? 'production' : 'development',
     workId,
     languageTag,
@@ -530,6 +567,7 @@ function compileSlice(workId, languageTag, linguisticPath) {
   validateDatabase(db, `${workId}/${languageTag} slice`);
   const counts = {
     referencedSenses: tableCount(db, 'senses'),
+    conceptLinks: tableCount(db, 'sense_concepts'),
     lexemes: tableCount(db, 'lexemes'),
     forms: tableCount(db, 'forms'),
     analyses: tableCount(db, 'analyses'),
@@ -541,6 +579,7 @@ function compileSlice(workId, languageTag, linguisticPath) {
 
   const manifest = {
     formatVersion: FORMAT_VERSION,
+    senseLinkExtensionVersion: SENSE_LINK_EXTENSION_VERSION,
     packageType: 'gef-book-lexicon-slice',
     packageId: `gef.book.${workId}.${languageTag}.lexicon`,
     packageVersion,
@@ -563,7 +602,10 @@ function compileSlice(workId, languageTag, linguisticPath) {
     },
   };
   writeFileSync(join(outputDir, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
-  console.log(`📚 ${workId}/${languageTag}: ${packageVersion} (${counts.referencedSenses} exact senses, ${counts.fallbackSurfaces} fallback surfaces)`);
+  console.log(
+    `📚 ${workId}/${languageTag}: ${packageVersion} `
+    + `(${counts.referencedSenses} exact senses, ${counts.conceptLinks} concept links, ${counts.fallbackSurfaces} fallback surfaces)`,
+  );
 }
 
 function main() {
