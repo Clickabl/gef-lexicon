@@ -44,7 +44,7 @@ const CONTENT_ROOT = CONTENT_ARG ? resolve(CONTENT_ARG.slice('--content-root='.l
 const ONLY_WORK = WORK_ARG?.slice('--work='.length).trim() || null;
 const ONLY_LANGUAGE = LANGUAGE_ARG?.slice('--language='.length).trim() || null;
 const FORMAT_VERSION = 2;
-const SENSE_LINK_EXTENSION_VERSION = 1;
+const SENSE_LINK_EXTENSION_VERSION = 2;
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');
@@ -290,6 +290,7 @@ function initDatabase(path) {
       primary_concept_id TEXT,
       cefr_level TEXT,
       register_label TEXT,
+      usage_profile_json TEXT NOT NULL,
       review_state TEXT NOT NULL,
       learner_gloss_json TEXT NOT NULL,
       definitions_json TEXT NOT NULL,
@@ -362,8 +363,8 @@ function insertSlice(db, args) {
   const insertSense = db.prepare(`
     INSERT INTO senses (
       sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level, register_label,
-      review_state, learner_gloss_json, definitions_json, deep_json, annotation_count
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      usage_profile_json, review_state, learner_gloss_json, definitions_json, deep_json, annotation_count
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertSenseConcept = db.prepare(`
     INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
@@ -420,6 +421,7 @@ function insertSlice(db, args) {
           primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
+          stableJson(sense.usage_profile ?? null),
           reviewState,
           stableJson(sense.learner_gloss ?? sense.sense_hint ?? {}),
           stableJson(sense.definitions ?? {}),
