@@ -30,6 +30,8 @@ jobs:
           fi
       - name: Validate multilingual sense/concept links
         run: npm run validate:sense-links
+      - name: Validate structured usage profiles
+        run: npm run validate:usage-profiles
       - name: Validate curriculum taxonomy
         shell: bash
         run: |
