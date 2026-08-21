@@ -23,6 +23,7 @@ import {
 import { dirname, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
+import { activeSenseConceptLinks } from './lib/concept-links.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const LANGUAGES_DIR = join(ROOT, 'languages');
@@ -31,7 +32,7 @@ const PRODUCTION = process.argv.includes('--production');
 const LANGUAGE_ARG = process.argv.find((value) => value.startsWith('--language='));
 const ONLY_LANGUAGE = LANGUAGE_ARG?.slice('--language='.length).trim() || null;
 const FORMAT_VERSION = 2;
-const FIELD_POLICY_VERSION = 1;
+const FIELD_POLICY_VERSION = 2;
 
 const FAST_FIELDS = Object.freeze({
   lexeme: [
@@ -55,6 +56,7 @@ const FAST_FIELDS = Object.freeze({
     'learner_gloss_json',
     'definitions_json',
   ],
+  senseConcept: ['sense_id', 'concept_id', 'relation', 'review_state'],
   form: [
     'form_id',
     'lexeme_id',
@@ -69,7 +71,7 @@ const FAST_FIELDS = Object.freeze({
 const DEEP_FIELDS = Object.freeze([
   'lexical features',
   'typed and legacy relation evidence',
-  'concept-link metadata',
+  'concept-link notes, sources, and non-fast metadata',
   'examples',
   'etymology and source assertions',
   'safety and review provenance',
@@ -197,6 +199,16 @@ function initDatabase(path) {
       FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id) ON DELETE CASCADE
     );
 
+    CREATE TABLE sense_concepts (
+      sense_id TEXT NOT NULL,
+      concept_id TEXT NOT NULL,
+      relation TEXT NOT NULL,
+      review_state TEXT NOT NULL,
+      metadata_json TEXT NOT NULL,
+      PRIMARY KEY(sense_id, concept_id, relation),
+      FOREIGN KEY(sense_id) REFERENCES senses(sense_id) ON DELETE CASCADE
+    );
+
     CREATE TABLE forms (
       form_id TEXT PRIMARY KEY,
       lexeme_id TEXT NOT NULL,
@@ -230,6 +242,8 @@ function initDatabase(path) {
     CREATE INDEX lexemes_lemma_idx ON lexemes(language_tag, normalized_lemma);
     CREATE INDEX senses_lexeme_idx ON senses(lexeme_id);
     CREATE INDEX senses_concept_idx ON senses(primary_concept_id);
+    CREATE INDEX sense_concepts_sense_idx ON sense_concepts(sense_id, relation);
+    CREATE INDEX sense_concepts_concept_idx ON sense_concepts(concept_id, relation);
     CREATE INDEX forms_lookup_idx ON forms(normalized_lookup);
     CREATE INDEX forms_lexeme_idx ON forms(lexeme_id);
     CREATE INDEX analyses_form_idx ON analyses(form_id);
@@ -250,6 +264,10 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
       sense_id, lexeme_id, sense_key, primary_concept_id, cefr_level,
       register_label, review_state, learner_gloss_json, definitions_json, deep_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertSenseConcept = db.prepare(`
+    INSERT INTO sense_concepts (sense_id, concept_id, relation, review_state, metadata_json)
+    VALUES (?, ?, ?, ?, ?)
   `);
   const insertForm = db.prepare(`
     INSERT INTO forms (
@@ -297,10 +315,13 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
 
       for (const sense of [...lexeme.senses].sort((left, right) => left.sense_id.localeCompare(right.sense_id))) {
         const reviewState = reviewStateForSense(lexeme, sense);
+        const conceptLinks = activeSenseConceptLinks(sense, reviewState)
+          .filter((link) => includedReviewState(link.review_state));
+        const primaryConceptId = conceptLinks.find((link) => link.relation === 'primary')?.concept_id ?? null;
         const gloss = sense.learner_gloss ?? sense.sense_hint ?? {};
         const definitions = sense.definitions ?? {};
         const senseDeep = {
-          concept_links: sense.concept_links ?? [],
+          concept_links: conceptLinks,
           relations: sense.relations ?? {
             homophones: sense.homophones ?? [],
             homonyms: sense.homonyms ?? [],
@@ -322,7 +343,7 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
           sense.sense_id,
           lexeme.lexeme_id,
           sense.sense_key ?? null,
-          sense.primary_concept_id ?? null,
+          primaryConceptId,
           sense.cefr_level ?? null,
           sense.register_label ?? null,
           reviewState,
@@ -330,6 +351,20 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
           stableJson(definitions),
           stableJson(senseDeep),
         );
+        for (const link of conceptLinks) {
+          const metadata = {
+            note: link.note ?? null,
+            source_refs: link.source_refs ?? [],
+            compatibility_source: link.compatibility_source ?? null,
+          };
+          insertSenseConcept.run(
+            sense.sense_id,
+            link.concept_id,
+            link.relation,
+            link.review_state,
+            stableJson(metadata),
+          );
+        }
       }
 
       for (const form of [...(lexeme.forms ?? [])].sort((left, right) => left.form_id.localeCompare(right.form_id))) {
@@ -438,6 +473,7 @@ function compileLanguage(languageTag) {
   const counts = {
     lexemes: tableCount(db, 'lexemes'),
     senses: tableCount(db, 'senses'),
+    sense_concepts: tableCount(db, 'sense_concepts'),
     forms: tableCount(db, 'forms'),
     analyses: tableCount(db, 'analyses'),
     pronunciations: tableCount(db, 'pronunciations'),
@@ -467,7 +503,7 @@ function compileLanguage(languageTag) {
     },
   };
   writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
-  console.log(`📦 ${languageTag}: ${packageVersion} (${counts.senses} senses)`);
+  console.log(`📦 ${languageTag}: ${packageVersion} (${counts.senses} senses, ${counts.sense_concepts} concept links)`);
   return true;
 }
 
