@@ -28,6 +28,8 @@ jobs:
             while IFS= read -r line; do echo "::error::$line"; done <<< "$output"
             exit "$status"
           fi
+      - name: Validate multilingual sense/concept links
+        run: npm run validate:sense-links
       - name: Validate curriculum taxonomy
         shell: bash
         run: |
@@ -76,6 +78,8 @@ jobs:
         run: git diff --exit-code -- concepts/compiled-concept-index.json
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
+      - name: Compile deterministic v2 core packages
+        run: npm run compile:core
       - name: Compile shared Lexi semantic lesson index
         run: npm run compile:semantic
       - name: Compile development shared name index
