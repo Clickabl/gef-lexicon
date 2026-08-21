@@ -1,7 +1,7 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "generated_from": "concepts/graph.json + languages/*/lexicon*.json",
-  "translation_ready_policy": "approved primary links to exact_pivot concepts only",
+  "semantic_pivot_policy": "senses_by_language contains approved primary membership in exact_pivot concepts; final translation requires contextual compatibility checks",
   "concepts": [
     {
       "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
@@ -28,10 +28,10 @@
         "ja": ["018f2c3a-7b1e-7a4d-9c2e-000000000302"]
       },
       "sense_links_by_language": {
-        "el": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000402","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000401","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/el/lexicon.json"}],
-        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000109","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000108","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/en/lexicon.json"}],
-        "es": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000202","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000201","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/es/lexicon.json"}],
-        "ja": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000302","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000301","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/ja/lexicon.json"}]
+        "el": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000402","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000401","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/el/lexicon.json"}],
+        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000109","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000108","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/en/lexicon.json"}],
+        "es": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000202","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000201","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/es/lexicon.json"}],
+        "ja": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000302","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000301","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/ja/lexicon.json"}]
       }
     },
     {
@@ -56,7 +56,7 @@
         "en": ["018f2c3a-7b1e-7a4d-9c2e-000000000102"]
       },
       "sense_links_by_language": {
-        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000102","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000101","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/en/lexicon.json"}]
+        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000102","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000101","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/en/lexicon.json"}]
       }
     },
     {
@@ -84,10 +84,10 @@
         "ja": ["018f2c3a-7b1e-7a4d-9c2e-000000000308"]
       },
       "sense_links_by_language": {
-        "el": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000406","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000405","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/el/lexicon.json"}],
-        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000113","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000112","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/en/lexicon.json"}],
-        "es": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000208","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000207","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/es/lexicon.json"}],
-        "ja": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000308","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000307","relation":"primary","review_state":"candidate","translation_ready":false,"source_path":"languages/ja/lexicon.json"}]
+        "el": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000406","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000405","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/el/lexicon.json"}],
+        "en": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000113","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000112","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/en/lexicon.json"}],
+        "es": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000208","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000207","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/es/lexicon.json"}],
+        "ja": [{"sense_id":"018f2c3a-7b1e-7a4d-9c2e-000000000308","lexeme_id":"018f2c3a-7b1e-7a4d-9c2e-000000000307","relation":"primary","review_state":"candidate","semantic_pivot_ready":false,"source_path":"languages/ja/lexicon.json"}]
       }
     }
   ]
