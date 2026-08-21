@@ -32,6 +32,8 @@ jobs:
         run: npm run validate:sense-links
       - name: Validate structured usage profiles
         run: npm run validate:usage-profiles
+      - name: Validate typed semantic relation graph
+        run: npm run validate:semantic-relations
       - name: Validate curriculum taxonomy
         shell: bash
         run: |
@@ -86,6 +88,8 @@ jobs:
         run: npm run test:translation-candidates
       - name: Test translation occurrence context gates
         run: npm run test:translation-occurrence-context
+      - name: Test occurrence-sense reverse-tag protection
+        run: npm run test:occurrence-sense
       - name: Compile development lexical SQLite fixtures
         run: npm run compile:sqlite
       - name: Compile deterministic v2 core packages
