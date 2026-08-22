@@ -61,3 +61,13 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 17. **Lesson Logic and Rendering Are Separate**: `lesson.json` owns reusable pedagogical logic. `renderings/{support-language}.json` owns explanation wording. Do not clone logical lessons for every learner language pair.
 18. **Corpus Evidence Lives With Content**: Exact work/anchor/span occurrences, example quality, practice eligibility, and book/chapter lesson coverage belong in `Clickabl/gef-content`. `gef-lexicon` owns reusable linguistic and lesson truth; it must not become a warehouse of copied story sentences.
 19. **Best-Language Vocabulary Is Canonical**: A learner has a **best language**, not a “native language.” Never introduce `nativeLanguage*` fields, variables, schema keys, lesson copy, or documentation for this profile concept. Use `bestLanguage*` / “best language.” The word `native` remains valid for unrelated technical concepts such as React Native and for reviewer qualifications such as an approved native speaker.
+
+## Cross-agent coordination (added 2026-08-22, per Tim)
+
+Default to committing directly to `main`. Use a branch only for a task that's
+explicitly a multi-agent coordinated project or needs server-side sequencing.
+Branches, when used, are named `<tool>/<short-task-slug>`; close them out
+(merge+delete, or delete and say why) rather than letting them accumulate.
+Push after every commit. Shared task items (owned by `gef-expo`'s
+`tasks/coding-todos.json` / `research-tasks.json`) may carry `assignee` and
+`branch` fields — respect both.
