@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.el.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "el",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["hellenic"],
+    "ancestor_language_tags": ["grc"],
+    "related_language_tags": [],
+    "script_ids": ["greek"],
+    "origin_region_ids": ["europe"],
+    "notes": "Modern Greek is the surviving major member of the Hellenic branch; this orientation record avoids inventing close modern sister-language relationships."
+  },
+  "capabilities": {
+    "explanation": true,
+    "comparison": true
+  },
+  "review_state": "candidate",
+  "version": 1
+}
