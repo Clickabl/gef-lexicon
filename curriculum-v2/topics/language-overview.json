@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.orientation.language_overview",
+  "topic_key": "language_overview",
+  "node_kind": "orientation",
+  "domain": "language_identity",
+  "title_key": "curriculum.topic.language_overview.title",
+  "summary_key": "curriculum.topic.language_overview.summary",
+  "focus_axes": [
+    "language_family",
+    "historical_branch",
+    "related_languages",
+    "writing_systems",
+    "geographic_history",
+    "high_level_structural_traits"
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 3,
+    "maximum_languages": 13,
+    "include_best_language": true,
+    "include_profile_comparison_languages": true,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Build the tree from the learner profile first. If focus + best/known languages do not provide enough context, add reference languages until the tree is useful. Never add filler after the learner already has enough languages to show the relationships."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "tree", "scene_kind": "language_tree", "required": true, "minimum_capability": "comparison"},
+      {"scene_id": "compare", "scene_kind": "language_comparison", "required": false, "minimum_capability": "comparison"},
+      {"scene_id": "focus", "scene_kind": "focus_explanation", "required": true, "repeat_per_focus_language": true, "minimum_capability": "explanation"},
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 5,
+    "notes": "This is the default first orientation topic after a language is added. The same scene data must render in app, print, and video pipelines."
+  },
+  "difficulty_band": "pre_a1",
+  "notes": "Genealogy is a historical relationship model, not a claim that related languages are mutually intelligible or culturally interchangeable. Language realizations own reviewed genealogy facts; the runtime chooses which branches to display from the learner context.",
+  "review_state": "candidate",
+  "version": 1
+}

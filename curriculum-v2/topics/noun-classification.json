@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.form.noun_classification",
+  "topic_key": "noun_classification",
+  "node_kind": "form_system",
+  "domain": "reference_and_nominals",
+  "title_key": "curriculum.topic.noun_classification.title",
+  "summary_key": "curriculum.topic.noun_classification.summary",
+  "focus_axes": ["whether_nouns_are_grammatically_classified", "number_and_kind_of_classes", "assignment_basis", "agreement_targets", "how_class_is_signaled", "exceptions_and_syncretism", "relationship_to_natural_or_pronominal_gender"],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 8,
+    "include_best_language": true,
+    "include_profile_comparison_languages": true,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Use the learner's languages first. Add references only when needed to make the comparison useful."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "context", "scene_kind": "context", "required": true},
+      {"scene_id": "compare", "scene_kind": "language_comparison", "required": true, "minimum_capability": "comparison"},
+      {"scene_id": "focus", "scene_kind": "focus_explanation", "required": true, "repeat_per_focus_language": true, "minimum_capability": "explanation"},
+      {"scene_id": "practice", "scene_kind": "practice", "required": false, "repeat_per_focus_language": true, "minimum_capability": "recognition_practice"},
+      {"scene_id": "story", "scene_kind": "story_transfer", "required": false, "minimum_capability": "reading_transfer"},
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 8,
+    "notes": "A language that lacks a productive noun-class system can still have a useful realization. Absence is a linguistic fact, not unsupported-course status."
+  },
+  "difficulty_band": "mixed",
+  "notes": "Distinguish grammatical noun classification from natural or pronominal gender. Missing data stays sparse and is filled as real learner demand appears.",
+  "review_state": "candidate",
+  "version": 2
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/topic-localization.schema.json",
+  "title": "Gef Topic Localization",
+  "type": "object",
+  "required": ["schema_version", "topic_id", "language_tag", "title", "summary", "scene_copy", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+    "language_tag": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": "string"},
+    "scene_copy": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string"},
+          "body": {"type": "string"},
+          "prompt": {"type": "string"},
+          "continue_label": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": false
+}
