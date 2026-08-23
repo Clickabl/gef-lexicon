@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/topic-bridge-note.schema.json",
+  "title": "Gef Optional Topic Bridge Note",
+  "type": "object",
+  "required": ["schema_version", "topic_id", "from_language_tag", "to_language_tag", "interface_language_tag", "notes", "review_state", "version"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+    "from_language_tag": {"type": "string", "minLength": 1},
+    "to_language_tag": {"type": "string", "minLength": 1},
+    "interface_language_tag": {"type": "string", "minLength": 1},
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["note_id", "kind", "text"],
+        "properties": {
+          "note_id": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "enum": ["helpful_transfer", "false_friend", "contrast", "warning", "shortcut"]},
+          "text": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": false
+}
