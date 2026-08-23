@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "gef-lexicon/curriculum-topic.schema.json",
-  "title": "Gef V2 Universal Curriculum Topic",
+  "title": "Gef Universal Curriculum Topic",
   "type": "object",
   "required": [
     "schema_version",
@@ -11,14 +11,16 @@
     "domain",
     "title_key",
     "summary_key",
+    "comparison_policy",
+    "experience_blueprint",
     "review_state",
     "version"
   ],
   "properties": {
-    "schema_version": {"type": "integer", "const": 1},
+    "schema_version": {"type": "integer", "const": 2},
     "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
     "topic_key": {"type": "string", "minLength": 1},
-    "node_kind": {"type": "string", "enum": ["meaning", "form_system", "communicative_goal"]},
+    "node_kind": {"type": "string", "enum": ["orientation", "meaning", "form_system", "communicative_goal"]},
     "domain": {"type": "string", "minLength": 1},
     "title_key": {"type": "string", "minLength": 1},
     "summary_key": {"type": "string", "minLength": 1},
@@ -41,7 +43,8 @@
       "type": "array",
       "items": {"$ref": "#/definitions/topicRelation"}
     },
-    "lesson_blueprint": {"$ref": "#/definitions/lessonBlueprint"},
+    "comparison_policy": {"$ref": "#/definitions/comparisonPolicy"},
+    "experience_blueprint": {"$ref": "#/definitions/experienceBlueprint"},
     "difficulty_band": {"type": "string", "enum": ["pre_a1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
     "notes": {"type": "string"},
     "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
@@ -70,20 +73,70 @@
       },
       "additionalProperties": false
     },
-    "lessonBlueprint": {
+    "comparisonPolicy": {
       "type": "object",
+      "required": [
+        "minimum_useful_languages",
+        "maximum_languages",
+        "include_best_language",
+        "include_profile_comparison_languages",
+        "fallback_reference_language_tags"
+      ],
       "properties": {
-        "recommended_stages": {
+        "minimum_useful_languages": {"type": "integer", "minimum": 1, "maximum": 20},
+        "maximum_languages": {"type": "integer", "minimum": 1, "maximum": 20},
+        "include_best_language": {"type": "boolean"},
+        "include_profile_comparison_languages": {"type": "boolean"},
+        "fallback_reference_language_tags": {
           "type": "array",
-          "items": {
-            "type": "string",
-            "enum": ["context", "notice", "explain", "focus_practice", "contrast", "produce", "story_transfer", "review", "checkpoint"]
-          },
+          "items": {"type": "string", "minLength": 1},
           "uniqueItems": true
         },
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "experienceBlueprint": {
+      "type": "object",
+      "required": ["scene_sequence", "default_session_minutes"],
+      "properties": {
+        "scene_sequence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/definitions/sceneBlueprint"}
+        },
         "default_session_minutes": {"type": "integer", "minimum": 1, "maximum": 60},
-        "comparison_recommended": {"type": "boolean"},
-        "story_transfer_recommended": {"type": "boolean"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "sceneBlueprint": {
+      "type": "object",
+      "required": ["scene_id", "scene_kind"],
+      "properties": {
+        "scene_id": {"type": "string", "minLength": 1},
+        "scene_kind": {
+          "type": "string",
+          "enum": [
+            "context",
+            "term_reveal",
+            "concept",
+            "language_tree",
+            "language_comparison",
+            "focus_explanation",
+            "practice",
+            "story_transfer",
+            "review",
+            "checkpoint",
+            "completion"
+          ]
+        },
+        "required": {"type": "boolean"},
+        "repeat_per_focus_language": {"type": "boolean"},
+        "minimum_capability": {
+          "type": "string",
+          "enum": ["explanation", "comparison", "reviewed_examples", "recognition_practice", "production_practice", "reading_transfer", "listening", "speaking", "story_quest"]
+        },
         "notes": {"type": "string"}
       },
       "additionalProperties": false
