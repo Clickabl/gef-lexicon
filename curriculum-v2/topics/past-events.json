@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.goal.talk_about_past_events",
+  "topic_key": "past_events",
+  "node_kind": "communicative_goal",
+  "domain": "time_and_events",
+  "title_key": "curriculum.topic.past_events.title",
+  "summary_key": "curriculum.topic.past_events.summary",
+  "focus_axes": [
+    "event_before_now",
+    "completed_vs_ongoing_past",
+    "background_vs_main_event",
+    "language_specific_marking_strategy"
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 8,
+    "include_best_language": true,
+    "include_profile_comparison_languages": true,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Use languages the learner already knows first. Reference languages are added only when the profile does not provide enough useful comparison."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "reveal", "scene_kind": "concept_reveal", "required": true},
+      {"scene_id": "focus", "scene_kind": "focus_explanation", "required": false, "repeat_per_focus_language": true, "minimum_capability": "explanation"},
+      {"scene_id": "story", "scene_kind": "story_transfer", "required": false, "minimum_capability": "reading_transfer"},
+      {"scene_id": "review", "scene_kind": "review", "required": false},
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 4,
+    "notes": "The first encounter should be tiny: identify that the text is referring to an event before now, then optionally open the fuller language-specific explanation."
+  },
+  "discovery_policy": {
+    "source_contexts": ["reader"],
+    "max_unsolicited_exposures": 2,
+    "minimum_occurrence_quality": "good",
+    "suppress_when_concept_mastered": true,
+    "first_exposure_scene_kind": "concept_reveal",
+    "reinforcement_scene_kind": "concept",
+    "notes": "The reader chooses the learner's first and second encountered reviewed occurrences. Content never hard-codes a global 'first page'."
+  },
+  "difficulty_band": "A2",
+  "notes": "A2 is the broad default for first explicit instruction in past-event reference across many modern-language curricula. Some languages introduce simple forms earlier, while richer narrative tense/aspect contrasts typically continue into B1 and beyond. The universal concept is 'talking about past events', not 'past tense', because some languages primarily encode the distinction through aspect, particles, context, or other strategies.",
+  "review_state": "candidate",
+  "version": 1
+}
