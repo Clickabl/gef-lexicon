@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "topics": [
+    {
+      "topic_id": "TOPIC.form.noun_classification",
+      "path": "curriculum-v2/topics/noun-classification.json",
+      "reference_role": "prove cross-language structural comparison, including meaningful absence of a grammatical system"
+    },
+    {
+      "topic_id": "TOPIC.meaning.cause_purpose",
+      "path": "curriculum-v2/topics/cause-purpose.json",
+      "reference_role": "prove semantic contrast and reuse of existing por/para research without making Spanish the universal frame"
+    },
+    {
+      "topic_id": "TOPIC.meaning.source_path_goal",
+      "path": "curriculum-v2/topics/source-path-goal.json",
+      "reference_role": "prove relational/spatial comparison across adpositions, cases, particles, and other constructions"
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
