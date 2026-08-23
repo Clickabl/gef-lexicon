@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.form.noun_classification",
+  "topic_key": "noun_classification",
+  "node_kind": "form_system",
+  "domain": "reference_and_nominals",
+  "title_key": "curriculum.topic.noun_classification.title",
+  "summary_key": "curriculum.topic.noun_classification.summary",
+  "focus_axes": [
+    "whether_nouns_are_grammatically_classified",
+    "number_and_kind_of_classes",
+    "assignment_basis",
+    "agreement_targets",
+    "how_class_is_signaled",
+    "exceptions_and_syncretism",
+    "relationship_to_natural_or_pronominal_gender"
+  ],
+  "lesson_blueprint": {
+    "recommended_stages": [
+      "context",
+      "notice",
+      "explain",
+      "focus_practice",
+      "contrast",
+      "produce",
+      "story_transfer",
+      "review",
+      "checkpoint"
+    ],
+    "default_session_minutes": 8,
+    "comparison_recommended": true,
+    "story_transfer_recommended": true,
+    "notes": "The learner-facing comparison should make absence of a productive noun-class system explicit when that is the reviewed language fact. Do not reduce all noun classification to a masculine/feminine checklist."
+  },
+  "difficulty_band": "mixed",
+  "notes": "Reference v2 form-system topic. Language realizations should distinguish grammatical noun classification from pronominal/natural-gender behavior and should describe downstream agreement effects rather than merely counting labels.",
+  "review_state": "candidate",
+  "version": 1
+}
