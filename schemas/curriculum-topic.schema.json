@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/curriculum-topic.schema.json",
+  "title": "Gef V2 Universal Curriculum Topic",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "topic_id",
+    "topic_key",
+    "node_kind",
+    "domain",
+    "title_key",
+    "summary_key",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+    "topic_key": {"type": "string", "minLength": 1},
+    "node_kind": {"type": "string", "enum": ["meaning", "form_system", "communicative_goal"]},
+    "domain": {"type": "string", "minLength": 1},
+    "title_key": {"type": "string", "minLength": 1},
+    "summary_key": {"type": "string", "minLength": 1},
+    "concept_refs": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/curriculumRef"},
+      "uniqueItems": true
+    },
+    "focus_axes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "prerequisite_topic_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+      "uniqueItems": true
+    },
+    "relations": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/topicRelation"}
+    },
+    "lesson_blueprint": {"$ref": "#/definitions/lessonBlueprint"},
+    "difficulty_band": {"type": "string", "enum": ["pre_a1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
+    "notes": {"type": "string"},
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "curriculumRef": {
+      "type": "object",
+      "required": ["target_type", "target_id"],
+      "properties": {
+        "target_type": {
+          "type": "string",
+          "enum": ["semantic_function", "concept", "grammar_set", "knowledge_set"]
+        },
+        "target_id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "topicRelation": {
+      "type": "object",
+      "required": ["relation", "topic_id"],
+      "properties": {
+        "relation": {"type": "string", "enum": ["contrasts_with", "reinforces", "prepares_for", "often_combined_with"]},
+        "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "lessonBlueprint": {
+      "type": "object",
+      "properties": {
+        "recommended_stages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["context", "notice", "explain", "focus_practice", "contrast", "produce", "story_transfer", "review", "checkpoint"]
+          },
+          "uniqueItems": true
+        },
+        "default_session_minutes": {"type": "integer", "minimum": 1, "maximum": 60},
+        "comparison_recommended": {"type": "boolean"},
+        "story_transfer_recommended": {"type": "boolean"},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
