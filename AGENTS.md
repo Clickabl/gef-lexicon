@@ -1,6 +1,6 @@
 # Agent Instructions for gef-lexicon
 
-Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, `docs/LESSONS_V2_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
+Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, `docs/LESSONS_V2_ARCHITECTURE.md`, `curriculum-v2/README.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or curriculum content.
 
 ## Repository ownership and source of truth
 
@@ -8,23 +8,23 @@ Gef has exactly three active product repositories:
 
 1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration, and the product-wide language-support registry.
 2. **`Clickabl/gef-content`** — canonical books/stories, editions, semantic anchors, work-specific metadata/questions/audio/assets, corpus occurrence evidence, and content packaging.
-3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, curriculum graph, lessons, and reusable lesson renderings.
+3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, and the canonical topic-first curriculum.
 
 **Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. Historical references to `gef-locales` are migration residue, not current architecture.
 
 ### Product-wide language support
 
-Before changing language coverage, lesson-rendering language assumptions, scripts/regions, or support-count claims, read:
+Before changing language coverage, scripts/regions, or support-count claims, read:
 
 - `Clickabl/gef-expo/registry/language-support.json`
 - `Clickabl/gef-expo/docs/product/LANGUAGE_SUPPORT.md`
 
-A `languages/{lang}` directory, lexicon record, construction, or lesson rendering in this repository does **not** promote that language into a Gef support tier. Never copy a strategic language list/count here as a second authority.
+A `languages/{lang}` directory, lexicon record, construction, or curriculum realization in this repository does **not** promote that language into a product support tier. Never copy a strategic language list/count here as a second authority.
 
 ## Work-item terminology
 
 - **TASK** = AI/human research, review, evidence gathering, linguistic analysis, or candidate-data work.
-- **TODO** = coding/implementation work such as schemas, validators, compilers, CI, migrations, package tooling, or runtime integration.
+- **TODO** = coding/implementation work such as schemas, validators, compilers, migrations, package tooling, or runtime integration.
 - A Task may discover a TODO, and a TODO may depend on a Task, but do not mix unrelated research and implementation into one ambiguous work item.
 - Until the human inbox is implemented, GitHub issues prefixed `TASK —` are durable Task seeds.
 
@@ -38,7 +38,7 @@ Cross-product review/research work uses the canonical queue contract in `Clickab
 - `docs/product/examples/name-unknown-task-template.md`
 - Expo issue #9 tracks queue/inbox implementation.
 
-Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue output may propose **candidate** lexicon/name/lesson artifacts or PRs but may never approve its own output.
+Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gates and dependencies. Queue output may propose **candidate** lexicon/name/curriculum artifacts or PRs but may never approve its own output.
 
 ## Hard Rules
 
@@ -56,12 +56,14 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 12. **Validation**: Run `node scripts/validate-lexicon.mjs` for repository integrity. When changing the English source-coverage pass, also run `node scripts/validate-english-coverage.mjs`.
 13. **Semantic Functions Are Not English Words**: Curriculum concepts use language-neutral functions such as `SEM.PURPOSE`, `SEM.CAUSE_REASON`, and `SEM.PATH_ROUTE`. Never use a polysemous English spelling such as `for` as the universal semantic identity.
 14. **Constructions Are First-Class**: Language-specific grammar, syntax, discourse patterns, and contrast systems belong in `languages/{lang}/constructions.json`. Do not force every grammar distinction into a lexical sense when the distinction belongs to a construction.
-15. **Lessons Are Reusable**: A lesson links to lexemes, senses, constructions, morphology, syntax, and semantic functions. Never copy one lesson into every book and never add free-form `lesson_tag` strings to lexemes.
-16. **Rule IDs Describe Meaning, Not Presentation Order**: Use stable rule IDs such as `RULE.es.por_para.para_purpose`. A UI may reorder the lesson without changing corpus annotations.
-17. **Lesson Logic and Rendering Are Separate**: `lesson.json` owns reusable pedagogical logic. `renderings/{support-language}.json` owns explanation wording. Do not clone logical lessons for every learner language pair.
-18. **Corpus Evidence Lives With Content**: Exact work/anchor/span occurrences, example quality, practice eligibility, and book/chapter lesson coverage belong in `Clickabl/gef-content`. `gef-lexicon` owns reusable linguistic and lesson truth; it must not become a warehouse of copied story sentences.
+15. **`curriculum-v2/` Is the Only Active Curriculum Source**: Universal teaching identities live in `curriculum-v2/topics/`. Per-language truth lives in `curriculum-v2/realizations/{language-tag}/`. Best-language learner copy lives in `curriculum-v2/locales/{best-language-tag}/topics/`. Optional genuinely pair-sensitive transfer notes live in `curriculum-v2/bridges/`. Do not add or restore old `lessons/`, `lesson-families/`, v1 curriculum catalogs, pairwise course files, or retired compiler inputs for new work.
+16. **Topics Are Reusable and Pair-Neutral**: A topic links to semantic functions, constructions, morphology, syntax, knowledge sets, or other reviewed facts. Never clone a topic for every learner-language pair and never add free-form lesson tags to lexemes. If a German-speaking learner needs Spanish explanations, add the missing German topic localization or a narrowly justified bridge note. Do not create a German-to-Spanish course copy.
+17. **Language Realizations Are Sparse by Design**: Do not wait for “full support.” Add only the reviewed/candidate facts and capabilities currently justified for a language/topic. Missing fields remain missing. An explicit reviewed linguistic absence such as `system_status: "absent"` is different from missing data. Never manufacture a Full/Partial/None curriculum matrix to make coverage look complete.
+18. **Corpus Evidence Lives With Content**: Exact work/anchor/span occurrences, example quality, practice eligibility, and book/chapter topic coverage belong in `Clickabl/gef-content`. `gef-lexicon` owns reusable linguistic and curriculum truth; it must not become a warehouse of copied story sentences.
 19. **Best-Language Vocabulary Is Canonical**: A learner has a **best language**, not a “native language.” Never introduce `nativeLanguage*` fields, variables, schema keys, lesson copy, or documentation for this profile concept. Use `bestLanguage*` / “best language.” The word `native` remains valid for unrelated technical concepts such as React Native and for reviewer qualifications such as an approved native speaker.
-20. **V2 Curriculum Is Topic-First**: The v1 lesson catalog and families are frozen reference material under the migration policy in `legacy/lessons-v1/`. New curriculum authoring belongs in `curriculum-v2/` as universal topics plus reviewed language realizations. Do not add a new v1 lesson merely because its topic resembles an existing v1 family, and do not physically move/delete v1 files until compiler/runtime consumers are removed.
+20. **Git History Is the Legacy Archive**: Do not keep a live `legacy/lessons-v1/` tree or compatibility curriculum solely for reference. If old por/para, family, calendar, or other pedagogy is useful, inspect Git history and migrate the useful fact into the current topic/realization/localization structure. Never resurrect an old compiler or runner because it is easier to find.
+21. **One Compiler Contract**: Curriculum packages are compiled by the canonical compiler in `Clickabl/gef-expo/scripts/compile-topic-runtime.mjs`. Lexicon data should be shaped for that compiler. Do not add a second topic compiler, lesson-family adapter compiler, or topic-specific compiler.
+22. **Surface-Neutral Experience Data**: Topic blueprints describe reusable scene semantics such as `term_reveal`, `language_tree`, `language_comparison`, `focus_explanation`, `practice`, and `story_transfer`. Do not encode React Native component names, worksheet layout, or video framing into linguistic truth. The same scene meaning should be renderable in multiple surfaces.
 
 ## Cross-agent coordination (added 2026-08-22, per Tim)
 
