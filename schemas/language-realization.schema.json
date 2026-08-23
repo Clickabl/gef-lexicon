@@ -33,10 +33,9 @@
     "focus_axis_values": {
       "type": "object",
       "additionalProperties": {
-        "oneOf": [
+        "anyOf": [
           {"type": "string"},
           {"type": "number"},
-          {"type": "integer"},
           {"type": "boolean"},
           {"type": "array", "items": {"type": "string"}}
         ]
