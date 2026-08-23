@@ -45,6 +45,7 @@
     },
     "comparison_policy": {"$ref": "#/definitions/comparisonPolicy"},
     "experience_blueprint": {"$ref": "#/definitions/experienceBlueprint"},
+    "discovery_policy": {"$ref": "#/definitions/discoveryPolicy"},
     "difficulty_band": {"type": "string", "enum": ["pre_a1", "A1", "A2", "B1", "B2", "C1", "C2", "mixed"]},
     "notes": {"type": "string"},
     "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
@@ -110,6 +111,25 @@
       },
       "additionalProperties": false
     },
+    "discoveryPolicy": {
+      "type": "object",
+      "required": ["source_contexts", "max_unsolicited_exposures", "minimum_occurrence_quality"],
+      "properties": {
+        "source_contexts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "enum": ["reader", "listening", "lesson"]},
+          "uniqueItems": true
+        },
+        "max_unsolicited_exposures": {"type": "integer", "minimum": 0, "maximum": 10},
+        "minimum_occurrence_quality": {"type": "string", "enum": ["usable", "good", "excellent"]},
+        "suppress_when_concept_mastered": {"type": "boolean", "default": true},
+        "first_exposure_scene_kind": {"type": "string", "enum": ["concept_reveal", "concept"]},
+        "reinforcement_scene_kind": {"type": "string", "enum": ["concept", "review"]},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
     "sceneBlueprint": {
       "type": "object",
       "required": ["scene_id", "scene_kind"],
@@ -120,6 +140,7 @@
           "enum": [
             "context",
             "term_reveal",
+            "concept_reveal",
             "concept",
             "language_tree",
             "language_comparison",
