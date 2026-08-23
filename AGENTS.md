@@ -1,6 +1,6 @@
 # Agent Instructions for gef-lexicon
 
-Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
+Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, `docs/LESSONS_V2_ARCHITECTURE.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or lesson content.
 
 ## Repository ownership and source of truth
 
@@ -61,6 +61,7 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 17. **Lesson Logic and Rendering Are Separate**: `lesson.json` owns reusable pedagogical logic. `renderings/{support-language}.json` owns explanation wording. Do not clone logical lessons for every learner language pair.
 18. **Corpus Evidence Lives With Content**: Exact work/anchor/span occurrences, example quality, practice eligibility, and book/chapter lesson coverage belong in `Clickabl/gef-content`. `gef-lexicon` owns reusable linguistic and lesson truth; it must not become a warehouse of copied story sentences.
 19. **Best-Language Vocabulary Is Canonical**: A learner has a **best language**, not a “native language.” Never introduce `nativeLanguage*` fields, variables, schema keys, lesson copy, or documentation for this profile concept. Use `bestLanguage*` / “best language.” The word `native` remains valid for unrelated technical concepts such as React Native and for reviewer qualifications such as an approved native speaker.
+20. **V2 Curriculum Is Topic-First**: The v1 lesson catalog and families are frozen reference material under the migration policy in `legacy/lessons-v1/`. New curriculum authoring belongs in `curriculum-v2/` as universal topics plus reviewed language realizations. Do not add a new v1 lesson merely because its topic resembles an existing v1 family, and do not physically move/delete v1 files until compiler/runtime consumers are removed.
 
 ## Cross-agent coordination (added 2026-08-22, per Tim)
 
