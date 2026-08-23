@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.it.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "it",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["italic", "romance"],
+    "ancestor_language_tags": ["la"],
+    "related_language_tags": ["es", "fr", "pt", "ro"],
+    "script_ids": ["latin"],
+    "origin_region_ids": ["europe"],
+    "notes": "Broad historical-family metadata for orientation only; Romance membership does not imply modern mutual intelligibility."
+  },
+  "capabilities": {
+    "explanation": true,
+    "comparison": true
+  },
+  "review_state": "candidate",
+  "version": 1
+}
