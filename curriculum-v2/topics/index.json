@@ -8,6 +8,11 @@
       "reference_role": "default first topic for a newly focused language; dynamically compares learner-profile languages and adds fallback references only when useful"
     },
     {
+      "topic_id": "TOPIC.goal.talk_about_past_events",
+      "path": "curriculum-v2/topics/past-events.json",
+      "reference_role": "reference implementation for automatic concept discovery from annotated reading occurrences"
+    },
+    {
       "topic_id": "TOPIC.form.noun_classification",
       "path": "curriculum-v2/topics/noun-classification.json",
       "reference_role": "prove cross-language structural comparison, including meaningful absence of a grammatical system"
@@ -24,5 +29,5 @@
     }
   ],
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
