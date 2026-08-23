@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "en",
+  "title": "Meet this language",
+  "summary": "See where the language came from, what it is related to, and how it connects to languages you already know.",
+  "scene_copy": {
+    "tree": {
+      "title": "Where it comes from",
+      "body": "The highlighted language is your focus. The other branches come from languages you know when possible, with a few references added only when the tree needs more context.",
+      "continue_label": "Keep going"
+    },
+    "compare": {
+      "title": "Languages in your head",
+      "body": "Related languages can give you useful shortcuts, but similar family history does not make them interchangeable."
+    },
+    "focus": {
+      "title": "Your focus language",
+      "body": "Here are the details that matter most for the language you are learning."
+    },
+    "complete": {
+      "title": "You have the map",
+      "body": "Now we can use what you already know as the course grows around you.",
+      "continue_label": "Continue"
+    }
+  },
+  "review_state": "candidate",
+  "version": 1
+}
