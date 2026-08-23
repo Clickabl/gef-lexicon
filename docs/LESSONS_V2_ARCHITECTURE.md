@@ -2,7 +2,7 @@
 
 Status: candidate architecture for the post-v1 lesson system.
 
-This document defines the replacement authoring model for Gef lessons. It does not delete or reinterpret the current v1 lesson system. Existing v1 lessons remain frozen reference material until the v2 compiler and Expo runtime reach parity.
+This document defines the replacement authoring model for Gef lessons. Existing v1 lessons are frozen reference material until the v2 compiler and Expo runtime reach parity.
 
 ## 1. Design goal
 
@@ -15,38 +15,37 @@ human communicative idea or structural system
   -> universal curriculum topic
   -> language-specific realization(s)
   -> learner-specific comparison session
-  -> contextual examples from reviewed corpus evidence
+  -> reviewed corpus examples
   -> practice + production + spaced review
 ```
 
-A new language becomes more useful by adding reviewed realizations to existing topics. It does not require authoring a separate monolithic course before any instruction can ship.
+A new language becomes more useful one topic at a time. It does not need a monolithic course before any instruction can ship.
 
-## 2. Keep three kinds of universal curriculum nodes distinct
+## 2. The curriculum graph has three node kinds
 
-Do not force every teachable idea into `SEM.*`. Semantic functions are only one layer of the curriculum graph.
+Do not force every teachable idea into `SEM.*`. Semantic functions are only one layer.
 
-### A. Meaning nodes
+### Meaning
 
-Language-neutral semantic or discourse functions such as:
+Language-neutral semantic or discourse functions already represented by reviewed/candidate `SEM.*` records, such as:
 
 - `SEM.CAUSE_REASON`
 - `SEM.PURPOSE`
 - `SEM.BENEFICIARY`
-- `SEM.SOURCE`
 - `SEM.PATH_ROUTE`
 - `SEM.DESTINATION_GOAL`
 - `SEM.DURATION`
 - `SEM.EXISTENCE_PRESENCE`
 
-These answer questions such as “what relation or meaning is being expressed?”
+If a needed semantic function does not yet exist, research and promote it separately. Do not invent an ID merely to complete a topic.
 
-### B. Form-system nodes
+### Form system
 
 Cross-linguistically comparable structural systems that are not themselves meanings, for example:
 
 - writing system and orthography
 - grammatical noun classification / gender
-- number systems
+- grammatical number
 - articles and definiteness marking
 - agreement
 - case
@@ -56,9 +55,9 @@ Cross-linguistically comparable structural systems that are not themselves meani
 - evidentiality
 - honorific and register systems
 
-A form-system topic compares how languages package grammatical information without pretending that the system is universal or semantic.
+A form-system topic can explicitly represent that a language lacks the compared grammatical system.
 
-### C. Communicative-goal nodes
+### Communicative goal
 
 Things a learner can do, for example:
 
@@ -73,11 +72,11 @@ Things a learner can do, for example:
 - compare two things
 - narrate a sequence of events
 
-Communicative goals provide the learner-facing path. Meaning and form-system nodes supply the linguistic machinery beneath them.
+Communicative goals provide the learner-facing path. Meaning and form-system nodes supply the machinery beneath them.
 
 ## 3. Topic is the canonical teaching unit
 
-A v2 topic is a reusable curriculum object with no required target language.
+A v2 topic is reusable and has no required target language.
 
 Example IDs:
 
@@ -86,40 +85,38 @@ TOPIC.form.noun_classification
 TOPIC.meaning.cause_purpose
 TOPIC.meaning.source_path_goal
 TOPIC.goal.locate_an_entity
-TOPIC.goal.ask_for_information
 ```
 
 A topic owns:
 
-- stable topic ID and key;
-- node kind (`meaning`, `form_system`, or `communicative_goal`);
+- stable topic ID/key;
+- node kind;
 - curriculum domain;
-- learner-facing title/summary localization keys;
+- learner-facing localization keys;
 - links to existing semantic functions or other reviewed knowledge where applicable;
 - prerequisite topic IDs;
-- optional contrast/reinforcement relationships;
-- focus axes used to compare language realizations;
+- optional contrast/reinforcement edges;
+- comparison axes;
 - recommended lesson stages;
 - review state and version.
 
-A topic does **not** own:
+A topic does not own:
 
 - one target language;
 - copied grammar facts for every language;
-- book-specific example sentences;
+- book-specific sentences;
 - learner mastery;
 - React Native presentation state.
 
 ## 4. Language realization is separate from topic
 
-Each language can contribute zero or more reviewed realizations to a topic.
-
-Recommended path:
+Recommended source layout:
 
 ```text
 curriculum-v2/
   topics/
-    ...
+    index.json
+    {topic-key}.json
   realizations/
     en/
     es/
@@ -129,25 +126,23 @@ curriculum-v2/
     ...
 ```
 
-A language realization owns:
+A realization owns:
 
 - `topic_id`;
 - `language_tag`;
-- links to reviewed `CTR.*` constructions and/or other existing linguistic records;
-- mappings from semantic functions to constructions when the topic is meaning-based;
-- language-specific conditions, exclusions, contrasts, and notes;
+- reviewed `CTR.*` construction links and/or other linguistic references;
+- semantic-function mappings when the topic is meaning-based;
+- conditions, exclusions, contrasts, and notes;
 - explicit delivery capabilities;
-- review state and version.
+- review state/version.
 
-The realization must describe the language accurately even when another language has no analogous category.
-
-Example: English can participate in `TOPIC.form.noun_classification` with a realization explaining that modern English does not have a productive grammatical noun-gender system, while still recording relevant pronominal/natural-gender behavior. Spanish, German, Russian, Latin, and other languages can expose their own classification and agreement systems. The topic remains one comparison surface without claiming the systems are identical.
+Do not create pairwise canonical lessons for Spanish-to-Portuguese, Portuguese-to-Spanish, English-to-Spanish, and so on.
 
 ## 5. Capability is multidimensional
 
-Do not use one source-of-truth flag equivalent to `full | comparison_only | unavailable` for v2 authoring.
+V2 authoring should not store one source-of-truth flag equivalent to `full | comparison_only | unavailable`.
 
-A realization should declare capabilities independently, for example:
+Capabilities are independent:
 
 ```text
 explanation
@@ -161,13 +156,13 @@ speaking
 story_quest
 ```
 
-The product may derive simple learner-facing labels from those capabilities, but the stored truth should remain dimensional.
+The UI may derive simple labels from these dimensions.
 
-This lets a language participate honestly. A language might have a reviewed comparison explanation and reading examples before it has production exercises or audio.
+This lets a language honestly support comparison and reading examples before production or audio is ready.
 
-## 6. A lesson session is an intersection, not a stored pairwise course
+## 6. Runtime session is an intersection
 
-The runtime session is derived from:
+A lesson session is compiled from:
 
 ```text
 TOPIC
@@ -175,59 +170,51 @@ TOPIC
 + learner's best/known comparison languages
 + reviewed realization capabilities
 + learner mastery
-+ reviewed corpus examples
++ reviewed corpus evidence
 + current reading context
 ```
 
-Do not store separate canonical lessons for every pair such as Spanish-to-Portuguese, Portuguese-to-Spanish, English-to-Spanish, and so on.
+For a learner who knows Spanish and Portuguese while learning Italian, one topic can:
 
-For a learner who knows Spanish and Portuguese while learning Italian, the same topic can compile a session that:
-
-1. states the universal idea once;
-2. shows Spanish and Portuguese as known comparison realizations;
-3. emphasizes the Italian realization;
-4. highlights helpful transfer and false equivalences;
-5. practices only Italian targets unless the learner explicitly chooses broader comparison practice.
+1. explain the universal distinction once;
+2. show Spanish and Portuguese as known comparison realizations;
+3. emphasize Italian;
+4. surface useful transfer and traps;
+5. practice Italian targets unless broader comparison practice is explicitly selected.
 
 ## 7. Lesson summary contract
 
-Every topic summary should be able to derive the learner's relevant language support before the session begins.
+Before opening a topic, derive support for the learner's own language set:
 
-Recommended learner-facing grouping:
-
-- **Learning here**: selected learning languages with sufficient instructional capability;
+- **Learning here**: learning languages with sufficient instructional capability;
 - **Compare with**: known/best languages with reviewed comparison capability;
-- **Reading examples only**: languages that can contribute reviewed examples but not a full instructional realization;
-- **Not yet supported for this topic**: selected languages with no reviewed realization.
+- **Reading examples only**: languages with reviewed examples but incomplete instruction;
+- **Not yet supported for this topic**: selected languages without a reviewed realization.
 
-This should be computed from topic + realization capabilities. Do not hard-code a topic-wide language count into React Native.
+Do not hard-code one topic-wide language count into React Native.
 
 ## 8. One topic at a time
 
-A topic should be narrow enough that a learner can answer “what did I just learn?” in one sentence.
+A topic should be narrow enough that the learner can answer “what did I just learn?” in one sentence.
 
-Good topic boundaries:
+Good boundaries:
 
 - cause vs purpose;
 - source, path, and goal;
 - noun classification systems;
-- singular/plural/other grammatical number;
+- grammatical number;
 - definite vs indefinite reference;
 - entity location;
 - completed vs ongoing event viewpoint.
 
-Bad topic boundaries:
+Bad boundaries:
 
-- “Prepositions” as one chapter;
+- “Prepositions” as a single chapter;
 - “All uses of por and para” as one first exposure;
-- “Being” when it mixes identity, state, existence, location, event location, and time predication into one beginner node;
-- broad vocabulary themes used as substitutes for grammatical prerequisites.
+- “Being” if it mixes identity, state, existence, location, event location, and time predication into one beginner node;
+- broad vocabulary themes standing in for grammatical dependencies.
 
-A broad domain may contain many topics. A lesson path can cluster related topics into a unit without making the unit the canonical linguistic object.
-
-## 9. Recommended universal path
-
-The learner-facing path should primarily follow communicative dependencies, with language-specific branches inserted only where required.
+## 9. Recommended learner-facing dependency spine
 
 ```text
 sound / script recognition
@@ -250,50 +237,58 @@ sound / script recognition
   -> narrative and discourse
 ```
 
-Form-system branches attach where the target language needs them. Examples include grammatical gender, noun classes, case, classifiers, articles, agreement, tone, script, evidentiality, and honorifics.
+Language-specific form-system branches attach only where needed. The graph defines prerequisites, not one universal screen order.
 
-The graph therefore defines prerequisites, not one universal screen order.
+## 10. Shared lesson-stage vocabulary
 
-## 10. Lesson-stage blueprint
+Most topics should be composable from:
 
-Most instructional topics should be composable from a small shared stage vocabulary:
+1. `context`
+2. `notice`
+3. `explain`
+4. `focus_practice`
+5. `contrast`
+6. `produce`
+7. `story_transfer`
+8. `review`
+9. `checkpoint`
 
-1. `context` — encounter the target in meaningful text/dialogue;
-2. `notice` — highlight the meaning-bearing form or contrast;
-3. `explain` — concise concept explanation;
-4. `focus_practice` — blocked practice on the new target;
-5. `contrast` — introduce the nearest confusable alternative;
-6. `produce` — learner constructs/types/speaks the target where supported;
-7. `story_transfer` — return to reviewed story occurrences;
-8. `review` — spaced retrieval after delay;
-9. `checkpoint` — optional mastery/placement evidence.
+Not every topic requires every stage.
 
-Not every topic requires every stage. The data says which stages are recommended; the runtime chooses presentation appropriate to capabilities and learner state.
-
-## 11. Practice mechanics remain generic
-
-The Expo practice primitives are the right abstraction and should survive the curriculum rewrite.
-
-Do not create `PorParaExercise`, `GermanGenderExercise`, or `RussianCaseExercise` components when the learner interaction is already expressible as a generic primitive.
-
-Examples:
-
-- form choice -> `InlineChoice`;
-- typed production -> `TypedResponse`;
-- reconstruction -> `Unscramble`;
-- form/meaning pairing -> `PairMatch`;
-- identify a span -> `SelectInText` when available;
-- classify targets -> `BucketAssign` when available;
-- paradigm exploration -> `ParadigmExplorer` when available.
-
-Topic-specific teaching components may compose these primitives, but grammar truth never lives in the component.
-
-## 12. React Native v2 feature contract
-
-Recommended Expo ownership after the v2 compiler exists:
+The recommended default learning rhythm is:
 
 ```text
-src/features/lessons-v2/
+context -> notice -> clear explanation -> blocked practice
+-> nearest contrast -> production -> story reuse -> spaced review
+```
+
+## 11. Existing Expo practice primitives should survive
+
+The curriculum rewrite should not become a UI rewrite for interaction mechanics that already have the right responsibility.
+
+Reuse generic primitives such as:
+
+- `InlineChoice`
+- `TypedResponse`
+- `Unscramble`
+- `PairMatch`
+- `InteractiveClock`
+- `InteractiveCalendar`
+
+and planned/general primitives such as `SelectInText`, `ParadigmExplorer`, `MediaPrompt`, `SpeechResponse`, and `BucketAssign` where they land.
+
+Do not create `PorParaExercise`, `GermanGenderExercise`, or `RussianCaseExercise` when the interaction is already generic.
+
+Grammar truth never lives in a React component.
+
+## 12. React Native implementation stays inside the existing lessons feature
+
+Do not create a permanent parallel `lessons-v2` product feature. Keep the existing `src/features/lessons` ownership boundary and replace its internal model incrementally.
+
+Recommended end-state shape:
+
+```text
+src/features/lessons/
   screens/
     TopicLessonScreen.tsx
   components/
@@ -313,17 +308,19 @@ src/features/lessons-v2/
     topicSession.ts
   services/
     topicCompilerAdapter.ts
+  legacy-v1/
+    ...temporary compatibility adapters only...
 ```
 
-Names are proposed contracts, not permission to duplicate existing generic components. Reuse current `@/core/components` practice primitives and reusable lesson presentation code wherever the underlying responsibility is still correct.
+Reuse current `@/core/components` practice mechanics and any lesson presentation component whose responsibility remains correct.
 
-The renderer should dispatch on data-driven stage/block types. There should be no screen per grammar topic.
+Routes stay thin. The renderer dispatches on data-driven stage/block types. There is no screen per grammar topic.
 
-## 13. Runtime compiled document
+## 13. Runtime document
 
-The app should consume a compiled, JSON-serializable topic document. It should contain only approved/review-eligible data needed for the active session.
+Expo consumes a compiled JSON-serializable document, not raw linguistic source files.
 
-Suggested high-level shape:
+High-level shape:
 
 ```text
 TopicRuntimeDocument
@@ -339,88 +336,88 @@ TopicRuntimeDocument
   trustSummary
 ```
 
-The compiler may produce a compatibility adapter to the current `LessonRuntimeLanguage` and `LessonRuntimeBlock` contracts during migration.
+A migration compiler may adapt this to the current v1 runtime shape temporarily.
 
-Do not make the Expo runtime parse raw linguistic JSON or infer grammar at render time.
+The app must not infer grammar at render time.
 
-## 14. Corpus example ownership
+## 14. Corpus evidence ownership
 
-`gef-content` remains the owner of exact work/anchor/span occurrence evidence.
+`gef-content` continues to own exact work/anchor/span evidence.
 
-A topic realization identifies what linguistic targets are relevant. Publishing-time analysis links reviewed occurrences to those targets. At runtime, the session selects examples according to spoiler, quality, learner-history, and current-book policies.
+A topic realization says which linguistic targets matter. Publishing-time analysis links occurrences to those targets. Runtime chooses reviewed examples according to spoiler policy, quality, current book, and learner history.
 
-A new topic can therefore use old reviewed books without copying story sentences into the lexicon repo.
+Do not copy story sentences into `gef-lexicon` merely to make a lesson work.
 
 ## 15. Learner-state database
 
-Canonical curriculum truth must not be stored in the learner database. The device database stores evidence and mastery only.
+Canonical curriculum truth stays in packages. The local learner database stores evidence/mastery only.
 
-Recommended local SQLite entities:
+Recommended SQLite entities:
 
 ### `learner_topic_mastery`
 
-Tracks cross-language conceptual familiarity.
+Cross-language conceptual familiarity:
 
-- profile ID;
-- topic ID;
-- conceptual strength/confidence;
-- evidence count;
-- last seen;
-- next review;
-- version of scoring model.
+- profile ID
+- topic ID
+- conceptual strength/confidence
+- evidence count
+- last seen
+- next review
+- scoring-model version
 
 ### `learner_realization_mastery`
 
-Tracks language-specific form knowledge.
+Language-specific form knowledge:
 
-- profile ID;
-- topic ID;
-- language tag;
-- construction/target ID;
-- modality (`recognition`, `reading`, `listening`, `writing`, `speaking`);
-- strength/confidence;
-- evidence count;
-- last seen;
-- next review.
+- profile ID
+- topic ID
+- language tag
+- construction/target ID
+- modality: `recognition | reading | listening | writing | speaking`
+- strength/confidence
+- evidence count
+- last seen
+- next review
 
 ### `learning_evidence`
 
-Append-oriented attempt/evidence rows.
+Append-oriented evidence:
 
-- evidence ID;
-- session ID;
-- topic ID;
-- language tag;
-- target IDs;
-- practice primitive;
-- modality;
-- result / score;
-- timestamp;
-- source context (lesson, book occurrence, placement, review, etc.).
+- evidence ID
+- session ID
+- topic ID
+- language tag
+- target IDs
+- practice primitive
+- modality
+- result/score
+- timestamp
+- source context such as lesson, book occurrence, placement, or review
 
 ### `topic_session_history`
 
-- session ID;
-- topic ID;
-- learning language tags;
-- comparison language tags;
-- source context;
-- started/completed timestamps;
-- compiled topic version.
+- session ID
+- topic ID
+- learning language tags
+- comparison language tags
+- source context
+- started/completed timestamps
+- compiled topic version
 
-A materialized review queue may be added for performance, but it should be derivable from mastery/evidence rather than becoming a second curriculum source of truth.
+A materialized review queue is allowed for performance but should be derivable from mastery/evidence.
 
-## 16. Mastery and cross-language transfer
+## 16. Mastery and transfer remain separate
 
-Track at least three distinct layers:
+Track at least:
 
-1. **concept/topic understanding** — the learner understands the distinction;
-2. **language realization mastery** — the learner recognizes/uses the target-language construction;
-3. **communicative performance** — the learner can use the target in a modality and context.
+1. concept/topic understanding;
+2. language realization mastery;
+3. communicative performance by modality/context.
 
-Knowing `SEM.PURPOSE` through Spanish can reduce explanation time when learning Portuguese or Italian. It must never mark the new language's realization mastered.
+Knowing purpose through Spanish can shorten explanation when learning Portuguese or Italian. It must never mark the Portuguese or Italian construction mastered.
 
-A useful internal identity remains conceptually:
+Conceptually, the durable key is:
 
 ```text
 topic/semantic target x language x construction x modality
@@ -428,21 +425,21 @@ topic/semantic target x language x construction x modality
 
 ## 17. Placement and skipping
 
-Placement should gather evidence against topics and realizations instead of assigning one coarse “beginner/intermediate/advanced” label.
+Placement gathers evidence against topics and realizations rather than assigning one coarse global level.
 
-A learner may be allowed to skip conceptual explanation when topic mastery is strong while still being tested on the new language realization.
+A learner may skip conceptual explanation when topic mastery is strong while still being tested on the new language realization.
 
-Placement evidence should be able to distinguish:
+Evidence should distinguish:
 
 - understands the meaning;
 - recognizes the form;
-- chooses the form in context;
-- produces the form;
+- chooses it in context;
+- produces it;
 - understands it in authentic reading/listening.
 
 ## 18. Adding a language
 
-The incremental workflow should be:
+The incremental workflow is:
 
 ```text
 pick one existing topic
@@ -452,88 +449,63 @@ pick one existing topic
   -> declare only capabilities actually supported
   -> validate
   -> add reviewed corpus evidence where available
-  -> topic automatically becomes available to matching learners
+  -> topic becomes available to matching learners
 ```
 
 There is no requirement to “finish the language” first.
-
-A coverage dashboard can therefore report progress by topic rather than only by global language tier.
 
 ## 19. Source-of-truth split
 
 ### `gef-lexicon`
 
-Owns:
-
-- universal topics and graph relationships;
-- semantic functions;
-- form-system curriculum definitions;
-- language-specific constructions/realizations;
-- reusable pedagogical rules;
-- localized/custom renderings when truly needed.
+Owns universal topics/graph edges, semantic functions, form-system definitions, language constructions/realizations, reusable pedagogical rules, and custom renderings when needed.
 
 ### `gef-content`
 
-Owns:
-
-- exact reviewed story occurrences;
-- passage-level linguistic resolution;
-- topic/lesson compatibility evidence;
-- book/chapter example quality and spoiler safety.
+Owns exact reviewed story occurrences, passage-level linguistic resolution, compatibility evidence, example quality, and spoiler safety.
 
 ### `gef-expo`
 
-Owns:
-
-- compiled runtime rendering;
-- session language selection;
-- learner mastery/evidence persistence;
-- review scheduling;
-- UI navigation and accessibility;
-- practice components.
+Owns compiled runtime rendering, session language selection, learner evidence/mastery persistence, review scheduling, navigation/accessibility, and practice components.
 
 ## 20. V1 archive and migration policy
 
-Do not physically move or delete v1 source files while the shipping compiler/runtime may still import them.
+Do not physically move/delete v1 source while shipping compiler/runtime imports may still depend on it.
 
-Effective immediately for the v2 migration:
+Effective for this migration:
 
-- v1 lesson IDs and lesson families are **frozen reference material**;
-- new curriculum authoring should target v2 topics/realizations unless maintaining a shipping v1 bug;
-- `legacy/lessons-v1/catalog-snapshot.json` records the v1 catalog being superseded;
-- current v1 files stay at their existing paths until import consumers are removed;
-- v1 data may be mined for reviewed facts, examples of pedagogy, and reusable constructions;
-- do not blindly migrate v1 lesson boundaries into v2;
-- after v2 compiler/runtime parity, perform a second migration that moves/deletes unreachable v1 files and preserves Git history.
+- v1 lesson IDs/families are frozen reference material;
+- new authoring targets v2 topics/realizations unless fixing a shipping v1 bug;
+- `legacy/lessons-v1/catalog-snapshot.json` records the superseded catalog;
+- current v1 source stays at existing paths until import consumers are removed;
+- v1 may be mined for reviewed facts, constructions, and useful pedagogy;
+- v1 lesson boundaries are not automatically migrated;
+- after v2 parity, a second cleanup physically removes/relocates unreachable v1 code/data while Git history remains the archive.
 
-This is an archive-first, cutover-second migration, not a flag-day rewrite.
+This is archive-first, cutover-second, not a flag-day rewrite.
 
-## 21. First reference topics
+## 21. Reference topics
 
-Use a few topics to prove the architecture before converting the whole curriculum.
+Prove the architecture with three deliberately different topics:
 
-Recommended reference set:
+1. `TOPIC.form.noun_classification`
+   - proves structural comparison and meaningful absence of a grammatical category.
+2. `TOPIC.meaning.cause_purpose`
+   - reuses existing por/para semantic work without making Spanish universal.
+3. `TOPIC.meaning.source_path_goal`
+   - proves relational comparison across adpositions, cases, particles, and other constructions.
 
-1. **Noun classification systems** (`TOPIC.form.noun_classification`)
-   - proves a form-system topic where languages differ radically or lack the category;
-   - exercises comparison without abusing semantic functions.
-2. **Cause vs purpose** (`TOPIC.meaning.cause_purpose`)
-   - reuses the strongest existing por/para semantic work;
-   - proves one semantic distinction can map to different constructions in many languages.
-3. **Source, path, goal** (`TOPIC.meaning.source_path_goal`)
-   - proves that “preposition” instruction can instead be driven by spatial semantics across adpositions, cases, particles, and other constructions.
-
-Only after these compile cleanly across typologically different languages should the rest of the v1 lesson catalog be mapped into v2.
+Only after these work across typologically different languages should the remaining v1 catalog be mapped wholesale.
 
 ## 22. Non-goals
 
 V2 does not mean:
 
 - one identical path for every language;
-- pretending every language has every grammatical category;
-- making English the interlingua of the data model;
+- pretending every language has every category;
+- using English as the data-model interlingua;
 - generating unreviewed grammar at runtime;
-- copying a lesson for every language pair;
+- copying one lesson per language pair;
 - putting story sentences in `gef-lexicon`;
-- deleting generic Expo practice primitives that already have the correct responsibility;
+- deleting generic Expo practice primitives with correct responsibilities;
 - treating AI-generated content as approved linguistic truth.
