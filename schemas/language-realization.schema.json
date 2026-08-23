@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/language-realization.schema.json",
+  "title": "Gef V2 Language Topic Realization",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "realization_id",
+    "topic_id",
+    "language_tag",
+    "capabilities",
+    "review_state",
+    "version"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "realization_id": {"type": "string", "pattern": "^REAL\\.[A-Za-z0-9._-]+$"},
+    "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
+    "language_tag": {"type": "string", "minLength": 1},
+    "system_status": {
+      "type": "string",
+      "enum": ["present", "limited", "absent", "not_applicable", "unknown"]
+    },
+    "semantic_mappings": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/semanticMapping"}
+    },
+    "construction_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"},
+      "uniqueItems": true
+    },
+    "focus_axis_values": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "string"},
+          {"type": "number"},
+          {"type": "integer"},
+          {"type": "boolean"},
+          {"type": "array", "items": {"type": "string"}}
+        ]
+      }
+    },
+    "capabilities": {"$ref": "#/definitions/capabilities"},
+    "notes": {"type": "string"},
+    "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
+    "version": {"type": "integer", "minimum": 1}
+  },
+  "definitions": {
+    "semanticMapping": {
+      "type": "object",
+      "required": ["semantic_function_id", "construction_ids"],
+      "properties": {
+        "semantic_function_id": {"type": "string", "pattern": "^SEM\\.[A-Z0-9._-]+$"},
+        "construction_ids": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^CTR\\.[A-Za-z0-9._-]+$"},
+          "uniqueItems": true
+        },
+        "conditions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "exclusions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "explanation",
+        "comparison",
+        "reviewed_examples",
+        "recognition_practice",
+        "production_practice",
+        "reading_transfer",
+        "listening",
+        "speaking",
+        "story_quest"
+      ],
+      "properties": {
+        "explanation": {"type": "boolean"},
+        "comparison": {"type": "boolean"},
+        "reviewed_examples": {"type": "boolean"},
+        "recognition_practice": {"type": "boolean"},
+        "production_practice": {"type": "boolean"},
+        "reading_transfer": {"type": "boolean"},
+        "listening": {"type": "boolean"},
+        "speaking": {"type": "boolean"},
+        "story_quest": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
