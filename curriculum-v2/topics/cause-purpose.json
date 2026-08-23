@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.meaning.cause_purpose",
+  "topic_key": "cause_purpose",
+  "node_kind": "meaning",
+  "domain": "cause_intention",
+  "title_key": "curriculum.topic.cause_purpose.title",
+  "summary_key": "curriculum.topic.cause_purpose.summary",
+  "concept_refs": [
+    {"target_type": "semantic_function", "target_id": "SEM.CAUSE_REASON"},
+    {"target_type": "semantic_function", "target_id": "SEM.PURPOSE"}
+  ],
+  "focus_axes": [
+    "cause_or_reason",
+    "intended_purpose",
+    "form_selected_by_meaning",
+    "construction_constraints",
+    "common_cross_language_transfer_traps"
+  ],
+  "lesson_blueprint": {
+    "recommended_stages": [
+      "context",
+      "notice",
+      "explain",
+      "focus_practice",
+      "contrast",
+      "produce",
+      "story_transfer",
+      "review",
+      "checkpoint"
+    ],
+    "default_session_minutes": 8,
+    "comparison_recommended": true,
+    "story_transfer_recommended": true,
+    "notes": "Teach each language realization through meaning first. A language may use one form for both functions, several competing constructions, case morphology, particles, clauses, or another strategy. Do not frame English 'for' or Spanish por/para as the universal identity."
+  },
+  "difficulty_band": "A2",
+  "notes": "Reference v2 semantic topic built from already-existing semantic-function IDs. Spanish por/para research is useful evidence for one realization, not the definition of the universal topic.",
+  "review_state": "candidate",
+  "version": 1
+}
