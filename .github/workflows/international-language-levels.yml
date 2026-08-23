@@ -1,18 +1,7 @@
 name: International language levels coverage
 
 on:
-  pull_request:
-    paths:
-      - 'lessons/mul/international-language-levels/**'
-      - 'scripts/validate-international-language-levels.mjs'
-      - 'package.json'
-      - '.github/workflows/international-language-levels.yml'
-  push:
-    branches: [main]
-    paths:
-      - 'lessons/mul/international-language-levels/**'
-      - 'scripts/validate-international-language-levels.mjs'
-      - 'package.json'
+  workflow_dispatch:  # disabled auto-triggers 2026-08-23, no GitHub Actions spend
 
 jobs:
   validate:
