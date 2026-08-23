@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.meaning.source_path_goal",
+  "topic_key": "source_path_goal",
+  "node_kind": "meaning",
+  "domain": "space_and_motion",
+  "title_key": "curriculum.topic.source_path_goal.title",
+  "summary_key": "curriculum.topic.source_path_goal.summary",
+  "concept_refs": [
+    {"target_type": "semantic_function", "target_id": "SEM.PATH_ROUTE"},
+    {"target_type": "semantic_function", "target_id": "SEM.DESTINATION_GOAL"}
+  ],
+  "focus_axes": [
+    "source_or_origin",
+    "path_or_route",
+    "destination_or_goal",
+    "boundary_crossing",
+    "static_location_vs_motion",
+    "construction_constraints",
+    "cross_language_packaging"
+  ],
+  "lesson_blueprint": {
+    "recommended_stages": [
+      "context",
+      "notice",
+      "explain",
+      "focus_practice",
+      "contrast",
+      "produce",
+      "story_transfer",
+      "review",
+      "checkpoint"
+    ],
+    "default_session_minutes": 9,
+    "comparison_recommended": true,
+    "story_transfer_recommended": true,
+    "notes": "Compare the spatial relation first, then show how each language realizes it through adpositions, cases, particles, verb-framed constructions, or other reviewed structures."
+  },
+  "difficulty_band": "A1",
+  "notes": "Reference v2 semantic topic. The current semantic-function registry already contains PATH_ROUTE and DESTINATION_GOAL. It does not yet contain a reviewed dedicated SOURCE semantic-function ID, so this candidate topic deliberately does not invent one. Research and promote that function separately before a canonical source mapping is added.",
+  "review_state": "candidate",
+  "version": 1
+}
