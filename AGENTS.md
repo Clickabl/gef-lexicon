@@ -74,3 +74,17 @@ Branches, when used, are named `<tool>/<short-task-slug>`; close them out
 Push after every commit. Shared task items (owned by `gef-expo`'s
 `tasks/coding-todos.json` / `research-tasks.json`) may carry `assignee` and
 `branch` fields — respect both.
+
+### CDN auto-deploy (added 2026-08-23)
+
+A push to `main` auto-deploys within a few seconds to
+`https://cdn.clickabl.co/gef/lexicon/v1/` — this is what `gef-expo`'s
+`LEXICON_BASE_URL`-driven runtime sources actually read from. The synced
+subset is `concepts/`, `contracts/`, `curriculum/`, `curriculum-v2/`,
+`grammar/`, `knowledge-sets/`, `languages/`, `lesson-families/`, `lexi/`,
+`name-families/`, `names/`, `proficiency/`, `relations/`, `sources/`,
+`works/` (see `cdn-hooks` server config; internal-only material such as
+`docs/`, `scripts/`, `research/`, `legacy/`, `registry/`, `schemas/` is not
+published). If you add a new top-level directory that should be
+CDN-facing, it needs to be added to the receiver's allowlist too — say so
+in your PR/commit rather than assuming it will show up automatically.
