@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scenario_id": "SCENARIO.story.recount_event",
+  "scenario_key": "recount_story_event",
+  "title_key": "curriculum.scenario.recount_story_event.title",
+  "summary_key": "curriculum.scenario.recount_story_event.summary",
+  "target_refs": [
+    {
+      "kind": "topic",
+      "id": "TOPIC.goal.talk_about_past_events",
+      "role": "required"
+    }
+  ],
+  "optional_target_refs": [],
+  "activity_kinds": ["lesson", "practice", "game", "quest", "story_transfer"],
+  "discovery_tags": ["story", "retell", "past_event", "reader"],
+  "difficulty_band": "A2",
+  "notes": "Reference scenario proving that situations compose the universal graph. Exact language forms are resolved from language realizations; this file intentionally contains none.",
+  "review_state": "candidate",
+  "version": 1
+}
