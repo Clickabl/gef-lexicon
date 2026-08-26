@@ -1,0 +1,14 @@
+{
+  "language_code": "fa",
+  "language_name_en": "Persian",
+  "morphology_strategy": "mixed",
+  "default_script": "Arab",
+  "writing_direction": "rtl",
+  "word_segmentation_behavior": "space_separated",
+  "tokenizer_type": "whitespace_punct_zwnj",
+  "politeness_system_supported": true,
+  "classifier_behavior": "none",
+  "supported_feature_layers": ["base", "possessor", "clitic"],
+  "supported_cases": [],
+  "supported_genders_or_classes": []
+}
