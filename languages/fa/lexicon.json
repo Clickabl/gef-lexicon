@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "language_code": "fa",
+  "lexemes": [
+    {
+      "lexeme_id": "98e3105d-51ef-49f2-8dc5-e4871a15bd8a",
+      "lemma_nfc": "قورباغه",
+      "upos": "NOUN",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "0e4b5625-9a75-4ca8-bb41-24dc26c08e7c",
+          "sense_key": "قورباغه-دوزیست",
+          "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
+          "concept_links": [
+            {
+              "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
+              "relation": "primary",
+              "review_state": "candidate"
+            }
+          ],
+          "definitions": {
+            "en": "a tailless amphibian with strong hind legs used for jumping",
+            "fa": "دوزیستی بی‌دم با پاهای عقبی نیرومند که برای پریدن به کار می‌روند"
+          },
+          "cefr_level": "A1",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "0b1ba463-7fd4-40cf-8998-d115a83e3433",
+          "surface_nfc": "قورباغه",
+          "normalized_lookup": "قورباغه",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "b417fa20-9050-4ce6-a1cc-604c46cc60d8",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "اسم مفرد"
+            }
+          ]
+        },
+        {
+          "form_id": "26029561-483d-4fad-9842-8495a0296e39",
+          "surface_nfc": "قورباغه‌ای",
+          "normalized_lookup": "قورباغه‌ای",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "71557bbb-5910-4d13-a549-721991465199",
+              "features": {"base": {"number": "singular", "definiteness": "indefinite"}},
+              "display_label_key": "اسم مفرد نکره"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lexeme_id": "42de4465-c894-4e97-a873-25934fef1f38",
+      "lemma_nfc": "خدنگ",
+      "upos": "NOUN",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "c84883ff-72d0-406f-8679-722257edcc9b",
+          "sense_key": "خدنگ-جانور",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "a small carnivorous mammal with a long body and tail, belonging to the mongoose family",
+            "fa": "پستاندار گوشت‌خوار کوچکی با بدن و دمی کشیده از خانوادهٔ خدنگ‌ها"
+          },
+          "cefr_level": "B1",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "fbdac9ca-54d4-4dfb-bded-f312e39fd9ab",
+          "surface_nfc": "خدنگ",
+          "normalized_lookup": "خدنگ",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "a62a270f-da41-4a43-aa9c-0c6731b00916",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "اسم مفرد"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lexeme_id": "0031fe58-7836-4f36-b75c-eadf59021b10",
+      "lemma_nfc": "شاهزاده‌خانم",
+      "upos": "NOUN",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "5c6ab2ce-87ce-416e-b001-0c125b9eee90",
+          "sense_key": "شاهزاده‌خانم-عنوان",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "a princess, especially a female member of a royal family",
+            "fa": "شاهزادهٔ زن یا دخترِ عضو یک خانوادهٔ سلطنتی"
+          },
+          "cefr_level": "A2",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "f5628baa-0dc7-48d6-b6ed-4cb7f8cad654",
+          "surface_nfc": "شاهزاده‌خانم",
+          "normalized_lookup": "شاهزاده‌خانم",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "40b0a62b-ad2d-4f6a-abac-52c30cc25576",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "اسم مفرد"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lexeme_id": "28e0cb1e-8ec5-4dc7-af7a-6daf522a11d6",
+      "lemma_nfc": "توپ",
+      "upos": "NOUN",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "cc06723c-25de-45d6-a9c7-c28d947248b1",
+          "sense_key": "توپ-گوی-بازی",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "a round object used in games or play",
+            "fa": "شیئی گرد که برای بازی به کار می‌رود"
+          },
+          "cefr_level": "A1",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "412a42d1-d691-43c5-b5ab-6dd1d3db0d7f",
+          "surface_nfc": "توپ",
+          "normalized_lookup": "توپ",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "bcdb1685-1fcd-41e7-943a-b899974b7ab7",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "اسم مفرد"
+            }
+          ]
+        },
+        {
+          "form_id": "c58c3e61-9458-4447-95e7-45d9e814f8bf",
+          "surface_nfc": "توپش",
+          "normalized_lookup": "توپش",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "963e3177-ed64-44fd-8fc8-08565ba11d5d",
+              "features": {"base": {"number": "singular"}, "possessor": {"person": "3", "number": "singular"}},
+              "display_label_key": "اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lexeme_id": "e518b130-61de-4a30-9037-c5ea1ce57fc3",
+      "lemma_nfc": "قول",
+      "upos": "NOUN",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "1587738c-a558-4188-95a7-2a5fa26f9c19",
+          "sense_key": "قول-وعده",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "a promise or commitment that someone says they will keep",
+            "fa": "وعده یا تعهدی که کسی می‌گوید به آن عمل خواهد کرد"
+          },
+          "cefr_level": "A2",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "4e4d059a-49bd-4698-b6d2-8fe2d29f787e",
+          "surface_nfc": "قول",
+          "normalized_lookup": "قول",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "ce9b103d-f10b-475e-b48d-acf987f06749",
+              "features": {"base": {"number": "singular"}},
+              "display_label_key": "اسم مفرد"
+            }
+          ]
+        },
+        {
+          "form_id": "09a86022-185c-429b-bb1b-e2b820855c71",
+          "surface_nfc": "قولش",
+          "normalized_lookup": "قولش",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "c4165f2b-35ef-4f57-a774-4b31e94e2be0",
+              "features": {"base": {"number": "singular"}, "possessor": {"person": "3", "number": "singular"}},
+              "display_label_key": "اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
