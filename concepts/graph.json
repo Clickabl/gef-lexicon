@@ -1,113 +1,38 @@
 {
   "schema_version": 1,
   "concepts": [
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001",
-      "concept_key": "speak-communicate",
-      "domain": "communication",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "produce spoken words in order to communicate",
-        "must_preserve": ["the communication is performed with spoken words or speech"],
-        "must_not_imply": ["a specific language ability unless the source sense explicitly includes it", "a conversation with multiple participants unless the source sense explicitly includes it", "writing or non-spoken communication"]
-      },
-      "planning_difficulty_hint": "A1"
-    },
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
-      "concept_key": "read-written-words",
-      "domain": "education",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "interpret written or printed linguistic symbols as language",
-        "must_preserve": ["the object interpreted is written or printed language"],
-        "must_not_imply": ["reading aloud unless explicitly expressed", "studying or memorizing the text unless explicitly expressed", "interpreting a non-linguistic sign, meter, or measurement"]
-      },
-      "planning_difficulty_hint": "A1"
-    },
-    {
-      "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
-      "concept_key": "frog-amphibian",
-      "domain": "nature",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a frog: a tailless adult amphibian of the group commonly called frogs",
-        "must_preserve": ["the referent is a frog rather than a generic amphibian"],
-        "must_not_imply": ["a toad specifically", "a tadpole or other larval stage", "a figurative person or object called a frog"]
-      },
-      "planning_difficulty_hint": "A1"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000001",
-      "concept_key": "romantic-date-meeting",
-      "domain": "social",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a planned social meeting between people with a romantic or potentially romantic purpose",
-        "must_preserve": ["the meeting has a romantic or potentially romantic social purpose"],
-        "must_not_imply": ["a medical, business, or service appointment", "a calendar day", "a generic meeting with no romantic implication"]
-      },
-      "planning_difficulty_hint": "A2"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000002",
-      "concept_key": "scheduled-appointment",
-      "domain": "time",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "an arrangement to meet or receive a service at a scheduled time",
-        "must_preserve": ["there is an arranged meeting or service at a scheduled time"],
-        "must_not_imply": ["a romantic purpose", "a calendar date by itself", "an unscheduled encounter"]
-      },
-      "planning_difficulty_hint": "A2"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000003",
-      "concept_key": "toad-amphibian",
-      "domain": "nature",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a terrestrial or semi-terrestrial tailless amphibian conventionally called a toad",
-        "must_preserve": ["the referent is specifically a toad"],
-        "must_not_imply": ["any frog generically", "a bullfrog specifically", "a tadpole"]
-      },
-      "planning_difficulty_hint": "A2"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000004",
-      "concept_key": "bullfrog-amphibian",
-      "domain": "nature",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a frog specifically identified as a bullfrog",
-        "must_preserve": ["the referent is a bullfrog, a narrower kind of frog"],
-        "must_not_imply": ["a frog of unspecified kind", "a toad", "a tadpole"]
-      },
-      "planning_difficulty_hint": "B1"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000005",
-      "concept_key": "anuran-taxonomy",
-      "domain": "nature",
-      "translation_role": "taxonomy_only",
-      "semantic_contract": {
-        "definition_en": "the broad taxonomic grouping containing adult frogs and toads",
-        "must_preserve": ["the member belongs to the broad frog/toad taxonomic neighborhood"],
-        "must_not_imply": ["that frog and toad are exact lexical equivalents", "that every member is conventionally called a frog", "that every member is conventionally called a toad"]
-      },
-      "planning_difficulty_hint": "B1"
-    },
-    {
-      "concept_id": "cpt_02000000-0000-7000-9000-000000000006",
-      "concept_key": "calendar-date",
-      "domain": "time",
-      "translation_role": "exact_pivot",
-      "semantic_contract": {
-        "definition_en": "a particular day identified in a calendar system",
-        "must_preserve": ["the referent is a calendar day or calendar designation"],
-        "must_not_imply": ["a romantic meeting", "a scheduled appointment", "a duration"]
-      },
-      "planning_difficulty_hint": "A1"
-    }
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000001","concept_key":"speak-communicate","domain":"communication","translation_role":"exact_pivot","semantic_contract":{"definition_en":"produce spoken words in order to communicate","must_preserve":["the communication is performed with spoken words or speech"],"must_not_imply":["a specific language ability unless the source sense explicitly includes it","a conversation with multiple participants unless the source sense explicitly includes it","writing or non-spoken communication"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002","concept_key":"read-written-words","domain":"education","translation_role":"exact_pivot","semantic_contract":{"definition_en":"interpret written or printed linguistic symbols as language","must_preserve":["the object interpreted is written or printed language"],"must_not_imply":["reading aloud unless explicitly expressed","studying or memorizing the text unless explicitly expressed","interpreting a non-linguistic sign, meter, or measurement"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003","concept_key":"frog-amphibian","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a frog: a tailless adult amphibian of the group commonly called frogs","must_preserve":["the referent is a frog rather than a generic amphibian"],"must_not_imply":["a toad specifically","a tadpole or other larval stage","a figurative person or object called a frog"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000001","concept_key":"romantic-date-meeting","domain":"social","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a planned social meeting between people with a romantic or potentially romantic purpose","must_preserve":["the meeting has a romantic or potentially romantic social purpose"],"must_not_imply":["a medical, business, or service appointment","a calendar day","a generic meeting with no romantic implication"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000002","concept_key":"scheduled-appointment","domain":"time","translation_role":"exact_pivot","semantic_contract":{"definition_en":"an arrangement to meet or receive a service at a scheduled time","must_preserve":["there is an arranged meeting or service at a scheduled time"],"must_not_imply":["a romantic purpose","a calendar date by itself","an unscheduled encounter"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000003","concept_key":"toad-amphibian","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a terrestrial or semi-terrestrial tailless amphibian conventionally called a toad","must_preserve":["the referent is specifically a toad"],"must_not_imply":["any frog generically","a bullfrog specifically","a tadpole"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000004","concept_key":"bullfrog-amphibian","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a frog specifically identified as a bullfrog","must_preserve":["the referent is a bullfrog, a narrower kind of frog"],"must_not_imply":["a frog of unspecified kind","a toad","a tadpole"]},"planning_difficulty_hint":"B1"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000005","concept_key":"anuran-taxonomy","domain":"nature","translation_role":"taxonomy_only","semantic_contract":{"definition_en":"the broad taxonomic grouping containing adult frogs and toads","must_preserve":["the member belongs to the broad frog/toad taxonomic neighborhood"],"must_not_imply":["that frog and toad are exact lexical equivalents","that every member is conventionally called a frog","that every member is conventionally called a toad"]},"planning_difficulty_hint":"B1"},
+    {"concept_id":"cpt_02000000-0000-7000-9000-000000000006","concept_key":"calendar-date","domain":"time","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a particular day identified in a calendar system","must_preserve":["the referent is a calendar day or calendar designation"],"must_not_imply":["a romantic meeting","a scheduled appointment","a duration"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_440ff55c-709b-5189-8b19-5fee31ff70cb","concept_key":"king-royal-ruler","domain":"society","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a male monarch or royal ruler","must_preserve":["the referent is a male royal ruler"],"must_not_imply":["a generic leader with no royal status","a chess piece"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_d214e4c9-81a8-533d-9ea2-491ad99f1938","concept_key":"princess-female-royal","domain":"society","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a female royal person conventionally called a princess","must_preserve":["the referent is a female member of a royal family or a woman holding the title princess"],"must_not_imply":["a queen specifically","a generic young woman"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_19d21411-43c6-5a36-a76f-f33315b0fc32","concept_key":"prince-male-royal","domain":"society","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a male royal person conventionally called a prince","must_preserve":["the referent is a male member of a royal family or a man holding the title prince"],"must_not_imply":["a king specifically","a generic young man"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_bf0e034e-0025-5ffc-8fec-97364c0d3c47","concept_key":"ball-play-object","domain":"objects","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a round object used for play or games","must_preserve":["the referent is a round play or game object"],"must_not_imply":["a formal dance","a projectile or bullet unless context explicitly indicates it"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_5c00fd2f-a0d5-578d-bba9-07d378e49763","concept_key":"promise-commitment","domain":"communication","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a commitment that someone gives to do or keep something","must_preserve":["there is a stated commitment or undertaking"],"must_not_imply":["a prediction with no commitment","a mere hope or intention"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_36334098-9bbb-5d12-9cc1-b8bcb7c8a97b","concept_key":"forest-wooded-area","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a large area of land covered mainly with trees","must_preserve":["the referent is a wooded land area"],"must_not_imply":["a single tree","a small planted garden"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_986c253a-bd43-5f60-a2a6-695488aa2feb","concept_key":"well-water-shaft","domain":"places","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a deep human-made shaft or opening used to reach water","must_preserve":["the referent is a well that gives access to water"],"must_not_imply":["well-being or good health","an adverb meaning satisfactorily"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_3ab1cc6e-02ad-5248-9dfe-5e00309dbef8","concept_key":"water-substance","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"the ordinary liquid substance water","must_preserve":["the referent is liquid water"],"must_not_imply":["a body of water specifically unless context says so","the act of watering"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_46af265e-02bd-5cea-a3c9-d137048c1b33","concept_key":"castle-fortified-residence","domain":"places","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a large fortified or castle-like residence","must_preserve":["the referent is a castle or fortified royal residence"],"must_not_imply":["a generic house","a chess move"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_22d7bbed-5745-56fb-b33a-b292070aad91","concept_key":"door-building-opening","domain":"objects","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a movable barrier that opens and closes an entrance to a room or building","must_preserve":["the referent is a physical door at an entrance"],"must_not_imply":["a metaphorical opportunity","a doorway with no movable barrier unless the language sense covers both"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_86b1909a-23da-555e-a500-25d89355805a","concept_key":"bed-sleeping-furniture","domain":"objects","translation_role":"exact_pivot","semantic_contract":{"definition_en":"furniture or a prepared place used for sleeping","must_preserve":["the referent is a place or piece of furniture for sleeping"],"must_not_imply":["a riverbed","a flower bed"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_e423a44b-26c9-5a6c-a415-c45f8f964088","concept_key":"heart-body-organ","domain":"body","translation_role":"exact_pivot","semantic_contract":{"definition_en":"the heart as the organ associated with pumping blood, including ordinary figurative emotional reference to one's heart","must_preserve":["the lexical referent is the heart"],"must_not_imply":["a geometric heart symbol unless context explicitly indicates it","the central part of an object unless context explicitly indicates it"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_8a8827dd-2a0d-5f85-95aa-1523b0af3668","concept_key":"carriage-horse-drawn-vehicle","domain":"transport","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a wheeled passenger vehicle designed to be drawn by horses","must_preserve":["the referent is a horse-drawn carriage"],"must_not_imply":["a railway carriage","a baby carriage"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_c08d84fb-331c-52ee-83a1-8f317bc5abd8","concept_key":"friend-social-relationship","domain":"social","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a person with whom someone has a relationship of mutual affection or companionship","must_preserve":["the referent is a social friend"],"must_not_imply":["a romantic partner specifically","an acquaintance with no friendship implication"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_ab6f2881-4ab8-57b6-aa60-720d9f381e6f","concept_key":"room-building-space","domain":"places","translation_role":"exact_pivot","semantic_contract":{"definition_en":"an enclosed space inside a building","must_preserve":["the referent is an interior room"],"must_not_imply":["available capacity or space in the abstract","an entire building"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_58e20f37-9055-5906-a892-efd4d5f1fe84","concept_key":"wall-building-surface","domain":"objects","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a vertical structure forming or dividing the side of a room or building","must_preserve":["the referent is a physical wall"],"must_not_imply":["a defensive city wall unless context indicates it","a metaphorical barrier"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_e2c7c639-06e7-58fb-be62-2a1dd02d08e2","concept_key":"morning-day-period","domain":"time","translation_role":"exact_pivot","semantic_contract":{"definition_en":"the early part of the day, typically from waking or sunrise until around midday","must_preserve":["the referent is the morning period of a day"],"must_not_imply":["the entire day","evening or night"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_07bfb052-fa95-5127-a6fb-f9cdb37fd952","concept_key":"horse-animal","domain":"nature","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a large domesticated hoofed mammal commonly ridden or used to pull vehicles","must_preserve":["the referent is a horse"],"must_not_imply":["a donkey","a chess knight"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_64c6c4d0-0fbb-5556-ae85-1e991c909f15","concept_key":"servant-person","domain":"society","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a person whose role is to serve or work for another person or household","must_preserve":["the referent is a person serving another person or household"],"must_not_imply":["a computer server","a government civil servant unless context indicates that sense"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_aec106c1-94fa-5a45-9b30-6f81e6db0c65","concept_key":"home-place-of-living","domain":"places","translation_role":"exact_pivot","semantic_contract":{"definition_en":"the place where a person lives or belongs","must_preserve":["the referent is someone's home or place of living"],"must_not_imply":["a building considered only as a physical house","a webpage home screen"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_ba56c227-c560-5a63-866d-56ead26f57dd","concept_key":"chair-seat-furniture","domain":"objects","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a seat for one person, typically with a back","must_preserve":["the referent is seating furniture for one person"],"must_not_imply":["the leader of a meeting or committee","an academic professorship"]},"planning_difficulty_hint":"A1"},
+    {"concept_id":"cpt_f955352f-f84c-5cea-895e-154115409446","concept_key":"witch-magic-practitioner","domain":"people","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a person described in a story as using witchcraft or magic","must_preserve":["the referent is a person characterized as a witch or magical practitioner"],"must_not_imply":["a stage magician without witchcraft","a generic woman"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_070612ed-5841-591e-8ee0-b1320f93289c","concept_key":"magic-spell-enchantment","domain":"culture","translation_role":"exact_pivot","semantic_contract":{"definition_en":"a magical enchantment or spell placed on a person or thing","must_preserve":["the referent is an enchantment produced by magic"],"must_not_imply":["ordinary spelling of words","a non-magical period of time"]},"planning_difficulty_hint":"A2"},
+    {"concept_id":"cpt_ada65fcf-f6ea-5c59-8ce2-855efff4e016","concept_key":"happiness-joy-emotion","domain":"emotion","translation_role":"exact_pivot","semantic_contract":{"definition_en":"the positive emotional state of being happy or feeling joy","must_preserve":["a positive emotion of happiness or joy is expressed"],"must_not_imply":["mere satisfaction with a technical result unless it is emotional","physical pleasure specifically"]},"planning_difficulty_hint":"A1"}
   ]
 }
