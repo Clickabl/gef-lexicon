@@ -14,22 +14,13 @@
           "sense_key": "قورباغه-دوزیست",
           "primary_concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
           "concept_links": [
-            {
-              "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003",
-              "relation": "primary",
-              "review_state": "candidate"
-            }
+            {"concept_id":"cpt_018f2c3a-7b1e-7a4d-9c2e-000000000003","relation":"primary","review_state":"candidate"}
           ],
           "definitions": {
             "en": "a tailless amphibian with strong hind legs used for jumping",
             "fa": "دوزیستی بی‌دم با پاهای عقبی نیرومند که برای پریدن به کار می‌روند"
           },
-          "cefr_level": "A1",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "cefr_level": "A1"
         }
       ],
       "forms": [
@@ -39,11 +30,7 @@
           "normalized_lookup": "قورباغه",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "b417fa20-9050-4ce6-a1cc-604c46cc60d8",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "اسم مفرد"
-            }
+            {"analysis_id":"b417fa20-9050-4ce6-a1cc-604c46cc60d8","features":{"base":{"number":"singular"}},"display_label_key":"اسم مفرد"}
           ]
         },
         {
@@ -52,11 +39,7 @@
           "normalized_lookup": "قورباغه‌ای",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "71557bbb-5910-4d13-a549-721991465199",
-              "features": {"base": {"number": "singular", "definiteness": "indefinite"}},
-              "display_label_key": "اسم مفرد نکره"
-            }
+            {"analysis_id":"71557bbb-5910-4d13-a549-721991465199","features":{"base":{"number":"singular","definiteness":"indefinite"}},"display_label_key":"اسم مفرد نکره"}
           ]
         }
       ]
@@ -73,15 +56,34 @@
           "sense_key": "خدنگ-جانور",
           "primary_concept_id": null,
           "definitions": {
-            "en": "a small carnivorous mammal with a long body and tail, belonging to the mongoose family",
-            "fa": "پستاندار گوشت‌خوار کوچکی با بدن و دمی کشیده از خانوادهٔ خدنگ‌ها"
+            "en": "a mongoose, a small carnivorous mammal with a long body and tail",
+            "fa": "خدنگِ جانور؛ پستاندار گوشت‌خوار کوچکی با بدن و دمی کشیده"
           },
-          "cefr_level": "B1",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "sense_hint": {
+            "en": "the animal sense, not the older tree or arrow senses",
+            "fa": "معنای جانوری، نه معنای قدیمیِ درخت یا تیر"
+          },
+          "cefr_level": "B1"
+        },
+        {
+          "sense_id": "13522277-10ff-4d99-b11e-a66a987f0465",
+          "sense_key": "خدنگ-درخت",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "an older Persian name for a hard-wooded tree whose wood was used for arrows and spears",
+            "fa": "نامی قدیمی برای درختی با چوب سخت که از چوب آن تیر و نیزه می‌ساختند"
+          },
+          "cefr_level": "C1"
+        },
+        {
+          "sense_id": "b5ea23d5-fe82-4fe5-b376-1daaf6fbcd61",
+          "sense_key": "خدنگ-تیر",
+          "primary_concept_id": null,
+          "definitions": {
+            "en": "an older literary sense meaning an arrow made from hard straight wood",
+            "fa": "معنایی قدیمی و ادبی برای تیرِ ساخته‌شده از چوب سخت و راست"
+          },
+          "cefr_level": "C1"
         }
       ],
       "forms": [
@@ -91,11 +93,7 @@
           "normalized_lookup": "خدنگ",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "a62a270f-da41-4a43-aa9c-0c6731b00916",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "اسم مفرد"
-            }
+            {"analysis_id":"a62a270f-da41-4a43-aa9c-0c6731b00916","features":{"base":{"number":"singular"}},"display_label_key":"اسم مفرد"}
           ]
         }
       ]
@@ -115,12 +113,7 @@
             "en": "a princess, especially a female member of a royal family",
             "fa": "شاهزادهٔ زن یا دخترِ عضو یک خانوادهٔ سلطنتی"
           },
-          "cefr_level": "A2",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "cefr_level": "A2"
         }
       ],
       "forms": [
@@ -130,11 +123,7 @@
           "normalized_lookup": "شاهزاده‌خانم",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "40b0a62b-ad2d-4f6a-abac-52c30cc25576",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "اسم مفرد"
-            }
+            {"analysis_id":"40b0a62b-ad2d-4f6a-abac-52c30cc25576","features":{"base":{"number":"singular"}},"display_label_key":"اسم مفرد"}
           ]
         }
       ]
@@ -154,12 +143,7 @@
             "en": "a round object used in games or play",
             "fa": "شیئی گرد که برای بازی به کار می‌رود"
           },
-          "cefr_level": "A1",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "cefr_level": "A1"
         }
       ],
       "forms": [
@@ -169,11 +153,7 @@
           "normalized_lookup": "توپ",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "bcdb1685-1fcd-41e7-943a-b899974b7ab7",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "اسم مفرد"
-            }
+            {"analysis_id":"bcdb1685-1fcd-41e7-943a-b899974b7ab7","features":{"base":{"number":"singular"}},"display_label_key":"اسم مفرد"}
           ]
         },
         {
@@ -182,11 +162,7 @@
           "normalized_lookup": "توپش",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "963e3177-ed64-44fd-8fc8-08565ba11d5d",
-              "features": {"base": {"number": "singular"}, "possessor": {"person": "3", "number": "singular"}},
-              "display_label_key": "اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"
-            }
+            {"analysis_id":"963e3177-ed64-44fd-8fc8-08565ba11d5d","features":{"base":{"number":"singular"},"possessor":{"person":"3","number":"singular"}},"display_label_key":"اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"}
           ]
         }
       ]
@@ -206,12 +182,7 @@
             "en": "a promise or commitment that someone says they will keep",
             "fa": "وعده یا تعهدی که کسی می‌گوید به آن عمل خواهد کرد"
           },
-          "cefr_level": "A2",
-          "homophones": [],
-          "homonyms": [],
-          "synonyms": [],
-          "antonyms": [],
-          "confusable_senses": []
+          "cefr_level": "A2"
         }
       ],
       "forms": [
@@ -221,11 +192,7 @@
           "normalized_lookup": "قول",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "ce9b103d-f10b-475e-b48d-acf987f06749",
-              "features": {"base": {"number": "singular"}},
-              "display_label_key": "اسم مفرد"
-            }
+            {"analysis_id":"ce9b103d-f10b-475e-b48d-acf987f06749","features":{"base":{"number":"singular"}},"display_label_key":"اسم مفرد"}
           ]
         },
         {
@@ -234,11 +201,7 @@
           "normalized_lookup": "قولش",
           "attested_in_text": true,
           "analyses": [
-            {
-              "analysis_id": "c4165f2b-35ef-4f57-a774-4b31e94e2be0",
-              "features": {"base": {"number": "singular"}, "possessor": {"person": "3", "number": "singular"}},
-              "display_label_key": "اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"
-            }
+            {"analysis_id":"c4165f2b-35ef-4f57-a774-4b31e94e2be0","features":{"base":{"number":"singular"},"possessor":{"person":"3","number":"singular"}},"display_label_key":"اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"}
           ]
         }
       ]
