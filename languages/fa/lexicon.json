@@ -108,7 +108,10 @@
         {
           "sense_id": "5c6ab2ce-87ce-416e-b001-0c125b9eee90",
           "sense_key": "شاهزاده‌خانم-عنوان",
-          "primary_concept_id": null,
+          "primary_concept_id": "cpt_d214e4c9-81a8-533d-9ea2-491ad99f1938",
+          "concept_links": [
+            {"concept_id":"cpt_d214e4c9-81a8-533d-9ea2-491ad99f1938","relation":"primary","review_state":"candidate"}
+          ],
           "definitions": {
             "en": "a princess, especially a female member of a royal family",
             "fa": "شاهزادهٔ زن یا دخترِ عضو یک خانوادهٔ سلطنتی"
@@ -138,7 +141,10 @@
         {
           "sense_id": "cc06723c-25de-45d6-a9c7-c28d947248b1",
           "sense_key": "توپ-گوی-بازی",
-          "primary_concept_id": null,
+          "primary_concept_id": "cpt_bf0e034e-0025-5ffc-8fec-97364c0d3c47",
+          "concept_links": [
+            {"concept_id":"cpt_bf0e034e-0025-5ffc-8fec-97364c0d3c47","relation":"primary","review_state":"candidate"}
+          ],
           "definitions": {
             "en": "a round object used in games or play",
             "fa": "شیئی گرد که برای بازی به کار می‌رود"
@@ -177,7 +183,10 @@
         {
           "sense_id": "1587738c-a558-4188-95a7-2a5fa26f9c19",
           "sense_key": "قول-وعده",
-          "primary_concept_id": null,
+          "primary_concept_id": "cpt_5c00fd2f-a0d5-578d-bba9-07d378e49763",
+          "concept_links": [
+            {"concept_id":"cpt_5c00fd2f-a0d5-578d-bba9-07d378e49763","relation":"primary","review_state":"candidate"}
+          ],
           "definitions": {
             "en": "a promise or commitment that someone says they will keep",
             "fa": "وعده یا تعهدی که کسی می‌گوید به آن عمل خواهد کرد"
@@ -202,6 +211,15 @@
           "attested_in_text": true,
           "analyses": [
             {"analysis_id":"c4165f2b-35ef-4f57-a774-4b31e94e2be0","features":{"base":{"number":"singular"},"possessor":{"person":"3","number":"singular"}},"display_label_key":"اسم مفرد با ضمیر ملکی سوم‌شخص مفرد"}
+          ]
+        },
+        {
+          "form_id": "fd6912f6-b306-5a6a-8fb8-18f5a8144efe",
+          "surface_nfc": "قولت",
+          "normalized_lookup": "قولت",
+          "attested_in_text": true,
+          "analyses": [
+            {"analysis_id":"d31ec2af-f7e2-50b9-8e4b-fc316aa49f70","features":{"base":{"number":"singular"},"possessor":{"person":"2","number":"singular"}},"display_label_key":"اسم مفرد با ضمیر ملکی دوم‌شخص مفرد"}
           ]
         }
       ]
