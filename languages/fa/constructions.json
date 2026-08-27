@@ -25,6 +25,14 @@
       "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
       "notes": "Persian figurative قلب ... شکستن expression for extreme sadness or emotional pain.",
       "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.fa.degree.be_andaze",
+      "construction_key": "be-andaze-equal-degree-comparison",
+      "kind": "syntax",
+      "semantic_function_ids": ["SEM.DEGREE_EQUALITY_COMPARISON"],
+      "notes": "Persian به اندازهٔ ... construction expressing comparison at the same degree, as in به اندازهٔ تو تند.",
+      "review_state": "candidate"
     }
   ]
 }
