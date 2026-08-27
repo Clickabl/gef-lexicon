@@ -15,7 +15,6 @@
     {"semantic_function_id":"SEM.DISTRIBUTIVE_SEQUENCE","key":"distributive_sequence","family":"quantity_distribution","description":"distribution or progression one unit at a time, as in one by one","review_state":"candidate"},
     {"semantic_function_id":"SEM.INTERROGATIVE_REASON","key":"interrogative_reason","family":"question","description":"a question asking for a cause or reason","review_state":"candidate"},
     {"semantic_function_id":"SEM.CONSEQUENCE_LINK","key":"consequence_link","family":"discourse_relation","description":"a discourse relation presenting a result or consequence of prior information","review_state":"candidate"},
-
     {"semantic_function_id":"SEM.IDENTITY_EQUIVALENCE","key":"identity_equivalence","family":"being_predication","description":"identifying one referent as the same person, thing, name, or value as another expression","review_state":"candidate"},
     {"semantic_function_id":"SEM.CLASSIFICATION_ROLE","key":"classification_role","family":"being_predication","description":"classifying a referent as a member of a category, profession, role, type, or class","review_state":"candidate"},
     {"semantic_function_id":"SEM.CHARACTERISTIC_PROPERTY","key":"characteristic_property","family":"being_predication","description":"predicating a descriptive property or characteristic without assuming that it is literally permanent","review_state":"candidate"},
@@ -28,6 +27,9 @@
     {"semantic_function_id":"SEM.TIME_DATE_PREDICATION","key":"time_date_predication","family":"being_time","description":"stating clock time, day, date, season, or another calendrical/temporal identification with a copular or equivalent construction","review_state":"candidate"},
     {"semantic_function_id":"SEM.ORIGIN_AFFILIATION","key":"origin_affiliation","family":"being_relation","description":"stating origin, nationality, provenance, membership, affiliation, or belonging","review_state":"candidate"},
     {"semantic_function_id":"SEM.MATERIAL_COMPOSITION","key":"material_composition","family":"being_relation","description":"stating the material, composition, substance, or constituent type of something","review_state":"candidate"},
-    {"semantic_function_id":"SEM.POSSESSION_AS_EXISTENCE","key":"possession_as_existence","family":"being_existence","description":"expressing possession through an existential or locative structure rather than a dedicated have-type predicate","review_state":"candidate"}
+    {"semantic_function_id":"SEM.POSSESSION_AS_EXISTENCE","key":"possession_as_existence","family":"being_existence","description":"expressing possession through an existential or locative structure rather than a dedicated have-type predicate","review_state":"candidate"},
+    {"semantic_function_id":"SEM.DEGREE_EQUALITY_COMPARISON","key":"degree_equality_comparison","family":"comparison","description":"comparing two participants or properties as equal with respect to a degree or manner, such as being as fast as another participant","review_state":"candidate"},
+    {"semantic_function_id":"SEM.CAUSATIVE_ENCHANTMENT","key":"causative_enchantment","family":"event_causation","description":"causing a person or thing to come under a magical spell or enchantment","review_state":"candidate"},
+    {"semantic_function_id":"SEM.FIGURATIVE_HEARTBREAK_SORROW","key":"figurative_heartbreak_sorrow","family":"emotion_expression","description":"expressing extreme sadness or emotional pain through a figurative reference to the heart breaking","review_state":"candidate"}
   ]
 }
