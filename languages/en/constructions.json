@@ -25,6 +25,14 @@
       "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
       "notes": "Figurative heart break expression for extreme sadness or emotional pain.",
       "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.en.degree.as_adj_as",
+      "construction_key": "as-adjective-as-equal-degree-comparison",
+      "kind": "syntax",
+      "semantic_function_ids": ["SEM.DEGREE_EQUALITY_COMPARISON"],
+      "notes": "English as + gradable adjective/adverb + as construction expressing equal degree, as in as fast as you.",
+      "review_state": "candidate"
     }
   ]
 }
