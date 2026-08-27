@@ -9,6 +9,22 @@
       "semantic_function_ids": ["SEM.DISTRIBUTIVE_SEQUENCE"],
       "notes": "Modern Greek Μία μία expressing progression or distribution one unit at a time.",
       "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.enchantment.kano_magia",
+      "construction_key": "kano-magia-causative-enchantment",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.CAUSATIVE_ENCHANTMENT"],
+      "notes": "Greek κάνω μάγια construction in the story expressing causative magical enchantment.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.emotion.spao_kardia",
+      "construction_key": "break-heart-figurative-sorrow",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
+      "notes": "Greek figurative expression with σπάω and καρδιά for extreme sadness or emotional pain.",
+      "review_state": "candidate"
     }
   ]
 }
