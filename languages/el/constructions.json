@@ -19,11 +19,19 @@
       "review_state": "candidate"
     },
     {
-      "construction_id": "CTR.el.emotion.spao_kardia",
-      "construction_key": "break-heart-figurative-sorrow",
+      "construction_id": "CTR.el.emotion.ragizo_kardia",
+      "construction_key": "crack-heart-figurative-sorrow",
       "kind": "multiword_expression",
       "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
-      "notes": "Greek figurative expression with σπάω and καρδιά for extreme sadness or emotional pain.",
+      "notes": "Natural Modern Greek figurative expression with ραγίζω and καρδιά for profound sadness or emotional pain.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.degree.toso_oso",
+      "construction_key": "toso-oso-equal-degree-comparison",
+      "kind": "syntax",
+      "semantic_function_ids": ["SEM.DEGREE_EQUALITY_COMPARISON"],
+      "notes": "Modern Greek τόσο ... όσο construction expressing equal degree, as in τόσο γρήγορα όσο εσύ.",
       "review_state": "candidate"
     }
   ]
