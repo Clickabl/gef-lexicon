@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "language_code": "en",
+  "constructions": [
+    {
+      "construction_id": "CTR.en.distributive.one_by_one",
+      "construction_key": "one-by-one-distributive-sequence",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.DISTRIBUTIVE_SEQUENCE"],
+      "notes": "English one by one expressing progression or distribution one unit at a time.",
+      "review_state": "candidate"
+    }
+  ]
+}
