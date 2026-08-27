@@ -9,6 +9,22 @@
       "semantic_function_ids": ["SEM.DISTRIBUTIVE_SEQUENCE"],
       "notes": "English one by one expressing progression or distribution one unit at a time.",
       "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.en.enchantment.put_spell_on",
+      "construction_key": "put-a-spell-on-causative-enchantment",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.CAUSATIVE_ENCHANTMENT"],
+      "notes": "English put a spell on someone expressing causative magical enchantment.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.en.emotion.heart_would_break",
+      "construction_key": "heart-break-figurative-sorrow",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
+      "notes": "Figurative heart break expression for extreme sadness or emotional pain.",
+      "review_state": "candidate"
     }
   ]
 }
