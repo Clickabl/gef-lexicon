@@ -9,6 +9,22 @@
       "semantic_function_ids": ["SEM.DISTRIBUTIVE_SEQUENCE"],
       "notes": "Persian یکی‌یکی expressing progression or distribution one unit at a time.",
       "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.fa.enchantment.telesm_kardan",
+      "construction_key": "telesm-kardan-causative-enchantment",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.CAUSATIVE_ENCHANTMENT"],
+      "notes": "Persian طلسم کردن construction expressing causing someone or something to be under a magical spell.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.fa.emotion.qalb_shekastan",
+      "construction_key": "heart-break-figurative-sorrow",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
+      "notes": "Persian figurative قلب ... شکستن expression for extreme sadness or emotional pain.",
+      "review_state": "candidate"
     }
   ]
 }
