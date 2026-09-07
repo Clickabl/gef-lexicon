@@ -159,3 +159,12 @@ Future lesson chats should extend these shared semantic structures when they nee
 ### Family-specific source
 
 `lesson-families/family-members/lexi-metadata.json` owns Family broader-concept grouping, carefully curated expression/register metadata, the non-synonym relation policy, and the Family lesson offer. `scripts/validate-lesson-semantic-index.mjs` verifies the 104-language Family projection and protects `mother`/`mom`/`mum` separation plus existing gender lesson links.
+
+## 2026-09-07 — Owner rule: branch reconciliation before every build
+
+AGENTS.md now requires every build to reconcile local/remote branches and PRs
+across Expo, Content, Lexicon, Gef Server, and Identity. Merge and close completed
+work; document each justified outstanding branch with its commit, reason, owner,
+and closure condition in the owning docs/BRANCH_EXCEPTIONS.md. This replaces
+silent branch omissions. Existing branches have not been merged by this policy
+change; the next build must complete the reconciliation first.

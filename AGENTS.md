@@ -1,5 +1,47 @@
 # Agent Instructions for gef-lexicon
 
+## Standing owner rule: reconcile every branch before a build (2026-09-06)
+
+**No unexplained outstanding branches. Before any local, preview, production,
+or store build, reconcile branches across all five repositories:
+Clickabl/gef-expo, Clickabl/gef-content, Clickabl/gef-lexicon,
+Clickabl/gef-server, and Clickabl/identity. Checking only Expo main is
+insufficient. This rule takes precedence over older guidance that permits
+finished work to remain on branches.**
+
+1. Fetch and prune remote refs in all five repositories. Inventory local and
+   remote branches, open PRs, and linked worktrees; preserve uncommitted work.
+2. Review every non-main branch against current main, including squash/cherry-pick
+   equivalents and cross-repository dependencies. Merge all completed, valid work
+   into its owning main, resolve conflicts against current contracts, run the
+   relevant local checks, and push before building. A large commit count alone
+   does not prove that changes are missing from main.
+3. Close merged PRs and delete finished local/remote feature branches after
+   verifying their work is integrated. Superseded or abandoned branches may be
+   closed only with recorded evidence that needed work is preserved or explicitly
+   cancelled. Never discard unique work or dirty worktrees just to clear the list.
+4. A branch may remain outstanding only for a concrete reason: unfinished work,
+   a failing check, an unresolved dependency/contract, required human/content/rights
+   review, or a live deployment sequence. Record each exception in the owning
+   repository's docs/BRANCH_EXCEPTIONS.md before building, with exact branch and
+   commit, reason, owner, linked work/PR, next action, and condition for closure.
+   Review that record afresh for each build; stale blanket exceptions do not count.
+   Referenced SDK distribution branches are also explicit exceptions: document
+   their consumers and retention reason; do not merge generated packages into
+   source main or delete an artifact ref still used by a consumer.
+5. Start the build only when every branch is integrated/closed or has a current
+   documented exception. Report included repository commits and excluded work
+   with reasons. If a repository cannot be checked, disclose that blocker rather
+   than claiming the reconciliation is complete.
+
+Default to main where the repository permits it. A required review/deployment
+branch is temporary and must be closed as part of finishing the work. Identity's
+branch-and-PR review requirement still applies. Required tests, content approval,
+trust, rights, and production gates are reasons to document an exception, never
+reasons to bypass a gate or silently omit a branch. GitHub Actions budget locks
+remain in force; perform validation locally.
+
+
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, `docs/LESSONS_V2_ARCHITECTURE.md`, `curriculum-v2/README.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or curriculum content.
 
 ## Repository ownership and source of truth
