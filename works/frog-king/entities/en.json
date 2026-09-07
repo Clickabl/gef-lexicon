@@ -35,9 +35,39 @@
           "language_code": "en",
           "work_id": "frog-king",
           "components": [{"surface": "Henry", "role": "given_name", "target_type": "name", "target_id": "name_en_henry"}]
+        },
+        {
+          "surface": "Enrique el Fiel",
+          "label_type": "translated",
+          "language_code": "es",
+          "work_id": "frog-king",
+          "components": [
+            {"surface":"Enrique","role":"given_name","target_type":"literal","target_id":"literal:es:Enrique","note":"attested Spanish edition rendering; no global name-equivalence record is asserted"},
+            {"surface":"el Fiel","role":"descriptor","target_type":"literal","target_id":"literal:es:el-fiel","note":"attested Spanish edition descriptor"}
+          ]
+        },
+        {
+          "surface": "Πιστός Ερρίκος",
+          "label_type": "translated",
+          "language_code": "el",
+          "work_id": "frog-king",
+          "components": [
+            {"surface":"Πιστός","role":"descriptor","target_type":"literal","target_id":"literal:el:pistos","note":"attested Greek edition descriptor"},
+            {"surface":"Ερρίκος","role":"given_name","target_type":"literal","target_id":"literal:el:errikos","note":"attested Greek edition rendering; no global name-equivalence record is asserted"}
+          ]
+        },
+        {
+          "surface": "هنری وفادار",
+          "label_type": "translated",
+          "language_code": "fa",
+          "work_id": "frog-king",
+          "components": [
+            {"surface":"هنری","role":"given_name","target_type":"literal","target_id":"literal:fa:henry","note":"attested Persian edition rendering; no global name-equivalence record is asserted"},
+            {"surface":"وفادار","role":"descriptor","target_type":"literal","target_id":"literal:fa:vafadar","note":"attested Persian edition descriptor"}
+          ]
         }
       ],
-      "aliases": ["Faithful Henry", "Henry"],
+      "aliases": ["Faithful Henry", "Henry", "Enrique el Fiel", "Πιστός Ερρίκος", "هنری وفادار"],
       "work_id": "frog-king",
       "summary": {"en": "the prince's faithful servant; in this adaptation he wears three iron bands around his chest because he fears his heart will break while the prince is under the spell"},
       "known_gender": "male",

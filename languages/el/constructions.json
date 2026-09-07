@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "language_code": "el",
+  "constructions": [
+    {
+      "construction_id": "CTR.el.distributive.mia_mia",
+      "construction_key": "mia-mia-distributive-sequence",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.DISTRIBUTIVE_SEQUENCE"],
+      "notes": "Modern Greek Μία μία expressing progression or distribution one unit at a time.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.enchantment.kano_magia",
+      "construction_key": "kano-magia-causative-enchantment",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.CAUSATIVE_ENCHANTMENT"],
+      "notes": "Greek κάνω μάγια construction in the story expressing causative magical enchantment.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.emotion.ragizo_kardia",
+      "construction_key": "crack-heart-figurative-sorrow",
+      "kind": "multiword_expression",
+      "semantic_function_ids": ["SEM.FIGURATIVE_HEARTBREAK_SORROW"],
+      "notes": "Natural Modern Greek figurative expression with ραγίζω and καρδιά for profound sadness or emotional pain.",
+      "review_state": "candidate"
+    },
+    {
+      "construction_id": "CTR.el.degree.toso_oso",
+      "construction_key": "toso-oso-equal-degree-comparison",
+      "kind": "syntax",
+      "semantic_function_ids": ["SEM.DEGREE_EQUALITY_COMPARISON"],
+      "notes": "Modern Greek τόσο ... όσο construction expressing equal degree, as in τόσο γρήγορα όσο εσύ.",
+      "review_state": "candidate"
+    }
+  ]
+}
