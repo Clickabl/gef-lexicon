@@ -46,6 +46,17 @@ test('malformed JSON never produces a successful subset or destroys source', asy
   assert.equal(fs.existsSync(files.input), true);
 });
 
+test('language-neutral Wiktextract redirects survive in a separate source sidecar', async t => {
+  const redirect = { title: 'alias', redirect: 'word', pos: 'unknown' };
+  const files = fixture(t, `${JSON.stringify(redirect)}\n{"lang_code":"en","word":"word"}\n`);
+  const result = await filterFile(files);
+  assert.equal(result.inputRecords, 2);
+  assert.equal(result.keptRecords, 1);
+  assert.equal(result.redirectRecords, 1);
+  assert.equal(result.removedRecords, 0);
+  assert.equal(fs.readFileSync(`${files.output}.redirects.jsonl`, 'utf8'), `${JSON.stringify(redirect)}\n`);
+});
+
 test('truncated gzip is rejected even after matching records', async t => {
   const files = fixture(t, '{"lang_code":"en","word":"test"}\n');
   const bytes = fs.readFileSync(files.input);

@@ -36,6 +36,8 @@ count script/region variants as additional languages.
 validates its integrity and every JSON record, retains exact source language
 matches, and writes a gzip subset plus an audit report. It does not import
 lexemes, rewrite source records, approve meanings, or silently alias languages.
+Language-neutral Wiktextract redirect rows are preserved in a separate JSONL
+sidecar, not counted as lexical language coverage or silently discarded.
 Missing canonical tags and excluded source tags are reported for explicit
 source-code reconciliation before claiming complete language coverage.
 

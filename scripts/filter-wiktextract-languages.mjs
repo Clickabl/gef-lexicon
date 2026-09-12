@@ -11,12 +11,19 @@ import { fileURLToPath } from 'node:url';
 // TODO-WIKTIONARY-SUPPORTED-LANGUAGE-FILTER: raw source selection only. This
 // boundary deliberately never maps languages, copies glosses into Lexi fields,
 // or changes review state. Preserve the entire retained source record.
-export function languageFilter(allowed, report, onProgress = () => {}) {
+export function languageFilter(allowed, report, onProgress = () => {}, onRedirect = () => {}) {
   const decoder = new StringDecoder('utf8');
   let pending = '';
   const consume = (line, output) => {
     if (!line.trim()) return;
     const row = JSON.parse(line);
+    if (row && typeof row === 'object' && !Array.isArray(row)
+      && row.lang_code === undefined && typeof row.title === 'string' && typeof row.redirect === 'string') {
+      report.inputRecords += 1;
+      report.redirectRecords += 1;
+      onRedirect(line);
+      return;
+    }
     if (!row || typeof row !== 'object' || Array.isArray(row)
       || typeof row.lang_code !== 'string' || !row.lang_code) {
       throw new Error(`Invalid language identity at record ${report.inputRecords + 1}`);
@@ -59,7 +66,7 @@ export function languageFilter(allowed, report, onProgress = () => {}) {
 
 export function newReport() {
   return {
-    inputRecords: 0, keptRecords: 0, inputUncompressedBytes: 0,
+    inputRecords: 0, keptRecords: 0, redirectRecords: 0, inputUncompressedBytes: 0,
     keptUncompressedBytes: 0, sourceCounts: Object.create(null), keptCounts: Object.create(null),
   };
 }
@@ -85,7 +92,8 @@ export async function filterFile({ input, registry, output, reportPath, progress
   if (!Array.isArray(tags) || tags.length === 0 || tags.some(tag => typeof tag !== 'string' || !tag)
     || new Set(tags).size !== tags.length) throw new Error('Invalid canonical learn-from registry');
   const allowed = new Set(tags);
-  const targets = [output, reportPath];
+  const redirects = `${output}.redirects.jsonl`;
+  const targets = [output, reportPath, redirects];
   for (const target of targets) {
     if ([input, registry].some(source => path.resolve(source) === path.resolve(target))) throw new Error('Refusing to overwrite an input');
     if (fs.existsSync(target) || fs.existsSync(`${target}.part`)) throw new Error(`Output already exists: ${target}`);
@@ -97,6 +105,8 @@ export async function filterFile({ input, registry, output, reportPath, progress
   const report = newReport();
   const inputHash = createHash('sha256');
   const outputHash = createHash('sha256');
+  const redirectHash = createHash('sha256');
+  const redirectFd = fs.openSync(`${redirects}.part`, 'wx', 0o600);
   let lastProgress = Date.now();
   const notify = value => {
     if (progress && Date.now() - lastProgress >= 15000) {
@@ -107,7 +117,11 @@ export async function filterFile({ input, registry, output, reportPath, progress
   try {
     await pipeline(
       fs.createReadStream(input), hashStream(inputHash), createGunzip(),
-      languageFilter(allowed, report, notify), createGzip({ level: 6 }),
+      languageFilter(allowed, report, notify, line => {
+        const bytes = `${line}\n`;
+        fs.writeFileSync(redirectFd, bytes);
+        redirectHash.update(bytes);
+      }), createGzip({ level: 6 }),
       hashStream(outputHash), fs.createWriteStream(`${output}.part`, { flags: 'wx', mode: 0o600 }),
     );
     if (report.inputRecords === 0 || report.keptRecords === 0) throw new Error('Empty input or selection');
@@ -122,20 +136,25 @@ export async function filterFile({ input, registry, output, reportPath, progress
         allowedLanguages: tags,
       },
       output: { file: path.basename(output), sha256: outputHash.digest('hex'), bytes: fs.statSync(`${output}.part`).size },
+      redirects: { file: path.basename(redirects), sha256: redirectHash.digest('hex'), bytes: fs.statSync(`${redirects}.part`).size,
+        policy: 'Language-neutral source redirects retained separately; not lexical language coverage.' },
       ...report,
-      removedRecords: report.inputRecords - report.keptRecords,
+      removedRecords: report.inputRecords - report.keptRecords - report.redirectRecords,
       matchedLanguages: tags.filter(tag => report.keptCounts[tag]),
       missingLanguages: tags.filter(tag => !report.keptCounts[tag]),
       excludedLanguages: Object.keys(report.sourceCounts).filter(tag => !allowed.has(tag)).sort(),
     };
     fs.writeFileSync(`${reportPath}.part`, `${JSON.stringify(complete, null, 2)}\n`, { flag: 'wx', mode: 0o600 });
     fs.renameSync(`${output}.part`, output);
+    fs.renameSync(`${redirects}.part`, redirects);
     fs.renameSync(`${reportPath}.part`, reportPath);
     return complete;
   } catch (error) {
     // Only remove this invocation's reproducible outputs, never its inputs.
     for (const target of targets) fs.rmSync(`${target}.part`, { force: true });
     throw error;
+  } finally {
+    fs.closeSync(redirectFd);
   }
 }
 
