@@ -74,7 +74,9 @@ Morphological features are structured in controlled semantic layers (`base`, `po
 - `upos`: Universal Part of Speech (`NOUN`, `VERB`, `ADJ`, `ADV`, `PROPN`, etc.).
 - `language_pos`: Language-specific subtype (e.g. `classifier` for CJK/Thai/Vietnamese/Bengali).
 
-## 4. First-Party Licensing & Compliance
+## 4. Wiktionary-first lexical sourcing
 
-- All definitions are generated natively in the 6 core interface languages (`en`, `es`, `fr`, `pt`, `it`, `el`).
-- External reference inventories (Instituto Cervantes, Cambridge EVP, Profilo della lingua italiana) are used strictly for automated CEFR level validation, never copied.
+- Owner decision, 2026-09-12: Wiktionary is the main lexical source; direct copying of definitions and lexical records is allowed. The first-party-only requirement is withdrawn.
+- Preserve source edition, dump/revision identity, attribution, license and modification records. Copied English-edition glosses are English even when their headword belongs to another language.
+- Import permission is not review approval. Existing sense, morphology, concept and translation-authority gates remain in effect.
+- Unrelated third-party sources still require their own reuse authority. See `WIKTIONARY_SOURCE_POLICY.md` for the canonical policy and raw-download filtering boundary.

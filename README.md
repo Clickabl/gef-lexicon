@@ -100,7 +100,7 @@ The lesson is authored once and becomes available to every compatible reviewed S
 
 Generated lexical, construction, name/entity, grammar-research, and lesson material remains `candidate` until the appropriate review promotes it. Machine generation is not approval.
 
-Do not import share-alike/copyrighted dictionary rows into the proprietary core. External resources may only be used when licensing/provenance is explicitly compatible or as non-copied validation references.
+Wiktionary is the primary lexical source. The owner withdrew the first-party-only/no-copy restriction on 2026-09-12: definitions and lexical records may be copied directly while preserving attribution, applicable licensing, source identity, and honest review state. See `docs/WIKTIONARY_SOURCE_POLICY.md`. This does not grant blanket rights to unrelated proprietary dictionaries or separately sourced quotations/media.
 
 ## Validation and compilation
 

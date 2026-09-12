@@ -168,3 +168,19 @@ work; document each justified outstanding branch with its commit, reason, owner,
 and closure condition in the owning docs/BRANCH_EXCEPTIONS.md. This replaces
 silent branch omissions. Existing branches have not been merged by this policy
 change; the next build must complete the reconciliation first.
+
+## 2026-09-12 — Owner decision: Wiktionary-first Lexi source
+
+Tim explicitly withdrew the first-party-only/no-copy restriction. Wiktionary is
+the main lexical source and definitions/lexical data may be copied directly.
+AGENTS, README and the lexical architecture now point to
+`docs/WIKTIONARY_SOURCE_POLICY.md`. Attribution, applicable licenses, source
+identity and review-state honesty remain separate requirements; no imported
+record is automatically approved and English-edition glosses remain English.
+
+Before any lexical import, the downloaded source is being filtered against the
+exact canonical Expo learn-from registry using the streaming
+`scripts/filter-wiktextract-languages.mjs`. It validates gzip/JSON records,
+retains whole matching source records and reports missing/excluded codes.
+No multi-gigabyte dump enters Git and no second Lexi research queue is created.
+Source-code groupings require explicit reconciliation, not silent runtime aliases.

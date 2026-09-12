@@ -84,7 +84,7 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 
 ## Hard Rules
 
-1. **First-Party Licensing**: Never copy definitions or example rows from Wiktionary, FreeDict, or copyrighted dictionaries. Write new definitions natively. External data may only be imported when its license and provenance are explicitly compatible with the project.
+1. **Wiktionary is the primary lexical source (owner decision, 2026-09-12)**: Direct copying of Wiktionary definitions and lexical data is permitted. The former first-party-only/no-copy rule is withdrawn. Retain source attribution, source edition/revision or dump identity, applicable license notices, and modification history; do not relabel copied material as proprietary or first-party. Separately sourced quotations/media retain their own rights. Imported records remain candidates until their normal review gates pass. See `docs/WIKTIONARY_SOURCE_POLICY.md`.
 2. **Review Status Honesty**: Generated candidate entries must use `"review_state": "candidate"`. Never mark unreviewed LLM output as `"approved"`.
 3. **Form-vs-Analysis Separation**: Always place morphological features inside an array of `analyses` under each word form. One surface spelling may have multiple grammatical analyses and pronunciations.
 4. **Layered Feature Buckets**: Group morphology into controlled semantic layers such as `base`, `possessor`, `subject`, `object`, and `clitic`. Keep language-specific values open where the language profile requires them.
