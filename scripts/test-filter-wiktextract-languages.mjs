@@ -46,6 +46,16 @@ test('malformed JSON never produces a successful subset or destroys source', asy
   assert.equal(fs.existsSync(files.input), true);
 });
 
+test('explicit source groups retain data without rewriting language identity or expanding product support', async t => {
+  const files = fixture(t, '{"lang_code":"tl","word":"wika"}\n');
+  const result = await filterFile({ ...files, sourceMappings: [{ sourceCode: 'tl', targetLanguages: ['fil'] }] });
+  assert.deepEqual(result.matchedLanguages, ['fil']);
+  assert.deepEqual(result.matchedSourceCodes, ['tl']);
+  assert.equal(JSON.parse(gunzipSync(fs.readFileSync(files.output)).toString()).lang_code, 'tl');
+  const another = fixture(t, '{"lang_code":"la"}\n');
+  await assert.rejects(filterFile({ ...another, sourceMappings: [{ sourceCode: 'la', targetLanguages: ['la'] }] }), /Invalid source-language mapping/);
+});
+
 test('language-neutral Wiktextract redirects survive in a separate source sidecar', async t => {
   const redirect = { title: 'alias', redirect: 'word', pos: 'unknown' };
   const files = fixture(t, `${JSON.stringify(redirect)}\n{"lang_code":"en","word":"word"}\n`);

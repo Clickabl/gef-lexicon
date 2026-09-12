@@ -34,8 +34,11 @@ count script/region variants as additional languages.
 
 `scripts/filter-wiktextract-languages.mjs` streams the complete gzip download,
 validates its integrity and every JSON record, retains exact source language
-matches, and writes a gzip subset plus an audit report. It does not import
-lexemes, rewrite source records, approve meanings, or silently alias languages.
+matches plus the explicitly selected source groups in
+`sources/wiktionary-language-map.json`, and writes a gzip subset plus an audit
+report. It does not import lexemes, rewrite source records, approve meanings,
+or silently alias languages. Shared source groups remain shared until import
+review resolves each entry's actual applicability.
 Language-neutral Wiktextract redirect rows are preserved in a separate JSONL
 sidecar, not counted as lexical language coverage or silently discarded.
 Missing canonical tags and excluded source tags are reported for explicit
@@ -51,6 +54,7 @@ Example (all data paths must be outside the repository):
 node scripts/filter-wiktextract-languages.mjs \
   --input /data/raw-wiktextract-data.jsonl.gz \
   --registry ../gef-expo/registry/language-support.json \
+  --source-map sources/wiktionary-language-map.json \
   --output /data/gef-wiktextract.jsonl.gz \
   --report /data/gef-wiktextract.filter-report.json
 ```

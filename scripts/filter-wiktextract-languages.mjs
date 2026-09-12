@@ -85,13 +85,20 @@ function repositoryRoot() {
   }
 }
 
-export async function filterFile({ input, registry, output, reportPath, progress = true }) {
+export async function filterFile({ input, registry, output, reportPath, sourceMappings = [], progress = true }) {
   const registryBytes = fs.readFileSync(registry);
   const registryData = JSON.parse(registryBytes);
   const tags = registryData?.programs?.learnFromLanguages;
   if (!Array.isArray(tags) || tags.length === 0 || tags.some(tag => typeof tag !== 'string' || !tag)
     || new Set(tags).size !== tags.length) throw new Error('Invalid canonical learn-from registry');
   const allowed = new Set(tags);
+  for (const mapping of sourceMappings) {
+    if (!mapping || typeof mapping.sourceCode !== 'string' || !mapping.sourceCode
+      || !Array.isArray(mapping.targetLanguages) || !mapping.targetLanguages.length
+      || mapping.targetLanguages.some(tag => !tags.includes(tag))) throw new Error('Invalid source-language mapping');
+    allowed.add(mapping.sourceCode);
+  }
+  const hasSource = (tag, counts) => counts[tag] > 0 || sourceMappings.some(mapping => mapping.targetLanguages.includes(tag) && counts[mapping.sourceCode] > 0);
   const redirects = `${output}.redirects.jsonl`;
   const targets = [output, reportPath, redirects];
   for (const target of targets) {
@@ -128,7 +135,8 @@ export async function filterFile({ input, registry, output, reportPath, progress
     const complete = {
       schemaVersion: 1,
       generatedAt: new Date().toISOString(),
-      policy: 'Exact record.lang_code membership; no rewriting, aliasing or review promotion.',
+      policy: 'Canonical language membership plus explicit source-group retention; source records are not rewritten or approved.',
+      sourceMappings,
       source: { file: path.basename(input), sha256: inputHash.digest('hex'), bytes: fs.statSync(input).size },
       registry: {
         canonicalSource: registryData.canonicalSource,
@@ -140,8 +148,9 @@ export async function filterFile({ input, registry, output, reportPath, progress
         policy: 'Language-neutral source redirects retained separately; not lexical language coverage.' },
       ...report,
       removedRecords: report.inputRecords - report.keptRecords - report.redirectRecords,
-      matchedLanguages: tags.filter(tag => report.keptCounts[tag]),
-      missingLanguages: tags.filter(tag => !report.keptCounts[tag]),
+      matchedLanguages: tags.filter(tag => hasSource(tag, report.keptCounts)),
+      missingLanguages: tags.filter(tag => !hasSource(tag, report.keptCounts)),
+      matchedSourceCodes: Object.keys(report.keptCounts).sort(),
       excludedLanguages: Object.keys(report.sourceCounts).filter(tag => !allowed.has(tag)).sort(),
     };
     fs.writeFileSync(`${reportPath}.part`, `${JSON.stringify(complete, null, 2)}\n`, { flag: 'wx', mode: 0o600 });
@@ -167,7 +176,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     process.exitCode = 2;
   } else {
     try {
-      const report = await filterFile({ input, registry, output, reportPath });
+      const mappingPath = options.get('--source-map');
+      const sourceMappings = mappingPath ? JSON.parse(fs.readFileSync(mappingPath, 'utf8')).mappings : [];
+      if (!Array.isArray(sourceMappings)) throw new Error('Invalid source-language mapping file');
+      const report = await filterFile({ input, registry, output, reportPath, sourceMappings });
       console.log(JSON.stringify({
         inputRecords: report.inputRecords, keptRecords: report.keptRecords,
         sourceBytes: report.source.bytes, outputBytes: report.output.bytes,

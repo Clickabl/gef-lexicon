@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sourceEdition": "enwiktionary",
+  "purpose": "Retain source-language groups needed by canonical Gef reading languages. This is not an alias table for runtime identities or permission to assign every shared-group entry to every variety.",
+  "mappings": [
+    { "sourceCode": "tl", "sourceName": "Tagalog", "targetLanguages": ["fil"], "note": "Source evidence for Filipino; preserve Tagalog source identity and review variety-specific applicability during import." },
+    { "sourceCode": "sh", "sourceName": "Serbo-Croatian", "targetLanguages": ["bs", "hr", "sr"], "note": "Shared source group. Retain once; do not duplicate or automatically assign all entries to all three languages." },
+    { "sourceCode": "bh", "sourceName": "Bhojpuri", "targetLanguages": ["bho"], "note": "Different source code for the requested language." },
+    { "sourceCode": "kmr", "sourceName": "Northern Kurdish", "targetLanguages": ["ku"], "note": "The Gef ku registry identity is Kurdish/Kurmanji. Keep source code and dialect evidence." }
+  ]
+}
