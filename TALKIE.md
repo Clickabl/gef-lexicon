@@ -184,3 +184,18 @@ exact canonical Expo learn-from registry using the streaming
 retains whole matching source records and reports missing/excluded codes.
 No multi-gigabyte dump enters Git and no second Lexi research queue is created.
 Source-code groupings require explicit reconciliation, not silent runtime aliases.
+
+## 2026-09-13 — Rich Wiktionary candidate import projection
+
+`scripts/import-kaikki-candidates.mjs` now retains each bounded Wiktextract
+source record as canonical candidate evidence while also projecting safe lookup
+fields. English-edition glosses are labeled `en` independently of headword
+language; all glosses, forms/analyses, sound and audio evidence, examples,
+etymology, labels, translations, and relation assertions remain recoverable.
+Only one unambiguous same-import lexical target becomes a candidate relation
+edge. Ambiguous, missing, cross-language, or unsupported targets remain explicit
+unresolved candidate assertions; no import creates concept/translation authority
+or approved Lexi truth. Import metadata pins the input SHA-256, edition,
+attribution/licenses, importer version, and transformations. The focused
+`test:wiktionary-import` command verifies retention and byte determinism without
+generating or importing a bulk dictionary.

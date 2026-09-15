@@ -11,6 +11,7 @@
     "test:occurrence-sense": "node scripts/test-occurrence-sense-disambiguation.mjs",
     "test:core-usage-roundtrip": "node scripts/test-compiled-usage-profiles.mjs",
     "test:book-slice-usage-roundtrip": "node scripts/test-book-slice-usage-profiles.mjs",
+    "test:wiktionary-import": "node scripts/test-import-kaikki-candidates.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
     "validate:lesson-zero": "node scripts/validate-where-languages-come-from.mjs",
     "validate:international-language-levels": "node scripts/validate-international-language-levels.mjs",
