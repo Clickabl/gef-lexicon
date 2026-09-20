@@ -1704,6 +1704,69 @@
           ]
         }
       ]
+    },
+    {
+      "lexeme_id": "6a77e38d-235a-48a2-89e5-0e0fd80c9301",
+      "lemma_nfc": "lamp",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "3c0c872b-2aa5-4c86-8ea4-a188413bbb01",
+          "sense_key": "lamp-lighting-device",
+          "definitions": {
+            "en": "a device that produces light, especially one used indoors on a table, floor, wall, or ceiling",
+            "es": "dispositivo que produce luz, especialmente uno usado en interiores"
+          },
+          "sense_hint": {
+            "en": "the ordinary lighting-device sense, as in a bedside or table lamp"
+          },
+          "cefr_level": "A2",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "6179bd22-bb17-4f1d-858c-55a5f58dcb01",
+          "surface_nfc": "lamp",
+          "normalized_lookup": "lamp",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "24fc584d-c20e-44a6-8dca-501c693cc301",
+              "features": {
+                "base": {
+                  "number": "singular"
+                }
+              },
+              "display_label_key": "singular"
+            }
+          ]
+        },
+        {
+          "form_id": "f178eb78-0e84-4edc-aad1-f98cc4682d01",
+          "surface_nfc": "lamps",
+          "normalized_lookup": "lamps",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "59632d73-1db2-4eab-bc64-b2c5b74d3101",
+              "features": {
+                "base": {
+                  "number": "plural"
+                }
+              },
+              "display_label_key": "plural"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
