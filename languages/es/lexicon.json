@@ -1412,6 +1412,200 @@
           ]
         }
       ]
+    },
+    {
+      "lexeme_id": "9e6e9c20-2f70-4b83-bdb8-6d4dc8b0a201",
+      "lemma_nfc": "leer",
+      "upos": "VERB",
+      "language_pos": "lexical-verb",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "cc75ed30-f785-49fb-8c9c-b8302cb23d01",
+          "sense_key": "leer-texto-escrito",
+          "concept_links": [
+            {
+              "concept_id": "cpt_018f2c3a-7b1e-7a4d-9c2e-000000000002",
+              "relation": "primary",
+              "review_state": "candidate",
+              "note": "Candidate semantic pivot for interpreting written language; requires editorial review before approval."
+            }
+          ],
+          "definitions": {
+            "en": "to look at written or printed language and understand its meaning",
+            "es": "mirar un texto escrito o impreso y comprender su significado"
+          },
+          "sense_hint": {
+            "en": "the ordinary reading-a-book or reading-a-passage sense",
+            "es": "el sentido de leer un libro, un mensaje o un pasaje"
+          },
+          "cefr_level": "A1",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "fcbbd1aa-0640-4d69-93db-f61bc2f89a01",
+          "surface_nfc": "leer",
+          "normalized_lookup": "leer",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "6b8bce10-f947-41ce-9891-6db7d9d33001",
+              "features": {
+                "base": {
+                  "non_finite": "infinitive"
+                }
+              },
+              "display_label_key": "infinitive"
+            }
+          ]
+        },
+        {
+          "form_id": "cce0bd69-06db-48db-93f3-c0c3f82d9301",
+          "surface_nfc": "lee",
+          "normalized_lookup": "lee",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "74590268-729c-43ad-bef0-11dbfa841201",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "3",
+                  "number": "singular",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "3rd person singular present"
+            }
+          ]
+        },
+        {
+          "form_id": "cc329773-93df-46cb-a1ef-93b30a176101",
+          "surface_nfc": "leo",
+          "normalized_lookup": "leo",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "8a445b4d-01d6-47a0-a805-1243c09e7101",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "1",
+                  "number": "singular",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "1st person singular present"
+            }
+          ]
+        },
+        {
+          "form_id": "3267724c-9f1a-41d6-b76c-16e7d61d1a01",
+          "surface_nfc": "lees",
+          "normalized_lookup": "lees",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "5d72c00c-01b8-42ed-baba-df5a2a716401",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "2",
+                  "number": "singular",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "2nd person singular present"
+            }
+          ]
+        },
+        {
+          "form_id": "bc937338-8778-42e8-b0f2-3f9157718201",
+          "surface_nfc": "leemos",
+          "normalized_lookup": "leemos",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "98f92aa8-7858-4444-947a-38cf23ed6701",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "1",
+                  "number": "plural",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "1st person plural present"
+            }
+          ]
+        },
+        {
+          "form_id": "1720cc8a-10d0-4f8c-b145-a38c451aa301",
+          "surface_nfc": "leen",
+          "normalized_lookup": "leen",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "4d710df4-1d58-49ed-b900-b58928681b01",
+              "features": {
+                "base": {
+                  "tense": "present",
+                  "mood": "indicative",
+                  "person": "3",
+                  "number": "plural",
+                  "verb_form": "finite"
+                }
+              },
+              "display_label_key": "3rd person plural present"
+            }
+          ]
+        },
+        {
+          "form_id": "04f64e86-7a89-4c4b-9db9-1ab57ad33401",
+          "surface_nfc": "leyendo",
+          "normalized_lookup": "leyendo",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "0f22c797-1749-443a-899c-d59b9c37e101",
+              "features": {
+                "base": {
+                  "non_finite": "gerund"
+                }
+              },
+              "display_label_key": "gerund"
+            }
+          ]
+        },
+        {
+          "form_id": "fc31511a-cdf7-43a5-923f-f74f761f1b01",
+          "surface_nfc": "leído",
+          "normalized_lookup": "leído",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "83ea92e2-6d1d-4c02-88ea-902eb01bd401",
+              "features": {
+                "base": {
+                  "non_finite": "past_participle"
+                }
+              },
+              "display_label_key": "past participle"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
