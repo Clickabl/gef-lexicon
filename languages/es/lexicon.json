@@ -1606,6 +1606,72 @@
           ]
         }
       ]
+    },
+    {
+      "lexeme_id": "30d74db5-4d52-41d7-b07a-477e91469a01",
+      "lemma_nfc": "lámpara",
+      "upos": "NOUN",
+      "language_pos": "common-noun",
+      "proper_noun": false,
+      "review_state": "candidate",
+      "senses": [
+        {
+          "sense_id": "8bcbe9b2-fae8-40e1-a836-f6dd31817001",
+          "sense_key": "lampara-dispositivo-iluminacion",
+          "definitions": {
+            "en": "a device that produces light, especially one used indoors",
+            "es": "dispositivo que produce luz, especialmente uno usado en interiores"
+          },
+          "sense_hint": {
+            "en": "the ordinary lighting-device sense",
+            "es": "el sentido común de un dispositivo de iluminación"
+          },
+          "cefr_level": "A2",
+          "homophones": [],
+          "homonyms": [],
+          "synonyms": [],
+          "antonyms": [],
+          "confusable_senses": []
+        }
+      ],
+      "forms": [
+        {
+          "form_id": "037a3a3c-d326-4a68-8f13-22eac8dbba01",
+          "surface_nfc": "lámpara",
+          "normalized_lookup": "lámpara",
+          "attested_in_text": true,
+          "analyses": [
+            {
+              "analysis_id": "159978ed-b31c-4550-b21f-a79f998b1001",
+              "features": {
+                "base": {
+                  "gender": "feminine",
+                  "number": "singular"
+                }
+              },
+              "display_label_key": "singular femenino"
+            }
+          ]
+        },
+        {
+          "form_id": "6b7db49e-32bb-4fd8-b1e9-94257c421c01",
+          "surface_nfc": "lámparas",
+          "normalized_lookup": "lámparas",
+          "attested_in_text": false,
+          "analyses": [
+            {
+              "analysis_id": "7dbf2c9b-5f6d-4c63-a6aa-b59acb587201",
+              "features": {
+                "base": {
+                  "gender": "feminine",
+                  "number": "plural"
+                }
+              },
+              "display_label_key": "plural femenino"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
