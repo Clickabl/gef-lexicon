@@ -107,8 +107,9 @@ function posToUpos(pos) {
 function relationType(key) {
   return ({
     synonyms: 'near_synonym', antonyms: 'antonym', hypernyms: 'hypernym',
-    hyponyms: 'hyponym', coordinate_terms: 'coordinate_term', related: 'related',
-    derived: 'derived_from',
+    hyponyms: 'hyponym', coordinate_terms: 'coordinate_term', meronyms: 'meronym',
+    holonyms: 'holonym', troponyms: 'troponym', anagrams: 'anagram', compounds: 'compound',
+    proverbs: 'proverb', related: 'related', derived: 'derived_from',
   })[key] ?? null;
 }
 
@@ -311,7 +312,7 @@ for (const row of rows) {
         }
 
         const [resolvedTarget] = candidates;
-        const directed = ['hypernym', 'hyponym', 'derived_from'].includes(type);
+        const directed = ['hypernym', 'hyponym', 'meronym', 'holonym', 'troponym', 'compound', 'proverb', 'derived_from'].includes(type);
         const endpoints = directed
           ? [`sense:${senseId}`, `lexeme:${resolvedTarget.id}`]
           : [`sense:${senseId}`, `lexeme:${resolvedTarget.id}`].sort();
