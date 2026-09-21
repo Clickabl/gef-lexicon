@@ -56,6 +56,17 @@
         "homonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "synonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "antonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "hypernyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "hyponyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "coordinate_terms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "meronyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "holonyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "troponyms": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "anagrams": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "compounds": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "proverbs": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "related": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
+        "derived": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}},
         "confusable_senses": {"type": "array", "items": {"$ref": "#/definitions/typedRelation"}}
       }
     },
