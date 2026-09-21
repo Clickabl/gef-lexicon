@@ -281,6 +281,7 @@ for (const row of rows) {
   for (const { sense, sourceIndex, glosses } of usableSenses(row)) {
     const senseId = stableUuid(`kaikki:sense:${sourceRecordKey(row)}:${sourceIndex}:${stableJson(glosses)}`);
     const unresolvedRelations = [];
+    const resolvedRelationRefs = new Map();
 
     for (const key of RELATION_FIELDS) {
       const type = relationType(key);
@@ -312,6 +313,13 @@ for (const row of rows) {
         }
 
         const [resolvedTarget] = candidates;
+        const refs = resolvedRelationRefs.get(key) ?? new Map();
+        refs.set(resolvedTarget.id, {
+          target_id: resolvedTarget.id,
+          target_type: 'lexeme',
+          note: `Candidate one-hop ${key} relation imported from ${sourceEdition}; target lexical details remain separately addressable.`,
+        });
+        resolvedRelationRefs.set(key, refs);
         const directed = ['hypernym', 'hyponym', 'meronym', 'holonym', 'troponym', 'compound', 'proverb', 'derived_from'].includes(type);
         const endpoints = directed
           ? [`sense:${senseId}`, `lexeme:${resolvedTarget.id}`]
@@ -355,6 +363,10 @@ for (const row of rows) {
       relation_assertions: Object.fromEntries(
         RELATION_FIELDS.filter((key) => Array.isArray(sense[key]) && sense[key].length)
           .map((key) => [key, stableValue(sense[key])]),
+      ),
+      ...Object.fromEntries(
+        [...resolvedRelationRefs.entries()]
+          .map(([key, refs]) => [key, [...refs.values()].sort((left, right) => left.target_id.localeCompare(right.target_id))]),
       ),
       unresolved_relations: unresolvedRelations,
       examples: importedExamples(sense, senseId, row, importId),
