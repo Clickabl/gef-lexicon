@@ -32,3 +32,32 @@ SHA-256 is `e4dbb4a3f96338ae240c1f3fcc65b6ec73746f71ffb3907dde33c3af0e61bb65`.
 cPanel reported 24,164.44 MiB used and 27,035.56 MiB free after cleanup.
 No lexical import, review promotion, app build or runtime deployment occurred
 as part of this filtering operation.
+
+## Archive migration inventory — September 21
+
+Canonical work remains in Expo's `TODO-LEXI-SOURCE-ARCHIVE-20260912`; the bounded
+`TODO-LEXI-ARCHIVE-INVENTORY-20260916` establishes what must be preserved, not a
+completed transfer or authorization to delete the remaining server source.
+
+The staging inventory contains the filtered gzip (2,040,222,933 bytes), report
+(140,402 bytes), and redirects sidecar (4,295,074 bytes). The existing report
+records these SHA-256 values; this inventory did not rehash or rescan the archive:
+
+- Filtered gzip: `bd02b60366065509db545eef11b71231564950b725474c2c33d6de83174e9865`.
+- Redirects: `852b3fdfbb00e6b4df35055be0ae7ee55824bc5e696fdb0a0635a3d268e17d30`.
+
+The Mac recovery directory is
+`/Users/tim/Clickabl/gef-wiktionary-20260912.YrVdRG`. Its inventory contains the
+original compressed source and report, not the final filtered gzip. Do not assume
+the final server file already has an independent off-server replacement.
+Language counts above are dated audit facts, not product constants; current
+support must still be derived from Expo's canonical registry.
+
+No separate archive repository/catalog or successful replacement download was
+found in the checked repository documentation and local recovery inventory.
+Migration must publish an explicit source/date/license/attribution manifest,
+allowlist provenance, counts and checksums alongside compressed archive assets
+(not multi-gigabyte Git source blobs). Retain rich source fields for later
+reviewed lexical import. Before deleting any exact server artifact, independently
+download its replacement and verify checksums, record counts and retrieval
+instructions. Those publication, verification and deletion gates remain open.
