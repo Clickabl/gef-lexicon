@@ -122,8 +122,13 @@ try {
     relation.target.word === 'domicilio' && relation.reason === 'target_lexeme_not_present'
   )));
   assert.ok(homeSense.unresolved_relations.some((relation) => (
-    relation.target.word === 'habitación' && relation.reason === 'relation_type_not_projected'
+    relation.target.word === 'habitación' && relation.reason === 'target_lexeme_not_present'
   )));
+
+  assert.equal(homeSense.synonyms.length, 1, 'resolved relation should also be a one-hop sense ref');
+  assert.equal(homeSense.synonyms[0].target_type, 'lexeme');
+  assert.equal(homeSense.synonyms[0].target_id, lexicon.lexemes.find((lexeme) => lexeme.lemma_nfc === 'hogar').lexeme_id);
+  assert.ok(!('definitions' in homeSense.synonyms[0]), 'one-hop relation refs must not embed target payloads');
 
   const plural = casa.forms.find((form) => form.surface_nfc === 'casas');
   assert.ok(plural);
