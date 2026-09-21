@@ -62,3 +62,21 @@ node scripts/filter-wiktextract-languages.mjs \
 Only after filtering and source-code reconciliation should bounded research
 batches feed the existing cross-product Agent Review Queue. Do not build a
 second Lexi-only task queue or upload the multi-gigabyte raw dump to Git.
+
+
+## Work-scoped extraction for exhaustive token layers
+
+When a work already has an exhaustive token table, do not copy the 1.9 GiB private archive into Git and do not hand-create placeholder dictionary entries. Use `scripts/extract-work-wiktextract-subset.mjs` to stream the private archive once and retain the **full** Wiktextract rows whose lemma or attested form intersects the work's token surfaces. The resulting small gzip is still candidate source material: a form match selects records, never a sense or translation edge.
+
+Gef Intro English example:
+
+```sh
+node scripts/extract-work-wiktextract-subset.mjs \\
+  --input /home/bigmkahi/push_secure/gef/dictionary-staging/gef-wiktextract-supported.jsonl.gz \\
+  --tokens ../gef-content/works/gef-intro/linguistic/en-tokens-001-034.tsv \\
+  --language en \\
+  --output /home/bigmkahi/push_secure/gef/dictionary-staging/gef-intro-en-source.jsonl.gz \\
+  --report /home/bigmkahi/push_secure/gef/dictionary-staging/gef-intro-en-source-report.json
+```
+
+Run the same command with `es` and the Spanish token table. Feed those bounded full-row subsets to `import-kaikki-candidates.mjs`; preserve all senses and source assertions. Occurrence resolution is a separate content-review step and must not select the first imported sense automatically.
