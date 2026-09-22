@@ -8,10 +8,10 @@
   "discovery_method": "Candidate discovery uses sense-separated English 'for' translation tables plus language-specific grammar/dictionary checks. Discovery is not human linguistic approval.",
   "anchor": ["en"],
   "confirmed_multi": [
-    "af", "ar", "as", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "es", "et", "eu", "fa", "fi", "fil", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "ig", "is", "it", "ja", "km", "ko", "ms", "nb", "nl", "pa", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "th", "tr", "uk", "ur", "vi", "yo", "yue", "zh"
+    "af", "ar", "as", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "es", "et", "eu", "fa", "fi", "fil", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "ig", "is", "it", "ja", "ka", "km", "ko", "mk", "ms", "nb", "nl", "pa", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "th", "tr", "uk", "ur", "uz", "vi", "yo", "yue", "zh"
   ],
   "research_required": [
-    "ak", "am", "az", "ba", "be", "cv", "dsb", "gd", "hsb", "jv", "ka", "kk", "kn", "kok", "ky", "lo", "lt", "lv", "mk", "ml", "mn", "mr", "my", "ne", "nn", "or", "pcm", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "te", "ti", "tk", "uz", "zu"
+    "ak", "am", "ba", "be", "cv", "dsb", "gd", "hsb", "jv", "kk", "kn", "kok", "ky", "lo", "lt", "lv", "ml", "mn", "mr", "my", "ne", "nn", "or", "pcm", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "te", "ti", "tk", "zu"
   ],
   "lesson_ready": ["en", "es", "pt", "ca", "gl", "el"],
   "evidence": {
@@ -20,6 +20,7 @@
     ],
     "af": ["https://www.afrikaans.us/afrikaans/woordeskat/grammar-related/prepositions/"],
     "as": ["https://www.xobdo.org/dic/%E0%A6%95%E0%A6%BE%E0%A7%B0%E0%A6%A3%E0%A7%87"],
+    "az": ["https://en.wiktionary.org/wiki/g%C3%B6r%C9%99", "https://sublearn.com/pt/learn/az/grammar/postpositions-with-cases", "https://www.sublearn.com/learn/az/grammar/expressing-due-to-sayesinde"],
     "bg": ["https://www.lenguia.com/grammar/bulgarian/a2", "https://www.lenguia.com/grammar/bulgarian/b1", "https://en.wiktionary.org/wiki/%D0%B4%D0%BE%D0%B1%D1%80%D0%BE"],
     "bs": ["https://bsen.dict.cc/?s=zbog"],
     "et": ["https://en.wikipedia.org/wiki/Estonian_grammar", "https://northfluent.com/blog/post/estonian-postpositions-guide"],
@@ -30,9 +31,12 @@
     "hr": ["https://www.croatiantutor.com/post/zato-jer-zbog"],
     "ig": ["https://latinum.substack.com/p/lesson-14-igbo-asusu-igbo-a-latinum"],
     "is": ["https://icelandicgrammar.com/docs/prepositions/fyrir", "https://icelandicgrammar.com/docs/adverbs/time-frequency"],
+    "ka": ["https://georgian.se/kartuli/GeoGrammar/09Postpositions/01Postpos.html", "https://polyglotclub.com/wiki/Language/Georgian/Grammar/Postpositions-of-the-Genitive"],
+    "mk": ["https://www.makedonskadrzava.com/books/grammar-of-the-macedonian-literary-language", "https://www.makedonskadrzava.com/books/short-macedonian-grammar", "https://talkpal.ai/grammar/prepositions-of-cause-in-macedonian-grammar/"],
     "sr": ["https://learnserbian.org/serbian-grammar"],
     "ta": ["https://dictionary.cambridge.org/dictionary/english-tamil/because-of"],
     "tr": ["https://www.turkishtextbook.com/lesson/icin/", "https://www.turkish-language.com/en/post/expressing-duration-since-for-in-turkish"],
+    "uz": ["https://learnuzbek.org/uzbek-grammar", "https://en.wiktionary.org/wiki/uchun", "https://talkpal.ai/culture/how-do-you-express-duration-of-time-in-uzbek-grammar/"],
     "yo": ["https://en.wiktionary.org/wiki/nitori"],
     "yue": ["https://words.hk/zidin/%E7%82%BA", "https://en.wiktionary.org/wiki/%E7%82%BA%E5%92%97"]
   },
@@ -40,8 +44,9 @@
     "confirmed_multi means discovery evidence is sufficient to include the language in the lesson-family research graph; it does not mean its detailed rules are reviewed or lesson-ready.",
     "research_required languages remain explicit rows in scope. Agents should resolve them rather than silently omitting them.",
     "2026-09-22 candidate research resolved bg, et, is and tr at discovery level: Bulgarian separates beneficiary/basic za, causal zaradi/poradi and purpose-clause za da; Estonian uses distinct eest/jaoks and cause-oriented postpositions such as parast/tottu; Icelandic contrasts benefactive fyrir with duration i + accusative; Turkish contrasts icin purpose/benefit with duration morphology such as -DIr. These are research-graph inclusions, not reviewed lesson rules.",
+    "2026-09-22 candidate research also resolved az, ka, mk and uz at discovery level: Azerbaijani distinguishes ucun from gora and other cause expressions; Georgian has genitive -tvis 'for' versus gamo 'because of'; Macedonian uses za alongside distinct causal poradi/zaradi and da-based purpose constructions; Uzbek uses uchun for purpose/benefit while duration may be bare or expressed with davomida. These remain candidate research facts, not lesson-ready rules.",
     "The audit must be regenerated from the canonical learnerCapable registry whenever that registry changes."
   ],
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
