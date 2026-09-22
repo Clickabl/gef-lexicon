@@ -8,10 +8,10 @@
   "discovery_method": "Candidate discovery uses sense-separated English 'for' translation tables plus language-specific grammar/dictionary checks. Discovery is not human linguistic approval.",
   "anchor": ["en"],
   "confirmed_multi": [
-    "af", "ar", "as", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "es", "eu", "fa", "fi", "fil", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "ig", "it", "ja", "km", "ko", "ms", "nb", "nl", "pa", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "th", "uk", "ur", "vi", "yo", "yue", "zh"
+    "af", "ar", "as", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "es", "et", "eu", "fa", "fi", "fil", "fr", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id", "ig", "is", "it", "ja", "km", "ko", "ms", "nb", "nl", "pa", "pl", "pt", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "th", "tr", "uk", "ur", "vi", "yo", "yue", "zh"
   ],
   "research_required": [
-    "ak", "am", "az", "ba", "be", "bg", "cv", "dsb", "et", "gd", "hsb", "is", "jv", "ka", "kk", "kn", "kok", "ky", "lo", "lt", "lv", "mk", "ml", "mn", "mr", "my", "ne", "nn", "or", "pcm", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "te", "ti", "tk", "tr", "uz", "zu"
+    "ak", "am", "az", "ba", "be", "cv", "dsb", "gd", "hsb", "jv", "ka", "kk", "kn", "kok", "ky", "lo", "lt", "lv", "mk", "ml", "mn", "mr", "my", "ne", "nn", "or", "pcm", "ps", "qu", "rm", "sd", "shn", "si", "so", "sq", "te", "ti", "tk", "uz", "zu"
   ],
   "lesson_ready": ["en", "es", "pt", "ca", "gl", "el"],
   "evidence": {
@@ -20,23 +20,28 @@
     ],
     "af": ["https://www.afrikaans.us/afrikaans/woordeskat/grammar-related/prepositions/"],
     "as": ["https://www.xobdo.org/dic/%E0%A6%95%E0%A6%BE%E0%A7%B0%E0%A6%A3%E0%A7%87"],
+    "bg": ["https://www.lenguia.com/grammar/bulgarian/a2", "https://www.lenguia.com/grammar/bulgarian/b1", "https://en.wiktionary.org/wiki/%D0%B4%D0%BE%D0%B1%D1%80%D0%BE"],
     "bs": ["https://bsen.dict.cc/?s=zbog"],
+    "et": ["https://en.wikipedia.org/wiki/Estonian_grammar", "https://northfluent.com/blog/post/estonian-postpositions-guide"],
     "eu": ["https://www.ehu.eus/en/web/eins/cases-and-postpositions"],
     "fil": ["https://www.tagaloglang.com/for/"],
     "gu": ["https://dictionary.cambridge.org/dictionary/english-gujarati/for", "https://dictionary.cambridge.org/dictionary/english-gujarati/because-of"],
     "ha": ["https://aflang.humanities.ucla.edu/language-materials/chadic-languages/hausa/hausa-online-grammar/verb-tense/", "https://hausadictionary.com/saboda"],
     "hr": ["https://www.croatiantutor.com/post/zato-jer-zbog"],
     "ig": ["https://latinum.substack.com/p/lesson-14-igbo-asusu-igbo-a-latinum"],
+    "is": ["https://icelandicgrammar.com/docs/prepositions/fyrir", "https://icelandicgrammar.com/docs/adverbs/time-frequency"],
     "sr": ["https://learnserbian.org/serbian-grammar"],
     "ta": ["https://dictionary.cambridge.org/dictionary/english-tamil/because-of"],
+    "tr": ["https://www.turkishtextbook.com/lesson/icin/", "https://www.turkish-language.com/en/post/expressing-duration-since-for-in-turkish"],
     "yo": ["https://en.wiktionary.org/wiki/nitori"],
     "yue": ["https://words.hk/zidin/%E7%82%BA", "https://en.wiktionary.org/wiki/%E7%82%BA%E5%92%97"]
   },
   "notes": [
     "confirmed_multi means discovery evidence is sufficient to include the language in the lesson-family research graph; it does not mean its detailed rules are reviewed or lesson-ready.",
     "research_required languages remain explicit rows in scope. Agents should resolve them rather than silently omitting them.",
+    "2026-09-22 candidate research resolved bg, et, is and tr at discovery level: Bulgarian separates beneficiary/basic za, causal zaradi/poradi and purpose-clause za da; Estonian uses distinct eest/jaoks and cause-oriented postpositions such as parast/tottu; Icelandic contrasts benefactive fyrir with duration i + accusative; Turkish contrasts icin purpose/benefit with duration morphology such as -DIr. These are research-graph inclusions, not reviewed lesson rules.",
     "The audit must be regenerated from the canonical learnerCapable registry whenever that registry changes."
   ],
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }
