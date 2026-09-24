@@ -29,7 +29,7 @@ try {
   const report = join(dir, 'report.json');
   execFileSync(process.execPath, [join(root, 'scripts/extract-work-wiktextract-subset.mjs'),
     '--input', input, '--tokens', tokens, '--language', 'es', '--output', output, '--report', report], { cwd: root });
-  const subset = gunzipSync(readFileSync(output), 'utf8').trim().split('\n').map(JSON.parse);
+  const subset = gunzipSync(readFileSync(output)).toString('utf8').trim().split('\n').map(JSON.parse);
   assert.deepEqual(subset.map((row) => row.word), ['leer', 'lámpara']);
   assert.equal(subset[0].senses[0].glosses[0], 'read', 'full source row must survive');
   const summary = JSON.parse(readFileSync(report, 'utf8'));
