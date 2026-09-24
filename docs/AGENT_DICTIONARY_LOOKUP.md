@@ -32,7 +32,11 @@ For annotations:
 4. Preserve all senses and adult-content flags in Lexi; select the contextual
    sense separately in the book's standoff occurrence layer. Include every token
    occurrence and overlapping phrases where the book declares exhaustive coverage.
-5. Source lookup is reading only. The web endpoint cannot modify Lexi or a book.
+5. After actually importing, use authenticated `POST /v1/lexi/imports` to record
+   source archive SHA, source_record_id, and destination Lexi IDs. Subsequent GET
+   responses carry `lexi_import.status: "reported_imported"`. The receipt is an
+   author assertion; it does not perform the import or approve lexical truth.
+   The source stays retrievable. API contract: https://gef.clickabl.co/v1/lexi/openapi.json
 
 English Wiktionary source codes are preserved. For special source groups, use
 `tl` for Tagalog evidence supporting `fil`, `sh` for Serbo-Croatian source
