@@ -1,8 +1,15 @@
 # Branch exceptions before release
 
-## Current: 2026-09-22 recovery-branch reconciliation
+## Current: 2026-09-24 recovery-branch reconciliation
 
-`codex/preserve-lexicon-import-20260913` remains intentionally unmerged. Fresh comparison against `main` shows **1 unique commit and 20 commits behind**. Its unique files are the old download helper/package hook, removal of a tracked `node_modules` symlink, and very large generated English/Spanish `gef-intro` lexicon overlays.
+Fresh fetch/prune finds one non-main ref and no open PR.
+`codex/preserve-lexicon-import-20260913` at
+`25b5d22070b4d357f74d7be8b779527afc73f290` remains intentionally unmerged.
+Against current `main` `9c8344836a34216dc902a98e90f44037390dd0ac`
+it has **1 unique commit and is 24 commits behind**. Its owner is Lexicon
+import/provenance review. Its unique files are the old download helper/package
+hook, removal of a tracked `node_modules` symlink, and very large generated
+English/Spanish `gef-intro` lexicon overlays.
 
 Do **not** merge the branch wholesale.
 
@@ -20,7 +27,12 @@ Current linked work:
 - Rich Wiktionary import/runtime TODOs own preservation of definitions, pronunciation, forms, relations, examples, etymology and source evidence.
 - `docs/EXTERNAL_GRAMMAR_DATASETS.md` records the separate external grammar/morphology evidence strategy; it does not authorize these old generated overlays.
 
-Closure condition for this exception: every uniquely useful artifact in the recovery branch is either (a) reimplemented/reconciled against current schemas and provenance rules, or (b) explicitly rejected with the reason recorded. Only then may the branch be removed. No dictionary record gains review status from branch reconciliation.
+Next action is a bounded provenance, current-schema and coverage comparison—not
+a wholesale merge. Closure requires every uniquely useful artifact to be either
+(a) reimplemented/reconciled against current schemas and provenance rules, or
+(b) explicitly rejected with the reason recorded. Then current local validators
+must pass before the branch is removed. No dictionary record gains review status
+from branch reconciliation.
 
 ## Historical note: 2026-09-13 local import recovery
 
