@@ -1,5 +1,9 @@
 # GEF Core Lexicon & Distractor Engine Architecture
 
+The web source-evidence lookup and sense-level adult flags are documented in
+[AGENT_DICTIONARY_LOOKUP.md](AGENT_DICTIONARY_LOOKUP.md). The server index is a
+read projection, not a second editable lexical authority.
+
 Source: Notion "06 — Language, Dictionary & Lexicon Architecture", Codex review, and August 2026 cross-linguistic standards update.
 
 ## 1. Multi-Layer Hybrid Architecture

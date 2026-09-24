@@ -2,6 +2,8 @@
 
 The reusable Clickabl-wide linguistic and curriculum graph for Gef and future Clickabl language products.
 
+**Annotation agents:** [Look up Wiktionary by language and word over the web](docs/AGENT_DICTIONARY_LOOKUP.md). No SSH required.
+
 This repository owns language knowledge that should survive any one book:
 
 - interlingual lexical concepts;

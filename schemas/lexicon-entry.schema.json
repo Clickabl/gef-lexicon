@@ -12,6 +12,16 @@
     "lexemes": {"type": "array", "items": {"$ref": "#/definitions/lexeme"}}
   },
   "definitions": {
+    "lexicalSafety": {
+      "type": "object",
+      "required": ["band", "tags", "minimumBand", "warningStrength"],
+      "properties": {
+        "band": {"enum": ["general", "sensitive_educational", "mature", "explicit"]},
+        "tags": {"type": "array", "items": {"enum": ["profanity", "slur", "sexual_act", "sexual_content", "anatomy", "identity", "drugs", "graphic_violence", "self_harm"]}},
+        "minimumBand": {"enum": [null, "AGE_0_8", "AGE_9_12", "AGE_13_15", "AGE_16_17", "AGE_18_20", "AGE_21_PLUS"]},
+        "warningStrength": {"enum": ["none", "notice", "strong"]}
+      }
+    },
     "lexeme": {
       "type": "object",
       "required": ["lexeme_id", "lemma_nfc", "upos", "review_state", "senses"],
@@ -33,6 +43,10 @@
       "required": ["sense_id", "sense_key", "definitions"],
       "properties": {
         "sense_id": {"type": "string"},
+        "adult_content": {"type": ["boolean", "null"], "description": "True marks detected adult content. Null is unclassified, never proof of child safety."},
+        "minimum_age": {"type": ["integer", "null"], "minimum": 0, "maximum": 21},
+        "classification_status": {"type": "string", "enum": ["flagged", "unclassified", "reviewed"]},
+        "safety": {"$ref": "#/definitions/lexicalSafety"},
         "sense_key": {"type": "string"},
         "primary_concept_id": {
           "type": ["string", "null"],

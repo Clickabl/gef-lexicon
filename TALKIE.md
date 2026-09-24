@@ -199,3 +199,16 @@ or approved Lexi truth. Import metadata pins the input SHA-256, edition,
 attribution/licenses, importer version, and transformations. The focused
 `test:wiktionary-import` command verifies retention and byte determinism without
 generating or importing a bulk dictionary.
+
+## 2026-09-24 — Web source lookup and adult flags
+
+Owner requested web lookup for chats without SSH. The Server GET endpoint
+`/v1/lexi/sources/wiktionary` reads a private index built by
+`scripts/wiktionary-index.py`; JSON/HTML preserve source records, attribution,
+archive identity and sense-level classification. The index verifies the retained
+archive checksum and exact per-language counts before publication. Source rows
+with no headword remain counted, not invented or silently dropped.
+The importer now retains candidate adult flags and age18 runtime safety using
+the same rules as lookup. Null is unclassified, not child-safe. No approval,
+concept mapping, app release, or editable parallel lexical authority is created.
+See `docs/AGENT_DICTIONARY_LOOKUP.md` for agent usage and draft-store direction.

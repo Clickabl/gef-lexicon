@@ -115,6 +115,8 @@ try {
   assert.deepEqual(homeSense.glosses.en, ['a building used as a home', 'a home', 'a household']);
   assert.deepEqual(homeSense.concept_links, []);
   assert.equal(homeSense.review_state, 'candidate');
+  assert.equal(homeSense.adult_content, null, 'unclassified is not proof of child safety');
+  assert.equal(homeSense.classification_status, 'unclassified');
   assert.equal(homeSense.examples[0].source_data.text, 'Esta es mi casa.');
   assert.equal(homeSense.translation_assertions[0].word, 'house');
   assert.equal(homeSense.labels.raw_tags[0], 'Spain');

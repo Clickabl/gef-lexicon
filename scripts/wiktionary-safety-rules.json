@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "adult_tags": ["sexual", "sexuality", "sex", "pornography", "pornographic", "vulgar", "obscene", "explicit", "erotic", "BDSM"],
+  "sexual_gloss_pattern": "\\b(sexual (act|intercourse|activity|penetration|arousal)|anal sex|oral sex|masturbat[a-z]*|pornograph[a-z]*|strap[- ]on|dildo|orgasm[a-z]*)\\b",
+  "profanity_tags": ["vulgar", "obscene", "offensive", "derogatory", "slur", "ethnic-slur"],
+  "note": "Conservative candidate triage of English Wiktionary labels/glosses. No detection is not proof of child safety. Classify senses individually; identity and educational anatomy alone are not adult flags."
+}

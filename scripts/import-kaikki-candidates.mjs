@@ -19,9 +19,10 @@ import { basename, dirname, resolve } from 'node:path';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { createGunzip } from 'node:zlib';
+import { wiktionarySafety } from './wiktionary-safety.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const IMPORTER_VERSION = 2;
+const IMPORTER_VERSION = 3;
 const RELATION_FIELDS = Object.freeze([
   'synonyms', 'antonyms', 'hypernyms', 'hyponyms', 'coordinate_terms',
   'related', 'derived', 'holonyms', 'meronyms', 'troponyms', 'homophones',
@@ -346,6 +347,7 @@ for (const row of rows) {
     }
 
     importedSenses.push({
+      ...wiktionarySafety(sense, row),
       sense_id: senseId,
       sense_key: `wiktionary-${word}-${pos}-${sourceIndex + 1}`.replace(/\s+/gu, '-').toLowerCase(),
       concept_links: [],
