@@ -2,6 +2,13 @@
 
 Web entry point: https://gef.clickabl.co/v1/lexi/sources/
 
+Book-annotation task entry point for regular web-capable chats:
+`https://gef.clickabl.co/v1/annotations/tasks/{work_id}/{language}`.
+Those tasks number every occurrence and link back to this Wiktionary evidence
+API. Chats submit token IDs, not offsets; the server owns offset calculation,
+candidate storage and validation. Authenticated paste/API writes are documented
+in `Clickabl/gef-server/docs/WEB_ANNOTATION_WORKFLOW.md`.
+
 One GET, no SSH, account, MCP installation, or repository checkout required:
 
 ```text
