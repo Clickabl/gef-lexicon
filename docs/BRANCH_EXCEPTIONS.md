@@ -5,8 +5,8 @@
 Fresh fetch/prune finds one non-main ref and no open PR.
 `codex/preserve-lexicon-import-20260913` at
 `25b5d22070b4d357f74d7be8b779527afc73f290` remains intentionally unmerged.
-Against current `main` `9c8344836a34216dc902a98e90f44037390dd0ac`
-it has **1 unique commit and is 24 commits behind**. Its owner is Lexicon
+Against current `main` `009f80275139d8875798d0e2ba9437a3369b5823`
+it has **1 unique commit and is 27 commits behind**. Its owner is Lexicon
 import/provenance review. Its unique files are the old download helper/package
 hook, removal of a tracked `node_modules` symlink, and very large generated
 English/Spanish `gef-intro` lexicon overlays.
@@ -33,6 +33,17 @@ a wholesale merge. Closure requires every uniquely useful artifact to be either
 (b) explicitly rejected with the reason recorded. Then current local validators
 must pass before the branch is removed. No dictionary record gains review status
 from branch reconciliation.
+
+The primary checkout was clean at inspection. One stale, prunable worktree
+administration record remains for `/private/tmp/gef-lexicon-release-audit` at
+`78e3592ff53dd3c550c564f68648354ce3154784`; no live directory or dirty worktree
+was found, and this inventory does not delete the record. The established
+signed Lexicon webhook had already fast-forwarded its read-only checkout,
+successfully synchronized every public runtime-truth directory, and recorded a
+deployment from exact revision `009f80275139d8875798d0e2ba9437a3369b5823`.
+The changes after previously observed `e2c8282` were internal docs, schemas and
+import tooling rather than new public lexicon records. No manual production copy
+or unreviewed data promotion was required.
 
 ## Historical note: 2026-09-13 local import recovery
 
