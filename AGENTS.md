@@ -34,9 +34,7 @@ finished work to remain on branches.**
    with reasons. If a repository cannot be checked, disclose that blocker rather
    than claiming the reconciliation is complete.
 
-Default to main where the repository permits it. A required review/deployment
-branch is temporary and must be closed as part of finishing the work. Identity's
-branch-and-PR review requirement still applies. Required tests, content approval,
+Work directly on main (owner rule 2026-09-27: never branch). Required tests, content approval,
 trust, rights, and production gates are reasons to document an exception, never
 reasons to bypass a gate or silently omit a branch. GitHub Actions budget locks
 remain in force; perform validation locally.
@@ -109,10 +107,7 @@ Do not invent a lexicon-only AI research queue. Respect Q0–Q4 quality/cost gat
 
 ## Cross-agent coordination (added 2026-08-22, per Tim)
 
-Default to committing directly to `main`. Use a branch only for a task that's
-explicitly a multi-agent coordinated project or needs server-side sequencing.
-Branches, when used, are named `<tool>/<short-task-slug>`; close them out
-(merge+delete, or delete and say why) rather than letting them accumulate.
+Always commit directly to `main` and push. Never create branches or pull requests (owner rule 2026-09-27).
 Push after every commit. Shared task items (owned by `gef-expo`'s
 `tasks/coding-todos.json` / `research-tasks.json`) may carry `assignee` and
 `branch` fields — respect both.
