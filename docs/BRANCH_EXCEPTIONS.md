@@ -1,4 +1,19 @@
-# Branch exceptions before release
+# Branch exceptions
+
+**There are none, and there must never be any.** Owner rule (2026-09-27, reaffirmed
+2026-09-28): every change is committed and pushed straight to `main`. Branches are how work
+got lost and redone. See `AGENTS.md`.
+
+## 2026-09-28: last branch consolidated
+
+`codex/preserve-lexicon-import-20260913` (`25b5d22`) was squashed onto `main` and deleted:
+`scripts/download-wiktionary-dump.sh` and `npm run download:wiktionary` are now tooling on
+`main`; the lossy generated English/Spanish Gef Intro overlays are preserved as evidence in
+`docs/archive/recovered-imports/2026-09-13-gef-intro-wiktionary/` (never served, never
+promoted without review). The stale `/private/tmp/gef-lexicon-release-audit` worktree record
+was pruned.
+
+# History
 
 ## Current: 2026-09-24 recovery-branch reconciliation
 
