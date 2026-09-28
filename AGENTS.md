@@ -1,44 +1,42 @@
 # Agent Instructions for gef-lexicon
 
-## Standing owner rule: reconcile every branch before a build (2026-09-06)
+## NO BRANCHES. EVER. (owner rule, reaffirmed 2026-09-28)
 
-**No unexplained outstanding branches. Before any local, preview, production,
-or store build, reconcile branches across all five repositories:
-Clickabl/gef-expo, Clickabl/gef-content, Clickabl/gef-lexicon,
-Clickabl/gef-server, and Clickabl/identity. Checking only Expo main is
-insufficient. This rule takes precedence over older guidance that permits
-finished work to remain on branches.**
+**There must never be a branch of any kind in this repository. Only `main`.** Commit directly
+to `main` and push. Do not create, push, keep or leave: feature, fix, hotfix, experiment,
+diagnostic, format, integration, "preserve"/"recovery", release, deploy or agent branches;
+draft PRs; Dependabot/Renovate branches; forks used as branches. Do not leave stashes or
+worktrees behind when your session ends.
 
-1. Fetch and prune remote refs in all five repositories. Inventory local and
-   remote branches, open PRs, and linked worktrees; preserve uncommitted work.
-2. Review every non-main branch against current main, including squash/cherry-pick
-   equivalents and cross-repository dependencies. Merge all completed, valid work
-   into its owning main, resolve conflicts against current contracts, run the
-   relevant local checks, and push before building. A large commit count alone
-   does not prove that changes are missing from main.
-3. Close merged PRs and delete finished local/remote feature branches after
-   verifying their work is integrated. Superseded or abandoned branches may be
-   closed only with recorded evidence that needed work is preserved or explicitly
-   cancelled. Never discard unique work or dirty worktrees just to clear the list.
-4. A branch may remain outstanding only for a concrete reason: unfinished work,
-   a failing check, an unresolved dependency/contract, required human/content/rights
-   review, or a live deployment sequence. Record each exception in the owning
-   repository's docs/BRANCH_EXCEPTIONS.md before building, with exact branch and
-   commit, reason, owner, linked work/PR, next action, and condition for closure.
-   Review that record afresh for each build; stale blanket exceptions do not count.
-   Referenced SDK distribution branches are also explicit exceptions: document
-   their consumers and retention reason; do not merge generated packages into
-   source main or delete an artifact ref still used by a consumer.
-5. Start the build only when every branch is integrated/closed or has a current
-   documented exception. Report included repository commits and excluded work
-   with reasons. If a repository cannot be checked, disclose that blocker rather
-   than claiming the reconciliation is complete.
+**Why:** every branch is a place where work gets lost, redone, or quietly diverges from what is
+live. In September 2026 this cost weeks: production ran a commit that existed on no `main`,
+sign-in fixes sat unmerged while builds shipped without them, and ~100 branches (many just
+CI experiments) had to be reconciled by hand.
 
-Work directly on main (owner rule 2026-09-27: never branch). Required tests, content approval,
-trust, rights, and production gates are reasons to document an exception, never
-reasons to bypass a gate or silently omit a branch. GitHub Actions budget locks
-remain in force; perform validation locally.
+**How to work without branches**
+1. `git pull --rebase` before you start and again before you push.
+2. Make small, complete commits on `main`. Run this repo's checks locally *before* pushing
+   (GitHub Actions minutes are limited; validate locally). Never bypass a required test,
+   content-approval, trust, rights or production gate: fix it, on `main`, before pushing more.
+   Push right away so other agents see it.
+3. If `main` moved, `git pull --rebase` and push again. Never force-push `main`.
+4. Verify after the push (deploy/health/tests as this repo documents). Checks passing locally
+   plus a live check replaces review branches.
+5. Half-finished work is still committed to `main` if it is safe (behind a flag, unrouted, or
+   documented), otherwise keep it uncommitted in your working tree and finish it. Never park it
+   on a branch or in a stash.
 
+6. **Before any build or release**, confirm the repo is clean of everything but `main`:
+   `git fetch --prune && git branch -a && git stash list && git worktree list && gh pr list`.
+   Anything else is reconciled first (below). There is no "documented exception" process.
+
+**If you find a branch, PR, stash or worktree here** (or in any Clickabl repo): reconcile it into
+`main` now, or, if it is superseded or needs an owner decision, save it as a patch under
+`docs/archive/` with the reason, then delete the branch. Never leave it "for later".
+Dependency updates are made on `main` by hand; version-update bots are off.
+
+If any other document in this repo says to branch, open a PR, or keep an "exception", this rule
+wins. Fix that document on `main`.
 
 Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/LESSON_GRAPH_ARCHITECTURE.md`, `docs/LESSONS_V2_ARCHITECTURE.md`, `curriculum-v2/README.md`, and the relevant schemas before modifying or generating lexicon, name, entity, source, annotation, construction, or curriculum content.
 
