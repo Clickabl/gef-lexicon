@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "language_code": "pl",
+  "names": [
+    {
+      "name_id": "name_pl_aleks",
+      "canonical_form": "Aleks",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Aleks",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "pl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.pl.aleks"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_rjp_aleks_female_2022",
+          "note": "Female use is attested in Poland but described as outside the traditional Polish naming pattern; do not infer balanced usage."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_aleks_2026_10_04",
+        "src_rjp_aleks_female_2022",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
