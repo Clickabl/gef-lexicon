@@ -29,6 +29,44 @@
         "src_wiktionary_en_henry_oldid_93025300"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_el_alex",
+      "canonical_form": "Άλεξ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Άλεξ",
+          "status": "canonical",
+          "script": "Grek",
+          "locale": "el"
+        },
+        {
+          "text": "Alex",
+          "status": "transliteration",
+          "script": "Latn",
+          "locale": "el-Latn"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.el.alex"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_behindthename_alex_2026_10_04",
+          "note": "Secondary source classifies Greek Alex/Άλεξ as masculine and feminine; no population shares are asserted."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_alex_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
     }
   ]
 }
