@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "language_code": "ca",
+  "names": [
+    {
+      "name_id": "name_ca_alexandra",
+      "canonical_form": "Alexandra",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alexandra",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ca"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.full-feminine",
+          "form_id": "NFF.alexander.ca.alexandra",
+          "note": "Full feminine fallback used by the Gef Intro book policy; masculine Àlex remains in the separate short-masculine set."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_behindthename_alex_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
