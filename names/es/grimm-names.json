@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "language_code": "es",
+  "names": [
+    {
+      "name_id": "name_es_hansel",
+      "canonical_form": "Hansel",
+      "name_type": "given",
+      "spellings": [
+        {"text": "Hansel", "status": "canonical", "script": "Latn", "locale": "es"}
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": ["src_work_hansel_and_gretel_es_graded_01_6c42fb8f472f"],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_es_gretel",
+      "canonical_form": "Gretel",
+      "name_type": "given",
+      "spellings": [
+        {"text": "Gretel", "status": "canonical", "script": "Latn", "locale": "es"}
+      ],
+      "family_refs": [],
+      "related_names": [
+        {
+          "target_name_id": "name_de_gretel",
+          "relation_type": "derived_from",
+          "note": "Borrowing described in the Spanish lexical entry, independently of the fairy-tale character translation table."
+        }
+      ],
+      "gender_usage": [],
+      "source_refs": [
+        "src_work_hansel_and_gretel_es_graded_01_6c42fb8f472f",
+        "src_wiktionary_en_gretel_oldid_91745961"
+      ],
+      "review_state": "candidate",
+      "etymology_note": "Candidate lexical derivation: Spanish Gretel is borrowed from German Gretel. No demographic distribution is asserted."
+    }
+  ]
+}
