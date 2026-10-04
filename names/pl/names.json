@@ -34,6 +34,34 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_pl_aleksandra",
+      "canonical_form": "Aleksandra",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Aleksandra",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "pl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.full-feminine",
+          "form_id": "NFF.alexander.pl.aleksandra",
+          "note": "Full feminine fallback used by the Gef Intro book policy when Polish Alex is too male-coded."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_behindthename_aleks_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
     }
   ]
 }
