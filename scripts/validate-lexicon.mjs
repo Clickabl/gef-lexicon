@@ -74,7 +74,10 @@ function main() {
   const names = new Set();
   const nameFamilies = new Set();
   const nameEquivalenceSets = new Set();
+  const nameEquivalenceSetOwners = new Map();
   const nameForms = new Set();
+  const nameFormOwners = new Map();
+  const nameFormSurfaceKeys = new Map();
   const entities = new Set();
   const sources = new Set();
   const pendingConceptRefs = [];
@@ -134,11 +137,32 @@ function main() {
     for (const set of data.equivalence_sets ?? []) {
       register(set.equivalence_set_id, 'name_equivalence_set', rel);
       nameEquivalenceSets.add(set.equivalence_set_id);
+      nameEquivalenceSetOwners.set(set.equivalence_set_id, data.family_id);
       for (const form of set.forms ?? []) {
         totalNameForms += 1;
         register(form.form_id, 'name_form', rel);
         nameForms.add(form.form_id);
+        nameFormOwners.set(form.form_id, {
+          family_id: data.family_id,
+          equivalence_set_id: set.equivalence_set_id,
+          name_id: form.name_id ?? null,
+        });
+        const surfaceKey = [
+          data.family_id,
+          set.equivalence_set_id,
+          form.language_tag,
+          form.text.normalize('NFC').toLocaleLowerCase('und'),
+        ].join('\u0000');
+        const priorSurface = nameFormSurfaceKeys.get(surfaceKey);
+        if (priorSurface) {
+          fail(`${rel}: duplicate family form surface '${form.text}' for ${form.language_tag} in ${set.equivalence_set_id} (also ${priorSurface})`);
+        } else {
+          nameFormSurfaceKeys.set(surfaceKey, form.form_id);
+        }
         if (!isNFC(form.text)) fail(`${rel}: name-family form '${form.text}' is not NFC`);
+        if (form.review_state === 'approved' && data.review_state !== 'approved') {
+          fail(`${rel}:${form.form_id}: approved form cannot belong to ${data.review_state} family ${data.family_id}`);
+        }
         if (form.name_id) pendingNameRefs.push({ id: form.name_id, file: rel, owner: form.form_id });
         for (const src of form.source_refs ?? []) pendingSourceRefs.push({ id: src, file: rel, owner: form.form_id });
       }
@@ -245,8 +269,27 @@ function main() {
   for (const ref of pendingNameRefs) if (!names.has(ref.id)) fail(`${ref.file}:${ref.owner}: name '${ref.id}' does not exist`);
   for (const ref of pendingNameFamilyRefs) {
     if (!nameFamilies.has(ref.family_id)) fail(`${ref.file}:${ref.owner}: name family '${ref.family_id}' does not exist`);
-    if (!nameEquivalenceSets.has(ref.equivalence_set_id)) fail(`${ref.file}:${ref.owner}: name equivalence set '${ref.equivalence_set_id}' does not exist`);
-    if (ref.form_id && !nameForms.has(ref.form_id)) fail(`${ref.file}:${ref.owner}: name-family form '${ref.form_id}' does not exist`);
+    if (!nameEquivalenceSets.has(ref.equivalence_set_id)) {
+      fail(`${ref.file}:${ref.owner}: name equivalence set '${ref.equivalence_set_id}' does not exist`);
+    } else {
+      const setFamily = nameEquivalenceSetOwners.get(ref.equivalence_set_id);
+      if (setFamily !== ref.family_id) {
+        fail(`${ref.file}:${ref.owner}: equivalence set '${ref.equivalence_set_id}' belongs to '${setFamily}', not '${ref.family_id}'`);
+      }
+    }
+    if (ref.form_id) {
+      if (!nameForms.has(ref.form_id)) {
+        fail(`${ref.file}:${ref.owner}: name-family form '${ref.form_id}' does not exist`);
+      } else {
+        const formOwner = nameFormOwners.get(ref.form_id);
+        if (formOwner.family_id !== ref.family_id || formOwner.equivalence_set_id !== ref.equivalence_set_id) {
+          fail(`${ref.file}:${ref.owner}: name-family form '${ref.form_id}' belongs to ${formOwner.family_id}/${formOwner.equivalence_set_id}, not ${ref.family_id}/${ref.equivalence_set_id}`);
+        }
+        if (formOwner.name_id && formOwner.name_id !== ref.owner) {
+          fail(`${ref.file}:${ref.owner}: family form '${ref.form_id}' links to name '${formOwner.name_id}', not this name`);
+        }
+      }
+    }
   }
   for (const ref of pendingEntityRefs) if (!entities.has(ref.id)) fail(`${ref.file}:${ref.owner}: entity '${ref.id}' does not exist`);
   for (const ref of pendingSourceRefs) if (!sources.has(ref.id)) fail(`${ref.file}:${ref.owner}: source '${ref.id}' does not exist`);
