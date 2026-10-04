@@ -13,13 +13,31 @@
           "surface": "Bremen",
           "label_type": "source_attested",
           "language_code": "en",
-          "work_id": "bremen-town-musicians"
+          "work_id": "bremen-town-musicians",
+          "components": [
+            {
+              "surface": "Bremen",
+              "role": "other",
+              "target_type": "literal",
+              "target_id": "literal:en:Bremen",
+              "note": "Attested place label; no personal-name or universal place-name equivalence is asserted."
+            }
+          ]
         },
         {
           "surface": "Bremen",
           "label_type": "translated",
           "language_code": "de",
-          "work_id": "bremen-town-musicians"
+          "work_id": "bremen-town-musicians",
+          "components": [
+            {
+              "surface": "Bremen",
+              "role": "other",
+              "target_type": "literal",
+              "target_id": "literal:de:Bremen",
+              "note": "Attested place label; no personal-name or universal place-name equivalence is asserted."
+            }
+          ]
         }
       ],
       "aliases": [],
