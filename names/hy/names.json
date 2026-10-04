@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "language_code": "hy",
+  "names": [
+    {
+      "name_id": "name_hy_aleks",
+      "canonical_form": "Ալեքս",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ալեքս",
+          "status": "canonical",
+          "script": "Armn",
+          "locale": "hy"
+        },
+        {
+          "text": "Aleks",
+          "status": "transliteration",
+          "script": "Latn",
+          "locale": "hy-Latn"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.hy.aleks"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_behindthename_aleks_2026_10_04",
+          "note": "Secondary onomastic source classifies Armenian Aleks as masculine and feminine; no population shares are asserted."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_aleks_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
