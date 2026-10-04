@@ -186,7 +186,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_de_alex"
         },
         {
           "form_id": "NFF.alexander.nl.alex",
@@ -202,7 +203,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_nl_alex"
         },
         {
           "form_id": "NFF.alexander.fr.alex",
@@ -218,7 +220,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_fr_alex"
         },
         {
           "form_id": "NFF.alexander.pt.alex",
@@ -234,7 +237,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_pt_alex"
         },
         {
           "form_id": "NFF.alexander.ro.alex",
@@ -250,7 +254,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_ro_alex"
         },
         {
           "form_id": "NFF.alexander.sv.alex",
@@ -266,7 +271,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_sv_alex"
         },
         {
           "form_id": "NFF.alexander.nb.alex",
@@ -282,7 +288,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_nb_alex"
         },
         {
           "form_id": "NFF.alexander.da.alex",
@@ -298,7 +305,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_da_alex"
         },
         {
           "form_id": "NFF.alexander.is.alex",
@@ -314,7 +322,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_is_alex"
         },
         {
           "form_id": "NFF.alexander.hu.alex",
@@ -330,7 +339,8 @@
             "src_behindthename_alex_2026_10_04"
           ],
           "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
-          "review_state": "candidate"
+          "review_state": "candidate",
+          "name_id": "name_hu_alex"
         },
         {
           "form_id": "NFF.alexander.cs.alex",
@@ -601,6 +611,24 @@
           "source_refs": [
             "src_behindthename_aleks_2026_10_04"
           ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.cs.alexandra",
+          "text": "Alexandra",
+          "language_tag": "cs",
+          "locale_tags": [
+            "cs"
+          ],
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_cs_alexandra",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04",
+            "src_ujc_czech_feminine_names_a_2026_10_04"
+          ],
+          "note": "Czech feminine fallback for book contexts where short Alex would otherwise require masculine declension/agreement.",
           "review_state": "candidate"
         }
       ]

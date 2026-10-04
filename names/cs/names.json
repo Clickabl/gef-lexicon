@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "language_code": "cs",
+  "names": [
+    {
+      "name_id": "name_cs_alexandra",
+      "canonical_form": "Alexandra",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alexandra",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cs"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.full-feminine",
+          "form_id": "NFF.alexander.cs.alexandra",
+          "note": "Czech full feminine fallback used by Gef Intro where short Alex would otherwise be morphologically male-coded."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_behindthename_alex_2026_10_04",
+        "src_ujc_czech_feminine_names_a_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
