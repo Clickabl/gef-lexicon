@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "language_code": "sl",
+  "names": [
+    {
+      "name_id": "name_sl_aleks",
+      "canonical_form": "Aleks",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Aleks",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.sl.aleks"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_behindthename_aleks_2026_10_04",
+          "note": "Secondary onomastic source classifies Slovene Aleks as masculine and feminine; no population shares are asserted."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_aleks_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
