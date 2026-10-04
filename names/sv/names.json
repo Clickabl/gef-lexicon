@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "language_code": "sv",
+  "names": [
+    {
+      "name_id": "name_sv_alex",
+      "canonical_form": "Alex",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alex",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.sv.alex",
+          "note": "Language-local Alex is sourced as masculine and feminine; population balance is not asserted."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_behindthename_alex_2026_10_04",
+          "note": "Secondary onomastic source classifies sv Alex as masculine and feminine; no population shares are asserted."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_alex_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
