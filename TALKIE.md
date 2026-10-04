@@ -212,3 +212,30 @@ The importer now retains candidate adult flags and age18 runtime safety using
 the same rules as lookup. Null is unclassified, not child-safe. No approval,
 concept mapping, app release, or editable parallel lexical authority is created.
 See `docs/AGENT_DICTIONARY_LOOKUP.md` for agent usage and draft-store direction.
+
+
+## 2026-10-04 — ChatGPT / Lexi instructional-note canonical storage contract
+
+Fresh `main` and Expo's Lexi Talkie were read before this pass. This repository now owns the canonical reusable storage contract for Lexi instructional notes under the already CDN-published `lexi/` tree.
+
+Landed:
+- `schemas/instructional-note-catalog.schema.json`
+- `schemas/instructional-note-bindings.schema.json`
+- `schemas/instructional-note-renderings.schema.json`
+- `lexi/instructional-notes/catalog.json`
+- `lexi/instructional-notes/bindings.json`
+- `scripts/validate-instructional-notes.mjs`
+- package validation wiring via `validate:instructional-notes`
+
+SETTLED:
+- A reusable instructional note has one stable language-neutral note ID, version, curriculum-v2 topic ID, kind and review state. Learner-facing prose is stored separately in per-language rendering bundles.
+- Reusable bindings can attach the note to canonical rule/sense/lexeme/concept/construction/semantic-function/name/entity IDs. Exact work/edition/span bindings do NOT live here; those belong in `gef-content`.
+- Canonical discovery metadata may say only that a note is eligible for once-only discovery. It does not prescribe a visual sparkle, glow, underline or other app effect. Expo owns that presentation and learner acknowledgement state.
+- Missing localization stays missing. Runtime must not manufacture or silently English-fallback teaching copy.
+- Note/topic/binding/rendering review states remain independent proof obligations. Candidate data stays candidate.
+- The validator rejects unknown topic IDs, unknown reusable binding targets, duplicate IDs and mismatched rendering-language filenames. It does not require every supported language to have a rendering before candidate work can land.
+- No quotation-mark note or invented punctuation topic was seeded in this pass because the current curriculum-v2 graph has no punctuation/quotation topic yet. The storage contract is real; fake topic IDs are not.
+
+Relevant commits: `60036cb1`, `e0558689`, `35c0797b`, `2ec0ab91`, `509f6343`, `da7d075d`, `29c79d13`.
+
+Normal local validation commands are documented by the repo, but this connector session has no dependency-complete checkout, so no local validator-pass claim is made. Do not self-approve future generated note renderings.
