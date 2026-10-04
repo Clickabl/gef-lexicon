@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/instructional-note-catalog.schema.json",
+  "title": "Gef reusable instructional note catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract", "notes"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "contract": {"type": "string", "const": "gef-instructional-note-catalog-v1"},
+    "notes": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/note"}
+    }
+  },
+  "definitions": {
+    "note": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["note_id", "version", "topic_id", "kind", "review_state"],
+      "properties": {
+        "note_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$"
+        },
+        "version": {"type": "integer", "minimum": 1},
+        "topic_id": {
+          "type": "string",
+          "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["grammar", "punctuation", "culture", "usage"]
+        },
+        "discovery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode"],
+          "properties": {
+            "mode": {"type": "string", "const": "once"}
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "review_state": {
+          "type": "string",
+          "enum": ["candidate", "approved", "superseded", "rejected"]
+        }
+      }
+    }
+  }
+}
