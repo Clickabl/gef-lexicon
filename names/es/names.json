@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "language_code": "es",
+  "names": [
+    {
+      "name_id": "name_es_enrique",
+      "canonical_form": "Enrique",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Enrique",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "es"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.es.enrique",
+          "note": "Spanish full-name equivalent; book-specific Enrique el Fiel remains an entity label."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: Spanish Enrique derives through Latin Henricus from Old High German Haimirich and is explicitly described by the pinned source as equivalent to English Henry.",
+      "source_refs": [
+        "src_work_frog_king",
+        "src_wiktionary_en_enrique_oldid_91655639"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "fr",
+  "names": [
+    {
+      "name_id": "name_fr_henri",
+      "canonical_form": "Henri",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Henri",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fr"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.fr.henri"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_henry_oldid_93025300",
+        "src_wiktionary_en_heinrich_oldid_90625969"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

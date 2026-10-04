@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "language_code": "pt",
+  "names": [
+    {
+      "name_id": "name_pt_henrique",
+      "canonical_form": "Henrique",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Henrique",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "pt"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.pt.henrique"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_henry_oldid_93025300"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

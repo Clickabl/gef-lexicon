@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "language_code": "it",
+  "names": [
+    {
+      "name_id": "name_it_enrico",
+      "canonical_form": "Enrico",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Enrico",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "it"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.it.enrico"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_henry_oldid_93025300"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

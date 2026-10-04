@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "family_id": "NF.henry",
+  "family_key": "henry-family",
+  "origin_languages": [
+    "goh"
+  ],
+  "origin_note": "Candidate historical family centered on Old High German Heimrih/Haimirich and later West European descendants/adaptations.",
+  "etymology_note": "Pinned Wiktionary revisions trace English Henry through Old French Henri and German Heinrich to a Germanic ancestor; the German entry analyzes Old High German Heimrih/Haimirich with heim ('home') and -rih (a name element historically connected with 'king/ruler'). This is etymological history, not a promise that every modern bearer shares one literal 'name meaning'.",
+  "meaning_note": "Do not collapse local full-name equivalents, borrowed spellings, transliterations, or pet forms. Character localization and user-name localization require their own policy/consent layer.",
+  "equivalence_sets": [
+    {
+      "equivalence_set_id": "NFEQ.henry.full-masculine",
+      "role": "full_masculine",
+      "note": "Full masculine forms/equivalents only. Pet forms are intentionally kept in a separate equivalence set.",
+      "forms": [
+        {
+          "form_id": "NFF.henry.en.henry",
+          "text": "Henry",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "common",
+          "name_id": "name_en_henry",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.de.heinrich",
+          "text": "Heinrich",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_de_heinrich",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300",
+            "src_wiktionary_en_heinrich_oldid_90625969"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.es.enrique",
+          "text": "Enrique",
+          "language_tag": "es",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_es_enrique",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300",
+            "src_wiktionary_en_enrique_oldid_91655639"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.fr.henri",
+          "text": "Henri",
+          "language_tag": "fr",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_fr_henri",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300",
+            "src_wiktionary_en_heinrich_oldid_90625969"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.it.enrico",
+          "text": "Enrico",
+          "language_tag": "it",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_it_enrico",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.pt.henrique",
+          "text": "Henrique",
+          "language_tag": "pt",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "name_id": "name_pt_henrique",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.el.errikos",
+          "text": "Ερρίκος",
+          "language_tag": "el",
+          "script": "Grek",
+          "relation_type": "traditional_adaptation",
+          "usage": "available",
+          "name_id": "name_el_errikos",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "note": "Traditional Greek adaptation; keep distinct from Χένρι-style direct transliterations.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.fa.henri",
+          "text": "هنری",
+          "language_tag": "fa",
+          "script": "Arab",
+          "relation_type": "transliteration",
+          "usage": "available",
+          "name_id": "name_fa_henri",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.henry.short-masculine",
+      "role": "short_masculine",
+      "note": "English pet forms listed by the pinned Henry source. They are related to Henry but must never be substituted for full-name forms automatically.",
+      "forms": [
+        {
+          "form_id": "NFF.henry.en.hal",
+          "text": "Hal",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "available",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.en.hank",
+          "text": "Hank",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "available",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.henry.en.harry",
+          "text": "Harry",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "available",
+          "source_refs": [
+            "src_wiktionary_en_henry_oldid_93025300"
+          ],
+          "review_state": "candidate"
+        }
+      ]
+    }
+  ],
+  "localization_policy": {
+    "fallback_order": [
+      "reviewed_local_equivalent",
+      "reviewed_traditional_adaptation",
+      "reviewed_transliteration",
+      "preserve_entered_form"
+    ],
+    "never_cross_equivalence_sets_automatically": true,
+    "book_override_allowed": true,
+    "user_override_allowed": true
+  },
+  "source_refs": [
+    "src_wiktionary_en_henry_oldid_93025300",
+    "src_wiktionary_en_heinrich_oldid_90625969",
+    "src_wiktionary_en_enrique_oldid_91655639"
+  ],
+  "review_state": "candidate"
+}

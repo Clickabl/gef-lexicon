@@ -7,7 +7,12 @@
       "canonical_form": "Alex",
       "name_type": "given",
       "spellings": [
-        {"text": "Alex", "status": "canonical", "script": "Latn", "locale": "en"}
+        {
+          "text": "Alex",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
       ],
       "family_refs": [
         {
@@ -19,40 +24,175 @@
       ],
       "related_names": [],
       "gender_usage": [],
-      "source_refs": ["src_work_gef_intro", "src_wikidata_q13258171_alex"],
+      "source_refs": [
+        "src_work_gef_intro",
+        "src_wikidata_q13258171_alex"
+      ],
       "review_state": "candidate"
     },
     {
       "name_id": "name_en_henry",
       "canonical_form": "Henry",
       "name_type": "given",
-      "spellings": [{"text": "Henry", "status": "canonical", "script": "Latn", "locale": "en"}],
-      "family_refs": [],
+      "spellings": [
+        {
+          "text": "Henry",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.en.henry",
+          "note": "Full-name equivalence set. Do not cross automatically into short/pet-name sets."
+        }
+      ],
       "related_names": [],
       "gender_usage": [],
-      "source_refs": ["src_work_frog_king"],
-      "review_state": "candidate"
+      "source_refs": [
+        "src_work_frog_king",
+        "src_wiktionary_en_henry_oldid_93025300"
+      ],
+      "review_state": "candidate",
+      "etymology_note": "Candidate: English Henry descends through Middle English/Old French Henri from a Germanic name; keep this separate from book-specific Iron/Faithful Henry facts."
     },
     {
       "name_id": "name_en_gef",
       "canonical_form": "Gef",
       "name_type": "mononym",
-      "spellings": [{"text": "Gef", "status": "canonical", "script": "Latn", "locale": "en", "note": "pronounced like Jeff in the Gef Intro source text"}],
+      "spellings": [
+        {
+          "text": "Gef",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en",
+          "note": "pronounced like Jeff in the Gef Intro source text"
+        }
+      ],
       "family_refs": [],
       "related_names": [],
       "gender_usage": [],
-      "source_refs": ["src_work_gef_intro"],
+      "source_refs": [
+        "src_work_gef_intro"
+      ],
       "review_state": "candidate"
     },
     {
       "name_id": "name_en_jeff",
       "canonical_form": "Jeff",
       "name_type": "given",
-      "spellings": [{"text": "Jeff", "status": "canonical", "script": "Latn", "locale": "en"}],
+      "spellings": [
+        {
+          "text": "Jeff",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
       "family_refs": [],
       "related_names": [],
       "gender_usage": [],
-      "source_refs": ["src_work_gef_intro"],
+      "source_refs": [
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_hansel",
+      "canonical_form": "Hansel",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Hansel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "historical_note": "English anglicized spelling of German Hänsel; the Grimm character is a separate entity.",
+      "source_refs": [
+        "src_work_hansel_and_gretel",
+        "src_wiktionary_en_hansel_oldid_91745955"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_gretel",
+      "canonical_form": "Gretel",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Gretel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "historical_note": "Attested as the English-edition character name. A German onomastic source lists Gretel among forms related to Margarete, but this record does not yet assert a precise diminutive lineage.",
+      "source_refs": [
+        "src_work_hansel_and_gretel",
+        "src_wiktionary_en_margarete_oldid_86995562"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_rapunzel",
+      "canonical_form": "Rapunzel",
+      "name_type": "mononym",
+      "spellings": [
+        {
+          "text": "Rapunzel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the English proper-name form is borrowed from German Rapunzel. The character identity remains book/entity scoped.",
+      "source_refs": [
+        "src_work_rapunzel",
+        "src_wiktionary_en_rapunzel_oldid_91613783"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_rumpelstiltskin",
+      "canonical_form": "Rumpelstiltskin",
+      "name_type": "mononym",
+      "spellings": [
+        {
+          "text": "Rumpelstiltskin",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        },
+        {
+          "text": "Rumplestiltskin",
+          "status": "variant",
+          "script": "Latn",
+          "locale": "en",
+          "note": "Wiktionary-listed English alternative spelling; not attested in the current GEF Grimm edition."
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: English Rumpelstiltskin derives from German Rumpelstilzchen. Translation-table labels for this fictional character are entity-local until independently reviewed as reusable name relations.",
+      "source_refs": [
+        "src_work_rumpelstiltskin",
+        "src_wiktionary_en_rumpelstiltskin_oldid_89468835"
+      ],
       "review_state": "candidate"
     }
   ]

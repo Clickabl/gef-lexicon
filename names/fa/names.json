@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "language_code": "fa",
+  "names": [
+    {
+      "name_id": "name_fa_henri",
+      "canonical_form": "هنری",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "هنری",
+          "status": "canonical",
+          "script": "Arab",
+          "locale": "fa"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.fa.henri",
+          "note": "Persian sound-based form of Henry; retained as transliteration/borrowing rather than a traditional local equivalent."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_work_frog_king",
+        "src_wiktionary_en_henry_oldid_93025300"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

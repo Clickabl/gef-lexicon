@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "language_code": "de",
+  "names": [
+    {
+      "name_id": "name_de_heinrich",
+      "canonical_form": "Heinrich",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Heinrich",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.de.heinrich",
+          "note": "German full-name equivalent/cognate; not an alias for a specific English-speaking person unless an entity or user policy says so."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: from Old High German Heimrih/Haimirich; the reviewed Wiktionary revision describes it as cognate/equivalent to English Henry.",
+      "source_refs": [
+        "src_work_frog_king",
+        "src_wiktionary_en_heinrich_oldid_90625969"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_haensel",
+      "canonical_form": "Hänsel",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Hänsel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "historical_note": "Attested in the German GEF Grimm edition; English Hansel is an anglicized spelling according to the pinned Wiktionary source.",
+      "source_refs": [
+        "src_work_hansel_and_gretel",
+        "src_wiktionary_en_hansel_oldid_91745955"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_gretel",
+      "canonical_form": "Gretel",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Gretel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "historical_note": "Attested in the German GEF Grimm edition. Wiktionary lists Gretel among German forms related to Margarete; a more specific relationship awaits stronger onomastic review.",
+      "source_refs": [
+        "src_work_hansel_and_gretel",
+        "src_wiktionary_en_margarete_oldid_86995562"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_rapunzel",
+      "canonical_form": "Rapunzel",
+      "name_type": "mononym",
+      "spellings": [
+        {
+          "text": "Rapunzel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate German character-name form; Wiktionary also documents the common-noun plant term underlying the fairy-tale name.",
+      "source_refs": [
+        "src_work_rapunzel",
+        "src_wiktionary_en_rapunzel_oldid_91613783"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_rumpelstilzchen",
+      "canonical_form": "Rumpelstilzchen",
+      "name_type": "mononym",
+      "spellings": [
+        {
+          "text": "Rumpelstilzchen",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_work_rumpelstiltskin",
+        "src_wiktionary_en_rumpelstiltskin_oldid_89468835"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

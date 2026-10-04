@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "language_code": "el",
+  "names": [
+    {
+      "name_id": "name_el_errikos",
+      "canonical_form": "Ερρίκος",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ερρίκος",
+          "status": "canonical",
+          "script": "Grek",
+          "locale": "el"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.henry",
+          "equivalence_set_id": "NFEQ.henry.full-masculine",
+          "form_id": "NFF.henry.el.errikos",
+          "note": "Traditional Greek adaptation listed by the pinned Henry source; exact character use is separately attested in Frog King."
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_work_frog_king",
+        "src_wiktionary_en_henry_oldid_93025300"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
