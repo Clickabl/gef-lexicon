@@ -1,5 +1,16 @@
 {
   "schema_version": 1,
   "contract": "gef-instructional-note-catalog-v1",
-  "notes": []
+  "notes": [
+    {
+      "note_id": "punctuation.quotation-conventions",
+      "version": 1,
+      "topic_id": "TOPIC.form.quotation_conventions",
+      "kind": "punctuation",
+      "discovery": {
+        "mode": "once"
+      },
+      "review_state": "candidate"
+    }
+  ]
 }
