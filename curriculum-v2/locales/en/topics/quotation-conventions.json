@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.form.quotation_conventions",
+  "language_tag": "en",
+  "title": "Punctuation and quotation marks",
+  "summary": "See how languages and writing systems mark quoted speech in different ways.",
+  "scene_copy": {
+    "reveal": {
+      "title": "Quotes can look different",
+      "body": "Languages do not all mark quoted speech the same way.",
+      "continue_label": "Show me"
+    },
+    "compare": {
+      "title": "Same job, different marks",
+      "body": "Compare the quotation conventions used by languages you already have open."
+    },
+    "focus": {
+      "title": "How this language marks quotes",
+      "body": "Look at the delimiters, spacing, punctuation placement, and speaker conventions used here."
+    },
+    "practice": {
+      "title": "Spot the quotation",
+      "prompt": "Choose the text that follows this language’s quotation conventions."
+    },
+    "story": {
+      "title": "Find it in the story",
+      "body": "Return to the quotation that introduced this topic and notice what the punctuation is doing."
+    },
+    "complete": {
+      "title": "You can read the signals",
+      "body": "Quotation marks are part of a writing system, not universal decoration.",
+      "continue_label": "Continue"
+    }
+  },
+  "review_state": "candidate",
+  "version": 1
+}
