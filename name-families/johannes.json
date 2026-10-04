@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "family_id": "NF.johannes",
+  "family_key": "johannes-family",
+  "origin_note": "Partial relationship graph seeded from the independently sourced German name and its diminutive. Ultimate historical origin is not asserted in this pass.",
+  "equivalence_sets": [
+    {
+      "equivalence_set_id": "NFEQ.johannes.full-masculine",
+      "role": "full_masculine",
+      "note": "Full-name set; not interchangeable with a short or diminutive name.",
+      "forms": [
+        {
+          "form_id": "NFF.johannes.de.johannes",
+          "text": "Johannes",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "unknown",
+          "name_id": "name_de_johannes",
+          "source_refs": ["src_wiktionary_en_haensel_oldid_86884117"],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.johannes.short-haensel",
+      "role": "short_masculine",
+      "note": "The specific Hänsel/Hansel spelling identity, not a bucket for every Johannes diminutive. Hans and other related forms await their own records and sets.",
+      "forms": [
+        {
+          "form_id": "NFF.johannes.de.haensel",
+          "text": "Hänsel",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_de_haensel",
+          "source_refs": ["src_wiktionary_en_haensel_oldid_86884117"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.johannes.en.hansel",
+          "text": "Hansel",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "spelling_variant",
+          "usage": "unknown",
+          "name_id": "name_en_hansel",
+          "source_refs": ["src_wiktionary_en_hansel_oldid_91745955"],
+          "review_state": "candidate"
+        }
+      ]
+    }
+  ],
+  "localization_policy": {
+    "fallback_order": ["reviewed_local_equivalent", "reviewed_traditional_adaptation", "reviewed_transliteration", "preserve_entered_form"],
+    "never_cross_equivalence_sets_automatically": true,
+    "book_override_allowed": true,
+    "user_override_allowed": true
+  },
+  "source_refs": ["src_wiktionary_en_haensel_oldid_86884117", "src_wiktionary_en_hansel_oldid_91745955"],
+  "review_state": "candidate"
+}

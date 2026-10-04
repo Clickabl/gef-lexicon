@@ -22,7 +22,13 @@
       "spellings": [
         {"text": "Gretel", "status": "canonical", "script": "Latn", "locale": "es"}
       ],
-      "family_refs": [],
+      "family_refs": [
+        {
+          "family_id": "NF.margaret",
+          "equivalence_set_id": "NFEQ.margaret.short-gretel",
+          "form_id": "NFF.margaret.es.gretel"
+        }
+      ],
       "related_names": [
         {
           "target_name_id": "name_de_gretel",

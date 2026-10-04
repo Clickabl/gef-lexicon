@@ -43,15 +43,29 @@
           "locale": "de"
         }
       ],
-      "family_refs": [],
-      "related_names": [],
+      "family_refs": [
+        {
+          "family_id": "NF.johannes",
+          "equivalence_set_id": "NFEQ.johannes.short-haensel",
+          "form_id": "NFF.johannes.de.haensel"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_johannes",
+          "relation_type": "diminutive",
+          "note": "This name is a diminutive of the target; the reverse relationship is not implied."
+        }
+      ],
       "gender_usage": [],
       "historical_note": "Attested in the German GEF Grimm edition; English Hansel is an anglicized spelling according to the pinned Wiktionary source.",
       "source_refs": [
         "src_work_hansel_and_gretel",
-        "src_wiktionary_en_hansel_oldid_91745955"
+        "src_wiktionary_en_hansel_oldid_91745955",
+        "src_wiktionary_en_haensel_oldid_86884117"
       ],
-      "review_state": "candidate"
+      "review_state": "candidate",
+      "etymology_note": "Candidate: a diminutive of Hans or Johannes."
     },
     {
       "name_id": "name_de_gretel",
@@ -63,17 +77,38 @@
           "status": "canonical",
           "script": "Latn",
           "locale": "de"
+        },
+        {
+          "text": "Grethel",
+          "status": "variant",
+          "script": "Latn",
+          "locale": "de",
+          "note": "Alternative spelling listed by the Gretel lexical source; not asserted as a separate given-name identity."
         }
       ],
-      "family_refs": [],
-      "related_names": [],
+      "family_refs": [
+        {
+          "family_id": "NF.margaret",
+          "equivalence_set_id": "NFEQ.margaret.short-gretel",
+          "form_id": "NFF.margaret.de.gretel"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_margarete",
+          "relation_type": "diminutive",
+          "note": "This name is a diminutive of the target."
+        }
+      ],
       "gender_usage": [],
-      "historical_note": "Attested in the German GEF Grimm edition. Wiktionary lists Gretel among German forms related to Margarete; a more specific relationship awaits stronger onomastic review.",
+      "historical_note": "German grammatical feminine/neuter agreement is not bearer gender identity or demographic usage.",
       "source_refs": [
         "src_work_hansel_and_gretel",
-        "src_wiktionary_en_margarete_oldid_86995562"
+        "src_wiktionary_en_margarete_oldid_86995562",
+        "src_wiktionary_en_gretel_oldid_91745961"
       ],
-      "review_state": "candidate"
+      "review_state": "candidate",
+      "etymology_note": "Candidate: diminutive of Margarete."
     },
     {
       "name_id": "name_de_rapunzel",
@@ -211,6 +246,58 @@
       "source_refs": [
         "src_behindthename_alex_2026_10_04",
         "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_johannes",
+      "canonical_form": "Johannes",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Johannes",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.johannes",
+          "equivalence_set_id": "NFEQ.johannes.full-masculine",
+          "form_id": "NFF.johannes.de.johannes"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_haensel_oldid_86884117"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_margarete",
+      "canonical_form": "Margarete",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Margarete",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.margaret",
+          "equivalence_set_id": "NFEQ.margaret.full-feminine",
+          "form_id": "NFF.margaret.de.margarete"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_margarete_oldid_86995562"
       ],
       "review_state": "candidate"
     }

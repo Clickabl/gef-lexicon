@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "family_id": "NF.margaret",
+  "family_key": "margaret-family",
+  "origin_note": "Partial full-name and Gretel-branch relationship graph; deeper historical derivation is not asserted in this pass.",
+  "equivalence_sets": [
+    {
+      "equivalence_set_id": "NFEQ.margaret.full-feminine",
+      "role": "full_feminine",
+      "note": "Full names are separate from every diminutive set.",
+      "forms": [
+        {
+          "form_id": "NFF.margaret.de.margarete",
+          "text": "Margarete",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "unknown",
+          "name_id": "name_de_margarete",
+          "source_refs": ["src_wiktionary_en_margarete_oldid_86995562"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.margaret.en.margaret",
+          "text": "Margaret",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_en_margaret",
+          "source_refs": ["src_wiktionary_en_margarete_oldid_86995562"],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.margaret.short-gretel",
+      "role": "short_feminine",
+      "note": "Only the sourced Gretel branch. Other diminutives and translated character labels do not enter this set automatically.",
+      "forms": [
+        {
+          "form_id": "NFF.margaret.de.gretel",
+          "text": "Gretel",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_de_gretel",
+          "source_refs": ["src_wiktionary_en_gretel_oldid_91745961"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.margaret.en.gretel",
+          "text": "Gretel",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_en_gretel",
+          "source_refs": ["src_wiktionary_en_gretel_oldid_91745961"],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.margaret.es.gretel",
+          "text": "Gretel",
+          "language_tag": "es",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_es_gretel",
+          "source_refs": ["src_wiktionary_en_gretel_oldid_91745961"],
+          "review_state": "candidate"
+        }
+      ]
+    }
+  ],
+  "localization_policy": {
+    "fallback_order": ["reviewed_local_equivalent", "reviewed_traditional_adaptation", "reviewed_transliteration", "preserve_entered_form"],
+    "never_cross_equivalence_sets_automatically": true,
+    "book_override_allowed": true,
+    "user_override_allowed": true
+  },
+  "source_refs": ["src_wiktionary_en_margarete_oldid_86995562", "src_wiktionary_en_gretel_oldid_91745961"],
+  "review_state": "candidate"
+}

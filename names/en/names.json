@@ -125,8 +125,20 @@
           "locale": "en"
         }
       ],
-      "family_refs": [],
-      "related_names": [],
+      "family_refs": [
+        {
+          "family_id": "NF.johannes",
+          "equivalence_set_id": "NFEQ.johannes.short-haensel",
+          "form_id": "NFF.johannes.en.hansel"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_haensel",
+          "relation_type": "derived_from",
+          "note": "Anglicized spelling of the target name, not an identity link to its bearers."
+        }
+      ],
       "gender_usage": [],
       "historical_note": "English anglicized spelling of German Hänsel; the Grimm character is a separate entity.",
       "source_refs": [
@@ -147,15 +159,29 @@
           "locale": "en"
         }
       ],
-      "family_refs": [],
-      "related_names": [],
+      "family_refs": [
+        {
+          "family_id": "NF.margaret",
+          "equivalence_set_id": "NFEQ.margaret.short-gretel",
+          "form_id": "NFF.margaret.en.gretel"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_gretel",
+          "relation_type": "derived_from",
+          "note": "Borrowed name form, not a book-character identity link."
+        }
+      ],
       "gender_usage": [],
-      "historical_note": "Attested as the English-edition character name. A German onomastic source lists Gretel among forms related to Margarete, but this record does not yet assert a precise diminutive lineage.",
+      "historical_note": "English name-form borrowing is recorded independently of character identity.",
       "source_refs": [
         "src_work_hansel_and_gretel",
-        "src_wiktionary_en_margarete_oldid_86995562"
+        "src_wiktionary_en_margarete_oldid_86995562",
+        "src_wiktionary_en_gretel_oldid_91745961"
       ],
-      "review_state": "candidate"
+      "review_state": "candidate",
+      "etymology_note": "Candidate: from German, ultimately a diminutive of Margarete."
     },
     {
       "name_id": "name_en_rapunzel",
@@ -268,6 +294,32 @@
       "historical_note": "A descriptive character label used as a proper epithet in the current English Grimm edition, not a conventional personal given name.",
       "source_refs": [
         "src_work_little_snow_white"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_margaret",
+      "canonical_form": "Margaret",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Margaret",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.margaret",
+          "equivalence_set_id": "NFEQ.margaret.full-feminine",
+          "form_id": "NFF.margaret.en.margaret"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "source_refs": [
+        "src_wiktionary_en_margarete_oldid_86995562"
       ],
       "review_state": "candidate"
     }
