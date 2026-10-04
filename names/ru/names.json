@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "language_code": "ru",
+  "names": [
+    {
+      "name_id": "name_ru_aleks",
+      "canonical_form": "Алекс",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Алекс",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "ru"
+        },
+        {
+          "text": "Aleks",
+          "status": "transliteration",
+          "script": "Latn",
+          "locale": "ru-Latn"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.ru.aleks"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [
+        {
+          "source_id": "src_behindthename_aleks_2026_10_04",
+          "note": "Secondary onomastic source classifies Russian Aleks as masculine and feminine; no population shares are asserted."
+        }
+      ],
+      "source_refs": [
+        "src_behindthename_aleks_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
