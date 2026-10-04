@@ -23,12 +23,25 @@
         }
       ],
       "related_names": [],
-      "gender_usage": [],
+      "gender_usage": [
+        {
+          "region": "English-speaking",
+          "source_id": "src_wiktionary_en_alex_oldid_92738560",
+          "note": "Pinned English Wiktionary revision describes English Alex as a unisex given name; no population shares are asserted."
+        },
+        {
+          "source_id": "src_behindthename_alex_2026_10_04",
+          "note": "Secondary onomastic source lists Alex as masculine and feminine in English and multiple other languages; local usage balance varies."
+        }
+      ],
       "source_refs": [
         "src_work_gef_intro",
-        "src_wikidata_q13258171_alex"
+        "src_wikidata_q13258171_alex",
+        "src_wiktionary_en_alex_oldid_92738560",
+        "src_behindthename_alex_2026_10_04"
       ],
-      "review_state": "candidate"
+      "review_state": "candidate",
+      "etymology_note": "Alex is a short form used in the Alexander/Alexandra name family. Keep short-name identity distinct from full-name equivalents and from any particular person's identity."
     },
     {
       "name_id": "name_en_henry",
