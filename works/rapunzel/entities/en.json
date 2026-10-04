@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "work_id": "rapunzel",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_rapunzel_rapunzel",
+      "entity_type": "fictional_character",
+      "display_name": "Rapunzel",
+      "name_refs": [
+        {
+          "name_id": "name_en_rapunzel",
+          "role": "full_name",
+          "surface": "Rapunzel"
+        },
+        {
+          "name_id": "name_de_rapunzel",
+          "role": "full_name",
+          "surface": "Rapunzel"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Rapunzel",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "rapunzel",
+          "components": [
+            {
+              "surface": "Rapunzel",
+              "role": "other",
+              "target_type": "name",
+              "target_id": "name_en_rapunzel"
+            }
+          ]
+        },
+        {
+          "surface": "Rapunzel",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "rapunzel",
+          "components": [
+            {
+              "surface": "Rapunzel",
+              "role": "other",
+              "target_type": "name",
+              "target_id": "name_de_rapunzel"
+            }
+          ]
+        }
+      ],
+      "aliases": [],
+      "work_id": "rapunzel",
+      "summary": {
+        "en": "the named girl at the center of the story"
+      },
+      "known_gender": "female",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_rapunzel"
+      ],
+      "referenced_in_works": [
+        "rapunzel"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

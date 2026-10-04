@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "work_id": "bremen-town-musicians",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_bremen_town_musicians_bremen",
+      "entity_type": "place",
+      "display_name": "Bremen",
+      "name_refs": [],
+      "labels": [
+        {
+          "surface": "Bremen",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "bremen-town-musicians"
+        },
+        {
+          "surface": "Bremen",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "bremen-town-musicians"
+        }
+      ],
+      "aliases": [],
+      "work_id": "bremen-town-musicians",
+      "summary": {
+        "en": "the named destination the animals set out toward"
+      },
+      "external_ids": {},
+      "source_refs": [
+        "src_work_bremen_town_musicians"
+      ],
+      "referenced_in_works": [
+        "bremen-town-musicians"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

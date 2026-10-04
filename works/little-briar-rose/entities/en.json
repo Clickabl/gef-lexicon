@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "work_id": "little-briar-rose",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_little_briar_rose_princess",
+      "entity_type": "fictional_character",
+      "display_name": "Briar Rose",
+      "name_refs": [
+        {
+          "name_id": "name_en_briar_rose",
+          "role": "epithet",
+          "surface": "Briar Rose"
+        },
+        {
+          "name_id": "name_de_dornroeschen",
+          "role": "epithet",
+          "surface": "Dornröschen"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Briar Rose",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "little-briar-rose",
+          "components": [
+            {
+              "surface": "Briar Rose",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_en_briar_rose",
+              "note": "Proper epithet, not a conventional given name."
+            }
+          ]
+        },
+        {
+          "surface": "Dornröschen",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "little-briar-rose",
+          "components": [
+            {
+              "surface": "Dornröschen",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_de_dornroeschen",
+              "note": "Book-attested German proper epithet."
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Dornröschen"
+      ],
+      "work_id": "little-briar-rose",
+      "summary": {
+        "en": "the sleeping princess called Briar Rose in this edition"
+      },
+      "known_gender": "female",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_little_briar_rose"
+      ],
+      "referenced_in_works": [
+        "little-briar-rose"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "work_id": "little-snow-white",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_little_snow_white_snow_white",
+      "entity_type": "fictional_character",
+      "display_name": "Snow White",
+      "name_refs": [
+        {
+          "name_id": "name_en_snow_white",
+          "role": "epithet",
+          "surface": "Snow White"
+        },
+        {
+          "name_id": "name_de_schneewittchen",
+          "role": "epithet",
+          "surface": "Schneewittchen"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Snow White",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "little-snow-white",
+          "components": [
+            {
+              "surface": "Snow White",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_en_snow_white"
+            }
+          ]
+        },
+        {
+          "surface": "Schneewittchen",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "little-snow-white",
+          "components": [
+            {
+              "surface": "Schneewittchen",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_de_schneewittchen"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Schneewittchen"
+      ],
+      "work_id": "little-snow-white",
+      "summary": {
+        "en": "the princess called Snow White in the story"
+      },
+      "known_gender": "female",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_little_snow_white"
+      ],
+      "referenced_in_works": [
+        "little-snow-white"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

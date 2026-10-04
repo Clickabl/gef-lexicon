@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "work_id": "hansel-and-gretel",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_hansel_and_gretel_hansel",
+      "entity_type": "fictional_character",
+      "display_name": "Hansel",
+      "name_refs": [
+        {
+          "name_id": "name_en_hansel",
+          "role": "given_name",
+          "surface": "Hansel"
+        },
+        {
+          "name_id": "name_de_haensel",
+          "role": "given_name",
+          "surface": "Hänsel"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Hansel",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "hansel-and-gretel",
+          "components": [
+            {
+              "surface": "Hansel",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_hansel"
+            }
+          ]
+        },
+        {
+          "surface": "Hänsel",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "hansel-and-gretel",
+          "components": [
+            {
+              "surface": "Hänsel",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_de_haensel"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Hänsel"
+      ],
+      "work_id": "hansel-and-gretel",
+      "summary": {
+        "en": "one of the two named children in the story"
+      },
+      "known_gender": "male",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_hansel_and_gretel"
+      ],
+      "referenced_in_works": [
+        "hansel-and-gretel"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "entity_id": "ent_hansel_and_gretel_gretel",
+      "entity_type": "fictional_character",
+      "display_name": "Gretel",
+      "name_refs": [
+        {
+          "name_id": "name_en_gretel",
+          "role": "given_name",
+          "surface": "Gretel"
+        },
+        {
+          "name_id": "name_de_gretel",
+          "role": "given_name",
+          "surface": "Gretel"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Gretel",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "hansel-and-gretel",
+          "components": [
+            {
+              "surface": "Gretel",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_gretel"
+            }
+          ]
+        },
+        {
+          "surface": "Gretel",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "hansel-and-gretel",
+          "components": [
+            {
+              "surface": "Gretel",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_de_gretel"
+            }
+          ]
+        }
+      ],
+      "aliases": [],
+      "work_id": "hansel-and-gretel",
+      "summary": {
+        "en": "one of the two named children in the story"
+      },
+      "known_gender": "female",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_hansel_and_gretel"
+      ],
+      "referenced_in_works": [
+        "hansel-and-gretel"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

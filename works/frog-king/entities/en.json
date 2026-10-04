@@ -7,7 +7,33 @@
       "entity_id": "ent_frog_king_iron_henry",
       "entity_type": "fictional_character",
       "display_name": "Iron Henry",
-      "name_refs": [{"name_id": "name_en_henry", "role": "given_name", "surface": "Henry"}],
+      "name_refs": [
+        {
+          "name_id": "name_en_henry",
+          "role": "given_name",
+          "surface": "Henry"
+        },
+        {
+          "name_id": "name_de_heinrich",
+          "role": "given_name",
+          "surface": "Heinrich"
+        },
+        {
+          "name_id": "name_es_enrique",
+          "role": "given_name",
+          "surface": "Enrique"
+        },
+        {
+          "name_id": "name_el_errikos",
+          "role": "given_name",
+          "surface": "Ερρίκος"
+        },
+        {
+          "name_id": "name_fa_henri",
+          "role": "given_name",
+          "surface": "هنری"
+        }
+      ],
       "labels": [
         {
           "surface": "Iron Henry",
@@ -15,8 +41,19 @@
           "language_code": "en",
           "work_id": "frog-king",
           "components": [
-            {"surface": "Iron", "role": "descriptor", "target_type": "sense", "target_id": "02000000-0000-7000-8001-000000000001", "note": "links to the ordinary English metal sense; the epithet refers to Henry's iron bands"},
-            {"surface": "Henry", "role": "given_name", "target_type": "name", "target_id": "name_en_henry"}
+            {
+              "surface": "Iron",
+              "role": "descriptor",
+              "target_type": "sense",
+              "target_id": "02000000-0000-7000-8001-000000000001",
+              "note": "links to the ordinary English metal sense; the epithet refers to Henry's iron bands"
+            },
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
           ]
         },
         {
@@ -25,8 +62,18 @@
           "language_code": "en",
           "work_id": "frog-king",
           "components": [
-            {"surface": "Faithful", "role": "descriptor", "target_type": "sense", "target_id": "02000000-0000-7000-8001-000000000002"},
-            {"surface": "Henry", "role": "given_name", "target_type": "name", "target_id": "name_en_henry"}
+            {
+              "surface": "Faithful",
+              "role": "descriptor",
+              "target_type": "sense",
+              "target_id": "02000000-0000-7000-8001-000000000002"
+            },
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
           ]
         },
         {
@@ -34,7 +81,14 @@
           "label_type": "source_attested",
           "language_code": "en",
           "work_id": "frog-king",
-          "components": [{"surface": "Henry", "role": "given_name", "target_type": "name", "target_id": "name_en_henry"}]
+          "components": [
+            {
+              "surface": "Henry",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_henry"
+            }
+          ]
         },
         {
           "surface": "Enrique el Fiel",
@@ -42,8 +96,20 @@
           "language_code": "es",
           "work_id": "frog-king",
           "components": [
-            {"surface":"Enrique","role":"given_name","target_type":"literal","target_id":"literal:es:Enrique","note":"attested Spanish edition rendering; no global name-equivalence record is asserted"},
-            {"surface":"el Fiel","role":"descriptor","target_type":"literal","target_id":"literal:es:el-fiel","note":"attested Spanish edition descriptor"}
+            {
+              "surface": "Enrique",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_es_enrique",
+              "note": "Book-attested Spanish character rendering; the reusable Enrique/Henry relationship remains candidate family data."
+            },
+            {
+              "surface": "el Fiel",
+              "role": "descriptor",
+              "target_type": "literal",
+              "target_id": "literal:es:el-fiel",
+              "note": "Book-attested Spanish descriptor."
+            }
           ]
         },
         {
@@ -52,8 +118,20 @@
           "language_code": "el",
           "work_id": "frog-king",
           "components": [
-            {"surface":"Πιστός","role":"descriptor","target_type":"literal","target_id":"literal:el:pistos","note":"attested Greek edition descriptor"},
-            {"surface":"Ερρίκος","role":"given_name","target_type":"literal","target_id":"literal:el:errikos","note":"attested Greek edition rendering; no global name-equivalence record is asserted"}
+            {
+              "surface": "Πιστός",
+              "role": "descriptor",
+              "target_type": "literal",
+              "target_id": "literal:el:pistos",
+              "note": "Book-attested Greek descriptor."
+            },
+            {
+              "surface": "Ερρίκος",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_el_errikos",
+              "note": "Book-attested Greek character rendering; linked to the reusable candidate name record."
+            }
           ]
         },
         {
@@ -62,18 +140,42 @@
           "language_code": "fa",
           "work_id": "frog-king",
           "components": [
-            {"surface":"هنری","role":"given_name","target_type":"literal","target_id":"literal:fa:henry","note":"attested Persian edition rendering; no global name-equivalence record is asserted"},
-            {"surface":"وفادار","role":"descriptor","target_type":"literal","target_id":"literal:fa:vafadar","note":"attested Persian edition descriptor"}
+            {
+              "surface": "هنری",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_fa_henri",
+              "note": "Book-attested Persian character rendering; linked to the reusable candidate name record."
+            },
+            {
+              "surface": "وفادار",
+              "role": "descriptor",
+              "target_type": "literal",
+              "target_id": "literal:fa:vafadar",
+              "note": "Book-attested Persian descriptor."
+            }
           ]
         }
       ],
-      "aliases": ["Faithful Henry", "Henry", "Enrique el Fiel", "Πιστός Ερρίκος", "هنری وفادار"],
+      "aliases": [
+        "Faithful Henry",
+        "Henry",
+        "Enrique el Fiel",
+        "Πιστός Ερρίκος",
+        "هنری وفادار"
+      ],
       "work_id": "frog-king",
-      "summary": {"en": "the prince's faithful servant; in this adaptation he wears three iron bands around his chest because he fears his heart will break while the prince is under the spell"},
+      "summary": {
+        "en": "the prince's faithful servant; in this adaptation he wears three iron bands around his chest because he fears his heart will break while the prince is under the spell"
+      },
       "known_gender": "male",
       "external_ids": {},
-      "source_refs": ["src_work_frog_king"],
-      "referenced_in_works": ["frog-king"],
+      "source_refs": [
+        "src_work_frog_king"
+      ],
+      "referenced_in_works": [
+        "frog-king"
+      ],
       "review_state": "candidate"
     }
   ]

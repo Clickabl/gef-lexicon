@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "work_id": "little-red-cap",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_little_red_cap_girl",
+      "entity_type": "fictional_character",
+      "display_name": "Little Red Cap",
+      "name_refs": [
+        {
+          "name_id": "name_en_little_red_cap",
+          "role": "epithet",
+          "surface": "Little Red Cap"
+        },
+        {
+          "name_id": "name_de_rotkaeppchen",
+          "role": "epithet",
+          "surface": "Rotkäppchen"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Little Red Cap",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "little-red-cap",
+          "components": [
+            {
+              "surface": "Little Red Cap",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_en_little_red_cap"
+            }
+          ]
+        },
+        {
+          "surface": "Rotkäppchen",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "little-red-cap",
+          "components": [
+            {
+              "surface": "Rotkäppchen",
+              "role": "descriptor",
+              "target_type": "name",
+              "target_id": "name_de_rotkaeppchen"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Rotkäppchen"
+      ],
+      "work_id": "little-red-cap",
+      "summary": {
+        "en": "the girl called Little Red Cap because of the red cap she wears"
+      },
+      "known_gender": "female",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_little_red_cap"
+      ],
+      "referenced_in_works": [
+        "little-red-cap"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

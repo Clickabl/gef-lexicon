@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "work_id": "rumpelstiltskin",
+  "language_code": "en",
+  "entities": [
+    {
+      "entity_id": "ent_rumpelstiltskin_rumpelstiltskin",
+      "entity_type": "fictional_character",
+      "display_name": "Rumpelstiltskin",
+      "name_refs": [
+        {
+          "name_id": "name_en_rumpelstiltskin",
+          "role": "full_name",
+          "surface": "Rumpelstiltskin"
+        },
+        {
+          "name_id": "name_de_rumpelstilzchen",
+          "role": "full_name",
+          "surface": "Rumpelstilzchen"
+        }
+      ],
+      "labels": [
+        {
+          "surface": "Rumpelstiltskin",
+          "label_type": "source_attested",
+          "language_code": "en",
+          "work_id": "rumpelstiltskin",
+          "components": [
+            {
+              "surface": "Rumpelstiltskin",
+              "role": "other",
+              "target_type": "name",
+              "target_id": "name_en_rumpelstiltskin"
+            }
+          ]
+        },
+        {
+          "surface": "Rumpelstilzchen",
+          "label_type": "translated",
+          "language_code": "de",
+          "work_id": "rumpelstiltskin",
+          "components": [
+            {
+              "surface": "Rumpelstilzchen",
+              "role": "other",
+              "target_type": "name",
+              "target_id": "name_de_rumpelstilzchen"
+            }
+          ]
+        }
+      ],
+      "aliases": [
+        "Rumpelstilzchen"
+      ],
+      "work_id": "rumpelstiltskin",
+      "summary": {
+        "en": "the named little man whose name is revealed near the end of the story"
+      },
+      "known_gender": "male",
+      "external_ids": {},
+      "source_refs": [
+        "src_work_rumpelstiltskin"
+      ],
+      "referenced_in_works": [
+        "rumpelstiltskin"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
