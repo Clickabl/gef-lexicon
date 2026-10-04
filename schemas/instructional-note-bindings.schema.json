@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/instructional-note-bindings.schema.json",
+  "title": "Gef reusable instructional note bindings",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract", "bindings"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "contract": {"type": "string", "const": "gef-instructional-note-bindings-v1"},
+    "bindings": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/binding"}
+    }
+  },
+  "definitions": {
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["binding_id", "note_id", "target_type", "target_id", "review_state"],
+      "properties": {
+        "binding_id": {
+          "type": "string",
+          "pattern": "^INOTE_BIND\\.[A-Za-z0-9._-]+$"
+        },
+        "note_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{0,79}$"
+        },
+        "target_type": {
+          "type": "string",
+          "enum": [
+            "rule",
+            "sense",
+            "lexeme",
+            "concept",
+            "construction",
+            "semantic_function",
+            "name",
+            "entity"
+          ]
+        },
+        "target_id": {"type": "string", "minLength": 1},
+        "source_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "review_state": {
+          "type": "string",
+          "enum": ["candidate", "approved", "superseded", "rejected"]
+        }
+      }
+    }
+  }
+}
