@@ -7,46 +7,253 @@
       "entity_id": "ent_gef_intro_alex",
       "entity_type": "fictional_character",
       "display_name": "Alex",
-      "name_refs": [{"name_id": "name_en_alex", "role": "given_name", "surface": "Alex"}],
+      "name_refs": [
+        {
+          "name_id": "name_en_alex",
+          "role": "given_name",
+          "surface": "Alex"
+        },
+        {
+          "name_id": "name_es_ale",
+          "role": "given_name",
+          "surface": "Ale"
+        },
+        {
+          "name_id": "name_it_ale",
+          "role": "given_name",
+          "surface": "Ale"
+        },
+        {
+          "name_id": "name_fi_ale",
+          "role": "given_name",
+          "surface": "Ale"
+        },
+        {
+          "name_id": "name_pl_aleksandra",
+          "role": "given_name",
+          "surface": "Aleksandra"
+        },
+        {
+          "name_id": "name_el_alex",
+          "role": "given_name",
+          "surface": "Άλεξ"
+        },
+        {
+          "name_id": "name_ca_alexandra",
+          "role": "given_name",
+          "surface": "Alexandra"
+        },
+        {
+          "name_id": "name_ru_aleks",
+          "role": "given_name",
+          "surface": "Алекс"
+        },
+        {
+          "name_id": "name_hy_aleks",
+          "role": "given_name",
+          "surface": "Ալեքս"
+        }
+      ],
       "labels": [
         {
           "surface": "Alex",
           "label_type": "source_attested",
           "language_code": "en",
           "work_id": "gef-intro",
-          "components": [{"surface": "Alex", "role": "given_name", "target_type": "name", "target_id": "name_en_alex"}]
+          "components": [
+            {
+              "surface": "Alex",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_en_alex",
+              "note": "Canonical source name."
+            }
+          ]
+        },
+        {
+          "surface": "Ale",
+          "label_type": "translated",
+          "language_code": "es",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Ale",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_es_ale",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Ale",
+          "label_type": "translated",
+          "language_code": "it",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Ale",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_it_ale",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Ale",
+          "label_type": "translated",
+          "language_code": "fi",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Ale",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_fi_ale",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Aleksandra",
+          "label_type": "translated",
+          "language_code": "pl",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Aleksandra",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_pl_aleksandra",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Άλεξ",
+          "label_type": "translated",
+          "language_code": "el",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Άλεξ",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_el_alex",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Alexandra",
+          "label_type": "translated",
+          "language_code": "ca",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Alexandra",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_ca_alexandra",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Алекс",
+          "label_type": "translated",
+          "language_code": "ru",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Алекс",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_ru_aleks",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
+        },
+        {
+          "surface": "Ալեքս",
+          "label_type": "translated",
+          "language_code": "hy",
+          "work_id": "gef-intro",
+          "components": [
+            {
+              "surface": "Ալեքս",
+              "role": "given_name",
+              "target_type": "name",
+              "target_id": "name_hy_aleks",
+              "note": "Gef-authored edition rendering under the book-specific neutral-first/feminine-fallback policy."
+            }
+          ]
         }
       ],
-      "aliases": [],
+      "aliases": [
+        "Ale",
+        "Aleksandra",
+        "Άλεξ",
+        "Alexandra",
+        "Алекс",
+        "Ալեքս"
+      ],
       "work_id": "gef-intro",
-      "summary": {"en": "the main character and narrator of the Gef intro story"},
-      "known_gender": "male",
+      "summary": {
+        "en": "the main human character in the Gef intro story; the character's gender is intentionally unspecified, while editions may use reviewed neutral/unisex or feminine name-family forms under the book-specific localization policy"
+      },
+      "known_gender": null,
       "external_ids": {},
-      "source_refs": ["src_work_gef_intro", "src_editorial_gef_intro_alex_identity_2026_08_10"],
-      "referenced_in_works": ["gef-intro"],
+      "source_refs": [
+        "src_work_gef_intro",
+        "src_editorial_gef_intro_alex_identity_2026_10_04"
+      ],
+      "referenced_in_works": [
+        "gef-intro"
+      ],
       "review_state": "candidate"
     },
     {
       "entity_id": "ent_gef_intro_gef",
       "entity_type": "fictional_character",
       "display_name": "Gef",
-      "name_refs": [{"name_id": "name_en_gef", "role": "full_name", "surface": "Gef"}],
+      "name_refs": [
+        {
+          "name_id": "name_en_gef",
+          "role": "full_name",
+          "surface": "Gef"
+        }
+      ],
       "labels": [
         {
           "surface": "Gef",
           "label_type": "source_attested",
           "language_code": "en",
           "work_id": "gef-intro",
-          "components": [{"surface": "Gef", "role": "other", "target_type": "name", "target_id": "name_en_gef"}]
+          "components": [
+            {
+              "surface": "Gef",
+              "role": "other",
+              "target_type": "name",
+              "target_id": "name_en_gef"
+            }
+          ]
         }
       ],
       "aliases": [],
       "work_id": "gef-intro",
-      "summary": {"en": "the talking mongoose who emerges from the wall, introduces himself as Gef, and says he has heard stories in many homes and languages"},
+      "summary": {
+        "en": "the talking mongoose who emerges from the wall, introduces himself as Gef, and says he has heard stories in many homes and languages"
+      },
       "known_gender": "male",
       "external_ids": {},
-      "source_refs": ["src_work_gef_intro"],
-      "referenced_in_works": ["gef-intro"],
+      "source_refs": [
+        "src_work_gef_intro"
+      ],
+      "referenced_in_works": [
+        "gef-intro"
+      ],
       "review_state": "candidate"
     }
   ]
