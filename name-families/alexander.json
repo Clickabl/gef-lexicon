@@ -2,50 +2,380 @@
   "schema_version": 1,
   "family_id": "NF.alexander",
   "family_key": "alexander-family",
-  "origin_languages": ["grc", "el"],
+  "origin_languages": [
+    "grc",
+    "el"
+  ],
   "origin_note": "Candidate family grouping for names historically treated as forms/equivalents of Alexander/Alexandros. The family preserves distinct forms and does not imply that people using them share one identity.",
-  "etymology_note": "Detailed etymology remains candidate until reviewed against an onomastic source; Wikidata is used here only to seed identity/equivalence candidates.",
-  "meaning_note": "Do not display a single name meaning as verified until the etymology record has separate source review.",
+  "etymology_note": "Candidate family grouping and relationship graph sourced from pinned Wiktionary/Wikidata records plus secondary onomastic references. Etymology, local equivalence, short-form status, and gender usage are distinct claims and must retain their own source/review state.",
+  "meaning_note": "Never turn a shared Alexander-family history into automatic interchangeability. In particular, short unisex Alex/Ale/Aleks forms, masculine short Álex/Àlex forms, and full feminine forms occupy separate equivalence sets.",
   "equivalence_sets": [
     {
       "equivalence_set_id": "NFEQ.alexander.short-unisex",
       "role": "short_unisex",
-      "note": "Short forms/adaptations associated with the Alexander family. Gender association remains locale/time dependent and is stored separately as sourced usage data.",
+      "note": "Short forms/adaptations that have sourced masculine-and-feminine or genuinely unisex use in the named language. Population balance varies by region and time; membership here does not assert a 50/50 gender distribution.",
       "forms": [
         {
           "form_id": "NFF.alexander.en.alex",
           "text": "Alex",
           "language_tag": "en",
-          "locale_tags": ["en"],
+          "locale_tags": [
+            "en"
+          ],
           "script": "Latn",
           "relation_type": "source_form",
           "usage": "common",
           "name_id": "name_en_alex",
-          "external_ids": {"wikidata": "Q13258171"},
-          "source_refs": ["src_wikidata_q13258171_alex"],
+          "external_ids": {
+            "wikidata": "Q13258171"
+          },
+          "source_refs": [
+            "src_wikidata_q13258171_alex",
+            "src_wiktionary_en_alex_oldid_92738560",
+            "src_behindthename_alex_2026_10_04"
+          ],
           "review_state": "candidate"
         },
+        {
+          "form_id": "NFF.alexander.es.ale",
+          "text": "Ale",
+          "language_tag": "es",
+          "locale_tags": [
+            "es"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_ale1_2026_10_04"
+          ],
+          "note": "Sourced as masculine and feminine; short form of Alejandro or Alejandra.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.it.ale",
+          "text": "Ale",
+          "language_tag": "it",
+          "locale_tags": [
+            "it"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_ale1_2026_10_04"
+          ],
+          "note": "Sourced as masculine and feminine; short form of Alessandro-family names.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.fi.ale",
+          "text": "Ale",
+          "language_tag": "fi",
+          "locale_tags": [
+            "fi"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_ale1_2026_10_04",
+            "src_nordic_names_ale_f_2026_10_04"
+          ],
+          "note": "Candidate neutral book form. Secondary sources attest both male and female use; English Wiktionary currently labels Finnish Ale male, so do not promote to approved without Finnish onomastic review.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.pl.aleks",
+          "text": "Aleks",
+          "language_tag": "pl",
+          "locale_tags": [
+            "pl"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04",
+            "src_rjp_aleks_female_2022"
+          ],
+          "note": "Female use is attested but remains nontraditional/male-skewed in Polish; suitable only under an explicit book policy, not automatic user-name localization.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.sl.aleks",
+          "text": "Aleks",
+          "language_tag": "sl",
+          "locale_tags": [
+            "sl"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.el.alex",
+          "text": "Άλεξ",
+          "language_tag": "el",
+          "locale_tags": [
+            "el"
+          ],
+          "script": "Grek",
+          "relation_type": "traditional_adaptation",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Greek-script short form listed as masculine and feminine.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ru.aleks",
+          "text": "Алекс",
+          "language_tag": "ru",
+          "locale_tags": [
+            "ru"
+          ],
+          "script": "Cyrl",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04",
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.hy.aleks",
+          "text": "Ալեքս",
+          "language_tag": "hy",
+          "locale_tags": [
+            "hy"
+          ],
+          "script": "Armn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.de.alex",
+          "text": "Alex",
+          "language_tag": "de",
+          "locale_tags": [
+            "de"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.nl.alex",
+          "text": "Alex",
+          "language_tag": "nl",
+          "locale_tags": [
+            "nl"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.fr.alex",
+          "text": "Alex",
+          "language_tag": "fr",
+          "locale_tags": [
+            "fr"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.pt.alex",
+          "text": "Alex",
+          "language_tag": "pt",
+          "locale_tags": [
+            "pt"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ro.alex",
+          "text": "Alex",
+          "language_tag": "ro",
+          "locale_tags": [
+            "ro"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.sv.alex",
+          "text": "Alex",
+          "language_tag": "sv",
+          "locale_tags": [
+            "sv"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.nb.alex",
+          "text": "Alex",
+          "language_tag": "nb",
+          "locale_tags": [
+            "nb"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.da.alex",
+          "text": "Alex",
+          "language_tag": "da",
+          "locale_tags": [
+            "da"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.is.alex",
+          "text": "Alex",
+          "language_tag": "is",
+          "locale_tags": [
+            "is"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.hu.alex",
+          "text": "Alex",
+          "language_tag": "hu",
+          "locale_tags": [
+            "hu"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.cs.alex",
+          "text": "Alex",
+          "language_tag": "cs",
+          "locale_tags": [
+            "cs"
+          ],
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Candidate short unisex form from secondary onomastic evidence; usage balance may be strongly gender-skewed locally.",
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.alexander.short-masculine",
+      "role": "short_masculine",
+      "note": "Short forms that are sourced as masculine in the named language. Kept out of the unisex set so book/user localization cannot cross this boundary silently.",
+      "forms": [
         {
           "form_id": "NFF.alexander.es.alex-accented",
           "text": "Álex",
           "language_tag": "es",
-          "locale_tags": ["es"],
+          "locale_tags": [
+            "es"
+          ],
           "script": "Latn",
           "relation_type": "traditional_adaptation",
-          "usage": "available",
-          "source_refs": ["src_wikidata_q13258171_alex"],
-          "note": "Candidate Spanish-form association. Requires Spanish native/onomastic review before automatic user-name localization.",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
           "review_state": "candidate"
         },
         {
           "form_id": "NFF.alexander.ca.alex",
           "text": "Àlex",
           "language_tag": "ca",
-          "locale_tags": ["ca"],
+          "locale_tags": [
+            "ca"
+          ],
           "script": "Latn",
           "relation_type": "traditional_adaptation",
-          "usage": "available",
-          "source_refs": ["src_wikidata_q13258171_alex"],
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "note": "Catalan short form is sourced as masculine; do not use for a neutral/feminine book policy without explicit override.",
           "review_state": "candidate"
         }
       ]
@@ -62,8 +392,12 @@
           "script": "Latn",
           "relation_type": "source_form",
           "usage": "common",
-          "external_ids": {"wikidata": "Q923"},
-          "source_refs": ["src_wikidata_q923_alexander"],
+          "external_ids": {
+            "wikidata": "Q923"
+          },
+          "source_refs": [
+            "src_wikidata_q923_alexander"
+          ],
           "review_state": "candidate"
         },
         {
@@ -73,8 +407,12 @@
           "script": "Latn",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q1707169"},
-          "source_refs": ["src_wikidata_q1707169_alejandro"],
+          "external_ids": {
+            "wikidata": "Q1707169"
+          },
+          "source_refs": [
+            "src_wikidata_q1707169_alejandro"
+          ],
           "review_state": "candidate"
         },
         {
@@ -84,8 +422,12 @@
           "script": "Grek",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q19828977"},
-          "source_refs": ["src_wikidata_q19828977_alexandros"],
+          "external_ids": {
+            "wikidata": "Q19828977"
+          },
+          "source_refs": [
+            "src_wikidata_q19828977_alexandros"
+          ],
           "review_state": "candidate"
         },
         {
@@ -95,8 +437,12 @@
           "script": "Latn",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q17501723"},
-          "source_refs": ["src_wikidata_q17501723_alessandro"],
+          "external_ids": {
+            "wikidata": "Q17501723"
+          },
+          "source_refs": [
+            "src_wikidata_q17501723_alessandro"
+          ],
           "review_state": "candidate"
         },
         {
@@ -106,8 +452,12 @@
           "script": "Latn",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q16002466"},
-          "source_refs": ["src_wikidata_q16002466_alexandre"],
+          "external_ids": {
+            "wikidata": "Q16002466"
+          },
+          "source_refs": [
+            "src_wikidata_q16002466_alexandre"
+          ],
           "review_state": "candidate"
         },
         {
@@ -117,8 +467,12 @@
           "script": "Latn",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q16002466"},
-          "source_refs": ["src_wikidata_q16002466_alexandre"],
+          "external_ids": {
+            "wikidata": "Q16002466"
+          },
+          "source_refs": [
+            "src_wikidata_q16002466_alexandre"
+          ],
           "review_state": "candidate"
         },
         {
@@ -128,15 +482,127 @@
           "script": "Cyrl",
           "relation_type": "local_equivalent",
           "usage": "common",
-          "external_ids": {"wikidata": "Q17501806"},
-          "source_refs": ["src_wikidata_q17501806_aleksandr"],
+          "external_ids": {
+            "wikidata": "Q17501806"
+          },
+          "source_refs": [
+            "src_wikidata_q17501806_aleksandr"
+          ],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.alexander.full-feminine",
+      "role": "full_feminine",
+      "note": "Full feminine equivalents retained separately from short-name identity. These are a fallback only when a book/user policy explicitly permits crossing from a short form into a full feminine equivalent.",
+      "forms": [
+        {
+          "form_id": "NFF.alexander.es.alejandra",
+          "text": "Alejandra",
+          "language_tag": "es",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_ale1_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.it.alessandra",
+          "text": "Alessandra",
+          "language_tag": "it",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_ale1_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.fi.aleksandra",
+          "text": "Aleksandra",
+          "language_tag": "fi",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "available",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.pl.aleksandra",
+          "text": "Aleksandra",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.sl.aleksandra",
+          "text": "Aleksandra",
+          "language_tag": "sl",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ca.alexandra",
+          "text": "Alexandra",
+          "language_tag": "ca",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.el.alexandra",
+          "text": "Αλεξάνδρα",
+          "language_tag": "el",
+          "script": "Grek",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_alex_2026_10_04"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.alexander.ru.aleksandra",
+          "text": "Александра",
+          "language_tag": "ru",
+          "script": "Cyrl",
+          "relation_type": "local_equivalent",
+          "usage": "common",
+          "source_refs": [
+            "src_behindthename_aleks_2026_10_04"
+          ],
           "review_state": "candidate"
         }
       ]
     }
   ],
   "localization_policy": {
-    "fallback_order": ["reviewed_local_equivalent", "reviewed_traditional_adaptation", "reviewed_transliteration", "preserve_entered_form"],
+    "fallback_order": [
+      "reviewed_local_equivalent",
+      "reviewed_traditional_adaptation",
+      "reviewed_transliteration",
+      "preserve_entered_form"
+    ],
     "never_cross_equivalence_sets_automatically": true,
     "book_override_allowed": true,
     "user_override_allowed": true
@@ -148,7 +614,13 @@
     "src_wikidata_q19828977_alexandros",
     "src_wikidata_q17501723_alessandro",
     "src_wikidata_q16002466_alexandre",
-    "src_wikidata_q17501806_aleksandr"
+    "src_wikidata_q17501806_aleksandr",
+    "src_wiktionary_en_alex_oldid_92738560",
+    "src_behindthename_alex_2026_10_04",
+    "src_behindthename_ale1_2026_10_04",
+    "src_behindthename_aleks_2026_10_04",
+    "src_rjp_aleks_female_2022",
+    "src_nordic_names_ale_f_2026_10_04"
   ],
   "review_state": "candidate"
 }
