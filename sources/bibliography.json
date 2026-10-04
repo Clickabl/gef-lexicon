@@ -19,7 +19,7 @@
         "work_id": "gef-intro",
         "entity_id": "ent_gef_intro_alex"
       },
-      "note": "Product-owner editorial decision: Alex is a Gef-owned male character. Book editions may deliberately choose reviewed masculine local name forms/equivalents for this character. This decision does not imply that every real learner named Alex is male or should receive the same localized form."
+      "note": "Historical editorial decision that treated Alex as a Gef-owned male character. Superseded on 2026-10-04 by src_editorial_gef_intro_alex_identity_2026_10_04; retain only as provenance for older data/history."
     },
     {
       "source_id": "src_work_frog_king",
@@ -721,6 +721,17 @@
       "title": "Nordic Names: Ale (female)",
       "url": "https://www.nordicnames.de/wiki/Ale_f",
       "note": "Reviewed 2026-10-04 as supplementary evidence that Ale is used as both a female and male name in Nordic contexts and for Finnish inflection (genitive Alen, partitive Alea). Wiktionary differs on Finnish gender labeling, so keep the gender-usage claim candidate/scoped."
+    },
+    {
+      "source_id": "src_editorial_gef_intro_alex_identity_2026_10_04",
+      "source_type": "other",
+      "title": "Gef editorial canon: Alex character localization policy",
+      "year": 2026,
+      "external_ids": {
+        "work_id": "gef-intro",
+        "entity_id": "ent_gef_intro_alex"
+      },
+      "note": "Product-owner editorial decision on 2026-10-04: Alex remains the canonical English source name, the character's gender is unspecified, and Gef-authored translations should prefer a defensible gender-neutral/unisex short form; when that is not available, a reviewed feminine form may be used. This book policy does not rewrite learner names or permit automatic crossing of name-family equivalence sets."
     }
   ]
 }
