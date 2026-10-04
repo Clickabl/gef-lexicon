@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "audit_id": "onomastics-priority-coverage-2026-10-04",
+  "generated_at": "2026-10-04",
+  "repositories": {
+    "lexicon": {
+      "repository": "Clickabl/gef-lexicon",
+      "head_observed": "0c9c17f28f0fe37d5e5ef21b048b1cb3e4ecc76b"
+    },
+    "content": {
+      "repository": "Clickabl/gef-content",
+      "head_observed": "0be6678f489f70336683fda715b76359822fb0d2"
+    }
+  },
+  "scope": {
+    "priority": [
+      "gef-intro",
+      "all works whose catalog collectionIds include grimms-fairy-tales"
+    ],
+    "canonical_language_inventory": "complete_for_current_source_and_English_editions",
+    "multilingual_surface_inventory": "in_progress",
+    "note": "Do not interpret canonical-name discovery as 100% translated-surface coverage. Representation files include transliterations and script variants; product language counts must come from gef-expo/registry/language-support.json."
+  },
+  "coverage_summary": {
+    "priority_work_count": 12,
+    "canonical_name_inventory_complete": true,
+    "multilingual_surface_inventory_complete": false,
+    "reusable_name_records_complete": false,
+    "entities_complete": false,
+    "annotations_complete": false,
+    "validation_hardening_started": true
+  },
+  "works": [
+    {
+      "work_id": "gef-intro",
+      "edition_file_count": 136,
+      "source_language": "en",
+      "inventory": [
+        {
+          "surface": "Alex",
+          "kind": "person_name",
+          "entity_id": "ent_gef_intro_alex",
+          "name_id": "name_en_alex",
+          "family_id": "NF.alexander",
+          "status": "implemented",
+          "notes": "Canonical English name. Character gender is unspecified as of 2026-10-04."
+        },
+        {
+          "surface": "Gef",
+          "kind": "character_mononym",
+          "entity_id": "ent_gef_intro_gef",
+          "name_id": "name_en_gef",
+          "status": "implemented"
+        },
+        {
+          "surface": "Jeff",
+          "kind": "name_reference_not_character",
+          "name_id": "name_en_jeff",
+          "status": "implemented",
+          "notes": "Occurs only as pronunciation guidance for Gef; must not resolve to Gef's entity identity."
+        },
+        {
+          "surface": "Germany",
+          "kind": "place",
+          "status": "unresolved",
+          "notes": "Named place occurrence; reusable place/entity policy needs a deliberate decision rather than being folded into the personal-name layer."
+        }
+      ],
+      "localized_alex": {
+        "policy": "neutral_or_unisex_short_form_first_then_feminine_fallback_then_preserve_source",
+        "implemented_name_records": [
+          "name_es_ale",
+          "name_it_ale",
+          "name_fi_ale",
+          "name_pl_aleksandra",
+          "name_el_alex",
+          "name_ca_alexandra",
+          "name_ru_aleks",
+          "name_hy_aleks"
+        ],
+        "annotated_editions": [
+          "es",
+          "it",
+          "fi",
+          "pl",
+          "el",
+          "ca",
+          "ru",
+          "hy"
+        ],
+        "text_changed_editions": [
+          "es",
+          "it",
+          "fi",
+          "pl",
+          "el",
+          "ca"
+        ],
+        "already_acceptable_editions": [
+          "ru",
+          "hy"
+        ],
+        "remaining_multilingual_editions": "all other current edition/representation tags require explicit occurrence inventory and gender/agreement review"
+      }
+    },
+    {
+      "work_id": "bremen-town-musicians",
+      "edition_file_count": 80,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Bremen",
+          "kind": "place",
+          "entity_id": "ent_bremen_town_musicians_bremen",
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "elves-and-shoemaker",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [],
+      "canonical_inventory_note": "English/German story scan found no named personal characters; role labels such as shoemaker, wife, and elves are not personal names.",
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "fisherman-and-his-wife",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "God / Gott",
+          "kind": "named_divine_reference",
+          "status": "unresolved",
+          "notes": "Do not casually create a universal deity identity from a fairy-tale comparison. Needs entity-scope/religious-reference decision."
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "frog-king",
+      "edition_file_count": 130,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Faithful Henry / Iron Henry",
+          "kind": "composite_character_label",
+          "entity_id": "ent_frog_king_iron_henry",
+          "name_id": "name_en_henry",
+          "family_id": "NF.henry",
+          "status": "implemented"
+        },
+        {
+          "surface": "Heinrich",
+          "kind": "localized_given_name",
+          "name_id": "name_de_heinrich",
+          "family_id": "NF.henry",
+          "status": "implemented"
+        },
+        {
+          "surface": "Enrique",
+          "kind": "localized_given_name",
+          "name_id": "name_es_enrique",
+          "family_id": "NF.henry",
+          "status": "implemented"
+        },
+        {
+          "surface": "Ερρίκος",
+          "kind": "localized_given_name",
+          "name_id": "name_el_errikos",
+          "family_id": "NF.henry",
+          "status": "implemented"
+        },
+        {
+          "surface": "هنری",
+          "kind": "localized_given_name",
+          "name_id": "name_fa_henri",
+          "family_id": "NF.henry",
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "partial"
+    },
+    {
+      "work_id": "golden-goose",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [],
+      "canonical_inventory_note": "English/German story scan found no personal proper names; characters are role/kinship labels.",
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "hansel-and-gretel",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Hansel",
+          "kind": "given_name",
+          "entity_id": "ent_hansel_and_gretel_hansel",
+          "name_id": "name_en_hansel",
+          "status": "implemented"
+        },
+        {
+          "surface": "Hänsel",
+          "kind": "localized_given_name",
+          "entity_id": "ent_hansel_and_gretel_hansel",
+          "name_id": "name_de_haensel",
+          "status": "implemented"
+        },
+        {
+          "surface": "Gretel",
+          "kind": "given_name",
+          "entity_id": "ent_hansel_and_gretel_gretel",
+          "name_ids": [
+            "name_en_gretel",
+            "name_de_gretel"
+          ],
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "little-briar-rose",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Briar Rose",
+          "kind": "proper_epithet",
+          "entity_id": "ent_little_briar_rose_princess",
+          "name_id": "name_en_briar_rose",
+          "status": "implemented"
+        },
+        {
+          "surface": "Dornröschen",
+          "kind": "localized_proper_epithet",
+          "entity_id": "ent_little_briar_rose_princess",
+          "name_id": "name_de_dornroeschen",
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "little-red-cap",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Little Red Cap",
+          "kind": "proper_epithet",
+          "entity_id": "ent_little_red_cap_girl",
+          "name_id": "name_en_little_red_cap",
+          "status": "implemented"
+        },
+        {
+          "surface": "Rotkäppchen",
+          "kind": "localized_proper_epithet",
+          "entity_id": "ent_little_red_cap_girl",
+          "name_id": "name_de_rotkaeppchen",
+          "status": "implemented"
+        },
+        {
+          "surface": "Grimm",
+          "kind": "historical_author_family_reference_in_editorial_metatext",
+          "status": "unresolved",
+          "notes": "Appears in adaptation metatext ('final Grimm version'), not as a story character. Requires historical-person/authorship modeling rather than character-name treatment."
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "little-snow-white",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Snow White",
+          "kind": "proper_epithet",
+          "entity_id": "ent_little_snow_white_snow_white",
+          "name_id": "name_en_snow_white",
+          "status": "implemented"
+        },
+        {
+          "surface": "Schneewittchen",
+          "kind": "localized_proper_epithet",
+          "entity_id": "ent_little_snow_white_snow_white",
+          "name_id": "name_de_schneewittchen",
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "rapunzel",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Rapunzel",
+          "kind": "character_mononym",
+          "entity_id": "ent_rapunzel_rapunzel",
+          "name_ids": [
+            "name_en_rapunzel",
+            "name_de_rapunzel"
+          ],
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    },
+    {
+      "work_id": "rumpelstiltskin",
+      "edition_file_count": 20,
+      "source_language": "de",
+      "inventory": [
+        {
+          "surface": "Rumpelstiltskin",
+          "kind": "character_mononym",
+          "entity_id": "ent_rumpelstiltskin_rumpelstiltskin",
+          "name_id": "name_en_rumpelstiltskin",
+          "status": "implemented"
+        },
+        {
+          "surface": "Rumpelstilzchen",
+          "kind": "localized_character_mononym",
+          "entity_id": "ent_rumpelstiltskin_rumpelstiltskin",
+          "name_id": "name_de_rumpelstilzchen",
+          "status": "implemented"
+        }
+      ],
+      "multilingual_surface_inventory": "pending"
+    }
+  ],
+  "validation_status": {
+    "validator": "scripts/validate-lexicon.mjs",
+    "added_checks": [
+      "equivalence_set must belong to declared family",
+      "family form must belong to declared family and equivalence set",
+      "family form linked name_id must match the name owning the family_ref",
+      "duplicate normalized family form surface within the same family/set/language is rejected",
+      "approved child form cannot sit inside a non-approved family"
+    ],
+    "execution_status": "not_run_in_connector_environment",
+    "note": "Changes were syntax-shaped against the current validator source, but the GitHub connector does not provide a local Node execution environment. Do not claim the full validator passed until it is run in a checkout."
+  },
+  "unresolved_questions": [
+    "Complete translated-surface inventory for every edition/representation in all priority works.",
+    "Decide reusable entity treatment for Germany in gef-intro and Bremen beyond the current book-local place record.",
+    "Decide treatment of God/Gott in The Fisherman and His Wife without inventing a universal religious identity mapping.",
+    "Model Grimm authorship/metatext separately from story-character entities.",
+    "Review Finnish Ale with a Finnish onomastic source because consulted sources disagree on gender labeling.",
+    "Continue Alex localization/gender-agreement audit across the remaining canonical 104 language identities and their script/transliteration representations.",
+    "Create/verify name-family graphs for Hansel/Hänsel and Gretel only when sourced relationship data supports them; do not infer from the fairy-tale translation alone.",
+    "Inventory all Frog King localized Henry forms across its 130 representation files and promote only independently sourced reusable equivalences."
+  ],
+  "resume_order": [
+    "Finish Alex across all canonical language identities and annotate every chosen surface.",
+    "Inventory all Frog King Henry labels across 130 representations.",
+    "Inventory the 20-edition multilingual sets for Hansel/Gretel, Briar Rose, Little Red Cap, Snow White, Rapunzel, and Rumpelstiltskin.",
+    "Resolve place/divine/metatext entity edge cases.",
+    "Run node scripts/validate-lexicon.mjs and node scripts/compile-name-index.mjs in a local checkout, then fix every failure before further promotion.",
+    "Continue into named-character-heavy non-Grimm works."
+  ]
+}
