@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "language_code": "fi",
+  "names": [
+    {
+      "name_id": "name_fi_ale",
+      "canonical_form": "Ale",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ale",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fi"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexander",
+          "equivalence_set_id": "NFEQ.alexander.short-unisex",
+          "form_id": "NFF.alexander.fi.ale"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "historical_note": "Candidate neutral book form. Secondary sources attest both male and female use, while English Wiktionary currently labels Finnish Ale male; retain candidate status pending Finnish onomastic review.",
+      "source_refs": [
+        "src_behindthename_ale1_2026_10_04",
+        "src_nordic_names_ale_f_2026_10_04",
+        "src_work_gef_intro"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
