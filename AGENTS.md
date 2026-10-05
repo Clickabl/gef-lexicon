@@ -42,11 +42,14 @@ Read `docs/LEXICON_ARCHITECTURE.md`, `docs/NAME_ENTITY_ARCHITECTURE.md`, `docs/L
 
 ## Repository ownership and source of truth
 
-Gef has exactly three active product repositories:
+Gef has exactly four active product repositories:
 
 1. **`Clickabl/gef-expo`** — app/runtime/UI, interface localization/resources, reader/download/playback/orchestration, and the product-wide language-support registry.
 2. **`Clickabl/gef-content`** — canonical books/stories, editions, semantic anchors, work-specific metadata/questions/audio/assets, corpus occurrence evidence, and content packaging.
 3. **`Clickabl/gef-lexicon`** — reusable lexemes, senses, morphology, constructions, semantic functions, entities/names, dictionary truth, and the canonical topic-first curriculum.
+4. **`Clickabl/gef-server`** — runtime APIs, server authorization, search/catalog projections, sync, account lifecycle, and protected content delivery.
+
+`Clickabl/identity` is the shared authentication authority across Clickabl products. GitHub Actions are disabled by the owner; use local validation and the documented publisher.
 
 **Notion is discontinued for active Gef documentation.** Historical Notion mirrors/references may be stale. Historical references to `gef-locales` are migration residue, not current architecture.
 

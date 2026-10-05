@@ -114,4 +114,4 @@ npm run compile:sqlite
 npm run compile:names
 ```
 
-`npm run validate` runs structural lexicon plus curriculum/lesson reference validation. GitHub Actions also regenerates deterministic compiled artifacts and checks development/production package gates. Production name compilation includes approved rows only; candidate rows remain development/review data.
+`npm run validate` runs structural lexicon plus curriculum/lesson reference validation. Run validation and deterministic package checks locally; GitHub Actions are disabled by the owner's budget rule. The current production name compiler includes approved rows only. Ordinary sourced candidate lookup and an approved automatic-localization view are distinct contracts in the [V2 names direction](docs/NAME_ENTITY_ARCHITECTURE.md); that lookup rule does not approve a name relationship.

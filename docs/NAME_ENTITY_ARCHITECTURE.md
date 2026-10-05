@@ -2,6 +2,116 @@
 
 Names and named entities are intentionally separated from ordinary lexical meaning while remaining linkable to the lexicon when morphology requires it.
 
+## V2 direction — owner discussion, 2026-10-05
+
+Keep two independently queryable sources: **Lexi Names** for reusable names and
+**book characters** for particular entities in a work. Link them by stable IDs.
+A normal tap on `Alex` or Italian `Ale` must find the general name without an
+occurrence annotation, a character connection, or a name-family index. An exact
+annotation can additionally identify the character; it never creates the general
+name fact. This direction extends the existing normalized name compiler rather
+than replacing books or throwing away their identities.
+
+### Data shape
+
+Use rows for language-specific data, not an English column, an Italian column,
+and another schema change for each new language. There may be several attested
+forms, pronunciations, and explanations in one language. A family is a graph of
+sourced relationships, not a declaration that every member is interchangeable.
+
+| Layer | Identity and data | Canonical owner |
+| --- | --- | --- |
+| General name | Existing language-local `name_id`, name kind, optional family membership | `gef-lexicon` |
+| Name form | Durable form/spelling ID, name ID, exact spelling, language tag, script, applicable locale/period, form kind | `gef-lexicon` |
+| Name relationship | Durable edge ID, source and target IDs, typed directed relation, applicability, evidence and its own review state | `gef-lexicon` |
+| Name fact | Durable fact ID, subject name/form/family, fact kind such as etymology or usage; structured assertions and evidence | `gef-lexicon` |
+| Fact rendering | Fact ID, explanation language tag, text, source or translation identity, independent revision/review state | `gef-lexicon` |
+| Pronunciation | Exact attested form/label ID, language/dialect, optional IPA, recording reference and media rights/cache facts | Owning name or content source |
+| Entity | Existing `entity_id`, entity kind, compact reusable identity and explicit external identity where available | `gef-lexicon` |
+| Work character profile | Entity-to-work membership, sourced work-specific facts, localized renderings and where a fact becomes known | `gef-content` |
+| Edition character label | Entity/work/edition IDs, actual label language, exact label and ordered name/form/lexical components | `gef-content` |
+| Mention | Exact edition/representation/anchor/span/text-hash evidence pointing to the intended entity/name/sense | `gef-content` |
+
+The name's language is different from the explanation's language. Italian
+`Ale` may have an English explanation and an Italian pronunciation. A fact about
+the family's origin can be shared, while an Italian usage fact stays attached to
+the Italian name. Missing translation remains missing; a fallback explanation
+must carry its actual language. These distinctions follow the established
+lexeme/form/sense separation in [Wikidata's lexical data model](https://www.wikidata.org/wiki/Wikidata:Lexicographical_data/Documentation).
+Use [BCP 47 language tags](https://www.w3.org/International/articles/language-tags/index.en)
+where script or locale distinctions matter; do not count those variants as new
+product languages.
+
+For the current example, `name_en_alex` and `name_it_ale` are reusable name
+records. `ent_gef_intro_alex` identifies the particular character. The English
+and Italian editions refer to that same entity, each through its own attested
+label. An unrelated Alex in another book gets a different entity ID. Reuse a
+character across works only when explicit literary/source evidence establishes
+that identity. A general name's population usage never determines an entity's
+gender, nationality, biography, or pronunciation performance.
+
+Relations distinguish spelling variants, short forms, diminutives, historical
+derivation, transliteration, adaptation, and established local equivalents.
+Do not derive a universal `Alex -> Alessandro` replacement, or infer new links by
+walking a transitive family chain. Each link has its own sources and authority.
+Book editorial name choices remain edition-specific; profile display-name
+substitutions remain a separate opt-in choice. Read-time lookup never rewrites
+the story text.
+
+### Serving, authoring and agent operations
+
+`gef-server` serves bounded joins/projections over pinned content and lexicon
+versions. Use its existing MariaDB environment for operational state and a
+versioned compiled name index for lookup. SQLite packages remain appropriate for
+downloadable/offline dictionaries. MCP is the access interface, not the storage
+system or a backup. No extra repository or database engine is required for this
+split.
+
+Agents need separate operations to look up a general name, inspect its actual
+forms and sources, inspect one work's character profile, and propose an exact
+mention/edition-label connection. Writes validate foreign keys, expected source
+versions and idempotency through the existing Studio authorization boundary.
+Candidate proposals retain author/source identity. Ordinary lookup may display
+sourced candidates with honest authority; school retains its stricter policy.
+That delivery rule does not approve a relationship or authorize an automatic
+name substitution. Product whitelists and actual rights restrictions still
+apply to their own operations.
+
+An entity lookup uses exact work/edition context and may disclose only facts
+appropriate to the passage reached; complete-book character summaries must not
+silently become early-reading spoilers. Without reliable context, return
+general-name and ordinary lexical candidates instead of choosing a character
+from capitalization or string equality. Independent sources can disagree;
+retain their separate assertions rather than overwriting one with another.
+
+### Migration and current implementation limits
+
+Preserve all current `name_*`, `NF.*`, `NFEQ.*`, `NFF.*`, and `ent_*` IDs and all
+published book text. Assign durable form, usage, fact and relationship IDs once;
+an array reorder must not change identity. Retain aliases for old compiler IDs
+when migrating saved references. Import every existing `names/{language}/*.json`
+file, including supplementary files. Keep v1 readers until the v2 package is
+validated and atomically published with version, hash, source and foreign-key
+checks. Back up authored inputs and operational state separately and test a
+restore before removing old storage.
+
+The existing compiler already has normalized names, spellings, families,
+equivalence sets, forms, membership, usage, search and source-reference tables.
+Its remaining v2 gaps are explicit explanation-language/fact provenance,
+pronunciation ownership, edition-scoped character labels, durable non-positional
+child IDs, and an ordinary lookup view that includes candidates without
+misrepresenting them as approved. Its approved-only automatic localization view
+can remain a distinct authority boundary. Untagged legacy prose stays verbatim
+with unconfirmed language until a source audit establishes it.
+
+The immediate app repair queries published language-local name packages
+independently. The missing public family index must not veto that path.
+The normalized v2 schema and character-profile migration described here are
+design direction, not a claim that they have already been implemented or that
+every name has data in every language. Track implementation in the canonical
+Expo coding queue; source research and explanation-language audits belong in
+the research queue.
+
 ## 1. Five different things
 
 - **Lexeme**: a language item with grammatical forms and senses, e.g. English `grace` as a common noun.

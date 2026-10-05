@@ -239,3 +239,12 @@ SETTLED:
 Relevant commits: `60036cb1`, `e0558689`, `35c0797b`, `2ec0ab91`, `509f6343`, `da7d075d`, `29c79d13`.
 
 Normal local validation commands are documented by the repo, but this connector session has no dependency-complete checkout, so no local validator-pass claim is made. Do not self-approve future generated note renderings.
+
+
+## 2026-10-05 — Codex: independent names and work characters
+
+Owner asks whether names should be reusable lookup data or a database for one book. Settled: both are independent linked sources. General language-local names/forms/facts belong here; exact edition labels, work character profiles and mentions belong with Content. A tap can find Alex/Ale without an occurrence annotation or a family-index request. One character identity may have several sourced edition labels; unrelated characters with the same name never merge by spelling.
+
+`docs/NAME_ENTITY_ARCHITECTURE.md` records normalized language rows, separate name/explanation languages, durable child IDs, typed sourced relationships, pronunciation ownership, spoiler context and an additive migration preserving current IDs and book text. Existing normalized compilation is extended; operational serving uses the current server/database environment, with versioned lookup/offline indexes. MCP is an authorized interface, not storage or backup. Missing legacy prose language and missing published family discovery remain explicit. This is approved design direction, not completed v2 schema/migration or universal language coverage. Implementation/source-audit rows live in the canonical Expo queues.
+
+Local `node scripts/validate-lexicon.mjs` and diff check pass. README and agent ownership now name all four current Gef repositories and the Actions budget lock. No content records, approvals or book text changed.
