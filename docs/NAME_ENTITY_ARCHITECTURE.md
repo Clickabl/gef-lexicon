@@ -292,3 +292,32 @@ Current research seeds include:
 - historical and etymological name-family relationships.
 
 These are educational culture notes, not rules the app applies to a learner's identity without consent.
+
+## 13. Immutable research admission reference
+
+`node scripts/compile-research-reference.mjs --registry-repo /path/to/gef-expo --out /path/to/reference-v1.json`
+compiles `gef-research-reference-v1` for the authenticated Gef server research queue. The compiler
+reads exact committed Git bytes from both repositories; uncommitted edits never become a referenced
+revision. The deployment configuration pins the resulting file's SHA-256 independently.
+
+The initial projection contains reusable `name_*` identities and coverage evidence only. It derives
+language identities from the current Expo registry, preserves candidate status, and resolves a
+language only through sourced approved facts. Cross-language coverage requires an explicit shared
+equivalence set: the source name, family, source form, target form and any linked target name must
+all be approved and sourced before coverage is `attested`. Short unisex forms never acquire full
+masculine or feminine counterparts merely from shared family ancestry. A set without a matching
+source form cannot establish that relation. Unknown references, unsafe source paths, duplicates and
+unregistered languages fail compilation. Every evidence reference retains its exact source path,
+Git commit and artifact hash. Missing data remains missing; absence is never invented.
+
+This projection routes bounded research work; it is not a runtime names dictionary or approval.
+It has no phrase records or ranked cohorts until their genuine canonical source contracts exist.
+An instruction such as “research the most common English names” still needs a specified ranking
+region, period and source, followed by a captured ranked candidate artifact. The compiler does not
+invent that ranking or start a cohort. Server workers and Studio submit candidate results; normal
+linguistic review continues to govern published names and equivalents.
+
+Run `node --test scripts/test-research-reference.mjs` and `node scripts/validate-lexicon.mjs`
+before publishing changes to this compiler. The source schemas retain arrays of language-local
+forms and distinct equivalence roles and relation types; the sparse coverage projection does not
+collapse those form arrays into a single presumed translation.
