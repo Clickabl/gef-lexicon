@@ -46,6 +46,17 @@ Canonical tier membership lives in `Clickabl/gef-expo/registry/language-support.
 
 Do not infer curriculum eligibility merely because a construction record exists.
 
+Language-local support blurbs are validated against the current
+`lessonTiers.tier1_full`, `tier2_selective`, and `tier3_read_games` arrays in
+the Expo registry. Tier 3 may use multiple storage shards for practical file
+size; shard boundaries are not additional product tiers. The blurb validator
+and comparison-record/capability validators compare the union of each current
+tier's shards to its registry cohort and derive eligibility from those arrays.
+Manifest counts remain measured consistency checks against the shard contents;
+they do not define the supported-language population. Registry schema versions
+are read as declared metadata, while field structure and exact memberships are
+validated directly.
+
 ## Semantic functions are not English glosses
 
 Do not model English surface words such as `for` or `be` as universal concepts. Use language-neutral functions such as:

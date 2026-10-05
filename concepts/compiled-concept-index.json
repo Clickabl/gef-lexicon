@@ -174,6 +174,9 @@
         "es": [
           "018f2c3a-7b1e-7a4d-9c2e-000000000208"
         ],
+        "fa": [
+          "0e4b5625-9a75-4ca8-bb41-24dc26c08e7c"
+        ],
         "ja": [
           "018f2c3a-7b1e-7a4d-9c2e-000000000308"
         ]
@@ -247,6 +250,19 @@
             "usage_profile_ready": false,
             "legacy_register_label": null,
             "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "0e4b5625-9a75-4ca8-bb41-24dc26c08e7c",
+            "lexeme_id": "98e3105d-51ef-49f2-8dc5-e4871a15bd8a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
           }
         ],
         "ja": [
@@ -682,6 +698,2070 @@
             "usage_profile_ready": false,
             "legacy_register_label": "standard",
             "source_path": "languages/en/lexicon-polysemy-relatives.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_070612ed-5841-591e-8ee0-b1320f93289c",
+      "concept_key": "magic-spell-enchantment",
+      "domain": "culture",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a magical enchantment or spell placed on a person or thing",
+        "must_preserve": [
+          "the referent is an enchantment produced by magic"
+        ],
+        "must_not_imply": [
+          "ordinary spelling of words",
+          "a non-magical period of time"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "0dc29b31-ae94-56ff-bcfb-68010c4fde71"
+        ],
+        "en": [
+          "8ec8c1b4-1f79-532e-9910-55530a15964c"
+        ],
+        "es": [
+          "e491215e-17b1-5b0e-8fe5-e388245ad0b4"
+        ],
+        "fa": [
+          "8e0e2be7-1fae-5e10-b60c-26605dce5bd1"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "0dc29b31-ae94-56ff-bcfb-68010c4fde71",
+            "lexeme_id": "4f0854cd-eece-50b4-a252-864f97b34c45",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "8ec8c1b4-1f79-532e-9910-55530a15964c",
+            "lexeme_id": "7e76639f-25d4-574a-a1be-00650d6836b9",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "e491215e-17b1-5b0e-8fe5-e388245ad0b4",
+            "lexeme_id": "4762065f-dcbe-533a-a8bf-cb274ad34384",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "8e0e2be7-1fae-5e10-b60c-26605dce5bd1",
+            "lexeme_id": "c1c135c8-50f4-5702-8626-365d545da2b8",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_07bfb052-fa95-5127-a6fb-f9cdb37fd952",
+      "concept_key": "horse-animal",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a large domesticated hoofed mammal commonly ridden or used to pull vehicles",
+        "must_preserve": [
+          "the referent is a horse"
+        ],
+        "must_not_imply": [
+          "a donkey",
+          "a chess knight"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "d77b02de-6ff6-5d9a-a078-8bdb8d972d00"
+        ],
+        "en": [
+          "ed5dbd5f-4bd0-564b-9cd4-06c4bb93da9f"
+        ],
+        "es": [
+          "4617e9c2-42a0-524a-b81c-ef319f4dc80c"
+        ],
+        "fa": [
+          "966337a9-e8fd-5cfc-9f47-0e04ecea8142"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "d77b02de-6ff6-5d9a-a078-8bdb8d972d00",
+            "lexeme_id": "3d59981b-564e-58ea-83fa-524766b9d195",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "ed5dbd5f-4bd0-564b-9cd4-06c4bb93da9f",
+            "lexeme_id": "0d93f5ec-cc5f-5e71-8482-30dfd3bb5e0a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "4617e9c2-42a0-524a-b81c-ef319f4dc80c",
+            "lexeme_id": "81f943b7-6d4f-512d-8854-1e97586b500c",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "966337a9-e8fd-5cfc-9f47-0e04ecea8142",
+            "lexeme_id": "c7d6e548-6f25-50e1-9c9c-14ec3819ed24",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_19d21411-43c6-5a36-a76f-f33315b0fc32",
+      "concept_key": "prince-male-royal",
+      "domain": "society",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a male royal person conventionally called a prince",
+        "must_preserve": [
+          "the referent is a male member of a royal family or a man holding the title prince"
+        ],
+        "must_not_imply": [
+          "a king specifically",
+          "a generic young man"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "71cadd3b-4572-5a4f-bf5f-518202818aad"
+        ],
+        "en": [
+          "97db00a6-0f67-552b-b8e3-37b6c570d354"
+        ],
+        "es": [
+          "1d49e08a-d2f8-5485-be73-f44a0a9fcfc9"
+        ],
+        "fa": [
+          "ea763453-e5b5-569f-9866-b227b6000ecc"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "71cadd3b-4572-5a4f-bf5f-518202818aad",
+            "lexeme_id": "a79f4869-ea4a-5e64-927c-0de110a7d573",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "97db00a6-0f67-552b-b8e3-37b6c570d354",
+            "lexeme_id": "b4dda50e-a60f-5250-8038-f5c2df69709d",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "1d49e08a-d2f8-5485-be73-f44a0a9fcfc9",
+            "lexeme_id": "fec72e03-eb1d-5f28-88b8-7472eb394d44",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "ea763453-e5b5-569f-9866-b227b6000ecc",
+            "lexeme_id": "9a801ac5-029c-585a-b029-a28f2b1ab698",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_22d7bbed-5745-56fb-b33a-b292070aad91",
+      "concept_key": "door-building-opening",
+      "domain": "objects",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a movable barrier that opens and closes an entrance to a room or building",
+        "must_preserve": [
+          "the referent is a physical door at an entrance"
+        ],
+        "must_not_imply": [
+          "a metaphorical opportunity",
+          "a doorway with no movable barrier unless the language sense covers both"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "cb1614f2-3fe3-56bb-94e6-0a6a52d248c9"
+        ],
+        "en": [
+          "a98b1981-5dcf-5de5-a1f1-4e3a0e7c825a"
+        ],
+        "es": [
+          "bab73fe2-dd20-5e82-bc6d-57e9c770f6a2"
+        ],
+        "fa": [
+          "ab01418e-bacd-5ddc-8aff-1a26405de130"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "cb1614f2-3fe3-56bb-94e6-0a6a52d248c9",
+            "lexeme_id": "4ac3f51f-050a-5eab-a377-0823dcdf23fa",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "a98b1981-5dcf-5de5-a1f1-4e3a0e7c825a",
+            "lexeme_id": "9a0c5525-0c4f-5ad4-98e3-6f97c9f50b70",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "bab73fe2-dd20-5e82-bc6d-57e9c770f6a2",
+            "lexeme_id": "ee413a62-2ced-501e-9779-fd303e433f65",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "ab01418e-bacd-5ddc-8aff-1a26405de130",
+            "lexeme_id": "c6c61e05-cdd7-5e3c-9459-348173d06541",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_36334098-9bbb-5d12-9cc1-b8bcb7c8a97b",
+      "concept_key": "forest-wooded-area",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a large area of land covered mainly with trees",
+        "must_preserve": [
+          "the referent is a wooded land area"
+        ],
+        "must_not_imply": [
+          "a single tree",
+          "a small planted garden"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "5911b723-878d-520e-9806-46fe9bce714d"
+        ],
+        "en": [
+          "a7322b84-0cd9-5824-8040-ad4d4dcb0077"
+        ],
+        "es": [
+          "16ec02e5-16d8-5060-993a-9c51a7890531"
+        ],
+        "fa": [
+          "167dbefe-6d9a-553d-b1e7-ac1a18fe93dd"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "5911b723-878d-520e-9806-46fe9bce714d",
+            "lexeme_id": "bf87575c-8b2e-56d2-bd51-71b2b1f3a347",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "a7322b84-0cd9-5824-8040-ad4d4dcb0077",
+            "lexeme_id": "85879197-4c8b-5f93-a477-095188a515ca",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "16ec02e5-16d8-5060-993a-9c51a7890531",
+            "lexeme_id": "6184e8fa-b3ce-58e3-b1c5-dcd6af6f6bf1",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "167dbefe-6d9a-553d-b1e7-ac1a18fe93dd",
+            "lexeme_id": "b565eaff-af1e-54c1-81f6-684b6c1a4053",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_3ab1cc6e-02ad-5248-9dfe-5e00309dbef8",
+      "concept_key": "water-substance",
+      "domain": "nature",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "the ordinary liquid substance water",
+        "must_preserve": [
+          "the referent is liquid water"
+        ],
+        "must_not_imply": [
+          "a body of water specifically unless context says so",
+          "the act of watering"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "db50d090-e46f-5137-95c1-c49ba735b286"
+        ],
+        "en": [
+          "f6ef8660-11ef-545b-a957-26b81f329fd3"
+        ],
+        "es": [
+          "8ae45c0d-dfa9-57dd-bbbf-40a429a1737c"
+        ],
+        "fa": [
+          "a9735323-42b5-56de-84cd-2d8e3ba2a1a1"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "db50d090-e46f-5137-95c1-c49ba735b286",
+            "lexeme_id": "71babb2c-fe50-5160-b729-23c9a18dd370",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "f6ef8660-11ef-545b-a957-26b81f329fd3",
+            "lexeme_id": "17f90ec8-8102-5765-9c2a-3442bfc6c2cf",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "8ae45c0d-dfa9-57dd-bbbf-40a429a1737c",
+            "lexeme_id": "b3d77303-597c-56f0-b254-8033cfcf3d79",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "a9735323-42b5-56de-84cd-2d8e3ba2a1a1",
+            "lexeme_id": "e3711d83-22ee-5071-a880-9ca46550a27f",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_440ff55c-709b-5189-8b19-5fee31ff70cb",
+      "concept_key": "king-royal-ruler",
+      "domain": "society",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a male monarch or royal ruler",
+        "must_preserve": [
+          "the referent is a male royal ruler"
+        ],
+        "must_not_imply": [
+          "a generic leader with no royal status",
+          "a chess piece"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "6266421c-9195-5672-93c7-5524f5d926ec"
+        ],
+        "en": [
+          "0c43b927-71a8-5760-8a7c-6d76143f6040"
+        ],
+        "es": [
+          "5034bdeb-6477-5e19-ac3f-34e6a6336ca9"
+        ],
+        "fa": [
+          "2312bb70-22a9-5fb3-a64b-864a936c2d64"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "6266421c-9195-5672-93c7-5524f5d926ec",
+            "lexeme_id": "a9bc978e-1706-50f3-b3fe-bfd573a2ca3b",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "0c43b927-71a8-5760-8a7c-6d76143f6040",
+            "lexeme_id": "c909e3ee-8ed4-51a1-a177-4d250a425531",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "5034bdeb-6477-5e19-ac3f-34e6a6336ca9",
+            "lexeme_id": "883bd8a9-ecb8-59cd-a96e-43089a67d8dd",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "2312bb70-22a9-5fb3-a64b-864a936c2d64",
+            "lexeme_id": "b52e7743-953e-50ff-8843-292b48fab7cf",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_46af265e-02bd-5cea-a3c9-d137048c1b33",
+      "concept_key": "castle-fortified-residence",
+      "domain": "places",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a large fortified or castle-like residence",
+        "must_preserve": [
+          "the referent is a castle or fortified royal residence"
+        ],
+        "must_not_imply": [
+          "a generic house",
+          "a chess move"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "627382ac-f4db-58a6-93b0-b73f24a8efbd"
+        ],
+        "en": [
+          "659677d8-0266-522d-a562-ef82925965bf"
+        ],
+        "es": [
+          "47c6d817-c010-52ab-a861-45a941d78f1d"
+        ],
+        "fa": [
+          "8bdff915-04cf-52c0-8e12-8ccafdfe81bd"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "627382ac-f4db-58a6-93b0-b73f24a8efbd",
+            "lexeme_id": "01f771c2-5a68-53e2-8f97-d04faa4dd8b2",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "659677d8-0266-522d-a562-ef82925965bf",
+            "lexeme_id": "5f432f63-e7e9-5322-901d-01cfd390099a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "47c6d817-c010-52ab-a861-45a941d78f1d",
+            "lexeme_id": "08d9b520-c1fe-59e2-adf8-fec8e39d5ae1",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "8bdff915-04cf-52c0-8e12-8ccafdfe81bd",
+            "lexeme_id": "a214282d-14c1-5e23-9537-3249d32c134b",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_58e20f37-9055-5906-a892-efd4d5f1fe84",
+      "concept_key": "wall-building-surface",
+      "domain": "objects",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a vertical structure forming or dividing the side of a room or building",
+        "must_preserve": [
+          "the referent is a physical wall"
+        ],
+        "must_not_imply": [
+          "a defensive city wall unless context indicates it",
+          "a metaphorical barrier"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "8e40e7e3-29f4-516f-b0f6-3948bfbe46f9"
+        ],
+        "en": [
+          "49415359-acc5-57c6-aead-6f2ac7ba7b84"
+        ],
+        "es": [
+          "8cb145fd-dd11-56cd-9207-6c150f315e5f"
+        ],
+        "fa": [
+          "15592026-242f-5c39-8ad5-b1552d6203cf"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "8e40e7e3-29f4-516f-b0f6-3948bfbe46f9",
+            "lexeme_id": "32fa9a40-a602-5c07-98a4-7d1533fc9609",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "49415359-acc5-57c6-aead-6f2ac7ba7b84",
+            "lexeme_id": "3c6fb5d2-a644-53fe-b9d8-2cd992332463",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "8cb145fd-dd11-56cd-9207-6c150f315e5f",
+            "lexeme_id": "9a839237-7300-5218-8caf-8befafb86d6e",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "15592026-242f-5c39-8ad5-b1552d6203cf",
+            "lexeme_id": "0d5c4cc3-bea2-5b59-88a6-1a5602025b65",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_5c00fd2f-a0d5-578d-bba9-07d378e49763",
+      "concept_key": "promise-commitment",
+      "domain": "communication",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a commitment that someone gives to do or keep something",
+        "must_preserve": [
+          "there is a stated commitment or undertaking"
+        ],
+        "must_not_imply": [
+          "a prediction with no commitment",
+          "a mere hope or intention"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "92ae9df3-704b-5544-913c-a6bd6fa26a69"
+        ],
+        "en": [
+          "f968987f-ba99-5504-8097-494e69ff2062"
+        ],
+        "es": [
+          "0259499d-7d4d-5bac-8e46-03eb4dd8c836"
+        ],
+        "fa": [
+          "1587738c-a558-4188-95a7-2a5fa26f9c19"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "92ae9df3-704b-5544-913c-a6bd6fa26a69",
+            "lexeme_id": "bb97499b-aa94-5319-b776-b5531c6f9940",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "f968987f-ba99-5504-8097-494e69ff2062",
+            "lexeme_id": "f0873264-b028-59ef-a75e-95b30a78078a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "0259499d-7d4d-5bac-8e46-03eb4dd8c836",
+            "lexeme_id": "f942e794-ded9-5dce-a86b-cb5236995d67",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "1587738c-a558-4188-95a7-2a5fa26f9c19",
+            "lexeme_id": "e518b130-61de-4a30-9037-c5ea1ce57fc3",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_64c6c4d0-0fbb-5556-ae85-1e991c909f15",
+      "concept_key": "servant-person",
+      "domain": "society",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a person whose role is to serve or work for another person or household",
+        "must_preserve": [
+          "the referent is a person serving another person or household"
+        ],
+        "must_not_imply": [
+          "a computer server",
+          "a government civil servant unless context indicates that sense"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "f5da23fe-6907-5b6f-a0c4-c8fea46b6912"
+        ],
+        "en": [
+          "7b4c9e18-4ffd-56db-9ec1-ee5d51ceb64e"
+        ],
+        "es": [
+          "3eca7a05-6dae-582c-b613-f5caf18e9ce2"
+        ],
+        "fa": [
+          "d6e68b9f-989f-5c32-9141-80706c5b34e3"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "f5da23fe-6907-5b6f-a0c4-c8fea46b6912",
+            "lexeme_id": "96f69d13-1801-5db0-9b7b-0b1c72222d42",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "7b4c9e18-4ffd-56db-9ec1-ee5d51ceb64e",
+            "lexeme_id": "72edf601-61c2-5fe1-aae0-3a5f23ca657d",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "3eca7a05-6dae-582c-b613-f5caf18e9ce2",
+            "lexeme_id": "ff953e3b-bd9d-51af-a86a-516b80faf02f",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "d6e68b9f-989f-5c32-9141-80706c5b34e3",
+            "lexeme_id": "15a07843-8e08-5f9f-b6e6-6ec0c1f218b4",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_86b1909a-23da-555e-a500-25d89355805a",
+      "concept_key": "bed-sleeping-furniture",
+      "domain": "objects",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "furniture or a prepared place used for sleeping",
+        "must_preserve": [
+          "the referent is a place or piece of furniture for sleeping"
+        ],
+        "must_not_imply": [
+          "a riverbed",
+          "a flower bed"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "0a9f66df-3fb8-525f-9651-70e736d72ddd"
+        ],
+        "en": [
+          "841e4fc3-0cef-5994-b654-2684f1554116"
+        ],
+        "es": [
+          "3e03eec3-6631-5d66-82ed-343304ff5b4a"
+        ],
+        "fa": [
+          "8b0e6f38-79ee-550a-8b5b-1056622bd3dc"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "0a9f66df-3fb8-525f-9651-70e736d72ddd",
+            "lexeme_id": "11d0905d-8797-50e6-b122-092cb631a53c",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "841e4fc3-0cef-5994-b654-2684f1554116",
+            "lexeme_id": "e8334342-cf7b-5b2c-8571-bb74a317f62d",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "3e03eec3-6631-5d66-82ed-343304ff5b4a",
+            "lexeme_id": "87452398-9a9b-53a8-acb5-1c3e52e4ba3a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "8b0e6f38-79ee-550a-8b5b-1056622bd3dc",
+            "lexeme_id": "a27f6b12-319f-5dfb-a6ac-36f265a42c9f",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_8a8827dd-2a0d-5f85-95aa-1523b0af3668",
+      "concept_key": "carriage-horse-drawn-vehicle",
+      "domain": "transport",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a wheeled passenger vehicle designed to be drawn by horses",
+        "must_preserve": [
+          "the referent is a horse-drawn carriage"
+        ],
+        "must_not_imply": [
+          "a railway carriage",
+          "a baby carriage"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "9408350c-8c6a-5d3b-b472-7c9c4878fb47"
+        ],
+        "en": [
+          "032de83f-ff3c-5809-bad5-e6611b807161"
+        ],
+        "es": [
+          "7936c0fd-9e22-56a2-871c-e276484d1acc"
+        ],
+        "fa": [
+          "5aaadb2e-d58c-54d0-8993-f43d0b26cf11"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "9408350c-8c6a-5d3b-b472-7c9c4878fb47",
+            "lexeme_id": "1661467b-69a2-5b79-bafb-d39e8ba089ca",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "032de83f-ff3c-5809-bad5-e6611b807161",
+            "lexeme_id": "bbe5bc85-11a3-5236-9bb5-bccb693568c8",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "7936c0fd-9e22-56a2-871c-e276484d1acc",
+            "lexeme_id": "59ada383-8b6c-5d90-af85-17580c86514f",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "5aaadb2e-d58c-54d0-8993-f43d0b26cf11",
+            "lexeme_id": "878808f2-b0e0-577d-b149-f3801c823af0",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_986c253a-bd43-5f60-a2a6-695488aa2feb",
+      "concept_key": "well-water-shaft",
+      "domain": "places",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a deep human-made shaft or opening used to reach water",
+        "must_preserve": [
+          "the referent is a well that gives access to water"
+        ],
+        "must_not_imply": [
+          "well-being or good health",
+          "an adverb meaning satisfactorily"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "4e12e8e6-4b6e-5ebc-b52d-457f66356735"
+        ],
+        "en": [
+          "8f98b05f-086a-5261-a83f-07408e7727df"
+        ],
+        "es": [
+          "fd02f6a1-fed9-5b1e-8cf4-cd3e4278c952"
+        ],
+        "fa": [
+          "b7c68820-215d-5874-8e42-25f8fe087d47"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "4e12e8e6-4b6e-5ebc-b52d-457f66356735",
+            "lexeme_id": "a30afb5f-85a4-5036-957a-fa695afe4eb3",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "8f98b05f-086a-5261-a83f-07408e7727df",
+            "lexeme_id": "3f663c51-dbea-5bc5-a5f7-e1d5bec853f6",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "fd02f6a1-fed9-5b1e-8cf4-cd3e4278c952",
+            "lexeme_id": "5fa1e282-ddbc-578b-898d-8b5578b3dea6",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "b7c68820-215d-5874-8e42-25f8fe087d47",
+            "lexeme_id": "44f2f971-400d-5eb0-b85c-32a1197a140a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_ab6f2881-4ab8-57b6-aa60-720d9f381e6f",
+      "concept_key": "room-building-space",
+      "domain": "places",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "an enclosed space inside a building",
+        "must_preserve": [
+          "the referent is an interior room"
+        ],
+        "must_not_imply": [
+          "available capacity or space in the abstract",
+          "an entire building"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "44704d1e-620d-53de-81af-ff33527724ad"
+        ],
+        "en": [
+          "27f62673-a038-5ea6-9622-37032e301e00"
+        ],
+        "es": [
+          "74d42981-e1ef-53c1-b2b2-7a1771c6dfd8"
+        ],
+        "fa": [
+          "59189ebb-4c72-54f0-a2bc-0bffa3d6bbba"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "44704d1e-620d-53de-81af-ff33527724ad",
+            "lexeme_id": "e3811324-ab1e-5f77-b11d-63578f5e7ffa",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "27f62673-a038-5ea6-9622-37032e301e00",
+            "lexeme_id": "9f02940e-42ab-50ef-b155-31143e1a1230",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "74d42981-e1ef-53c1-b2b2-7a1771c6dfd8",
+            "lexeme_id": "2efa5625-9279-561c-b244-d02a579a45cb",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "59189ebb-4c72-54f0-a2bc-0bffa3d6bbba",
+            "lexeme_id": "bd162df6-576b-5e09-b42a-d609f507050b",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_ada65fcf-f6ea-5c59-8ce2-855efff4e016",
+      "concept_key": "happiness-joy-emotion",
+      "domain": "emotion",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "the positive emotional state of being happy or feeling joy",
+        "must_preserve": [
+          "a positive emotion of happiness or joy is expressed"
+        ],
+        "must_not_imply": [
+          "mere satisfaction with a technical result unless it is emotional",
+          "physical pleasure specifically"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "a75648c4-4f33-5056-8eda-38eaa9557896"
+        ],
+        "en": [
+          "f3ce8cea-4ce2-5fde-9538-c8f6a19b2388"
+        ],
+        "es": [
+          "d2cd4106-a3b6-5812-b038-561db4e10478"
+        ],
+        "fa": [
+          "80327fef-7d75-5d15-87d4-1efd92d05357"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "a75648c4-4f33-5056-8eda-38eaa9557896",
+            "lexeme_id": "b5f7b7ba-b594-5f42-b2ba-c8e31919b516",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "f3ce8cea-4ce2-5fde-9538-c8f6a19b2388",
+            "lexeme_id": "ded1d0f6-3f86-56bd-a4a8-55219b60d935",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "d2cd4106-a3b6-5812-b038-561db4e10478",
+            "lexeme_id": "f5416ab7-44a8-5d4f-b691-12a21a5f473c",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "80327fef-7d75-5d15-87d4-1efd92d05357",
+            "lexeme_id": "70fca8b3-4ee1-5cc4-a6f2-bce79df3f9ce",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_aec106c1-94fa-5a45-9b30-6f81e6db0c65",
+      "concept_key": "home-place-of-living",
+      "domain": "places",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "the place where a person lives or belongs",
+        "must_preserve": [
+          "the referent is someone's home or place of living"
+        ],
+        "must_not_imply": [
+          "a building considered only as a physical house",
+          "a webpage home screen"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "edc77355-c2a3-5bb0-afe2-5927dfb5af2b"
+        ],
+        "en": [
+          "5bbc42f3-e5a9-592c-b062-053a42d25eab"
+        ],
+        "es": [
+          "70d8e1af-6e8f-5e89-b62e-adec9af88469"
+        ],
+        "fa": [
+          "2c92421d-32fe-5f04-8606-9b69d13e4676"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "edc77355-c2a3-5bb0-afe2-5927dfb5af2b",
+            "lexeme_id": "d0c5d1d3-02a3-5f68-a632-2811c4fdedbf",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "5bbc42f3-e5a9-592c-b062-053a42d25eab",
+            "lexeme_id": "a10c5e18-a952-59c8-9cae-3e2556244e2a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "70d8e1af-6e8f-5e89-b62e-adec9af88469",
+            "lexeme_id": "5815655c-1d04-512f-bad6-a8a161eceb57",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "2c92421d-32fe-5f04-8606-9b69d13e4676",
+            "lexeme_id": "cfbf0fc6-03b4-5143-bfdd-1fd2a2c9180b",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_ba56c227-c560-5a63-866d-56ead26f57dd",
+      "concept_key": "chair-seat-furniture",
+      "domain": "objects",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a seat for one person, typically with a back",
+        "must_preserve": [
+          "the referent is seating furniture for one person"
+        ],
+        "must_not_imply": [
+          "the leader of a meeting or committee",
+          "an academic professorship"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "7bc08127-c485-537e-bddb-ffc6c1a94984"
+        ],
+        "en": [
+          "de73211f-8574-5e02-8d57-98dd6cefeee6"
+        ],
+        "es": [
+          "4c5863f7-a952-5197-9bd0-0a5708232d1c"
+        ],
+        "fa": [
+          "32903d5f-80e4-5061-ac18-082a06050f81"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "7bc08127-c485-537e-bddb-ffc6c1a94984",
+            "lexeme_id": "f5ddbdc7-1a76-583f-ad73-2279be12a32a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "de73211f-8574-5e02-8d57-98dd6cefeee6",
+            "lexeme_id": "3824dd9f-4f3a-55c2-ba35-5908e90287a2",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "4c5863f7-a952-5197-9bd0-0a5708232d1c",
+            "lexeme_id": "9ea7d6b9-9c91-52fb-bca7-6e8e933671b6",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "32903d5f-80e4-5061-ac18-082a06050f81",
+            "lexeme_id": "be5b20f5-e90e-507c-8e75-8e13ec636dec",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_bf0e034e-0025-5ffc-8fec-97364c0d3c47",
+      "concept_key": "ball-play-object",
+      "domain": "objects",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a round object used for play or games",
+        "must_preserve": [
+          "the referent is a round play or game object"
+        ],
+        "must_not_imply": [
+          "a formal dance",
+          "a projectile or bullet unless context explicitly indicates it"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "15df043b-f64b-5554-89c4-801a87f975fd"
+        ],
+        "en": [
+          "f9bcaa20-3a1d-591a-9add-d5793d73e12d"
+        ],
+        "es": [
+          "f8cf31fe-2a41-5146-b93e-6561994cfff7"
+        ],
+        "fa": [
+          "cc06723c-25de-45d6-a9c7-c28d947248b1"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "15df043b-f64b-5554-89c4-801a87f975fd",
+            "lexeme_id": "d92b2944-0dab-5eee-83bf-e80b00de5503",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "f9bcaa20-3a1d-591a-9add-d5793d73e12d",
+            "lexeme_id": "a2400bf8-3258-5b47-a433-d983e7675b48",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "f8cf31fe-2a41-5146-b93e-6561994cfff7",
+            "lexeme_id": "0daa432d-6c97-52e9-8867-596b07d4373b",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "cc06723c-25de-45d6-a9c7-c28d947248b1",
+            "lexeme_id": "28e0cb1e-8ec5-4dc7-af7a-6daf522a11d6",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_c08d84fb-331c-52ee-83a1-8f317bc5abd8",
+      "concept_key": "friend-social-relationship",
+      "domain": "social",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a person with whom someone has a relationship of mutual affection or companionship",
+        "must_preserve": [
+          "the referent is a social friend"
+        ],
+        "must_not_imply": [
+          "a romantic partner specifically",
+          "an acquaintance with no friendship implication"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "b9157e06-f4a8-502c-8256-69af9014b1eb"
+        ],
+        "en": [
+          "049ab447-a5cc-5208-9b66-edfbac2c67a5"
+        ],
+        "es": [
+          "566135cd-2d94-5c1a-8e86-d5f6382d53e3"
+        ],
+        "fa": [
+          "082a8776-0f84-53ad-8c5b-97e013c4d299"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "b9157e06-f4a8-502c-8256-69af9014b1eb",
+            "lexeme_id": "31af40ed-cf2f-59af-bffb-1b8e4f6ea390",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "049ab447-a5cc-5208-9b66-edfbac2c67a5",
+            "lexeme_id": "f93ad340-164d-5890-8f88-f109393b6a5a",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "566135cd-2d94-5c1a-8e86-d5f6382d53e3",
+            "lexeme_id": "a7e67d45-6ff8-55f2-9ceb-9204ba34f968",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "082a8776-0f84-53ad-8c5b-97e013c4d299",
+            "lexeme_id": "477ed505-bb08-515e-a470-c92485d49f15",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_d214e4c9-81a8-533d-9ea2-491ad99f1938",
+      "concept_key": "princess-female-royal",
+      "domain": "society",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a female royal person conventionally called a princess",
+        "must_preserve": [
+          "the referent is a female member of a royal family or a woman holding the title princess"
+        ],
+        "must_not_imply": [
+          "a queen specifically",
+          "a generic young woman"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "50d3c241-2ce6-52e3-a26a-5f6c0a03bf38"
+        ],
+        "en": [
+          "414e8d38-76ba-57f1-89bc-df17d76afff3"
+        ],
+        "es": [
+          "12037956-18cc-58d9-b9e5-0d3e416bc214"
+        ],
+        "fa": [
+          "5c6ab2ce-87ce-416e-b001-0c125b9eee90"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "50d3c241-2ce6-52e3-a26a-5f6c0a03bf38",
+            "lexeme_id": "609e8d2b-d9c3-58f3-800a-8a859f430088",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "414e8d38-76ba-57f1-89bc-df17d76afff3",
+            "lexeme_id": "3ef53ca4-9132-56da-8766-7a5ed6ade8cf",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "12037956-18cc-58d9-b9e5-0d3e416bc214",
+            "lexeme_id": "58a06b5e-ea6b-5da0-b753-b20a73bde14e",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "5c6ab2ce-87ce-416e-b001-0c125b9eee90",
+            "lexeme_id": "0031fe58-7836-4f36-b75c-eadf59021b10",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_e2c7c639-06e7-58fb-be62-2a1dd02d08e2",
+      "concept_key": "morning-day-period",
+      "domain": "time",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "the early part of the day, typically from waking or sunrise until around midday",
+        "must_preserve": [
+          "the referent is the morning period of a day"
+        ],
+        "must_not_imply": [
+          "the entire day",
+          "evening or night"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "426840a5-94de-5069-aaf6-84d2bc2184c6"
+        ],
+        "en": [
+          "18c117da-1ad1-5e09-b09a-9716eb899e26"
+        ],
+        "es": [
+          "97dd0ad8-a00b-5779-95c8-384035cdd1d6"
+        ],
+        "fa": [
+          "68b47d6f-44b4-5ae1-9d29-b592ed95a854"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "426840a5-94de-5069-aaf6-84d2bc2184c6",
+            "lexeme_id": "1f6acec2-1206-588e-a5d3-96a9b554e8de",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "18c117da-1ad1-5e09-b09a-9716eb899e26",
+            "lexeme_id": "d03906e9-abac-541e-8d9d-fc1ff247c683",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "97dd0ad8-a00b-5779-95c8-384035cdd1d6",
+            "lexeme_id": "6563afc6-6982-5a78-af99-0aff6e819bf7",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "68b47d6f-44b4-5ae1-9d29-b592ed95a854",
+            "lexeme_id": "424128ac-1877-58a5-a53e-97b57ef8a372",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_e423a44b-26c9-5a6c-a415-c45f8f964088",
+      "concept_key": "heart-body-organ",
+      "domain": "body",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "the heart as the organ associated with pumping blood, including ordinary figurative emotional reference to one's heart",
+        "must_preserve": [
+          "the lexical referent is the heart"
+        ],
+        "must_not_imply": [
+          "a geometric heart symbol unless context explicitly indicates it",
+          "the central part of an object unless context explicitly indicates it"
+        ]
+      },
+      "planning_difficulty_hint": "A1",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "1405ecc2-632c-5b80-8295-8de8d7563dba"
+        ],
+        "en": [
+          "fa6bcd6f-789c-54c4-992c-54f4c04f4149"
+        ],
+        "es": [
+          "77dfdb5b-fac5-5c0f-b5f7-c03b485401d2"
+        ],
+        "fa": [
+          "f0d49373-1d08-5a06-8065-ad28c15dcdc4"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "1405ecc2-632c-5b80-8295-8de8d7563dba",
+            "lexeme_id": "f32d02d4-34f9-57af-a9f7-2747bcebd657",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "fa6bcd6f-789c-54c4-992c-54f4c04f4149",
+            "lexeme_id": "93c481d3-55bb-51c9-ba8f-ab6a47adad1c",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "77dfdb5b-fac5-5c0f-b5f7-c03b485401d2",
+            "lexeme_id": "beae59b1-8eaa-5419-8f25-a952844f2c59",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "f0d49373-1d08-5a06-8065-ad28c15dcdc4",
+            "lexeme_id": "e7d9b90a-8811-57d0-8a8c-abd5f66f2258",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
+          }
+        ]
+      }
+    },
+    {
+      "concept_id": "cpt_f955352f-f84c-5cea-895e-154115409446",
+      "concept_key": "witch-magic-practitioner",
+      "domain": "people",
+      "translation_role": "exact_pivot",
+      "semantic_contract": {
+        "definition_en": "a person described in a story as using witchcraft or magic",
+        "must_preserve": [
+          "the referent is a person characterized as a witch or magical practitioner"
+        ],
+        "must_not_imply": [
+          "a stage magician without witchcraft",
+          "a generic woman"
+        ]
+      },
+      "planning_difficulty_hint": "A2",
+      "senses_by_language": {},
+      "candidate_senses_by_language": {
+        "el": [
+          "73689811-635c-5d3d-abfe-d6141afa79e4"
+        ],
+        "en": [
+          "c49654f6-7043-5e52-8021-07708b0758e0"
+        ],
+        "es": [
+          "e49034cb-180c-5b16-abb0-0634e832798f"
+        ],
+        "fa": [
+          "f7f9979e-c4ca-58a7-b430-8668052711d3"
+        ]
+      },
+      "sense_links_by_language": {
+        "el": [
+          {
+            "sense_id": "73689811-635c-5d3d-abfe-d6141afa79e4",
+            "lexeme_id": "24756663-51b4-534f-a870-7b539b160671",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/el/lexicon.json"
+          }
+        ],
+        "en": [
+          {
+            "sense_id": "c49654f6-7043-5e52-8021-07708b0758e0",
+            "lexeme_id": "54b22349-3bcd-54b9-80f2-af2f79deb018",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/en/lexicon.json"
+          }
+        ],
+        "es": [
+          {
+            "sense_id": "e49034cb-180c-5b16-abb0-0634e832798f",
+            "lexeme_id": "bd32ba2e-c7fb-5ea0-bfdd-c490c291d907",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/es/lexicon.json"
+          }
+        ],
+        "fa": [
+          {
+            "sense_id": "f7f9979e-c4ca-58a7-b430-8668052711d3",
+            "lexeme_id": "f27592fa-d493-5a67-9ff0-327a62145147",
+            "relation": "primary",
+            "review_state": "candidate",
+            "semantic_pivot_ready": false,
+            "usage_profile": null,
+            "usage_profile_ready": false,
+            "legacy_register_label": null,
+            "source_path": "languages/fa/lexicon.json"
           }
         ]
       }

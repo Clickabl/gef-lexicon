@@ -7,14 +7,12 @@
   "expected_tier_counts": {
     "1": 6,
     "2": 15,
-    "3": 30,
-    "4": 53
+    "3": 83
   },
   "tier_shards": {
     "1": "tier1.json",
     "2": "tier2.json",
-    "3": "tier3.json",
-    "4": "tier4.json"
+    "3": ["tier3.json", "tier3-part2.json"]
   },
   "record_contract": {
     "forms": "Representative words, case markers, particles, affixes, or constructions used in this lesson's semantic territory. This is not a promise of exhaustive grammar coverage.",

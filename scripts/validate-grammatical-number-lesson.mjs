@@ -82,22 +82,21 @@ function main() {
 
   const comparisonTags = unique(allComparisonEntries.map((entry) => entry.language_tag), 'all comparison records');
   if (comparisonTags.size !== manifest.expected_total) fail(`Expected ${manifest.expected_total} comparison languages, found ${comparisonTags.size}`);
-  if (manifest.expected_total !== 104) fail(`Pinned grammatical-number comparison total must be 104, found ${manifest.expected_total}`);
 
   const full = capability.support_levels?.full?.language_tags;
   const comparisonOnly = capability.support_levels?.comparison_only?.language_tags;
   if (!Array.isArray(full) || !Array.isArray(comparisonOnly)) fail('Capability manifest must explicitly list full and comparison_only language tags');
   const fullSet = unique(full, 'full target support');
   const comparisonOnlySet = unique(comparisonOnly, 'comparison-only source support');
-  if (fullSet.size !== 21) fail(`Expected 21 Tier 1+2 target languages, found ${fullSet.size}`);
-  if (comparisonOnlySet.size !== 83) fail(`Expected 83 Tier 3 comparison-only languages, found ${comparisonOnlySet.size}`);
   for (const tag of fullSet) if (comparisonOnlySet.has(tag)) fail(`${tag}: cannot be both full and comparison_only`);
-  if (fullSet.size + comparisonOnlySet.size !== 104) fail('Full and comparison-only sets must cover all 104 learn-from languages');
   for (const tag of [...fullSet, ...comparisonOnlySet]) if (!comparisonTags.has(tag)) fail(`${tag}: capability language is missing its native comparison record`);
+  if (!sameMembers([...fullSet, ...comparisonOnlySet], [...comparisonTags])) {
+    fail('Full and comparison-only support must exactly cover comparison-record languages');
+  }
 
   const grammarLanguages = grammar.languages ?? [];
   const grammarTags = unique(grammarLanguages.map((language) => language.language_tag), 'grammar languages');
-  if (grammarTags.size !== 21 || !sameMembers(full, grammarTags)) fail('Grammar set must contain exactly the 21 full target languages');
+  if (grammarTags.size !== fullSet.size || !sameMembers(full, grammarTags)) fail('Grammar set must contain exactly the full target languages');
   for (const language of grammarLanguages) {
     if (language.lesson_ready !== true) fail(`${language.language_tag}: full target grammar must be lesson_ready`);
     if (!Array.isArray(language.forms) || language.forms.length === 0) fail(`${language.language_tag}: full target grammar needs at least one form`);
@@ -122,7 +121,7 @@ function main() {
     : DEFAULT_REGISTRY;
   if (existsSync(registryPath)) {
     const registry = readJson(registryPath);
-    if (registry.schemaVersion !== 4) fail(`Expected Expo language registry schemaVersion 4, found ${registry.schemaVersion}`);
+    if (!Number.isInteger(registry.schemaVersion) || registry.schemaVersion < 1) fail('Expo language registry must declare a positive integer schemaVersion');
     const tier1 = registry.lessonTiers?.tier1_full;
     const tier2 = registry.lessonTiers?.tier2_selective;
     const tier3 = registry.lessonTiers?.tier3_read_games;
@@ -140,7 +139,7 @@ function main() {
     return;
   }
 
-  console.log(`OK — grammatical number: ${comparisonTags.size} source comparisons, ${full.length} full grammar targets, ${comparisonOnly.length} Tier 3 source-only languages. Expo registry not present; pinned 6/15/83 checks used.`);
+  console.log(`OK — grammatical number: ${comparisonTags.size} source comparisons, ${full.length} full grammar targets, ${comparisonOnly.length} Tier 3 source-only languages. Expo registry not present; shard-manifest counts used.`);
 }
 
 try {

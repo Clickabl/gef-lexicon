@@ -7,11 +7,10 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const BLURB_DIR = join(ROOT, 'lesson-families', 'multiple-words-for-for', 'support-blurbs');
 const DEFAULT_REGISTRY = resolve(ROOT, '..', 'gef-expo', 'registry', 'language-support.json');
 
-const TIER_KEYS = {
+const REGISTRY_TIER_FIELDS = {
   1: 'tier1_full',
-  2: 'tier2_high',
-  3: 'tier3_opportunistic',
-  4: 'tier4_learn_from',
+  2: 'tier2_selective',
+  3: 'tier3_read_games',
 };
 
 function readJson(path) {
@@ -26,6 +25,15 @@ function sameMembers(expected, actual) {
   const a = [...expected].sort((x, y) => x.localeCompare(y));
   const b = [...actual].sort((x, y) => x.localeCompare(y));
   return a.length === b.length && a.every((value, index) => value === b[index]);
+}
+
+function loadShardNames(value, tier) {
+  const names = Array.isArray(value) ? value : [value];
+  if (!names.length || names.some((name) => typeof name !== 'string' || !name.trim())) {
+    fail(`Manifest tier_shards.${tier} must name one or more files`);
+  }
+  if (new Set(names).size !== names.length) fail(`Manifest tier_shards.${tier} repeats a shard`);
+  return names;
 }
 
 function main() {
@@ -45,30 +53,33 @@ function main() {
   const tierActual = new Map();
   let total = 0;
 
-  for (const tier of [1, 2, 3, 4]) {
-    const shardName = manifest.tier_shards?.[String(tier)];
-    if (!shardName) fail(`Manifest is missing tier_shards.${tier}`);
-    const shardPath = join(BLURB_DIR, shardName);
-    if (!existsSync(shardPath)) fail(`Missing Tier ${tier} blurb shard: ${shardPath}`);
-    const shard = readJson(shardPath);
+  for (const tier of [1, 2, 3]) {
+    const shardNames = loadShardNames(manifest.tier_shards?.[String(tier)], tier);
+    const actual = [];
+    for (const shardName of shardNames) {
+      const shardPath = join(BLURB_DIR, shardName);
+      if (!existsSync(shardPath)) fail(`Missing Tier ${tier} blurb shard: ${shardPath}`);
+      const shard = readJson(shardPath);
 
-    if (shard.tier !== tier) fail(`${shardName}: tier ${shard.tier} does not match Tier ${tier}`);
-    if (shard.coverage_program !== 'learnFromLanguages') fail(`${shardName}: wrong coverage_program`);
-    if (!Array.isArray(shard.entries)) fail(`${shardName}: entries must be an array`);
+      if (shard.tier !== tier) fail(`${shardName}: tier ${shard.tier} does not match Tier ${tier}`);
+      if (shard.coverage_program !== 'learnFromLanguages') fail(`${shardName}: wrong coverage_program`);
+      if (!Array.isArray(shard.entries)) fail(`${shardName}: entries must be an array`);
 
-    const actual = shard.entries.map((entry) => entry.language_tag);
-    const expectedCount = manifest.expected_tier_counts?.[String(tier)];
-    if (actual.length !== expectedCount) fail(`${shardName}: expected ${expectedCount} entries, found ${actual.length}`);
-    if (new Set(actual).size !== actual.length) fail(`${shardName}: duplicate language tags within shard`);
-
-    for (const entry of shard.entries) {
-      if (globalSeen.has(entry.language_tag)) fail(`Duplicate blurb language ${entry.language_tag}`);
-      globalSeen.add(entry.language_tag);
-      if (typeof entry.summary !== 'string' || !entry.summary.trim()) fail(`${entry.language_tag}: empty summary`);
-      if (typeof entry.tooltip !== 'string' || !entry.tooltip.trim()) fail(`${entry.language_tag}: empty tooltip`);
+      const shardTags = shard.entries.map((entry) => entry.language_tag);
+      if (new Set(shardTags).size !== shardTags.length) fail(`${shardName}: duplicate language tags within shard`);
+      for (const entry of shard.entries) {
+        if (globalSeen.has(entry.language_tag)) fail(`Duplicate blurb language ${entry.language_tag}`);
+        globalSeen.add(entry.language_tag);
+        if (typeof entry.summary !== 'string' || !entry.summary.trim()) fail(`${entry.language_tag}: empty summary`);
+        if (typeof entry.tooltip !== 'string' || !entry.tooltip.trim()) fail(`${entry.language_tag}: empty tooltip`);
+      }
+      actual.push(...shardTags);
+      total += shard.entries.length;
     }
+    if (new Set(actual).size !== actual.length) fail(`Tier ${tier} blurb shards contain duplicate language tags`);
+    const expectedCount = manifest.expected_tier_counts?.[String(tier)];
+    if (actual.length !== expectedCount) fail(`Tier ${tier} expected ${expectedCount} entries, found ${actual.length}`);
     tierActual.set(tier, actual);
-    total += shard.entries.length;
   }
 
   if (total !== manifest.expected_total) fail(`Blurb total ${total} does not match manifest expected_total ${manifest.expected_total}`);
@@ -79,15 +90,16 @@ function main() {
 
   if (existsSync(registryPath)) {
     const registry = readJson(registryPath);
-    for (const tier of [1, 2, 3, 4]) {
-      const key = TIER_KEYS[tier];
-      const expected = registry.lessonTiers?.[key];
-      if (!Array.isArray(expected)) fail(`Registry is missing lessonTiers.${key}`);
+    for (const tier of [1, 2, 3]) {
+      const field = REGISTRY_TIER_FIELDS[tier];
+      const expected = registry.lessonTiers?.[field];
+      if (!Array.isArray(expected)) fail(`Registry is missing lessonTiers.${field}`);
+      if (new Set(expected).size !== expected.length) fail(`Registry lessonTiers.${field} contains duplicate language tags`);
       if (!sameMembers(expected, tierActual.get(tier))) {
         const actual = tierActual.get(tier);
         const missing = expected.filter((tag) => !actual.includes(tag));
         const extra = actual.filter((tag) => !expected.includes(tag));
-        fail(`tier${tier}.json: registry coverage mismatch; missing=[${missing.join(', ')}], extra=[${extra.join(', ')}]`);
+        fail(`tier${tier} shards: registry coverage mismatch; missing=[${missing.join(', ')}], extra=[${extra.join(', ')}]`);
       }
     }
     const program = registry.programs?.learnFromLanguages;
@@ -95,11 +107,11 @@ function main() {
     if (!sameMembers(program, globalSeen)) fail('Combined blurb shards do not exactly match programs.learnFromLanguages');
     if (total !== program.length) fail(`Blurb total ${total} does not match learn-from total ${program.length}`);
     if (manifest.expected_total !== program.length) fail(`Manifest expected_total ${manifest.expected_total} is stale; registry has ${program.length}`);
-    console.log(`OK — ${total} neutral lesson blurbs exactly cover the current Tier 1–4 learn-from registry.`);
+    console.log(`OK — ${total} neutral lesson blurbs exactly cover the current Tier 1–3 learn-from registry.`);
     return;
   }
 
-  console.log(`OK — ${total} neutral lesson blurbs match the pinned 6/15/30/53 manifest. Expo registry not present; exact cross-repo comparison skipped.`);
+  console.log(`OK — ${total} neutral lesson blurbs match the declared shard counts. Expo registry not present; exact cross-repo comparison skipped.`);
 }
 
 try {

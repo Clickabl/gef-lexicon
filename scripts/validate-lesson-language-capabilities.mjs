@@ -40,50 +40,56 @@ function loadComparisonCatalog(capability) {
 
   const entries = [];
   const tierEntries = new Map();
-  for (const tier of ['1', '2', '3', '4']) {
-    const shardName = manifest.tier_shards?.[tier];
-    if (typeof shardName !== 'string' || shardName.length === 0) {
+  for (const tier of ['1', '2', '3']) {
+    const shardNamesValue = manifest.tier_shards?.[tier];
+    const shardNames = Array.isArray(shardNamesValue) ? shardNamesValue : [shardNamesValue];
+    if (!shardNames.length || shardNames.some((name) => typeof name !== 'string' || !name.trim())) {
       fail(`Comparison-record manifest is missing tier ${tier} shard`);
     }
-    const shardPath = join(dirname(manifestPath), shardName);
-    if (!existsSync(shardPath)) fail(`Missing comparison-record tier ${tier} shard: ${shardPath}`);
-    const shard = readJson(shardPath);
-    if (String(shard.tier) !== tier) fail(`${shardPath}: tier does not match manifest slot ${tier}`);
-    if (shard.lesson_family_id !== capability.lesson_family_id) {
-      fail(`${shardPath}: lesson_family_id mismatch`);
-    }
-    if (!Array.isArray(shard.entries)) fail(`${shardPath}: entries must be an array`);
-    const expectedCount = manifest.expected_tier_counts?.[tier];
-    if (Number.isInteger(expectedCount) && shard.entries.length !== expectedCount) {
-      fail(`${shardPath}: expected ${expectedCount} records, found ${shard.entries.length}`);
-    }
+    if (new Set(shardNames).size !== shardNames.length) fail(`Comparison-record manifest repeats a tier ${tier} shard`);
+    const tierRows = [];
+    for (const shardName of shardNames) {
+      const shardPath = join(dirname(manifestPath), shardName);
+      if (!existsSync(shardPath)) fail(`Missing comparison-record tier ${tier} shard: ${shardPath}`);
+      const shard = readJson(shardPath);
+      if (String(shard.tier) !== tier) fail(`${shardPath}: tier does not match manifest slot ${tier}`);
+      if (shard.lesson_family_id !== capability.lesson_family_id) {
+        fail(`${shardPath}: lesson_family_id mismatch`);
+      }
+      if (!Array.isArray(shard.entries)) fail(`${shardPath}: entries must be an array`);
 
-    for (const [index, entry] of shard.entries.entries()) {
-      const prefix = `${shardPath}: entries[${index}]`;
-      if (typeof entry.language_tag !== 'string' || entry.language_tag.length === 0) {
-        fail(`${prefix}: language_tag is required`);
-      }
-      if (!Array.isArray(entry.forms) || entry.forms.length === 0) {
-        fail(`${prefix} (${entry.language_tag}): forms must contain at least one representative form/construction`);
-      }
-      for (const [formIndex, form] of entry.forms.entries()) {
-        if (!form || typeof form !== 'object') fail(`${prefix}: forms[${formIndex}] must be an object`);
-        if (typeof form.form_id !== 'string' || form.form_id.length === 0) {
-          fail(`${prefix}: forms[${formIndex}].form_id is required`);
+      for (const [index, entry] of shard.entries.entries()) {
+        const prefix = `${shardPath}: entries[${index}]`;
+        if (typeof entry.language_tag !== 'string' || entry.language_tag.length === 0) {
+          fail(`${prefix}: language_tag is required`);
         }
-        if (typeof form.display !== 'string' || form.display.length === 0) {
-          fail(`${prefix}: forms[${formIndex}].display is required`);
+        if (!Array.isArray(entry.forms) || entry.forms.length === 0) {
+          fail(`${prefix} (${entry.language_tag}): forms must contain at least one representative form/construction`);
         }
+        for (const [formIndex, form] of entry.forms.entries()) {
+          if (!form || typeof form !== 'object') fail(`${prefix}: forms[${formIndex}] must be an object`);
+          if (typeof form.form_id !== 'string' || form.form_id.length === 0) {
+            fail(`${prefix}: forms[${formIndex}].form_id is required`);
+          }
+          if (typeof form.display !== 'string' || form.display.length === 0) {
+            fail(`${prefix}: forms[${formIndex}].display is required`);
+          }
+        }
+        if (typeof entry.comparison_blurb !== 'string' || entry.comparison_blurb.trim().length === 0) {
+          fail(`${prefix} (${entry.language_tag}): comparison_blurb is required`);
+        }
+        if (!['generated', 'research_required', 'audit_passed', 'community_verified', 'professional_verified'].includes(entry.review_state ?? shard.review_state)) {
+          fail(`${prefix} (${entry.language_tag}): invalid review_state`);
+        }
+        entries.push(entry);
+        tierRows.push(entry);
       }
-      if (typeof entry.comparison_blurb !== 'string' || entry.comparison_blurb.trim().length === 0) {
-        fail(`${prefix} (${entry.language_tag}): comparison_blurb is required`);
-      }
-      if (!['generated', 'research_required', 'audit_passed', 'community_verified', 'professional_verified'].includes(entry.review_state ?? shard.review_state)) {
-        fail(`${prefix} (${entry.language_tag}): invalid review_state`);
-      }
-      entries.push(entry);
     }
-    tierEntries.set(tier, shard.entries);
+    const expectedCount = manifest.expected_tier_counts?.[tier];
+    if (Number.isInteger(expectedCount) && tierRows.length !== expectedCount) {
+      fail(`Comparison-record tier ${tier}: expected ${expectedCount} records, found ${tierRows.length}`);
+    }
+    tierEntries.set(tier, tierRows);
   }
 
   const tags = unique(entries.map((entry) => entry.language_tag), 'comparison records');
@@ -166,14 +172,18 @@ function main() {
       fail('Comparison-record catalog must contain every canonical learn-from language exactly once');
     }
 
-    const tierMap = {
-      '1': registry.lessonTiers?.tier1_full ?? [],
-      '2': registry.lessonTiers?.tier2_high ?? [],
-      '3': registry.lessonTiers?.tier3_opportunistic ?? [],
-      '4': registry.lessonTiers?.tier4_learn_from ?? [],
+    const tierFields = {
+      '1': 'tier1_full',
+      '2': 'tier2_selective',
+      '3': 'tier3_read_games',
     };
-    for (const tier of ['1', '2', '3', '4']) {
-      const expected = tierMap[tier];
+    const tierMap = {};
+    for (const tier of ['1', '2', '3']) {
+      const field = tierFields[tier];
+      const expected = registry.lessonTiers?.[field];
+      if (!Array.isArray(expected)) fail(`Registry is missing lessonTiers.${field}`);
+      unique(expected, `registry lessonTiers.${field}`);
+      tierMap[tier] = expected;
       const actual = comparisonCatalog.tierEntries.get(tier) ?? [];
       const actualSet = new Set(actual.map((entry) => entry.language_tag));
       if (actualSet.size !== expected.length || expected.some((tag) => !actualSet.has(tag))) {

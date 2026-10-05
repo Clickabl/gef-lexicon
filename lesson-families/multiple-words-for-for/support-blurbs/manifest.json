@@ -21,10 +21,9 @@
   "tier_shards": {
     "1": "tier1.json",
     "2": "tier2.json",
-    "3": "tier3.json",
-    "4": "tier4.json"
+    "3": ["tier3.json", "tier3-part2.json"]
   },
-  "expected_tier_counts": {"1": 6, "2": 15, "3": 30, "4": 53},
+  "expected_tier_counts": {"1": 6, "2": 15, "3": 83},
   "expected_total": 104,
   "review_state": "generated"
 }

@@ -78,6 +78,16 @@ Canonical authoring stays with each language-specific sense in `languages/{lang}
 
 The global reverse index under `concepts/compiled-concept-index.json` is a generated view, not hand-authored truth.
 
+`node scripts/compile-concept-index.mjs` seeds the generated index from every
+entry in `concepts/graph.json`, then projects active source links from every
+`languages/*/lexicon*.json`. A missing graph concept in the generated file is
+stale output, not a semantic exclusion. Candidate links must appear in
+`candidate_senses_by_language` and `sense_links_by_language`, while remaining
+absent from the approved `senses_by_language` view until the existing review
+gates pass. `node scripts/test-sense-links.mjs` guards graph/index completeness
+and the current Greek τοίχος / English wall candidate links without approving
+either one.
+
 Its safety contract is explicit:
 
 - `senses_by_language`: senses whose lexeme, sense, and primary exact-pivot edge are all approved. This means **semantic-pivot-ready**, not final translation-ready.

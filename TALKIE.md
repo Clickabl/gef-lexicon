@@ -248,3 +248,46 @@ Owner asks whether names should be reusable lookup data or a database for one bo
 `docs/NAME_ENTITY_ARCHITECTURE.md` records normalized language rows, separate name/explanation languages, durable child IDs, typed sourced relationships, pronunciation ownership, spoiler context and an additive migration preserving current IDs and book text. Existing normalized compilation is extended; operational serving uses the current server/database environment, with versioned lookup/offline indexes. MCP is an authorized interface, not storage or backup. Missing legacy prose language and missing published family discovery remain explicit. This is approved design direction, not completed v2 schema/migration or universal language coverage. Implementation/source-audit rows live in the canonical Expo queues.
 
 Local `node scripts/validate-lexicon.mjs` and diff check pass. README and agent ownership now name all four current Gef repositories and the Actions budget lock. No content records, approvals or book text changed.
+
+## 2026-10-05 — Codex / rebuild complete concept reverse index
+
+The checked-in `concepts/compiled-concept-index.json` had only 9 entries even
+though the canonical concept graph had 33. The compiler seeds every graph row
+and projects active links from canonical language lexicons, so omission was
+stale generated output rather than a review-policy exclusion. Rebuilt with
+`npm run compile:concepts` from the existing source IDs. The index now has 33
+concepts. The existing Greek τοίχος and English wall edges appear in
+`candidate_senses_by_language` and `sense_links_by_language`, with no approval
+promotion and no entries in the approved pivot view. Added regression coverage
+for complete graph/index membership and these exact candidate links; documented
+the generated-index completeness contract in `docs/SENSE_LINKING_ARCHITECTURE.md`.
+
+Push to `main` is the documented CDN publication mechanism for the existing
+allowlisted `concepts/` path; no alternate deployment or authorization bypass
+was used. Root's standard Node fetch saw a 200 response for the live index but
+still lacked the concept before publication. GitHub Actions were not run.
+
+## 2026-10-05 — Codex / validate support blurbs against current lesson tiers
+
+The Expo language registry has three lesson tiers (`tier1_full`,
+`tier2_selective`, `tier3_read_games`). The older four-shard organization was
+still being interpreted as four product tiers, including a removed
+`tier2_high` key. The support-blurb manifest now maps the two existing Tier 3
+storage shards together to current `tier3_read_games`; localized summary and
+tooltip strings are preserved. The validator compares each current cohort to
+the exact registry set, checks shard and total manifest counts against actual
+entries, and rejects missing, extra, duplicate, or repeated shard identities.
+Focused mutation tests cover missing/extra/duplicate registry members. The
+lesson architecture now explains that storage shards do not create product
+tiers.
+
+The repo-wide validation gate then exposed the same stale tier boundary in the
+comparison-record validator and a grammatical-number validator pinned to Expo
+registry schema version 4 plus frozen 21/83/104 counts. Both now derive tier
+membership from the current registry arrays; manifest counts are checked only
+against actual shard contents. The comparison-record Tier 3 partition is
+explicitly storage-only. Local full `npm run validate` now passes through the
+complete lesson and Lexi semantic pipeline. Focused synthetic registry tests
+cover missing, extra and duplicate cohort members; grammatical-number checks
+also prove the validator consumes the current registry fields without requiring
+one historical schema version number.

@@ -28,12 +28,49 @@ function findSense(document, senseId) {
 
 function main() {
   const compiled = readJson(join(ROOT, 'concepts', 'compiled-concept-index.json'));
+  const graph = readJson(join(ROOT, 'concepts', 'graph.json'));
   assert(compiled.schema_version === 5, 'compiled concept index must use schema_version 5');
   assert(
     typeof compiled.semantic_pivot_policy === 'string'
       && compiled.semantic_pivot_policy.includes('final translation requires contextual compatibility'),
     'compiled index must state that semantic pivot membership is not a complete translation guarantee',
   );
+
+  const compiledById = new Map((compiled.concepts ?? []).map((concept) => [concept.concept_id, concept]));
+  for (const sourceConcept of graph.concepts ?? []) {
+    assert(compiledById.has(sourceConcept.concept_id), `source concept ${sourceConcept.concept_id} is missing from compiled index`);
+  }
+  for (const compiledConcept of compiled.concepts ?? []) {
+    assert(
+      (graph.concepts ?? []).some((concept) => concept.concept_id === compiledConcept.concept_id),
+      `compiled concept ${compiledConcept.concept_id} has no canonical graph source`,
+    );
+  }
+
+  const wallConceptId = 'cpt_58e20f37-9055-5906-a892-efd4d5f1fe84';
+  const wallConcept = compiledById.get(wallConceptId);
+  assert(wallConcept, `wall concept ${wallConceptId} is missing from compiled index`);
+  for (const [languageTag, senseId, lexemeId] of [
+    ['el', '8e40e7e3-29f4-516f-b0f6-3948bfbe46f9', '32fa9a40-a602-5c07-98a4-7d1533fc9609'],
+    ['en', '49415359-acc5-57c6-aead-6f2ac7ba7b84', '3c6fb5d2-a644-53fe-b9d8-2cd992332463'],
+  ]) {
+    const sourceLexicon = readJson(join(ROOT, 'languages', languageTag, 'lexicon.json'));
+    const sourceSense = findSense(sourceLexicon, senseId);
+    assert(sourceSense?.lexeme.lexeme_id === lexemeId, `canonical ${languageTag} wall lexeme/sense identity changed`);
+    assert(
+      activeSenseConceptLinks(sourceSense.sense, sourceSense.lexeme.review_state)
+        .some((link) => link.concept_id === wallConceptId && link.relation === 'primary' && link.review_state === 'candidate'),
+      `${languageTag} wall source link must remain an active candidate primary edge`,
+    );
+    assert(
+      wallConcept.candidate_senses_by_language?.[languageTag]?.includes(senseId),
+      `wall concept must retain candidate ${languageTag} sense ${senseId}`,
+    );
+    assert(
+      !(wallConcept.senses_by_language?.[languageTag] ?? []).includes(senseId),
+      `candidate ${languageTag} wall sense ${senseId} must not enter approved semantic-pivot view`,
+    );
+  }
   assert(
     typeof compiled.usage_policy === 'string'
       && compiled.usage_policy.includes('register')
