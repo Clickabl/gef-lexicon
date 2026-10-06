@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/name-family-index.schema.json",
+  "title": "Public name-family discovery catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "purpose", "families", "review_state"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "purpose": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]},
+    "families": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["family_id", "path", "review_state"],
+        "properties": {
+          "family_id": {"type": "string", "pattern": "^NF\\.[A-Za-z0-9._-]+$", "maxLength": 200},
+          "path": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*\\.json$", "maxLength": 200},
+          "review_state": {"enum": ["candidate", "approved", "superseded", "rejected"]}
+        }
+      }
+    }
+  }
+}

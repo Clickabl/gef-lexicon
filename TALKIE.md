@@ -315,3 +315,34 @@ eight-path receipt SHA2563fcccb73d0788a647567b9006fe389bc25133f63d04840761b2e1c6
 There are0 canonical phrase catalogue files/rows. Runtime publication, genuine
 source research and app consumer/explanation remain required; no coverage or
 Lexi approval is inferred from the empty package.
+
+
+## 2026-10-06 — coordinator name-family discovery source release
+
+The sole catalogue relocates from excluded registry/name-family-index.json to
+published lexi/name-family-index.json, with refs reconciled to the four actual
+families. Catalogue state is descriptive; owning family/form authority remains
+unchanged candidate data. A closed schema and precise join in the existing
+validator reject drift; no compiler or second projection is introduced.
+
+NAME_ENTITY_ARCHITECTURE records the exact seven-path source/docs extension.
+Coordinator owns Git/publication and Expo metadata. Live receiver byte readback
+is a separate required check; no automatic-personalization approval is claimed.
+
+
+## 2026-10-06 — coordinator name discovery and interjection verification
+
+The public name-family catalogue and strict owning-family join pass all existing
+local canonical validation, including eight focused catalogue regressions. All
+637 frozen code/data/schema/package inputs remain unchanged during the final
+run; all32 captured canonical name/source bodies retain their original hashes.
+The importer now recognizes Wiktionary intj as INTJ, with a deterministic actual
+CLI fixture preserving candidate state, language_pos and both senses. No source
+facts, forms, bibliography or review approvals were regenerated.
+
+Final receipt: /tmp/gef-name-lexicon-final-verification-receipt-20261006.json.
+Publication of lexi/name-family-index.json uses the existing allowed namespace
+and ordinary main receiver; coordinator will verify public bytes after push.
+Personal autocomplete still requires approved owning forms; catalogue metadata
+does not supply that approval. Greeting source admission and multilingual QA
+remain separate unfinished research.

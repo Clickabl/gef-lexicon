@@ -1,6 +1,7 @@
 # Wiktionary-first Lexi sourcing
 
 Owner decision: 2026-09-12. Wiktionary is Lexi's primary lexical source.
+
 Definitions and lexical data may be copied directly. This replaces the former
 first-party-only/no-copy rule; paraphrasing every definition is not required.
 
@@ -80,3 +81,15 @@ node scripts/extract-work-wiktextract-subset.mjs \\
 ```
 
 Run the same command with `es` and the Spanish token table. Feed those bounded full-row subsets to `import-kaikki-candidates.mjs`; preserve all senses and source assertions. Occurrence resolution is a separate content-review step and must not select the first imported sense automatically.
+
+## Interjection import correction (2026-10-06)
+
+`TODO-LEXICON-IMPORT-INTERJECTION-POS-20261006` owns a bounded correction to
+`scripts/import-kaikki-candidates.mjs` and its existing CLI regression fixture
+`scripts/test-import-kaikki-candidates.mjs`: source POS `intj` maps to canonical
+UPOS `INTJ`, preserving the source POS, every usable sense and candidate state.
+The schema already admits INTJ. The test must run the actual importer on a
+representative interjection, not merely repeat the mapping implementation.
+No canonical data is regenerated or admitted through this correction. Source
+reference/bibliography joins and separately sourced example rights remain
+independent admission decisions; this fix does not resolve or approve them.

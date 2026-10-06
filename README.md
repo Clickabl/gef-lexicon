@@ -115,3 +115,15 @@ npm run compile:names
 ```
 
 `npm run validate` runs structural lexicon plus curriculum/lesson reference validation. Run validation and deterministic package checks locally; GitHub Actions are disabled by the owner's budget rule. The current production name compiler includes approved rows only. Ordinary sourced candidate lookup and an approved automatic-localization view are distinct contracts in the [V2 names direction](docs/NAME_ENTITY_ARCHITECTURE.md); that lookup rule does not approve a name relationship.
+
+The sole public name-family discovery catalogue is
+`lexi/name-family-index.json`, served under the existing Lexicon CDN prefix.
+Its refs match every canonical `name-families/{basename}` file and its exact
+review state. `registry/` remains internal. The catalogue's descriptive state
+does not approve a family or form; personal autocomplete and automatic name
+forms still require approved owning data. The current four families and their
+forms remain candidates, so relocation supplies no approved suggestions.
+The existing integrity validator checks schema and referential parity; run
+`node --test scripts/test-name-family-index.mjs` for focused drift controls.
+The SQLite compiler reads the original name/family sources directly and has
+no additional discovery projection. See [the publication contract](docs/NAME_ENTITY_ARCHITECTURE.md#14-public-name-family-discovery-catalogue).

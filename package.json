@@ -2,7 +2,7 @@
   "scripts": {
     "compile:research-reference": "node scripts/compile-research-reference.mjs",
     "test:research-reference": "node --test scripts/test-research-reference.mjs",
-    "validate": "node scripts/validate-lexicon.mjs && node scripts/validate-instructional-notes.mjs && node scripts/validate-phrase-uses.mjs && node scripts/validate-sense-links.mjs && node scripts/validate-usage-profiles.mjs && node scripts/validate-semantic-relations.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
+    "validate": "node scripts/validate-lexicon.mjs && node --test scripts/test-name-family-index.mjs && node scripts/validate-instructional-notes.mjs && node scripts/validate-phrase-uses.mjs && node scripts/validate-sense-links.mjs && node scripts/validate-usage-profiles.mjs && node scripts/validate-semantic-relations.mjs && node scripts/validate-curriculum.mjs && node scripts/validate-lessons.mjs && node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs && node scripts/validate-where-languages-come-from.mjs && node scripts/validate-international-language-levels.mjs && node scripts/validate-lesson-support-blurbs.mjs && node scripts/validate-lesson-language-capabilities.mjs && node scripts/validate-family-members.mjs && node scripts/validate-family-member-game-seeds.mjs && node scripts/validate-family-path.mjs && node scripts/validate-grammatical-number-lesson.mjs && node scripts/validate-grammatical-gender-lesson.mjs && node scripts/validate-calendar-year-lessons.mjs && node scripts/validate-lesson-semantic-index.mjs && node scripts/compile-lesson-ssot-registry.mjs",
     "validate:sense-links": "node scripts/validate-sense-links.mjs",
     "validate:usage-profiles": "node scripts/validate-usage-profiles.mjs",
     "validate:phrase-uses": "node scripts/validate-phrase-uses.mjs",
@@ -19,6 +19,7 @@
     "test:phrase-uses": "node scripts/test-phrase-use-packages.mjs",
     "test:book-slice-usage-roundtrip": "node scripts/test-book-slice-usage-profiles.mjs",
     "test:wiktionary-import": "node scripts/test-import-kaikki-candidates.mjs",
+    "test:name-family-index": "node --test scripts/test-name-family-index.mjs",
     "validate:lesson-system": "node scripts/validate-lesson-system.mjs && node scripts/validate-lesson-catalog-parity.mjs",
     "validate:lesson-zero": "node scripts/validate-where-languages-come-from.mjs",
     "validate:international-language-levels": "node scripts/validate-international-language-levels.mjs",

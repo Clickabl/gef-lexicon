@@ -321,3 +321,42 @@ Run `node --test scripts/test-research-reference.mjs` and `node scripts/validate
 before publishing changes to this compiler. The source schemas retain arrays of language-local
 forms and distinct equivalence roles and relation types; the sparse coverage projection does not
 collapse those form arrays into a single presumed translation.
+
+## 14. Public name-family discovery catalogue
+
+The sole authored discovery catalogue is `lexi/name-family-index.json`. The
+previous `registry/name-family-index.json` is relocated, not copied: `registry/`
+is an internal prefix excluded from CDN publication. The existing published
+`lexi/` and `name-families/` prefixes suffice; no allowlist expansion is needed.
+
+The schema-version1 catalogue retains its existing purpose and descriptive
+top-level review state. Its bounded refs contain only a stable family ID, safe
+JSON basename and the exact owning family's review state. That top-level state
+does not approve or override any family/form. Ref reconciliation enumerates the
+actual canonical family files deterministically; family/form/name bodies and
+identities stay untouched. There is no second public projection or new compiler.
+
+`schemas/name-family-index.schema.json` closes the shape. A pure validation seam
+in the existing `scripts/validate-lexicon.mjs` checks duplicate IDs/paths, missing,
+extra and unknown family files, unsafe paths, and exact family ID/review-state
+joins; `scripts/test-name-family-index.mjs` exercises that same seam and current
+source parity. The ordinary CLI still validates the entire repository. A direct
+execution guard permits focused import without running the whole CLI on import.
+
+The app's names-search and ordinary Lexi adapters use that exact public index
+URL and safe family basenames. Personal autocomplete/automatic forms retain
+approved-only filtering; ordinary dictionary candidates retain honest candidate
+authority and independent language-local fallback. Moving discovery metadata
+does not create approved suggestions, source coverage or name translations.
+
+The bounded source release changes only the old/new catalogue path, its new
+schema, existing validator, focused manifest test, repository README and this
+architecture note. Coordinator owns queue/file-map/TALKIE records, commits and
+publication checks. Actual deployed byte/review readback and native autocomplete
+remain separate acceptance checks; source fixtures cannot certify either.
+
+The relocated catalogue now references the existing Alexander, Henry, Johannes
+and Margaret files in filename order. All owning families and forms retain
+their candidate status. Focused validation uses the same schema/join seam as
+the full repository CLI; importing it does not execute that CLI. No source
+approval or deployed publication is established by this source repair.

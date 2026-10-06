@@ -52,6 +52,13 @@ const sourceRows = [
     word: 'hogar', lang: 'Spanish', lang_code: 'es', pos: 'noun', page_id: 303,
     senses: [{ glosses: ['a home or household'] }],
   },
+  {
+    word: 'hola', lang: 'Spanish', lang_code: 'es', pos: 'intj', page_id: 404,
+    senses: [
+      { glosses: ['hello, hi, hey'] },
+      { glosses: ['a greeting used when meeting someone'] },
+    ],
+  },
 ];
 
 try {
@@ -108,6 +115,14 @@ try {
   assert.equal(casa.etymology.text, 'Inherited from Latin casa.');
   assert.equal(casa.etymology.templates.length, 1);
   assert.equal(casa.translation_assertions[0].word, 'maison');
+
+  const hola = lexicon.lexemes.find((lexeme) => lexeme.lemma_nfc === 'hola');
+  assert.ok(hola);
+  assert.equal(hola.upos, 'INTJ', 'Wiktextract intj source POS maps to canonical INTJ');
+  assert.equal(hola.language_pos, 'intj', 'source POS spelling is preserved');
+  assert.equal(hola.senses.length, 2, 'every usable source sense survives import');
+  assert.ok(hola.senses.every((sense) => sense.review_state === 'candidate'));
+  assert.equal(hola.review_state, 'candidate');
 
   const homeSense = casa.senses.find((sense) => sense.glosses.en.length === 3);
   assert.ok(homeSense);

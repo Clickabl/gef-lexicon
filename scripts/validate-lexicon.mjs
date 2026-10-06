@@ -5,7 +5,7 @@
  * upgrades machine-generated data to human-approved truth.
  */
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 
@@ -42,6 +42,37 @@ function listDirs(path) {
 function listJson(path) {
   if (!existsSync(path)) return [];
   return readdirSync(path).filter((f) => f.endsWith('.json'));
+}
+
+const validateDiscoverySchema = new Ajv({ allErrors: true, strict: false })
+  .compile(readJson(join(REPO_ROOT, 'schemas', 'name-family-index.schema.json')));
+
+/** Discovery references join owning files; catalogue status grants no approval. */
+export function validateNameFamilyIndex(document, { familyDocuments = [] } = {}) {
+  const errors = [];
+  if (!validateDiscoverySchema(document)) {
+    return { errors: (validateDiscoverySchema.errors ?? []).map(issue =>
+      `catalogue schema ${issue.instancePath || '/'} ${issue.message}`) };
+  }
+  const byPath = new Map();
+  const sourceIds = new Set();
+  for (const source of familyDocuments) {
+    if (byPath.has(source.path)) errors.push(`duplicate owning family path ${source.path}`);
+    if (sourceIds.has(source.document.family_id)) errors.push(`duplicate owning family ID ${source.document.family_id}`);
+    byPath.set(source.path, source.document); sourceIds.add(source.document.family_id);
+  }
+  const ids = new Set(); const paths = new Set();
+  for (const ref of document.families) {
+    if (ids.has(ref.family_id)) errors.push(`duplicate catalogue family ID ${ref.family_id}`);
+    if (paths.has(ref.path)) errors.push(`duplicate catalogue family path ${ref.path}`);
+    ids.add(ref.family_id); paths.add(ref.path);
+    const owner = byPath.get(ref.path);
+    if (!owner) { errors.push(`unknown owning family file ${ref.path}`); continue; }
+    if (owner.family_id !== ref.family_id) errors.push(`family ID mismatch for ${ref.path}`);
+    if (owner.review_state !== ref.review_state) errors.push(`family review state mismatch for ${ref.path}`);
+  }
+  for (const path of byPath.keys()) if (!paths.has(path)) errors.push(`missing catalogue family ${path}`);
+  return { errors };
 }
 
 function main() {
@@ -126,9 +157,11 @@ function main() {
   }
 
   const familyRoot = join(REPO_ROOT, 'name-families');
+  const familyDocuments = [];
   for (const filename of listJson(familyRoot)) {
     const rel = `name-families/${filename}`;
     const data = readJson(join(familyRoot, filename));
+    familyDocuments.push({ path: filename, document: data });
     schemaCheck(validateNameFamilies, data, rel);
     totalNameFamilies += 1;
     register(data.family_id, 'name_family', rel);
@@ -168,6 +201,16 @@ function main() {
       }
     }
   }
+
+  const discoveryPath = join(REPO_ROOT, 'lexi', 'name-family-index.json');
+  if (!existsSync(discoveryPath)) fail('Missing lexi/name-family-index.json');
+  else {
+    totalFiles += 1;
+    for (const error of validateNameFamilyIndex(readJson(discoveryPath), { familyDocuments }).errors) {
+      fail(`lexi/name-family-index.json: ${error}`);
+    }
+  }
+  if (existsSync(join(REPO_ROOT, 'registry', 'name-family-index.json'))) fail('Remove obsolete registry/name-family-index.json; discovery has one public catalogue');
 
   const namesRoot = join(REPO_ROOT, 'names');
   for (const lang of listDirs(namesRoot)) {
@@ -337,4 +380,4 @@ function main() {
   console.log('\n✅ OK — structural/referential validation passed.');
 }
 
-main();
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

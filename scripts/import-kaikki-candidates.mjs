@@ -101,7 +101,7 @@ function posToUpos(pos) {
     noun: 'NOUN', verb: 'VERB', adj: 'ADJ', adjective: 'ADJ', adv: 'ADV', adverb: 'ADV',
     pron: 'PRON', pronoun: 'PRON', proper_noun: 'PROPN', name: 'PROPN', det: 'DET',
     article: 'DET', prep: 'ADP', preposition: 'ADP', conj: 'CCONJ', conjunction: 'CCONJ',
-    interj: 'INTJ', interjection: 'INTJ', numeral: 'NUM', num: 'NUM', particle: 'PART',
+    intj: 'INTJ', interj: 'INTJ', interjection: 'INTJ', numeral: 'NUM', num: 'NUM', particle: 'PART',
   })[normalized] ?? 'X';
 }
 
