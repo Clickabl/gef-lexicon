@@ -291,3 +291,27 @@ complete lesson and Lexi semantic pipeline. Focused synthetic registry tests
 cover missing, extra and duplicate cohort members; grammatical-number checks
 also prove the validator consumes the current registry fields without requiring
 one historical schema version number.
+
+
+## 2026-10-06 — coordinator reusable phrase-use source release
+
+`docs/PHRASE_USE_ARCHITECTURE.md` settles the bounded existing-core compiler extension for canonical language-local phrase uses. Lexemes/senses own natural meanings; optional typed literal references preserve honest gaps. Context/register/region/source and use review are independent, with all-fact approved production joins and honest candidate development. Names and Home UI templates stay separate. Missing/empty source coverage is explicit; no fabricated IDs or catalogue seed is authorized.
+
+Exact eight executor paths are recorded in that architecture note. Coordinator retains Git, source/review authority and canonical Expo queue records. Current Expo core-v1/static JSON evidence does not establish publication or installation of core-v2 SQLite; its runtime consumer/publisher remains a separate acceptance boundary. No Actions are used.
+
+
+## 2026-10-06 06:55 UTC — coordinator phrase-use compiler verification
+
+The accepted existing-core extension is implemented with field-policy4. Closed
+canonical joins validate actual lexical ownership, bibliography and language,
+including unpublished rows and globally duplicate IDs. Normalized SQLite owns
+composite language/time-band foreign keys; candidate authority is preserved and
+production requires all joined facts approved. Actual-input Git provenance stays
+separate from content identity; missing/empty sources remain distinct gaps.
+
+Complete npm run validate passes; focused actual compiler/SQLite fixtures and
+624-sense usage-profile round trips pass without changing source facts. Exact
+eight-path receipt SHA2563fcccb73d0788a647567b9006fe389bc25133f63d04840761b2e1c6ee47f1150.
+There are0 canonical phrase catalogue files/rows. Runtime publication, genuine
+source research and app consumer/explanation remain required; no coverage or
+Lexi approval is inferred from the empty package.

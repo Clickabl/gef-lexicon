@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/phrase-use-catalog.schema.json",
+  "title": "Language-local phrase-use joins",
+  "description": "Phrase applicability references existing language-local lexeme and sense facts; it does not own phrase spelling or definitions.",
+  "type": "object",
+  "required": ["schema_version", "language_tag", "phrase_uses"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "language_tag": {"type": "string", "minLength": 1},
+    "phrase_uses": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/phraseUse"}
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "context": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "time_bands"],
+          "properties": {
+            "kind": {"const": "greeting"},
+            "time_bands": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {"type": "string", "enum": ["morning", "afternoon", "evening", "night", "up_late"]}
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["kind"],
+          "properties": {"kind": {"const": "general_expression"}},
+          "additionalProperties": false
+        }
+      ]
+    },
+    "literalSenseRef": {
+      "type": "object",
+      "required": ["lexeme_id", "sense_id"],
+      "properties": {
+        "lexeme_id": {"type": "string", "minLength": 1},
+        "sense_id": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "phraseUse": {
+      "type": "object",
+      "required": ["phrase_use_id", "lexeme_id", "sense_id", "context", "register", "region_scope", "source_refs", "review_state"],
+      "properties": {
+        "phrase_use_id": {"type": "string", "pattern": "^PUSE\\.[A-Za-z0-9._-]+$"},
+        "lexeme_id": {"type": "string", "minLength": 1},
+        "sense_id": {"type": "string", "minLength": 1},
+        "context": {"$ref": "#/definitions/context"},
+        "register": {"$ref": "lexicon-entry.schema.json#/definitions/usageProfile/properties/register"},
+        "region_scope": {"$ref": "lexicon-entry.schema.json#/definitions/usageProfile/properties/region_scope"},
+        "literal_sense_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/definitions/literalSenseRef"}
+        },
+        "source_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "review_state": {"type": "string", "enum": ["candidate", "approved", "rejected", "superseded"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}

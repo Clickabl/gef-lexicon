@@ -91,7 +91,7 @@ function main() {
     if (!existsSync(sqlitePath) || !existsSync(manifestPath)) continue;
 
     const manifest = readJson(manifestPath);
-    assert.equal(manifest.fieldPolicy?.version, 3, `core-v2/${languageTag}: expected field policy version 3`);
+    assert.equal(manifest.fieldPolicy?.version, 4, `core-v2/${languageTag}: expected field policy version 4`);
     assert(
       manifest.fieldPolicy?.fast?.sense?.includes('usage_profile_json'),
       `core-v2/${languageTag}: manifest fast sense fields omit usage_profile_json`,

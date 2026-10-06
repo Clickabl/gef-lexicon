@@ -11,28 +11,39 @@
  * so identical canonical inputs produce the same package identity.
  */
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import {
   existsSync,
   mkdirSync,
   readFileSync,
   readdirSync,
+  realpathSync,
   rmSync,
   statSync,
   writeFileSync,
 } from 'node:fs';
-import { dirname, join, relative } from 'node:path';
+import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Database from 'better-sqlite3';
 import { activeSenseConceptLinks } from './lib/concept-links.mjs';
+import { validatePhraseUseCatalogue } from './validate-phrase-uses.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const LANGUAGES_DIR = join(ROOT, 'languages');
-const DIST_DIR = join(ROOT, 'dist', 'core');
+const argValue = (prefix) => process.argv.find((value) => value.startsWith(prefix))?.slice(prefix.length);
+const INPUT_ROOT = argValue('--input-root=') ? resolve(argValue('--input-root=')) : ROOT;
+const OUTPUT_ROOT = argValue('--output-root=') ? resolve(argValue('--output-root=')) : ROOT;
+const REGISTRY_PATH = argValue('--registry=')
+  ? resolve(argValue('--registry='))
+  : join(ROOT, '..', 'gef-expo', 'registry', 'language-support.json');
+const LANGUAGES_DIR = join(INPUT_ROOT, 'languages');
+const PHRASE_USE_DIR = join(INPUT_ROOT, 'lexi', 'phrase-uses');
+const BIBLIOGRAPHY_PATH = join(INPUT_ROOT, 'sources', 'bibliography.json');
+const DIST_DIR = join(OUTPUT_ROOT, 'dist', 'core');
 const PRODUCTION = process.argv.includes('--production');
 const LANGUAGE_ARG = process.argv.find((value) => value.startsWith('--language='));
 const ONLY_LANGUAGE = LANGUAGE_ARG?.slice('--language='.length).trim() || null;
 const FORMAT_VERSION = 2;
-const FIELD_POLICY_VERSION = 3;
+const FIELD_POLICY_VERSION = 4;
 
 const FAST_FIELDS = Object.freeze({
   lexeme: [
@@ -67,6 +78,9 @@ const FAST_FIELDS = Object.freeze({
   ],
   analysis: ['analysis_id', 'form_id', 'features_json', 'display_label_key'],
   pronunciation: ['analysis_id', 'ordinal', 'ipa', 'locale', 'notation'],
+  phraseUse: ['phrase_use_id', 'language_tag', 'lexeme_id', 'sense_id', 'context_kind', 'register_json', 'region_scope_json', 'source_refs_json', 'review_state', 'effective_review_state'],
+  phraseUseTimeBand: ['phrase_use_id', 'language_tag', 'time_band'],
+  phraseUseLiteralSense: ['phrase_use_id', 'lexeme_id', 'sense_id'],
 });
 
 const DEEP_FIELDS = Object.freeze([
@@ -78,6 +92,7 @@ const DEEP_FIELDS = Object.freeze([
   'safety and review provenance',
   'lifecycle redirects/split/merge metadata',
   'pronunciation media metadata beyond fast IPA/locale/notation',
+  'phrase-use source references, register/region context and literal-sense joins',
   'future v2 extension fields not required for first-paint lookup',
 ]);
 
@@ -121,15 +136,31 @@ function sourceFilesForLanguage(languageDir) {
     .map((entry) => join(languageDir, entry));
 }
 
+function phraseUsePath(languageTag) {
+  return join(PHRASE_USE_DIR, `${languageTag}.json`);
+}
+
+function gitProvenance(inputRoot) {
+  try {
+    const gitRoot = execFileSync('git', ['rev-parse', '--show-toplevel'], { cwd: inputRoot, encoding: 'utf8' }).trim();
+    if (realpathSync(gitRoot) !== realpathSync(inputRoot)) return { status: 'unknown', revision: null, dirty: null };
+    const revision = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: inputRoot, encoding: 'utf8' }).trim();
+    const status = execFileSync('git', ['status', '--porcelain', '--untracked-files=normal'], { cwd: inputRoot, encoding: 'utf8' });
+    return { status: 'known', revision, dirty: status.trim().length > 0 };
+  } catch {
+    return { status: 'unknown', revision: null, dirty: null };
+  }
+}
+
 function readLanguageDocuments(languageTag, files) {
   return files.map((path) => {
     const raw = readFileSync(path, 'utf8');
     const document = JSON.parse(raw);
     if (document.language_code && document.language_code !== languageTag) {
-      throw new Error(`${relative(ROOT, path)} declares ${document.language_code}, expected ${languageTag}.`);
+      throw new Error(`${relative(INPUT_ROOT, path)} declares ${document.language_code}, expected ${languageTag}.`);
     }
     if (!Array.isArray(document.lexemes)) {
-      throw new Error(`${relative(ROOT, path)} must contain a lexemes array.`);
+      throw new Error(`${relative(INPUT_ROOT, path)} must contain a lexemes array.`);
     }
     return { path, raw, document };
   });
@@ -146,7 +177,7 @@ function selectedLexemes(documents) {
   for (const { document, path } of documents) {
     for (const lexeme of document.lexemes) {
       if (!lexeme?.lexeme_id || !lexeme?.lemma_nfc || !lexeme?.upos) {
-        throw new Error(`${relative(ROOT, path)} has a lexeme missing lexeme_id, lemma_nfc, or upos.`);
+        throw new Error(`${relative(INPUT_ROOT, path)} has a lexeme missing lexeme_id, lemma_nfc, or upos.`);
       }
       if (seen.has(lexeme.lexeme_id)) {
         throw new Error(`Duplicate lexeme_id ${lexeme.lexeme_id} across language sources.`);
@@ -198,8 +229,40 @@ function initDatabase(path) {
       learner_gloss_json TEXT NOT NULL,
       definitions_json TEXT NOT NULL,
       deep_json TEXT NOT NULL,
-      FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id) ON DELETE CASCADE
+      FOREIGN KEY(lexeme_id) REFERENCES lexemes(lexeme_id) ON DELETE CASCADE,
+      UNIQUE(sense_id, lexeme_id)
     );
+
+    CREATE TABLE phrase_uses (
+      phrase_use_id TEXT PRIMARY KEY,
+      language_tag TEXT NOT NULL,
+      lexeme_id TEXT NOT NULL,
+      sense_id TEXT NOT NULL,
+      context_kind TEXT NOT NULL CHECK (context_kind IN ('greeting','general_expression')),
+      register_json TEXT NOT NULL CHECK (json_valid(register_json)),
+      region_scope_json TEXT NOT NULL CHECK (json_valid(region_scope_json)),
+      review_state TEXT NOT NULL CHECK (review_state IN ('candidate','approved')),
+      effective_review_state TEXT NOT NULL CHECK (effective_review_state IN ('candidate','approved')),
+      source_refs_json TEXT NOT NULL CHECK (json_valid(source_refs_json)),
+      FOREIGN KEY(sense_id, lexeme_id) REFERENCES senses(sense_id, lexeme_id) ON DELETE CASCADE,
+      UNIQUE(phrase_use_id, language_tag)
+    );
+
+    CREATE TABLE phrase_use_time_bands (
+      phrase_use_id TEXT NOT NULL,
+      language_tag TEXT NOT NULL,
+      time_band TEXT NOT NULL CHECK (time_band IN ('morning','afternoon','evening','night','up_late')),
+      PRIMARY KEY(phrase_use_id, time_band),
+      FOREIGN KEY(phrase_use_id, language_tag) REFERENCES phrase_uses(phrase_use_id, language_tag) ON DELETE CASCADE
+    ) WITHOUT ROWID;
+
+    CREATE TABLE phrase_use_literal_senses (
+      phrase_use_id TEXT NOT NULL REFERENCES phrase_uses(phrase_use_id) ON DELETE CASCADE,
+      lexeme_id TEXT NOT NULL,
+      sense_id TEXT NOT NULL,
+      PRIMARY KEY(phrase_use_id, lexeme_id, sense_id),
+      FOREIGN KEY(sense_id, lexeme_id) REFERENCES senses(sense_id, lexeme_id) ON DELETE CASCADE
+    ) WITHOUT ROWID;
 
     CREATE TABLE sense_concepts (
       sense_id TEXT NOT NULL,
@@ -244,6 +307,8 @@ function initDatabase(path) {
     CREATE INDEX lexemes_lemma_idx ON lexemes(language_tag, normalized_lemma);
     CREATE INDEX senses_lexeme_idx ON senses(lexeme_id);
     CREATE INDEX senses_concept_idx ON senses(primary_concept_id);
+    CREATE INDEX phrase_uses_context_idx ON phrase_uses(language_tag, context_kind, effective_review_state);
+    CREATE INDEX phrase_use_time_band_lookup_idx ON phrase_use_time_bands(language_tag, time_band, phrase_use_id);
     CREATE INDEX sense_concepts_sense_idx ON sense_concepts(sense_id, relation);
     CREATE INDEX sense_concepts_concept_idx ON sense_concepts(concept_id, relation);
     CREATE INDEX forms_lookup_idx ON forms(normalized_lookup);
@@ -253,7 +318,7 @@ function initDatabase(path) {
   return db;
 }
 
-function insertPackage(db, languageTag, lexemes, packageVersion) {
+function insertPackage(db, languageTag, lexemes, phraseUses, packageVersion) {
   const insertMetadata = db.prepare('INSERT INTO package_metadata (key, value) VALUES (?, ?)');
   const insertLexeme = db.prepare(`
     INSERT INTO lexemes (
@@ -283,6 +348,18 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
   const insertPronunciation = db.prepare(`
     INSERT INTO pronunciations (analysis_id, ordinal, ipa, locale, notation, deep_json)
     VALUES (?, ?, ?, ?, ?, ?)
+  `);
+  const insertPhraseUse = db.prepare(`
+    INSERT INTO phrase_uses (
+      phrase_use_id, language_tag, lexeme_id, sense_id, context_kind,
+      register_json, region_scope_json, review_state, effective_review_state, source_refs_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertPhraseUseTimeBand = db.prepare(`
+    INSERT INTO phrase_use_time_bands (phrase_use_id, language_tag, time_band) VALUES (?, ?, ?)
+  `);
+  const insertPhraseUseLiteral = db.prepare(`
+    INSERT INTO phrase_use_literal_senses (phrase_use_id, lexeme_id, sense_id) VALUES (?, ?, ?)
   `);
 
   db.transaction(() => {
@@ -427,6 +504,17 @@ function insertPackage(db, languageTag, lexemes, packageVersion) {
         }
       }
     }
+    for (const { row, effectiveReviewState } of phraseUses) {
+      insertPhraseUse.run(
+        row.phrase_use_id, languageTag, row.lexeme_id, row.sense_id, row.context.kind,
+        stableJson(row.register), stableJson(row.region_scope), row.review_state, effectiveReviewState,
+        stableJson(row.source_refs),
+      );
+      for (const band of row.context.time_bands ?? []) insertPhraseUseTimeBand.run(row.phrase_use_id, languageTag, band);
+      for (const reference of row.literal_sense_refs ?? []) {
+        insertPhraseUseLiteral.run(row.phrase_use_id, reference.lexeme_id, reference.sense_id);
+      }
+    }
   })();
 }
 
@@ -445,23 +533,50 @@ function validateDatabase(db, label) {
   }
 }
 
-function compileLanguage(languageTag) {
-  const languageDir = join(LANGUAGES_DIR, languageTag);
-  const sourceFiles = sourceFilesForLanguage(languageDir);
-  if (sourceFiles.length === 0) return false;
-
-  const documents = readLanguageDocuments(languageTag, sourceFiles);
+function compileLanguage(languageTag, documents, allLexiconDocuments, phraseCatalogue, registryLanguages, bibliographyIds, registrySha256, phraseSchemaSha256, lexiconSchemaSha256, git) {
+  if (documents.length === 0) return false;
   const lexemes = selectedLexemes(documents);
   const sourceManifest = documents.map(({ path, raw }) => ({
-    path: relative(ROOT, path).replaceAll('\\', '/'),
+    path: relative(INPUT_ROOT, path).replaceAll('\\', '/'),
     sha256: sha256Bytes(Buffer.from(raw, 'utf8')),
   }));
+  const phrasePath = phraseUsePath(languageTag);
+  const phraseRaw = phraseCatalogue?.raw ?? null;
+  const phraseDocument = phraseCatalogue?.document ?? null;
+  const sourceStatus = phraseDocument === null ? 'missing' : phraseDocument.phrase_uses?.length ? 'populated' : 'empty';
+  const phraseSource = {
+    path: relative(INPUT_ROOT, phrasePath).replaceAll('\\', '/'),
+    status: sourceStatus,
+    ...(phraseRaw === null ? {} : { sha256: sha256Bytes(Buffer.from(phraseRaw, 'utf8')) }),
+  };
+  let phraseUses = [];
+  const authoredStateCounts = { candidate: 0, approved: 0, rejected: 0, superseded: 0 };
+  if (phraseDocument !== null) {
+    const checked = validatePhraseUseCatalogue(phraseDocument, {
+      expectedLanguageTag: languageTag,
+      registeredLanguages: registryLanguages,
+      lexiconDocuments: allLexiconDocuments,
+      bibliographyIds,
+    });
+    if (checked.errors.length > 0) throw new Error(`${phraseSource.path}: ${checked.errors.join('; ')}`);
+    for (const row of phraseDocument.phrase_uses) authoredStateCounts[row.review_state] += 1;
+    phraseUses = checked.rows.filter(({ row, effectiveReviewState, everyFactCandidateOrApproved }) => (
+      PRODUCTION
+        ? row.review_state === 'approved' && effectiveReviewState === 'approved'
+        : ['candidate', 'approved'].includes(row.review_state) && everyFactCandidateOrApproved
+    ));
+  }
+  if (phraseRaw !== null) sourceManifest.push({ path: phraseSource.path, sha256: phraseSource.sha256 });
   const identityPayload = stableJson({
     formatVersion: FORMAT_VERSION,
     fieldPolicyVersion: FIELD_POLICY_VERSION,
     buildMode: PRODUCTION ? 'production' : 'development',
     languageTag,
     sources: sourceManifest,
+    phraseUseSource: phraseSource,
+    registrySha256,
+    phraseSchemaSha256,
+    lexiconSchemaSha256,
   });
   const packageVersion = `v2-${sha256Bytes(identityPayload).slice(0, 16)}`;
 
@@ -471,7 +586,7 @@ function compileLanguage(languageTag) {
   const manifestPath = join(outputDir, 'manifest.json');
   const db = initDatabase(sqlitePath);
 
-  insertPackage(db, languageTag, lexemes, packageVersion);
+  insertPackage(db, languageTag, lexemes, phraseUses, packageVersion);
   validateDatabase(db, `core package ${languageTag}`);
   const counts = {
     lexemes: tableCount(db, 'lexemes'),
@@ -480,6 +595,9 @@ function compileLanguage(languageTag) {
     forms: tableCount(db, 'forms'),
     analyses: tableCount(db, 'analyses'),
     pronunciations: tableCount(db, 'pronunciations'),
+    phrase_uses: tableCount(db, 'phrase_uses'),
+    phrase_use_time_bands: tableCount(db, 'phrase_use_time_bands'),
+    phrase_use_literal_senses: tableCount(db, 'phrase_use_literal_senses'),
   };
   db.exec('ANALYZE; VACUUM;');
   db.close();
@@ -498,6 +616,18 @@ function compileLanguage(languageTag) {
       checksum: { algorithm: 'sha256', value: sha256File(sqlitePath) },
     },
     sources: sourceManifest,
+    sourceRevision: git,
+    registrySha256,
+    phraseSchemaSha256,
+    lexiconSchemaSha256,
+    phraseUseCoverage: {
+      sourcePath: phraseSource.path,
+      sourceStatus: phraseSource.status,
+      ...(phraseSource.sha256 ? { sourceSha256: phraseSource.sha256 } : {}),
+      authoredStateCounts,
+      emittedCount: phraseUses.length,
+      coverageState: phraseUses.length > 0 ? 'available' : 'gap',
+    },
     counts,
     fieldPolicy: {
       version: FIELD_POLICY_VERSION,
@@ -512,6 +642,16 @@ function compileLanguage(languageTag) {
 
 function main() {
   if (!existsSync(LANGUAGES_DIR)) throw new Error('languages/ directory not found.');
+  if (!existsSync(REGISTRY_PATH)) throw new Error(`Current Expo language registry not found: ${REGISTRY_PATH}`);
+  if (!existsSync(BIBLIOGRAPHY_PATH)) throw new Error('sources/bibliography.json not found.');
+  const registryRaw = readFileSync(REGISTRY_PATH, 'utf8');
+  const registry = JSON.parse(registryRaw);
+  const registryLanguages = new Set(registry.programs?.learnFromLanguages ?? []);
+  const registrySha256 = sha256Bytes(Buffer.from(registryRaw, 'utf8'));
+  const phraseSchemaSha256 = sha256File(join(ROOT, 'schemas', 'phrase-use-catalog.schema.json'));
+  const lexiconSchemaSha256 = sha256File(join(ROOT, 'schemas', 'lexicon-entry.schema.json'));
+  const bibliography = JSON.parse(readFileSync(BIBLIOGRAPHY_PATH, 'utf8'));
+  const bibliographyIds = new Set((bibliography.sources ?? []).map((source) => source.source_id));
   const languages = readdirSync(LANGUAGES_DIR)
     .filter((entry) => statSync(join(LANGUAGES_DIR, entry)).isDirectory())
     .filter((entry) => !ONLY_LANGUAGE || entry === ONLY_LANGUAGE)
@@ -521,9 +661,51 @@ function main() {
     throw new Error(`Unknown language directory: ${ONLY_LANGUAGE}`);
   }
 
+  const allLanguageTags = readdirSync(LANGUAGES_DIR)
+    .filter((entry) => statSync(join(LANGUAGES_DIR, entry)).isDirectory())
+    .sort((left, right) => left.localeCompare(right));
+  const documentsByLanguage = new Map();
+  const allLexiconDocuments = [];
+  for (const languageTag of allLanguageTags) {
+    const documents = readLanguageDocuments(languageTag, sourceFilesForLanguage(join(LANGUAGES_DIR, languageTag)));
+    documentsByLanguage.set(languageTag, documents);
+    allLexiconDocuments.push(...documents.map(({ path, document }) => ({ languageTag, document, path })));
+  }
+  const phraseCatalogues = new Map();
+  const seenPhraseUseIds = new Set();
+  if (existsSync(PHRASE_USE_DIR)) {
+    for (const filename of readdirSync(PHRASE_USE_DIR).filter((name) => name.endsWith('.json')).sort()) {
+      const languageTag = filename.slice(0, -'.json'.length);
+      const path = join(PHRASE_USE_DIR, filename);
+      const raw = readFileSync(path, 'utf8');
+      const document = JSON.parse(raw);
+      const checked = validatePhraseUseCatalogue(document, {
+        expectedLanguageTag: languageTag,
+        registeredLanguages: registryLanguages,
+        lexiconDocuments: allLexiconDocuments,
+        bibliographyIds,
+        knownPhraseUseIds: seenPhraseUseIds,
+      });
+      if (checked.errors.length > 0) throw new Error(`${relative(INPUT_ROOT, path)}: ${checked.errors.join('; ')}`);
+      for (const id of checked.phraseUseIds) seenPhraseUseIds.add(id);
+      phraseCatalogues.set(languageTag, { raw, document });
+    }
+  }
+  const git = gitProvenance(INPUT_ROOT);
   let compiled = 0;
   for (const languageTag of languages) {
-    if (compileLanguage(languageTag)) compiled += 1;
+    if (compileLanguage(
+      languageTag,
+      documentsByLanguage.get(languageTag) ?? [],
+      allLexiconDocuments,
+      phraseCatalogues.get(languageTag) ?? null,
+      registryLanguages,
+      bibliographyIds,
+      registrySha256,
+      phraseSchemaSha256,
+      lexiconSchemaSha256,
+      git,
+    )) compiled += 1;
   }
   if (compiled === 0) throw new Error('No language lexicon sources were found to compile.');
   console.log(`✅ Compiled ${compiled} deterministic v2 core package${compiled === 1 ? '' : 's'}.`);

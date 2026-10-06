@@ -18,6 +18,37 @@ The package identity is content-derived. It does not contain a build timestamp. 
 
 Production mode includes approved senses only. Development mode may also include candidate senses for testing and review. Candidate data must never be promoted merely because it compiled successfully.
 
+## Phrase-use joins (field-policy version 4)
+
+The compiler reads an optional canonical source at
+`lexi/phrase-uses/{language-tag}.json`. This is a join to existing language-local
+lexeme and sense IDs, not a second spelling/definition source. Each phrase-use
+row records its context, register, region scope, bibliography references, and
+independent review state. Greeting time bands and optional literal-sense links
+are normalized into `phrase_use_time_bands` and
+`phrase_use_literal_senses`; definitions remain on their canonical senses.
+
+The `phrase_uses` table stores the use ID, exact language/lexeme/sense IDs,
+context kind, register and region JSON, source references, authored review state,
+and computed `effective_review_state`. The effective state is `approved` only
+when the use and every referenced lexical fact are approved. Development output
+includes candidate/approved uses only when all referenced facts are candidate or
+approved, preserving candidate authority. Production includes only a fully
+approved join. Rejected and superseded uses or facts are never emitted. Ordinary
+lexical review filtering is unchanged.
+
+The package manifest records phrase source path/hash when present, distinct
+`missing`, `empty`, or `populated` source status, authored counts by review
+state, emitted count, and `gap`/`available` coverage. Missing source is not
+filled with artificial empty catalogues; present-empty and missing inputs both
+produce explicit gaps. Registry, phrase-use and lexicon schema, and source-byte hashes affect
+content-derived package identity. Git revision and dirty/unknown status are
+reported separately and do not change package identity.
+
+This compiler output is generated under `dist/core/`. The existence of
+source JSON under the deployed `lexi/` prefix does not establish publication,
+installation, or runtime consumption of `core-v2.sqlite`.
+
 ## Manifest
 
 Each `manifest.json` records:
@@ -25,8 +56,11 @@ Each `manifest.json` records:
 - package type, ID, version, language tag, and build mode;
 - SQLite byte size and SHA-256 checksum;
 - every canonical source file path and its SHA-256 checksum;
-- counts of lexemes, senses, forms, analyses, and pronunciations;
+- counts of lexemes, senses, forms, analyses, pronunciations, phrase uses, time-band joins, and literal-sense joins;
 - the fast-field/deep-field policy version and field lists.
+
+Phrase-use fast fields name the actual normalized columns (`register_json`,
+`region_scope_json`, and `source_refs_json`); manifest field names match SQLite.
 
 The manifest is the download/install boundary. Runtime clients should verify the declared checksum before mounting or replacing an installed package.
 
@@ -41,6 +75,7 @@ They include:
 - form identity, surface spelling, normalized lookup, and attestation flag;
 - analysis identity, morphology feature JSON, and display label;
 - pronunciation IPA, locale, and notation.
+- phrase-use IDs, context kind, exact lexeme/sense links, and honest review authority.
 
 ## Deep fields
 
