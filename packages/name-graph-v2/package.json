@@ -1,0 +1,8 @@
+{
+  "name": "@clickabl/gef-name-graph-v2",
+  "version": "2.0.0-draft.20261007",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./nameGraph.mjs", "./entry": "./nameEntry.mjs" },
+  "scripts": { "test": "node --test *.test.mjs", "check": "node --check nameGraph.mjs && node --check nameEntry.mjs" }
+}
