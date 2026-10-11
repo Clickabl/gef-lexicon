@@ -18,7 +18,11 @@
     },
     "reach": {"title": "Where it’s spoken", "body": "You’ll hear {language} across {regions}.", "continue_label": "Keep going"},
     "compare": {"title": "{language} and {best}", "body": "How the two are related.", "continue_label": "Keep going"},
-    "check": {"title": "Quick check", "prompt": "Which of these is a close relative of {language}?", "continue_label": "Check"},
+    "check": {
+      "title": "Quick check",
+      "prompt": "Which of these is a close relative of {language}?",
+      "continue_label": "Continue"
+    },
     "complete": {"title": "You’ve met {language}", "body": "That’s the map. Gef approves.", "continue_label": "Continue"}
   },
   "labels": {
