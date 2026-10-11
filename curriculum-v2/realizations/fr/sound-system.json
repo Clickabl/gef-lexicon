@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.fr.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "fr",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "ʒ", "m", "n", "ɲ", "l", "ʁ", "j", "w", "ɥ"],
+      "qualifiers": {"variety": "traditional_standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "ɛ", "a", "ɑ", "ɔ", "o", "u", "y", "ø", "œ", "ə", "ɑ̃", "ɛ̃", "ɔ̃", "œ̃"],
+      "qualifiers": {"variety": "traditional_standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.uvular_r",
+      "fact_kind": "term",
+      "value": "rue",
+      "qualifiers": {"ipa": "ʁ", "spelling": "r", "word_ipa": "ʁy", "note_id": "uvular_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.nasal_vowel",
+      "fact_kind": "term",
+      "value": "bon",
+      "qualifiers": {"ipa": "ɔ̃", "spelling": "on", "word_ipa": "bɔ̃", "note_id": "nasal_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.u",
+      "fact_kind": "term",
+      "value": "tu",
+      "qualifiers": {"ipa": "y", "spelling": "u", "word_ipa": "ty", "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.silent_final",
+      "fact_kind": "term",
+      "value": "petit",
+      "qualifiers": {"spelling": "t", "word_ipa": "pəti", "note_id": "silent_letter", "silent": true}
+    },
+    {
+      "fact_id": "sounds.tricky.liaison",
+      "fact_kind": "term",
+      "value": "les amis",
+      "qualifiers": {"ipa": "z", "spelling": "s", "word_ipa": "lezami", "note_id": "liaison"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "tu",
+      "qualifiers": {"ipa": "ty", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "tout",
+      "qualifiers": {"ipa": "tu", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "bon",
+      "qualifiers": {"ipa": "bɔ̃", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "banc",
+      "qualifiers": {"ipa": "bɑ̃", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "phrase_final"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

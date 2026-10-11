@@ -12,10 +12,13 @@
     "origin_region_ids": ["europe"],
     "notes": "Modern Greek is the surviving major member of the Hellenic branch; this orientation record avoids inventing close modern sister-language relationships."
   },
-  "capabilities": {
-    "explanation": true,
-    "comparison": true
-  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe"]},
+    {"fact_id": "hook.target", "fact_kind": "term", "value": "γεια"},
+    {"fact_id": "hook.decoy.1", "fact_kind": "term", "value": "ευχαριστώ"},
+    {"fact_id": "hook.decoy.2", "fact_kind": "term", "value": "αντίο"}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
   "review_state": "candidate",
-  "version": 1
+  "version": 3
 }

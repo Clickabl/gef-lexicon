@@ -154,6 +154,11 @@
         },
         "required": {"type": "boolean"},
         "repeat_per_focus_language": {"type": "boolean"},
+        "facet": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "Names the content provider that turns realization facts into this scene's body. A facet is a generic mechanic over typed facts (see curriculum-v2/INTRO_FACTS.md); it never carries curriculum truth."
+        },
         "minimum_capability": {
           "type": "string",
           "enum": ["explanation", "comparison", "reviewed_examples", "recognition_practice", "production_practice", "reading_transfer", "listening", "speaking", "story_quest"]

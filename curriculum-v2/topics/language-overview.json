@@ -6,13 +6,13 @@
   "domain": "language_identity",
   "title_key": "curriculum.topic.language_overview.title",
   "summary_key": "curriculum.topic.language_overview.summary",
-  "focus_axes": [
-    "language_family",
-    "historical_branch",
-    "related_languages",
-    "writing_systems",
-    "geographic_history",
-    "high_level_structural_traits"
+  "focus_axes": ["first_word", "language_family", "related_languages", "where_spoken", "relation_to_best_language"],
+  "relations": [
+    {
+      "relation": "prepares_for",
+      "topic_id": "TOPIC.orientation.writing_system",
+      "notes": "Soft order for the Meet-a-language path; never a gate."
+    }
   ],
   "comparison_policy": {
     "minimum_useful_languages": 3,
@@ -20,20 +20,53 @@
     "include_best_language": true,
     "include_profile_comparison_languages": true,
     "fallback_reference_language_tags": ["en", "es"],
-    "notes": "Build the tree from the learner profile first. If focus + best/known languages do not provide enough context, add reference languages until the tree is useful. Never add filler after the learner already has enough languages to show the relationships."
+    "notes": "Build the family picture from the learner profile first. If focus, best and known languages do not give enough context, add reference languages until the relationships are visible. Never add filler once the learner already has enough."
   },
   "experience_blueprint": {
     "scene_sequence": [
-      {"scene_id": "tree", "scene_kind": "language_tree", "required": true, "minimum_capability": "comparison"},
-      {"scene_id": "compare", "scene_kind": "language_comparison", "required": false, "minimum_capability": "comparison"},
-      {"scene_id": "focus", "scene_kind": "focus_explanation", "required": true, "repeat_per_focus_language": true, "minimum_capability": "explanation"},
+      {
+        "scene_id": "hello",
+        "scene_kind": "concept_reveal",
+        "facet": "first_word",
+        "required": false,
+        "minimum_capability": "recognition_practice",
+        "notes": "The first win: hear one word in the language and pick it. Opens the whole path."
+      },
+      {
+        "scene_id": "tree",
+        "scene_kind": "language_tree",
+        "facet": "family_tree",
+        "required": true,
+        "minimum_capability": "comparison"
+      },
+      {
+        "scene_id": "reach",
+        "scene_kind": "concept",
+        "facet": "where_spoken",
+        "required": false,
+        "minimum_capability": "explanation"
+      },
+      {
+        "scene_id": "compare",
+        "scene_kind": "language_comparison",
+        "facet": "relation_to_best",
+        "required": false,
+        "minimum_capability": "comparison"
+      },
+      {
+        "scene_id": "check",
+        "scene_kind": "checkpoint",
+        "facet": "family_check",
+        "required": false,
+        "minimum_capability": "recognition_practice"
+      },
       {"scene_id": "complete", "scene_kind": "completion", "required": true}
     ],
-    "default_session_minutes": 5,
-    "notes": "This is the default first orientation topic after a language is added. The same scene data must render in app, print, and video pipelines."
+    "default_session_minutes": 3,
+    "notes": "Stop 1 of the Meet-a-language path. A first win comes before any explanation; the same scene data must render in app, print and video."
   },
   "difficulty_band": "pre_a1",
-  "notes": "Genealogy is a historical relationship model, not a claim that related languages are mutually intelligible or culturally interchangeable. Language realizations own reviewed genealogy facts; the runtime chooses which branches to display from the learner context.",
+  "notes": "Genealogy is a historical relationship model, not a claim that related languages are mutually intelligible or culturally interchangeable. Language realizations own the genealogy facts; the runtime chooses what to show from the learner context. See curriculum-v2/INTRO_FACTS.md.",
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }

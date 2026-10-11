@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "language_tag": "en",
+  "title": "Words you already know",
+  "summary": "Words that look alike in {language} and {best}, and a few that only pretend to.",
+  "scene_copy": {
+    "words": {"title": "Words you already know", "body": "Tap a word to hear it.", "continue_label": "Keep going"},
+    "friends": {
+      "title": "Careful: false friends",
+      "body": "These look familiar but mean something else.",
+      "continue_label": "Keep going"
+    },
+    "check": {"title": "Quick check", "continue_label": "Check"},
+    "complete": {"title": "You know more than you thought", "body": "Gef is not at all surprised.", "continue_label": "Finish"}
+  },
+  "labels": {
+    "q.match_pairs": "Match each word to its look-alike in {language}.",
+    "q.false_friend": "What does “{word}” really mean?",
+    "false_friend.line": "Looks like “{from}”, but means “{meaning}”."
+  },
+  "review_state": "candidate",
+  "version": 1
+}

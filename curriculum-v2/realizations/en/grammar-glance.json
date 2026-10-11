@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.en.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "en",
+  "facts": [
+    {"fact_id": "trait.noun_gender", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.noun_gender.example.1", "fact_kind": "term", "value": "the book, the table"},
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "definite_indefinite"},
+    {"fact_id": "trait.articles.example.1", "fact_kind": "term", "value": "the dog, a dog"},
+    {"fact_id": "trait.formal_you", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.formal_you.example.1", "fact_kind": "term", "value": "How are you?"},
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "few",
+      "qualifiers": {"example_verb": "speak"}
+    },
+    {"fact_id": "trait.verb_endings.example.1", "fact_kind": "term", "value": "I speak / you speak / she speaks"},
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "required"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "I speak English."},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "a big house"},
+    {"fact_id": "trait.cases", "fact_kind": "category", "value": "pronouns_only"},
+    {"fact_id": "trait.cases.example.1", "fact_kind": "term", "value": "I / me / my"},
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "svo"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Maria reads a book."},
+    {"fact_id": "trait.questions", "fact_kind": "category", "value": "auxiliary_do"},
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Do you speak English?"}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

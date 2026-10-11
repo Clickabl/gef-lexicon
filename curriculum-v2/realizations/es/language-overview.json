@@ -12,10 +12,13 @@
     "origin_region_ids": ["europe"],
     "notes": "Broad historical-family metadata for orientation only; Romance membership does not imply modern mutual intelligibility."
   },
-  "capabilities": {
-    "explanation": true,
-    "comparison": true
-  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe", "americas", "africa"]},
+    {"fact_id": "hook.target", "fact_kind": "term", "value": "hola"},
+    {"fact_id": "hook.decoy.1", "fact_kind": "term", "value": "gracias"},
+    {"fact_id": "hook.decoy.2", "fact_kind": "term", "value": "adiós"}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
   "review_state": "candidate",
-  "version": 1
+  "version": 5
 }

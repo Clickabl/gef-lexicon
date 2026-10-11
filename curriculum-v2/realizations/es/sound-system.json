@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.es.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "es",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "s", "x", "tʃ", "ʝ", "m", "n", "ɲ", "l", "ɾ", "r"],
+      "qualifiers": {"variety": "latin_american"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "e", "i", "o", "u"],
+      "qualifiers": {"variety": "general"}
+    },
+    {
+      "fact_id": "sounds.tricky.trill",
+      "fact_kind": "term",
+      "value": "perro",
+      "qualifiers": {"ipa": "r", "spelling": "rr", "word_ipa": "ˈpero", "note_id": "trill"}
+    },
+    {
+      "fact_id": "sounds.tricky.jota",
+      "fact_kind": "term",
+      "value": "jamón",
+      "qualifiers": {"ipa": "x", "spelling": "j", "word_ipa": "xaˈmon", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.enye",
+      "fact_kind": "term",
+      "value": "niño",
+      "qualifiers": {"ipa": "ɲ", "spelling": "ñ", "word_ipa": "ˈniɲo", "note_id": "palatal_nasal"}
+    },
+    {
+      "fact_id": "sounds.tricky.silent_h",
+      "fact_kind": "term",
+      "value": "hotel",
+      "qualifiers": {"spelling": "h", "word_ipa": "oˈtel", "note_id": "silent_letter", "silent": true}
+    },
+    {
+      "fact_id": "sounds.tricky.b_v",
+      "fact_kind": "term",
+      "value": "vaca",
+      "qualifiers": {"ipa": "b", "spelling": "v", "word_ipa": "ˈbaka", "note_id": "b_v_same"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "perro",
+      "qualifiers": {"ipa": "ˈpero", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "pero",
+      "qualifiers": {"ipa": "ˈpeɾo", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "una",
+      "qualifiers": {"ipa": "ˈuna", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "uña",
+      "qualifiers": {"ipa": "ˈuɲa", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "rule_with_written_accents"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

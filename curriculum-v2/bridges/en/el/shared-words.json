@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "el",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "look_alike_words",
+      "kind": "helpful_transfer",
+      "text": "English has borrowed or built thousands of words from Greek roots, especially for ideas, science and the arts. The spelling looks different because of the alphabet, but the words are old friends.",
+      "pairs": [
+        {"from": "democracy", "to": "δημοκρατία", "to_ipa": "ðimokɾaˈtia"},
+        {"from": "philosophy", "to": "φιλοσοφία", "to_ipa": "filosoˈfia"},
+        {"from": "problem", "to": "πρόβλημα", "to_ipa": "ˈpɾovlima"},
+        {"from": "music", "to": "μουσική", "to_ipa": "musiˈki"},
+        {"from": "telephone", "to": "τηλέφωνο", "to_ipa": "tiˈlefono"},
+        {"from": "history", "to": "ιστορία", "to_ipa": "istoˈɾia"},
+        {"from": "idea", "to": "ιδέα", "to_ipa": "iˈðea"},
+        {"from": "energy", "to": "ενέργεια", "to_ipa": "eˈneɾja"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few look-alikes mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "magazine", "to": "μαγαζί", "to_ipa": "maɣaˈzi", "to_meaning": "shop"},
+        {"from": "phone", "to": "φωνή", "to_ipa": "foˈni", "to_meaning": "voice"},
+        {"from": "agony", "to": "αγωνία", "to_ipa": "aɣoˈnia", "to_meaning": "anxiety, suspense (also anguish)"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

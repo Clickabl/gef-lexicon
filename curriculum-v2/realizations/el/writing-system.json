@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.el.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "el",
+  "facts": [
+    {"fact_id": "script.id", "fact_kind": "category", "value": "Grek"},
+    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {
+      "fact_id": "alphabet.letters",
+      "fact_kind": "term",
+      "value": ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι", "κ", "λ", "μ", "ν", "ξ", "ο", "π", "ρ", "σ", "τ", "υ", "φ", "χ", "ψ", "ω"]
+    },
+    {"fact_id": "alphabet.marked", "fact_kind": "term", "value": ["ς", "ά", "έ", "ή", "ί", "ό", "ύ", "ώ", "ϊ", "ϋ"]},
+    {"fact_id": "punctuation.special", "fact_kind": "term", "value": [";"]},
+    {
+      "fact_id": "alphabet.example.alpha",
+      "fact_kind": "term",
+      "value": "αγάπη",
+      "qualifiers": {"ipa": "aˈɣapi", "highlight": "α", "name": "άλφα (alfa)"}
+    },
+    {
+      "fact_id": "alphabet.example.beta",
+      "fact_kind": "term",
+      "value": "βιβλίο",
+      "qualifiers": {"ipa": "viˈvlio", "highlight": "β", "name": "βήτα (vita)", "looks_like": "B"}
+    },
+    {
+      "fact_id": "alphabet.example.gamma",
+      "fact_kind": "term",
+      "value": "γάτα",
+      "qualifiers": {"ipa": "ˈɣata", "highlight": "γ", "name": "γάμα (gama)", "looks_like": "y"}
+    },
+    {
+      "fact_id": "alphabet.example.delta",
+      "fact_kind": "term",
+      "value": "δέντρο",
+      "qualifiers": {"ipa": "ˈðendɾo", "highlight": "δ", "name": "δέλτα (delta)"}
+    },
+    {
+      "fact_id": "alphabet.example.epsilon",
+      "fact_kind": "term",
+      "value": "ελιά",
+      "qualifiers": {"ipa": "eˈlia", "highlight": "ε", "name": "έψιλον (epsilon)"}
+    },
+    {
+      "fact_id": "alphabet.example.zeta",
+      "fact_kind": "term",
+      "value": "ζώο",
+      "qualifiers": {"ipa": "ˈzoo", "highlight": "ζ", "name": "ζήτα (zita)"}
+    },
+    {
+      "fact_id": "alphabet.example.eta",
+      "fact_kind": "term",
+      "value": "ήλιος",
+      "qualifiers": {"ipa": "ˈilios", "highlight": "η", "name": "ήτα (ita)", "looks_like": "H / n"}
+    },
+    {
+      "fact_id": "alphabet.example.theta",
+      "fact_kind": "term",
+      "value": "θάλασσα",
+      "qualifiers": {"ipa": "ˈθalasa", "highlight": "θ", "name": "θήτα (thita)"}
+    },
+    {
+      "fact_id": "alphabet.example.iota",
+      "fact_kind": "term",
+      "value": "ιστορία",
+      "qualifiers": {"ipa": "istoˈɾia", "highlight": "ι", "name": "γιώτα (yiota)"}
+    },
+    {
+      "fact_id": "alphabet.example.kappa",
+      "fact_kind": "term",
+      "value": "κόσμος",
+      "qualifiers": {"ipa": "ˈkozmos", "highlight": "κ", "name": "κάπα (kapa)"}
+    },
+    {
+      "fact_id": "alphabet.example.lambda",
+      "fact_kind": "term",
+      "value": "λουλούδι",
+      "qualifiers": {"ipa": "luˈluði", "highlight": "λ", "name": "λάμδα (lamda)"}
+    },
+    {
+      "fact_id": "alphabet.example.mu",
+      "fact_kind": "term",
+      "value": "μητέρα",
+      "qualifiers": {"ipa": "miˈteɾa", "highlight": "μ", "name": "μι (mi)", "looks_like": "u"}
+    },
+    {
+      "fact_id": "alphabet.example.nu",
+      "fact_kind": "term",
+      "value": "νερό",
+      "qualifiers": {"ipa": "neˈɾo", "highlight": "ν", "name": "νι (ni)", "looks_like": "v"}
+    },
+    {
+      "fact_id": "alphabet.example.xi",
+      "fact_kind": "term",
+      "value": "ξένος",
+      "qualifiers": {"ipa": "ˈksenos", "highlight": "ξ", "name": "ξι (xi)"}
+    },
+    {
+      "fact_id": "alphabet.example.omicron",
+      "fact_kind": "term",
+      "value": "όνομα",
+      "qualifiers": {"ipa": "ˈonoma", "highlight": "ο", "name": "όμικρον (omikron)"}
+    },
+    {
+      "fact_id": "alphabet.example.pi",
+      "fact_kind": "term",
+      "value": "παιδί",
+      "qualifiers": {"ipa": "peˈði", "highlight": "π", "name": "πι (pi)", "looks_like": "n"}
+    },
+    {
+      "fact_id": "alphabet.example.rho",
+      "fact_kind": "term",
+      "value": "ρολόι",
+      "qualifiers": {"ipa": "ɾoˈloi", "highlight": "ρ", "name": "ρο (ro)", "looks_like": "p"}
+    },
+    {
+      "fact_id": "alphabet.example.sigma",
+      "fact_kind": "term",
+      "value": "σπίτι",
+      "qualifiers": {"ipa": "ˈspiti", "highlight": "σ", "name": "σίγμα (sigma)"}
+    },
+    {
+      "fact_id": "alphabet.example.tau",
+      "fact_kind": "term",
+      "value": "τραπέζι",
+      "qualifiers": {"ipa": "tɾaˈpezi", "highlight": "τ", "name": "ταυ (taf)"}
+    },
+    {
+      "fact_id": "alphabet.example.upsilon",
+      "fact_kind": "term",
+      "value": "ύπνος",
+      "qualifiers": {"ipa": "ˈipnos", "highlight": "υ", "name": "ύψιλον (ipsilon)", "looks_like": "u"}
+    },
+    {
+      "fact_id": "alphabet.example.phi",
+      "fact_kind": "term",
+      "value": "φίλος",
+      "qualifiers": {"ipa": "ˈfilos", "highlight": "φ", "name": "φι (fi)"}
+    },
+    {
+      "fact_id": "alphabet.example.chi",
+      "fact_kind": "term",
+      "value": "χαρά",
+      "qualifiers": {"ipa": "xaˈɾa", "highlight": "χ", "name": "χι (hi)", "looks_like": "x"}
+    },
+    {
+      "fact_id": "alphabet.example.psi",
+      "fact_kind": "term",
+      "value": "ψωμί",
+      "qualifiers": {"ipa": "psoˈmi", "highlight": "ψ", "name": "ψι (psi)"}
+    },
+    {
+      "fact_id": "alphabet.example.omega",
+      "fact_kind": "term",
+      "value": "ωραίος",
+      "qualifiers": {"ipa": "oˈɾeos", "highlight": "ω", "name": "ωμέγα (omega)", "looks_like": "w"}
+    },
+    {
+      "fact_id": "alphabet.example.final_sigma",
+      "fact_kind": "term",
+      "value": "καλός",
+      "qualifiers": {"ipa": "kaˈlos", "highlight": "ς", "name": "τελικό σίγμα (teliko sigma)"}
+    },
+    {
+      "fact_id": "alphabet.example.question_mark",
+      "fact_kind": "term",
+      "value": "Πώς σε λένε;",
+      "qualifiers": {"ipa": "pos se ˈlene", "highlight": ";"}
+    },
+    {
+      "fact_id": "mark.tonos",
+      "fact_kind": "term",
+      "value": "έ",
+      "qualifiers": {"mark_id": "tonos", "role": "stress", "example": "καφές", "example_ipa": "kaˈfes"}
+    },
+    {
+      "fact_id": "mark.dialytika",
+      "fact_kind": "term",
+      "value": "ϊ",
+      "qualifiers": {"mark_id": "dialytika", "role": "pronounce_vowel", "example": "μαϊμού", "example_ipa": "maiˈmu"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

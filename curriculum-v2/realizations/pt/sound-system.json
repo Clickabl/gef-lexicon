@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.pt.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "pt",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "ʒ", "m", "n", "ɲ", "l", "ʎ", "ɾ", "ʁ", "tʃ", "dʒ"],
+      "qualifiers": {"variety": "brazilian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "ɛ", "a", "ɔ", "o", "u", "ɐ", "ĩ", "ẽ", "ɐ̃", "õ", "ũ"],
+      "qualifiers": {"variety": "brazilian"}
+    },
+    {
+      "fact_id": "sounds.tricky.nasal_vowel",
+      "fact_kind": "term",
+      "value": "pão",
+      "qualifiers": {"ipa": "ɐ̃w̃", "spelling": "ão", "word_ipa": "ˈpɐ̃w̃", "note_id": "nasal_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.lh",
+      "fact_kind": "term",
+      "value": "filho",
+      "qualifiers": {"ipa": "ʎ", "spelling": "lh", "word_ipa": "ˈfiʎu", "note_id": "palatal_lateral"}
+    },
+    {
+      "fact_id": "sounds.tricky.nh",
+      "fact_kind": "term",
+      "value": "banho",
+      "qualifiers": {"ipa": "ɲ", "spelling": "nh", "word_ipa": "ˈbɐ̃ɲu", "note_id": "palatal_nasal"}
+    },
+    {
+      "fact_id": "sounds.tricky.initial_r",
+      "fact_kind": "term",
+      "value": "rato",
+      "qualifiers": {"ipa": "ʁ", "spelling": "r", "word_ipa": "ˈʁatu", "note_id": "guttural_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.di",
+      "fact_kind": "term",
+      "value": "dia",
+      "qualifiers": {"ipa": "dʒ", "spelling": "d", "word_ipa": "ˈdʒiɐ", "note_id": "affricate_before_i"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "mão",
+      "qualifiers": {"ipa": "ˈmɐ̃w̃", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "mau",
+      "qualifiers": {"ipa": "ˈmaw", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "caro",
+      "qualifiers": {"ipa": "ˈkaɾu", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "carro",
+      "qualifiers": {"ipa": "ˈkaʁu", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "rule_with_written_accents"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

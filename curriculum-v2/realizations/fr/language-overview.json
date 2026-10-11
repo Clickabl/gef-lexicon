@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.fr.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "fr",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["italic", "romance"],
+    "ancestor_language_tags": ["la"],
+    "related_language_tags": ["es", "it", "pt"],
+    "script_ids": ["latin"],
+    "origin_region_ids": ["europe"],
+    "notes": "Broad historical-family metadata for orientation only; Romance membership does not imply modern mutual intelligibility."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe", "americas", "africa", "oceania"]},
+    {"fact_id": "hook.target", "fact_kind": "term", "value": "bonjour"},
+    {"fact_id": "hook.decoy.1", "fact_kind": "term", "value": "merci"},
+    {"fact_id": "hook.decoy.2", "fact_kind": "term", "value": "au revoir"}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 2
+}

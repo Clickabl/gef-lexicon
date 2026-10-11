@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.en.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "en",
+  "facts": [
+    {"fact_id": "script.id", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {
+      "fact_id": "alphabet.letters",
+      "fact_kind": "term",
+      "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    },
+    {"fact_id": "alphabet.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "punctuation.special", "fact_kind": "term", "value": []}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

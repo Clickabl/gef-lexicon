@@ -5,7 +5,27 @@
     {
       "topic_id": "TOPIC.orientation.language_overview",
       "path": "curriculum-v2/topics/language-overview.json",
-      "reference_role": "default first topic for a newly focused language; dynamically compares learner-profile languages and adds fallback references only when useful"
+      "reference_role": "stop 1 of the Meet-a-language path: first win, family, relatives, where it is spoken; default first topic for a newly focused language"
+    },
+    {
+      "topic_id": "TOPIC.orientation.writing_system",
+      "path": "curriculum-v2/topics/writing-system.json",
+      "reference_role": "stop 2: script and alphabet, computing the letters and marks the learner's best language lacks"
+    },
+    {
+      "topic_id": "TOPIC.orientation.sound_system",
+      "path": "curriculum-v2/topics/sound-system.json",
+      "reference_role": "stop 3: sounds, stress and spelling-to-sound, computing the sounds new to the learner"
+    },
+    {
+      "topic_id": "TOPIC.orientation.grammar_glance",
+      "path": "curriculum-v2/topics/grammar-glance.json",
+      "reference_role": "stop 4: the few grammar traits that will feel different, computed against the best language"
+    },
+    {
+      "topic_id": "TOPIC.orientation.shared_words",
+      "path": "curriculum-v2/topics/shared-words.json",
+      "reference_role": "stop 5: look-alike words and false friends, from reviewed pair bridges"
     },
     {
       "topic_id": "TOPIC.goal.talk_about_past_events",
@@ -34,5 +54,5 @@
     }
   ],
   "review_state": "candidate",
-  "version": 4
+  "version": 5
 }

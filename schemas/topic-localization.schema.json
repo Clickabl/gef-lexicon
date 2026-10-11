@@ -23,6 +23,16 @@
         "additionalProperties": false
       }
     },
+    "labels": {
+      "type": "object",
+      "description": "Best-language names for the shared ids realization facts use (script, direction, sound kinds, trait values, regions, families). Keyed by id. A {language} token is replaced at runtime by the focus language's name in this language.",
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "glosses": {
+      "type": "object",
+      "description": "Best-language meaning of a language's example fact, keyed '{language_tag}:{fact_id}'. This is translation of examples, not curriculum truth.",
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
     "review_state": {"type": "string", "enum": ["candidate", "approved", "superseded", "rejected"]},
     "version": {"type": "integer", "minimum": 1}
   },

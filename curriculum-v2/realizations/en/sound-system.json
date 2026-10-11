@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.en.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "en",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "θ", "ð", "s", "z", "ʃ", "ʒ", "h", "tʃ", "dʒ", "m", "n", "ŋ", "l", "ɹ", "j", "w"],
+      "qualifiers": {"variety": "general_american"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "ɪ", "ɛ", "æ", "ɑ", "ɔ", "ʊ", "u", "ʌ", "ə", "eɪ", "aɪ", "ɔɪ", "aʊ", "oʊ"],
+      "qualifiers": {"variety": "general_american"}
+    },
+    {
+      "fact_id": "sounds.tricky.theta",
+      "fact_kind": "term",
+      "value": "think",
+      "qualifiers": {"ipa": "θ", "spelling": "th", "word_ipa": "θɪŋk", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.eth",
+      "fact_kind": "term",
+      "value": "this",
+      "qualifiers": {"ipa": "ð", "spelling": "th", "word_ipa": "ðɪs", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "red",
+      "qualifiers": {"ipa": "ɹ", "spelling": "r", "word_ipa": "ɹɛd", "note_id": "approximant_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.silent_k",
+      "fact_kind": "term",
+      "value": "knee",
+      "qualifiers": {"spelling": "kn", "word_ipa": "ni", "note_id": "silent_letter", "silent": true}
+    },
+    {
+      "fact_id": "sounds.tricky.ough",
+      "fact_kind": "term",
+      "value": "tough",
+      "qualifiers": {"ipa": "ʌf", "spelling": "ough", "word_ipa": "tʌf", "note_id": "spelling_varies"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "ship",
+      "qualifiers": {"ipa": "ʃɪp", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "sheep",
+      "qualifiers": {"ipa": "ʃip", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "think",
+      "qualifiers": {"ipa": "θɪŋk", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "sink",
+      "qualifiers": {"ipa": "sɪŋk", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "unpredictable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "low"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.el.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "el",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "θ", "ð", "s", "z", "x", "ɣ", "m", "n", "l", "ɾ", "ts", "dz"],
+      "qualifiers": {"variety": "standard_modern_greek"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "a", "o", "u"],
+      "qualifiers": {"variety": "standard_modern_greek"}
+    },
+    {
+      "fact_id": "sounds.tricky.theta",
+      "fact_kind": "term",
+      "value": "θάλασσα",
+      "qualifiers": {"ipa": "θ", "spelling": "θ", "word_ipa": "ˈθalasa", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.delta",
+      "fact_kind": "term",
+      "value": "δέντρο",
+      "qualifiers": {"ipa": "ð", "spelling": "δ", "word_ipa": "ˈðendɾo", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.gamma",
+      "fact_kind": "term",
+      "value": "γάτα",
+      "qualifiers": {"ipa": "ɣ", "spelling": "γ", "word_ipa": "ˈɣata", "note_id": "voiced_velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.chi",
+      "fact_kind": "term",
+      "value": "χαρά",
+      "qualifiers": {"ipa": "x", "spelling": "χ", "word_ipa": "xaˈɾa", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.ou",
+      "fact_kind": "term",
+      "value": "ουρανός",
+      "qualifiers": {"ipa": "u", "spelling": "ου", "word_ipa": "uɾaˈnos", "note_id": "vowel_digraph"}
+    },
+    {
+      "fact_id": "sounds.tricky.ei",
+      "fact_kind": "term",
+      "value": "ειρήνη",
+      "qualifiers": {"ipa": "i", "spelling": "ει", "word_ipa": "iˈɾini", "note_id": "many_spellings_one_sound"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "πόλη",
+      "qualifiers": {"ipa": "ˈpoli", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "πολύ",
+      "qualifiers": {"ipa": "poˈli", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "νόμος",
+      "qualifiers": {"ipa": "ˈnomos", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "νομός",
+      "qualifiers": {"ipa": "noˈmos", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "marked_on_every_word"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

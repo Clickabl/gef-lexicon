@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "fr",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "look_alike_words",
+      "kind": "helpful_transfer",
+      "text": "English took thousands of words from French after 1066, so many everyday French words look familiar. Spelling is often the same or close; the pronunciation is what changes.",
+      "pairs": [
+        {"from": "family", "to": "famille", "to_ipa": "famij"},
+        {"from": "important", "to": "important", "to_ipa": "ɛ̃pɔʁtɑ̃"},
+        {"from": "restaurant", "to": "restaurant", "to_ipa": "ʁɛstɔʁɑ̃"},
+        {"from": "animal", "to": "animal", "to_ipa": "animal"},
+        {"from": "problem", "to": "problème", "to_ipa": "pʁɔblɛm"},
+        {"from": "music", "to": "musique", "to_ipa": "myzik"},
+        {"from": "information", "to": "information", "to_ipa": "ɛ̃fɔʁmasjɔ̃"},
+        {"from": "different", "to": "différent", "to_ipa": "difeʁɑ̃"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few look-alikes mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "actually", "to": "actuellement", "to_ipa": "aktɥɛlmɑ̃", "to_meaning": "currently, at the moment"},
+        {"from": "library", "to": "librairie", "to_ipa": "libʁɛʁi", "to_meaning": "bookshop"},
+        {"from": "sensible", "to": "sensible", "to_ipa": "sɑ̃sibl", "to_meaning": "sensitive"},
+        {"from": "to attend", "to": "attendre", "to_ipa": "atɑ̃dʁ", "to_meaning": "to wait for"},
+        {"from": "eventually", "to": "éventuellement", "to_ipa": "evɑ̃tɥɛlmɑ̃", "to_meaning": "possibly, if need be"},
+        {"from": "to demand", "to": "demander", "to_ipa": "dəmɑ̃de", "to_meaning": "to ask"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

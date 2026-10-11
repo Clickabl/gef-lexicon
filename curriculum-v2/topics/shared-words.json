@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "topic_key": "shared_words",
+  "node_kind": "orientation",
+  "domain": "language_identity",
+  "title_key": "curriculum.topic.shared_words.title",
+  "summary_key": "curriculum.topic.shared_words.summary",
+  "focus_axes": ["cognates", "false_friends"],
+  "relations": [
+    {"relation": "reinforces", "topic_id": "TOPIC.orientation.grammar_glance"}
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 2,
+    "include_best_language": true,
+    "include_profile_comparison_languages": false,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Pair-sensitive: the words a learner already knows depend on both languages, so they live in bridge notes."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "words", "scene_kind": "term_reveal", "facet": "shared_words", "required": false},
+      {"scene_id": "friends", "scene_kind": "concept", "facet": "false_friends", "required": false},
+      {"scene_id": "check", "scene_kind": "checkpoint", "facet": "shared_words_check", "required": false},
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 3,
+    "notes": "Stop 5 of the Meet-a-language path. A pair with no reviewed bridge has no scenes here; the runtime says so instead of inventing words."
+  },
+  "difficulty_band": "pre_a1",
+  "notes": "Look-alike words come from reviewed bridge notes for the pair. A bridge is never required to exist for a language to be learnable.",
+  "review_state": "candidate",
+  "version": 1
+}

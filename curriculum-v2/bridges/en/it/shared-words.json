@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "it",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "look_alike_words",
+      "kind": "helpful_transfer",
+      "text": "Italian is close to Latin, and English borrowed a great deal from Latin. Many words become guessable once you know the endings: -tion often becomes -zione, and -ant or -ent often becomes -ante or -ente.",
+      "pairs": [
+        {"from": "family", "to": "famiglia", "to_ipa": "faˈmiʎʎa"},
+        {"from": "important", "to": "importante", "to_ipa": "imporˈtante"},
+        {"from": "restaurant", "to": "ristorante", "to_ipa": "ristoˈrante"},
+        {"from": "animal", "to": "animale", "to_ipa": "aniˈmale"},
+        {"from": "problem", "to": "problema", "to_ipa": "proˈblɛma"},
+        {"from": "music", "to": "musica", "to_ipa": "ˈmuzika"},
+        {"from": "information", "to": "informazione", "to_ipa": "informatˈtsjone"},
+        {"from": "different", "to": "differente", "to_ipa": "diffeˈrɛnte"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few look-alikes mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "actually", "to": "attualmente", "to_ipa": "attualˈmente", "to_meaning": "currently, at present"},
+        {"from": "library", "to": "libreria", "to_ipa": "libreˈria", "to_meaning": "bookshop"},
+        {"from": "parents", "to": "parenti", "to_ipa": "paˈrɛnti", "to_meaning": "relatives"},
+        {"from": "sympathetic", "to": "simpatico", "to_ipa": "simˈpatiko", "to_meaning": "nice, likeable"},
+        {"from": "morbid", "to": "morbido", "to_ipa": "ˈmɔrbido", "to_meaning": "soft"},
+        {
+          "from": "eventually",
+          "to": "eventualmente",
+          "to_ipa": "eventualˈmente",
+          "to_meaning": "possibly, if need be"
+        }
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

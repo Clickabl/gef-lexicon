@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.it.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "it",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʃ", "m", "n", "ɲ", "l", "ʎ", "r", "j", "w", "ts", "dz", "tʃ", "dʒ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "ɛ", "a", "ɔ", "o", "u"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.gli",
+      "fact_kind": "term",
+      "value": "famiglia",
+      "qualifiers": {"ipa": "ʎ", "spelling": "gli", "word_ipa": "faˈmiʎʎa", "note_id": "palatal_lateral"}
+    },
+    {
+      "fact_id": "sounds.tricky.gn",
+      "fact_kind": "term",
+      "value": "gnocchi",
+      "qualifiers": {"ipa": "ɲ", "spelling": "gn", "word_ipa": "ˈɲɔkki", "note_id": "palatal_nasal"}
+    },
+    {
+      "fact_id": "sounds.tricky.ch",
+      "fact_kind": "term",
+      "value": "chi",
+      "qualifiers": {"ipa": "k", "spelling": "ch", "word_ipa": "ki", "note_id": "hard_c_before_i"}
+    },
+    {
+      "fact_id": "sounds.tricky.double",
+      "fact_kind": "term",
+      "value": "sette",
+      "qualifiers": {"ipa": "tt", "spelling": "tt", "word_ipa": "ˈsɛtte", "note_id": "double_consonant"}
+    },
+    {
+      "fact_id": "sounds.tricky.trill",
+      "fact_kind": "term",
+      "value": "rosso",
+      "qualifiers": {"ipa": "r", "spelling": "r", "word_ipa": "ˈrosso", "note_id": "trill"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "pala",
+      "qualifiers": {"ipa": "ˈpala", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "palla",
+      "qualifiers": {"ipa": "ˈpalla", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "caro",
+      "qualifiers": {"ipa": "ˈkaro", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "carro",
+      "qualifiers": {"ipa": "ˈkarro", "pair": 2}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_penultimate"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -2,28 +2,63 @@
   "schema_version": 1,
   "topic_id": "TOPIC.orientation.language_overview",
   "language_tag": "en",
-  "title": "Meet this language",
-  "summary": "See where the language came from, what it is related to, and how it connects to languages you already know.",
+  "title": "Meet {language}",
+  "summary": "Where {language} comes from, who speaks it, and how it connects to the languages you know.",
   "scene_copy": {
-    "tree": {
-      "title": "Where it comes from",
-      "body": "The highlighted language is your focus. The other branches come from languages you know when possible, with a few references added only when the tree needs more context.",
+    "hello": {
+      "title": "Say hello in {language}",
+      "body": "Gef here. One word to start.",
+      "prompt": "Which one did you hear?",
       "continue_label": "Keep going"
     },
-    "compare": {
-      "title": "Languages in your head",
-      "body": "Related languages can give you useful shortcuts, but similar family history does not make them interchangeable."
+    "tree": {
+      "title": "Where {language} comes from",
+      "body": "{language} belongs to the {family} family, in the {branch} branch.",
+      "continue_label": "Keep going"
     },
-    "focus": {
-      "title": "Your focus language",
-      "body": "Here are the details that matter most for the language you are learning."
-    },
-    "complete": {
-      "title": "You have the map",
-      "body": "Now we can use what you already know as the course grows around you.",
-      "continue_label": "Continue"
-    }
+    "reach": {"title": "Where it’s spoken", "body": "You’ll hear {language} across {regions}.", "continue_label": "Keep going"},
+    "compare": {"title": "{language} and {best}", "body": "How the two are related.", "continue_label": "Keep going"},
+    "check": {"title": "Quick check", "prompt": "Which of these is a close relative of {language}?", "continue_label": "Check"},
+    "complete": {"title": "You’ve met {language}", "body": "That’s the map. Gef approves.", "continue_label": "Continue"}
+  },
+  "labels": {
+    "family.indo_european": "Indo-European",
+    "branch.italic": "Italic",
+    "branch.romance": "Romance",
+    "branch.germanic": "Germanic",
+    "branch.west_germanic": "West Germanic",
+    "branch.hellenic": "Hellenic",
+    "region.europe": "Europe",
+    "region.americas": "the Americas",
+    "region.africa": "Africa",
+    "region.asia": "Asia",
+    "region.oceania": "Oceania",
+    "relation.same_branch": "{language} and {best} are close cousins: the same family and the same branch.",
+    "relation.same_family": "{language} and {best} are distant cousins: the same family, different branches.",
+    "relation.different_family": "{language} and {best} come from different families, so don’t expect shared roots.",
+    "relation.sole_branch": "{language} is the only living language of its branch.",
+    "tree.relatives": "Close relatives",
+    "q.relative": "Which of these is a close relative of {language}?",
+    "q.branch": "Which branch is {language} in?",
+    "q.heard": "Which one did you hear?"
+  },
+  "glosses": {
+    "es:hook.target": "hello",
+    "es:hook.decoy.1": "thank you",
+    "es:hook.decoy.2": "goodbye",
+    "fr:hook.target": "hello, good morning",
+    "fr:hook.decoy.1": "thank you",
+    "fr:hook.decoy.2": "goodbye",
+    "pt:hook.target": "hello",
+    "pt:hook.decoy.1": "thank you (said by a man)",
+    "pt:hook.decoy.2": "goodbye",
+    "it:hook.target": "hi, bye",
+    "it:hook.decoy.1": "thank you",
+    "it:hook.decoy.2": "excuse me (formal)",
+    "el:hook.target": "hi, bye",
+    "el:hook.decoy.1": "thank you",
+    "el:hook.decoy.2": "goodbye"
   },
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }

@@ -18,7 +18,22 @@
         "properties": {
           "note_id": {"type": "string", "minLength": 1},
           "kind": {"type": "string", "enum": ["helpful_transfer", "false_friend", "contrast", "warning", "shortcut"]},
-          "text": {"type": "string", "minLength": 1}
+          "text": {"type": "string", "minLength": 1},
+          "pairs": {
+            "type": "array",
+            "description": "Word pairs the note is about: 'from' is in the interface (best) language, 'to' in the language being learned.",
+            "items": {
+              "type": "object",
+              "required": ["from", "to"],
+              "properties": {
+                "from": {"type": "string", "minLength": 1},
+                "to": {"type": "string", "minLength": 1},
+                "to_ipa": {"type": "string", "minLength": 1},
+                "to_meaning": {"type": "string", "minLength": 1, "description": "What the 'to' word really means in the interface language; set on false friends, where it differs from 'from'."}
+              },
+              "additionalProperties": false
+            }
+          }
         },
         "additionalProperties": false
       }

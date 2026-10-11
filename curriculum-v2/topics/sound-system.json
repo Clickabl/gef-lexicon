@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.orientation.sound_system",
+  "topic_key": "sound_system",
+  "node_kind": "orientation",
+  "domain": "language_identity",
+  "title_key": "curriculum.topic.sound_system.title",
+  "summary_key": "curriculum.topic.sound_system.summary",
+  "focus_axes": ["spelling_to_sound", "stress", "sounds_new_to_the_learner", "minimal_pairs"],
+  "relations": [
+    {
+      "relation": "prepares_for",
+      "topic_id": "TOPIC.orientation.grammar_glance",
+      "notes": "Soft order for the Meet-a-language path; never a gate."
+    },
+    {"relation": "reinforces", "topic_id": "TOPIC.orientation.writing_system"}
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 4,
+    "include_best_language": true,
+    "include_profile_comparison_languages": false,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Compare sound inventories of the focus language and the learner's best language only."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "overview", "scene_kind": "concept_reveal", "facet": "sound_overview", "required": true},
+      {"scene_id": "surprises", "scene_kind": "term_reveal", "facet": "tricky_sounds", "required": true},
+      {
+        "scene_id": "check",
+        "scene_kind": "checkpoint",
+        "facet": "sound_check",
+        "required": false,
+        "minimum_capability": "listening"
+      },
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 3,
+    "notes": "Stop 3 of the Meet-a-language path."
+  },
+  "difficulty_band": "pre_a1",
+  "notes": "Sounds are broad phonemic IPA for the named standard variety. Regional varieties are noted as varieties, never as the one correct form.",
+  "review_state": "candidate",
+  "version": 1
+}

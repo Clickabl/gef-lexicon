@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "topic_key": "grammar_glance",
+  "node_kind": "orientation",
+  "domain": "language_identity",
+  "title_key": "curriculum.topic.grammar_glance.title",
+  "summary_key": "curriculum.topic.grammar_glance.summary",
+  "focus_axes": ["noun_gender", "articles", "formal_you", "verb_endings", "subject_pronouns", "adjective_position", "cases", "word_order", "questions"],
+  "relations": [
+    {
+      "relation": "prepares_for",
+      "topic_id": "TOPIC.orientation.shared_words",
+      "notes": "Soft order for the Meet-a-language path; never a gate."
+    },
+    {"relation": "reinforces", "topic_id": "TOPIC.orientation.sound_system"}
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 4,
+    "include_best_language": true,
+    "include_profile_comparison_languages": false,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Compare the focus language's traits with the learner's best language only; the differences are computed."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {"scene_id": "differences", "scene_kind": "term_reveal", "facet": "trait_differences", "required": true},
+      {
+        "scene_id": "same",
+        "scene_kind": "concept",
+        "facet": "trait_similarities",
+        "required": false,
+        "minimum_capability": "comparison"
+      },
+      {
+        "scene_id": "check",
+        "scene_kind": "checkpoint",
+        "facet": "trait_check",
+        "required": false,
+        "minimum_capability": "recognition_practice"
+      },
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 3,
+    "notes": "Stop 4 of the Meet-a-language path. At most five differences, most surprising first."
+  },
+  "difficulty_band": "pre_a1",
+  "notes": "A trait is a coarse, widely agreed property, not a grammar lesson. Real instruction belongs to the topic-first grammar lessons that follow.",
+  "review_state": "candidate",
+  "version": 1
+}
