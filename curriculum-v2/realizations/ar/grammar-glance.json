@@ -1,0 +1,165 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ar.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "ar",
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "root_and_pattern"},
+    {
+      "fact_id": "trait.word_building.example.1",
+      "fact_kind": "term",
+      "value": "كَتَبَ / كِتَاب / مَكْتَب / كَاتِب",
+      "qualifiers": {"ipa": "kataba / kitaːb / maktab / kaːtib", "root": "ك ت ب"}
+    },
+    {
+      "fact_id": "trait.word_building.example.2",
+      "fact_kind": "term",
+      "value": "دَرَسَ / دَرْس / مَدْرَسَة / مُدَرِّس",
+      "qualifiers": {"ipa": "darasa / dars / madrasa / mudarris", "root": "د ر س"}
+    },
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "two",
+      "qualifiers": {"values": ["masculine", "feminine"], "articles": ["ال"]}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "كِتَاب جَدِيد",
+      "qualifiers": {"ipa": "kitaːb dʒadiːd", "gender": "masculine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "مَدْرَسَة جَدِيدَة",
+      "qualifiers": {"ipa": "madrasa dʒadiːda", "gender": "feminine"}
+    },
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.formal_you", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "كَتَبَ"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "كَتَبْتُ / كَتَبْتَ / كَتَبْتِ / كَتَبَ / كَتَبَتْ / كَتَبْنَا",
+      "qualifiers": {"ipa": "katabtu / katabta / katabti / kataba / katabat / katabnaː"}
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "often_dropped"},
+    {
+      "fact_id": "trait.subject_pronouns.example.1",
+      "fact_kind": "term",
+      "value": "كَتَبْتُ رِسَالَة",
+      "qualifiers": {"ipa": "katabtu risaːla"}
+    },
+    {
+      "fact_id": "trait.cases",
+      "fact_kind": "category",
+      "value": "some",
+      "qualifiers": {"count": 3}
+    },
+    {
+      "fact_id": "trait.cases.example.1",
+      "fact_kind": "term",
+      "value": "الْكِتَابُ / الْكِتَابَ / الْكِتَابِ",
+      "qualifiers": {"ipa": "ʔalkitaːbu / ʔalkitaːba / ʔalkitaːbi"}
+    },
+    {
+      "fact_id": "trait.cases.example.2",
+      "fact_kind": "term",
+      "value": "كِتَابٌ / كِتَابًا / كِتَابٍ",
+      "qualifiers": {"ipa": "kitaːbun / kitaːban / kitaːbin"}
+    },
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "present"},
+    {
+      "fact_id": "trait.dual_number.example.1",
+      "fact_kind": "term",
+      "value": "كِتَاب / كِتَابَان / كُتُب",
+      "qualifiers": {"ipa": "kitaːb / kitaːbaːn / kutub"}
+    },
+    {
+      "fact_id": "trait.dual_number.example.2",
+      "fact_kind": "term",
+      "value": "يَدَان",
+      "qualifiers": {"ipa": "jadaːn"}
+    },
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "after_noun"},
+    {
+      "fact_id": "trait.adjective_position.example.1",
+      "fact_kind": "term",
+      "value": "بَيْت كَبِير",
+      "qualifiers": {"ipa": "bajt kabiːr"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "definite_only"},
+    {
+      "fact_id": "trait.articles.example.1",
+      "fact_kind": "term",
+      "value": "الْبَيْت / بَيْت",
+      "qualifiers": {"ipa": "ʔalbajt / bajt"}
+    },
+    {"fact_id": "trait.questions", "fact_kind": "category", "value": "particle"},
+    {
+      "fact_id": "trait.questions.example.1",
+      "fact_kind": "term",
+      "value": "هَلْ هَذَا كِتَاب؟",
+      "qualifiers": {"ipa": "hal haːðaː kitaːb"}
+    },
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "flexible"},
+    {
+      "fact_id": "trait.word_order.example.1",
+      "fact_kind": "term",
+      "value": "قَرَأَ الْوَلَدُ الْكِتَابَ",
+      "qualifiers": {"ipa": "qaraʔa lwaladu lkitaːb"}
+    },
+    {
+      "fact_id": "trait.word_order.example.2",
+      "fact_kind": "term",
+      "value": "الْوَلَدُ قَرَأَ الْكِتَابَ",
+      "qualifiers": {"ipa": "ʔalwaladu qaraʔa lkitaːb"}
+    },
+    {
+      "fact_id": "noun.1",
+      "fact_kind": "term",
+      "value": "كِتَاب",
+      "qualifiers": {"article": "ال", "gender": "masculine", "ipa": "kitaːb"}
+    },
+    {
+      "fact_id": "noun.2",
+      "fact_kind": "term",
+      "value": "مَدْرَسَة",
+      "qualifiers": {"article": "ال", "gender": "feminine", "ipa": "madrasa"}
+    },
+    {
+      "fact_id": "noun.3",
+      "fact_kind": "term",
+      "value": "بَيْت",
+      "qualifiers": {"article": "ال", "gender": "masculine", "ipa": "bajt"}
+    },
+    {
+      "fact_id": "noun.4",
+      "fact_kind": "term",
+      "value": "جَامِعَة",
+      "qualifiers": {"article": "ال", "gender": "feminine", "ipa": "dʒaːmiʕa"}
+    },
+    {
+      "fact_id": "noun.5",
+      "fact_kind": "term",
+      "value": "قَلَم",
+      "qualifiers": {"article": "ال", "gender": "masculine", "ipa": "qalam"}
+    },
+    {
+      "fact_id": "noun.6",
+      "fact_kind": "term",
+      "value": "مَدِينَة",
+      "qualifiers": {"article": "ال", "gender": "feminine", "ipa": "madiːna"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

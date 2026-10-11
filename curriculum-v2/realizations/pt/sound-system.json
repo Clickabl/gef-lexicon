@@ -3,6 +3,7 @@
   "realization_id": "REAL.pt.sound_system",
   "topic_id": "TOPIC.orientation.sound_system",
   "language_tag": "pt",
+  "completeness": "complete",
   "facts": [
     {
       "fact_id": "sounds.consonants",
@@ -70,6 +71,7 @@
       "value": "carro",
       "qualifiers": {"ipa": "ˈkaʁu", "pair": 2}
     },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
     {"fact_id": "stress.pattern", "fact_kind": "category", "value": "rule_with_written_accents"},
     {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
   ],

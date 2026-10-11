@@ -16,6 +16,11 @@
     "realization_id": {"type": "string", "pattern": "^REAL\\.[A-Za-z0-9._-]+$"},
     "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
     "language_tag": {"type": "string", "minLength": 1},
+    "completeness": {
+      "type": "string",
+      "enum": ["draft", "complete"],
+      "description": "`complete` means every required slot of the intro contract is filled (curriculum-v2/INTRO_FACTS.md) and the validator checks it; `draft` (the default) may carry nulls and missing facts, and coverage reports them."
+    },
     "system_status": {
       "type": "string",
       "enum": ["present", "limited", "absent", "not_applicable", "unknown"]

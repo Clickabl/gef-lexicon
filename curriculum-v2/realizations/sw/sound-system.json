@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.sw.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "sw",
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "tʃ", "dʒ", "f", "v", "θ", "ð", "s", "z", "ʃ", "x", "ɣ", "h", "m", "n", "ɲ", "ŋ", "ɾ", "l", "j", "w", "ᵐb", "ⁿd", "ⁿdʒ", "ᵑɡ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "e", "i", "o", "u"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.mb",
+      "fact_kind": "term",
+      "value": "mbuzi",
+      "qualifiers": {"ipa": "ᵐb", "spelling": "mb", "word_ipa": "ˈᵐbuzi", "note_id": "prenasalized_stop"}
+    },
+    {
+      "fact_id": "sounds.tricky.nd",
+      "fact_kind": "term",
+      "value": "ndizi",
+      "qualifiers": {"ipa": "ⁿd", "spelling": "nd", "word_ipa": "ˈⁿdizi", "note_id": "prenasalized_stop"}
+    },
+    {
+      "fact_id": "sounds.tricky.ng_apostrophe",
+      "fact_kind": "term",
+      "value": "ng'ombe",
+      "qualifiers": {"ipa": "ŋ", "spelling": "ng'", "word_ipa": "ˈŋoᵐbe", "note_id": "initial_ng"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "rafiki",
+      "qualifiers": {"ipa": "ɾ", "spelling": "r", "word_ipa": "ɾaˈfiki", "note_id": "tapped_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.dh",
+      "fact_kind": "term",
+      "value": "dhahabu",
+      "qualifiers": {"ipa": "ð", "spelling": "dh", "word_ipa": "ðaˈhabu", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.th",
+      "fact_kind": "term",
+      "value": "thamani",
+      "qualifiers": {"ipa": "θ", "spelling": "th", "word_ipa": "θaˈmani", "note_id": "dental_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.gh",
+      "fact_kind": "term",
+      "value": "lugha",
+      "qualifiers": {"ipa": "ɣ", "spelling": "gh", "word_ipa": "ˈluɣa", "note_id": "voiced_velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "kheri",
+      "qualifiers": {"ipa": "x", "spelling": "kh", "word_ipa": "ˈxeɾi", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "pata",
+      "qualifiers": {"ipa": "ˈpata", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "bata",
+      "qualifiers": {"ipa": "ˈbata", "pair": 1}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "nani",
+      "qualifiers": {"ipa": "ˈnani", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "nane",
+      "qualifiers": {"ipa": "ˈnane", "pair": 2}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "tamu",
+      "qualifiers": {"ipa": "ˈtamu", "pair": 3}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "damu",
+      "qualifiers": {"ipa": "ˈdamu", "pair": 3}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_penultimate"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

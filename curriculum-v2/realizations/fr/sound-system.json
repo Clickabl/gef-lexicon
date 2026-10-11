@@ -3,6 +3,7 @@
   "realization_id": "REAL.fr.sound_system",
   "topic_id": "TOPIC.orientation.sound_system",
   "language_tag": "fr",
+  "completeness": "complete",
   "facts": [
     {
       "fact_id": "sounds.consonants",
@@ -70,6 +71,7 @@
       "value": "banc",
       "qualifiers": {"ipa": "bɑ̃", "pair": 2}
     },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
     {"fact_id": "stress.pattern", "fact_kind": "category", "value": "phrase_final"},
     {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
   ],

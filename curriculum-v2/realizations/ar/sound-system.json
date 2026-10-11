@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ar.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "ar",
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["ʔ", "b", "t", "θ", "dʒ", "ħ", "x", "d", "ð", "r", "z", "s", "ʃ", "sˤ", "dˤ", "tˤ", "ðˤ", "ʕ", "ɣ", "f", "q", "k", "l", "m", "n", "h", "w", "j"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "i", "u", "aː", "iː", "uː"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.ayn",
+      "fact_kind": "term",
+      "value": "عَيْن",
+      "qualifiers": {"ipa": "ʕ", "spelling": "ع", "word_ipa": "ʕajn", "note_id": "pharyngeal_voiced"}
+    },
+    {
+      "fact_id": "sounds.tricky.hah",
+      "fact_kind": "term",
+      "value": "حَلِيب",
+      "qualifiers": {"ipa": "ħ", "spelling": "ح", "word_ipa": "ħaliːb", "note_id": "pharyngeal_voiceless"}
+    },
+    {
+      "fact_id": "sounds.tricky.sad",
+      "fact_kind": "term",
+      "value": "صَبَاح",
+      "qualifiers": {"ipa": "sˤ", "spelling": "ص", "word_ipa": "sˤabaːħ", "note_id": "emphatic"}
+    },
+    {
+      "fact_id": "sounds.tricky.qaf",
+      "fact_kind": "term",
+      "value": "قَمَر",
+      "qualifiers": {"ipa": "q", "spelling": "ق", "word_ipa": "qamar", "note_id": "uvular_stop"}
+    },
+    {
+      "fact_id": "sounds.tricky.khah",
+      "fact_kind": "term",
+      "value": "خُبْز",
+      "qualifiers": {"ipa": "x", "spelling": "خ", "word_ipa": "xubz", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.ghain",
+      "fact_kind": "term",
+      "value": "غُرْفَة",
+      "qualifiers": {"ipa": "ɣ", "spelling": "غ", "word_ipa": "ɣurfa", "note_id": "gargle_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.hamza",
+      "fact_kind": "term",
+      "value": "مَاء",
+      "qualifiers": {"ipa": "ʔ", "spelling": "ء", "word_ipa": "maːʔ", "note_id": "glottal_stop"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "جَمَل",
+      "qualifiers": {"ipa": "dʒamal", "pair": 1, "note_id": "vowel_length"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "جَمَال",
+      "qualifiers": {"ipa": "dʒamaːl", "pair": 1, "note_id": "vowel_length"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "سَيْف",
+      "qualifiers": {"ipa": "sajf", "pair": 2, "note_id": "emphatic"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "صَيْف",
+      "qualifiers": {"ipa": "sˤajf", "pair": 2, "note_id": "emphatic"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "كَلْب",
+      "qualifiers": {"ipa": "kalb", "pair": 3, "note_id": "uvular_stop"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "قَلْب",
+      "qualifiers": {"ipa": "qalb", "pair": 3, "note_id": "uvular_stop"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "دَرَسَ",
+      "qualifiers": {"ipa": "darasa", "pair": 4, "note_id": "double_consonant"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "دَرَّسَ",
+      "qualifiers": {"ipa": "darrasa", "pair": 4, "note_id": "double_consonant"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "rule_by_syllable_weight"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

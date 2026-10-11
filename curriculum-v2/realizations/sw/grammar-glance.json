@@ -1,0 +1,104 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.sw.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "sw",
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "agglutinating"},
+    {
+      "fact_id": "trait.word_building.example.1",
+      "fact_kind": "term",
+      "value": "ninasoma",
+      "qualifiers": {"parts": ["ni", "na", "som", "a"]}
+    },
+    {
+      "fact_id": "trait.word_building.example.2",
+      "fact_kind": "term",
+      "value": "ninakupenda",
+      "qualifiers": {"parts": ["ni", "na", "ku", "pend", "a"]}
+    },
+    {
+      "fact_id": "trait.word_building.example.3",
+      "fact_kind": "term",
+      "value": "tutaonana",
+      "qualifiers": {"parts": ["tu", "ta", "on", "an", "a"]}
+    },
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "classes",
+      "qualifiers": {"count": 16}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "mtu / watu",
+      "qualifiers": {"class": "1/2", "prefixes": "m-/wa-"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "kitabu / vitabu",
+      "qualifiers": {"class": "7/8", "prefixes": "ki-/vi-"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.3",
+      "fact_kind": "term",
+      "value": "mti / miti",
+      "qualifiers": {"class": "3/4", "prefixes": "m-/mi-"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.4",
+      "fact_kind": "term",
+      "value": "nyumba / nyumba",
+      "qualifiers": {"class": "9/10", "prefixes": "N-/N-"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.5",
+      "fact_kind": "term",
+      "value": "jicho / macho",
+      "qualifiers": {"class": "5/6", "prefixes": "ji-/ma-"}
+    },
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.formal_you", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "few",
+      "qualifiers": {"example_verb": "kusoma"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "ninasoma / unasoma / anasoma / tunasoma / mnasoma / wanasoma"
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "often_dropped"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "Ninapenda Kiswahili."},
+    {"fact_id": "trait.cases", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "after_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "mtu mrefu"},
+    {"fact_id": "trait.adjective_position.example.2", "fact_kind": "term", "value": "watu warefu"},
+    {"fact_id": "trait.adjective_position.example.3", "fact_kind": "term", "value": "kitabu kizuri"},
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.questions",
+      "fact_kind": "category",
+      "value": "intonation_or_inversion",
+      "qualifiers": {"optional_particle": "je"}
+    },
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Unasoma kitabu?"},
+    {
+      "fact_id": "trait.questions.example.2",
+      "fact_kind": "term",
+      "value": "Je, unasoma kitabu?",
+      "qualifiers": {"particle": "je"}
+    },
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "svo"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Juma anasoma kitabu."}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

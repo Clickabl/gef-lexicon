@@ -3,6 +3,7 @@
   "realization_id": "REAL.en.grammar_glance",
   "topic_id": "TOPIC.orientation.grammar_glance",
   "language_tag": "en",
+  "completeness": "complete",
   "facts": [
     {"fact_id": "trait.noun_gender", "fact_kind": "category", "value": "none"},
     {"fact_id": "trait.noun_gender.example.1", "fact_kind": "term", "value": "the book, the table"},
@@ -26,7 +27,11 @@
     {"fact_id": "trait.word_order", "fact_kind": "category", "value": "svo"},
     {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Maria reads a book."},
     {"fact_id": "trait.questions", "fact_kind": "category", "value": "auxiliary_do"},
-    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Do you speak English?"}
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Do you speak English?"},
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "walked"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"}
   ],
   "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
   "review_state": "candidate",

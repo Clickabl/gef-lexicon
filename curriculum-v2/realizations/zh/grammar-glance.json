@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.zh.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "zh",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "isolating"},
+    {
+      "fact_id": "trait.word_building.example.1",
+      "fact_kind": "term",
+      "value": "火车",
+      "qualifiers": {"reading": "huǒchē"}
+    },
+    {
+      "fact_id": "trait.word_building.example.2",
+      "fact_kind": "term",
+      "value": "电话",
+      "qualifiers": {"reading": "diànhuà"}
+    },
+    {"fact_id": "trait.noun_gender", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "required"},
+    {
+      "fact_id": "trait.classifiers.example.1",
+      "fact_kind": "term",
+      "value": "三本书",
+      "qualifiers": {"reading": "sān běn shū"}
+    },
+    {
+      "fact_id": "trait.classifiers.example.2",
+      "fact_kind": "term",
+      "value": "三个人",
+      "qualifiers": {"reading": "sān gè rén"}
+    },
+    {
+      "fact_id": "trait.classifiers.example.3",
+      "fact_kind": "term",
+      "value": "两杯茶",
+      "qualifiers": {"reading": "liǎng bēi chá"}
+    },
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "你", "formal": "您"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "你是老师吗？",
+      "qualifiers": {"register": "informal", "reading": "Nǐ shì lǎoshī ma?"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "您是老师吗？",
+      "qualifiers": {"register": "formal", "reading": "Nín shì lǎoshī ma?"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "none",
+      "qualifiers": {"example_verb": "说"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "我说 / 你说 / 他说 / 我们说 / 他们说",
+      "qualifiers": {"reading": "wǒ shuō / nǐ shuō / tā shuō / wǒmen shuō / tāmen shuō"}
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "context_dependent"},
+    {
+      "fact_id": "trait.subject_pronouns.example.1",
+      "fact_kind": "term",
+      "value": "我说中文。",
+      "qualifiers": {"reading": "Wǒ shuō Zhōngwén."}
+    },
+    {"fact_id": "trait.cases", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.cases.example.1",
+      "fact_kind": "term",
+      "value": "我爱他。他爱我。",
+      "qualifiers": {"reading": "Wǒ ài tā. Tā ài wǒ."}
+    },
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {
+      "fact_id": "trait.adjective_position.example.1",
+      "fact_kind": "term",
+      "value": "大房子",
+      "qualifiers": {"reading": "dà fángzi"}
+    },
+    {
+      "fact_id": "trait.adjective_position.example.2",
+      "fact_kind": "term",
+      "value": "好朋友",
+      "qualifiers": {"reading": "hǎo péngyou"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.articles.example.1",
+      "fact_kind": "term",
+      "value": "书在桌子上。",
+      "qualifiers": {"reading": "Shū zài zhuōzi shàng."}
+    },
+    {
+      "fact_id": "trait.questions",
+      "fact_kind": "category",
+      "value": "particle",
+      "qualifiers": {"particle": "吗"}
+    },
+    {
+      "fact_id": "trait.questions.example.1",
+      "fact_kind": "term",
+      "value": "你说中文吗？",
+      "qualifiers": {"reading": "Nǐ shuō Zhōngwén ma?"}
+    },
+    {
+      "fact_id": "trait.questions.example.2",
+      "fact_kind": "term",
+      "value": "你喝茶吗？",
+      "qualifiers": {"reading": "Nǐ hē chá ma?"}
+    },
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "svo"},
+    {
+      "fact_id": "trait.word_order.example.1",
+      "fact_kind": "term",
+      "value": "我喝茶。",
+      "qualifiers": {"reading": "Wǒ hē chá."}
+    },
+    {
+      "fact_id": "trait.word_order.example.2",
+      "fact_kind": "term",
+      "value": "她看书。",
+      "qualifiers": {"reading": "Tā kàn shū."}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1,
+  "completeness": "complete"
+}

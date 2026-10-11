@@ -8,6 +8,8 @@
     "validate:phrase-uses": "node scripts/validate-phrase-uses.mjs",
     "validate:semantic-relations": "node scripts/validate-semantic-relations.mjs",
     "validate:curriculum-v2": "node scripts/validate-curriculum-v2.mjs",
+    "curriculum:coverage": "node scripts/curriculum-v2-coverage.mjs",
+    "curriculum:skeleton": "node scripts/curriculum-v2-skeleton.mjs",
     "test:sense-links": "node scripts/test-sense-links.mjs",
     "test:lesson-support-blurbs": "node scripts/test-lesson-support-blurbs.mjs",
     "test:lesson-language-capabilities": "node scripts/test-lesson-language-capabilities.mjs",

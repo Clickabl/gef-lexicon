@@ -3,25 +3,31 @@
   "realization_id": "REAL.it.writing_system",
   "topic_id": "TOPIC.orientation.writing_system",
   "language_tag": "it",
+  "completeness": "complete",
   "facts": [
-    {"fact_id": "script.id", "fact_kind": "category", "value": "Latn"},
-    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
-    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
     {
-      "fact_id": "alphabet.letters",
+      "fact_id": "writing.latin.symbols",
       "fact_kind": "term",
       "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "z"]
     },
-    {"fact_id": "alphabet.marked", "fact_kind": "term", "value": ["à", "è", "é", "ì", "ò", "ù"]},
-    {"fact_id": "punctuation.special", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": ["à", "è", "é", "ì", "ò", "ù"]},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": []},
     {
-      "fact_id": "mark.grave",
+      "fact_id": "writing.latin.mark.grave",
       "fact_kind": "term",
       "value": "à",
       "qualifiers": {"mark_id": "grave", "role": "stress", "example": "città", "example_ipa": "tʃitˈta"}
     },
     {
-      "fact_id": "mark.acute",
+      "fact_id": "writing.latin.mark.acute",
       "fact_kind": "term",
       "value": "é",
       "qualifiers": {"mark_id": "acute", "role": "stress", "example": "perché", "example_ipa": "perˈke"}

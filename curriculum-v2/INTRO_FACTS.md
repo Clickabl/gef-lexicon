@@ -1,8 +1,9 @@
 # Language-intro facts (the "Meet this language" branch)
 
 This file is the contract between the five intro topics, the realization facts that feed them, the best-language locale, and the
-`gef-expo` facet providers. `scripts/validate-curriculum-v2.mjs` enforces it. Candidate content stays `review_state: "candidate"`
-until a qualified reviewer approves it; nothing here is a verified claim.
+`gef-expo` facet providers. `scripts/validate-curriculum-v2.mjs` enforces it and reads its vocabularies from
+`curriculum-v2/slots/slots.json`. Candidate content stays `review_state: "candidate"` until a qualified reviewer approves it;
+nothing here is a verified claim.
 
 ## The branch
 
@@ -16,22 +17,46 @@ Soft order only (`relations: prepares_for`), never gating:
 | 4 | `TOPIC.orientation.grammar_glance` | `grammar_glance` | What's different |
 | 5 | `TOPIC.orientation.shared_words` | `shared_words` | Words you already know |
 
-Every Tier 1 language in `gef-expo/registry/language-support.json` (`lessonTiers.tier1_full`: en es fr pt it el) has a
-realization for topics 1 to 4, and a bridge from every other Tier 1 language that has an interface locale (today `en`) for topic 5.
-
 ## Principles
 
 1. **Facts are language-neutral and typed.** A realization describes one language by itself. It never mentions the learner's
    language. Prose in a learner's language lives only in `locales/{best}/topics/*.json` (`scene_copy`, `labels`, `glosses`).
-2. **Differences are computed.** "Letters you don't have", "sounds that are new to you" and "what's different" are set
-   differences between the focus realization and the best-language realization. Adding a language adds data once; it never adds
-   a pair.
-3. **Pair-sensitive truth only in bridges.** Cognates and false friends depend on both languages, so they are bridge notes
-   (`curriculum-v2/bridges/{from}/{to}/shared-words.json`), the one place pairs are allowed.
-4. **A fact that is missing is missing.** The runtime drops a scene whose facts are absent and says so honestly; it never
-   substitutes another language's data.
+2. **Slots, not scripts.** The lesson is a fixed set of slots (below). A language fills the slots that apply to it and the lesson
+   shows exactly those. Right-to-left, joined letters, two writing systems, tones, noun classes and root-and-pattern words are
+   slots like any other. A scene whose slots are empty is dropped, never faked; nothing is ever substituted from another language.
+3. **Differences are computed.** "Letters you don't have", "sounds that are new to you", "reads the other way" and "what's different"
+   are comparisons between the focus realization and the languages the learner already knows (see Known languages). Adding a
+   language adds data once; it never adds a pair.
+4. **Pair-sensitive truth only in bridges.** Cognates, false friends and borrowed words depend on both languages, so they are bridge
+   notes (`curriculum-v2/bridges/{from}/{to}/shared-words.json`), the one place pairs are allowed.
 5. **IPA is the shared notation for sound.** Broad phonemic transcription in IPA, for the standard variety named in the fact.
    Regional varieties are noted, never presented as the one correct form.
+6. **Every language fills every slot or says it has not.** A value of `null` means "not filled yet". A language may be a draft
+   (`completeness: "draft"`, the default for a new file) with nulls and missing facts; coverage reports them. Tier 1 languages and
+   any realization marked `completeness: "complete"` must have every required slot filled.
+
+## Adding a language (the whole procedure)
+
+1. `npm run curriculum:skeleton -- sw --layers latin` writes the four realization files with every slot present and unfilled.
+2. Fill what applies. Use `null` for what you do not know yet and `"none"` / `false` only for what is genuinely absent.
+3. Add any new label ids the language needs to `locales/en/topics/*.json`, and any new vocabulary value to `slots/slots.json`.
+4. `npm run validate` (structure, vocabularies, references) and `npm run curriculum:coverage` (what is filled and what is not).
+5. In gef-expo: `pnpm lesson:compile`. No code changes: scenes appear as slots fill.
+
+Copy for another best language (explaining Chinese to a German speaker, German to a Chinese speaker) is authored per language pair
+from the two realizations, not translated from English; that happens after the English copy is approved.
+
+## Known languages (what the lesson compares with)
+
+The learner's *bases* are their best language plus every other language they know at C1 or above (profile proficiency C1, C2 or
+Fluent/native). A base without a realization is skipped. Bases are ordered closest-first to the focus language (same branch, then
+same family, then the rest; the best language wins ties). Then:
+
+- Set differences (letters, marks, sounds, direction, writing system) are taken against the **union** of the bases: a letter is new
+  only if none of them has it.
+- Grammar traits lead with the closest base ("Like Spanish: ...") and report a trait as different only when no base shares it.
+- The relation scene names the closest base first, then the best language when it differs.
+- A language the learner already knows at C1 or above counts as met: its own stops show Done and stay openable.
 
 ## Fact shape
 
@@ -50,28 +75,34 @@ Genealogy (`genealogy`): `family_id`, `branch_ids` (at least one), `related_lang
 | `hook.target` | `term` | a common greeting in the language | `ipa?` |
 | `hook.decoy.1`, `hook.decoy.2` | `term` | two other common words, not greetings of the same word | `ipa?` |
 
-Facets: `first_word` (hook.*), `family_tree` (genealogy), `where_spoken` (reach.regions), `relation_to_best` (genealogy of both),
-`family_check` (genealogy of the focus language and the other realizations in the package).
+Facets: `first_word` (hook.*), `family_tree` (genealogy), `where_spoken` (reach.regions), `relation_to_best` (genealogy of the focus
+language and its bases), `family_check` (genealogy of the focus language and the other realizations in the package).
 
 ## Topic 2: `writing_system`
 
-Capabilities: `explanation`, `reviewed_examples`, `recognition_practice`.
+A language has one to four **writing layers**: its main script and anything that travels with it (Chinese characters and pinyin;
+Japanese kana and kanji; Serbian Cyrillic and Latin). Capabilities: `explanation`, `reviewed_examples`, `recognition_practice`.
+`{L}` is a layer id such as `latin`, `greek`, `arabic`, `hanzi`, `pinyin`; its names live in the locale (`layer.{L}`).
 
 | fact_id | kind | value | qualifiers |
 |---|---|---|---|
-| `script.id` | `category` | ISO 15924 code (`Latn`, `Grek`) | |
-| `script.direction` | `category` | `ltr` or `rtl` | |
-| `script.has_case` | `boolean` | | |
-| `alphabet.letters` | `term` | the alphabet, lowercase, in order | |
-| `alphabet.marked` | `term` | letters carrying marks that are not alphabet letters themselves (may be empty) | |
-| `punctuation.special` | `term` | punctuation the best language may lack (may be empty) | |
-| `alphabet.example.{key}` | `term` | an example word | `ipa`, `highlight` (the character it shows), `name?` (the letter's name in its own language, with a Latin transliteration), `looks_like?` (the Latin letter it resembles in either case, when the sound differs) |
-| `mark.{mark_id}` | `term` | a letter wearing the mark | `mark_id`, `role` (`stress sound_change pronounce_vowel vowel_quality`), `example`, `example_ipa` |
+| `writing.layers` | `term` | the layer ids, primary first | |
+| `writing.{L}.kind` | `category` | `alphabet abjad abugida syllabary logographic featural romanization` | |
+| `writing.{L}.script` | `category` | ISO 15924 (`Latn`, `Grek`, `Arab`, `Hani`) | |
+| `writing.{L}.role` | `category` | `primary` (exactly one), `aid` (helps you read or say the main one: pinyin), `alternate` (a second standard) | |
+| `writing.{L}.direction` | `category` | `ltr` or `rtl` | |
+| `writing.{L}.has_case` | `boolean` | upper and lower case | |
+| `writing.{L}.joined` | `boolean` | letters join and change shape by position (Arabic) | |
+| `writing.{L}.vowels` | `category` | `all_written`, `marks_optional` (Arabic), `inherent` (Devanagari), `not_applicable` | |
+| `writing.{L}.symbols` | `term` | the inventory in order (letters, syllables); empty for `logographic` | |
+| `writing.{L}.marked` | `term` | symbols that carry marks and are not inventory entries (may be empty) | |
+| `writing.{L}.punctuation` | `term` | punctuation the learner may not know (may be empty) | |
+| `writing.{L}.example.{key}` | `term` | an example word or character | `ipa`, `highlight` (the symbol it shows), `name?` (the letter's own name with a Latin transliteration), `looks_like?` (the Latin letter it resembles when the sound differs), `forms?` (positional shapes, in order: isolated initial medial final), `reading?` (the aid-layer spelling, e.g. pinyin) |
+| `writing.{L}.mark.{id}` | `term` | a symbol wearing the mark | `mark_id`, `role`, `example`, `example_ipa` |
 
-Every character in `alphabet.letters` outside `a` to `z` needs an `alphabet.example.*` with that `highlight`; a non-Latin script
-needs one for every letter. A positional variant listed in `alphabet.marked` (Greek final sigma) is shown as a new letter when it has
-such an example. Facets: `script_intro` (script.*, letters shared with the best language), `new_letters` (letters and
-marks missing from the best language, with examples), `marks_and_punctuation` (mark.*, punctuation.special), `letter_check`.
+Every symbol outside Latin `a` to `z` needs a `writing.{L}.example.*` with that `highlight`; a `logographic` layer is carried by its
+examples (at least six). Facets: `script_intro` (layers, kind, direction, case, joining, how much is shared), `new_letters`
+(symbols and characters missing from every base, with examples), `marks_and_punctuation`, `letter_check`.
 
 ## Topic 3: `sound_system`
 
@@ -82,49 +113,44 @@ Capabilities: `explanation`, `reviewed_examples`, `recognition_practice`, `liste
 | `sounds.consonants` | `term` | IPA consonants of the standard variety | `variety` |
 | `sounds.vowels` | `term` | IPA vowels of the standard variety | `variety` |
 | `sounds.tricky.{id}` | `term` | an example word | `ipa` (the sound; omit when silent), `spelling`, `word_ipa`, `note_id` (a `sound.*` label), `silent?` |
-| `sounds.contrast.{n}.a`, `.b` | `term` | two words that differ by one sound, or only by stress (Greek) | `ipa` (the word), `pair` (n), `note_id` |
-| `stress.pattern` | `category` | `rule_with_written_accents`, `mostly_penultimate`, `phrase_final`, `marked_on_every_word`, `unpredictable` | |
-| `spelling.predictability` | `category` | `high`, `medium`, `low` | |
+| `sounds.contrast.{n}.a`, `.b` | `term` | two words that differ by one sound, a tone, or only by stress | `ipa` (the word), `pair` (n), `note_id` |
+| `tones.system` | `category` | `none contour register pitch_accent` | `count?` |
+| `tones.example.{n}` | `term` | a syllable or word showing one tone | `ipa`, `tone_id` (a `tone.*` label), `contour?` (IPA tone letters) |
+| `stress.pattern` | `category` | `rule_with_written_accents mostly_penultimate phrase_final marked_on_every_word unpredictable not_applicable` | |
+| `spelling.predictability` | `category` | `high medium low` | |
 
-At least three `sounds.tricky.*` and one contrast pair. Facets: `sound_overview`, `tricky_sounds` (sounds whose `ipa` is not in the
-best language's inventory are marked new), `listen_pick` (contrast pairs), `sound_check`.
+At least three `sounds.tricky.*` and one contrast pair; a tonal language (`tones.system` not `none`) also needs at least four
+`tones.example.*`. Facets: `sound_overview`, `tone_overview`, `tricky_sounds` (sounds whose `ipa` is in no base's inventory are marked
+new), `listen_pick` (contrast pairs), `sound_check`.
 
 ## Topic 4: `grammar_glance`
 
-Capabilities: `explanation`, `comparison`, `reviewed_examples`, `recognition_practice`.
+Capabilities: `explanation`, `comparison`, `reviewed_examples`, `recognition_practice`. Each trait is one `category` fact
+`trait.{name}`; a trait whose value is not `none` has at least one example `term` fact `trait.{name}.example.{n}`. The traits, their
+values and the order the lesson shows them (most surprising first) are in `slots/slots.json` (`grammar`), and the order is copied
+into the topic's scenes as `facet_config.trait_order`, so the runtime hard-codes none of it.
 
-Each trait is one `category` fact `trait.{name}` and has at least one example `term` fact `trait.{name}.example.{n}`.
-
-| trait | values | qualifiers on the trait fact |
-|---|---|---|
-| `noun_gender` | `none two three` | `values` (the genders), `articles?` |
-| `articles` | `none definite_indefinite definite_only` | |
-| `formal_you` | `none distinct` | `informal`, `formal` |
-| `verb_endings` | `few many` | `example_verb` |
-| `subject_pronouns` | `required often_dropped` | |
-| `adjective_position` | `before_noun after_noun either` | |
-| `cases` | `none pronouns_only some` | `count?` |
-| `word_order` | `svo flexible` | |
-| `questions` | `auxiliary_do intonation_or_inversion` | |
-
-Languages with grammatical gender also carry `noun.{n}` `term` facts (at least four) with qualifiers `article` and `gender` for
-the gender check. Facets: `trait_differences` (traits whose value differs from the best language, in the order above, at most
-five), `trait_similarities`, `trait_check`.
+Languages with grammatical gender or noun classes also carry `noun.{n}` `term` facts (at least four) with qualifiers `article` and
+`gender` for the gender check. Facets: `trait_differences` (traits no base shares, in order, at most five), `trait_similarities`,
+`trait_check`.
 
 ## Topic 5: `shared_words` (bridges)
 
-`bridges/{from}/{to}/shared-words.json`, `interface_language_tag` = `from`. Notes of kind `helpful_transfer` carry `pairs`
-(look-alike words, at least six across the file), notes of kind `false_friend` carry `pairs` where `from` is the English-looking word
-the learner will wrongly assume. Facets: `shared_words`, `false_friends`, `shared_words_check`.
+`bridges/{from}/{to}/shared-words.json`. `interface_language_tag` is the language the note text is written in; for a learner whose
+best language is `from` it equals `from`. For a base other than the best language (Spanish for an English-speaking learner of
+Italian) the bridge is `from: es, to: it` with `interface_language_tag: en`, and each pair's `from` is the Spanish word.
+Notes of kind `helpful_transfer` carry `pairs` (look-alike or borrowed words); notes of kind `false_friend` carry `pairs` where
+`from` is the word the learner will wrongly assume. Where two languages share no cognates, `helpful_transfer` holds the words the
+`from` language borrowed from `to` (English words that came from Arabic, Chinese or Swahili). Facets: `shared_words`,
+`false_friends`, `shared_words_check`.
 
 ## Locale (`locales/{best}/topics/{topic-key}.json`)
 
 - `scene_copy[scene_id]`: `title`, `body`, `prompt`, `continue_label`. Tokens the runtime fills: `{language}` (focus language name in the
-  best language), `{best}` (the best language's name), `{family}`, `{branch}`, `{regions}`, `{script}`, `{direction}`, `{shared}`,
-  `{total}`, `{list}`, `{count}`.
-- `labels`: names for every id a fact can use (`script.Latn`, `direction.ltr`, `family.indo_european`, `branch.romance`,
-  `region.europe`, `sound.trill`, `stress.rule_with_written_accents`, `predictability.high`, `mark.acute`, `markrole.stress`,
-  `trait.noun_gender.title`, `trait.noun_gender.two`, `relation.same_branch`, ...). Trait value labels read as a sentence about
-  `{language}`.
+  best language), `{best}` (the best language's name), `{base}` (the closest known base), `{family}`, `{branch}`, `{regions}`,
+  `{script}`, `{direction}`, `{layer}`, `{shared}`, `{total}`, `{list}`, `{count}`.
+- `labels`: names for every id a fact can use (`script.Arab`, `direction.rtl`, `layer.pinyin`, `kind.logographic`, `tone.rising`,
+  `family.afro_asiatic`, `branch.bantu`, `region.africa`, `sound.pharyngeal`, `trait.word_building.root_and_pattern`, ...). Trait value
+  labels read as a sentence about `{language}`.
 - `glosses`: `"{language_tag}:{fact_id}"` to the meaning of that example.
 - Gef's voice: brief and friendly, never claims anything is verified.

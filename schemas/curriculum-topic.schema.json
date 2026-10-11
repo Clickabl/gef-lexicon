@@ -163,6 +163,10 @@
           "type": "string",
           "enum": ["explanation", "comparison", "reviewed_examples", "recognition_practice", "production_practice", "reading_transfer", "listening", "speaking", "story_quest"]
         },
+        "facet_config": {
+          "type": "object",
+          "description": "Data a facet reads instead of hard-coding it: for the trait facets, `trait_order` (ids from curriculum-v2/slots/slots.json grammar.trait_order, most surprising first)."
+        },
         "notes": {"type": "string"}
       },
       "additionalProperties": false

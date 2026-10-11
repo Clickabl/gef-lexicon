@@ -3,43 +3,49 @@
   "realization_id": "REAL.es.writing_system",
   "topic_id": "TOPIC.orientation.writing_system",
   "language_tag": "es",
+  "completeness": "complete",
   "facts": [
-    {"fact_id": "script.id", "fact_kind": "category", "value": "Latn"},
-    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
-    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
     {
-      "fact_id": "alphabet.letters",
+      "fact_id": "writing.latin.symbols",
       "fact_kind": "term",
       "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     },
-    {"fact_id": "alphabet.marked", "fact_kind": "term", "value": ["á", "é", "í", "ó", "ú", "ü"]},
-    {"fact_id": "punctuation.special", "fact_kind": "term", "value": ["¿", "¡"]},
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": ["á", "é", "í", "ó", "ú", "ü"]},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": ["¿", "¡"]},
     {
-      "fact_id": "alphabet.example.n_tilde",
+      "fact_id": "writing.latin.example.n_tilde",
       "fact_kind": "term",
       "value": "niño",
       "qualifiers": {"ipa": "ˈniɲo", "highlight": "ñ"}
     },
     {
-      "fact_id": "alphabet.example.inverted_question",
+      "fact_id": "writing.latin.example.inverted_question",
       "fact_kind": "term",
       "value": "¿Cómo estás?",
       "qualifiers": {"ipa": "ˈkomo esˈtas", "highlight": "¿"}
     },
     {
-      "fact_id": "alphabet.example.inverted_exclamation",
+      "fact_id": "writing.latin.example.inverted_exclamation",
       "fact_kind": "term",
       "value": "¡Qué bien!",
       "qualifiers": {"ipa": "ˈke ˈbjen", "highlight": "¡"}
     },
     {
-      "fact_id": "mark.acute",
+      "fact_id": "writing.latin.mark.acute",
       "fact_kind": "term",
       "value": "é",
       "qualifiers": {"mark_id": "acute", "role": "stress", "example": "café", "example_ipa": "kaˈfe"}
     },
     {
-      "fact_id": "mark.diaeresis",
+      "fact_id": "writing.latin.mark.diaeresis",
       "fact_kind": "term",
       "value": "ü",
       "qualifiers": {"mark_id": "diaeresis", "role": "pronounce_vowel", "example": "pingüino", "example_ipa": "pinˈɡwino"}

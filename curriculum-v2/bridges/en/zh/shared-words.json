@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "zh",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "look_alike_words",
+      "kind": "helpful_transfer",
+      "text": "These are not look-alike cousins: English borrowed each of these words from Chinese. Some came straight from Mandarin. Others reached English through Hokkien, Cantonese or Japanese, which is why “tea” sounds so unlike chá. The Chinese shown is the Mandarin word with the same characters.",
+      "pairs": [
+        {"from": "tea", "to": "茶", "to_ipa": "tʂʰa˧˥"},
+        {"from": "kung fu", "to": "功夫", "to_ipa": "kuŋ˥ fu"},
+        {"from": "tofu", "to": "豆腐", "to_ipa": "toʊ˥˩ fu"},
+        {"from": "ginseng", "to": "人参", "to_ipa": "ɻən˧˥ ʂən˥"},
+        {"from": "kowtow", "to": "叩头", "to_ipa": "kʰoʊ˥˩ tʰoʊ˧˥"},
+        {"from": "yin and yang", "to": "阴阳", "to_ipa": "in˥ jɑŋ˧˥"},
+        {"from": "feng shui", "to": "风水", "to_ipa": "fɤŋ˥ ʂweɪ˨˩˦"},
+        {"from": "tai chi", "to": "太极拳", "to_ipa": "tʰaɪ˥˩ tɕi˧˥ tɕʰɥɛn˧˥"},
+        {"from": "oolong", "to": "乌龙茶", "to_ipa": "u˥ luŋ˧˥ tʂʰa˧˥"},
+        {"from": "pinyin", "to": "拼音", "to_ipa": "pʰin˥ in˥"},
+        {"from": "dim sum", "to": "点心", "to_ipa": "tjɛn˨˩˦ ɕin"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

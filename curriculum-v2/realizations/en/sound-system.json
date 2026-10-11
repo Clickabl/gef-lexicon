@@ -3,6 +3,7 @@
   "realization_id": "REAL.en.sound_system",
   "topic_id": "TOPIC.orientation.sound_system",
   "language_tag": "en",
+  "completeness": "complete",
   "facts": [
     {
       "fact_id": "sounds.consonants",
@@ -70,6 +71,7 @@
       "value": "sink",
       "qualifiers": {"ipa": "sɪŋk", "pair": 2}
     },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
     {"fact_id": "stress.pattern", "fact_kind": "category", "value": "unpredictable"},
     {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "low"}
   ],

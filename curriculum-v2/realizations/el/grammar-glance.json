@@ -3,6 +3,7 @@
   "realization_id": "REAL.el.grammar_glance",
   "topic_id": "TOPIC.orientation.grammar_glance",
   "language_tag": "el",
+  "completeness": "complete",
   "facts": [
     {
       "fact_id": "trait.noun_gender",
@@ -74,6 +75,10 @@
     {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Διαβάζει ένα βιβλίο η Μαρία."},
     {"fact_id": "trait.questions", "fact_kind": "category", "value": "intonation_or_inversion"},
     {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Μιλάς ελληνικά;"},
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "μιλάμε"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
     {
       "fact_id": "noun.1",
       "fact_kind": "term",

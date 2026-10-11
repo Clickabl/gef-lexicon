@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.sw.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "sw",
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.latin.symbols",
+      "fact_kind": "term",
+      "value": ["a", "b", "ch", "d", "dh", "e", "f", "g", "gh", "h", "i", "j", "k", "kh", "l", "m", "n", "ng'", "ny", "o", "p", "r", "s", "sh", "t", "th", "u", "v", "w", "y", "z"]
+    },
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": []},
+    {
+      "fact_id": "writing.latin.example.ch",
+      "fact_kind": "term",
+      "value": "chakula",
+      "qualifiers": {"ipa": "tʃaˈkula", "highlight": "ch"}
+    },
+    {
+      "fact_id": "writing.latin.example.dh",
+      "fact_kind": "term",
+      "value": "dhahabu",
+      "qualifiers": {"ipa": "ðaˈhabu", "highlight": "dh"}
+    },
+    {
+      "fact_id": "writing.latin.example.gh",
+      "fact_kind": "term",
+      "value": "lugha",
+      "qualifiers": {"ipa": "ˈluɣa", "highlight": "gh"}
+    },
+    {
+      "fact_id": "writing.latin.example.kh",
+      "fact_kind": "term",
+      "value": "kheri",
+      "qualifiers": {"ipa": "ˈxeɾi", "highlight": "kh"}
+    },
+    {
+      "fact_id": "writing.latin.example.ng_apostrophe",
+      "fact_kind": "term",
+      "value": "ng'ombe",
+      "qualifiers": {"ipa": "ˈŋoᵐbe", "highlight": "ng'"}
+    },
+    {
+      "fact_id": "writing.latin.example.ny",
+      "fact_kind": "term",
+      "value": "nyoka",
+      "qualifiers": {"ipa": "ˈɲoka", "highlight": "ny"}
+    },
+    {
+      "fact_id": "writing.latin.example.sh",
+      "fact_kind": "term",
+      "value": "shule",
+      "qualifiers": {"ipa": "ˈʃule", "highlight": "sh"}
+    },
+    {
+      "fact_id": "writing.latin.example.th",
+      "fact_kind": "term",
+      "value": "thamani",
+      "qualifiers": {"ipa": "θaˈmani", "highlight": "th"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

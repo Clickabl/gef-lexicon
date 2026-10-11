@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "ar",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_arabic",
+      "kind": "helpful_transfer",
+      "text": "English and Arabic are not close cousins, so look-alike words are rare. But English has borrowed words from Arabic, often by way of Italian, Spanish or Turkish. These are English words that came from Arabic, not look-alike relatives. Spot them and you already know a few Arabic words, though the Arabic often sounds quite different from the English.",
+      "pairs": [
+        {"from": "coffee", "to": "قهوة", "to_ipa": "qahwa"},
+        {"from": "sugar", "to": "سكر", "to_ipa": "sukkar"},
+        {"from": "lemon", "to": "ليمون", "to_ipa": "lajmuːn"},
+        {"from": "cotton", "to": "قطن", "to_ipa": "qutˤn"},
+        {"from": "algebra", "to": "الجبر", "to_ipa": "ʔaldʒabr"},
+        {"from": "giraffe", "to": "زرافة", "to_ipa": "zaraːfa"},
+        {"from": "zero", "to": "صفر", "to_ipa": "sˤifr"},
+        {"from": "sofa", "to": "صُفَّة", "to_ipa": "sˤuffa", "to_meaning": "a raised bench"},
+        {"from": "safari", "to": "سفر", "to_ipa": "safar", "to_meaning": "journey, travel"},
+        {"from": "mosque", "to": "مسجد", "to_ipa": "masdʒid"},
+        {"from": "jar", "to": "جرة", "to_ipa": "dʒarra"},
+        {"from": "artichoke", "to": "خرشوف", "to_ipa": "xurʃuːf"},
+        {"from": "hummus", "to": "حمص", "to_ipa": "ħummusˤ"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

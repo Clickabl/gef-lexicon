@@ -17,7 +17,7 @@
       "continue_label": "Keep going"
     },
     "reach": {"title": "Where it’s spoken", "body": "You’ll hear {language} across {regions}.", "continue_label": "Keep going"},
-    "compare": {"title": "{language} and {best}", "body": "How the two are related.", "continue_label": "Keep going"},
+    "compare": {"title": "{language} and {base}", "body": "How the two are related.", "continue_label": "Keep going"},
     "check": {
       "title": "Quick check",
       "prompt": "Which of these is a close relative of {language}?",
@@ -44,7 +44,13 @@
     "tree.relatives": "Close relatives",
     "q.relative": "Which of these is a close relative of {language}?",
     "q.branch": "Which branch is {language} in?",
-    "q.heard": "Which one did you hear?"
+    "q.heard": "Which one did you hear?",
+    "family.afro_asiatic": "Afro-Asiatic",
+    "branch.semitic": "Semitic",
+    "family.sino_tibetan": "Sino-Tibetan",
+    "branch.sinitic": "Sinitic",
+    "family.niger_congo": "Niger-Congo",
+    "branch.bantu": "Bantu"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -61,8 +67,17 @@
     "it:hook.decoy.2": "excuse me (formal)",
     "el:hook.target": "hi, bye",
     "el:hook.decoy.1": "thank you",
-    "el:hook.decoy.2": "goodbye"
+    "el:hook.decoy.2": "goodbye",
+    "ar:hook.target": "hello",
+    "ar:hook.decoy.1": "thank you",
+    "ar:hook.decoy.2": "yes",
+    "zh:hook.target": "hello",
+    "zh:hook.decoy.1": "thank you",
+    "zh:hook.decoy.2": "water",
+    "sw:hook.target": "hello, how are things? (it literally means “news”)",
+    "sw:hook.decoy.1": "thank you",
+    "sw:hook.decoy.2": "water"
   },
   "review_state": "candidate",
-  "version": 2
+  "version": 9
 }

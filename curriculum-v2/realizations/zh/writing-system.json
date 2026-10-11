@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.zh.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "zh",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["hanzi", "pinyin"]},
+    {"fact_id": "writing.hanzi.kind", "fact_kind": "category", "value": "logographic"},
+    {"fact_id": "writing.hanzi.script", "fact_kind": "category", "value": "Hani"},
+    {"fact_id": "writing.hanzi.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.hanzi.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.hanzi.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hanzi.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hanzi.vowels", "fact_kind": "category", "value": "not_applicable"},
+    {"fact_id": "writing.hanzi.symbols", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.hanzi.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.hanzi.punctuation", "fact_kind": "term", "value": ["。", "、"]},
+    {
+      "fact_id": "writing.hanzi.example.person",
+      "fact_kind": "term",
+      "value": "人",
+      "qualifiers": {"ipa": "ɻən˧˥", "highlight": "人", "reading": "rén"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.big",
+      "fact_kind": "term",
+      "value": "大",
+      "qualifiers": {"ipa": "ta˥˩", "highlight": "大", "reading": "dà"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.water",
+      "fact_kind": "term",
+      "value": "水",
+      "qualifiers": {"ipa": "ʂweɪ˨˩˦", "highlight": "水", "reading": "shuǐ"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.mountain",
+      "fact_kind": "term",
+      "value": "山",
+      "qualifiers": {"ipa": "ʂan˥", "highlight": "山", "reading": "shān"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.sun",
+      "fact_kind": "term",
+      "value": "日",
+      "qualifiers": {"ipa": "ɻ̩˥˩", "highlight": "日", "reading": "rì"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.moon",
+      "fact_kind": "term",
+      "value": "月",
+      "qualifiers": {"ipa": "ɥɛ˥˩", "highlight": "月", "reading": "yuè"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.tree",
+      "fact_kind": "term",
+      "value": "木",
+      "qualifiers": {"ipa": "mu˥˩", "highlight": "木", "reading": "mù"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.mouth",
+      "fact_kind": "term",
+      "value": "口",
+      "qualifiers": {"ipa": "kʰoʊ˨˩˦", "highlight": "口", "reading": "kǒu"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.forest",
+      "fact_kind": "term",
+      "value": "林",
+      "qualifiers": {"ipa": "lin˧˥", "highlight": "林", "reading": "lín", "parts": "木 + 木"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.good",
+      "fact_kind": "term",
+      "value": "好",
+      "qualifiers": {"ipa": "xɑʊ˨˩˦", "highlight": "好", "reading": "hǎo", "parts": "女 + 子"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.bright",
+      "fact_kind": "term",
+      "value": "明",
+      "qualifiers": {"ipa": "miŋ˧˥", "highlight": "明", "reading": "míng", "parts": "日 + 月"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.rest",
+      "fact_kind": "term",
+      "value": "休",
+      "qualifiers": {"ipa": "ɕjoʊ˥", "highlight": "休", "reading": "xiū", "parts": "亻 + 木"}
+    },
+    {
+      "fact_id": "writing.hanzi.example.full_stop",
+      "fact_kind": "term",
+      "value": "你好。",
+      "qualifiers": {"ipa": "ni˧˥ xɑʊ˨˩˦", "highlight": "。", "reading": "nǐ hǎo."}
+    },
+    {
+      "fact_id": "writing.hanzi.example.enumeration_comma",
+      "fact_kind": "term",
+      "value": "红、白、蓝",
+      "qualifiers": {"ipa": "xuŋ˧˥ paɪ˧˥ lan˧˥", "highlight": "、", "reading": "hóng, bái, lán"}
+    },
+    {"fact_id": "writing.pinyin.kind", "fact_kind": "category", "value": "romanization"},
+    {"fact_id": "writing.pinyin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.pinyin.role", "fact_kind": "category", "value": "aid"},
+    {"fact_id": "writing.pinyin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.pinyin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.pinyin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.pinyin.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.pinyin.symbols",
+      "fact_kind": "term",
+      "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "ü", "w", "x", "y", "z"]
+    },
+    {
+      "fact_id": "writing.pinyin.marked",
+      "fact_kind": "term",
+      "value": ["ā", "á", "ǎ", "à", "ē", "é", "ě", "è", "ī", "í", "ǐ", "ì", "ō", "ó", "ǒ", "ò", "ū", "ú", "ǔ", "ù", "ǖ", "ǘ", "ǚ", "ǜ"]
+    },
+    {"fact_id": "writing.pinyin.punctuation", "fact_kind": "term", "value": []},
+    {
+      "fact_id": "writing.pinyin.example.u_umlaut",
+      "fact_kind": "term",
+      "value": "lüè",
+      "qualifiers": {"ipa": "lɥɛ˥˩", "highlight": "ü", "looks_like": "u"}
+    },
+    {
+      "fact_id": "writing.pinyin.mark.macron",
+      "fact_kind": "term",
+      "value": "ā",
+      "qualifiers": {
+        "mark_id": "macron",
+        "role": "tone",
+        "example": "mā",
+        "example_ipa": "ma˥",
+        "example_hanzi": "妈",
+        "tone_id": "high_level"
+      }
+    },
+    {
+      "fact_id": "writing.pinyin.mark.acute",
+      "fact_kind": "term",
+      "value": "á",
+      "qualifiers": {
+        "mark_id": "acute",
+        "role": "tone",
+        "example": "má",
+        "example_ipa": "ma˧˥",
+        "example_hanzi": "麻",
+        "tone_id": "rising"
+      }
+    },
+    {
+      "fact_id": "writing.pinyin.mark.caron",
+      "fact_kind": "term",
+      "value": "ǎ",
+      "qualifiers": {
+        "mark_id": "caron",
+        "role": "tone",
+        "example": "mǎ",
+        "example_ipa": "ma˨˩˦",
+        "example_hanzi": "马",
+        "tone_id": "dipping"
+      }
+    },
+    {
+      "fact_id": "writing.pinyin.mark.grave",
+      "fact_kind": "term",
+      "value": "à",
+      "qualifiers": {
+        "mark_id": "grave",
+        "role": "tone",
+        "example": "mà",
+        "example_ipa": "ma˥˩",
+        "example_hanzi": "骂",
+        "tone_id": "falling"
+      }
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1,
+  "completeness": "complete"
+}

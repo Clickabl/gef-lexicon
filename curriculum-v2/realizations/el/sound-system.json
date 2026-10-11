@@ -3,6 +3,7 @@
   "realization_id": "REAL.el.sound_system",
   "topic_id": "TOPIC.orientation.sound_system",
   "language_tag": "el",
+  "completeness": "complete",
   "facts": [
     {
       "fact_id": "sounds.consonants",
@@ -76,6 +77,7 @@
       "value": "νομός",
       "qualifiers": {"ipa": "noˈmos", "pair": 2}
     },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
     {"fact_id": "stress.pattern", "fact_kind": "category", "value": "marked_on_every_word"},
     {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
   ],

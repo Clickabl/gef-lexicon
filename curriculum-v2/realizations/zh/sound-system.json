@@ -1,0 +1,158 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.zh.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "zh",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "pʰ", "m", "f", "t", "tʰ", "n", "l", "k", "kʰ", "x", "ŋ", "ts", "tsʰ", "s", "tʂ", "tʂʰ", "ʂ", "ɻ", "tɕ", "tɕʰ", "ɕ", "j", "w", "ɥ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "ɑ", "ɛ", "ɤ", "ə", "i", "y", "u", "o", "ɚ", "aɪ", "eɪ", "ɑʊ", "oʊ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.aspirated",
+      "fact_kind": "term",
+      "value": "怕",
+      "qualifiers": {"ipa": "pʰ", "spelling": "p", "word_ipa": "pʰa˥˩", "note_id": "aspirated_stops", "reading": "pà"}
+    },
+    {
+      "fact_id": "sounds.tricky.retroflex_zh",
+      "fact_kind": "term",
+      "value": "中",
+      "qualifiers": {"ipa": "tʂ", "spelling": "zh", "word_ipa": "tʂuŋ˥", "note_id": "retroflex", "reading": "zhōng"}
+    },
+    {
+      "fact_id": "sounds.tricky.retroflex_sh",
+      "fact_kind": "term",
+      "value": "书",
+      "qualifiers": {"ipa": "ʂ", "spelling": "sh", "word_ipa": "ʂu˥", "note_id": "retroflex", "reading": "shū"}
+    },
+    {
+      "fact_id": "sounds.tricky.retroflex_r",
+      "fact_kind": "term",
+      "value": "热",
+      "qualifiers": {"ipa": "ɻ", "spelling": "r", "word_ipa": "ɻɤ˥˩", "note_id": "retroflex_r", "reading": "rè"}
+    },
+    {
+      "fact_id": "sounds.tricky.palatal_q",
+      "fact_kind": "term",
+      "value": "七",
+      "qualifiers": {"ipa": "tɕʰ", "spelling": "q", "word_ipa": "tɕʰi˥", "note_id": "palatal", "reading": "qī"}
+    },
+    {
+      "fact_id": "sounds.tricky.palatal_x",
+      "fact_kind": "term",
+      "value": "西",
+      "qualifiers": {"ipa": "ɕ", "spelling": "x", "word_ipa": "ɕi˥", "note_id": "palatal", "reading": "xī"}
+    },
+    {
+      "fact_id": "sounds.tricky.u_umlaut",
+      "fact_kind": "term",
+      "value": "绿",
+      "qualifiers": {"ipa": "y", "spelling": "ü", "word_ipa": "ly˥˩", "note_id": "front_rounded_vowel", "reading": "lǜ"}
+    },
+    {
+      "fact_id": "sounds.tricky.e_vowel",
+      "fact_kind": "term",
+      "value": "喝",
+      "qualifiers": {"ipa": "ɤ", "spelling": "e", "word_ipa": "xɤ˥", "note_id": "back_unrounded_vowel", "reading": "hē"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "买",
+      "qualifiers": {"ipa": "maɪ˨˩˦", "pair": 1, "note_id": "tone_contrast", "reading": "mǎi"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "卖",
+      "qualifiers": {"ipa": "maɪ˥˩", "pair": 1, "note_id": "tone_contrast", "reading": "mài"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "爸",
+      "qualifiers": {"ipa": "pa˥˩", "pair": 2, "note_id": "aspirated_stops", "reading": "bà"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "怕",
+      "qualifiers": {"ipa": "pʰa˥˩", "pair": 2, "note_id": "aspirated_stops", "reading": "pà"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "三",
+      "qualifiers": {"ipa": "san˥", "pair": 3, "note_id": "retroflex", "reading": "sān"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "山",
+      "qualifiers": {"ipa": "ʂan˥", "pair": 3, "note_id": "retroflex", "reading": "shān"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "路",
+      "qualifiers": {"ipa": "lu˥˩", "pair": 4, "note_id": "front_rounded_vowel", "reading": "lù"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "绿",
+      "qualifiers": {"ipa": "ly˥˩", "pair": 4, "note_id": "front_rounded_vowel", "reading": "lǜ"}
+    },
+    {
+      "fact_id": "tones.system",
+      "fact_kind": "category",
+      "value": "contour",
+      "qualifiers": {"count": 4}
+    },
+    {
+      "fact_id": "tones.example.1",
+      "fact_kind": "term",
+      "value": "妈",
+      "qualifiers": {"ipa": "ma˥", "tone_id": "high_level", "contour": "˥", "reading": "mā"}
+    },
+    {
+      "fact_id": "tones.example.2",
+      "fact_kind": "term",
+      "value": "麻",
+      "qualifiers": {"ipa": "ma˧˥", "tone_id": "rising", "contour": "˧˥", "reading": "má"}
+    },
+    {
+      "fact_id": "tones.example.3",
+      "fact_kind": "term",
+      "value": "马",
+      "qualifiers": {"ipa": "ma˨˩˦", "tone_id": "dipping", "contour": "˨˩˦", "reading": "mǎ"}
+    },
+    {
+      "fact_id": "tones.example.4",
+      "fact_kind": "term",
+      "value": "骂",
+      "qualifiers": {"ipa": "ma˥˩", "tone_id": "falling", "contour": "˥˩", "reading": "mà"}
+    },
+    {
+      "fact_id": "tones.example.5",
+      "fact_kind": "term",
+      "value": "吗",
+      "qualifiers": {"ipa": "ma", "tone_id": "neutral", "reading": "ma"}
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "not_applicable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "low"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1,
+  "completeness": "complete"
+}

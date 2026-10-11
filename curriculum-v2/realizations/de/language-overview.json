@@ -7,14 +7,11 @@
     "family_id": "indo_european",
     "branch_ids": ["germanic", "west_germanic"],
     "related_language_tags": ["en", "nl"],
-    "script_ids": ["latin"],
+    "script_ids": ["Latn"],
     "origin_region_ids": ["europe"],
     "notes": "Broad historical-family metadata for orientation only; West Germanic relationship does not imply modern mutual intelligibility."
   },
-  "capabilities": {
-    "explanation": true,
-    "comparison": true
-  },
+  "capabilities": {"explanation": true, "comparison": true},
   "review_state": "candidate",
   "version": 1
 }

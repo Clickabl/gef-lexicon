@@ -1,0 +1,297 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ar.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "ar",
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["arabic"]},
+    {"fact_id": "writing.arabic.kind", "fact_kind": "category", "value": "abjad"},
+    {"fact_id": "writing.arabic.script", "fact_kind": "category", "value": "Arab"},
+    {"fact_id": "writing.arabic.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.arabic.direction", "fact_kind": "category", "value": "rtl"},
+    {"fact_id": "writing.arabic.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.arabic.joined", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.arabic.vowels", "fact_kind": "category", "value": "marks_optional"},
+    {
+      "fact_id": "writing.arabic.symbols",
+      "fact_kind": "term",
+      "value": ["ا", "ب", "ت", "ث", "ج", "ح", "خ", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ك", "ل", "م", "ن", "ه", "و", "ي"]
+    },
+    {"fact_id": "writing.arabic.marked", "fact_kind": "term", "value": ["ء", "أ", "إ", "آ", "ؤ", "ئ", "ة", "ى"]},
+    {"fact_id": "writing.arabic.punctuation", "fact_kind": "term", "value": ["،", "؟", "؛"]},
+    {
+      "fact_id": "writing.arabic.example.alef",
+      "fact_kind": "term",
+      "value": "باب",
+      "qualifiers": {"ipa": "baːb", "highlight": "ا", "name": "أَلِف (alif)", "looks_like": "I", "forms": ["ا", "ـا"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.beh",
+      "fact_kind": "term",
+      "value": "بيت",
+      "qualifiers": {"ipa": "bajt", "highlight": "ب", "name": "بَاء (bāʾ)", "forms": ["ب", "بـ", "ـبـ", "ـب"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.teh",
+      "fact_kind": "term",
+      "value": "تمر",
+      "qualifiers": {"ipa": "tamr", "highlight": "ت", "name": "تَاء (tāʾ)", "forms": ["ت", "تـ", "ـتـ", "ـت"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.theh",
+      "fact_kind": "term",
+      "value": "ثلج",
+      "qualifiers": {"ipa": "θaldʒ", "highlight": "ث", "name": "ثَاء (thāʾ)", "forms": ["ث", "ثـ", "ـثـ", "ـث"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.jeem",
+      "fact_kind": "term",
+      "value": "جبل",
+      "qualifiers": {"ipa": "dʒabal", "highlight": "ج", "name": "جِيم (jīm)", "forms": ["ج", "جـ", "ـجـ", "ـج"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.hah",
+      "fact_kind": "term",
+      "value": "حديقة",
+      "qualifiers": {"ipa": "ħadiːqa", "highlight": "ح", "name": "حَاء (ḥāʾ)", "forms": ["ح", "حـ", "ـحـ", "ـح"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.khah",
+      "fact_kind": "term",
+      "value": "خبز",
+      "qualifiers": {"ipa": "xubz", "highlight": "خ", "name": "خَاء (khāʾ)", "forms": ["خ", "خـ", "ـخـ", "ـخ"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.dal",
+      "fact_kind": "term",
+      "value": "دفتر",
+      "qualifiers": {"ipa": "daftar", "highlight": "د", "name": "دَال (dāl)", "forms": ["د", "ـد"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.thal",
+      "fact_kind": "term",
+      "value": "ذهب",
+      "qualifiers": {"ipa": "ðahab", "highlight": "ذ", "name": "ذَال (dhāl)", "forms": ["ذ", "ـذ"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.reh",
+      "fact_kind": "term",
+      "value": "رجل",
+      "qualifiers": {"ipa": "radʒul", "highlight": "ر", "name": "رَاء (rāʾ)", "forms": ["ر", "ـر"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.zain",
+      "fact_kind": "term",
+      "value": "زيت",
+      "qualifiers": {"ipa": "zajt", "highlight": "ز", "name": "زَاي (zāy)", "forms": ["ز", "ـز"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.seen",
+      "fact_kind": "term",
+      "value": "سمك",
+      "qualifiers": {"ipa": "samak", "highlight": "س", "name": "سِين (sīn)", "forms": ["س", "سـ", "ـسـ", "ـس"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.sheen",
+      "fact_kind": "term",
+      "value": "شمس",
+      "qualifiers": {"ipa": "ʃams", "highlight": "ش", "name": "شِين (shīn)", "forms": ["ش", "شـ", "ـشـ", "ـش"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.sad",
+      "fact_kind": "term",
+      "value": "صباح",
+      "qualifiers": {"ipa": "sˤabaːħ", "highlight": "ص", "name": "صَاد (ṣād)", "forms": ["ص", "صـ", "ـصـ", "ـص"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.dad",
+      "fact_kind": "term",
+      "value": "ضيف",
+      "qualifiers": {"ipa": "dˤajf", "highlight": "ض", "name": "ضَاد (ḍād)", "forms": ["ض", "ضـ", "ـضـ", "ـض"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.tah",
+      "fact_kind": "term",
+      "value": "طفل",
+      "qualifiers": {"ipa": "tˤifl", "highlight": "ط", "name": "طَاء (ṭāʾ)", "forms": ["ط", "طـ", "ـطـ", "ـط"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.zah",
+      "fact_kind": "term",
+      "value": "ظلام",
+      "qualifiers": {"ipa": "ðˤalaːm", "highlight": "ظ", "name": "ظَاء (ẓāʾ)", "forms": ["ظ", "ظـ", "ـظـ", "ـظ"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.ain",
+      "fact_kind": "term",
+      "value": "عين",
+      "qualifiers": {"ipa": "ʕajn", "highlight": "ع", "name": "عَيْن (ʿayn)", "forms": ["ع", "عـ", "ـعـ", "ـع"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.ghain",
+      "fact_kind": "term",
+      "value": "غرفة",
+      "qualifiers": {"ipa": "ɣurfa", "highlight": "غ", "name": "غَيْن (ghayn)", "forms": ["غ", "غـ", "ـغـ", "ـغ"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.feh",
+      "fact_kind": "term",
+      "value": "فيل",
+      "qualifiers": {"ipa": "fiːl", "highlight": "ف", "name": "فَاء (fāʾ)", "forms": ["ف", "فـ", "ـفـ", "ـف"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.qaf",
+      "fact_kind": "term",
+      "value": "قلم",
+      "qualifiers": {"ipa": "qalam", "highlight": "ق", "name": "قَاف (qāf)", "forms": ["ق", "قـ", "ـقـ", "ـق"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.kaf",
+      "fact_kind": "term",
+      "value": "كتاب",
+      "qualifiers": {"ipa": "kitaːb", "highlight": "ك", "name": "كَاف (kāf)", "forms": ["ك", "كـ", "ـكـ", "ـك"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.lam",
+      "fact_kind": "term",
+      "value": "ليل",
+      "qualifiers": {"ipa": "lajl", "highlight": "ل", "name": "لَام (lām)", "forms": ["ل", "لـ", "ـلـ", "ـل"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.meem",
+      "fact_kind": "term",
+      "value": "مفتاح",
+      "qualifiers": {"ipa": "miftaːħ", "highlight": "م", "name": "مِيم (mīm)", "forms": ["م", "مـ", "ـمـ", "ـم"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.noon",
+      "fact_kind": "term",
+      "value": "نهر",
+      "qualifiers": {"ipa": "nahr", "highlight": "ن", "name": "نُون (nūn)", "forms": ["ن", "نـ", "ـنـ", "ـن"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.heh",
+      "fact_kind": "term",
+      "value": "هاتف",
+      "qualifiers": {"ipa": "haːtif", "highlight": "ه", "name": "هَاء (hāʾ)", "forms": ["ه", "هـ", "ـهـ", "ـه"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.waw",
+      "fact_kind": "term",
+      "value": "ولد",
+      "qualifiers": {"ipa": "walad", "highlight": "و", "name": "وَاو (wāw)", "forms": ["و", "ـو"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.yeh",
+      "fact_kind": "term",
+      "value": "يد",
+      "qualifiers": {"ipa": "jad", "highlight": "ي", "name": "يَاء (yāʾ)", "forms": ["ي", "يـ", "ـيـ", "ـي"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.hamza",
+      "fact_kind": "term",
+      "value": "ماء",
+      "qualifiers": {"ipa": "maːʔ", "highlight": "ء", "name": "هَمْزَة (hamza)"}
+    },
+    {
+      "fact_id": "writing.arabic.example.alef_hamza_above",
+      "fact_kind": "term",
+      "value": "أب",
+      "qualifiers": {"ipa": "ʔab", "highlight": "أ"}
+    },
+    {
+      "fact_id": "writing.arabic.example.alef_hamza_below",
+      "fact_kind": "term",
+      "value": "إنسان",
+      "qualifiers": {"ipa": "ʔinsaːn", "highlight": "إ"}
+    },
+    {
+      "fact_id": "writing.arabic.example.alef_madda",
+      "fact_kind": "term",
+      "value": "آسف",
+      "qualifiers": {"ipa": "ʔaːsif", "highlight": "آ"}
+    },
+    {
+      "fact_id": "writing.arabic.example.waw_hamza",
+      "fact_kind": "term",
+      "value": "سؤال",
+      "qualifiers": {"ipa": "suʔaːl", "highlight": "ؤ"}
+    },
+    {
+      "fact_id": "writing.arabic.example.yeh_hamza",
+      "fact_kind": "term",
+      "value": "رئيس",
+      "qualifiers": {"ipa": "raʔiːs", "highlight": "ئ"}
+    },
+    {
+      "fact_id": "writing.arabic.example.teh_marbuta",
+      "fact_kind": "term",
+      "value": "مدرسة",
+      "qualifiers": {"ipa": "madrasa", "highlight": "ة", "name": "تَاء مَرْبُوطَة (tāʾ marbūṭa)", "forms": ["ة", "ـة"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.alef_maksura",
+      "fact_kind": "term",
+      "value": "مستشفى",
+      "qualifiers": {"ipa": "mustaʃfaː", "highlight": "ى", "name": "أَلِف مَقْصُورَة (alif maqṣūra)", "forms": ["ى", "ـى"]}
+    },
+    {
+      "fact_id": "writing.arabic.example.comma",
+      "fact_kind": "term",
+      "value": "كتاب، قلم، دفتر",
+      "qualifiers": {"ipa": "kitaːb qalam daftar", "highlight": "،"}
+    },
+    {
+      "fact_id": "writing.arabic.example.question_mark",
+      "fact_kind": "term",
+      "value": "كيف حالك؟",
+      "qualifiers": {"ipa": "kajfa ħaːluk", "highlight": "؟"}
+    },
+    {
+      "fact_id": "writing.arabic.example.semicolon",
+      "fact_kind": "term",
+      "value": "أنا طالب؛ هو أستاذ",
+      "qualifiers": {"ipa": "ʔana tˤaːlib huwa ʔustaːð", "highlight": "؛"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.fatha",
+      "fact_kind": "term",
+      "value": "بَ",
+      "qualifiers": {"mark_id": "fatha", "role": "short_vowel", "example": "قَمَر", "example_ipa": "qamar"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.kasra",
+      "fact_kind": "term",
+      "value": "بِ",
+      "qualifiers": {"mark_id": "kasra", "role": "short_vowel", "example": "كِتَاب", "example_ipa": "kitaːb"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.damma",
+      "fact_kind": "term",
+      "value": "بُ",
+      "qualifiers": {"mark_id": "damma", "role": "short_vowel", "example": "كُتُب", "example_ipa": "kutub"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.sukun",
+      "fact_kind": "term",
+      "value": "بْ",
+      "qualifiers": {"mark_id": "sukun", "role": "no_vowel", "example": "مَدْرَسَة", "example_ipa": "madrasa"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.shadda",
+      "fact_kind": "term",
+      "value": "بّ",
+      "qualifiers": {"mark_id": "shadda", "role": "doubling", "example": "مُدَرِّس", "example_ipa": "mudarris"}
+    },
+    {
+      "fact_id": "writing.arabic.mark.tanwin",
+      "fact_kind": "term",
+      "value": "بً",
+      "qualifiers": {"mark_id": "tanwin", "role": "case_ending", "example": "شُكْرًا", "example_ipa": "ʃukran"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ar.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "ar",
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "afro_asiatic",
+    "branch_ids": ["semitic"],
+    "related_language_tags": ["he", "am"],
+    "script_ids": ["Arab"],
+    "origin_region_ids": ["asia", "africa"],
+    "notes": "Arabic is a Semitic language, related to Hebrew and Amharic at the level of the Semitic branch; they are not mutually intelligible. This record describes Modern Standard Arabic, the written and formal standard. The spoken varieties differ a lot from it and from one another."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["asia", "africa"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "مرحبا",
+      "qualifiers": {"ipa": "marħaba"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "شكرا",
+      "qualifiers": {"ipa": "ʃukran"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "نعم",
+      "qualifiers": {"ipa": "naʕam"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

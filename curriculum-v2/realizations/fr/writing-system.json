@@ -3,47 +3,53 @@
   "realization_id": "REAL.fr.writing_system",
   "topic_id": "TOPIC.orientation.writing_system",
   "language_tag": "fr",
+  "completeness": "complete",
   "facts": [
-    {"fact_id": "script.id", "fact_kind": "category", "value": "Latn"},
-    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
-    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
     {
-      "fact_id": "alphabet.letters",
+      "fact_id": "writing.latin.symbols",
       "fact_kind": "term",
       "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     },
     {
-      "fact_id": "alphabet.marked",
+      "fact_id": "writing.latin.marked",
       "fact_kind": "term",
       "value": ["é", "è", "ê", "ë", "à", "â", "î", "ï", "ô", "û", "ù", "ü", "ÿ", "ç"]
     },
-    {"fact_id": "punctuation.special", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": []},
     {
-      "fact_id": "mark.acute",
+      "fact_id": "writing.latin.mark.acute",
       "fact_kind": "term",
       "value": "é",
       "qualifiers": {"mark_id": "acute", "role": "vowel_quality", "example": "été", "example_ipa": "ete"}
     },
     {
-      "fact_id": "mark.grave",
+      "fact_id": "writing.latin.mark.grave",
       "fact_kind": "term",
       "value": "è",
       "qualifiers": {"mark_id": "grave", "role": "vowel_quality", "example": "père", "example_ipa": "pɛʁ"}
     },
     {
-      "fact_id": "mark.circumflex",
+      "fact_id": "writing.latin.mark.circumflex",
       "fact_kind": "term",
       "value": "ê",
       "qualifiers": {"mark_id": "circumflex", "role": "vowel_quality", "example": "forêt", "example_ipa": "fɔʁɛ"}
     },
     {
-      "fact_id": "mark.diaeresis",
+      "fact_id": "writing.latin.mark.diaeresis",
       "fact_kind": "term",
       "value": "ë",
       "qualifiers": {"mark_id": "diaeresis", "role": "pronounce_vowel", "example": "Noël", "example_ipa": "nɔɛl"}
     },
     {
-      "fact_id": "mark.cedilla",
+      "fact_id": "writing.latin.mark.cedilla",
       "fact_kind": "term",
       "value": "ç",
       "qualifiers": {"mark_id": "cedilla", "role": "sound_change", "example": "garçon", "example_ipa": "ɡaʁsɔ̃"}

@@ -3,17 +3,23 @@
   "realization_id": "REAL.en.writing_system",
   "topic_id": "TOPIC.orientation.writing_system",
   "language_tag": "en",
+  "completeness": "complete",
   "facts": [
-    {"fact_id": "script.id", "fact_kind": "category", "value": "Latn"},
-    {"fact_id": "script.direction", "fact_kind": "category", "value": "ltr"},
-    {"fact_id": "script.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
     {
-      "fact_id": "alphabet.letters",
+      "fact_id": "writing.latin.symbols",
       "fact_kind": "term",
       "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     },
-    {"fact_id": "alphabet.marked", "fact_kind": "term", "value": []},
-    {"fact_id": "punctuation.special", "fact_kind": "term", "value": []}
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": []}
   ],
   "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
   "review_state": "candidate",

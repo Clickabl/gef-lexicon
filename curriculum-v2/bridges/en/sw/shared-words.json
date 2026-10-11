@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "sw",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "words_you_may_know",
+      "kind": "helpful_transfer",
+      "text": "English and Swahili are not related, so don’t expect look-alike cousins. These are words you may already have met through travel, songs and films, and English borrowed “safari” from Swahili. “Jambo” is the hello visitors hear most; people also greet each other with “habari” or “hujambo”. Kwanzaa, the holiday, takes its name from “kwanza”, which means “first”.",
+      "pairs": [
+        {"from": "journey, trip", "to": "safari", "to_ipa": "saˈfaɾi"},
+        {"from": "lion", "to": "simba", "to_ipa": "ˈsiᵐba"},
+        {"from": "friend", "to": "rafiki", "to_ipa": "ɾaˈfiki"},
+        {"from": "hello", "to": "jambo", "to_ipa": "ˈdʒaᵐbo"},
+        {"from": "no worries", "to": "hakuna matata", "to_ipa": "haˈkuna maˈtata"},
+        {"from": "thank you", "to": "asante", "to_ipa": "aˈsante"},
+        {"from": "welcome", "to": "karibu", "to_ipa": "kaˈɾibu"},
+        {"from": "slowly", "to": "pole pole", "to_ipa": "ˈpole ˈpole"},
+        {"from": "Kwanzaa", "to": "kwanza", "to_ipa": "ˈkwaⁿza"}
+      ]
+    },
+    {
+      "note_id": "english_words_in_swahili",
+      "kind": "helpful_transfer",
+      "text": "Swahili has also borrowed many modern words from English and spelled them the Swahili way, so you can often guess them. Say them with Swahili vowels, a, e, i, o and u, and every one is clear.",
+      "pairs": [
+        {"from": "hotel", "to": "hoteli", "to_ipa": "hoˈteli"},
+        {"from": "police", "to": "polisi", "to_ipa": "poˈlisi"},
+        {"from": "computer", "to": "kompyuta", "to_ipa": "komˈpjuta"},
+        {"from": "television", "to": "televisheni", "to_ipa": "televiˈʃeni"},
+        {"from": "cinema", "to": "sinema", "to_ipa": "siˈnema"},
+        {"from": "cake", "to": "keki", "to_ipa": "ˈkeki"},
+        {"from": "beer", "to": "bia", "to_ipa": "ˈbia"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

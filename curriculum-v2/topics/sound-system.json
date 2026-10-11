@@ -17,15 +17,22 @@
   ],
   "comparison_policy": {
     "minimum_useful_languages": 2,
-    "maximum_languages": 4,
+    "maximum_languages": 6,
     "include_best_language": true,
-    "include_profile_comparison_languages": false,
+    "include_profile_comparison_languages": true,
     "fallback_reference_language_tags": ["en", "es"],
-    "notes": "Compare sound inventories of the focus language and the learner's best language only."
+    "notes": "Compare the focus language with the learner's best language and every other language they know at C1 or above (INTRO_FACTS.md, Known languages)."
   },
   "experience_blueprint": {
     "scene_sequence": [
       {"scene_id": "overview", "scene_kind": "concept_reveal", "facet": "sound_overview", "required": true},
+      {
+        "scene_id": "tones",
+        "scene_kind": "term_reveal",
+        "facet": "tone_overview",
+        "required": false,
+        "minimum_capability": "reviewed_examples"
+      },
       {"scene_id": "surprises", "scene_kind": "term_reveal", "facet": "tricky_sounds", "required": true},
       {
         "scene_id": "check",
@@ -42,5 +49,5 @@
   "difficulty_band": "pre_a1",
   "notes": "Sounds are broad phonemic IPA for the named standard variety. Regional varieties are noted as varieties, never as the one correct form.",
   "review_state": "candidate",
-  "version": 1
+  "version": 2
 }

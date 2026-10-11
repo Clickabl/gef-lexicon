@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.sw.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "sw",
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "niger_congo",
+    "branch_ids": ["bantu"],
+    "related_language_tags": ["zu"],
+    "script_ids": ["Latn"],
+    "origin_region_ids": ["africa"],
+    "notes": "Broad historical-family metadata for orientation only; Bantu membership does not imply mutual intelligibility. Swahili is a Bantu language that has also taken in many words from Arabic."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["africa"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "habari",
+      "qualifiers": {"ipa": "haˈbaɾi"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "asante",
+      "qualifiers": {"ipa": "aˈsante"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "maji",
+      "qualifiers": {"ipa": "ˈmadʒi"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}
