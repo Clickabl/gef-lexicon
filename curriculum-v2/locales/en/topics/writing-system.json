@@ -32,6 +32,7 @@
     "script.no_case": "It has no capital letters.",
     "letters.shared": "{shared} of its {total} letters are in {best} too.",
     "letters.all_shared": "Every letter is one you already know.",
+    "letters.none_shared": "It has {total} letters, and none of them are shared with {best}.",
     "letters.none_new": "Nothing new here: every letter is already in {best}.",
     "letters.lookalike_title": "Look-alikes that fool you",
     "letters.lookalike_body": "These look like letters you know, but they sound different.",
@@ -97,7 +98,7 @@
     "el:alphabet.example.psi": "bread",
     "el:alphabet.example.omega": "beautiful",
     "el:alphabet.example.final_sigma": "good",
-    "el:alphabet.example.question_mark": "What's your name?",
+    "el:alphabet.example.question_mark": "What’s your name?",
     "el:mark.tonos": "coffee",
     "el:mark.dialytika": "monkey"
   },
