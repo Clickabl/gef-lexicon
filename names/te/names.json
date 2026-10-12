@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "language_code": "te",
+  "names": [
+    {
+      "name_id": "name_te_adamu",
+      "canonical_form": "ఆదాము",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ఆదాము",
+          "status": "canonical",
+          "script": "Telu",
+          "locale": "te"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.te.adamu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Telugu ఆదాము as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270",
+        "src_wiktionary_en_uc06_c26_c3e_c2e_c41_oldid_89211426"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_te_andru",
+      "canonical_form": "ఆండ్రూ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ఆండ్రూ",
+          "status": "canonical",
+          "script": "Telu",
+          "locale": "te"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.te.andru"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Telugu ఆండ్రూ as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

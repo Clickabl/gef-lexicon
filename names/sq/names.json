@@ -3,6 +3,633 @@
   "language_code": "sq",
   "names": [
     {
+      "name_id": "name_sq_adam",
+      "canonical_form": "Adam",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adam",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.sq.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Adam as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_adem",
+      "canonical_form": "Adem",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adem",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.sq.adem"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Adem as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270",
+        "src_wiktionary_en_adem_oldid_90129564"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_adham",
+      "canonical_form": "Adham",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adham",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.sq.adham"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Adam translation table lists Adham as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_agata",
+      "canonical_form": "Agáta",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Agáta",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.agatha",
+          "equivalence_set_id": "NFEQ.agatha.full-feminine",
+          "form_id": "NFF.agatha.sq.agata"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Agatha translation table lists Agáta as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_agatha_oldid_93296866"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_agatha",
+      "canonical_form": "Agátha",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Agátha",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.agatha",
+          "equivalence_set_id": "NFEQ.agatha.full-feminine",
+          "form_id": "NFF.agatha.sq.agatha"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Agatha translation table lists Agátha as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_agatha_oldid_93296866"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_albert",
+      "canonical_form": "Albért",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Albért",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.albert",
+          "equivalence_set_id": "NFEQ.albert.full-masculine",
+          "form_id": "NFF.albert.sq.albert"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Albert translation table lists Albért as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_albert_oldid_93486861"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_alvert",
+      "canonical_form": "Alvért",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alvért",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.albert",
+          "equivalence_set_id": "NFEQ.albert.full-masculine",
+          "form_id": "NFF.albert.sq.alvert"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Albert translation table lists Alvért as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_albert_oldid_93486861"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_andoni",
+      "canonical_form": "Andóni",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Andóni",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.andoni"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists Andóni as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_andrea",
+      "canonical_form": "Andréa",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Andréa",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.andrea"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Andrew translation table lists Andréa as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_andreu",
+      "canonical_form": "Andréu",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Andréu",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.andreu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Andrew translation table lists Andréu as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_antoni",
+      "canonical_form": "Antóni",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Antóni",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.antoni"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists Antóni as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_engjellike",
+      "canonical_form": "Engjëllike",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Engjëllike",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.angela",
+          "equivalence_set_id": "NFEQ.angela.full-feminine",
+          "form_id": "NFF.angela.sq.engjellike"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Engjëllike as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_angela_oldid_92411437"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_engjellike_7e7d",
+      "canonical_form": "Ëngjëllike",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ëngjëllike",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.angelica",
+          "equivalence_set_id": "NFEQ.angelica.full-feminine",
+          "form_id": "NFF.angelica.sq.engjellike"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Angelica translation table lists Ëngjëllike as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_angelica_oldid_91170388"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_harun",
+      "canonical_form": "Harun",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Harun",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aaron",
+          "equivalence_set_id": "NFEQ.aaron.full-masculine",
+          "form_id": "NFF.aaron.sq.harun"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Harun as a male given name equivalent to Aaron.",
+      "source_refs": [
+        "src_wiktionary_en_aaron_oldid_93442002",
+        "src_wiktionary_en_harun_oldid_93041329"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_lesh",
+      "canonical_form": "Lesh",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Lesh",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexius",
+          "equivalence_set_id": "NFEQ.alexius.full-masculine",
+          "form_id": "NFF.alexius.sq.lesh"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Lesh as a male given name equivalent to Alexius.",
+      "source_refs": [
+        "src_wiktionary_en_alexius_oldid_92937514",
+        "src_wiktionary_en_lesh_oldid_83826719"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndre",
+      "canonical_form": "Ndre",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndre",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.ndre"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Ndre as a male given name equivalent to Andrew.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572",
+        "src_wiktionary_en_ndre_oldid_83960727"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndrea",
+      "canonical_form": "Ndréa",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndréa",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.ndrea"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Andrew translation table lists Ndréa as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndreu",
+      "canonical_form": "Ndréu",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndréu",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.ndreu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Andrew translation table lists Ndréu as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndua",
+      "canonical_form": "Ndúa",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndúa",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.ndua"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists Ndúa as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndue",
+      "canonical_form": "Ndue",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndue",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.ndue"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Ndue as a male given name equivalent to Anthony.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687",
+        "src_wiktionary_en_ndue_oldid_90511954"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_ndue_980e",
+      "canonical_form": "Ndúe",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndúe",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.ndue_980e"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists Ndúe as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_nduo",
+      "canonical_form": "Ndúo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ndúo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sq.nduo"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists Ndúo as the sq-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sq_nreka",
+      "canonical_form": "Nreka",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Nreka",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sq"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sq.nreka"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Albanian Nreka as a male given name equivalent to Andrew.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572",
+        "src_wiktionary_en_nreka_oldid_68738984"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sq_timoteo",
       "canonical_form": "Timoteo",
       "name_type": "given",

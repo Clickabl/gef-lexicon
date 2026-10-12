@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "language_code": "ur",
+  "names": [
+    {
+      "name_id": "name_ur_adam",
+      "canonical_form": "آدم",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "آدم",
+          "status": "canonical",
+          "script": "Arab",
+          "locale": "ur"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.ur.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Urdu آدم as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ur_u627_6cc_646_62a_6be_648",
+      "canonical_form": "اینتھونی",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "اینتھونی",
+          "status": "canonical",
+          "script": "Arab",
+          "locale": "ur"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.ur.u627_6cc_646_62a_6be_648"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists اینتھونی as the ur-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "language_code": "ha",
+  "names": [
+    {
+      "name_id": "name_ha_adamu",
+      "canonical_form": "Adamu",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adamu",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ha"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.ha.adamu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Hausa Adamu as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ha_haruna",
+      "canonical_form": "Haruna",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Haruna",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ha"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aaron",
+          "equivalence_set_id": "NFEQ.aaron.full-masculine",
+          "form_id": "NFF.aaron.ha.haruna"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Hausa Haruna as a male given name equivalent to Aaron.",
+      "source_refs": [
+        "src_wiktionary_en_aaron_oldid_93442002",
+        "src_wiktionary_en_haruna_oldid_83833249"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "snapshot_version": 1,
+  "root": "Alexis",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Aleix",
+      "Alejo",
+      "Alessia",
+      "Alessio",
+      "Alexey",
+      "Alexis",
+      "Alècsis",
+      "Alèse",
+      "Lexis",
+      "Olesya",
+      "Олекса",
+      "Олексій",
+      "Ἄλεξις"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "uk|Олекса": "Oleksa",
+    "uk|Олексій": "Oleksij"
+  },
+  "pages": {
+    "Aleix": {
+      "revid": 73205296,
+      "timestamp": "2023-05-27T13:03:22Z",
+      "sha256": "0a130e6672b25b5437b57fc4553f093032f053fd646a51303baa10772ad3019a",
+      "sections": [
+        {
+          "heading": "Catalan",
+          "given_names": [
+            {
+              "code": "ca",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ca|male|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alejo": {
+      "revid": 90988515,
+      "timestamp": "2026-05-29T12:18:05Z",
+      "sha256": "23704cb7efa6259a1534117f94caacb9f1e54244ce8a102329fb370898a4a756",
+      "sections": [
+        {
+          "heading": "Esperanto",
+          "given_names": [
+            {
+              "code": "eo",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [
+                {
+                  "text": "Alexy",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Alekso",
+                  "language": null,
+                  "modifiers": {
+                    "eq": "Alex"
+                  }
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|eo|unisex|dimof=Alekso<eq:Alex>|eq=Alexy}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|from=Ancient Greek|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alessia": {
+      "revid": 90644668,
+      "timestamp": "2026-05-10T07:53:25Z",
+      "sha256": "df73e22e958b05bab252cbf72e90c67bdc37621e84a485d261b2b1f2a2c33e1b",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Italian",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Italian|eq=Alexis}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexia",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|eq=Alexia}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alessio": {
+      "revid": 88030120,
+      "timestamp": "2025-11-01T07:54:36Z",
+      "sha256": "155f81dd1a272a37a34929bd86684a19261f96ef33a0aac06bb02e4e380d0b3f",
+      "sections": [
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                },
+                {
+                  "text": "Alexius",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|male|from=Ancient Greek|eq=Alexis,Alexius}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alexey": {
+      "revid": 87698312,
+      "timestamp": "2025-10-31T20:10:51Z",
+      "sha256": "027e61d3b68f42120ae921e0a6e377972750e28fda89a59babe4ebe1d9d4bbce",
+      "sections": []
+    },
+    "Alexis": {
+      "revid": 90486012,
+      "timestamp": "2026-05-04T16:36:59Z",
+      "sha256": "8d02dd9241c20ab84f323be23240428bbbf8513540dbda7eb1869163cd7afb1e",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=Ancient Greek}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|male|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Latin",
+          "given_names": [
+            {
+              "code": "la",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|la|male|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|from=Ancient Greek|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alècsis": {
+      "revid": 71403532,
+      "timestamp": "2023-02-24T20:29:01Z",
+      "sha256": "54b317657a56b13c49cba367a543541de7c2865c18e5b7dca2b3282406fad3e6",
+      "sections": [
+        {
+          "heading": "Walloon",
+          "given_names": [
+            {
+              "code": "wa",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|wa|male|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alèse": {
+      "revid": 89475027,
+      "timestamp": "2026-02-07T02:20:00Z",
+      "sha256": "819e700ebd38b5ea100d1f0cb123469495384d02fb2c6ca826e3fc8bca303267",
+      "sections": [
+        {
+          "heading": "Lombard",
+          "given_names": [
+            {
+              "code": "lmo",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|lmo|male|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Lexis": {
+      "revid": 92082955,
+      "timestamp": "2026-08-20T10:57:09Z",
+      "sha256": "8dc6bd0bbe353ba6ad8a30bd3f1953a9c55c20736ca7ad3c589e8d9483dcad78",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|var=Alexis}}"
+            }
+          ]
+        },
+        {
+          "heading": "Norman",
+          "given_names": [
+            {
+              "code": "nrf",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nrf|male|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Olesya": {
+      "revid": 87739869,
+      "timestamp": "2025-10-31T21:16:58Z",
+      "sha256": "aa514deae5af4a6887142c98e81df55831e0cca58a5f95456e9a2197a67417fd",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Aleksandra//Oleksandra",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Aleksandra//Oleksandra|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Олекса": {
+      "revid": 79917045,
+      "timestamp": "2024-06-02T19:15:45Z",
+      "sha256": "c12e0d9bd932804f4cf70d47d4688e12b4db6dda1f0f50c09bc40ddb53998f20",
+      "sections": [
+        {
+          "heading": "Ukrainian",
+          "given_names": [
+            {
+              "code": "uk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Oleksa",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|male|xlit=Oleksa|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Олексій": {
+      "revid": 86619414,
+      "timestamp": "2025-09-04T16:12:35Z",
+      "sha256": "decbddbd487998610022defc80dd1ff0ef84aa673a2d0f388071c40953b30b65",
+      "sections": [
+        {
+          "heading": "Ukrainian",
+          "given_names": [
+            {
+              "code": "uk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Oleksii",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|male|xlit=Oleksii|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ἄλεξις": {
+      "revid": 90544967,
+      "timestamp": "2026-05-08T21:20:02Z",
+      "sha256": "18c8bbc10d668c865f075a1150baa67a787150e5299e5c33075d48af4e9ad5ae",
+      "sections": [
+        {
+          "heading": "Ancient Greek",
+          "given_names": [
+            {
+              "code": "grc",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|grc|male|meaning=helper; defender|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

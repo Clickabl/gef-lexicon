@@ -3,6 +3,61 @@
   "language_code": "sw",
   "names": [
     {
+      "name_id": "name_sw_adamu",
+      "canonical_form": "Adamu",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adamu",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sw"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.sw.adamu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Swahili Adamu as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270",
+        "src_wiktionary_en_adamu_oldid_93155777"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sw_elisi",
+      "canonical_form": "Elisi",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Elisi",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sw"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alice",
+          "equivalence_set_id": "NFEQ.alice.full-feminine",
+          "form_id": "NFF.alice.sw.elisi"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Swahili Elisi as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_alice_oldid_93361548"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sw_timotheo",
       "canonical_form": "Timotheo",
       "name_type": "given",

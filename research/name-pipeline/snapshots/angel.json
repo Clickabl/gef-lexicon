@@ -1,0 +1,446 @@
+{
+  "snapshot_version": 1,
+  "root": "Angel",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Angelo",
+      "Anxelu",
+      "Ángel",
+      "Ángelo",
+      "Ангел"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "mk|Ангел": "Angel"
+  },
+  "pages": {
+    "Angel": {
+      "revid": 93486895,
+      "timestamp": "2026-10-11T03:34:49Z",
+      "sha256": "1d0b8a3e5a347023bd94e3d2fafbc850374a24bab29c53f1b9847548292fd30f",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Angelo",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|var=Angelo}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "la:Angelus < Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=la:Angelus < Ancient Greek}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "es:Ángel",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=es:Ángel}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Angela",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|var=Angela}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": "modern",
+              "popular": null,
+              "raw": "{{given name|en|female|from=English|usage=modern}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|female|from=English}}"
+            },
+            {
+              "code": "ceb",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Spanish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|male|from=Spanish}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|female|from=English}}"
+            },
+            {
+              "code": "tl",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Spanish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|male|from=Spanish}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Angelo": {
+      "revid": 93041151,
+      "timestamp": "2026-09-29T22:45:22Z",
+      "sha256": "13c79570dbe8427551764771419f2fc9a452fdcf070a50d59278ae84d25b66d9",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Italian",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=Italian}}"
+            }
+          ]
+        },
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "it:Angelo",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|male|from=it:Angelo}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angel",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|male|eq=Angel}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angelo",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Spanish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|male|from=Spanish|eq=Angelo}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Anxelu": {
+      "revid": 90377758,
+      "timestamp": "2026-04-30T19:13:55Z",
+      "sha256": "90d0e9f650a4a57f53e8a75d8096cc916ae8c52046044d3e8f6e62bc2c84ca46",
+      "sections": [
+        {
+          "heading": "Asturian",
+          "given_names": [
+            {
+              "code": "ast",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angel",
+                  "language": null
+                },
+                {
+                  "text": "Ángel",
+                  "language": "es"
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ast|male|eq=Angel,es:Ángel}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ángel": {
+      "revid": 93130674,
+      "timestamp": "2026-09-30T09:03:44Z",
+      "sha256": "2f93892c3279c64f518d66f4215166c937fad87e629b5f7a5d32bcbf37095971",
+      "sections": [
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angel",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|eq=Angel}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ángelo": {
+      "revid": 77541473,
+      "timestamp": "2024-01-04T18:04:54Z",
+      "sha256": "e3f6dcd80a195c6d035f5aaa683c3aa1f6683429ff247a6907d46d985d19868b",
+      "sections": [
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angel",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|eq=Angel}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ангел": {
+      "revid": 80456117,
+      "timestamp": "2024-06-18T21:45:57Z",
+      "sha256": "43ff1a3db2b6d85d4dcf2c7e4f85bae85cbdfe439e8962e86153e1d7ef8eff11",
+      "sections": [
+        {
+          "heading": "Macedonian",
+          "given_names": [
+            {
+              "code": "mk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Angel",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|mk|male|eq=Angel|f=Ангела}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

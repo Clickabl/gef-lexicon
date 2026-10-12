@@ -1,0 +1,158 @@
+{
+  "snapshot_version": 1,
+  "root": "Anderson",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Anderson",
+      "Andreasyan",
+      "Ânderson",
+      "Андреев"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Anderson": {
+      "revid": 92862948,
+      "timestamp": "2026-09-24T11:58:43Z",
+      "sha256": "a876bb6f5942a697c193e98ef9156e60912f490ac65f5f388c249ea0de6f7c7a",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Norwegian Bokmål",
+          "given_names": [
+            {
+              "code": "nb",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Anderson",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|male|from=English|eq=Anderson}}"
+            }
+          ]
+        },
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Anderson",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|male|eq=Anderson}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|from=English}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Andreasyan": {
+      "revid": 87890088,
+      "timestamp": "2025-11-01T01:15:02Z",
+      "sha256": "6f4c88c4f3b737abb1411490c667c20ff09a5004170373add82b4432f8527f58",
+      "sections": []
+    },
+    "Ânderson": {
+      "revid": 91244807,
+      "timestamp": "2026-06-15T01:00:11Z",
+      "sha256": "a671b60c8a0479f649816d2435dbd96939e48432909acf32ac7f89d3e10edb5f",
+      "sections": [
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Anderson",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": "Brazilian",
+              "popular": null,
+              "raw": "{{given name|pt|male|usage=Brazilian|eq=Anderson}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Андреев": {
+      "revid": 93028934,
+      "timestamp": "2026-09-29T21:37:08Z",
+      "sha256": "20dbe3e36b62e7f733add2862a6c15438263526dc17d1139cc704419d23c0b36",
+      "sections": []
+    }
+  }
+}

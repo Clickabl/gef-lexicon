@@ -1,0 +1,62 @@
+{
+  "snapshot_version": 1,
+  "root": "Arlo",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Arlo": {
+      "revid": 83833507,
+      "timestamp": "2025-02-03T09:26:05Z",
+      "sha256": "a3ed45324ae04826ba4f47e285c539fd08bb957ac962d6a6988bc6956d06905a",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|male}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

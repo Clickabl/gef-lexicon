@@ -1,0 +1,128 @@
+{
+  "snapshot_version": 1,
+  "root": "Amy",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Amee"
+    ],
+    "dimof": [
+      "Ames"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Amee": {
+      "revid": 83834793,
+      "timestamp": "2025-02-03T09:45:10Z",
+      "sha256": "7282f7f07ba0a0c9d9002000c2d6f7c0f46e8f06bbbe49ce176ad9e0a771eaca",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Latin}}"
+            }
+          ]
+        },
+        {
+          "heading": "Old French",
+          "given_names": [
+            {
+              "code": "fro",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Amy",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fro|female|from=Latin|eq=Amy}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ames": {
+      "revid": 92135862,
+      "timestamp": "2026-08-23T18:32:41Z",
+      "sha256": "faaf7d38cd21b768d98504bf9afd11fcacb7e68bf6741a9351ea6a05e7c30b38",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Amy",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Amy}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Amy": {
+      "revid": 92688949,
+      "timestamp": "2026-09-14T20:51:19Z",
+      "sha256": "c9f2c0aee65536f6178199e59f31157b3f5bcaa96b801fbb692e68079829d6d7",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Latin}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "language_code": "pa",
+  "names": [
+    {
+      "name_id": "name_pa_adam",
+      "canonical_form": "ਆਦਮ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ਆਦਮ",
+          "status": "canonical",
+          "script": "Guru",
+          "locale": "pa"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.pa.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Punjabi ਆਦਮ as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270",
+        "src_wiktionary_en_ua06_a26_a2e_oldid_89757276"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_pa_ainathni",
+      "canonical_form": "ਐਨਥਨੀ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ਐਨਥਨੀ",
+          "status": "canonical",
+          "script": "Guru",
+          "locale": "pa"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.pa.ainathni"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anthony translation table lists ਐਨਥਨੀ as the pa-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -3,6 +3,584 @@
   "language_code": "sk",
   "names": [
     {
+      "name_id": "name_sk_adam",
+      "canonical_form": "Adam",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adam",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.sk.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Adam as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_adela",
+      "canonical_form": "Adela",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adela",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adele",
+          "equivalence_set_id": "NFEQ.adele.full-feminine",
+          "form_id": "NFF.adele.sk.adela"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Adela as a female given name equivalent to Adele.",
+      "source_refs": [
+        "src_wiktionary_en_adela_oldid_92130827",
+        "src_wiktionary_en_adele_oldid_92130826"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_ado",
+      "canonical_form": "Ado",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ado",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.short-masculine",
+          "form_id": "NFF.adam.sk.ado"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_sk_adam",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Ado as a male given name that is a diminutive of Adam.",
+      "source_refs": [
+        "src_wiktionary_en_ado_oldid_87214981"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_agnesa",
+      "canonical_form": "Agnesa",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Agnesa",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.agnes",
+          "equivalence_set_id": "NFEQ.agnes.full-feminine",
+          "form_id": "NFF.agnes.sk.agnesa"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Agnesa as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_agnes_oldid_92302340"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_agnesa_20df",
+      "canonical_form": "Agneša",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Agneša",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.agnes",
+          "equivalence_set_id": "NFEQ.agnes.full-feminine",
+          "form_id": "NFF.agnes.sk.agnesa_20df"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Agnes translation table lists Agneša as the sk-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_agnes_oldid_92302340"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_alan",
+      "canonical_form": "Alan",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alan",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alan",
+          "equivalence_set_id": "NFEQ.alan.full-masculine",
+          "form_id": "NFF.alan.sk.alan"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Alan as a male given name equivalent to Alan.",
+      "source_refs": [
+        "src_wiktionary_en_alan_oldid_91690208"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_albert",
+      "canonical_form": "Albert",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Albert",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.albert",
+          "equivalence_set_id": "NFEQ.albert.full-masculine",
+          "form_id": "NFF.albert.sk.albert"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Albert as a male given name equivalent to Albert.",
+      "source_refs": [
+        "src_wiktionary_en_albert_oldid_93486861"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_alexandra",
+      "canonical_form": "Alexandra",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alexandra",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexandra",
+          "equivalence_set_id": "NFEQ.alexandra.full-feminine",
+          "form_id": "NFF.alexandra.sk.alexandra"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Alexandra as a female given name equivalent to Alexandra.",
+      "source_refs": [
+        "src_wiktionary_en_alexandra_oldid_92481561"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_alexej",
+      "canonical_form": "Alexej",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alexej",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexius",
+          "equivalence_set_id": "NFEQ.alexius.full-masculine",
+          "form_id": "NFF.alexius.sk.alexej"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Alexej as a male given name equivalent to Alexius.",
+      "source_refs": [
+        "src_wiktionary_en_alexej_oldid_92998412",
+        "src_wiktionary_en_alexius_oldid_92937514"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_alfred",
+      "canonical_form": "Alfréd",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Alfréd",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alfred",
+          "equivalence_set_id": "NFEQ.alfred.full-masculine",
+          "form_id": "NFF.alfred.sk.alfred"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Alfréd as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_alfred_oldid_92990935"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_amalia",
+      "canonical_form": "Amália",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Amália",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.amelia",
+          "equivalence_set_id": "NFEQ.amelia.full-feminine",
+          "form_id": "NFF.amelia.sk.amalia"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Amália as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_amelia_oldid_92924931"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anastasios",
+      "canonical_form": "Anastasios",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anastasios",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anastasius",
+          "equivalence_set_id": "NFEQ.anastasius.full-masculine",
+          "form_id": "NFF.anastasius.sk.anastasios"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anastasius translation table lists Anastasios as the sk-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anastasius_oldid_92470087"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anastaz",
+      "canonical_form": "Anastáz",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anastáz",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anastasius",
+          "equivalence_set_id": "NFEQ.anastasius.full-masculine",
+          "form_id": "NFF.anastasius.sk.anastaz"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anastasius translation table lists Anastáz as the sk-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anastasius_oldid_92470087"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anastazia",
+      "canonical_form": "Anastázia",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anastázia",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anastasia",
+          "equivalence_set_id": "NFEQ.anastasia.full-feminine",
+          "form_id": "NFF.anastasia.sk.anastazia"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Anastázia as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_anastasia_oldid_92411413"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anastazius",
+      "canonical_form": "Anastazius",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anastazius",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anastasius",
+          "equivalence_set_id": "NFEQ.anastasius.full-masculine",
+          "form_id": "NFF.anastasius.sk.anastazius"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Anastasius translation table lists Anastazius as the sk-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_anastasius_oldid_92470087"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_andrea",
+      "canonical_form": "Andrea",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Andrea",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrea",
+          "equivalence_set_id": "NFEQ.andrea.full-feminine",
+          "form_id": "NFF.andrea.sk.andrea"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Andrea as a female given name equivalent to Andrea.",
+      "source_refs": [
+        "src_wiktionary_en_andrea_oldid_93477801"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_andrej",
+      "canonical_form": "Andrej",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Andrej",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sk.andrej"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Andrej as a male given name equivalent to Andrew.",
+      "source_refs": [
+        "src_wiktionary_en_andrej_oldid_89372266",
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_angelika",
+      "canonical_form": "Angelika",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Angelika",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.angelica",
+          "equivalence_set_id": "NFEQ.angelica.full-feminine",
+          "form_id": "NFF.angelica.sk.angelika"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Angelika as a female given name equivalent to Angelica.",
+      "source_refs": [
+        "src_wiktionary_en_angelica_oldid_91170388",
+        "src_wiktionary_en_angelika_oldid_92984937"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anna",
+      "canonical_form": "Anna",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anna",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.ann",
+          "equivalence_set_id": "NFEQ.ann.full-feminine",
+          "form_id": "NFF.ann.sk.anna"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Anna as a female given name equivalent to Ann.",
+      "source_refs": [
+        "src_wiktionary_en_ann_oldid_93425879",
+        "src_wiktionary_en_anna_oldid_93366642"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_anton",
+      "canonical_form": "Anton",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Anton",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.anthony",
+          "equivalence_set_id": "NFEQ.anthony.full-masculine",
+          "form_id": "NFF.anthony.sk.anton"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Anton as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_anthony_oldid_93442687"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_ondrej",
+      "canonical_form": "Ondrej",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ondrej",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.sk.ondrej"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Ondrej as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sk_timotej",
       "canonical_form": "Timotej",
       "name_type": "given",

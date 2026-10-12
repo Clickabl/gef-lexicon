@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "ckb",
+  "names": [
+    {
+      "name_id": "name_ckb_adem",
+      "canonical_form": "ئادەم",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ئادەم",
+          "status": "canonical",
+          "script": "Arab",
+          "locale": "ckb"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.ckb.adem"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Adam translation table lists ئادەم as the ckb-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "language_code": "ms",
+  "names": [
+    {
+      "name_id": "name_ms_adam",
+      "canonical_form": "Adam",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adam",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ms"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.ms.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Malay Adam as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ms_harun",
+      "canonical_form": "Harun",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Harun",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ms"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aaron",
+          "equivalence_set_id": "NFEQ.aaron.full-masculine",
+          "form_id": "NFF.aaron.ms.harun"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Malay Harun as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_aaron_oldid_93442002"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ms_iskandariah",
+      "canonical_form": "Iskandariah",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Iskandariah",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ms"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexandra",
+          "equivalence_set_id": "NFEQ.alexandra.full-feminine",
+          "form_id": "NFF.alexandra.ms.iskandariah"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Alexandra translation table lists Iskandariah as the ms-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_alexandra_oldid_92481561"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "language_code": "my",
+  "names": [
+    {
+      "name_id": "name_my_adam",
+      "canonical_form": "အာဒမ်",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "အာဒမ်",
+          "status": "canonical",
+          "script": "Mymr",
+          "locale": "my"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adam",
+          "equivalence_set_id": "NFEQ.adam.full-masculine",
+          "form_id": "NFF.adam.my.adam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Burmese အာဒမ် as a male given name equivalent to Adam.",
+      "source_refs": [
+        "src_wiktionary_en_adam_oldid_93386270",
+        "src_wiktionary_en_u1021_102c_1012_1019_103a_oldid_89753990"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_my_angda_ru_58",
+      "canonical_form": "အင်ဒရူး",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "အင်ဒရူး",
+          "status": "canonical",
+          "script": "Mymr",
+          "locale": "my"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.andrew",
+          "equivalence_set_id": "NFEQ.andrew.full-masculine",
+          "form_id": "NFF.andrew.my.angda_ru_58"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Andrew translation table lists အင်ဒရူး as the my-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_andrew_oldid_92746572"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_my_anggya_la",
+      "canonical_form": "အင်ဂျလာ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "အင်ဂျလာ",
+          "status": "canonical",
+          "script": "Mymr",
+          "locale": "my"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.angela",
+          "equivalence_set_id": "NFEQ.angela.full-feminine",
+          "form_id": "NFF.angela.my.anggya_la"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Angela translation table lists အင်ဂျလာ as the my-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_angela_oldid_92411437"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

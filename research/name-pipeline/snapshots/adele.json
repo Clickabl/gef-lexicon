@@ -1,0 +1,653 @@
+{
+  "snapshot_version": 1,
+  "root": "Adele",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Adela",
+      "Adele",
+      "Aida",
+      "Ele"
+    ],
+    "dimof": [
+      "Addie",
+      "Adie"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Addie": {
+      "revid": 92692547,
+      "timestamp": "2026-09-15T08:04:23Z",
+      "sha256": "2e4b41572fe414fc1928f19a2c59fb4c6556f0dafa365288731d2cf1a91e7c09",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adeline",
+                  "language": null
+                },
+                {
+                  "text": "Adelaide",
+                  "language": null
+                },
+                {
+                  "text": "[[Addison]] or other names beginning with ''Ad-''",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Adele,Adeline,Adelaide,[[Addison]] or other names beginning with ''Ad-''}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adam",
+                  "language": null
+                },
+                {
+                  "text": "[[Adrian]] or other names beginning with ''Ad-''",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Adam,[[Adrian]] or other names beginning with ''Ad-''}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adela": {
+      "revid": 92130827,
+      "timestamp": "2026-08-23T17:43:03Z",
+      "sha256": "3dcf761da931c8d050bf64058023489a78896f1067f3f87b357b5084cb8cc7b6",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Germanic languages",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Germanic languages}}"
+            }
+          ]
+        },
+        {
+          "heading": "Albanian",
+          "given_names": [
+            {
+              "code": "sq",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sq|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Polish",
+          "given_names": [
+            {
+              "code": "pl",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adela",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pl|female|eq=Adela}}"
+            }
+          ]
+        },
+        {
+          "heading": "Serbo-Croatian",
+          "given_names": [
+            {
+              "code": "sh",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sh|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Slovak",
+          "given_names": [
+            {
+              "code": "sk",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adela",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sk|female|eq=Adele,Adela}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adela",
+                  "language": null
+                },
+                {
+                  "text": "Adele",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|female|eq=Adela,Adele}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|female}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adele": {
+      "revid": 92130826,
+      "timestamp": "2026-08-23T17:43:02Z",
+      "sha256": "9a7df1ed4bface396465c98e2bde29bb5565363d00a2f75c14b3839017b1e1e5",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Germanic languages",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Germanic languages}}"
+            }
+          ]
+        },
+        {
+          "heading": "Finnish",
+          "given_names": [
+            {
+              "code": "fi",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fi|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adela",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|female|from=French|eq=Adele,Adela}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adela",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|eq=Adele,Adela}}"
+            }
+          ]
+        },
+        {
+          "heading": "Walloon",
+          "given_names": [
+            {
+              "code": "wa",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adela",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|wa|female|eq=Adele,Adela}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adie": {
+      "revid": 89010795,
+      "timestamp": "2026-01-01T09:02:35Z",
+      "sha256": "5a3c280b9d9a1025cc40e85c82e4f4efffa12286fbff683bbb6c8c5bf1284bb1",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adam",
+                  "language": null
+                },
+                {
+                  "text": "Adrian",
+                  "language": null
+                },
+                {
+                  "text": "Aidan",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Hebrew,Latin,Irish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Adam,Adrian,Aidan|from=Hebrew,Latin,Irish}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adriana",
+                  "language": null
+                },
+                {
+                  "text": "Adrienne",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Germanic languages,Latin,French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Adele,Adriana,Adrienne|from=Germanic languages,Latin,French}}"
+            }
+          ]
+        },
+        {
+          "heading": "Scots",
+          "given_names": [
+            {
+              "code": "sco",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Aidam",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sco|male|dimof=Aidam}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Aida": {
+      "revid": 92130885,
+      "timestamp": "2026-08-23T17:43:51Z",
+      "sha256": "99662997c5a3ad4f5928528004366c6b7898681bc311ba098a04626b00c8d126",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Italian",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Italian}}"
+            }
+          ]
+        },
+        {
+          "heading": "Asturian",
+          "given_names": [
+            {
+              "code": "ast",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                },
+                {
+                  "text": "Adelaida",
+                  "language": "es"
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ast|female|eq=Adele,es:Adelaida}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|female|}}"
+            }
+          ]
+        },
+        {
+          "heading": "Finnish",
+          "given_names": [
+            {
+              "code": "fi",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fi|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Serbo-Croatian",
+          "given_names": [
+            {
+              "code": "sh",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sh|female}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Ele": {
+      "revid": 89782323,
+      "timestamp": "2026-03-08T03:04:12Z",
+      "sha256": "068ada200f2804d09c6cc1b733f3e4eb66a4f6ed7ae9ef50711657733dbeee24",
+      "sections": [
+        {
+          "heading": "Old French",
+          "given_names": [
+            {
+              "code": "fro",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adele",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fro|female|eq=Adele}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

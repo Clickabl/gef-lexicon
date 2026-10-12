@@ -1,0 +1,115 @@
+{
+  "snapshot_version": 1,
+  "root": "Aphrodite",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Aferdita",
+      "Αφροδίτη"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "el|Αφροδίτη": "Afrodíti"
+  },
+  "pages": {
+    "Aferdita": {
+      "revid": 77853701,
+      "timestamp": "2024-02-02T22:38:15Z",
+      "sha256": "7dd42ae9e707b291b16b38bacc9535f252cc1954dfddd7d3bdc009c69336958e",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Aphrodite",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|A=An English spelling of an Albanian|eq=Aphrodite}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Aphrodite": {
+      "revid": 92504595,
+      "timestamp": "2026-09-06T18:17:21Z",
+      "sha256": "8975454c65a77876ca931132f776940fcdedf89a3db382d9d27ffc19fa4cf4d2",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Ancient Greek}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Αφροδίτη": {
+      "revid": 92068716,
+      "timestamp": "2026-08-19T14:36:55Z",
+      "sha256": "22909a4db58b8242b509b0ec7a5f401d5022d07aecae1fe457b9b33b64196294",
+      "sections": [
+        {
+          "heading": "Greek",
+          "given_names": [
+            {
+              "code": "el",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Aphrodite",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Afroditi",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|el|female|xlit=Afroditi|eq=Aphrodite}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

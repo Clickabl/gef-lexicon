@@ -1,0 +1,235 @@
+{
+  "snapshot_version": 1,
+  "root": "Alexia",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Alexia",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Alexie",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Greek",
+      "code": "el",
+      "text": "Αλεξία",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Polish",
+      "code": "pl",
+      "text": "Aleksja",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Spanish",
+      "code": "es",
+      "text": "Aleja",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [
+      "Alessia",
+      "Alexia"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "el|Αλεξία": "Alexía"
+  },
+  "pages": {
+    "Aleja": {
+      "revid": 83833960,
+      "timestamp": "2025-02-03T09:32:31Z",
+      "sha256": "d48056436d97b6d1a2c2d35d3456c3bf73122c4bb29590df7be23f5c0fc74370",
+      "sections": [
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexa",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Alejandra",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|female|dimof=Alejandra|eq=Alexa}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alessia": {
+      "revid": 90644668,
+      "timestamp": "2026-05-10T07:53:25Z",
+      "sha256": "df73e22e958b05bab252cbf72e90c67bdc37621e84a485d261b2b1f2a2c33e1b",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Italian",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Italian|eq=Alexis}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexia",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|eq=Alexia}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alexia": {
+      "revid": 86125205,
+      "timestamp": "2025-08-20T13:11:52Z",
+      "sha256": "16c7410679a1aede1294a169aa51d5e1b88ebaadfeb5032aaa4b0e3955844170",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alexia",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female|eq=Alexia}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alexie": {
+      "revid": 86866049,
+      "timestamp": "2025-09-22T04:15:49Z",
+      "sha256": "996db2850bd25b94773b923d504f0a170804517041aeff462864c3fd0e280cd6",
+      "sections": []
+    }
+  }
+}

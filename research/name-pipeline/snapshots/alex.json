@@ -1,0 +1,1196 @@
+{
+  "snapshot_version": 1,
+  "root": "Alex",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Ailig",
+      "Alejo",
+      "Aleks",
+      "Alekso",
+      "Aleksy",
+      "Alex",
+      "Alexy",
+      "Áles",
+      "Αλέκος",
+      "Алексей",
+      "Олесь",
+      "Саша",
+      "Сашо",
+      "Шура"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "bg|Сашо": "Sašo",
+    "el|Αλέκος": "Alékos",
+    "mk|Сашо": "Sašo",
+    "ru|Алексей": "Aleksej",
+    "ru|Саша": "Saša",
+    "ru|Шура": "Šura",
+    "uk|Олесь": "Olesʹ"
+  },
+  "pages": {
+    "Ailig": {
+      "revid": 93366182,
+      "timestamp": "2026-10-02T21:24:14Z",
+      "sha256": "2dcd23caf889b0e0d2b930466b3b1b0ad7e5e5f432e342b99bf6cb9911989467",
+      "sections": [
+        {
+          "heading": "Scottish Gaelic",
+          "given_names": [
+            {
+              "code": "gd",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Alec",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Alasdair",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|gd|male|dimof=Alasdair|from=Ancient Greek|eq=Alex,Alec}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alejo": {
+      "revid": 90988515,
+      "timestamp": "2026-05-29T12:18:05Z",
+      "sha256": "23704cb7efa6259a1534117f94caacb9f1e54244ce8a102329fb370898a4a756",
+      "sections": [
+        {
+          "heading": "Esperanto",
+          "given_names": [
+            {
+              "code": "eo",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [
+                {
+                  "text": "Alexy",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Alekso",
+                  "language": null,
+                  "modifiers": {
+                    "eq": "Alex"
+                  }
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|eo|unisex|dimof=Alekso<eq:Alex>|eq=Alexy}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|from=Ancient Greek|eq=Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Aleks": {
+      "revid": 91546903,
+      "timestamp": "2026-07-09T21:16:08Z",
+      "sha256": "568b02f588c924511ce7ea3883cd85e6993fea698a96987fbac018cf3d28c202",
+      "sections": [
+        {
+          "heading": "Albanian",
+          "given_names": [
+            {
+              "code": "sq",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sq|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Estonian",
+          "given_names": [
+            {
+              "code": "et",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|et|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Faroese",
+          "given_names": [
+            {
+              "code": "fo",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fo|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Norwegian Bokmål",
+          "given_names": [
+            {
+              "code": "nb",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Ancient Greek|eq=Alex",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|male|from=Latin < Ancient Greek|eq=Alex}}"
+            },
+            {
+              "code": "nb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Ancient Greek|eq=Alex",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alekso": {
+      "revid": 88952155,
+      "timestamp": "2025-12-29T13:53:57Z",
+      "sha256": "952318b7aa6a0cfb45335df7a36121f23ae8d4fbbc67b8e2f78432c9cf08a260",
+      "sections": [
+        {
+          "heading": "Esperanto",
+          "given_names": [
+            {
+              "code": "eo",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|eo|male|eq=Alex}}"
+            },
+            {
+              "code": "eo",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|eo|female|eq=Alex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Aleksy": {
+      "revid": 92984939,
+      "timestamp": "2026-09-29T08:55:53Z",
+      "sha256": "99dbe1c2198fc5146acea4cd5162def798ffe3aed01dee85d3124ce2e3895ec7",
+      "sections": [
+        {
+          "heading": "Polish",
+          "given_names": [
+            {
+              "code": "pl",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pl|male|eq=Alex,Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alex": {
+      "revid": 92738560,
+      "timestamp": "2026-09-20T06:17:47Z",
+      "sha256": "10af7b1bf69460be80573b07efc6c637e2b428f299c65317e40ad1c2810699bf",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Danish",
+          "given_names": [
+            {
+              "code": "da",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|da|male|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Dutch",
+          "given_names": [
+            {
+              "code": "nl",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nl|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Finnish",
+          "given_names": [
+            {
+              "code": "fi",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Aleksi",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": "rare",
+              "popular": null,
+              "raw": "{{given name|fi|male|usage=rare|varof=Aleksi}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "male",
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|male,female|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|male|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Hungarian",
+          "given_names": [
+            {
+              "code": "hu",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|hu|male|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Icelandic",
+          "given_names": [
+            {
+              "code": "is",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|is|male|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Norwegian Bokmål",
+          "given_names": [
+            {
+              "code": "nb",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Ancient Greek|eq=Alex",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|male|from=Latin < Ancient Greek|eq=Alex}}"
+            },
+            {
+              "code": "nb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Ancient Greek|eq=Alex",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Swedish",
+          "given_names": [
+            {
+              "code": "sv",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sv|male|eq=Alex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Alexy": {
+      "revid": 90339810,
+      "timestamp": "2026-04-26T06:03:27Z",
+      "sha256": "fbb7b79c7bb888050d8be0b3c6e6d4251382306d4c0b50b8874fe07c48f21661",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|male|eq=Alex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Áles": {
+      "revid": 91390098,
+      "timestamp": "2026-06-26T11:48:49Z",
+      "sha256": "a4db4a7f75cc908072edc6294baf5fba8b7011734ec0143defa1bbf44b908db0",
+      "sections": [
+        {
+          "heading": "Asturian",
+          "given_names": [
+            {
+              "code": "ast",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Álex",
+                  "language": "es"
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ast|male|eq=Alex,es:Álex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Αλέκος": {
+      "revid": 83830348,
+      "timestamp": "2025-02-03T08:35:30Z",
+      "sha256": "7c181ea2e92888d7c183eece63410f210d1f6e793d4420f23de0d301bb7f1bda",
+      "sections": [
+        {
+          "heading": "Greek",
+          "given_names": [
+            {
+              "code": "el",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Alec",
+                  "language": null
+                },
+                {
+                  "text": "Xan",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Αλέξανδρος",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|el|male|dimof=Αλέξανδρος|eq=Alex,Alec,Xan}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Алексей": {
+      "revid": 89311077,
+      "timestamp": "2026-01-22T10:33:50Z",
+      "sha256": "e2905b73d325c0755de05bb82017152a9808b556ac298e47f141df3d4c78b9c7",
+      "sections": [
+        {
+          "heading": "Russian",
+          "given_names": [
+            {
+              "code": "ru",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Alexis",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Alexey",
+                  "language": null
+                },
+                {
+                  "text": "Aleksey",
+                  "language": null
+                },
+                {
+                  "text": "Alexei",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|male|xlit=Alexey,Aleksey,Alexei|eq=Alex,Alexis}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Олесь": {
+      "revid": 86842566,
+      "timestamp": "2025-09-20T12:09:49Z",
+      "sha256": "a30fa64054869be366aa685266966127209455c11b7879a6fec5d08272f2c9cf",
+      "sections": [
+        {
+          "heading": "Ukrainian",
+          "given_names": [
+            {
+              "code": "uk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Олекса́ндр",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Oles",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|male|xlit=Oles|dimof=Олекса́ндр|eq=Alex}}"
+            },
+            {
+              "code": "uk",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Oles",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|male|xlit=Oles}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Саша": {
+      "revid": 93036271,
+      "timestamp": "2026-09-29T21:57:27Z",
+      "sha256": "1cedb2c8aa6d974c691cc7e372afbfee84b8f771cc12406572af8d8338e5ef44",
+      "sections": [
+        {
+          "heading": "Pannonian Rusyn",
+          "given_names": [
+            {
+              "code": "rsk",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Sasha",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александра",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Saša",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|rsk|female|xlit=Saša|dimof=Александра|eq=Alex,Sasha}}"
+            },
+            {
+              "code": "rsk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Xander",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александар",
+                  "language": null
+                },
+                {
+                  "text": "Александер",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Saša",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|rsk|male|xlit=Saša|dimof=Александар,Александер|eq=Alex,Xander}}"
+            }
+          ]
+        },
+        {
+          "heading": "Russian",
+          "given_names": [
+            {
+              "code": "ru",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                },
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Xander",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Алекса́ндр",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|male|xlit=Sasha|eq=Sasha,Alex,Xander|dimof=Алекса́ндр}}"
+            },
+            {
+              "code": "ru",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                },
+                {
+                  "text": "Alex",
+                  "language": null
+                },
+                {
+                  "text": "Sandy",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Алекса́ндра",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|female|xlit=Sasha|eq=Sasha,Alex,Sandy|dimof=Алекса́ндра}}"
+            }
+          ]
+        },
+        {
+          "heading": "Serbo-Croatian",
+          "given_names": [
+            {
+              "code": "sh",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александар",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sh|male|eq=Sasha|dimof=Александар}}"
+            },
+            {
+              "code": "sh",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Sasha",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александра",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sh|female|eq=Sasha|dimof=Александра}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Сашо": {
+      "revid": 92485005,
+      "timestamp": "2026-09-04T22:29:23Z",
+      "sha256": "84767132602029a6d0f9a22a283e30b2e7d86d7bcd2028470a93edad879fc5eb",
+      "sections": [
+        {
+          "heading": "Bulgarian",
+          "given_names": [
+            {
+              "code": "bg",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александър",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Sasho",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|bg|male|xlit=Sasho|dimof=Александър|eq=Alex}}"
+            }
+          ]
+        },
+        {
+          "heading": "Macedonian",
+          "given_names": [
+            {
+              "code": "mk",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Александар",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|mk|male|dimof=Александар}}"
+            }
+          ]
+        },
+        {
+          "heading": "Pannonian Rusyn",
+          "given_names": [
+            {
+              "code": "rsk",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Александар",
+                  "language": null
+                },
+                {
+                  "text": "Александер",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Sašo",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|rsk|male|xlit=Sašo|dimof=Александар,Александер|eq=Alex}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Шура": {
+      "revid": 92311130,
+      "timestamp": "2026-08-25T21:50:57Z",
+      "sha256": "cfebc1676922773a91f620886a1bc5a723e66f1b3d4cffd54f861e9dd4428258",
+      "sections": [
+        {
+          "heading": "Russian",
+          "given_names": [
+            {
+              "code": "ru",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Алекса́ндр",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Shura",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|male|xlit=Shura|eq=Alex|dimof=Алекса́ндр}}"
+            },
+            {
+              "code": "ru",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Алекса́ндра",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Shura",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|female|xlit=Shura|eq=Alex|dimof=Алекса́ндра}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

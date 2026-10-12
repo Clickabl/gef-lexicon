@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "language_code": "kk",
+  "names": [
+    {
+      "name_id": "name_kk_alan",
+      "canonical_form": "Алан",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Алан",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "kk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alan",
+          "equivalence_set_id": "NFEQ.alan.full-masculine",
+          "form_id": "NFF.alan.kk.alan"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Kazakh Алан as a male given name equivalent to Alan.",
+      "source_refs": [
+        "src_wiktionary_en_alan_oldid_91690208",
+        "src_wiktionary_en_u410_43b_430_43d_oldid_91602490"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_kk_aron",
+      "canonical_form": "Арон",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Арон",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "kk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aaron",
+          "equivalence_set_id": "NFEQ.aaron.full-masculine",
+          "form_id": "NFF.aaron.kk.aron"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Aaron translation table lists Арон as the kk-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_aaron_oldid_93442002"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

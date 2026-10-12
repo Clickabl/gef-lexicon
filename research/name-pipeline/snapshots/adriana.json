@@ -1,0 +1,569 @@
+{
+  "snapshot_version": 1,
+  "root": "Adriana",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Dutch",
+      "code": "nl",
+      "text": "Adriana",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Adrienne",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Polish",
+      "code": "pl",
+      "text": "Adrianna",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Portuguese",
+      "code": "pt",
+      "text": "Adriana",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [
+      "Adriana",
+      "Adrijana",
+      "Adrièna"
+    ],
+    "dimof": [
+      "Adri",
+      "Adrianka"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Adri": {
+      "revid": 91418583,
+      "timestamp": "2026-06-29T17:22:30Z",
+      "sha256": "6173781a73b9112fe46deaf56924a7f064d30d1731020d598bf145a42bfdcb06",
+      "sections": [
+        {
+          "heading": "Dutch",
+          "given_names": [
+            {
+              "code": "nl",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nl|male}}"
+            }
+          ]
+        },
+        {
+          "heading": "Hungarian",
+          "given_names": [
+            {
+              "code": "hu",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adrienn",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|hu|female|dimof=Adrienn}}"
+            }
+          ]
+        },
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|dimof=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adrián",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|dimof=Adrián}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adriana": {
+      "revid": 92176252,
+      "timestamp": "2026-08-24T01:33:16Z",
+      "sha256": "8fbc94410380b4108b277c7a0dd3a46bb9e1940362a5571b080a444384736e05",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin,Etruscan",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Latin,Etruscan|m=Adrian}}"
+            }
+          ]
+        },
+        {
+          "heading": "Czech",
+          "given_names": [
+            {
+              "code": "cs",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|cs|female|eq=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|eq=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Latin",
+          "given_names": [
+            {
+              "code": "la",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|la|female|eq=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Lithuanian",
+          "given_names": [
+            {
+              "code": "lt",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|lt|female|from=Latin|eq=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Etruscan|eq=Adriana",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|from=Latin < Etruscan|eq=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Serbo-Croatian",
+          "given_names": [
+            {
+              "code": "sh",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sh|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Latin < Etruscan|eq=Adriana",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|female|from=Latin < Etruscan|eq=Adriana}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adrianka": {
+      "revid": 84818993,
+      "timestamp": "2025-05-16T12:02:14Z",
+      "sha256": "3b4adef29cc777ac3e8da2d9238e7cab7f868d8239003afa0f67fb44395f8baf",
+      "sections": [
+        {
+          "heading": "Czech",
+          "given_names": [
+            {
+              "code": "cs",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|cs|female|dimof=Adriana}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adrianna": {
+      "revid": 92526721,
+      "timestamp": "2026-09-09T01:04:51Z",
+      "sha256": "7b85b6e6e123cd0b724c2a56c8c7913f4fef899ae460a494a6af4c5786c21a5e",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": "Latin",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Latin|varof=Adriana}}"
+            }
+          ]
+        },
+        {
+          "heading": "Polish",
+          "given_names": [
+            {
+              "code": "pl",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adrianna",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pl|female|eq=Adrianna}}"
+            }
+          ]
+        },
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|varof=Adriana}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adrienne": {
+      "revid": 90677483,
+      "timestamp": "2026-05-10T22:28:07Z",
+      "sha256": "493fe37cc2a7c4dad4566a51c6539d8d1e7fbf803f51c50cf9ae4bf58e0e569f",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=French}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female|m=Adrien}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adrijana": {
+      "revid": 89372216,
+      "timestamp": "2026-01-28T10:37:00Z",
+      "sha256": "0c63f44574992dd899b2d5265a52af2884f9ae8b655de54c7ac8f37cafa8974b",
+      "sections": [
+        {
+          "heading": "Slovene",
+          "given_names": [
+            {
+              "code": "sl",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sl|female|eq=Adriana}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Adrièna": {
+      "revid": 81323092,
+      "timestamp": "2024-08-19T12:20:54Z",
+      "sha256": "ba5422496c0c05613d778e3f5fb4b25f7fe07284db239dfa86e1824b92a9cf8f",
+      "sections": [
+        {
+          "heading": "Franco-Provençal",
+          "given_names": [
+            {
+              "code": "frp",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|frp|female|m=Adrien|eq=Adriana}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

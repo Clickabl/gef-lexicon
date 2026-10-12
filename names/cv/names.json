@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "cv",
+  "names": [
+    {
+      "name_id": "name_cv_eleksej",
+      "canonical_form": "Элекҫей",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Элекҫей",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "cv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.alexius",
+          "equivalence_set_id": "NFEQ.alexius.full-masculine",
+          "form_id": "NFF.alexius.cv.eleksej"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Alexius translation table lists Элекҫей as the cv-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_alexius_oldid_92937514"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "snapshot_version": 1,
+  "root": "Aline",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Marathi",
+      "code": "mr",
+      "text": "आलीन",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Marathi",
+      "code": "mr",
+      "text": "अ‍ॅलीन",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Portuguese",
+      "code": "pt",
+      "text": "Aline",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [
+      "Aline"
+    ],
+    "dimof": [
+      "Nine"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "mr|अ‍ॅलीन": "a‍ĕlīn",
+    "mr|आलीन": "ālīn"
+  },
+  "pages": {
+    "Aline": {
+      "revid": 91226920,
+      "timestamp": "2026-06-14T22:36:33Z",
+      "sha256": "92a0320c7e02587fa1f4c860ff7db946415f5613a1d2f3d752bb1b02d12c20c2",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=French}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|female|from=French}}"
+            }
+          ]
+        },
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Aline",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|from=French|eq=Aline}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Nine": {
+      "revid": 93359167,
+      "timestamp": "2026-10-02T16:02:22Z",
+      "sha256": "12c8ec50729b304b2e7ed00300c72a6036ffd7c7c6c1c4c55e74969ffaddf364",
+      "sections": [
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female}}"
+            },
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Aline",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female|dimof=Aline}}"
+            }
+          ]
+        },
+        {
+          "heading": "Norwegian Bokmål",
+          "given_names": [
+            {
+              "code": "nb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nb|female}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
