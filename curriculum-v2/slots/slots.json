@@ -60,12 +60,25 @@
       "no_inherent_vowel",
       "glottal_stop",
       "palatalization",
-      "length"
+      "length",
+      "homograph"
     ]
   },
   "sound": {
     "tone_systems": ["none", "contour", "register", "pitch_accent"],
-    "stress_patterns": ["rule_with_written_accents", "mostly_penultimate", "phrase_final", "marked_on_every_word", "unpredictable", "rule_by_syllable_weight", "mostly_final", "fixed_initial", "not_applicable", "mostly_initial"],
+    "stress_patterns": [
+      "rule_with_written_accents",
+      "mostly_penultimate",
+      "phrase_final",
+      "marked_on_every_word",
+      "unpredictable",
+      "rule_by_syllable_weight",
+      "mostly_final",
+      "fixed_initial",
+      "not_applicable",
+      "mostly_initial",
+      "antepenultimate"
+    ],
     "predictability": ["high", "medium", "low"]
   },
   "grammar": {

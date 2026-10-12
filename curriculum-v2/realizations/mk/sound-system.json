@@ -1,0 +1,118 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.mk.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "mk",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "c", "ɟ", "f", "v", "s", "z", "ʃ", "ʒ", "x", "ts", "dz", "tʃ", "dʒ", "m", "n", "ɲ", "l", "ɫ", "ʎ", "r", "j"],
+      "qualifiers": {"variety": "standard_macedonian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "ɛ", "a", "ɔ", "u"],
+      "qualifiers": {"variety": "standard_macedonian"}
+    },
+    {
+      "fact_id": "sounds.tricky.kj",
+      "fact_kind": "term",
+      "value": "ќебе",
+      "qualifiers": {"ipa": "c", "spelling": "ќ", "word_ipa": "ˈcɛbɛ", "note_id": "mk_kj"}
+    },
+    {
+      "fact_id": "sounds.tricky.gj",
+      "fact_kind": "term",
+      "value": "меѓу",
+      "qualifiers": {"ipa": "ɟ", "spelling": "ѓ", "word_ipa": "ˈmɛɟu", "note_id": "mk_gj"}
+    },
+    {
+      "fact_id": "sounds.tricky.dz",
+      "fact_kind": "term",
+      "value": "ѕид",
+      "qualifiers": {"ipa": "dz", "spelling": "ѕ", "word_ipa": "dzit", "note_id": "mk_dz"}
+    },
+    {
+      "fact_id": "sounds.tricky.lj",
+      "fact_kind": "term",
+      "value": "љубов",
+      "qualifiers": {"ipa": "ʎ", "spelling": "љ", "word_ipa": "ˈʎubɔf", "note_id": "mk_lj"}
+    },
+    {
+      "fact_id": "sounds.tricky.nj",
+      "fact_kind": "term",
+      "value": "коњ",
+      "qualifiers": {"ipa": "ɲ", "spelling": "њ", "word_ipa": "kɔɲ", "note_id": "mk_nj"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "рака",
+      "qualifiers": {"ipa": "r", "spelling": "р", "word_ipa": "ˈraka", "note_id": "trill"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "хотел",
+      "qualifiers": {"ipa": "x", "spelling": "х", "word_ipa": "ˈxɔtɛɫ", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "бела",
+      "qualifiers": {"ipa": "ˈbɛɫa", "pair": 1, "note_id": "mk_l_pair"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "беља",
+      "qualifiers": {"ipa": "ˈbɛʎa", "pair": 1, "note_id": "mk_l_pair"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "коњ",
+      "qualifiers": {"ipa": "kɔɲ", "pair": 2, "note_id": "mk_nj"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "кон",
+      "qualifiers": {"ipa": "kɔn", "pair": 2, "note_id": "mk_nj"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "храна",
+      "qualifiers": {"ipa": "ˈxrana", "pair": 3, "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "рана",
+      "qualifiers": {"ipa": "ˈrana", "pair": 3, "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "куќа",
+      "qualifiers": {"ipa": "ˈkuca", "pair": 4, "note_id": "mk_kj"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "кука",
+      "qualifiers": {"ipa": "ˈkuka", "pair": 4, "note_id": "mk_kj"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "antepenultimate"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

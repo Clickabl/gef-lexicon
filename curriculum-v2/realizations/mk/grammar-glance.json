@@ -1,0 +1,133 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.mk.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "mk",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "three",
+      "qualifiers": {"values": ["masculine", "feminine", "neuter"], "articles": ["мој", "моја", "мое"]}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "мој стол",
+      "qualifiers": {"gender": "masculine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "моја книга",
+      "qualifiers": {"gender": "feminine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.3",
+      "fact_kind": "term",
+      "value": "мое дете",
+      "qualifiers": {"gender": "neuter"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "definite_only"},
+    {"fact_id": "trait.articles.example.1", "fact_kind": "term", "value": "книга / книгата"},
+    {"fact_id": "trait.articles.example.2", "fact_kind": "term", "value": "стол / столот"},
+    {"fact_id": "trait.articles.example.3", "fact_kind": "term", "value": "дете / детето"},
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "ти", "formal": "Вие"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "Дали зборуваш македонски?",
+      "qualifiers": {"register": "informal"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "Дали зборувате македонски?",
+      "qualifiers": {"register": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "зборувам"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "зборувам / зборуваш / зборува / зборуваме / зборувате / зборуваат"
+    },
+    {"fact_id": "trait.verb_endings.example.2", "fact_kind": "term", "value": "зборував / зборувам / ќе зборувам"},
+    {"fact_id": "trait.verb_endings.example.3", "fact_kind": "term", "value": "Тој дојде. / Тој дошол."},
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "often_dropped"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "Зборувам македонски."},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "голем стол"},
+    {"fact_id": "trait.adjective_position.example.2", "fact_kind": "term", "value": "голема куќа"},
+    {"fact_id": "trait.cases", "fact_kind": "category", "value": "pronouns_only"},
+    {"fact_id": "trait.cases.example.1", "fact_kind": "term", "value": "јас / ме / мене"},
+    {"fact_id": "trait.cases.example.2", "fact_kind": "term", "value": "Ја видов Ана."},
+    {"fact_id": "trait.cases.example.3", "fact_kind": "term", "value": "Му ја дадов книгата на момчето."},
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "svo"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Мама чита книга."},
+    {"fact_id": "trait.word_order.example.2", "fact_kind": "term", "value": "Книгата ја чита мама."},
+    {
+      "fact_id": "trait.questions",
+      "fact_kind": "category",
+      "value": "particle",
+      "qualifiers": {"particle": "дали"}
+    },
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Дали зборуваш македонски?"},
+    {"fact_id": "trait.questions.example.2", "fact_kind": "term", "value": "Зборуваш ли македонски?"},
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "зборуваме"},
+    {"fact_id": "trait.word_building.example.2", "fact_kind": "term", "value": "сум читал / сум читала"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "noun.1",
+      "fact_kind": "term",
+      "value": "стол",
+      "qualifiers": {"article": "мој", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.2",
+      "fact_kind": "term",
+      "value": "книга",
+      "qualifiers": {"article": "моја", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.3",
+      "fact_kind": "term",
+      "value": "дете",
+      "qualifiers": {"article": "мое", "gender": "neuter"}
+    },
+    {
+      "fact_id": "noun.4",
+      "fact_kind": "term",
+      "value": "куќа",
+      "qualifiers": {"article": "моја", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.5",
+      "fact_kind": "term",
+      "value": "град",
+      "qualifiers": {"article": "мој", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.6",
+      "fact_kind": "term",
+      "value": "село",
+      "qualifiers": {"article": "мое", "gender": "neuter"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

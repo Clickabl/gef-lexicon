@@ -159,7 +159,8 @@
     "markrole.nasalization": "Makes the sound nasal: the vowel is said partly through the nose, or an n or m sound is added.",
     "mark.ogonek": "ogonek (a little tail under a letter)",
     "mark.stroke": "stroke (a short bar through a letter)",
-    "mark.dot_above": "dot above (a small dot over a letter)"
+    "mark.dot_above": "dot above (a small dot over a letter)",
+    "markrole.homograph": "Tells apart two words that are spelled the same."
   },
   "glosses": {
     "es:writing.latin.example.n_tilde": "boy, child",
@@ -748,8 +749,41 @@
     "pl:writing.latin.mark.ogonek": "flour",
     "pl:writing.latin.mark.acute": "snail",
     "pl:writing.latin.mark.stroke": "shovel",
-    "pl:writing.latin.mark.dot_above": "frog"
+    "pl:writing.latin.mark.dot_above": "frog",
+    "mk:writing.cyrillic.example.a": "pineapple",
+    "mk:writing.cyrillic.example.be": "brother",
+    "mk:writing.cyrillic.example.ve": "water",
+    "mk:writing.cyrillic.example.ge": "head",
+    "mk:writing.cyrillic.example.de": "child",
+    "mk:writing.cyrillic.example.gje": "garbage, trash",
+    "mk:writing.cyrillic.example.e": "deer",
+    "mk:writing.cyrillic.example.zhe": "frog",
+    "mk:writing.cyrillic.example.ze": "tooth",
+    "mk:writing.cyrillic.example.dze": "star",
+    "mk:writing.cyrillic.example.i": "icon (a religious image)",
+    "mk:writing.cyrillic.example.je": "apple",
+    "mk:writing.cyrillic.example.ka": "dog",
+    "mk:writing.cyrillic.example.el": "lion",
+    "mk:writing.cyrillic.example.lje": "love",
+    "mk:writing.cyrillic.example.em": "mom, mum",
+    "mk:writing.cyrillic.example.en": "leg, foot",
+    "mk:writing.cyrillic.example.nje": "horse",
+    "mk:writing.cyrillic.example.o": "eye",
+    "mk:writing.cyrillic.example.pe": "bird",
+    "mk:writing.cyrillic.example.er": "fish",
+    "mk:writing.cyrillic.example.es": "sun",
+    "mk:writing.cyrillic.example.te": "dad",
+    "mk:writing.cyrillic.example.kje": "daughter",
+    "mk:writing.cyrillic.example.u": "ear",
+    "mk:writing.cyrillic.example.ef": "dress",
+    "mk:writing.cyrillic.example.kha": "food",
+    "mk:writing.cyrillic.example.tse": "flower",
+    "mk:writing.cyrillic.example.che": "tea",
+    "mk:writing.cyrillic.example.dzhe": "pocket",
+    "mk:writing.cyrillic.example.sha": "bottle",
+    "mk:writing.cyrillic.example.quotes": "“Hello!” (in quotation marks)",
+    "mk:writing.cyrillic.mark.grave": "everything (the grave accent tells сѐ apart from се; the same accent tells ѝ, “to her”, apart from и, “and”)"
   },
   "review_state": "candidate",
-  "version": 28
+  "version": 30
 }

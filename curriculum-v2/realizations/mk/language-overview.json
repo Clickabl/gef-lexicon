@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.mk.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "mk",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["slavic", "south_slavic"],
+    "ancestor_language_tags": ["chu"],
+    "related_language_tags": ["bg", "sr", "bs", "hr", "sl", "ru", "uk", "pl"],
+    "script_ids": ["Cyrl"],
+    "origin_region_ids": ["europe"],
+    "notes": "Macedonian is a South Slavic language. Its closest relative is Bulgarian, and speakers of the two can largely understand each other; Serbian, Bosnian, Croatian and Slovene are its other South Slavic relatives, and Russian, Ukrainian and Polish are more distant Slavic cousins. It also shares some features, such as the little word for “the” added to the end of a noun, with Bulgarian, Albanian and Romanian through long contact in the Balkans. Broad family metadata for orientation only: belonging to the same branch does not mean the languages can be understood by each other's speakers."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "здраво",
+      "qualifiers": {"ipa": "ˈzdravɔ", "reading": "zdravo"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "благодарам",
+      "qualifiers": {"ipa": "blaˈɡɔdaram", "reading": "blagodaram"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "да",
+      "qualifiers": {"ipa": "da", "reading": "da"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

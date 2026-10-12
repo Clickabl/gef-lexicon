@@ -161,7 +161,14 @@
     "sound.pl_ch": "ch is one sound, like the “ch” of Scottish “loch”, and h sounds exactly the same. Polish has two spellings for it, and you learn which one a word uses.",
     "sound.pl_y_vowel": "Start to say “ee”, then pull your tongue back a little and keep your lips relaxed. It is a different vowel from i, and English does not have it.",
     "sound.pl_o_kreska": "Written ó, said exactly like u (as in “moon”): góra is “GOO-ra”. The two spellings sound the same, and you learn which one a word uses.",
-    "sound.pl_clusters": "Polish words can start with groups of consonants that English never starts a word with, like pt-, mg- and zb-. Say each sound one after the other, with no vowel squeezed in between."
+    "sound.pl_clusters": "Polish words can start with groups of consonants that English never starts a word with, like pt-, mg- and zb-. Say each sound one after the other, with no vowel squeezed in between.",
+    "stress.antepenultimate": "Stress follows a simple rule: it falls on the third syllable from the end, or on the first in a short word. It isn’t written.",
+    "sound.mk_kj": "Like “ty” said as one sound, as in the British “tune”: the middle of your tongue touches the roof of your mouth. It is not ч (“ch”).",
+    "sound.mk_gj": "Like “dy” said as one sound, as in the British “dune” or “did you” said fast. It is not џ (“j”).",
+    "sound.mk_dz": "A “d” and a “z” blended into one sound, like the “ds” of “kids”. It can start a word, as in ѕвезда.",
+    "sound.mk_lj": "Like the “lli” in “million”. It is written like л with a small tail.",
+    "sound.mk_nj": "Like the “ny” in “canyon”. It is written like н with a small tail.",
+    "sound.mk_l_pair": "Before a, o or u, л is a “dark” l: the back of your tongue lifts, as in “full”. The soft љ is like the “lli” of “million”. They make different words."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -411,8 +418,23 @@
     "pl:sounds.contrast.3.a": "cash desk, till",
     "pl:sounds.contrast.3.b": "groats, porridge",
     "pl:sounds.contrast.4.a": "was (he was)",
-    "pl:sounds.contrast.4.b": "hit (he hit)"
+    "pl:sounds.contrast.4.b": "hit (he hit)",
+    "mk:sounds.tricky.kj": "blanket",
+    "mk:sounds.tricky.gj": "between",
+    "mk:sounds.tricky.dz": "wall",
+    "mk:sounds.tricky.lj": "love",
+    "mk:sounds.tricky.nj": "horse",
+    "mk:sounds.tricky.r": "hand, arm",
+    "mk:sounds.tricky.kh": "hotel",
+    "mk:sounds.contrast.1.a": "white (said of something feminine)",
+    "mk:sounds.contrast.1.b": "trouble, bad luck",
+    "mk:sounds.contrast.2.a": "horse",
+    "mk:sounds.contrast.2.b": "towards",
+    "mk:sounds.contrast.3.a": "food",
+    "mk:sounds.contrast.3.b": "wound",
+    "mk:sounds.contrast.4.a": "house",
+    "mk:sounds.contrast.4.b": "hook"
   },
   "review_state": "candidate",
-  "version": 29
+  "version": 31
 }
