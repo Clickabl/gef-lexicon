@@ -399,3 +399,9 @@ is promoted, no model is called, and a form with no pinned source does not exist
 (set, language, script) when a set holds several: `primary-map.json` is a mechanical default (the root, then a form that its
 own entry confirms, then the one other forms point at, then table order, then shortest), not an editorial decision, and Tim can
 override any line. Not used in version 1: Wikidata given-name items (`P460` "said to be the same as").
+
+### Seed resolver acceptance, October12
+
+The completed reverse translation-table route resolves757 of1111 captured frequency names to395 roots,128 more names than the first run, with zero formerly resolved rows lost. Samples were checked against the actual given-name tables (including Mateo/Matthew, Manuel/Emmanuel and Pierre/Peter), not spelling similarity. Peter’s table also lists Παναγιώτης, and Christopher’s lists Χρήστος: these are table-sourced candidate local-equivalent assertions, not evidence of shared etymology or universal interchangeability. Their applicability requires review; the deterministic fetch/build retains the pinned source and candidate status rather than treating seed resolution as approval. An ambiguous reverse table stays unresolved.
+
+Source witnesses: [Peter](https://en.wiktionary.org/wiki/Peter), [Christopher](https://en.wiktionary.org/wiki/Christopher). Each final family must be built from its fetched pinned revision; a live seed lookup never replaces that evidence. The resolver and family fetch both use the network; build/coverage remain offline.
