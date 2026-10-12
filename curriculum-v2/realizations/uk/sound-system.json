@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.uk.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "uk",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "ʋ", "s", "z", "ʃ", "ʒ", "x", "ɦ", "ts", "dz", "tʃ", "dʒ", "m", "n", "l", "r", "j", "tʲ", "dʲ", "sʲ", "zʲ", "tsʲ", "dzʲ", "nʲ", "lʲ", "rʲ"],
+      "qualifiers": {"variety": "standard_ukrainian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "ɪ", "u", "ɛ", "ɔ", "a"],
+      "qualifiers": {"variety": "standard_ukrainian"}
+    },
+    {
+      "fact_id": "sounds.tricky.h",
+      "fact_kind": "term",
+      "value": "гуска",
+      "qualifiers": {"ipa": "ɦ", "spelling": "г", "word_ipa": "ˈɦuska", "note_id": "uk_voiced_h"}
+    },
+    {
+      "fact_id": "sounds.tricky.g",
+      "fact_kind": "term",
+      "value": "ґанок",
+      "qualifiers": {"ipa": "ɡ", "spelling": "ґ", "word_ipa": "ˈɡanɔk", "note_id": "uk_hard_g"}
+    },
+    {
+      "fact_id": "sounds.tricky.y",
+      "fact_kind": "term",
+      "value": "кит",
+      "qualifiers": {"ipa": "ɪ", "spelling": "и", "word_ipa": "kɪt", "note_id": "uk_short_i"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "хата",
+      "qualifiers": {"ipa": "x", "spelling": "х", "word_ipa": "ˈxata", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.soft_n",
+      "fact_kind": "term",
+      "value": "кінь",
+      "qualifiers": {"ipa": "nʲ", "spelling": "нь", "word_ipa": "kinʲ", "note_id": "uk_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.tricky.shch",
+      "fact_kind": "term",
+      "value": "щока",
+      "qualifiers": {"ipa": "ʃtʃ", "spelling": "щ", "word_ipa": "ʃtʃɔˈka", "note_id": "uk_shch"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "рука",
+      "qualifiers": {"ipa": "r", "spelling": "р", "word_ipa": "ruˈka", "note_id": "trill"}
+    },
+    {
+      "fact_id": "sounds.tricky.ya",
+      "fact_kind": "term",
+      "value": "яблуко",
+      "qualifiers": {"ipa": "ja", "spelling": "я", "word_ipa": "ˈjablukɔ", "note_id": "uk_iotated"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "кит",
+      "qualifiers": {"ipa": "kɪt", "pair": 1, "note_id": "uk_short_i"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "кіт",
+      "qualifiers": {"ipa": "kit", "pair": 1, "note_id": "uk_short_i"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "ґрати",
+      "qualifiers": {"ipa": "ˈɡratɪ", "pair": 2, "note_id": "uk_hard_g"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "грати",
+      "qualifiers": {"ipa": "ˈɦratɪ", "pair": 2, "note_id": "uk_hard_g"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "стан",
+      "qualifiers": {"ipa": "stan", "pair": 3, "note_id": "uk_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "стань",
+      "qualifiers": {"ipa": "stanʲ", "pair": 3, "note_id": "uk_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "жити",
+      "qualifiers": {"ipa": "ˈʒɪtɪ", "pair": 4, "note_id": "uk_voiced_pair"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "шити",
+      "qualifiers": {"ipa": "ˈʃɪtɪ", "pair": 4, "note_id": "uk_voiced_pair"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "unpredictable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

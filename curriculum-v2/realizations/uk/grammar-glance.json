@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.uk.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "uk",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "three",
+      "qualifiers": {"values": ["masculine", "feminine", "neuter"], "articles": ["мій", "моя", "моє"]}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "мій стіл",
+      "qualifiers": {"gender": "masculine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "моя книга",
+      "qualifiers": {"gender": "feminine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.3",
+      "fact_kind": "term",
+      "value": "моє вікно",
+      "qualifiers": {"gender": "neuter"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "ти", "formal": "ви"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "Ти розмовляєш українською?",
+      "qualifiers": {"register": "informal"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "Ви розмовляєте українською?",
+      "qualifiers": {"register": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "говорю"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "говорю / говориш / говорить / говоримо / говорите / говорять"
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "often_dropped"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "Розмовляю українською."},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "великий будинок"},
+    {"fact_id": "trait.adjective_position.example.2", "fact_kind": "term", "value": "велика книга"},
+    {
+      "fact_id": "trait.cases",
+      "fact_kind": "category",
+      "value": "some",
+      "qualifiers": {"count": 7}
+    },
+    {"fact_id": "trait.cases.example.1", "fact_kind": "term", "value": "мама / мами / мамі / маму / мамою / мамо"},
+    {"fact_id": "trait.cases.example.2", "fact_kind": "term", "value": "Мама любить тата."},
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "flexible"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Мама читає книгу."},
+    {"fact_id": "trait.word_order.example.2", "fact_kind": "term", "value": "Книгу читає мама."},
+    {
+      "fact_id": "trait.questions",
+      "fact_kind": "category",
+      "value": "particle",
+      "qualifiers": {"particle": "чи"}
+    },
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Чи ти розмовляєш українською?"},
+    {"fact_id": "trait.questions.example.2", "fact_kind": "term", "value": "Це книга?"},
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "говоримо"},
+    {"fact_id": "trait.word_building.example.2", "fact_kind": "term", "value": "читав / читала"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "noun.1",
+      "fact_kind": "term",
+      "value": "стіл",
+      "qualifiers": {"article": "мій", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.2",
+      "fact_kind": "term",
+      "value": "книга",
+      "qualifiers": {"article": "моя", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.3",
+      "fact_kind": "term",
+      "value": "вікно",
+      "qualifiers": {"article": "моє", "gender": "neuter"}
+    },
+    {
+      "fact_id": "noun.4",
+      "fact_kind": "term",
+      "value": "місто",
+      "qualifiers": {"article": "моє", "gender": "neuter"}
+    },
+    {
+      "fact_id": "noun.5",
+      "fact_kind": "term",
+      "value": "кішка",
+      "qualifiers": {"article": "моя", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.6",
+      "fact_kind": "term",
+      "value": "друг",
+      "qualifiers": {"article": "мій", "gender": "masculine"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -105,7 +105,14 @@
     "tone.ja_atamadaka": "Starts high, drops after the first beat and stays low, even on a little word like が that follows.",
     "tone.ja_heiban": "Starts low, jumps up after the first beat and stays high, even on a little word like が that follows.",
     "tone.ja_odaka": "Starts low, jumps up and stays high to the end of the word. The drop comes only on the little word that follows.",
-    "tone.ja_nakadaka": "Starts low, rises, then drops somewhere in the middle of the word."
+    "tone.ja_nakadaka": "Starts low, rises, then drops somewhere in the middle of the word.",
+    "sound.uk_voiced_h": "A soft h said with your voice on, like the middle of “ahead”. It is not a hard g: that is the different letter ґ.",
+    "sound.uk_hard_g": "The hard g of “go”. It is a rare letter, found in only a few words.",
+    "sound.uk_short_i": "Like the “i” of “bit”: short and relaxed. Don’t say “ee” here: that is the different letter і.",
+    "sound.uk_soft_consonant": "A soft consonant: the middle of your tongue lifts toward the roof of your mouth, a bit like the “ny” in “onion”. The soft sign ь shows it.",
+    "sound.uk_shch": "Two sounds in a row: “sh” then “ch”, like “fish church” said fast.",
+    "sound.uk_iotated": "These letters carry a y-sound: я “ya”, ю “yu”, є “ye”. After a consonant, the y-sound softens it instead.",
+    "sound.uk_voiced_pair": "Made in the same place in your mouth: ж with your voice on, like the “s” of “measure”, and ш with it off, like “sh”."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -240,8 +247,24 @@
     "ja:tones.example.3": "chopsticks",
     "ja:tones.example.4": "bridge",
     "ja:tones.example.5": "edge, end",
-    "ja:tones.example.6": "fruit"
+    "ja:tones.example.6": "fruit",
+    "uk:sounds.tricky.h": "goose",
+    "uk:sounds.tricky.g": "porch",
+    "uk:sounds.tricky.y": "whale",
+    "uk:sounds.tricky.kh": "house, hut",
+    "uk:sounds.tricky.soft_n": "horse",
+    "uk:sounds.tricky.shch": "cheek",
+    "uk:sounds.tricky.r": "hand, arm",
+    "uk:sounds.tricky.ya": "apple",
+    "uk:sounds.contrast.1.a": "whale",
+    "uk:sounds.contrast.1.b": "cat",
+    "uk:sounds.contrast.2.a": "bars, a grille",
+    "uk:sounds.contrast.2.b": "to play",
+    "uk:sounds.contrast.3.a": "state, condition",
+    "uk:sounds.contrast.3.b": "stand! become! (a command)",
+    "uk:sounds.contrast.4.a": "to live",
+    "uk:sounds.contrast.4.b": "to sew"
   },
   "review_state": "candidate",
-  "version": 14
+  "version": 16
 }

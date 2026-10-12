@@ -30,7 +30,7 @@
         "facet": "first_word",
         "required": false,
         "minimum_capability": "recognition_practice",
-        "notes": "The first win: hear one word in the language and pick it. Opens the whole path."
+        "notes": "The opening hello: hear one word in the language and pick it. Opens the whole path."
       },
       {
         "scene_id": "tree",
@@ -63,7 +63,7 @@
       {"scene_id": "complete", "scene_kind": "completion", "required": true}
     ],
     "default_session_minutes": 3,
-    "notes": "Stop 1 of the Meet-a-language path. A first win comes before any explanation; the same scene data must render in app, print and video."
+    "notes": "Stop 1 of the Meet-a-language path. A word to hear and pick comes before any explanation; the same scene data must render in app, print and video."
   },
   "difficulty_band": "pre_a1",
   "notes": "Genealogy is a historical relationship model, not a claim that related languages are mutually intelligible or culturally interchangeable. Language realizations own the genealogy facts; the runtime chooses what to show from the learner context. See curriculum-v2/INTRO_FACTS.md.",

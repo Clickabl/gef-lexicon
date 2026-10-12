@@ -94,3 +94,5 @@ Sound
 
 Grammar
 - **[CHECK]** `subject_pronouns: required`, the possessives standing in for articles, `questions: intonation_or_inversion`, `cases` count 6, examples and their English glosses (all glosses are plain meanings, no claims).
+
+- The Russian dash (U+2014) is deliberately not a punctuation tile or an example: the app has a house rule against that character in anything it shows. Russian uses it where English would use a hyphen or a comma; teach it in prose once a reviewer has decided how.

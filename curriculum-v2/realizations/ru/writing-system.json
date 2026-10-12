@@ -24,7 +24,7 @@
       "fact_kind": "term",
       "value": ["а́", "е́", "и́", "о́", "у́", "ы́", "э́", "ю́", "я́"]
     },
-    {"fact_id": "writing.cyrillic.punctuation", "fact_kind": "term", "value": ["«", "—"]},
+    {"fact_id": "writing.cyrillic.punctuation", "fact_kind": "term", "value": ["«"]},
     {"fact_id": "writing.cyrillic.group.1", "fact_kind": "term", "value": ["а", "к", "м", "о", "т"]},
     {"fact_id": "writing.cyrillic.group.2", "fact_kind": "term", "value": ["е", "в", "н", "р"]},
     {"fact_id": "writing.cyrillic.group.3", "fact_kind": "term", "value": ["с", "у", "х", "п"]},
@@ -243,12 +243,6 @@
       "fact_kind": "term",
       "value": "«Привет!»",
       "qualifiers": {"ipa": "prʲɪˈvʲet", "highlight": "«", "reading": "quotes", "name": "кавычки-ёлочки (kavychki-yolochki)"}
-    },
-    {
-      "fact_id": "writing.cyrillic.example.dash",
-      "fact_kind": "term",
-      "value": "Папа — врач",
-      "qualifiers": {"ipa": "ˈpapə vratɕ", "highlight": "—", "reading": "dash", "name": "тире (tire)"}
     },
     {
       "fact_id": "writing.cyrillic.mark.acute",

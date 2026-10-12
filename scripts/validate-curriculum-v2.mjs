@@ -376,6 +376,9 @@ for (const best of interfaceLocales) {
   }
 }
 
+// The app's house typography rule: no U+2014 in anything it shows, and this data is what it shows.
+for (const file of walk(CURRICULUM)) if (readFileSync(file, 'utf8').includes('\u2014')) fail(`${rel(file)}: contains U+2014; use the punctuation the text needs (a symbol the lesson teaches is left out and noted in review/)`);
+
 if (errors) {
   console.error(`\n${errors} curriculum-v2 validation error(s).`);
   process.exit(1);

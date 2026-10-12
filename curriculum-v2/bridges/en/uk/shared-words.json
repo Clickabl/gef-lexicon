@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "uk",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_ukrainian",
+      "kind": "helpful_transfer",
+      "text": "English and Ukrainian are distant cousins, so look-alike words are rare. The first words here are English words that came from Ukrainian, mostly food, music and money; a few came by way of another language, like Yiddish for borscht or French and Polish for Cossack. The last ones are old shared words (brother, sister, mother, two, three, night, nose, water, wolf, widow): true relatives from a common ancestor, not borrowings, and thousands of years have changed how they sound.",
+      "pairs": [
+        {"from": "borscht", "to": "борщ", "to_ipa": "bɔrʃtʃ"},
+        {"from": "Cossack", "to": "козак", "to_ipa": "kɔˈzak"},
+        {"from": "hryvnia", "to": "гривня", "to_ipa": "ˈɦrɪʋnʲa", "to_meaning": "the Ukrainian currency"},
+        {"from": "pysanka", "to": "писанка", "to_ipa": "ˈpɪsanka", "to_meaning": "a hand-painted Easter egg"},
+        {"from": "bandura", "to": "бандура", "to_ipa": "banˈdura", "to_meaning": "a plucked, lute-like instrument"},
+        {"from": "hopak", "to": "гопак", "to_ipa": "ɦɔˈpak", "to_meaning": "a lively folk dance"},
+        {
+          "from": "vyshyvanka",
+          "to": "вишиванка",
+          "to_ipa": "ʋɪʃɪˈʋanka",
+          "to_meaning": "an embroidered shirt or blouse"
+        },
+        {"from": "varenyky", "to": "вареники", "to_ipa": "ʋaˈrɛnɪkɪ", "to_meaning": "filled dumplings"},
+        {"from": "brother", "to": "брат", "to_ipa": "brat"},
+        {"from": "sister", "to": "сестра", "to_ipa": "sɛˈstra"},
+        {"from": "mother", "to": "мати", "to_ipa": "ˈmatɪ"},
+        {"from": "two", "to": "два", "to_ipa": "dʋa"},
+        {"from": "three", "to": "три", "to_ipa": "trɪ"},
+        {"from": "night", "to": "ніч", "to_ipa": "nitʃ"},
+        {"from": "nose", "to": "ніс", "to_ipa": "nis"},
+        {"from": "water", "to": "вода", "to_ipa": "ʋɔˈda"},
+        {"from": "wolf", "to": "вовк", "to_ipa": "ʋɔʋk"},
+        {"from": "widow", "to": "вдова", "to_ipa": "ʋdɔˈʋa"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few look-alikes mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "magazine", "to": "магазин", "to_ipa": "maɦaˈzɪn", "to_meaning": "shop, store"},
+        {"from": "actual", "to": "актуальний", "to_ipa": "aktuˈalʲnɪj", "to_meaning": "current, relevant, up to date"},
+        {"from": "fabric", "to": "фабрика", "to_ipa": "ˈfabrɪka", "to_meaning": "factory"},
+        {"from": "prospect", "to": "проспект", "to_ipa": "prɔˈspɛkt", "to_meaning": "an avenue, a wide city street"},
+        {"from": "baton", "to": "батон", "to_ipa": "baˈtɔn", "to_meaning": "a loaf of bread"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}
