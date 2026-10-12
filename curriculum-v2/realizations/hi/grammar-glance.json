@@ -1,0 +1,209 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.hi.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "hi",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {
+      "fact_id": "trait.word_building.example.1",
+      "fact_kind": "term",
+      "value": "जाता है / जाती है / जाते हैं",
+      "qualifiers": {"ipa": "dʒaːt̪aː ɦɛː / dʒaːt̪iː ɦɛː / dʒaːt̪eː ɦɛ̃ː", "reading": "jātā hai / jātī hai / jāte haĩ"}
+    },
+    {
+      "fact_id": "trait.word_building.example.2",
+      "fact_kind": "term",
+      "value": "लड़का / लड़के",
+      "qualifiers": {"ipa": "ləɽkaː / ləɽkeː", "reading": "laṛkā / laṛke"}
+    },
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "two",
+      "qualifiers": {"values": ["masculine", "feminine"], "articles": ["मेरा", "मेरी"]}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "मेरा लड़का",
+      "qualifiers": {"ipa": "meːɾaː ləɽkaː", "reading": "merā laṛkā", "gender": "masculine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "मेरी किताब",
+      "qualifiers": {"ipa": "meːɾiː kɪt̪aːb", "reading": "merī kitāb", "gender": "feminine"}
+    },
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "तुम", "formal": "आप"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "तुम कैसे हो?",
+      "qualifiers": {"ipa": "t̪ʊm kɛːseː ɦoː", "reading": "tum kaise ho?", "register": "informal"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "आप कैसे हैं?",
+      "qualifiers": {"ipa": "aːp kɛːseː ɦɛ̃ː", "reading": "āp kaise haĩ?", "register": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "बोलना"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "मैं बोलता हूँ / तुम बोलते हो / वह बोलता है / हम बोलते हैं / आप बोलते हैं",
+      "qualifiers": {
+        "ipa": "mɛ̃ː boːlt̪aː ɦũː / t̪ʊm boːlt̪eː ɦoː / ʋəɦ boːlt̪aː ɦɛː / ɦəm boːlt̪eː ɦɛ̃ː / aːp boːlt̪eː ɦɛ̃ː",
+        "reading": "maĩ boltā hū̃ / tum bolte ho / vah boltā hai / ham bolte haĩ / āp bolte haĩ"
+      }
+    },
+    {
+      "fact_id": "trait.verb_endings.example.2",
+      "fact_kind": "term",
+      "value": "वह बोलता है / वह बोलती है",
+      "qualifiers": {"ipa": "ʋəɦ boːlt̪aː ɦɛː / ʋəɦ boːlt̪iː ɦɛː", "reading": "vah boltā hai / vah boltī hai"}
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "context_dependent"},
+    {
+      "fact_id": "trait.subject_pronouns.example.1",
+      "fact_kind": "term",
+      "value": "मैं हिंदी बोलता हूँ।",
+      "qualifiers": {"ipa": "mɛ̃ː ɦɪnd̪iː boːlt̪aː ɦũː", "reading": "maĩ hindī boltā hū̃."}
+    },
+    {
+      "fact_id": "trait.subject_pronouns.example.2",
+      "fact_kind": "term",
+      "value": "हिंदी बोलता हूँ।",
+      "qualifiers": {"ipa": "ɦɪnd̪iː boːlt̪aː ɦũː", "reading": "hindī boltā hū̃."}
+    },
+    {
+      "fact_id": "trait.cases",
+      "fact_kind": "category",
+      "value": "some",
+      "qualifiers": {"count": 3}
+    },
+    {
+      "fact_id": "trait.cases.example.1",
+      "fact_kind": "term",
+      "value": "लड़का / लड़के को / लड़कों को",
+      "qualifiers": {"ipa": "ləɽkaː / ləɽkeː koː / ləɽkõː koː", "reading": "laṛkā / laṛke ko / laṛkõ ko"}
+    },
+    {
+      "fact_id": "trait.cases.example.2",
+      "fact_kind": "term",
+      "value": "मैं / मुझे / मेरा",
+      "qualifiers": {"ipa": "mɛ̃ː / mʊdʒʱeː / meːɾaː", "reading": "maĩ / mujhe / merā"}
+    },
+    {
+      "fact_id": "trait.cases.example.3",
+      "fact_kind": "term",
+      "value": "लड़के ने किताब पढ़ी।",
+      "qualifiers": {"ipa": "ləɽkeː neː kɪt̪aːb pəɽʱiː", "reading": "laṛke ne kitāb paṛhī."}
+    },
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {
+      "fact_id": "trait.adjective_position.example.1",
+      "fact_kind": "term",
+      "value": "बड़ा घर",
+      "qualifiers": {"ipa": "bəɽaː ɡʱəɾ", "reading": "baṛā ghar"}
+    },
+    {
+      "fact_id": "trait.adjective_position.example.2",
+      "fact_kind": "term",
+      "value": "नई किताब",
+      "qualifiers": {"ipa": "nəiː kɪt̪aːb", "reading": "naī kitāb"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.articles.example.1",
+      "fact_kind": "term",
+      "value": "किताब मेज़ पर है।",
+      "qualifiers": {"ipa": "kɪt̪aːb meːz pəɾ ɦɛː", "reading": "kitāb mez par hai."}
+    },
+    {
+      "fact_id": "trait.questions",
+      "fact_kind": "category",
+      "value": "particle",
+      "qualifiers": {"particle": "क्या"}
+    },
+    {
+      "fact_id": "trait.questions.example.1",
+      "fact_kind": "term",
+      "value": "क्या आप हिंदी बोलते हैं?",
+      "qualifiers": {"ipa": "kjaː aːp ɦɪnd̪iː boːlt̪eː ɦɛ̃ː", "reading": "kyā āp hindī bolte haĩ?"}
+    },
+    {
+      "fact_id": "trait.questions.example.2",
+      "fact_kind": "term",
+      "value": "क्या तुम चाय पीते हो?",
+      "qualifiers": {"ipa": "kjaː t̪ʊm tʃaːj piːt̪eː ɦoː", "reading": "kyā tum chāy pīte ho?"}
+    },
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "sov"},
+    {
+      "fact_id": "trait.word_order.example.1",
+      "fact_kind": "term",
+      "value": "मैं चाय पीता हूँ।",
+      "qualifiers": {"ipa": "mɛ̃ː tʃaːj piːt̪aː ɦũː", "reading": "maĩ chāy pītā hū̃."}
+    },
+    {
+      "fact_id": "trait.word_order.example.2",
+      "fact_kind": "term",
+      "value": "वह किताब पढ़ती है।",
+      "qualifiers": {"ipa": "ʋəɦ kɪt̪aːb pəɽʱt̪iː ɦɛː", "reading": "vah kitāb paṛhtī hai."}
+    },
+    {
+      "fact_id": "noun.1",
+      "fact_kind": "term",
+      "value": "लड़का",
+      "qualifiers": {"article": "मेरा", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.2",
+      "fact_kind": "term",
+      "value": "किताब",
+      "qualifiers": {"article": "मेरी", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.3",
+      "fact_kind": "term",
+      "value": "घर",
+      "qualifiers": {"article": "मेरा", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.4",
+      "fact_kind": "term",
+      "value": "रोटी",
+      "qualifiers": {"article": "मेरी", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.5",
+      "fact_kind": "term",
+      "value": "पानी",
+      "qualifiers": {"article": "मेरा", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.6",
+      "fact_kind": "term",
+      "value": "चाय",
+      "qualifiers": {"article": "मेरी", "gender": "feminine"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

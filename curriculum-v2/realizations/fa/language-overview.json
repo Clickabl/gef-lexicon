@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.fa.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "fa",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["iranian", "western_iranian"],
+    "ancestor_language_tags": ["pal"],
+    "related_language_tags": ["tg", "ku", "ckb", "ps"],
+    "script_ids": ["Arab"],
+    "origin_region_ids": ["asia"],
+    "notes": "Persian (Farsi) is a Western Iranian language of the Indo-Iranian branch of Indo-European. Tajik and Dari (Afghan Persian) are close standard varieties of the same language. Kurdish is a Western Iranian relative and Pashto an Eastern Iranian one; neither is mutually intelligible with Persian. This record describes standard Iranian (Tehran) Persian. Broad family metadata for orientation only."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "سلام",
+      "qualifiers": {"ipa": "sælɒm", "reading": "salām"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "ممنون",
+      "qualifiers": {"ipa": "mæmnun", "reading": "mamnun"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "بله",
+      "qualifiers": {"ipa": "bæle", "reading": "bale"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

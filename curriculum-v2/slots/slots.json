@@ -65,7 +65,7 @@
   },
   "sound": {
     "tone_systems": ["none", "contour", "register", "pitch_accent"],
-    "stress_patterns": ["rule_with_written_accents", "mostly_penultimate", "phrase_final", "marked_on_every_word", "unpredictable", "rule_by_syllable_weight", "mostly_final", "fixed_initial", "not_applicable"],
+    "stress_patterns": ["rule_with_written_accents", "mostly_penultimate", "phrase_final", "marked_on_every_word", "unpredictable", "rule_by_syllable_weight", "mostly_final", "fixed_initial", "not_applicable", "mostly_initial"],
     "predictability": ["high", "medium", "low"]
   },
   "grammar": {
@@ -82,7 +82,7 @@
       "adjective_position": ["before_noun", "after_noun", "either"],
       "articles": ["none", "definite_indefinite", "definite_only", "indefinite_only"],
       "questions": ["auxiliary_do", "intonation_or_inversion", "particle"],
-      "word_order": ["svo", "flexible", "sov", "vso"]
+      "word_order": ["svo", "flexible", "sov", "vso", "v2"]
     }
   }
 }

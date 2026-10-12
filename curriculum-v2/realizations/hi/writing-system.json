@@ -1,0 +1,619 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.hi.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "hi",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["devanagari"]},
+    {"fact_id": "writing.devanagari.kind", "fact_kind": "category", "value": "abugida"},
+    {"fact_id": "writing.devanagari.script", "fact_kind": "category", "value": "Deva"},
+    {"fact_id": "writing.devanagari.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.devanagari.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.devanagari.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.devanagari.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.devanagari.vowels", "fact_kind": "category", "value": "inherent"},
+    {
+      "fact_id": "writing.devanagari.symbols",
+      "fact_kind": "term",
+      "value": [
+        "अ",
+        "आ",
+        "इ",
+        "ई",
+        "उ",
+        "ऊ",
+        "ऋ",
+        "ए",
+        "ऐ",
+        "ओ",
+        "औ",
+        "क",
+        "ख",
+        "ग",
+        "घ",
+        "ङ",
+        "च",
+        "छ",
+        "ज",
+        "झ",
+        "ञ",
+        "ट",
+        "ठ",
+        "ड",
+        "ढ",
+        "ण",
+        "त",
+        "थ",
+        "द",
+        "ध",
+        "न",
+        "प",
+        "फ",
+        "ब",
+        "भ",
+        "म",
+        "य",
+        "र",
+        "ल",
+        "व",
+        "श",
+        "ष",
+        "स",
+        "ह",
+        "क्ष",
+        "त्र",
+        "ज्ञ",
+        "का",
+        "कि",
+        "की",
+        "कु",
+        "कू",
+        "कृ",
+        "के",
+        "कै",
+        "को",
+        "कौ"
+      ]
+    },
+    {"fact_id": "writing.devanagari.marked", "fact_kind": "term", "value": ["क़", "ख़", "ग़", "ज़", "ड़", "ढ़", "फ़"]},
+    {"fact_id": "writing.devanagari.punctuation", "fact_kind": "term", "value": ["।"]},
+    {"fact_id": "writing.devanagari.group.1", "fact_kind": "term", "value": ["अ", "आ", "इ", "ई"]},
+    {"fact_id": "writing.devanagari.group.2", "fact_kind": "term", "value": ["उ", "ऊ", "ऋ"]},
+    {"fact_id": "writing.devanagari.group.3", "fact_kind": "term", "value": ["ए", "ऐ", "ओ", "औ"]},
+    {"fact_id": "writing.devanagari.group.4", "fact_kind": "term", "value": ["क", "ख", "ग", "घ", "ङ"]},
+    {"fact_id": "writing.devanagari.group.5", "fact_kind": "term", "value": ["च", "छ", "ज", "झ", "ञ"]},
+    {"fact_id": "writing.devanagari.group.6", "fact_kind": "term", "value": ["ट", "ठ", "ड", "ढ", "ण"]},
+    {"fact_id": "writing.devanagari.group.7", "fact_kind": "term", "value": ["त", "थ", "द", "ध", "न"]},
+    {"fact_id": "writing.devanagari.group.8", "fact_kind": "term", "value": ["प", "फ", "ब", "भ", "म"]},
+    {"fact_id": "writing.devanagari.group.9", "fact_kind": "term", "value": ["य", "र", "ल", "व"]},
+    {"fact_id": "writing.devanagari.group.10", "fact_kind": "term", "value": ["श", "ष", "स", "ह"]},
+    {"fact_id": "writing.devanagari.group.11", "fact_kind": "term", "value": ["क्ष", "त्र", "ज्ञ"]},
+    {"fact_id": "writing.devanagari.group.12", "fact_kind": "term", "value": ["का", "कि", "की", "कु", "कू"]},
+    {"fact_id": "writing.devanagari.group.13", "fact_kind": "term", "value": ["कृ", "के", "कै", "को", "कौ"]},
+    {
+      "fact_id": "writing.devanagari.example.a",
+      "fact_kind": "term",
+      "value": "अनार",
+      "qualifiers": {"ipa": "ənaːɾ", "highlight": "अ", "sound": "ə", "reading": "a", "word_reading": "anār"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.aa",
+      "fact_kind": "term",
+      "value": "आम",
+      "qualifiers": {"ipa": "aːm", "highlight": "आ", "sound": "aː", "reading": "ā", "word_reading": "ām"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.i",
+      "fact_kind": "term",
+      "value": "इमली",
+      "qualifiers": {"ipa": "ɪmliː", "highlight": "इ", "sound": "ɪ", "reading": "i", "word_reading": "imlī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ii",
+      "fact_kind": "term",
+      "value": "ईख",
+      "qualifiers": {"ipa": "iːkʰ", "highlight": "ई", "sound": "iː", "reading": "ī", "word_reading": "īkh"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.u",
+      "fact_kind": "term",
+      "value": "उल्लू",
+      "qualifiers": {"ipa": "ʊlluː", "highlight": "उ", "sound": "ʊ", "reading": "u", "word_reading": "ullū"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.uu",
+      "fact_kind": "term",
+      "value": "ऊन",
+      "qualifiers": {"ipa": "uːn", "highlight": "ऊ", "sound": "uː", "reading": "ū", "word_reading": "ūn"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ri",
+      "fact_kind": "term",
+      "value": "ऋतु",
+      "qualifiers": {"ipa": "ɾɪt̪uː", "highlight": "ऋ", "sound": "ɾɪ", "reading": "ri", "word_reading": "ritu"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.e",
+      "fact_kind": "term",
+      "value": "एक",
+      "qualifiers": {"ipa": "eːk", "highlight": "ए", "sound": "eː", "reading": "e", "word_reading": "ek"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ai",
+      "fact_kind": "term",
+      "value": "ऐनक",
+      "qualifiers": {"ipa": "ɛːnək", "highlight": "ऐ", "sound": "ɛː", "reading": "ai", "word_reading": "ainak"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.o",
+      "fact_kind": "term",
+      "value": "ओस",
+      "qualifiers": {"ipa": "oːs", "highlight": "ओ", "sound": "oː", "reading": "o", "word_reading": "os"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.au",
+      "fact_kind": "term",
+      "value": "औरत",
+      "qualifiers": {"ipa": "ɔːɾət̪", "highlight": "औ", "sound": "ɔː", "reading": "au", "word_reading": "aurat"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka",
+      "fact_kind": "term",
+      "value": "कमल",
+      "qualifiers": {"ipa": "kəməl", "highlight": "क", "sound": "kə", "reading": "ka", "word_reading": "kamal"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.kha",
+      "fact_kind": "term",
+      "value": "खाना",
+      "qualifiers": {"ipa": "kʰaːnaː", "highlight": "ख", "sound": "kʰə", "reading": "kha", "word_reading": "khānā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ga",
+      "fact_kind": "term",
+      "value": "गाय",
+      "qualifiers": {"ipa": "ɡaːj", "highlight": "ग", "sound": "ɡə", "reading": "ga", "word_reading": "gāy"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.gha",
+      "fact_kind": "term",
+      "value": "घर",
+      "qualifiers": {"ipa": "ɡʱəɾ", "highlight": "घ", "sound": "ɡʱə", "reading": "gha", "word_reading": "ghar"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nga",
+      "fact_kind": "term",
+      "value": "पतङ्ग",
+      "qualifiers": {"ipa": "pət̪əŋɡ", "highlight": "ङ", "sound": "ŋə", "reading": "nga", "word_reading": "patang"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.cha",
+      "fact_kind": "term",
+      "value": "चाय",
+      "qualifiers": {"ipa": "tʃaːj", "highlight": "च", "sound": "tʃə", "reading": "cha", "word_reading": "chāy"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.chha",
+      "fact_kind": "term",
+      "value": "छाता",
+      "qualifiers": {"ipa": "tʃʰaːt̪aː", "highlight": "छ", "sound": "tʃʰə", "reading": "chha", "word_reading": "chhātā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ja",
+      "fact_kind": "term",
+      "value": "जूता",
+      "qualifiers": {"ipa": "dʒuːt̪aː", "highlight": "ज", "sound": "dʒə", "reading": "ja", "word_reading": "jūtā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.jha",
+      "fact_kind": "term",
+      "value": "झूला",
+      "qualifiers": {"ipa": "dʒʱuːlaː", "highlight": "झ", "sound": "dʒʱə", "reading": "jha", "word_reading": "jhūlā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nya",
+      "fact_kind": "term",
+      "value": "पञ्च",
+      "qualifiers": {"ipa": "pəɲtʃ", "highlight": "ञ", "sound": "ɲə", "reading": "nya", "word_reading": "panch"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.tta",
+      "fact_kind": "term",
+      "value": "टोपी",
+      "qualifiers": {"ipa": "ʈoːpiː", "highlight": "ट", "sound": "ʈə", "reading": "ṭa", "word_reading": "ṭopī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ttha",
+      "fact_kind": "term",
+      "value": "ठेला",
+      "qualifiers": {"ipa": "ʈʰeːlaː", "highlight": "ठ", "sound": "ʈʰə", "reading": "ṭha", "word_reading": "ṭhelā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.dda",
+      "fact_kind": "term",
+      "value": "डाल",
+      "qualifiers": {"ipa": "ɖaːl", "highlight": "ड", "sound": "ɖə", "reading": "ḍa", "word_reading": "ḍāl"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ddha",
+      "fact_kind": "term",
+      "value": "ढोल",
+      "qualifiers": {"ipa": "ɖʱoːl", "highlight": "ढ", "sound": "ɖʱə", "reading": "ḍha", "word_reading": "ḍhol"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nna",
+      "fact_kind": "term",
+      "value": "बाण",
+      "qualifiers": {"ipa": "baːɳ", "highlight": "ण", "sound": "ɳə", "reading": "ṇa", "word_reading": "bāṇ"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ta",
+      "fact_kind": "term",
+      "value": "तारा",
+      "qualifiers": {"ipa": "t̪aːɾaː", "highlight": "त", "sound": "t̪ə", "reading": "ta", "word_reading": "tārā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.tha",
+      "fact_kind": "term",
+      "value": "थाली",
+      "qualifiers": {"ipa": "t̪ʰaːliː", "highlight": "थ", "sound": "t̪ʰə", "reading": "tha", "word_reading": "thālī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.da",
+      "fact_kind": "term",
+      "value": "दादी",
+      "qualifiers": {"ipa": "d̪aːd̪iː", "highlight": "द", "sound": "d̪ə", "reading": "da", "word_reading": "dādī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.dha",
+      "fact_kind": "term",
+      "value": "धूप",
+      "qualifiers": {"ipa": "d̪ʱuːp", "highlight": "ध", "sound": "d̪ʱə", "reading": "dha", "word_reading": "dhūp"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.na",
+      "fact_kind": "term",
+      "value": "नाक",
+      "qualifiers": {"ipa": "naːk", "highlight": "न", "sound": "nə", "reading": "na", "word_reading": "nāk"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.pa",
+      "fact_kind": "term",
+      "value": "पानी",
+      "qualifiers": {"ipa": "paːniː", "highlight": "प", "sound": "pə", "reading": "pa", "word_reading": "pānī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.pha",
+      "fact_kind": "term",
+      "value": "फूल",
+      "qualifiers": {"ipa": "pʰuːl", "highlight": "फ", "sound": "pʰə", "reading": "pha", "word_reading": "phūl"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ba",
+      "fact_kind": "term",
+      "value": "बकरी",
+      "qualifiers": {"ipa": "bəkɾiː", "highlight": "ब", "sound": "bə", "reading": "ba", "word_reading": "bakrī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.bha",
+      "fact_kind": "term",
+      "value": "भालू",
+      "qualifiers": {"ipa": "bʱaːluː", "highlight": "भ", "sound": "bʱə", "reading": "bha", "word_reading": "bhālū"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ma",
+      "fact_kind": "term",
+      "value": "मछली",
+      "qualifiers": {"ipa": "mətʃʰliː", "highlight": "म", "sound": "mə", "reading": "ma", "word_reading": "machhlī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ya",
+      "fact_kind": "term",
+      "value": "योग",
+      "qualifiers": {"ipa": "joːɡ", "highlight": "य", "sound": "jə", "reading": "ya", "word_reading": "yog"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ra",
+      "fact_kind": "term",
+      "value": "रोटी",
+      "qualifiers": {"ipa": "ɾoːʈiː", "highlight": "र", "sound": "ɾə", "reading": "ra", "word_reading": "roṭī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.la",
+      "fact_kind": "term",
+      "value": "लाल",
+      "qualifiers": {"ipa": "laːl", "highlight": "ल", "sound": "lə", "reading": "la", "word_reading": "lāl"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.va",
+      "fact_kind": "term",
+      "value": "वकील",
+      "qualifiers": {"ipa": "ʋəkiːl", "highlight": "व", "sound": "ʋə", "reading": "va", "word_reading": "vakīl"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.sha",
+      "fact_kind": "term",
+      "value": "शेर",
+      "qualifiers": {"ipa": "ʃeːɾ", "highlight": "श", "sound": "ʃə", "reading": "śa", "word_reading": "śer"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ssa",
+      "fact_kind": "term",
+      "value": "भाषा",
+      "qualifiers": {"ipa": "bʱaːʃaː", "highlight": "ष", "sound": "ʃə", "reading": "ṣa", "word_reading": "bhāṣā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.sa",
+      "fact_kind": "term",
+      "value": "सेब",
+      "qualifiers": {"ipa": "seːb", "highlight": "स", "sound": "sə", "reading": "sa", "word_reading": "seb"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ha",
+      "fact_kind": "term",
+      "value": "हाथी",
+      "qualifiers": {"ipa": "ɦaːt̪ʰiː", "highlight": "ह", "sound": "ɦə", "reading": "ha", "word_reading": "hāthī"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ksha",
+      "fact_kind": "term",
+      "value": "क्षमा",
+      "qualifiers": {"ipa": "kʃəmaː", "highlight": "क्ष", "sound": "kʃə", "reading": "ksha", "word_reading": "kṣamā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.tra",
+      "fact_kind": "term",
+      "value": "मित्र",
+      "qualifiers": {"ipa": "mɪt̪ɾ", "highlight": "त्र", "sound": "t̪ɾə", "reading": "tra", "word_reading": "mitra"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.gya",
+      "fact_kind": "term",
+      "value": "ज्ञान",
+      "qualifiers": {"ipa": "ɡjaːn", "highlight": "ज्ञ", "sound": "ɡjə", "reading": "gya", "word_reading": "gyān"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_aa",
+      "fact_kind": "term",
+      "value": "कान",
+      "qualifiers": {
+        "ipa": "kaːn",
+        "highlight": "का",
+        "sound": "kaː",
+        "reading": "kā",
+        "name": "आ की मात्रा (ā kī mātrā)",
+        "word_reading": "kān"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_i",
+      "fact_kind": "term",
+      "value": "किताब",
+      "qualifiers": {
+        "ipa": "kɪt̪aːb",
+        "highlight": "कि",
+        "sound": "kɪ",
+        "reading": "ki",
+        "name": "इ की मात्रा (i kī mātrā)",
+        "word_reading": "kitāb"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_ii",
+      "fact_kind": "term",
+      "value": "कील",
+      "qualifiers": {
+        "ipa": "kiːl",
+        "highlight": "की",
+        "sound": "kiː",
+        "reading": "kī",
+        "name": "ई की मात्रा (ī kī mātrā)",
+        "word_reading": "kīl"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_u",
+      "fact_kind": "term",
+      "value": "कुत्ता",
+      "qualifiers": {
+        "ipa": "kʊt̪t̪aː",
+        "highlight": "कु",
+        "sound": "kʊ",
+        "reading": "ku",
+        "name": "उ की मात्रा (u kī mātrā)",
+        "word_reading": "kuttā"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_uu",
+      "fact_kind": "term",
+      "value": "कूदना",
+      "qualifiers": {
+        "ipa": "kuːd̪naː",
+        "highlight": "कू",
+        "sound": "kuː",
+        "reading": "kū",
+        "name": "ऊ की मात्रा (ū kī mātrā)",
+        "word_reading": "kūdnā"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_ri",
+      "fact_kind": "term",
+      "value": "कृपया",
+      "qualifiers": {
+        "ipa": "kɾɪpjaː",
+        "highlight": "कृ",
+        "sound": "kɾɪ",
+        "reading": "kri",
+        "name": "ऋ की मात्रा (ri kī mātrā)",
+        "word_reading": "kripayā"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_e",
+      "fact_kind": "term",
+      "value": "केला",
+      "qualifiers": {
+        "ipa": "keːlaː",
+        "highlight": "के",
+        "sound": "keː",
+        "reading": "ke",
+        "name": "ए की मात्रा (e kī mātrā)",
+        "word_reading": "kelā"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_ai",
+      "fact_kind": "term",
+      "value": "कैसे",
+      "qualifiers": {
+        "ipa": "kɛːseː",
+        "highlight": "कै",
+        "sound": "kɛː",
+        "reading": "kai",
+        "name": "ऐ की मात्रा (ai kī mātrā)",
+        "word_reading": "kaise"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_o",
+      "fact_kind": "term",
+      "value": "कोयल",
+      "qualifiers": {
+        "ipa": "koːjəl",
+        "highlight": "को",
+        "sound": "koː",
+        "reading": "ko",
+        "name": "ओ की मात्रा (o kī mātrā)",
+        "word_reading": "koyal"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.ka_au",
+      "fact_kind": "term",
+      "value": "कौआ",
+      "qualifiers": {
+        "ipa": "kɔːaː",
+        "highlight": "कौ",
+        "sound": "kɔː",
+        "reading": "kau",
+        "name": "औ की मात्रा (au kī mātrā)",
+        "word_reading": "kauā"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_ka",
+      "fact_kind": "term",
+      "value": "क़ीमत",
+      "qualifiers": {"ipa": "qiːmət̪", "highlight": "क़", "sound": "qə", "reading": "qa", "word_reading": "qīmat"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_kha",
+      "fact_kind": "term",
+      "value": "ख़बर",
+      "qualifiers": {"ipa": "xəbəɾ", "highlight": "ख़", "sound": "xə", "reading": "xa", "word_reading": "xabar"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_ga",
+      "fact_kind": "term",
+      "value": "ग़लत",
+      "qualifiers": {"ipa": "ɣələt̪", "highlight": "ग़", "sound": "ɣə", "reading": "ġa", "word_reading": "ġalat"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_ja",
+      "fact_kind": "term",
+      "value": "ज़मीन",
+      "qualifiers": {"ipa": "zəmiːn", "highlight": "ज़", "sound": "zə", "reading": "za", "word_reading": "zamīn"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_dda",
+      "fact_kind": "term",
+      "value": "लड़का",
+      "qualifiers": {"ipa": "ləɽkaː", "highlight": "ड़", "sound": "ɽə", "reading": "ṛa", "word_reading": "laṛkā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_ddha",
+      "fact_kind": "term",
+      "value": "पढ़ना",
+      "qualifiers": {"ipa": "pəɽʱnaː", "highlight": "ढ़", "sound": "ɽʱə", "reading": "ṛha", "word_reading": "paṛhnā"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.nukta_pha",
+      "fact_kind": "term",
+      "value": "फ़ोन",
+      "qualifiers": {"ipa": "foːn", "highlight": "फ़", "sound": "fə", "reading": "fa", "word_reading": "fon"}
+    },
+    {
+      "fact_id": "writing.devanagari.example.danda",
+      "fact_kind": "term",
+      "value": "यह आम है।",
+      "qualifiers": {"ipa": "jəɦ aːm ɦɛː", "highlight": "।", "word_reading": "yah ām hai."}
+    },
+    {
+      "fact_id": "writing.devanagari.mark.matra",
+      "fact_kind": "term",
+      "value": "कि",
+      "qualifiers": {
+        "mark_id": "matra",
+        "role": "vowel_sign",
+        "example": "किसान",
+        "example_ipa": "kɪsaːn",
+        "example_reading": "kisān"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.mark.virama",
+      "fact_kind": "term",
+      "value": "प्",
+      "qualifiers": {
+        "mark_id": "virama",
+        "role": "no_inherent_vowel",
+        "example": "सप्ताह",
+        "example_ipa": "səpt̪aːɦ",
+        "example_reading": "saptāh"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.mark.anusvara",
+      "fact_kind": "term",
+      "value": "कं",
+      "qualifiers": {
+        "mark_id": "anusvara",
+        "role": "nasalization",
+        "example": "कंघी",
+        "example_ipa": "kəŋɡʱiː",
+        "example_reading": "kaṅghī"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.mark.chandrabindu",
+      "fact_kind": "term",
+      "value": "आँ",
+      "qualifiers": {
+        "mark_id": "chandrabindu",
+        "role": "nasalization",
+        "example": "आँख",
+        "example_ipa": "ãːkʰ",
+        "example_reading": "ā̃kh"
+      }
+    },
+    {
+      "fact_id": "writing.devanagari.mark.nukta",
+      "fact_kind": "term",
+      "value": "ज़",
+      "qualifiers": {
+        "mark_id": "nukta",
+        "role": "sound_change",
+        "example": "ज़रूर",
+        "example_ipa": "zəɾuːɾ",
+        "example_reading": "zarūr"
+      }
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

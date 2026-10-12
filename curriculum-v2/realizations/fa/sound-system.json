@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.fa.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "fa",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "ɢ", "ʔ", "tʃ", "dʒ", "f", "v", "s", "z", "ʃ", "ʒ", "x", "h", "m", "n", "l", "ɾ", "j"],
+      "qualifiers": {"variety": "standard_persian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "æ", "ɒ", "o", "u"],
+      "qualifiers": {"variety": "standard_persian"}
+    },
+    {
+      "fact_id": "sounds.tricky.gh",
+      "fact_kind": "term",
+      "value": "قلم",
+      "qualifiers": {"ipa": "ɢ", "spelling": "ق", "word_ipa": "ɢælæm", "note_id": "fa_gh"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "خنده",
+      "qualifiers": {"ipa": "x", "spelling": "خ", "word_ipa": "xænde", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.glottal",
+      "fact_kind": "term",
+      "value": "عسل",
+      "qualifiers": {"ipa": "ʔ", "spelling": "ع", "word_ipa": "ʔæsæl", "note_id": "fa_glottal"}
+    },
+    {
+      "fact_id": "sounds.tricky.aa",
+      "fact_kind": "term",
+      "value": "نان",
+      "qualifiers": {"ipa": "ɒ", "spelling": "ا", "word_ipa": "nɒn", "note_id": "fa_aa"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "رنگ",
+      "qualifiers": {"ipa": "ɾ", "spelling": "ر", "word_ipa": "ɾænɡ", "note_id": "tapped_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.same_sound",
+      "fact_kind": "term",
+      "value": "صندلی",
+      "qualifiers": {"ipa": "s", "spelling": "ص", "word_ipa": "sændæli", "note_id": "fa_same_sound"}
+    },
+    {
+      "fact_id": "sounds.tricky.vav",
+      "fact_kind": "term",
+      "value": "دوست",
+      "qualifiers": {"ipa": "u", "spelling": "و", "word_ipa": "dust", "note_id": "fa_vav"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "ماه",
+      "qualifiers": {"ipa": "mɒh", "pair": 1, "note_id": "fa_aa"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "مه",
+      "qualifiers": {"ipa": "mæh", "pair": 1, "note_id": "fa_aa"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "قلم",
+      "qualifiers": {"ipa": "ɢælæm", "pair": 2, "note_id": "fa_gh"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "کلم",
+      "qualifiers": {"ipa": "kælæm", "pair": 2, "note_id": "fa_gh"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "حال",
+      "qualifiers": {"ipa": "hɒl", "pair": 3, "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "خال",
+      "qualifiers": {"ipa": "xɒl", "pair": 3, "note_id": "velar_fricative"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_final"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "low"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

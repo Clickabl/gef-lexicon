@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.hi.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "hi",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["indo_aryan"],
+    "ancestor_language_tags": ["sa"],
+    "related_language_tags": ["ur", "bn", "pa", "mr", "gu", "ne"],
+    "script_ids": ["Deva"],
+    "origin_region_ids": ["asia"],
+    "notes": "Hindi is an Indo-Aryan language that grew out of Sauraseni Prakrit, from the Old Indo-Aryan family that includes Sanskrit. Spoken Hindi and Urdu share a base (Hindustani) and are largely mutually intelligible; Urdu is written in the Arabic script and draws more on Arabic and Persian words. The other languages listed are Indo-Aryan cousins, not mutually intelligible with Hindi. Broad family metadata for orientation only; this record describes Standard Hindi."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "नमस्ते",
+      "qualifiers": {"ipa": "nəməst̪eː", "reading": "namaste"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "धन्यवाद",
+      "qualifiers": {"ipa": "d̪ʱənjəʋaːd̪", "reading": "dhanyavād"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "हाँ",
+      "qualifiers": {"ipa": "ɦãː", "reading": "hā̃"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

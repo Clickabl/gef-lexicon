@@ -3,15 +3,39 @@
   "realization_id": "REAL.de.language_overview",
   "topic_id": "TOPIC.orientation.language_overview",
   "language_tag": "de",
+  "slots_version": 2,
+  "completeness": "complete",
   "genealogy": {
     "family_id": "indo_european",
     "branch_ids": ["germanic", "west_germanic"],
-    "related_language_tags": ["en", "nl"],
+    "ancestor_language_tags": ["goh"],
+    "related_language_tags": ["nl", "af", "en", "sv", "da", "nb"],
     "script_ids": ["Latn"],
     "origin_region_ids": ["europe"],
-    "notes": "Broad historical-family metadata for orientation only; West Germanic relationship does not imply modern mutual intelligibility."
+    "notes": "German is a West Germanic language. Dutch and Afrikaans are its closest relatives in the registry, English is a more distant West Germanic cousin, and Swedish, Danish and Norwegian are North Germanic cousins. Broad family metadata for orientation only; sharing a branch does not imply mutual intelligibility."
   },
-  "capabilities": {"explanation": true, "comparison": true},
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe", "americas", "africa"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "Guten Tag",
+      "qualifiers": {"ipa": "ˈɡuːtən ˈtaːk"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "Danke",
+      "qualifiers": {"ipa": "ˈdaŋkə"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "Wasser",
+      "qualifiers": {"ipa": "ˈvasɐ"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
   "review_state": "candidate",
   "version": 1
 }

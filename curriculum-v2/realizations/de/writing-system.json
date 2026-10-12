@@ -1,0 +1,228 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.de.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "de",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.latin.symbols",
+      "fact_kind": "term",
+      "value": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "ü", "ß"]
+    },
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": ["ä", "ö", "ü"]},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": ["„"]},
+    {"fact_id": "writing.latin.group.1", "fact_kind": "term", "value": ["b", "d", "f", "k"]},
+    {"fact_id": "writing.latin.group.2", "fact_kind": "term", "value": ["g", "l", "m", "n"]},
+    {"fact_id": "writing.latin.group.3", "fact_kind": "term", "value": ["p", "t", "h"]},
+    {"fact_id": "writing.latin.group.4", "fact_kind": "term", "value": ["a", "e", "i", "o", "u"]},
+    {"fact_id": "writing.latin.group.5", "fact_kind": "term", "value": ["j", "v", "w", "z"]},
+    {"fact_id": "writing.latin.group.6", "fact_kind": "term", "value": ["r", "s", "y"]},
+    {"fact_id": "writing.latin.group.7", "fact_kind": "term", "value": ["ä", "ö", "ü", "ß"]},
+    {"fact_id": "writing.latin.group.8", "fact_kind": "term", "value": ["c", "q", "x"]},
+    {
+      "fact_id": "writing.latin.example.a",
+      "fact_kind": "term",
+      "value": "alt",
+      "qualifiers": {"ipa": "alt", "highlight": "a", "sound": "a", "name": "A (ah)"}
+    },
+    {
+      "fact_id": "writing.latin.example.b",
+      "fact_kind": "term",
+      "value": "blau",
+      "qualifiers": {"ipa": "blaʊ̯", "highlight": "b", "sound": "b", "name": "Be (bay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.c",
+      "fact_kind": "term",
+      "value": "cool",
+      "qualifiers": {"ipa": "kuːl", "highlight": "c", "sound": "k", "name": "Ce (tsay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.d",
+      "fact_kind": "term",
+      "value": "drei",
+      "qualifiers": {"ipa": "dʁaɪ̯", "highlight": "d", "sound": "d", "name": "De (day)"}
+    },
+    {
+      "fact_id": "writing.latin.example.e",
+      "fact_kind": "term",
+      "value": "leer",
+      "qualifiers": {"ipa": "leːɐ̯", "highlight": "e", "sound": "eː", "name": "E (ay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.f",
+      "fact_kind": "term",
+      "value": "fünf",
+      "qualifiers": {"ipa": "fʏnf", "highlight": "f", "sound": "f", "name": "Ef (eff)"}
+    },
+    {
+      "fact_id": "writing.latin.example.g",
+      "fact_kind": "term",
+      "value": "gut",
+      "qualifiers": {"ipa": "ɡuːt", "highlight": "g", "sound": "ɡ", "name": "Ge (gay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.h",
+      "fact_kind": "term",
+      "value": "heiß",
+      "qualifiers": {"ipa": "haɪ̯s", "highlight": "h", "sound": "h", "name": "Ha (hah)"}
+    },
+    {
+      "fact_id": "writing.latin.example.i",
+      "fact_kind": "term",
+      "value": "wir",
+      "qualifiers": {"ipa": "viːɐ̯", "highlight": "i", "sound": "iː", "name": "I (ee)"}
+    },
+    {
+      "fact_id": "writing.latin.example.j",
+      "fact_kind": "term",
+      "value": "ja",
+      "qualifiers": {"ipa": "jaː", "highlight": "j", "sound": "j", "name": "Jot (yot)", "looks_like": "J"}
+    },
+    {
+      "fact_id": "writing.latin.example.k",
+      "fact_kind": "term",
+      "value": "klein",
+      "qualifiers": {"ipa": "klaɪ̯n", "highlight": "k", "sound": "k", "name": "Ka (kah)"}
+    },
+    {
+      "fact_id": "writing.latin.example.l",
+      "fact_kind": "term",
+      "value": "lila",
+      "qualifiers": {"ipa": "ˈliːla", "highlight": "l", "sound": "l", "name": "El (ell)"}
+    },
+    {
+      "fact_id": "writing.latin.example.m",
+      "fact_kind": "term",
+      "value": "müde",
+      "qualifiers": {"ipa": "ˈmyːdə", "highlight": "m", "sound": "m", "name": "Em (em)"}
+    },
+    {
+      "fact_id": "writing.latin.example.n",
+      "fact_kind": "term",
+      "value": "neun",
+      "qualifiers": {"ipa": "nɔʏ̯n", "highlight": "n", "sound": "n", "name": "En (en)"}
+    },
+    {
+      "fact_id": "writing.latin.example.o",
+      "fact_kind": "term",
+      "value": "rot",
+      "qualifiers": {"ipa": "ʁoːt", "highlight": "o", "sound": "oː", "name": "O (oh)"}
+    },
+    {
+      "fact_id": "writing.latin.example.p",
+      "fact_kind": "term",
+      "value": "Lampe",
+      "qualifiers": {"ipa": "ˈlampə", "highlight": "p", "sound": "p", "name": "Pe (pay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.q",
+      "fact_kind": "term",
+      "value": "quer",
+      "qualifiers": {"ipa": "kveːɐ̯", "highlight": "q", "sound": "kv", "name": "Qu (koo)"}
+    },
+    {
+      "fact_id": "writing.latin.example.r",
+      "fact_kind": "term",
+      "value": "rund",
+      "qualifiers": {"ipa": "ʁʊnt", "highlight": "r", "sound": "ʁ", "name": "Er (air)"}
+    },
+    {
+      "fact_id": "writing.latin.example.s",
+      "fact_kind": "term",
+      "value": "sieben",
+      "qualifiers": {"ipa": "ˈziːbən", "highlight": "s", "sound": "z", "name": "Es (ess)"}
+    },
+    {
+      "fact_id": "writing.latin.example.t",
+      "fact_kind": "term",
+      "value": "trinken",
+      "qualifiers": {"ipa": "ˈtʁɪŋkən", "highlight": "t", "sound": "t", "name": "Te (tay)"}
+    },
+    {
+      "fact_id": "writing.latin.example.u",
+      "fact_kind": "term",
+      "value": "du",
+      "qualifiers": {"ipa": "duː", "highlight": "u", "sound": "uː", "name": "U (oo)"}
+    },
+    {
+      "fact_id": "writing.latin.example.v",
+      "fact_kind": "term",
+      "value": "vier",
+      "qualifiers": {"ipa": "fiːɐ̯", "highlight": "v", "sound": "f", "name": "Vau (fow)", "looks_like": "V"}
+    },
+    {
+      "fact_id": "writing.latin.example.w",
+      "fact_kind": "term",
+      "value": "warm",
+      "qualifiers": {"ipa": "vaʁm", "highlight": "w", "sound": "v", "name": "We (vay)", "looks_like": "W"}
+    },
+    {
+      "fact_id": "writing.latin.example.x",
+      "fact_kind": "term",
+      "value": "Taxi",
+      "qualifiers": {"ipa": "ˈtaksi", "highlight": "x", "sound": "ks", "name": "Ix (iks)"}
+    },
+    {
+      "fact_id": "writing.latin.example.y",
+      "fact_kind": "term",
+      "value": "Typ",
+      "qualifiers": {"ipa": "tyːp", "highlight": "y", "sound": "yː", "name": "Ypsilon (ÜP-si-lon)"}
+    },
+    {
+      "fact_id": "writing.latin.example.z",
+      "fact_kind": "term",
+      "value": "zehn",
+      "qualifiers": {"ipa": "tseːn", "highlight": "z", "sound": "ts", "name": "Zett (tset)", "looks_like": "Z"}
+    },
+    {
+      "fact_id": "writing.latin.example.a_umlaut",
+      "fact_kind": "term",
+      "value": "Käse",
+      "qualifiers": {"ipa": "ˈkɛːzə", "highlight": "ä", "sound": "ɛː", "name": "Ä (eh)", "looks_like": "a"}
+    },
+    {
+      "fact_id": "writing.latin.example.o_umlaut",
+      "fact_kind": "term",
+      "value": "Löwe",
+      "qualifiers": {"ipa": "ˈløːvə", "highlight": "ö", "sound": "øː", "name": "Ö (öh)", "looks_like": "o"}
+    },
+    {
+      "fact_id": "writing.latin.example.u_umlaut",
+      "fact_kind": "term",
+      "value": "Tür",
+      "qualifiers": {"ipa": "tyːɐ̯", "highlight": "ü", "sound": "yː", "name": "Ü (üh)", "looks_like": "u"}
+    },
+    {
+      "fact_id": "writing.latin.example.eszett",
+      "fact_kind": "term",
+      "value": "Fuß",
+      "qualifiers": {"ipa": "fuːs", "highlight": "ß", "sound": "s", "name": "Eszett (ess-tset)", "looks_like": "B"}
+    },
+    {
+      "fact_id": "writing.latin.example.low_quote",
+      "fact_kind": "term",
+      "value": "„Danke!“",
+      "qualifiers": {"ipa": "ˈdaŋkə", "highlight": "„", "name": "Anführungszeichen unten"}
+    },
+    {
+      "fact_id": "writing.latin.mark.diaeresis",
+      "fact_kind": "term",
+      "value": "ä",
+      "qualifiers": {"mark_id": "diaeresis", "role": "vowel_quality", "example": "Väter", "example_ipa": "ˈfɛːtɐ"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

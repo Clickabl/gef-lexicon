@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "de",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "shared_with_german",
+      "kind": "helpful_transfer",
+      "text": "English and German are close cousins: both are West Germanic, so many everyday words come from the same old ancestor and still look or sound alike. Some are nearly twins (Hand, Finger, Winter), some need a small sound shift (Wasser, Apfel, Vater, Salz, Nacht). The last four are German words that English borrowed whole.",
+      "pairs": [
+        {"from": "water", "to": "Wasser", "to_ipa": "ˈvasɐ"},
+        {"from": "hand", "to": "Hand", "to_ipa": "hant"},
+        {"from": "house", "to": "Haus", "to_ipa": "haʊ̯s"},
+        {"from": "book", "to": "Buch", "to_ipa": "buːx"},
+        {"from": "apple", "to": "Apfel", "to_ipa": "ˈapfəl"},
+        {"from": "father", "to": "Vater", "to_ipa": "ˈfaːtɐ"},
+        {"from": "mother", "to": "Mutter", "to_ipa": "ˈmʊtɐ"},
+        {"from": "brother", "to": "Bruder", "to_ipa": "ˈbʁuːdɐ"},
+        {"from": "finger", "to": "Finger", "to_ipa": "ˈfɪŋɐ"},
+        {"from": "winter", "to": "Winter", "to_ipa": "ˈvɪntɐ"},
+        {"from": "milk", "to": "Milch", "to_ipa": "mɪlç"},
+        {"from": "salt", "to": "Salz", "to_ipa": "zalts"},
+        {"from": "night", "to": "Nacht", "to_ipa": "naxt"},
+        {"from": "friend", "to": "Freund", "to_ipa": "fʁɔʏ̯nt"},
+        {
+          "from": "kindergarten",
+          "to": "Kindergarten",
+          "to_ipa": "ˈkɪndɐˌɡaʁtən",
+          "to_meaning": "children’s garden, nursery school"
+        },
+        {"from": "rucksack", "to": "Rucksack", "to_ipa": "ˈʁʊkzak", "to_meaning": "backpack"},
+        {"from": "angst", "to": "Angst", "to_ipa": "aŋst", "to_meaning": "fear"},
+        {"from": "wanderlust", "to": "Wanderlust", "to_ipa": "ˈvandɐˌlʊst", "to_meaning": "the urge to travel"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few German words look just like English ones but mean something else. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "gift", "to": "Gift", "to_ipa": "ɡɪft", "to_meaning": "poison"},
+        {"from": "become", "to": "bekommen", "to_ipa": "bəˈkɔmən", "to_meaning": "to get, to receive"},
+        {"from": "rat", "to": "Rat", "to_ipa": "ʁaːt", "to_meaning": "advice, council"},
+        {"from": "chef", "to": "Chef", "to_ipa": "ʃɛf", "to_meaning": "boss"},
+        {"from": "handy", "to": "Handy", "to_ipa": "ˈhɛndi", "to_meaning": "mobile phone"},
+        {"from": "art", "to": "Art", "to_ipa": "aːɐ̯t", "to_meaning": "kind, sort, way"},
+        {"from": "also", "to": "also", "to_ipa": "ˈalzoː", "to_meaning": "so, therefore"},
+        {"from": "sensible", "to": "sensibel", "to_ipa": "zɛnˈziːbl̩", "to_meaning": "sensitive"},
+        {"from": "mist", "to": "Mist", "to_ipa": "mɪst", "to_meaning": "manure, rubbish"},
+        {"from": "brief", "to": "Brief", "to_ipa": "bʁiːf", "to_meaning": "letter"},
+        {"from": "bald", "to": "bald", "to_ipa": "balt", "to_meaning": "soon"},
+        {"from": "fast", "to": "fast", "to_ipa": "fast", "to_meaning": "almost"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

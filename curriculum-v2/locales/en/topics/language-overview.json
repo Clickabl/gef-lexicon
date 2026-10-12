@@ -58,7 +58,10 @@
     "family.koreanic": "Koreanic",
     "branch.korean": "Korean",
     "family.turkic": "Turkic",
-    "branch.oghuz": "Oghuz"
+    "branch.oghuz": "Oghuz",
+    "branch.iranian": "Iranian",
+    "branch.western_iranian": "Western Iranian",
+    "branch.indo_aryan": "Indo-Aryan"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -99,8 +102,17 @@
     "ko:hook.decoy.2": "water",
     "tr:hook.target": "hello",
     "tr:hook.decoy.1": "thank you",
-    "tr:hook.decoy.2": "yes"
+    "tr:hook.decoy.2": "yes",
+    "fa:hook.target": "hello",
+    "fa:hook.decoy.1": "thanks, thank you",
+    "fa:hook.decoy.2": "yes",
+    "de:hook.target": "hello, good day",
+    "de:hook.decoy.1": "thank you",
+    "de:hook.decoy.2": "water",
+    "hi:hook.target": "hello (a greeting for meeting or parting)",
+    "hi:hook.decoy.1": "thank you",
+    "hi:hook.decoy.2": "yes"
   },
   "review_state": "candidate",
-  "version": 18
+  "version": 23
 }

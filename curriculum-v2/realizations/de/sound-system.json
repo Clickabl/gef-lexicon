@@ -1,0 +1,136 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.de.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "de",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "pf", "ts", "tʃ", "f", "v", "s", "z", "ʃ", "ʒ", "ç", "x", "h", "m", "n", "ŋ", "l", "ʁ", "j"],
+      "qualifiers": {"variety": "standard_german"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["iː", "ɪ", "yː", "ʏ", "eː", "ɛ", "ɛː", "øː", "œ", "aː", "a", "oː", "ɔ", "uː", "ʊ", "ə", "ɐ", "aɪ̯", "aʊ̯", "ɔʏ̯"],
+      "qualifiers": {"variety": "standard_german"}
+    },
+    {
+      "fact_id": "sounds.tricky.ich_laut",
+      "fact_kind": "term",
+      "value": "ich",
+      "qualifiers": {"ipa": "ç", "spelling": "ch", "word_ipa": "ɪç", "note_id": "de_ich_laut"}
+    },
+    {
+      "fact_id": "sounds.tricky.ach_laut",
+      "fact_kind": "term",
+      "value": "Buch",
+      "qualifiers": {"ipa": "x", "spelling": "ch", "word_ipa": "buːx", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.u_umlaut",
+      "fact_kind": "term",
+      "value": "kühl",
+      "qualifiers": {"ipa": "yː", "spelling": "ü", "word_ipa": "kyːl", "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.o_umlaut",
+      "fact_kind": "term",
+      "value": "Öl",
+      "qualifiers": {"ipa": "øː", "spelling": "ö", "word_ipa": "øːl", "note_id": "de_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "rot",
+      "qualifiers": {"ipa": "ʁ", "spelling": "r", "word_ipa": "ʁoːt", "note_id": "uvular_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.w",
+      "fact_kind": "term",
+      "value": "Wolf",
+      "qualifiers": {"ipa": "v", "spelling": "w", "word_ipa": "vɔlf", "note_id": "de_w_v"}
+    },
+    {
+      "fact_id": "sounds.tricky.z",
+      "fact_kind": "term",
+      "value": "Zahn",
+      "qualifiers": {"ipa": "ts", "spelling": "z", "word_ipa": "tsaːn", "note_id": "de_z_ts"}
+    },
+    {
+      "fact_id": "sounds.tricky.final_devoicing",
+      "fact_kind": "term",
+      "value": "Tag",
+      "qualifiers": {"ipa": "k", "spelling": "g", "word_ipa": "taːk", "note_id": "de_final_devoicing"}
+    },
+    {
+      "fact_id": "sounds.tricky.st",
+      "fact_kind": "term",
+      "value": "Stuhl",
+      "qualifiers": {"ipa": "ʃ", "spelling": "st", "word_ipa": "ʃtuːl", "note_id": "de_st_sp"}
+    },
+    {
+      "fact_id": "sounds.tricky.pf",
+      "fact_kind": "term",
+      "value": "Apfel",
+      "qualifiers": {"ipa": "pf", "spelling": "pf", "word_ipa": "ˈapfəl", "note_id": "de_pf"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "Beet",
+      "qualifiers": {"ipa": "beːt", "pair": 1, "note_id": "de_long_short_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "Bett",
+      "qualifiers": {"ipa": "bɛt", "pair": 1, "note_id": "de_long_short_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "können",
+      "qualifiers": {"ipa": "ˈkœnən", "pair": 2, "note_id": "de_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "kennen",
+      "qualifiers": {"ipa": "ˈkɛnən", "pair": 2, "note_id": "de_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "Tür",
+      "qualifiers": {"ipa": "tyːɐ̯", "pair": 3, "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "Tier",
+      "qualifiers": {"ipa": "tiːɐ̯", "pair": 3, "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "Reise",
+      "qualifiers": {"ipa": "ˈʁaɪ̯zə", "pair": 4, "note_id": "de_ei_ie"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "Riese",
+      "qualifiers": {"ipa": "ˈʁiːzə", "pair": 4, "note_id": "de_ei_ie"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_initial"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

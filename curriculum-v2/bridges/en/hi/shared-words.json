@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "hi",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_between_english_and_hindi",
+      "kind": "helpful_transfer",
+      "text": "English and Hindi are very distant cousins, so true look-alike words are rare and hard to spot. Most of these are Hindi words that English borrowed, some of them by way of Persian or other Indian languages. Then come a few English words that Hindi borrowed, which are fun to read in Devanagari, and a few old family words that really do share a root with English.",
+      "pairs": [
+        {
+          "from": "bungalow",
+          "to": "बंगला",
+          "to_ipa": "bəŋɡlaː",
+          "to_meaning": "a house; originally a Bengal-style house"
+        },
+        {"from": "jungle", "to": "जंगल", "to_ipa": "dʒəŋɡəl", "to_meaning": "forest, wild country"},
+        {
+          "from": "shampoo",
+          "to": "चाँपो",
+          "to_ipa": "tʃãːpoː",
+          "to_meaning": "press! knead! (the command behind “shampoo”)"
+        },
+        {"from": "pyjamas", "to": "पाजामा", "to_ipa": "paːdʒaːmaː", "to_meaning": "loose trousers"},
+        {"from": "guru", "to": "गुरु", "to_ipa": "ɡʊɾuː", "to_meaning": "teacher, guide"},
+        {"from": "yoga", "to": "योग", "to_ipa": "joːɡ", "to_meaning": "yoga, union"},
+        {"from": "cot", "to": "खाट", "to_ipa": "kʰaːʈ", "to_meaning": "a rope bed, bedstead"},
+        {"from": "thug", "to": "ठग", "to_ipa": "ʈʰəɡ", "to_meaning": "cheat, swindler"},
+        {"from": "loot", "to": "लूट", "to_ipa": "luːʈ", "to_meaning": "plunder, stolen goods"},
+        {"from": "cheetah", "to": "चीता", "to_ipa": "tʃiːt̪aː"},
+        {"from": "chutney", "to": "चटनी", "to_ipa": "tʃəʈniː"},
+        {"from": "sari", "to": "साड़ी", "to_ipa": "saːɽiː"},
+        {"from": "school", "to": "स्कूल", "to_ipa": "skuːl"},
+        {"from": "station", "to": "स्टेशन", "to_ipa": "sʈeːʃən"},
+        {"from": "train", "to": "ट्रेन", "to_ipa": "ʈɾeːn"},
+        {"from": "ticket", "to": "टिकट", "to_ipa": "ʈɪkəʈ"},
+        {"from": "hotel", "to": "होटल", "to_ipa": "ɦoːʈəl"},
+        {"from": "button", "to": "बटन", "to_ipa": "bəʈən"},
+        {"from": "three", "to": "तीन", "to_ipa": "t̪iːn"},
+        {"from": "seven", "to": "सात", "to_ipa": "saːt̪"},
+        {"from": "two", "to": "दो", "to_ipa": "d̪oː"},
+        {"from": "new", "to": "नया", "to_ipa": "nəjaː"},
+        {"from": "brother", "to": "भाई", "to_ipa": "bʱaːiː"}
+      ]
+    },
+    {
+      "note_id": "sound_alikes",
+      "kind": "false_friend",
+      "text": "Hindi has its own script, so these don’t look alike on the page. But each sounds like a common English word and means something quite different, so they can catch you out by ear.",
+      "pairs": [
+        {"from": "din", "to": "दिन", "to_ipa": "d̪ɪn", "to_meaning": "day"},
+        {"from": "come", "to": "कम", "to_ipa": "kəm", "to_meaning": "less, little"},
+        {"from": "bee", "to": "भी", "to_ipa": "bʱiː", "to_meaning": "also, too"},
+        {"from": "or", "to": "और", "to_ipa": "ɔːɾ", "to_meaning": "and, more"},
+        {"from": "ball", "to": "बाल", "to_ipa": "baːl", "to_meaning": "hair"},
+        {"from": "sub", "to": "सब", "to_ipa": "səb", "to_meaning": "all"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.hi.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "hi",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "pʰ", "b", "bʱ", "t̪", "t̪ʰ", "d̪", "d̪ʱ", "ʈ", "ʈʰ", "ɖ", "ɖʱ", "k", "kʰ", "ɡ", "ɡʱ", "tʃ", "tʃʰ", "dʒ", "dʒʱ", "m", "n", "ɳ", "ŋ", "ɲ", "f", "s", "z", "ʃ", "ɦ", "x", "ɣ", "q", "ɾ", "ɽ", "ɽʱ", "l", "ʋ", "j"],
+      "qualifiers": {"variety": "standard_hindi"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["ə", "ɪ", "ʊ", "aː", "iː", "uː", "eː", "ɛː", "oː", "ɔː", "ə̃", "ãː", "ĩː", "ũː", "ẽː", "õː"],
+      "qualifiers": {"variety": "standard_hindi"}
+    },
+    {
+      "fact_id": "sounds.tricky.aspirated",
+      "fact_kind": "term",
+      "value": "खाना",
+      "qualifiers": {"ipa": "kʰ", "spelling": "ख", "word_ipa": "kʰaːnaː", "note_id": "hi_aspirated"}
+    },
+    {
+      "fact_id": "sounds.tricky.breathy",
+      "fact_kind": "term",
+      "value": "भालू",
+      "qualifiers": {"ipa": "bʱ", "spelling": "भ", "word_ipa": "bʱaːluː", "note_id": "hi_breathy"}
+    },
+    {
+      "fact_id": "sounds.tricky.retroflex",
+      "fact_kind": "term",
+      "value": "टोपी",
+      "qualifiers": {"ipa": "ʈ", "spelling": "ट", "word_ipa": "ʈoːpiː", "note_id": "hi_retroflex"}
+    },
+    {
+      "fact_id": "sounds.tricky.dental",
+      "fact_kind": "term",
+      "value": "दादी",
+      "qualifiers": {"ipa": "d̪", "spelling": "द", "word_ipa": "d̪aːd̪iː", "note_id": "hi_dental"}
+    },
+    {
+      "fact_id": "sounds.tricky.nasal_vowel",
+      "fact_kind": "term",
+      "value": "हाँ",
+      "qualifiers": {"ipa": "ãː", "spelling": "◌ँ", "word_ipa": "ɦãː", "note_id": "hi_nasal_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.flap",
+      "fact_kind": "term",
+      "value": "लड़का",
+      "qualifiers": {"ipa": "ɽ", "spelling": "ड़", "word_ipa": "ləɽkaː", "note_id": "hi_flap"}
+    },
+    {
+      "fact_id": "sounds.tricky.schwa_deletion",
+      "fact_kind": "term",
+      "value": "सब",
+      "qualifiers": {"spelling": "ब", "word_ipa": "səb", "note_id": "hi_schwa_deletion", "silent": true}
+    },
+    {
+      "fact_id": "sounds.tricky.vowel_length",
+      "fact_kind": "term",
+      "value": "ऊन",
+      "qualifiers": {"ipa": "uː", "spelling": "ऊ", "word_ipa": "uːn", "note_id": "vowel_length"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "पल",
+      "qualifiers": {"ipa": "pəl", "pair": 1, "note_id": "hi_aspirated"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "फल",
+      "qualifiers": {"ipa": "pʰəl", "pair": 1, "note_id": "hi_aspirated"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "दाल",
+      "qualifiers": {"ipa": "d̪aːl", "pair": 2, "note_id": "hi_retroflex"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "डाल",
+      "qualifiers": {"ipa": "ɖaːl", "pair": 2, "note_id": "hi_retroflex"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "पिता",
+      "qualifiers": {"ipa": "pɪt̪aː", "pair": 3, "note_id": "vowel_length"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "पीता",
+      "qualifiers": {"ipa": "piːt̪aː", "pair": 3, "note_id": "vowel_length"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "सास",
+      "qualifiers": {"ipa": "saːs", "pair": 4, "note_id": "hi_nasal_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "साँस",
+      "qualifiers": {"ipa": "sãːs", "pair": 4, "note_id": "hi_nasal_vowel"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "rule_by_syllable_weight"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

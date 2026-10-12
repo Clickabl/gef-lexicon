@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "fa",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_persian",
+      "kind": "helpful_transfer",
+      "text": "English and Persian are distant cousins: both come down from the same ancient language, so look-alike words are few. Most of these are English words that came from Persian, often by way of Turkish, Arabic, Hindi or French, so the Persian can sound quite different from the English. The last nine (father to two) are old family words that both languages inherited from the same ancestor and that still sound alike.",
+      "pairs": [
+        {"from": "bazaar", "to": "بازار", "to_ipa": "bɒzɒɾ", "to_meaning": "market"},
+        {"from": "caravan", "to": "کاروان", "to_ipa": "kɒɾvɒn"},
+        {"from": "pyjamas", "to": "پاجامه", "to_ipa": "pɒdʒɒme", "to_meaning": "trousers"},
+        {"from": "paradise", "to": "پردیس", "to_ipa": "pæɾdis", "to_meaning": "garden, paradise"},
+        {"from": "shawl", "to": "شال", "to_ipa": "ʃɒl"},
+        {"from": "khaki", "to": "خاکی", "to_ipa": "xɒki", "to_meaning": "earthy, earth-coloured"},
+        {"from": "kiosk", "to": "کوشک", "to_ipa": "kuʃk", "to_meaning": "pavilion, small palace"},
+        {"from": "jasmine", "to": "یاسمن", "to_ipa": "jɒsæmæn"},
+        {"from": "orange", "to": "نارنج", "to_ipa": "nɒɾendʒ", "to_meaning": "bitter orange"},
+        {"from": "shah", "to": "شاه", "to_ipa": "ʃɒh", "to_meaning": "king"},
+        {"from": "dervish", "to": "درویش", "to_ipa": "dæɾviʃ", "to_meaning": "poor; a Sufi mystic"},
+        {"from": "candy", "to": "قند", "to_ipa": "ɢænd", "to_meaning": "sugar cube"},
+        {"from": "father", "to": "پدر", "to_ipa": "pedæɾ"},
+        {"from": "mother", "to": "مادر", "to_ipa": "mɒdæɾ"},
+        {"from": "brother", "to": "برادر", "to_ipa": "bæɾɒdæɾ"},
+        {"from": "daughter", "to": "دختر", "to_ipa": "doxtæɾ"},
+        {"from": "name", "to": "نام", "to_ipa": "nɒm"},
+        {"from": "new", "to": "نو", "to_ipa": "now"},
+        {"from": "mouse", "to": "موش", "to_ipa": "muʃ", "to_meaning": "mouse, rat"},
+        {"from": "star", "to": "ستاره", "to_ipa": "setɒɾe"},
+        {"from": "two", "to": "دو", "to_ipa": "do"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

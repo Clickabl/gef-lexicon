@@ -1,0 +1,133 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.de.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "de",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "inflecting"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "Kind / Kinder"},
+    {"fact_id": "trait.word_building.example.2", "fact_kind": "term", "value": "Handschuh"},
+    {"fact_id": "trait.word_building.example.3", "fact_kind": "term", "value": "Krankenhaus"},
+    {
+      "fact_id": "trait.noun_gender",
+      "fact_kind": "category",
+      "value": "three",
+      "qualifiers": {"values": ["masculine", "feminine", "neuter"], "articles": ["der", "die", "das"]}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.1",
+      "fact_kind": "term",
+      "value": "der Tisch",
+      "qualifiers": {"gender": "masculine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.2",
+      "fact_kind": "term",
+      "value": "die Lampe",
+      "qualifiers": {"gender": "feminine"}
+    },
+    {
+      "fact_id": "trait.noun_gender.example.3",
+      "fact_kind": "term",
+      "value": "das Haus",
+      "qualifiers": {"gender": "neuter"}
+    },
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "du", "formal": "Sie"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "Wie heißt du?",
+      "qualifiers": {"register": "informal"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "Wie heißen Sie?",
+      "qualifiers": {"register": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "lernen"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "ich lerne / du lernst / er lernt / wir lernen / ihr lernt / sie lernen"
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "required"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "Ich lerne Deutsch."},
+    {
+      "fact_id": "trait.cases",
+      "fact_kind": "category",
+      "value": "some",
+      "qualifiers": {"count": 4}
+    },
+    {"fact_id": "trait.cases.example.1", "fact_kind": "term", "value": "der Mann / den Mann / dem Mann / des Mannes"},
+    {"fact_id": "trait.cases.example.2", "fact_kind": "term", "value": "Der Mann sieht den Hund."},
+    {"fact_id": "trait.cases.example.3", "fact_kind": "term", "value": "Den Mann sieht der Hund."},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "ein großes Haus"},
+    {"fact_id": "trait.adjective_position.example.2", "fact_kind": "term", "value": "eine rote Lampe"},
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "definite_indefinite"},
+    {"fact_id": "trait.articles.example.1", "fact_kind": "term", "value": "der Hund, ein Hund"},
+    {"fact_id": "trait.articles.example.2", "fact_kind": "term", "value": "die Katze, eine Katze"},
+    {"fact_id": "trait.questions", "fact_kind": "category", "value": "intonation_or_inversion"},
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Sprichst du Deutsch?"},
+    {"fact_id": "trait.questions.example.2", "fact_kind": "term", "value": "Wo wohnst du?"},
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "v2"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Ich sehe den Hund."},
+    {"fact_id": "trait.word_order.example.2", "fact_kind": "term", "value": "Heute sehe ich den Hund."},
+    {"fact_id": "trait.word_order.example.3", "fact_kind": "term", "value": "Ich weiß, dass du den Hund siehst."},
+    {"fact_id": "trait.word_order.example.4", "fact_kind": "term", "value": "Ich rufe dich morgen an."},
+    {
+      "fact_id": "noun.1",
+      "fact_kind": "term",
+      "value": "Tisch",
+      "qualifiers": {"article": "der", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.2",
+      "fact_kind": "term",
+      "value": "Lampe",
+      "qualifiers": {"article": "die", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.3",
+      "fact_kind": "term",
+      "value": "Haus",
+      "qualifiers": {"article": "das", "gender": "neuter"}
+    },
+    {
+      "fact_id": "noun.4",
+      "fact_kind": "term",
+      "value": "Hund",
+      "qualifiers": {"article": "der", "gender": "masculine"}
+    },
+    {
+      "fact_id": "noun.5",
+      "fact_kind": "term",
+      "value": "Katze",
+      "qualifiers": {"article": "die", "gender": "feminine"}
+    },
+    {
+      "fact_id": "noun.6",
+      "fact_kind": "term",
+      "value": "Buch",
+      "qualifiers": {"article": "das", "gender": "neuter"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

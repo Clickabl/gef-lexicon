@@ -1,0 +1,515 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.fa.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "fa",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["persian"]},
+    {"fact_id": "writing.persian.kind", "fact_kind": "category", "value": "abjad"},
+    {"fact_id": "writing.persian.script", "fact_kind": "category", "value": "Arab"},
+    {"fact_id": "writing.persian.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.persian.direction", "fact_kind": "category", "value": "rtl"},
+    {"fact_id": "writing.persian.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.persian.joined", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.persian.vowels", "fact_kind": "category", "value": "marks_optional"},
+    {
+      "fact_id": "writing.persian.symbols",
+      "fact_kind": "term",
+      "value": ["آ", "ا", "ب", "پ", "ت", "ث", "ج", "چ", "ح", "خ", "د", "ذ", "ر", "ز", "ژ", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ک", "گ", "ل", "م", "ن", "و", "ه", "ی"]
+    },
+    {"fact_id": "writing.persian.marked", "fact_kind": "term", "value": ["ء", "أ", "ؤ", "ئ"]},
+    {"fact_id": "writing.persian.punctuation", "fact_kind": "term", "value": ["،", "؟", "؛", "«"]},
+    {"fact_id": "writing.persian.group.1", "fact_kind": "term", "value": ["آ", "ا", "د", "ذ"]},
+    {"fact_id": "writing.persian.group.2", "fact_kind": "term", "value": ["ر", "ز", "و"]},
+    {"fact_id": "writing.persian.group.3", "fact_kind": "term", "value": ["ب", "ت", "ث", "ن", "ی"]},
+    {"fact_id": "writing.persian.group.4", "fact_kind": "term", "value": ["ج", "ح", "خ"]},
+    {"fact_id": "writing.persian.group.5", "fact_kind": "term", "value": ["س", "ش", "ص", "ض"]},
+    {"fact_id": "writing.persian.group.6", "fact_kind": "term", "value": ["ط", "ظ", "ع", "غ"]},
+    {"fact_id": "writing.persian.group.7", "fact_kind": "term", "value": ["ف", "ق", "ک"]},
+    {"fact_id": "writing.persian.group.8", "fact_kind": "term", "value": ["ل", "م", "ه"]},
+    {"fact_id": "writing.persian.group.9", "fact_kind": "term", "value": ["پ", "چ", "ژ", "گ"]},
+    {
+      "fact_id": "writing.persian.example.alef_madda",
+      "fact_kind": "term",
+      "value": "آب",
+      "qualifiers": {
+        "ipa": "ɒb",
+        "highlight": "آ",
+        "sound": "ɒ",
+        "reading": "ā",
+        "name": "الف مَدّه (alef madde)",
+        "forms": ["آ", "ـآ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.alef",
+      "fact_kind": "term",
+      "value": "نان",
+      "qualifiers": {
+        "ipa": "nɒn",
+        "highlight": "ا",
+        "sound": "ɒ",
+        "reading": "ā",
+        "name": "الف (alef)",
+        "looks_like": "I",
+        "forms": ["ا", "ـا"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.beh",
+      "fact_kind": "term",
+      "value": "برف",
+      "qualifiers": {
+        "ipa": "bæɾf",
+        "highlight": "ب",
+        "sound": "b",
+        "reading": "b",
+        "name": "بِ (be)",
+        "forms": ["ب", "بـ", "ـبـ", "ـب"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.peh",
+      "fact_kind": "term",
+      "value": "پدر",
+      "qualifiers": {
+        "ipa": "pedæɾ",
+        "highlight": "پ",
+        "sound": "p",
+        "reading": "p",
+        "name": "پِ (pe)",
+        "forms": ["پ", "پـ", "ـپـ", "ـپ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.teh",
+      "fact_kind": "term",
+      "value": "تخت",
+      "qualifiers": {
+        "ipa": "tæxt",
+        "highlight": "ت",
+        "sound": "t",
+        "reading": "t",
+        "name": "تِ (te)",
+        "forms": ["ت", "تـ", "ـتـ", "ـت"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.theh",
+      "fact_kind": "term",
+      "value": "مثلث",
+      "qualifiers": {
+        "ipa": "mosællæs",
+        "highlight": "ث",
+        "sound": "s",
+        "reading": "s",
+        "name": "ثِ (se)",
+        "forms": ["ث", "ثـ", "ـثـ", "ـث"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.jeem",
+      "fact_kind": "term",
+      "value": "جنگل",
+      "qualifiers": {
+        "ipa": "dʒænɡæl",
+        "highlight": "ج",
+        "sound": "dʒ",
+        "reading": "j",
+        "name": "جیم (jim)",
+        "forms": ["ج", "جـ", "ـجـ", "ـج"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.cheh",
+      "fact_kind": "term",
+      "value": "چای",
+      "qualifiers": {
+        "ipa": "tʃɒj",
+        "highlight": "چ",
+        "sound": "tʃ",
+        "reading": "ch",
+        "name": "چِ (che)",
+        "forms": ["چ", "چـ", "ـچـ", "ـچ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.hah",
+      "fact_kind": "term",
+      "value": "حمام",
+      "qualifiers": {
+        "ipa": "hæmmɒm",
+        "highlight": "ح",
+        "sound": "h",
+        "reading": "h",
+        "name": "حِ جیمی (he-ye jimi)",
+        "forms": ["ح", "حـ", "ـحـ", "ـح"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.khah",
+      "fact_kind": "term",
+      "value": "خانه",
+      "qualifiers": {
+        "ipa": "xɒne",
+        "highlight": "خ",
+        "sound": "x",
+        "reading": "kh",
+        "name": "خِ (khe)",
+        "forms": ["خ", "خـ", "ـخـ", "ـخ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.dal",
+      "fact_kind": "term",
+      "value": "دست",
+      "qualifiers": {"ipa": "dæst", "highlight": "د", "sound": "d", "reading": "d", "name": "دال (dāl)", "forms": ["د", "ـد"]}
+    },
+    {
+      "fact_id": "writing.persian.example.thal",
+      "fact_kind": "term",
+      "value": "ذرت",
+      "qualifiers": {"ipa": "zoɾɾæt", "highlight": "ذ", "sound": "z", "reading": "z", "name": "ذال (zāl)", "forms": ["ذ", "ـذ"]}
+    },
+    {
+      "fact_id": "writing.persian.example.reh",
+      "fact_kind": "term",
+      "value": "رنگ",
+      "qualifiers": {"ipa": "ɾænɡ", "highlight": "ر", "sound": "ɾ", "reading": "r", "name": "رِ (re)", "forms": ["ر", "ـر"]}
+    },
+    {
+      "fact_id": "writing.persian.example.zain",
+      "fact_kind": "term",
+      "value": "زمین",
+      "qualifiers": {"ipa": "zæmin", "highlight": "ز", "sound": "z", "reading": "z", "name": "زِ (ze)", "forms": ["ز", "ـز"]}
+    },
+    {
+      "fact_id": "writing.persian.example.jeh",
+      "fact_kind": "term",
+      "value": "ژاکت",
+      "qualifiers": {"ipa": "ʒɒkæt", "highlight": "ژ", "sound": "ʒ", "reading": "zh", "name": "ژِ (zhe)", "forms": ["ژ", "ـژ"]}
+    },
+    {
+      "fact_id": "writing.persian.example.seen",
+      "fact_kind": "term",
+      "value": "سیب",
+      "qualifiers": {
+        "ipa": "sib",
+        "highlight": "س",
+        "sound": "s",
+        "reading": "s",
+        "name": "سین (sin)",
+        "forms": ["س", "سـ", "ـسـ", "ـس"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.sheen",
+      "fact_kind": "term",
+      "value": "شب",
+      "qualifiers": {
+        "ipa": "ʃæb",
+        "highlight": "ش",
+        "sound": "ʃ",
+        "reading": "sh",
+        "name": "شین (shin)",
+        "forms": ["ش", "شـ", "ـشـ", "ـش"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.sad",
+      "fact_kind": "term",
+      "value": "صندلی",
+      "qualifiers": {
+        "ipa": "sændæli",
+        "highlight": "ص",
+        "sound": "s",
+        "reading": "s",
+        "name": "صاد (sād)",
+        "forms": ["ص", "صـ", "ـصـ", "ـص"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.dad",
+      "fact_kind": "term",
+      "value": "مریض",
+      "qualifiers": {
+        "ipa": "mæɾiz",
+        "highlight": "ض",
+        "sound": "z",
+        "reading": "z",
+        "name": "ضاد (zād)",
+        "forms": ["ض", "ضـ", "ـضـ", "ـض"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.tah",
+      "fact_kind": "term",
+      "value": "طلا",
+      "qualifiers": {
+        "ipa": "tælɒ",
+        "highlight": "ط",
+        "sound": "t",
+        "reading": "t",
+        "name": "طا (tā)",
+        "forms": ["ط", "طـ", "ـطـ", "ـط"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.zah",
+      "fact_kind": "term",
+      "value": "ظرف",
+      "qualifiers": {
+        "ipa": "zæɾf",
+        "highlight": "ظ",
+        "sound": "z",
+        "reading": "z",
+        "name": "ظا (zā)",
+        "forms": ["ظ", "ظـ", "ـظـ", "ـظ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.ain",
+      "fact_kind": "term",
+      "value": "عسل",
+      "qualifiers": {
+        "ipa": "ʔæsæl",
+        "highlight": "ع",
+        "sound": "ʔ",
+        "reading": "ʼ",
+        "name": "عین (eyn)",
+        "forms": ["ع", "عـ", "ـعـ", "ـع"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.ghain",
+      "fact_kind": "term",
+      "value": "غار",
+      "qualifiers": {
+        "ipa": "ɢɒɾ",
+        "highlight": "غ",
+        "sound": "ɢ",
+        "reading": "gh",
+        "name": "غین (gheyn)",
+        "forms": ["غ", "غـ", "ـغـ", "ـغ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.feh",
+      "fact_kind": "term",
+      "value": "فیل",
+      "qualifiers": {
+        "ipa": "fil",
+        "highlight": "ف",
+        "sound": "f",
+        "reading": "f",
+        "name": "فِ (fe)",
+        "forms": ["ف", "فـ", "ـفـ", "ـف"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.qaf",
+      "fact_kind": "term",
+      "value": "قلم",
+      "qualifiers": {
+        "ipa": "ɢælæm",
+        "highlight": "ق",
+        "sound": "ɢ",
+        "reading": "gh",
+        "name": "قاف (ghāf)",
+        "forms": ["ق", "قـ", "ـقـ", "ـق"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.kaf",
+      "fact_kind": "term",
+      "value": "کتاب",
+      "qualifiers": {
+        "ipa": "ketɒb",
+        "highlight": "ک",
+        "sound": "k",
+        "reading": "k",
+        "name": "کاف (kāf)",
+        "forms": ["ک", "کـ", "ـکـ", "ـک"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.gaf",
+      "fact_kind": "term",
+      "value": "گربه",
+      "qualifiers": {
+        "ipa": "ɡoɾbe",
+        "highlight": "گ",
+        "sound": "ɡ",
+        "reading": "g",
+        "name": "گاف (gāf)",
+        "forms": ["گ", "گـ", "ـگـ", "ـگ"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.lam",
+      "fact_kind": "term",
+      "value": "لب",
+      "qualifiers": {
+        "ipa": "læb",
+        "highlight": "ل",
+        "sound": "l",
+        "reading": "l",
+        "name": "لام (lām)",
+        "forms": ["ل", "لـ", "ـلـ", "ـل"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.meem",
+      "fact_kind": "term",
+      "value": "مداد",
+      "qualifiers": {
+        "ipa": "medɒd",
+        "highlight": "م",
+        "sound": "m",
+        "reading": "m",
+        "name": "میم (mim)",
+        "forms": ["م", "مـ", "ـمـ", "ـم"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.noon",
+      "fact_kind": "term",
+      "value": "نمک",
+      "qualifiers": {
+        "ipa": "næmæk",
+        "highlight": "ن",
+        "sound": "n",
+        "reading": "n",
+        "name": "نون (nun)",
+        "forms": ["ن", "نـ", "ـنـ", "ـن"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.waw",
+      "fact_kind": "term",
+      "value": "وان",
+      "qualifiers": {"ipa": "vɒn", "highlight": "و", "sound": "v", "reading": "v/u/o", "name": "واو (vāv)", "forms": ["و", "ـو"]}
+    },
+    {
+      "fact_id": "writing.persian.example.heh",
+      "fact_kind": "term",
+      "value": "هویج",
+      "qualifiers": {
+        "ipa": "hævidʒ",
+        "highlight": "ه",
+        "sound": "h",
+        "reading": "h",
+        "name": "هِ (he)",
+        "forms": ["ه", "هـ", "ـهـ", "ـه"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.yeh",
+      "fact_kind": "term",
+      "value": "یخ",
+      "qualifiers": {
+        "ipa": "jæx",
+        "highlight": "ی",
+        "sound": "j",
+        "reading": "y/i",
+        "name": "یِ (ye)",
+        "forms": ["ی", "یـ", "ـیـ", "ـی"]
+      }
+    },
+    {
+      "fact_id": "writing.persian.example.hamza",
+      "fact_kind": "term",
+      "value": "جزء",
+      "qualifiers": {"ipa": "dʒozʔ", "highlight": "ء", "sound": "ʔ", "reading": "ʼ", "name": "همزه (hamze)"}
+    },
+    {
+      "fact_id": "writing.persian.example.alef_hamza_above",
+      "fact_kind": "term",
+      "value": "مأمور",
+      "qualifiers": {"ipa": "mæʔmuɾ", "highlight": "أ", "sound": "ʔ", "reading": "ʼ", "forms": ["أ", "ـأ"]}
+    },
+    {
+      "fact_id": "writing.persian.example.waw_hamza",
+      "fact_kind": "term",
+      "value": "مؤمن",
+      "qualifiers": {"ipa": "moʔmen", "highlight": "ؤ", "sound": "ʔ", "reading": "ʼ", "forms": ["ؤ", "ـؤ"]}
+    },
+    {
+      "fact_id": "writing.persian.example.yeh_hamza",
+      "fact_kind": "term",
+      "value": "رئیس",
+      "qualifiers": {"ipa": "ɾæʔis", "highlight": "ئ", "sound": "ʔ", "reading": "ʼ", "forms": ["ئ", "ئـ", "ـئـ", "ـئ"]}
+    },
+    {
+      "fact_id": "writing.persian.example.comma",
+      "fact_kind": "term",
+      "value": "کتاب، قلم، دفتر",
+      "qualifiers": {"ipa": "ketɒb ɢælæm dæftæɾ", "highlight": "،", "name": "ویرگول (virgul)"}
+    },
+    {
+      "fact_id": "writing.persian.example.question_mark",
+      "fact_kind": "term",
+      "value": "این چیست؟",
+      "qualifiers": {"ipa": "in tʃist", "highlight": "؟", "name": "علامت سؤال (alāmat-e soāl)"}
+    },
+    {
+      "fact_id": "writing.persian.example.semicolon",
+      "fact_kind": "term",
+      "value": "من دانشجو هستم؛ او معلم است",
+      "qualifiers": {"ipa": "mæn dɒneʃdʒu hæstæm u moʔællem æst", "highlight": "؛", "name": "نقطه‌ویرگول (noghte-virgul)"}
+    },
+    {
+      "fact_id": "writing.persian.example.guillemets",
+      "fact_kind": "term",
+      "value": "«سلام»",
+      "qualifiers": {"ipa": "sælɒm", "highlight": "«", "name": "گیومه (giyume)"}
+    },
+    {
+      "fact_id": "writing.persian.mark.fatha",
+      "fact_kind": "term",
+      "value": "دَ",
+      "qualifiers": {"mark_id": "fatha", "role": "short_vowel", "example": "دَر", "example_ipa": "dæɾ"}
+    },
+    {
+      "fact_id": "writing.persian.mark.kasra",
+      "fact_kind": "term",
+      "value": "دِ",
+      "qualifiers": {"mark_id": "kasra", "role": "short_vowel", "example": "دِل", "example_ipa": "del"}
+    },
+    {
+      "fact_id": "writing.persian.mark.damma",
+      "fact_kind": "term",
+      "value": "دُ",
+      "qualifiers": {"mark_id": "damma", "role": "short_vowel", "example": "دُم", "example_ipa": "dom"}
+    },
+    {
+      "fact_id": "writing.persian.mark.sukun",
+      "fact_kind": "term",
+      "value": "فْ",
+      "qualifiers": {"mark_id": "sukun", "role": "no_vowel", "example": "هَفْت", "example_ipa": "hæft"}
+    },
+    {
+      "fact_id": "writing.persian.mark.shadda",
+      "fact_kind": "term",
+      "value": "وّ",
+      "qualifiers": {"mark_id": "shadda", "role": "doubling", "example": "اوّل", "example_ipa": "ævvæl"}
+    },
+    {
+      "fact_id": "writing.persian.mark.hamza",
+      "fact_kind": "term",
+      "value": "ئ",
+      "qualifiers": {"mark_id": "hamza", "role": "glottal_stop", "example": "مسئله", "example_ipa": "mæsʔæle"}
+    },
+    {
+      "fact_id": "writing.persian.mark.maddah",
+      "fact_kind": "term",
+      "value": "آ",
+      "qualifiers": {"mark_id": "maddah", "role": "vowel_quality", "example": "آسمان", "example_ipa": "ɒsmɒn"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}
