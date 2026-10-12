@@ -56,7 +56,9 @@
     "family.japonic": "Japonic",
     "branch.japanesic": "Japanese",
     "family.koreanic": "Koreanic",
-    "branch.korean": "Korean"
+    "branch.korean": "Korean",
+    "family.turkic": "Turkic",
+    "branch.oghuz": "Oghuz"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -94,8 +96,11 @@
     "uk:hook.decoy.2": "yes",
     "ko:hook.target": "hello",
     "ko:hook.decoy.1": "thank you",
-    "ko:hook.decoy.2": "water"
+    "ko:hook.decoy.2": "water",
+    "tr:hook.target": "hello",
+    "tr:hook.decoy.1": "thank you",
+    "tr:hook.decoy.2": "yes"
   },
   "review_state": "candidate",
-  "version": 16
+  "version": 18
 }

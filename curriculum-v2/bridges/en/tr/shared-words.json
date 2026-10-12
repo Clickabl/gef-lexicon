@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "tr",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "loanwords_between_english_and_turkish",
+      "kind": "helpful_transfer",
+      "text": "English and Turkish are not related, so these are loanwords, not cousins. Most of the list is English words that came from Turkish, often by way of French, Italian, Dutch or Polish, and many reached Turkish from Arabic or Persian first (coffee, kebab, kiosk). “Tulip” comes from the Turkish word for a thin cloth, not for the flower. The last seven go the other way: Turkish borrowed them from French or English and respelled them the way Turkish sounds.",
+      "pairs": [
+        {"from": "yogurt", "to": "yoğurt", "to_ipa": "joˈuɾt"},
+        {"from": "coffee", "to": "kahve", "to_ipa": "kahˈve"},
+        {"from": "kebab", "to": "kebap", "to_ipa": "keˈbap"},
+        {"from": "baklava", "to": "baklava", "to_ipa": "baklaˈva"},
+        {"from": "kiosk", "to": "köşk", "to_ipa": "køʃk", "to_meaning": "a pavilion, a small villa"},
+        {"from": "tulip", "to": "tülbent", "to_ipa": "tylˈbent", "to_meaning": "muslin, a thin cloth"},
+        {"from": "divan", "to": "divan", "to_ipa": "diˈvan"},
+        {"from": "horde", "to": "ordu", "to_ipa": "oɾˈdu", "to_meaning": "army"},
+        {"from": "kismet", "to": "kısmet", "to_ipa": "kɯsˈmet", "to_meaning": "fate, luck"},
+        {"from": "bosh", "to": "boş", "to_ipa": "boʃ", "to_meaning": "empty"},
+        {"from": "pilaf", "to": "pilav", "to_ipa": "piˈlav"},
+        {"from": "sherbet", "to": "şerbet", "to_ipa": "ʃeɾˈbet"},
+        {"from": "fez", "to": "fes", "to_ipa": "fes"},
+        {"from": "kilim", "to": "kilim", "to_ipa": "kiˈlim"},
+        {"from": "television", "to": "televizyon", "to_ipa": "televizˈjon"},
+        {"from": "bicycle", "to": "bisiklet", "to_ipa": "bisikˈlet"},
+        {"from": "bus", "to": "otobüs", "to_ipa": "otoˈbys"},
+        {"from": "hotel", "to": "otel", "to_ipa": "oˈtel"},
+        {"from": "train", "to": "tren", "to_ipa": "tɾen"},
+        {"from": "sandwich", "to": "sandviç", "to_ipa": "sandˈvitʃ"},
+        {"from": "T-shirt", "to": "tişört", "to_ipa": "tiˈʃøɾt"}
+      ]
+    },
+    {
+      "note_id": "same_spelling_different_meaning",
+      "kind": "false_friend",
+      "text": "A few Turkish words are spelled exactly like English ones but mean something else. It is pure coincidence, not a shared root, so read them as Turkish words.",
+      "pairs": [
+        {"from": "at", "to": "at", "to_ipa": "at", "to_meaning": "a horse"},
+        {"from": "bin", "to": "bin", "to_ipa": "bin", "to_meaning": "a thousand"},
+        {"from": "ham", "to": "ham", "to_ipa": "ham", "to_meaning": "raw, unripe"},
+        {"from": "pasta", "to": "pasta", "to_ipa": "pasˈta", "to_meaning": "cake, pastry"},
+        {"from": "son", "to": "son", "to_ipa": "son", "to_meaning": "last, the end"},
+        {"from": "ten", "to": "ten", "to_ipa": "ten", "to_meaning": "skin"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

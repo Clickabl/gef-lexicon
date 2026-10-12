@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.tr.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "tr",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "agglutinating"},
+    {"fact_id": "trait.word_building.example.1", "fact_kind": "term", "value": "evlerimizden"},
+    {"fact_id": "trait.word_building.example.2", "fact_kind": "term", "value": "kitaplarımızdan"},
+    {"fact_id": "trait.word_building.example.3", "fact_kind": "term", "value": "anlayamıyorum"},
+    {"fact_id": "trait.noun_gender", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.noun_gender.example.1", "fact_kind": "term", "value": "O geliyor."},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.classifiers.example.1", "fact_kind": "term", "value": "üç elma"},
+    {
+      "fact_id": "trait.formal_you",
+      "fact_kind": "category",
+      "value": "distinct",
+      "qualifiers": {"informal": "sen", "formal": "siz"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "Nasılsın?",
+      "qualifiers": {"register": "informal"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "Nasılsınız?",
+      "qualifiers": {"register": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "gitmek"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "gidiyorum / gidiyorsun / gidiyor / gidiyoruz / gidiyorsunuz / gidiyorlar"
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "often_dropped"},
+    {"fact_id": "trait.subject_pronouns.example.1", "fact_kind": "term", "value": "Geliyorum."},
+    {
+      "fact_id": "trait.cases",
+      "fact_kind": "category",
+      "value": "some",
+      "qualifiers": {"count": 6}
+    },
+    {"fact_id": "trait.cases.example.1", "fact_kind": "term", "value": "ev / evi / eve / evde / evden / evin"},
+    {"fact_id": "trait.cases.example.2", "fact_kind": "term", "value": "Okula gidiyorum."},
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {"fact_id": "trait.adjective_position.example.1", "fact_kind": "term", "value": "büyük ev"},
+    {"fact_id": "trait.adjective_position.example.2", "fact_kind": "term", "value": "yeni kitap"},
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "indefinite_only"},
+    {"fact_id": "trait.articles.example.1", "fact_kind": "term", "value": "Kitap masada."},
+    {"fact_id": "trait.articles.example.2", "fact_kind": "term", "value": "Bir kitap okuyorum."},
+    {"fact_id": "trait.questions", "fact_kind": "category", "value": "particle"},
+    {"fact_id": "trait.questions.example.1", "fact_kind": "term", "value": "Çay içiyor musun?"},
+    {"fact_id": "trait.questions.example.2", "fact_kind": "term", "value": "Bu senin kitabın mı?"},
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "sov"},
+    {"fact_id": "trait.word_order.example.1", "fact_kind": "term", "value": "Ben çay içiyorum."},
+    {"fact_id": "trait.word_order.example.2", "fact_kind": "term", "value": "Kedi balığı yiyor."}
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

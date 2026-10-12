@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.tr.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "tr",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "c", "ɟ", "f", "v", "s", "z", "ʃ", "ʒ", "h", "tʃ", "dʒ", "m", "n", "l", "ɾ", "j"],
+      "qualifiers": {"variety": "standard_turkish"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "y", "ɯ", "u", "e", "ø", "a", "o"],
+      "qualifiers": {"variety": "standard_turkish"}
+    },
+    {
+      "fact_id": "sounds.tricky.dotless_i",
+      "fact_kind": "term",
+      "value": "ışık",
+      "qualifiers": {"ipa": "ɯ", "spelling": "ı", "word_ipa": "ɯˈʃɯk", "note_id": "tr_dotless_i"}
+    },
+    {
+      "fact_id": "sounds.tricky.o_umlaut",
+      "fact_kind": "term",
+      "value": "göz",
+      "qualifiers": {"ipa": "ø", "spelling": "ö", "word_ipa": "ɡøz", "note_id": "tr_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.tricky.u_umlaut",
+      "fact_kind": "term",
+      "value": "üzüm",
+      "qualifiers": {"ipa": "y", "spelling": "ü", "word_ipa": "yˈzym", "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.soft_g",
+      "fact_kind": "term",
+      "value": "dağ",
+      "qualifiers": {"spelling": "ğ", "word_ipa": "daː", "note_id": "tr_soft_g", "silent": true}
+    },
+    {
+      "fact_id": "sounds.tricky.c",
+      "fact_kind": "term",
+      "value": "cam",
+      "qualifiers": {"ipa": "dʒ", "spelling": "c", "word_ipa": "dʒam", "note_id": "tr_c"}
+    },
+    {
+      "fact_id": "sounds.tricky.ch",
+      "fact_kind": "term",
+      "value": "çay",
+      "qualifiers": {"ipa": "tʃ", "spelling": "ç", "word_ipa": "tʃaj", "note_id": "tr_ch"}
+    },
+    {
+      "fact_id": "sounds.tricky.j",
+      "fact_kind": "term",
+      "value": "jilet",
+      "qualifiers": {"ipa": "ʒ", "spelling": "j", "word_ipa": "ʒiˈlet", "note_id": "tr_j"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "kar",
+      "qualifiers": {"ipa": "ɾ", "spelling": "r", "word_ipa": "kaɾ", "note_id": "tr_tapped_r"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "dış",
+      "qualifiers": {"ipa": "dɯʃ", "pair": 1, "note_id": "tr_dotless_i"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "diş",
+      "qualifiers": {"ipa": "diʃ", "pair": 1, "note_id": "tr_dotless_i"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "gol",
+      "qualifiers": {"ipa": "ɡol", "pair": 2, "note_id": "tr_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "göl",
+      "qualifiers": {"ipa": "ɡøl", "pair": 2, "note_id": "tr_o_umlaut"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "cam",
+      "qualifiers": {"ipa": "dʒam", "pair": 3, "note_id": "tr_c"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "çam",
+      "qualifiers": {"ipa": "tʃam", "pair": 3, "note_id": "tr_c"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "un",
+      "qualifiers": {"ipa": "un", "pair": 4, "note_id": "front_rounded_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "ün",
+      "qualifiers": {"ipa": "yn", "pair": 4, "note_id": "front_rounded_vowel"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_final"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

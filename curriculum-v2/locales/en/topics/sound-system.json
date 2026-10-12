@@ -120,7 +120,14 @@
     "sound.ko_eo_vowel": "Open your mouth a little and say a short “uh”, somewhere between the “u” of “cup” and the “aw” of “law”.",
     "sound.ko_rieul": "Between vowels, ㄹ is a quick tap of the tongue tip, like the middle of American “butter”. At the end of a syllable it is a clear “l”, as in 달.",
     "sound.ko_final_stops": "At the end of a syllable only seven sounds are left: k, n, t, l, m, p and ng. Several letters collapse into one: ㄱ ㅋ ㄲ all end in a held k, and ㅌ ㅅ ㅈ ㅊ ㄷ all end in a held t. Close your mouth for the sound and don’t let the air out.",
-    "sound.ko_s_before_i": "Before ㅣ and the y-vowels, ㅅ sounds like a light “sh”: 시 is “shi”, not “si”."
+    "sound.ko_s_before_i": "Before ㅣ and the y-vowels, ㅅ sounds like a light “sh”: 시 is “shi”, not “si”.",
+    "sound.tr_dotless_i": "A vowel with no dot. Say “ee”, then pull your tongue back and keep your lips flat and relaxed. ı (no dot) is a different sound from i (with a dot).",
+    "sound.tr_o_umlaut": "Say “eh”, but round your lips as if for “oh”. It is close to the vowel in British “fur”, said without the r.",
+    "sound.tr_soft_g": "ğ is never a “g” sound. It is silent and stretches the vowel before it, so dağ sounds like “daa”.",
+    "sound.tr_c": "Turkish c is always the “j” of “jam”, never a “k” or an “s”.",
+    "sound.tr_ch": "ç is the “ch” of “church”. Turkish writes that sound with the one letter ç.",
+    "sound.tr_j": "j is the soft “zh” of “measure”, not the “j” of “jam” (that is c). It turns up mostly in borrowed words.",
+    "sound.tr_tapped_r": "A quick single tap of the tongue tip just behind your top teeth, like the middle of American “butter”. It is not the English r."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -287,8 +294,24 @@
     "ko:sounds.contrast.3.a": "to buy",
     "ko:sounds.contrast.3.b": "to be cheap",
     "ko:sounds.contrast.4.a": "meat",
-    "ko:sounds.contrast.4.b": "there"
+    "ko:sounds.contrast.4.b": "there",
+    "tr:sounds.tricky.dotless_i": "light",
+    "tr:sounds.tricky.o_umlaut": "eye",
+    "tr:sounds.tricky.u_umlaut": "grapes",
+    "tr:sounds.tricky.soft_g": "mountain",
+    "tr:sounds.tricky.c": "glass",
+    "tr:sounds.tricky.ch": "tea",
+    "tr:sounds.tricky.j": "razor blade",
+    "tr:sounds.tricky.r": "snow",
+    "tr:sounds.contrast.1.a": "outside",
+    "tr:sounds.contrast.1.b": "tooth",
+    "tr:sounds.contrast.2.a": "goal (in sport)",
+    "tr:sounds.contrast.2.b": "lake",
+    "tr:sounds.contrast.3.a": "glass",
+    "tr:sounds.contrast.3.b": "pine tree",
+    "tr:sounds.contrast.4.a": "flour",
+    "tr:sounds.contrast.4.b": "fame, reputation"
   },
   "review_state": "candidate",
-  "version": 18
+  "version": 20
 }

@@ -1,46 +1,13 @@
 {
   "schema": "curriculum-v2-slots/1",
   "notes": "The slots a language description can fill. A new language is data only: copy the skeleton (npm run curriculum:skeleton), fill what applies, run npm run validate and npm run curriculum:coverage. A new value or label id is added here first. See ../INTRO_FACTS.md.",
-  "regions": [
-    "europe",
-    "americas",
-    "africa",
-    "asia",
-    "oceania"
-  ],
+  "regions": ["europe", "americas", "africa", "asia", "oceania"],
   "writing": {
-    "layer_kinds": [
-      "alphabet",
-      "abjad",
-      "abugida",
-      "syllabary",
-      "logographic",
-      "featural",
-      "romanization"
-    ],
-    "symbol_kinds": [
-      "alphabet",
-      "abjad",
-      "abugida",
-      "syllabary",
-      "featural",
-      "romanization"
-    ],
-    "layer_roles": [
-      "primary",
-      "aid",
-      "alternate"
-    ],
-    "directions": [
-      "ltr",
-      "rtl"
-    ],
-    "vowels": [
-      "all_written",
-      "marks_optional",
-      "inherent",
-      "not_applicable"
-    ],
+    "layer_kinds": ["alphabet", "abjad", "abugida", "syllabary", "logographic", "featural", "romanization"],
+    "symbol_kinds": ["alphabet", "abjad", "abugida", "syllabary", "featural", "romanization"],
+    "layer_roles": ["primary", "aid", "alternate"],
+    "directions": ["ltr", "rtl"],
+    "vowels": ["all_written", "marks_optional", "inherent", "not_applicable"],
     "mark_ids": [
       "acute",
       "grave",
@@ -97,106 +64,25 @@
     ]
   },
   "sound": {
-    "tone_systems": [
-      "none",
-      "contour",
-      "register",
-      "pitch_accent"
-    ],
-    "stress_patterns": [
-      "rule_with_written_accents",
-      "mostly_penultimate",
-      "phrase_final",
-      "marked_on_every_word",
-      "unpredictable",
-      "rule_by_syllable_weight",
-      "mostly_final",
-      "fixed_initial",
-      "not_applicable"
-    ],
-    "predictability": [
-      "high",
-      "medium",
-      "low"
-    ]
+    "tone_systems": ["none", "contour", "register", "pitch_accent"],
+    "stress_patterns": ["rule_with_written_accents", "mostly_penultimate", "phrase_final", "marked_on_every_word", "unpredictable", "rule_by_syllable_weight", "mostly_final", "fixed_initial", "not_applicable"],
+    "predictability": ["high", "medium", "low"]
   },
   "grammar": {
-    "trait_order": [
-      "word_building",
-      "noun_gender",
-      "classifiers",
-      "formal_you",
-      "verb_endings",
-      "subject_pronouns",
-      "cases",
-      "dual_number",
-      "adjective_position",
-      "articles",
-      "questions",
-      "word_order"
-    ],
+    "trait_order": ["word_building", "noun_gender", "classifiers", "formal_you", "verb_endings", "subject_pronouns", "cases", "dual_number", "adjective_position", "articles", "questions", "word_order"],
     "traits": {
-      "word_building": [
-        "isolating",
-        "inflecting",
-        "agglutinating",
-        "root_and_pattern"
-      ],
-      "noun_gender": [
-        "none",
-        "two",
-        "three",
-        "classes"
-      ],
-      "classifiers": [
-        "none",
-        "required"
-      ],
-      "formal_you": [
-        "none",
-        "distinct",
-        "levels"
-      ],
-      "verb_endings": [
-        "none",
-        "few",
-        "many"
-      ],
-      "subject_pronouns": [
-        "required",
-        "often_dropped",
-        "context_dependent"
-      ],
-      "cases": [
-        "none",
-        "pronouns_only",
-        "some"
-      ],
-      "dual_number": [
-        "none",
-        "present"
-      ],
-      "adjective_position": [
-        "before_noun",
-        "after_noun",
-        "either"
-      ],
-      "articles": [
-        "none",
-        "definite_indefinite",
-        "definite_only"
-      ],
-      "questions": [
-        "auxiliary_do",
-        "intonation_or_inversion",
-        "particle"
-      ],
-      "word_order": [
-        "svo",
-        "flexible",
-        "sov",
-        "vso"
-      ]
+      "word_building": ["isolating", "inflecting", "agglutinating", "root_and_pattern"],
+      "noun_gender": ["none", "two", "three", "classes"],
+      "classifiers": ["none", "required"],
+      "formal_you": ["none", "distinct", "levels"],
+      "verb_endings": ["none", "few", "many"],
+      "subject_pronouns": ["required", "often_dropped", "context_dependent"],
+      "cases": ["none", "pronouns_only", "some"],
+      "dual_number": ["none", "present"],
+      "adjective_position": ["before_noun", "after_noun", "either"],
+      "articles": ["none", "definite_indefinite", "definite_only", "indefinite_only"],
+      "questions": ["auxiliary_do", "intonation_or_inversion", "particle"],
+      "word_order": ["svo", "flexible", "sov", "vso"]
     }
   }
 }

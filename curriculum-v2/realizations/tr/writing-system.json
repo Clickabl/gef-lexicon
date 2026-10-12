@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.tr.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "tr",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.latin.symbols",
+      "fact_kind": "term",
+      "value": ["a", "b", "c", "ç", "d", "e", "f", "g", "ğ", "h", "ı", "i", "j", "k", "l", "m", "n", "o", "ö", "p", "r", "s", "ş", "t", "u", "ü", "v", "y", "z"]
+    },
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": ["â", "î", "û"]},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.group.1", "fact_kind": "term", "value": ["m", "n", "b", "d", "f"]},
+    {"fact_id": "writing.latin.group.2", "fact_kind": "term", "value": ["k", "s", "l", "p", "h"]},
+    {"fact_id": "writing.latin.group.3", "fact_kind": "term", "value": ["a", "e", "i", "o", "u"]},
+    {"fact_id": "writing.latin.group.4", "fact_kind": "term", "value": ["t", "v", "y", "z"]},
+    {"fact_id": "writing.latin.group.5", "fact_kind": "term", "value": ["ş", "ç", "c", "j", "r"]},
+    {"fact_id": "writing.latin.group.6", "fact_kind": "term", "value": ["g", "ğ", "ı", "ö", "ü"]},
+    {
+      "fact_id": "writing.latin.example.a",
+      "fact_kind": "term",
+      "value": "ay",
+      "qualifiers": {"ipa": "aj", "highlight": "a", "sound": "a", "name": "a"}
+    },
+    {
+      "fact_id": "writing.latin.example.b",
+      "fact_kind": "term",
+      "value": "bal",
+      "qualifiers": {"ipa": "bal", "highlight": "b", "sound": "b", "name": "be"}
+    },
+    {
+      "fact_id": "writing.latin.example.c",
+      "fact_kind": "term",
+      "value": "cam",
+      "qualifiers": {"ipa": "dʒam", "highlight": "c", "sound": "dʒ", "name": "ce"}
+    },
+    {
+      "fact_id": "writing.latin.example.c_cedilla",
+      "fact_kind": "term",
+      "value": "çay",
+      "qualifiers": {"ipa": "tʃaj", "highlight": "ç", "sound": "tʃ", "name": "çe", "looks_like": "c"}
+    },
+    {
+      "fact_id": "writing.latin.example.d",
+      "fact_kind": "term",
+      "value": "dil",
+      "qualifiers": {"ipa": "dil", "highlight": "d", "sound": "d", "name": "de"}
+    },
+    {
+      "fact_id": "writing.latin.example.e",
+      "fact_kind": "term",
+      "value": "ev",
+      "qualifiers": {"ipa": "ev", "highlight": "e", "sound": "e", "name": "e"}
+    },
+    {
+      "fact_id": "writing.latin.example.f",
+      "fact_kind": "term",
+      "value": "fil",
+      "qualifiers": {"ipa": "fil", "highlight": "f", "sound": "f", "name": "fe"}
+    },
+    {
+      "fact_id": "writing.latin.example.g",
+      "fact_kind": "term",
+      "value": "gece",
+      "qualifiers": {"ipa": "ɡeˈdʒe", "highlight": "g", "sound": "ɡ", "name": "ge"}
+    },
+    {
+      "fact_id": "writing.latin.example.g_breve",
+      "fact_kind": "term",
+      "value": "dağ",
+      "qualifiers": {"ipa": "daː", "highlight": "ğ", "sound": "ː", "name": "yumuşak ge", "looks_like": "g"}
+    },
+    {
+      "fact_id": "writing.latin.example.h",
+      "fact_kind": "term",
+      "value": "hava",
+      "qualifiers": {"ipa": "haˈva", "highlight": "h", "sound": "h", "name": "he"}
+    },
+    {
+      "fact_id": "writing.latin.example.dotless_i",
+      "fact_kind": "term",
+      "value": "ışık",
+      "qualifiers": {"ipa": "ɯˈʃɯk", "highlight": "ı", "sound": "ɯ", "name": "ı", "looks_like": "i"}
+    },
+    {
+      "fact_id": "writing.latin.example.i",
+      "fact_kind": "term",
+      "value": "ip",
+      "qualifiers": {"ipa": "ip", "highlight": "i", "sound": "i", "name": "i"}
+    },
+    {
+      "fact_id": "writing.latin.example.j",
+      "fact_kind": "term",
+      "value": "jilet",
+      "qualifiers": {"ipa": "ʒiˈlet", "highlight": "j", "sound": "ʒ", "name": "je"}
+    },
+    {
+      "fact_id": "writing.latin.example.k",
+      "fact_kind": "term",
+      "value": "kedi",
+      "qualifiers": {"ipa": "keˈdi", "highlight": "k", "sound": "k", "name": "ke"}
+    },
+    {
+      "fact_id": "writing.latin.example.l",
+      "fact_kind": "term",
+      "value": "lale",
+      "qualifiers": {"ipa": "laˈle", "highlight": "l", "sound": "l", "name": "le"}
+    },
+    {
+      "fact_id": "writing.latin.example.m",
+      "fact_kind": "term",
+      "value": "masa",
+      "qualifiers": {"ipa": "maˈsa", "highlight": "m", "sound": "m", "name": "me"}
+    },
+    {
+      "fact_id": "writing.latin.example.n",
+      "fact_kind": "term",
+      "value": "nar",
+      "qualifiers": {"ipa": "naɾ", "highlight": "n", "sound": "n", "name": "ne"}
+    },
+    {
+      "fact_id": "writing.latin.example.o",
+      "fact_kind": "term",
+      "value": "ok",
+      "qualifiers": {"ipa": "ok", "highlight": "o", "sound": "o", "name": "o"}
+    },
+    {
+      "fact_id": "writing.latin.example.o_umlaut",
+      "fact_kind": "term",
+      "value": "ördek",
+      "qualifiers": {"ipa": "øɾˈdek", "highlight": "ö", "sound": "ø", "name": "ö", "looks_like": "o"}
+    },
+    {
+      "fact_id": "writing.latin.example.p",
+      "fact_kind": "term",
+      "value": "para",
+      "qualifiers": {"ipa": "paˈɾa", "highlight": "p", "sound": "p", "name": "pe"}
+    },
+    {
+      "fact_id": "writing.latin.example.r",
+      "fact_kind": "term",
+      "value": "resim",
+      "qualifiers": {"ipa": "ɾeˈsim", "highlight": "r", "sound": "ɾ", "name": "re"}
+    },
+    {
+      "fact_id": "writing.latin.example.s",
+      "fact_kind": "term",
+      "value": "su",
+      "qualifiers": {"ipa": "su", "highlight": "s", "sound": "s", "name": "se"}
+    },
+    {
+      "fact_id": "writing.latin.example.s_cedilla",
+      "fact_kind": "term",
+      "value": "şapka",
+      "qualifiers": {"ipa": "ʃapˈka", "highlight": "ş", "sound": "ʃ", "name": "şe", "looks_like": "s"}
+    },
+    {
+      "fact_id": "writing.latin.example.t",
+      "fact_kind": "term",
+      "value": "top",
+      "qualifiers": {"ipa": "top", "highlight": "t", "sound": "t", "name": "te"}
+    },
+    {
+      "fact_id": "writing.latin.example.u",
+      "fact_kind": "term",
+      "value": "un",
+      "qualifiers": {"ipa": "un", "highlight": "u", "sound": "u", "name": "u"}
+    },
+    {
+      "fact_id": "writing.latin.example.u_umlaut",
+      "fact_kind": "term",
+      "value": "üzüm",
+      "qualifiers": {"ipa": "yˈzym", "highlight": "ü", "sound": "y", "name": "ü", "looks_like": "u"}
+    },
+    {
+      "fact_id": "writing.latin.example.v",
+      "fact_kind": "term",
+      "value": "vapur",
+      "qualifiers": {"ipa": "vaˈpuɾ", "highlight": "v", "sound": "v", "name": "ve"}
+    },
+    {
+      "fact_id": "writing.latin.example.y",
+      "fact_kind": "term",
+      "value": "yol",
+      "qualifiers": {"ipa": "jol", "highlight": "y", "sound": "j", "name": "ye"}
+    },
+    {
+      "fact_id": "writing.latin.example.z",
+      "fact_kind": "term",
+      "value": "zil",
+      "qualifiers": {"ipa": "zil", "highlight": "z", "sound": "z", "name": "ze"}
+    },
+    {
+      "fact_id": "writing.latin.mark.circumflex",
+      "fact_kind": "term",
+      "value": "â",
+      "qualifiers": {"mark_id": "circumflex", "role": "sound_change", "example": "kâğıt", "example_ipa": "caːˈɯt"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

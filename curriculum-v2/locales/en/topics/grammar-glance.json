@@ -39,7 +39,7 @@
     "trait.cases.title": "Endings on nouns",
     "trait.cases.none": "{language} nouns don’t change for their role in the sentence.",
     "trait.cases.pronouns_only": "In {language}, only pronouns change for their role in the sentence.",
-    "trait.cases.some": "In {language}, nouns, articles and adjectives change form for their role in the sentence ({count} cases).",
+    "trait.cases.some": "In {language}, nouns change form for their role in the sentence ({count} cases).",
     "trait.word_order.title": "Word order",
     "trait.word_order.svo": "{language} normally puts the subject first, then the verb, then the object.",
     "trait.word_order.flexible": "In {language}, word order is flexible, because endings show who does what.",
@@ -73,7 +73,8 @@
     "similar.base": "Like {base}:",
     "trait.subject_pronouns.context_dependent": "{language} often leaves out “I” and “you” when the context makes it clear who is meant.",
     "trait.word_order.sov": "{language} normally puts the verb at the end: the subject, then the object, then the verb.",
-    "trait.word_order.vso": "{language} often puts the verb first, before the subject."
+    "trait.word_order.vso": "{language} often puts the verb first, before the subject.",
+    "trait.articles.indefinite_only": "{language} has a word for “a” but none for “the”."
   },
   "glosses": {
     "es:trait.noun_gender.example.1": "the book",
@@ -306,8 +307,27 @@
     "ko:trait.questions.example.1": "Do you drink coffee?",
     "ko:trait.questions.example.2": "Are you going now?",
     "ko:trait.word_order.example.1": "I eat an apple.",
-    "ko:trait.word_order.example.2": "The cat drinks milk."
+    "ko:trait.word_order.example.2": "The cat drinks milk.",
+    "tr:trait.word_building.example.1": "from our houses (house + plural + our + from)",
+    "tr:trait.word_building.example.2": "from our books (the same endings, with their vowels matched to the word: -ler becomes -lar, -imiz becomes -ımız, -den becomes -dan)",
+    "tr:trait.word_building.example.3": "I can’t understand (all of this is one word)",
+    "tr:trait.noun_gender.example.1": "He is coming. She is coming. It is coming. (one word, “o”, covers all three)",
+    "tr:trait.classifiers.example.1": "three apples (the noun stays singular after a number)",
+    "tr:trait.formal_you.example.1": "How are you? (to a friend)",
+    "tr:trait.formal_you.example.2": "How are you? (formal)",
+    "tr:trait.verb_endings.example.1": "I am going, you are going, he or she is going, we are going, you all are going, they are going",
+    "tr:trait.subject_pronouns.example.1": "I’m coming. (there is no word for “I”: the ending -um says it)",
+    "tr:trait.cases.example.1": "house, the house (as the object), to the house, in the house, from the house, of the house",
+    "tr:trait.cases.example.2": "I’m going to school. (the ending -a means “to”)",
+    "tr:trait.adjective_position.example.1": "a big house",
+    "tr:trait.adjective_position.example.2": "a new book",
+    "tr:trait.articles.example.1": "The book is on the table. (no word for “the”)",
+    "tr:trait.articles.example.2": "I’m reading a book. (bir means “one”, and also does the job of “a”)",
+    "tr:trait.questions.example.1": "Are you drinking tea?",
+    "tr:trait.questions.example.2": "Is this your book?",
+    "tr:trait.word_order.example.1": "I drink tea. (word for word: I tea drink)",
+    "tr:trait.word_order.example.2": "The cat is eating the fish. (word for word: cat fish eats)"
   },
   "review_state": "candidate",
-  "version": 12
+  "version": 14
 }

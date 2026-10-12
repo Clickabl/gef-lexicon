@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.tr.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "tr",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "turkic",
+    "branch_ids": ["oghuz"],
+    "ancestor_language_tags": ["ota"],
+    "related_language_tags": ["az", "tk", "uz", "kk", "ky", "ug"],
+    "script_ids": ["Latn"],
+    "origin_region_ids": ["asia"],
+    "notes": "Turkish is a Turkic language of the Oghuz (Southwestern Turkic) branch. Azerbaijani and Turkmen are its closest relatives in the registry; Uzbek, Kazakh, Kyrgyz and Uyghur belong to other branches of the family. The Turkic languages began in Central Asia; Turkish took shape in Anatolia and the Balkans after Oghuz Turks settled there around the eleventh century. Its direct ancestor, Ottoman Turkish, was written in Arabic script until 1928. The Altaic hypothesis, which would link Turkic to Mongolic, Tungusic and others, is disputed and not used here. Broad family metadata for orientation only; membership of a branch does not imply mutual intelligibility."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe", "asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "Merhaba",
+      "qualifiers": {"ipa": "meɾhaˈba"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "teşekkürler",
+      "qualifiers": {"ipa": "teʃekkyɾˈleɾ"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "evet",
+      "qualifiers": {"ipa": "eˈvet"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}
