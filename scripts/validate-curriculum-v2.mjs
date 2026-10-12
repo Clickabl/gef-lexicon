@@ -44,7 +44,7 @@ const rel = (path) => relative(ROOT, path);
 const SLOTS = loadSlots(ROOT);
 const FACETS = new Set([
   'first_word', 'family_tree', 'where_spoken', 'relation_to_best', 'family_check',
-  'script_intro', 'new_letters', 'marks_and_punctuation', 'letter_check',
+  'script_intro', 'glyph_tour',
   'glyph_board', 'glyph_group', 'glyph_review',
   'sound_overview', 'tone_overview', 'tricky_sounds', 'listen_pick', 'sound_check',
   'trait_differences', 'trait_similarities', 'trait_check',
@@ -235,7 +235,10 @@ function checkWriting(lang, entry, complete) {
       }
     }
     if (letters2) {
+      // Punctuation is shown and heard but has no sound of its own to state, and may need no transliteration.
+      const punctuation = new Set(fact(entry, `writing.${layer}.punctuation`)?.value ?? []);
       for (const example of examples) {
+        if (punctuation.has(example.qualifiers?.highlight)) continue;
         if (kind !== 'logographic' && !isText(example.qualifiers?.sound)) fail(`${where}: ${example.fact_id} needs qualifiers.sound (what the symbol itself sounds like)`);
         if ((script !== 'Latn' || kind === 'logographic') && !isText(example.qualifiers?.reading)) fail(`${where}: ${example.fact_id} needs qualifiers.reading (a Latin transliteration), the script of layer ${layer} is not Latin`);
       }

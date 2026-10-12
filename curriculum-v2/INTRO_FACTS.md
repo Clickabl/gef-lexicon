@@ -105,8 +105,7 @@ Japanese kana and kanji; Serbian Cyrillic and Latin). Capabilities: `explanation
 Every symbol, Latin `a` to `z` included, needs a `writing.{L}.example.*` with that `highlight` (the lesson teaches letters with a word
 and a sound for each), and the layer's `group.*` facts cover every symbol once; a `logographic` layer is carried by its examples (at
 least six) and groups them. `slots_version: 2` on a realization declares this letter data present; the validator checks it for those
-realizations (every complete language moves to 2). Facets: `script_intro` (layers, kind, direction, case, joining, how much is shared), `new_letters`
-(symbols and characters missing from every base, with examples), `marks_and_punctuation`, `letter_check`.
+realizations (every complete language moves to 2). Facets: `script_intro` (the writing at a glance as a few labelled facts and a word to hear: which way it reads, what kind of writing, how many letters, what is new; only what differs from the writing the learner already reads) and `glyph_tour` (the symbols new to this learner on a tappable board; the letters themselves are learned in the script lesson, a leaf of this stop).
 
 ## The script lesson (a leaf of stop 2)
 

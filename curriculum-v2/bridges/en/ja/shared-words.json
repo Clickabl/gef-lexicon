@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "ja",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_japanese",
+      "kind": "helpful_transfer",
+      "text": "English and Japanese are not related, so don’t expect look-alike cousins. These are Japanese words that English borrowed, so you already know them. “Tycoon”, “rickshaw”, “honcho” and “skosh” are older borrowings and sound less obviously Japanese. The Japanese is shown in kana, the way you will learn to read it; most of these words also have kanji spellings.",
+      "pairs": [
+        {"from": "tsunami", "to": "つなみ", "to_ipa": "tsɯnami", "to_meaning": "harbour wave"},
+        {"from": "karaoke", "to": "カラオケ", "to_ipa": "kaɾaoke", "to_meaning": "empty orchestra"},
+        {"from": "sushi", "to": "すし", "to_ipa": "sɯɕi"},
+        {"from": "emoji", "to": "えもじ", "to_ipa": "emodʑi", "to_meaning": "picture letter"},
+        {"from": "origami", "to": "おりがみ", "to_ipa": "oɾiɡami", "to_meaning": "folded paper"},
+        {"from": "karate", "to": "からて", "to_ipa": "kaɾate", "to_meaning": "empty hand"},
+        {"from": "judo", "to": "じゅうどう", "to_ipa": "dʑɯːdoː", "to_meaning": "the gentle way"},
+        {"from": "haiku", "to": "はいく", "to_ipa": "haiku"},
+        {"from": "sudoku", "to": "すうどく", "to_ipa": "sɯːdokɯ", "to_meaning": "single numbers"},
+        {"from": "kimono", "to": "きもの", "to_ipa": "kimono", "to_meaning": "a thing to wear, clothing"},
+        {"from": "futon", "to": "ふとん", "to_ipa": "ɸɯtoɴ"},
+        {"from": "bonsai", "to": "ぼんさい", "to_ipa": "boɴsai", "to_meaning": "a tree planted in a tray"},
+        {"from": "manga", "to": "まんが", "to_ipa": "maɴɡa", "to_meaning": "comics"},
+        {"from": "tycoon", "to": "たいくん", "to_ipa": "taikɯɴ", "to_meaning": "great lord, an old title for the shogun"},
+        {"from": "rickshaw", "to": "じんりきしゃ", "to_ipa": "dʑiɴɾikiɕa", "to_meaning": "human-powered cart"},
+        {"from": "honcho", "to": "はんちょう", "to_ipa": "haɴtɕoː", "to_meaning": "squad leader"},
+        {"from": "skosh", "to": "すこし", "to_ipa": "sɯkoɕi", "to_meaning": "a little"}
+      ]
+    },
+    {
+      "note_id": "english_words_in_japanese",
+      "kind": "helpful_transfer",
+      "text": "Japanese has borrowed thousands of English words too. It writes them in katakana and bends them to Japanese sounds, for example by adding a vowel after most consonants. Once you can read katakana you can guess many of them.",
+      "pairs": [
+        {"from": "hotel", "to": "ホテル", "to_ipa": "hoteɾɯ"},
+        {"from": "taxi", "to": "タクシー", "to_ipa": "takɯɕiː"},
+        {"from": "camera", "to": "カメラ", "to_ipa": "kameɾa"},
+        {"from": "cake", "to": "ケーキ", "to_ipa": "keːki"},
+        {"from": "milk", "to": "ミルク", "to_ipa": "miɾɯkɯ"},
+        {"from": "computer", "to": "コンピューター", "to_ipa": "koɴpjɯːtaː"},
+        {"from": "radio", "to": "ラジオ", "to_ipa": "ɾadʑio"},
+        {"from": "tennis", "to": "テニス", "to_ipa": "tenisɯ"},
+        {"from": "ice cream", "to": "アイスクリーム", "to_ipa": "aisɯkɯɾiːmɯ"},
+        {"from": "television", "to": "テレビ", "to_ipa": "teɾebi"},
+        {"from": "game", "to": "ゲーム", "to_ipa": "ɡeːmɯ"},
+        {"from": "lemon", "to": "レモン", "to_ipa": "ɾemoɴ"}
+      ]
+    },
+    {
+      "note_id": "english_look_alikes_that_differ",
+      "kind": "false_friend",
+      "text": "Some katakana words look like English but mean something different in Japanese, because the meaning drifted or because Japanese made up its own English-looking word. Read these as Japanese words, not as English.",
+      "pairs": [
+        {"from": "mansion", "to": "マンション", "to_ipa": "maɴɕoɴ", "to_meaning": "an apartment building, a condominium"},
+        {"from": "smart", "to": "スマート", "to_ipa": "sɯmaːto", "to_meaning": "slim, slender (it can also mean stylish)"},
+        {"from": "claim", "to": "クレーム", "to_ipa": "kɯɾeːmɯ", "to_meaning": "a complaint, especially from a customer"},
+        {"from": "consent", "to": "コンセント", "to_ipa": "koɴseɴto", "to_meaning": "an electrical wall socket"},
+        {
+          "from": "naive",
+          "to": "ナイーブ",
+          "to_ipa": "naiːbɯ",
+          "to_meaning": "sensitive, delicate (it can also mean innocent)"
+        },
+        {"from": "cunning", "to": "カンニング", "to_ipa": "kaɴniɴɡɯ", "to_meaning": "cheating on a test"},
+        {
+          "from": "Viking",
+          "to": "バイキング",
+          "to_ipa": "baikiɴɡɯ",
+          "to_meaning": "a buffet, an all-you-can-eat meal (it also means the Vikings)"
+        },
+        {"from": "tension", "to": "テンション", "to_ipa": "teɴɕoɴ", "to_meaning": "high spirits, excitement"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

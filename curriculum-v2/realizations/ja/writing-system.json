@@ -1,0 +1,1041 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ja.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "ja",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["hiragana", "katakana", "kanji"]},
+    {"fact_id": "writing.hiragana.kind", "fact_kind": "category", "value": "syllabary"},
+    {"fact_id": "writing.hiragana.script", "fact_kind": "category", "value": "Hira"},
+    {"fact_id": "writing.hiragana.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.hiragana.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.hiragana.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hiragana.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hiragana.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.hiragana.symbols",
+      "fact_kind": "term",
+      "value": [
+        "あ",
+        "い",
+        "う",
+        "え",
+        "お",
+        "か",
+        "き",
+        "く",
+        "け",
+        "こ",
+        "さ",
+        "し",
+        "す",
+        "せ",
+        "そ",
+        "た",
+        "ち",
+        "つ",
+        "て",
+        "と",
+        "な",
+        "に",
+        "ぬ",
+        "ね",
+        "の",
+        "は",
+        "ひ",
+        "ふ",
+        "へ",
+        "ほ",
+        "ま",
+        "み",
+        "む",
+        "め",
+        "も",
+        "や",
+        "ゆ",
+        "よ",
+        "ら",
+        "り",
+        "る",
+        "れ",
+        "ろ",
+        "わ",
+        "を",
+        "ん"
+      ]
+    },
+    {
+      "fact_id": "writing.hiragana.marked",
+      "fact_kind": "term",
+      "value": ["が", "ぎ", "ぐ", "げ", "ご", "ざ", "じ", "ず", "ぜ", "ぞ", "だ", "ぢ", "づ", "で", "ど", "ば", "び", "ぶ", "べ", "ぼ", "ぱ", "ぴ", "ぷ", "ぺ", "ぽ", "ゃ", "ゅ", "ょ", "っ"]
+    },
+    {"fact_id": "writing.hiragana.punctuation", "fact_kind": "term", "value": ["。", "、", "「", "」"]},
+    {"fact_id": "writing.hiragana.group.1", "fact_kind": "term", "value": ["あ", "い", "う", "え", "お"]},
+    {"fact_id": "writing.hiragana.group.2", "fact_kind": "term", "value": ["か", "き", "く", "け", "こ"]},
+    {"fact_id": "writing.hiragana.group.3", "fact_kind": "term", "value": ["さ", "し", "す", "せ", "そ"]},
+    {"fact_id": "writing.hiragana.group.4", "fact_kind": "term", "value": ["た", "ち", "つ", "て", "と"]},
+    {"fact_id": "writing.hiragana.group.5", "fact_kind": "term", "value": ["な", "に", "ぬ", "ね", "の"]},
+    {"fact_id": "writing.hiragana.group.6", "fact_kind": "term", "value": ["は", "ひ", "ふ", "へ", "ほ"]},
+    {"fact_id": "writing.hiragana.group.7", "fact_kind": "term", "value": ["ま", "み", "む", "め", "も"]},
+    {"fact_id": "writing.hiragana.group.8", "fact_kind": "term", "value": ["や", "ゆ", "よ"]},
+    {"fact_id": "writing.hiragana.group.9", "fact_kind": "term", "value": ["ら", "り", "る", "れ", "ろ"]},
+    {"fact_id": "writing.hiragana.group.10", "fact_kind": "term", "value": ["わ", "を", "ん"]},
+    {
+      "fact_id": "writing.hiragana.example.a",
+      "fact_kind": "term",
+      "value": "あし",
+      "qualifiers": {"ipa": "aɕi", "highlight": "あ", "sound": "a", "reading": "a", "word_reading": "ashi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.i",
+      "fact_kind": "term",
+      "value": "いえ",
+      "qualifiers": {"ipa": "ie", "highlight": "い", "sound": "i", "reading": "i", "word_reading": "ie"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.u",
+      "fact_kind": "term",
+      "value": "うみ",
+      "qualifiers": {"ipa": "ɯmi", "highlight": "う", "sound": "ɯ", "reading": "u", "word_reading": "umi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.e",
+      "fact_kind": "term",
+      "value": "えき",
+      "qualifiers": {"ipa": "eki", "highlight": "え", "sound": "e", "reading": "e", "word_reading": "eki"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.o",
+      "fact_kind": "term",
+      "value": "おかし",
+      "qualifiers": {"ipa": "okaɕi", "highlight": "お", "sound": "o", "reading": "o", "word_reading": "okashi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ka",
+      "fact_kind": "term",
+      "value": "かさ",
+      "qualifiers": {"ipa": "kasa", "highlight": "か", "sound": "ka", "reading": "ka", "word_reading": "kasa"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ki",
+      "fact_kind": "term",
+      "value": "きのこ",
+      "qualifiers": {"ipa": "kinoko", "highlight": "き", "sound": "ki", "reading": "ki", "word_reading": "kinoko"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ku",
+      "fact_kind": "term",
+      "value": "くるま",
+      "qualifiers": {"ipa": "kɯɾɯma", "highlight": "く", "sound": "kɯ", "reading": "ku", "word_reading": "kuruma"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ke",
+      "fact_kind": "term",
+      "value": "けむり",
+      "qualifiers": {"ipa": "kemɯɾi", "highlight": "け", "sound": "ke", "reading": "ke", "word_reading": "kemuri"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ko",
+      "fact_kind": "term",
+      "value": "こめ",
+      "qualifiers": {"ipa": "kome", "highlight": "こ", "sound": "ko", "reading": "ko", "word_reading": "kome"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.sa",
+      "fact_kind": "term",
+      "value": "さかな",
+      "qualifiers": {"ipa": "sakana", "highlight": "さ", "sound": "sa", "reading": "sa", "word_reading": "sakana"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.shi",
+      "fact_kind": "term",
+      "value": "しお",
+      "qualifiers": {"ipa": "ɕio", "highlight": "し", "sound": "ɕi", "reading": "shi", "word_reading": "shio"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.su",
+      "fact_kind": "term",
+      "value": "すし",
+      "qualifiers": {"ipa": "sɯɕi", "highlight": "す", "sound": "sɯ", "reading": "su", "word_reading": "sushi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.se",
+      "fact_kind": "term",
+      "value": "せかい",
+      "qualifiers": {"ipa": "sekai", "highlight": "せ", "sound": "se", "reading": "se", "word_reading": "sekai"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.so",
+      "fact_kind": "term",
+      "value": "そら",
+      "qualifiers": {"ipa": "soɾa", "highlight": "そ", "sound": "so", "reading": "so", "word_reading": "sora"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ta",
+      "fact_kind": "term",
+      "value": "たこ",
+      "qualifiers": {"ipa": "tako", "highlight": "た", "sound": "ta", "reading": "ta", "word_reading": "tako"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.chi",
+      "fact_kind": "term",
+      "value": "ちかてつ",
+      "qualifiers": {"ipa": "tɕikatetsɯ", "highlight": "ち", "sound": "tɕi", "reading": "chi", "word_reading": "chikatetsu"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.tsu",
+      "fact_kind": "term",
+      "value": "つき",
+      "qualifiers": {"ipa": "tsɯki", "highlight": "つ", "sound": "tsɯ", "reading": "tsu", "word_reading": "tsuki"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.te",
+      "fact_kind": "term",
+      "value": "てら",
+      "qualifiers": {"ipa": "teɾa", "highlight": "て", "sound": "te", "reading": "te", "word_reading": "tera"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.to",
+      "fact_kind": "term",
+      "value": "とり",
+      "qualifiers": {"ipa": "toɾi", "highlight": "と", "sound": "to", "reading": "to", "word_reading": "tori"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.na",
+      "fact_kind": "term",
+      "value": "なつ",
+      "qualifiers": {"ipa": "natsɯ", "highlight": "な", "sound": "na", "reading": "na", "word_reading": "natsu"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ni",
+      "fact_kind": "term",
+      "value": "にく",
+      "qualifiers": {"ipa": "nikɯ", "highlight": "に", "sound": "ni", "reading": "ni", "word_reading": "niku"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.nu",
+      "fact_kind": "term",
+      "value": "いぬ",
+      "qualifiers": {"ipa": "inɯ", "highlight": "ぬ", "sound": "nɯ", "reading": "nu", "word_reading": "inu"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ne",
+      "fact_kind": "term",
+      "value": "ねこ",
+      "qualifiers": {"ipa": "neko", "highlight": "ね", "sound": "ne", "reading": "ne", "word_reading": "neko"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.no",
+      "fact_kind": "term",
+      "value": "のみもの",
+      "qualifiers": {"ipa": "nomimono", "highlight": "の", "sound": "no", "reading": "no", "word_reading": "nomimono"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ha",
+      "fact_kind": "term",
+      "value": "はこ",
+      "qualifiers": {"ipa": "hako", "highlight": "は", "sound": "ha", "reading": "ha", "word_reading": "hako"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.hi",
+      "fact_kind": "term",
+      "value": "ひと",
+      "qualifiers": {"ipa": "çito", "highlight": "ひ", "sound": "çi", "reading": "hi", "word_reading": "hito"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.fu",
+      "fact_kind": "term",
+      "value": "ふね",
+      "qualifiers": {"ipa": "ɸɯne", "highlight": "ふ", "sound": "ɸɯ", "reading": "fu", "word_reading": "fune"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.he",
+      "fact_kind": "term",
+      "value": "へや",
+      "qualifiers": {"ipa": "heja", "highlight": "へ", "sound": "he", "reading": "he", "word_reading": "heya"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ho",
+      "fact_kind": "term",
+      "value": "ほし",
+      "qualifiers": {"ipa": "hoɕi", "highlight": "ほ", "sound": "ho", "reading": "ho", "word_reading": "hoshi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ma",
+      "fact_kind": "term",
+      "value": "まち",
+      "qualifiers": {"ipa": "matɕi", "highlight": "ま", "sound": "ma", "reading": "ma", "word_reading": "machi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.mi",
+      "fact_kind": "term",
+      "value": "みせ",
+      "qualifiers": {"ipa": "mise", "highlight": "み", "sound": "mi", "reading": "mi", "word_reading": "mise"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.mu",
+      "fact_kind": "term",
+      "value": "むし",
+      "qualifiers": {"ipa": "mɯɕi", "highlight": "む", "sound": "mɯ", "reading": "mu", "word_reading": "mushi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.me",
+      "fact_kind": "term",
+      "value": "めがね",
+      "qualifiers": {"ipa": "meɡane", "highlight": "め", "sound": "me", "reading": "me", "word_reading": "megane"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.mo",
+      "fact_kind": "term",
+      "value": "もも",
+      "qualifiers": {"ipa": "momo", "highlight": "も", "sound": "mo", "reading": "mo", "word_reading": "momo"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ya",
+      "fact_kind": "term",
+      "value": "やさい",
+      "qualifiers": {"ipa": "jasai", "highlight": "や", "sound": "ja", "reading": "ya", "word_reading": "yasai"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.yu",
+      "fact_kind": "term",
+      "value": "ゆき",
+      "qualifiers": {"ipa": "jɯki", "highlight": "ゆ", "sound": "jɯ", "reading": "yu", "word_reading": "yuki"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.yo",
+      "fact_kind": "term",
+      "value": "よる",
+      "qualifiers": {"ipa": "joɾɯ", "highlight": "よ", "sound": "jo", "reading": "yo", "word_reading": "yoru"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ra",
+      "fact_kind": "term",
+      "value": "さくら",
+      "qualifiers": {"ipa": "sakɯɾa", "highlight": "ら", "sound": "ɾa", "reading": "ra", "word_reading": "sakura"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ri",
+      "fact_kind": "term",
+      "value": "りんご",
+      "qualifiers": {"ipa": "ɾiɴɡo", "highlight": "り", "sound": "ɾi", "reading": "ri", "word_reading": "ringo"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ru",
+      "fact_kind": "term",
+      "value": "さる",
+      "qualifiers": {"ipa": "saɾɯ", "highlight": "る", "sound": "ɾɯ", "reading": "ru", "word_reading": "saru"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.re",
+      "fact_kind": "term",
+      "value": "はれ",
+      "qualifiers": {"ipa": "haɾe", "highlight": "れ", "sound": "ɾe", "reading": "re", "word_reading": "hare"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.ro",
+      "fact_kind": "term",
+      "value": "ろく",
+      "qualifiers": {"ipa": "ɾokɯ", "highlight": "ろ", "sound": "ɾo", "reading": "ro", "word_reading": "roku"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.wa",
+      "fact_kind": "term",
+      "value": "わたし",
+      "qualifiers": {"ipa": "wataɕi", "highlight": "わ", "sound": "wa", "reading": "wa", "word_reading": "watashi"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.wo",
+      "fact_kind": "term",
+      "value": "ほんをよむ",
+      "qualifiers": {"ipa": "hoɴ o jomɯ", "highlight": "を", "sound": "o", "reading": "wo", "word_reading": "hon o yomu"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.n",
+      "fact_kind": "term",
+      "value": "ほん",
+      "qualifiers": {"ipa": "hoɴ", "highlight": "ん", "sound": "ɴ", "reading": "n", "word_reading": "hon"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.full_stop",
+      "fact_kind": "term",
+      "value": "はい。",
+      "qualifiers": {"ipa": "hai", "highlight": "。", "reading": "maru", "word_reading": "hai."}
+    },
+    {
+      "fact_id": "writing.hiragana.example.comma",
+      "fact_kind": "term",
+      "value": "あか、あお",
+      "qualifiers": {"ipa": "aka ao", "highlight": "、", "reading": "ten", "word_reading": "aka, ao"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.quote_open",
+      "fact_kind": "term",
+      "value": "「ありがとう」",
+      "qualifiers": {"ipa": "aɾiɡatoː", "highlight": "「", "reading": "kagikakko (open)", "word_reading": "“arigatō”"}
+    },
+    {
+      "fact_id": "writing.hiragana.example.quote_close",
+      "fact_kind": "term",
+      "value": "「ありがとう」",
+      "qualifiers": {"ipa": "aɾiɡatoː", "highlight": "」", "reading": "kagikakko (close)", "word_reading": "“arigatō”"}
+    },
+    {
+      "fact_id": "writing.hiragana.mark.dakuten",
+      "fact_kind": "term",
+      "value": "ご",
+      "qualifiers": {"mark_id": "dakuten", "role": "voicing", "example": "ごはん", "example_ipa": "ɡohaɴ", "example_reading": "gohan"}
+    },
+    {
+      "fact_id": "writing.hiragana.mark.handakuten",
+      "fact_kind": "term",
+      "value": "ぽ",
+      "qualifiers": {
+        "mark_id": "handakuten",
+        "role": "sound_change",
+        "example": "さんぽ",
+        "example_ipa": "saɴpo",
+        "example_reading": "sanpo"
+      }
+    },
+    {
+      "fact_id": "writing.hiragana.mark.small_tsu",
+      "fact_kind": "term",
+      "value": "っ",
+      "qualifiers": {
+        "mark_id": "small_tsu",
+        "role": "doubling",
+        "example": "がっこう",
+        "example_ipa": "ɡakːoː",
+        "example_reading": "gakkō"
+      }
+    },
+    {
+      "fact_id": "writing.hiragana.mark.small_ya",
+      "fact_kind": "term",
+      "value": "しゃ",
+      "qualifiers": {
+        "mark_id": "small_ya",
+        "role": "palatalization",
+        "example": "しゃしん",
+        "example_ipa": "ɕaɕiɴ",
+        "example_reading": "shashin",
+        "variants": ["ゅ", "ょ"]
+      }
+    },
+    {"fact_id": "writing.katakana.kind", "fact_kind": "category", "value": "syllabary"},
+    {"fact_id": "writing.katakana.script", "fact_kind": "category", "value": "Kana"},
+    {"fact_id": "writing.katakana.role", "fact_kind": "category", "value": "alternate"},
+    {"fact_id": "writing.katakana.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.katakana.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.katakana.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.katakana.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.katakana.symbols",
+      "fact_kind": "term",
+      "value": [
+        "ア",
+        "イ",
+        "ウ",
+        "エ",
+        "オ",
+        "カ",
+        "キ",
+        "ク",
+        "ケ",
+        "コ",
+        "サ",
+        "シ",
+        "ス",
+        "セ",
+        "ソ",
+        "タ",
+        "チ",
+        "ツ",
+        "テ",
+        "ト",
+        "ナ",
+        "ニ",
+        "ヌ",
+        "ネ",
+        "ノ",
+        "ハ",
+        "ヒ",
+        "フ",
+        "ヘ",
+        "ホ",
+        "マ",
+        "ミ",
+        "ム",
+        "メ",
+        "モ",
+        "ヤ",
+        "ユ",
+        "ヨ",
+        "ラ",
+        "リ",
+        "ル",
+        "レ",
+        "ロ",
+        "ワ",
+        "ヲ",
+        "ン"
+      ]
+    },
+    {
+      "fact_id": "writing.katakana.marked",
+      "fact_kind": "term",
+      "value": ["ガ", "ギ", "グ", "ゲ", "ゴ", "ザ", "ジ", "ズ", "ゼ", "ゾ", "ダ", "ヂ", "ヅ", "デ", "ド", "バ", "ビ", "ブ", "ベ", "ボ", "パ", "ピ", "プ", "ペ", "ポ", "ャ", "ュ", "ョ", "ッ", "ヴ"]
+    },
+    {"fact_id": "writing.katakana.punctuation", "fact_kind": "term", "value": ["・"]},
+    {"fact_id": "writing.katakana.group.1", "fact_kind": "term", "value": ["ア", "イ", "ウ", "エ", "オ"]},
+    {"fact_id": "writing.katakana.group.2", "fact_kind": "term", "value": ["カ", "キ", "ク", "ケ", "コ"]},
+    {"fact_id": "writing.katakana.group.3", "fact_kind": "term", "value": ["サ", "シ", "ス", "セ", "ソ"]},
+    {"fact_id": "writing.katakana.group.4", "fact_kind": "term", "value": ["タ", "チ", "ツ", "テ", "ト"]},
+    {"fact_id": "writing.katakana.group.5", "fact_kind": "term", "value": ["ナ", "ニ", "ヌ", "ネ", "ノ"]},
+    {"fact_id": "writing.katakana.group.6", "fact_kind": "term", "value": ["ハ", "ヒ", "フ", "ヘ", "ホ"]},
+    {"fact_id": "writing.katakana.group.7", "fact_kind": "term", "value": ["マ", "ミ", "ム", "メ", "モ"]},
+    {"fact_id": "writing.katakana.group.8", "fact_kind": "term", "value": ["ヤ", "ユ", "ヨ"]},
+    {"fact_id": "writing.katakana.group.9", "fact_kind": "term", "value": ["ラ", "リ", "ル", "レ", "ロ"]},
+    {"fact_id": "writing.katakana.group.10", "fact_kind": "term", "value": ["ワ", "ヲ", "ン"]},
+    {
+      "fact_id": "writing.katakana.example.a",
+      "fact_kind": "term",
+      "value": "アイス",
+      "qualifiers": {"ipa": "aisɯ", "highlight": "ア", "sound": "a", "reading": "a", "word_reading": "aisu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.i",
+      "fact_kind": "term",
+      "value": "インク",
+      "qualifiers": {"ipa": "iɴkɯ", "highlight": "イ", "sound": "i", "reading": "i", "word_reading": "inku"}
+    },
+    {
+      "fact_id": "writing.katakana.example.u",
+      "fact_kind": "term",
+      "value": "ウール",
+      "qualifiers": {"ipa": "ɯːɾɯ", "highlight": "ウ", "sound": "ɯ", "reading": "u", "word_reading": "ūru"}
+    },
+    {
+      "fact_id": "writing.katakana.example.e",
+      "fact_kind": "term",
+      "value": "エアコン",
+      "qualifiers": {"ipa": "eakoɴ", "highlight": "エ", "sound": "e", "reading": "e", "word_reading": "eakon"}
+    },
+    {
+      "fact_id": "writing.katakana.example.o",
+      "fact_kind": "term",
+      "value": "オレンジ",
+      "qualifiers": {"ipa": "oɾeɴdʑi", "highlight": "オ", "sound": "o", "reading": "o", "word_reading": "orenji"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ka",
+      "fact_kind": "term",
+      "value": "カメラ",
+      "qualifiers": {"ipa": "kameɾa", "highlight": "カ", "sound": "ka", "reading": "ka", "word_reading": "kamera"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ki",
+      "fact_kind": "term",
+      "value": "キウイ",
+      "qualifiers": {"ipa": "kiɯi", "highlight": "キ", "sound": "ki", "reading": "ki", "word_reading": "kiui"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ku",
+      "fact_kind": "term",
+      "value": "クラス",
+      "qualifiers": {"ipa": "kɯɾasɯ", "highlight": "ク", "sound": "kɯ", "reading": "ku", "word_reading": "kurasu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ke",
+      "fact_kind": "term",
+      "value": "ケーキ",
+      "qualifiers": {"ipa": "keːki", "highlight": "ケ", "sound": "ke", "reading": "ke", "word_reading": "kēki"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ko",
+      "fact_kind": "term",
+      "value": "コーヒー",
+      "qualifiers": {"ipa": "koːçiː", "highlight": "コ", "sound": "ko", "reading": "ko", "word_reading": "kōhī"}
+    },
+    {
+      "fact_id": "writing.katakana.example.sa",
+      "fact_kind": "term",
+      "value": "サラダ",
+      "qualifiers": {"ipa": "saɾada", "highlight": "サ", "sound": "sa", "reading": "sa", "word_reading": "sarada"}
+    },
+    {
+      "fact_id": "writing.katakana.example.shi",
+      "fact_kind": "term",
+      "value": "シーツ",
+      "qualifiers": {"ipa": "ɕiːtsɯ", "highlight": "シ", "sound": "ɕi", "reading": "shi", "word_reading": "shītsu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.su",
+      "fact_kind": "term",
+      "value": "スプーン",
+      "qualifiers": {"ipa": "sɯpɯːɴ", "highlight": "ス", "sound": "sɯ", "reading": "su", "word_reading": "supūn"}
+    },
+    {
+      "fact_id": "writing.katakana.example.se",
+      "fact_kind": "term",
+      "value": "セーター",
+      "qualifiers": {"ipa": "seːtaː", "highlight": "セ", "sound": "se", "reading": "se", "word_reading": "sētā"}
+    },
+    {
+      "fact_id": "writing.katakana.example.so",
+      "fact_kind": "term",
+      "value": "ソース",
+      "qualifiers": {"ipa": "soːsɯ", "highlight": "ソ", "sound": "so", "reading": "so", "word_reading": "sōsu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ta",
+      "fact_kind": "term",
+      "value": "タクシー",
+      "qualifiers": {"ipa": "takɯɕiː", "highlight": "タ", "sound": "ta", "reading": "ta", "word_reading": "takushī"}
+    },
+    {
+      "fact_id": "writing.katakana.example.chi",
+      "fact_kind": "term",
+      "value": "チーズ",
+      "qualifiers": {"ipa": "tɕiːzɯ", "highlight": "チ", "sound": "tɕi", "reading": "chi", "word_reading": "chīzu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.tsu",
+      "fact_kind": "term",
+      "value": "ツナ",
+      "qualifiers": {"ipa": "tsɯna", "highlight": "ツ", "sound": "tsɯ", "reading": "tsu", "word_reading": "tsuna"}
+    },
+    {
+      "fact_id": "writing.katakana.example.te",
+      "fact_kind": "term",
+      "value": "テレビ",
+      "qualifiers": {"ipa": "teɾebi", "highlight": "テ", "sound": "te", "reading": "te", "word_reading": "terebi"}
+    },
+    {
+      "fact_id": "writing.katakana.example.to",
+      "fact_kind": "term",
+      "value": "トマト",
+      "qualifiers": {"ipa": "tomato", "highlight": "ト", "sound": "to", "reading": "to", "word_reading": "tomato"}
+    },
+    {
+      "fact_id": "writing.katakana.example.na",
+      "fact_kind": "term",
+      "value": "ナイフ",
+      "qualifiers": {"ipa": "naiɸɯ", "highlight": "ナ", "sound": "na", "reading": "na", "word_reading": "naifu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ni",
+      "fact_kind": "term",
+      "value": "テニス",
+      "qualifiers": {"ipa": "tenisɯ", "highlight": "ニ", "sound": "ni", "reading": "ni", "word_reading": "tenisu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.nu",
+      "fact_kind": "term",
+      "value": "ヌードル",
+      "qualifiers": {"ipa": "nɯːdoɾɯ", "highlight": "ヌ", "sound": "nɯ", "reading": "nu", "word_reading": "nūdoru"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ne",
+      "fact_kind": "term",
+      "value": "ネクタイ",
+      "qualifiers": {"ipa": "nekɯtai", "highlight": "ネ", "sound": "ne", "reading": "ne", "word_reading": "nekutai"}
+    },
+    {
+      "fact_id": "writing.katakana.example.no",
+      "fact_kind": "term",
+      "value": "ノート",
+      "qualifiers": {"ipa": "noːto", "highlight": "ノ", "sound": "no", "reading": "no", "word_reading": "nōto"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ha",
+      "fact_kind": "term",
+      "value": "ハム",
+      "qualifiers": {"ipa": "hamɯ", "highlight": "ハ", "sound": "ha", "reading": "ha", "word_reading": "hamu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.hi",
+      "fact_kind": "term",
+      "value": "ヒーター",
+      "qualifiers": {"ipa": "çiːtaː", "highlight": "ヒ", "sound": "çi", "reading": "hi", "word_reading": "hītā"}
+    },
+    {
+      "fact_id": "writing.katakana.example.fu",
+      "fact_kind": "term",
+      "value": "フルーツ",
+      "qualifiers": {"ipa": "ɸɯɾɯːtsɯ", "highlight": "フ", "sound": "ɸɯ", "reading": "fu", "word_reading": "furūtsu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.he",
+      "fact_kind": "term",
+      "value": "ヘルメット",
+      "qualifiers": {"ipa": "heɾɯmetːo", "highlight": "ヘ", "sound": "he", "reading": "he", "word_reading": "herumetto"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ho",
+      "fact_kind": "term",
+      "value": "ホテル",
+      "qualifiers": {"ipa": "hoteɾɯ", "highlight": "ホ", "sound": "ho", "reading": "ho", "word_reading": "hoteru"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ma",
+      "fact_kind": "term",
+      "value": "マスク",
+      "qualifiers": {"ipa": "masɯkɯ", "highlight": "マ", "sound": "ma", "reading": "ma", "word_reading": "masuku"}
+    },
+    {
+      "fact_id": "writing.katakana.example.mi",
+      "fact_kind": "term",
+      "value": "ミルク",
+      "qualifiers": {"ipa": "miɾɯkɯ", "highlight": "ミ", "sound": "mi", "reading": "mi", "word_reading": "miruku"}
+    },
+    {
+      "fact_id": "writing.katakana.example.mu",
+      "fact_kind": "term",
+      "value": "ゲーム",
+      "qualifiers": {"ipa": "ɡeːmɯ", "highlight": "ム", "sound": "mɯ", "reading": "mu", "word_reading": "gēmu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.me",
+      "fact_kind": "term",
+      "value": "メロン",
+      "qualifiers": {"ipa": "meɾoɴ", "highlight": "メ", "sound": "me", "reading": "me", "word_reading": "meron"}
+    },
+    {
+      "fact_id": "writing.katakana.example.mo",
+      "fact_kind": "term",
+      "value": "モデル",
+      "qualifiers": {"ipa": "modeɾɯ", "highlight": "モ", "sound": "mo", "reading": "mo", "word_reading": "moderu"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ya",
+      "fact_kind": "term",
+      "value": "タイヤ",
+      "qualifiers": {"ipa": "taija", "highlight": "ヤ", "sound": "ja", "reading": "ya", "word_reading": "taiya"}
+    },
+    {
+      "fact_id": "writing.katakana.example.yu",
+      "fact_kind": "term",
+      "value": "ユーモア",
+      "qualifiers": {"ipa": "jɯːmoa", "highlight": "ユ", "sound": "jɯ", "reading": "yu", "word_reading": "yūmoa"}
+    },
+    {
+      "fact_id": "writing.katakana.example.yo",
+      "fact_kind": "term",
+      "value": "ヨーグルト",
+      "qualifiers": {"ipa": "joːɡɯɾɯto", "highlight": "ヨ", "sound": "jo", "reading": "yo", "word_reading": "yōguruto"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ra",
+      "fact_kind": "term",
+      "value": "ラジオ",
+      "qualifiers": {"ipa": "ɾadʑio", "highlight": "ラ", "sound": "ɾa", "reading": "ra", "word_reading": "rajio"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ri",
+      "fact_kind": "term",
+      "value": "リモコン",
+      "qualifiers": {"ipa": "ɾimokoɴ", "highlight": "リ", "sound": "ɾi", "reading": "ri", "word_reading": "rimokon"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ru",
+      "fact_kind": "term",
+      "value": "ビール",
+      "qualifiers": {"ipa": "biːɾɯ", "highlight": "ル", "sound": "ɾɯ", "reading": "ru", "word_reading": "bīru"}
+    },
+    {
+      "fact_id": "writing.katakana.example.re",
+      "fact_kind": "term",
+      "value": "レモン",
+      "qualifiers": {"ipa": "ɾemoɴ", "highlight": "レ", "sound": "ɾe", "reading": "re", "word_reading": "remon"}
+    },
+    {
+      "fact_id": "writing.katakana.example.ro",
+      "fact_kind": "term",
+      "value": "ロボット",
+      "qualifiers": {"ipa": "ɾobotːo", "highlight": "ロ", "sound": "ɾo", "reading": "ro", "word_reading": "robotto"}
+    },
+    {
+      "fact_id": "writing.katakana.example.wa",
+      "fact_kind": "term",
+      "value": "ワイン",
+      "qualifiers": {"ipa": "waiɴ", "highlight": "ワ", "sound": "wa", "reading": "wa", "word_reading": "wain"}
+    },
+    {
+      "fact_id": "writing.katakana.example.wo",
+      "fact_kind": "term",
+      "value": "ヲタク",
+      "qualifiers": {"ipa": "otakɯ", "highlight": "ヲ", "sound": "o", "reading": "wo", "word_reading": "otaku"}
+    },
+    {
+      "fact_id": "writing.katakana.example.n",
+      "fact_kind": "term",
+      "value": "ペン",
+      "qualifiers": {"ipa": "peɴ", "highlight": "ン", "sound": "ɴ", "reading": "n", "word_reading": "pen"}
+    },
+    {
+      "fact_id": "writing.katakana.example.middle_dot",
+      "fact_kind": "term",
+      "value": "ペン・ノート",
+      "qualifiers": {"ipa": "peɴ noːto", "highlight": "・", "reading": "nakaguro", "word_reading": "pen, nōto"}
+    },
+    {
+      "fact_id": "writing.katakana.mark.dakuten",
+      "fact_kind": "term",
+      "value": "ド",
+      "qualifiers": {"mark_id": "dakuten", "role": "voicing", "example": "ドア", "example_ipa": "doa", "example_reading": "doa"}
+    },
+    {
+      "fact_id": "writing.katakana.mark.handakuten",
+      "fact_kind": "term",
+      "value": "パ",
+      "qualifiers": {
+        "mark_id": "handakuten",
+        "role": "sound_change",
+        "example": "パン",
+        "example_ipa": "paɴ",
+        "example_reading": "pan"
+      }
+    },
+    {
+      "fact_id": "writing.katakana.mark.small_tsu",
+      "fact_kind": "term",
+      "value": "ッ",
+      "qualifiers": {
+        "mark_id": "small_tsu",
+        "role": "doubling",
+        "example": "コップ",
+        "example_ipa": "kopːɯ",
+        "example_reading": "koppu"
+      }
+    },
+    {
+      "fact_id": "writing.katakana.mark.small_ya",
+      "fact_kind": "term",
+      "value": "シャ",
+      "qualifiers": {
+        "mark_id": "small_ya",
+        "role": "palatalization",
+        "example": "シャツ",
+        "example_ipa": "ɕatsɯ",
+        "example_reading": "shatsu",
+        "variants": ["ュ", "ョ"]
+      }
+    },
+    {
+      "fact_id": "writing.katakana.mark.macron",
+      "fact_kind": "term",
+      "value": "ー",
+      "qualifiers": {"mark_id": "macron", "role": "length", "example": "コーヒー", "example_ipa": "koːçiː", "example_reading": "kōhī"}
+    },
+    {"fact_id": "writing.kanji.kind", "fact_kind": "category", "value": "logographic"},
+    {"fact_id": "writing.kanji.script", "fact_kind": "category", "value": "Hani"},
+    {"fact_id": "writing.kanji.role", "fact_kind": "category", "value": "alternate"},
+    {"fact_id": "writing.kanji.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.kanji.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.kanji.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.kanji.vowels", "fact_kind": "category", "value": "not_applicable"},
+    {"fact_id": "writing.kanji.symbols", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.kanji.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.kanji.punctuation", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.kanji.group.1", "fact_kind": "term", "value": ["一", "二", "三", "十"]},
+    {"fact_id": "writing.kanji.group.2", "fact_kind": "term", "value": ["日", "月", "水", "木", "金"]},
+    {"fact_id": "writing.kanji.group.3", "fact_kind": "term", "value": ["山", "川", "田", "土"]},
+    {"fact_id": "writing.kanji.group.4", "fact_kind": "term", "value": ["人", "男", "女", "子"]},
+    {"fact_id": "writing.kanji.group.5", "fact_kind": "term", "value": ["口", "目", "手", "耳"]},
+    {"fact_id": "writing.kanji.group.6", "fact_kind": "term", "value": ["大", "小", "上", "下", "中"]},
+    {"fact_id": "writing.kanji.group.7", "fact_kind": "term", "value": ["林", "森", "明", "休", "好"]},
+    {
+      "fact_id": "writing.kanji.example.one",
+      "fact_kind": "term",
+      "value": "一",
+      "qualifiers": {"ipa": "itɕi", "highlight": "一", "reading": "ichi"}
+    },
+    {
+      "fact_id": "writing.kanji.example.two",
+      "fact_kind": "term",
+      "value": "二",
+      "qualifiers": {"ipa": "ni", "highlight": "二", "reading": "ni"}
+    },
+    {
+      "fact_id": "writing.kanji.example.three",
+      "fact_kind": "term",
+      "value": "三",
+      "qualifiers": {"ipa": "saɴ", "highlight": "三", "reading": "san"}
+    },
+    {
+      "fact_id": "writing.kanji.example.ten",
+      "fact_kind": "term",
+      "value": "十",
+      "qualifiers": {"ipa": "dʑɯː", "highlight": "十", "reading": "jū"}
+    },
+    {
+      "fact_id": "writing.kanji.example.sun",
+      "fact_kind": "term",
+      "value": "日",
+      "qualifiers": {"ipa": "çi", "highlight": "日", "reading": "hi"}
+    },
+    {
+      "fact_id": "writing.kanji.example.moon",
+      "fact_kind": "term",
+      "value": "月",
+      "qualifiers": {"ipa": "tsɯki", "highlight": "月", "reading": "tsuki"}
+    },
+    {
+      "fact_id": "writing.kanji.example.water",
+      "fact_kind": "term",
+      "value": "水",
+      "qualifiers": {"ipa": "mizɯ", "highlight": "水", "reading": "mizu"}
+    },
+    {
+      "fact_id": "writing.kanji.example.tree",
+      "fact_kind": "term",
+      "value": "木",
+      "qualifiers": {"ipa": "ki", "highlight": "木", "reading": "ki"}
+    },
+    {
+      "fact_id": "writing.kanji.example.gold",
+      "fact_kind": "term",
+      "value": "金",
+      "qualifiers": {"ipa": "kane", "highlight": "金", "reading": "kane"}
+    },
+    {
+      "fact_id": "writing.kanji.example.mountain",
+      "fact_kind": "term",
+      "value": "山",
+      "qualifiers": {"ipa": "jama", "highlight": "山", "reading": "yama"}
+    },
+    {
+      "fact_id": "writing.kanji.example.river",
+      "fact_kind": "term",
+      "value": "川",
+      "qualifiers": {"ipa": "kawa", "highlight": "川", "reading": "kawa"}
+    },
+    {
+      "fact_id": "writing.kanji.example.field",
+      "fact_kind": "term",
+      "value": "田",
+      "qualifiers": {"ipa": "ta", "highlight": "田", "reading": "ta"}
+    },
+    {
+      "fact_id": "writing.kanji.example.earth",
+      "fact_kind": "term",
+      "value": "土",
+      "qualifiers": {"ipa": "tsɯtɕi", "highlight": "土", "reading": "tsuchi"}
+    },
+    {
+      "fact_id": "writing.kanji.example.person",
+      "fact_kind": "term",
+      "value": "人",
+      "qualifiers": {"ipa": "çito", "highlight": "人", "reading": "hito"}
+    },
+    {
+      "fact_id": "writing.kanji.example.man",
+      "fact_kind": "term",
+      "value": "男",
+      "qualifiers": {"ipa": "otoko", "highlight": "男", "reading": "otoko", "parts": "田 + 力"}
+    },
+    {
+      "fact_id": "writing.kanji.example.woman",
+      "fact_kind": "term",
+      "value": "女",
+      "qualifiers": {"ipa": "oɴna", "highlight": "女", "reading": "onna"}
+    },
+    {
+      "fact_id": "writing.kanji.example.child",
+      "fact_kind": "term",
+      "value": "子",
+      "qualifiers": {"ipa": "ko", "highlight": "子", "reading": "ko"}
+    },
+    {
+      "fact_id": "writing.kanji.example.mouth",
+      "fact_kind": "term",
+      "value": "口",
+      "qualifiers": {"ipa": "kɯtɕi", "highlight": "口", "reading": "kuchi"}
+    },
+    {
+      "fact_id": "writing.kanji.example.eye",
+      "fact_kind": "term",
+      "value": "目",
+      "qualifiers": {"ipa": "me", "highlight": "目", "reading": "me"}
+    },
+    {
+      "fact_id": "writing.kanji.example.hand",
+      "fact_kind": "term",
+      "value": "手",
+      "qualifiers": {"ipa": "te", "highlight": "手", "reading": "te"}
+    },
+    {
+      "fact_id": "writing.kanji.example.ear",
+      "fact_kind": "term",
+      "value": "耳",
+      "qualifiers": {"ipa": "mimi", "highlight": "耳", "reading": "mimi"}
+    },
+    {
+      "fact_id": "writing.kanji.example.big",
+      "fact_kind": "term",
+      "value": "大",
+      "qualifiers": {"ipa": "dai", "highlight": "大", "reading": "dai"}
+    },
+    {
+      "fact_id": "writing.kanji.example.small",
+      "fact_kind": "term",
+      "value": "小",
+      "qualifiers": {"ipa": "ɕoː", "highlight": "小", "reading": "shō"}
+    },
+    {
+      "fact_id": "writing.kanji.example.up",
+      "fact_kind": "term",
+      "value": "上",
+      "qualifiers": {"ipa": "ɯe", "highlight": "上", "reading": "ue"}
+    },
+    {
+      "fact_id": "writing.kanji.example.down",
+      "fact_kind": "term",
+      "value": "下",
+      "qualifiers": {"ipa": "ɕita", "highlight": "下", "reading": "shita"}
+    },
+    {
+      "fact_id": "writing.kanji.example.middle",
+      "fact_kind": "term",
+      "value": "中",
+      "qualifiers": {"ipa": "naka", "highlight": "中", "reading": "naka"}
+    },
+    {
+      "fact_id": "writing.kanji.example.woods",
+      "fact_kind": "term",
+      "value": "林",
+      "qualifiers": {"ipa": "hajaɕi", "highlight": "林", "reading": "hayashi", "parts": "木 + 木"}
+    },
+    {
+      "fact_id": "writing.kanji.example.forest",
+      "fact_kind": "term",
+      "value": "森",
+      "qualifiers": {"ipa": "mori", "highlight": "森", "reading": "mori", "parts": "木 + 木 + 木"}
+    },
+    {
+      "fact_id": "writing.kanji.example.bright",
+      "fact_kind": "term",
+      "value": "明",
+      "qualifiers": {"ipa": "meː", "highlight": "明", "reading": "mei", "parts": "日 + 月"}
+    },
+    {
+      "fact_id": "writing.kanji.example.rest",
+      "fact_kind": "term",
+      "value": "休",
+      "qualifiers": {"ipa": "jasɯmi", "highlight": "休", "reading": "yasumi", "parts": "亻 + 木"}
+    },
+    {
+      "fact_id": "writing.kanji.example.like",
+      "fact_kind": "term",
+      "value": "好",
+      "qualifiers": {"ipa": "sɯki", "highlight": "好", "reading": "suki", "parts": "女 + 子"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

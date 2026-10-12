@@ -50,7 +50,11 @@
     "family.sino_tibetan": "Sino-Tibetan",
     "branch.sinitic": "Sinitic",
     "family.niger_congo": "Niger-Congo",
-    "branch.bantu": "Bantu"
+    "branch.bantu": "Bantu",
+    "branch.slavic": "Slavic",
+    "branch.east_slavic": "East Slavic",
+    "family.japonic": "Japonic",
+    "branch.japanesic": "Japanese"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -76,8 +80,14 @@
     "zh:hook.decoy.2": "water",
     "sw:hook.target": "hello, how are things? (it literally means “news”)",
     "sw:hook.decoy.1": "thank you",
-    "sw:hook.decoy.2": "water"
+    "sw:hook.decoy.2": "water",
+    "ru:hook.target": "hi (a friendly hello)",
+    "ru:hook.decoy.1": "thank you",
+    "ru:hook.decoy.2": "yes",
+    "ja:hook.target": "hello, good afternoon",
+    "ja:hook.decoy.1": "thank you",
+    "ja:hook.decoy.2": "water"
   },
   "review_state": "candidate",
-  "version": 9
+  "version": 13
 }

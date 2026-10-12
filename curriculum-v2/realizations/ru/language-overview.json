@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ru.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "ru",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "indo_european",
+    "branch_ids": ["slavic", "east_slavic"],
+    "ancestor_language_tags": ["orv"],
+    "related_language_tags": ["uk", "be", "pl", "cs", "bg", "sr"],
+    "script_ids": ["Cyrl"],
+    "origin_region_ids": ["europe"],
+    "notes": "Russian is an East Slavic language. Ukrainian and Belarusian are its closest relatives and share its branch; the other Slavic languages listed are more distant cousins, partly understandable to a speaker of a neighbouring Slavic language at best. Broad family metadata for orientation only; membership of a branch does not imply mutual intelligibility."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["europe", "asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "Привет",
+      "qualifiers": {"ipa": "prʲɪˈvʲet", "reading": "privet"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "спасибо",
+      "qualifiers": {"ipa": "spɐˈsʲibə", "reading": "spasibo"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "да",
+      "qualifiers": {"ipa": "da", "reading": "da"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

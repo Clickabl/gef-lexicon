@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "ru",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_russian",
+      "kind": "helpful_transfer",
+      "text": "English and Russian are distant cousins, so look-alike words are rare. Most of these are English words that came from Russian, sometimes by way of another language. The last few are old shared words (brother, sister, mother, new, three, salt) or baby-talk words that sound alike in many languages (mama, papa).",
+      "pairs": [
+        {"from": "vodka", "to": "водка", "to_ipa": "ˈvotkə"},
+        {"from": "tsar", "to": "царь", "to_ipa": "tsarʲ"},
+        {"from": "sputnik", "to": "спутник", "to_ipa": "ˈsputʲnʲɪk", "to_meaning": "satellite, travelling companion"},
+        {"from": "borscht", "to": "борщ", "to_ipa": "borɕː"},
+        {"from": "babushka", "to": "бабушка", "to_ipa": "ˈbabʊʂkə", "to_meaning": "grandmother"},
+        {"from": "intelligentsia", "to": "интеллигенция", "to_ipa": "ɪnʲtʲɪlʲɪˈɡʲentsɨjə"},
+        {"from": "troika", "to": "тройка", "to_ipa": "ˈtrojkə", "to_meaning": "a group of three, a three-horse team"},
+        {"from": "samovar", "to": "самовар", "to_ipa": "səmɐˈvar"},
+        {"from": "cosmonaut", "to": "космонавт", "to_ipa": "kəsmɐˈnaft"},
+        {"from": "dacha", "to": "дача", "to_ipa": "ˈdatɕə", "to_meaning": "a country house"},
+        {"from": "matryoshka", "to": "матрёшка", "to_ipa": "mɐˈtrʲoʂkə", "to_meaning": "a nesting doll"},
+        {"from": "brother", "to": "брат", "to_ipa": "brat"},
+        {"from": "sister", "to": "сестра", "to_ipa": "sʲɪˈstra"},
+        {"from": "mother", "to": "мать", "to_ipa": "matʲ"},
+        {"from": "new", "to": "новый", "to_ipa": "ˈnovɨj"},
+        {"from": "three", "to": "три", "to_ipa": "trʲi"},
+        {"from": "salt", "to": "соль", "to_ipa": "solʲ"},
+        {"from": "mama", "to": "мама", "to_ipa": "ˈmamə"},
+        {"from": "papa", "to": "папа", "to_ipa": "ˈpapə"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few Russian words look like English ones but mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "magazine", "to": "магазин", "to_ipa": "məɡɐˈzʲin", "to_meaning": "shop, store"},
+        {"from": "family", "to": "фамилия", "to_ipa": "fɐˈmʲilʲɪjə", "to_meaning": "surname, family name"},
+        {"from": "accurate", "to": "аккуратный", "to_ipa": "ɐkʊˈratnɨj", "to_meaning": "neat, tidy"},
+        {"from": "cabinet", "to": "кабинет", "to_ipa": "kəbʲɪˈnʲet", "to_meaning": "office, study room"},
+        {"from": "fabric", "to": "фабрика", "to_ipa": "ˈfabrʲɪkə", "to_meaning": "factory"},
+        {"from": "romance", "to": "роман", "to_ipa": "rɐˈman", "to_meaning": "a novel"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

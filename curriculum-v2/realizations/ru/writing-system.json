@@ -1,0 +1,263 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ru.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "ru",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["cyrillic"]},
+    {"fact_id": "writing.cyrillic.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.cyrillic.script", "fact_kind": "category", "value": "Cyrl"},
+    {"fact_id": "writing.cyrillic.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.cyrillic.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.cyrillic.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.cyrillic.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.cyrillic.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.cyrillic.symbols",
+      "fact_kind": "term",
+      "value": ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"]
+    },
+    {
+      "fact_id": "writing.cyrillic.marked",
+      "fact_kind": "term",
+      "value": ["а́", "е́", "и́", "о́", "у́", "ы́", "э́", "ю́", "я́"]
+    },
+    {"fact_id": "writing.cyrillic.punctuation", "fact_kind": "term", "value": ["«", "—"]},
+    {"fact_id": "writing.cyrillic.group.1", "fact_kind": "term", "value": ["а", "к", "м", "о", "т"]},
+    {"fact_id": "writing.cyrillic.group.2", "fact_kind": "term", "value": ["е", "в", "н", "р"]},
+    {"fact_id": "writing.cyrillic.group.3", "fact_kind": "term", "value": ["с", "у", "х", "п"]},
+    {"fact_id": "writing.cyrillic.group.4", "fact_kind": "term", "value": ["б", "д", "л", "г", "ф"]},
+    {"fact_id": "writing.cyrillic.group.5", "fact_kind": "term", "value": ["з", "и", "й", "э"]},
+    {"fact_id": "writing.cyrillic.group.6", "fact_kind": "term", "value": ["я", "ю", "ё"]},
+    {"fact_id": "writing.cyrillic.group.7", "fact_kind": "term", "value": ["ж", "ш", "ч", "щ", "ц"]},
+    {"fact_id": "writing.cyrillic.group.8", "fact_kind": "term", "value": ["ы", "ь", "ъ"]},
+    {
+      "fact_id": "writing.cyrillic.example.a",
+      "fact_kind": "term",
+      "value": "арбуз",
+      "qualifiers": {"ipa": "ɐrˈbus", "highlight": "а", "sound": "a", "reading": "a", "name": "а (a)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.be",
+      "fact_kind": "term",
+      "value": "бабушка",
+      "qualifiers": {"ipa": "ˈbabʊʂkə", "highlight": "б", "sound": "b", "reading": "b", "name": "бэ (be)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ve",
+      "fact_kind": "term",
+      "value": "вода",
+      "qualifiers": {"ipa": "vɐˈda", "highlight": "в", "sound": "v", "reading": "v", "name": "вэ (ve)", "looks_like": "B"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ge",
+      "fact_kind": "term",
+      "value": "гора",
+      "qualifiers": {"ipa": "ɡɐˈra", "highlight": "г", "sound": "ɡ", "reading": "g", "name": "гэ (ge)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.de",
+      "fact_kind": "term",
+      "value": "дом",
+      "qualifiers": {"ipa": "dom", "highlight": "д", "sound": "d", "reading": "d", "name": "дэ (de)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ye",
+      "fact_kind": "term",
+      "value": "еда",
+      "qualifiers": {"ipa": "jɪˈda", "highlight": "е", "sound": "je", "reading": "ye", "name": "е (ye)", "looks_like": "e"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.yo",
+      "fact_kind": "term",
+      "value": "ёж",
+      "qualifiers": {"ipa": "joʂ", "highlight": "ё", "sound": "jo", "reading": "yo", "name": "ё (yo)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.zhe",
+      "fact_kind": "term",
+      "value": "жук",
+      "qualifiers": {"ipa": "ʐuk", "highlight": "ж", "sound": "ʐ", "reading": "zh", "name": "жэ (zhe)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ze",
+      "fact_kind": "term",
+      "value": "зонт",
+      "qualifiers": {"ipa": "zont", "highlight": "з", "sound": "z", "reading": "z", "name": "зэ (ze)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.i",
+      "fact_kind": "term",
+      "value": "игра",
+      "qualifiers": {"ipa": "ɪˈɡra", "highlight": "и", "sound": "i", "reading": "i", "name": "и (i)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.short_i",
+      "fact_kind": "term",
+      "value": "попугай",
+      "qualifiers": {"ipa": "pəpʊˈɡaj", "highlight": "й", "sound": "j", "reading": "j", "name": "и краткое (i kratkoye)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ka",
+      "fact_kind": "term",
+      "value": "ключ",
+      "qualifiers": {"ipa": "klʲutɕ", "highlight": "к", "sound": "k", "reading": "k", "name": "ка (ka)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.el",
+      "fact_kind": "term",
+      "value": "луна",
+      "qualifiers": {"ipa": "lʊˈna", "highlight": "л", "sound": "l", "reading": "l", "name": "эль (el)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.em",
+      "fact_kind": "term",
+      "value": "мир",
+      "qualifiers": {"ipa": "mʲir", "highlight": "м", "sound": "m", "reading": "m", "name": "эм (em)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.en",
+      "fact_kind": "term",
+      "value": "нога",
+      "qualifiers": {"ipa": "nɐˈɡa", "highlight": "н", "sound": "n", "reading": "n", "name": "эн (en)", "looks_like": "H"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.o",
+      "fact_kind": "term",
+      "value": "осень",
+      "qualifiers": {"ipa": "ˈosʲɪnʲ", "highlight": "о", "sound": "o", "reading": "o", "name": "о (o)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.pe",
+      "fact_kind": "term",
+      "value": "папа",
+      "qualifiers": {"ipa": "ˈpapə", "highlight": "п", "sound": "p", "reading": "p", "name": "пэ (pe)", "looks_like": "n"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.er",
+      "fact_kind": "term",
+      "value": "рука",
+      "qualifiers": {"ipa": "rʊˈka", "highlight": "р", "sound": "r", "reading": "r", "name": "эр (er)", "looks_like": "P"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.es",
+      "fact_kind": "term",
+      "value": "собака",
+      "qualifiers": {"ipa": "sɐˈbakə", "highlight": "с", "sound": "s", "reading": "s", "name": "эс (es)", "looks_like": "C"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.te",
+      "fact_kind": "term",
+      "value": "три",
+      "qualifiers": {"ipa": "trʲi", "highlight": "т", "sound": "t", "reading": "t", "name": "тэ (te)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.u",
+      "fact_kind": "term",
+      "value": "утка",
+      "qualifiers": {"ipa": "ˈutkə", "highlight": "у", "sound": "u", "reading": "u", "name": "у (u)", "looks_like": "Y"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ef",
+      "fact_kind": "term",
+      "value": "фото",
+      "qualifiers": {"ipa": "ˈfotə", "highlight": "ф", "sound": "f", "reading": "f", "name": "эф (ef)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.kha",
+      "fact_kind": "term",
+      "value": "хлеб",
+      "qualifiers": {"ipa": "xlʲep", "highlight": "х", "sound": "x", "reading": "kh", "name": "ха (kha)", "looks_like": "X"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.tse",
+      "fact_kind": "term",
+      "value": "цветок",
+      "qualifiers": {"ipa": "tsvʲɪˈtok", "highlight": "ц", "sound": "ts", "reading": "ts", "name": "цэ (tse)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.che",
+      "fact_kind": "term",
+      "value": "чай",
+      "qualifiers": {"ipa": "tɕaj", "highlight": "ч", "sound": "tɕ", "reading": "ch", "name": "че (che)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.sha",
+      "fact_kind": "term",
+      "value": "шапка",
+      "qualifiers": {"ipa": "ˈʂapkə", "highlight": "ш", "sound": "ʂ", "reading": "sh", "name": "ша (sha)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.shcha",
+      "fact_kind": "term",
+      "value": "борщ",
+      "qualifiers": {"ipa": "borɕː", "highlight": "щ", "sound": "ɕː", "reading": "shch", "name": "ща (shcha)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.hard_sign",
+      "fact_kind": "term",
+      "value": "подъезд",
+      "qualifiers": {"ipa": "pɐdˈjest", "highlight": "ъ", "sound": "ʔ", "reading": "ʺ", "name": "твёрдый знак (tvyordyy znak)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.y",
+      "fact_kind": "term",
+      "value": "рыба",
+      "qualifiers": {"ipa": "ˈrɨbə", "highlight": "ы", "sound": "ɨ", "reading": "y", "name": "ы (y)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.soft_sign",
+      "fact_kind": "term",
+      "value": "соль",
+      "qualifiers": {
+        "ipa": "solʲ",
+        "highlight": "ь",
+        "sound": "ʲ",
+        "reading": "ʹ",
+        "name": "мягкий знак (myagkiy znak)",
+        "looks_like": "b"
+      }
+    },
+    {
+      "fact_id": "writing.cyrillic.example.e",
+      "fact_kind": "term",
+      "value": "эхо",
+      "qualifiers": {"ipa": "ˈɛxə", "highlight": "э", "sound": "e", "reading": "e", "name": "э (e)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.yu",
+      "fact_kind": "term",
+      "value": "юбка",
+      "qualifiers": {"ipa": "ˈjupkə", "highlight": "ю", "sound": "ju", "reading": "yu", "name": "ю (yu)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.ya",
+      "fact_kind": "term",
+      "value": "яблоко",
+      "qualifiers": {"ipa": "ˈjabləkə", "highlight": "я", "sound": "ja", "reading": "ya", "name": "я (ya)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.guillemets",
+      "fact_kind": "term",
+      "value": "«Привет!»",
+      "qualifiers": {"ipa": "prʲɪˈvʲet", "highlight": "«", "reading": "quotes", "name": "кавычки-ёлочки (kavychki-yolochki)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.example.dash",
+      "fact_kind": "term",
+      "value": "Папа — врач",
+      "qualifiers": {"ipa": "ˈpapə vratɕ", "highlight": "—", "reading": "dash", "name": "тире (tire)"}
+    },
+    {
+      "fact_id": "writing.cyrillic.mark.acute",
+      "fact_kind": "term",
+      "value": "о́",
+      "qualifiers": {"mark_id": "acute", "role": "stress", "example": "молоко́", "example_ipa": "məlɐˈko"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ru.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "ru",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "pʲ", "b", "bʲ", "t", "tʲ", "d", "dʲ", "k", "kʲ", "ɡ", "ɡʲ", "f", "fʲ", "v", "vʲ", "s", "sʲ", "z", "zʲ", "ʂ", "ʐ", "ɕː", "x", "xʲ", "ts", "tɕ", "m", "mʲ", "n", "nʲ", "l", "lʲ", "r", "rʲ", "j"],
+      "qualifiers": {"variety": "standard_russian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "ɨ", "u", "e", "o", "a"],
+      "qualifiers": {"variety": "standard_russian"}
+    },
+    {
+      "fact_id": "sounds.tricky.soft_sign",
+      "fact_kind": "term",
+      "value": "мать",
+      "qualifiers": {"ipa": "ʲ", "spelling": "ь", "word_ipa": "matʲ", "note_id": "ru_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.tricky.y",
+      "fact_kind": "term",
+      "value": "сын",
+      "qualifiers": {"ipa": "ɨ", "spelling": "ы", "word_ipa": "sɨn", "note_id": "ru_y_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "рука",
+      "qualifiers": {"ipa": "r", "spelling": "р", "word_ipa": "rʊˈka", "note_id": "trill"}
+    },
+    {
+      "fact_id": "sounds.tricky.reduction",
+      "fact_kind": "term",
+      "value": "молоко",
+      "qualifiers": {"ipa": "ɐ", "spelling": "о", "word_ipa": "məlɐˈko", "note_id": "ru_vowel_reduction"}
+    },
+    {
+      "fact_id": "sounds.tricky.final_devoicing",
+      "fact_kind": "term",
+      "value": "снег",
+      "qualifiers": {"ipa": "k", "spelling": "г", "word_ipa": "snʲek", "note_id": "ru_final_devoicing"}
+    },
+    {
+      "fact_id": "sounds.tricky.zh",
+      "fact_kind": "term",
+      "value": "жук",
+      "qualifiers": {"ipa": "ʐ", "spelling": "ж", "word_ipa": "ʐuk", "note_id": "ru_zh"}
+    },
+    {
+      "fact_id": "sounds.tricky.shch",
+      "fact_kind": "term",
+      "value": "щука",
+      "qualifiers": {"ipa": "ɕː", "spelling": "щ", "word_ipa": "ˈɕːukə", "note_id": "ru_shch"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "хлеб",
+      "qualifiers": {"ipa": "x", "spelling": "х", "word_ipa": "xlʲep", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "брат",
+      "qualifiers": {"ipa": "brat", "pair": 1, "note_id": "ru_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "брать",
+      "qualifiers": {"ipa": "bratʲ", "pair": 1, "note_id": "ru_soft_consonant"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "был",
+      "qualifiers": {"ipa": "bɨl", "pair": 2, "note_id": "ru_y_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "бил",
+      "qualifiers": {"ipa": "bʲil", "pair": 2, "note_id": "ru_y_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "жар",
+      "qualifiers": {"ipa": "ʐar", "pair": 3, "note_id": "ru_zh"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "шар",
+      "qualifiers": {"ipa": "ʂar", "pair": 3, "note_id": "ru_zh"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "за́мок",
+      "qualifiers": {"ipa": "ˈzamək", "pair": 4, "note_id": "ru_stress_meaning"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "замо́к",
+      "qualifiers": {"ipa": "zɐˈmok", "pair": 4, "note_id": "ru_stress_meaning"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "unpredictable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "medium"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

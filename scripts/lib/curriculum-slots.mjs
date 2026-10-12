@@ -118,10 +118,12 @@ export function genericLabelIds(slots) {
   const out = {
     writing_system: [], sound_system: [], grammar_glance: [],
     language_overview: ['relation.same_branch', 'relation.same_family', 'relation.different_family'],
-    script_lesson: ['glyph.group_title', 'glyph.sounds_like', 'glyph.shapes', 'glyph.say', 'glyph.q.in_word', 'glyph.q.which_name', 'glyph.q.which_sound', 'glyph.q.which_word', 'glyph.q.match', 'glyph.q.match_reading'],
+    script_lesson: ['glyph.group_title', 'glyph.sounds_like', 'glyph.shapes', 'glyph.say', 'glyph.q.in_word', 'glyph.q.which_name', 'glyph.q.which_sound', 'glyph.q.which_word', 'glyph.q.match', 'glyph.q.match_reading', 'glyph.check_title'],
   };
-  for (const kind of slots.writing.layer_kinds) out.writing_system.push(`kind.${kind}`);
-  for (const direction of slots.writing.directions) out.writing_system.push(`direction.${direction}`);
+  for (const kind of slots.writing.layer_kinds) out.writing_system.push(`kind.${kind}`, `fact.kind.${kind}`);
+  out.writing_system.push('fact.reads', 'fact.kind', 'fact.joined', 'fact.yes', 'fact.no', 'fact.vowels', 'fact.case', 'fact.letters', 'fact.new', 'fact.also');
+  for (const vowels of slots.writing.vowels) out.writing_system.push(`fact.vowels.${vowels}`);
+  for (const direction of slots.writing.directions) out.writing_system.push(`direction.${direction}`, `fact.direction.${direction}`);
   for (const role of slots.writing.layer_roles) if (role !== 'primary') out.writing_system.push(`layer.also.${role}`);
   for (const vowels of slots.writing.vowels) if (vowels === 'marks_optional' || vowels === 'inherent') out.writing_system.push(`vowels.${vowels}`);
   for (const system of slots.sound.tone_systems) if (system !== 'none') out.sound_system.push(`tonesys.${system}`);

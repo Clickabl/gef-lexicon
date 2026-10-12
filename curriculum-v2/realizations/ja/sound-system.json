@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ja.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "ja",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "ts", "tɕ", "dʑ", "s", "z", "ɕ", "h", "ç", "ɸ", "m", "n", "ɴ", "ɾ", "j", "w"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "i", "ɯ", "e", "o", "aː", "iː", "ɯː", "eː", "oː"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "りんご",
+      "qualifiers": {"ipa": "ɾ", "spelling": "り", "word_ipa": "ɾiɴɡo", "note_id": "ja_tapped_r", "reading": "ringo"}
+    },
+    {
+      "fact_id": "sounds.tricky.fu",
+      "fact_kind": "term",
+      "value": "ふね",
+      "qualifiers": {"ipa": "ɸ", "spelling": "ふ", "word_ipa": "ɸɯne", "note_id": "ja_fu", "reading": "fune"}
+    },
+    {
+      "fact_id": "sounds.tricky.tsu",
+      "fact_kind": "term",
+      "value": "つき",
+      "qualifiers": {"ipa": "ts", "spelling": "つ", "word_ipa": "tsɯki", "note_id": "ja_tsu", "reading": "tsuki"}
+    },
+    {
+      "fact_id": "sounds.tricky.u",
+      "fact_kind": "term",
+      "value": "うみ",
+      "qualifiers": {"ipa": "ɯ", "spelling": "う", "word_ipa": "ɯmi", "note_id": "ja_unrounded_u", "reading": "umi"}
+    },
+    {
+      "fact_id": "sounds.tricky.long_vowel",
+      "fact_kind": "term",
+      "value": "おばあさん",
+      "qualifiers": {"ipa": "aː", "spelling": "ばあ", "word_ipa": "obaːsaɴ", "note_id": "vowel_length", "reading": "obāsan"}
+    },
+    {
+      "fact_id": "sounds.tricky.small_tsu",
+      "fact_kind": "term",
+      "value": "がっこう",
+      "qualifiers": {"ipa": "kː", "spelling": "っ", "word_ipa": "ɡakːoː", "note_id": "ja_small_tsu", "reading": "gakkō"}
+    },
+    {
+      "fact_id": "sounds.tricky.moraic_n",
+      "fact_kind": "term",
+      "value": "ほん",
+      "qualifiers": {"ipa": "ɴ", "spelling": "ん", "word_ipa": "hoɴ", "note_id": "ja_moraic_n", "reading": "hon"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "おじさん",
+      "qualifiers": {"ipa": "odʑisaɴ", "pair": 1, "note_id": "vowel_length", "reading": "ojisan"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "おじいさん",
+      "qualifiers": {"ipa": "odʑiːsaɴ", "pair": 1, "note_id": "vowel_length", "reading": "ojīsan"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "おと",
+      "qualifiers": {"ipa": "oto", "pair": 2, "note_id": "ja_small_tsu", "reading": "oto"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "おっと",
+      "qualifiers": {"ipa": "otːo", "pair": 2, "note_id": "ja_small_tsu", "reading": "otto"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "かき",
+      "qualifiers": {"ipa": "kaki", "pair": 3, "note_id": "ja_voicing", "reading": "kaki"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "かぎ",
+      "qualifiers": {"ipa": "kaɡi", "pair": 3, "note_id": "ja_voicing", "reading": "kagi"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "雨",
+      "qualifiers": {"ipa": "aꜜme", "pair": 4, "note_id": "ja_pitch_pair", "reading": "ame"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "飴",
+      "qualifiers": {"ipa": "ame", "pair": 4, "note_id": "ja_pitch_pair", "reading": "ame"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "pitch_accent"},
+    {
+      "fact_id": "tones.example.1",
+      "fact_kind": "term",
+      "value": "雨",
+      "qualifiers": {"ipa": "aꜜme", "tone_id": "ja_atamadaka", "contour": "˥˩", "with_particle": "˥˩˩", "reading": "ame"}
+    },
+    {
+      "fact_id": "tones.example.2",
+      "fact_kind": "term",
+      "value": "飴",
+      "qualifiers": {"ipa": "ame", "tone_id": "ja_heiban", "contour": "˩˥", "with_particle": "˩˥˥", "reading": "ame"}
+    },
+    {
+      "fact_id": "tones.example.3",
+      "fact_kind": "term",
+      "value": "箸",
+      "qualifiers": {"ipa": "haꜜɕi", "tone_id": "ja_atamadaka", "contour": "˥˩", "with_particle": "˥˩˩", "reading": "hashi"}
+    },
+    {
+      "fact_id": "tones.example.4",
+      "fact_kind": "term",
+      "value": "橋",
+      "qualifiers": {"ipa": "haɕiꜜ", "tone_id": "ja_odaka", "contour": "˩˥", "with_particle": "˩˥˩", "reading": "hashi"}
+    },
+    {
+      "fact_id": "tones.example.5",
+      "fact_kind": "term",
+      "value": "端",
+      "qualifiers": {"ipa": "haɕi", "tone_id": "ja_heiban", "contour": "˩˥", "with_particle": "˩˥˥", "reading": "hashi"}
+    },
+    {
+      "fact_id": "tones.example.6",
+      "fact_kind": "term",
+      "value": "果物",
+      "qualifiers": {
+        "ipa": "kɯdaꜜmono",
+        "tone_id": "ja_nakadaka",
+        "contour": "˩˥˩˩",
+        "with_particle": "˩˥˩˩˩",
+        "reading": "kudamono"
+      }
+    },
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "not_applicable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

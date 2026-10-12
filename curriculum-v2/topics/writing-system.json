@@ -6,7 +6,7 @@
   "domain": "language_identity",
   "title_key": "curriculum.topic.writing_system.title",
   "summary_key": "curriculum.topic.writing_system.summary",
-  "focus_axes": ["script", "alphabet", "letters_new_to_the_learner", "marks_and_punctuation"],
+  "focus_axes": ["script", "letters_new_to_the_learner"],
   "relations": [
     {
       "relation": "prepares_for",
@@ -26,28 +26,20 @@
   "experience_blueprint": {
     "scene_sequence": [
       {"scene_id": "script", "scene_kind": "concept_reveal", "facet": "script_intro", "required": true},
-      {"scene_id": "letters", "scene_kind": "term_reveal", "facet": "new_letters", "required": true},
       {
-        "scene_id": "marks",
-        "scene_kind": "concept",
-        "facet": "marks_and_punctuation",
+        "scene_id": "letters",
+        "scene_kind": "term_reveal",
+        "facet": "glyph_tour",
         "required": false,
         "minimum_capability": "reviewed_examples"
       },
-      {
-        "scene_id": "check",
-        "scene_kind": "checkpoint",
-        "facet": "letter_check",
-        "required": false,
-        "minimum_capability": "recognition_practice"
-      },
-      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+      {"scene_id": "complete", "scene_kind": "completion"}
     ],
     "default_session_minutes": 3,
-    "notes": "Stop 2 of the Meet-a-language path. Mention the script, do not gate on it: the letters that are new to this learner come first."
+    "notes": "Stop 2 of the Meet-a-language path, a short visual tour: the writing at a glance, then the symbols new to this learner to tap and hear. The letters themselves are learned in the script lesson, a leaf of this stop."
   },
   "difficulty_band": "pre_a1",
   "notes": "The letters a learner lacks are computed from two alphabets, never written per language pair. Speech for single letters is unreliable, so spoken examples are whole words.",
   "review_state": "candidate",
-  "version": 2
+  "version": 3
 }
