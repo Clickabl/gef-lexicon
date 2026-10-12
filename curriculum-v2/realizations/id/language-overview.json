@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.id.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "id",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "austronesian",
+    "branch_ids": ["malayic"],
+    "related_language_tags": ["ms", "jv", "fil"],
+    "script_ids": ["Latn"],
+    "origin_region_ids": ["asia"],
+    "notes": "Indonesian is the standardised national form of Malay and belongs to the Malayic branch of the Austronesian family. Malay (ms) is its closest relative: standard Indonesian and standard Malay share essentially the same basis and differ mainly in pronunciation and vocabulary. Javanese (jv) and Filipino (fil) are more distant Austronesian cousins and separate languages that an Indonesian speaker would have to learn. Broad family metadata for orientation only; membership of a family does not imply mutual intelligibility."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "selamat pagi",
+      "qualifiers": {"ipa": "səˌlamat ˈpaɡi"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "terima kasih",
+      "qualifiers": {"ipa": "təˌrima ˈkasih"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "air",
+      "qualifiers": {"ipa": "ˈair"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

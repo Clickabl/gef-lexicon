@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "id",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_words",
+      "kind": "helpful_transfer",
+      "text": "English and Indonesian are not related, but they have lent each other words, so you already know some. The first group are English words that came from Malay, the language Indonesian grew out of, or from Javanese, sometimes by way of Dutch or Portuguese (ketchup may have come this way too, from Chinese by way of Malay). The last group went the other way: Indonesian borrowed them from Dutch or English, and English has the same Latin and Greek roots, so they look alike.",
+      "pairs": [
+        {"from": "orangutan", "to": "orang utan", "to_ipa": "ˌoraŋ ˈutan", "to_meaning": "forest person"},
+        {"from": "amok", "to": "amuk", "to_ipa": "ˈamuʔ", "to_meaning": "rage, rampage"},
+        {"from": "bamboo", "to": "bambu", "to_ipa": "ˈbambu"},
+        {"from": "gong", "to": "gong", "to_ipa": "ˈɡoŋ"},
+        {"from": "sarong", "to": "sarung", "to_ipa": "ˈsaruŋ"},
+        {"from": "rattan", "to": "rotan", "to_ipa": "ˈrotan"},
+        {"from": "ketchup", "to": "kecap", "to_ipa": "ˈketʃap", "to_meaning": "soy sauce"},
+        {"from": "cockatoo", "to": "kakaktua", "to_ipa": "kakakˈtua"},
+        {"from": "paddy", "to": "padi", "to_ipa": "ˈpadi", "to_meaning": "the rice plant, rice in the field"},
+        {"from": "batik", "to": "batik", "to_ipa": "ˈbatiʔ"},
+        {"from": "durian", "to": "durian", "to_ipa": "duˈrian"},
+        {"from": "satay", "to": "sate", "to_ipa": "ˈsate"},
+        {"from": "computer", "to": "komputer", "to_ipa": "komˈputər"},
+        {"from": "taxi", "to": "taksi", "to_ipa": "ˈtaksi"},
+        {"from": "bus", "to": "bus", "to_ipa": "ˈbus"},
+        {"from": "police", "to": "polisi", "to_ipa": "poˈlisi"},
+        {"from": "hotel", "to": "hotel", "to_ipa": "ˈhotel"},
+        {"from": "restaurant", "to": "restoran", "to_ipa": "resˈtoran"},
+        {"from": "telephone", "to": "telepon", "to_ipa": "teˈlepon"},
+        {"from": "station", "to": "stasiun", "to_ipa": "staˈsiun"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few Indonesian words look just like English ones but mean something else. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "air", "to": "air", "to_ipa": "ˈair", "to_meaning": "water"},
+        {"from": "jam", "to": "jam", "to_ipa": "ˈdʒam", "to_meaning": "hour, clock"},
+        {"from": "sore", "to": "sore", "to_ipa": "ˈsore", "to_meaning": "late afternoon"},
+        {"from": "cat", "to": "cat", "to_ipa": "ˈtʃat", "to_meaning": "paint"},
+        {"from": "ban", "to": "ban", "to_ipa": "ˈban", "to_meaning": "tyre (on a wheel)"},
+        {"from": "rock", "to": "rok", "to_ipa": "ˈrok", "to_meaning": "skirt"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

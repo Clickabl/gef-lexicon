@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.id.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "id",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "ʔ", "tʃ", "dʒ", "f", "s", "z", "ʃ", "x", "h", "m", "n", "ɲ", "ŋ", "r", "l", "j", "w"],
+      "qualifiers": {"variety": "standard_indonesian"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["a", "i", "u", "e", "ə", "o"],
+      "qualifiers": {"variety": "standard_indonesian"}
+    },
+    {
+      "fact_id": "sounds.tricky.c",
+      "fact_kind": "term",
+      "value": "cabai",
+      "qualifiers": {"ipa": "tʃ", "spelling": "c", "word_ipa": "ˈtʃabai", "note_id": "id_c"}
+    },
+    {
+      "fact_id": "sounds.tricky.ng",
+      "fact_kind": "term",
+      "value": "bunga",
+      "qualifiers": {"ipa": "ŋ", "spelling": "ng", "word_ipa": "ˈbuŋa", "note_id": "id_ng"}
+    },
+    {
+      "fact_id": "sounds.tricky.ny",
+      "fact_kind": "term",
+      "value": "punya",
+      "qualifiers": {"ipa": "ɲ", "spelling": "ny", "word_ipa": "ˈpuɲa", "note_id": "palatal_nasal"}
+    },
+    {
+      "fact_id": "sounds.tricky.sy",
+      "fact_kind": "term",
+      "value": "syal",
+      "qualifiers": {"ipa": "ʃ", "spelling": "sy", "word_ipa": "ˈʃal", "note_id": "id_sy"}
+    },
+    {
+      "fact_id": "sounds.tricky.kh",
+      "fact_kind": "term",
+      "value": "khusus",
+      "qualifiers": {"ipa": "x", "spelling": "kh", "word_ipa": "ˈxusus", "note_id": "velar_fricative"}
+    },
+    {
+      "fact_id": "sounds.tricky.final_k",
+      "fact_kind": "term",
+      "value": "tidak",
+      "qualifiers": {"ipa": "ʔ", "spelling": "-k", "word_ipa": "ˈtidaʔ", "note_id": "id_final_k"}
+    },
+    {
+      "fact_id": "sounds.tricky.r",
+      "fact_kind": "term",
+      "value": "roti",
+      "qualifiers": {"ipa": "r", "spelling": "r", "word_ipa": "ˈroti", "note_id": "tapped_r"}
+    },
+    {
+      "fact_id": "sounds.tricky.e",
+      "fact_kind": "term",
+      "value": "emas",
+      "qualifiers": {"ipa": "ə", "spelling": "e", "word_ipa": "əˈmas", "note_id": "id_e"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "cari",
+      "qualifiers": {"ipa": "ˈtʃari", "pair": 1, "note_id": "id_c"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "jari",
+      "qualifiers": {"ipa": "ˈdʒari", "pair": 1, "note_id": "id_c"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "dua",
+      "qualifiers": {"ipa": "ˈdua", "pair": 2, "note_id": "id_stops"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "tua",
+      "qualifiers": {"ipa": "ˈtua", "pair": 2, "note_id": "id_stops"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "lupa",
+      "qualifiers": {"ipa": "ˈlupa", "pair": 3, "note_id": "tapped_r"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "rupa",
+      "qualifiers": {"ipa": "ˈrupa", "pair": 3, "note_id": "tapped_r"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "mata",
+      "qualifiers": {"ipa": "ˈmata", "pair": 4, "note_id": "id_pure_vowels"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "mati",
+      "qualifiers": {"ipa": "ˈmati", "pair": 4, "note_id": "id_pure_vowels"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_penultimate"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

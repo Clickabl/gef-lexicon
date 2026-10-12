@@ -63,7 +63,9 @@
     "branch.western_iranian": "Western Iranian",
     "branch.indo_aryan": "Indo-Aryan",
     "branch.west_slavic": "West Slavic",
-    "branch.south_slavic": "South Slavic"
+    "branch.south_slavic": "South Slavic",
+    "family.austronesian": "Austronesian",
+    "branch.malayic": "Malayic"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -119,8 +121,11 @@
     "pl:hook.decoy.2": "yes",
     "mk:hook.target": "hi, hello",
     "mk:hook.decoy.1": "thank you",
-    "mk:hook.decoy.2": "yes"
+    "mk:hook.decoy.2": "yes",
+    "id:hook.target": "good morning",
+    "id:hook.decoy.1": "thank you",
+    "id:hook.decoy.2": "water"
   },
   "review_state": "candidate",
-  "version": 27
+  "version": 29
 }

@@ -168,7 +168,14 @@
     "sound.mk_dz": "A “d” and a “z” blended into one sound, like the “ds” of “kids”. It can start a word, as in ѕвезда.",
     "sound.mk_lj": "Like the “lli” in “million”. It is written like л with a small tail.",
     "sound.mk_nj": "Like the “ny” in “canyon”. It is written like н with a small tail.",
-    "sound.mk_l_pair": "Before a, o or u, л is a “dark” l: the back of your tongue lifts, as in “full”. The soft љ is like the “lli” of “million”. They make different words."
+    "sound.mk_l_pair": "Before a, o or u, л is a “dark” l: the back of your tongue lifts, as in “full”. The soft љ is like the “lli” of “million”. They make different words.",
+    "sound.id_c": "Always the “ch” of “church”, never a k or an s. So cari is said “CHAH-ree”.",
+    "sound.id_ng": "One sound, the “ng” of “singer”, not an n followed by a g. So bunga is “BOO-ngah”. Written ngg, it is the “ng-g” of “finger”, as in tangga.",
+    "sound.id_sy": "Written sy, but said like the “sh” of “shoe”. So syal is “SHAHL”.",
+    "sound.id_final_k": "At the end of a word, k is not a full k. Close your throat for a moment, like the catch in “uh-oh”. So tidak ends in a tiny throat stop.",
+    "sound.id_e": "The letter e has two sounds. Most often it is a weak “uh”, like the a of “about” (emas). Sometimes it is a clearer “eh”, somewhere between the vowels of “day” and “bed”, as in enak. The spelling doesn’t say which, so you learn it with each word.",
+    "sound.id_stops": "Indonesian p, t and k are said without a puff of air, unlike English “pin”, “tin” and “kin”. Hold a hand in front of your mouth: you should feel almost no puff on the t of tua.",
+    "sound.id_pure_vowels": "Each vowel is short, clear and steady: a as in “father”, i as in “see”, u as in “too”, and o as in “go” but with no closing “w”. Say mata and mati and hear only the last vowel change."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -433,8 +440,24 @@
     "mk:sounds.contrast.3.a": "food",
     "mk:sounds.contrast.3.b": "wound",
     "mk:sounds.contrast.4.a": "house",
-    "mk:sounds.contrast.4.b": "hook"
+    "mk:sounds.contrast.4.b": "hook",
+    "id:sounds.tricky.c": "chili pepper",
+    "id:sounds.tricky.ng": "flower",
+    "id:sounds.tricky.ny": "to have, to own",
+    "id:sounds.tricky.sy": "shawl, scarf",
+    "id:sounds.tricky.kh": "special",
+    "id:sounds.tricky.final_k": "no, not",
+    "id:sounds.tricky.r": "bread",
+    "id:sounds.tricky.e": "gold",
+    "id:sounds.contrast.1.a": "to look for",
+    "id:sounds.contrast.1.b": "finger",
+    "id:sounds.contrast.2.a": "two",
+    "id:sounds.contrast.2.b": "old",
+    "id:sounds.contrast.3.a": "to forget",
+    "id:sounds.contrast.3.b": "appearance, form",
+    "id:sounds.contrast.4.a": "eye",
+    "id:sounds.contrast.4.b": "dead, to die"
   },
   "review_state": "candidate",
-  "version": 31
+  "version": 33
 }
