@@ -1,0 +1,574 @@
+{
+  "schema": "gef-name-frequency-v1",
+  "language": "el",
+  "country": "GR",
+  "publisher": "Hellenic Ministry of Interior (Υπουργείο Εσωτερικών), Citizens Register (Μητρώο Πολιτών), via data.gov.gr",
+  "title": "Ονόματα Πολιτών (Names of Citizens) - snapshot 01/10/2026",
+  "url": "https://data.gov.gr/dataset/onomata-politon ; https://data.gov.gr/dataset/onomata-politon/resource/fa5129ef-afbf-46df-836e-5f85011833f7 ; https://data.gov.gr/datastore/dump/fa5129ef-afbf-46df-836e-5f85011833f7?format=csv",
+  "license": "not stated (the License field on the data.gov.gr dataset and resource records is blank)",
+  "retrieved": "2026-10-12",
+  "period": "Snapshot of the active municipal-register population as published 2026-10-01 (not a birth-year range; all age groups)",
+  "measure": "Number of municipal-register (dimotologio) entries, normal and non-deleted, carrying the given name, summed by us over the municipalities in which the name has more than 1,000 entries (the source only lists a name for a municipality when its count there exceeds 1,000). Counts are therefore lower bounds of the national total, not complete national totals.",
+  "chosen_because": "It is the only official Greek open-data file that lists given names with counts by sex; no official newborn-name file exists on data.gov.gr (the Ministry's birth-declaration and digital naming datasets carry only totals, no names), and the 2026-10-01 snapshot is the latest of five published.",
+  "male": [
+    {
+      "rank": 1,
+      "name": "Γεώργιος",
+      "count": 437263
+    },
+    {
+      "rank": 2,
+      "name": "Κωνσταντίνος",
+      "count": 280236
+    },
+    {
+      "rank": 3,
+      "name": "Ιωάννης",
+      "count": 277444
+    },
+    {
+      "rank": 4,
+      "name": "Δημήτριος",
+      "count": 265642
+    },
+    {
+      "rank": 5,
+      "name": "Νικόλαος",
+      "count": 223569
+    },
+    {
+      "rank": 6,
+      "name": "Παναγιώτης",
+      "count": 126333
+    },
+    {
+      "rank": 7,
+      "name": "Χρήστος",
+      "count": 95387
+    },
+    {
+      "rank": 8,
+      "name": "Βασίλειος",
+      "count": 78413
+    },
+    {
+      "rank": 9,
+      "name": "Αθανάσιος",
+      "count": 39644
+    },
+    {
+      "rank": 10,
+      "name": "Εμμανουήλ",
+      "count": 34758
+    },
+    {
+      "rank": 11,
+      "name": "Μιχαήλ",
+      "count": 26470
+    },
+    {
+      "rank": 12,
+      "name": "Αλέξανδρος",
+      "count": 24357
+    },
+    {
+      "rank": 13,
+      "name": "Ευάγγελος",
+      "count": 19266
+    },
+    {
+      "rank": 14,
+      "name": "Αντώνιος",
+      "count": 18686
+    },
+    {
+      "rank": 15,
+      "name": "Σπυρίδων",
+      "count": 17509
+    },
+    {
+      "rank": 16,
+      "name": "Ανδρέας",
+      "count": 12627
+    },
+    {
+      "rank": 17,
+      "name": "Θεόδωρος",
+      "count": 10335
+    },
+    {
+      "rank": 18,
+      "name": "Διονύσιος",
+      "count": 8511
+    },
+    {
+      "rank": 19,
+      "name": "Ηλίας",
+      "count": 7989
+    },
+    {
+      "rank": 20,
+      "name": "Απόστολος",
+      "count": 7652
+    },
+    {
+      "rank": 21,
+      "name": "Αναστάσιος",
+      "count": 7080
+    },
+    {
+      "rank": 22,
+      "name": "Στυλιανός",
+      "count": 5784
+    },
+    {
+      "rank": 23,
+      "name": "Χαράλαμπος",
+      "count": 5169
+    },
+    {
+      "rank": 24,
+      "name": "Γεωργιος",
+      "count": 4608
+    },
+    {
+      "rank": 25,
+      "name": "Ευστράτιος",
+      "count": 3845
+    },
+    {
+      "rank": 26,
+      "name": "Ιωαννης",
+      "count": 3824
+    },
+    {
+      "rank": 27,
+      "name": "Πέτρος",
+      "count": 3479
+    },
+    {
+      "rank": 28,
+      "name": "Νικολαος",
+      "count": 3417
+    },
+    {
+      "rank": 29,
+      "name": "Θωμάς",
+      "count": 3332
+    },
+    {
+      "rank": 30,
+      "name": "Σταύρος",
+      "count": 3304
+    },
+    {
+      "rank": 31,
+      "name": "Δημητριος",
+      "count": 3119
+    },
+    {
+      "rank": 32,
+      "name": "Κωνσταντινος",
+      "count": 2873
+    },
+    {
+      "rank": 33,
+      "name": "Στέφανος",
+      "count": 2832
+    },
+    {
+      "rank": 34,
+      "name": "Άγγελος",
+      "count": 2482
+    },
+    {
+      "rank": 35,
+      "name": "Ελευθέριος",
+      "count": 2381
+    },
+    {
+      "rank": 36,
+      "name": "Παναγιωτης",
+      "count": 2146
+    },
+    {
+      "rank": 37,
+      "name": "Γεράσιμος",
+      "count": 1850
+    },
+    {
+      "rank": 38,
+      "name": "Μάριος",
+      "count": 1595
+    },
+    {
+      "rank": 39,
+      "name": "Φίλιππος",
+      "count": 1512
+    },
+    {
+      "rank": 40,
+      "name": "Σωτήριος",
+      "count": 1493
+    },
+    {
+      "rank": 41,
+      "name": "Βασιλειος",
+      "count": 1439
+    },
+    {
+      "rank": 42,
+      "name": "Μιχαηλ",
+      "count": 1408
+    },
+    {
+      "rank": 43,
+      "name": "Παύλος",
+      "count": 1387
+    },
+    {
+      "rank": 44,
+      "name": "Αγγελος",
+      "count": 1318
+    },
+    {
+      "rank": 45,
+      "name": "Αντωνιος",
+      "count": 1236
+    },
+    {
+      "rank": 46,
+      "name": "Χρηστος",
+      "count": 1221
+    },
+    {
+      "rank": 47,
+      "name": "Σάββας",
+      "count": 1125
+    },
+    {
+      "rank": 48,
+      "name": "Φώτιος",
+      "count": 1116
+    },
+    {
+      "rank": 49,
+      "name": "Λεωνίδας",
+      "count": 1083
+    },
+    {
+      "rank": 50,
+      "name": "Γρηγόριος",
+      "count": 1069
+    },
+    {
+      "rank": 51,
+      "name": "Εμμανουηλ",
+      "count": 1065
+    },
+    {
+      "rank": 52,
+      "name": "Ευαγγελος",
+      "count": 1048
+    }
+  ],
+  "female": [
+    {
+      "rank": 1,
+      "name": "Μαρία",
+      "count": 449773
+    },
+    {
+      "rank": 2,
+      "name": "Ελένη",
+      "count": 205157
+    },
+    {
+      "rank": 3,
+      "name": "Αικατερίνη",
+      "count": 97100
+    },
+    {
+      "rank": 4,
+      "name": "Βασιλική",
+      "count": 74484
+    },
+    {
+      "rank": 5,
+      "name": "Σοφία",
+      "count": 50711
+    },
+    {
+      "rank": 6,
+      "name": "Αναστασία",
+      "count": 48730
+    },
+    {
+      "rank": 7,
+      "name": "Γεωργία",
+      "count": 36951
+    },
+    {
+      "rank": 8,
+      "name": "Ειρήνη",
+      "count": 32990
+    },
+    {
+      "rank": 9,
+      "name": "Ευαγγελία",
+      "count": 31856
+    },
+    {
+      "rank": 10,
+      "name": "Παναγιώτα",
+      "count": 21349
+    },
+    {
+      "rank": 11,
+      "name": "Ιωάννα",
+      "count": 19721
+    },
+    {
+      "rank": 12,
+      "name": "Δήμητρα",
+      "count": 19218
+    },
+    {
+      "rank": 13,
+      "name": "Αγγελική",
+      "count": 16580
+    },
+    {
+      "rank": 14,
+      "name": "Δέσποινα",
+      "count": 14815
+    },
+    {
+      "rank": 15,
+      "name": "Κωνσταντίνα",
+      "count": 14716
+    },
+    {
+      "rank": 16,
+      "name": "Χριστίνα",
+      "count": 13454
+    },
+    {
+      "rank": 17,
+      "name": "Άννα",
+      "count": 10825
+    },
+    {
+      "rank": 18,
+      "name": "Παρασκευή",
+      "count": 9861
+    },
+    {
+      "rank": 19,
+      "name": "Αλεξάνδρα",
+      "count": 7841
+    },
+    {
+      "rank": 20,
+      "name": "Καλλιόπη",
+      "count": 7717
+    },
+    {
+      "rank": 21,
+      "name": "Αννα",
+      "count": 6859
+    },
+    {
+      "rank": 22,
+      "name": "Θεοδώρα",
+      "count": 5780
+    },
+    {
+      "rank": 23,
+      "name": "Μαρια",
+      "count": 5579
+    },
+    {
+      "rank": 24,
+      "name": "Φωτεινή",
+      "count": 5244
+    },
+    {
+      "rank": 25,
+      "name": "Ελευθερία",
+      "count": 4324
+    },
+    {
+      "rank": 26,
+      "name": "Ζωή",
+      "count": 4270
+    },
+    {
+      "rank": 27,
+      "name": "Στυλιανή",
+      "count": 4181
+    },
+    {
+      "rank": 28,
+      "name": "Σταυρούλα",
+      "count": 4147
+    },
+    {
+      "rank": 29,
+      "name": "Αθηνά",
+      "count": 3995
+    },
+    {
+      "rank": 30,
+      "name": "Μαρίνα",
+      "count": 3759
+    },
+    {
+      "rank": 31,
+      "name": "Ελενη",
+      "count": 3130
+    },
+    {
+      "rank": 32,
+      "name": "Κυριακή",
+      "count": 2861
+    },
+    {
+      "rank": 33,
+      "name": "Χρυσούλα",
+      "count": 2857
+    },
+    {
+      "rank": 34,
+      "name": "Αθανασία",
+      "count": 2771
+    },
+    {
+      "rank": 35,
+      "name": "Αικατερινη",
+      "count": 2361
+    },
+    {
+      "rank": 36,
+      "name": "Ελισάβετ",
+      "count": 2213
+    },
+    {
+      "rank": 37,
+      "name": "Σπυριδούλα",
+      "count": 2160
+    },
+    {
+      "rank": 38,
+      "name": "Τσαμπίκα",
+      "count": 2050
+    },
+    {
+      "rank": 39,
+      "name": "Ευγενία",
+      "count": 1867
+    },
+    {
+      "rank": 40,
+      "name": "Νικολίτσα",
+      "count": 1674
+    },
+    {
+      "rank": 41,
+      "name": "Ειρηνη",
+      "count": 1536
+    },
+    {
+      "rank": 42,
+      "name": "Ευαγγελια",
+      "count": 1502
+    },
+    {
+      "rank": 43,
+      "name": "Ολγα",
+      "count": 1405
+    },
+    {
+      "rank": 44,
+      "name": "Μαργαρίτα",
+      "count": 1379
+    },
+    {
+      "rank": 45,
+      "name": "Διονυσία",
+      "count": 1368
+    },
+    {
+      "rank": 46,
+      "name": "Βασιλικη",
+      "count": 1350
+    },
+    {
+      "rank": 47,
+      "name": "Σοφια",
+      "count": 1319
+    },
+    {
+      "rank": 48,
+      "name": "Όλγα",
+      "count": 1230
+    },
+    {
+      "rank": 49,
+      "name": "Χαρίκλεια",
+      "count": 1207
+    },
+    {
+      "rank": 50,
+      "name": "Αντωνία",
+      "count": 1182
+    },
+    {
+      "rank": 51,
+      "name": "Αγγελικη",
+      "count": 1156
+    },
+    {
+      "rank": 52,
+      "name": "Αναστασια",
+      "count": 1156
+    },
+    {
+      "rank": 53,
+      "name": "Αφροδίτη",
+      "count": 1092
+    },
+    {
+      "rank": 54,
+      "name": "Μυρσίνη",
+      "count": 1092
+    },
+    {
+      "rank": 55,
+      "name": "Ουρανία",
+      "count": 1084
+    },
+    {
+      "rank": 56,
+      "name": "Ανδριάνα",
+      "count": 1075
+    },
+    {
+      "rank": 57,
+      "name": "Νίκη",
+      "count": 1069
+    },
+    {
+      "rank": 58,
+      "name": "Δανάη",
+      "count": 1042
+    },
+    {
+      "rank": 59,
+      "name": "Πηνελόπη",
+      "count": 1007
+    }
+  ],
+  "notes": "Fewer than 100 per sex because the source is thresholded: only names with >1,000 entries within a single municipality appear (min value in file is 1,001). The file has 1,723 rows (202 municipalities, gender field ΑΡΡΕΝ=male, ΘΗΛΥ=female, columns regionalUnitName, municipalityName, firstName, gender, recordCount); it yields 52 male and 59 female distinct names, so these lists are complete for what the source publishes, not truncated by us. Source publishes no rank; ranks are ours, by descending summed count (ties by name). Because a name is dropped in any municipality where it has 1,000 or fewer entries, the summed counts undercount, and undercount small/regional names most; ranks in the lower part of each list (below about the 20th) are approximate. Names are the official registry forms (e.g. Γεώργιος, Ιωάννης, Δημήτριος), not colloquial forms (Γιώργος, Γιάννης, Δημήτρης); the source also contains accent-less (tonos-missing) register spellings as SEPARATE rows (data-entry variants of the same name); we kept every source row unmerged, with source spelling. Male variants (accentless row -> accented row): Γεωργιος->Γεώργιος, Κωνσταντινος->Κωνσταντίνος, Ιωαννης->Ιωάννης, Δημητριος->Δημήτριος, Νικολαος->Νικόλαος, Παναγιωτης->Παναγιώτης, Χρηστος->Χρήστος, Βασιλειος->Βασίλειος, Εμμανουηλ->Εμμανουήλ, Μιχαηλ->Μιχαήλ, Ευαγγελος->Ευάγγελος, Αντωνιος->Αντώνιος, Αγγελος->Άγγελος. Female: Μαρια->Μαρία, Ελενη->Ελένη, Αικατερινη->Αικατερίνη, Βασιλικη->Βασιλική, Σοφια->Σοφία, Αναστασια->Αναστασία, Ειρηνη->Ειρήνη, Ευαγγελια->Ευαγγελία, Αγγελικη->Αγγελική, Αννα->Άννα, Ολγα->Όλγα (here Ολγα is the accentless row and Όλγα the accented one). After merging these, 39 male and 48 female distinct names remain; reviewers should merge by accent-stripped form and use the accented spelling. Measures people on the active register of all ages, so it reflects names of older generations, not recent newborn trends. Earlier snapshots 22/07, 19/08, 01/09 (two resources) 2026 give near-identical totals (112-114 distinct names). ELSTAT (statistics.gr) was checked: it published only percentage shares of the top 20-30 names per birth year 1940-2021 as videos/infographics, no downloadable count table for 100 names, so it was not used. Cyprus fallback was not needed.",
+  "source_id": "src_name_frequency_el_gr_data_gov_gr_ypes"
+}

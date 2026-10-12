@@ -1,0 +1,1019 @@
+{
+  "schema": "gef-name-frequency-v1",
+  "language": "fr",
+  "country": "FR",
+  "publisher": "INSEE (Institut national de la statistique et des études économiques)",
+  "title": "Fichier des prénoms (national file, births in France)",
+  "url": "https://www.insee.fr/fr/statistiques/8595130 (file: https://www.insee.fr/fr/statistiques/fichier/8595130/prenoms-2025-nat_csv.zip)",
+  "license": "Licence Ouverte / Open Licence (Etalab) per INSEE open data terms",
+  "retrieved": "2026-10-12",
+  "period": "1900-2025",
+  "measure": "Births in France (metropolitan and overseas departments, excluding Mayotte before 2014) with that first name, summed over all years the file covers; INSEE groups very rare names as _PRENOMS_RARES, which are not ranked.",
+  "chosen_because": "The complete national file, so no year range was picked to favour any name.",
+  "male": [
+    {
+      "rank": 1,
+      "name": "Jean",
+      "count": 1910275
+    },
+    {
+      "rank": 2,
+      "name": "Pierre",
+      "count": 892580
+    },
+    {
+      "rank": 3,
+      "name": "Michel",
+      "count": 820540
+    },
+    {
+      "rank": 4,
+      "name": "André",
+      "count": 712400
+    },
+    {
+      "rank": 5,
+      "name": "Louis",
+      "count": 541985
+    },
+    {
+      "rank": 6,
+      "name": "Philippe",
+      "count": 538770
+    },
+    {
+      "rank": 7,
+      "name": "René",
+      "count": 516210
+    },
+    {
+      "rank": 8,
+      "name": "Alain",
+      "count": 506945
+    },
+    {
+      "rank": 9,
+      "name": "Jacques",
+      "count": 483350
+    },
+    {
+      "rank": 10,
+      "name": "Marcel",
+      "count": 471230
+    },
+    {
+      "rank": 11,
+      "name": "Bernard",
+      "count": 469240
+    },
+    {
+      "rank": 12,
+      "name": "Daniel",
+      "count": 437705
+    },
+    {
+      "rank": 13,
+      "name": "Paul",
+      "count": 431335
+    },
+    {
+      "rank": 14,
+      "name": "Roger",
+      "count": 423575
+    },
+    {
+      "rank": 15,
+      "name": "Robert",
+      "count": 419165
+    },
+    {
+      "rank": 16,
+      "name": "Claude",
+      "count": 411705
+    },
+    {
+      "rank": 17,
+      "name": "Henri",
+      "count": 407330
+    },
+    {
+      "rank": 18,
+      "name": "Nicolas",
+      "count": 406300
+    },
+    {
+      "rank": 19,
+      "name": "Georges",
+      "count": 405960
+    },
+    {
+      "rank": 20,
+      "name": "Christian",
+      "count": 405780
+    },
+    {
+      "rank": 21,
+      "name": "François",
+      "count": 398740
+    },
+    {
+      "rank": 22,
+      "name": "Patrick",
+      "count": 395210
+    },
+    {
+      "rank": 23,
+      "name": "Joseph",
+      "count": 380150
+    },
+    {
+      "rank": 24,
+      "name": "Gérard",
+      "count": 379330
+    },
+    {
+      "rank": 25,
+      "name": "Christophe",
+      "count": 375980
+    },
+    {
+      "rank": 26,
+      "name": "Julien",
+      "count": 345165
+    },
+    {
+      "rank": 27,
+      "name": "Maurice",
+      "count": 337155
+    },
+    {
+      "rank": 28,
+      "name": "Laurent",
+      "count": 328475
+    },
+    {
+      "rank": 29,
+      "name": "Frédéric",
+      "count": 327870
+    },
+    {
+      "rank": 30,
+      "name": "Eric",
+      "count": 318350
+    },
+    {
+      "rank": 31,
+      "name": "David",
+      "count": 316240
+    },
+    {
+      "rank": 32,
+      "name": "Stéphane",
+      "count": 308545
+    },
+    {
+      "rank": 33,
+      "name": "Pascal",
+      "count": 307805
+    },
+    {
+      "rank": 34,
+      "name": "Alexandre",
+      "count": 306030
+    },
+    {
+      "rank": 35,
+      "name": "Sébastien",
+      "count": 304115
+    },
+    {
+      "rank": 36,
+      "name": "Thierry",
+      "count": 289495
+    },
+    {
+      "rank": 37,
+      "name": "Antoine",
+      "count": 285080
+    },
+    {
+      "rank": 38,
+      "name": "Thomas",
+      "count": 282085
+    },
+    {
+      "rank": 39,
+      "name": "Olivier",
+      "count": 280340
+    },
+    {
+      "rank": 40,
+      "name": "Raymond",
+      "count": 272785
+    },
+    {
+      "rank": 41,
+      "name": "Guy",
+      "count": 265665
+    },
+    {
+      "rank": 42,
+      "name": "Charles",
+      "count": 245540
+    },
+    {
+      "rank": 43,
+      "name": "Dominique",
+      "count": 241980
+    },
+    {
+      "rank": 44,
+      "name": "Marc",
+      "count": 238230
+    },
+    {
+      "rank": 45,
+      "name": "Didier",
+      "count": 237130
+    },
+    {
+      "rank": 46,
+      "name": "Vincent",
+      "count": 232560
+    },
+    {
+      "rank": 47,
+      "name": "Yves",
+      "count": 229330
+    },
+    {
+      "rank": 48,
+      "name": "Maxime",
+      "count": 224525
+    },
+    {
+      "rank": 49,
+      "name": "Guillaume",
+      "count": 222860
+    },
+    {
+      "rank": 50,
+      "name": "Bruno",
+      "count": 220725
+    },
+    {
+      "rank": 51,
+      "name": "Lucien",
+      "count": 219640
+    },
+    {
+      "rank": 52,
+      "name": "Serge",
+      "count": 219090
+    },
+    {
+      "rank": 53,
+      "name": "Jean-Pierre",
+      "count": 215420
+    },
+    {
+      "rank": 54,
+      "name": "Gabriel",
+      "count": 211845
+    },
+    {
+      "rank": 55,
+      "name": "Albert",
+      "count": 204320
+    },
+    {
+      "rank": 56,
+      "name": "Romain",
+      "count": 193025
+    },
+    {
+      "rank": 57,
+      "name": "Lucas",
+      "count": 187940
+    },
+    {
+      "rank": 58,
+      "name": "Jerome",
+      "count": 181925
+    },
+    {
+      "rank": 59,
+      "name": "Gilbert",
+      "count": 180060
+    },
+    {
+      "rank": 60,
+      "name": "Franck",
+      "count": 177730
+    },
+    {
+      "rank": 61,
+      "name": "Clément",
+      "count": 176060
+    },
+    {
+      "rank": 62,
+      "name": "Jules",
+      "count": 175905
+    },
+    {
+      "rank": 63,
+      "name": "Gilles",
+      "count": 175575
+    },
+    {
+      "rank": 64,
+      "name": "Jean-Claude",
+      "count": 174235
+    },
+    {
+      "rank": 65,
+      "name": "Anthony",
+      "count": 173785
+    },
+    {
+      "rank": 66,
+      "name": "Emile",
+      "count": 168365
+    },
+    {
+      "rank": 67,
+      "name": "Francis",
+      "count": 166165
+    },
+    {
+      "rank": 68,
+      "name": "Raphaël",
+      "count": 161475
+    },
+    {
+      "rank": 69,
+      "name": "Hugo",
+      "count": 156460
+    },
+    {
+      "rank": 70,
+      "name": "Denis",
+      "count": 153130
+    },
+    {
+      "rank": 71,
+      "name": "Mathieu",
+      "count": 152675
+    },
+    {
+      "rank": 72,
+      "name": "Kevin",
+      "count": 152655
+    },
+    {
+      "rank": 73,
+      "name": "Benjamin",
+      "count": 152530
+    },
+    {
+      "rank": 74,
+      "name": "Alexis",
+      "count": 150520
+    },
+    {
+      "rank": 75,
+      "name": "Joël",
+      "count": 146550
+    },
+    {
+      "rank": 76,
+      "name": "Arthur",
+      "count": 141245
+    },
+    {
+      "rank": 77,
+      "name": "Hervé",
+      "count": 139525
+    },
+    {
+      "rank": 78,
+      "name": "Adrien",
+      "count": 139390
+    },
+    {
+      "rank": 79,
+      "name": "Patrice",
+      "count": 138080
+    },
+    {
+      "rank": 80,
+      "name": "Emmanuel",
+      "count": 136850
+    },
+    {
+      "rank": 81,
+      "name": "Victor",
+      "count": 136840
+    },
+    {
+      "rank": 82,
+      "name": "Léon",
+      "count": 136090
+    },
+    {
+      "rank": 83,
+      "name": "Sylvain",
+      "count": 135895
+    },
+    {
+      "rank": 84,
+      "name": "Arnaud",
+      "count": 134765
+    },
+    {
+      "rank": 85,
+      "name": "Fabrice",
+      "count": 134525
+    },
+    {
+      "rank": 86,
+      "name": "Cedric",
+      "count": 133390
+    },
+    {
+      "rank": 87,
+      "name": "Roland",
+      "count": 132480
+    },
+    {
+      "rank": 88,
+      "name": "Quentin",
+      "count": 128850
+    },
+    {
+      "rank": 89,
+      "name": "Théo",
+      "count": 128260
+    },
+    {
+      "rank": 90,
+      "name": "Florian",
+      "count": 127880
+    },
+    {
+      "rank": 91,
+      "name": "Ludovic",
+      "count": 127120
+    },
+    {
+      "rank": 92,
+      "name": "Damien",
+      "count": 126380
+    },
+    {
+      "rank": 93,
+      "name": "Léo",
+      "count": 125760
+    },
+    {
+      "rank": 94,
+      "name": "Benoît",
+      "count": 125595
+    },
+    {
+      "rank": 95,
+      "name": "Nathan",
+      "count": 123205
+    },
+    {
+      "rank": 96,
+      "name": "Enzo",
+      "count": 120740
+    },
+    {
+      "rank": 97,
+      "name": "Fernand",
+      "count": 118640
+    },
+    {
+      "rank": 98,
+      "name": "Jean-Luc",
+      "count": 117805
+    },
+    {
+      "rank": 99,
+      "name": "Valentin",
+      "count": 117220
+    },
+    {
+      "rank": 100,
+      "name": "Jeremy",
+      "count": 117065
+    }
+  ],
+  "female": [
+    {
+      "rank": 1,
+      "name": "Marie",
+      "count": 2230220
+    },
+    {
+      "rank": 2,
+      "name": "Jeanne",
+      "count": 567320
+    },
+    {
+      "rank": 3,
+      "name": "Françoise",
+      "count": 401420
+    },
+    {
+      "rank": 4,
+      "name": "Monique",
+      "count": 399660
+    },
+    {
+      "rank": 5,
+      "name": "Catherine",
+      "count": 394680
+    },
+    {
+      "rank": 6,
+      "name": "Nathalie",
+      "count": 382890
+    },
+    {
+      "rank": 7,
+      "name": "Isabelle",
+      "count": 378325
+    },
+    {
+      "rank": 8,
+      "name": "Jacqueline",
+      "count": 372420
+    },
+    {
+      "rank": 9,
+      "name": "Sylvie",
+      "count": 364645
+    },
+    {
+      "rank": 10,
+      "name": "Anne",
+      "count": 363700
+    },
+    {
+      "rank": 11,
+      "name": "Martine",
+      "count": 320130
+    },
+    {
+      "rank": 12,
+      "name": "Madeleine",
+      "count": 306905
+    },
+    {
+      "rank": 13,
+      "name": "Nicole",
+      "count": 293705
+    },
+    {
+      "rank": 14,
+      "name": "Suzanne",
+      "count": 293030
+    },
+    {
+      "rank": 15,
+      "name": "Louise",
+      "count": 287820
+    },
+    {
+      "rank": 16,
+      "name": "Hélène",
+      "count": 281805
+    },
+    {
+      "rank": 17,
+      "name": "Christine",
+      "count": 280615
+    },
+    {
+      "rank": 18,
+      "name": "Marguerite",
+      "count": 271425
+    },
+    {
+      "rank": 19,
+      "name": "Denise",
+      "count": 263365
+    },
+    {
+      "rank": 20,
+      "name": "Christiane",
+      "count": 259505
+    },
+    {
+      "rank": 21,
+      "name": "Yvonne",
+      "count": 256925
+    },
+    {
+      "rank": 22,
+      "name": "Valérie",
+      "count": 253020
+    },
+    {
+      "rank": 23,
+      "name": "Sophie",
+      "count": 247380
+    },
+    {
+      "rank": 24,
+      "name": "Sandrine",
+      "count": 240175
+    },
+    {
+      "rank": 25,
+      "name": "Céline",
+      "count": 239430
+    },
+    {
+      "rank": 26,
+      "name": "Stéphanie",
+      "count": 238640
+    },
+    {
+      "rank": 27,
+      "name": "Véronique",
+      "count": 235670
+    },
+    {
+      "rank": 28,
+      "name": "Chantal",
+      "count": 232125
+    },
+    {
+      "rank": 29,
+      "name": "Marcelle",
+      "count": 229295
+    },
+    {
+      "rank": 30,
+      "name": "Renée",
+      "count": 221685
+    },
+    {
+      "rank": 31,
+      "name": "Simone",
+      "count": 220170
+    },
+    {
+      "rank": 32,
+      "name": "Jeannine",
+      "count": 218695
+    },
+    {
+      "rank": 33,
+      "name": "Julie",
+      "count": 215445
+    },
+    {
+      "rank": 34,
+      "name": "Andrée",
+      "count": 215435
+    },
+    {
+      "rank": 35,
+      "name": "Paulette",
+      "count": 213280
+    },
+    {
+      "rank": 36,
+      "name": "Lucie",
+      "count": 211965
+    },
+    {
+      "rank": 37,
+      "name": "Germaine",
+      "count": 210925
+    },
+    {
+      "rank": 38,
+      "name": "Alice",
+      "count": 210680
+    },
+    {
+      "rank": 39,
+      "name": "Annie",
+      "count": 210225
+    },
+    {
+      "rank": 40,
+      "name": "Camille",
+      "count": 209870
+    },
+    {
+      "rank": 41,
+      "name": "Léa",
+      "count": 209780
+    },
+    {
+      "rank": 42,
+      "name": "Patricia",
+      "count": 207515
+    },
+    {
+      "rank": 43,
+      "name": "Yvette",
+      "count": 203395
+    },
+    {
+      "rank": 44,
+      "name": "Brigitte",
+      "count": 202570
+    },
+    {
+      "rank": 45,
+      "name": "Emilie",
+      "count": 193855
+    },
+    {
+      "rank": 46,
+      "name": "Odette",
+      "count": 192575
+    },
+    {
+      "rank": 47,
+      "name": "Geneviève",
+      "count": 185945
+    },
+    {
+      "rank": 48,
+      "name": "Aurélie",
+      "count": 182420
+    },
+    {
+      "rank": 49,
+      "name": "Laurence",
+      "count": 181630
+    },
+    {
+      "rank": 50,
+      "name": "Michèle",
+      "count": 180010
+    },
+    {
+      "rank": 51,
+      "name": "Cécile",
+      "count": 177710
+    },
+    {
+      "rank": 52,
+      "name": "Emma",
+      "count": 175980
+    },
+    {
+      "rank": 53,
+      "name": "Thérèse",
+      "count": 175705
+    },
+    {
+      "rank": 54,
+      "name": "Colette",
+      "count": 175435
+    },
+    {
+      "rank": 55,
+      "name": "Juliette",
+      "count": 175220
+    },
+    {
+      "rank": 56,
+      "name": "Sarah",
+      "count": 174675
+    },
+    {
+      "rank": 57,
+      "name": "Manon",
+      "count": 174030
+    },
+    {
+      "rank": 58,
+      "name": "Virginie",
+      "count": 171440
+    },
+    {
+      "rank": 59,
+      "name": "Lucienne",
+      "count": 170625
+    },
+    {
+      "rank": 60,
+      "name": "Dominique",
+      "count": 168000
+    },
+    {
+      "rank": 61,
+      "name": "Raymonde",
+      "count": 164815
+    },
+    {
+      "rank": 62,
+      "name": "Corinne",
+      "count": 162795
+    },
+    {
+      "rank": 63,
+      "name": "Elisabeth",
+      "count": 162410
+    },
+    {
+      "rank": 64,
+      "name": "Claire",
+      "count": 160170
+    },
+    {
+      "rank": 65,
+      "name": "Chloé",
+      "count": 160140
+    },
+    {
+      "rank": 66,
+      "name": "Claudine",
+      "count": 158965
+    },
+    {
+      "rank": 67,
+      "name": "Pauline",
+      "count": 158690
+    },
+    {
+      "rank": 68,
+      "name": "Danielle",
+      "count": 158075
+    },
+    {
+      "rank": 69,
+      "name": "Elodie",
+      "count": 156845
+    },
+    {
+      "rank": 70,
+      "name": "Caroline",
+      "count": 156570
+    },
+    {
+      "rank": 71,
+      "name": "Christelle",
+      "count": 155720
+    },
+    {
+      "rank": 72,
+      "name": "Charlotte",
+      "count": 155075
+    },
+    {
+      "rank": 73,
+      "name": "Josette",
+      "count": 154035
+    },
+    {
+      "rank": 74,
+      "name": "Georgette",
+      "count": 152865
+    },
+    {
+      "rank": 75,
+      "name": "Laura",
+      "count": 149375
+    },
+    {
+      "rank": 76,
+      "name": "Florence",
+      "count": 148100
+    },
+    {
+      "rank": 77,
+      "name": "Mathilde",
+      "count": 146765
+    },
+    {
+      "rank": 78,
+      "name": "Maria",
+      "count": 144200
+    },
+    {
+      "rank": 79,
+      "name": "Audrey",
+      "count": 141550
+    },
+    {
+      "rank": 80,
+      "name": "Bernadette",
+      "count": 141455
+    },
+    {
+      "rank": 81,
+      "name": "Gisèle",
+      "count": 137325
+    },
+    {
+      "rank": 82,
+      "name": "Anaïs",
+      "count": 133680
+    },
+    {
+      "rank": 83,
+      "name": "Mélanie",
+      "count": 133365
+    },
+    {
+      "rank": 84,
+      "name": "Laetitia",
+      "count": 132380
+    },
+    {
+      "rank": 85,
+      "name": "Nadine",
+      "count": 131775
+    },
+    {
+      "rank": 86,
+      "name": "Ginette",
+      "count": 131480
+    },
+    {
+      "rank": 87,
+      "name": "Annick",
+      "count": 131405
+    },
+    {
+      "rank": 88,
+      "name": "Béatrice",
+      "count": 131270
+    },
+    {
+      "rank": 89,
+      "name": "Mireille",
+      "count": 129900
+    },
+    {
+      "rank": 90,
+      "name": "Anna",
+      "count": 128110
+    },
+    {
+      "rank": 91,
+      "name": "Evelyne",
+      "count": 128040
+    },
+    {
+      "rank": 92,
+      "name": "Delphine",
+      "count": 127665
+    },
+    {
+      "rank": 93,
+      "name": "Henriette",
+      "count": 126870
+    },
+    {
+      "rank": 94,
+      "name": "Marion",
+      "count": 125465
+    },
+    {
+      "rank": 95,
+      "name": "Josiane",
+      "count": 123055
+    },
+    {
+      "rank": 96,
+      "name": "Marthe",
+      "count": 122845
+    },
+    {
+      "rank": 97,
+      "name": "Michelle",
+      "count": 122275
+    },
+    {
+      "rank": 98,
+      "name": "Karine",
+      "count": 121115
+    },
+    {
+      "rank": 99,
+      "name": "Elise",
+      "count": 119790
+    },
+    {
+      "rank": 100,
+      "name": "Marine",
+      "count": 119050
+    }
+  ],
+  "notes": "INSEE prints names in capitals; they are shown here in Title Case (hyphen and apostrophe parts capitalised). Compound first names are separate entries as INSEE lists them. Counts are births since the first year, not living people.",
+  "source_id": "src_name_frequency_fr_fr_insee"
+}

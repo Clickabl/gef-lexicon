@@ -1,0 +1,1019 @@
+{
+  "schema": "gef-name-frequency-v1",
+  "language": "it",
+  "country": "IT",
+  "publisher": "Istat (Istituto nazionale di statistica)",
+  "title": "Conta nomi - Quante bambine e quanti bambini si chiamano...? (nomi dei nati iscritti in anagrafe, graduatoria 2024)",
+  "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/contanomi/nati/index2022.php?type=list&limit=100&year=2024 (JSONP web service behind the page https://www.istat.it/dati/calcolatori/contanomi/; year list from ?type=years)",
+  "license": "Creative Commons Attribuzione 4.0 (CC BY 4.0), per https://www.istat.it/note-legali/: unless otherwise indicated, all content on istat.it is CC BY 4.0",
+  "retrieved": "2026-10-12",
+  "period": "2024 (births registered in the civil registry in calendar year 2024; the service covers 1999-2024)",
+  "measure": "Number of newborns (births registered in Italian civil registries, Istat survey 'Iscritti in anagrafe per nascita') given that name in 2024, ranked within each sex",
+  "chosen_because": "It is Istat's own national newborn-name ranking for the latest year the service offers (2024), and the web service returns the full top 100 per sex.",
+  "male": [
+    {
+      "rank": 1,
+      "name": "Leonardo",
+      "count": 6580
+    },
+    {
+      "rank": 2,
+      "name": "Edoardo",
+      "count": 5819
+    },
+    {
+      "rank": 3,
+      "name": "Tommaso",
+      "count": 4389
+    },
+    {
+      "rank": 4,
+      "name": "Mattia",
+      "count": 4233
+    },
+    {
+      "rank": 5,
+      "name": "Alessandro",
+      "count": 4201
+    },
+    {
+      "rank": 6,
+      "name": "Francesco",
+      "count": 4199
+    },
+    {
+      "rank": 7,
+      "name": "Lorenzo",
+      "count": 3851
+    },
+    {
+      "rank": 8,
+      "name": "Gabriele",
+      "count": 3805
+    },
+    {
+      "rank": 9,
+      "name": "Riccardo",
+      "count": 3505
+    },
+    {
+      "rank": 10,
+      "name": "Andrea",
+      "count": 3143
+    },
+    {
+      "rank": 11,
+      "name": "Diego",
+      "count": 2645
+    },
+    {
+      "rank": 12,
+      "name": "Enea",
+      "count": 2460
+    },
+    {
+      "rank": 13,
+      "name": "Matteo",
+      "count": 2412
+    },
+    {
+      "rank": 14,
+      "name": "Giuseppe",
+      "count": 2356
+    },
+    {
+      "rank": 15,
+      "name": "Antonio",
+      "count": 2196
+    },
+    {
+      "rank": 16,
+      "name": "Nicolo'",
+      "count": 2187
+    },
+    {
+      "rank": 17,
+      "name": "Federico",
+      "count": 2078
+    },
+    {
+      "rank": 18,
+      "name": "Samuele",
+      "count": 1997
+    },
+    {
+      "rank": 19,
+      "name": "Pietro",
+      "count": 1953
+    },
+    {
+      "rank": 20,
+      "name": "Filippo",
+      "count": 1944
+    },
+    {
+      "rank": 21,
+      "name": "Giovanni",
+      "count": 1917
+    },
+    {
+      "rank": 22,
+      "name": "Giulio",
+      "count": 1747
+    },
+    {
+      "rank": 23,
+      "name": "Noah",
+      "count": 1683
+    },
+    {
+      "rank": 24,
+      "name": "Elia",
+      "count": 1544
+    },
+    {
+      "rank": 25,
+      "name": "Davide",
+      "count": 1509
+    },
+    {
+      "rank": 26,
+      "name": "Michele",
+      "count": 1479
+    },
+    {
+      "rank": 27,
+      "name": "Gioele",
+      "count": 1468
+    },
+    {
+      "rank": 28,
+      "name": "Gabriel",
+      "count": 1449
+    },
+    {
+      "rank": 29,
+      "name": "Christian",
+      "count": 1294
+    },
+    {
+      "rank": 30,
+      "name": "Liam",
+      "count": 1264
+    },
+    {
+      "rank": 31,
+      "name": "Marco",
+      "count": 1250
+    },
+    {
+      "rank": 32,
+      "name": "Thomas",
+      "count": 1242
+    },
+    {
+      "rank": 33,
+      "name": "Salvatore",
+      "count": 1229
+    },
+    {
+      "rank": 34,
+      "name": "Vincenzo",
+      "count": 1152
+    },
+    {
+      "rank": 35,
+      "name": "Emanuele",
+      "count": 1147
+    },
+    {
+      "rank": 36,
+      "name": "Ettore",
+      "count": 1106
+    },
+    {
+      "rank": 37,
+      "name": "Luca",
+      "count": 1094
+    },
+    {
+      "rank": 38,
+      "name": "Nathan",
+      "count": 1005
+    },
+    {
+      "rank": 39,
+      "name": "Giorgio",
+      "count": 981
+    },
+    {
+      "rank": 40,
+      "name": "Jacopo",
+      "count": 942
+    },
+    {
+      "rank": 41,
+      "name": "Giacomo",
+      "count": 888
+    },
+    {
+      "rank": 42,
+      "name": "Alessio",
+      "count": 873
+    },
+    {
+      "rank": 43,
+      "name": "Cesare",
+      "count": 871
+    },
+    {
+      "rank": 44,
+      "name": "Damiano",
+      "count": 864
+    },
+    {
+      "rank": 45,
+      "name": "Samuel",
+      "count": 839
+    },
+    {
+      "rank": 46,
+      "name": "Luigi",
+      "count": 838
+    },
+    {
+      "rank": 47,
+      "name": "Daniele",
+      "count": 837
+    },
+    {
+      "rank": 48,
+      "name": "Raffaele",
+      "count": 829
+    },
+    {
+      "rank": 49,
+      "name": "Santiago",
+      "count": 815
+    },
+    {
+      "rank": 50,
+      "name": "Simone",
+      "count": 773
+    },
+    {
+      "rank": 51,
+      "name": "Thiago",
+      "count": 744
+    },
+    {
+      "rank": 52,
+      "name": "Ludovico",
+      "count": 743
+    },
+    {
+      "rank": 53,
+      "name": "Carlo",
+      "count": 732
+    },
+    {
+      "rank": 54,
+      "name": "Domenico",
+      "count": 729
+    },
+    {
+      "rank": 55,
+      "name": "Manuel",
+      "count": 728
+    },
+    {
+      "rank": 56,
+      "name": "Vittorio",
+      "count": 726
+    },
+    {
+      "rank": 57,
+      "name": "Nicola",
+      "count": 681
+    },
+    {
+      "rank": 58,
+      "name": "Daniel",
+      "count": 667
+    },
+    {
+      "rank": 59,
+      "name": "Angelo",
+      "count": 666
+    },
+    {
+      "rank": 60,
+      "name": "Cristian",
+      "count": 653
+    },
+    {
+      "rank": 61,
+      "name": "Flavio",
+      "count": 634
+    },
+    {
+      "rank": 62,
+      "name": "Achille",
+      "count": 570
+    },
+    {
+      "rank": 63,
+      "name": "Gregorio",
+      "count": 569
+    },
+    {
+      "rank": 64,
+      "name": "Niccolo'",
+      "count": 567
+    },
+    {
+      "rank": 65,
+      "name": "Stefano",
+      "count": 566
+    },
+    {
+      "rank": 66,
+      "name": "Mario",
+      "count": 565
+    },
+    {
+      "rank": 67,
+      "name": "Paolo",
+      "count": 555
+    },
+    {
+      "rank": 68,
+      "name": "Rayan",
+      "count": 545
+    },
+    {
+      "rank": 69,
+      "name": "Adam",
+      "count": 542
+    },
+    {
+      "rank": 70,
+      "name": "Brando",
+      "count": 541
+    },
+    {
+      "rank": 71,
+      "name": "Alberto",
+      "count": 511
+    },
+    {
+      "rank": 72,
+      "name": "Bryan",
+      "count": 508
+    },
+    {
+      "rank": 73,
+      "name": "Nicholas",
+      "count": 472
+    },
+    {
+      "rank": 74,
+      "name": "Massimo",
+      "count": 429
+    },
+    {
+      "rank": 75,
+      "name": "Alex",
+      "count": 420
+    },
+    {
+      "rank": 76,
+      "name": "Kevin",
+      "count": 415
+    },
+    {
+      "rank": 77,
+      "name": "Valerio",
+      "count": 399
+    },
+    {
+      "rank": 78,
+      "name": "Nicolas",
+      "count": 397
+    },
+    {
+      "rank": 79,
+      "name": "Martino",
+      "count": 388
+    },
+    {
+      "rank": 80,
+      "name": "Sebastiano",
+      "count": 381
+    },
+    {
+      "rank": 81,
+      "name": "Ethan",
+      "count": 378
+    },
+    {
+      "rank": 82,
+      "name": "Dario",
+      "count": 377
+    },
+    {
+      "rank": 83,
+      "name": "Mathias",
+      "count": 353
+    },
+    {
+      "rank": 84,
+      "name": "Pasquale",
+      "count": 350
+    },
+    {
+      "rank": 85,
+      "name": "Roberto",
+      "count": 348
+    },
+    {
+      "rank": 86,
+      "name": "Nicolo",
+      "count": 345
+    },
+    {
+      "rank": 87,
+      "name": "Ciro",
+      "count": 340
+    },
+    {
+      "rank": 88,
+      "name": "Zeno",
+      "count": 333
+    },
+    {
+      "rank": 89,
+      "name": "Amir",
+      "count": 324
+    },
+    {
+      "rank": 90,
+      "name": "Leo",
+      "count": 319
+    },
+    {
+      "rank": 91,
+      "name": "Dylan",
+      "count": 308
+    },
+    {
+      "rank": 92,
+      "name": "Dante",
+      "count": 299
+    },
+    {
+      "rank": 93,
+      "name": "Sebastian",
+      "count": 294
+    },
+    {
+      "rank": 94,
+      "name": "Enrico",
+      "count": 289
+    },
+    {
+      "rank": 95,
+      "name": "Romeo",
+      "count": 287
+    },
+    {
+      "rank": 96,
+      "name": "Leone",
+      "count": 285
+    },
+    {
+      "rank": 97,
+      "name": "Carmine",
+      "count": 284
+    },
+    {
+      "rank": 98,
+      "name": "David",
+      "count": 282
+    },
+    {
+      "rank": 99,
+      "name": "Antonino",
+      "count": 275
+    },
+    {
+      "rank": 100,
+      "name": "Gennaro",
+      "count": 275
+    }
+  ],
+  "female": [
+    {
+      "rank": 1,
+      "name": "Sofia",
+      "count": 4636
+    },
+    {
+      "rank": 2,
+      "name": "Aurora",
+      "count": 4265
+    },
+    {
+      "rank": 3,
+      "name": "Ginevra",
+      "count": 4153
+    },
+    {
+      "rank": 4,
+      "name": "Vittoria",
+      "count": 3893
+    },
+    {
+      "rank": 5,
+      "name": "Giulia",
+      "count": 3397
+    },
+    {
+      "rank": 6,
+      "name": "Beatrice",
+      "count": 3316
+    },
+    {
+      "rank": 7,
+      "name": "Ludovica",
+      "count": 3064
+    },
+    {
+      "rank": 8,
+      "name": "Matilde",
+      "count": 2959
+    },
+    {
+      "rank": 9,
+      "name": "Alice",
+      "count": 2901
+    },
+    {
+      "rank": 10,
+      "name": "Emma",
+      "count": 2539
+    },
+    {
+      "rank": 11,
+      "name": "Camilla",
+      "count": 2118
+    },
+    {
+      "rank": 12,
+      "name": "Anna",
+      "count": 1983
+    },
+    {
+      "rank": 13,
+      "name": "Bianca",
+      "count": 1860
+    },
+    {
+      "rank": 14,
+      "name": "Greta",
+      "count": 1828
+    },
+    {
+      "rank": 15,
+      "name": "Azzurra",
+      "count": 1671
+    },
+    {
+      "rank": 16,
+      "name": "Nicole",
+      "count": 1629
+    },
+    {
+      "rank": 17,
+      "name": "Isabel",
+      "count": 1628
+    },
+    {
+      "rank": 18,
+      "name": "Chiara",
+      "count": 1596
+    },
+    {
+      "rank": 19,
+      "name": "Giorgia",
+      "count": 1499
+    },
+    {
+      "rank": 20,
+      "name": "Arianna",
+      "count": 1458
+    },
+    {
+      "rank": 21,
+      "name": "Gaia",
+      "count": 1447
+    },
+    {
+      "rank": 22,
+      "name": "Ambra",
+      "count": 1325
+    },
+    {
+      "rank": 23,
+      "name": "Noemi",
+      "count": 1273
+    },
+    {
+      "rank": 24,
+      "name": "Sara",
+      "count": 1240
+    },
+    {
+      "rank": 25,
+      "name": "Martina",
+      "count": 1238
+    },
+    {
+      "rank": 26,
+      "name": "Adele",
+      "count": 1237
+    },
+    {
+      "rank": 27,
+      "name": "Elena",
+      "count": 1236
+    },
+    {
+      "rank": 28,
+      "name": "Rebecca",
+      "count": 1231
+    },
+    {
+      "rank": 29,
+      "name": "Diana",
+      "count": 1222
+    },
+    {
+      "rank": 30,
+      "name": "Viola",
+      "count": 1193
+    },
+    {
+      "rank": 31,
+      "name": "Margherita",
+      "count": 1148
+    },
+    {
+      "rank": 32,
+      "name": "Cecilia",
+      "count": 1143
+    },
+    {
+      "rank": 33,
+      "name": "Mia",
+      "count": 1140
+    },
+    {
+      "rank": 34,
+      "name": "Anita",
+      "count": 1100
+    },
+    {
+      "rank": 35,
+      "name": "Sole",
+      "count": 1034
+    },
+    {
+      "rank": 36,
+      "name": "Chloe",
+      "count": 996
+    },
+    {
+      "rank": 37,
+      "name": "Francesca",
+      "count": 996
+    },
+    {
+      "rank": 38,
+      "name": "Emily",
+      "count": 958
+    },
+    {
+      "rank": 39,
+      "name": "Gioia",
+      "count": 948
+    },
+    {
+      "rank": 40,
+      "name": "Lavinia",
+      "count": 944
+    },
+    {
+      "rank": 41,
+      "name": "Amelia",
+      "count": 917
+    },
+    {
+      "rank": 42,
+      "name": "Nina",
+      "count": 906
+    },
+    {
+      "rank": 43,
+      "name": "Carlotta",
+      "count": 899
+    },
+    {
+      "rank": 44,
+      "name": "Eleonora",
+      "count": 897
+    },
+    {
+      "rank": 45,
+      "name": "Marta",
+      "count": 858
+    },
+    {
+      "rank": 46,
+      "name": "Elisa",
+      "count": 850
+    },
+    {
+      "rank": 47,
+      "name": "Luna",
+      "count": 813
+    },
+    {
+      "rank": 48,
+      "name": "Olivia",
+      "count": 792
+    },
+    {
+      "rank": 49,
+      "name": "Celeste",
+      "count": 775
+    },
+    {
+      "rank": 50,
+      "name": "Eva",
+      "count": 762
+    },
+    {
+      "rank": 51,
+      "name": "Maria",
+      "count": 742
+    },
+    {
+      "rank": 52,
+      "name": "Diletta",
+      "count": 664
+    },
+    {
+      "rank": 53,
+      "name": "Celine",
+      "count": 661
+    },
+    {
+      "rank": 54,
+      "name": "Giada",
+      "count": 661
+    },
+    {
+      "rank": 55,
+      "name": "Iris",
+      "count": 652
+    },
+    {
+      "rank": 56,
+      "name": "Asia",
+      "count": 651
+    },
+    {
+      "rank": 57,
+      "name": "Irene",
+      "count": 649
+    },
+    {
+      "rank": 58,
+      "name": "Sophie",
+      "count": 644
+    },
+    {
+      "rank": 59,
+      "name": "Miriam",
+      "count": 638
+    },
+    {
+      "rank": 60,
+      "name": "Rachele",
+      "count": 629
+    },
+    {
+      "rank": 61,
+      "name": "Anastasia",
+      "count": 626
+    },
+    {
+      "rank": 62,
+      "name": "Alessia",
+      "count": 616
+    },
+    {
+      "rank": 63,
+      "name": "Caterina",
+      "count": 609
+    },
+    {
+      "rank": 64,
+      "name": "Benedetta",
+      "count": 606
+    },
+    {
+      "rank": 65,
+      "name": "Lucia",
+      "count": 591
+    },
+    {
+      "rank": 66,
+      "name": "Melissa",
+      "count": 583
+    },
+    {
+      "rank": 67,
+      "name": "Nora",
+      "count": 579
+    },
+    {
+      "rank": 68,
+      "name": "Virginia",
+      "count": 573
+    },
+    {
+      "rank": 69,
+      "name": "Isabella",
+      "count": 567
+    },
+    {
+      "rank": 70,
+      "name": "Sveva",
+      "count": 471
+    },
+    {
+      "rank": 71,
+      "name": "Agata",
+      "count": 461
+    },
+    {
+      "rank": 72,
+      "name": "Clara",
+      "count": 460
+    },
+    {
+      "rank": 73,
+      "name": "Sophia",
+      "count": 459
+    },
+    {
+      "rank": 74,
+      "name": "Stella",
+      "count": 451
+    },
+    {
+      "rank": 75,
+      "name": "Soleil",
+      "count": 448
+    },
+    {
+      "rank": 76,
+      "name": "Zoe",
+      "count": 438
+    },
+    {
+      "rank": 77,
+      "name": "Lara",
+      "count": 430
+    },
+    {
+      "rank": 78,
+      "name": "Serena",
+      "count": 421
+    },
+    {
+      "rank": 79,
+      "name": "Angelica",
+      "count": 412
+    },
+    {
+      "rank": 80,
+      "name": "Linda",
+      "count": 399
+    },
+    {
+      "rank": 81,
+      "name": "Livia",
+      "count": 398
+    },
+    {
+      "rank": 82,
+      "name": "Mariasole",
+      "count": 390
+    },
+    {
+      "rank": 83,
+      "name": "Clarissa",
+      "count": 381
+    },
+    {
+      "rank": 84,
+      "name": "Agnese",
+      "count": 376
+    },
+    {
+      "rank": 85,
+      "name": "Alessandra",
+      "count": 372
+    },
+    {
+      "rank": 86,
+      "name": "Alma",
+      "count": 364
+    },
+    {
+      "rank": 87,
+      "name": "Laura",
+      "count": 362
+    },
+    {
+      "rank": 88,
+      "name": "Victoria",
+      "count": 362
+    },
+    {
+      "rank": 89,
+      "name": "Maria Vittoria",
+      "count": 360
+    },
+    {
+      "rank": 90,
+      "name": "Delia",
+      "count": 356
+    },
+    {
+      "rank": 91,
+      "name": "Gloria",
+      "count": 353
+    },
+    {
+      "rank": 92,
+      "name": "Amira",
+      "count": 345
+    },
+    {
+      "rank": 93,
+      "name": "Cloe",
+      "count": 336
+    },
+    {
+      "rank": 94,
+      "name": "Rosa",
+      "count": 334
+    },
+    {
+      "rank": 95,
+      "name": "Alba",
+      "count": 325
+    },
+    {
+      "rank": 96,
+      "name": "Letizia",
+      "count": 322
+    },
+    {
+      "rank": 97,
+      "name": "Perla",
+      "count": 320
+    },
+    {
+      "rank": 98,
+      "name": "Evelyn",
+      "count": 319
+    },
+    {
+      "rank": 99,
+      "name": "Fatima",
+      "count": 311
+    },
+    {
+      "rank": 100,
+      "name": "Maddalena",
+      "count": 307
+    }
+  ],
+  "notes": "Source spells names in ALL CAPS in ASCII; converted to Title Case here (first letter upper, rest lower; 'MARIA VITTORIA' -> 'Maria Vittoria'). The source has no accented letters: it writes Nicolo and Niccolo with a trailing apostrophe in place of the accent (\"NICOLO'\", \"NICCOLO'\"), kept as \"Nicolo'\" and \"Niccolo'\"; plain 'Nicolo' (rank 86 male) is a separate source row, so Nicolo, Nicolo' and Niccolo' are variants of one name (Nicolo with grave accent) that a reviewer may want to merge. Ranks are the source's order (descending count); there are ties in count (1 male, 3 female) where the source's order was kept. Source stores one row per spelling, so spelling variants (e.g. Sophia/Sofia, Cristian/Christian, Nicolas/Nicholas) are counted separately; compound names are one entry. Istat applies no corrections for typos or name/sex mismatches (page footnote). The page UI hides counts under 5; none occur in the top 100. Implied 2024 totals from the source's percent column: about 189,358 male and 179,169 female births. Raw response saved in the scratchpad as list2024_100.json. Data is national (Italy), not a city or region.",
+  "source_id": "src_name_frequency_it_it_istat"
+}

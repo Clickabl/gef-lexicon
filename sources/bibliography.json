@@ -1155,6 +1155,102 @@
         "pipeline": "name-pipeline-v1"
       },
       "note": "Retrieved 2026-10-12 from the English Wiktionary MediaWiki API (revision timestamp 2026-06-10T08:11:09Z) by scripts/name-pipeline and treated as candidate onomastic evidence. Supports the given-name sense(s) it lists in: Arabic. Translation-table membership and eq=/dimof= parameters are not treated as approval or as automatic user-name localization."
+    },
+    {
+      "source_id": "src_name_frequency_el_gr_data_gov_gr_ypes",
+      "source_type": "dataset",
+      "title": "Ονόματα Πολιτών (Names of Citizens) - snapshot 01/10/2026 (Hellenic Ministry of Interior (Υπουργείο Εσωτερικών), Citizens Register (Μητρώο Πολιτών), via data.gov.gr)",
+      "publisher": "Hellenic Ministry of Interior (Υπουργείο Εσωτερικών), Citizens Register (Μητρώο Πολιτών), via data.gov.gr",
+      "year": 2026,
+      "language": "el",
+      "region": "GR",
+      "url": "https://data.gov.gr/dataset/onomata-politon",
+      "license": "not stated (the License field on the data.gov.gr dataset and resource records is blank)",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/el-GR-data-gov-gr-ypes.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: Snapshot of the active municipal-register population as published 2026-10-01 (not a birth-year range; all age groups). Measure: Number of municipal-register (dimotologio) entries, normal and non-deleted, carrying the given name, summed by us over the municipalities in which the name has more than 1,000 entries (the source only lists a name for a municipality when its count there exceeds 1,000). Counts are therefore lower bounds of the national total, not complete national totals. Fewer than 100 per sex because the source is thresholded: only names with >1,000 entries within a single municipality appear (min value in file is 1,001). The file has 1,723 rows (202 municipalities, gender field ΑΡΡΕΝ=male, ΘΗΛΥ=female, columns regionalUnitName, municipalityName, firstName, gender, recordCount); it yields 52 male and 59 female distinct names, so these lists are complete for what the source publishes, not truncated by us. Source publishes no rank; ranks are ours, by descending summed count (ties by name). Because a name is dropped in any municipality where it has 1,000 or fewer entries, the summed counts undercount, and undercount small/regional names most; ranks in the lower part of each list (below about the 20th) are approximate. Names are the official registry forms (e.g. Γεώργιος, Ιωάννης, Δημήτριος), not colloquial forms (Γιώργος, Γιάννης, Δημήτρης); the source also contains accent-less (tonos-missing) register spellings as SEPARATE rows (data-entry variants of the same name); we kept every source row unmerged, with source spelling. Male variants (accentless row -> accented row): Γεωργιος->Γεώργιος, Κωνσταντινος->Κωνσταντίνος, Ιωαννης->Ιωάννης, Δημητριος->Δημήτριος, Νικολαος->Νικόλαος, Παναγιωτης->Παναγιώτης, Χρηστος->Χρήστος, Βασιλειος->Βασίλειος, Εμμανουηλ->Εμμανουήλ, Μιχαηλ->Μιχαήλ, Ευαγγελος->Ευάγγελος, Αντωνιος->Αντώνιος, Αγγελος->Άγγελος. Female: Μαρια->Μαρία, Ελενη->Ελένη, Αικατερινη->Αικατερίνη, Βασιλικη->Βασιλική, Σοφια->Σοφία, Αναστασια->Αναστασία, Ειρηνη->Ειρήνη, Ευαγγελια->Ευαγγελία, Αγγελικη->Αγγελική, Αννα->Άννα, Ολγα->Όλγα (here Ολγα is the accentless row and Όλγα the accented one). After merging these, 39 male and 48 female distinct names remain; reviewers should merge by accent-stripped form and use the accented spelling. Measures people on the active register of all ages, so it reflects names of older generations, not recent newborn trends. Earlier snapshots 22/07, 19/08, 01/09 (two resources) 2026 give near-identical totals (112-114 distinct names). ELSTAT (statistics.gr) was checked: it published only percentage shares of the top 20-30 names per birth year 1940-2021 as videos/infographics, no downloadable count table for 100 names, so it was not used. Cyprus fallback was not needed."
+    },
+    {
+      "source_id": "src_name_frequency_en_gb_ons",
+      "source_type": "dataset",
+      "title": "Baby names in England and Wales: 1996 to 2025 (Office for National Statistics (England and Wales))",
+      "publisher": "Office for National Statistics (England and Wales)",
+      "year": 2025,
+      "language": "en",
+      "region": "GB-ENG+WLS",
+      "url": "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996/1996to2025/babynames1996to2025.xlsx",
+      "license": "Open Government Licence v3.0 (ONS dataset terms)",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/en-GB-ons.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: 1996-2025. Measure: Live births registered in England and Wales with that exact given name as first name, summed over the years; the ONS publishes a count only where it is at least 3 in a year. Names are spelled exactly as the ONS prints them. Counts are births, not living people. England and Wales only; no US, Scottish or Irish data."
+    },
+    {
+      "source_id": "src_name_frequency_es_es_ine",
+      "source_type": "dataset",
+      "title": "Nacimientos según el nombre del nacido. Año 2024, datos definitivos (INEbase > Apellidos y nombres más frecuentes > Nombres de los recién nacidos) (Instituto Nacional de Estadística (INE), Spain)",
+      "publisher": "Instituto Nacional de Estadística (INE), Spain",
+      "year": 2025,
+      "language": "es",
+      "region": "ES",
+      "url": "https://www.ine.es/daco/daco42/nombyapel/nomnac24.xlsx",
+      "license": "INE Aviso legal (https://www.ine.es/dyngs/AYU/index.htm?cid=125): general licence for INE statistics is Creative Commons Attribution 4.0 (CC BY 4.0), commercial reuse allowed with source citation ('Fuente: Sitio web del INE: www.ine.es' or, if processed, 'Elaboración propia con datos extraídos del sitio web del INE: www.ine.es'), mention the last-update date, and do not imply INE endorsement.",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/es-ES-ine.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: calendar year 2024 (births registered in 2024; datos definitivos; published by INE 19/11/2025). Measure: Number of births in Spain in 2024 whose registered (first) given name is the listed name, by sex (NIÑOS = boys, NIÑAS = girls). Totals: 163,732 boys and 154,273 girls. Names are exactly as INE publishes them: upper case with NO accents or diacritics (e.g. SOFIA, LUCIA, MARTIN, ALVARO, MARIA, JESUS). Rank = row order in the INE file (the file has no rank column; it is sorted by count descending); tied counts are numbered sequentially in file order, not as shared ranks (ties: JESUS/VICTOR 545 male; EVA/LAURA 498 and ELIA/HELENA 282 female). Counts are births in 2024, not people alive; the sheet's TOTAL row (163,732 boys; 154,273 girls) is all 2024 births of that sex, not only the top 100. Compound names: none of the 200 entries contains a space or hyphen; the newborn file lists names as INE publishes them and the methodology for how compound registered names are tabulated was not stated in the file (no explanatory note found for the newborn series). Regional-language names appear in the national top 100 where numerous Spain-wide (e.g. male MARC, PAU, BIEL, NIL, MARTI, ALEX, JAN). INE's separate residents file (nombres_mas_frecuentes.xlsx, census 01/01/2025, people alive, with compound names such as MARIA CARMEN as separate entries) was downloaded for comparison only and not used because it skews older. Source file: nomnac24.xlsx, 43,319 bytes, fetched directly with curl (no API needed); the INEbase page also offers earlier years 2002-2023 with the same layout."
+    },
+    {
+      "source_id": "src_name_frequency_fr_fr_insee",
+      "source_type": "dataset",
+      "title": "Fichier des prénoms (national file, births in France) (INSEE (Institut national de la statistique et des études économiques))",
+      "publisher": "INSEE (Institut national de la statistique et des études économiques)",
+      "year": 2025,
+      "language": "fr",
+      "region": "FR",
+      "url": "https://www.insee.fr/fr/statistiques/8595130",
+      "license": "Licence Ouverte / Open Licence (Etalab) per INSEE open data terms",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/fr-FR-insee.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: 1900-2025. Measure: Births in France (metropolitan and overseas departments, excluding Mayotte before 2014) with that first name, summed over all years the file covers; INSEE groups very rare names as _PRENOMS_RARES, which are not ranked. INSEE prints names in capitals; they are shown here in Title Case (hyphen and apostrophe parts capitalised). Compound first names are separate entries as INSEE lists them. Counts are births since the first year, not living people."
+    },
+    {
+      "source_id": "src_name_frequency_it_it_istat",
+      "source_type": "dataset",
+      "title": "Conta nomi - Quante bambine e quanti bambini si chiamano...? (nomi dei nati iscritti in anagrafe, graduatoria 2024) (Istat (Istituto nazionale di statistica))",
+      "publisher": "Istat (Istituto nazionale di statistica)",
+      "year": 2024,
+      "language": "it",
+      "region": "IT",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/contanomi/nati/index2022.php?type=list&limit=100&year=2024",
+      "license": "Creative Commons Attribuzione 4.0 (CC BY 4.0), per https://www.istat.it/note-legali/: unless otherwise indicated, all content on istat.it is CC BY 4.0",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/it-IT-istat.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: 2024 (births registered in the civil registry in calendar year 2024; the service covers 1999-2024). Measure: Number of newborns (births registered in Italian civil registries, Istat survey 'Iscritti in anagrafe per nascita') given that name in 2024, ranked within each sex Source spells names in ALL CAPS in ASCII; converted to Title Case here (first letter upper, rest lower; 'MARIA VITTORIA' -> 'Maria Vittoria'). The source has no accented letters: it writes Nicolo and Niccolo with a trailing apostrophe in place of the accent (\"NICOLO'\", \"NICCOLO'\"), kept as \"Nicolo'\" and \"Niccolo'\"; plain 'Nicolo' (rank 86 male) is a separate source row, so Nicolo, Nicolo' and Niccolo' are variants of one name (Nicolo with grave accent) that a reviewer may want to merge. Ranks are the source's order (descending count); there are ties in count (1 male, 3 female) where the source's order was kept. Source stores one row per spelling, so spelling variants (e.g. Sophia/Sofia, Cristian/Christian, Nicolas/Nicholas) are counted separately; compound names are one entry. Istat applies no corrections for typos or name/sex mismatches (page footnote). The page UI hides counts under 5; none occur in the top 100. Implied 2024 totals from the source's percent column: about 189,358 male and 179,169 female births. Raw response saved in the scratchpad as list2024_100.json. Data is national (Italy), not a city or region."
+    },
+    {
+      "source_id": "src_name_frequency_pt_br_ibge",
+      "source_type": "dataset",
+      "title": "Censo Demográfico 2010: Nomes no Brasil (IBGE (Instituto Brasileiro de Geografia e Estatística))",
+      "publisher": "IBGE (Instituto Brasileiro de Geografia e Estatística)",
+      "year": 2010,
+      "language": "pt",
+      "region": "BR",
+      "url": "https://servicodados.ibge.gov.br/api/v2/censos/nomes/ranking",
+      "license": "IBGE open data (public statistics); no separate licence stated by the API",
+      "external_ids": {
+        "name_frequency_artifact": "research/name-frequency/pt-BR-ibge.json",
+        "retrieved": "2026-10-12"
+      },
+      "note": "Given-name frequency list captured 2026-10-12 for the name pipeline. Period: people alive at the 2010 Census, all birth decades. Measure: Residents of Brazil with that first name as first name at the 2010 Census, by sex, summed over all birth decades the API reports. Names are printed by IBGE in capitals without accents (JOAO, not João); they are shown in Title Case and need an accent-restoring match before use. Candidates came from the union of top-20 rankings (national, 27 states, 8 decades, and each decade within each state): 132 male and 215 female names; a name that sits in the national top 100 but in no top 20 anywhere would be missing. Counts are people, not births; a name used by both sexes is counted per sex."
     }
   ]
 }

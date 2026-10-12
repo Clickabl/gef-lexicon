@@ -1,0 +1,1019 @@
+{
+  "schema": "gef-name-frequency-v1",
+  "language": "es",
+  "country": "ES",
+  "publisher": "Instituto Nacional de Estadística (INE), Spain",
+  "title": "Nacimientos según el nombre del nacido. Año 2024, datos definitivos (INEbase > Apellidos y nombres más frecuentes > Nombres de los recién nacidos)",
+  "url": "https://www.ine.es/daco/daco42/nombyapel/nomnac24.xlsx (sheet 'TOTAL', Total Nacional; listed from https://www.ine.es/dyngs/INEbase/operacion.htm?c=Estadistica_C&cid=1254736177009&menu=resultados&idp=1254735572981)",
+  "license": "INE Aviso legal (https://www.ine.es/dyngs/AYU/index.htm?cid=125): general licence for INE statistics is Creative Commons Attribution 4.0 (CC BY 4.0), commercial reuse allowed with source citation ('Fuente: Sitio web del INE: www.ine.es' or, if processed, 'Elaboración propia con datos extraídos del sitio web del INE: www.ine.es'), mention the last-update date, and do not imply INE endorsement.",
+  "retrieved": "2026-10-12",
+  "period": "calendar year 2024 (births registered in 2024; datos definitivos; published by INE 19/11/2025)",
+  "measure": "Number of births in Spain in 2024 whose registered (first) given name is the listed name, by sex (NIÑOS = boys, NIÑAS = girls). Totals: 163,732 boys and 154,273 girls.",
+  "chosen_because": "INE publishes both a stock of living residents (01/01/2025 census) and newborns by year; the 2024 newborn list was chosen because it reflects the names currently being given to people, which suits a modern given-name list, and it is the official top-100 national list by sex.",
+  "male": [
+    {
+      "rank": 1,
+      "name": "MATEO",
+      "count": 3289
+    },
+    {
+      "rank": 2,
+      "name": "HUGO",
+      "count": 2734
+    },
+    {
+      "rank": 3,
+      "name": "MARTIN",
+      "count": 2693
+    },
+    {
+      "rank": 4,
+      "name": "LEO",
+      "count": 2550
+    },
+    {
+      "rank": 5,
+      "name": "MANUEL",
+      "count": 2411
+    },
+    {
+      "rank": 6,
+      "name": "LUCAS",
+      "count": 2228
+    },
+    {
+      "rank": 7,
+      "name": "PABLO",
+      "count": 2158
+    },
+    {
+      "rank": 8,
+      "name": "ALEJANDRO",
+      "count": 2136
+    },
+    {
+      "rank": 9,
+      "name": "ENZO",
+      "count": 2028
+    },
+    {
+      "rank": 10,
+      "name": "ALVARO",
+      "count": 1949
+    },
+    {
+      "rank": 11,
+      "name": "DANIEL",
+      "count": 1945
+    },
+    {
+      "rank": 12,
+      "name": "THIAGO",
+      "count": 1644
+    },
+    {
+      "rank": 13,
+      "name": "LUCA",
+      "count": 1533
+    },
+    {
+      "rank": 14,
+      "name": "GONZALO",
+      "count": 1510
+    },
+    {
+      "rank": 15,
+      "name": "MARIO",
+      "count": 1455
+    },
+    {
+      "rank": 16,
+      "name": "LIAM",
+      "count": 1399
+    },
+    {
+      "rank": 17,
+      "name": "ADRIAN",
+      "count": 1379
+    },
+    {
+      "rank": 18,
+      "name": "OLIVER",
+      "count": 1340
+    },
+    {
+      "rank": 19,
+      "name": "BRUNO",
+      "count": 1333
+    },
+    {
+      "rank": 20,
+      "name": "DIEGO",
+      "count": 1232
+    },
+    {
+      "rank": 21,
+      "name": "GAEL",
+      "count": 1226
+    },
+    {
+      "rank": 22,
+      "name": "NICOLAS",
+      "count": 1223
+    },
+    {
+      "rank": 23,
+      "name": "ALEX",
+      "count": 1182
+    },
+    {
+      "rank": 24,
+      "name": "MARCOS",
+      "count": 1116
+    },
+    {
+      "rank": 25,
+      "name": "DAVID",
+      "count": 1100
+    },
+    {
+      "rank": 26,
+      "name": "MARCO",
+      "count": 1076
+    },
+    {
+      "rank": 27,
+      "name": "ANTONIO",
+      "count": 1073
+    },
+    {
+      "rank": 28,
+      "name": "JUAN",
+      "count": 1054
+    },
+    {
+      "rank": 29,
+      "name": "MIGUEL",
+      "count": 1053
+    },
+    {
+      "rank": 30,
+      "name": "GABRIEL",
+      "count": 1039
+    },
+    {
+      "rank": 31,
+      "name": "JAVIER",
+      "count": 1013
+    },
+    {
+      "rank": 32,
+      "name": "IZAN",
+      "count": 971
+    },
+    {
+      "rank": 33,
+      "name": "RODRIGO",
+      "count": 957
+    },
+    {
+      "rank": 34,
+      "name": "MARC",
+      "count": 908
+    },
+    {
+      "rank": 35,
+      "name": "JOSE",
+      "count": 900
+    },
+    {
+      "rank": 36,
+      "name": "ANGEL",
+      "count": 896
+    },
+    {
+      "rank": 37,
+      "name": "CARLOS",
+      "count": 886
+    },
+    {
+      "rank": 38,
+      "name": "DYLAN",
+      "count": 880
+    },
+    {
+      "rank": 39,
+      "name": "DARIO",
+      "count": 862
+    },
+    {
+      "rank": 40,
+      "name": "NOAH",
+      "count": 847
+    },
+    {
+      "rank": 41,
+      "name": "ADAM",
+      "count": 830
+    },
+    {
+      "rank": 42,
+      "name": "JAIME",
+      "count": 727
+    },
+    {
+      "rank": 43,
+      "name": "SAMUEL",
+      "count": 696
+    },
+    {
+      "rank": 44,
+      "name": "NICO",
+      "count": 686
+    },
+    {
+      "rank": 45,
+      "name": "SANTIAGO",
+      "count": 674
+    },
+    {
+      "rank": 46,
+      "name": "PAU",
+      "count": 631
+    },
+    {
+      "rank": 47,
+      "name": "GUILLERMO",
+      "count": 625
+    },
+    {
+      "rank": 48,
+      "name": "JORGE",
+      "count": 622
+    },
+    {
+      "rank": 49,
+      "name": "HECTOR",
+      "count": 609
+    },
+    {
+      "rank": 50,
+      "name": "ERIC",
+      "count": 595
+    },
+    {
+      "rank": 51,
+      "name": "LUIS",
+      "count": 582
+    },
+    {
+      "rank": 52,
+      "name": "FRANCISCO",
+      "count": 563
+    },
+    {
+      "rank": 53,
+      "name": "AMIR",
+      "count": 551
+    },
+    {
+      "rank": 54,
+      "name": "IKER",
+      "count": 548
+    },
+    {
+      "rank": 55,
+      "name": "JESUS",
+      "count": 545
+    },
+    {
+      "rank": 56,
+      "name": "VICTOR",
+      "count": 545
+    },
+    {
+      "rank": 57,
+      "name": "SERGIO",
+      "count": 541
+    },
+    {
+      "rank": 58,
+      "name": "MATIAS",
+      "count": 530
+    },
+    {
+      "rank": 59,
+      "name": "AARON",
+      "count": 519
+    },
+    {
+      "rank": 60,
+      "name": "PEDRO",
+      "count": 509
+    },
+    {
+      "rank": 61,
+      "name": "RAFAEL",
+      "count": 508
+    },
+    {
+      "rank": 62,
+      "name": "MOHAMED",
+      "count": 500
+    },
+    {
+      "rank": 63,
+      "name": "IAN",
+      "count": 495
+    },
+    {
+      "rank": 64,
+      "name": "JULEN",
+      "count": 490
+    },
+    {
+      "rank": 65,
+      "name": "BIEL",
+      "count": 485
+    },
+    {
+      "rank": 66,
+      "name": "UNAI",
+      "count": 471
+    },
+    {
+      "rank": 67,
+      "name": "NIL",
+      "count": 458
+    },
+    {
+      "rank": 68,
+      "name": "SAUL",
+      "count": 456
+    },
+    {
+      "rank": 69,
+      "name": "MARTI",
+      "count": 445
+    },
+    {
+      "rank": 70,
+      "name": "ARES",
+      "count": 437
+    },
+    {
+      "rank": 71,
+      "name": "ISAAC",
+      "count": 430
+    },
+    {
+      "rank": 72,
+      "name": "ALONSO",
+      "count": 419
+    },
+    {
+      "rank": 73,
+      "name": "RUBEN",
+      "count": 413
+    },
+    {
+      "rank": 74,
+      "name": "IVAN",
+      "count": 403
+    },
+    {
+      "rank": 75,
+      "name": "ERIK",
+      "count": 402
+    },
+    {
+      "rank": 76,
+      "name": "ALAN",
+      "count": 398
+    },
+    {
+      "rank": 77,
+      "name": "POL",
+      "count": 393
+    },
+    {
+      "rank": 78,
+      "name": "ALEIX",
+      "count": 380
+    },
+    {
+      "rank": 79,
+      "name": "FERNANDO",
+      "count": 379
+    },
+    {
+      "rank": 80,
+      "name": "RAYAN",
+      "count": 362
+    },
+    {
+      "rank": 81,
+      "name": "JAN",
+      "count": 360
+    },
+    {
+      "rank": 82,
+      "name": "IGNACIO",
+      "count": 359
+    },
+    {
+      "rank": 83,
+      "name": "JOEL",
+      "count": 358
+    },
+    {
+      "rank": 84,
+      "name": "ALBERTO",
+      "count": 353
+    },
+    {
+      "rank": 85,
+      "name": "ARNAU",
+      "count": 352
+    },
+    {
+      "rank": 86,
+      "name": "ANDER",
+      "count": 349
+    },
+    {
+      "rank": 87,
+      "name": "ISMAEL",
+      "count": 346
+    },
+    {
+      "rank": 88,
+      "name": "LUKA",
+      "count": 345
+    },
+    {
+      "rank": 89,
+      "name": "FABIO",
+      "count": 339
+    },
+    {
+      "rank": 90,
+      "name": "RAUL",
+      "count": 332
+    },
+    {
+      "rank": 91,
+      "name": "KAI",
+      "count": 330
+    },
+    {
+      "rank": 92,
+      "name": "NEIZAN",
+      "count": 323
+    },
+    {
+      "rank": 93,
+      "name": "ANDRES",
+      "count": 319
+    },
+    {
+      "rank": 94,
+      "name": "ADAY",
+      "count": 316
+    },
+    {
+      "rank": 95,
+      "name": "ARAN",
+      "count": 307
+    },
+    {
+      "rank": 96,
+      "name": "TOMAS",
+      "count": 306
+    },
+    {
+      "rank": 97,
+      "name": "MAXIMO",
+      "count": 302
+    },
+    {
+      "rank": 98,
+      "name": "ELIAS",
+      "count": 301
+    },
+    {
+      "rank": 99,
+      "name": "AXEL",
+      "count": 298
+    },
+    {
+      "rank": 100,
+      "name": "MAX",
+      "count": 281
+    }
+  ],
+  "female": [
+    {
+      "rank": 1,
+      "name": "SOFIA",
+      "count": 3325
+    },
+    {
+      "rank": 2,
+      "name": "LUCIA",
+      "count": 2830
+    },
+    {
+      "rank": 3,
+      "name": "MARTINA",
+      "count": 2364
+    },
+    {
+      "rank": 4,
+      "name": "MARIA",
+      "count": 2189
+    },
+    {
+      "rank": 5,
+      "name": "VEGA",
+      "count": 2129
+    },
+    {
+      "rank": 6,
+      "name": "JULIA",
+      "count": 2071
+    },
+    {
+      "rank": 7,
+      "name": "OLIVIA",
+      "count": 1896
+    },
+    {
+      "rank": 8,
+      "name": "VALERIA",
+      "count": 1792
+    },
+    {
+      "rank": 9,
+      "name": "MIA",
+      "count": 1646
+    },
+    {
+      "rank": 10,
+      "name": "EMMA",
+      "count": 1618
+    },
+    {
+      "rank": 11,
+      "name": "PAULA",
+      "count": 1527
+    },
+    {
+      "rank": 12,
+      "name": "CARMEN",
+      "count": 1518
+    },
+    {
+      "rank": 13,
+      "name": "ALMA",
+      "count": 1431
+    },
+    {
+      "rank": 14,
+      "name": "CARLA",
+      "count": 1413
+    },
+    {
+      "rank": 15,
+      "name": "LOLA",
+      "count": 1378
+    },
+    {
+      "rank": 16,
+      "name": "GALA",
+      "count": 1346
+    },
+    {
+      "rank": 17,
+      "name": "LARA",
+      "count": 1327
+    },
+    {
+      "rank": 18,
+      "name": "DANIELA",
+      "count": 1319
+    },
+    {
+      "rank": 19,
+      "name": "SARA",
+      "count": 1305
+    },
+    {
+      "rank": 20,
+      "name": "JIMENA",
+      "count": 1280
+    },
+    {
+      "rank": 21,
+      "name": "CHLOE",
+      "count": 1198
+    },
+    {
+      "rank": 22,
+      "name": "VALENTINA",
+      "count": 1174
+    },
+    {
+      "rank": 23,
+      "name": "CLAUDIA",
+      "count": 1146
+    },
+    {
+      "rank": 24,
+      "name": "NOA",
+      "count": 1107
+    },
+    {
+      "rank": 25,
+      "name": "ALBA",
+      "count": 1073
+    },
+    {
+      "rank": 26,
+      "name": "LAIA",
+      "count": 1046
+    },
+    {
+      "rank": 27,
+      "name": "CANDELA",
+      "count": 983
+    },
+    {
+      "rank": 28,
+      "name": "MANUELA",
+      "count": 976
+    },
+    {
+      "rank": 29,
+      "name": "VICTORIA",
+      "count": 960
+    },
+    {
+      "rank": 30,
+      "name": "TRIANA",
+      "count": 957
+    },
+    {
+      "rank": 31,
+      "name": "ALEJANDRA",
+      "count": 940
+    },
+    {
+      "rank": 32,
+      "name": "VERA",
+      "count": 883
+    },
+    {
+      "rank": 33,
+      "name": "ANA",
+      "count": 880
+    },
+    {
+      "rank": 34,
+      "name": "ELENA",
+      "count": 860
+    },
+    {
+      "rank": 35,
+      "name": "AITANA",
+      "count": 847
+    },
+    {
+      "rank": 36,
+      "name": "CARLOTA",
+      "count": 846
+    },
+    {
+      "rank": 37,
+      "name": "BLANCA",
+      "count": 832
+    },
+    {
+      "rank": 38,
+      "name": "ZOE",
+      "count": 815
+    },
+    {
+      "rank": 39,
+      "name": "INES",
+      "count": 803
+    },
+    {
+      "rank": 40,
+      "name": "ADRIANA",
+      "count": 789
+    },
+    {
+      "rank": 41,
+      "name": "LIA",
+      "count": 740
+    },
+    {
+      "rank": 42,
+      "name": "ABRIL",
+      "count": 736
+    },
+    {
+      "rank": 43,
+      "name": "NORA",
+      "count": 728
+    },
+    {
+      "rank": 44,
+      "name": "CLARA",
+      "count": 723
+    },
+    {
+      "rank": 45,
+      "name": "MARINA",
+      "count": 703
+    },
+    {
+      "rank": 46,
+      "name": "LUNA",
+      "count": 660
+    },
+    {
+      "rank": 47,
+      "name": "ROCIO",
+      "count": 654
+    },
+    {
+      "rank": 48,
+      "name": "MARTA",
+      "count": 625
+    },
+    {
+      "rank": 49,
+      "name": "AMIRA",
+      "count": 601
+    },
+    {
+      "rank": 50,
+      "name": "ALICIA",
+      "count": 586
+    },
+    {
+      "rank": 51,
+      "name": "CELIA",
+      "count": 564
+    },
+    {
+      "rank": 52,
+      "name": "GABRIELA",
+      "count": 552
+    },
+    {
+      "rank": 53,
+      "name": "EVA",
+      "count": 498
+    },
+    {
+      "rank": 54,
+      "name": "LAURA",
+      "count": 498
+    },
+    {
+      "rank": 55,
+      "name": "LEIRE",
+      "count": 497
+    },
+    {
+      "rank": 56,
+      "name": "ONA",
+      "count": 475
+    },
+    {
+      "rank": 57,
+      "name": "INDIA",
+      "count": 472
+    },
+    {
+      "rank": 58,
+      "name": "ARIADNA",
+      "count": 453
+    },
+    {
+      "rank": 59,
+      "name": "JULIETA",
+      "count": 442
+    },
+    {
+      "rank": 60,
+      "name": "IRENE",
+      "count": 437
+    },
+    {
+      "rank": 61,
+      "name": "ALAIA",
+      "count": 428
+    },
+    {
+      "rank": 62,
+      "name": "ISABEL",
+      "count": 413
+    },
+    {
+      "rank": 63,
+      "name": "CATALINA",
+      "count": 408
+    },
+    {
+      "rank": 64,
+      "name": "ISABELLA",
+      "count": 399
+    },
+    {
+      "rank": 65,
+      "name": "IRIA",
+      "count": 394
+    },
+    {
+      "rank": 66,
+      "name": "IRIS",
+      "count": 389
+    },
+    {
+      "rank": 67,
+      "name": "VIOLETA",
+      "count": 380
+    },
+    {
+      "rank": 68,
+      "name": "ANGELA",
+      "count": 377
+    },
+    {
+      "rank": 69,
+      "name": "AURORA",
+      "count": 375
+    },
+    {
+      "rank": 70,
+      "name": "MAR",
+      "count": 371
+    },
+    {
+      "rank": 71,
+      "name": "AFRICA",
+      "count": 366
+    },
+    {
+      "rank": 72,
+      "name": "AINA",
+      "count": 363
+    },
+    {
+      "rank": 73,
+      "name": "DIANA",
+      "count": 359
+    },
+    {
+      "rank": 74,
+      "name": "CATALEYA",
+      "count": 357
+    },
+    {
+      "rank": 75,
+      "name": "NOUR",
+      "count": 354
+    },
+    {
+      "rank": 76,
+      "name": "ANTONELLA",
+      "count": 353
+    },
+    {
+      "rank": 77,
+      "name": "LINA",
+      "count": 342
+    },
+    {
+      "rank": 78,
+      "name": "ADARA",
+      "count": 340
+    },
+    {
+      "rank": 79,
+      "name": "AINARA",
+      "count": 338
+    },
+    {
+      "rank": 80,
+      "name": "ANDREA",
+      "count": 335
+    },
+    {
+      "rank": 81,
+      "name": "YASMIN",
+      "count": 329
+    },
+    {
+      "rank": 82,
+      "name": "AYA",
+      "count": 326
+    },
+    {
+      "rank": 83,
+      "name": "AINHOA",
+      "count": 315
+    },
+    {
+      "rank": 84,
+      "name": "ALANA",
+      "count": 312
+    },
+    {
+      "rank": 85,
+      "name": "MACARENA",
+      "count": 308
+    },
+    {
+      "rank": 86,
+      "name": "NAIA",
+      "count": 304
+    },
+    {
+      "rank": 87,
+      "name": "JANA",
+      "count": 293
+    },
+    {
+      "rank": 88,
+      "name": "ELSA",
+      "count": 291
+    },
+    {
+      "rank": 89,
+      "name": "LAYAN",
+      "count": 289
+    },
+    {
+      "rank": 90,
+      "name": "ARIA",
+      "count": 283
+    },
+    {
+      "rank": 91,
+      "name": "ELIA",
+      "count": 282
+    },
+    {
+      "rank": 92,
+      "name": "HELENA",
+      "count": 282
+    },
+    {
+      "rank": 93,
+      "name": "CAMILA",
+      "count": 281
+    },
+    {
+      "rank": 94,
+      "name": "MAIA",
+      "count": 273
+    },
+    {
+      "rank": 95,
+      "name": "AMELIA",
+      "count": 271
+    },
+    {
+      "rank": 96,
+      "name": "AROA",
+      "count": 269
+    },
+    {
+      "rank": 97,
+      "name": "LEYRE",
+      "count": 268
+    },
+    {
+      "rank": 98,
+      "name": "NEREA",
+      "count": 266
+    },
+    {
+      "rank": 99,
+      "name": "TERESA",
+      "count": 264
+    },
+    {
+      "rank": 100,
+      "name": "FATIMA",
+      "count": 263
+    }
+  ],
+  "notes": "Names are exactly as INE publishes them: upper case with NO accents or diacritics (e.g. SOFIA, LUCIA, MARTIN, ALVARO, MARIA, JESUS). Rank = row order in the INE file (the file has no rank column; it is sorted by count descending); tied counts are numbered sequentially in file order, not as shared ranks (ties: JESUS/VICTOR 545 male; EVA/LAURA 498 and ELIA/HELENA 282 female). Counts are births in 2024, not people alive; the sheet's TOTAL row (163,732 boys; 154,273 girls) is all 2024 births of that sex, not only the top 100. Compound names: none of the 200 entries contains a space or hyphen; the newborn file lists names as INE publishes them and the methodology for how compound registered names are tabulated was not stated in the file (no explanatory note found for the newborn series). Regional-language names appear in the national top 100 where numerous Spain-wide (e.g. male MARC, PAU, BIEL, NIL, MARTI, ALEX, JAN). INE's separate residents file (nombres_mas_frecuentes.xlsx, census 01/01/2025, people alive, with compound names such as MARIA CARMEN as separate entries) was downloaded for comparison only and not used because it skews older. Source file: nomnac24.xlsx, 43,319 bytes, fetched directly with curl (no API needed); the INEbase page also offers earlier years 2002-2023 with the same layout.",
+  "source_id": "src_name_frequency_es_es_ine"
+}
