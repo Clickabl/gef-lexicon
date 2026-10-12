@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ko.grammar_glance",
+  "topic_id": "TOPIC.orientation.grammar_glance",
+  "language_tag": "ko",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "trait.word_building", "fact_kind": "category", "value": "agglutinating"},
+    {
+      "fact_id": "trait.word_building.example.1",
+      "fact_kind": "term",
+      "value": "집에서",
+      "qualifiers": {"ipa": "tɕibesʌ", "reading": "jibeseo", "parts": ["집", "에서"]}
+    },
+    {
+      "fact_id": "trait.word_building.example.2",
+      "fact_kind": "term",
+      "value": "먹었어요",
+      "qualifiers": {"ipa": "mʌɡʌs͈ʌjo", "reading": "meogeosseoyo", "parts": ["먹", "었", "어요"]}
+    },
+    {
+      "fact_id": "trait.word_building.example.3",
+      "fact_kind": "term",
+      "value": "친구들에게",
+      "qualifiers": {"ipa": "tɕʰiɡudɯɾeɡe", "reading": "chingudeurege", "parts": ["친구", "들", "에게"]}
+    },
+    {"fact_id": "trait.noun_gender", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.classifiers", "fact_kind": "category", "value": "required"},
+    {
+      "fact_id": "trait.classifiers.example.1",
+      "fact_kind": "term",
+      "value": "사과 두 개",
+      "qualifiers": {"ipa": "saɡwa tu kɛ", "reading": "sagwa du gae"}
+    },
+    {
+      "fact_id": "trait.classifiers.example.2",
+      "fact_kind": "term",
+      "value": "책 세 권",
+      "qualifiers": {"ipa": "tɕʰɛk̚ se kwʌn", "reading": "chaek se gwon"}
+    },
+    {
+      "fact_id": "trait.classifiers.example.3",
+      "fact_kind": "term",
+      "value": "고양이 한 마리",
+      "qualifiers": {"ipa": "kojaŋi han maɾi", "reading": "goyangi han mari"}
+    },
+    {"fact_id": "trait.formal_you", "fact_kind": "category", "value": "levels"},
+    {
+      "fact_id": "trait.formal_you.example.1",
+      "fact_kind": "term",
+      "value": "가?",
+      "qualifiers": {"ipa": "ka", "reading": "ga?", "register": "informal", "level": "casual"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.2",
+      "fact_kind": "term",
+      "value": "가요?",
+      "qualifiers": {"ipa": "kajo", "reading": "gayo?", "register": "informal", "level": "polite"}
+    },
+    {
+      "fact_id": "trait.formal_you.example.3",
+      "fact_kind": "term",
+      "value": "갑니까?",
+      "qualifiers": {"ipa": "kamnik͈a", "reading": "gamnikka?", "register": "formal", "level": "formal"}
+    },
+    {
+      "fact_id": "trait.verb_endings",
+      "fact_kind": "category",
+      "value": "many",
+      "qualifiers": {"example_verb": "먹다"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.1",
+      "fact_kind": "term",
+      "value": "먹어요 / 먹었어요 / 먹겠어요",
+      "qualifiers": {"ipa": "mʌɡʌjo / mʌɡʌs͈ʌjo / mʌk̚k͈es͈ʌjo", "reading": "meogeoyo / meogeosseoyo / meokgesseoyo"}
+    },
+    {
+      "fact_id": "trait.verb_endings.example.2",
+      "fact_kind": "term",
+      "value": "저는 먹어요 / 너는 먹어요 / 우리는 먹어요",
+      "qualifiers": {
+        "ipa": "tɕʌnɯn mʌɡʌjo / nʌnɯn mʌɡʌjo / uɾinɯn mʌɡʌjo",
+        "reading": "jeoneun meogeoyo / neoneun meogeoyo / urineun meogeoyo"
+      }
+    },
+    {"fact_id": "trait.subject_pronouns", "fact_kind": "category", "value": "context_dependent"},
+    {
+      "fact_id": "trait.subject_pronouns.example.1",
+      "fact_kind": "term",
+      "value": "집에 가요.",
+      "qualifiers": {"ipa": "tɕibe kajo", "reading": "jibe gayo."}
+    },
+    {
+      "fact_id": "trait.subject_pronouns.example.2",
+      "fact_kind": "term",
+      "value": "사랑해요.",
+      "qualifiers": {"ipa": "saɾaŋhɛjo", "reading": "saranghaeyo."}
+    },
+    {"fact_id": "trait.cases", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.cases.example.1",
+      "fact_kind": "term",
+      "value": "남자가 여자를 봐요. 여자가 남자를 봐요.",
+      "qualifiers": {
+        "ipa": "namdʑaɡa jʌdʑaɾɯl pwajo. jʌdʑaɡa namdʑaɾɯl pwajo.",
+        "reading": "namjaga yeojareul bwayo. yeojaga namjareul bwayo."
+      }
+    },
+    {"fact_id": "trait.dual_number", "fact_kind": "category", "value": "none"},
+    {"fact_id": "trait.adjective_position", "fact_kind": "category", "value": "before_noun"},
+    {
+      "fact_id": "trait.adjective_position.example.1",
+      "fact_kind": "term",
+      "value": "큰 집",
+      "qualifiers": {"ipa": "kʰɯn tɕip̚", "reading": "keun jip"}
+    },
+    {
+      "fact_id": "trait.adjective_position.example.2",
+      "fact_kind": "term",
+      "value": "좋은 친구",
+      "qualifiers": {"ipa": "tɕoɯn tɕʰiɡu", "reading": "joeun chingu"}
+    },
+    {"fact_id": "trait.articles", "fact_kind": "category", "value": "none"},
+    {
+      "fact_id": "trait.articles.example.1",
+      "fact_kind": "term",
+      "value": "사과가 있어요.",
+      "qualifiers": {"ipa": "saɡwaɡa is͈ʌjo", "reading": "sagwaga isseoyo."}
+    },
+    {"fact_id": "trait.questions", "fact_kind": "category", "value": "intonation_or_inversion"},
+    {
+      "fact_id": "trait.questions.example.1",
+      "fact_kind": "term",
+      "value": "커피 마셔요?",
+      "qualifiers": {"ipa": "kʰʌpʰi maɕʌjo", "reading": "keopi masyeoyo?"}
+    },
+    {
+      "fact_id": "trait.questions.example.2",
+      "fact_kind": "term",
+      "value": "지금 가요?",
+      "qualifiers": {"ipa": "tɕiɡɯm kajo", "reading": "jigeum gayo?"}
+    },
+    {"fact_id": "trait.word_order", "fact_kind": "category", "value": "sov"},
+    {
+      "fact_id": "trait.word_order.example.1",
+      "fact_kind": "term",
+      "value": "저는 사과를 먹어요.",
+      "qualifiers": {"ipa": "tɕʌnɯn saɡwaɾɯl mʌɡʌjo", "reading": "jeoneun sagwareul meogeoyo."}
+    },
+    {
+      "fact_id": "trait.word_order.example.2",
+      "fact_kind": "term",
+      "value": "고양이가 우유를 마셔요.",
+      "qualifiers": {"ipa": "kojaŋiɡa ujuɾɯl maɕʌjo", "reading": "goyangiga uyureul masyeoyo."}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

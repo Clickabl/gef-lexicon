@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "ko",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "loanwords_both_ways",
+      "kind": "helpful_transfer",
+      "text": "English and Korean are not related, so there are no look-alike cousins. These are loanwords that went in both directions. The first 10 are English words that came from Korean, mostly food and culture, so you may know them already; the Korean sounds a little different from how English says it. The last 8 are Korean words that came from English and are written in Hangul, bent to Korean sounds (there is no “f” or “z”, and extra vowels break up groups of consonants).",
+      "pairs": [
+        {"from": "kimchi", "to": "김치", "to_ipa": "kimtɕʰi"},
+        {"from": "taekwondo", "to": "태권도", "to_ipa": "tʰɛk͈wʌndo"},
+        {"from": "bulgogi", "to": "불고기", "to_ipa": "pulɡoɡi"},
+        {"from": "bibimbap", "to": "비빔밥", "to_ipa": "pibimp͈ap̚"},
+        {"from": "kimbap", "to": "김밥", "to_ipa": "kimbap̚"},
+        {"from": "soju", "to": "소주", "to_ipa": "sodʑu"},
+        {"from": "hangul", "to": "한글", "to_ipa": "hanɡɯl"},
+        {"from": "hanbok", "to": "한복", "to_ipa": "hanbok̚"},
+        {"from": "mukbang", "to": "먹방", "to_ipa": "mʌk̚p͈aŋ"},
+        {"from": "chaebol", "to": "재벌", "to_ipa": "tɕɛbʌl"},
+        {"from": "coffee", "to": "커피", "to_ipa": "kʰʌpʰi"},
+        {"from": "computer", "to": "컴퓨터", "to_ipa": "kʰʌmpʰjutʰʌ"},
+        {"from": "taxi", "to": "택시", "to_ipa": "tʰɛk̚ɕ͈i"},
+        {"from": "bus", "to": "버스", "to_ipa": "pʌsɯ"},
+        {"from": "hotel", "to": "호텔", "to_ipa": "hotʰel"},
+        {"from": "ice cream", "to": "아이스크림", "to_ipa": "aisɯkʰɯɾim"},
+        {"from": "sandwich", "to": "샌드위치", "to_ipa": "sɛndɯwitɕʰi"},
+        {"from": "television", "to": "텔레비전", "to_ipa": "tʰellebidʑʌn"}
+      ]
+    },
+    {
+      "note_id": "konglish_false_friends",
+      "kind": "false_friend",
+      "text": "A few English words came into Korean and changed their meaning. If you guess from the English, you will be wrong. These are the ones that catch people out.",
+      "pairs": [
+        {
+          "from": "fighting",
+          "to": "파이팅",
+          "to_ipa": "pʰaitʰiŋ",
+          "to_meaning": "a cheer, like “go for it!” or “you can do it!”"
+        },
+        {
+          "from": "service",
+          "to": "서비스",
+          "to_ipa": "sʌbisɯ",
+          "to_meaning": "something free, “on the house” (it can also mean ordinary service)"
+        },
+        {"from": "mansion", "to": "맨션", "to_ipa": "mɛnɕʌn", "to_meaning": "an apartment building, not a grand house"},
+        {"from": "consent", "to": "콘센트", "to_ipa": "kʰonsentʰɯ", "to_meaning": "a wall power socket"},
+        {"from": "sharp", "to": "샤프", "to_ipa": "ɕapʰɯ", "to_meaning": "a mechanical pencil"},
+        {"from": "one-piece", "to": "원피스", "to_ipa": "wʌnpʰisɯ", "to_meaning": "a dress"},
+        {"from": "notebook", "to": "노트북", "to_ipa": "notʰɯbuk̚", "to_meaning": "a laptop computer"},
+        {"from": "cunning", "to": "커닝", "to_ipa": "kʰʌniŋ", "to_meaning": "cheating on a test"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

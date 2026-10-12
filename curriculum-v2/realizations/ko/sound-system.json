@@ -1,0 +1,124 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ko.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "ko",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "pʰ", "p͈", "t", "tʰ", "t͈", "k", "kʰ", "k͈", "tɕ", "tɕʰ", "tɕ͈", "s", "s͈", "h", "m", "n", "ŋ", "ɾ", "l", "j", "w", "ɰ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "e", "ɛ", "a", "o", "u", "ɯ", "ʌ"],
+      "qualifiers": {"variety": "standard"}
+    },
+    {
+      "fact_id": "sounds.tricky.plain",
+      "fact_kind": "term",
+      "value": "바다",
+      "qualifiers": {"ipa": "p", "spelling": "ㅂ", "word_ipa": "pada", "note_id": "ko_plain_stops", "reading": "bada"}
+    },
+    {
+      "fact_id": "sounds.tricky.aspirated",
+      "fact_kind": "term",
+      "value": "코",
+      "qualifiers": {"ipa": "kʰ", "spelling": "ㅋ", "word_ipa": "kʰo", "note_id": "ko_aspirated", "reading": "ko"}
+    },
+    {
+      "fact_id": "sounds.tricky.tense",
+      "fact_kind": "term",
+      "value": "빵",
+      "qualifiers": {"ipa": "p͈", "spelling": "ㅃ", "word_ipa": "p͈aŋ", "note_id": "ko_tense_consonants", "reading": "ppang"}
+    },
+    {
+      "fact_id": "sounds.tricky.eu",
+      "fact_kind": "term",
+      "value": "그림",
+      "qualifiers": {"ipa": "ɯ", "spelling": "ㅡ", "word_ipa": "kɯɾim", "note_id": "ko_eu_vowel", "reading": "geurim"}
+    },
+    {
+      "fact_id": "sounds.tricky.eo",
+      "fact_kind": "term",
+      "value": "어머니",
+      "qualifiers": {"ipa": "ʌ", "spelling": "ㅓ", "word_ipa": "ʌmʌni", "note_id": "ko_eo_vowel", "reading": "eomeoni"}
+    },
+    {
+      "fact_id": "sounds.tricky.rieul",
+      "fact_kind": "term",
+      "value": "구름",
+      "qualifiers": {"ipa": "ɾ", "spelling": "ㄹ", "word_ipa": "kuɾɯm", "note_id": "ko_rieul", "reading": "gureum"}
+    },
+    {
+      "fact_id": "sounds.tricky.final_k",
+      "fact_kind": "term",
+      "value": "부엌",
+      "qualifiers": {"ipa": "k̚", "spelling": "ㅋ", "word_ipa": "puʌk̚", "note_id": "ko_final_stops", "reading": "bueok"}
+    },
+    {
+      "fact_id": "sounds.tricky.s_before_i",
+      "fact_kind": "term",
+      "value": "시간",
+      "qualifiers": {"ipa": "ɕ", "spelling": "ㅅ", "word_ipa": "ɕiɡan", "note_id": "ko_s_before_i", "reading": "sigan"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "달",
+      "qualifiers": {"ipa": "tal", "pair": 1, "note_id": "ko_tense_consonants", "reading": "dal"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "딸",
+      "qualifiers": {"ipa": "t͈al", "pair": 1, "note_id": "ko_tense_consonants", "reading": "ttal"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "불",
+      "qualifiers": {"ipa": "pul", "pair": 2, "note_id": "ko_aspirated", "reading": "bul"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "풀",
+      "qualifiers": {"ipa": "pʰul", "pair": 2, "note_id": "ko_aspirated", "reading": "pul"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "사다",
+      "qualifiers": {"ipa": "sada", "pair": 3, "note_id": "ko_tense_consonants", "reading": "sada"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "싸다",
+      "qualifiers": {"ipa": "s͈ada", "pair": 3, "note_id": "ko_tense_consonants", "reading": "ssada"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "고기",
+      "qualifiers": {"ipa": "koɡi", "pair": 4, "note_id": "ko_eo_vowel", "reading": "gogi"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "거기",
+      "qualifiers": {"ipa": "kʌɡi", "pair": 4, "note_id": "ko_eo_vowel", "reading": "geogi"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "not_applicable"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

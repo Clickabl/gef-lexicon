@@ -285,8 +285,29 @@
     "uk:noun.3": "window",
     "uk:noun.4": "city",
     "uk:noun.5": "cat",
-    "uk:noun.6": "friend"
+    "uk:noun.6": "friend",
+    "ko:trait.word_building.example.1": "at home (house + at)",
+    "ko:trait.word_building.example.2": "ate (eat + past + polite ending)",
+    "ko:trait.word_building.example.3": "to friends (friend + more than one + to)",
+    "ko:trait.classifiers.example.1": "two apples",
+    "ko:trait.classifiers.example.2": "three books",
+    "ko:trait.classifiers.example.3": "one cat",
+    "ko:trait.formal_you.example.1": "Are you going? (casual, to a close friend)",
+    "ko:trait.formal_you.example.2": "Are you going? (polite, everyday)",
+    "ko:trait.formal_you.example.3": "Are you going? (formal, for customers, announcements)",
+    "ko:trait.verb_endings.example.1": "eat / ate / will eat (the ending shows time and politeness)",
+    "ko:trait.verb_endings.example.2": "I eat / you eat / we eat (the verb stays the same for every subject)",
+    "ko:trait.subject_pronouns.example.1": "(I’m) going home.",
+    "ko:trait.subject_pronouns.example.2": "I love you.",
+    "ko:trait.cases.example.1": "The man sees the woman. The woman sees the man.",
+    "ko:trait.adjective_position.example.1": "a big house",
+    "ko:trait.adjective_position.example.2": "a good friend",
+    "ko:trait.articles.example.1": "There is an apple. (It could also be “the apple” or “apples”.)",
+    "ko:trait.questions.example.1": "Do you drink coffee?",
+    "ko:trait.questions.example.2": "Are you going now?",
+    "ko:trait.word_order.example.1": "I eat an apple.",
+    "ko:trait.word_order.example.2": "The cat drinks milk."
   },
   "review_state": "candidate",
-  "version": 11
+  "version": 12
 }

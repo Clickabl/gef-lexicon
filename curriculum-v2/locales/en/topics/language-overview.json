@@ -54,7 +54,9 @@
     "branch.slavic": "Slavic",
     "branch.east_slavic": "East Slavic",
     "family.japonic": "Japonic",
-    "branch.japanesic": "Japanese"
+    "branch.japanesic": "Japanese",
+    "family.koreanic": "Koreanic",
+    "branch.korean": "Korean"
   },
   "glosses": {
     "es:hook.target": "hello",
@@ -89,8 +91,11 @@
     "ja:hook.decoy.2": "water",
     "uk:hook.target": "hi, hello (informal)",
     "uk:hook.decoy.1": "thank you",
-    "uk:hook.decoy.2": "yes"
+    "uk:hook.decoy.2": "yes",
+    "ko:hook.target": "hello",
+    "ko:hook.decoy.1": "thank you",
+    "ko:hook.decoy.2": "water"
   },
   "review_state": "candidate",
-  "version": 14
+  "version": 16
 }

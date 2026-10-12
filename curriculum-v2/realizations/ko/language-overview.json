@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ko.language_overview",
+  "topic_id": "TOPIC.orientation.language_overview",
+  "language_tag": "ko",
+  "slots_version": 2,
+  "completeness": "complete",
+  "genealogy": {
+    "family_id": "koreanic",
+    "branch_ids": ["korean"],
+    "related_language_tags": [],
+    "script_ids": ["Hang"],
+    "origin_region_ids": ["asia"],
+    "notes": "Korean belongs to the small Koreanic family: Korean and the Jeju language (Jejueo) are its only members, and some scholars call Korean an isolate. Jejueo has no tag in the app registry, so related_language_tags is empty. The old idea that Korean is related to Japanese, Mongolic and Turkic (the \"Altaic\" hypothesis) is not accepted by most linguists; Korean shares grammar habits with Japanese and a large Chinese-derived vocabulary, but that is not shown to be family relationship. Broad orientation metadata only."
+  },
+  "facts": [
+    {"fact_id": "reach.regions", "fact_kind": "category", "value": ["asia"]},
+    {
+      "fact_id": "hook.target",
+      "fact_kind": "term",
+      "value": "안녕하세요",
+      "qualifiers": {"ipa": "annjʌŋhasejo", "reading": "annyeonghaseyo"}
+    },
+    {
+      "fact_id": "hook.decoy.1",
+      "fact_kind": "term",
+      "value": "감사합니다",
+      "qualifiers": {"ipa": "kamsahamnida", "reading": "gamsahamnida"}
+    },
+    {
+      "fact_id": "hook.decoy.2",
+      "fact_kind": "term",
+      "value": "물",
+      "qualifiers": {"ipa": "mul", "reading": "mul"}
+    }
+  ],
+  "capabilities": {"explanation": true, "comparison": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

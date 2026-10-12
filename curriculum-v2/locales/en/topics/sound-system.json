@@ -112,7 +112,15 @@
     "sound.uk_soft_consonant": "A soft consonant: the middle of your tongue lifts toward the roof of your mouth, a bit like the “ny” in “onion”. The soft sign ь shows it.",
     "sound.uk_shch": "Two sounds in a row: “sh” then “ch”, like “fish church” said fast.",
     "sound.uk_iotated": "These letters carry a y-sound: я “ya”, ю “yu”, є “ye”. After a consonant, the y-sound softens it instead.",
-    "sound.uk_voiced_pair": "Made in the same place in your mouth: ж with your voice on, like the “s” of “measure”, and ш with it off, like “sh”."
+    "sound.uk_voiced_pair": "Made in the same place in your mouth: ж with your voice on, like the “s” of “measure”, and ш with it off, like “sh”.",
+    "sound.ko_plain_stops": "Plain ㄱ ㄷ ㅂ ㅈ sound like the k, t and p of “sky”, “stop” and “spin”: soft, with no puff of air. Between vowels they turn voiced, like g, d, b and j.",
+    "sound.ko_aspirated": "ㅋ ㅌ ㅍ ㅊ come with a strong puff of air, like the k, t, p and ch at the start of “kit”, “top”, “pin” and “chin”. Hold a hand in front of your mouth: you should feel the breath.",
+    "sound.ko_tense_consonants": "ㄲ ㄸ ㅃ ㅆ ㅉ are tight and crisp: no puff of air, and your throat held tense. English has no twin. Try the p of “spin” said sharply, without making it longer or louder.",
+    "sound.ko_eu_vowel": "Say “oo”, then spread your lips as if smiling, without moving your tongue.",
+    "sound.ko_eo_vowel": "Open your mouth a little and say a short “uh”, somewhere between the “u” of “cup” and the “aw” of “law”.",
+    "sound.ko_rieul": "Between vowels, ㄹ is a quick tap of the tongue tip, like the middle of American “butter”. At the end of a syllable it is a clear “l”, as in 달.",
+    "sound.ko_final_stops": "At the end of a syllable only seven sounds are left: k, n, t, l, m, p and ng. Several letters collapse into one: ㄱ ㅋ ㄲ all end in a held k, and ㅌ ㅅ ㅈ ㅊ ㄷ all end in a held t. Close your mouth for the sound and don’t let the air out.",
+    "sound.ko_s_before_i": "Before ㅣ and the y-vowels, ㅅ sounds like a light “sh”: 시 is “shi”, not “si”."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -263,8 +271,24 @@
     "uk:sounds.contrast.3.a": "state, condition",
     "uk:sounds.contrast.3.b": "stand! become! (a command)",
     "uk:sounds.contrast.4.a": "to live",
-    "uk:sounds.contrast.4.b": "to sew"
+    "uk:sounds.contrast.4.b": "to sew",
+    "ko:sounds.tricky.plain": "sea",
+    "ko:sounds.tricky.aspirated": "nose",
+    "ko:sounds.tricky.tense": "bread",
+    "ko:sounds.tricky.eu": "picture, drawing",
+    "ko:sounds.tricky.eo": "mother",
+    "ko:sounds.tricky.rieul": "cloud",
+    "ko:sounds.tricky.final_k": "kitchen",
+    "ko:sounds.tricky.s_before_i": "time, hour",
+    "ko:sounds.contrast.1.a": "moon",
+    "ko:sounds.contrast.1.b": "daughter",
+    "ko:sounds.contrast.2.a": "fire",
+    "ko:sounds.contrast.2.b": "grass",
+    "ko:sounds.contrast.3.a": "to buy",
+    "ko:sounds.contrast.3.b": "to be cheap",
+    "ko:sounds.contrast.4.a": "meat",
+    "ko:sounds.contrast.4.b": "there"
   },
   "review_state": "candidate",
-  "version": 16
+  "version": 18
 }

@@ -1,0 +1,475 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.ko.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "ko",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["hangul"]},
+    {"fact_id": "writing.hangul.kind", "fact_kind": "category", "value": "featural"},
+    {"fact_id": "writing.hangul.script", "fact_kind": "category", "value": "Hang"},
+    {"fact_id": "writing.hangul.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.hangul.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.hangul.has_case", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hangul.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.hangul.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.hangul.symbols",
+      "fact_kind": "term",
+      "value": ["ㅏ", "ㅓ", "ㅗ", "ㅜ", "ㅡ", "ㅣ", "ㅑ", "ㅕ", "ㅛ", "ㅠ", "ㅇ", "ㄱ", "ㅋ", "ㄲ", "ㄴ", "ㄷ", "ㅌ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅍ", "ㅃ", "ㅈ", "ㅊ", "ㅉ", "ㅅ", "ㅆ", "ㅎ", "ㅐ", "ㅒ", "ㅘ", "ㅙ", "ㅔ", "ㅖ", "ㅝ", "ㅞ", "ㅚ", "ㅟ", "ㅢ"]
+    },
+    {"fact_id": "writing.hangul.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.hangul.punctuation", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.hangul.group.1", "fact_kind": "term", "value": ["ㅏ", "ㅓ", "ㅗ"]},
+    {"fact_id": "writing.hangul.group.2", "fact_kind": "term", "value": ["ㅜ", "ㅡ", "ㅣ"]},
+    {"fact_id": "writing.hangul.group.3", "fact_kind": "term", "value": ["ㅑ", "ㅕ", "ㅛ", "ㅠ"]},
+    {"fact_id": "writing.hangul.group.4", "fact_kind": "term", "value": ["ㅇ", "ㄱ", "ㅋ", "ㄲ"]},
+    {"fact_id": "writing.hangul.group.5", "fact_kind": "term", "value": ["ㄴ", "ㄷ", "ㅌ", "ㄸ", "ㄹ"]},
+    {"fact_id": "writing.hangul.group.6", "fact_kind": "term", "value": ["ㅁ", "ㅂ", "ㅍ", "ㅃ"]},
+    {"fact_id": "writing.hangul.group.7", "fact_kind": "term", "value": ["ㅈ", "ㅊ", "ㅉ"]},
+    {"fact_id": "writing.hangul.group.8", "fact_kind": "term", "value": ["ㅅ", "ㅆ", "ㅎ"]},
+    {"fact_id": "writing.hangul.group.9", "fact_kind": "term", "value": ["ㅐ", "ㅒ", "ㅘ", "ㅙ"]},
+    {"fact_id": "writing.hangul.group.10", "fact_kind": "term", "value": ["ㅔ", "ㅖ", "ㅝ", "ㅞ"]},
+    {"fact_id": "writing.hangul.group.11", "fact_kind": "term", "value": ["ㅚ", "ㅟ", "ㅢ"]},
+    {
+      "fact_id": "writing.hangul.example.a",
+      "fact_kind": "term",
+      "value": "아기",
+      "qualifiers": {"ipa": "aɡi", "highlight": "ㅏ", "sound": "a", "reading": "a", "name": "아 (a)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.eo",
+      "fact_kind": "term",
+      "value": "어머니",
+      "qualifiers": {"ipa": "ʌmʌni", "highlight": "ㅓ", "sound": "ʌ", "reading": "eo", "name": "어 (eo)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.o",
+      "fact_kind": "term",
+      "value": "오리",
+      "qualifiers": {"ipa": "oɾi", "highlight": "ㅗ", "sound": "o", "reading": "o", "name": "오 (o)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.u",
+      "fact_kind": "term",
+      "value": "우산",
+      "qualifiers": {"ipa": "usan", "highlight": "ㅜ", "sound": "u", "reading": "u", "name": "우 (u)", "looks_like": "T"}
+    },
+    {
+      "fact_id": "writing.hangul.example.eu",
+      "fact_kind": "term",
+      "value": "은행",
+      "qualifiers": {"ipa": "ɯnhɛŋ", "highlight": "ㅡ", "sound": "ɯ", "reading": "eu", "name": "으 (eu)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.i",
+      "fact_kind": "term",
+      "value": "이름",
+      "qualifiers": {"ipa": "iɾɯm", "highlight": "ㅣ", "sound": "i", "reading": "i", "name": "이 (i)", "looks_like": "I"}
+    },
+    {
+      "fact_id": "writing.hangul.example.ya",
+      "fact_kind": "term",
+      "value": "야구",
+      "qualifiers": {"ipa": "jaɡu", "highlight": "ㅑ", "sound": "ja", "reading": "ya", "name": "야 (ya)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.yeo",
+      "fact_kind": "term",
+      "value": "여우",
+      "qualifiers": {"ipa": "jʌu", "highlight": "ㅕ", "sound": "jʌ", "reading": "yeo", "name": "여 (yeo)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.yo",
+      "fact_kind": "term",
+      "value": "요리",
+      "qualifiers": {"ipa": "joɾi", "highlight": "ㅛ", "sound": "jo", "reading": "yo", "name": "요 (yo)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.yu",
+      "fact_kind": "term",
+      "value": "유리",
+      "qualifiers": {"ipa": "juɾi", "highlight": "ㅠ", "sound": "ju", "reading": "yu", "name": "유 (yu)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.ieung",
+      "fact_kind": "term",
+      "value": "공",
+      "qualifiers": {
+        "ipa": "koŋ",
+        "highlight": "ㅇ",
+        "sound": "ŋ",
+        "reading": "ng",
+        "name": "이응 (ieung)",
+        "looks_like": "O",
+        "position": "final",
+        "final_sound": "ŋ",
+        "initial_sound": "silent"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.giyeok",
+      "fact_kind": "term",
+      "value": "가방",
+      "qualifiers": {
+        "ipa": "kabaŋ",
+        "highlight": "ㄱ",
+        "sound": "k",
+        "reading": "g/k",
+        "name": "기역 (giyeok)",
+        "position": "initial",
+        "final_sound": "k̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.kieuk",
+      "fact_kind": "term",
+      "value": "코",
+      "qualifiers": {
+        "ipa": "kʰo",
+        "highlight": "ㅋ",
+        "sound": "kʰ",
+        "reading": "k",
+        "name": "키읔 (kieuk)",
+        "position": "initial",
+        "final_sound": "k̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ssang_giyeok",
+      "fact_kind": "term",
+      "value": "꼬리",
+      "qualifiers": {
+        "ipa": "k͈oɾi",
+        "highlight": "ㄲ",
+        "sound": "k͈",
+        "reading": "kk",
+        "name": "쌍기역 (ssanggiyeok)",
+        "position": "initial",
+        "final_sound": "k̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.nieun",
+      "fact_kind": "term",
+      "value": "나무",
+      "qualifiers": {
+        "ipa": "namu",
+        "highlight": "ㄴ",
+        "sound": "n",
+        "reading": "n",
+        "name": "니은 (nieun)",
+        "looks_like": "L",
+        "position": "initial",
+        "final_sound": "n"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.digeut",
+      "fact_kind": "term",
+      "value": "달",
+      "qualifiers": {
+        "ipa": "tal",
+        "highlight": "ㄷ",
+        "sound": "t",
+        "reading": "d/t",
+        "name": "디귿 (digeut)",
+        "looks_like": "C",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.tieut",
+      "fact_kind": "term",
+      "value": "토끼",
+      "qualifiers": {
+        "ipa": "tʰok͈i",
+        "highlight": "ㅌ",
+        "sound": "tʰ",
+        "reading": "t",
+        "name": "티읕 (tieut)",
+        "looks_like": "E",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ssang_digeut",
+      "fact_kind": "term",
+      "value": "딸기",
+      "qualifiers": {
+        "ipa": "t͈alɡi",
+        "highlight": "ㄸ",
+        "sound": "t͈",
+        "reading": "tt",
+        "name": "쌍디귿 (ssangdigeut)",
+        "position": "initial"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.rieul",
+      "fact_kind": "term",
+      "value": "구름",
+      "qualifiers": {
+        "ipa": "kuɾɯm",
+        "highlight": "ㄹ",
+        "sound": "ɾ",
+        "reading": "r/l",
+        "name": "리을 (rieul)",
+        "position": "between vowels",
+        "final_sound": "l"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.mieum",
+      "fact_kind": "term",
+      "value": "문",
+      "qualifiers": {
+        "ipa": "mun",
+        "highlight": "ㅁ",
+        "sound": "m",
+        "reading": "m",
+        "name": "미음 (mieum)",
+        "position": "initial",
+        "final_sound": "m"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.bieup",
+      "fact_kind": "term",
+      "value": "바다",
+      "qualifiers": {
+        "ipa": "pada",
+        "highlight": "ㅂ",
+        "sound": "p",
+        "reading": "b/p",
+        "name": "비읍 (bieup)",
+        "position": "initial",
+        "final_sound": "p̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.pieup",
+      "fact_kind": "term",
+      "value": "포도",
+      "qualifiers": {
+        "ipa": "pʰodo",
+        "highlight": "ㅍ",
+        "sound": "pʰ",
+        "reading": "p",
+        "name": "피읖 (pieup)",
+        "position": "initial",
+        "final_sound": "p̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ssang_bieup",
+      "fact_kind": "term",
+      "value": "빵",
+      "qualifiers": {
+        "ipa": "p͈aŋ",
+        "highlight": "ㅃ",
+        "sound": "p͈",
+        "reading": "pp",
+        "name": "쌍비읍 (ssangbieup)",
+        "position": "initial"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.jieut",
+      "fact_kind": "term",
+      "value": "집",
+      "qualifiers": {
+        "ipa": "tɕip̚",
+        "highlight": "ㅈ",
+        "sound": "tɕ",
+        "reading": "j",
+        "name": "지읒 (jieut)",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.chieut",
+      "fact_kind": "term",
+      "value": "치마",
+      "qualifiers": {
+        "ipa": "tɕʰima",
+        "highlight": "ㅊ",
+        "sound": "tɕʰ",
+        "reading": "ch",
+        "name": "치읓 (chieut)",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ssang_jieut",
+      "fact_kind": "term",
+      "value": "찌개",
+      "qualifiers": {
+        "ipa": "tɕ͈iɡɛ",
+        "highlight": "ㅉ",
+        "sound": "tɕ͈",
+        "reading": "jj",
+        "name": "쌍지읒 (ssangjieut)",
+        "position": "initial"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.siot",
+      "fact_kind": "term",
+      "value": "사과",
+      "qualifiers": {
+        "ipa": "saɡwa",
+        "highlight": "ㅅ",
+        "sound": "s",
+        "reading": "s",
+        "name": "시옷 (siot)",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ssang_siot",
+      "fact_kind": "term",
+      "value": "쌀",
+      "qualifiers": {
+        "ipa": "s͈al",
+        "highlight": "ㅆ",
+        "sound": "s͈",
+        "reading": "ss",
+        "name": "쌍시옷 (ssangsiot)",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.hieut",
+      "fact_kind": "term",
+      "value": "하늘",
+      "qualifiers": {
+        "ipa": "hanɯl",
+        "highlight": "ㅎ",
+        "sound": "h",
+        "reading": "h",
+        "name": "히읗 (hieut)",
+        "position": "initial",
+        "final_sound": "t̚"
+      }
+    },
+    {
+      "fact_id": "writing.hangul.example.ae",
+      "fact_kind": "term",
+      "value": "개",
+      "qualifiers": {"ipa": "kɛ", "highlight": "ㅐ", "sound": "ɛ", "reading": "ae", "name": "애 (ae)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.yae",
+      "fact_kind": "term",
+      "value": "얘기",
+      "qualifiers": {"ipa": "jɛɡi", "highlight": "ㅒ", "sound": "jɛ", "reading": "yae", "name": "얘 (yae)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.wa",
+      "fact_kind": "term",
+      "value": "과일",
+      "qualifiers": {"ipa": "kwail", "highlight": "ㅘ", "sound": "wa", "reading": "wa", "name": "와 (wa)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.wae",
+      "fact_kind": "term",
+      "value": "돼지",
+      "qualifiers": {"ipa": "twɛdʑi", "highlight": "ㅙ", "sound": "wɛ", "reading": "wae", "name": "왜 (wae)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.e",
+      "fact_kind": "term",
+      "value": "게",
+      "qualifiers": {"ipa": "ke", "highlight": "ㅔ", "sound": "e", "reading": "e", "name": "에 (e)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.ye",
+      "fact_kind": "term",
+      "value": "예",
+      "qualifiers": {"ipa": "je", "highlight": "ㅖ", "sound": "je", "reading": "ye", "name": "예 (ye)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.wo",
+      "fact_kind": "term",
+      "value": "원숭이",
+      "qualifiers": {"ipa": "wʌnsuŋi", "highlight": "ㅝ", "sound": "wʌ", "reading": "wo", "name": "워 (wo)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.we",
+      "fact_kind": "term",
+      "value": "스웨터",
+      "qualifiers": {"ipa": "sɯwetʰʌ", "highlight": "ㅞ", "sound": "we", "reading": "we", "name": "웨 (we)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.oe",
+      "fact_kind": "term",
+      "value": "회사",
+      "qualifiers": {"ipa": "hwesa", "highlight": "ㅚ", "sound": "we", "reading": "oe", "name": "외 (oe)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.wi",
+      "fact_kind": "term",
+      "value": "귀",
+      "qualifiers": {"ipa": "kwi", "highlight": "ㅟ", "sound": "wi", "reading": "wi", "name": "위 (wi)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.ui",
+      "fact_kind": "term",
+      "value": "의자",
+      "qualifiers": {"ipa": "ɰidʑa", "highlight": "ㅢ", "sound": "ɰi", "reading": "ui", "name": "의 (ui)"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_a",
+      "fact_kind": "term",
+      "value": "아이",
+      "qualifiers": {"ipa": "ai", "highlight": "아", "sound": "a", "reading": "a", "parts": "ㅇ + ㅏ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_na",
+      "fact_kind": "term",
+      "value": "나라",
+      "qualifiers": {"ipa": "naɾa", "highlight": "나", "sound": "na", "reading": "na", "parts": "ㄴ + ㅏ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_go",
+      "fact_kind": "term",
+      "value": "고기",
+      "qualifiers": {"ipa": "koɡi", "highlight": "고", "sound": "ko", "reading": "go", "parts": "ㄱ + ㅗ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_han",
+      "fact_kind": "term",
+      "value": "한국",
+      "qualifiers": {"ipa": "hanɡuk̚", "highlight": "한", "sound": "han", "reading": "han", "parts": "ㅎ + ㅏ + ㄴ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_mul",
+      "fact_kind": "term",
+      "value": "물",
+      "qualifiers": {"ipa": "mul", "highlight": "물", "sound": "mul", "reading": "mul", "parts": "ㅁ + ㅜ + ㄹ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_gang",
+      "fact_kind": "term",
+      "value": "강",
+      "qualifiers": {"ipa": "kaŋ", "highlight": "강", "sound": "kaŋ", "reading": "gang", "parts": "ㄱ + ㅏ + ㅇ"}
+    },
+    {
+      "fact_id": "writing.hangul.example.block_dak",
+      "fact_kind": "term",
+      "value": "닭",
+      "qualifiers": {"ipa": "tak̚", "highlight": "닭", "sound": "tak̚", "reading": "dak", "parts": "ㄷ + ㅏ + ㄹ + ㄱ"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}
