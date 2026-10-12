@@ -84,7 +84,9 @@
     "tone.neutral": "A short, light syllable with no tone of its own. Its pitch depends on the tone before it.",
     "sound.prenasalized_stop": "A quick “m” or “n” that flows straight into the next sound, even at the start of a word, with no vowel in between. Say mb, nd, ng and nj as single sounds.",
     "sound.initial_ng": "The “ng” of “sing”, but at the start of a word. Written ng' (with the apostrophe), it is one sound, not n plus g.",
-    "sound.tapped_r": "A quick tap of the tongue tip behind your top teeth, like the middle of American “butter”. Some speakers roll it."
+    "sound.tapped_r": "A quick tap of the tongue tip behind your top teeth, like the middle of American “butter”. Some speakers roll it.",
+    "stress.mostly_final": "Most words are stressed on the last syllable.",
+    "stress.fixed_initial": "The stress is always on the first syllable, so you never have to guess."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -185,5 +187,5 @@
     "sw:sounds.contrast.3.b": "blood"
   },
   "review_state": "candidate",
-  "version": 9
+  "version": 10
 }

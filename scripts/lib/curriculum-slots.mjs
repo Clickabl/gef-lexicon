@@ -95,6 +95,7 @@ export function labelIdsFor(topicKey, realization, slots) {
         const script = value(`writing.${layer}.script`);
         if (script) out.push(`script.${script}`);
         for (const mark of withPrefix(`writing.${layer}.mark.`)) out.push(`mark.${mark.qualifiers?.mark_id}`, `markrole.${mark.qualifiers?.role}`);
+        if ((realization.slots_version ?? 1) >= 2) out.push(`layer.${layer}.lesson`);
       }
       break;
     case 'sound_system':
@@ -114,7 +115,11 @@ export function labelIdsFor(topicKey, realization, slots) {
 
 /** Label ids the runtime needs for every vocabulary value, whatever the language (so adding a value forces its label). */
 export function genericLabelIds(slots) {
-  const out = { writing_system: [], sound_system: [], grammar_glance: [], language_overview: ['relation.same_branch', 'relation.same_family', 'relation.different_family'] };
+  const out = {
+    writing_system: [], sound_system: [], grammar_glance: [],
+    language_overview: ['relation.same_branch', 'relation.same_family', 'relation.different_family'],
+    script_lesson: ['glyph.group_title', 'glyph.sounds_like', 'glyph.shapes', 'glyph.say', 'glyph.q.in_word', 'glyph.q.which_name', 'glyph.q.which_sound', 'glyph.q.which_word', 'glyph.q.match', 'glyph.q.match_reading'],
+  };
   for (const kind of slots.writing.layer_kinds) out.writing_system.push(`kind.${kind}`);
   for (const direction of slots.writing.directions) out.writing_system.push(`direction.${direction}`);
   for (const role of slots.writing.layer_roles) if (role !== 'primary') out.writing_system.push(`layer.also.${role}`);

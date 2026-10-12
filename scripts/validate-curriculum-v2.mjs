@@ -45,6 +45,7 @@ const SLOTS = loadSlots(ROOT);
 const FACETS = new Set([
   'first_word', 'family_tree', 'where_spoken', 'relation_to_best', 'family_check',
   'script_intro', 'new_letters', 'marks_and_punctuation', 'letter_check',
+  'glyph_board', 'glyph_group', 'glyph_review',
   'sound_overview', 'tone_overview', 'tricky_sounds', 'listen_pick', 'sound_check',
   'trait_differences', 'trait_similarities', 'trait_check',
   'shared_words', 'false_friends', 'shared_words_check',
@@ -67,6 +68,7 @@ for (const entry of index.topics ?? []) {
   if (topicsById.has(topic.topic_id)) fail(`duplicate topic ${topic.topic_id}`);
   topicsById.set(topic.topic_id, topic);
   const ids = new Set();
+  if (topic.fact_source_topic_id && !(index.topics ?? []).some((candidate) => candidate.topic_id === topic.fact_source_topic_id)) fail(`${rel(path)}: fact_source_topic_id ${topic.fact_source_topic_id} is not an indexed topic`);
   for (const scene of topic.experience_blueprint?.scene_sequence ?? []) {
     if (ids.has(scene.scene_id)) fail(`${rel(path)}: duplicate scene_id ${scene.scene_id}`);
     ids.add(scene.scene_id);
@@ -194,6 +196,8 @@ function checkOverview(lang, entry, complete) {
 
 function checkWriting(lang, entry, complete) {
   const where = rel(entry.path);
+  // slots_version 2: the letter data the script lesson needs (a sound and a word for every symbol, teaching groups).
+  const letters2 = complete && (entry.realization.slots_version ?? 1) >= 2;
   const layers = layerIdsOf(entry.realization);
   if (complete && layers.length === 0) fail(`${where}: writing.layers must list at least one layer`);
   if (layers.length > 4) fail(`${where}: at most four writing layers`);
@@ -226,9 +230,22 @@ function checkWriting(lang, entry, complete) {
       if (complete && symbols.length < 10) fail(`${where}: layer ${layer} symbols must list the inventory (at least 10)`);
       if (new Set(symbols).size !== symbols.length) fail(`${where}: layer ${layer} symbols has duplicates`);
       for (const symbol of symbols) {
-        const plainLatin = script === 'Latn' && /^[a-z]$/u.test(symbol);
-        if (complete && !plainLatin && !highlighted.has(symbol) && kind !== 'romanization') fail(`${where}: symbol ${symbol} of layer ${layer} needs a writing.${layer}.example.* with that highlight`);
+        const plainLatin = script === 'Latn' && /^[a-z]$/u.test(symbol) && !letters2;
+        if (complete && !plainLatin && !highlighted.has(symbol) && (kind !== 'romanization' || letters2)) fail(`${where}: symbol ${symbol} of layer ${layer} needs a writing.${layer}.example.* with that highlight`);
       }
+    }
+    if (letters2) {
+      for (const example of examples) {
+        if (kind !== 'logographic' && !isText(example.qualifiers?.sound)) fail(`${where}: ${example.fact_id} needs qualifiers.sound (what the symbol itself sounds like)`);
+        if ((script !== 'Latn' || kind === 'logographic') && !isText(example.qualifiers?.reading)) fail(`${where}: ${example.fact_id} needs qualifiers.reading (a Latin transliteration), the script of layer ${layer} is not Latin`);
+      }
+      const groups = factsWith(entry, `writing.${layer}.group.`);
+      const members = groups.flatMap((group) => (isArrayOfStrings(group.value) ? group.value : []));
+      for (const group of groups) if (!isArrayOfStrings(group.value) || group.value.length < 2 || group.value.length > 6) fail(`${where}: ${group.fact_id} must list two to six symbols`);
+      if (new Set(members).size !== members.length) fail(`${where}: a symbol is in two groups of layer ${layer}`);
+      const wanted = kind === 'logographic' ? [...highlighted] : (Array.isArray(symbols) ? symbols : []);
+      for (const symbol of wanted) if (!members.includes(symbol)) fail(`${where}: symbol ${symbol} of layer ${layer} is in no writing.${layer}.group.*`);
+      for (const member of members) if (!wanted.includes(member)) fail(`${where}: group member ${member} is not a symbol of layer ${layer}`);
     }
     for (const mark of fact(entry, `writing.${layer}.punctuation`)?.value ?? []) if (complete && !highlighted.has(mark)) fail(`${where}: punctuation ${mark} needs a writing.${layer}.example.* with that highlight`);
     for (const mark of factsWith(entry, `writing.${layer}.mark.`)) {
@@ -345,10 +362,11 @@ for (const best of interfaceLocales) {
       }
     }
   }
-  for (const key of BRANCH_TOPIC_KEYS.concat('shared_words')) {
+  for (const label of generic.script_lesson ?? []) if (!(label in (locales.get(`${best}:script_lesson`)?.labels ?? {}))) fail(`locale ${best}/script_lesson: label ${label} is missing`);
+  for (const key of BRANCH_TOPIC_KEYS.concat('shared_words', 'script_lesson')) {
     const topic = topicByKey.get(key);
     const locale = locales.get(`${best}:${key}`);
-    if (!locale) { if (key === 'shared_words') fail(`locale ${best} has no shared_words localization`); continue; }
+    if (!locale) { if (key === 'shared_words' || key === 'script_lesson') fail(`locale ${best} has no ${key} localization`); continue; }
     for (const scene of topic.experience_blueprint.scene_sequence) {
       if (!locale.scene_copy?.[scene.scene_id]?.title) fail(`locale ${best}/${key}: scene ${scene.scene_id} needs a title`);
     }

@@ -16,6 +16,7 @@ Soft order only (`relations: prepares_for`), never gating:
 | 3 | `TOPIC.orientation.sound_system` | `sound_system` | How it sounds |
 | 4 | `TOPIC.orientation.grammar_glance` | `grammar_glance` | What's different |
 | 5 | `TOPIC.orientation.shared_words` | `shared_words` | Words you already know |
+| leaf of 2 | `TOPIC.orientation.script_lesson` | `script_lesson` | Learn the {script}: the letters themselves |
 
 ## Principles
 
@@ -97,12 +98,29 @@ Japanese kana and kanji; Serbian Cyrillic and Latin). Capabilities: `explanation
 | `writing.{L}.symbols` | `term` | the inventory in order (letters, syllables); empty for `logographic` | |
 | `writing.{L}.marked` | `term` | symbols that carry marks and are not inventory entries (may be empty) | |
 | `writing.{L}.punctuation` | `term` | punctuation the learner may not know (may be empty) | |
-| `writing.{L}.example.{key}` | `term` | an example word or character | `ipa`, `highlight` (the symbol it shows), `name?` (the letter's own name with a Latin transliteration), `looks_like?` (the Latin letter it resembles when the sound differs), `forms?` (positional shapes, in order: isolated initial medial final), `reading?` (the aid-layer spelling, e.g. pinyin) |
+| `writing.{L}.group.{n}` | `term` | one teaching group of 2 to 6 symbols, in teaching order (`n` from 1); every symbol of the layer is in exactly one group; a character layer groups its example characters | |
+| `writing.{L}.example.{key}` | `term` | a very common, concrete word that shows the symbol (a logographic layer: the character or word itself) | `ipa` (the word), `highlight` (the symbol it shows), `sound` (the symbol's own sound in this language, broad IPA; not for characters), `reading` (a Latin transliteration of the symbol or word, required when the script is not Latin: pinyin, romaji, revised Romanization), `name?` (the symbol's own name with a Latin transliteration), `looks_like?` (the Latin letter it resembles when the sound differs), `forms?` (positional shapes, in order: isolated initial medial final), `parts?` (a character's components) |
 | `writing.{L}.mark.{id}` | `term` | a symbol wearing the mark | `mark_id`, `role`, `example`, `example_ipa` |
 
-Every symbol outside Latin `a` to `z` needs a `writing.{L}.example.*` with that `highlight`; a `logographic` layer is carried by its
-examples (at least six). Facets: `script_intro` (layers, kind, direction, case, joining, how much is shared), `new_letters`
+Every symbol, Latin `a` to `z` included, needs a `writing.{L}.example.*` with that `highlight` (the lesson teaches letters with a word
+and a sound for each), and the layer's `group.*` facts cover every symbol once; a `logographic` layer is carried by its examples (at
+least six) and groups them. `slots_version: 2` on a realization declares this letter data present; the validator checks it for those
+realizations (every complete language moves to 2). Facets: `script_intro` (layers, kind, direction, case, joining, how much is shared), `new_letters`
 (symbols and characters missing from every base, with examples), `marks_and_punctuation`, `letter_check`.
+
+## The script lesson (a leaf of stop 2)
+
+`TOPIC.orientation.script_lesson` is a lesson of its own for one writing layer of the focus language: "Learn the Arabic alphabet", "Learn
+Chinese characters". It has no facts of its own: `fact_source_topic_id` points at `TOPIC.orientation.writing_system`, whose realizations
+it reads, so a language's letters are written once. `layer.{L}.lesson` in the locale names it ("Learn the Arabic alphabet").
+
+- **Full or short.** If any of the learner's bases already reads the layer's script (an English reader meeting Spanish, a Russian reader
+  meeting Ukrainian), the lesson is short: only the symbols and marks no base has, shown with the same rich cards and one drill. If the
+  script is new to them it is full: every group of the layer, with a drill after each, then a mixed review.
+- **Wins throughout.** Every screen has something to hear, tap or answer; no screen is only text. The overview is a tappable board of all
+  the symbols; each group is a board of large tiles whose selected symbol shows its name, sound, shapes and example word; each group
+  ends in a hear-and-pick and a match; the end is a review of what was missed.
+- Facets: `glyph_board` (all symbols, tap to hear), `glyph_group` (meet one group), `glyph_check` (the drill after a group), `glyph_review`.
 
 ## Topic 3: `sound_system`
 
@@ -152,5 +170,5 @@ Notes of kind `helpful_transfer` carry `pairs` (look-alike or borrowed words); n
 - `labels`: names for every id a fact can use (`script.Arab`, `direction.rtl`, `layer.pinyin`, `kind.logographic`, `tone.rising`,
   `family.afro_asiatic`, `branch.bantu`, `region.africa`, `sound.pharyngeal`, `trait.word_building.root_and_pattern`, ...). Trait value
   labels read as a sentence about `{language}`.
-- `glosses`: `"{language_tag}:{fact_id}"` to the meaning of that example.
+- `layer.{L}.lesson`: the script lesson's title for that layer ("Learn the Arabic alphabet"); `glosses`: `"{language_tag}:{fact_id}"` to the meaning of that example.
 - Gef's voice: brief and friendly, never claims anything is verified.

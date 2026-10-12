@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.script_lesson",
+  "language_tag": "en",
+  "title": "Learn the script",
+  "summary": "The letters themselves: see each one, hear a word with it, and practise until you know it.",
+  "scene_copy": {
+    "board": {
+      "title": "{layer} at a glance",
+      "body": "Tap any one to hear a word with it.",
+      "continue_label": "Start learning"
+    },
+    "groups": {"title": "Meet these", "body": "Tap each one to hear it.", "continue_label": "Next"},
+    "review": {"title": "Review", "prompt": "Everything so far.", "continue_label": "Continue"},
+    "complete": {"title": "You’ve met {count} of them", "body": "Gef is already reading the signs.", "continue_label": "Finish"}
+  },
+  "labels": {
+    "glyph.group_title": "Part {n} of {total}",
+    "glyph.sounds_like": "Sounds like {reading}",
+    "glyph.shapes": "Shapes",
+    "glyph.say": "Hear {word}",
+    "glyph.q.in_word": "Which letter is in the word you hear?",
+    "glyph.q.which_name": "Which one is called “{name}”?",
+    "glyph.q.which_sound": "Which one says “{reading}”?",
+    "glyph.q.which_word": "Which word means “{gloss}”?",
+    "glyph.q.match": "Match each one to a word with it.",
+    "glyph.q.match_reading": "Match each one to how it’s read."
+  },
+  "glosses": {},
+  "review_state": "candidate",
+  "version": 1
+}

@@ -13,6 +13,11 @@
       "reference_role": "stop 2: script and alphabet, computing the letters and marks the learner's best language lacks"
     },
     {
+      "topic_id": "TOPIC.orientation.script_lesson",
+      "path": "curriculum-v2/topics/script-lesson.json",
+      "reference_role": "a leaf of stop 2: the letters of one writing layer learned (full when the script is new, short when the learner already reads it)"
+    },
+    {
       "topic_id": "TOPIC.orientation.sound_system",
       "path": "curriculum-v2/topics/sound-system.json",
       "reference_role": "stop 3: sounds, stress and spelling-to-sound, computing the sounds new to the learner"
@@ -54,5 +59,5 @@
     }
   ],
   "review_state": "candidate",
-  "version": 5
+  "version": 6
 }

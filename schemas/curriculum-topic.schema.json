@@ -24,6 +24,11 @@
     "domain": {"type": "string", "minLength": 1},
     "title_key": {"type": "string", "minLength": 1},
     "summary_key": {"type": "string", "minLength": 1},
+    "fact_source_topic_id": {
+      "type": "string",
+      "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$",
+      "description": "A topic with no realizations of its own reads another topic's: the script lesson reads the writing-system realizations, so a language's letters are written once."
+    },
     "concept_refs": {
       "type": "array",
       "items": {"$ref": "#/definitions/curriculumRef"},

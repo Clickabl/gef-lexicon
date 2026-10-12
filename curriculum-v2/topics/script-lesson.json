@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "topic_id": "TOPIC.orientation.script_lesson",
+  "topic_key": "script_lesson",
+  "node_kind": "form_system",
+  "domain": "language_identity",
+  "title_key": "curriculum.topic.script_lesson.title",
+  "summary_key": "curriculum.topic.script_lesson.summary",
+  "fact_source_topic_id": "TOPIC.orientation.writing_system",
+  "focus_axes": ["script", "alphabet", "letters_new_to_the_learner"],
+  "relations": [
+    {
+      "relation": "reinforces",
+      "topic_id": "TOPIC.orientation.writing_system",
+      "notes": "A leaf of stop 2: the letters themselves, learned rather than toured."
+    }
+  ],
+  "comparison_policy": {
+    "minimum_useful_languages": 2,
+    "maximum_languages": 6,
+    "include_best_language": true,
+    "include_profile_comparison_languages": true,
+    "fallback_reference_language_tags": ["en", "es"],
+    "notes": "Full when no language the learner knows reads the script; short (only the symbols and marks no known language has) when one does."
+  },
+  "experience_blueprint": {
+    "scene_sequence": [
+      {
+        "scene_id": "board",
+        "scene_kind": "concept_reveal",
+        "facet": "glyph_board",
+        "required": false,
+        "minimum_capability": "reviewed_examples"
+      },
+      {"scene_id": "groups", "scene_kind": "term_reveal", "facet": "glyph_group", "required": true},
+      {
+        "scene_id": "review",
+        "scene_kind": "checkpoint",
+        "facet": "glyph_review",
+        "required": false,
+        "minimum_capability": "recognition_practice"
+      },
+      {"scene_id": "complete", "scene_kind": "completion", "required": true}
+    ],
+    "default_session_minutes": 15,
+    "notes": "A lesson of its own for one writing layer: every screen has something to hear, tap or answer."
+  },
+  "difficulty_band": "pre_a1",
+  "review_state": "candidate",
+  "version": 1
+}

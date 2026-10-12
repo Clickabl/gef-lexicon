@@ -57,7 +57,24 @@
       "damma",
       "sukun",
       "shadda",
-      "tanwin"
+      "tanwin",
+      "anusvara",
+      "ring",
+      "virama",
+      "handakuten",
+      "stroke",
+      "ogonek",
+      "small_tsu",
+      "double_acute",
+      "matra",
+      "hamza",
+      "chandrabindu",
+      "dot_above",
+      "maddah",
+      "nukta",
+      "small_ya",
+      "dakuten",
+      "breve"
     ],
     "mark_roles": [
       "stress",
@@ -68,7 +85,15 @@
       "short_vowel",
       "doubling",
       "no_vowel",
-      "case_ending"
+      "case_ending",
+      "vowel_sign",
+      "voicing",
+      "contraction",
+      "nasalization",
+      "no_inherent_vowel",
+      "glottal_stop",
+      "palatalization",
+      "length"
     ]
   },
   "sound": {
@@ -85,6 +110,8 @@
       "marked_on_every_word",
       "unpredictable",
       "rule_by_syllable_weight",
+      "mostly_final",
+      "fixed_initial",
       "not_applicable"
     ],
     "predictability": [
@@ -166,7 +193,9 @@
       ],
       "word_order": [
         "svo",
-        "flexible"
+        "flexible",
+        "sov",
+        "vso"
       ]
     }
   }

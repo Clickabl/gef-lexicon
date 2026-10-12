@@ -16,6 +16,11 @@
     "realization_id": {"type": "string", "pattern": "^REAL\\.[A-Za-z0-9._-]+$"},
     "topic_id": {"type": "string", "pattern": "^TOPIC\\.[A-Za-z0-9._-]+$"},
     "language_tag": {"type": "string", "minLength": 1},
+    "slots_version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The slot contract version the realization was written to (curriculum-v2/INTRO_FACTS.md). 2 adds the letter data the script lesson needs: a sound and a word for every symbol, and teaching groups."
+    },
     "completeness": {
       "type": "string",
       "enum": ["draft", "complete"],

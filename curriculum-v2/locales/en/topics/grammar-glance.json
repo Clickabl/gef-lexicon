@@ -71,7 +71,9 @@
     "trait.dual_number.present": "{language} has a special form for exactly two of something, besides singular and plural.",
     "trait.questions.particle": "{language} can turn a statement into a question with a small question word.",
     "similar.base": "Like {base}:",
-    "trait.subject_pronouns.context_dependent": "{language} often leaves out “I” and “you” when the context makes it clear who is meant."
+    "trait.subject_pronouns.context_dependent": "{language} often leaves out “I” and “you” when the context makes it clear who is meant.",
+    "trait.word_order.sov": "{language} normally puts the verb at the end: the subject, then the object, then the verb.",
+    "trait.word_order.vso": "{language} often puts the verb first, before the subject."
   },
   "glosses": {
     "es:trait.noun_gender.example.1": "the book",
@@ -222,5 +224,5 @@
     "sw:trait.word_order.example.1": "Juma is reading a book."
   },
   "review_state": "candidate",
-  "version": 6
+  "version": 7
 }
