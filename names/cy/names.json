@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "cy",
+  "names": [
+    {
+      "name_id": "name_cy_timotheus",
+      "canonical_form": "Timotheus",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotheus",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.cy.timotheus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Timothy translation table lists Timotheus as the cy-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

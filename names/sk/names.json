@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "sk",
+  "names": [
+    {
+      "name_id": "name_sk_timotej",
+      "canonical_form": "Timotej",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotej",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.sk.timotej"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Timotej as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

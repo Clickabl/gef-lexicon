@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "ga",
+  "names": [
+    {
+      "name_id": "name_ga_tadhg",
+      "canonical_form": "Tadhg",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tadhg",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ga"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.ga.tadhg"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Irish Tadhg as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

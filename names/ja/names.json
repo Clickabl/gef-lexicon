@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "ja",
+  "names": [
+    {
+      "name_id": "name_ja_temote",
+      "canonical_form": "テモテ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "テモテ",
+          "status": "canonical",
+          "script": "Jpan",
+          "locale": "ja"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.ja.temote"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Timothy translation table lists テモテ as the ja-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

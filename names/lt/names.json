@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "lt",
+  "names": [
+    {
+      "name_id": "name_lt_timotiejas",
+      "canonical_form": "Timotiejas",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotiejas",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "lt"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.lt.timotiejas"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Timothy translation table lists Timotiejas as the lt-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

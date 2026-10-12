@@ -302,35 +302,6 @@
       "review_state": "candidate"
     },
     {
-      "name_id": "name_de_timotheus",
-      "canonical_form": "Timotheus",
-      "name_type": "given",
-      "spellings": [
-        {
-          "text": "Timotheus",
-          "status": "canonical",
-          "script": "Latn",
-          "locale": "de"
-        }
-      ],
-      "family_refs": [
-        {
-          "family_id": "NF.timothy",
-          "equivalence_set_id": "NFEQ.timothy.full-masculine",
-          "form_id": "NFF.timothy.de.timotheus"
-        }
-      ],
-      "related_names": [],
-      "gender_usage": [],
-      "etymology_note": "Candidate: the pinned Wiktionary entry defines German Timotheus as the biblical Timothy and lists Tim, Timm and Timo as related given names; the pinned Tim entry describes Tim as originally a diminutive of Timotheus.",
-      "source_refs": [
-        "src_wiktionary_en_timotheus_oldid_90630702",
-        "src_wiktionary_en_timothy_oldid_92085159",
-        "src_wiktionary_en_tim_oldid_90582551"
-      ],
-      "review_state": "candidate"
-    },
-    {
       "name_id": "name_de_tim",
       "canonical_form": "Tim",
       "name_type": "given",
@@ -340,13 +311,6 @@
           "status": "canonical",
           "script": "Latn",
           "locale": "de"
-        },
-        {
-          "text": "Timm",
-          "status": "variant",
-          "script": "Latn",
-          "locale": "de",
-          "note": "The pinned Timm entry describes it as a less common variant of Tim."
         }
       ],
       "family_refs": [
@@ -356,20 +320,11 @@
           "form_id": "NFF.timothy.de.tim"
         }
       ],
-      "related_names": [
-        {
-          "target_name_id": "name_de_timotheus",
-          "relation_type": "diminutive",
-          "note": "This name is a diminutive of the target (and, per the pinned entry, of Dietmar); the reverse relationship is not implied."
-        }
-      ],
+      "related_names": [],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned Wiktionary entry describes German Tim as originally a diminutive of Timotheus and Dietmar.",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Tim as a male given name.",
       "source_refs": [
-        "src_wiktionary_en_tim_oldid_90582551",
-        "src_wiktionary_en_timotheus_oldid_90630702",
-        "src_wiktionary_en_timothy_oldid_92085159",
-        "src_wiktionary_en_timm_oldid_91053288"
+        "src_wiktionary_en_timothy_oldid_92085159"
       ],
       "review_state": "candidate"
     },
@@ -392,18 +347,10 @@
           "form_id": "NFF.timothy.de.timo"
         }
       ],
-      "related_names": [
-        {
-          "target_name_id": "name_de_timotheus",
-          "relation_type": "diminutive",
-          "note": "This name is a diminutive of the target (and, per the pinned entry, of Dietmar); the reverse relationship is not implied."
-        }
-      ],
+      "related_names": [],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned Wiktionary entry describes German Timo as a diminutive of Timotheus and Dietmar.",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Timo as a male given name.",
       "source_refs": [
-        "src_wiktionary_en_timo_oldid_92285854",
-        "src_wiktionary_en_timotheus_oldid_90630702",
         "src_wiktionary_en_timothy_oldid_92085159"
       ],
       "review_state": "candidate"

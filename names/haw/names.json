@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "haw",
+  "names": [
+    {
+      "name_id": "name_haw_kimokeo",
+      "canonical_form": "Kimokeo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Kimokeo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "haw"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.haw.kimokeo"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Hawaiian Kimokeo as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

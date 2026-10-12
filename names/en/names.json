@@ -324,33 +324,6 @@
       "review_state": "candidate"
     },
     {
-      "name_id": "name_en_timothy",
-      "canonical_form": "Timothy",
-      "name_type": "given",
-      "spellings": [
-        {
-          "text": "Timothy",
-          "status": "canonical",
-          "script": "Latn",
-          "locale": "en"
-        }
-      ],
-      "family_refs": [
-        {
-          "family_id": "NF.timothy",
-          "equivalence_set_id": "NFEQ.timothy.full-masculine",
-          "form_id": "NFF.timothy.en.timothy"
-        }
-      ],
-      "related_names": [],
-      "gender_usage": [],
-      "etymology_note": "Candidate: the pinned Wiktionary revision derives English Timothy from Middle French Timothée, from Latin Tīmotheus, from Ancient Greek Τῑμόθεος, which it analyzes as τῑμάω ('to honour') + θεός ('god').",
-      "source_refs": [
-        "src_wiktionary_en_timothy_oldid_92085159"
-      ],
-      "review_state": "candidate"
-    },
-    {
       "name_id": "name_en_tim",
       "canonical_form": "Tim",
       "name_type": "given",
@@ -373,13 +346,105 @@
         {
           "target_name_id": "name_en_timothy",
           "relation_type": "diminutive",
-          "note": "This name is a diminutive of the target; the reverse relationship is not implied."
+          "note": "Per the pinned entry; the reverse relationship is not implied."
         }
       ],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned Wiktionary entry labels English Tim a male given name that is a diminutive of Timothy (and, rarely, Timon).",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines English Tim as a male given name that is a diminutive of Timothy.",
       "source_refs": [
-        "src_wiktionary_en_tim_oldid_90582551",
+        "src_wiktionary_en_tim_oldid_90582551"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_timbo",
+      "canonical_form": "Timbo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timbo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.en.timbo"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_timothy",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines English Timbo as a male given name that is a diminutive of Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_timbo_oldid_92130793"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_timmy",
+      "canonical_form": "Timmy",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timmy",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.en.timmy"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_timothy",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines English Timmy as a male given name that is a diminutive of Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_timmy_oldid_93480614"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_timothy",
+      "canonical_form": "Timothy",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timothy",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.en.timothy"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines English Timothy as a male given name.",
+      "source_refs": [
         "src_wiktionary_en_timothy_oldid_92085159"
       ],
       "review_state": "candidate"

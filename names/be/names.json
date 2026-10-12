@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "language_code": "be",
+  "names": [
+    {
+      "name_id": "name_be_tsimafey",
+      "canonical_form": "Цімафей",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Цімафей",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "be"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.be.tsimafey"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Belarusian Цімафей as a male given name equivalent to Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159",
+        "src_wiktionary_en_u426_456_43c_430_444_435_oldid_86627463"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

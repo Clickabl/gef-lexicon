@@ -360,3 +360,42 @@ and Margaret files in filename order. All owning families and forms retain
 their candidate status. Focused validation uses the same schema/join seam as
 the full repository CLI; importing it does not execute that CLI. No source
 approval or deployed publication is established by this source repair.
+
+## 15. Name pipeline (2026-10-12)
+
+Name families are produced by `scripts/name-pipeline/`, not written by hand. Three steps, each re-runnable:
+
+1. `node scripts/name-pipeline/fetch.mjs [--only Timothy]` (the only step that uses the network) reads each root named in
+   `research/name-pipeline/roots.json` from the English Wiktionary MediaWiki API: the root entry's given-name translation
+   table, every entry whose `{{given name}}` says `eq=<root>` or `dimof=<root>` (a CirrusSearch `insource:` query), and the
+   diminutives and variants of the members found. A page that already has a pinned revision in `sources/bibliography.json` is
+   fetched at that revision; any other page is captured at its current revision. A compact snapshot of what those revisions
+   say is written to `research/name-pipeline/snapshots/<root>.json` (revision, timestamp, sha-256 of the full wikitext, the
+   `{{given name}}` parameters). Language codes outside `language-filter.json` are dropped; that file is a filter derived from
+   the product registry's lesson tiers, not a support statement (Wiktionary's `cmn` is the registry's `zh`).
+2. `node scripts/name-pipeline/build.mjs [--check]` is offline and deterministic. It turns the snapshots into
+   `name-families/<root>.json`, the language-local `names/<language>/names.json` rows, one bibliography entry per pinned
+   revision (`external_ids.pipeline = "name-pipeline-v1"`), the discovery catalogue and a mechanical `primary-map.json`.
+   `--check` fails when any committed output differs, and `scripts/test-name-pipeline.mjs` runs it on every validation.
+3. `node scripts/name-pipeline/publish-graph.mjs` compiles the V2 name graph with the existing compiler into
+   `lexi/name-graph-v2/` (the path the CDN serves) and removes superseded immutable build directories.
+
+Rules the build applies, in order of precedence. A form is in a family only because (a) the root's translation table lists it,
+(b) its own entry says `eq=` the root or an existing member, or (c) its own entry says `dimof=`/`varof=` an existing member
+of the same language. A spelling that merely resembles the root is never a reason (the grace rule of section 2). Full forms and
+short/pet forms are different equivalence sets; a table row that is only the first letters of the root and that no entry
+classifies goes to a separate `table-listed` set (role `other`) rather than the full set. A translation-table row whose own entry
+has no given-name sense is kept, flagged in its note, because only the root entry supports it. Relation types: `source_form`
+(the root), `local_equivalent`, `diminutive`/`short_form`, `spelling_variant`; a form whose own entry says it is `from=English` is
+`transliteration` when its script differs from the root's and `borrowed_adaptation` otherwise. Wiktionary's `{{given name}}`
+documentation distinguishes equivalents (`eq=`) from transliterations (`xlit=`); `xlit=` is used only to build ASCII identifiers.
+
+The app resolves a typed spelling to exactly one equivalence set and refuses to guess when a spelling sits in two, so a
+spelling lives in exactly one set per family (the one the strongest evidence puts it in); the other forms with that spelling keep
+their language, join the set, and say so in their note. A form already held by another family is not added to a second one
+(`build-report.json` lists every exclusion and its reason). Everything the pipeline writes is `review_state: candidate`. Nothing
+is promoted, no model is called, and a form with no pinned source does not exist. Records the pipeline created are listed in
+`generated-names.json`; any other name record is only given a family ref. The V2 compiler needs one primary form per
+(set, language, script) when a set holds several: `primary-map.json` is a mechanical default (the root, then a form that its
+own entry confirms, then the one other forms point at, then table order, then shortest), not an editorial decision, and Tim can
+override any line. Not used in version 1: Wikidata given-name items (`P460` "said to be the same as").

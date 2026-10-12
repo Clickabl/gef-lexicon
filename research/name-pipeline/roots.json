@@ -1,0 +1,6 @@
+{
+  "purpose": "English Wiktionary given-name entries the name pipeline builds a cross-language family from. The build writes name-families/<slug>.json, names/<lang>/names.json rows and the catalogue from the snapshots; nothing here is hand-written family data.",
+  "roots": [
+    { "title": "Timothy", "adopt_existing": true, "reason": "Tim's own name; first family the pipeline was run for (TODO-LEXICON-NAME-FAMILIES-COMMON-NAMES-20261012)" }
+  ]
+}

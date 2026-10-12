@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "lv",
+  "names": [
+    {
+      "name_id": "name_lv_timotejam",
+      "canonical_form": "Timotejam",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotejam",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "lv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.lv.timotejam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Timothy translation table lists Timotejam as the lv-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}
