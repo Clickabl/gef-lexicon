@@ -1,0 +1,298 @@
+{
+  "snapshot_version": 1,
+  "root": "Audrey",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Bulgarian",
+      "code": "bg",
+      "text": "О́дри",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Chinese: Mandarin",
+      "code": "cmn",
+      "text": "奧德麗",
+      "tr": "Àodélì",
+      "gender_tags": []
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Audrey",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Greek",
+      "code": "el",
+      "text": "Εθελδρέδα",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Greek",
+      "code": "el",
+      "text": "Όντρεϊ",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Greek",
+      "code": "el",
+      "text": "Ωντρέ",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Japanese",
+      "code": "ja",
+      "text": "オードリー",
+      "tr": "Ōdorī",
+      "gender_tags": []
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Marathi",
+      "code": "mr",
+      "text": "ऑड्री",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Russian",
+      "code": "ru",
+      "text": "О́дри",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [],
+    "dimof": [
+      "Audie"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "bg|О́дри": "Ódri",
+    "cmn|奧德麗": "Àodélì",
+    "el|Όντρεϊ": "Óntreï",
+    "el|Εθελδρέδα": "Etheldréda",
+    "el|Ωντρέ": "Ontré",
+    "mr|ऑड्री": "ŏḍrī",
+    "ru|О́дри": "Ódri"
+  },
+  "pages": {
+    "Audie": {
+      "revid": 83831980,
+      "timestamp": "2025-02-03T09:02:41Z",
+      "sha256": "cd94a458330c9cef11b07065de5d260a7abe5fd1225c831faa4224222adcd68b",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Audrey",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Audrey}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Audrey": {
+      "revid": 93420406,
+      "timestamp": "2026-10-05T15:16:33Z",
+      "sha256": "7bd97f1209b17eb6ac7ff2f3f54993955e118782d9efcbb3e9585f696a3a5055",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Old English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Old English}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Old English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=Old English}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female|from=English}}"
+            },
+            {
+              "code": "fr",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|male|from=English}}"
+            },
+            {
+              "code": "fr",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|unisex|from=English}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|female|from=English}}"
+            }
+          ]
+        }
+      ]
+    },
+    "奧德麗": {
+      "revid": 78617963,
+      "timestamp": "2024-03-26T17:07:48Z",
+      "sha256": "a14a4d198d4a39d66236776f7c03eb748d09296adcdcd947b5d95e364aaf2e7d",
+      "sections": []
+    }
+  }
+}

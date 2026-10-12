@@ -1,0 +1,95 @@
+{
+  "snapshot_version": 1,
+  "root": "Ava",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Ava": {
+      "revid": 92705036,
+      "timestamp": "2026-09-16T18:52:20Z",
+      "sha256": "c006b4390b55f85e39515a528fa49b1695e6cdd1026eb60d575d03c60c0858b6",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Hebrew",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Hebrew}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Irish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Irish}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Germanic languages",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Germanic languages}}"
+            }
+          ]
+        },
+        {
+          "heading": "Dalmatian",
+          "given_names": [
+            {
+              "code": "dlm",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Eve",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Hebrew",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|dlm|female|from=Hebrew|eq=Eve}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

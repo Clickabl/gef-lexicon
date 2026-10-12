@@ -2,10 +2,10 @@
   "by_source": {
     "el-GR-data-gov-gr-ypes.json": {
       "listed": 111,
-      "with_family": 15,
+      "with_family": 23,
       "resolved_root": 67,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 52,
+        "root_resolved_but_form_not_in_a_family": 44,
         "no_given_name_entry_in_language": 22,
         "entry_states_no_english_equivalent": 17,
         "several_accented_entries": 1,
@@ -17,52 +17,52 @@
     },
     "en-GB-ons.json": {
       "listed": 200,
-      "with_family": 18,
+      "with_family": 32,
       "resolved_root": 196,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 178,
+        "root_resolved_but_form_not_in_a_family": 164,
         "no_given_name_entry_in_language": 4
       }
     },
     "es-ES-ine.json": {
       "listed": 200,
-      "with_family": 17,
+      "with_family": 26,
       "resolved_root": 93,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 78,
+        "root_resolved_but_form_not_in_a_family": 69,
         "entry_states_no_english_equivalent": 36,
         "no_given_name_entry_in_language": 69
       }
     },
     "fr-FR-insee.json": {
       "listed": 200,
-      "with_family": 13,
+      "with_family": 31,
       "resolved_root": 156,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 143,
+        "root_resolved_but_form_not_in_a_family": 125,
         "entry_states_no_english_equivalent": 43,
         "no_given_name_entry_in_language": 1
       }
     },
     "it-IT-istat.json": {
       "listed": 200,
-      "with_family": 17,
+      "with_family": 26,
       "resolved_root": 123,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 106,
+        "root_resolved_but_form_not_in_a_family": 97,
         "entry_states_no_english_equivalent": 25,
         "no_given_name_entry_in_language": 52
       }
     },
     "pt-BR-ibge.json": {
       "listed": 200,
-      "with_family": 15,
+      "with_family": 25,
       "resolved_root": 122,
       "unresolved": {
-        "root_resolved_but_form_not_in_a_family": 107,
+        "root_resolved_but_form_not_in_a_family": 98,
         "several_accented_entries": 4,
-        "entry_states_no_english_equivalent": 42,
         "no_given_name_entry_in_language": 30,
+        "entry_states_no_english_equivalent": 41,
         "equivalent_René": 1,
         "equivalent_Cicero": 1
       }
@@ -70,216 +70,240 @@
   },
   "totals": {
     "listed": 1111,
-    "with_family": 95,
-    "share": 0.086,
-    "families": 43
+    "with_family": 163,
+    "share": 0.147,
+    "families": 83
   },
   "forms_per_family": {
-    "mean": 26.5,
+    "mean": 24.6,
     "median": 20,
     "min": 1,
     "max": 99,
-    "families_with_5_or_fewer_forms": 10
+    "families_with_5_or_fewer_forms": 21
   },
   "language_thinness": [
     {
       "language": "en",
-      "families_with_a_form": 43
-    },
-    {
-      "language": "de",
-      "families_with_a_form": 30
+      "families_with_a_form": 83
     },
     {
       "language": "fr",
-      "families_with_a_form": 30
-    },
-    {
-      "language": "pt",
-      "families_with_a_form": 30
-    },
-    {
-      "language": "es",
-      "families_with_a_form": 29
+      "families_with_a_form": 58
     },
     {
       "language": "it",
-      "families_with_a_form": 29
+      "families_with_a_form": 56
     },
     {
-      "language": "el",
-      "families_with_a_form": 25
+      "language": "pt",
+      "families_with_a_form": 56
+    },
+    {
+      "language": "es",
+      "families_with_a_form": 54
+    },
+    {
+      "language": "de",
+      "families_with_a_form": 51
     },
     {
       "language": "pl",
-      "families_with_a_form": 23
+      "families_with_a_form": 47
     },
     {
-      "language": "ca",
-      "families_with_a_form": 22
+      "language": "el",
+      "families_with_a_form": 46
     },
     {
       "language": "ru",
-      "families_with_a_form": 22
+      "families_with_a_form": 45
     },
     {
       "language": "sv",
-      "families_with_a_form": 21
-    },
-    {
-      "language": "lv",
-      "families_with_a_form": 20
+      "families_with_a_form": 41
     },
     {
       "language": "zh",
-      "families_with_a_form": 20
+      "families_with_a_form": 41
+    },
+    {
+      "language": "ca",
+      "families_with_a_form": 38
     },
     {
       "language": "da",
-      "families_with_a_form": 19
+      "families_with_a_form": 36
     },
     {
       "language": "hu",
-      "families_with_a_form": 19
+      "families_with_a_form": 36
     },
     {
-      "language": "nl",
-      "families_with_a_form": 19
+      "language": "lv",
+      "families_with_a_form": 34
     },
     {
       "language": "cs",
-      "families_with_a_form": 18
-    },
-    {
-      "language": "fi",
-      "families_with_a_form": 17
-    },
-    {
-      "language": "gl",
-      "families_with_a_form": 17
-    },
-    {
-      "language": "lt",
-      "families_with_a_form": 17
-    },
-    {
-      "language": "sk",
-      "families_with_a_form": 17
-    },
-    {
-      "language": "uk",
-      "families_with_a_form": 17
+      "families_with_a_form": 33
     },
     {
       "language": "bg",
-      "families_with_a_form": 16
+      "families_with_a_form": 32
+    },
+    {
+      "language": "fi",
+      "families_with_a_form": 32
+    },
+    {
+      "language": "sk",
+      "families_with_a_form": 31
+    },
+    {
+      "language": "gl",
+      "families_with_a_form": 29
+    },
+    {
+      "language": "lt",
+      "families_with_a_form": 29
+    },
+    {
+      "language": "nl",
+      "families_with_a_form": 29
+    },
+    {
+      "language": "uk",
+      "families_with_a_form": 26
     },
     {
       "language": "et",
-      "families_with_a_form": 15
-    },
-    {
-      "language": "hy",
-      "families_with_a_form": 14
+      "families_with_a_form": 25
     },
     {
       "language": "ja",
-      "families_with_a_form": 12
-    },
-    {
-      "language": "ar",
-      "families_with_a_form": 11
-    },
-    {
-      "language": "is",
-      "families_with_a_form": 11
+      "families_with_a_form": 24
     },
     {
       "language": "ro",
-      "families_with_a_form": 11
+      "families_with_a_form": 24
+    },
+    {
+      "language": "hy",
+      "families_with_a_form": 22
+    },
+    {
+      "language": "ar",
+      "families_with_a_form": 20
     },
     {
       "language": "be",
-      "families_with_a_form": 10
+      "families_with_a_form": 20
+    },
+    {
+      "language": "is",
+      "families_with_a_form": 19
     },
     {
       "language": "ga",
-      "families_with_a_form": 10
+      "families_with_a_form": 18
     },
     {
       "language": "haw",
-      "families_with_a_form": 10
+      "families_with_a_form": 18
     },
     {
       "language": "ka",
-      "families_with_a_form": 10
+      "families_with_a_form": 18
     },
     {
       "language": "sq",
-      "families_with_a_form": 10
-    },
-    {
-      "language": "gd",
-      "families_with_a_form": 9
-    },
-    {
-      "language": "he",
-      "families_with_a_form": 9
-    },
-    {
-      "language": "mk",
-      "families_with_a_form": 9
-    },
-    {
-      "language": "sl",
-      "families_with_a_form": 9
-    },
-    {
-      "language": "cy",
-      "families_with_a_form": 8
-    },
-    {
-      "language": "fa",
-      "families_with_a_form": 8
-    },
-    {
-      "language": "id",
-      "families_with_a_form": 8
-    },
-    {
-      "language": "eu",
-      "families_with_a_form": 7
+      "families_with_a_form": 18
     },
     {
       "language": "ko",
-      "families_with_a_form": 7
+      "families_with_a_form": 17
     },
     {
-      "language": "bn",
-      "families_with_a_form": 6
-    },
-    {
-      "language": "hi",
-      "families_with_a_form": 6
-    },
-    {
-      "language": "vi",
-      "families_with_a_form": 6
+      "language": "mk",
+      "families_with_a_form": 17
     },
     {
       "language": "mr",
-      "families_with_a_form": 5
+      "families_with_a_form": 17
     },
     {
-      "language": "kok",
-      "families_with_a_form": 4
+      "language": "gd",
+      "families_with_a_form": 16
+    },
+    {
+      "language": "he",
+      "families_with_a_form": 15
+    },
+    {
+      "language": "sl",
+      "families_with_a_form": 15
+    },
+    {
+      "language": "cy",
+      "families_with_a_form": 14
+    },
+    {
+      "language": "eu",
+      "families_with_a_form": 12
+    },
+    {
+      "language": "fa",
+      "families_with_a_form": 12
+    },
+    {
+      "language": "vi",
+      "families_with_a_form": 11
+    },
+    {
+      "language": "bn",
+      "families_with_a_form": 10
+    },
+    {
+      "language": "id",
+      "families_with_a_form": 10
+    },
+    {
+      "language": "hi",
+      "families_with_a_form": 9
     },
     {
       "language": "nb",
-      "families_with_a_form": 4
+      "families_with_a_form": 7
+    },
+    {
+      "language": "kok",
+      "families_with_a_form": 5
+    },
+    {
+      "language": "ml",
+      "families_with_a_form": 5
     },
     {
       "language": "tr",
+      "families_with_a_form": 5
+    },
+    {
+      "language": "ms",
+      "families_with_a_form": 4
+    },
+    {
+      "language": "nn",
+      "families_with_a_form": 4
+    },
+    {
+      "language": "sw",
+      "families_with_a_form": 4
+    },
+    {
+      "language": "te",
+      "families_with_a_form": 4
+    },
+    {
+      "language": "yue",
       "families_with_a_form": 4
     },
     {
@@ -287,11 +311,7 @@
       "families_with_a_form": 3
     },
     {
-      "language": "ml",
-      "families_with_a_form": 3
-    },
-    {
-      "language": "ms",
+      "language": "kk",
       "families_with_a_form": 3
     },
     {
@@ -299,7 +319,7 @@
       "families_with_a_form": 3
     },
     {
-      "language": "sw",
+      "language": "ta",
       "families_with_a_form": 3
     },
     {
@@ -315,15 +335,11 @@
       "families_with_a_form": 2
     },
     {
+      "language": "cv",
+      "families_with_a_form": 2
+    },
+    {
       "language": "ha",
-      "families_with_a_form": 2
-    },
-    {
-      "language": "kk",
-      "families_with_a_form": 2
-    },
-    {
-      "language": "nn",
       "families_with_a_form": 2
     },
     {
@@ -331,23 +347,19 @@
       "families_with_a_form": 2
     },
     {
-      "language": "te",
-      "families_with_a_form": 2
-    },
-    {
       "language": "ur",
       "families_with_a_form": 2
     },
     {
-      "language": "yue",
-      "families_with_a_form": 2
+      "language": "am",
+      "families_with_a_form": 1
     },
     {
       "language": "ckb",
       "families_with_a_form": 1
     },
     {
-      "language": "cv",
+      "language": "dsb",
       "families_with_a_form": 1
     },
     {
@@ -360,10 +372,6 @@
     },
     {
       "language": "si",
-      "families_with_a_form": 1
-    },
-    {
-      "language": "ta",
       "families_with_a_form": 1
     },
     {

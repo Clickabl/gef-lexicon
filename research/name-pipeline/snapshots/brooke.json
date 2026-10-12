@@ -1,0 +1,59 @@
+{
+  "snapshot_version": 1,
+  "root": "Brooke",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Russian",
+      "code": "ru",
+      "text": "Брук",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "ru|Брук": "Bruk"
+  },
+  "pages": {
+    "Brooke": {
+      "revid": 92412253,
+      "timestamp": "2026-08-31T02:57:22Z",
+      "sha256": "0e1915bcdeab447f6791a404f727f920f22f220794298522a3d6d97562f80632",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "surnames",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=surnames}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

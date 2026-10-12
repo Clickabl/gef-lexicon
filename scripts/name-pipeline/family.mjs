@@ -7,7 +7,7 @@
  *   - its own entry says it is a diminutive (dimof=) or variant (varof=) of a form already in the family, in the same language.
  * A spelling that merely looks similar is never a reason (the "grace rule"). Nothing is promoted: the caller marks everything candidate.
  */
-import { compareText, scriptOf } from './common.mjs';
+import { compareText, scriptOf, spellingFitsScript } from './common.mjs';
 import { titleOf } from './wikitext.mjs';
 
 const nfc = text => text.normalize('NFC');
@@ -151,10 +151,23 @@ export function buildFamilyModel({ root, snapshot, filter }) {
   const result = [];
   for (const key of [...members.keys()].sort(compareText)) {
     const done = classify(key);
-    if (done) result.push(done);
+    if (done && !spellingFitsScript(done.text, scriptOf(done.text))) {
+      excluded.push({ code: done.code, text: done.text, reason: 'source_spelling_script_mismatch' });
+    } else if (done) result.push(done);
   }
   unifySpellings(result);
-  return { ok: true, root, rootRole, members: result, excluded };
+  // The family contract owns one form per normalized surface in a language.
+  // Preserve sourced case spellings on that name and merge their citations;
+  // they do not become competing names or duplicated equivalence-set members.
+  const surfaces = new Map();
+  for (const member of result) {
+    const surface = `${member.code}|${member.text.toLocaleLowerCase('und')}`;
+    const existing = surfaces.get(surface);
+    if (!existing) { surfaces.set(surface, { ...member, aliases: [] }); continue; }
+    existing.aliases.push(member.text);
+    for (const title of member.evidence) existing.evidence.add(title);
+  }
+  return { ok: true, root, rootRole, members: [...surfaces.values()], excluded };
 }
 
 /**

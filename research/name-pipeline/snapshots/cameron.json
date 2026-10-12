@@ -1,0 +1,221 @@
+{
+  "snapshot_version": 1,
+  "root": "Cameron",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Chinese: Mandarin",
+      "code": "cmn",
+      "text": "卡梅倫",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Greek",
+      "code": "el",
+      "text": "Κάμερον",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Marathi",
+      "code": "mr",
+      "text": "कॅमेरन",
+      "tr": null,
+      "gender_tags": []
+    }
+  ],
+  "search_hits": {
+    "eq": [
+      "Camshron"
+    ],
+    "dimof": [
+      "Cam",
+      "Cammie"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "cmn|卡梅倫": "Kǎméilún",
+    "el|Κάμερον": "Kámeron",
+    "mr|कॅमेरन": "kĕmeran"
+  },
+  "pages": {
+    "Cam": {
+      "revid": 92732600,
+      "timestamp": "2026-09-19T15:39:59Z",
+      "sha256": "b8e12826a9ba4c1046ac82fe37a1a0fa140dc498ac9c9267adc918e1c0e497e4",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Cameron",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Cameron}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Cameron": {
+      "revid": 92637084,
+      "timestamp": "2026-09-12T09:34:30Z",
+      "sha256": "32245a81b8422aabb5bf97656a34b665a0d4dd0ec50f1c39bf5ab281aa33e67a",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "surnames",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=surnames}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "surnames",
+              "usage": "1970s and later",
+              "popular": null,
+              "raw": "{{given name|en|female|from=surnames|usage=1970s and later}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Cammie": {
+      "revid": 83833909,
+      "timestamp": "2025-02-03T09:31:47Z",
+      "sha256": "8c20389da5012371b1c86b243e8a3b1aecca383d08a4b8b7221a570f7a270855",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Camilla",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Camilla}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Cameron",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Cameron}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Camshron": {
+      "revid": 93368012,
+      "timestamp": "2026-10-02T21:59:53Z",
+      "sha256": "b676659a1450c1c1b2d3e7144c09cba8fa3fac09d165bf2708096a6aa290740d",
+      "sections": []
+    },
+    "卡梅倫": {
+      "revid": 78608746,
+      "timestamp": "2024-03-26T13:36:23Z",
+      "sha256": "f5e22af688c960da5bed1c0009e397fe655f70af8fc5100d1f0b75dd8a6234dc",
+      "sections": []
+    }
+  }
+}

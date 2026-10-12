@@ -1,0 +1,165 @@
+{
+  "snapshot_version": 1,
+  "root": "Cedric",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Finnish",
+      "code": "fi",
+      "text": "Sedrik",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Cédric",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Marathi",
+      "code": "mr",
+      "text": "सेड्रिक",
+      "tr": null,
+      "gender_tags": [
+        "m"
+      ]
+    },
+    {
+      "gloss": "male given name",
+      "genders": [
+        "male"
+      ],
+      "language": "Portuguese",
+      "code": "pt",
+      "text": "Cedrico",
+      "tr": null,
+      "gender_tags": [
+        "m"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "mr|सेड्रिक": "seḍrik"
+  },
+  "pages": {
+    "Cedric": {
+      "revid": 88547680,
+      "timestamp": "2025-12-12T05:21:26Z",
+      "sha256": "3e130c5475d5734db4ee0651c8b412912b740c7c7fe69e4c88e627b4c4674023",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Welsh",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=Welsh}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English < Welsh",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|male|from=English < Welsh}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Cédric": {
+      "revid": 87197414,
+      "timestamp": "2025-09-26T01:51:14Z",
+      "sha256": "15a1f4253c5724e890697c7785cdcbd51ed8b3f9e7ac0639b156d8fa9716a12e",
+      "sections": [
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "en:Cedric",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|male|from=en:Cedric|f=Cédrika}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Sedrik": {
+      "revid": 92457106,
+      "timestamp": "2026-09-03T15:22:55Z",
+      "sha256": "06ac2cbb097d24555b3b8b2be7d93eca36975ff8002b0c654e093e5a963345e8",
+      "sections": [
+        {
+          "heading": "Finnish",
+          "given_names": [
+            {
+              "code": "fi",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fi|male}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

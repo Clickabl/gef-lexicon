@@ -1,0 +1,179 @@
+{
+  "snapshot_version": 1,
+  "root": "Chariclea",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Cariclea",
+      "Chariclée",
+      "Hariclea",
+      "Χαρίκλεια"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "el|Χαρίκλεια": "Charíkleia"
+  },
+  "pages": {
+    "Cariclea": {
+      "revid": 63735813,
+      "timestamp": "2021-08-23T20:19:55Z",
+      "sha256": "d558ac025585012b7e9f698117c6845ac9ec8fe3d6afabb6e868faa9b18be568",
+      "sections": [
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Chariclea",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|eq=Chariclea}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Chariclea": {
+      "revid": 83835801,
+      "timestamp": "2025-02-03T10:00:59Z",
+      "sha256": "dd15e205144bd1a3ea54aebd1e038cec81f6b0eccf59ea10edee0c8956223678",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Chariclée": {
+      "revid": 65343015,
+      "timestamp": "2022-01-14T23:30:51Z",
+      "sha256": "754a42e93c4d63bf0518b8889e9245f9a164cb84e4441db887f7950cfd9abaa0",
+      "sections": [
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Chariclea",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female|eq=Chariclea}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Hariclea": {
+      "revid": 63735687,
+      "timestamp": "2021-08-23T20:14:00Z",
+      "sha256": "c3d3af6f46ca55798f15e853b3a6dc10f9d332d63f8a1fbb2d319ab56801324e",
+      "sections": [
+        {
+          "heading": "Romanian",
+          "given_names": [
+            {
+              "code": "ro",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Chariclea",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ro|female|eq=Chariclea}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Χαρίκλεια": {
+      "revid": 92072322,
+      "timestamp": "2026-08-19T15:24:41Z",
+      "sha256": "0611ff13d6a440d519db950543cc26982c8b39374ba4940abf57ec2da3b291ac",
+      "sections": [
+        {
+          "heading": "Greek",
+          "given_names": [
+            {
+              "code": "el",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Chariclea",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Charikleia",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|el|female|xlit=Charikleia|eq=Chariclea}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

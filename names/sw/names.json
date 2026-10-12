@@ -31,6 +31,33 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_sw_blanchi",
+      "canonical_form": "Blanchi",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Blanchi",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sw"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.blanche",
+          "equivalence_set_id": "NFEQ.blanche.full-feminine",
+          "form_id": "NFF.blanche.sw.blanchi"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Blanche translation table lists Blanchi as the sw-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_blanche_oldid_91107031"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sw_elisi",
       "canonical_form": "Elisi",
       "name_type": "given",

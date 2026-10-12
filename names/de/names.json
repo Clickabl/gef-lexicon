@@ -1256,6 +1256,1013 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_de_arno",
+      "canonical_form": "Arno",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arno",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.short-masculine",
+          "form_id": "NFF.arnold.de.arno"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_arnold",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Arno as a male given name that is a diminutive of Arnold.",
+      "source_refs": [
+        "src_wiktionary_en_arno_oldid_90973196"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_arnold",
+      "canonical_form": "Arnold",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arnold",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.full-masculine",
+          "form_id": "NFF.arnold.de.arnold"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Arnold as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_arnold_oldid_92960203"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_arthur",
+      "canonical_form": "Arthur",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arthur",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.de.arthur"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Arthur as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_arthur_oldid_93486917"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_artur",
+      "canonical_form": "Artur",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Artur",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.de.artur"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_arthur",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Artur as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_artur_oldid_93124096"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_athanasius",
+      "canonical_form": "Athanasius",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Athanasius",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.athanasius",
+          "equivalence_set_id": "NFEQ.athanasius.full-masculine",
+          "form_id": "NFF.athanasius.de.athanasius"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Athanasius translation table lists Athanasius as the de-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_athanasius_oldid_93383485"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_august",
+      "canonical_form": "August",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "August",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.augustus",
+          "equivalence_set_id": "NFEQ.augustus.full-masculine",
+          "form_id": "NFF.augustus.de.august"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German August as a male given name equivalent to Augustus.",
+      "source_refs": [
+        "src_wiktionary_en_august_oldid_93364422",
+        "src_wiktionary_en_augustus_oldid_93387409"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_augustus",
+      "canonical_form": "Augustus",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Augustus",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.augustus",
+          "equivalence_set_id": "NFEQ.augustus.full-masculine",
+          "form_id": "NFF.augustus.de.augustus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Augustus translation table lists Augustus as the de-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_augustus_oldid_93387409"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_babsi",
+      "canonical_form": "Babsi",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Babsi",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.barbara",
+          "equivalence_set_id": "NFEQ.barbara.short-feminine",
+          "form_id": "NFF.barbara.de.babsi"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_barbara",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Babsi as a female given name that is a diminutive of Barbara.",
+      "source_refs": [
+        "src_wiktionary_en_babsi_oldid_87102158"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_barbara",
+      "canonical_form": "Barbara",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Barbara",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.barbara",
+          "equivalence_set_id": "NFEQ.barbara.full-feminine",
+          "form_id": "NFF.barbara.de.barbara"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Barbara as a female given name equivalent to Barbara.",
+      "source_refs": [
+        "src_wiktionary_en_barbara_oldid_92131446"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_basilius",
+      "canonical_form": "Basilius",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Basilius",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.basil",
+          "equivalence_set_id": "NFEQ.basil.full-masculine",
+          "form_id": "NFF.basil.de.basilius"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Basil translation table lists Basilius as the de-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_basil_oldid_92924956"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_beatrice",
+      "canonical_form": "Beatrice",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Beatrice",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.beatrice",
+          "equivalence_set_id": "NFEQ.beatrice.full-feminine",
+          "form_id": "NFF.beatrice.de.beatrice"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_beatrix",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Beatrice as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_beatrice_oldid_91682040"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_beatrix",
+      "canonical_form": "Beatrix",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Beatrix",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.beatrice",
+          "equivalence_set_id": "NFEQ.beatrice.full-feminine",
+          "form_id": "NFF.beatrice.de.beatrix"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Beatrix as a female given name equivalent to Beatrice.",
+      "source_refs": [
+        "src_wiktionary_en_beatrice_oldid_91682040",
+        "src_wiktionary_en_beatrix_oldid_89872518"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_ben",
+      "canonical_form": "Ben",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ben",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.short-masculine",
+          "form_id": "NFF.benjamin.de.ben"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_benjamin",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Ben as a male given name that is a diminutive of Benjamin.",
+      "source_refs": [
+        "src_wiktionary_en_ben_oldid_93486948"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_benedict",
+      "canonical_form": "Benedict",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Benedict",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benedict",
+          "equivalence_set_id": "NFEQ.benedict.full-masculine",
+          "form_id": "NFF.benedict.de.benedict"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_benedikt",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Benedict as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_benedict_oldid_92411962"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_benedikt",
+      "canonical_form": "Benedikt",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Benedikt",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benedict",
+          "equivalence_set_id": "NFEQ.benedict.full-masculine",
+          "form_id": "NFF.benedict.de.benedikt"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Benedikt as a male given name equivalent to Benedict.",
+      "source_refs": [
+        "src_wiktionary_en_benedict_oldid_92411962",
+        "src_wiktionary_en_benedikt_oldid_91421486"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_benjamin",
+      "canonical_form": "Benjamin",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Benjamin",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.de.benjamin"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Benjamin as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bernadette",
+      "canonical_form": "Bernadette",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bernadette",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bernadette",
+          "equivalence_set_id": "NFEQ.bernadette.full-feminine",
+          "form_id": "NFF.bernadette.de.bernadette"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bernadette as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_bernadette_oldid_93041200"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bernd",
+      "canonical_form": "Bernd",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bernd",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bernard",
+          "equivalence_set_id": "NFEQ.bernard.short-masculine",
+          "form_id": "NFF.bernard.de.bernd"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_bernhard",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bernd as a male given name that is a diminutive of Bernhard.",
+      "source_refs": [
+        "src_wiktionary_en_bernard_oldid_92644006",
+        "src_wiktionary_en_bernd_oldid_90629772"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bernhard",
+      "canonical_form": "Bernhard",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bernhard",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bernard",
+          "equivalence_set_id": "NFEQ.bernard.full-masculine",
+          "form_id": "NFF.bernard.de.bernhard"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bernhard as a male given name equivalent to Bernard.",
+      "source_refs": [
+        "src_wiktionary_en_bernard_oldid_92644006",
+        "src_wiktionary_en_bernhard_oldid_92252613"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bernhardt",
+      "canonical_form": "Bernhardt",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bernhardt",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bernard",
+          "equivalence_set_id": "NFEQ.bernard.full-masculine",
+          "form_id": "NFF.bernard.de.bernhardt"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bernhardt as a male given name equivalent to Bernard.",
+      "source_refs": [
+        "src_wiktionary_en_bernard_oldid_92644006",
+        "src_wiktionary_en_bernhardt_oldid_92411988"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bernhart",
+      "canonical_form": "Bernhart",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bernhart",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bernard",
+          "equivalence_set_id": "NFEQ.bernard.full-masculine",
+          "form_id": "NFF.bernard.de.bernhart"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bernhart as a male given name equivalent to Bernard.",
+      "source_refs": [
+        "src_wiktionary_en_bernard_oldid_92644006",
+        "src_wiktionary_en_bernhart_oldid_92185869"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bianca",
+      "canonical_form": "Bianca",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bianca",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bianca",
+          "equivalence_set_id": "NFEQ.bianca.full-feminine",
+          "form_id": "NFF.bianca.de.bianca"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bianca as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_bianca_oldid_93016535"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bianka",
+      "canonical_form": "Bianka",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bianka",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bianca",
+          "equivalence_set_id": "NFEQ.bianca.full-feminine",
+          "form_id": "NFF.bianca.de.bianka"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_bianca",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bianka as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_bianca_oldid_93016535",
+        "src_wiktionary_en_bianka_oldid_92997686"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_blanka",
+      "canonical_form": "Blanka",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Blanka",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.blanche",
+          "equivalence_set_id": "NFEQ.blanche.full-feminine",
+          "form_id": "NFF.blanche.de.blanka"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Blanche translation table lists Blanka as the de-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_blanche_oldid_91107031"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_brigitte",
+      "canonical_form": "Brigitte",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Brigitte",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bridget",
+          "equivalence_set_id": "NFEQ.bridget.full-feminine",
+          "form_id": "NFF.bridget.de.brigitte"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Brigitte as a female given name equivalent to Bridget.",
+      "source_refs": [
+        "src_wiktionary_en_bridget_oldid_92302089",
+        "src_wiktionary_en_brigitte_oldid_86871233"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_bruno",
+      "canonical_form": "Bruno",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bruno",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bruno",
+          "equivalence_set_id": "NFEQ.bruno.full-masculine",
+          "form_id": "NFF.bruno.de.bruno"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Bruno as a male given name equivalent to Bruno.",
+      "source_refs": [
+        "src_wiktionary_en_bruno_oldid_92997700"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_cacilia",
+      "canonical_form": "Cäcilia",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Cäcilia",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.full-feminine",
+          "form_id": "NFF.cecilia.de.cacilia"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_cacilie",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Cäcilia as a female given name equivalent to Cecilia.",
+      "source_refs": [
+        "src_wiktionary_en_cacilia_oldid_85528332",
+        "src_wiktionary_en_cecilia_oldid_92435534"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_cacilie",
+      "canonical_form": "Cäcilie",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Cäcilie",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.full-feminine",
+          "form_id": "NFF.cecilia.de.cacilie"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Cäcilie as a female given name equivalent to Cecilia.",
+      "source_refs": [
+        "src_wiktionary_en_cacilie_oldid_69504532",
+        "src_wiktionary_en_cecilia_oldid_92435534"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_carl",
+      "canonical_form": "Carl",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Carl",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.de.carl"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_karl",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Carl as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_carl_oldid_93487016"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_caroline",
+      "canonical_form": "Caroline",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Caroline",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.caroline",
+          "equivalence_set_id": "NFEQ.caroline.full-feminine",
+          "form_id": "NFF.caroline.de.caroline"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Caroline as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_caroline_oldid_92637645"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_catarina",
+      "canonical_form": "Catarina",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Catarina",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.de.catarina"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_katharina",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Catarina as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_catarina_oldid_89938320"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_cecilia",
+      "canonical_form": "Cecilia",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Cecilia",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.full-feminine",
+          "form_id": "NFF.cecilia.de.cecilia"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_cacilia",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Cecilia as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_cecilia_oldid_92435534"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_cecilie",
+      "canonical_form": "Cecilie",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Cecilie",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.full-feminine",
+          "form_id": "NFF.cecilia.de.cecilie"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_cacilie",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Cecilie as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_cecilie_oldid_83830873"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_charlotte",
+      "canonical_form": "Charlotte",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Charlotte",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charlotte",
+          "equivalence_set_id": "NFEQ.charlotte.full-feminine",
+          "form_id": "NFF.charlotte.de.charlotte"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Charlotte as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_charlotte_oldid_93487054"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_de_edlerbrecht",
       "canonical_form": "Edlerbrecht",
       "name_type": "given",
@@ -1279,6 +2286,188 @@
       "etymology_note": "Candidate: the pinned Albert translation table lists Edlerbrecht as the de-language form; the form has no entry with a given-name sense in that language.",
       "source_refs": [
         "src_wiktionary_en_albert_oldid_93486861"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_karl",
+      "canonical_form": "Karl",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Karl",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.de.karl"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Karl as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_karlchen",
+      "canonical_form": "Karlchen",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Karlchen",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charlie",
+          "equivalence_set_id": "NFEQ.charlie.full-unisex",
+          "form_id": "NFF.charlie.de.karlchen"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Karlchen as a male given name equivalent to Charlie.",
+      "source_refs": [
+        "src_wiktionary_en_charlie_oldid_92704660",
+        "src_wiktionary_en_karlchen_oldid_83832775"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_katarina",
+      "canonical_form": "Katarina",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Katarina",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.de.katarina"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_katharina",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Katarina as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_katarina_oldid_85763956"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_katharina",
+      "canonical_form": "Katharina",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Katharina",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.de.katharina"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Katharina as a female given name equivalent to Catherine.",
+      "source_refs": [
+        "src_wiktionary_en_catherine_oldid_93156497",
+        "src_wiktionary_en_katharina_oldid_86986519"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_lotte",
+      "canonical_form": "Lotte",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Lotte",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charlotte",
+          "equivalence_set_id": "NFEQ.charlotte.short-feminine",
+          "form_id": "NFF.charlotte.de.lotte"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_charlotte",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Lotte as a female given name that is a diminutive of Charlotte.",
+      "source_refs": [
+        "src_wiktionary_en_lotte_oldid_91558808"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_de_silke",
+      "canonical_form": "Silke",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Silke",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "de"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.short-feminine",
+          "form_id": "NFF.cecilia.de.silke"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_de_cacilie",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines German Silke as a female given name that is a diminutive of Cäcilie.",
+      "source_refs": [
+        "src_wiktionary_en_silke_oldid_92951252"
       ],
       "review_state": "candidate"
     },

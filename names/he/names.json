@@ -138,6 +138,33 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_he_artur",
+      "canonical_form": "ארתור",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ארתור",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.he.artur"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Arthur translation table lists ארתור as the he-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_arthur_oldid_93486917"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_he_avigayil",
       "canonical_form": "אביגיל",
       "name_type": "given",
@@ -162,6 +189,88 @@
       "source_refs": [
         "src_wiktionary_en_abigail_oldid_93041121",
         "src_wiktionary_en_u5d0_5d1_5d9_5d2_5d9_5dc_oldid_83842275"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_binyamin",
+      "canonical_form": "בִּנְיָמִין",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "בִּנְיָמִין",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.he.binyamin"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Benjamin translation table lists בִּנְיָמִין as the he-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_binyamin_4396",
+      "canonical_form": "בנימין",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "בנימין",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.he.binyamin_4396"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Hebrew בנימין as a male given name equivalent to Benjamin.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247",
+        "src_wiktionary_en_u5d1_5e0_5d9_5de_5d9_5df_oldid_84038871"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_karmel",
+      "canonical_form": "כרמל",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "כרמל",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.carmel",
+          "equivalence_set_id": "NFEQ.carmel.full-feminine",
+          "form_id": "NFF.carmel.he.karmel"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Hebrew כרמל as a unisex given name.",
+      "source_refs": [
+        "src_wiktionary_en_carmel_oldid_92685090"
       ],
       "review_state": "candidate"
     },
@@ -300,6 +409,87 @@
       "source_refs": [
         "src_wiktionary_en_anna_oldid_93366642",
         "src_wiktionary_en_u5d0_5e0_5d4_oldid_83897962"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_u5d1_5e8_5d1_5e8_5d4",
+      "canonical_form": "ברברה",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ברברה",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.barbara",
+          "equivalence_set_id": "NFEQ.barbara.full-feminine",
+          "form_id": "NFF.barbara.he.u5d1_5e8_5d1_5e8_5d4"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Barbara translation table lists ברברה as the he-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_barbara_oldid_92131446"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_u5d5_5e1_5d9_5dc_5d9",
+      "canonical_form": "וסילי",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "וסילי",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.basil",
+          "equivalence_set_id": "NFEQ.basil.full-masculine",
+          "form_id": "NFF.basil.he.u5d5_5e1_5d9_5dc_5d9"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Basil translation table lists וסילי as the he-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_basil_oldid_92924956"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_he_u5e6_27_5d0_5e8_5dc_5e1",
+      "canonical_form": "צ'ארלס",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "צ'ארלס",
+          "status": "canonical",
+          "script": "Hebr",
+          "locale": "he"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.he.u5e6_27_5d0_5e8_5dc_5e1"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Charles translation table lists צ'ארלס as the he-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811"
       ],
       "review_state": "candidate"
     }

@@ -30,6 +30,33 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_ms_bunyamin",
+      "canonical_form": "Bunyamin",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bunyamin",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ms"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.ms.bunyamin"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Benjamin translation table lists Bunyamin as the ms-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_ms_harun",
       "canonical_form": "Harun",
       "name_type": "given",

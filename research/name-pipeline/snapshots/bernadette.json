@@ -1,0 +1,544 @@
+{
+  "snapshot_version": 1,
+  "root": "Bernadette",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "French",
+      "code": "fr",
+      "text": "Bernadette",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "German",
+      "code": "de",
+      "text": "Bernadette",
+      "tr": null,
+      "gender_tags": []
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Italian",
+      "code": "it",
+      "text": "Bernadetta",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Polish",
+      "code": "pl",
+      "text": "Bernadeta",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Portuguese",
+      "code": "pt",
+      "text": "Bernadete",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    },
+    {
+      "gloss": "female given name",
+      "genders": [
+        "female"
+      ],
+      "language": "Portuguese",
+      "code": "pt",
+      "text": "Bernardete",
+      "tr": null,
+      "gender_tags": [
+        "f"
+      ]
+    }
+  ],
+  "search_hits": {
+    "eq": [
+      "Bernadeta",
+      "Bernadete",
+      "Bernadett",
+      "Bernardete"
+    ],
+    "dimof": [
+      "Bern",
+      "Berner"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Bern": {
+      "revid": 92131461,
+      "timestamp": "2026-08-23T17:50:46Z",
+      "sha256": "51055604e3d0294d8309cd793fa41ba8b347d3613bdc49b6929413b5e650358d",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex|varof=Bernie}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Bernard",
+                  "language": null
+                }
+              ],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|varof=Bernie|dimof=Bernard}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                },
+                {
+                  "text": "Bernice",
+                  "language": null
+                }
+              ],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|varof=Bernie|dimof=Bernadette,Bernice}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernadeta": {
+      "revid": 87882759,
+      "timestamp": "2025-11-01T01:02:41Z",
+      "sha256": "9a3486a6934c18c3ad6981cb267d6438f300c9d1cf0a21c59abd9322392a8280",
+      "sections": [
+        {
+          "heading": "Czech",
+          "given_names": [
+            {
+              "code": "cs",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|cs|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Polish",
+          "given_names": [
+            {
+              "code": "pl",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pl|female|eq=Bernadette}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernadete": {
+      "revid": 91243871,
+      "timestamp": "2026-06-15T00:53:51Z",
+      "sha256": "94078c74f5d4dcb2ce9a9504bdd0c049d3a1a49e4c7c4869cec2e94d9d54d0b5",
+      "sections": [
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|from=French|eq=Bernadette}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernadett": {
+      "revid": 87697902,
+      "timestamp": "2025-10-31T20:10:10Z",
+      "sha256": "c10091d78f38fdf0b0d34793d16a6dd55bb91a03a5681b692a35785e61fb9f62",
+      "sections": [
+        {
+          "heading": "Hungarian",
+          "given_names": [
+            {
+              "code": "hu",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|hu|female|eq=Bernadette}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernadetta": {
+      "revid": 71938173,
+      "timestamp": "2023-03-17T21:23:29Z",
+      "sha256": "6bee2577f7666926bb1b5768450aa4eb83f61994d315470435d646420f73cb42",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=French}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernadette": {
+      "revid": 93041200,
+      "timestamp": "2026-09-29T22:45:32Z",
+      "sha256": "4a1d5c98abbd2514ff9a3120e4c3d9818e982ad96cf4f079b7157a28e4d8ebf1",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=French}}"
+            }
+          ]
+        },
+        {
+          "heading": "French",
+          "given_names": [
+            {
+              "code": "fr",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|fr|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English < French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|female|from=English < French}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bernardete": {
+      "revid": 86388320,
+      "timestamp": "2025-08-23T16:19:46Z",
+      "sha256": "599a3c93dd6cb28051a878f7933a30765305b3f17bc9f00ecc4d0529c70457be",
+      "sections": [
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Bernadete",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": "French",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|female|varof=Bernadete|from=French|eq=Bernadette}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Berner": {
+      "revid": 90679641,
+      "timestamp": "2026-05-10T23:00:31Z",
+      "sha256": "9892394bcb23efe3aacad8d4905894097a88ae929ed6aeb21263f892c6175be8",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex|varof=Bernie}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Bernard",
+                  "language": null
+                }
+              ],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|varof=Bernie|dimof=Bernard}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Bernadette",
+                  "language": null
+                },
+                {
+                  "text": "Bernice",
+                  "language": null
+                }
+              ],
+              "varof": [
+                {
+                  "text": "Bernie",
+                  "language": null
+                }
+              ],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|varof=Bernie|dimof=Bernadette,Bernice}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "snapshot_version": 1,
+  "root": "Callum",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Callum": {
+      "revid": 91201662,
+      "timestamp": "2026-06-12T21:14:44Z",
+      "sha256": "815da3dff73676d88332f2be21b7c44bf6266270c80fe4893302eca1220028dc",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Scottish Gaelic",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=Scottish Gaelic}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

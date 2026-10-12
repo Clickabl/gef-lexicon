@@ -1,0 +1,119 @@
+{
+  "snapshot_version": 1,
+  "root": "Bradley",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Брадли"
+    ],
+    "dimof": [
+      "Brad"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "bg|Брадли": "Bradli"
+  },
+  "pages": {
+    "Brad": {
+      "revid": 93442266,
+      "timestamp": "2026-10-07T23:15:14Z",
+      "sha256": "3b321d7d666d97f1a0d9ee71a3a7e70dc0cff79da0b89a8166a8fd8c0a165b03",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Bradley",
+                  "language": null
+                },
+                {
+                  "text": "Bradly",
+                  "language": null
+                },
+                {
+                  "text": "Bradford",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Bradley,Bradly,Bradford}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Bradley": {
+      "revid": 92412208,
+      "timestamp": "2026-08-31T02:56:55Z",
+      "sha256": "c28d482dc3915bc06e8d13448f7f16b77e4267095d65c7087b43681908087429",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "surnames",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|from=surnames}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Брадли": {
+      "revid": 91111265,
+      "timestamp": "2026-06-07T01:48:26Z",
+      "sha256": "57cdf76dfe62632aa3f7551755bceb8cf2a248574c0b66d213ec98fcbe39bc50",
+      "sections": [
+        {
+          "heading": "Bulgarian",
+          "given_names": [
+            {
+              "code": "bg",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Bradley",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|bg|male|from=English|eq=Bradley}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "language_code": "am",
+  "names": [
+    {
+      "name_id": "name_am_binyam",
+      "canonical_form": "ቢንያም",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ቢንያም",
+          "status": "canonical",
+          "script": "Ethi",
+          "locale": "am"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.am.binyam"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Benjamin translation table lists ቢንያም as the am-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247"
+      ],
+      "review_state": "candidate"
+    }
+  ]
+}

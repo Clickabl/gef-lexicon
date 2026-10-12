@@ -3,6 +3,33 @@
   "language_code": "ta",
   "names": [
     {
+      "name_id": "name_ta_arttar",
+      "canonical_form": "ஆர்த்தர்",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "ஆர்த்தர்",
+          "status": "canonical",
+          "script": "Taml",
+          "locale": "ta"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.ta.arttar"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Arthur translation table lists ஆர்த்தர் as the ta-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_arthur_oldid_93486917"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_ta_atam",
       "canonical_form": "ஆடம்",
       "name_type": "given",
@@ -26,6 +53,33 @@
       "etymology_note": "Candidate: the pinned Adam translation table lists ஆடம் as the ta-language form; the form has no entry with a given-name sense in that language.",
       "source_refs": [
         "src_wiktionary_en_adam_oldid_93386270"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ta_penyamin",
+      "canonical_form": "பென்யமீன்",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "பென்யமீன்",
+          "status": "canonical",
+          "script": "Taml",
+          "locale": "ta"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.benjamin",
+          "equivalence_set_id": "NFEQ.benjamin.full-masculine",
+          "form_id": "NFF.benjamin.ta.penyamin"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Benjamin translation table lists பென்யமீன் as the ta-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_benjamin_oldid_93484247"
       ],
       "review_state": "candidate"
     }

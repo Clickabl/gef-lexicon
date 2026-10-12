@@ -32,6 +32,14 @@ const SCRIPT_BY_PROPERTY = [
 ];
 const SCRIPT_PATTERNS = SCRIPT_BY_PROPERTY.map(([property, code]) => [new RegExp(`\\p{Script=${property}}`, 'gu'), code]);
 
+/** Match the graph's representable scripts without repairing source glyphs. */
+export function spellingFitsScript(text, script) {
+  const systems = { Hans: ['Hani'], Hant: ['Hani'], Jpan: ['Hani', 'Hira', 'Kana'], Kore: ['Hang', 'Hani'], Hrkt: ['Hira', 'Kana'] };
+  if (!script) return false;
+  const allowed = new RegExp(`^(?:${(systems[script] ?? [script]).map(value => `\\p{Script_Extensions=${value}}`).join('|')}|\\p{Script=Common}|\\p{Script=Inherited})$`, 'u');
+  return [...text].every(character => !/[\p{L}\p{M}]/u.test(character) || allowed.test(character));
+}
+
 /** ISO 15924 code of the script that most of the letters belong to. Mixed Han and kana read as Jpan. */
 export function scriptOf(text) {
   const counts = new Map();

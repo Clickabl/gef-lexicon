@@ -149,7 +149,7 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
     }
     kept.sort((a, b) => compareText(`${a.tag}|${a.text}`, `${b.tag}|${b.text}`));
     for (const member of kept) claimedBy.set(`${member.tag}|${member.text}`, familyId);
-    const byKey = new Map(kept.map(member => [keyOf(member.code, member.text), member]));
+    const byKey = new Map(kept.flatMap(member => [member.text, ...(member.aliases ?? [])].map(text => [keyOf(member.code, text), member])));
 
     // Identifiers: reuse what a previous run or an adopted record already holds.
     const usedFormIds = new Set();
@@ -278,7 +278,8 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
     const relations = record.relations.filter((relation, index, all) => all.findIndex(other => other.target_name_id === relation.target_name_id && other.relation_type === relation.relation_type) === index);
     file.data.names.push({
       name_id: nameId, canonical_form: member.text, name_type: 'given',
-      spellings: [{ text: member.text, status: 'canonical', ...(member.script ? { script: member.script } : {}), locale: member.tag }],
+      spellings: [member.text, ...(member.aliases ?? [])].map((text, index) => ({ text, status: index === 0 ? 'canonical' : 'variant',
+        ...(member.script ? { script: member.script } : {}), locale: member.tag })),
       family_refs: refs, related_names: relations, gender_usage: [],
       etymology_note: [...new Set(record.etymology)].join(' '),
       source_refs: [...record.sources].sort(compareText), review_state: 'candidate',

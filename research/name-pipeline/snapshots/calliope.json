@@ -1,0 +1,121 @@
+{
+  "snapshot_version": 1,
+  "root": "Calliope",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Καλλιόπη"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "el|Καλλιόπη": "Kalliópi"
+  },
+  "pages": {
+    "Calliope": {
+      "revid": 93487014,
+      "timestamp": "2026-10-11T03:35:12Z",
+      "sha256": "afa1ea1231e7d20ecb230af083cedd82bb47b02bfc0c6ac75ab17782e595d25b",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English < Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|female|from=English < Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Italian",
+          "given_names": [
+            {
+              "code": "it",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|it|female|from=Ancient Greek}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Καλλιόπη": {
+      "revid": 92480211,
+      "timestamp": "2026-09-04T19:14:41Z",
+      "sha256": "d339fb589b99b40ce6d04896ec54e06138601d32f1c5a19e734c155860443e9a",
+      "sections": [
+        {
+          "heading": "Greek",
+          "given_names": [
+            {
+              "code": "el",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Calliope",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Kalliopi",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|el|female|xlit=Kalliopi|eq=Calliope}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

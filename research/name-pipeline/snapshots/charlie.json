@@ -1,0 +1,334 @@
+{
+  "snapshot_version": 1,
+  "root": "Charlie",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Carlinhos",
+      "Carlito",
+      "Karlchen",
+      "Tchèrli"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Carlinhos": {
+      "revid": 83836923,
+      "timestamp": "2025-02-03T10:17:50Z",
+      "sha256": "ef967931126b93a39fa032d39edc0d9cedc174a7a518e677d3b3f5e3ed64ffc2",
+      "sections": [
+        {
+          "heading": "Portuguese",
+          "given_names": [
+            {
+              "code": "pt",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Carlos",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|pt|male|dimof=Carlos|eq=Charlie}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Carlito": {
+      "revid": 93487011,
+      "timestamp": "2026-10-11T03:35:14Z",
+      "sha256": "77fef080832b44618fb5015bf18fd8949481193af5fd4db451a9bcad133f3c57",
+      "sections": [
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Carlos",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Spanish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|male|from=Spanish|dimof=Carlos|eq=Charlie}}"
+            }
+          ]
+        },
+        {
+          "heading": "Spanish",
+          "given_names": [
+            {
+              "code": "es",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Carlos",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|es|male|dimof=Carlos|eq=Charlie}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Carlos",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Spanish",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|male|from=Spanish|dimof=Carlos|eq=Charlie}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Charlie": {
+      "revid": 92704660,
+      "timestamp": "2026-09-16T18:31:01Z",
+      "sha256": "a36dd36e32a387f41dd8b4875efc836e3f714d16f13d0fecde8f4c1c78d6c255",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "unisex"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|unisex}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Charles",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|male|dimof=Charles}}"
+            },
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Charlotte",
+                  "language": null
+                },
+                {
+                  "text": "Charlene",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Charlotte,Charlene}}"
+            }
+          ]
+        },
+        {
+          "heading": "Cebuano",
+          "given_names": [
+            {
+              "code": "ceb",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ceb|male|from=English}}"
+            }
+          ]
+        },
+        {
+          "heading": "Swedish",
+          "given_names": [
+            {
+              "code": "sv",
+              "genders": [
+                "male"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|sv|male}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Karlchen": {
+      "revid": 83832775,
+      "timestamp": "2025-02-03T09:15:14Z",
+      "sha256": "446ab89f4eba891b0971a42264c6fa31cb0c182842967a796c689a786329ed9c",
+      "sections": [
+        {
+          "heading": "German",
+          "given_names": [
+            {
+              "code": "de",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|de|male|dimof=Karl|eq=Charlie}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Tchèrli": {
+      "revid": 83832324,
+      "timestamp": "2025-02-03T09:08:00Z",
+      "sha256": "bcaf3ef270f2bed5c7946fc3c54e23abe7cd46d3f1b69ad8d529846f305b59b0",
+      "sections": [
+        {
+          "heading": "Norman",
+          "given_names": [
+            {
+              "code": "nrf",
+              "genders": [
+                "male"
+              ],
+              "eq": [
+                {
+                  "text": "Charlie",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Charlot",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|nrf|male|dimof=Charles,Charlot|eq=Charlie}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

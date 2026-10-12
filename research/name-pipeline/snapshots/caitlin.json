@@ -1,0 +1,181 @@
+{
+  "snapshot_version": 1,
+  "root": "Caitlin",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Кейтлин"
+    ],
+    "dimof": [
+      "Cait",
+      "Caity"
+    ],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "bg|Кейтлин": "Kejtlin"
+  },
+  "pages": {
+    "Cait": {
+      "revid": 85135033,
+      "timestamp": "2025-06-16T09:01:23Z",
+      "sha256": "48d93759a602783fc31c55255738fa19fac015c54f5d86239b56be7a1de4494e",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Caitlin",
+                  "language": null
+                },
+                {
+                  "text": "Caitlyn",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Caitlin,Caitlyn}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Caitlin": {
+      "revid": 93367965,
+      "timestamp": "2026-10-02T21:58:45Z",
+      "sha256": "313106f979c717c937a5578767278add71f7ded6975e88008b9d3017093c22fb",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Catherine",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "ga:Caitlín",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=ga:Caitlín|eq=Catherine}}"
+            }
+          ]
+        },
+        {
+          "heading": "Scottish Gaelic",
+          "given_names": [
+            {
+              "code": "gd",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Kathleen",
+                  "language": null
+                }
+              ],
+              "dimof": [
+                {
+                  "text": "Catrìona",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|gd|female|dimof=Catrìona|from=Ancient Greek|eq=Kathleen}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Caity": {
+      "revid": 83835521,
+      "timestamp": "2025-02-03T09:56:30Z",
+      "sha256": "878796b63fff334ae0e4a6605cf96baf88200025751c55b0103678d062edc5c3",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [
+                {
+                  "text": "Caitlin",
+                  "language": null
+                }
+              ],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|dimof=Caitlin}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Кейтлин": {
+      "revid": 86761728,
+      "timestamp": "2025-09-13T21:29:39Z",
+      "sha256": "bdf80de0b9e9be234d2be4706996731d67c5071aab73ad6899fafc45517b7933",
+      "sections": [
+        {
+          "heading": "Bulgarian",
+          "given_names": [
+            {
+              "code": "bg",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Caitlin",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|bg|female|eq=Caitlin}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

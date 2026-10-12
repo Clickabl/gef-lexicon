@@ -1,0 +1,43 @@
+{
+  "snapshot_version": 1,
+  "root": "Bethany",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {},
+  "pages": {
+    "Bethany": {
+      "revid": 92130869,
+      "timestamp": "2026-08-23T17:43:40Z",
+      "sha256": "3e2805338d6a1be8469bc91ad2c914521c808da5156491665845af6e8e679787",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Aramaic",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Aramaic}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

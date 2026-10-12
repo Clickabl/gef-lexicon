@@ -1,0 +1,305 @@
+{
+  "snapshot_version": 1,
+  "root": "Athena",
+  "retrieved_at": "2026-10-12",
+  "api": "https://en.wiktionary.org/w/api.php",
+  "language_filter_reviewed": "2026-08-23",
+  "root_table_rows": [],
+  "search_hits": {
+    "eq": [
+      "Atena",
+      "Αθηνά",
+      "Атена",
+      "Атина",
+      "Афина",
+      "Афіна"
+    ],
+    "dimof": [],
+    "second_hop_dimof": [],
+    "second_hop_varof": []
+  },
+  "romanizations": {
+    "el|Αθηνά": "Athiná",
+    "mk|Атина": "Atina",
+    "ru|Афина": "Afina",
+    "uk|Атена": "Atena",
+    "uk|Афіна": "Afina"
+  },
+  "pages": {
+    "Atena": {
+      "revid": 93134841,
+      "timestamp": "2026-09-30T09:20:55Z",
+      "sha256": "f2ba05043556579830a919a2f0ddab9cf77039c31ff224f8e37cb91e2458cff6",
+      "sections": [
+        {
+          "heading": "Indonesian",
+          "given_names": [
+            {
+              "code": "id",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|id|female|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Romanian",
+          "given_names": [
+            {
+              "code": "ro",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ro|female|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Athena": {
+      "revid": 92201370,
+      "timestamp": "2026-08-24T06:23:34Z",
+      "sha256": "30edfe9a035603a7a3d6e0b89202b9be1a585cb87ecce7ba19e37cf1482208dc",
+      "sections": [
+        {
+          "heading": "English",
+          "given_names": [
+            {
+              "code": "en",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|en|female|from=Ancient Greek}}"
+            }
+          ]
+        },
+        {
+          "heading": "Tagalog",
+          "given_names": [
+            {
+              "code": "tl",
+              "genders": [
+                "female"
+              ],
+              "eq": [],
+              "dimof": [],
+              "varof": [],
+              "xlit": [],
+              "from": "English",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|tl|female|from=English}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Αθηνά": {
+      "revid": 92068516,
+      "timestamp": "2026-08-19T14:29:05Z",
+      "sha256": "9bc387e5e25bca91640b9cac361d9642a5e0dbccb64a4531e17756a21d8fafcb",
+      "sections": [
+        {
+          "heading": "Greek",
+          "given_names": [
+            {
+              "code": "el",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Athina",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|el|female|xlit=Athina|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Атена": {
+      "revid": 93032403,
+      "timestamp": "2026-09-29T21:44:27Z",
+      "sha256": "156482f4a6b073cab75ef0cc21f3a8923641693e980922d362c632f831a91bf0",
+      "sections": [
+        {
+          "heading": "Ukrainian",
+          "given_names": [
+            {
+              "code": "uk",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Atena",
+                  "language": null
+                }
+              ],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|female|xlit=Atena|from=Ancient Greek|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Атина": {
+      "revid": 93035624,
+      "timestamp": "2026-09-29T21:53:25Z",
+      "sha256": "c1a9a307648348501d211a9c5e5202eb90cc8d7d06e83c374f82c6791f3dcd91",
+      "sections": [
+        {
+          "heading": "Macedonian",
+          "given_names": [
+            {
+              "code": "mk",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Atina",
+                  "language": null
+                }
+              ],
+              "from": null,
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|mk|female|xlit=Atina|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Афина": {
+      "revid": 87790225,
+      "timestamp": "2025-10-31T22:37:17Z",
+      "sha256": "16de8bd3d4265bb1c4ae99f288f4497155da398e7abe36d7cfc32394b022d76b",
+      "sections": [
+        {
+          "heading": "Russian",
+          "given_names": [
+            {
+              "code": "ru",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Afina",
+                  "language": null
+                }
+              ],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|ru|female|from=Ancient Greek|xlit=Afina|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    },
+    "Афіна": {
+      "revid": 93032405,
+      "timestamp": "2026-09-29T21:44:28Z",
+      "sha256": "c99108a1a386f53f639f22d6efb7de7f2448453d6544ee3d28e1c724ad46f6a6",
+      "sections": [
+        {
+          "heading": "Ukrainian",
+          "given_names": [
+            {
+              "code": "uk",
+              "genders": [
+                "female"
+              ],
+              "eq": [
+                {
+                  "text": "Athena",
+                  "language": null
+                }
+              ],
+              "dimof": [],
+              "varof": [],
+              "xlit": [
+                {
+                  "text": "Afina",
+                  "language": null
+                }
+              ],
+              "from": "Ancient Greek",
+              "usage": null,
+              "popular": null,
+              "raw": "{{given name|uk|female|xlit=Afina|from=Ancient Greek|eq=Athena}}"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

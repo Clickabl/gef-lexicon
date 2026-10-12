@@ -564,6 +564,437 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_et_arno",
+      "canonical_form": "Arno",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arno",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.short-masculine",
+          "form_id": "NFF.arnold.et.arno"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_et_arnold",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Arno as a male given name that is a diminutive of Arnold.",
+      "source_refs": [
+        "src_wiktionary_en_arno_oldid_90973196"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_arnold",
+      "canonical_form": "Arnold",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arnold",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.full-masculine",
+          "form_id": "NFF.arnold.et.arnold"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Arnold as a male given name equivalent to Arnold.",
+      "source_refs": [
+        "src_wiktionary_en_arnold_oldid_92960203"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_artur",
+      "canonical_form": "Artur",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Artur",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.et.artur"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Artur as a male given name equivalent to Arthur.",
+      "source_refs": [
+        "src_wiktionary_en_arthur_oldid_93486917",
+        "src_wiktionary_en_artur_oldid_93124096"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_aurelia",
+      "canonical_form": "Aurelia",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Aurelia",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aurelia",
+          "equivalence_set_id": "NFEQ.aurelia.full-feminine",
+          "form_id": "NFF.aurelia.et.aurelia"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Aurelia as a female given name equivalent to Aurelia.",
+      "source_refs": [
+        "src_wiktionary_en_aurelia_oldid_93486935"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_barbara",
+      "canonical_form": "Barbara",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Barbara",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.barbara",
+          "equivalence_set_id": "NFEQ.barbara.full-feminine",
+          "form_id": "NFF.barbara.et.barbara"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Barbara translation table lists Barbara as the et-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_barbara_oldid_92131446"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_bruno",
+      "canonical_form": "Bruno",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Bruno",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bruno",
+          "equivalence_set_id": "NFEQ.bruno.full-masculine",
+          "form_id": "NFF.bruno.et.bruno"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Bruno as a male given name equivalent to Bruno.",
+      "source_refs": [
+        "src_wiktionary_en_bruno_oldid_92997700"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_kaarel",
+      "canonical_form": "Kaarel",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Kaarel",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.et.kaarel"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Kaarel as a male given name equivalent to Charles.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811",
+        "src_wiktionary_en_kaarel_oldid_68727857"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_kadri",
+      "canonical_form": "Kadri",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Kadri",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.et.kadri"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Kadri as a female given name equivalent to Catherine.",
+      "source_refs": [
+        "src_wiktionary_en_catherine_oldid_93156497",
+        "src_wiktionary_en_kadri_oldid_93000275"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_karl",
+      "canonical_form": "Karl",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Karl",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.et.karl"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Karl as a male given name equivalent to Charles.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811",
+        "src_wiktionary_en_karl_oldid_93487283"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_karoliina",
+      "canonical_form": "Karoliina",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Karoliina",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.caroline",
+          "equivalence_set_id": "NFEQ.caroline.full-feminine",
+          "form_id": "NFF.caroline.et.karoliina"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Karoliina as a female given name equivalent to Caroline.",
+      "source_refs": [
+        "src_wiktionary_en_caroline_oldid_92637645",
+        "src_wiktionary_en_karoliina_oldid_92269511"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_katariina",
+      "canonical_form": "Katariina",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Katariina",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.et.katariina"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Katariina as a female given name equivalent to Catherine.",
+      "source_refs": [
+        "src_wiktionary_en_catherine_oldid_93156497",
+        "src_wiktionary_en_katariina_oldid_92143132"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_katre",
+      "canonical_form": "Katre",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Katre",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.et.katre"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_et_katariina",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Katre as a female given name.",
+      "source_refs": [
+        "src_wiktionary_en_katre_oldid_83831734"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_piret",
+      "canonical_form": "Piret",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Piret",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bridget",
+          "equivalence_set_id": "NFEQ.bridget.full-feminine",
+          "form_id": "NFF.bridget.et.piret"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Piret as a female given name equivalent to Bridget.",
+      "source_refs": [
+        "src_wiktionary_en_bridget_oldid_92302089",
+        "src_wiktionary_en_piret_oldid_68727789"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_reili",
+      "canonical_form": "Reili",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Reili",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aurelia",
+          "equivalence_set_id": "NFEQ.aurelia.short-feminine",
+          "form_id": "NFF.aurelia.et.reili"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_et_aurelia",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Reili as a female given name that is a diminutive of Aurelia.",
+      "source_refs": [
+        "src_wiktionary_en_reili_oldid_83831733"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_et_silja",
+      "canonical_form": "Silja",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Silja",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.cecilia",
+          "equivalence_set_id": "NFEQ.cecilia.full-feminine",
+          "form_id": "NFF.cecilia.et.silja"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Silja as a female given name equivalent to Cecilia.",
+      "source_refs": [
+        "src_wiktionary_en_cecilia_oldid_92435534",
+        "src_wiktionary_en_silja_oldid_92191097"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_et_timmo",
       "canonical_form": "Timmo",
       "name_type": "given",

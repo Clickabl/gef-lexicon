@@ -76,6 +76,30 @@ test('a root with no English given-name sense builds no family', () => {
   assert.equal(model.ok, false);
 });
 
+test('sourced case spellings share one family form while retaining both names and citations', () => {
+  const model = buildFamilyModel({ root: {title:'Cecilia'}, filter, snapshot:{root_table_rows:[],romanizations:{},pages:{
+    Cecilia:page('English',template('en',['female'])),
+    CeeCee:page('English',template('en',['female'],{dimof:[{text:'Cecilia',language:null}]})),
+    Ceecee:page('English',template('en',['female'],{dimof:[{text:'Cecilia',language:null}]})),
+  }}});
+  assert.equal(model.ok,true);
+  const variants=model.members.filter(member=>member.text.toLowerCase()==='ceecee');
+  assert.equal(variants.length,1);assert.deepEqual(variants[0].aliases,['Ceecee']);
+  assert.ok(variants[0].evidence.has('CeeCee')&&variants[0].evidence.has('Ceecee'));
+  const {files}=planBuild();
+  const name=files.get(join(REPO_ROOT,'names/en/names.json')).names.find(name=>name.canonical_form==='CeeCee');
+  assert.deepEqual(name.spellings.map(spelling=>[spelling.text,spelling.status]),[['CeeCee','canonical'],['Ceecee','variant']]);
+  assert.equal(name.source_refs.length,2);
+});
+
+test('a mixed-script source spelling is reported unchanged rather than repaired into an invented name', () => {
+  const model=buildFamilyModel({root:{title:'Bianca'},filter,snapshot:{romanizations:{},root_table_rows:[
+    {code:'ru',text:'Биáнка',genders:['female'],gloss:'female given name',tr:null},
+  ],pages:{Bianca:page('English',template('en',['female']))}}});
+  assert.equal(model.ok,true);assert.ok(!model.members.some(member=>member.text==='Биáнка'));
+  assert.ok(model.excluded.some(member=>member.text==='Биáнка'&&member.reason==='source_spelling_script_mismatch'));
+});
+
 test('every pipeline form is a candidate and cites a pinned Wiktionary revision', () => {
   const bibliography = new Map(readJson(join(REPO_ROOT, 'sources', 'bibliography.json')).sources.map(source => [source.source_id, source]));
   const { files } = planBuild();

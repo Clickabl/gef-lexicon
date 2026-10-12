@@ -307,6 +307,68 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_cy_arnall",
+      "canonical_form": "Arnall",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arnall",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.full-masculine",
+          "form_id": "NFF.arnold.cy.arnall"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_cy_arnallt",
+          "relation_type": "variant_family",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Arnall as a male given name equivalent to Arnold.",
+      "source_refs": [
+        "src_wiktionary_en_arnall_oldid_87695931",
+        "src_wiktionary_en_arnold_oldid_92960203"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_arnallt",
+      "canonical_form": "Arnallt",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arnallt",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arnold",
+          "equivalence_set_id": "NFEQ.arnold.full-masculine",
+          "form_id": "NFF.arnold.cy.arnallt"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Arnallt as a male given name equivalent to Arnold.",
+      "source_refs": [
+        "src_wiktionary_en_arnallt_oldid_80997130",
+        "src_wiktionary_en_arnold_oldid_92960203"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_cy_aron",
       "canonical_form": "Aron",
       "name_type": "given",
@@ -331,6 +393,171 @@
       "source_refs": [
         "src_wiktionary_en_aaron_oldid_93442002",
         "src_wiktionary_en_aron_oldid_91803610"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_arthur",
+      "canonical_form": "Arthur",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Arthur",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.arthur",
+          "equivalence_set_id": "NFEQ.arthur.full-masculine",
+          "form_id": "NFF.arthur.cy.arthur"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Arthur as a male given name.",
+      "source_refs": [
+        "src_wiktionary_en_arthur_oldid_93486917"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_betrys",
+      "canonical_form": "Betrys",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Betrys",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.beatrice",
+          "equivalence_set_id": "NFEQ.beatrice.full-feminine",
+          "form_id": "NFF.beatrice.cy.betrys"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Beatrice translation table lists Betrys as the cy-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_beatrice_oldid_91682040"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_catrin",
+      "canonical_form": "Catrin",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Catrin",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.catherine",
+          "equivalence_set_id": "NFEQ.catherine.full-feminine",
+          "form_id": "NFF.catherine.cy.catrin"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Catrin as a female given name equivalent to Catherine.",
+      "source_refs": [
+        "src_wiktionary_en_catherine_oldid_93156497",
+        "src_wiktionary_en_catrin_oldid_88341871"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_ffraid",
+      "canonical_form": "Ffraid",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Ffraid",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.bridget",
+          "equivalence_set_id": "NFEQ.bridget.full-feminine",
+          "form_id": "NFF.bridget.cy.ffraid"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Bridget translation table lists Ffraid as the cy-language form; the form has no entry with a given-name sense in that language.",
+      "source_refs": [
+        "src_wiktionary_en_bridget_oldid_92302089"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_siarl",
+      "canonical_form": "Siarl",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Siarl",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.cy.siarl"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Siarl as a male given name equivalent to Charles.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811",
+        "src_wiktionary_en_siarl_oldid_91311565"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_cy_siarls",
+      "canonical_form": "Siarls",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Siarls",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "cy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.cy.siarls"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Welsh Siarls as a male given name equivalent to Charles.",
+      "source_refs": [
+        "src_wiktionary_en_charles_oldid_93477811",
+        "src_wiktionary_en_siarls_oldid_91311548"
       ],
       "review_state": "candidate"
     },
