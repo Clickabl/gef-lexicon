@@ -29,6 +29,34 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ca_timoteu",
+      "canonical_form": "Timoteu",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timoteu",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ca"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.ca.timoteu"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Catalan Timoteu as a borrowing from Latin Timotheus, from Ancient Greek Τῑμόθεος, and labels it a male given name from Ancient Greek.",
+      "source_refs": [
+        "src_wiktionary_en_timoteu_oldid_77763535",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

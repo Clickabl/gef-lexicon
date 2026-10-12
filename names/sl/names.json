@@ -33,6 +33,39 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sl_tim",
+      "canonical_form": "Tim",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tim",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.sl.tim"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_tim",
+          "relation_type": "derived_from",
+          "note": "From the target according to the pinned Slovene entry."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Slovene Tim as a male given name from English.",
+      "source_refs": [
+        "src_wiktionary_en_tim_oldid_90582551"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

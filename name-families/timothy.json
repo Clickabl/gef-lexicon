@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "family_id": "NF.timothy",
+  "family_key": "timothy-family",
+  "origin_languages": [
+    "grc"
+  ],
+  "origin_note": "Candidate historical family centered on Ancient Greek Τῑμόθεος (Timótheos) and its Latin, Romance, Germanic, Slavic and other descendants/adaptations listed by the pinned Wiktionary entries.",
+  "etymology_note": "Pinned Wiktionary revisions trace English Timothy through Middle French Timothée and Latin Tīmotheus to Ancient Greek Τῑμόθεος, which the entries analyze as τῑμάω ('to honour') + θεός ('god'). The Spanish, Catalan, Portuguese, Polish and Finnish entries derive their forms from Latin Tīmotheus (itself from the Greek name); the Ukrainian entry derives its form directly from Ancient Greek, the Armenian entry through Old Armenian and the Romanian entry through Old Church Slavonic. The German Tim/Timo entries also describe those forms as diminutives of Dietmar, a different name that is not part of this family. This is etymological history, not a promise that every modern bearer shares one literal 'name meaning'.",
+  "meaning_note": "Do not collapse local full-name equivalents, borrowed spellings, transliterations, or short/pet forms. Tim, Timo and similar forms are separate-set candidates, not substitutes for full-name forms. Character localization and user-name localization require their own policy/consent layer.",
+  "equivalence_sets": [
+    {
+      "equivalence_set_id": "NFEQ.timothy.full-masculine",
+      "role": "full_masculine",
+      "note": "Full masculine forms/equivalents only. Short and pet forms (Tim, Timo, Timmy) are intentionally kept in a separate equivalence set.",
+      "forms": [
+        {
+          "form_id": "NFF.timothy.en.timothy",
+          "text": "Timothy",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "source_form",
+          "usage": "unknown",
+          "name_id": "name_en_timothy",
+          "source_refs": [
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "English form listed by the pinned Timothy source; the family is centered on its Ancient Greek ancestor, not on the English spelling.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.de.timotheus",
+          "text": "Timotheus",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_de_timotheus",
+          "source_refs": [
+            "src_wiktionary_en_timotheus_oldid_90630702",
+            "src_wiktionary_en_timothy_oldid_92085159",
+            "src_wiktionary_en_tim_oldid_90582551"
+          ],
+          "note": "German name of the biblical Timothy per the pinned Timotheus entry, which lists Tim, Timm and Timo as related given names; the pinned Tim entry describes Tim as originally a diminutive of Timotheus. The pinned Timothy male-given-name table lists only Tim and Timo for German, so everyday given-name use of Timotheus itself is not attested by these sources.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.es.timoteo",
+          "text": "Timoteo",
+          "language_tag": "es",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_es_timoteo",
+          "source_refs": [
+            "src_wiktionary_en_timoteo_oldid_93487691",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.fr.timothee",
+          "text": "Timothée",
+          "language_tag": "fr",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_fr_timothee",
+          "source_refs": [
+            "src_wiktionary_en_timothee_oldid_87318736",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.it.timoteo",
+          "text": "Timoteo",
+          "language_tag": "it",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_it_timoteo",
+          "source_refs": [
+            "src_wiktionary_en_timoteo_oldid_93487691",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.pt.timoteo",
+          "text": "Timóteo",
+          "language_tag": "pt",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_pt_timoteo",
+          "source_refs": [
+            "src_wiktionary_en_timoteo_acute_oldid_91229883",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.el.timotheos",
+          "text": "Τιμόθεος",
+          "language_tag": "el",
+          "script": "Grek",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_el_timotheos",
+          "source_refs": [
+            "src_wiktionary_en_timothy_oldid_92085159",
+            "src_wiktionary_en_timotheos_oldid_90529958"
+          ],
+          "note": "Listed in the pinned Timothy male-given-name table. The pinned Τιμόθεος revision has only an Ancient Greek section (given name equivalent to Timothy) and names Modern Greek Τιμόθεος among its descendants; it has no Modern Greek section.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.ru.timofey",
+          "text": "Тимофей",
+          "language_tag": "ru",
+          "script": "Cyrl",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_ru_timofey",
+          "source_refs": [
+            "src_wiktionary_en_timofey_oldid_90100875",
+            "src_wiktionary_en_timothy_oldid_92085159",
+            "src_wiktionary_en_timotheos_oldid_90529958"
+          ],
+          "note": "Pinned entry transliterates the name as Timofey. Its listed Russian diminutives, endearing and patronymic forms are not part of this set.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.pl.tymoteusz",
+          "text": "Tymoteusz",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_pl_tymoteusz",
+          "source_refs": [
+            "src_wiktionary_en_tymoteusz_oldid_90549209",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.uk.tymofiy",
+          "text": "Тимофій",
+          "language_tag": "uk",
+          "script": "Cyrl",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_uk_tymofiy",
+          "source_refs": [
+            "src_wiktionary_en_tymofiy_oldid_93032668",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned entry transliterates the name as Tymofiy.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.ca.timoteu",
+          "text": "Timoteu",
+          "language_tag": "ca",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_ca_timoteu",
+          "source_refs": [
+            "src_wiktionary_en_timoteu_oldid_77763535",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "The pinned Catalan given-name sense says \"from Ancient Greek\" without an explicit Timothy equivalence; the equivalence rests on the same entry's biblical-character sense and the pinned Timothy male-given-name table.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.ro.timotei",
+          "text": "Timotei",
+          "language_tag": "ro",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_ro_timotei",
+          "source_refs": [
+            "src_wiktionary_en_timotei_oldid_93054558",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.hy.timoteos",
+          "text": "Տիմոթեոս",
+          "language_tag": "hy",
+          "script": "Armn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_hy_timoteos",
+          "source_refs": [
+            "src_wiktionary_en_timoteos_hy_oldid_89083568",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.nl.timotheus",
+          "text": "Timotheüs",
+          "language_tag": "nl",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_nl_timotheus",
+          "source_refs": [
+            "src_wiktionary_en_timo_oldid_92285854",
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "The pinned Dutch Timo entry names Timotheüs as the full form (equivalent to Timothy) and the pinned Dutch Tim entry lists it as a related term; the pinned Timothy translation table spells the Dutch form Timoteüs. Neither spelling had its own entry when retrieved; Timoteüs is kept as a variant spelling on the name record.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.fi.timoteus",
+          "text": "Timoteus",
+          "language_tag": "fi",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "rare",
+          "name_id": "name_fi_timoteus",
+          "source_refs": [
+            "src_wiktionary_en_timoteus_oldid_92191519",
+            "src_wiktionary_en_timo_oldid_92285854",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Wiktionary labels the given-name use rare. The pinned Timo entry says the short, vernacular form Timo is the standard Finnish equivalent of English Timothy; Timo is in the short-form set.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.sv.timoteus",
+          "text": "Timoteus",
+          "language_tag": "sv",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_sv_timoteus",
+          "source_refs": [
+            "src_wiktionary_en_timoteus_oldid_92191519",
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "The pinned entry gives Timoteus as the Swedish name of the biblical Timothy and as a male given name from Ancient Greek, and names Tim as the given-name form. The pinned Timothy translation tables list Timoteus for the biblical companion of Paul but Tim, not Timoteus, in the male-given-name table.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.id.timotius",
+          "text": "Timotius",
+          "language_tag": "id",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_id_timotius",
+          "source_refs": [
+            "src_wiktionary_en_timotius_oldid_87714366",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.timothy.short-masculine",
+      "role": "short_masculine",
+      "note": "Short, diminutive and borrowed short forms listed by the pinned Tim, Timo, Timmy and Timbo entries. They are related to Timothy but must never be substituted for full-name forms automatically.",
+      "forms": [
+        {
+          "form_id": "NFF.timothy.en.tim",
+          "text": "Tim",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_en_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned entry also lists Timon (rare) as a source of this diminutive; Timon is not part of this family.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.en.timmy",
+          "text": "Timmy",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "source_refs": [
+            "src_wiktionary_en_timmy_oldid_93480614"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.en.timbo",
+          "text": "Timbo",
+          "language_tag": "en",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "source_refs": [
+            "src_wiktionary_en_timbo_oldid_92130793"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.de.tim",
+          "text": "Tim",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_de_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timotheus_oldid_90630702",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned entry: originally a diminutive of Timotheus and Dietmar. Dietmar is a different name and is not part of this family; a German bearer's Tim may derive from either.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.de.timo",
+          "text": "Timo",
+          "language_tag": "de",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_de_timo",
+          "source_refs": [
+            "src_wiktionary_en_timo_oldid_92285854",
+            "src_wiktionary_en_timotheus_oldid_90630702",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned entry: diminutive of Timotheus and Dietmar. Dietmar is a different name and is not part of this family.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.nl.tim",
+          "text": "Tim",
+          "language_tag": "nl",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_nl_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551"
+          ],
+          "note": "Pinned Dutch entry: borrowed from English Tim.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.nl.timo",
+          "text": "Timo",
+          "language_tag": "nl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_nl_timo",
+          "source_refs": [
+            "src_wiktionary_en_timo_oldid_92285854"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.fi.timo",
+          "text": "Timo",
+          "language_tag": "fi",
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "unknown",
+          "name_id": "name_fi_timo",
+          "source_refs": [
+            "src_wiktionary_en_timo_oldid_92285854",
+            "src_wiktionary_en_timoteus_oldid_92191519",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned entry: short, vernacular form of Timoteus, perhaps in Eastern Finland via short forms of Russian Тимофей; also described there as the standard Finnish equivalent of English Timothy.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.sv.tim",
+          "text": "Tim",
+          "language_tag": "sv",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_sv_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned Swedish entry: borrowed from English.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.da.tim",
+          "text": "Tim",
+          "language_tag": "da",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_da_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551",
+            "src_wiktionary_en_timothy_oldid_92085159"
+          ],
+          "note": "Pinned Danish entry: borrowed from English and German.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.timothy.sl.tim",
+          "text": "Tim",
+          "language_tag": "sl",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_sl_tim",
+          "source_refs": [
+            "src_wiktionary_en_tim_oldid_90582551"
+          ],
+          "note": "Pinned Slovene entry: from English.",
+          "review_state": "candidate"
+        }
+      ]
+    }
+  ],
+  "localization_policy": {
+    "fallback_order": [
+      "reviewed_local_equivalent",
+      "reviewed_traditional_adaptation",
+      "reviewed_transliteration",
+      "preserve_entered_form"
+    ],
+    "never_cross_equivalence_sets_automatically": true,
+    "book_override_allowed": true,
+    "user_override_allowed": true
+  },
+  "source_refs": [
+    "src_wiktionary_en_timothy_oldid_92085159",
+    "src_wiktionary_en_timotheus_oldid_90630702",
+    "src_wiktionary_en_timotheos_oldid_90529958",
+    "src_wiktionary_en_tim_oldid_90582551",
+    "src_wiktionary_en_timo_oldid_92285854",
+    "src_wiktionary_en_timm_oldid_91053288",
+    "src_wiktionary_en_timmy_oldid_93480614",
+    "src_wiktionary_en_timbo_oldid_92130793",
+    "src_wiktionary_en_timoteo_oldid_93487691",
+    "src_wiktionary_en_timothee_oldid_87318736",
+    "src_wiktionary_en_timofey_oldid_90100875",
+    "src_wiktionary_en_timoteo_acute_oldid_91229883",
+    "src_wiktionary_en_tymoteusz_oldid_90549209",
+    "src_wiktionary_en_timoteu_oldid_77763535",
+    "src_wiktionary_en_timotei_oldid_93054558",
+    "src_wiktionary_en_timoteos_hy_oldid_89083568",
+    "src_wiktionary_en_tymofiy_oldid_93032668",
+    "src_wiktionary_en_timoteus_oldid_92191519",
+    "src_wiktionary_en_timotius_oldid_87714366"
+  ],
+  "review_state": "candidate"
+}

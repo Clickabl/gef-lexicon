@@ -34,6 +34,108 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_nl_timotheus",
+      "canonical_form": "Timotheüs",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotheüs",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "nl"
+        },
+        {
+          "text": "Timoteüs",
+          "status": "variant",
+          "script": "Latn",
+          "locale": "nl",
+          "note": "Spelling used for Dutch in the pinned Timothy translation table."
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.nl.timotheus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Dutch Timo entry names Timotheüs as the full form (equivalent to Timothy) of Timo; the pinned English Timothy translation table spells the Dutch form Timoteüs.",
+      "source_refs": [
+        "src_wiktionary_en_timo_oldid_92285854",
+        "src_wiktionary_en_tim_oldid_90582551",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_nl_tim",
+      "canonical_form": "Tim",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tim",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "nl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.nl.tim"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_tim",
+          "relation_type": "derived_from",
+          "note": "Borrowed from the target according to the pinned Dutch entry."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Dutch Tim as borrowed from English Tim.",
+      "source_refs": [
+        "src_wiktionary_en_tim_oldid_90582551"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_nl_timo",
+      "canonical_form": "Timo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "nl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.nl.timo"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_nl_timotheus",
+          "relation_type": "diminutive",
+          "note": "This name is a diminutive of the target; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Dutch Timo as a diminutive of Timotheüs (equivalent to Timothy).",
+      "source_refs": [
+        "src_wiktionary_en_timo_oldid_92285854"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

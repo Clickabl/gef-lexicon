@@ -61,6 +61,48 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_fr_timothee",
+      "canonical_form": "Timothée",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timothée",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fr"
+        },
+        {
+          "text": "Timothé",
+          "status": "variant",
+          "script": "Latn",
+          "locale": "fr",
+          "note": "Alternative form listed by the pinned Timothée entry; the Timothé entry defines it as an alternative spelling of Timothée."
+        },
+        {
+          "text": "Thimothée",
+          "status": "variant",
+          "script": "Latn",
+          "locale": "fr",
+          "note": "Alternative form listed by the pinned Timothée entry."
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.fr.timothee"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry labels French Timothée a male given name equivalent to Timothy; the pinned English Timothy entry derives English Timothy from Middle French Timothée.",
+      "source_refs": [
+        "src_wiktionary_en_timothee_oldid_87318736",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

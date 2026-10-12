@@ -34,6 +34,34 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ro_timotei",
+      "canonical_form": "Timotei",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timotei",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ro"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.ro.timotei"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry derives Romanian Timotei through Old Church Slavonic Тимоѳеи from Ancient Greek Τιμόθεος and labels it a male given name equivalent to Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_timotei_oldid_93054558",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

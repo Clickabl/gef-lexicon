@@ -34,6 +34,69 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sv_timoteus",
+      "canonical_form": "Timoteus",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timoteus",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.sv.timoteus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry gives Swedish Timoteus as the biblical Timothy (given-name form Tim) and labels it a male given name from Ancient Greek.",
+      "source_refs": [
+        "src_wiktionary_en_timoteus_oldid_92191519",
+        "src_wiktionary_en_tim_oldid_90582551",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sv_tim",
+      "canonical_form": "Tim",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tim",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.sv.tim"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_tim",
+          "relation_type": "derived_from",
+          "note": "Borrowed from the target according to the pinned Swedish entry."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Swedish Tim as a male given name borrowed from English.",
+      "source_refs": [
+        "src_wiktionary_en_tim_oldid_90582551",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

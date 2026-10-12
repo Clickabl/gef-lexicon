@@ -62,6 +62,34 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_pl_tymoteusz",
+      "canonical_form": "Tymoteusz",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tymoteusz",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "pl"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.pl.tymoteusz"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Polish Tymoteusz as a learned borrowing from Latin Tīmotheus, from Ancient Greek, and labels it a male given name equivalent to Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_tymoteusz_oldid_90549209",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

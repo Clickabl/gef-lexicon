@@ -39,6 +39,35 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_ru_timofey",
+      "canonical_form": "Тимофей",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Тимофей",
+          "status": "canonical",
+          "script": "Cyrl",
+          "locale": "ru"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.ru.timofey"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry labels Russian Тимофей a male given name (Timofey) equivalent to Timothy; the pinned Ancient Greek Τιμόθεος entry lists it among its borrowed descendants.",
+      "source_refs": [
+        "src_wiktionary_en_timofey_oldid_90100875",
+        "src_wiktionary_en_timothy_oldid_92085159",
+        "src_wiktionary_en_timotheos_oldid_90529958"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

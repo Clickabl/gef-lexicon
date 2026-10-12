@@ -30,6 +30,70 @@
         "src_work_gef_intro"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_fi_timoteus",
+      "canonical_form": "Timoteus",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timoteus",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fi"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.fi.timoteus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry derives Finnish Timoteus from Latin Tīmotheus, from Ancient Greek Τῑμόθεος, and labels its given-name use rare.",
+      "source_refs": [
+        "src_wiktionary_en_timoteus_oldid_92191519",
+        "src_wiktionary_en_timo_oldid_92285854",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_fi_timo",
+      "canonical_form": "Timo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fi"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.fi.timo"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_fi_timoteus",
+          "relation_type": "derived_from",
+          "note": "The pinned entry describes this name as a short, vernacular form of the target."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry describes Finnish Timo as a short, vernacular form of Timoteus, perhaps in Eastern Finland via short forms of Russian Тимофей, and as the standard Finnish equivalent of English Timothy.",
+      "source_refs": [
+        "src_wiktionary_en_timo_oldid_92285854",
+        "src_wiktionary_en_timoteus_oldid_92191519",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }

@@ -322,6 +322,67 @@
         "src_wiktionary_en_margarete_oldid_86995562"
       ],
       "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_timothy",
+      "canonical_form": "Timothy",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Timothy",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.full-masculine",
+          "form_id": "NFF.timothy.en.timothy"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary revision derives English Timothy from Middle French Timothée, from Latin Tīmotheus, from Ancient Greek Τῑμόθεος, which it analyzes as τῑμάω ('to honour') + θεός ('god').",
+      "source_refs": [
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_en_tim",
+      "canonical_form": "Tim",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Tim",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.timothy",
+          "equivalence_set_id": "NFEQ.timothy.short-masculine",
+          "form_id": "NFF.timothy.en.tim"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_en_timothy",
+          "relation_type": "diminutive",
+          "note": "This name is a diminutive of the target; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned Wiktionary entry labels English Tim a male given name that is a diminutive of Timothy (and, rarely, Timon).",
+      "source_refs": [
+        "src_wiktionary_en_tim_oldid_90582551",
+        "src_wiktionary_en_timothy_oldid_92085159"
+      ],
+      "review_state": "candidate"
     }
   ]
 }
