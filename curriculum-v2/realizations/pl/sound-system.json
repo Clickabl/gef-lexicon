@@ -1,0 +1,148 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.pl.sound_system",
+  "topic_id": "TOPIC.orientation.sound_system",
+  "language_tag": "pl",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {
+      "fact_id": "sounds.consonants",
+      "fact_kind": "term",
+      "value": ["p", "b", "t", "d", "k", "ɡ", "f", "v", "s", "z", "ʂ", "ʐ", "ɕ", "ʑ", "x", "ts", "dz", "tʂ", "dʐ", "tɕ", "dʑ", "m", "n", "ɲ", "l", "r", "j", "w"],
+      "qualifiers": {"variety": "standard_polish"}
+    },
+    {
+      "fact_id": "sounds.vowels",
+      "fact_kind": "term",
+      "value": ["i", "ɨ", "ɛ", "a", "ɔ", "u", "ɛ̃", "ɔ̃"],
+      "qualifiers": {"variety": "standard_polish"}
+    },
+    {
+      "fact_id": "sounds.tricky.nasal",
+      "fact_kind": "term",
+      "value": "mąka",
+      "qualifiers": {"ipa": "ɔ̃", "spelling": "ą", "word_ipa": "ˈmɔ̃ka", "note_id": "pl_nasal_vowels"}
+    },
+    {
+      "fact_id": "sounds.tricky.l_stroke",
+      "fact_kind": "term",
+      "value": "łopata",
+      "qualifiers": {"ipa": "w", "spelling": "ł", "word_ipa": "wɔˈpata", "note_id": "pl_l_stroke"}
+    },
+    {
+      "fact_id": "sounds.tricky.w",
+      "fact_kind": "term",
+      "value": "woda",
+      "qualifiers": {"ipa": "v", "spelling": "w", "word_ipa": "ˈvɔda", "note_id": "pl_w"}
+    },
+    {
+      "fact_id": "sounds.tricky.c",
+      "fact_kind": "term",
+      "value": "cebula",
+      "qualifiers": {"ipa": "ts", "spelling": "c", "word_ipa": "tsɛˈbula", "note_id": "pl_c"}
+    },
+    {
+      "fact_id": "sounds.tricky.j",
+      "fact_kind": "term",
+      "value": "jajko",
+      "qualifiers": {"ipa": "j", "spelling": "j", "word_ipa": "ˈjajkɔ", "note_id": "pl_j"}
+    },
+    {
+      "fact_id": "sounds.tricky.sz",
+      "fact_kind": "term",
+      "value": "szafa",
+      "qualifiers": {"ipa": "ʂ", "spelling": "sz", "word_ipa": "ˈʂafa", "note_id": "pl_sz"}
+    },
+    {
+      "fact_id": "sounds.tricky.rz",
+      "fact_kind": "term",
+      "value": "rzeka",
+      "qualifiers": {"ipa": "ʐ", "spelling": "rz", "word_ipa": "ˈʐɛka", "note_id": "pl_rz"}
+    },
+    {
+      "fact_id": "sounds.tricky.soft_s",
+      "fact_kind": "term",
+      "value": "ślimak",
+      "qualifiers": {"ipa": "ɕ", "spelling": "ś", "word_ipa": "ˈɕlimak", "note_id": "pl_soft_consonants"}
+    },
+    {
+      "fact_id": "sounds.tricky.ch",
+      "fact_kind": "term",
+      "value": "mucha",
+      "qualifiers": {"ipa": "x", "spelling": "ch", "word_ipa": "ˈmuxa", "note_id": "pl_ch"}
+    },
+    {
+      "fact_id": "sounds.tricky.y",
+      "fact_kind": "term",
+      "value": "dym",
+      "qualifiers": {"ipa": "ɨ", "spelling": "y", "word_ipa": "dɨm", "note_id": "pl_y_vowel"}
+    },
+    {
+      "fact_id": "sounds.tricky.o_kreska",
+      "fact_kind": "term",
+      "value": "góra",
+      "qualifiers": {"ipa": "u", "spelling": "ó", "word_ipa": "ˈɡura", "note_id": "pl_o_kreska"}
+    },
+    {
+      "fact_id": "sounds.tricky.cluster",
+      "fact_kind": "term",
+      "value": "ptak",
+      "qualifiers": {"ipa": "pt", "spelling": "pt", "word_ipa": "ptak", "note_id": "pl_clusters"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.a",
+      "fact_kind": "term",
+      "value": "kat",
+      "qualifiers": {"ipa": "kat", "pair": 1, "note_id": "pl_nasal_vowels"}
+    },
+    {
+      "fact_id": "sounds.contrast.1.b",
+      "fact_kind": "term",
+      "value": "kąt",
+      "qualifiers": {"ipa": "kɔ̃t", "pair": 1, "note_id": "pl_nasal_vowels"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.a",
+      "fact_kind": "term",
+      "value": "stal",
+      "qualifiers": {"ipa": "stal", "pair": 2, "note_id": "pl_l_stroke"}
+    },
+    {
+      "fact_id": "sounds.contrast.2.b",
+      "fact_kind": "term",
+      "value": "stał",
+      "qualifiers": {"ipa": "staw", "pair": 2, "note_id": "pl_l_stroke"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.a",
+      "fact_kind": "term",
+      "value": "kasa",
+      "qualifiers": {"ipa": "ˈkasa", "pair": 3, "note_id": "pl_sz"}
+    },
+    {
+      "fact_id": "sounds.contrast.3.b",
+      "fact_kind": "term",
+      "value": "kasza",
+      "qualifiers": {"ipa": "ˈkaʂa", "pair": 3, "note_id": "pl_sz"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.a",
+      "fact_kind": "term",
+      "value": "był",
+      "qualifiers": {"ipa": "bɨw", "pair": 4, "note_id": "pl_y_vowel"}
+    },
+    {
+      "fact_id": "sounds.contrast.4.b",
+      "fact_kind": "term",
+      "value": "bił",
+      "qualifiers": {"ipa": "biw", "pair": 4, "note_id": "pl_y_vowel"}
+    },
+    {"fact_id": "tones.system", "fact_kind": "category", "value": "none"},
+    {"fact_id": "stress.pattern", "fact_kind": "category", "value": "mostly_penultimate"},
+    {"fact_id": "spelling.predictability", "fact_kind": "category", "value": "high"}
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true, "listening": true},
+  "review_state": "candidate",
+  "version": 1
+}

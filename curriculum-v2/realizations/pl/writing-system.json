@@ -1,0 +1,257 @@
+{
+  "schema_version": 2,
+  "realization_id": "REAL.pl.writing_system",
+  "topic_id": "TOPIC.orientation.writing_system",
+  "language_tag": "pl",
+  "slots_version": 2,
+  "completeness": "complete",
+  "facts": [
+    {"fact_id": "writing.layers", "fact_kind": "term", "value": ["latin"]},
+    {"fact_id": "writing.latin.kind", "fact_kind": "category", "value": "alphabet"},
+    {"fact_id": "writing.latin.script", "fact_kind": "category", "value": "Latn"},
+    {"fact_id": "writing.latin.role", "fact_kind": "category", "value": "primary"},
+    {"fact_id": "writing.latin.direction", "fact_kind": "category", "value": "ltr"},
+    {"fact_id": "writing.latin.has_case", "fact_kind": "boolean", "value": true},
+    {"fact_id": "writing.latin.joined", "fact_kind": "boolean", "value": false},
+    {"fact_id": "writing.latin.vowels", "fact_kind": "category", "value": "all_written"},
+    {
+      "fact_id": "writing.latin.symbols",
+      "fact_kind": "term",
+      "value": ["a", "ą", "b", "c", "ć", "d", "e", "ę", "f", "g", "h", "i", "j", "k", "l", "ł", "m", "n", "ń", "o", "ó", "p", "r", "s", "ś", "t", "u", "w", "y", "z", "ź", "ż"]
+    },
+    {"fact_id": "writing.latin.marked", "fact_kind": "term", "value": []},
+    {"fact_id": "writing.latin.punctuation", "fact_kind": "term", "value": ["„"]},
+    {"fact_id": "writing.latin.group.1", "fact_kind": "term", "value": ["a", "m", "t", "k"]},
+    {"fact_id": "writing.latin.group.2", "fact_kind": "term", "value": ["o", "e", "i", "u"]},
+    {"fact_id": "writing.latin.group.3", "fact_kind": "term", "value": ["b", "d", "p", "f", "g"]},
+    {"fact_id": "writing.latin.group.4", "fact_kind": "term", "value": ["l", "n", "s", "z", "r"]},
+    {"fact_id": "writing.latin.group.5", "fact_kind": "term", "value": ["c", "h", "j", "w", "y"]},
+    {"fact_id": "writing.latin.group.6", "fact_kind": "term", "value": ["ó", "ł", "ą", "ę"]},
+    {"fact_id": "writing.latin.group.7", "fact_kind": "term", "value": ["ś", "ć", "ź", "ń", "ż"]},
+    {
+      "fact_id": "writing.latin.example.a",
+      "fact_kind": "term",
+      "value": "ananas",
+      "qualifiers": {"ipa": "aˈnanas", "highlight": "a", "sound": "a", "name": "a"}
+    },
+    {
+      "fact_id": "writing.latin.example.a_ogonek",
+      "fact_kind": "term",
+      "value": "mąka",
+      "qualifiers": {"ipa": "ˈmɔ̃ka", "highlight": "ą", "sound": "ɔ̃", "name": "a z ogonkiem", "looks_like": "a"}
+    },
+    {
+      "fact_id": "writing.latin.example.b",
+      "fact_kind": "term",
+      "value": "buty",
+      "qualifiers": {"ipa": "ˈbutɨ", "highlight": "b", "sound": "b", "name": "be"}
+    },
+    {
+      "fact_id": "writing.latin.example.c",
+      "fact_kind": "term",
+      "value": "cebula",
+      "qualifiers": {"ipa": "tsɛˈbula", "highlight": "c", "sound": "ts", "name": "ce"}
+    },
+    {
+      "fact_id": "writing.latin.example.c_acute",
+      "fact_kind": "term",
+      "value": "ćma",
+      "qualifiers": {"ipa": "tɕma", "highlight": "ć", "sound": "tɕ", "name": "cie", "looks_like": "c"}
+    },
+    {
+      "fact_id": "writing.latin.example.d",
+      "fact_kind": "term",
+      "value": "dom",
+      "qualifiers": {"ipa": "dɔm", "highlight": "d", "sound": "d", "name": "de"}
+    },
+    {
+      "fact_id": "writing.latin.example.e",
+      "fact_kind": "term",
+      "value": "ser",
+      "qualifiers": {"ipa": "sɛr", "highlight": "e", "sound": "ɛ", "name": "e"}
+    },
+    {
+      "fact_id": "writing.latin.example.e_ogonek",
+      "fact_kind": "term",
+      "value": "ręka",
+      "qualifiers": {"ipa": "ˈrɛ̃ka", "highlight": "ę", "sound": "ɛ̃", "name": "e z ogonkiem", "looks_like": "e"}
+    },
+    {
+      "fact_id": "writing.latin.example.f",
+      "fact_kind": "term",
+      "value": "fala",
+      "qualifiers": {"ipa": "ˈfala", "highlight": "f", "sound": "f", "name": "ef"}
+    },
+    {
+      "fact_id": "writing.latin.example.g",
+      "fact_kind": "term",
+      "value": "garnek",
+      "qualifiers": {"ipa": "ˈɡarnɛk", "highlight": "g", "sound": "ɡ", "name": "gie"}
+    },
+    {
+      "fact_id": "writing.latin.example.h",
+      "fact_kind": "term",
+      "value": "herbata",
+      "qualifiers": {"ipa": "xɛrˈbata", "highlight": "h", "sound": "x", "name": "ha"}
+    },
+    {
+      "fact_id": "writing.latin.example.i",
+      "fact_kind": "term",
+      "value": "igła",
+      "qualifiers": {"ipa": "ˈiɡwa", "highlight": "i", "sound": "i", "name": "i"}
+    },
+    {
+      "fact_id": "writing.latin.example.j",
+      "fact_kind": "term",
+      "value": "jajko",
+      "qualifiers": {"ipa": "ˈjajkɔ", "highlight": "j", "sound": "j", "name": "jot"}
+    },
+    {
+      "fact_id": "writing.latin.example.k",
+      "fact_kind": "term",
+      "value": "kot",
+      "qualifiers": {"ipa": "kɔt", "highlight": "k", "sound": "k", "name": "ka"}
+    },
+    {
+      "fact_id": "writing.latin.example.l",
+      "fact_kind": "term",
+      "value": "lampa",
+      "qualifiers": {"ipa": "ˈlampa", "highlight": "l", "sound": "l", "name": "el"}
+    },
+    {
+      "fact_id": "writing.latin.example.l_stroke",
+      "fact_kind": "term",
+      "value": "łopata",
+      "qualifiers": {"ipa": "wɔˈpata", "highlight": "ł", "sound": "w", "name": "eł", "looks_like": "l"}
+    },
+    {
+      "fact_id": "writing.latin.example.m",
+      "fact_kind": "term",
+      "value": "mama",
+      "qualifiers": {"ipa": "ˈmama", "highlight": "m", "sound": "m", "name": "em"}
+    },
+    {
+      "fact_id": "writing.latin.example.n",
+      "fact_kind": "term",
+      "value": "noga",
+      "qualifiers": {"ipa": "ˈnɔɡa", "highlight": "n", "sound": "n", "name": "en"}
+    },
+    {
+      "fact_id": "writing.latin.example.n_acute",
+      "fact_kind": "term",
+      "value": "koń",
+      "qualifiers": {"ipa": "kɔɲ", "highlight": "ń", "sound": "ɲ", "name": "eń", "looks_like": "n"}
+    },
+    {
+      "fact_id": "writing.latin.example.o",
+      "fact_kind": "term",
+      "value": "oko",
+      "qualifiers": {"ipa": "ˈɔkɔ", "highlight": "o", "sound": "ɔ", "name": "o"}
+    },
+    {
+      "fact_id": "writing.latin.example.o_acute",
+      "fact_kind": "term",
+      "value": "góra",
+      "qualifiers": {"ipa": "ˈɡura", "highlight": "ó", "sound": "u", "name": "o z kreską", "looks_like": "o"}
+    },
+    {
+      "fact_id": "writing.latin.example.p",
+      "fact_kind": "term",
+      "value": "pole",
+      "qualifiers": {"ipa": "ˈpɔlɛ", "highlight": "p", "sound": "p", "name": "pe"}
+    },
+    {
+      "fact_id": "writing.latin.example.r",
+      "fact_kind": "term",
+      "value": "ryba",
+      "qualifiers": {"ipa": "ˈrɨba", "highlight": "r", "sound": "r", "name": "er"}
+    },
+    {
+      "fact_id": "writing.latin.example.s",
+      "fact_kind": "term",
+      "value": "sok",
+      "qualifiers": {"ipa": "sɔk", "highlight": "s", "sound": "s", "name": "es"}
+    },
+    {
+      "fact_id": "writing.latin.example.s_acute",
+      "fact_kind": "term",
+      "value": "ślimak",
+      "qualifiers": {"ipa": "ˈɕlimak", "highlight": "ś", "sound": "ɕ", "name": "eś", "looks_like": "s"}
+    },
+    {
+      "fact_id": "writing.latin.example.t",
+      "fact_kind": "term",
+      "value": "tort",
+      "qualifiers": {"ipa": "tɔrt", "highlight": "t", "sound": "t", "name": "te"}
+    },
+    {
+      "fact_id": "writing.latin.example.u",
+      "fact_kind": "term",
+      "value": "ulica",
+      "qualifiers": {"ipa": "uˈlitsa", "highlight": "u", "sound": "u", "name": "u"}
+    },
+    {
+      "fact_id": "writing.latin.example.w",
+      "fact_kind": "term",
+      "value": "woda",
+      "qualifiers": {"ipa": "ˈvɔda", "highlight": "w", "sound": "v", "name": "wu"}
+    },
+    {
+      "fact_id": "writing.latin.example.y",
+      "fact_kind": "term",
+      "value": "syn",
+      "qualifiers": {"ipa": "sɨn", "highlight": "y", "sound": "ɨ", "name": "igrek"}
+    },
+    {
+      "fact_id": "writing.latin.example.z",
+      "fact_kind": "term",
+      "value": "zupa",
+      "qualifiers": {"ipa": "ˈzupa", "highlight": "z", "sound": "z", "name": "zet"}
+    },
+    {
+      "fact_id": "writing.latin.example.z_acute",
+      "fact_kind": "term",
+      "value": "źle",
+      "qualifiers": {"ipa": "ʑlɛ", "highlight": "ź", "sound": "ʑ", "name": "ziet", "looks_like": "z"}
+    },
+    {
+      "fact_id": "writing.latin.example.z_dot",
+      "fact_kind": "term",
+      "value": "żaba",
+      "qualifiers": {"ipa": "ˈʐaba", "highlight": "ż", "sound": "ʐ", "name": "żet", "looks_like": "z"}
+    },
+    {
+      "fact_id": "writing.latin.example.low_quote",
+      "fact_kind": "term",
+      "value": "„Cześć!”",
+      "qualifiers": {"ipa": "tʂɛɕtɕ", "highlight": "„", "name": "cudzysłów"}
+    },
+    {
+      "fact_id": "writing.latin.mark.ogonek",
+      "fact_kind": "term",
+      "value": "ą",
+      "qualifiers": {"mark_id": "ogonek", "role": "nasalization", "example": "mąka", "example_ipa": "ˈmɔ̃ka"}
+    },
+    {
+      "fact_id": "writing.latin.mark.acute",
+      "fact_kind": "term",
+      "value": "ś",
+      "qualifiers": {"mark_id": "acute", "role": "sound_change", "example": "ślimak", "example_ipa": "ˈɕlimak"}
+    },
+    {
+      "fact_id": "writing.latin.mark.stroke",
+      "fact_kind": "term",
+      "value": "ł",
+      "qualifiers": {"mark_id": "stroke", "role": "sound_change", "example": "łopata", "example_ipa": "wɔˈpata"}
+    },
+    {
+      "fact_id": "writing.latin.mark.dot_above",
+      "fact_kind": "term",
+      "value": "ż",
+      "qualifiers": {"mark_id": "dot_above", "role": "sound_change", "example": "żaba", "example_ipa": "ˈʐaba"}
+    }
+  ],
+  "capabilities": {"explanation": true, "reviewed_examples": true, "recognition_practice": true},
+  "review_state": "candidate",
+  "version": 1
+}

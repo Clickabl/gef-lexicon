@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "topic_id": "TOPIC.orientation.shared_words",
+  "from_language_tag": "en",
+  "to_language_tag": "pl",
+  "interface_language_tag": "en",
+  "notes": [
+    {
+      "note_id": "borrowed_from_polish",
+      "kind": "helpful_transfer",
+      "text": "English and Polish are distant cousins, so look-alike words are rare. The first words here are English words that came from Polish, mostly food, dance and money. Some came by a longer road: babka by way of Yiddish, mazurka by way of German and Russian, and horde by way of French and German (Polish took it from Russian, which took it from a Turkic language). The last ones are old shared words (brother, sister, mother, new, two, three, water, mouse, nose, wolf): true relatives from a common ancestor, not borrowings, and thousands of years have changed how they sound.",
+      "pairs": [
+        {"from": "pierogi", "to": "pierogi", "to_ipa": "pjɛˈrɔɡi", "to_meaning": "filled dumplings"},
+        {"from": "kielbasa", "to": "kiełbasa", "to_ipa": "kjɛwˈbasa", "to_meaning": "sausage"},
+        {"from": "zloty", "to": "złoty", "to_ipa": "ˈzwɔtɨ", "to_meaning": "golden; the Polish currency"},
+        {"from": "babka", "to": "babka", "to_ipa": "ˈbapka", "to_meaning": "grandmother; also a yeast cake"},
+        {"from": "paczki", "to": "pączki", "to_ipa": "ˈpɔ̃tʂki", "to_meaning": "filled doughnuts"},
+        {"from": "mazurka", "to": "mazurek", "to_ipa": "maˈzurɛk", "to_meaning": "a Polish folk dance"},
+        {"from": "horde", "to": "horda", "to_ipa": "ˈxɔrda", "to_meaning": "a horde; also a gang"},
+        {"from": "bigos", "to": "bigos", "to_ipa": "ˈbiɡɔs", "to_meaning": "hunter's stew"},
+        {"from": "brother", "to": "brat", "to_ipa": "brat"},
+        {"from": "sister", "to": "siostra", "to_ipa": "ˈɕɔstra"},
+        {"from": "mother", "to": "matka", "to_ipa": "ˈmatka"},
+        {"from": "new", "to": "nowy", "to_ipa": "ˈnɔvɨ"},
+        {"from": "two", "to": "dwa", "to_ipa": "dva"},
+        {"from": "three", "to": "trzy", "to_ipa": "tʂɨ"},
+        {"from": "water", "to": "woda", "to_ipa": "ˈvɔda"},
+        {"from": "mouse", "to": "mysz", "to_ipa": "mɨʂ"},
+        {"from": "nose", "to": "nos", "to_ipa": "nɔs"},
+        {"from": "wolf", "to": "wilk", "to_ipa": "vilk"}
+      ]
+    },
+    {
+      "note_id": "false_friends",
+      "kind": "false_friend",
+      "text": "A few Polish words look like English ones but mean something different. These are the ones that catch people out.",
+      "pairs": [
+        {"from": "pension", "to": "pensja", "to_ipa": "ˈpɛnsja", "to_meaning": "salary, wages"},
+        {"from": "actual", "to": "aktualny", "to_ipa": "akˈtualnɨ", "to_meaning": "current, up to date"},
+        {"from": "eventually", "to": "ewentualnie", "to_ipa": "ɛvɛntuˈalɲɛ", "to_meaning": "possibly, if need be"},
+        {"from": "sympathetic", "to": "sympatyczny", "to_ipa": "sɨmpaˈtɨtʂnɨ", "to_meaning": "nice, likeable"},
+        {"from": "data", "to": "data", "to_ipa": "ˈdata", "to_meaning": "date (on the calendar)"},
+        {"from": "fabric", "to": "fabryka", "to_ipa": "ˈfabrɨka", "to_meaning": "factory"},
+        {"from": "list", "to": "list", "to_ipa": "list", "to_meaning": "letter (a written message)"}
+      ]
+    }
+  ],
+  "review_state": "candidate",
+  "version": 1
+}

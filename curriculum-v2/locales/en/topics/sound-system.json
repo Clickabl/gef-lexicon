@@ -149,7 +149,19 @@
     "sound.hi_dental": "For त थ द ध, touch the tip of your tongue to the back of your upper teeth, not the ridge behind them. The sound is lighter and more precise than an English t or d.",
     "sound.hi_nasal_vowel": "A nasal vowel is said partly through the nose, as in French “bon”. The sign ँ shows it, and no separate n or m is said.",
     "sound.hi_flap": "ड़ and ढ़ are made by curling the tip of your tongue back and flicking it forward once, like a quick, hollow “r”. They never start a word.",
-    "sound.hi_schwa_deletion": "Every consonant letter carries a built-in “a”, but Hindi often leaves it out. सब is said “sab”, not “saba”, and लड़की is “ladkī”, not “ladakī”. The built-in “a” at the end of a word is almost always dropped."
+    "sound.hi_schwa_deletion": "Every consonant letter carries a built-in “a”, but Hindi often leaves it out. सब is said “sab”, not “saba”, and लड़की is “ladkī”, not “ladakī”. The built-in “a” at the end of a word is almost always dropped.",
+    "sound.pl_nasal_vowels": "ą and ę are nasal vowels: say “o” (ą) or “e” (ę) with some of the air coming out through your nose, like the French “bon” and “vin”. Before many consonants they come out as the vowel plus an n or m, so kąt sounds close to “kont”. A final ę is usually said as a plain “e”.",
+    "sound.pl_l_stroke": "Written ł, said like the English “w” of “water”, so łopata starts “wo-”. The plain l is a clear “l”, as in “leaf”.",
+    "sound.pl_w": "Written w, said like the English “v”: woda is “VO-da”. At the end of a word it turns into “f”, so krew (blood) is said “kref”.",
+    "sound.pl_c": "Written c, said “ts” as at the end of “cats”: cebula is “tseh-BOO-la”. It is never a “k” or an “s”.",
+    "sound.pl_j": "Written j, said like the English “y” of “yes”, never like the “j” of “judge”: Jan is said “Yahn”, and jajko starts with the same sound.",
+    "sound.pl_sz": "sz, cz, ż and rz are hushing sounds made with the tip of your tongue curled back a little. sz is like the “sh” of “shoe”, cz like the “ch” of “church”, and ż is like the “s” of “measure”. They sound deeper and heavier than the English ones.",
+    "sound.pl_rz": "rz is another way to write ż: both are said like the “s” of “measure”, so rzeka starts “ZHEH-”. After p, t, k or ch, rz is said without voice, like “sh”.",
+    "sound.pl_soft_consonants": "ś, ć, ź and ń are soft: the flat middle of your tongue is raised toward the roof of your mouth. ś is a soft “sh”, ć a soft “ch”, ź a soft “zh”, and ń is like the “ny” of “canyon”. They are not the same as sz, cz and ż. Before a vowel, an i does the same job: si is ś, ci is ć, zi is ź, ni is ń (siostra, ciasto, ziemia, nie).",
+    "sound.pl_ch": "ch is one sound, like the “ch” of Scottish “loch”, and h sounds exactly the same. Polish has two spellings for it, and you learn which one a word uses.",
+    "sound.pl_y_vowel": "Start to say “ee”, then pull your tongue back a little and keep your lips relaxed. It is a different vowel from i, and English does not have it.",
+    "sound.pl_o_kreska": "Written ó, said exactly like u (as in “moon”): góra is “GOO-ra”. The two spellings sound the same, and you learn which one a word uses.",
+    "sound.pl_clusters": "Polish words can start with groups of consonants that English never starts a word with, like pt-, mg- and zb-. Say each sound one after the other, with no vowel squeezed in between."
   },
   "glosses": {
     "es:sounds.tricky.trill": "dog",
@@ -379,8 +391,28 @@
     "hi:sounds.contrast.3.a": "father",
     "hi:sounds.contrast.3.b": "(he) drinks",
     "hi:sounds.contrast.4.a": "mother-in-law",
-    "hi:sounds.contrast.4.b": "breath"
+    "hi:sounds.contrast.4.b": "breath",
+    "pl:sounds.tricky.nasal": "flour",
+    "pl:sounds.tricky.l_stroke": "shovel",
+    "pl:sounds.tricky.w": "water",
+    "pl:sounds.tricky.c": "onion",
+    "pl:sounds.tricky.j": "egg",
+    "pl:sounds.tricky.sz": "wardrobe, cupboard",
+    "pl:sounds.tricky.rz": "river",
+    "pl:sounds.tricky.soft_s": "snail",
+    "pl:sounds.tricky.ch": "fly (the insect)",
+    "pl:sounds.tricky.y": "smoke",
+    "pl:sounds.tricky.o_kreska": "mountain",
+    "pl:sounds.tricky.cluster": "bird",
+    "pl:sounds.contrast.1.a": "executioner",
+    "pl:sounds.contrast.1.b": "corner, angle",
+    "pl:sounds.contrast.2.a": "steel",
+    "pl:sounds.contrast.2.b": "stood (he stood)",
+    "pl:sounds.contrast.3.a": "cash desk, till",
+    "pl:sounds.contrast.3.b": "groats, porridge",
+    "pl:sounds.contrast.4.a": "was (he was)",
+    "pl:sounds.contrast.4.b": "hit (he hit)"
   },
   "review_state": "candidate",
-  "version": 27
+  "version": 29
 }
