@@ -1,0 +1,11 @@
+# Authoring and ingesting language data (curriculum-v2)
+
+How the Tier 2 language data was produced, so the next language is a repeat, not a rediscovery.
+
+1. **Author.** Give an independent authoring agent `BRIEF.md` (a new language, all four topics) or `BRIEF-UPGRADE.md` (bring an existing language's writing data to `slots_version: 2`), plus the language tag and its specifics (script, groups, bridge words, grammar fits). Each agent writes its drop to `<drop>/<lang>/`: the four realization files, `locale-en.json` (English labels and glosses to add), `bridge-en-<lang>.json`, `NEEDS.md` (what a native reader must check).
+2. **Ingest.** `python3 curriculum-v2/authoring/ingest_drop.py <drop> <lang>...` writes the realizations (formatted by `lexfmt.py` to match the hand-formatted files), merges labels and glosses (never overwrites an existing one and reports conflicts), writes the `en -> <lang>` bridge and copies `NEEDS.md` to `review/<lang>.md`. Whatever files a drop lacks are skipped, so an upgrade drop can hold only `writing-system.json` and `locale-en.json`.
+3. **Validate.** `node scripts/validate-curriculum-v2.mjs` (the validator holds a `completeness: complete` language to every slot, a `slots_version: 2` language to every letter-data rule, and refuses U+2014 anywhere in the data).
+4. **Fix vocabulary.** An authoring agent that needs a value the registry lacks (a stress pattern, a word order, a mark role) reports it; add it to `slots/slots.json` and its label to the locale, then set the drop's value, as was done for `v2`, `mostly_initial`, `antepenultimate`, `homograph` and `indefinite_only`.
+5. **Compile in gef-expo.** `node scripts/compile-topic-runtime.mjs --topic TOPIC.orientation.<key> --out src/features/lessons/generated/<key>.topic.json` for `language_overview writing_system sound_system grammar_glance shared_words script_lesson`, then run `tests/unit/introScript.test.ts` (it builds every authored language's script lessons) and `pnpm verify`.
+
+Rules that held across all drops: nothing is claimed verified (`candidate`); a language's own layer id when it shares a script with another language whose lesson title would be wrong (Persian is `persian`, not `arabic`); no `U+2014`; punctuation examples need no `sound`; the app shows only the first note's text of a bridge, so all pairs go in one honest note.
