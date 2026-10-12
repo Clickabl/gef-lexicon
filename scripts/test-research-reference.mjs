@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
-import { compileResearchReference } from './compile-research-reference.mjs';
+import { compileResearchReference, encodeResearchReference } from './compile-research-reference.mjs';
 
 const schemas = Object.fromEntries([['names','name'],['families','name-family'],['sources','source']]
   .map(([key,file]) => [key,JSON.parse(readFileSync(new URL(`../schemas/${file}.schema.json`,import.meta.url)))]));
@@ -75,4 +75,13 @@ test('artifact and registry evidence changes alter the projection while source r
   const second=compileResearchReference(input);assert.notDeepEqual(alex(first).coverage,alex(second).coverage);
   assert.equal(second.lexicon_revision,input.lexiconRevision);
   assert.equal(second.registry_sha256,createHash('sha256').update(input.registryBytes).digest('hex'));
+});
+
+test('complete compact reference encoding preserves every record when pretty output exceeds transport budget',()=>{
+  const projection={references:Array.from({length:50000},(_,i)=>({kind:'name',stable_id:`name_en_fixture_${i}`,source_language_tag:'en',display_label:'Synthetic fixture name',coverage:[{language_tag:'en',status:'candidate',evidence_refs:[]}]}))};
+  const compact=encodeResearchReference(projection);
+  assert.ok(compact.length<20_000_000);
+  const decoded=JSON.parse(compact);assert.equal(decoded.references.length,50000);
+  assert.deepEqual(decoded.references,projection.references);
+  assert.throws(()=>encodeResearchReference({text:'x'.repeat(20_000_001)}),/server bound/);
 });

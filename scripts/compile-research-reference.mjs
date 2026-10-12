@@ -164,6 +164,14 @@ export function compileResearchReference({ lexiconRevision, registryRevision, re
 function git(repo, args) {
   return execFileSync('git', ['-C', repo, ...args], { maxBuffer: 8_000_000 });
 }
+export function encodeResearchReference(projection) {
+  // The transport bound applies to actual UTF-8 bytes. Pretty-printing doubled the real
+  // corpus above the server limit even though its complete compact projection was valid.
+  const bytes = Buffer.from(`${JSON.stringify(projection)}\n`);
+  assert.ok(bytes.length <= 20_000_000, 'Projection exceeds server bound');
+  return bytes;
+}
+
 function main() {
   const args = process.argv.slice(2);
   assert.ok(args.length % 2 === 0, 'Use --registry-repo PATH and --out PATH');
@@ -189,8 +197,7 @@ function main() {
       sources: schema('schemas/source.schema.json'),
     } });
   const output = resolve(options['--out'] ?? resolve(ROOT, 'dist/research/reference-v1.json'));
-  const bytes = Buffer.from(`${JSON.stringify(projection, null, 2)}\n`);
-  assert.ok(bytes.length <= 20_000_000, 'Formatted projection exceeds server bound');
+  const bytes = encodeResearchReference(projection);
   mkdirSync(dirname(output), { recursive: true });
   writeFileSync(output, bytes);
   console.log(JSON.stringify({ output, sha256: sha(bytes), lexicon_revision: lexiconRevision,
