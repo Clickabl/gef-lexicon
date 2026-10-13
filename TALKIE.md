@@ -360,3 +360,19 @@ source-only. Content temporal schema/semantic validation is the single shared
 authority. Exact planned files/contracts are in NAME_ENTITY_ARCHITECTURE.md.
 Initial revision1 is a compatible empty foundation, not completed migration;
 real source-evidenced population and cross-repository consumers remain required.
+
+
+## 2026-10-13 — source evidence and retired search identity
+
+Shared registry now admits all49 exact documentary citation rows under their
+existing Content src- IDs, alongside847 unchanged Lexicon source records.
+Every raw source row/path/hash/pointer is retained under source-only closed
+provenance. Public citation projection excludes private inspection/editorial/
+rights-research notes and exposes only actual supplied citation fields; missing
+URLs/licenses/dates stay missing. Retired aliases resolve the active same-kind
+entity through explicit redirects while preserving source/review identity.
+No source, creator or localized-label IDs were independently assigned.
+
+## 2026-10-13 — codex-entity-foundation — typed reusable relationship contract
+
+TODO-LEXICON-ENTITY-REGISTRY-20261013: root-approved evidence/review-bearing structured relations now extend the same source registry, not a parallel creator DB. Central Server journal allocates rel_UUID rows and supports independent upsert; controlled relationship kinds and redirect-aware target types are documented in NAME_ENTITY_ARCHITECTURE. No unsourced relationships are populated. Calendar/date/source references remain actual owning contracts. Public SQLite schema2 and relationship counts are explicit; package identity includes DB schema to preserve prior immutable artifacts. Server/App mirrors must consume this exact additive contract before population.

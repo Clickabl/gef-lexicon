@@ -461,3 +461,27 @@ writer pass meaningful local checks; complete source-evidenced catalog admission
 uses journal IDs; Content foreign keys and App profiles/search/calendar consumers
 resolve actual published projection; canonical parent remains open until those
 cross-repository acceptance checks pass.
+
+
+### Exact Content evidence admission
+
+Before creation, `scripts/admit-content-entity-sources.mjs` and
+`scripts/test-entity-source-admission.mjs` are implemented for the exact existing
+Content `works/*/sources.json` source rows. The operator preserves existing
+`src-` identities, actual file hashes/pointers and every supplied raw field
+under closed source-only provenance; no IDs or historical facts are invented.
+Source schema accepts existing `src_` and `src-` identifiers. Source type other
+is only the generic storage bucket; actual precise source_kind remains exact.
+Public citation projection exposes real supplied citation fields and excludes
+private inspection, rights research and editorial notes. No missing URL,
+license or source date is filled. `--check` proves admission is synchronized
+without writes. Full source refs must resolve before entity population.
+
+Retired same-kind source captions remain searchable only through a valid redirect
+to an admitted active entity, preserving actual matched_source_entity_id and
+matched_review_state. Label IDs/records are never automatically unioned or
+reassigned; rejected source remains excluded.
+
+### Typed source relationships
+
+The same canonical source registry supports optional independently reviewed `relationships` rows with centrally allocated `rel_` UUIDv4 identity. Closed kinds: birthplace/death_place target place/country/geographic_region; associated_country/citizenship target country; cultural_origin target country/geographic_region/tradition; language_of_work target language; literary_movement and occupation target the matching reusable kind; member_of target organization/collective_creator; attributed_tradition target tradition. Exact target IDs remain as supplied, with redirect-aware kind/existence checks. No nationality or origin is inferred. Every known/approximate row needs source_refs; approved evidence gates also apply. Optional period.start/end reuse the owning Content DateFact/lifespan validator; actual historical_context text retains its declared language or absence. All nested temporal source IDs resolve in the bibliography and all source calendar foreign keys resolve to calendar entities. Public DB includes normalized entity_relationships; manifest sqlite_schema_version2 and counts.relationships distinguish the schema without mutating prior immutable artifacts. No new implementation files are needed for this additive contract.

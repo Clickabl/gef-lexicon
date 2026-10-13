@@ -11359,6 +11359,1191 @@
         "pipeline": "name-pipeline-v1"
       },
       "note": "Retrieved 2026-10-12 from the English Wiktionary MediaWiki API (revision timestamp 2025-10-05T05:12:01Z) by scripts/name-pipeline and treated as candidate onomastic evidence. Supports the given-name sense(s) it lists in: Basque. Translation-table membership and eq=/dimof= parameters are not treated as approval or as automatic user-name localization."
+    },
+    {
+      "source_id": "src-perroud-roland-letters",
+      "source_type": "other",
+      "title": "Lettres de Madame Roland de 1780 à 1793",
+      "source_kind": "public_domain_documentary_edition_with_online_transcription",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/0",
+        "source_record": {
+          "source_id": "src-perroud-roland-letters",
+          "title": "Lettres de Madame Roland de 1780 à 1793",
+          "creator": "Claude Perroud, editor",
+          "publication": "Imprimerie nationale",
+          "date": "1900-1902",
+          "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Lettres/1788",
+          "source_kind": "public_domain_documentary_edition_with_online_transcription",
+          "notes": "Perroud states that this edition uses then-current orthography rather than preserving eighteenth-century spelling."
+        }
+      },
+      "creator": "Claude Perroud, editor",
+      "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Lettres/1788",
+      "source_publication": "Imprimerie nationale",
+      "source_date": "1900-1902"
+    },
+    {
+      "source_id": "src-bnf-madame-roland",
+      "source_type": "other",
+      "title": "Madame Roland, girondine et mémorialiste",
+      "source_kind": "institutional_biographical_reference",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/1",
+        "source_record": {
+          "source_id": "src-bnf-madame-roland",
+          "title": "Madame Roland, girondine et mémorialiste",
+          "institution": "Bibliothèque nationale de France",
+          "url": "https://essentiels.bnf.fr/fr/article/dfafcf75-8903-420b-8344-4f97df270803-madame-roland-girondine-et-memorialiste",
+          "source_kind": "institutional_biographical_reference"
+        }
+      },
+      "url": "https://essentiels.bnf.fr/fr/article/dfafcf75-8903-420b-8344-4f97df270803-madame-roland-girondine-et-memorialiste",
+      "institution": "Bibliothèque nationale de France"
+    },
+    {
+      "source_id": "src-larousse-bosc",
+      "source_type": "other",
+      "title": "Louis Augustin Guillaume Bosc d'Antic",
+      "source_kind": "biographical_reference",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/2",
+        "source_record": {
+          "source_id": "src-larousse-bosc",
+          "title": "Louis Augustin Guillaume Bosc d'Antic",
+          "institution": "Larousse",
+          "url": "https://www.larousse.fr/encyclopedie/personnage/Louis_Augustin_Guillaume_Bosc_dAntic/183782",
+          "source_kind": "biographical_reference"
+        }
+      },
+      "url": "https://www.larousse.fr/encyclopedie/personnage/Louis_Augustin_Guillaume_Bosc_dAntic/183782",
+      "institution": "Larousse"
+    },
+    {
+      "source_id": "src-bnf-jean-marie-roland",
+      "source_type": "other",
+      "title": "Roland de La Platière, Jean-Marie (1734-1793)",
+      "source_kind": "authority_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/3",
+        "source_record": {
+          "source_id": "src-bnf-jean-marie-roland",
+          "title": "Roland de La Platière, Jean-Marie (1734-1793)",
+          "institution": "Bibliothèque nationale de France",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb12163411b",
+          "source_kind": "authority_record"
+        }
+      },
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb12163411b",
+      "institution": "Bibliothèque nationale de France"
+    },
+    {
+      "source_id": "src-academie-carton-1740",
+      "source_type": "other",
+      "title": "CARTON, Dictionnaire de l’Académie française, 3e édition (1740)",
+      "source_kind": "historical_dictionary",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/4",
+        "source_record": {
+          "source_id": "src-academie-carton-1740",
+          "title": "CARTON, Dictionnaire de l’Académie française, 3e édition (1740)",
+          "institution": "Académie française",
+          "url": "https://www.dictionnaire-academie.fr/article/A3C0351",
+          "source_kind": "historical_dictionary"
+        }
+      },
+      "url": "https://www.dictionnaire-academie.fr/article/A3C0351",
+      "institution": "Académie française"
+    },
+    {
+      "source_id": "src-bnf-hail-1788",
+      "source_type": "other",
+      "title": "Avis aux cultivateurs dont les récoltes ont été ravagées par la grêle du 13 juillet 1788",
+      "source_kind": "1788_royal_print",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/5",
+        "source_record": {
+          "source_id": "src-bnf-hail-1788",
+          "title": "Avis aux cultivateurs dont les récoltes ont été ravagées par la grêle du 13 juillet 1788",
+          "creator": "Société royale d’agriculture; Antoine-Augustin Parmentier; André Thouin; Charles-Germain Bourgeois",
+          "publication": "Imprimerie royale, Paris",
+          "date": "1788",
+          "identifier": "FRBNF33253629 / ark:/12148/cb332536298",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb332536298",
+          "source_kind": "1788_royal_print",
+          "notes": "BnF records a 16-page royal publication produced after the 13 July hailstorm. Bourgeois’s letter excerpt occupies pp. 13–14. Exact text still requires scan acquisition/transcription."
+        }
+      },
+      "creator": "Société royale d’agriculture; Antoine-Augustin Parmentier; André Thouin; Charles-Germain Bourgeois",
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb332536298",
+      "identifier": "FRBNF33253629 / ark:/12148/cb332536298",
+      "source_publication": "Imprimerie royale, Paris",
+      "source_date": "1788"
+    },
+    {
+      "source_id": "src-mrf-barthelon-1788",
+      "source_type": "other",
+      "title": "1788 en Dauphiné: Les prémices de la Révolution française — dossier pédagogique",
+      "source_kind": "institutional_educational_transcription",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/6",
+        "source_record": {
+          "source_id": "src-mrf-barthelon-1788",
+          "title": "1788 en Dauphiné: Les prémices de la Révolution française — dossier pédagogique",
+          "institution": "Musée de la Révolution française / Département de l’Isère",
+          "url": "https://musees.isere.fr/sites/portail-musee-fr/files/inline-files/MRF-DossierPed-1788Dauphine_0.pdf",
+          "source_kind": "institutional_educational_transcription",
+          "notes": "Publishes a substantial excerpt of Jean-Joseph Barthelon's 7 June 1788 letter to François Albert, itself reported as published by A. Albert in Le Dauphiné in 1866. Use with an editor note about the transmission chain; exact autograph/1866 text remains a collation target.",
+          "inspection": "Museum PDF printed pages 14–15 inspected as screenshots on 2026-09-23. This verifies the displayed institutional excerpt and recipient attribution, not the autograph or the full 1866 publication."
+        }
+      },
+      "url": "https://musees.isere.fr/sites/portail-musee-fr/files/inline-files/MRF-DossierPed-1788Dauphine_0.pdf",
+      "institution": "Musée de la Révolution française / Département de l’Isère"
+    },
+    {
+      "source_id": "src-ccfr-grenoble-anon-1788",
+      "source_type": "other",
+      "title": "Lettre autographe anonyme relative à la Journée des Tuiles du 7 juin 1788",
+      "source_kind": "autograph_manuscript_catalog_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/7",
+        "source_record": {
+          "source_id": "src-ccfr-grenoble-anon-1788",
+          "title": "Lettre autographe anonyme relative à la Journée des Tuiles du 7 juin 1788",
+          "institution": "Bibliothèque municipale de Grenoble / CCFr",
+          "identifier": "N.3599 Rés.",
+          "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/004a1524489",
+          "source_kind": "autograph_manuscript_catalog_record",
+          "notes": "Anonymous 4-page contemporary letter relating the Day of the Tiles; high-priority manuscript/image acquisition and comparison witness."
+        }
+      },
+      "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/004a1524489",
+      "institution": "Bibliothèque municipale de Grenoble / CCFr",
+      "identifier": "N.3599 Rés."
+    },
+    {
+      "source_id": "src-leblanc-letters-1788",
+      "source_type": "other",
+      "title": "Les 3 lettres du sergent-major Leblanc — été 1788",
+      "source_kind": "modern_research_transcription_of_family_letters",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/8",
+        "source_record": {
+          "source_id": "src-leblanc-letters-1788",
+          "title": "Les 3 lettres du sergent-major Leblanc — été 1788",
+          "creator": "François Caussin with Bernard Dangréaux",
+          "date": "2021",
+          "url": "https://fr.readkong.com/page/les-3-lettres-du-sergent-major-leblanc-ete-1788-2739902",
+          "source_kind": "modern_research_transcription_of_family_letters",
+          "notes": "Research brochure transcribes three family-held 1788 letters. Use for internal research/draft with attribution; public reuse of the modern transcription needs review or independent transcription from family originals."
+        }
+      },
+      "creator": "François Caussin with Bernard Dangréaux",
+      "url": "https://fr.readkong.com/page/les-3-lettres-du-sergent-major-leblanc-ete-1788-2739902",
+      "source_date": "2021"
+    },
+    {
+      "source_id": "src-paris-musees-halles-necker-fan-ev127",
+      "source_type": "other",
+      "title": "Lettre des huit Notables de la Halle à Monsieur Necker, l'ami du peuple",
+      "source_kind": "contemporary_printed_fan_artifact",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/9",
+        "source_record": {
+          "source_id": "src-paris-musees-halles-necker-fan-ev127",
+          "title": "Lettre des huit Notables de la Halle à Monsieur Necker, l'ami du peuple",
+          "institution": "Musée Carnavalet / Paris Musées",
+          "date": "circa 1788",
+          "identifier": "EV127",
+          "url": "https://parismuseescollections.paris.fr/en/node/134953",
+          "source_kind": "contemporary_printed_fan_artifact",
+          "image_rights": "Paris Musées page exposes downloadable CC0 images; preserve per-image credit metadata when importing.",
+          "notes": "Fan with printed text on reverse and Necker imagery on front. Do not treat the fictionalized 'eight notables' voice as authenticated testimony from eight real market workers without evidence."
+        }
+      },
+      "url": "https://parismuseescollections.paris.fr/en/node/134953",
+      "institution": "Musée Carnavalet / Paris Musées",
+      "identifier": "EV127",
+      "source_date": "circa 1788"
+    },
+    {
+      "source_id": "src-cailly-notables-halle-1788",
+      "source_type": "other",
+      "title": "Considérations politiques des notables de la Halle sur les affaires présentes",
+      "source_kind": "satirical_political_print",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/10",
+        "source_record": {
+          "source_id": "src-cailly-notables-halle-1788",
+          "title": "Considérations politiques des notables de la Halle sur les affaires présentes",
+          "creator": "Cailly (attributed in Correspondance littéraire, Nov. 1788)",
+          "date": "1788-11",
+          "url": "https://fr.wikisource.org/wiki/Correspondance_litt%C3%A9raire%2C_philosophique_et_critique%2C_%C3%A9d._Garnier/Tome_15/1788",
+          "source_kind": "satirical_political_print",
+          "notes": "Contemporary literary correspondence attributes the work to Cailly. Treat the poissard market voice as satire/political print culture, not transparent oral testimony."
+        }
+      },
+      "creator": "Cailly (attributed in Correspondance littéraire, Nov. 1788)",
+      "url": "https://fr.wikisource.org/wiki/Correspondance_litt%C3%A9raire%2C_philosophique_et_critique%2C_%C3%A9d._Garnier/Tome_15/1788",
+      "source_date": "1788-11"
+    },
+    {
+      "source_id": "src-orleans-notables-halle-notes",
+      "source_type": "other",
+      "title": "Notes historiques, 1787–1789: Considérations politiques des notables de la Halle de Paris",
+      "source_kind": "archival_copy_of_contemporary_song",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/11",
+        "source_record": {
+          "source_id": "src-orleans-notables-halle-notes",
+          "title": "Notes historiques, 1787–1789: Considérations politiques des notables de la Halle de Paris",
+          "institution": "Archives d'Orléans Métropole",
+          "identifier": "AASuppl. 13",
+          "url": "https://archives.orleans-metropole.fr/image/16154/56860?download=1&format=pdf",
+          "source_kind": "archival_copy_of_contemporary_song",
+          "notes": "Archive inventory reproduces the song text and says it circulated widely in Paris and was sent profusely into the provinces after the second Assembly of Notables."
+        }
+      },
+      "url": "https://archives.orleans-metropole.fr/image/16154/56860?download=1&format=pdf",
+      "institution": "Archives d'Orléans Métropole",
+      "identifier": "AASuppl. 13"
+    },
+    {
+      "source_id": "src-leleu-observations-1788",
+      "source_type": "other",
+      "title": "Observations présentées par les sieurs Leleu au principal ministre",
+      "source_kind": "contemporary_economic_memorandum_via_19c_print",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/12",
+        "source_record": {
+          "source_id": "src-leleu-observations-1788",
+          "title": "Observations présentées par les sieurs Leleu au principal ministre",
+          "date": "1788-08-14",
+          "source_kind": "contemporary_economic_memorandum_via_19c_print",
+          "notes": "Summarizes wet sowing season, July hail, mediocre harvest, rising grain/flour prices and fear for the coming winter. Useful context witness; locate original/early edition before production."
+        }
+      },
+      "source_date": "1788-08-14"
+    },
+    {
+      "source_id": "src-ad28-sours-1788",
+      "source_type": "other",
+      "title": "Registre paroissial de Sours, 1765–1791",
+      "source_kind": "1788_parish_register_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/13",
+        "source_record": {
+          "source_id": "src-ad28-sours-1788",
+          "title": "Registre paroissial de Sours, 1765–1791",
+          "institution": "Archives départementales d’Eure-et-Loir",
+          "identifier": "3 E 380/006, vues 313–314",
+          "url": "https://archives28.fr/ark:66007/s00530320679d4be/5303372ef1a6c.fiche=arko_fiche_621f306aabb9e.moteur=arko_default_6241bc24d7427",
+          "source_kind": "1788_parish_register_manuscript",
+          "notes": "Contemporary parish-register account signed Vaugeois, vicar of Sours. Secondary transcriptions identify view 313 for the storm narrative and view 314 for burials of Denis Millocheau, 11, and Pierre Colas, 64."
+        }
+      },
+      "url": "https://archives28.fr/ark:66007/s00530320679d4be/5303372ef1a6c.fiche=arko_fiche_621f306aabb9e.moteur=arko_default_6241bc24d7427",
+      "institution": "Archives départementales d’Eure-et-Loir",
+      "identifier": "3 E 380/006, vues 313–314"
+    },
+    {
+      "source_id": "src-bnf-hardy",
+      "source_type": "other",
+      "title": "Mes loisirs ou Journal d'événemens tels qu'ils parviennent à ma connoissance — manuscript",
+      "source_kind": "autograph_journal_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/14",
+        "source_record": {
+          "source_id": "src-bnf-hardy",
+          "title": "Mes loisirs ou Journal d'événemens tels qu'ils parviennent à ma connoissance — manuscript",
+          "creator": "Siméon-Prosper Hardy",
+          "institution": "Bibliothèque nationale de France",
+          "identifier": "ms. français 6687",
+          "source_kind": "autograph_journal_manuscript",
+          "notes": "Final Hardy manuscript volume covering 21 June 1788–14 October 1789; target witness for Gef transcription."
+        }
+      },
+      "creator": "Siméon-Prosper Hardy",
+      "institution": "Bibliothèque nationale de France",
+      "identifier": "ms. français 6687"
+    },
+    {
+      "source_id": "src-hardy-volume-x-locator",
+      "source_type": "other",
+      "title": "Mes loisirs, Volume X: 1788–1789",
+      "source_kind": "modern_scholarly_locator",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/15",
+        "source_record": {
+          "source_id": "src-hardy-volume-x-locator",
+          "title": "Mes loisirs, Volume X: 1788–1789",
+          "creator": "Siméon-Prosper Hardy; modern scholarly editors",
+          "publication": "Hermann",
+          "date": "2025",
+          "source_kind": "modern_scholarly_locator",
+          "notes": "Use to locate/check entries, not as reusable canonical transcription without permission."
+        }
+      },
+      "creator": "Siméon-Prosper Hardy; modern scholarly editors",
+      "source_publication": "Hermann",
+      "source_date": "2025"
+    },
+    {
+      "source_id": "src-clery-register-1789",
+      "source_type": "other",
+      "title": "Registre paroissial de Notre-Dame de Cléry",
+      "source_kind": "parish_register_retrospective_annual_note",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/16",
+        "source_record": {
+          "source_id": "src-clery-register-1789",
+          "title": "Registre paroissial de Notre-Dame de Cléry",
+          "creator": "Bernard, chanoine-curé",
+          "institution": "Archives départementales du Loiret",
+          "date": "1789-02-27",
+          "source_kind": "parish_register_retrospective_annual_note",
+          "notes": "Contemporary-era parish note written 27 Feb 1789 summarizing July 1788 hail and the Dec 1788–Jan 1789 freeze; useful winter candidate, but not written on the day of the hail."
+        }
+      },
+      "creator": "Bernard, chanoine-curé",
+      "institution": "Archives départementales du Loiret",
+      "source_date": "1789-02-27"
+    },
+    {
+      "source_id": "src-hardy-commons-pd-scan",
+      "source_type": "other",
+      "title": "Mes loisirs, volume 8 — scan of BnF Français 6687",
+      "source_kind": "public_domain_mechanical_scan_of_autograph_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/17",
+        "source_record": {
+          "source_id": "src-hardy-commons-pd-scan",
+          "title": "Mes loisirs, volume 8 — scan of BnF Français 6687",
+          "creator": "Siméon-Prosper Hardy",
+          "institution": "Wikimedia Commons / source scan from Gallica, Bibliothèque nationale de France",
+          "date": "1788-1789",
+          "identifier": "BnF Français 6687 / Gallica btv1b90607345",
+          "url": "https://commons.wikimedia.org/wiki/File:Mes_loisirs,_volume_8.pdf",
+          "source_kind": "public_domain_mechanical_scan_of_autograph_manuscript",
+          "rights_note": "Commons identifies the 519-page scan as public-domain mechanical reproduction / Public Domain Mark. This gives Gef a practical reusable facsimile path independent of the modern 2025 edition."
+        }
+      },
+      "creator": "Siméon-Prosper Hardy",
+      "url": "https://commons.wikimedia.org/wiki/File:Mes_loisirs,_volume_8.pdf",
+      "institution": "Wikimedia Commons / source scan from Gallica, Bibliothèque nationale de France",
+      "identifier": "BnF Français 6687 / Gallica btv1b90607345",
+      "source_date": "1788-1789"
+    },
+    {
+      "source_id": "src-women-admission-1788-bnf",
+      "source_type": "other",
+      "title": "Requête des femmes, pour leur admission aux États-Généraux, à Messieurs composans l’Assemblée des Notables",
+      "source_kind": "anonymous_1788_political_pamphlet",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/18",
+        "source_record": {
+          "source_id": "src-women-admission-1788-bnf",
+          "title": "Requête des femmes, pour leur admission aux États-Généraux, à Messieurs composans l’Assemblée des Notables",
+          "date": "1788",
+          "identifier": "BnF Lb39 683; Conlon 88-2114",
+          "source_kind": "anonymous_1788_political_pamphlet",
+          "notes": "Bibliographies and rare-book descriptions identify a 16-page first edition (some catalog/reel records count 19/20 pages including wrappers/blanks). Text argues women should be represented in the three orders or a fourth order. Authorship is anonymous and tone includes sexualized/grivois elements; do not label as collective testimony by women without qualification."
+        }
+      },
+      "identifier": "BnF Lb39 683; Conlon 88-2114",
+      "source_date": "1788"
+    },
+    {
+      "source_id": "src-women-remonstrances-1788-poitiers",
+      "source_type": "other",
+      "title": "Très-humbles remontrances des femmes françaises",
+      "source_kind": "anonymous_1788_political_pamphlet",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/19",
+        "source_record": {
+          "source_id": "src-women-remonstrances-1788-poitiers",
+          "title": "Très-humbles remontrances des femmes françaises",
+          "institution": "Université de Poitiers, Fonds ancien Auguste Dubois",
+          "date": "1788",
+          "identifier": "FD 2835/01; BnF Lb39 603",
+          "source_kind": "anonymous_1788_political_pamphlet",
+          "notes": "Poitiers catalog confirms a surviving 1788 copy. Secondary scholarship quotes page 4 as criticizing men who consult women privately on important affairs but exclude them publicly. Exact scan/transcription still to acquire."
+        }
+      },
+      "institution": "Université de Poitiers, Fonds ancien Auguste Dubois",
+      "identifier": "FD 2835/01; BnF Lb39 603",
+      "source_date": "1788"
+    },
+    {
+      "source_id": "src-women-third-estate-1789-newberry",
+      "source_type": "other",
+      "title": "Pétition des femmes du Tiers-Etat au Roi",
+      "source_kind": "1789_pamphlet_with_modern_tei_transcription",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/20",
+        "source_record": {
+          "source_id": "src-women-third-estate-1789-newberry",
+          "title": "Pétition des femmes du Tiers-Etat au Roi",
+          "date": "1789-01-01",
+          "institution": "Newberry Library / University of Washington TEI student transcription project",
+          "source_kind": "1789_pamphlet_with_modern_tei_transcription",
+          "notes": "BnF independently confirms Jan 1 1789 historical print. UW project provides a modern TEI transcription from Newberry holdings; use as collation aid and independently verify against facsimile before cementing."
+        }
+      },
+      "institution": "Newberry Library / University of Washington TEI student transcription project",
+      "source_date": "1789-01-01"
+    },
+    {
+      "source_id": "src-archives-parlementaires-convocation-1789",
+      "source_type": "other",
+      "title": "Lettre du Roi, pour la convocation des États généraux à Versailles, du 24 janvier 1789",
+      "source_kind": "public_domain_documentary_print_of_1789_royal_letter",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/21",
+        "source_record": {
+          "source_id": "src-archives-parlementaires-convocation-1789",
+          "title": "Lettre du Roi, pour la convocation des États généraux à Versailles, du 24 janvier 1789",
+          "creator": "Louis XVI",
+          "publication": "Archives parlementaires, tome I, p. 611 (1879), reproducing the 1789 royal letter",
+          "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_1_1_2947",
+          "source_kind": "public_domain_documentary_print_of_1789_royal_letter",
+          "notes": "Persée provides page image and OCR. Gef normalizes obvious OCR hyphenation/errors against the printed page; the letter is distinct from the attached 51-article regulation."
+        }
+      },
+      "creator": "Louis XVI",
+      "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_1_1_2947",
+      "source_publication": "Archives parlementaires, tome I, p. 611 (1879), reproducing the 1789 royal letter"
+    },
+    {
+      "source_id": "src-ad45-clery-1789",
+      "source_type": "other",
+      "title": "Notre-Dame de Cléry parish register — annual note written 27 February 1789",
+      "source_kind": "parish_register_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/22",
+        "source_record": {
+          "source_id": "src-ad45-clery-1789",
+          "title": "Notre-Dame de Cléry parish register — annual note written 27 February 1789",
+          "creator": "Bernard, chanoine-curé",
+          "institution": "Archives départementales du Loiret",
+          "date": "1789-02-27",
+          "identifier": "216 O-SUPPL GG/38 B (1787–1792), digital sequence p. 14/61",
+          "source_kind": "parish_register_manuscript",
+          "notes": "Retrospective annual note covering the July 1788 hail and Dec 1788–Jan 1789 freeze/flood damage. Date the Entry by composition."
+        }
+      },
+      "creator": "Bernard, chanoine-curé",
+      "institution": "Archives départementales du Loiret",
+      "identifier": "216 O-SUPPL GG/38 B (1787–1792), digital sequence p. 14/61",
+      "source_date": "1789-02-27"
+    },
+    {
+      "source_id": "src-perroud-etudes-roland-voyage",
+      "source_type": "other",
+      "title": "Études sur les Roland — textual history of Voyage en Suisse",
+      "source_kind": "public_domain_scholarly_textual_history",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/23",
+        "source_record": {
+          "source_id": "src-perroud-etudes-roland-voyage",
+          "title": "Études sur les Roland — textual history of Voyage en Suisse",
+          "creator": "Claude Perroud",
+          "source_kind": "public_domain_scholarly_textual_history",
+          "notes": "Perroud identifies Le Conservateur 1788 tome II pp. 14–95 as half of Voyage en Suisse; reports removal of D.L.P. initials and Villefranche/Lyon clues, a planned four-page carton, censor cuts, and comparison with Champagneux 1800."
+        }
+      },
+      "creator": "Claude Perroud"
+    },
+    {
+      "source_id": "src-ap-pomponne-1789",
+      "source_type": "other",
+      "title": "Cahier de Pomponne (Paris)",
+      "source_kind": "public_domain_documentary_print_from_Archives_de_l_Empire_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/24",
+        "source_record": {
+          "source_id": "src-ap-pomponne-1789",
+          "title": "Cahier de Pomponne (Paris)",
+          "publication": "Archives parlementaires, tome V, pp. 36–37",
+          "date": "1789",
+          "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_5_1_2350",
+          "source_kind": "public_domain_documentary_print_from_Archives_de_l_Empire_manuscript"
+        }
+      },
+      "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_5_1_2350",
+      "source_publication": "Archives parlementaires, tome V, pp. 36–37",
+      "source_date": "1789"
+    },
+    {
+      "source_id": "src-ap-luzarches-1789",
+      "source_type": "other",
+      "title": "Cahier de Luzarches (Paris)",
+      "source_kind": "public_domain_documentary_print_from_Archives_de_l_Empire_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/25",
+        "source_record": {
+          "source_id": "src-ap-luzarches-1789",
+          "title": "Cahier de Luzarches (Paris)",
+          "publication": "Archives parlementaires, tome IV, pp. 663–664",
+          "date": "1789",
+          "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_4_1_2252",
+          "source_kind": "public_domain_documentary_print_from_Archives_de_l_Empire_manuscript"
+        }
+      },
+      "url": "https://www.persee.fr/doc/arcpa_0000-0000_1879_num_4_1_2252",
+      "source_publication": "Archives parlementaires, tome IV, pp. 663–664",
+      "source_date": "1789"
+    },
+    {
+      "source_id": "src-hardy-project",
+      "source_type": "other",
+      "title": "Journal de Hardy — projet scientifique",
+      "source_kind": "scholarly_project",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/26",
+        "source_record": {
+          "source_id": "src-hardy-project",
+          "title": "Journal de Hardy — projet scientifique",
+          "institution": "UQAM / IHMC / CIREM 16-18",
+          "url": "https://journaldehardy.uqam.ca/",
+          "source_kind": "scholarly_project",
+          "notes": "Project says Hardy's bookshop, La Colonne d'Or, appears to have operated only circa 1755–1762. Use 'former bookseller' rather than implying he still ran a shop in 1788. The site confirms digitized manuscripts are on Gallica."
+        }
+      },
+      "url": "https://journaldehardy.uqam.ca/",
+      "institution": "UQAM / IHMC / CIREM 16-18"
+    },
+    {
+      "source_id": "src-gouges-remarques-1788",
+      "source_type": "other",
+      "title": "Remarques patriotiques, par la Citoyenne, Auteur de la Lettre au Peuple",
+      "source_kind": "1788_print_digitized_by_bnf",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/27",
+        "source_record": {
+          "source_id": "src-gouges-remarques-1788",
+          "title": "Remarques patriotiques, par la Citoyenne, Auteur de la Lettre au Peuple",
+          "creator": "Olympe de Gouges",
+          "date": "1788-12-01",
+          "url": "https://gallica.bnf.fr/ark:/12148/bpt6k96226223",
+          "source_kind": "1788_print_digitized_by_bnf",
+          "notes": "49-page Gallica witness. Wikisource provides a transcription tied to this scan. Strong late-1788 named-woman source on unemployment, bread, winter misery, finance and public policy."
+        }
+      },
+      "creator": "Olympe de Gouges",
+      "url": "https://gallica.bnf.fr/ark:/12148/bpt6k96226223",
+      "source_date": "1788-12-01"
+    },
+    {
+      "source_id": "src-ccfr-gouges-lettre-peuple",
+      "source_type": "other",
+      "title": "Lettre au peuple, ou Projet d'une caisse patriotique, par une Citoyenne",
+      "source_kind": "historical_print_catalog_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/28",
+        "source_record": {
+          "source_id": "src-ccfr-gouges-lettre-peuple",
+          "title": "Lettre au peuple, ou Projet d'une caisse patriotique, par une Citoyenne",
+          "creator": "Olympe de Gouges",
+          "date": "1788",
+          "institution": "CCFr / Base patrimoine",
+          "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/0017293916",
+          "source_kind": "historical_print_catalog_record",
+          "notes": "31-page 1788 political pamphlet; related predecessor to Remarques patriotiques."
+        }
+      },
+      "creator": "Olympe de Gouges",
+      "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/0017293916",
+      "institution": "CCFr / Base patrimoine",
+      "source_date": "1788"
+    },
+    {
+      "source_id": "src-ap-tennis-court-1789",
+      "source_type": "other",
+      "title": "Communes : décret du 20 juin 1789 sur la nécessité de ne pas se séparer avant de donner une Constitution au royaume",
+      "source_kind": "public_domain_documentary_edition",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/29",
+        "source_record": {
+          "source_id": "src-ap-tennis-court-1789",
+          "title": "Communes : décret du 20 juin 1789 sur la nécessité de ne pas se séparer avant de donner une Constitution au royaume",
+          "publication": "Archives parlementaires, tome VIII",
+          "date": "1875",
+          "pages": "138",
+          "url": "https://www.persee.fr/doc/arcpa_0000-0000_1875_num_8_1_4522_t2_0138_0000_8",
+          "source_kind": "public_domain_documentary_edition"
+        }
+      },
+      "url": "https://www.persee.fr/doc/arcpa_0000-0000_1875_num_8_1_4522_t2_0138_0000_8",
+      "pages": "138",
+      "source_publication": "Archives parlementaires, tome VIII",
+      "source_date": "1875"
+    },
+    {
+      "source_id": "src-assemblee-gouges-orleans-1789",
+      "source_type": "other",
+      "title": "Lettre d'Olympe de Gouges au duc d'Orléans, 4 juillet 1789",
+      "source_kind": "official_institutional_manuscript_presentation",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/30",
+        "source_record": {
+          "source_id": "src-assemblee-gouges-orleans-1789",
+          "title": "Lettre d'Olympe de Gouges au duc d'Orléans, 4 juillet 1789",
+          "creator": "Olympe de Gouges",
+          "institution": "Assemblée nationale",
+          "date": "1789-07-04",
+          "url": "https://www2.assemblee-nationale.fr/14/evenements/2015/anniversaire-d-olympe-de-gouges-7-mai-2015/lettre-d-olympe-de-gouges-au-duc-d-orleans-4-juillet-1789",
+          "source_kind": "official_institutional_manuscript_presentation",
+          "notes": "Official Assembly page says this rare signed letter entered its collections in 2014, shows it in three parts, and says Gouges asks the duc d'Orléans for support/authorization for her Journal du peuple after earlier approaches to the royal censor."
+        }
+      },
+      "creator": "Olympe de Gouges",
+      "url": "https://www2.assemblee-nationale.fr/14/evenements/2015/anniversaire-d-olympe-de-gouges-7-mai-2015/lettre-d-olympe-de-gouges-au-duc-d-orleans-4-juillet-1789",
+      "institution": "Assemblée nationale",
+      "source_date": "1789-07-04"
+    },
+    {
+      "source_id": "src-lepoutre-family-letters",
+      "source_type": "other",
+      "title": "Député-paysan et fermière de Flandre en 1789. La correspondance des Lepoutre",
+      "source_kind": "modern_documentary_edition_of_historical_letters",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/31",
+        "source_record": {
+          "source_id": "src-lepoutre-family-letters",
+          "title": "Député-paysan et fermière de Flandre en 1789. La correspondance des Lepoutre",
+          "source_kind": "modern_documentary_edition_of_historical_letters",
+          "notes": "Selected May 26 and July 31, 1789 passages were compared against the publisher’s online text on 2026-09-23. This is an OCR-derived digital edition, not a newly inspected autograph. The May 8 letter remains a separate acquisition target. Transcription, apparatus and images retain independent rights review; availability is not permission.",
+          "institution": "IRHiS / OpenEdition Books",
+          "publication": "1998 printed edition; 2018 digital edition",
+          "url": "https://books.openedition.org/irhis/2517"
+        }
+      },
+      "url": "https://books.openedition.org/irhis/2517",
+      "institution": "IRHiS / OpenEdition Books",
+      "source_publication": "1998 printed edition; 2018 digital edition"
+    },
+    {
+      "source_id": "src-bnf-hardy-6687",
+      "source_type": "other",
+      "title": "Hardy, Mes loisirs, ms. français 6687",
+      "source_kind": "autograph_manuscript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/32",
+        "source_record": {
+          "source_id": "src-bnf-hardy-6687",
+          "title": "Hardy, Mes loisirs, ms. français 6687",
+          "creator": "Siméon-Prosper Hardy",
+          "institution": "Bibliothèque nationale de France",
+          "identifier": "Français 6687 / Gallica btv1b90607345",
+          "url": "https://gallica.bnf.fr/ark:/12148/btv1b90607345",
+          "source_kind": "autograph_manuscript"
+        }
+      },
+      "creator": "Siméon-Prosper Hardy",
+      "url": "https://gallica.bnf.fr/ark:/12148/btv1b90607345",
+      "institution": "Bibliothèque nationale de France",
+      "identifier": "Français 6687 / Gallica btv1b90607345"
+    },
+    {
+      "source_id": "src-tna-jenkinson-fo27-32",
+      "source_type": "other",
+      "title": "Jenkinson correspondence from Paris",
+      "source_kind": "archive_published_excerpt_transcript",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/33",
+        "source_record": {
+          "source_id": "src-tna-jenkinson-fo27-32",
+          "title": "Jenkinson correspondence from Paris",
+          "institution": "UK National Archives",
+          "identifier": "FO 27/32",
+          "source_kind": "archive_published_excerpt_transcript",
+          "notes": "The complete displayed excerpt was retrieved and translated into French. Internal omission retained. Archive names the writer Mr Jenkinson; the given name William is not established. No new autograph transcription or image reuse clearance is claimed.",
+          "date": "1789-07-15",
+          "url": "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-4/",
+          "transcript_url": "https://www.nationalarchives.gov.uk/image/c65a2280-9978-4bf8-b233-9ba55513d1bd/"
+        }
+      },
+      "url": "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-4/",
+      "institution": "UK National Archives",
+      "identifier": "FO 27/32",
+      "transcript_url": "https://www.nationalarchives.gov.uk/image/c65a2280-9978-4bf8-b233-9ba55513d1bd/",
+      "source_date": "1789-07-15"
+    },
+    {
+      "source_id": "src-nara-jefferson-jay-1789-07-19",
+      "source_type": "other",
+      "title": "Thomas Jefferson to John Jay, 19 July 1789",
+      "source_kind": "federal_archival_correspondence",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/34",
+        "source_record": {
+          "source_id": "src-nara-jefferson-jay-1789-07-19",
+          "title": "Thomas Jefferson to John Jay, 19 July 1789",
+          "institution": "U.S. National Archives",
+          "date": "1789-07-19",
+          "source_kind": "federal_archival_correspondence",
+          "notes": "12-page autograph report; select a contiguous excerpt only after binding exact NARA witness."
+        }
+      },
+      "institution": "U.S. National Archives",
+      "source_date": "1789-07-19"
+    },
+    {
+      "source_id": "src-paris-musees-louis-necker-g27894",
+      "source_type": "other",
+      "title": "Lettre de Louis XVI à Monsieur Necker, Versailles, le 16 juillet 1789",
+      "source_kind": "1789_reproduction_facsimile_witness",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/35",
+        "source_record": {
+          "source_id": "src-paris-musees-louis-necker-g27894",
+          "title": "Lettre de Louis XVI à Monsieur Necker, Versailles, le 16 juillet 1789",
+          "institution": "Musée Carnavalet / Paris Musées",
+          "identifier": "G.27894",
+          "date": "1789-07-16",
+          "source_kind": "1789_reproduction_facsimile_witness",
+          "notes": "Use as the identified historical witness; do not call it the autograph. Asset registry tracks CC0 image path separately."
+        }
+      },
+      "institution": "Musée Carnavalet / Paris Musées",
+      "identifier": "G.27894",
+      "source_date": "1789-07-16"
+    },
+    {
+      "source_id": "src-williams-letters-1790-first",
+      "source_type": "other",
+      "title": "Letters Written in France, in the Summer 1790, to a Friend in England",
+      "source_kind": "1790_first_edition_bibliographic_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/36",
+        "source_record": {
+          "source_id": "src-williams-letters-1790-first",
+          "title": "Letters Written in France, in the Summer 1790, to a Friend in England",
+          "creator": "Helen Maria Williams",
+          "publication": "T. Cadell, London",
+          "date": "1790",
+          "url": "https://btw.wlv.ac.uk/texts/1196",
+          "source_kind": "1790_first_edition_bibliographic_record",
+          "notes": "First-edition metadata for Williams's 1790 published epistolary account. Letter II describes the Fête de la Fédération of 14 July 1790. Use event date separately from the letter's exact composition date, which is not established here."
+        }
+      },
+      "creator": "Helen Maria Williams",
+      "url": "https://btw.wlv.ac.uk/texts/1196",
+      "source_publication": "T. Cadell, London",
+      "source_date": "1790"
+    },
+    {
+      "source_id": "src-williams-letters-1791-boston-tcp",
+      "source_type": "other",
+      "title": "Letters on the French Revolution, written in France, in the summer of 1790, to a friend in England",
+      "source_kind": "historical_edition_with_cc0_keyboarded_transcription",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/37",
+        "source_record": {
+          "source_id": "src-williams-letters-1791-boston-tcp",
+          "title": "Letters on the French Revolution, written in France, in the summer of 1790, to a friend in England",
+          "creator": "Helen Maria Williams",
+          "publication": "J. Belknap and A. Young, Boston",
+          "date": "1791-1792",
+          "url": "https://quod.lib.umich.edu/e/evans/N18502.0001.001/11%3A3.2",
+          "source_kind": "historical_edition_with_cc0_keyboarded_transcription",
+          "rights_note": "Text Creation Partnership marks the keyboarded/encoded text CC0; page images have separate terms.",
+          "notes": "Selected Letter II wording for Gef is collated against this historical edition/transcription. Typographic line-break artifacts are normalized; Williams's crowd estimates and political interpretations remain attributed to her."
+        }
+      },
+      "creator": "Helen Maria Williams",
+      "url": "https://quod.lib.umich.edu/e/evans/N18502.0001.001/11%3A3.2",
+      "source_publication": "J. Belknap and A. Young, Boston",
+      "source_date": "1791-1792"
+    },
+    {
+      "source_id": "src-ecpa-helen-maria-williams",
+      "source_type": "other",
+      "title": "Helen Maria Williams — author record",
+      "source_kind": "scholarly_biographical_reference",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/38",
+        "source_record": {
+          "source_id": "src-ecpa-helen-maria-williams",
+          "title": "Helen Maria Williams — author record",
+          "institution": "Eighteenth-Century Poetry Archive",
+          "date": null,
+          "url": "https://www.eighteenthcenturypoetry.org/authors/pers00276.shtml",
+          "source_kind": "scholarly_biographical_reference",
+          "notes": "Lists Helen Maria Williams as 17 June 1759–15 December 1827."
+        }
+      },
+      "url": "https://www.eighteenthcenturypoetry.org/authors/pers00276.shtml",
+      "institution": "Eighteenth-Century Poetry Archive"
+    },
+    {
+      "source_id": "src-tna-london-gazette-zj1-85",
+      "source_type": "other",
+      "title": "The London Gazette — reports on Paris, 18–21 July 1789",
+      "source_kind": "contemporary_foreign_newspaper_report",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/39",
+        "source_record": {
+          "source_id": "src-tna-london-gazette-zj1-85",
+          "title": "The London Gazette — reports on Paris, 18–21 July 1789",
+          "institution": "UK National Archives",
+          "identifier": "ZJ 1/85",
+          "date": "1789-07-18/1789-07-21",
+          "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/french-revolution/",
+          "source_kind": "contemporary_foreign_newspaper_report",
+          "notes": "National Archives supplies three transcripts from the same Gazette issue/run: Paris consternation and temporary citizen policing; a Bastille narrative containing claims that must not be silently treated as verified fact; and the king's visit to Paris with an estimate of armed citizens. Use as a foreign-press comparison witness alongside Jenkinson and other Paris reports."
+        }
+      },
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/french-revolution/",
+      "institution": "UK National Archives",
+      "identifier": "ZJ 1/85",
+      "source_date": "1789-07-18/1789-07-21"
+    },
+    {
+      "source_id": "src-tna-london-gazette-zj1-85-july1789",
+      "source_type": "other",
+      "title": "The London Gazette: three extracts on Paris, 18–21 July 1789",
+      "source_kind": "institutional_transcription_of_historical_newspaper_extracts",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/40",
+        "source_record": {
+          "source_id": "src-tna-london-gazette-zj1-85-july1789",
+          "title": "The London Gazette: three extracts on Paris, 18–21 July 1789",
+          "institution": "The National Archives, United Kingdom",
+          "publication": "The London Gazette",
+          "date": "1789-07-18/1789-07-21",
+          "identifier": "ZJ 1/85",
+          "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/french-revolution/",
+          "transcript_urls": [
+            "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-1/",
+            "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-2/",
+            "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-3/"
+          ],
+          "source_kind": "institutional_transcription_of_historical_newspaper_extracts",
+          "notes": "Three separate institutional transcript extracts, not a verified complete original article or issue. Publication range is not the composition/event date. One institutional typo, natuarlly, is disclosed and normalized to naturally in the readable English. Original image/issue/page collation and component-specific rights review remain open. No modern teaching prose or images imported.",
+          "entry_ref": "fr1789-07-18-21-london-gazette",
+          "same_historical_source_as": "src-tna-london-gazette-zj1-85",
+          "relationship_note": "This is the specifically captured institutional-transcript representation of the existing Gazette source, not an independent witness. Existing source ID is preserved for prior research and source-plan links."
+        }
+      },
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/french-revolution/",
+      "institution": "The National Archives, United Kingdom",
+      "identifier": "ZJ 1/85",
+      "transcript_urls": [
+        "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-1/",
+        "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-2/",
+        "https://www.nationalarchives.gov.uk/education/resources/french-revolution/source-3/"
+      ],
+      "source_publication": "The London Gazette",
+      "source_date": "1789-07-18/1789-07-21"
+    },
+    {
+      "source_id": "src-perroud-roland-1789",
+      "source_type": "other",
+      "title": "Lettres de Madame Roland, 1789",
+      "source_kind": "historical_documentary_edition_transcription",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/41",
+        "source_record": {
+          "source_id": "src-perroud-roland-1789",
+          "title": "Lettres de Madame Roland, 1789",
+          "creator": "Manon Roland; Claude Perroud, editor",
+          "publication": "Imprimerie nationale, 1900–1902",
+          "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Lettres/1789",
+          "source_kind": "historical_documentary_edition_transcription",
+          "locator": "Letter 317, 7 March 1789; related letters distinguish family reports from authored child correspondence."
+        }
+      },
+      "creator": "Manon Roland; Claude Perroud, editor",
+      "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Lettres/1789",
+      "locator": "Letter 317, 7 March 1789; related letters distinguish family reports from authored child correspondence.",
+      "source_publication": "Imprimerie nationale, 1900–1902"
+    },
+    {
+      "source_id": "src-perroud-agathe-appendix",
+      "source_type": "other",
+      "title": "Lettres de Madame Roland, Appendix U: Agathe",
+      "source_kind": "historical_critical_edition_with_quoted_primary_evidence",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/42",
+        "source_record": {
+          "source_id": "src-perroud-agathe-appendix",
+          "title": "Lettres de Madame Roland, Appendix U: Agathe",
+          "creator": "Claude Perroud",
+          "publication": "Imprimerie nationale, 1900–1902, pp. 785–787",
+          "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Appendices/U",
+          "source_kind": "historical_critical_edition_with_quoted_primary_evidence",
+          "locator": "Opening account identifies Angélique Boufflers / Sister Sainte-Agathe and the friendship dating to Manon’s convent years. Later-life passages are not exposed in the Act I biography."
+        }
+      },
+      "creator": "Claude Perroud",
+      "url": "https://fr.wikisource.org/wiki/Lettres_de_Madame_Roland_de_1780_%C3%A0_1793/Appendices/U",
+      "locator": "Opening account identifies Angélique Boufflers / Sister Sainte-Agathe and the friendship dating to Manon’s convent years. Later-life passages are not exposed in the Act I biography.",
+      "source_publication": "Imprimerie nationale, 1900–1902, pp. 785–787"
+    },
+    {
+      "source_id": "src-sycomore-lanthenas",
+      "source_type": "other",
+      "title": "François, Xavier Lanthenas",
+      "source_kind": "institutional_biographical_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/43",
+        "source_record": {
+          "source_id": "src-sycomore-lanthenas",
+          "title": "François, Xavier Lanthenas",
+          "institution": "Assemblée nationale, Sycomore",
+          "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/15157",
+          "source_kind": "institutional_biographical_record",
+          "notes": "Supports physician identity and Roland-family connection. Later political offices are omitted from the first-appearance biography."
+        }
+      },
+      "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/15157",
+      "institution": "Assemblée nationale, Sycomore"
+    },
+    {
+      "source_id": "src-cinii-juigne-1789",
+      "source_type": "other",
+      "title": "Lettre du roi a monseigneur l’archevêque de Paris",
+      "source_kind": "catalog_record_transcribing_historical_imprint_and_signature",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/44",
+        "source_record": {
+          "source_id": "src-cinii-juigne-1789",
+          "title": "Lettre du roi a monseigneur l’archevêque de Paris",
+          "institution": "CiNii Books / Senshu University Library",
+          "identifier": "BA80172463",
+          "url": "https://ci.nii.ac.jp/ncid/BA80172463",
+          "source_kind": "catalog_record_transcribing_historical_imprint_and_signature",
+          "notes": "Catalog quotes the 1789 printed signature identifying Le Clerc de Juigné as archbishop. This is title/identity evidence, not inspection of the July 2 letter."
+        }
+      },
+      "url": "https://ci.nii.ac.jp/ncid/BA80172463",
+      "institution": "CiNii Books / Senshu University Library",
+      "identifier": "BA80172463"
+    },
+    {
+      "source_id": "src-versailles-necker",
+      "source_type": "other",
+      "title": "Jacques Necker",
+      "source_kind": "institutional_biographical_reference",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/45",
+        "source_record": {
+          "source_id": "src-versailles-necker",
+          "title": "Jacques Necker",
+          "institution": "Château de Versailles",
+          "url": "https://www.chateauversailles.fr/decouvrir/histoire/grands-personnages/jacques-necker",
+          "source_kind": "institutional_biographical_reference",
+          "notes": "Supports Swiss banker identity and recall to financial direction in 1788; biography excludes later retirement and death."
+        }
+      },
+      "url": "https://www.chateauversailles.fr/decouvrir/histoire/grands-personnages/jacques-necker",
+      "institution": "Château de Versailles"
+    },
+    {
+      "source_id": "src-state-jefferson-france",
+      "source_type": "other",
+      "title": "Thomas Jefferson: Principal Officers and Chiefs of Mission",
+      "source_kind": "institutional_diplomatic_service_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/46",
+        "source_record": {
+          "source_id": "src-state-jefferson-france",
+          "title": "Thomas Jefferson: Principal Officers and Chiefs of Mission",
+          "institution": "U.S. Department of State, Office of the Historian",
+          "url": "https://history.state.gov/departmenthistory/people/jefferson-thomas",
+          "source_kind": "institutional_diplomatic_service_record",
+          "notes": "Credentials in France presented May 17, 1785; mission continued into 1789. Later presidency is not inserted into the Act I biography."
+        }
+      },
+      "url": "https://history.state.gov/departmenthistory/people/jefferson-thomas",
+      "institution": "U.S. Department of State, Office of the Historian"
+    },
+    {
+      "source_id": "src-state-officers-1789",
+      "source_type": "other",
+      "title": "Principal Officers and Chiefs of Mission, 1789",
+      "source_kind": "institutional_diplomatic_service_record",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/47",
+        "source_record": {
+          "source_id": "src-state-officers-1789",
+          "title": "Principal Officers and Chiefs of Mission, 1789",
+          "institution": "U.S. Department of State, Office of the Historian",
+          "url": "https://history.state.gov/departmenthistory/people/by-year/1789",
+          "source_kind": "institutional_diplomatic_service_record",
+          "notes": "John Jay is listed as Secretary of Foreign Affairs under the Continental Congress, 1784–1789."
+        }
+      },
+      "url": "https://history.state.gov/departmenthistory/people/by-year/1789",
+      "institution": "U.S. Department of State, Office of the Historian"
+    },
+    {
+      "source_id": "src-versailles-marie-antoinette",
+      "source_type": "other",
+      "title": "Marie-Antoinette",
+      "source_kind": "institutional_biographical_reference",
+      "content_source_provenance": {
+        "source_repo": "Clickabl/gef-content",
+        "source_path": "works/letters-from-french-revolution/sources.json",
+        "source_sha256": "d64e8335adf5b1dfe97b1c904e2476a0d74ae2a5a629eb4aa0a434df7948cda7",
+        "source_pointer": "/sources/48",
+        "source_record": {
+          "source_id": "src-versailles-marie-antoinette",
+          "title": "Marie-Antoinette",
+          "institution": "Château de Versailles",
+          "url": "https://www.chateauversailles.fr/decouvrir/histoire/grands-personnages/marie-antoinette",
+          "source_kind": "institutional_biographical_reference",
+          "notes": "Supports queen and spouse identity. Later imprisonment and execution are not inserted into the Act I biography."
+        }
+      },
+      "url": "https://www.chateauversailles.fr/decouvrir/histoire/grands-personnages/marie-antoinette",
+      "institution": "Château de Versailles"
     }
   ]
 }

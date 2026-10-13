@@ -73,6 +73,8 @@
               "calendar",
               "language",
               "script",
+              "literary_movement",
+              "occupation",
               "other"
             ]
           },
@@ -431,6 +433,142 @@
           },
           "death": {
             "$ref": "#/definitions/dateFact"
+          },
+          "relationships": {
+            "type": "array",
+            "maxItems": 1000,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "relationship_id",
+                "kind",
+                "target_entity_id",
+                "certainty",
+                "review_state",
+                "source_refs"
+              ],
+              "properties": {
+                "relationship_id": {
+                  "type": "string",
+                  "pattern": "^rel_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "kind": {
+                  "enum": [
+                    "birthplace",
+                    "death_place",
+                    "associated_country",
+                    "citizenship",
+                    "cultural_origin",
+                    "language_of_work",
+                    "literary_movement",
+                    "occupation",
+                    "member_of",
+                    "attributed_tradition"
+                  ]
+                },
+                "target_entity_id": {
+                  "type": "string",
+                  "pattern": "^ent_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "certainty": {
+                  "enum": [
+                    "known",
+                    "approximate",
+                    "unknown",
+                    "disputed"
+                  ]
+                },
+                "review_state": {
+                  "type": "string",
+                  "enum": [
+                    "candidate",
+                    "approved",
+                    "superseded",
+                    "rejected"
+                  ]
+                },
+                "source_refs": {
+                  "type": "array",
+                  "maxItems": 1000,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000
+                  }
+                },
+                "source_provenance": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "repository",
+                    "path",
+                    "revision_sha"
+                  ],
+                  "properties": {
+                    "repository": {
+                      "enum": [
+                        "gef-lexicon",
+                        "gef-content",
+                        "gef-expo"
+                      ]
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "revision_sha": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "field": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "source_review_state": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 100
+                    }
+                  }
+                },
+                "period": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "minProperties": 1,
+                  "properties": {
+                    "start": {
+                      "$ref": "#/definitions/dateFact"
+                    },
+                    "end": {
+                      "$ref": "#/definitions/dateFact"
+                    }
+                  }
+                },
+                "historical_context": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "text"
+                  ],
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 262144
+                    },
+                    "language_tag": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 64
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
