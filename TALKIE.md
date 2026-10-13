@@ -346,3 +346,17 @@ and ordinary main receiver; coordinator will verify public bytes after push.
 Personal autocomplete still requires approved owning forms; catalogue metadata
 does not supply that approval. Greeting source admission and multilingual QA
 remain separate unfinished research.
+
+
+## 2026-10-13 — shared entity registry source contract
+
+Owner released TODO-LEXICON-ENTITY-REGISTRY-20261013. Shared typed entity source
+is entities/index.json; central Server journal allocates ent_/lbl_/bio_ UUIDv4
+identities and the exact-revision writer, while Lexicon owns source records and
+validation. No compiler allocates IDs or promotes source review. General name
+senses, creator entities and work contributor roles stay separate. Public
+projection uses existing allowlisted lexi/entities-v1; raw research notes stay
+source-only. Content temporal schema/semantic validation is the single shared
+authority. Exact planned files/contracts are in NAME_ENTITY_ARCHITECTURE.md.
+Initial revision1 is a compatible empty foundation, not completed migration;
+real source-evidenced population and cross-repository consumers remain required.

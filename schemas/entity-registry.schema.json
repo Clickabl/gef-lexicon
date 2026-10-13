@@ -1,0 +1,1026 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "gef-lexicon/entity-registry.schema.json",
+  "title": "Canonical reusable entity registry",
+  "description": "IDs allocated by the coordinated Server authoring journal. Sparse sourced names/biographies and independent factual/translation review. No compiler or localization operation approves evidence. Content temporal definitions are byte-checked shared contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract",
+    "revision",
+    "entities",
+    "redirects"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "contract": {
+      "const": "gef-entity-registry-v1"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "entities": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "entity_id",
+          "entity_type",
+          "canonical_name",
+          "names",
+          "biographies",
+          "external_ids",
+          "legacy_ids",
+          "source_refs",
+          "created_at",
+          "updated_at",
+          "review_state"
+        ],
+        "properties": {
+          "entity_id": {
+            "type": "string",
+            "pattern": "^ent_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "entity_type": {
+            "enum": [
+              "person",
+              "real_person",
+              "historical_person",
+              "fictional_character",
+              "mythological_figure",
+              "organization",
+              "collective_creator",
+              "cultural_attribution",
+              "traditional_attribution",
+              "anonymous_attribution",
+              "unknown_attribution",
+              "publisher_attribution",
+              "publisher",
+              "place",
+              "country",
+              "geographic_region",
+              "literary_period",
+              "genre",
+              "literary_category",
+              "content_type",
+              "tradition",
+              "calendar",
+              "language",
+              "script",
+              "other"
+            ]
+          },
+          "canonical_name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "canonical_name_language_tag": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "names": {
+            "type": "array",
+            "maxItems": 1000,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label_id",
+                "text",
+                "name_type",
+                "translation_state",
+                "review_state",
+                "source_refs"
+              ],
+              "properties": {
+                "translation_state": {
+                  "type": "string",
+                  "enum": [
+                    "source",
+                    "machine_translation",
+                    "human_translation"
+                  ]
+                },
+                "review_state": {
+                  "type": "string",
+                  "enum": [
+                    "candidate",
+                    "approved",
+                    "superseded",
+                    "rejected"
+                  ]
+                },
+                "source_refs": {
+                  "type": "array",
+                  "maxItems": 1000,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000
+                  }
+                },
+                "source_provenance": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "repository",
+                    "path",
+                    "revision_sha"
+                  ],
+                  "properties": {
+                    "repository": {
+                      "enum": [
+                        "gef-lexicon",
+                        "gef-content",
+                        "gef-expo"
+                      ]
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "revision_sha": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "field": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "source_review_state": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 100
+                    }
+                  }
+                },
+                "label_id": {
+                  "type": "string",
+                  "pattern": "^lbl_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 4000
+                },
+                "language_tag": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64
+                },
+                "script": {
+                  "type": "string",
+                  "pattern": "^[A-Z][a-z]{3}$"
+                },
+                "name_type": {
+                  "enum": [
+                    "canonical",
+                    "original_script",
+                    "localized",
+                    "transliteration",
+                    "romanization",
+                    "pseudonym",
+                    "historical",
+                    "alias"
+                  ]
+                }
+              }
+            }
+          },
+          "biographies": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "biography_id",
+                "language_tag",
+                "translation_state",
+                "review_state",
+                "source_refs"
+              ],
+              "properties": {
+                "translation_state": {
+                  "type": "string",
+                  "enum": [
+                    "source",
+                    "machine_translation",
+                    "human_translation"
+                  ]
+                },
+                "review_state": {
+                  "type": "string",
+                  "enum": [
+                    "candidate",
+                    "approved",
+                    "superseded",
+                    "rejected"
+                  ]
+                },
+                "source_refs": {
+                  "type": "array",
+                  "maxItems": 1000,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000
+                  }
+                },
+                "source_provenance": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "repository",
+                    "path",
+                    "revision_sha"
+                  ],
+                  "properties": {
+                    "repository": {
+                      "enum": [
+                        "gef-lexicon",
+                        "gef-content",
+                        "gef-expo"
+                      ]
+                    },
+                    "path": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "revision_sha": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{40}$"
+                    },
+                    "field": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    },
+                    "source_review_state": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 100
+                    }
+                  }
+                },
+                "biography_id": {
+                  "type": "string",
+                  "pattern": "^bio_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                "language_tag": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64
+                },
+                "short_text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 262144
+                },
+                "long_text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 262144
+                },
+                "work_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 500
+                }
+              },
+              "anyOf": [
+                {
+                  "required": [
+                    "short_text"
+                  ]
+                },
+                {
+                  "required": [
+                    "long_text"
+                  ]
+                }
+              ]
+            }
+          },
+          "external_ids": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[a-z][a-z0-9_]{0,63}$"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "maxItems": 100,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              }
+            }
+          },
+          "legacy_ids": {
+            "type": "array",
+            "maxItems": 1000,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            }
+          },
+          "source_refs": {
+            "type": "array",
+            "maxItems": 1000,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            }
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+          },
+          "updated_at": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+          },
+          "review_state": {
+            "type": "string",
+            "enum": [
+              "candidate",
+              "approved",
+              "superseded",
+              "rejected"
+            ]
+          },
+          "research_notes": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 262144
+          },
+          "source_provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "repository",
+              "path",
+              "revision_sha"
+            ],
+            "properties": {
+              "repository": {
+                "enum": [
+                  "gef-lexicon",
+                  "gef-content",
+                  "gef-expo"
+                ]
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "revision_sha": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "source_review_state": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            }
+          },
+          "birth_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 200
+          },
+          "death_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 200
+          },
+          "birth": {
+            "$ref": "#/definitions/dateFact"
+          },
+          "death": {
+            "$ref": "#/definitions/dateFact"
+          }
+        }
+      }
+    },
+    "redirects": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from_entity_id",
+          "to_entity_id",
+          "created_at",
+          "source_refs"
+        ],
+        "properties": {
+          "from_entity_id": {
+            "type": "string",
+            "pattern": "^ent_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "to_entity_id": {
+            "type": "string",
+            "pattern": "^ent_[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+          },
+          "source_refs": {
+            "type": "array",
+            "maxItems": 1000,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "citation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$",
+          "maxLength": 4000
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "citation"
+      ]
+    },
+    "dateValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": -9999,
+          "maximum": 9999
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^-?[0-9]{4}(?:-(?:0[1-9]|1[0-2])(?:-(?:0[1-9]|[12][0-9]|3[01]))?)?$"
+        },
+        "earliest_year": {
+          "type": "integer",
+          "minimum": -9999,
+          "maximum": 9999
+        },
+        "latest_year": {
+          "type": "integer",
+          "minimum": -9999,
+          "maximum": 9999
+        }
+      },
+      "required": []
+    },
+    "dateFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "known",
+            "approximate",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "value": {
+          "$ref": "#/definitions/dateValue"
+        },
+        "alternatives": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": {
+                "$ref": "#/definitions/dateValue"
+              },
+              "evidence": {
+                "type": "array",
+                "maxItems": 30,
+                "items": {
+                  "$ref": "#/definitions/evidence"
+                }
+              },
+              "source_calendar_entity_id": {
+                "type": "string",
+                "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+              },
+              "source_notation": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000,
+                "description": "Exact original source date notation, not a UI formatting string."
+              },
+              "source_precision": {
+                "enum": [
+                  "year",
+                  "month",
+                  "day",
+                  "range"
+                ],
+                "type": "string"
+              },
+              "normalized_gregorian_value": {
+                "$ref": "#/definitions/dateValue",
+                "description": "Optional separately evidenced Gregorian comparison value; preserve source precision and notation."
+              },
+              "conversion_evidence": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 30,
+                "items": {
+                  "$ref": "#/definitions/evidence"
+                }
+              }
+            },
+            "required": [
+              "evidence"
+            ]
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "source_calendar_entity_id": {
+          "type": "string",
+          "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+        },
+        "source_notation": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000,
+          "description": "Exact original source date notation, not a UI formatting string."
+        },
+        "source_precision": {
+          "enum": [
+            "year",
+            "month",
+            "day",
+            "range"
+          ],
+          "type": "string"
+        },
+        "normalized_gregorian_value": {
+          "$ref": "#/definitions/dateValue",
+          "description": "Optional separately evidenced Gregorian comparison value; preserve source precision and notation."
+        },
+        "conversion_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        }
+      },
+      "required": [
+        "certainty",
+        "evidence"
+      ]
+    },
+    "nameForm": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[A-Z][a-z]{3}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "original-script",
+            "published",
+            "pseudonym",
+            "alias"
+          ]
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "known",
+            "approximate",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "kind",
+        "certainty",
+        "evidence"
+      ]
+    },
+    "personFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "person_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "author",
+            "compiler",
+            "collector",
+            "translator",
+            "editor",
+            "illustrator",
+            "adapter",
+            "contributor",
+            "narrator",
+            "performer",
+            "arranger",
+            "composer",
+            "lyricist",
+            "publisher"
+          ]
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "known",
+            "approximate",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "names": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/definitions/nameForm"
+          }
+        },
+        "birth": {
+          "$ref": "#/definitions/dateFact"
+        },
+        "death": {
+          "$ref": "#/definitions/dateFact"
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        },
+        "entity_id": {
+          "type": "string",
+          "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$",
+          "description": "Canonical reusable entity reference allocated by the single Server authoring authority; role belongs to this source relationship. Legacy name/person_id remain compatibility/source facts."
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "certainty",
+        "evidence"
+      ]
+    },
+    "titleFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[A-Z][a-z]{3}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "original",
+            "published",
+            "localized",
+            "alternate"
+          ]
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "known",
+            "approximate",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "title",
+        "language",
+        "kind",
+        "certainty",
+        "evidence"
+      ]
+    },
+    "publicationFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "$ref": "#/definitions/dateFact"
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "place": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "country_codes": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          }
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "edition_label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "event_kind": {
+          "type": "string",
+          "enum": [
+            "first-publication",
+            "edition-publication",
+            "translation-publication",
+            "reprint",
+            "serialization-start",
+            "serialization-end",
+            "first-volume-publication",
+            "standalone-publication"
+          ]
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "known",
+            "approximate",
+            "unknown",
+            "disputed"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000
+        }
+      },
+      "required": [
+        "date",
+        "event_kind",
+        "certainty",
+        "evidence"
+      ]
+    },
+    "workBibliography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "composition": {
+          "$ref": "#/definitions/dateFact"
+        },
+        "first_publication": {
+          "$ref": "#/definitions/publicationFact"
+        },
+        "titles": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/definitions/titleFact"
+          }
+        },
+        "contributors": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/definitions/personFact"
+          }
+        },
+        "publication_events": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/definitions/publicationFact"
+          },
+          "description": "Other evidenced work-publication history. Canonical earliest public event remains first_publication; no duplicate first-publication authority."
+        }
+      },
+      "required": []
+    },
+    "editionBibliography": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edition_publication": {
+          "$ref": "#/definitions/publicationFact"
+        },
+        "titles": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/definitions/titleFact"
+          }
+        },
+        "contributors": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "$ref": "#/definitions/personFact"
+          }
+        }
+      },
+      "required": []
+    },
+    "metadataProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_state",
+        "evidence",
+        "authoring_ref"
+      ],
+      "properties": {
+        "review_state": {
+          "type": "string",
+          "enum": [
+            "machine-draft",
+            "machine-reviewed",
+            "human-reviewed",
+            "school-approved"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
+          "items": {
+            "$ref": "#/definitions/evidence"
+          }
+        },
+        "authoring_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "reviewer_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "reviewed_at": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{3})?Z$",
+          "maxLength": 100
+        }
+      }
+    }
+  }
+}

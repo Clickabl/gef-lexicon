@@ -8,6 +8,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
+import { validateEntityRegistry } from '../packages/entity-registry-v1/entityRegistry.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, '..');
@@ -78,6 +79,7 @@ export function validateNameFamilyIndex(document, { familyDocuments = [] } = {})
 function main() {
   console.log('🛡️ Running GEF Lexicon Iron-Gate Validator...');
   const ajv = new Ajv({ allErrors: true, strict: false });
+  ajv.addSchema(readJson(join(REPO_ROOT, 'schemas', 'entity-registry.schema.json')));
   const compile = (filename) => ajv.compile(readJson(join(REPO_ROOT, 'schemas', filename)));
   const validateLexicon = compile('lexicon-entry.schema.json');
   const validateConcepts = compile('concept.schema.json');
@@ -334,6 +336,16 @@ function main() {
       }
     }
   }
+  const sharedRegistry = readJson(join(REPO_ROOT, 'entities', 'index.json'));
+  schemaCheck(validateEntities, sharedRegistry, 'entities/index.json');
+  try {
+    validateEntityRegistry(sharedRegistry, { bibliography: readJson(join(REPO_ROOT, 'sources', 'bibliography.json')) });
+    for (const entity of sharedRegistry.entities) {
+      register(entity.entity_id, 'entity', 'entities/index.json');
+      entities.add(entity.entity_id);
+    }
+  } catch (error) { fail(`entities/index.json: ${error.message}`); }
+
   for (const ref of pendingEntityRefs) if (!entities.has(ref.id)) fail(`${ref.file}:${ref.owner}: entity '${ref.id}' does not exist`);
   for (const ref of pendingSourceRefs) if (!sources.has(ref.id)) fail(`${ref.file}:${ref.owner}: source '${ref.id}' does not exist`);
 
