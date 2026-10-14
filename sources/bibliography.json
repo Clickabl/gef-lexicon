@@ -12613,6 +12613,26 @@
         "sha256": "a5960d2371bc7d982da7fcfd9a0e237429d3467a5cc76f680bc3af5bcef9fb4e"
       },
       "license": "Unicode-3.0"
+    },
+    {
+      "source_id": "src-insee-paris-75056",
+      "source_type": "other",
+      "title": "Paris — Code officiel géographique",
+      "institution": "Institut national de la statistique et des études économiques",
+      "language": "fr",
+      "url": "https://www.insee.fr/fr/metadonnees/geographie/commune/75056-paris",
+      "identifier": "75056",
+      "note": "Actual official city identity record read 2026-10-13; used only for explicit Paris geographic identity. No historical jurisdiction or boundaries asserted."
+    },
+    {
+      "source_id": "src-wikidata-paris-q90",
+      "source_type": "other",
+      "title": "Paris (Q90)",
+      "institution": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q90",
+      "identifier": "Q90",
+      "license": "CC0-1.0",
+      "note": "Actual structured city identity and declared English label read 2026-10-13. License authority https://www.wikidata.org/wiki/Wikidata:Licensing. No biographies or historical geopolitical facts imported."
     }
   ]
 }
