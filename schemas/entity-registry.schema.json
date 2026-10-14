@@ -1026,7 +1026,9 @@
             "serialization-start",
             "serialization-end",
             "first-volume-publication",
-            "standalone-publication"
+            "standalone-publication",
+            "oral-circulation",
+            "manuscript-circulation"
           ]
         },
         "certainty": {
@@ -1049,6 +1051,27 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 4000
+        },
+        "publisher_entity_id": {
+          "type": "string",
+          "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+        },
+        "place_entity_id": {
+          "type": "string",
+          "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+        },
+        "language_entity_id": {
+          "type": "string",
+          "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+        },
+        "country_entity_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "pattern": "^ent_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$"
+          }
         }
       },
       "required": [
@@ -1157,6 +1180,55 @@
           "type": "string",
           "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{3})?Z$",
           "maxLength": 100
+        }
+      }
+    },
+    "editionBibliographySource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "source_edition_sha256",
+        "metadata_provenance",
+        "artifact"
+      ],
+      "properties": {
+        "kind": {
+          "const": "sidecar"
+        },
+        "source_edition_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "metadata_provenance": {
+          "$ref": "#/definitions/metadataProvenance"
+        },
+        "artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "media_type",
+            "sha256",
+            "byte_size"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "pattern": "^metadata/edition-bibliography/[A-Za-z0-9][A-Za-z0-9._-]{0,127}\\.json$"
+            },
+            "media_type": {
+              "const": "application/json"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "byte_size": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
         }
       }
     }
