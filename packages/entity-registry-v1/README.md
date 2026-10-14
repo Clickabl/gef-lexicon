@@ -17,3 +17,10 @@ Public manifest registry/sources/sqlite entries each carry immutable path, byte 
 Structured relationships are independently identified and reviewed evidence facts. Closed relationship kinds separate birthplace/death place, association/citizenship/cultural origin, language of work, movement/occupation, membership and tradition attribution; their target IDs resolve to actual appropriately typed entities, following retained redirects without rewriting source targets. Known/approximate claims require source references. Optional periods reuse the Content date contract and chronology; exact historical context can have unknown source language. No relationship or nationality is inferred from a caption, birthplace or attribution. Public SQLite schema version2 includes normalized relationship/target foreign keys; immutable package identity includes the DB schema version, and manifest counts include relationships.
 
 `validatePublicEntitySources` is the portable owning boundary for offline citation JSON, independent of private bibliography/checkouts. It admits the exact compiler whitelist, checks parent cycles/orphans and every entity/temporal source ref, preserves actual optional missing/empty fields and rejects private note/raw provenance fields. Public registry/citations each remain8MiB; actual SQLite must fit16MiB or publication fails before immutable install/pointer mutation.
+
+Factual BCP47 source tags are validated without replacing them by CLDR locale
+normalization. Actual `fat`/Fanti and `tw`/Twi source tags remain distinct from
+macrolanguage `ak`; a different raw primary subtag never supplies a rendering
+through `Intl` canonicalization alone. Same-language script/region checks still
+apply, and fallback retains the real source language. This does not allocate
+language identities or infer a translation, equivalence, support tier or review.

@@ -22,7 +22,7 @@ function text(v, max=ENTITY_REGISTRY_LIMITS.textBytes) {
 }
 function identifier(v,prefix) { if(typeof v!=='string'||!new RegExp(`^${prefix}_${UUID}$`,'u').test(v)) fail('entity_id_invalid'); return v; }
 function strings(v,max=1000) { if(!Array.isArray(v)||v.length>max) fail('entity_array_invalid'); for(const s of v)text(s,4000); if(new Set(v).size!==v.length)fail('entity_array_duplicate'); return v; }
-function tag(v) { try { if(typeof v!=='string'||Intl.getCanonicalLocales(v)[0]!==v)fail('entity_language_invalid'); } catch {fail('entity_language_invalid');} }
+function tag(v) { try { if(typeof v!=='string'||Intl.getCanonicalLocales(v).length!==1)fail('entity_language_invalid'); } catch {fail('entity_language_invalid');} }
 function timestamp(v) { if(typeof v!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/u.test(v)||!Number.isFinite(Date.parse(v))||new Date(v).toISOString()!==v.replace(/Z$/u,'.000Z').replace(/\.([0-9]{3})\.000Z$/u,'.$1Z'))fail('entity_timestamp_invalid'); }
 function evidence(row) { strings(row.source_refs); if(!STATES.includes(row.review_state))fail('entity_review_invalid'); if(row.review_state==='approved'&&!row.source_refs.length)fail('entity_approved_evidence_missing'); }
 function provenance(v) {
@@ -90,6 +90,9 @@ const admitted=(state,mode)=>state==='approved'||(mode==='beta'&&state==='candid
 /** Same writing-representation policy as App localeRendering: no extension/variant/script inheritance. */
 export function entityWritingRepresentationCompatible(requestedTag,actualTag,actualScript,defaultRepresentations={}) {
  try {
+  // CLDR may collapse a genuine IANA language (fat/tw) into a macrolanguage.
+  // Locale rendering normalization cannot establish factual language equivalence.
+  if(typeof requestedTag!=='string'||typeof actualTag!=='string'||requestedTag.split('-')[0].toLowerCase()!==actualTag.split('-')[0].toLowerCase())return false;
   const requested=Intl.getCanonicalLocales(requestedTag)[0],actual=Intl.getCanonicalLocales(actualTag)[0];
   if(!requested||!actual)return false;
   if(requested===actual&&!actualScript)return true;
