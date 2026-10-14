@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /** Validate canonical phrase-use joins without assigning IDs or review state. */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
-import { dirname, join, relative } from 'node:path';
+import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Ajv from 'ajv';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCE_ROOT = join(ROOT, 'lexi', 'phrase-uses');
-const REGISTRY_PATH = join(ROOT, '..', 'gef-expo', 'registry', 'language-support.json');
+const REGISTRY_PATH = process.env.GEF_LANGUAGE_SUPPORT_REGISTRY ? resolve(process.env.GEF_LANGUAGE_SUPPORT_REGISTRY) : join(ROOT, '..', 'gef-expo', 'registry', 'language-support.json');
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const ajv = new Ajv({ allErrors: true, strict: false });
 ajv.addSchema(readJson(join(ROOT, 'schemas', 'lexicon-entry.schema.json')));
@@ -163,7 +163,13 @@ export function validatePhraseUseCatalogue(document, {
 function main() {
   if (!existsSync(REGISTRY_PATH)) throw new Error(`Current Expo language registry is missing: ${REGISTRY_PATH}`);
   const registry = readJson(REGISTRY_PATH);
-  const registeredLanguages = new Set(registry.programs?.learnFromLanguages ?? []);
+  const languages = registry.programs?.learnFromLanguages;
+  if (registry.canonicalSource !== 'Clickabl/gef-expo/registry/language-support.json'
+      || !Array.isArray(languages) || languages.length === 0 || new Set(languages).size !== languages.length
+      || languages.some(value => typeof value !== 'string' || !/^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$/.test(value))) {
+    throw new Error('Current primary Expo language registry has invalid authority or language identities');
+  }
+  const registeredLanguages = new Set(languages);
   const lexiconDocuments = [];
   for (const languageTag of readdirSync(join(ROOT, 'languages')).sort()) {
     const languageRoot = join(ROOT, 'languages', languageTag);

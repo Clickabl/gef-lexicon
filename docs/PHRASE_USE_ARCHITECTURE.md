@@ -64,3 +64,8 @@ executor source receipt: `/tmp/gef-phrase-use-final-source-freeze-20261006.json`
 SHA256 `3fcccb73d0788a647567b9006fe389bc25133f63d04840761b2e1c6ee47f1150`.
 No deployed core-v2 package or app phrase explanation is established by these
 compiler tests.
+
+
+### October13 portable canonical registry binding
+
+The real phrase CLI honors GEF_LANGUAGE_SUPPORT_REGISTRY, like the other owning validators, and otherwise uses the sibling Expo authority. Explicit absent/invalid/foreign/empty registries fail rather than silently falling back. No phrase, language count or review fact is copied into this repository. The actual CLI regression executes valid primary, missing and foreign/empty fixtures. This fixes the isolated server creator checkout's whole-Lexicon validation prerequisite; writer credentials and activation remain independent gates.
