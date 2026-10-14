@@ -12544,6 +12544,33 @@
       },
       "url": "https://www.chateauversailles.fr/decouvrir/histoire/grands-personnages/marie-antoinette",
       "institution": "Château de Versailles"
+    },
+    {
+      "source_id": "src-unicode-cldr-calendar-keywords",
+      "source_type": "dataset",
+      "title": "Unicode CLDR BCP 47 calendar keyword registry",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/bcp47/calendar.xml",
+      "license": "Unicode-3.0",
+      "language": "en"
+    },
+    {
+      "source_id": "src-unicode-cldr-calendar-english",
+      "source_type": "dataset",
+      "title": "Unicode CLDR English calendar display names",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/main/common/main/en.xml",
+      "license": "Unicode-3.0",
+      "language": "en"
+    },
+    {
+      "source_id": "src-rmg-calendars-longstaff-2005",
+      "source_type": "book",
+      "title": "Calendars from around the world",
+      "author": "Alan Longstaff",
+      "publisher": "National Maritime Museum",
+      "year": 2005,
+      "url": "https://www.rmg.co.uk/sites/default/files/Calendars-from-around-the-world.pdf",
+      "language": "en",
+      "locator": "PDF page 13, Julian calendar heading"
     }
   ]
 }
