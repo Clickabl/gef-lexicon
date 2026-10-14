@@ -104,3 +104,14 @@ learner demand appears
 ```
 
 Do not wait to “finish a language,” and do not create a separate course tree for it.
+
+## Standalone validation input
+
+The owning curriculum validator accepts `GEF_LANGUAGE_SUPPORT_REGISTRY` for a
+protected immutable export of App's canonical registry. Its actual Tier1 member
+set determines the existing full-contract checks; no count or tier list is copied.
+An explicitly configured missing, malformed, foreign or invalid-tier registry
+fails instead of using a sibling file or skipping coverage. Local authoring may
+continue using `GEF_EXPO_ROOT` or the real sibling App source when no explicit
+input is configured. Deployment separately records the exact source commit and
+SHA256 of the exported bytes.

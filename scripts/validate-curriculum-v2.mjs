@@ -141,10 +141,16 @@ for (const path of walk(join(CURRICULUM, 'locales'))) {
 
 // ---- Which languages are held to the full contract --------------------------------------------
 function tier1Languages() {
-  const roots = [process.env.GEF_EXPO_ROOT, resolve(ROOT, '..', 'gef-expo')].filter(Boolean);
-  for (const root of roots) {
-    const path = join(root, 'registry', 'language-support.json');
-    if (existsSync(path)) return readJson(path).lessonTiers?.tier1_full ?? [];
+  const explicit = process.env.GEF_LANGUAGE_SUPPORT_REGISTRY;
+  const paths = explicit ? [resolve(explicit)] : [process.env.GEF_EXPO_ROOT, resolve(ROOT, '..', 'gef-expo')].filter(Boolean).map(root => join(root, 'registry', 'language-support.json'));
+  for (const path of paths) {
+    if (!existsSync(path)) {
+      if (explicit) throw new Error('Configured canonical curriculum language registry is missing');
+      continue;
+    }
+    const registry=readJson(path), languages=registry.programs?.learnFromLanguages, tier=registry.lessonTiers?.tier1_full;
+    if(registry.canonicalSource!=='Clickabl/gef-expo/registry/language-support.json'||!Array.isArray(languages)||!languages.length||new Set(languages).size!==languages.length||languages.some(value=>typeof value!=='string'||!/^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$/u.test(value))||!Array.isArray(tier)||!tier.length||new Set(tier).size!==tier.length||tier.some(value=>!languages.includes(value)))throw new Error('Configured canonical curriculum language registry has invalid authority or tier membership');
+    return tier;
   }
   console.warn('WARN: gef-expo registry/language-support.json not found; Tier 1 coverage is not checked.');
   return [];

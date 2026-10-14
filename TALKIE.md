@@ -380,3 +380,16 @@ TODO-LEXICON-ENTITY-REGISTRY-20261013: root-approved evidence/review-bearing str
 ## 2026-10-13 — codex-entity-foundation — portable public evidence boundary
 
 Server released the quiet source window before production allocation. Existing entityRegistry.mjs now owns validatePublicEntitySources for exact portable public citation schema, parent cycle/orphan and entity/temporal evidence closure; compiler consumes this same whitelist/boundary and rejects SQLite above16MiB before publication. No source index/revision/ID or bibliography record changed. Server/Content/App mirrors must use final helper SHA. This is validation/publication, never source-review approval.
+
+
+## 2026-10-13 — codex-entity-authoring — explicit curriculum validation authority
+
+TODO-ENTITY-AUTHORING-MCP-20261013 standalone writer activation now has an exact
+App-registry dependency instead of assuming a sibling checkout. Curriculum-v2
+consumes the existing GEF_LANGUAGE_SUPPORT_REGISTRY input and validates its real
+Tier1 identities. Explicit missing/foreign/invalid inputs fail without sibling
+fallback or skipped coverage. Existing local sibling/GEF_EXPO_ROOT behavior remains
+for unconfigured authoring. Actual phrase/curriculum CLI controls and full owning
+npm validation pass with canonical App bytes. No source entity, label, biography,
+citation, review state or immutable package changed in this validator commit.
+Dedicated repository credentials and live activation have independent receipts.
