@@ -14,7 +14,7 @@ export type CanonicalEntity = EntityEvidence & Readonly<{entity_id:string;entity
 export type EntityRedirect = Readonly<{from_entity_id:string;to_entity_id:string;created_at:string;source_refs:readonly string[];reason?:string}>;
 export type EntityRegistry = Readonly<{schema_version:2;contract:'gef-entity-registry-v1';revision:number;entities:readonly CanonicalEntity[];redirects:readonly EntityRedirect[]}>;
 export const ENTITY_REGISTRY_CONTRACT:'gef-entity-registry-v1';
-export const ENTITY_REGISTRY_LIMITS:Readonly<{entities:number;labels:number;biographies:number;relationships:number;textBytes:number;sourceBytes:number;publicBytes:number}>;
+export const ENTITY_REGISTRY_LIMITS:Readonly<{entities:number;labels:number;biographies:number;relationships:number;textBytes:number;sourceBytes:number;publicBytes:number;sqliteBytes:number}>;
 export const ENTITY_TYPES:readonly EntityType[];
 export const ENTITY_RELATIONSHIP_KINDS:readonly EntityRelationshipKind[];
 export const ENTITY_RELATIONSHIP_TARGET_TYPES:Readonly<Record<EntityRelationshipKind,readonly EntityType[]>>;
@@ -26,3 +26,11 @@ export function normalizeEntitySearch(text:string):string;
 export function searchEntities(registry:EntityRegistry,query:string,options?:Readonly<{mode?:'beta'|'reviewed';defaultRepresentations?:Readonly<Record<string,string>>;limit?:number;entityType?:EntityType}>):readonly Readonly<{entity_id:string;entity_type:EntityType;matched_name:string;matched_source_entity_id:string;matched_review_state:EntityReviewState;language_tag?:string;rank:number}>[];
 export function publicEntityRegistry(registry:EntityRegistry):EntityRegistry;
 export function entityWritingRepresentationCompatible(requestedTag:string,actualTag:string,actualScript?:string,defaultRepresentations?:Readonly<Record<string,string>>):boolean;
+
+export type PublicEntityCitation = Readonly<{source_id:string;source_type:string;title:string;author?:string;creator?:string;publisher?:string;year?:number|null;release_date?:string;language?:string;region?:string;url?:string;official_url?:string;license?:string;parent_source_id?:string;edition_context?:Readonly<{locale?:string;channel?:'original_text'|'original_dialogue'|'script'|'transcript'|'subtitle'|'dub'|'published_translation'|'caption'|'other';platform_or_release?:string}>;external_ids?:Readonly<Record<string,string>>;source_kind?:string;source_publication?:string;source_date?:string;institution?:string;identifier?:string;pages?:string;locator?:string;transcript_url?:string;transcript_urls?:readonly string[]}>;
+export type PublicEntitySources = Readonly<{contract:'gef-entity-sources-v1';sources:readonly PublicEntityCitation[]}>;
+export const PUBLIC_ENTITY_SOURCE_FIELDS:readonly (keyof PublicEntityCitation)[];
+export const PUBLIC_ENTITY_SOURCE_TYPES:readonly string[];
+export function validatePublicEntitySources(input:unknown,options?:Readonly<{registry?:EntityRegistry}>):PublicEntitySources;
+
+export function publicEntitySources(registry:EntityRegistry,bibliography:Readonly<{sources:readonly Readonly<Record<string,unknown> & {source_id:string}>[]}>):PublicEntitySources;

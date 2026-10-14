@@ -1,7 +1,7 @@
 /** Canonical reusable identity lookup. IDs arrive from the Server journal, never from labels. */
 import { validateBibliographicDateFact, validateBibliographicLifespan } from './bibliographicContract.mjs';
 export const ENTITY_REGISTRY_CONTRACT = 'gef-entity-registry-v1';
-export const ENTITY_REGISTRY_LIMITS = Object.freeze({ entities: 100000, labels: 1000, biographies: 100, relationships: 1000, textBytes: 262144, sourceBytes: 67108864, publicBytes: 8388608 });
+export const ENTITY_REGISTRY_LIMITS = Object.freeze({ entities: 100000, labels: 1000, biographies: 100, relationships: 1000, textBytes: 262144, sourceBytes: 67108864, publicBytes: 8388608, sqliteBytes: 16777216 });
 export const ENTITY_TYPES = Object.freeze(['person','real_person','historical_person','fictional_character','mythological_figure','organization','collective_creator','cultural_attribution','traditional_attribution','anonymous_attribution','unknown_attribution','publisher_attribution','publisher','place','country','geographic_region','literary_period','genre','literary_category','content_type','tradition','calendar','language','script','literary_movement','occupation','other']);
 export const ENTITY_RELATIONSHIP_TARGET_TYPES = Object.freeze({birthplace:Object.freeze(['place','country','geographic_region']),death_place:Object.freeze(['place','country','geographic_region']),associated_country:Object.freeze(['country']),citizenship:Object.freeze(['country']),cultural_origin:Object.freeze(['country','geographic_region','tradition']),language_of_work:Object.freeze(['language']),literary_movement:Object.freeze(['literary_movement']),occupation:Object.freeze(['occupation']),member_of:Object.freeze(['organization','collective_creator']),attributed_tradition:Object.freeze(['tradition'])});
 export const ENTITY_RELATIONSHIP_KINDS = Object.freeze(Object.keys(ENTITY_RELATIONSHIP_TARGET_TYPES));
@@ -130,3 +130,37 @@ export function searchEntities(registry,query,{mode='reviewed',limit=50,entityTy
  return [...matches.values()].sort((a,b)=>a.rank-b.rank||(a.entity_id<b.entity_id?-1:a.entity_id>b.entity_id?1:0)).slice(0,limit);
 }
 export function publicEntityRegistry(registry) {const copy=structuredClone(registry);return {...copy,entities:copy.entities.map(({research_notes,...row})=>row)};}
+
+/** Exact public citation fields; private research/editorial/raw provenance never crosses this boundary. */
+export const PUBLIC_ENTITY_SOURCE_FIELDS = Object.freeze(['source_id','source_type','title','author','creator','publisher','year','release_date','language','region','url','official_url','license','parent_source_id','edition_context','external_ids','source_kind','source_publication','source_date','institution','identifier','pages','locator','transcript_url','transcript_urls']);
+export const PUBLIC_ENTITY_SOURCE_TYPES = Object.freeze(['internal_work','book','article','dataset','website','wikipedia','wikidata','archive','film','tv_series','tv_episode','song','poem','play','video_game','speech','advertisement','internet_meme','social_media','release_variant','other']);
+/** Portable offline public evidence validation, independent of a private source checkout. */
+export function validatePublicEntitySources(input,{registry}={}) {
+ object(input,['contract','sources'],['contract','sources'],'entity_public_sources_invalid');
+ if(input.contract!=='gef-entity-sources-v1'||!Array.isArray(input.sources)||input.sources.length>ENTITY_REGISTRY_LIMITS.entities||encoder.encode(JSON.stringify(input)).length>ENTITY_REGISTRY_LIMITS.publicBytes)fail('entity_public_sources_invalid');
+ const byId=new Map(),sourceId=v=>{if(typeof v!=='string'||!/^src[-_][A-Za-z0-9._:-]+$/u.test(v))fail('entity_public_source_id_invalid');};
+ const sourceText=v=>{if(typeof v!=='string'||encoder.encode(v).length>ENTITY_REGISTRY_LIMITS.textBytes||/[\u0000\ud800-\udfff]/u.test(v))fail('entity_public_source_text_invalid');};
+ for(const row of input.sources){object(row,PUBLIC_ENTITY_SOURCE_FIELDS,['source_id','source_type','title'],'entity_public_source_invalid');sourceId(row.source_id);if(byId.has(row.source_id))fail('entity_public_source_duplicate');byId.set(row.source_id,row);if(!PUBLIC_ENTITY_SOURCE_TYPES.includes(row.source_type))fail('entity_public_source_type_invalid');text(row.title);for(const [key,value]of Object.entries(row)){
+  if(['source_id','source_type','title'].includes(key))continue;
+  if(key==='parent_source_id')sourceId(value);
+  else if(key==='year'){if(value!==null&&!Number.isSafeInteger(value))fail('entity_public_source_year_invalid');}
+  else if(key==='external_ids'){object(value,Object.keys(value??{}),[],'entity_public_source_external_invalid');for(const [provider,id]of Object.entries(value)){if(provider.length>1000)fail('entity_public_source_external_invalid');sourceText(id);}}
+  else if(key==='edition_context'){object(value,['locale','channel','platform_or_release'],[],'entity_public_source_context_invalid');for(const [field,item]of Object.entries(value)){if(field==='channel'&&!['original_text','original_dialogue','script','transcript','subtitle','dub','published_translation','caption','other'].includes(item))fail('entity_public_source_context_invalid');sourceText(item);}}
+  else if(key==='transcript_urls'){if(!Array.isArray(value)||value.length>ENTITY_REGISTRY_LIMITS.entities)fail('entity_public_source_transcript_invalid');value.forEach(sourceText);}
+  else sourceText(value);
+ }}
+ for(const row of input.sources){const seen=new Set([row.source_id]);let parent=row.parent_source_id;while(parent!==undefined){if(!byId.has(parent))fail('entity_public_source_parent_orphan');if(seen.has(parent))fail('entity_public_source_parent_cycle');seen.add(parent);parent=byId.get(parent).parent_source_id;}}
+ const collect=value=>{if(!value||typeof value!=='object')return;if(Array.isArray(value)){value.forEach(collect);return;}for(const [key,child]of Object.entries(value)){if(key==='source_refs'){for(const id of child)if(!byId.has(id))fail('entity_public_source_ref_orphan');}else if(key==='source_id'){if(!byId.has(child))fail('entity_public_source_ref_orphan');}else collect(child);}};
+ if(registry!==undefined)collect(validateEntityRegistry(registry));
+ return structuredClone(input);
+}
+
+/** One owning public evidence projection: exact referenced sources plus parents, no private raw notes. */
+export function publicEntitySources(registry,bibliography) {
+ const source=publicEntityRegistry(validateEntityRegistry(registry,{bibliography}));
+ const referenced=new Set(),collect=value=>{if(!value||typeof value!=='object')return;if(Array.isArray(value)){value.forEach(collect);return;}for(const [key,child]of Object.entries(value)){if(key==='source_refs')child.forEach(id=>referenced.add(id));else if(key==='source_id')referenced.add(child);else collect(child);}};collect(source);
+ const byId=new Map((bibliography?.sources??[]).map(row=>[row.source_id,row])),needed=new Map();
+ const include=id=>{if(needed.has(id))return;const row=byId.get(id);if(!row)fail('entity_public_source_orphan');needed.set(id,row);if(row.parent_source_id!==undefined)include(row.parent_source_id);};for(const id of referenced)include(id);
+ const sources=[...needed.values()].map(row=>Object.fromEntries(PUBLIC_ENTITY_SOURCE_FIELDS.filter(key=>own(row,key)).map(key=>[key,row[key]]))).sort((a,b)=>a.source_id<b.source_id?-1:a.source_id>b.source_id?1:0);
+ return validatePublicEntitySources({contract:'gef-entity-sources-v1',sources},{registry:source});
+}

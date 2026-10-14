@@ -376,3 +376,7 @@ No source, creator or localized-label IDs were independently assigned.
 ## 2026-10-13 — codex-entity-foundation — typed reusable relationship contract
 
 TODO-LEXICON-ENTITY-REGISTRY-20261013: root-approved evidence/review-bearing structured relations now extend the same source registry, not a parallel creator DB. Central Server journal allocates rel_UUID rows and supports independent upsert; controlled relationship kinds and redirect-aware target types are documented in NAME_ENTITY_ARCHITECTURE. No unsourced relationships are populated. Calendar/date/source references remain actual owning contracts. Public SQLite schema2 and relationship counts are explicit; package identity includes DB schema to preserve prior immutable artifacts. Server/App mirrors must consume this exact additive contract before population.
+
+## 2026-10-13 — codex-entity-foundation — portable public evidence boundary
+
+Server released the quiet source window before production allocation. Existing entityRegistry.mjs now owns validatePublicEntitySources for exact portable public citation schema, parent cycle/orphan and entity/temporal evidence closure; compiler consumes this same whitelist/boundary and rejects SQLite above16MiB before publication. No source index/revision/ID or bibliography record changed. Server/Content/App mirrors must use final helper SHA. This is validation/publication, never source-review approval.
