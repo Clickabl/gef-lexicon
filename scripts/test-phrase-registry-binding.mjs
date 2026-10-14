@@ -10,7 +10,7 @@ function invoke(registry) { return spawnSync(process.execPath,['scripts/validate
 test('actual phrase CLI honors the explicit primary registry and refuses bad authority instead of sibling fallback',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'gef-phrase-registry-'));
  try {
-  const file=path.join(dir,'primary.json');fs.copyFileSync(canonical,file);
+  const file=path.join(dir,'primary.json');fs.writeFileSync(file,fs.readFileSync(canonical),{mode:0o600});
   const accepted=invoke(file);assert.equal(accepted.status,0,accepted.stderr);
   assert.equal(invoke(path.join(dir,'missing.json')).status,1);
   const bad=JSON.parse(fs.readFileSync(canonical,'utf8'));bad.canonicalSource='another-product';fs.writeFileSync(file,JSON.stringify(bad));assert.equal(invoke(file).status,1);
