@@ -12571,6 +12571,48 @@
       "url": "https://www.rmg.co.uk/sites/default/files/Calendars-from-around-the-world.pdf",
       "language": "en",
       "locator": "PDF page 13, Julian calendar heading"
+    },
+    {
+      "source_id": "src-iana-language-subtag-registry-20260917",
+      "source_type": "dataset",
+      "title": "IANA Language Subtag Registry (File-Date 2026-09-17)",
+      "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "language": "en",
+      "external_ids": {
+        "sha256": "755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1"
+      }
+    },
+    {
+      "source_id": "src-loc-iso639-2",
+      "source_type": "dataset",
+      "title": "Library of Congress ISO 639-2 code table",
+      "url": "https://www.loc.gov/standards/iso639-2/ISO-639-2_utf-8.txt",
+      "language": "en",
+      "external_ids": {
+        "sha256": "42b71885e4dc885559fda5ad059fd81838cf4782cedb5fd08cc3431f7d067371"
+      }
+    },
+    {
+      "source_id": "src-unicode-cldr-48.2-language-aliases",
+      "source_type": "dataset",
+      "title": "Unicode CLDR 48.2 language aliases",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.0/cldr-json/cldr-core/supplemental/aliases.json",
+      "language": "en",
+      "external_ids": {
+        "sha256": "b7011c866f27502ed6f160ca83f2a83fa42bce9fdc2176e60e2c6630961d877c"
+      },
+      "license": "Unicode-3.0"
+    },
+    {
+      "source_id": "src-unicode-cldr-48.2-language-english",
+      "source_type": "dataset",
+      "title": "Unicode CLDR 48.2 English language display names",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.0/cldr-json/cldr-localenames-full/main/en/languages.json",
+      "language": "en",
+      "external_ids": {
+        "sha256": "a5960d2371bc7d982da7fcfd9a0e237429d3467a5cc76f680bc3af5bcef9fb4e"
+      },
+      "license": "Unicode-3.0"
     }
   ]
 }
