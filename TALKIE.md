@@ -393,3 +393,8 @@ for unconfigured authoring. Actual phrase/curriculum CLI controls and full ownin
 npm validation pass with canonical App bytes. No source entity, label, biography,
 citation, review state or immutable package changed in this validator commit.
 Dedicated repository credentials and live activation have independent receipts.
+
+
+## 2026-10-13 — codex-entity-authoring — public biography ownership
+
+TODO-ENTITY-AUTHORING-MCP-20261013: work-scoped documentary portraits belong to Content. The canonical 56 historical source rows and their centrally allocated IDs remain byte-identical. Generic public entity JSON and SQLite now exclude every work_id biography; manifest counts describe the actual public projection. Current generic authoring cannot create or edit scoped portraits, while retained historical journal receipts remain replayable. Content workpeople assets own ongoing portrait text and delivery. The new immutable package has 203 entities, 290 labels, zero biographies and 33 citations; older already-published artifacts remain available by hash and are not retroactively private. Actual compiler, SQLite foreign-key/integrity controls, 23 focused tests and full owning validation pass. Server and Content must synchronize this committed projection before publication.
