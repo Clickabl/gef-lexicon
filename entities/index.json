@@ -1,7 +1,4803 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 1,
-  "entities": [],
+  "revision": 2,
+  "entities": [
+    {
+      "entity_type": "person",
+      "canonical_name": "Manon Roland",
+      "names": [
+        {
+          "text": "Manon Roland",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_cb7ff179-5e64-4c44-bbd3-7834bc66e323",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Marie-Jeanne Phlipon Roland",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_48ee1f82-fdf0-4a9a-8757-d6dd710aebee",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Madame Roland",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_a029c55b-32c5-48ad-a911-2a13d389d9af",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Manon",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_925dfb42-d572-48ce-936d-496edf40e5b9",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Manon Roland lives with her husband, Jean-Marie Roland, an inspector of manufactures, and their daughter, Eudora. She is highly educated, widely read, and a prolific letter writer.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_1e628c53-b4c7-47a8-b66b-4283503bfe3e",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Manon Roland vit avec son mari, Jean-Marie Roland, inspecteur des manufactures, et leur fille, Eudora. Très instruite et grande lectrice, elle écrit énormément de lettres.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-madame-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/0/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_e542b84a-3608-4595-97ac-19712376a5a1",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "manon-roland"
+        ]
+      },
+      "legacy_ids": [
+        "manon-roland"
+      ],
+      "source_refs": [
+        "src-bnf-madame-roland",
+        "src-perroud-roland-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/0",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1754-03-17",
+      "death_date": "1793-11-08",
+      "entity_id": "ent_675c5a9e-466f-4abc-b1df-1f401856bc09",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Louis-Augustin Bosc",
+      "names": [
+        {
+          "text": "Louis-Augustin Bosc",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_947fc17e-cfb5-4d9f-9dee-7f2bc57fb360",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Louis-Augustin-Guillaume Bosc",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_9643024f-9fa0-45c0-8d4e-555bf2ad8c02",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Bosc d'Antic",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_28c68f47-32aa-44bf-9378-261aa6fe0054",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Bosc",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_c1d8ce4e-95a4-419b-adaa-5830da6bf33d",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Louis-Augustin Bosc is a close friend of the Roland family living in Paris. He works in the postal administration and studies natural history, particularly plants and insects.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_dda2e2e3-938a-4405-a178-d273a1378858",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Louis-Augustin Bosc est un ami proche de la famille Roland qui vit à Paris. Il travaille dans l’administration des postes et étudie l’histoire naturelle, en particulier les plantes et les insectes.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters",
+            "src-larousse-bosc"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/1/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_235a25a5-f456-4ef9-985d-47f47ea7f142",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "louis-augustin-bosc"
+        ]
+      },
+      "legacy_ids": [
+        "louis-augustin-bosc"
+      ],
+      "source_refs": [
+        "src-perroud-roland-letters",
+        "src-larousse-bosc"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/1",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1759-01-29",
+      "death_date": "1828-07-10",
+      "entity_id": "ent_cb466606-888c-4e24-a10c-12ce2cd3e79a",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jean-Marie Roland",
+      "names": [
+        {
+          "text": "Jean-Marie Roland",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-jean-marie-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/2/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_31c8857d-6b8f-490f-b42e-9c3fcee948e7",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jean-Marie Roland de La Platière",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-jean-marie-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/2/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_e21cdb69-ac69-4f6e-a831-c5cbfcb3e716",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Roland de La Platière",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-jean-marie-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/2/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_80e5d922-22bd-482c-a684-c39f33a392ba",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jean-Marie Roland is Manon Roland’s husband and an inspector of manufactures. His work concerns manufacturing, trade, and industry.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-jean-marie-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/2/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_ad8914f8-2abd-4c5e-870a-a7644bf9e1dd",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jean-Marie Roland est le mari de Manon Roland et inspecteur des manufactures. Son travail concerne les manufactures, le commerce et l’industrie.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-jean-marie-roland",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/2/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_8f9e084b-2d85-4215-a3fe-1d099944e554",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "jean-marie-roland"
+        ]
+      },
+      "legacy_ids": [
+        "jean-marie-roland"
+      ],
+      "source_refs": [
+        "src-bnf-jean-marie-roland",
+        "src-perroud-roland-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/2",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1734-02-19",
+      "death_date": "1793-11-11",
+      "entity_id": "ent_b81e6e29-e9b1-4a98-b98f-250a7a5ca625",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Charles-Germain Bourgeois",
+      "names": [
+        {
+          "text": "Charles-Germain Bourgeois",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-hail-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/3/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_749690cd-3036-4069-9797-0f7eefd4e430",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Charles-Germain Bourgeois is the manager of the king’s private estate at Rambouillet.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-hail-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/3/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_98775b11-59f4-43f5-9d7c-9fa5bc81cfcc",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Charles-Germain Bourgeois est le régisseur du domaine particulier du roi à Rambouillet.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-bnf-hail-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/3/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_c8eff70d-a263-41de-8164-70d07a61a5fb",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "charles-germain-bourgeois"
+        ]
+      },
+      "legacy_ids": [
+        "charles-germain-bourgeois"
+      ],
+      "source_refs": [
+        "src-bnf-hail-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/3",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_86cc7278-50cc-4d30-a216-c58def018d21",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jean-Joseph Barthelon",
+      "names": [
+        {
+          "text": "Jean-Joseph Barthelon",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/4/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_382f8d3d-bff4-4368-b486-a53001e6658a",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Barthelon",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/4/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_71f02268-ffae-429e-9a10-97ed4c4c2b4f",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jean-Joseph Barthelon is a procureur attached to the Parlement of Dauphiné in Grenoble. His letter to François Albert records the events of 7 June 1788 as he understands them that afternoon.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/4/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_ba018f41-d1c8-4a6c-aa86-72366d98a5f5",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jean-Joseph Barthelon est procureur au parlement du Dauphiné à Grenoble. Sa lettre à François Albert rapporte les événements du 7 juin 1788 tels qu’il les comprend cet après-midi-là.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/4/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_425a8088-71b6-4aa1-97c6-268c825f4d63",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "jean-joseph-barthelon"
+        ]
+      },
+      "legacy_ids": [
+        "jean-joseph-barthelon"
+      ],
+      "source_refs": [
+        "src-mrf-barthelon-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/4",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_bb71553e-22de-4b97-a889-bd96cf1370b8",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Joseph Blanc",
+      "names": [
+        {
+          "text": "Joseph Blanc",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_aa532613-3f91-4c94-913f-5950b5eb6b8f",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Joseph Blanc",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_12456d68-0b5e-4053-9e52-d86e974e6f2d",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Le Blanc",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_0d9f4dd5-67dd-486a-a8f6-1efc6310ac71",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Leblanc",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_69a55e44-63f3-45ba-ab72-2a04254e5b3a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Joseph Blanc, who signs his name “Le Blanc,” is a sergeant-major in the Austrasie infantry regiment stationed at Grenoble.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_29bfcad8-ea62-4fb8-a92a-080ec788ce12",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Joseph Blanc, qui signe son nom « Le Blanc », est sergent-major au régiment d’infanterie d’Austrasie, en garnison à Grenoble.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/5/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_4619fce7-e12b-4f4a-97d2-04877f8611e7",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "joseph-leblanc-austrasie"
+        ]
+      },
+      "legacy_ids": [
+        "joseph-leblanc-austrasie"
+      ],
+      "source_refs": [
+        "src-leblanc-letters-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/5",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_a3fb0f00-f262-46bf-a836-fd925daceb8d",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Joseph Monteil",
+      "names": [
+        {
+          "text": "Joseph Monteil",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_4cdc2960-33fe-49e8-ab25-26968eab0987",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Maître Joseph Monteil",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_fb80883f-d70b-4a2c-a996-4a609dced264",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Montel",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_f12a52e1-003a-4b8b-8960-d347aa2aa517",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Monteil",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_6e231ac3-857f-4ff7-88ea-e37f34baa272",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Joseph Monteil is a notary in Jaujac in the Vivarais and the recipient of Joseph Le Blanc’s surviving 1788 letters.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_4fbf0075-3e98-475a-9d67-89aaa3085c57",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Joseph Monteil est notaire à Jaujac, en Vivarais, et le destinataire des lettres conservées de Joseph Le Blanc en 1788.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-leblanc-letters-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/6/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_8a935bdb-fae5-4091-9d1e-cf218e9feac5",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "joseph-monteil-jaujac"
+        ]
+      },
+      "legacy_ids": [
+        "joseph-monteil-jaujac"
+      ],
+      "source_refs": [
+        "src-leblanc-letters-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/6",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_2873fa5e-19dc-4027-89cf-4828a3a6d767",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Vaugeois",
+      "names": [
+        {
+          "text": "Vaugeois",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-ad28-sours-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/7/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_77234d78-8546-4706-b38c-9ba6626a71bc",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Vaugeois is the vicar of Sours in the Beauce region and records the destruction caused there by the hailstorm of July 13, 1788.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-ad28-sours-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/7/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_007311b0-591d-4089-896b-994a967391b1",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Vaugeois est vicaire de Sours, en Beauce, et consigne les destructions causées dans la paroisse par l’orage de grêle du 13 juillet 1788.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-ad28-sours-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/7/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_7a11052a-4eb8-4ed7-a038-698c8f9f85df",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "vaugeois-sours"
+        ]
+      },
+      "legacy_ids": [
+        "vaugeois-sours"
+      ],
+      "source_refs": [
+        "src-ad28-sours-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/7",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_a47e0257-ee5c-41ef-8b76-aad181222ef6",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Siméon-Prosper Hardy",
+      "names": [
+        {
+          "text": "Siméon-Prosper Hardy",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-hardy-project",
+            "src-bnf-hardy"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/8/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_78852389-158f-4950-98ad-583e287df944",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Hardy",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-hardy-project",
+            "src-bnf-hardy"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/8/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_bbfba65c-7146-4704-a71a-5e9bd7819715",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Siméon-Prosper Hardy is a Parisian bibliophile and former bookseller who keeps a long-running journal of events, prices, rumors, printed news, and everyday life in the city.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-hardy-project",
+            "src-bnf-hardy"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/8/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_eefefbc3-f80c-4548-b187-a33d8be7113d",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Siméon-Prosper Hardy est un bibliophile parisien et ancien libraire qui tient un journal au long cours où il consigne événements, prix, rumeurs, nouvelles imprimées et vie quotidienne dans la ville.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-hardy-project",
+            "src-bnf-hardy"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/8/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_b6340f30-d2a0-4b39-9712-18a85bc4b966",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "simeon-prosper-hardy"
+        ]
+      },
+      "legacy_ids": [
+        "simeon-prosper-hardy"
+      ],
+      "source_refs": [
+        "src-hardy-project",
+        "src-bnf-hardy"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/8",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1729",
+      "death_date": "1806",
+      "entity_id": "ent_0743fcf8-a8a2-4925-a866-fc595245f38f",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Olympe de Gouges",
+      "names": [
+        {
+          "text": "Olympe de Gouges",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-gouges-remarques-1788",
+            "src-ccfr-gouges-lettre-peuple"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/9/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_43ad778e-092b-4825-a01a-6201bd63ebd6",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Marie Gouze",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-gouges-remarques-1788",
+            "src-ccfr-gouges-lettre-peuple"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/9/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_f5042eeb-7741-47a8-b13c-3f923196d452",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Gouges",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-gouges-remarques-1788",
+            "src-ccfr-gouges-lettre-peuple"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/9/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_92c295b2-742e-46e9-bfe6-e5b66893d527",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Olympe de Gouges is a playwright and political writer who publishes proposals and arguments on public affairs under her own name and as “a citizen woman.”",
+          "translation_state": "source",
+          "source_refs": [
+            "src-gouges-remarques-1788",
+            "src-ccfr-gouges-lettre-peuple"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/9/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_ca5dfa2f-9f6a-46f9-84a1-6fe5a10c8ae9",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Olympe de Gouges est dramaturge et autrice politique ; elle publie des propositions et des prises de position sur les affaires publiques sous son nom et comme « citoyenne ».",
+          "translation_state": "source",
+          "source_refs": [
+            "src-gouges-remarques-1788",
+            "src-ccfr-gouges-lettre-peuple"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/9/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_46de1f93-2ab4-4bf7-a8ef-973dad935eff",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "olympe-de-gouges"
+        ]
+      },
+      "legacy_ids": [
+        "olympe-de-gouges"
+      ],
+      "source_refs": [
+        "src-gouges-remarques-1788",
+        "src-ccfr-gouges-lettre-peuple"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/9",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1748-05-07",
+      "death_date": "1793-11-03",
+      "entity_id": "ent_4af105e1-f35e-4e92-8ad7-0e3bbd72a4b9",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Pierre-François Lepoutre",
+      "names": [
+        {
+          "text": "Pierre-François Lepoutre",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/10/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_1badbf8f-07eb-4a20-84ff-246b1be875f8",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Lepoutre",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/10/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_cd682a45-1d3d-4ddb-bf32-168f9b5c9e51",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Pierre-François Lepoutre is a farmer from the Linselles area in northern France and a deputy to the Estates-General. His wife, Angélique Delputte, writes to him about their family, farm and neighbours while he is away.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/10/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_be6af6a5-8c68-4e13-ba17-479ce56d3c5e",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Pierre-François Lepoutre est fermier dans la région de Linselles, dans le nord de la France, et député aux États généraux. Son épouse, Angélique Delputte, lui écrit au sujet de leur famille, de la ferme et de leurs voisins pendant son absence.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/10/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_4a10439d-ddf5-420c-8a43-363c6ac34938",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "pierre-francois-lepoutre"
+        ]
+      },
+      "legacy_ids": [
+        "pierre-francois-lepoutre"
+      ],
+      "source_refs": [
+        "src-lepoutre-family-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/10",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_abced4f8-0531-4f56-981f-b8e86360e3ec",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Angélique Delputte",
+      "names": [
+        {
+          "text": "Angélique Delputte",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/11/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_378c095f-65e6-4fb3-b9c5-fcf526963ac0",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Delputte",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/11/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_98f25f89-46c0-4d6c-9060-77ee9f452a2a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Angélique Delputte runs household and farm affairs while her husband, Pierre-François Lepoutre, is away at the Estates-General. Her letters bring family concerns, work and local news into their correspondence.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/11/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_85e937bf-73c9-40f2-b96a-fed435c508ac",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Angélique Delputte dirige les affaires du ménage et de la ferme pendant que son mari, Pierre-François Lepoutre, est aux États généraux. Ses lettres mêlent soucis familiaux, travail et nouvelles locales.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/11/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_aa101e51-fb79-4b37-a197-7cdfd4c59cca",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "angelique-delputte"
+        ]
+      },
+      "legacy_ids": [
+        "angelique-delputte"
+      ],
+      "source_refs": [
+        "src-lepoutre-family-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/11",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_5bd651cf-7c60-467a-8fb9-676d72c81b21",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Louis XVI",
+      "names": [
+        {
+          "text": "Louis XVI",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-archives-parlementaires-convocation-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/12/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_5c1edbd6-55aa-4b5d-8abb-3fc969c34adb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Louis XVI is the king of France. The royal convocation in this act asks his subjects to elect representatives and present their grievances to the Estates-General.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-archives-parlementaires-convocation-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/12/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_475327f8-7b78-4da6-ae59-6b8dc73b280e",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Louis XVI est roi de France. La convocation royale présentée dans cet acte demande à ses sujets d’élire des représentants et de présenter leurs doléances aux États généraux.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-archives-parlementaires-convocation-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/12/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_d83ec853-0c00-4ce7-bf1f-ef44c8fa40f6",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "louis-xvi"
+        ]
+      },
+      "legacy_ids": [
+        "louis-xvi"
+      ],
+      "source_refs": [
+        "src-archives-parlementaires-convocation-1789"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/12",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_40093952-ae9b-440a-adfe-efa906266e88",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Antoine-Éléonore-Léon Le Clerc de Juigné",
+      "names": [
+        {
+          "text": "Antoine-Éléonore-Léon Le Clerc de Juigné",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-cinii-juigne-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/13/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_666f2187-3334-4684-9ca2-77b1848bfa51",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Juigné",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-cinii-juigne-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/13/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_1dde95bc-93ce-4579-8d4f-affecf75afbb",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Le Clerc de Juigné",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-cinii-juigne-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/13/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_410d7315-370a-4173-ba60-91fcddcb7107",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Le Clerc de Juigné is the archbishop of Paris. Contemporary printed correspondence identifies him under that title.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-cinii-juigne-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/13/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_a6d87447-44c6-4d79-ab88-df5d6924f8ec",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Le Clerc de Juigné est archevêque de Paris. La correspondance imprimée de l’époque l’identifie sous ce titre.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-cinii-juigne-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/13/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_a9738205-a7d9-4de1-8401-5fa8657079ac",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "antoine-eleonore-leon-leclerc-juigne"
+        ]
+      },
+      "legacy_ids": [
+        "antoine-eleonore-leon-leclerc-juigne"
+      ],
+      "source_refs": [
+        "src-cinii-juigne-1789"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/13",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_289c17ab-8fc7-4d8c-ab85-619d441482fc",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Mr Jenkinson",
+      "names": [
+        {
+          "text": "Mr Jenkinson",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-tna-jenkinson-fo27-32"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/14/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_e06f5bd4-6470-4525-94f0-f0bdac017421",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jenkinson",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-tna-jenkinson-fo27-32"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/14/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_414dcc8e-ac54-4c4d-9ba7-c7a2d970ae3e",
+          "review_state": "candidate"
+        },
+        {
+          "text": "M. Jenkinson",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-tna-jenkinson-fo27-32"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/14/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_43020742-e232-40cb-bac2-e6f1a3e5d8b9",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "The National Archives identifies this correspondent as Mr Jenkinson. Writing from Paris on 15 July 1789, he claims to have witnessed the taking of the Bastille and distinguishes some of what he heard from what he says he saw. His given name is not established by this source.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-tna-jenkinson-fo27-32"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/14/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_a27afefe-046a-43b9-bdd7-7ae0eef1066e",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Les Archives nationales britanniques identifient ce correspondant comme M. Jenkinson. Écrivant de Paris le 15 juillet 1789, il affirme avoir assisté à la prise de la Bastille et distingue certaines nouvelles rapportées de ce qu’il dit avoir vu. Ce document ne permet pas d’établir son prénom.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-tna-jenkinson-fo27-32"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/14/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_67944e0a-abb0-412b-978f-2939d4a59d15",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "william-jenkinson"
+        ]
+      },
+      "legacy_ids": [
+        "william-jenkinson"
+      ],
+      "source_refs": [
+        "src-tna-jenkinson-fo27-32"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/14",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_49540529-1c84-4606-91fe-19af4f065d17",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jacques Necker",
+      "names": [
+        {
+          "text": "Jacques Necker",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-necker",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/15/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_7d30f0c6-e0dd-4e3d-9fa9-d0c04d431493",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Necker",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-necker",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/15/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_738e3838-eca5-4976-9a2b-2ba342ae279f",
+          "review_state": "candidate"
+        },
+        {
+          "text": "M. Necker",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-necker",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/15/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_3a2be443-f079-4f4d-b4a4-b11f8a240298",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jacques Necker is a Swiss-born banker recalled to direct France’s finances in 1788. News about his position travels through the correspondence in this act.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-necker",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/15/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_ff2a3445-5fc0-4bfb-8b5a-5ad9319b3874",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Jacques Necker est un banquier d’origine suisse rappelé à la direction des finances françaises en 1788. Les nouvelles concernant sa fonction circulent dans les lettres de cet acte.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-necker",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/15/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_47b593d9-28cc-4022-a70f-7c49002f2f15",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "jacques-necker"
+        ]
+      },
+      "legacy_ids": [
+        "jacques-necker"
+      ],
+      "source_refs": [
+        "src-versailles-necker",
+        "src-perroud-roland-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/15",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_5ad266be-5b34-49bb-b69e-40c17eab81f4",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Thomas Jefferson",
+      "names": [
+        {
+          "text": "Thomas Jefferson",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-jefferson-france",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/16/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_18b300c2-2e17-4f96-be21-9f7bf1b76264",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jefferson",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-jefferson-france",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/16/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_c7f68d44-bceb-4436-891d-940b2d3a44e3",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Thomas Jefferson is the United States minister to France. He sends reports on events in France to American officials.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-jefferson-france",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/16/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_e3024557-2e8a-4285-bb05-aafbc9a17416",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Thomas Jefferson est ministre des États-Unis en France. Il adresse aux responsables américains des rapports sur les événements français.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-jefferson-france",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/16/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_e77ce9a4-04fe-4a56-848a-891078d6c78e",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "thomas-jefferson"
+        ]
+      },
+      "legacy_ids": [
+        "thomas-jefferson"
+      ],
+      "source_refs": [
+        "src-state-jefferson-france",
+        "src-nara-jefferson-jay-1789-07-19"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/16",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_93675711-22ce-45a3-ab05-7747269b35d8",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Helen Maria Williams",
+      "names": [
+        {
+          "text": "Helen Maria Williams",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-williams-letters-1790-first",
+            "src-williams-letters-1791-boston-tcp",
+            "src-ecpa-helen-maria-williams"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/17/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_b46f5b70-e65e-422a-90c0-a504e439b000",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Williams",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-williams-letters-1790-first",
+            "src-williams-letters-1791-boston-tcp",
+            "src-ecpa-helen-maria-williams"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/17/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_54805eab-d64a-4219-bb82-e00a2ce7189c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Helen Maria Williams is a British writer whose published letters describe and interpret events in revolutionary France.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-williams-letters-1790-first",
+            "src-williams-letters-1791-boston-tcp",
+            "src-ecpa-helen-maria-williams"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/17/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_9edd2516-8bfd-4c76-a4b6-c3fb39017604",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Helen Maria Williams est une écrivaine britannique dont les lettres publiées décrivent et interprètent les événements de la France révolutionnaire.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-williams-letters-1790-first",
+            "src-williams-letters-1791-boston-tcp",
+            "src-ecpa-helen-maria-williams"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/17/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_48e2f07e-cf95-4421-bb1a-ecaacbcb1c72",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "helen-maria-williams"
+        ]
+      },
+      "legacy_ids": [
+        "helen-maria-williams"
+      ],
+      "source_refs": [
+        "src-williams-letters-1790-first",
+        "src-williams-letters-1791-boston-tcp",
+        "src-ecpa-helen-maria-williams"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/17",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": "1759-06-17",
+      "death_date": "1827-12-15",
+      "entity_id": "ent_a068fd7f-fbd3-4237-9caf-20b049f6b034",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Eudora Roland",
+      "names": [
+        {
+          "text": "Eudora Roland",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/18/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_df2fc5c0-52ac-441d-b41b-12481575ddfd",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Eudora",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/18/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_68523b51-b267-4493-937c-8e9972b6a0a2",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Eudora is the daughter of Manon and Jean-Marie Roland. In the March 1789 letter, Manon describes attending a performance with her and receiving her letters. This is the mother’s account, not a surviving letter written by Eudora.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/18/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_c592992e-7731-4eb0-ac6a-25f96d7e2019",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Eudora est la fille de Manon et de Jean-Marie Roland. Dans la lettre de mars 1789, Manon raconte être allée au spectacle avec elle et recevoir ses lettres. Il s’agit du récit de la mère, non d’une lettre conservée écrite par Eudora.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/18/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_d92e2f0f-12eb-482f-9a3e-27f53cbe118c",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "eudora-roland"
+        ]
+      },
+      "legacy_ids": [
+        "eudora-roland"
+      ],
+      "source_refs": [
+        "src-perroud-roland-1789"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/18",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_465f5ce6-3089-4198-abe1-a0a6de737eed",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "François-Xavier Lanthenas",
+      "names": [
+        {
+          "text": "François-Xavier Lanthenas",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-sycomore-lanthenas",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/19/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_8613c7ae-f90e-4336-8d77-61ace4e326df",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Lanthenas",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-sycomore-lanthenas",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/19/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_e601cf21-d788-406e-8fd6-71fe421f6a16",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Lanth[enas]",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-sycomore-lanthenas",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/19/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_4320f18d-c62c-4677-9a82-3d22582a382e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "François-Xavier Lanthenas is a physician in Paris and a friend of the Roland family. Their letters ask Bosc to share news and messages with him.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-sycomore-lanthenas",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/19/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_f76db4bf-52a3-453a-a92e-2410c558c243",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "François-Xavier Lanthenas est médecin à Paris et ami de la famille Roland. Dans leurs lettres, les Roland demandent à Bosc de lui transmettre des nouvelles et des messages.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-sycomore-lanthenas",
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/19/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_30915689-a320-4aad-aa66-ded2824996bf",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "francois-xavier-lanthenas"
+        ]
+      },
+      "legacy_ids": [
+        "francois-xavier-lanthenas"
+      ],
+      "source_refs": [
+        "src-sycomore-lanthenas",
+        "src-perroud-roland-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/19",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_2f2e3c35-df1c-409f-99e8-c2380e6e03ea",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "François Albert",
+      "names": [
+        {
+          "text": "François Albert",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/20/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_3721028f-c6d7-4d50-bc15-97d505ae6fa4",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Albert",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/20/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_2920f6e9-77fb-40c8-a369-8fed9841ed8d",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "François Albert is the recipient identified for Jean-Joseph Barthelon’s letter of 7 June 1788. The selected witness does not establish a fuller biography.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/20/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_2ef629d0-a7b7-4224-bb86-fc58fbe40576",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "François Albert est le destinataire indiqué de la lettre de Jean-Joseph Barthelon du 7 juin 1788. Le témoin retenu ne permet pas d’établir une biographie plus complète.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-mrf-barthelon-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/20/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_df2bfaf5-1dbe-4db4-b50d-56df61d6a64f",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "francois-albert"
+        ]
+      },
+      "legacy_ids": [
+        "francois-albert"
+      ],
+      "source_refs": [
+        "src-mrf-barthelon-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/20",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_a78ea1bf-1845-4b53-a25b-edb4a85a54c5",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "M. Destombe",
+      "names": [
+        {
+          "text": "M. Destombe",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_79cce6d0-7637-4153-93da-809177caa9fd",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Destombe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_acec3961-3d28-4c89-aa4e-f24d218c486b",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Mr Destombe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_77b623f6-5f67-44ca-be9a-c1f247389270",
+          "review_state": "candidate"
+        },
+        {
+          "text": "DESTOMBE",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_9c9894c6-a60d-4e10-8abe-9c26f5be484a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Delputte reports that Mr Destombe has asked her to pass on his greetings to Lepoutre. The selected passage does not establish his given name or occupation.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_86ec2cd2-16e8-4e62-9533-6865a6ac64e8",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Delputte indique que M. Destombe lui a demandé de transmettre ses compliments à Lepoutre. Le passage retenu ne permet pas d’établir son prénom ni sa profession.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/21/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_9d876561-e392-4ae3-b4d2-3fe51e0c700a",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "destombe-delputte-correspondence"
+        ]
+      },
+      "legacy_ids": [
+        "destombe-delputte-correspondence"
+      ],
+      "source_refs": [
+        "src-lepoutre-family-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/21",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_02e59a9e-680c-491f-9e89-31efb4ec0f9c",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Ghesquiere",
+      "names": [
+        {
+          "text": "Ghesquiere",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/22/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_ec85bc22-fc58-4f87-8570-5690dafa2239",
+          "review_state": "candidate"
+        },
+        {
+          "text": "GHESQUIERE",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/22/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_5073ea59-6ce3-4d05-8489-ac5f18d49aa4",
+          "review_state": "candidate"
+        },
+        {
+          "text": "cousin Ghesquiere",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/22/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_edfebb4a-75ed-498e-876c-eebbeb351607",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Delputte calls Ghesquiere a cousin and reports people fleeing to this relative’s home during the alarm. The selected passage does not establish a given name or the precise family connection.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/22/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_088622d6-162a-45be-974e-d59e10392b20",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Delputte appelle Ghesquiere son cousin et rapporte que des habitants se réfugient chez lui pendant l’alarme. Le passage retenu ne précise ni son prénom ni le lien familial exact.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/22/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_b1847a4c-9b58-4a36-98b6-f53cf274748a",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "ghesquiere-delputte-correspondence"
+        ]
+      },
+      "legacy_ids": [
+        "ghesquiere-delputte-correspondence"
+      ],
+      "source_refs": [
+        "src-lepoutre-family-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/22",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_0cb72c56-251c-4810-bdf0-ebccd22cf085",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Odon",
+      "names": [
+        {
+          "text": "Odon",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_5220bdf3-efb0-4869-95bd-c1b0e1b23c57",
+          "review_state": "candidate"
+        },
+        {
+          "text": "ODON",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_e54aa434-23f9-4b49-91a5-3cf1b0e51431",
+          "review_state": "candidate"
+        },
+        {
+          "text": "sister Odon",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_73d3f99a-252c-4cf7-8807-ad91076555b9",
+          "review_state": "candidate"
+        },
+        {
+          "text": "soeur Odon",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_a6094773-bcd2-44b0-bfee-4d2143736823",
+          "review_state": "candidate"
+        },
+        {
+          "text": "sœur Odon",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/aliases/3",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_5525ffe8-5899-49fe-ba08-52669007bfac",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "The woman Delputte calls “my sister Odon” becomes ill after seeing people flee. This is Delputte’s report; the passage does not establish the exact kinship or a fuller identity.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_babc7740-2d78-4186-9b69-c1d10ad2274b",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "La femme que Delputte appelle « ma sœur Odon » tombe malade après avoir vu les habitants s’enfuir. C’est le récit de Delputte ; le passage n’établit ni le lien de parenté exact ni une identité plus complète.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-lepoutre-family-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/23/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_db77184b-a320-4788-bbc7-141031436248",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "odon-delputte-correspondence"
+        ]
+      },
+      "legacy_ids": [
+        "odon-delputte-correspondence"
+      ],
+      "source_refs": [
+        "src-lepoutre-family-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/23",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_5cef56b4-5c9f-45e5-bff7-2012afbbedb2",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Angélique Boufflers",
+      "names": [
+        {
+          "text": "Angélique Boufflers",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_8fbbb5a5-6a20-4cc1-8b11-4ce500caaf51",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Agathe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_a767c22e-77bd-4b12-b8c4-991a53c401af",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Sainte-Agathe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_2a5fea45-ee28-4d4d-b507-e0232efd2096",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Sister Sainte-Agathe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/aliases/2",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_30100f67-ed56-4d66-8009-789889a80f2f",
+          "review_state": "candidate"
+        },
+        {
+          "text": "sœur Sainte-Agathe",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/aliases/3",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_b1c5e045-b932-475c-88c3-1f675d456b21",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Angélique Boufflers, known in religion as Sister Sainte-Agathe, is a longstanding friend of Manon Roland from her convent-school years. Manon asks after her in her letters to Bosc.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_c39951fa-ecf9-44af-a71d-ce652d5cfab9",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Angélique Boufflers, appelée en religion sœur Sainte-Agathe, est une amie de longue date de Manon Roland, connue pendant ses années au couvent. Manon demande de ses nouvelles dans ses lettres à Bosc.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-agathe-appendix",
+            "src-perroud-roland-1789"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/24/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_2f76f78c-35cf-4421-9dda-87fe80845a32",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "agathe-boufflers"
+        ]
+      },
+      "legacy_ids": [
+        "agathe-boufflers"
+      ],
+      "source_refs": [
+        "src-perroud-agathe-appendix",
+        "src-perroud-roland-1789"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/24",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_7fe9f48b-2c5f-4b71-af34-b4a698db3da2",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "J. Main",
+      "names": [
+        {
+          "text": "J. Main",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/25/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_d4c9073a-9a7a-40da-ab7c-07624e02321e",
+          "review_state": "candidate"
+        },
+        {
+          "text": "M. J. Main",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/25/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_c91996fd-af99-4dbc-9ada-8ef85dde83cd",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Main",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/25/aliases/1",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_ae0eb0a5-fba0-453c-85f2-0bf6a1c0a89c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "The August 1788 letter names J. Main as a merchant in Niort and asks Bosc to address an enclosed letter to him. No given name is supplied here.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/25/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_2b8b32ae-28b5-4d98-8a83-7f2bad70b0cc",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "La lettre d’août 1788 présente J. Main comme négociant à Niort et demande à Bosc de lui adresser une lettre jointe. Son prénom n’est pas donné ici.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-perroud-roland-letters"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/25/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_181db2a6-c7aa-4fd9-9687-b14e47b45c98",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "j-main-niort"
+        ]
+      },
+      "legacy_ids": [
+        "j-main-niort"
+      ],
+      "source_refs": [
+        "src-perroud-roland-letters"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/25",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_381d3d25-643e-4008-80c6-ef2a7113705b",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Marie-Antoinette",
+      "names": [
+        {
+          "text": "Marie-Antoinette",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-marie-antoinette",
+            "src-gouges-remarques-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/26/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_602d2c51-03ff-4649-acaa-2b8cb45f9de8",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Marie Antoinette",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-marie-antoinette",
+            "src-gouges-remarques-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/26/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_a68f6bd1-eb76-4a63-be20-0121c9198e6a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Marie-Antoinette is queen of France and the wife of Louis XVI. Gouges addresses appeals for relief to the queen as well as to the king.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-marie-antoinette",
+            "src-gouges-remarques-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/26/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_976bee1b-b680-402f-b1b9-2670790426f5",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "Marie-Antoinette est reine de France et épouse de Louis XVI. Gouges adresse ses appels au secours des malheureux à la reine aussi bien qu’au roi.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-versailles-marie-antoinette",
+            "src-gouges-remarques-1788"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/26/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_6b1bdeed-e360-4e85-8542-1fe5e4dc42e4",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "marie-antoinette"
+        ]
+      },
+      "legacy_ids": [
+        "marie-antoinette"
+      ],
+      "source_refs": [
+        "src-versailles-marie-antoinette",
+        "src-gouges-remarques-1788"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/26",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_5c7fc774-a134-4239-9d48-cf9719d568e0",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "John Jay",
+      "names": [
+        {
+          "text": "John Jay",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-officers-1789",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/27/canonical_name",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_dccc5a33-e513-4b23-8b62-e865cce46d8d",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jay",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-officers-1789",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/27/aliases/0",
+            "source_review_state": "machine-draft"
+          },
+          "label_id": "lbl_0b314194-fb68-4331-bbe6-5227cff44195",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [
+        {
+          "language_tag": "en",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "John Jay is the United States secretary of foreign affairs under the Continental Congress. He is the recipient of Jefferson’s report of 19 July 1789.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-officers-1789",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/27/bio_renderings/en",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_11910805-7ed7-4f2e-b1e6-d4e40f67438f",
+          "review_state": "candidate"
+        },
+        {
+          "language_tag": "fr",
+          "work_id": "letters-from-french-revolution",
+          "short_text": "John Jay est secrétaire des Affaires étrangères des États-Unis auprès du Congrès continental. Il est le destinataire du rapport envoyé par Jefferson le 19 juillet 1789.",
+          "translation_state": "source",
+          "source_refs": [
+            "src-state-officers-1789",
+            "src-nara-jefferson-jay-1789-07-19"
+          ],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/letters-from-french-revolution/people.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/people/27/bio_renderings/fr",
+            "source_review_state": "machine-draft"
+          },
+          "biography_id": "bio_5c9b3f89-a197-49be-98de-740256721c11",
+          "review_state": "candidate"
+        }
+      ],
+      "external_ids": {
+        "documentary_person": [
+          "john-jay"
+        ]
+      },
+      "legacy_ids": [
+        "john-jay"
+      ],
+      "source_refs": [
+        "src-state-officers-1789",
+        "src-nara-jefferson-jay-1789-07-19"
+      ],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/letters-from-french-revolution/people.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/people/27",
+        "source_review_state": "machine-draft"
+      },
+      "birth_date": null,
+      "death_date": null,
+      "entity_id": "ent_2a8d1820-b311-4427-89f2-bec7750da26e",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jacob Ludwig Carl Grimm",
+      "names": [
+        {
+          "text": "Jacob Ludwig Carl Grimm",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/frog-king/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/name"
+          },
+          "label_id": "lbl_b6ffa52a-78b4-4bda-a947-173dd3745716",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jacob Grimm",
+          "language_tag": "de",
+          "script": "Latn",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/frog-king/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/names/0"
+          },
+          "label_id": "lbl_17e4efa2-5bf0-4fa8-8d91-8429e6a44c2e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "bnf": [
+          "FRBNF11905931"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/frog-king/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/bibliography/contributors/0"
+      },
+      "birth": {
+        "certainty": "known",
+        "value": {
+          "date": "1785-01-04"
+        },
+        "evidence": [
+          {
+            "citation": "BnF FRBNF11905931, birth date.",
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb11905931t"
+          }
+        ]
+      },
+      "death": {
+        "certainty": "known",
+        "value": {
+          "date": "1863-09-20"
+        },
+        "evidence": [
+          {
+            "citation": "BnF FRBNF11905931, death date.",
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb11905931t"
+          }
+        ]
+      },
+      "entity_id": "ent_35d879f2-20e6-414e-9e5e-be582af250ac",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Wilhelm Carl Grimm",
+      "names": [
+        {
+          "text": "Wilhelm Carl Grimm",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/frog-king/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/1/name"
+          },
+          "label_id": "lbl_a9862a4a-702b-42e1-884b-fd6292df27fb",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Wilhelm Grimm",
+          "language_tag": "de",
+          "script": "Latn",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/frog-king/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/1/names/0"
+          },
+          "label_id": "lbl_327e818c-fa4e-4bde-b776-6f92e0c19848",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "gnd": [
+          "118542265"
+        ],
+        "dla_marbach": [
+          "PE00001879"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/frog-king/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/bibliography/contributors/1"
+      },
+      "birth": {
+        "certainty": "known",
+        "value": {
+          "date": "1786-02-24"
+        },
+        "evidence": [
+          {
+            "citation": "Kalliope/GND 118542265, birth date.",
+            "url": "https://kalliope-verbund.info/gnd/118542265"
+          }
+        ]
+      },
+      "death": {
+        "certainty": "known",
+        "value": {
+          "date": "1859-12-16"
+        },
+        "evidence": [
+          {
+            "citation": "Kalliope/GND 118542265, death date.",
+            "url": "https://kalliope-verbund.info/gnd/118542265"
+          }
+        ]
+      },
+      "entity_id": "ent_a1b42b7d-29ec-4cb2-90ba-7a936f9329aa",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jules Verne",
+      "names": [
+        {
+          "text": "Jules Verne",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/around-the-world-in-eighty-days/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/name"
+          },
+          "label_id": "lbl_86559fa8-07e8-461b-aae3-56b52760fc56",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jules Verne",
+          "language_tag": "fr",
+          "script": "Latn",
+          "name_type": "original_script",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/around-the-world-in-eighty-days/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/names/0"
+          },
+          "label_id": "lbl_e2e3965d-bbe6-4951-815a-b154985368dd",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Jules-Gabriel Verne",
+          "language_tag": "fr",
+          "script": "Latn",
+          "name_type": "alias",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/around-the-world-in-eighty-days/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/names/1"
+          },
+          "label_id": "lbl_2acf4163-e23c-45c7-992f-2cb052b8a378",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "bnf": [
+          "FRBNF11928016"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/around-the-world-in-eighty-days/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/bibliography/contributors/0"
+      },
+      "birth": {
+        "certainty": "known",
+        "value": {
+          "date": "1828-02-08"
+        },
+        "evidence": [
+          {
+            "citation": "BnF FRBNF11928016, Naissance.",
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb11928016k"
+          }
+        ]
+      },
+      "death": {
+        "certainty": "known",
+        "value": {
+          "date": "1905-03-24"
+        },
+        "evidence": [
+          {
+            "citation": "BnF FRBNF11928016, Mort.",
+            "url": "https://catalogue.bnf.fr/ark:/12148/cb11928016k"
+          }
+        ]
+      },
+      "entity_id": "ent_b1b70400-5dd7-4a05-9429-23620407d5bf",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Joseph Smith Jr.",
+      "names": [
+        {
+          "text": "Joseph Smith Jr.",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/book-of-mormon/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/name"
+          },
+          "label_id": "lbl_674f4d6b-5ff4-4662-82eb-90681080630d",
+          "review_state": "candidate"
+        },
+        {
+          "text": "Joseph Smith Jr.",
+          "language_tag": "en",
+          "script": "Latn",
+          "name_type": "original_script",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/book-of-mormon/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/bibliography/contributors/0/names/0"
+          },
+          "label_id": "lbl_26083c4c-9a19-46fb-8458-0e010f6a7866",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "church_historians_press": [
+          "https://www.churchhistorianspress.org/person/joseph-smith-jr-1805"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/book-of-mormon/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/bibliography/contributors/0"
+      },
+      "birth": {
+        "certainty": "known",
+        "value": {
+          "date": "1805-12-23"
+        },
+        "evidence": [
+          {
+            "citation": "Church Historian's Press, Joseph Smith, Jr., birth date.",
+            "url": "https://www.churchhistorianspress.org/person/joseph-smith-jr-1805"
+          }
+        ]
+      },
+      "death": {
+        "certainty": "known",
+        "value": {
+          "date": "1844-06-27"
+        },
+        "evidence": [
+          {
+            "citation": "Church Historian's Press, Joseph Smith, Jr., death date.",
+            "url": "https://www.churchhistorianspress.org/person/joseph-smith-jr-1805"
+          }
+        ]
+      },
+      "entity_id": "ent_d5856b0a-f7d7-4f2f-9758-35c1a180d3fb",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Travel fiction",
+      "names": [
+        {
+          "text": "Travel fiction",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.TravelFiction"
+          },
+          "label_id": "lbl_d0376ef8-ae14-4866-9fae-ef8d106c2f95",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "travel-fiction"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.TravelFiction"
+      },
+      "entity_id": "ent_5600a9be-ef49-4c3b-ac9e-47c365a2f524",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Fairy tales",
+      "names": [
+        {
+          "text": "Fairy tales",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.FairyTale"
+          },
+          "label_id": "lbl_569804b7-ab93-4fd8-bcc8-9a99d1a6fc9a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "fairy-tale"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.FairyTale"
+      },
+      "entity_id": "ent_69dca3ef-1fe0-4589-8891-6d396cf03741",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Folktales",
+      "names": [
+        {
+          "text": "Folktales",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Folktale"
+          },
+          "label_id": "lbl_8ea9b046-9c20-4f2a-b17f-25144b1295df",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "folktale"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Folktale"
+      },
+      "entity_id": "ent_79bced5f-6b7a-483e-92b9-a1afbd0cd097",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Legends",
+      "names": [
+        {
+          "text": "Legends",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Legend"
+          },
+          "label_id": "lbl_61f8428b-7f0c-4246-89fb-8c48f3bca734",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "legend"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Legend"
+      },
+      "entity_id": "ent_b44169c1-ee9c-4323-ae1b-bd1730c075ee",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Fables",
+      "names": [
+        {
+          "text": "Fables",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Fable"
+          },
+          "label_id": "lbl_6c8e1dcc-32d3-4f24-a661-cd6b40bf519e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "fable"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Fable"
+      },
+      "entity_id": "ent_7a1f60e3-62f3-4fca-ad59-d3a2a3c6a710",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Adventure",
+      "names": [
+        {
+          "text": "Adventure",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Adventure"
+          },
+          "label_id": "lbl_6cfe8b38-492f-4c9d-9ac3-2ab8821deb53",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "adventure"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Adventure"
+      },
+      "entity_id": "ent_2caf9aaa-9bd8-4526-b539-60b3772f73c9",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Fantasy",
+      "names": [
+        {
+          "text": "Fantasy",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Fantasy"
+          },
+          "label_id": "lbl_a783dc54-da74-47d8-8191-0b60c10fdf7c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "fantasy"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Fantasy"
+      },
+      "entity_id": "ent_f54ef689-314d-4db7-8b96-63368b93f355",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Mystery",
+      "names": [
+        {
+          "text": "Mystery",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Mystery"
+          },
+          "label_id": "lbl_dbf78d22-02f7-4eff-b2f0-2b798c755b56",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "mystery"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Mystery"
+      },
+      "entity_id": "ent_e9e6f126-93de-4bc7-9bef-e563c332256f",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Science fiction",
+      "names": [
+        {
+          "text": "Science fiction",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.ScienceFiction"
+          },
+          "label_id": "lbl_8a63970f-c9c8-4505-a0de-6c769607f6f6",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "science-fiction"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.ScienceFiction"
+      },
+      "entity_id": "ent_a7917a2c-4706-4582-af48-c06a2021eea3",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "History",
+      "names": [
+        {
+          "text": "History",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.History"
+          },
+          "label_id": "lbl_34cc7d08-54e2-483e-b001-18e7567d961a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "history"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.History"
+      },
+      "entity_id": "ent_d44dcb08-7c66-4e61-91f4-9edc3a2961e3",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Poetry",
+      "names": [
+        {
+          "text": "Poetry",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Poetry"
+          },
+          "label_id": "lbl_9382e345-e992-46c6-a64c-be9da478ddf2",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "poetry"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Poetry"
+      },
+      "entity_id": "ent_fd63ed3a-1807-4e84-b3be-68d9f5880b26",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Literature",
+      "names": [
+        {
+          "text": "Literature",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.Literature"
+          },
+          "label_id": "lbl_9c440467-cd70-4279-b1e2-e56b9a11eb9d",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "literature"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.Literature"
+      },
+      "entity_id": "ent_fb0781e6-9add-43c6-97f2-1b25cd23d467",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Religious texts",
+      "names": [
+        {
+          "text": "Religious texts",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.ReligiousText"
+          },
+          "label_id": "lbl_44eb782b-3696-4c46-aaf0-2ee33294f6dd",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "religious-text"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.ReligiousText"
+      },
+      "entity_id": "ent_e8a73cd9-6401-4ecc-8a85-253192bf216f",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Children’s fiction",
+      "names": [
+        {
+          "text": "Children’s fiction",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.ChildrensFiction"
+          },
+          "label_id": "lbl_3612b42f-71ea-4091-8239-d00ed9426e32",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "children's-fiction"
+        ],
+        "genre_presentation_alias": [
+          "childrens-fiction",
+          "children-s-fiction"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.ChildrensFiction"
+      },
+      "entity_id": "ent_40938cce-bdc0-4642-8b60-29d02cd174a9",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Classic literature",
+      "names": [
+        {
+          "text": "Classic literature",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.ClassicLiterature"
+          },
+          "label_id": "lbl_91daa51c-ea3c-4bd6-8fb6-31e255c07304",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "classic-literature"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.ClassicLiterature"
+      },
+      "entity_id": "ent_cf317e47-82be-4383-b7f5-f2f6500f68b5",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Gothic fiction",
+      "names": [
+        {
+          "text": "Gothic fiction",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.GothicFiction"
+          },
+          "label_id": "lbl_e0657342-d698-4db1-8d1e-9de84678e218",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "gothic-fiction"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.GothicFiction"
+      },
+      "entity_id": "ent_2f6ca700-394f-4bc4-b601-dd60af5b741f",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "Historical fiction",
+      "names": [
+        {
+          "text": "Historical fiction",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "locales/v1/en-US.json",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/strings/bookGenre.HistoricalFiction"
+          },
+          "label_id": "lbl_73f038c9-ae72-4f44-bf57-969c611f577d",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "historical-fiction"
+        ],
+        "genre_presentation_alias": []
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "locales/v1/en-US.json",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/strings/bookGenre.HistoricalFiction"
+      },
+      "entity_id": "ent_77cb664f-39e8-4ab7-82da-2acd96fae804",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "traditional folk",
+      "names": [
+        {
+          "text": "traditional folk",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/house-of-the-rising-sun/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/catalog_facets/genres/0"
+          },
+          "label_id": "lbl_30dba0ee-dbed-4ab7-84ba-c6fb44fab573",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "traditional folk"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/house-of-the-rising-sun/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/catalog_facets/genres/0"
+      },
+      "entity_id": "ent_4a9bbea2-59fd-4bb5-ae80-1f4d39131787",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "genre",
+      "canonical_name": "folk blues",
+      "names": [
+        {
+          "text": "folk blues",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-content",
+            "path": "works/house-of-the-rising-sun/work.json",
+            "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+            "field": "/catalog_facets/genres/1"
+          },
+          "label_id": "lbl_6c3089fd-ea08-49cf-8f6b-304748b54afb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "genre": [
+          "folk blues"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-content",
+        "path": "works/house-of-the-rising-sun/work.json",
+        "revision_sha": "8a27acd60e994dd5dd713b50cd12fac68f0ff685",
+        "field": "/catalog_facets/genres/1"
+      },
+      "entity_id": "ent_160e4dcf-dca9-494c-8680-a71b9bbd6fa9",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "content_type",
+      "canonical_name": "Audiobook",
+      "names": [
+        {
+          "text": "Audiobook",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [],
+          "source_provenance": {
+            "repository": "gef-expo",
+            "path": "src/features/library/model/libraryViewStrings.ts",
+            "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+            "field": "/libraryViewStrings/kindAudiobook"
+          },
+          "label_id": "lbl_3ad13549-7750-489d-b811-0f32f762b2dc",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "media_type": [
+          "audiobook"
+        ],
+        "legacy_genre_medium": [
+          "audiobook"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [],
+      "source_provenance": {
+        "repository": "gef-expo",
+        "path": "src/features/library/model/libraryViewStrings.ts",
+        "revision_sha": "c63a1941e98575c171cbc68b1d7a7b7f2ccb15ce",
+        "field": "/libraryViewStrings/kindAudiobook"
+      },
+      "entity_id": "ent_76ac1002-8808-4482-80ac-3b2ee5867f05",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Gregorian Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Gregorian Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_b7175d6b-f187-4ba0-9060-20616b4928eb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "gregory"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_ea2ed84c-445d-4852-b49b-5aab272909d0",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hebrew Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hebrew Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_1f7ba5ee-f03e-49fe-a5f4-052346536688",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "hebrew"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_dcc25a5b-013e-4f84-8b72-9747ceaf70b1",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hijri Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hijri Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_22460fd5-92ba-42da-9702-cdec3fdeaa38",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "islamic"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_ca7e09a6-2eab-4852-9903-5d19ce439399",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hijri Calendar (tabular, civil epoch)",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hijri Calendar (tabular, civil epoch)",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_92dfe76f-6d79-4ccd-9ed2-1c2a1fdff683",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "islamic-civil"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_81c5181b-68a1-4b9a-997a-3e407affa834",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hijri Calendar (tabular, astronomical epoch)",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hijri Calendar (tabular, astronomical epoch)",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_34055aae-3a29-4e09-b66c-f4e9d625dadb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "islamic-tbla"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_5ab343af-03a1-4ced-a179-908600b4db9e",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hijri Calendar (Umm al-Qura)",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hijri Calendar (Umm al-Qura)",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_ebd1cde3-b2f3-49ae-8d8a-dd62abf000f0",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "islamic-umalqura"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_7fbfe02b-f110-47e9-978a-8e1799d6e66c",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Hijri Calendar (Saudi Arabia, sighting)",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hijri Calendar (Saudi Arabia, sighting)",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_2631d321-3d77-42b2-b4e0-ee622f276114",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "islamic-rgsa"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_6f09b110-1918-49d5-aaac-3c34ae4ea035",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Persian Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Persian Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_339cafcc-de2b-4e82-a701-8f90210aad06",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "persian"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_2bcc10c0-8da9-4991-ae11-68a58206379d",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Buddhist Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Buddhist Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_a10a35d5-2b16-436b-afcf-6191008508eb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "buddhist"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_8b9acc1d-b9f0-4343-bc1d-bce47cdb82d9",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Japanese Calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Japanese Calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-unicode-cldr-calendar-keywords",
+            "src-unicode-cldr-calendar-english"
+          ],
+          "label_id": "lbl_72065e47-ad72-4298-b8f6-7dc072f3ba4e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "unicode_calendar": [
+          "japanese"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-unicode-cldr-calendar-keywords",
+        "src-unicode-cldr-calendar-english"
+      ],
+      "entity_id": "ent_951d50f7-069e-4656-946e-1705d0275481",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    },
+    {
+      "entity_type": "calendar",
+      "canonical_name": "Julian calendar",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Julian calendar",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src-rmg-calendars-longstaff-2005"
+          ],
+          "label_id": "lbl_2e17b3ef-5f18-469a-a74f-a17f68826284",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "historical_calendar": [
+          "julian"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src-rmg-calendars-longstaff-2005"
+      ],
+      "entity_id": "ent_5274ce27-97ef-41d8-aacc-82b5ff91934b",
+      "review_state": "candidate",
+      "created_at": "2026-10-14T00:41:25.981Z",
+      "updated_at": "2026-10-14T00:41:25.981Z"
+    }
+  ],
   "redirects": []
 }

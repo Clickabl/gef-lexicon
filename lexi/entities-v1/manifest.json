@@ -1,30 +1,30 @@
 {
   "contract": "gef-entity-registry-manifest-v1",
   "sqlite_schema_version": 2,
-  "registry_revision": 1,
-  "source_sha256": "fb3d18842f63f593936bd47837b9af8e5e4f0f105bf9241277e143c46f30ffe4",
-  "package_sha256": "104a3ea37c5740385af6b5777e4a195fcbe64e93f382a20da6a4d3850f82d3dd",
+  "registry_revision": 2,
+  "source_sha256": "f6215d589956499b69ffd66db492e8ba220592b82f44c4bce78d91bc13e55caf",
+  "package_sha256": "fe1f0c2c941c8be845d2999430a38681c508f661c23e49a0b4478da57c8b8da3",
   "registry": {
-    "path": "104a3ea37c5740385af6b5777e4a195fcbe64e93f382a20da6a4d3850f82d3dd/registry.json",
-    "sha256": "fd41e8c7fd4be11a650b04f47fa0925da381383431737151abdf68b58fdb4276",
-    "bytes": 99
+    "path": "fe1f0c2c941c8be845d2999430a38681c508f661c23e49a0b4478da57c8b8da3/registry.json",
+    "sha256": "8039c22e67818890cb92fc629479b36da20ece20a72206bc95841fc09d0c8c57",
+    "bytes": 123721
   },
   "sources": {
-    "path": "104a3ea37c5740385af6b5777e4a195fcbe64e93f382a20da6a4d3850f82d3dd/sources.json",
-    "sha256": "2aa99bad8940b9d3b89098738070cd73c929a7976246778b95abc4a02e697e21",
-    "bytes": 50
+    "path": "fe1f0c2c941c8be845d2999430a38681c508f661c23e49a0b4478da57c8b8da3/sources.json",
+    "sha256": "1d4df0ff00f2e5f8e858bfa2b660ce8de60af81009ef54c7b668831b0eb4361c",
+    "bytes": 10432
   },
   "sqlite": {
-    "path": "104a3ea37c5740385af6b5777e4a195fcbe64e93f382a20da6a4d3850f82d3dd/entities.sqlite",
-    "sha256": "88e1bb6fda28a185322980fbc38baf452c190964053f1acee154f6ef4ec25565",
-    "bytes": 98304
+    "path": "fe1f0c2c941c8be845d2999430a38681c508f661c23e49a0b4478da57c8b8da3/entities.sqlite",
+    "sha256": "9ea1298047cd65a551e0bebe5e9317d8f5b95326750aa492c30bd6fd587b970c",
+    "bytes": 475136
   },
   "counts": {
-    "entities": 0,
-    "labels": 0,
-    "biographies": 0,
+    "entities": 63,
+    "labels": 117,
+    "biographies": 56,
     "redirects": 0,
-    "sources": 0,
+    "sources": 30,
     "relationships": 0
   }
 }
