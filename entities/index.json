@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 3,
+  "revision": 4,
   "entities": [
     {
       "entity_type": "person",
@@ -11986,6 +11986,20 @@
       "review_state": "candidate",
       "created_at": "2026-10-14T01:39:53.403Z",
       "updated_at": "2026-10-14T01:39:53.403Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Louisa May Alcott",
+      "names": [],
+      "biographies": [],
+      "external_ids": {},
+      "legacy_ids": [],
+      "source_refs": [],
+      "research_notes": "Created in Gef Studio while importing “Little Women (version 4)”. Named by: LibriVox: https://librivox.org/little-women-version-4-by-louisa-may-alcott/; LibriVox: https://librivox.org/little-women-dramatic-reading-by-louisa-may-alcott/; Wikisource: https://en.wikisource.org/wiki/Little_Women; Internet Archive: https://archive.org/details/mujercitas0000alco",
+      "entity_id": "ent_e4f11eed-fdaf-46cd-ace3-8e774443ad62",
+      "review_state": "candidate",
+      "created_at": "2026-10-20T00:54:40.118Z",
+      "updated_at": "2026-10-20T00:54:40.118Z"
     }
   ],
   "redirects": []
