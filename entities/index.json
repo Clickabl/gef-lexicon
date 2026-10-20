@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 11,
+  "revision": 12,
   "entities": [
     {
       "entity_type": "person",
@@ -12098,6 +12098,20 @@
       "review_state": "candidate",
       "created_at": "2026-10-20T08:05:59.289Z",
       "updated_at": "2026-10-20T08:05:59.289Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Verne, Jules",
+      "names": [],
+      "biographies": [],
+      "external_ids": {},
+      "legacy_ids": [],
+      "source_refs": [],
+      "research_notes": "Created in Gef Studio while adding “Around the World in Eighty Days”.",
+      "entity_id": "ent_0179dbb0-ec54-4155-bfbb-119434b7e221",
+      "review_state": "candidate",
+      "created_at": "2026-10-20T21:48:50.950Z",
+      "updated_at": "2026-10-20T21:48:50.950Z"
     }
   ],
   "redirects": []
