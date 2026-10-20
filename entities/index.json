@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 10,
+  "revision": 11,
   "entities": [
     {
       "entity_type": "person",
@@ -12084,6 +12084,20 @@
       "review_state": "candidate",
       "created_at": "2026-10-20T08:00:42.149Z",
       "updated_at": "2026-10-20T08:00:42.149Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Jane Austen",
+      "names": [],
+      "biographies": [],
+      "external_ids": {},
+      "legacy_ids": [],
+      "source_refs": [],
+      "research_notes": "Created in Gef Studio while adding “Pride and Prejudice”.",
+      "entity_id": "ent_7366cd9e-6772-4fad-9a84-cb620e5ed57a",
+      "review_state": "candidate",
+      "created_at": "2026-10-20T08:05:59.289Z",
+      "updated_at": "2026-10-20T08:05:59.289Z"
     }
   ],
   "redirects": []
