@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 5,
+  "revision": 6,
   "entities": [
     {
       "entity_type": "person",
@@ -12014,6 +12014,20 @@
       "review_state": "candidate",
       "created_at": "2026-10-20T06:50:53.357Z",
       "updated_at": "2026-10-20T06:50:53.357Z"
+    },
+    {
+      "entity_type": "person",
+      "canonical_name": "Herman Melville",
+      "names": [],
+      "biographies": [],
+      "external_ids": {},
+      "legacy_ids": [],
+      "source_refs": [],
+      "research_notes": "Created in Gef Studio while adding “Moby Dick; or, The Whale (version 2)”.",
+      "entity_id": "ent_124eb4a0-3f08-4106-a98c-04a7cf9a5150",
+      "review_state": "candidate",
+      "created_at": "2026-10-20T07:00:13.455Z",
+      "updated_at": "2026-10-20T07:00:13.455Z"
     }
   ],
   "redirects": []
