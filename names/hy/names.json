@@ -558,6 +558,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_hy_hovsep",
+      "canonical_form": "Հովսեփ",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Հովսեփ",
+          "status": "canonical",
+          "script": "Armn",
+          "locale": "hy"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.hy.hovsep"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Armenian Հովսեփ as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_joseph_oldid_93742399",
+        "src_wiktionary_en_u540_578_57e_57d_565_583_oldid_90127664"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_hy_katarine",
       "canonical_form": "Կատարինէ",
       "name_type": "given",

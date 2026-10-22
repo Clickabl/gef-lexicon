@@ -336,6 +336,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_eu_joseba",
+      "canonical_form": "Joseba",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Joseba",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "eu"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.eu.joseba"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Basque Joseba as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_joseba_oldid_87295733",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_eu_karmele",
       "canonical_form": "Karmele",
       "name_type": "given",

@@ -733,6 +733,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_et_joosep",
+      "canonical_form": "Joosep",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Joosep",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "et"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.et.joosep"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Estonian Joosep as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_joosep_oldid_68723856",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_et_kaarel",
       "canonical_form": "Kaarel",
       "name_type": "given",

@@ -759,6 +759,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_ro_iosif",
+      "canonical_form": "Iosif",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Iosif",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ro"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.ro.iosif"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Romanian Iosif as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_iosif_oldid_80056973",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_ro_timotei",
       "canonical_form": "Timotei",
       "name_type": "given",

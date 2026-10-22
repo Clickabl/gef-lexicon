@@ -1103,6 +1103,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_ca_josep",
+      "canonical_form": "Josep",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Josep",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "ca"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.ca.josep"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Catalan Josep as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_josep_oldid_92075262",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_ca_timoteu",
       "canonical_form": "Timoteu",
       "name_type": "given",

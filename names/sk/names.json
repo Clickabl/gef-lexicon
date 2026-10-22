@@ -800,6 +800,67 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_sk_jojo",
+      "canonical_form": "Jojo",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Jojo",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.short-masculine",
+          "form_id": "NFF.joseph.sk.jojo"
+        }
+      ],
+      "related_names": [
+        {
+          "target_name_id": "name_sk_jozef",
+          "relation_type": "diminutive",
+          "note": "Per the pinned entry; the reverse relationship is not implied."
+        }
+      ],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Jojo as a male given name that is a diminutive of Jozef.",
+      "source_refs": [
+        "src_wiktionary_en_jojo_oldid_93487253"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_sk_jozef",
+      "canonical_form": "Jozef",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Jozef",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sk"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.sk.jozef"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Slovak Jozef as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_joseph_oldid_93742399",
+        "src_wiktionary_en_jozef_oldid_91816796"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sk_kamila",
       "canonical_form": "Kamila",
       "name_type": "given",

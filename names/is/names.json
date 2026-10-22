@@ -393,6 +393,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_is_josef",
+      "canonical_form": "Jósef",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Jósef",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "is"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.is.josef"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Icelandic Jósef as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_josef_oldid_85763903",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_is_karl",
       "canonical_form": "Karl",
       "name_type": "given",

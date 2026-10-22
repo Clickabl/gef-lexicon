@@ -1231,6 +1231,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_sv_josef",
+      "canonical_form": "Josef",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Josef",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "sv"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.sv.josef"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Swedish Josef as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_josef_oldid_92994216",
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_sv_karl",
       "canonical_form": "Karl",
       "name_type": "given",

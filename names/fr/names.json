@@ -2044,6 +2044,33 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_fr_joseph",
+      "canonical_form": "Joseph",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Joseph",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "fr"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.fr.joseph"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines French Joseph as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_joseph_oldid_93742399"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_fr_thimothee",
       "canonical_form": "Thimothée",
       "name_type": "given",
