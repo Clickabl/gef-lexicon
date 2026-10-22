@@ -5,14 +5,14 @@ import { join } from 'node:path';
 import { REPO_ROOT, PIPELINE_DIR, readJson } from './name-pipeline/common.mjs';
 import { givenNameTemplates, givenNameTranslations, parseNameList, splitTopLevel, titleOf } from './name-pipeline/wikitext.mjs';
 import { buildFamilyModel } from './name-pipeline/family.mjs';
-import { changedByPlan, planBuild } from './name-pipeline/build.mjs';
+import { attestedByOwnEntry, changedByPlan, planBuild } from './name-pipeline/build.mjs';
 
 const filter = { include_codes: ['en', 'es', 'de', 'ru', 'fi', 'da', 'el', 'fr'], code_map: {} };
 const template = (code, genders, extra = {}) => ({ code, genders, eq: [], dimof: [], varof: [], xlit: [], from: null, usage: null, popular: null, raw: '{{given name}}', ...extra });
 const page = (heading, ...given_names) => ({ revid: 1, timestamp: '2026-01-01T00:00:00Z', sha256: 'x', sections: [{ heading, given_names }] });
 
 test('wikitext readers keep inline modifiers and equivalents apart', () => {
-  assert.deepEqual(splitTopLevel('a|b<c|d>|{{e|f}}|[[g|h]]'), ['a', 'b<c|d>', '{{e|f}}', '[[g|h]]']);
+  assert.deepEqual(splitTopLevel('a|b<tr:c|d>|{{e|f}}|[[g|h]]'), ['a', 'b<tr:c|d>', '{{e|f}}', '[[g|h]]']);
   assert.deepEqual(parseNameList('Timothy,ru:Ка́тя<tr:Katya>,Timon<qq:rare>').map(item => [item.text, item.language]), [['Timothy', null], ['Ка́тя', 'ru'], ['Timon', null]]);
   const [one] = givenNameTemplates('# {{given name|ru|male|xlit=Timofey|eq=Timothy}}');
   assert.equal(one.code, 'ru');
@@ -26,6 +26,23 @@ test('wikitext readers keep inline modifiers and equivalents apart', () => {
   assert.equal(titleOf('Тимофе́й'), 'Тимофей');
   assert.equal(titleOf('Τιμόθεος'), 'Τιμόθεος', 'Greek accents are part of the title');
   assert.equal(titleOf('Timothée'), 'Timothée');
+});
+
+test('a bare < in an origin chain does not hide the parameters after it', () => {
+  // The exact shape of the Spanish José entry: `from=` chains use a plain `<`, which is not an inline modifier.
+  const raw = '{{given name|es|male|from=Latin < Ancient Greek < Hebrew|eq=Joseph|dimform=Che,Coché,Josecito,Joselito,Pepe,Pepito|f=Josefa}}';
+  assert.deepEqual(splitTopLevel('from=Latin < Greek|eq=Joseph'), ['from=Latin < Greek', 'eq=Joseph']);
+  assert.deepEqual(splitTopLevel('eq=Timothy<qq:rare|x>|from=A < B|varof=Jose'), ['eq=Timothy<qq:rare|x>', 'from=A < B', 'varof=Jose']);
+  const [jose] = givenNameTemplates(`# ${raw}`);
+  assert.equal(jose.code, 'es');
+  assert.deepEqual(jose.genders, ['male']);
+  assert.equal(jose.from, 'Latin < Ancient Greek < Hebrew');
+  assert.deepEqual(jose.eq.map(item => item.text), ['Joseph'], 'eq= after a < chain is still read');
+  const [variant] = givenNameTemplates('# {{given name|en|male|from=Spanish < Latin|varof=Jose|usage=rare}}');
+  assert.deepEqual(variant.varof.map(item => item.text), ['Jose']);
+  assert.equal(variant.usage, 'rare');
+  const [modified] = givenNameTemplates('# {{given name|ru|male|from=Greek < Hebrew|eq=Timothy<tr:x|y>,Tim<qq:rare>}}');
+  assert.deepEqual(modified.eq.map(item => item.text), ['Timothy', 'Tim'], 'real <key:...> modifiers still protect their own pipes');
 });
 
 test('a form joins a family only through a sourced route, and sets stay apart', () => {
@@ -98,6 +115,37 @@ test('a mixed-script source spelling is reported unchanged rather than repaired 
   ],pages:{Bianca:page('English',template('en',['female']))}}});
   assert.equal(model.ok,true);assert.ok(!model.members.some(member=>member.text==='Биáнка'));
   assert.ok(model.excluded.some(member=>member.text==='Биáнка'&&member.reason==='source_spelling_script_mismatch'));
+});
+
+test('only a secondary spelling whose own entry states the relation is attested to reveal its family', () => {
+  const own = { template: {} };
+  assert.equal(attestedByOwnEntry({ own, via: ['eq-root'], flag: null }), true, 'eq=<root> on its own entry');
+  assert.equal(attestedByOwnEntry({ own, via: ['varof:en|Jose'], flag: null }), true, 'varof= a member');
+  assert.equal(attestedByOwnEntry({ own, via: ['dimof:en|Joseph'], flag: null }), true, 'dimof= a member');
+  assert.equal(attestedByOwnEntry({ own, via: ['eq:es|José'], flag: null }), true, 'eq= another member');
+  assert.equal(attestedByOwnEntry({ own, via: ['table'], flag: null }), false, 'a translation-table row alone does not attest it');
+  assert.equal(attestedByOwnEntry({ own: null, via: ['table'], flag: 'table_only_no_own_entry' }), false, 'no entry of its own');
+  assert.equal(attestedByOwnEntry({ own, via: ['eq-root'], flag: 'leading_portion_listed_only' }), false, 'a flagged form stays literal');
+  assert.equal(attestedByOwnEntry({ own: null, via: ['eq-root'], flag: null }), false, 'no given-name entry of its own');
+  assert.equal(attestedByOwnEntry({ own, via: [], flag: null }), false, 'resemblance is never a route');
+
+  // On the real build: Jose (its own entry says eq=Joseph) and José (varof=Jose) are attested; the root, and any secondary
+  // spelling that only a translation table lists, are not.
+  const { files } = planBuild();
+  const attested = new Set(files.get(join(PIPELINE_DIR, 'attested-secondary.json')).form_ids);
+  const primaries = new Set(Object.values(files.get(join(PIPELINE_DIR, 'primary-map.json'))));
+  assert.ok(attested.has('NFF.joseph.en.jose') && attested.has('NFF.joseph.en.jose_24c2'));
+  assert.ok(!attested.has('NFF.joseph.en.joseph'), 'the primary is never listed as a secondary');
+  const forms = new Map();
+  for (const [path, document] of files) if (path.includes('/name-families/')) for (const set of document.equivalence_sets) for (const form of set.forms) forms.set(form.form_id, form);
+  for (const id of attested) {
+    assert.ok(forms.has(id), `${id} is a form of a built family`);
+    assert.ok(!primaries.has(id) && forms.get(id).relation_type !== 'source_form', `${id} must be a non-primary form`);
+    assert.ok(!/table-only|translation table; the form's own entry has no given-name/.test(forms.get(id).note ?? ''), `${id} is not table-only`);
+  }
+  const tableOnly = [...forms.values()].filter(form => /^Listed in the pinned .* translation table/.test(form.note ?? ''));
+  assert.ok(tableOnly.length > 0);
+  for (const form of tableOnly) assert.ok(!attested.has(form.form_id), `${form.form_id} is only table-listed and stays literal`);
 });
 
 test('every pipeline form is a candidate and cites a pinned Wiktionary revision', () => {

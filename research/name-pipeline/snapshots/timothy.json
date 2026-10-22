@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Timothy",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -1558,11 +1558,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Timothy",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Timothy",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|male|from=Latin < Ancient Greek|eq=Timothy}}"
@@ -1915,9 +1920,9 @@
       ]
     },
     "テモテ": {
-      "revid": 87887954,
-      "timestamp": "2025-11-01T01:11:22Z",
-      "sha256": "e0f94685537afdc80c9d0b4f444684b6b7a1b9565f60a2a5817984b4828209d3",
+      "revid": 93542959,
+      "timestamp": "2026-10-13T02:29:26Z",
+      "sha256": "cfdc78ce9f0e602e0ee40503cd54c5883e96823d4bcd404463d321380c7620d9",
       "sections": []
     },
     "蒂莫西": {

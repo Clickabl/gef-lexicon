@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Charles",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -963,11 +963,24 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Carl",
+                  "language": null
+                },
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Portuguese,Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl",
+              "from": "Portuguese,Spanish < Latin < Germanic languages",
               "usage": null,
               "popular": null,
               "raw": "{{given name|en|male|from=Portuguese,Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl}}"
@@ -982,11 +995,24 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Carl",
+                  "language": null
+                },
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl",
+              "from": "Spanish < Latin < Germanic languages",
               "usage": null,
               "popular": null,
               "raw": "{{given name|ceb|male|from=Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl}}"
@@ -1001,11 +1027,24 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Carl",
+                  "language": null
+                },
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Germanic languages|eq=Charles,Carl,Karl",
+              "from": "Latin < Germanic languages",
               "usage": null,
               "popular": null,
               "raw": "{{given name|gl|male|from=Latin < Germanic languages|eq=Charles,Carl,Karl}}"
@@ -1020,11 +1059,24 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Carl",
+                  "language": null
+                },
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Germanic languages|eq=Charles,Carl,Karl",
+              "from": "Latin < Germanic languages",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pt|male|from=Latin < Germanic languages|eq=Charles,Carl,Karl}}"
@@ -1063,11 +1115,24 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Charles",
+                  "language": null
+                },
+                {
+                  "text": "Carl",
+                  "language": null
+                },
+                {
+                  "text": "Karl",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl",
+              "from": "Spanish < Latin < Germanic languages",
               "usage": null,
               "popular": null,
               "raw": "{{given name|tl|male|from=Spanish < Latin < Germanic languages|eq=Charles,Carl,Karl}}"

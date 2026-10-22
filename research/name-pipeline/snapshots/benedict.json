@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Benedict",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -760,11 +760,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Benedict",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin|eq=Benedict",
+              "from": "Spanish < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|tl|male|from=Spanish < Latin|eq=Benedict}}"

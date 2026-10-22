@@ -52,6 +52,20 @@
           "review_state": "candidate"
         },
         {
+          "form_id": "NFF.anna.nb.anina",
+          "text": "Anina",
+          "language_tag": "nb",
+          "script": "Latn",
+          "relation_type": "local_equivalent",
+          "usage": "unknown",
+          "name_id": "name_nb_anina",
+          "source_refs": [
+            "src_wiktionary_en_anina_oldid_93598666",
+            "src_wiktionary_en_anna_oldid_93366642"
+          ],
+          "review_state": "candidate"
+        },
+        {
           "form_id": "NFF.anna.uk.anna",
           "text": "Анна",
           "language_tag": "uk",
@@ -62,6 +76,91 @@
           "source_refs": [
             "src_wiktionary_en_anna_oldid_93366642",
             "src_wiktionary_en_u410_43d_43d_430_oldid_89303473"
+          ],
+          "review_state": "candidate"
+        }
+      ]
+    },
+    {
+      "equivalence_set_id": "NFEQ.anna.short-feminine",
+      "role": "short_feminine",
+      "note": "Short, pet and diminutive forms. They are not substitutes for the full-name forms.",
+      "forms": [
+        {
+          "form_id": "NFF.anna.pl.andzia",
+          "text": "Andzia",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_andzia",
+          "source_refs": [
+            "src_wiktionary_en_andzia_oldid_91293584"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.anna.pl.aneczka",
+          "text": "Aneczka",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_aneczka",
+          "source_refs": [
+            "src_wiktionary_en_aneczka_oldid_91293585"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.anna.pl.ania",
+          "text": "Ania",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_ania",
+          "source_refs": [
+            "src_wiktionary_en_ania_oldid_87232429"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.anna.pl.anka",
+          "text": "Anka",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_anka",
+          "source_refs": [
+            "src_wiktionary_en_anka_oldid_89745315"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.anna.pl.anula",
+          "text": "Anula",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_anula",
+          "source_refs": [
+            "src_wiktionary_en_anula_oldid_91293503"
+          ],
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.anna.pl.anusia",
+          "text": "Anusia",
+          "language_tag": "pl",
+          "script": "Latn",
+          "relation_type": "diminutive",
+          "usage": "unknown",
+          "name_id": "name_pl_anusia",
+          "source_refs": [
+            "src_wiktionary_en_anusia_oldid_91293504"
           ],
           "review_state": "candidate"
         }
@@ -81,7 +180,14 @@
   },
   "source_refs": [
     "src_wiktionary_en_ana_oldid_93479245",
+    "src_wiktionary_en_andzia_oldid_91293584",
+    "src_wiktionary_en_aneczka_oldid_91293585",
+    "src_wiktionary_en_ania_oldid_87232429",
+    "src_wiktionary_en_anina_oldid_93598666",
+    "src_wiktionary_en_anka_oldid_89745315",
     "src_wiktionary_en_anna_oldid_93366642",
+    "src_wiktionary_en_anula_oldid_91293503",
+    "src_wiktionary_en_anusia_oldid_91293504",
     "src_wiktionary_en_u410_43d_43d_430_oldid_89303473",
     "src_wiktionary_en_u5d0_5e0_5d4_oldid_83897962"
   ],

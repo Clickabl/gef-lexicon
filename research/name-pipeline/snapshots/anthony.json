@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Anthony",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -2393,9 +2393,9 @@
       ]
     },
     "Toni": {
-      "revid": 92367664,
-      "timestamp": "2026-08-28T07:35:41Z",
-      "sha256": "889f929d3dd39f827aca51c3581bd06eb2573cb2b85459f3f6e07f03681b6df0",
+      "revid": 93674126,
+      "timestamp": "2026-10-19T08:42:11Z",
+      "sha256": "147d170045f7c004b24fca4871af06f403fac3d75fa2132be06b063cf33da76f",
       "sections": [
         {
           "heading": "English",
@@ -3030,11 +3030,21 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Anthony",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
-              "xlit": [],
-              "from": "Ancient Greek < Latin|xlit=Antoniy|eq=Anthony",
+              "xlit": [
+                {
+                  "text": "Antoniy",
+                  "language": null
+                }
+              ],
+              "from": "Ancient Greek < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|cu|male|from=Ancient Greek < Latin|xlit=Antoniy|eq=Anthony}}"
@@ -3049,11 +3059,21 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Anthony",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
-              "xlit": [],
-              "from": "Old Church Slavonic < Ancient Greek < Latin|xlit=Antoniy|eq=Anthony",
+              "xlit": [
+                {
+                  "text": "Antoniy",
+                  "language": null
+                }
+              ],
+              "from": "Old Church Slavonic < Ancient Greek < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|orv|male|from=Old Church Slavonic < Ancient Greek < Latin|xlit=Antoniy|eq=Anthony}}"

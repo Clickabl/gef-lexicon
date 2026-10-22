@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Adriana",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -297,11 +297,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Etruscan|eq=Adriana",
+              "from": "Latin < Etruscan",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pt|female|from=Latin < Etruscan|eq=Adriana}}"
@@ -335,11 +340,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Adriana",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Etruscan|eq=Adriana",
+              "from": "Latin < Etruscan",
               "usage": null,
               "popular": null,
               "raw": "{{given name|es|female|from=Latin < Etruscan|eq=Adriana}}"

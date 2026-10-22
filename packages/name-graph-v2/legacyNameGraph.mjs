@@ -16,10 +16,17 @@ const evidence = (reviewState, sources) => ({ reviewState, certainty: null, sour
  * Keys in primaryBySetAndRepresentation are JSON.stringify([equivalence_set_id, representationTag]).
  * Values are existing form_id strings. Ambiguous primaries require this explicit editorial mapping.
  * Rejected/superseded sets are not migrated, and no state is promoted.
+ *
+ * `attestedSecondaryFormIds` lists existing form_id strings of NON-primary forms whose membership in their set is itself
+ * sourced (the name pipeline derives the list from each form's own pinned entry; see scripts/name-pipeline/build.mjs).
+ * Only those secondary spellings are given `fallbackToPrimary: true`, so typing one reveals the set's primaries. Any other
+ * secondary spelling keeps `false`: no link is inferred from set membership alone, and no Cartesian renderings are created.
+ * A listed ID that is not a retained non-primary form is an error, never silently ignored.
  */
-export function migrateLegacyNameFamilies(families, primaryBySetAndRepresentation = {}) {
+export function migrateLegacyNameFamilies(families, primaryBySetAndRepresentation = {}, { attestedSecondaryFormIds = [] } = {}) {
   const graph = { contract: 'gef-name-graph-v2', publication: 'public-reference', names: [], spellings: [], renderings: [], relations: [] };
   const seenSets = new Set(), consumedOverrides = new Set();
+  const attested = new Set(attestedSecondaryFormIds), consumedAttested = new Set();
   const seenForms = new Set();
   for (const family of families) {
     if (['rejected', 'superseded'].includes(family.review_state)) continue;
@@ -62,11 +69,19 @@ export function migrateLegacyNameFamilies(families, primaryBySetAndRepresentatio
         if (selectedId !== null) consumedOverrides.add(key);
         chosen.row.primary = true;
         // Existing set membership authorizes sense-level primary defaults for the primary only.
-        // Secondary/creative spellings require deliberately authored rendering links; no Cartesian links are invented.
+        // A secondary spelling gets the same default only when its own sourced entry attests it (attestedSecondaryFormIds,
+        // below); otherwise it needs deliberately authored rendering links. No Cartesian links are ever invented.
         chosen.row.fallbackToPrimary = true;
+        for (const { row, form } of rows) {
+          if (!attested.has(form.form_id)) continue;
+          if (row === chosen.row) throw new Error(`name_attested_secondary_is_primary:${form.form_id}`);
+          row.fallbackToPrimary = true;
+          consumedAttested.add(form.form_id);
+        }
       }
     }
   }
   if (Object.keys(primaryBySetAndRepresentation).some(key => !consumedOverrides.has(key))) throw new Error('name_primary_override_unused');
+  for (const id of attested) if (!consumedAttested.has(id)) throw new Error(`name_attested_secondary_unused:${id}`);
   return validateNameGraph(graph);
 }

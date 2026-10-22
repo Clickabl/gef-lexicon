@@ -265,6 +265,33 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_es_adriana",
+      "canonical_form": "Adriana",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Adriana",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "es"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.adriana",
+          "equivalence_set_id": "NFEQ.adriana.full-feminine",
+          "form_id": "NFF.adriana.es.adriana"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish Adriana as a female given name equivalent to Adriana.",
+      "source_refs": [
+        "src_wiktionary_en_adriana_oldid_92176252"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_es_adriano",
       "canonical_form": "Adriano",
       "name_type": "given",
@@ -649,8 +676,9 @@
       ],
       "related_names": [],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish Ana as a female given name.",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish Ana as a female given name equivalent to Ann.",
       "source_refs": [
+        "src_wiktionary_en_ana_oldid_93479245",
         "src_wiktionary_en_ann_oldid_93425879"
       ],
       "review_state": "candidate"
@@ -1178,8 +1206,9 @@
       ],
       "related_names": [],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish Bárbara as a female given name.",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish Bárbara as a female given name equivalent to Barbara.",
       "source_refs": [
+        "src_wiktionary_en_barbara_oldid_85571663",
         "src_wiktionary_en_barbara_oldid_92131446"
       ],
       "review_state": "candidate"
@@ -1916,6 +1945,34 @@
       "source_refs": [
         "src_wiktionary_en_agnes_oldid_92302340",
         "src_wiktionary_en_ines_oldid_86757771"
+      ],
+      "review_state": "candidate"
+    },
+    {
+      "name_id": "name_es_jose",
+      "canonical_form": "José",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "José",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "es"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.joseph",
+          "equivalence_set_id": "NFEQ.joseph.full-masculine",
+          "form_id": "NFF.joseph.es.jose"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Spanish José as a male given name equivalent to Joseph.",
+      "source_refs": [
+        "src_wiktionary_en_jose_oldid_93514480",
+        "src_wiktionary_en_joseph_oldid_93742399"
       ],
       "review_state": "candidate"
     },

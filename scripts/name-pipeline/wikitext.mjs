@@ -3,7 +3,13 @@
  * They read exactly what a pinned English Wiktionary revision says and nothing else.
  */
 
-/** Split on a separator, ignoring separators inside {{ }}, [[ ]] and < > (inline modifiers). */
+/**
+ * An inline modifier opens with `<`, a lowercase key and a colon: `<tr:..>`, `<qq:..>`. Any other `<` is ordinary text,
+ * such as the origin chain in `from=Latin < Ancient Greek < Hebrew`, and must not hide the parameters that follow it.
+ */
+const INLINE_MODIFIER_OPEN = /^<[a-z]+:/;
+
+/** Split on a separator, ignoring separators inside {{ }}, [[ ]] and <key:...> (inline modifiers). */
 export function splitTopLevel(text, separator = '|') {
   const parts = [];
   let braces = 0, brackets = 0, angles = 0, start = 0;
@@ -14,7 +20,7 @@ export function splitTopLevel(text, separator = '|') {
     if (pair === '[[') { brackets += 1; i += 1; continue; }
     if (pair === ']]') { brackets = Math.max(0, brackets - 1); i += 1; continue; }
     const char = text[i];
-    if (char === '<') angles += 1;
+    if (char === '<') { if (INLINE_MODIFIER_OPEN.test(text.slice(i, i + 16))) angles += 1; }
     else if (char === '>') angles = Math.max(0, angles - 1);
     else if (char === separator && !braces && !brackets && !angles) { parts.push(text.slice(start, i)); start = i + 1; }
   }

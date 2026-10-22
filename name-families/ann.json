@@ -240,6 +240,7 @@
           "usage": "unknown",
           "name_id": "name_es_ana",
           "source_refs": [
+            "src_wiktionary_en_ana_oldid_93479245",
             "src_wiktionary_en_ann_oldid_93425879"
           ],
           "review_state": "candidate"
@@ -618,6 +619,20 @@
           "review_state": "candidate"
         },
         {
+          "form_id": "NFF.ann.nb.ann",
+          "text": "Ann",
+          "language_tag": "nb",
+          "script": "Latn",
+          "relation_type": "borrowed_adaptation",
+          "usage": "unknown",
+          "name_id": "name_nb_ann",
+          "source_refs": [
+            "src_wiktionary_en_ann_oldid_93425879"
+          ],
+          "note": "Own pinned entry: from English < Latin < Ancient Greek < Biblical Hebrew.",
+          "review_state": "candidate"
+        },
+        {
           "form_id": "NFF.ann.nl.anna",
           "text": "Anna",
           "language_tag": "nl",
@@ -654,7 +669,8 @@
           "usage": "unknown",
           "name_id": "name_pl_anna",
           "source_refs": [
-            "src_wiktionary_en_ann_oldid_93425879"
+            "src_wiktionary_en_ann_oldid_93425879",
+            "src_wiktionary_en_anna_oldid_93366642"
           ],
           "review_state": "candidate"
         },
@@ -915,6 +931,20 @@
             "src_wiktionary_en_nanny_oldid_88987580"
           ],
           "note": "Own pinned entry: diminutive of Ann.",
+          "review_state": "candidate"
+        },
+        {
+          "form_id": "NFF.ann.nb.annie",
+          "text": "Annie",
+          "language_tag": "nb",
+          "script": "Latn",
+          "relation_type": "short_form",
+          "usage": "unknown",
+          "name_id": "name_nb_annie",
+          "source_refs": [
+            "src_wiktionary_en_annie_oldid_93486888"
+          ],
+          "note": "Own pinned entry: equivalent to the short form Annie.",
           "review_state": "candidate"
         }
       ]

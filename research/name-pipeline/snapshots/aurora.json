@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Aurora",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -394,11 +394,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aurora",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin|eq=Aurora",
+              "from": "Spanish < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|bcl|female|from=Spanish < Latin|eq=Aurora}}"
@@ -619,11 +624,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aurora",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin|eq=Aurora",
+              "from": "Spanish < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|tl|female|from=Spanish < Latin|eq=Aurora}}"

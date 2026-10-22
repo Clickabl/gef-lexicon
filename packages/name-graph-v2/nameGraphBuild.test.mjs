@@ -7,6 +7,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { fixtureGraph } from './fixtures.mjs';
 import { compileNameGraph, sha256 } from './compileNameGraph.mjs';
 import { migrateLegacyNameFamilies } from './legacyNameGraph.mjs';
+import { NameGraphIndex } from './nameGraph.mjs';
 import { createNameGraphSource, readNameResponse } from './nameGraphSource.mjs';
 const bibliography = { sources: [{ source_id: 'fixture:synthetic' }] };
 async function directory(t) { const value = await mkdtemp(path.join(tmpdir(), 'gef-name-graph-')); t.after(() => rm(value, { recursive: true, force: true })); return value; }
@@ -81,6 +82,40 @@ test('legacy mixed full and short set is refused', () => { assert.throws(() => m
 test('ambiguous legacy primaries require an explicit mapping, not popularity guessing', () => {
   const input = legacy([legacyForm('a', 'Timothy', 'spelling_variant'), legacyForm('b', 'Timothi', 'spelling_variant')]); assert.throws(() => migrateLegacyNameFamilies(input), /name_primary_decision_required/);
   const graph = migrateLegacyNameFamilies(input, { '["fixture-set","en-Latn"]': 'a' }); assert.equal(graph.spellings.find(row => row.primary).text, 'Timothy'); assert.equal(graph.spellings.find(row => row.text === 'Timothi').fallbackToPrimary, false);
+});
+const josephForms = () => [
+  { ...legacyForm('joseph', 'Joseph'), relation_type: 'source_form' },
+  { ...legacyForm('jose', 'Jose', 'local_equivalent') },
+  { ...legacyForm('josephe', 'Josephe', 'spelling_variant') },
+  { ...legacyForm('fr', 'Joseph', 'local_equivalent'), language_tag: 'fr' },
+  { ...legacyForm('de', 'Josef', 'local_equivalent'), language_tag: 'de' },
+  { ...legacyForm('ru', 'Иосиф', 'local_equivalent'), language_tag: 'ru', script: 'Cyrl' },
+];
+const revealFor = (graph, literal) => {
+  const index = new NameGraphIndex(graph), resolved = index.resolveLiteral(literal, { mode: 'beta' });
+  return resolved.kind === 'resolved' ? index.reveal({ literal, nameId: resolved.match.nameId, spellingId: resolved.match.spellingId }, { mode: 'beta' }).forms.map(form => `${form.text}|${form.representationTags.join(',')}`) : resolved.kind;
+};
+test('an attested secondary spelling carries fallbackToPrimary and reveals the other-language primaries', () => {
+  const graph = migrateLegacyNameFamilies(legacy(josephForms()), {}, { attestedSecondaryFormIds: ['jose'] });
+  const row = text => graph.spellings.find(spelling => spelling.text === text && spelling.languageTag === 'en');
+  assert.deepEqual([row('Joseph').primary, row('Joseph').fallbackToPrimary], [true, true]);
+  assert.deepEqual([row('Jose').primary, row('Jose').fallbackToPrimary], [false, true], 'explicit in the compiled data');
+  assert.equal(graph.renderings.length, 0, 'no rendering links are invented');
+  assert.deepEqual(revealFor(graph, 'Jose'), ['Josef|de-Latn', 'Joseph|fr-Latn', 'Иосиф|ru-Cyrl'], 'the English primary is never shown back to an English spelling');
+  assert.equal(migrateLegacyNameFamilies(legacy(josephForms()), {}, { attestedSecondaryFormIds: ['jose'] }).spellings.every(item => item.reviewState === 'candidate'), true, 'no review state is promoted');
+});
+test('a secondary spelling that is not attested stays literal, and so does a spelling that is not in the graph', () => {
+  const graph = migrateLegacyNameFamilies(legacy(josephForms()), {}, { attestedSecondaryFormIds: ['jose'] });
+  assert.equal(graph.spellings.find(spelling => spelling.text === 'Josephe').fallbackToPrimary, false);
+  assert.deepEqual(revealFor(graph, 'Josephe'), [], 'resolves to the name but reveals nothing without attestation');
+  assert.equal(revealFor(graph, 'Josepheus'), 'unknown', 'a creative spelling nobody sourced is never resolved');
+  const none = migrateLegacyNameFamilies(legacy(josephForms()));
+  assert.equal(none.spellings.find(spelling => spelling.text === 'Jose').fallbackToPrimary, false, 'attestation must be passed in explicitly');
+  assert.deepEqual(revealFor(none, 'Jose'), []);
+});
+test('an attested secondary list that does not match the families is refused, not ignored', () => {
+  assert.throws(() => migrateLegacyNameFamilies(legacy(josephForms()), {}, { attestedSecondaryFormIds: ['nope'] }), /name_attested_secondary_unused:nope/);
+  assert.throws(() => migrateLegacyNameFamilies(legacy(josephForms()), {}, { attestedSecondaryFormIds: ['joseph'] }), /name_attested_secondary_is_primary:joseph/);
 });
 test('mutated SQLite rows are detected even when integrity checks still pass', async t => {
   const out = await directory(t), manifest = await build(out); const db = new DatabaseSync(path.join(out, manifest.sqlite.path));

@@ -4761,6 +4761,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_en_carlos",
+      "canonical_form": "Carlos",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Carlos",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "en"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.charles",
+          "equivalence_set_id": "NFEQ.charles.full-masculine",
+          "form_id": "NFF.charles.en.carlos"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines English Carlos as a male given name equivalent to Charles.",
+      "source_refs": [
+        "src_wiktionary_en_carlos_oldid_91976143",
+        "src_wiktionary_en_charles_oldid_93477811"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_en_carmel",
       "canonical_form": "Carmel",
       "name_type": "given",

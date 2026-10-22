@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Aurelia",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -369,11 +369,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aurelia",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Spanish < Latin|eq=Aurelia",
+              "from": "Spanish < Latin",
               "usage": null,
               "popular": null,
               "raw": "{{given name|ceb|female|from=Spanish < Latin|eq=Aurelia}}"

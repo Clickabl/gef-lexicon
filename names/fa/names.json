@@ -410,6 +410,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_fa_harun",
+      "canonical_form": "هارون",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "هارون",
+          "status": "canonical",
+          "script": "Arab",
+          "locale": "fa"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.aaron",
+          "equivalence_set_id": "NFEQ.aaron.full-masculine",
+          "form_id": "NFF.aaron.fa.harun"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Persian هارون as a male given name equivalent to Aaron.",
+      "source_refs": [
+        "src_wiktionary_en_aaron_oldid_93442002",
+        "src_wiktionary_en_u647_627_631_648_646_oldid_93251976"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_fa_katrin",
       "canonical_form": "کاترین",
       "name_type": "given",

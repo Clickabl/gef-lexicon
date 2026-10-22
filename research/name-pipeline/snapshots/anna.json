@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Anna",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [],
@@ -260,11 +260,28 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                },
+                {
+                  "text": "Anne",
+                  "language": null
+                },
+                {
+                  "text": "Hannah",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|es|female|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah}}"
@@ -472,9 +489,9 @@
       ]
     },
     "Anina": {
-      "revid": 93358993,
-      "timestamp": "2026-10-02T15:58:12Z",
-      "sha256": "9d0563577cdffa2ad9be38b3e8153f62486672fde92710659a32713455a6a6c3",
+      "revid": 93598666,
+      "timestamp": "2026-10-15T20:45:17Z",
+      "sha256": "425d3729443948f84584a834dd9ff72741ba783b7de3479f6818fdf4798741ce",
       "sections": [
         {
           "heading": "Norwegian Bokmål",
@@ -484,11 +501,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Anna",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Biblical Hebrew|eq=Anna",
+              "from": "Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=Latin < Ancient Greek < Biblical Hebrew|eq=Anna}}"
@@ -1078,11 +1100,20 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|female|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna}}"
@@ -1876,7 +1907,24 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                },
+                {
+                  "text": "Anne",
+                  "language": null
+                },
+                {
+                  "text": "Hannah",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [
@@ -1885,7 +1933,7 @@
                   "language": null
                 }
               ],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|rsk|female|xlit=Ana|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah}}"

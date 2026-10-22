@@ -113,6 +113,34 @@
       "review_state": "candidate"
     },
     {
+      "name_id": "name_lt_afanasijus",
+      "canonical_form": "Afanasijus",
+      "name_type": "given",
+      "spellings": [
+        {
+          "text": "Afanasijus",
+          "status": "canonical",
+          "script": "Latn",
+          "locale": "lt"
+        }
+      ],
+      "family_refs": [
+        {
+          "family_id": "NF.athanasius",
+          "equivalence_set_id": "NFEQ.athanasius.full-masculine",
+          "form_id": "NFF.athanasius.lt.afanasijus"
+        }
+      ],
+      "related_names": [],
+      "gender_usage": [],
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Lithuanian Afanasijus as a male given name equivalent to Athanasius.",
+      "source_refs": [
+        "src_wiktionary_en_afanasijus_oldid_91923339",
+        "src_wiktionary_en_athanasius_oldid_93383485"
+      ],
+      "review_state": "candidate"
+    },
+    {
       "name_id": "name_lt_agota",
       "canonical_form": "Agota",
       "name_type": "given",
@@ -133,9 +161,10 @@
       ],
       "related_names": [],
       "gender_usage": [],
-      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Lithuanian Agota as a female given name.",
+      "etymology_note": "Candidate: the pinned English Wiktionary entry defines Lithuanian Agota as a female given name equivalent to Agatha.",
       "source_refs": [
-        "src_wiktionary_en_agatha_oldid_93296866"
+        "src_wiktionary_en_agatha_oldid_93296866",
+        "src_wiktionary_en_agota_oldid_91980563"
       ],
       "review_state": "candidate"
     },

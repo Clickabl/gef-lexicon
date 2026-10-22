@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Catherine",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -2049,11 +2049,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Catherine",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Catherine",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|female|from=Latin < Ancient Greek|eq=Catherine}}"
@@ -2776,7 +2781,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Catherine",
+                  "language": null
+                },
+                {
+                  "text": "Kathryn",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [
@@ -2785,7 +2799,7 @@
                   "language": null
                 }
               ],
-              "from": "Latin < Ancient Greek|eq=Catherine,Kathryn",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|rsk|female|xlit=Katarina|from=Latin < Ancient Greek|eq=Catherine,Kathryn}}"

@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Alexandra",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -486,11 +486,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alexandra",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alexandra",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alexandra}}"
@@ -821,11 +826,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alexandra",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alexandra",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alexandra}}"

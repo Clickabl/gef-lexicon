@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Ann",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -1136,11 +1136,28 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                },
+                {
+                  "text": "Anne",
+                  "language": null
+                },
+                {
+                  "text": "Hannah",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|es|female|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah}}"
@@ -1250,11 +1267,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "English < Latin < Ancient Greek < Biblical Hebrew|eq=Ann",
+              "from": "English < Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=English < Latin < Ancient Greek < Biblical Hebrew|eq=Ann}}"
@@ -1755,11 +1777,20 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|female|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna}}"
@@ -2377,11 +2408,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Annie",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "English < Latin < Ancient Greek < Biblical Hebrew|eq=Annie",
+              "from": "English < Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=English < Latin < Ancient Greek < Biblical Hebrew|eq=Annie}}"
@@ -2751,9 +2787,9 @@
       ]
     },
     "Ánná": {
-      "revid": 81776626,
-      "timestamp": "2024-09-24T06:51:11Z",
-      "sha256": "831016162e3037c91b3ebe3d09ee81de9e7b0854edba9d7f61f23e6813c57c61",
+      "revid": 93543102,
+      "timestamp": "2026-10-13T02:33:32Z",
+      "sha256": "47a8d7ab6906a4c5db62d5a64ec85501615e8f6e2b231f531af5048167fbf96a",
       "sections": [
         {
           "heading": "Northern Sami",
@@ -2925,7 +2961,24 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Ann",
+                  "language": null
+                },
+                {
+                  "text": "Anna",
+                  "language": null
+                },
+                {
+                  "text": "Anne",
+                  "language": null
+                },
+                {
+                  "text": "Hannah",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [
@@ -2934,7 +2987,7 @@
                   "language": null
                 }
               ],
-              "from": "Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah",
+              "from": "Latin < Ancient Greek < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|rsk|female|xlit=Ana|from=Latin < Ancient Greek < Hebrew|eq=Ann,Anna,Anne,Hannah}}"
@@ -3198,9 +3251,9 @@
       "sections": []
     },
     "آنا": {
-      "revid": 93476485,
-      "timestamp": "2026-10-10T07:50:39Z",
-      "sha256": "4809bf67f6a5557cdd6c319cf2d0c8df279ae5225df1f04c89e0107e6e047f11",
+      "revid": 93766601,
+      "timestamp": "2026-10-21T20:46:03Z",
+      "sha256": "75686886702aeb8e47fe0d63ca655f2e6edfd6745aee30cb62db19e69effbb3f",
       "sections": []
     },
     "حنا": {
@@ -3240,9 +3293,9 @@
       ]
     },
     "एन": {
-      "revid": 92292453,
-      "timestamp": "2026-08-24T20:57:25Z",
-      "sha256": "228d6d96fe2c1e56bad88030b4fb6aca9cdeae1762def0f6051a87c094724561",
+      "revid": 93762675,
+      "timestamp": "2026-10-21T09:37:22Z",
+      "sha256": "a9d04a53a58280198bbefe18f6263467b87deaf908356056b858f9fda285b8cf",
       "sections": []
     },
     "ანა": {
@@ -3278,9 +3331,9 @@
       "sections": []
     },
     "アンナ": {
-      "revid": 87893352,
-      "timestamp": "2025-11-01T01:20:23Z",
-      "sha256": "b011b5d275ad9a5c106a94781ba1b4bc0fc31d1bc1fc43a604cbb90f5de6f8e4",
+      "revid": 93542937,
+      "timestamp": "2026-10-13T02:28:56Z",
+      "sha256": "d979efa21c0338b6489763c9c947ccf6152c7f4e8feaf59154132fb3e6af5d3d",
       "sections": []
     },
     "安": {

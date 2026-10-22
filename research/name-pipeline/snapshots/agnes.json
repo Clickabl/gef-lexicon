@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Agnes",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -1403,11 +1403,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Annie",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "English < Latin < Ancient Greek < Biblical Hebrew|eq=Annie",
+              "from": "English < Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=English < Latin < Ancient Greek < Biblical Hebrew|eq=Annie}}"

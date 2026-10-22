@@ -7,7 +7,7 @@
  *   names/<language>/names.json          one language-local record per form (records that are not the pipeline's are only given a family ref)
  *   sources/bibliography.json            one pinned-revision entry per Wiktionary page a form cites
  *   lexi/name-family-index.json          the discovery catalogue
- *   research/name-pipeline/              primary-map.json, generated-names.json, build-report.json
+ *   research/name-pipeline/              primary-map.json, attested-secondary.json, generated-names.json, build-report.json
  *
  *   node scripts/name-pipeline/build.mjs [--check]     --check writes nothing and exits 1 if any output would change
  */
@@ -34,6 +34,13 @@ const SET_META = {
   'listed-other': ['other', "Forms the root entry's translation table lists whose relation to the full name no source states; kept out of the full-name set."],
 };
 const GENDER_WORD = { male: 'male', female: 'female', unisex: 'unisex' };
+/**
+ * The form's own pinned {{given name}} entry states the relation: it says eq=<root or member>, dimof= or varof= (the routes
+ * family.mjs records as eq-root, eq:, dimof:, varof:). A form that is in the family only through the root's translation table,
+ * with or without an entry of its own, is not attested by itself, and neither is a flagged one.
+ */
+export const attestedByOwnEntry = member => Boolean(member.own?.template) && !member.flag
+  && member.via.some(route => /^(eq-root|eq:|dimof:|varof:)/.test(route));
 
 const listJson = dir => (existsSync(dir) ? readdirSync(dir).filter(name => name.endsWith('.json')).sort(compareText) : []);
 const hash4 = text => sha256(text).slice(0, 4);
@@ -125,6 +132,7 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
   // ---- families ----
   const report = { generated_by: MARKER, families: [], skipped: [] };
   const primaryMap = {};
+  const attestedSecondary = [];         // form_ids of non-primary forms whose own pinned entry attests them (see below)
   const newFamilies = new Map();
   const nameContribution = new Map();   // name_id -> { tag, text, member, refs, sources, relations, family }
   const familyIdsInOrder = [];
@@ -213,6 +221,9 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
           || (b.via.includes('eq-root')) - (a.via.includes('eq-root')) || dependents(b) - dependents(a)
           || (a.tableIndex ?? Infinity) - (b.tableIndex ?? Infinity) || a.text.length - b.text.length || compareText(a.text, b.text));
         primaryMap[JSON.stringify([setId, representation])] = ranked[0].formId;
+        // A secondary spelling reveals its family only when its own pinned entry states the relation (eq=, dimof=,
+        // varof=). A table row alone, a flagged form, or a mere resemblance stays literal, as before.
+        for (const member of ranked.slice(1)) if (attestedByOwnEntry(member)) { attestedSecondary.push(member.formId); member.attestedSecondary = true; }
       }
     }
 
@@ -256,6 +267,7 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
       short_forms: kept.filter(member => member.set === 'short').length,
       listed_only: kept.filter(member => member.set === 'listed').length,
       table_only_no_own_entry: kept.filter(member => member.flag === 'table_only_no_own_entry').length,
+      attested_secondary: kept.filter(member => member.attestedSecondary).length,
       excluded: excluded.sort((a, b) => compareText(`${a.code}|${a.text}`, `${b.code}|${b.text}`)),
     });
   }
@@ -333,6 +345,10 @@ export function planBuild({ repoRoot = REPO_ROOT, pipelineDir = PIPELINE_DIR, sn
   }
   const sortedPrimary = Object.fromEntries(Object.entries(primaryMap).sort((a, b) => compareText(a[0], b[0])));
   files.set(join(pipelineDir, 'primary-map.json'), sortedPrimary);
+  files.set(join(pipelineDir, 'attested-secondary.json'), {
+    purpose: "Non-primary name-family forms whose own pinned Wiktionary entry attests them. The graph compiler sets fallbackToPrimary: true for exactly these, so typing one reveals the family's primaries; every other secondary spelling stays literal. Written by build.mjs; never edit by hand.",
+    form_ids: attestedSecondary.sort(compareText),
+  });
   files.set(manifestPath, { purpose: 'Name records the pipeline created. build.mjs regenerates exactly these and never edits any other record except to add a family ref.', name_ids: [...new Set([...manifest].filter(id => nameContribution.has(id)).concat(generatedIds))].sort(compareText) });
   report.families.sort((a, b) => compareText(a.family_id, b.family_id));
   files.set(join(pipelineDir, 'build-report.json'), report);

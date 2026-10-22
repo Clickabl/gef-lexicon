@@ -375,7 +375,7 @@ Name families are produced by `scripts/name-pipeline/`, not written by hand. Thr
    the product registry's lesson tiers, not a support statement (Wiktionary's `cmn` is the registry's `zh`).
 2. `node scripts/name-pipeline/build.mjs [--check]` is offline and deterministic. It turns the snapshots into
    `name-families/<root>.json`, the language-local `names/<language>/names.json` rows, one bibliography entry per pinned
-   revision (`external_ids.pipeline = "name-pipeline-v1"`), the discovery catalogue and a mechanical `primary-map.json`.
+   revision (`external_ids.pipeline = "name-pipeline-v1"`), the discovery catalogue, a mechanical `primary-map.json` and `attested-secondary.json` (see "Which secondary spelling reveals its family" below).
    `--check` fails when any committed output differs, and `scripts/test-name-pipeline.mjs` runs it on every validation.
 3. `node scripts/name-pipeline/publish-graph.mjs` compiles the V2 name graph with the existing compiler into
    `lexi/name-graph-v2/` (the path the CDN serves) and removes superseded immutable build directories.
@@ -390,6 +390,12 @@ has no given-name sense is kept, flagged in its note, because only the root entr
 `transliteration` when its script differs from the root's and `borrowed_adaptation` otherwise. Wiktionary's `{{given name}}`
 documentation distinguishes equivalents (`eq=`) from transliterations (`xlit=`); `xlit=` is used only to build ASCII identifiers.
 
+A `{{given name}}` template is split on top-level `|` only. An inline modifier opens with `<key:` (`<tr:..>`, `<qq:..>`) and
+protects its own pipes; any other `<`, such as the origin chain in `from=Latin < Ancient Greek < Hebrew`, is ordinary text and
+must never hide the `eq=`, `dimof=` or `varof=` that follows it. Until 2026-10-22 it did: the relations of 56 captured entries
+(among them Spanish José and Polish Józef) were lost until their 22 roots were re-captured. Snapshots store the parsed
+parameters, so a parser change takes effect only after `fetch.mjs --only <affected roots>` and a rebuild.
+
 The app resolves a typed spelling to exactly one equivalence set and refuses to guess when a spelling sits in two, so a
 spelling lives in exactly one set per family (the one the strongest evidence puts it in); the other forms with that spelling keep
 their language, join the set, and say so in their note. A form already held by another family is not added to a second one
@@ -399,6 +405,18 @@ is promoted, no model is called, and a form with no pinned source does not exist
 (set, language, script) when a set holds several: `primary-map.json` is a mechanical default (the root, then a form that its
 own entry confirms, then the one other forms point at, then table order, then shortest), not an editorial decision, and Tim can
 override any line. Not used in version 1: Wikidata given-name items (`P460` "said to be the same as").
+
+Which secondary spelling reveals its family (2026-10-22). A (set, language, script) holding several forms has one primary;
+the others are secondary. A graph spelling carries `fallbackToPrimary: true` when it is a primary, and for a secondary spelling
+only when the form's own pinned entry states the relation: its `{{given name}}` says `eq=<root or member>`, `dimof=` or
+`varof=` (the routes the family builder records as `eq-root`, `eq:`, `dimof:`, `varof:`). `build.mjs` decides this from that
+evidence and writes the form IDs to `research/name-pipeline/attested-secondary.json`; `publish-graph.mjs` passes the file to the
+graph compiler (`--attested-secondary`), so the flag is explicit in the published data. English `Jose` (`eq=Joseph`) and `José`
+(`varof=Jose`) therefore reveal the Joseph family when typed. A form that only the root's translation table lists (with or without
+a given-name entry of its own), a form the build flags as weak (`table_only_no_own_entry`, `leading_portion_listed_only`) and
+any spelling that is not in the graph stay literal. No rendering links are created and nothing is inferred from set membership,
+so the "no inferred Cartesian links" rule of `packages/name-graph-v2/README.md` still holds; widening the rule (for example to
+table rows confirmed by an entry of their own) is a one-line change to `attestedByOwnEntry` in `build.mjs` and a rebuild.
 
 ### Seed resolver acceptance, October12
 

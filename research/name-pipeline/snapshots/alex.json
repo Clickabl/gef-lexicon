@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Alex",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [],
@@ -209,11 +209,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alex",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|male|from=Latin < Ancient Greek|eq=Alex}}"
@@ -223,11 +228,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alex",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alex}}"
@@ -517,11 +527,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alex",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|male|from=Latin < Ancient Greek|eq=Alex}}"
@@ -531,11 +546,16 @@
               "genders": [
                 "female"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Alex",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek|eq=Alex",
+              "from": "Latin < Ancient Greek",
               "usage": null,
               "popular": null,
               "raw": "{{given name|nb|female|from=Latin < Ancient Greek|eq=Alex}}"
@@ -806,9 +826,9 @@
       ]
     },
     "Саша": {
-      "revid": 93036271,
-      "timestamp": "2026-09-29T21:57:27Z",
-      "sha256": "1cedb2c8aa6d974c691cc7e372afbfee84b8f771cc12406572af8d8338e5ef44",
+      "revid": 93667983,
+      "timestamp": "2026-10-19T04:13:30Z",
+      "sha256": "fca71ae909ee5fb7f635a0034c17494b52d0ba14e2e6784868f872496cf571a1",
       "sections": [
         {
           "heading": "Pannonian Rusyn",
@@ -1020,9 +1040,9 @@
       ]
     },
     "Сашо": {
-      "revid": 92485005,
-      "timestamp": "2026-09-04T22:29:23Z",
-      "sha256": "84767132602029a6d0f9a22a283e30b2e7d86d7bcd2028470a93edad879fc5eb",
+      "revid": 93667988,
+      "timestamp": "2026-10-19T04:14:38Z",
+      "sha256": "5f52d13bc31f546bc743f99954d8d43583528e68459fbfd2f2536732136a3b4c",
       "sections": [
         {
           "heading": "Bulgarian",

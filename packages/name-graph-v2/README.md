@@ -16,6 +16,19 @@ even a rejected one, takes precedence over a primary fallback. Secondary creativ
 spellings do not acquire inferred Cartesian links. `fallbackToPrimary` must be
 explicit. The chosen literal is never silently corrected to a canonical spelling.
 
+A primary spelling always has `fallbackToPrimary: true`. A SECONDARY spelling has it
+only when its own sourced entry attests it: the name pipeline lists such forms in
+`research/name-pipeline/attested-secondary.json` (a form whose own pinned Wiktionary
+entry says `eq=`, `dimof=` or `varof=` the root or a family member; a form that only
+the root's translation table lists, or that a pipeline flag marks as weak, is not on
+the list), and the compiler is given that list with `--attested-secondary`. Typing an
+attested secondary spelling (English `Jose`, `eq=Joseph`) then reveals the family's
+primaries in the other representations exactly as typing a primary does, without
+creating a single rendering link. Membership in an equivalence set alone never does this,
+and a spelling that is not in the graph at all (a creative or misspelled name) stays
+`unknown` and is kept literal. An ID on the list that is not a retained non-primary form is
+a build error, so the list cannot drift from the families.
+
 Every representation declares its script. Equivalent region variants can match
 only with the same language and script. Traditional Chinese is not Simplified
 Chinese; Latin Hindi is not Devanagari. Unicode script validation catches obvious
@@ -85,6 +98,9 @@ Use Node 22.13 or later for built-in SQLite. This pass ran Node 22.16.0.
 ```sh
 node --test packages/name-graph-v2/*.test.mjs
 node scripts/compile-name-graph-v2.mjs --output /an/explicit/staging/lexi/name-graph-v2
+node scripts/compile-name-graph-v2.mjs --output /an/explicit/staging/lexi/name-graph-v2 \
+  --primary-map research/name-pipeline/primary-map.json \
+  --attested-secondary research/name-pipeline/attested-secondary.json   # what name-pipeline/publish-graph.mjs runs
 ```
 
 Without `--input`, the compiler reads current `name-families/*.json`. One existing
@@ -93,8 +109,10 @@ that it satisfies the owner's narrower name identity: audit and split mixed
 identities before activation. It refuses mixed full/short sets or ambiguous
 primaries. An explicit `--primary-map decisions.json` can select an EXISTING form
 ID for a `[set ID, representation tag]` key. This is an editorial decision, not a
-server agent's permission to pick the first row. Facts and variant-specific links
-are not invented during legacy conversion. A fully authored graph can be passed
+server agent's permission to pick the first row. An optional `--attested-secondary
+list.json` (`{ "form_ids": [...] }`, written by the name pipeline, not usable with
+`--input`) marks non-primary forms as attested, see above. Facts and variant-specific
+links are not invented during legacy conversion. A fully authored graph can be passed
 with `--input graph.json`; all source references must exist in the bibliography.
 
 The output contains `<sha256>/graph.json`, `<sha256>/names.sqlite`, an immutable

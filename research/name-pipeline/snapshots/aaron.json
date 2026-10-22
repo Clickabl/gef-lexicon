@@ -1,7 +1,7 @@
 {
   "snapshot_version": 1,
   "root": "Aaron",
-  "retrieved_at": "2026-10-12",
+  "retrieved_at": "2026-10-22",
   "api": "https://en.wiktionary.org/w/api.php",
   "language_filter_reviewed": "2026-08-23",
   "root_table_rows": [
@@ -641,11 +641,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aaron",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Biblical Hebrew|eq=Aaron",
+              "from": "Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|male|from=Latin < Ancient Greek < Biblical Hebrew|eq=Aaron}}"
@@ -888,11 +893,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aaron",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Latin < Ancient Greek < Biblical Hebrew|eq=Aaron",
+              "from": "Latin < Ancient Greek < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|pl|male|from=Latin < Ancient Greek < Biblical Hebrew|eq=Aaron}}"
@@ -1167,11 +1177,16 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aaron",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
               "xlit": [],
-              "from": "Arabic < Biblical Hebrew|eq=Aaron",
+              "from": "Arabic < Biblical Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|ms|male|from=Arabic < Biblical Hebrew|eq=Aaron}}"
@@ -1782,11 +1797,29 @@
               "genders": [
                 "male"
               ],
-              "eq": [],
+              "eq": [
+                {
+                  "text": "Aaron",
+                  "language": null
+                }
+              ],
               "dimof": [],
               "varof": [],
-              "xlit": [],
-              "from": "Arabic < Hebrew|xlit=Harun,Haroon,Haroun|eq=Aaron",
+              "xlit": [
+                {
+                  "text": "Harun",
+                  "language": null
+                },
+                {
+                  "text": "Haroon",
+                  "language": null
+                },
+                {
+                  "text": "Haroun",
+                  "language": null
+                }
+              ],
+              "from": "Arabic < Hebrew",
               "usage": null,
               "popular": null,
               "raw": "{{given name|fa|male|from=Arabic < Hebrew|xlit=Harun,Haroon,Haroun|eq=Aaron}}"
