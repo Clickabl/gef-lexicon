@@ -33,6 +33,8 @@ export type NameRevealForm = Readonly<{
 export type NameReveal = Readonly<{ literal: string; forms: readonly NameRevealForm[] }>;
 export type NameRevealOptions = Readonly<{ mode?: NameMode; representations?: readonly string[] | null }>;
 export function canonicalNameTag(value: unknown): string;
+/** Language, script and region subtags of the canonical tag, read without `Intl.Locale` (absent in Hermes on iOS). */
+export function nameTagSubtags(value: unknown): { language: string; script: string | undefined; region: string | undefined };
 export function normalizeNameLookup(value: string): string;
 export function personalNameLiteral(value: string): string;
 export function validateNameGraph(input: unknown): NameGraph;

@@ -22,6 +22,12 @@ Chinese; Latin Hindi is not Devanagari. Unicode script validation catches obviou
 script mismatches, but does NOT linguistically validate a transliteration or
 identify Simplified versus Traditional Han spellings. Source evidence still matters.
 
+The runtime never needs `Intl.Locale` (Hermes on iOS has none; until 2026-10-22 every
+graph load in the app threw there and every name revealed with no forms). Subtags are
+read from the canonical tag. Where likely subtags cannot be added, a tag without a
+script is compatible only with the same tag, so the Traditional/Simplified and
+Latin/Devanagari boundaries hold on every runtime.
+
 ## Review and certainty
 
 Beta lookup admits sourced `candidate`, `machine_reviewed`, and `approved` rows.

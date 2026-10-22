@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { NameGraphIndex, validateNameGraph, personalNameLiteral, normalizeNameLookup, nameRepresentationsCompatible } from './nameGraph.mjs';
+import { NameGraphIndex, validateNameGraph, personalNameLiteral, normalizeNameLookup, nameRepresentationsCompatible, nameTagSubtags } from './nameGraph.mjs';
 import { NameEntrySession } from './nameEntry.mjs';
 import { fixtureGraph, approveGraph } from './fixtures.mjs';
 const index = () => new NameGraphIndex(fixtureGraph());
@@ -109,3 +109,37 @@ test('language reranking does not throw away an explicitly chosen sense', async 
   const session = new NameEntrySession(index()); await session.change('Alex'); const selected = session.getSnapshot().matches[0]; session.choose(selected.id);
   await session.setLanguages({ preferredLanguage: 'es' }); assert.equal((await session.prepare()).match.nameId, selected.nameId);
 });
+
+/** Runs `work` the way Hermes on iOS runs it: there is no `Intl.Locale` at all. */
+function withoutIntlLocale(work) {
+  const original = Object.getOwnPropertyDescriptor(Intl, 'Locale');
+  delete Intl.Locale;
+  try { assert.equal(typeof Intl.Locale, 'undefined'); return work(); } finally { Object.defineProperty(Intl, 'Locale', original); }
+}
+test('subtags are read from the canonical tag itself', () => {
+  assert.deepEqual(nameTagSubtags('zh-hant-tw'), { language: 'zh', script: 'Hant', region: 'TW' });
+  assert.deepEqual(nameTagSubtags('en'), { language: 'en', script: undefined, region: undefined });
+  assert.deepEqual(nameTagSubtags('sr-Latn'), { language: 'sr', script: 'Latn', region: undefined });
+  assert.deepEqual(nameTagSubtags('es-419'), { language: 'es', script: undefined, region: '419' });
+  assert.deepEqual(nameTagSubtags('haw-Latn'), { language: 'haw', script: 'Latn', region: undefined });
+  for (const value of ['zh-Hant-TW', 'ja-Jpan', 'hy-Armn', 'pt-BR', 'en-Latn-US']) {
+    const locale = new Intl.Locale(value);
+    assert.deepEqual(nameTagSubtags(value), { language: locale.language, script: locale.script, region: locale.region });
+  }
+});
+test('the graph validates, resolves and reveals where the runtime has no Intl.Locale (Hermes on iOS)', () => withoutIntlLocale(() => {
+  const graph = new NameGraphIndex(fixtureGraph());
+  const choice = graph.resolveLiteral('Tim'); assert.equal(choice.match.nameId, 'NS.tim');
+  assert.equal(graph.reveal({ literal: choice.literal, ...choice.match }).forms[0].text, 'Timo');
+  const scriptless = fixtureGraph(); scriptless.spellings[0].representationTag = 'en';
+  assert.throws(() => validateNameGraph(scriptless), /name_representation_requires_script/);
+  const mismatch = fixtureGraph(); mismatch.spellings[0].text = 'Тим';
+  assert.throws(() => validateNameGraph(mismatch), /name_spelling_script_mismatch/);
+}));
+test('without likely subtags a script-less tag matches only itself, so Traditional never falls back to Simplified', () => withoutIntlLocale(() => {
+  assert.equal(nameRepresentationsCompatible('zh-TW', 'zh-Hans'), false);
+  assert.equal(nameRepresentationsCompatible('zh-Hant', 'zh-Hant-TW'), true);
+  assert.equal(nameRepresentationsCompatible('hi-Latn', 'hi-Deva'), false);
+  assert.equal(nameRepresentationsCompatible('el', 'el'), true);
+  assert.equal(nameRepresentationsCompatible('en', 'fr-Latn'), false);
+}));

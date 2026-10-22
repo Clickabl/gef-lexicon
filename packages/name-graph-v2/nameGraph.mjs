@@ -33,12 +33,26 @@ export function canonicalNameTag(value) {
   if (typeof value !== 'string' || value.length > 64) fail('name_language_invalid');
   try { return Intl.getCanonicalLocales(value)[0]; } catch { fail('name_language_invalid'); }
 }
+/**
+ * The language, script and region subtags of a tag, read from its canonical form. This is what `Intl.Locale` reports for a
+ * canonical tag, but `Intl.Locale` is missing from some runtimes this package ships to (Hermes on iOS has none, so building a
+ * locale object there threw and the app could never load the graph), and the graph needs nothing else from it.
+ */
+export function nameTagSubtags(value) {
+  const parts = canonicalNameTag(value).split('-');
+  let index = 1;
+  // Up to three extended language subtags follow the primary language; canonicalization usually folds them away.
+  while (index < parts.length && index <= 3 && /^[a-z]{3}$/iu.test(parts[index])) index += 1;
+  const script = index < parts.length && /^[a-z]{4}$/iu.test(parts[index]) ? parts[index++] : undefined;
+  const region = index < parts.length && /^(?:[a-z]{2}|\d{3})$/iu.test(parts[index]) ? parts[index] : undefined;
+  return { language: parts[0], script, region };
+}
 function tag(value) {
   if (canonicalNameTag(value) !== value) fail('name_language_not_canonical');
   return value;
 }
 function validateSpellingScript(text, representationTag) {
-  const script = new Intl.Locale(representationTag).script;
+  const script = nameTagSubtags(representationTag).script;
   const systems = { Hans: ['Hani'], Hant: ['Hani'], Jpan: ['Hani', 'Hira', 'Kana'], Kore: ['Hang', 'Hani'], Hrkt: ['Hira', 'Kana'] };
   let allowed;
   try { allowed = new RegExp(`^(?:${(systems[script] ?? [script]).map(value => `\\p{Script_Extensions=${value}}`).join('|')}|\\p{Script=Common}|\\p{Script=Inherited})$`, 'u'); }
@@ -50,8 +64,7 @@ function validateSpellingScript(text, representationTag) {
   // That distinction still requires lexical evidence; representation tags must not be collapsed.
 }
 function representation(value) {
-  const locale = new Intl.Locale(tag(value));
-  if (!locale.script) fail('name_representation_requires_script');
+  if (!nameTagSubtags(tag(value)).script) fail('name_representation_requires_script');
   return value;
 }
 export function normalizeNameLookup(value) {
@@ -125,9 +138,9 @@ export function validateNameGraph(input) {
     if (row.text !== row.text.trim() || row.text !== row.text.normalize('NFC')) fail('name_spelling_not_normalized');
     tag(row.languageTag); representation(row.representationTag); validateSpellingScript(row.text, row.representationTag); evidence(row);
     if (!names.has(row.nameId)) fail('name_spelling_orphan');
-    if (new Intl.Locale(row.languageTag).language !== new Intl.Locale(row.representationTag).language) fail('name_spelling_language_mismatch');
-    const declaredScript = new Intl.Locale(row.languageTag).script;
-    if (declaredScript && declaredScript !== new Intl.Locale(row.representationTag).script) fail('name_spelling_script_mismatch');
+    const declared = nameTagSubtags(row.languageTag), represented = nameTagSubtags(row.representationTag);
+    if (declared.language !== represented.language) fail('name_spelling_language_mismatch');
+    if (declared.script && declared.script !== represented.script) fail('name_spelling_script_mismatch');
     if (typeof row.primary !== 'boolean' || typeof row.fallbackToPrimary !== 'boolean') fail('name_primary_invalid');
     const identity = JSON.stringify([row.nameId, row.representationTag, row.text]);
     if (spellingKeys.has(identity)) fail('name_spelling_duplicate');
@@ -171,10 +184,21 @@ export function validateNameGraph(input) {
   return deepFreeze(JSON.parse(JSON.stringify(input)));
 }
 
+/**
+ * Same language and the same writing system. A tag without a script takes its likely script (`zh-TW` is Traditional) where the
+ * runtime can add likely subtags; where it cannot (no `Intl.Locale`), a tag without a script matches only the same tag, so
+ * Traditional Chinese still never falls back to Simplified and Latin Hindi never to Devanagari.
+ */
 export function nameRepresentationsCompatible(requested, available) {
   try {
-    const left = new Intl.Locale(canonicalNameTag(requested)), right = new Intl.Locale(canonicalNameTag(available));
-    return left.language === right.language && left.maximize().script === right.maximize().script;
+    const left = canonicalNameTag(requested), right = canonicalNameTag(available);
+    if (typeof Intl.Locale === 'function') {
+      const a = new Intl.Locale(left), b = new Intl.Locale(right);
+      return a.language === b.language && a.maximize().script === b.maximize().script;
+    }
+    const a = nameTagSubtags(left), b = nameTagSubtags(right);
+    if (a.language !== b.language) return false;
+    return a.script && b.script ? a.script === b.script : left === right;
   } catch { return false; }
 }
 function languageRank(row, preferred, best) {
