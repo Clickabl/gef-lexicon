@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 27,
+  "revision": 28,
   "entities": [
     {
       "entity_type": "person",
@@ -12660,6 +12660,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "NP"
+        ],
+        "browse": [
+          "place:nepal"
         ]
       },
       "legacy_ids": [],
@@ -12669,7 +12672,7 @@
       "entity_id": "ent_e7a3b38d-f11f-4364-8f39-ec9ea5f71f17",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:16:44.753Z"
     },
     {
       "entity_type": "country",
