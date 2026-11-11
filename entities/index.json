@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 13,
+  "revision": 14,
   "entities": [
     {
       "entity_type": "person",
@@ -12134,6 +12134,9 @@
       "external_ids": {
         "wikidata": [
           "Q31945"
+        ],
+        "browse": [
+          "place:arabian-peninsula"
         ]
       },
       "legacy_ids": [],
@@ -12143,7 +12146,7 @@
       "entity_id": "ent_f618e2c1-d462-4f7d-9c29-f65baea5eedb",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:14:06.451Z"
     },
     {
       "entity_type": "country",
