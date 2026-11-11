@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 29,
+  "revision": 30,
   "entities": [
     {
       "entity_type": "person",
@@ -12736,6 +12736,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "ES"
+        ],
+        "browse": [
+          "place:spain"
         ]
       },
       "legacy_ids": [],
@@ -12745,7 +12748,7 @@
       "entity_id": "ent_793f49ce-fba1-4566-9e20-6a1d79963467",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:17:05.730Z"
     },
     {
       "entity_type": "country",
