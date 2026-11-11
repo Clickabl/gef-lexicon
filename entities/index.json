@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 15,
+  "revision": 16,
   "entities": [
     {
       "entity_type": "person",
@@ -12210,6 +12210,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "EG"
+        ],
+        "browse": [
+          "place:egypt"
         ]
       },
       "legacy_ids": [],
@@ -12219,7 +12222,7 @@
       "entity_id": "ent_9419d800-49af-4ad0-bc7d-0f837c6930df",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:14:28.698Z"
     },
     {
       "entity_type": "country",
