@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 31,
+  "revision": 32,
   "entities": [
     {
       "entity_type": "person",
@@ -12812,6 +12812,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "VN"
+        ],
+        "browse": [
+          "place:vietnam"
         ]
       },
       "legacy_ids": [],
@@ -12821,7 +12824,7 @@
       "entity_id": "ent_5d535b74-851b-41e7-9335-be89280e1591",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:17:28.553Z"
     }
   ],
   "redirects": []
