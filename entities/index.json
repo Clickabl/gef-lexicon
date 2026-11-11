@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 14,
+  "revision": 15,
   "entities": [
     {
       "entity_type": "person",
@@ -12172,6 +12172,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "CN"
+        ],
+        "browse": [
+          "place:china"
         ]
       },
       "legacy_ids": [],
@@ -12181,7 +12184,7 @@
       "entity_id": "ent_a5c2574b-9ce2-488e-a0e9-4d3effb50c60",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:14:17.167Z"
     },
     {
       "entity_type": "country",
