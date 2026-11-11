@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 26,
+  "revision": 27,
   "entities": [
     {
       "entity_type": "person",
@@ -12622,6 +12622,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "MA"
+        ],
+        "browse": [
+          "place:morocco"
         ]
       },
       "legacy_ids": [],
@@ -12631,7 +12634,7 @@
       "entity_id": "ent_63179f6e-72a9-4469-9539-cafa71b25fa1",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:16:31.811Z"
     },
     {
       "entity_type": "country",
