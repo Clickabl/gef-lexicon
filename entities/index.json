@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 12,
+  "revision": 13,
   "entities": [
     {
       "entity_type": "person",
@@ -12112,6 +12112,662 @@
       "review_state": "candidate",
       "created_at": "2026-10-20T21:48:50.950Z",
       "updated_at": "2026-10-20T21:48:50.950Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Arabian Peninsula",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Arabian Peninsula",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q31945_arabian_peninsula"
+          ],
+          "label_id": "lbl_346fbb00-7c6a-41f8-947f-ef50160a89b4",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q31945"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q31945_arabian_peninsula"
+      ],
+      "entity_id": "ent_f618e2c1-d462-4f7d-9c29-f65baea5eedb",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "China",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "China",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q148_china"
+          ],
+          "label_id": "lbl_7347a27a-89f2-45a4-89e4-d7ef9b1863f2",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q148"
+        ],
+        "iso_3166_1_alpha_2": [
+          "CN"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q148_china"
+      ],
+      "entity_id": "ent_a5c2574b-9ce2-488e-a0e9-4d3effb50c60",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Egypt",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Egypt",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q79_egypt"
+          ],
+          "label_id": "lbl_1dfac5eb-79fd-44fd-890e-a73e52bd5b62",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q79"
+        ],
+        "iso_3166_1_alpha_2": [
+          "EG"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q79_egypt"
+      ],
+      "entity_id": "ent_9419d800-49af-4ad0-bc7d-0f837c6930df",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "England",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "England",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q21_england"
+          ],
+          "label_id": "lbl_d8085e6d-92ed-432b-865b-35ad7c0cccda",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q21"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q21_england"
+      ],
+      "entity_id": "ent_0209af7c-1dff-46b4-8211-792682956ff6",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "France",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "France",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q142_france"
+          ],
+          "label_id": "lbl_cc7d8f0d-9880-4595-8f30-65b8cc8fa764",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q142"
+        ],
+        "iso_3166_1_alpha_2": [
+          "FR"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q142_france"
+      ],
+      "entity_id": "ent_d4d3e60e-75bb-49d7-89b0-b40d5d7e21ea",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Germany",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Germany",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q183_germany"
+          ],
+          "label_id": "lbl_6b4f99c4-f913-4b4e-bef2-b8c3f7b0c54c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q183"
+        ],
+        "iso_3166_1_alpha_2": [
+          "DE"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q183_germany"
+      ],
+      "entity_id": "ent_ee85c5f9-d858-4b97-aa8c-b19d0185f775",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Greece",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Greece",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q41_greece"
+          ],
+          "label_id": "lbl_eecb24d1-9e3b-4c6e-ae16-44158e1bcefb",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q41"
+        ],
+        "iso_3166_1_alpha_2": [
+          "GR"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q41_greece"
+      ],
+      "entity_id": "ent_8fd6b6f9-d249-4f6c-8149-aaaedabcf0e9",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Hawaii",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Hawaii",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q782_hawaii"
+          ],
+          "label_id": "lbl_05743562-7900-498c-80d5-60644766ac14",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q782"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q782_hawaii"
+      ],
+      "entity_id": "ent_8a2b9b67-ff91-4522-9839-09ed26e99a1b",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "India",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "India",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q668_india"
+          ],
+          "label_id": "lbl_488961c1-a74c-447e-86a1-a7c8d59176a0",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q668"
+        ],
+        "iso_3166_1_alpha_2": [
+          "IN"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q668_india"
+      ],
+      "entity_id": "ent_16d51bb0-415e-4ad2-beaf-facb3dc91ea5",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Jamaica",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Jamaica",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q766_jamaica"
+          ],
+          "label_id": "lbl_3f918f8f-70b0-4dfb-b75f-66aa1fc74c0e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q766"
+        ],
+        "iso_3166_1_alpha_2": [
+          "JM"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q766_jamaica"
+      ],
+      "entity_id": "ent_c5eaf437-cc85-433f-8cc6-2079513a3825",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Japan",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Japan",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q17_japan"
+          ],
+          "label_id": "lbl_d750115f-fd9d-40fb-af8d-a486b852d589",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q17"
+        ],
+        "iso_3166_1_alpha_2": [
+          "JP"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q17_japan"
+      ],
+      "entity_id": "ent_a6422251-adce-4352-af0e-25f5aab031bf",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Kenya",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Kenya",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q114_kenya"
+          ],
+          "label_id": "lbl_bce64c71-3858-4e4c-94b2-6fa712fced43",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q114"
+        ],
+        "iso_3166_1_alpha_2": [
+          "KE"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q114_kenya"
+      ],
+      "entity_id": "ent_c598b390-4540-4f33-8ed6-25f01142b022",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Mexico",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Mexico",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q96_mexico"
+          ],
+          "label_id": "lbl_1bb36f9e-3827-40c0-bfbf-25dc70154b9c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q96"
+        ],
+        "iso_3166_1_alpha_2": [
+          "MX"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q96_mexico"
+      ],
+      "entity_id": "ent_3d956573-5a48-41ba-bfe9-786f087eb9cc",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Morocco",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Morocco",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q1028_morocco"
+          ],
+          "label_id": "lbl_397b51bd-72cb-4001-b6ea-bca5acf41c3b",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q1028"
+        ],
+        "iso_3166_1_alpha_2": [
+          "MA"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q1028_morocco"
+      ],
+      "entity_id": "ent_63179f6e-72a9-4469-9539-cafa71b25fa1",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Nepal",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Nepal",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q837_nepal"
+          ],
+          "label_id": "lbl_2ec0f885-85c8-4c69-8bfa-19965d8d565e",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q837"
+        ],
+        "iso_3166_1_alpha_2": [
+          "NP"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q837_nepal"
+      ],
+      "entity_id": "ent_e7a3b38d-f11f-4364-8f39-ec9ea5f71f17",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Peru",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Peru",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q419_peru"
+          ],
+          "label_id": "lbl_5532ddd3-9fa0-4891-ad9b-3a478fa08e91",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q419"
+        ],
+        "iso_3166_1_alpha_2": [
+          "PE"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q419_peru"
+      ],
+      "entity_id": "ent_273401ff-2d5f-46e7-ab42-8b3b1e3fc6ec",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Spain",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Spain",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q29_spain"
+          ],
+          "label_id": "lbl_68c98763-7038-4020-b09a-b3ea398332ac",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q29"
+        ],
+        "iso_3166_1_alpha_2": [
+          "ES"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q29_spain"
+      ],
+      "entity_id": "ent_793f49ce-fba1-4566-9e20-6a1d79963467",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "United States",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "United States",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q30_united_states"
+          ],
+          "label_id": "lbl_9b9da87b-acf6-4fcf-b727-81bf1eacff0b",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q30"
+        ],
+        "iso_3166_1_alpha_2": [
+          "US"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q30_united_states"
+      ],
+      "entity_id": "ent_8c50f250-938c-43ad-a5fe-af7952d3ccf0",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
+    },
+    {
+      "entity_type": "country",
+      "canonical_name": "Vietnam",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Vietnam",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q881_vietnam"
+          ],
+          "label_id": "lbl_014bb143-844a-418b-aab7-90f91a11f65a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q881"
+        ],
+        "iso_3166_1_alpha_2": [
+          "VN"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q881_vietnam"
+      ],
+      "entity_id": "ent_5d535b74-851b-41e7-9335-be89280e1591",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T02:13:11.158Z",
+      "updated_at": "2026-11-11T02:13:11.158Z"
     }
   ],
   "redirects": []
