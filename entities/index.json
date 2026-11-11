@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 24,
+  "revision": 25,
   "entities": [
     {
       "entity_type": "person",
@@ -12546,6 +12546,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "KE"
+        ],
+        "browse": [
+          "place:kenya"
         ]
       },
       "legacy_ids": [],
@@ -12555,7 +12558,7 @@
       "entity_id": "ent_c598b390-4540-4f33-8ed6-25f01142b022",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:16:12.750Z"
     },
     {
       "entity_type": "country",
