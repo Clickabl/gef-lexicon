@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 32,
+  "revision": 33,
   "entities": [
     {
       "entity_type": "person",
@@ -12825,6 +12825,230 @@
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
       "updated_at": "2026-11-11T02:17:28.553Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Africa",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Africa",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q15_africa"
+          ],
+          "label_id": "lbl_942108f3-1342-4342-b2a2-383b18e7a048",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q15"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q15_africa"
+      ],
+      "entity_id": "ent_867f64ea-c968-4c6f-b73e-1aef43c96249",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Oceania",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Oceania",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q55643_oceania"
+          ],
+          "label_id": "lbl_9b9443d2-278f-47a0-a16a-cf44c4724156",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q55643"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q55643_oceania"
+      ],
+      "entity_id": "ent_30160e47-fefb-48ea-932a-d8b40614fdfd",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Europe",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Europe",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q46_europe"
+          ],
+          "label_id": "lbl_851eb0d4-1276-4dd4-be04-cf9b783f488c",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q46"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q46_europe"
+      ],
+      "entity_id": "ent_72aa715e-833c-4e5b-8f20-a3c8e73fe4e9",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Asia",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Asia",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q48_asia"
+          ],
+          "label_id": "lbl_e085e257-03e2-4e3e-8bf4-6b444647a351",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q48"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q48_asia"
+      ],
+      "entity_id": "ent_4a51ac35-2cc3-4f55-8238-72730ee0728e",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "North America",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "North America",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q49_north_america"
+          ],
+          "label_id": "lbl_573e4483-61e8-4693-aacb-43d973a5134d",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q49"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q49_north_america"
+      ],
+      "entity_id": "ent_1b6b10ba-aeac-4635-ae4a-e37d378dfae1",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "South America",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "South America",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q18_south_america"
+          ],
+          "label_id": "lbl_d353e019-1914-437e-8439-7a74177ae97a",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q18"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q18_south_america"
+      ],
+      "entity_id": "ent_df21fe03-5032-4712-b6aa-c984a9ec7b13",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
+    },
+    {
+      "entity_type": "geographic_region",
+      "canonical_name": "Antarctica",
+      "canonical_name_language_tag": "en",
+      "names": [
+        {
+          "text": "Antarctica",
+          "language_tag": "en",
+          "name_type": "canonical",
+          "translation_state": "source",
+          "source_refs": [
+            "src_wikidata_q51_antarctica"
+          ],
+          "label_id": "lbl_60d0b5d5-346f-4d5c-9c84-3a88d4f69c99",
+          "review_state": "candidate"
+        }
+      ],
+      "biographies": [],
+      "external_ids": {
+        "wikidata": [
+          "Q51"
+        ]
+      },
+      "legacy_ids": [],
+      "source_refs": [
+        "src_wikidata_q51_antarctica"
+      ],
+      "entity_id": "ent_61447a3e-0104-4125-9f8d-8ee6e1a3ff04",
+      "review_state": "candidate",
+      "created_at": "2026-11-11T14:57:50.232Z",
+      "updated_at": "2026-11-11T14:57:50.232Z"
     }
   ],
   "redirects": []
