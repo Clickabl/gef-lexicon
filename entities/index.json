@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 22,
+  "revision": 23,
   "entities": [
     {
       "entity_type": "person",
@@ -12470,6 +12470,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "JM"
+        ],
+        "browse": [
+          "place:jamaica"
         ]
       },
       "legacy_ids": [],
@@ -12479,7 +12482,7 @@
       "entity_id": "ent_c5eaf437-cc85-433f-8cc6-2079513a3825",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:15:54.205Z"
     },
     {
       "entity_type": "country",
