@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 30,
+  "revision": 31,
   "entities": [
     {
       "entity_type": "person",
@@ -12774,6 +12774,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "US"
+        ],
+        "browse": [
+          "place:united-states"
         ]
       },
       "legacy_ids": [],
@@ -12783,7 +12786,7 @@
       "entity_id": "ent_8c50f250-938c-43ad-a5fe-af7952d3ccf0",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:17:16.604Z"
     },
     {
       "entity_type": "country",
