@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 19,
+  "revision": 20,
   "entities": [
     {
       "entity_type": "person",
@@ -12359,6 +12359,9 @@
         ],
         "iso_3166_1_alpha_2": [
           "GR"
+        ],
+        "browse": [
+          "place:greece"
         ]
       },
       "legacy_ids": [],
@@ -12368,7 +12371,7 @@
       "entity_id": "ent_8fd6b6f9-d249-4f6c-8149-aaaedabcf0e9",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:15:20.516Z"
     },
     {
       "entity_type": "geographic_region",
