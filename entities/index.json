@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "contract": "gef-entity-registry-v1",
-  "revision": 16,
+  "revision": 17,
   "entities": [
     {
       "entity_type": "person",
@@ -12245,6 +12245,9 @@
       "external_ids": {
         "wikidata": [
           "Q21"
+        ],
+        "browse": [
+          "place:england"
         ]
       },
       "legacy_ids": [],
@@ -12254,7 +12257,7 @@
       "entity_id": "ent_0209af7c-1dff-46b4-8211-792682956ff6",
       "review_state": "candidate",
       "created_at": "2026-11-11T02:13:11.158Z",
-      "updated_at": "2026-11-11T02:13:11.158Z"
+      "updated_at": "2026-11-11T02:14:40.459Z"
     },
     {
       "entity_type": "country",
