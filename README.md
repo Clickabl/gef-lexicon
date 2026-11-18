@@ -17,6 +17,11 @@ This repository owns language knowledge that should survive any one book:
 
 Exact story sentences and passage-specific lesson evidence belong in `Clickabl/gef-content`, not here.
 
+Canonical entity and label operations use the [maintained writer and existing private
+journal](packages/entity-registry-v1/authoring/README.md), through
+`node scripts/author-entity-registry.mjs`. The retired standalone Server is not a
+runtime or deployment dependency of this operator.
+
 ## Product-wide language support
 
 This repository does **not** decide product tier membership.

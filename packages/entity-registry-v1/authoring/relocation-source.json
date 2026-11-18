@@ -1,0 +1,60 @@
+{
+  "repository": "Clickabl/gef-server",
+  "revision": "3550171ef0989c531cf7542e21f65e93d73c3dd9",
+  "purpose": "Move the single existing writer/journal under Lexicon ownership. Service, workspace and validation environment are byte-identical except declared import paths. Request/journal schemas use the patched Zod 4 parser with explicit compatibility adaptations, covered by golden and actual-history fingerprint checks.",
+  "files": [
+    {
+      "sourcePath": "src/modules/entityRegistry/entityRegistryService.js",
+      "sourceSha256": "5564cd58dc2012e59c59e45ae99fabdf98f3a3fa730586f705c6d13c0835ed1b",
+      "path": "packages/entity-registry-v1/authoring/entityRegistryService.mjs",
+      "sha256": "de8dabd990c9956b31524af8bca02b7e5c5a247f23c1b8cfc3efb04b8851d1e4",
+      "changes": {
+        "../contentAuthoring/contentValidationEnvironment.js": "./contentValidationEnvironment.mjs",
+        "./entityRegistryContracts.js": "./entityRegistryContracts.mjs",
+        "./entityRegistrySource.mjs": "../entityRegistry.mjs",
+        "./registryOperationJournal.js": "./registryOperationJournal.mjs"
+      }
+    },
+    {
+      "sourcePath": "src/modules/entityRegistry/entityRegistryContracts.js",
+      "sourceSha256": "996daa939871bb70347ecff250216305095c1ca4f2ea494211a14f989435e2bf",
+      "path": "packages/entity-registry-v1/authoring/entityRegistryContracts.mjs",
+      "sha256": "8ff024f4c04c3a5d4365aae7b8556259bc9f29feb063e5008c99f6ad10c09cca",
+      "changes": {},
+      "parserCompatibilityChanges": [
+        "Zod 4 refined biographies share the same unrefined field schema before omissions",
+        "Record schemas supply explicit string keys",
+        "Preserve legacy request UUID regex",
+        "Optional PATCH default fields remain absent instead of acquiring Zod 4 defaults"
+      ]
+    },
+    {
+      "sourcePath": "src/modules/entityRegistry/registryOperationJournal.js",
+      "sourceSha256": "25f4f96caed6aa0d0a4fef02e64ebf26d31741f20d0b8d9c7c16b6d2c25f2bb1",
+      "path": "packages/entity-registry-v1/authoring/registryOperationJournal.mjs",
+      "sha256": "892bcc5bf45fab38b6b26fc021f7eb80366e84819f902addcaa15ec5470a5901",
+      "changes": {
+        "./entityRegistryContracts.js": "./entityRegistryContracts.mjs"
+      },
+      "parserCompatibilityChanges": [
+        "Reuse the preserved request UUID grammar",
+        "Record schema supplies explicit string keys",
+        "Preserve exact admitted UTC scalar grammar (optional seconds and Gregorian leap-year/year-0000 cases)"
+      ]
+    },
+    {
+      "sourcePath": "src/modules/contentAuthoring/gitContentWorkspace.js",
+      "sourceSha256": "fb9bfeb460c85c33861bdffecc64f379d78a2fb4d71e24fa700274f03a013310",
+      "path": "packages/entity-registry-v1/authoring/gitContentWorkspace.mjs",
+      "sha256": "fb9bfeb460c85c33861bdffecc64f379d78a2fb4d71e24fa700274f03a013310",
+      "changes": {}
+    },
+    {
+      "sourcePath": "src/modules/contentAuthoring/contentValidationEnvironment.js",
+      "sourceSha256": "b4cbcd2adae21cbf8b975421c443d9135c521e09fd29b26398d1b421200d03ea",
+      "path": "packages/entity-registry-v1/authoring/contentValidationEnvironment.mjs",
+      "sha256": "b4cbcd2adae21cbf8b975421c443d9135c521e09fd29b26398d1b421200d03ea",
+      "changes": {}
+    }
+  ]
+}

@@ -60,6 +60,14 @@ the story text.
 
 ### Serving, authoring and agent operations
 
+The maintained canonical entity writer is in
+`packages/entity-registry-v1/authoring/` with one local operator entry point,
+`scripts/author-entity-registry.mjs` (#87, decision 0239). It reuses the existing
+private journal, source validator/compiler and permanent identities. No retired
+Server route or MCP tool is restored. VNext is the runtime projection; Content
+owns event bindings. The following Server references describe the historical
+runtime boundary, not an instruction to deploy that retired repository.
+
 `gef-server` serves bounded joins/projections over pinned content and lexicon
 versions. Use its existing MariaDB environment for operational state and a
 versioned compiled name index for lookup. SQLite packages remain appropriate for

@@ -398,3 +398,21 @@ Dedicated repository credentials and live activation have independent receipts.
 ## 2026-10-13 — codex-entity-authoring — public biography ownership
 
 TODO-ENTITY-AUTHORING-MCP-20261013: work-scoped documentary portraits belong to Content. The canonical 56 historical source rows and their centrally allocated IDs remain byte-identical. Generic public entity JSON and SQLite now exclude every work_id biography; manifest counts describe the actual public projection. Current generic authoring cannot create or edit scoped portraits, while retained historical journal receipts remain replayable. Content workpeople assets own ongoing portrait text and delivery. The new immutable package has 203 entities, 290 labels, zero biographies and 33 citations; older already-published artifacts remain available by hash and are not retroactively private. Actual compiler, SQLite foreign-key/integrity controls, 23 focused tests and full owning validation pass. Server and Content must synchronize this committed projection before publication.
+
+
+## 2026-11-18 — maintained entity writer relocation (#87, 0239)
+
+Tim's current first-release coordinator assigned the existing API/Server owner to
+move the one existing guarded writer/journal into Lexicon. The retired Server
+patch stays local and unexecuted; its deployment hook is untouched. The maintained
+operator is scripts/author-entity-registry.mjs, with the same central checkout and
+.git/gef-entity-operations ledger. Metadata owns Q84 bibliography and London facts;
+this code cohort changes no registry, bibliography or generated source data.
+
+The parser dependency is pinned to patched Zod 4.6.7 rather than vulnerable 3.25.76.
+Explicit compatibility preserves UUIDs, biography grammar, string records and
+absent PATCH fields; the same 23 actual historical fingerprints parse without
+rewriting a journal or replaying the continent operation. Source guard, replay,
+uncertain push, lock and real-process controls are under normal validation.
+Independent review, normal main publication and a fresh maintained-CLI receipt
+remain required before Metadata's separately evidenced city operation.
